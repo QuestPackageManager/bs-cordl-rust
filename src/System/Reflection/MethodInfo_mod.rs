@@ -182,6 +182,22 @@ impl crate::System::Reflection::MethodInfo {
             .invoke("get_ReturnType", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Equality(
+        left: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        left: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "System+Reflection+MethodInfo")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Reflection::MethodInfo {

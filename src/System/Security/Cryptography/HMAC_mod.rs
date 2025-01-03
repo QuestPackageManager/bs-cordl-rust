@@ -31,6 +31,14 @@ impl std::ops::DerefMut for crate::System::Security::Cryptography::HMAC {
 }
 #[cfg(feature = "System+Security+Cryptography+HMAC")]
 impl crate::System::Security::Cryptography::HMAC {
+    pub fn Create() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::HMAC>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::HMAC,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Create", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Dispose(
         &mut self,
         disposing: bool,

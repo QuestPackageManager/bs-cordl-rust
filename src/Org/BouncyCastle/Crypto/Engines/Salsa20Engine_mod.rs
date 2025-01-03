@@ -168,6 +168,15 @@ impl crate::Org::BouncyCastle::Crypto::Engines::Salsa20Engine {
         let __cordl_ret: u8 = __cordl_object.invoke("ReturnByte", (input))?;
         Ok(__cordl_ret.into())
     }
+    pub fn SalsaCore(
+        rounds: i32,
+        input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+        x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SalsaCore", (rounds, input, x))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn SetKey(
         &mut self,
         keyBytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,

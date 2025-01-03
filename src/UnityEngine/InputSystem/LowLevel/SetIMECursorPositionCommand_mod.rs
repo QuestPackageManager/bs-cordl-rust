@@ -24,6 +24,22 @@ for crate::UnityEngine::InputSystem::LowLevel::SetIMECursorPositionCommand {
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+SetIMECursorPositionCommand")]
 impl crate::UnityEngine::InputSystem::LowLevel::SetIMECursorPositionCommand {
     pub const kSize: i32 = 16i32;
+    pub fn Create(
+        cursorPosition: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::LowLevel::SetIMECursorPositionCommand,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::SetIMECursorPositionCommand = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (cursorPosition))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Type() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::FourCC,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_Type", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_position(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {

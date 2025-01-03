@@ -24,6 +24,29 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Pkcs::Pkcs12Utilities {
 }
 #[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs12Utilities")]
 impl crate::Org::BouncyCastle::Pkcs::Pkcs12Utilities {
+    pub fn ConvertToDefiniteLength_Il2CppArray0(
+        berPkcs12File: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ConvertToDefiniteLength", (berPkcs12File))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ConvertToDefiniteLength_Il2CppArray1(
+        berPkcs12File: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        passwd: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ConvertToDefiniteLength", (berPkcs12File, passwd))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

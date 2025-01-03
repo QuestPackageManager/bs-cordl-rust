@@ -44,6 +44,23 @@ impl crate::System::Linq::Expressions::NewArrayExpression {
         > = __cordl_object.invoke("Accept", (visitor))?;
         Ok(__cordl_ret.into())
     }
+    pub fn Make(
+        nodeType: crate::System::Linq::Expressions::ExpressionType,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        expressions: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                *mut crate::System::Linq::Expressions::Expression,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::NewArrayExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::NewArrayExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Make", (nodeType, _cordl_type, expressions))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         expressions: quest_hook::libil2cpp::Gc<

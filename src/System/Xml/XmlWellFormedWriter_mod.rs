@@ -319,6 +319,16 @@ impl crate::System::Xml::XmlWellFormedWriter {
             .invoke("Close", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn DupAttrException(
+        prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlException>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlException> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DupAttrException", (prefix, localName))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Flush(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -340,6 +350,27 @@ impl crate::System::Xml::XmlWellFormedWriter {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("GeneratePrefix", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetStateName(
+        state: crate::System::Xml::XmlWellFormedWriter_State,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetStateName", (state))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InvalidCharsException(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        badCharIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InvalidCharsException", (name, badCharIndex))?;
         Ok(__cordl_ret.into())
     }
     pub fn LookupLocalNamespace(

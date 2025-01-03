@@ -27,6 +27,16 @@ impl crate::GlobalNamespace::PingUtility {
     pub type _PingAsync_d__0 = crate::GlobalNamespace::PingUtility__PingAsync_d__0;
     #[cfg(feature = "PingUtility+__c")]
     pub type __c = crate::GlobalNamespace::PingUtility___c;
+    pub fn PingAsync(
+        url: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i64>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<i64>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("PingAsync", (url))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "PingUtility")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PingUtility {

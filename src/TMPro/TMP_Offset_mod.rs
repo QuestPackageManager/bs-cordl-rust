@@ -127,6 +127,35 @@ impl crate::TMPro::TMP_Offset {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_zero() -> quest_hook::libil2cpp::Result<crate::TMPro::TMP_Offset> {
+        let __cordl_ret: crate::TMPro::TMP_Offset = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_zero", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        lhs: crate::TMPro::TMP_Offset,
+        rhs: crate::TMPro::TMP_Offset,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        lhs: crate::TMPro::TMP_Offset,
+        rhs: crate::TMPro::TMP_Offset,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Multiply(
+        a: crate::TMPro::TMP_Offset,
+        b: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::TMPro::TMP_Offset> {
+        let __cordl_ret: crate::TMPro::TMP_Offset = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Multiply", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn set_bottom(
         &mut self,
         value: f32,

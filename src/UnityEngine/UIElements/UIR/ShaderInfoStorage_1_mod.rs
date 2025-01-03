@@ -54,6 +54,22 @@ impl<
             .invoke("AllocateRect", (width, height, uvs))?;
         Ok(__cordl_ret.into())
     }
+    pub fn CpuBlit(
+        src: crate::Unity::Collections::NativeArray_1<T>,
+        srcWidth: i32,
+        srcHeight: i32,
+        dst: crate::Unity::Collections::NativeArray_1<T>,
+        dstWidth: i32,
+        dstHeight: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CpuBlit", (src, srcWidth, srcHeight, dst, dstWidth, dstHeight))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CreateOrExpandTexture(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>

@@ -41,6 +41,46 @@ impl crate::UnityEngine::ProBuilder::Shapes::Torus {
             .invoke("CopyShape", (shape))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetCirclePoints_Vector3_1(
+        segments: i32,
+        radius: f32,
+        circumference: f32,
+        rotation: crate::UnityEngine::Quaternion,
+        offset: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetCirclePoints",
+                (segments, radius, circumference, rotation, offset),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCirclePoints_f32_0(
+        segments: i32,
+        radius: f32,
+        circumference: f32,
+        rotation: crate::UnityEngine::Quaternion,
+        offset: f32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetCirclePoints",
+                (segments, radius, circumference, rotation, offset),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

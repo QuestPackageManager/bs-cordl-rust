@@ -25,6 +25,21 @@ impl std::ops::DerefMut for crate::BeatmapSaveDataCommon::BeatmapEventTypeExtens
 }
 #[cfg(feature = "BeatmapSaveDataCommon+BeatmapEventTypeExtensions")]
 impl crate::BeatmapSaveDataCommon::BeatmapEventTypeExtensions {
+    pub fn GetSpecialEventTypes() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::HashSet_1<
+                crate::BeatmapSaveDataCommon::BeatmapEventType,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::HashSet_1<
+                crate::BeatmapSaveDataCommon::BeatmapEventType,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSpecialEventTypes", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

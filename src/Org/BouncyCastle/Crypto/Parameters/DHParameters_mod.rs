@@ -55,6 +55,11 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::DHParameters {
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetDefaultMParam(lParam: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetDefaultMParam", (lParam))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

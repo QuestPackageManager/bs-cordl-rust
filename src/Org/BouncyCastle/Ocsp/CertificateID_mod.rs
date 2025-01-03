@@ -26,6 +26,41 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Ocsp::CertificateID {
 #[cfg(feature = "Org+BouncyCastle+Ocsp+CertificateID")]
 impl crate::Org::BouncyCastle::Ocsp::CertificateID {
     pub const HashSha1: &'static str = "1.3.14.3.2.26";
+    pub fn CreateCertID(
+        hashAlg: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        >,
+        issuerCert: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::X509::X509Certificate,
+        >,
+        serialNumber: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerInteger,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Ocsp::CertID>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Ocsp::CertID,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateCertID", (hashAlg, issuerCert, serialNumber))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DeriveCertificateID(
+        original: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Ocsp::CertificateID,
+        >,
+        newSerialNumber: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::BigInteger,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Ocsp::CertificateID>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Ocsp::CertificateID,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DeriveCertificateID", (original, newSerialNumber))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Equals(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

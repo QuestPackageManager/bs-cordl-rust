@@ -55,6 +55,13 @@ impl crate::UnityEngine::InputSystem::LowLevel::GamepadState {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_Format() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::FourCC,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_Format", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_format(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

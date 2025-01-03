@@ -49,6 +49,45 @@ impl crate::System::Dynamic::BindingRestrictions {
         > = __cordl_object.invoke("GetExpression", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetInstanceRestriction(
+        expression: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+        instance: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Dynamic::BindingRestrictions>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Dynamic::BindingRestrictions,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetInstanceRestriction", (expression, instance))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetTypeRestriction_DynamicMetaObject1(
+        obj: quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Dynamic::BindingRestrictions>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Dynamic::BindingRestrictions,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetTypeRestriction", (obj))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetTypeRestriction_Expression_Type0(
+        expression: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Dynamic::BindingRestrictions>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Dynamic::BindingRestrictions,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetTypeRestriction", (expression, _cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Merge(
         &mut self,
         restrictions: quest_hook::libil2cpp::Gc<

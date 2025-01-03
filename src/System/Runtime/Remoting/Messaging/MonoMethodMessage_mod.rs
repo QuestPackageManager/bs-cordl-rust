@@ -59,6 +59,18 @@ impl crate::System::Runtime::Remoting::Messaging::MonoMethodMessage {
         > = __cordl_object.invoke("GetArg", (arg_num))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetMethodInfo(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::MethodInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetMethodInfo", (_cordl_type, methodName))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn InitMessage(
         &mut self,
         method: quest_hook::libil2cpp::Gc<crate::System::Reflection::RuntimeMethodInfo>,

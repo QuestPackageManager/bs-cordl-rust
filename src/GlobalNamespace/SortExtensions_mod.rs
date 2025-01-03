@@ -28,6 +28,31 @@ impl crate::GlobalNamespace::SortExtensions {
     pub type __c__DisplayClass1_0_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::SortExtensions___c__DisplayClass1_0_1<
         T,
     >;
+    pub fn InsertSorted<T>(
+        list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
+        item: T,
+        getSortIndex: quest_hook::libil2cpp::Gc<crate::System::Func_2<T, i32>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InsertSorted", (list, item, getSortIndex))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Sort<T>(
+        list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
+        getSortIndex: quest_hook::libil2cpp::Gc<crate::System::Func_2<T, i32>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Sort", (list, getSortIndex))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "SortExtensions")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SortExtensions {

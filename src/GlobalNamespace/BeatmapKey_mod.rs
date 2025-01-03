@@ -95,6 +95,22 @@ impl crate::GlobalNamespace::BeatmapKey {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Equality(
+        a: crate::GlobalNamespace::BeatmapKey,
+        b: crate::GlobalNamespace::BeatmapKey,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        a: crate::GlobalNamespace::BeatmapKey,
+        b: crate::GlobalNamespace::BeatmapKey,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "BeatmapKey")]
 impl AsRef<crate::System::IEquatable_1<crate::GlobalNamespace::BeatmapKey>>

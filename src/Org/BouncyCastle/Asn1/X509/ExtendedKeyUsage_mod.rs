@@ -26,6 +26,19 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::X509::ExtendedKeyUsa
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+ExtendedKeyUsage")]
 impl crate::Org::BouncyCastle::Asn1::X509::ExtendedKeyUsage {
+    pub fn FromExtensions(
+        extensions: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::ExtendedKeyUsage>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::ExtendedKeyUsage,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromExtensions", (extensions))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetAllUsages(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -36,6 +49,28 @@ impl crate::Org::BouncyCastle::Asn1::X509::ExtendedKeyUsage {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Collections::IList> = __cordl_object
             .invoke("GetAllUsages", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetInstance_Asn1TaggedObject__cordl_bool0(
+        obj: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1TaggedObject>,
+        explicitly: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::ExtendedKeyUsage>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::ExtendedKeyUsage,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetInstance", (obj, explicitly))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetInstance_Il2CppObject1(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::ExtendedKeyUsage>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::ExtendedKeyUsage,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetUsages(

@@ -151,6 +151,26 @@ impl crate::Org::BouncyCastle::Crypto::Digests::Sha256Digest {
             .invoke("Reset", (other))?;
         Ok(__cordl_ret.into())
     }
+    pub fn Sum0Maj(x: u32, y: u32, z: u32) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Sum0Maj", (x, y, z))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Sum1Ch(x: u32, y: u32, z: u32) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Sum1Ch", (x, y, z))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Theta0(x: u32) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Theta0", (x))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Theta1(x: u32) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Theta1", (x))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

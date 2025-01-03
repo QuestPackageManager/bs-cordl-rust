@@ -44,12 +44,28 @@ impl crate::UnityEngine::InputSystem::Utilities::FourCC {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn FromInt32(
+        i: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::FourCC,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromInt32", (i))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "GetHashCode",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToInt32(
+        fourCC: crate::UnityEngine::InputSystem::Utilities::FourCC,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToInt32", (fourCC))?;
         Ok(__cordl_ret.into())
     }
     pub fn ToString(
@@ -96,6 +112,38 @@ impl crate::UnityEngine::InputSystem::Utilities::FourCC {
             ".ctor",
             (code),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        left: crate::UnityEngine::InputSystem::Utilities::FourCC,
+        right: crate::UnityEngine::InputSystem::Utilities::FourCC,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_FourCC0(
+        fourCC: crate::UnityEngine::InputSystem::Utilities::FourCC,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (fourCC))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_i32_1(
+        i: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::FourCC,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (i))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        left: crate::UnityEngine::InputSystem::Utilities::FourCC,
+        right: crate::UnityEngine::InputSystem::Utilities::FourCC,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (left, right))?;
         Ok(__cordl_ret.into())
     }
 }

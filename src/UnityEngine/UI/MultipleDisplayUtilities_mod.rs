@@ -23,7 +23,34 @@ impl std::ops::DerefMut for crate::UnityEngine::UI::MultipleDisplayUtilities {
     }
 }
 #[cfg(feature = "UnityEngine+UI+MultipleDisplayUtilities")]
-impl crate::UnityEngine::UI::MultipleDisplayUtilities {}
+impl crate::UnityEngine::UI::MultipleDisplayUtilities {
+    pub fn GetRelativeMousePositionForDrag(
+        eventData: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::PointerEventData,
+        >,
+        position: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetRelativeMousePositionForDrag", (eventData, position))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetRelativeMousePositionForRaycast(
+        eventData: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::PointerEventData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetRelativeMousePositionForRaycast", (eventData))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RelativeMouseAtScaled(
+        position: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RelativeMouseAtScaled", (position))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+UI+MultipleDisplayUtilities")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UI::MultipleDisplayUtilities {

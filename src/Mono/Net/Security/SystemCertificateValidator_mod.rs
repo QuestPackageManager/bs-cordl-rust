@@ -23,7 +23,17 @@ impl std::ops::DerefMut for crate::Mono::Net::Security::SystemCertificateValidat
     }
 }
 #[cfg(feature = "Mono+Net+Security+SystemCertificateValidator")]
-impl crate::Mono::Net::Security::SystemCertificateValidator {}
+impl crate::Mono::Net::Security::SystemCertificateValidator {
+    pub fn NeedsChain(
+        settings: quest_hook::libil2cpp::Gc<
+            crate::Mono::Security::Interface::MonoTlsSettings,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("NeedsChain", (settings))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "Mono+Net+Security+SystemCertificateValidator")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Net::Security::SystemCertificateValidator {

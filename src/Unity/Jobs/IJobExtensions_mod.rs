@@ -28,6 +28,38 @@ impl crate::Unity::Jobs::IJobExtensions {
     pub type JobStruct_1<T: quest_hook::libil2cpp::Type> = crate::Unity::Jobs::IJobExtensions_JobStruct_1<
         T,
     >;
+    pub fn EarlyJobInit<T>() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EarlyJobInit", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetReflectionData<T>() -> quest_hook::libil2cpp::Result<crate::System::IntPtr>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetReflectionData", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Schedule<T>(
+        jobData: T,
+        dependsOn: crate::Unity::Jobs::JobHandle,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Jobs::JobHandle>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: crate::Unity::Jobs::JobHandle = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Schedule", (jobData, dependsOn))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "Unity+Jobs+IJobExtensions")]
 impl quest_hook::libil2cpp::ObjectType for crate::Unity::Jobs::IJobExtensions {
@@ -66,6 +98,35 @@ impl<T: quest_hook::libil2cpp::Type> crate::Unity::Jobs::IJobExtensions_JobStruc
     pub type ExecuteJobFunction = crate::Unity::Jobs::JobStruct_1_IJobExtensions_ExecuteJobFunction<
         T,
     >;
+    pub fn Execute(
+        data: quest_hook::libil2cpp::ByRefMut<T>,
+        additionalPtr: crate::System::IntPtr,
+        bufferRangePatchData: crate::System::IntPtr,
+        ranges: quest_hook::libil2cpp::ByRefMut<
+            crate::Unity::Jobs::LowLevel::Unsafe::JobRanges,
+        >,
+        jobIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "Execute",
+                (data, additionalPtr, bufferRangePatchData, ranges, jobIndex),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Initialize() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Initialize", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "Unity+Jobs+IJobExtensions+JobStruct_1+ExecuteJobFunction")]
 #[repr(C)]

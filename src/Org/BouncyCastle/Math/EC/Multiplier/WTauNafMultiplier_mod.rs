@@ -31,6 +31,20 @@ impl crate::Org::BouncyCastle::Math::EC::Multiplier::WTauNafMultiplier {
         feature = "Org+BouncyCastle+Math+EC+Multiplier+WTauNafMultiplier+WTauNafCallback"
     )]
     pub type WTauNafCallback = crate::Org::BouncyCastle::Math::EC::Multiplier::WTauNafMultiplier_WTauNafCallback;
+    pub fn MultiplyFromWTnaf(
+        p: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::EC::AbstractF2mPoint,
+        >,
+        u: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i8>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::AbstractF2mPoint>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::EC::AbstractF2mPoint,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MultiplyFromWTnaf", (p, u))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn MultiplyPositive(
         &mut self,
         point: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,

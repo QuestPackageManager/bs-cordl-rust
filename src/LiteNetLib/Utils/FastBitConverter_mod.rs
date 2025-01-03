@@ -28,6 +28,105 @@ impl crate::LiteNetLib::Utils::FastBitConverter {
     pub type ConverterHelperDouble = crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperDouble;
     #[cfg(feature = "LiteNetLib+Utils+FastBitConverter+ConverterHelperFloat")]
     pub type ConverterHelperFloat = crate::LiteNetLib::Utils::FastBitConverter_ConverterHelperFloat;
+    pub fn GetBytes_f32_1(
+        bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        startIndex: i32,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetBytes", (bytes, startIndex, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetBytes_f64_0(
+        bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        startIndex: i32,
+        value: f64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetBytes", (bytes, startIndex, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetBytes_i16_2(
+        bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        startIndex: i32,
+        value: i16,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetBytes", (bytes, startIndex, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetBytes_i32_4(
+        bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        startIndex: i32,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetBytes", (bytes, startIndex, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetBytes_i64_6(
+        bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        startIndex: i32,
+        value: i64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetBytes", (bytes, startIndex, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetBytes_u16_3(
+        bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        startIndex: i32,
+        value: u16,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetBytes", (bytes, startIndex, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetBytes_u32_5(
+        bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        startIndex: i32,
+        value: u32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetBytes", (bytes, startIndex, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetBytes_u64_7(
+        bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        startIndex: i32,
+        value: u64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetBytes", (bytes, startIndex, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WriteLittleEndian_i16_2(
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        offset: i32,
+        data: i16,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WriteLittleEndian", (buffer, offset, data))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WriteLittleEndian_i32_1(
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        offset: i32,
+        data: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WriteLittleEndian", (buffer, offset, data))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WriteLittleEndian_u64_0(
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        offset: i32,
+        data: u64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WriteLittleEndian", (buffer, offset, data))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "LiteNetLib+Utils+FastBitConverter")]
 impl quest_hook::libil2cpp::ObjectType for crate::LiteNetLib::Utils::FastBitConverter {

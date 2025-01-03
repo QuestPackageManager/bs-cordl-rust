@@ -38,6 +38,17 @@ impl crate::GlobalNamespace::BeatmapCharacteristicInstaller {
             .invoke("InstallBindings", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn LoadCharacteristicCollectionAsync() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+            *mut crate::GlobalNamespace::BeatmapCharacteristicCollectionSO,
+        >,
+    > {
+        let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+            *mut crate::GlobalNamespace::BeatmapCharacteristicCollectionSO,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LoadCharacteristicCollectionAsync", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

@@ -98,6 +98,18 @@ impl crate::System::Security::Principal::IdentityReference {
         > = __cordl_object.invoke("get_Value", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Equality(
+        left: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Principal::IdentityReference,
+        >,
+        right: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Principal::IdentityReference,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "System+Security+Principal+IdentityReference")]
 impl quest_hook::libil2cpp::ObjectType

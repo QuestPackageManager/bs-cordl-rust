@@ -53,6 +53,17 @@ impl crate::Org::BouncyCastle::Crypto::Tls::Ssl3Mac {
         let __cordl_ret: i32 = __cordl_object.invoke("DoFinal", (output, outOff))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GenPad(
+        b: u8,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GenPad", (b, count))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetMacSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

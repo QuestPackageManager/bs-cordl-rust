@@ -24,7 +24,7 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::DerOctetString {
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+DerOctetString")]
 impl crate::Org::BouncyCastle::Asn1::DerOctetString {
-    pub fn Encode(
+    pub fn Encode_DerOutputStream0(
         &mut self,
         derOut: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerOutputStream,
@@ -35,6 +35,18 @@ impl crate::Org::BouncyCastle::Asn1::DerOctetString {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Encode", (derOut))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Encode_Il2CppArray_i32_i32_1(
+        derOut: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerOutputStream,
+        >,
+        bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        offset: i32,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Encode", (derOut, bytes, offset, length))?;
         Ok(__cordl_ret.into())
     }
     pub fn New_Asn1Encodable2(

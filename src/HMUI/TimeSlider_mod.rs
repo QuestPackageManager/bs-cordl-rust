@@ -29,6 +29,17 @@ impl std::ops::DerefMut for crate::HMUI::TimeSlider {
 impl crate::HMUI::TimeSlider {
     #[cfg(feature = "HMUI+TimeSlider+TimeType")]
     pub type TimeType = crate::HMUI::TimeSlider_TimeType;
+    pub fn FormatTimeSpan(
+        ts: crate::System::TimeSpan,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FormatTimeSpan", (ts))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

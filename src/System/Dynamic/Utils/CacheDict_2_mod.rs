@@ -62,6 +62,17 @@ impl<
             .invoke("Add", (key, value))?;
         Ok(__cordl_ret.into())
     }
+    pub fn AlignSize(_cordl_size: i32) -> quest_hook::libil2cpp::Result<i32>
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AlignSize", (_cordl_size))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>

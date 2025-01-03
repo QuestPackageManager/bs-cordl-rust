@@ -26,6 +26,78 @@ for crate::UnityEngine::OverlapBoxCommand {
 }
 #[cfg(feature = "UnityEngine+OverlapBoxCommand")]
 impl crate::UnityEngine::OverlapBoxCommand {
+    pub fn ScheduleBatch(
+        commands: crate::Unity::Collections::NativeArray_1<
+            crate::UnityEngine::OverlapBoxCommand,
+        >,
+        results: crate::Unity::Collections::NativeArray_1<
+            crate::UnityEngine::ColliderHit,
+        >,
+        minCommandsPerJob: i32,
+        maxHits: i32,
+        dependsOn: crate::Unity::Jobs::JobHandle,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Jobs::JobHandle> {
+        let __cordl_ret: crate::Unity::Jobs::JobHandle = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ScheduleBatch",
+                (commands, results, minCommandsPerJob, maxHits, dependsOn),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ScheduleOverlapBoxBatch(
+        parameters: quest_hook::libil2cpp::ByRefMut<
+            crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_JobScheduleParameters,
+        >,
+        commands: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        commandLen: i32,
+        result: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        resultLen: i32,
+        minCommandsPerJob: i32,
+        maxHits: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Jobs::JobHandle> {
+        let __cordl_ret: crate::Unity::Jobs::JobHandle = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ScheduleOverlapBoxBatch",
+                (
+                    parameters,
+                    commands,
+                    commandLen,
+                    result,
+                    resultLen,
+                    minCommandsPerJob,
+                    maxHits,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ScheduleOverlapBoxBatch_Injected(
+        parameters: quest_hook::libil2cpp::ByRefMut<
+            crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_JobScheduleParameters,
+        >,
+        commands: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        commandLen: i32,
+        result: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        resultLen: i32,
+        minCommandsPerJob: i32,
+        maxHits: i32,
+        ret: quest_hook::libil2cpp::ByRefMut<crate::Unity::Jobs::JobHandle>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ScheduleOverlapBoxBatch_Injected",
+                (
+                    parameters,
+                    commands,
+                    commandLen,
+                    result,
+                    resultLen,
+                    minCommandsPerJob,
+                    maxHits,
+                    ret,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor_PhysicsScene_Vector3_Quaternion_QueryParameters1(
         &mut self,
         physicsScene: crate::UnityEngine::PhysicsScene,

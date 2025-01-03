@@ -34,6 +34,26 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::ContextualMenuPopula
 impl crate::UnityEngine::UIElements::ContextualMenuPopulateEvent {
     #[cfg(feature = "UnityEngine+UIElements+ContextualMenuPopulateEvent+__c")]
     pub type __c = crate::UnityEngine::UIElements::ContextualMenuPopulateEvent___c;
+    pub fn GetPooled(
+        triggerEvent: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::EventBase,
+        >,
+        menu: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DropdownMenu>,
+        target: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IEventHandler>,
+        menuManager: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::ContextualMenuManager,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPooled", (triggerEvent, menu, target, menuManager))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Init(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -24,6 +24,13 @@ impl std::ops::DerefMut for crate::OVRSimpleJSON::JSONNull {
 }
 #[cfg(feature = "OVRSimpleJSON+JSONNull")]
 impl crate::OVRSimpleJSON::JSONNull {
+    pub fn CreateOrGet() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNull>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNull> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateOrGet", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Equals(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

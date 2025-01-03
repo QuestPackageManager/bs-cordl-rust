@@ -55,6 +55,16 @@ impl crate::UnityEngine::UIElements::ClickDetector {
             .invoke("Cleanup", (elements))?;
         Ok(__cordl_ret.into())
     }
+    pub fn ContainsPointer(
+        element: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::VisualElement,
+        >,
+        position: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ContainsPointer", (element, position))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -103,6 +113,18 @@ impl crate::UnityEngine::UIElements::ClickDetector {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_s_DoubleClickTime() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_s_DoubleClickTime", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_s_DoubleClickTime(
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_s_DoubleClickTime", (value))?;
         Ok(__cordl_ret.into())
     }
 }

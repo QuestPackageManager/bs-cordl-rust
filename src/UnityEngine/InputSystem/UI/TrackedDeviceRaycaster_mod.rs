@@ -83,6 +83,19 @@ impl crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster {
             .invoke("PerformRaycast", (eventData, resultAppendList))?;
         Ok(__cordl_ret.into())
     }
+    pub fn RayIntersectsRectTransform(
+        transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
+        ray: crate::UnityEngine::Ray,
+        worldPosition: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+        distance: quest_hook::libil2cpp::ByRefMut<f32>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "RayIntersectsRectTransform",
+                (transform, ray, worldPosition, distance),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Raycast(
         &mut self,
         eventData: quest_hook::libil2cpp::Gc<

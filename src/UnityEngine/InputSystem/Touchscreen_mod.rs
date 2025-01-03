@@ -48,6 +48,14 @@ impl crate::UnityEngine::InputSystem::Touchscreen {
             .invoke("MakeCurrent", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn MergeForward(
+        currentEventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+        nextEventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MergeForward", (currentEventPtr, nextEventPtr))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -84,6 +92,19 @@ impl crate::UnityEngine::InputSystem::Touchscreen {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnStateEvent", (eventPtr))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TriggerTap(
+        control: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Controls::TouchControl,
+        >,
+        state: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::InputSystem::LowLevel::TouchState,
+        >,
+        eventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TriggerTap", (control, state, eventPtr))?;
         Ok(__cordl_ret.into())
     }
     pub fn UnityEngine_InputSystem_LowLevel_ICustomDeviceReset_Reset(
@@ -166,6 +187,14 @@ impl crate::UnityEngine::InputSystem::Touchscreen {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_current() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Touchscreen>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Touchscreen,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_current", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_primaryTouch(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -213,6 +242,13 @@ impl crate::UnityEngine::InputSystem::Touchscreen {
         let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
             *mut crate::UnityEngine::InputSystem::Controls::TouchControl,
         > = __cordl_object.invoke("get_touches", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_current(
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Touchscreen>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_current", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_primaryTouch(

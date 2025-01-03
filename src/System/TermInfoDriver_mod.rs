@@ -326,6 +326,17 @@ impl crate::System::TermInfoDriver {
         > = __cordl_object.invoke("ReadUntilConditionInternal", (haltOnNewLine))?;
         Ok(__cordl_ret.into())
     }
+    pub fn SearchTerminfo(
+        term: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SearchTerminfo", (term))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn SetCursorPosition(
         &mut self,
         left: i32,
@@ -336,6 +347,18 @@ impl crate::System::TermInfoDriver {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetCursorPosition", (left, top))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryTermInfoDir(
+        dir: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        term: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryTermInfoDir", (dir, term))?;
         Ok(__cordl_ret.into())
     }
     pub fn WriteConsole(

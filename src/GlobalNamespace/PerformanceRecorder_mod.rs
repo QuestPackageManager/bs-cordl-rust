@@ -96,6 +96,14 @@ impl crate::GlobalNamespace::PerformanceRecorder {
             .invoke("Update", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn WriteFileReport(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        contents: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WriteFileReport", (path, contents))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

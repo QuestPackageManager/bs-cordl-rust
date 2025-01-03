@@ -155,6 +155,14 @@ impl crate::System::Globalization::Calendar {
         let __cordl_ret: i32 = __cordl_object.invoke("GetMonthsInYear", (year, era))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetSystemTwoDigitYearSetting(
+        CalID: i32,
+        defaultYearValue: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSystemTwoDigitYearSetting", (CalID, defaultYearValue))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetYear(
         &mut self,
         _cordl_time: crate::System::DateTime,
@@ -240,6 +248,16 @@ impl crate::System::Globalization::Calendar {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetReadOnlyState", (readOnly))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TimeToTicks(
+        hour: i32,
+        minute: i32,
+        second: i32,
+        millisecond: i32,
+    ) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TimeToTicks", (hour, minute, second, millisecond))?;
         Ok(__cordl_ret.into())
     }
     pub fn ToDateTime_i32_1(

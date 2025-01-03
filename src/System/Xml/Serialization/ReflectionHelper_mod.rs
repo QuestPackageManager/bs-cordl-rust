@@ -26,6 +26,14 @@ impl std::ops::DerefMut for crate::System::Xml::Serialization::ReflectionHelper 
 }
 #[cfg(feature = "System+Xml+Serialization+ReflectionHelper")]
 impl crate::System::Xml::Serialization::ReflectionHelper {
+    pub fn CheckSerializableType(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        allowPrivateConstructors: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckSerializableType", (_cordl_type, allowPrivateConstructors))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetRegisteredClrType(
         &mut self,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,

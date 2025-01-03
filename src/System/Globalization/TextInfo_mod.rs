@@ -35,6 +35,16 @@ impl std::ops::DerefMut for crate::System::Globalization::TextInfo {
 #[cfg(feature = "System+Globalization+TextInfo")]
 impl crate::System::Globalization::TextInfo {
     pub const wordSeparatorMask: i32 = 536672256i32;
+    pub fn AddNonLetter(
+        result: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Text::StringBuilder>,
+        input: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
+        inputIndex: i32,
+        charLen: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddNonLetter", (result, input, inputIndex, charLen))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn AddTitlecaseLetter(
         &mut self,
         result: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Text::StringBuilder>,
@@ -90,6 +100,25 @@ impl crate::System::Globalization::TextInfo {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsAscii(c: char) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsAscii", (c))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsLetterCategory(
+        uc: crate::System::Globalization::UnicodeCategory,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsLetterCategory", (uc))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsWordSeparator(
+        category: crate::System::Globalization::UnicodeCategory,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsWordSeparator", (category))?;
         Ok(__cordl_ret.into())
     }
     pub fn New_1() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -176,6 +205,11 @@ impl crate::System::Globalization::TextInfo {
             )?;
         Ok(__cordl_ret.into())
     }
+    pub fn ToLowerAsciiInvariant(c: char) -> quest_hook::libil2cpp::Result<char> {
+        let __cordl_ret: char = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToLowerAsciiInvariant", (c))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ToLowerInternal_Il2CppString0(
         &mut self,
         str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -251,7 +285,7 @@ impl crate::System::Globalization::TextInfo {
         > = __cordl_object.invoke("ToTitleCase", (str))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToUpperAsciiInvariant(
+    pub fn ToUpperAsciiInvariant_ReadOnlySpan_1_Span_1_1(
         &mut self,
         source: crate::System::ReadOnlySpan_1<char>,
         destination: crate::System::Span_1<char>,
@@ -261,6 +295,13 @@ impl crate::System::Globalization::TextInfo {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ToUpperAsciiInvariant", (source, destination))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToUpperAsciiInvariant__cordl_char0(
+        c: char,
+    ) -> quest_hook::libil2cpp::Result<char> {
+        let __cordl_ret: char = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToUpperAsciiInvariant", (c))?;
         Ok(__cordl_ret.into())
     }
     pub fn ToUpperInternal_Il2CppString0(
@@ -343,6 +384,14 @@ impl crate::System::Globalization::TextInfo {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("get_CultureName", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Invariant() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Globalization::TextInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Globalization::TextInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_Invariant", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_IsAsciiCasingSameAsInvariant(

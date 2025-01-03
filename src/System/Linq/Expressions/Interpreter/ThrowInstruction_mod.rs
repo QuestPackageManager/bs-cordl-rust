@@ -51,6 +51,15 @@ impl crate::System::Linq::Expressions::Interpreter::ThrowInstruction {
         let __cordl_ret: i32 = __cordl_object.invoke("Run", (frame))?;
         Ok(__cordl_ret.into())
     }
+    pub fn WrapThrownObject(
+        thrown: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WrapThrownObject", (thrown))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
         hasResult: bool,

@@ -30,6 +30,49 @@ impl std::ops::DerefMut for crate::System::Threading::Tasks::TaskFactory {
 impl crate::System::Threading::Tasks::TaskFactory {
     #[cfg(feature = "System+Threading+Tasks+TaskFactory+CompleteOnInvokePromise")]
     pub type CompleteOnInvokePromise = crate::System::Threading::Tasks::TaskFactory_CompleteOnInvokePromise;
+    pub fn CheckCreationOptions(
+        creationOptions: crate::System::Threading::Tasks::TaskCreationOptions,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckCreationOptions", (creationOptions))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CheckFromAsyncOptions(
+        creationOptions: crate::System::Threading::Tasks::TaskCreationOptions,
+        hasBeginMethod: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckFromAsyncOptions", (creationOptions, hasBeginMethod))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CheckMultiTaskContinuationOptions(
+        continuationOptions: crate::System::Threading::Tasks::TaskContinuationOptions,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckMultiTaskContinuationOptions", (continuationOptions))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CommonCWAnyLogic(
+        tasks: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                *mut crate::System::Threading::Tasks::Task,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut crate::System::Threading::Tasks::Task,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut crate::System::Threading::Tasks::Task,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CommonCWAnyLogic", (tasks))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn FromAsync_Func_4_Il2CppObject0<TArg1>(
         &mut self,
         beginMethod: quest_hook::libil2cpp::Gc<

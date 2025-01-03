@@ -26,6 +26,13 @@ impl crate::UnityEngine::UIElements::Length {
     pub const k_MaxValue: f32 = 8388608f32;
     #[cfg(feature = "UnityEngine+UIElements+Length+Unit")]
     pub type Unit = crate::UnityEngine::UIElements::Length_Unit;
+    pub fn Auto() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::Length,
+    > {
+        let __cordl_ret: crate::UnityEngine::UIElements::Length = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Auto", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Equals_Il2CppObject1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -70,6 +77,20 @@ impl crate::UnityEngine::UIElements::Length {
             "IsNone",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn None() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::Length,
+    > {
+        let __cordl_ret: crate::UnityEngine::UIElements::Length = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("None", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Percent(
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Length> {
+        let __cordl_ret: crate::UnityEngine::UIElements::Length = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Percent", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn ToString(
@@ -133,6 +154,29 @@ impl crate::UnityEngine::UIElements::Length {
             "get_value",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        lhs: crate::UnityEngine::UIElements::Length,
+        rhs: crate::UnityEngine::UIElements::Length,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit(
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Length> {
+        let __cordl_ret: crate::UnityEngine::UIElements::Length = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        lhs: crate::UnityEngine::UIElements::Length,
+        rhs: crate::UnityEngine::UIElements::Length,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (lhs, rhs))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_value(

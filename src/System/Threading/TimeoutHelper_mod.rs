@@ -23,7 +23,21 @@ impl std::ops::DerefMut for crate::System::Threading::TimeoutHelper {
     }
 }
 #[cfg(feature = "System+Threading+TimeoutHelper")]
-impl crate::System::Threading::TimeoutHelper {}
+impl crate::System::Threading::TimeoutHelper {
+    pub fn GetTime() -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetTime", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UpdateTimeOut(
+        startTime: u32,
+        originalWaitMillisecondsTimeout: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UpdateTimeOut", (startTime, originalWaitMillisecondsTimeout))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Threading+TimeoutHelper")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Threading::TimeoutHelper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

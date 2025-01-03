@@ -24,6 +24,18 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Bcpg::RevocationReason {
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+RevocationReason")]
 impl crate::Org::BouncyCastle::Bcpg::RevocationReason {
+    pub fn CreateData(
+        reason: crate::Org::BouncyCastle::Bcpg::RevocationReasonTag,
+        description: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateData", (reason, description))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetRevocationDescription(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

@@ -42,6 +42,39 @@ impl crate::System::TypedReference {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn InternalMakeTypedReference(
+        result: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        flds: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::System::IntPtr>,
+        >,
+        lastFieldType: quest_hook::libil2cpp::Gc<crate::System::RuntimeType>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "InternalMakeTypedReference",
+                (result, target, flds, lastFieldType),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MakeTypedReference(
+        target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        flds: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Reflection::FieldInfo>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::System::TypedReference> {
+        let __cordl_ret: crate::System::TypedReference = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MakeTypedReference", (target, flds))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetTypedReference(
+        target: crate::System::TypedReference,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetTypedReference", (target, value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_IsNull(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

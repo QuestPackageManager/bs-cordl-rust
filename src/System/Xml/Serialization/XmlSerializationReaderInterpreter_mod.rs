@@ -64,7 +64,7 @@ impl crate::System::Xml::Serialization::XmlSerializationReaderInterpreter {
             .invoke("CopyEnumerableList", (source, dest))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CreateInstance(
+    pub fn CreateInstance_Type1(
         &mut self,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
@@ -76,6 +76,18 @@ impl crate::System::Xml::Serialization::XmlSerializationReaderInterpreter {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
         > = __cordl_object.invoke("CreateInstance", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateInstance__cordl_bool0(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        nonPublic: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateInstance", (_cordl_type, nonPublic))?;
         Ok(__cordl_ret.into())
     }
     pub fn CreateList(

@@ -85,6 +85,24 @@ impl crate::UnityEngine::InputSystem::Joystick {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_all() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
+            *mut crate::UnityEngine::InputSystem::Joystick,
+        >,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
+            *mut crate::UnityEngine::InputSystem::Joystick,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_all", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_current() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Joystick>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Joystick,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_current", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_hatswitch(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -141,6 +159,13 @@ impl crate::UnityEngine::InputSystem::Joystick {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
         > = __cordl_object.invoke("get_twist", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_current(
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Joystick>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_current", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_hatswitch(

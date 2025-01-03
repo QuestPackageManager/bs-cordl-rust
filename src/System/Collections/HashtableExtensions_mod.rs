@@ -23,7 +23,21 @@ impl std::ops::DerefMut for crate::System::Collections::HashtableExtensions {
     }
 }
 #[cfg(feature = "System+Collections+HashtableExtensions")]
-impl crate::System::Collections::HashtableExtensions {}
+impl crate::System::Collections::HashtableExtensions {
+    pub fn TryGetValue<T>(
+        table: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        value: quest_hook::libil2cpp::ByRefMut<T>,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryGetValue", (table, key, value))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Collections+HashtableExtensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Collections::HashtableExtensions {

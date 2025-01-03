@@ -144,6 +144,18 @@ impl crate::Org::BouncyCastle::X509::X509V2AttributeCertificate {
         > = __cordl_object.invoke("GetIssuerUniqueID", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetObject(
+        input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::AttributeCertificate,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::AttributeCertificate,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetObject", (input))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetSignature(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

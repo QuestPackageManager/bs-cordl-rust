@@ -24,7 +24,53 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::BackgroundPropertyHe
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+BackgroundPropertyHelper")]
-impl crate::UnityEngine::UIElements::BackgroundPropertyHelper {}
+impl crate::UnityEngine::UIElements::BackgroundPropertyHelper {
+    pub fn ConvertScaleModeToBackgroundPosition(
+        scaleMode: crate::UnityEngine::ScaleMode,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::BackgroundPosition,
+    > {
+        let __cordl_ret: crate::UnityEngine::UIElements::BackgroundPosition = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ConvertScaleModeToBackgroundPosition", (scaleMode))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ConvertScaleModeToBackgroundRepeat(
+        scaleMode: crate::UnityEngine::ScaleMode,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::BackgroundRepeat,
+    > {
+        let __cordl_ret: crate::UnityEngine::UIElements::BackgroundRepeat = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ConvertScaleModeToBackgroundRepeat", (scaleMode))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ConvertScaleModeToBackgroundSize(
+        scaleMode: crate::UnityEngine::ScaleMode,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::BackgroundSize> {
+        let __cordl_ret: crate::UnityEngine::UIElements::BackgroundSize = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ConvertScaleModeToBackgroundSize", (scaleMode))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ResolveUnityBackgroundScaleMode(
+        backgroundPositionX: crate::UnityEngine::UIElements::BackgroundPosition,
+        backgroundPositionY: crate::UnityEngine::UIElements::BackgroundPosition,
+        backgroundRepeat: crate::UnityEngine::UIElements::BackgroundRepeat,
+        backgroundSize: crate::UnityEngine::UIElements::BackgroundSize,
+        valid: quest_hook::libil2cpp::ByRefMut<bool>,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ScaleMode> {
+        let __cordl_ret: crate::UnityEngine::ScaleMode = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ResolveUnityBackgroundScaleMode",
+                (
+                    backgroundPositionX,
+                    backgroundPositionY,
+                    backgroundRepeat,
+                    backgroundSize,
+                    valid,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+BackgroundPropertyHelper")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::BackgroundPropertyHelper {

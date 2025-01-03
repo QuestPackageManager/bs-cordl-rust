@@ -83,6 +83,29 @@ impl crate::System::IO::DirectoryInfo {
             .invoke("Init", (originalPath, fullPath, fileName, isNormalized))?;
         Ok(__cordl_ret.into())
     }
+    pub fn InternalEnumerateInfos(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        searchPattern: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        searchTarget: crate::System::IO::SearchTarget,
+        options: quest_hook::libil2cpp::Gc<crate::System::IO::EnumerationOptions>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::System::IO::FileSystemInfo,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::System::IO::FileSystemInfo,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "InternalEnumerateInfos",
+                (path, searchPattern, searchTarget, options),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_Il2CppString0(
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

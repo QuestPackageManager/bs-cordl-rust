@@ -87,6 +87,17 @@ impl crate::System::Globalization::NumberFormatInfo {
         > = __cordl_object.invoke("GetFormat", (formatType))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetInstance(
+        formatProvider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Globalization::NumberFormatInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Globalization::NumberFormatInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetInstance", (formatProvider))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -134,6 +145,38 @@ impl crate::System::Globalization::NumberFormatInfo {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnSerializing", (ctx))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReadOnly(
+        nfi: quest_hook::libil2cpp::Gc<crate::System::Globalization::NumberFormatInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Globalization::NumberFormatInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Globalization::NumberFormatInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("ReadOnly", (nfi))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ValidateParseStyleFloatingPoint(
+        style: crate::System::Globalization::NumberStyles,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ValidateParseStyleFloatingPoint", (style))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ValidateParseStyleInteger(
+        style: crate::System::Globalization::NumberStyles,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ValidateParseStyleInteger", (style))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn VerifyGroupSeparator(
+        groupSep: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        propertyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("VerifyGroupSeparator", (groupSep, propertyName))?;
         Ok(__cordl_ret.into())
     }
     pub fn VerifyWritable(
@@ -238,6 +281,24 @@ impl crate::System::Globalization::NumberFormatInfo {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("get_CurrencySymbol", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_CurrentInfo() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Globalization::NumberFormatInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Globalization::NumberFormatInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_CurrentInfo", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_InvariantInfo() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Globalization::NumberFormatInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Globalization::NumberFormatInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_InvariantInfo", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_IsReadOnly(&mut self) -> quest_hook::libil2cpp::Result<bool> {

@@ -113,6 +113,22 @@ impl crate::UnityEngine::ProBuilder::HandleConstraint2D {
             .invoke(".ctor", (x, y))?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Equality(
+        a: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::HandleConstraint2D>,
+        b: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::HandleConstraint2D>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        a: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::HandleConstraint2D>,
+        b: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::HandleConstraint2D>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+HandleConstraint2D")]
 impl quest_hook::libil2cpp::ObjectType

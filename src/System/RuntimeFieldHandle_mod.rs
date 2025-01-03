@@ -54,6 +54,53 @@ impl crate::System::RuntimeFieldHandle {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn SetValue(
+        field: quest_hook::libil2cpp::Gc<crate::System::Reflection::RuntimeFieldInfo>,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        fieldType: quest_hook::libil2cpp::Gc<crate::System::RuntimeType>,
+        fieldAttr: crate::System::Reflection::FieldAttributes,
+        declaringType: quest_hook::libil2cpp::Gc<crate::System::RuntimeType>,
+        domainInitialized: quest_hook::libil2cpp::ByRefMut<bool>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "SetValue",
+                (
+                    field,
+                    obj,
+                    value,
+                    fieldType,
+                    fieldAttr,
+                    declaringType,
+                    domainInitialized,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetValueDirect(
+        field: quest_hook::libil2cpp::Gc<crate::System::Reflection::RuntimeFieldInfo>,
+        fieldType: quest_hook::libil2cpp::Gc<crate::System::RuntimeType>,
+        pTypedRef: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        contextType: quest_hook::libil2cpp::Gc<crate::System::RuntimeType>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "SetValueDirect",
+                (field, fieldType, pTypedRef, value, contextType),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetValueInternal(
+        fi: quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetValueInternal", (fi, obj, value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor_IntPtr0(
         &mut self,
         v: crate::System::IntPtr,

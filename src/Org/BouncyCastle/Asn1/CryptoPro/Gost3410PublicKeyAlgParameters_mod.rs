@@ -30,6 +30,32 @@ for crate::Org::BouncyCastle::Asn1::CryptoPro::Gost3410PublicKeyAlgParameters {
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+CryptoPro+Gost3410PublicKeyAlgParameters")]
 impl crate::Org::BouncyCastle::Asn1::CryptoPro::Gost3410PublicKeyAlgParameters {
+    pub fn GetInstance_Asn1TaggedObject__cordl_bool0(
+        obj: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1TaggedObject>,
+        explicitly: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::CryptoPro::Gost3410PublicKeyAlgParameters,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::CryptoPro::Gost3410PublicKeyAlgParameters,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetInstance", (obj, explicitly))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetInstance_Il2CppObject1(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::CryptoPro::Gost3410PublicKeyAlgParameters,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::CryptoPro::Gost3410PublicKeyAlgParameters,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_Asn1Sequence2(
         seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

@@ -372,6 +372,15 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::ArraySegment_1<T> {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_Empty() -> quest_hook::libil2cpp::Result<crate::System::ArraySegment_1<T>>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: crate::System::ArraySegment_1<T> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_Empty", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_Offset(&mut self) -> quest_hook::libil2cpp::Result<i32>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type

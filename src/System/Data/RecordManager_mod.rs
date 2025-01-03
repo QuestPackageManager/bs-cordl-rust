@@ -96,6 +96,11 @@ impl crate::System::Data::RecordManager {
             .invoke_void(".ctor", (table))?;
         Ok(__cordl_object.into())
     }
+    pub fn NewCapacity(capacity: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("NewCapacity", (capacity))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn NewRecordBase(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

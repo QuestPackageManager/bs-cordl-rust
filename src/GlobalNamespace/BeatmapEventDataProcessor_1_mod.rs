@@ -59,6 +59,21 @@ impl<
             .invoke("ProcessBeforeDeleteData", (nodeToDelete))?;
         Ok(__cordl_ret.into())
     }
+    pub fn ProcessBeforeDeleteEventDataCommon(
+        nodeToDelete: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::LinkedListNode_1<
+                *mut crate::GlobalNamespace::BeatmapDataItem,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ProcessBeforeDeleteEventDataCommon", (nodeToDelete))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ProcessBeforeDeleteEventDataInternal(
         &mut self,
         nodeToDelete: quest_hook::libil2cpp::Gc<
@@ -95,6 +110,21 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ProcessInsertedData", (insertedNode))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ProcessInsertedEventDataCommon(
+        insertedNode: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::LinkedListNode_1<
+                *mut crate::GlobalNamespace::BeatmapDataItem,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ProcessInsertedEventDataCommon", (insertedNode))?;
         Ok(__cordl_ret.into())
     }
     pub fn ProcessInsertedEventDataInternal(

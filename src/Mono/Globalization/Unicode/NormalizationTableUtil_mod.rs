@@ -24,7 +24,18 @@ impl std::ops::DerefMut for crate::Mono::Globalization::Unicode::NormalizationTa
     }
 }
 #[cfg(feature = "Mono+Globalization+Unicode+NormalizationTableUtil")]
-impl crate::Mono::Globalization::Unicode::NormalizationTableUtil {}
+impl crate::Mono::Globalization::Unicode::NormalizationTableUtil {
+    pub fn MapIdx(cp: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MapIdx", (cp))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn PropIdx(cp: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PropIdx", (cp))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "Mono+Globalization+Unicode+NormalizationTableUtil")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Globalization::Unicode::NormalizationTableUtil {

@@ -76,6 +76,63 @@ impl crate::Org::BouncyCastle::Asn1::Asn1InputStream {
         > = __cordl_object.invoke("CreateDerSet", (dIn))?;
         Ok(__cordl_ret.into())
     }
+    pub fn CreatePrimitiveDerObject(
+        tagNo: i32,
+        defIn: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DefiniteLengthInputStream,
+        >,
+        tmpBuffers: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Object>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1Object,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreatePrimitiveDerObject", (tagNo, defIn, tmpBuffers))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FindLimit(
+        input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FindLimit", (input))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetBmpCharBuffer(
+        defIn: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DefiniteLengthInputStream,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<char>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetBmpCharBuffer", (defIn))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetBuffer(
+        defIn: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DefiniteLengthInputStream,
+        >,
+        tmpBuffers: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetBuffer", (defIn, tmpBuffers))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_Il2CppArray2(
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -104,6 +161,15 @@ impl crate::Org::BouncyCastle::Asn1::Asn1InputStream {
             .invoke_void(".ctor", (inputStream, limit))?;
         Ok(__cordl_object.into())
     }
+    pub fn ReadLength(
+        s: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+        limit: i32,
+        isParsing: bool,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadLength", (s, limit, isParsing))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ReadObject(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -115,6 +181,14 @@ impl crate::Org::BouncyCastle::Asn1::Asn1InputStream {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Asn1Object,
         > = __cordl_object.invoke("ReadObject", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReadTagNumber(
+        s: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+        tag: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadTagNumber", (s, tag))?;
         Ok(__cordl_ret.into())
     }
     pub fn ReadVector(

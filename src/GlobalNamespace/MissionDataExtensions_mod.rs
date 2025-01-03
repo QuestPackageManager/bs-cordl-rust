@@ -23,7 +23,19 @@ impl std::ops::DerefMut for crate::GlobalNamespace::MissionDataExtensions {
     }
 }
 #[cfg(feature = "MissionDataExtensions")]
-impl crate::GlobalNamespace::MissionDataExtensions {}
+impl crate::GlobalNamespace::MissionDataExtensions {
+    pub fn Name(
+        comparisonType: crate::GlobalNamespace::MissionObjective_ReferenceValueComparisonType,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Name", (comparisonType))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "MissionDataExtensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MissionDataExtensions {

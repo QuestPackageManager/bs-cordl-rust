@@ -30,6 +30,18 @@ for crate::Org::BouncyCastle::Asn1::Pkcs::CertificationRequestInfo {
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Pkcs+CertificationRequestInfo")]
 impl crate::Org::BouncyCastle::Asn1::Pkcs::CertificationRequestInfo {
+    pub fn GetInstance(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Pkcs::CertificationRequestInfo,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Pkcs::CertificationRequestInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_Asn1Sequence1(
         seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -65,6 +77,13 @@ impl crate::Org::BouncyCastle::Asn1::Pkcs::CertificationRequestInfo {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Asn1Object,
         > = __cordl_object.invoke("ToAsn1Object", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ValidateAttributes(
+        attributes: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Set>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ValidateAttributes", (attributes))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_Asn1Sequence1(

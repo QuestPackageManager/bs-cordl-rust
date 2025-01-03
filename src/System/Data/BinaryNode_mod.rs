@@ -132,6 +132,20 @@ impl crate::System::Data::BinaryNode {
         > = __cordl_object.invoke("Eval", (row, version))?;
         Ok(__cordl_ret.into())
     }
+    pub fn Eval_ExpressionNode_DataRow_DataRowVersion_Il2CppArray3(
+        expr: quest_hook::libil2cpp::Gc<crate::System::Data::ExpressionNode>,
+        row: quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
+        version: crate::System::Data::DataRowVersion,
+        recordNos: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Eval", (expr, row, version, recordNos))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Eval_Il2CppArray2(
         &mut self,
         recordNos: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
@@ -157,6 +171,13 @@ impl crate::System::Data::BinaryNode {
         );
         let __cordl_ret: crate::System::Data::BinaryNode_DataTypePrecedence = __cordl_object
             .invoke("GetPrecedence", (storageType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPrecedenceType(
+        code: crate::System::Data::BinaryNode_DataTypePrecedence,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Data::Common::StorageType> {
+        let __cordl_ret: crate::System::Data::Common::StorageType = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPrecedenceType", (code))?;
         Ok(__cordl_ret.into())
     }
     pub fn HasLocalAggregate(&mut self) -> quest_hook::libil2cpp::Result<bool> {

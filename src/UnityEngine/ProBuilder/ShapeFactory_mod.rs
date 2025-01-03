@@ -23,7 +23,47 @@ impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::ShapeFactory {
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+ShapeFactory")]
-impl crate::UnityEngine::ProBuilder::ShapeFactory {}
+impl crate::UnityEngine::ProBuilder::ShapeFactory {
+    pub fn Instantiate_PivotLocation0<T>(
+        pivotType: crate::UnityEngine::ProBuilder::PivotLocation,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::ProBuilderMesh,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Instantiate", (pivotType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Instantiate_Shape_PivotLocation2(
+        shape: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Shapes::Shape>,
+        pivotType: crate::UnityEngine::ProBuilder::PivotLocation,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::ProBuilderMesh,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Instantiate", (shape, pivotType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Instantiate_Type_PivotLocation1(
+        shapeType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        pivotType: crate::UnityEngine::ProBuilder::PivotLocation,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::ProBuilderMesh,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Instantiate", (shapeType, pivotType))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+ProBuilder+ShapeFactory")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ProBuilder::ShapeFactory {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

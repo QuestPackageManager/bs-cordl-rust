@@ -96,6 +96,15 @@ impl crate::UnityEngine::UIElements::StyleFontDefinition {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Implicit(
+        f: crate::UnityEngine::UIElements::FontDefinition,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::StyleFontDefinition,
+    > {
+        let __cordl_ret: crate::UnityEngine::UIElements::StyleFontDefinition = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (f))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleFontDefinition")]
 impl AsRef<

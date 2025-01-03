@@ -51,6 +51,19 @@ impl crate::HMUI::ModalView {
             .invoke("CreateBlocker", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetModalRootTransform(
+        transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+        canvas: quest_hook::libil2cpp::ByRefMut<*mut crate::UnityEngine::Canvas>,
+        viewController: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::HMUI::ViewControllerBase,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetModalRootTransform", (transform, canvas, viewController))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn HandleBlockerButtonClicked(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

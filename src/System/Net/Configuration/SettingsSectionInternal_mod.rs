@@ -51,6 +51,16 @@ impl crate::System::Net::Configuration::SettingsSectionInternal {
         let __cordl_ret: bool = __cordl_object.invoke("get_Ipv6Enabled", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_Section() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Net::Configuration::SettingsSectionInternal,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Configuration::SettingsSectionInternal,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_Section", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "System+Net+Configuration+SettingsSectionInternal")]
 impl quest_hook::libil2cpp::ObjectType

@@ -23,7 +23,31 @@ impl std::ops::DerefMut for crate::Oculus::Platform::UserAgeCategory {
     }
 }
 #[cfg(feature = "Oculus+Platform+UserAgeCategory")]
-impl crate::Oculus::Platform::UserAgeCategory {}
+impl crate::Oculus::Platform::UserAgeCategory {
+    pub fn Get() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Request_1<
+                *mut crate::Oculus::Platform::Models::UserAccountAgeCategory,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Request_1<
+                *mut crate::Oculus::Platform::Models::UserAccountAgeCategory,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Get", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Report(
+        age_category: crate::Oculus::Platform::AppAgeCategory,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Report", (age_category))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "Oculus+Platform+UserAgeCategory")]
 impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Platform::UserAgeCategory {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

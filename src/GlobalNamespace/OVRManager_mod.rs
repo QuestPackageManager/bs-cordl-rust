@@ -144,6 +144,13 @@ impl crate::GlobalNamespace::OVRManager {
             .invoke("Awake", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn CreateMixedRealityCaptureConfigurationFileFromCmd() -> quest_hook::libil2cpp::Result<
+        bool,
+    > {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateMixedRealityCaptureConfigurationFileFromCmd", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn DeregisterEventListener(
         &mut self,
         listener: quest_hook::libil2cpp::Gc<
@@ -157,6 +164,13 @@ impl crate::GlobalNamespace::OVRManager {
             .invoke("DeregisterEventListener", (listener))?;
         Ok(__cordl_ret.into())
     }
+    pub fn FindMainCamera() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FindMainCamera", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn FixedUpdate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -165,6 +179,57 @@ impl crate::GlobalNamespace::OVRManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("FixedUpdate", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCurrentDisplaySubsystem() -> quest_hook::libil2cpp::Result<Blacklisted> {
+        let __cordl_ret: Blacklisted = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCurrentDisplaySubsystem", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCurrentDisplaySubsystemDescriptor() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::XRDisplaySubsystemDescriptor>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::XR::XRDisplaySubsystemDescriptor,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCurrentDisplaySubsystemDescriptor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCurrentInputSubsystem() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::XRInputSubsystem>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::XR::XRInputSubsystem,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCurrentInputSubsystem", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetOpenVRControllerOffset(
+        hand: crate::UnityEngine::XR::XRNode,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPose> {
+        let __cordl_ret: crate::GlobalNamespace::OVRPose = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetOpenVRControllerOffset", (hand))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPassthroughCapabilities() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OVRManager_PassthroughCapabilities,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OVRManager_PassthroughCapabilities,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPassthroughCapabilities", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetSpaceWarp() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSpaceWarp", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn HasInsightPassthroughInitFailed() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("HasInsightPassthroughInitFailed", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn InitOVRManager(
@@ -197,6 +262,48 @@ impl crate::GlobalNamespace::OVRManager {
             .invoke("Initialize", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn InitializeInsightPassthrough() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InitializeInsightPassthrough", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsAdaptiveResSupportedByEngine() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsAdaptiveResSupportedByEngine", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsInsightPassthroughInitPending() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsInsightPassthroughInitPending", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsInsightPassthroughInitialized() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsInsightPassthroughInitialized", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsInsightPassthroughSupported() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsInsightPassthroughSupported", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsMultimodalHandsControllersSupported() -> quest_hook::libil2cpp::Result<
+        bool,
+    > {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsMultimodalHandsControllersSupported", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsPassthroughRecommended() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsPassthroughRecommended", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsUnityAlphaOrBetaVersion() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsUnityAlphaOrBetaVersion", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn LateUpdate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -205,6 +312,18 @@ impl crate::GlobalNamespace::OVRManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("LateUpdate", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LoadMixedRealityCaptureConfigurationFileFromCmd() -> quest_hook::libil2cpp::Result<
+        bool,
+    > {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LoadMixedRealityCaptureConfigurationFileFromCmd", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MixedRealityEnabledFromCmd() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MixedRealityEnabledFromCmd", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -991,6 +1110,27 @@ impl crate::GlobalNamespace::OVRManager {
             .invoke("OnDisable", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn OnPermissionGranted(
+        permissionId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("OnPermissionGranted", (permissionId))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn PassthroughInitializedOrPending(
+        state: crate::GlobalNamespace::OVRManager_PassthroughInitializationState,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PassthroughInitializedOrPending", (state))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn PlatformUIConfirmQuit() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PlatformUIConfirmQuit", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn RegisterEventListener(
         &mut self,
         listener: quest_hook::libil2cpp::Gc<
@@ -1014,6 +1154,18 @@ impl crate::GlobalNamespace::OVRManager {
             .invoke("ReturnToLauncher", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn SetColorScaleAndOffset(
+        colorScale: crate::UnityEngine::Vector4,
+        colorOffset: crate::UnityEngine::Vector4,
+        applyToAllLayers: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "SetColorScaleAndOffset",
+                (colorScale, colorOffset, applyToAllLayers),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn SetCurrentXRDevice(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1022,6 +1174,67 @@ impl crate::GlobalNamespace::OVRManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetCurrentXRDevice", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetDepthSubmission(enable: bool) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetDepthSubmission", (enable))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetOpenVRLocalPose(
+        leftPos: crate::UnityEngine::Vector3,
+        rightPos: crate::UnityEngine::Vector3,
+        leftRot: crate::UnityEngine::Quaternion,
+        rightRot: crate::UnityEngine::Quaternion,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetOpenVRLocalPose", (leftPos, rightPos, leftRot, rightRot))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetSpaceWarp(
+        enabled: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetSpaceWarp", (enabled))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ShutdownInsightPassthrough() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ShutdownInsightPassthrough", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StaticInitializeMixedRealityCapture(
+        configuration: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StaticInitializeMixedRealityCapture", (configuration))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StaticShutdownMixedRealityCapture(
+        configuration: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StaticShutdownMixedRealityCapture", (configuration))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StaticUpdateMixedRealityCapture(
+        configuration: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
+        >,
+        gameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        trackingOrigin: crate::GlobalNamespace::OVRManager_TrackingOrigin,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "StaticUpdateMixedRealityCapture",
+                (configuration, gameObject, trackingOrigin),
+            )?;
         Ok(__cordl_ret.into())
     }
     pub fn Update(
@@ -1044,6 +1257,23 @@ impl crate::GlobalNamespace::OVRManager {
             .invoke("UpdateHMDEvents", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn UpdateInsightPassthrough(
+        shouldBeEnabled: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UpdateInsightPassthrough", (shouldBeEnabled))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UseDirectCompositionFromCmd() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UseDirectCompositionFromCmd", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UseExternalCompositionFromCmd() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UseExternalCompositionFromCmd", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1054,6 +1284,207 @@ impl crate::GlobalNamespace::OVRManager {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn add_AudioInChanged(
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("add_AudioInChanged", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn add_AudioOutChanged(
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("add_AudioOutChanged", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn add_DisplayRefreshRateChanged(
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_2<f32, f32>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("add_DisplayRefreshRateChanged", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn add_HMDAcquired(
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("add_HMDAcquired", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn add_HMDLost(
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("add_HMDLost", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn add_HMDMounted(
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("add_HMDMounted", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn add_HMDUnmounted(
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("add_HMDUnmounted", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn add_HSWDismissed(
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("add_HSWDismissed", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn add_InputFocusAcquired(
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("add_InputFocusAcquired", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn add_InputFocusLost(
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("add_InputFocusLost", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn add_SceneCaptureComplete(
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_2<u64, bool>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("add_SceneCaptureComplete", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn add_ShareSpacesComplete(
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<
+                u64,
+                crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("add_ShareSpacesComplete", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn add_SpaceEraseComplete(
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_4<
+                u64,
+                bool,
+                crate::System::Guid,
+                crate::GlobalNamespace::OVRPlugin_SpaceStorageLocation,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("add_SpaceEraseComplete", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn add_SpaceListSaveComplete(
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<
+                u64,
+                crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("add_SpaceListSaveComplete", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn add_SpaceQueryComplete(
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_2<u64, bool>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("add_SpaceQueryComplete", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn add_SpaceQueryResults(
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<u64>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("add_SpaceQueryResults", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn add_SpaceSaveComplete(
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_4<
+                u64,
+                crate::GlobalNamespace::OVRSpace,
+                bool,
+                crate::System::Guid,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("add_SpaceSaveComplete", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn add_SpaceSetComponentStatusComplete(
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_6<
+                u64,
+                bool,
+                crate::GlobalNamespace::OVRSpace,
+                crate::System::Guid,
+                crate::GlobalNamespace::OVRPlugin_SpaceComponentType,
+                bool,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("add_SpaceSetComponentStatusComplete", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn add_SpatialAnchorCreateComplete(
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_4<
+                u64,
+                bool,
+                crate::GlobalNamespace::OVRSpace,
+                crate::System::Guid,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("add_SpatialAnchorCreateComplete", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn add_TrackingAcquired(
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("add_TrackingAcquired", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn add_TrackingLost(
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("add_TrackingLost", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn add_VrFocusAcquired(
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("add_VrFocusAcquired", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn add_VrFocusLost(
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("add_VrFocusLost", (value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_IsSimultaneousHandsAndControllersSupported(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -1062,6 +1493,45 @@ impl crate::GlobalNamespace::OVRManager {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("get_IsSimultaneousHandsAndControllersSupported", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_audioInId() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_audioInId", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_audioOutId() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_audioOutId", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_batteryLevel() -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_batteryLevel", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_batteryStatus() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_batteryStatus", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_batteryTemperature() -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_batteryTemperature", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_boundary() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBoundary>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OVRBoundary,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_boundary", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_chromatic(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -1079,6 +1549,90 @@ impl crate::GlobalNamespace::OVRManager {
         );
         let __cordl_ret: crate::GlobalNamespace::OVRManager_ColorSpace = __cordl_object
             .invoke("get_colorGamut", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_cpuLevel() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_cpuLevel", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_display() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRDisplay>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRDisplay> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_display", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_eyeFovPremultipliedAlphaModeEnabled() -> quest_hook::libil2cpp::Result<
+        bool,
+    > {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_eyeFovPremultipliedAlphaModeEnabled", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_eyeTextureFormat() -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::OVRManager_EyeTextureFormat,
+    > {
+        let __cordl_ret: crate::GlobalNamespace::OVRManager_EyeTextureFormat = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_eyeTextureFormat", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_eyeTrackedFoveatedRenderingEnabled() -> quest_hook::libil2cpp::Result<
+        bool,
+    > {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_eyeTrackedFoveatedRenderingEnabled", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_eyeTrackedFoveatedRenderingSupported() -> quest_hook::libil2cpp::Result<
+        bool,
+    > {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_eyeTrackedFoveatedRenderingSupported", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_fixedFoveatedRenderingLevel() -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::OVRManager_FixedFoveatedRenderingLevel,
+    > {
+        let __cordl_ret: crate::GlobalNamespace::OVRManager_FixedFoveatedRenderingLevel = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_fixedFoveatedRenderingLevel", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_fixedFoveatedRenderingSupported() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_fixedFoveatedRenderingSupported", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_foveatedRenderingLevel() -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::OVRManager_FoveatedRenderingLevel,
+    > {
+        let __cordl_ret: crate::GlobalNamespace::OVRManager_FoveatedRenderingLevel = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_foveatedRenderingLevel", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_gpuLevel() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_gpuLevel", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_gpuUtilLevel() -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_gpuUtilLevel", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_gpuUtilSupported() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_gpuUtilSupported", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_hasInputFocus() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_hasInputFocus", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_hasVrFocus() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_hasVrFocus", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_headPoseRelativeOffsetRotation(
@@ -1099,6 +1653,23 @@ impl crate::GlobalNamespace::OVRManager {
         );
         let __cordl_ret: crate::UnityEngine::Vector3 = __cordl_object
             .invoke("get_headPoseRelativeOffsetTranslation", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_instance() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRManager>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRManager> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_instance", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_isHmdPresent() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_isHmdPresent", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_isPowerSavingActive() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_isPowerSavingActive", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_isSupportedPlatform(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -1132,6 +1703,36 @@ impl crate::GlobalNamespace::OVRManager {
             .invoke("get_nativeColorGamut", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_pluginVersion() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Version>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Version> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_pluginVersion", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_profile() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRProfile>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRProfile> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_profile", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_runtimeSettings() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRRuntimeSettings>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OVRRuntimeSettings,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_runtimeSettings", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_sdkVersion() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Version>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Version> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_sdkVersion", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_sharpenType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -1144,6 +1745,46 @@ impl crate::GlobalNamespace::OVRManager {
             .invoke("get_sharpenType", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_suggestedCpuPerfLevel() -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::OVRManager_ProcessorPerformanceLevel,
+    > {
+        let __cordl_ret: crate::GlobalNamespace::OVRManager_ProcessorPerformanceLevel = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_suggestedCpuPerfLevel", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_suggestedGpuPerfLevel() -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::OVRManager_ProcessorPerformanceLevel,
+    > {
+        let __cordl_ret: crate::GlobalNamespace::OVRManager_ProcessorPerformanceLevel = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_suggestedGpuPerfLevel", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_systemHeadsetType() -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::OVRManager_SystemHeadsetType,
+    > {
+        let __cordl_ret: crate::GlobalNamespace::OVRManager_SystemHeadsetType = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_systemHeadsetType", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_tiledMultiResLevel() -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::OVRManager_TiledMultiResLevel,
+    > {
+        let __cordl_ret: crate::GlobalNamespace::OVRManager_TiledMultiResLevel = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_tiledMultiResLevel", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_tiledMultiResSupported() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_tiledMultiResSupported", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_tracker() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRTracker>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRTracker> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_tracker", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_trackingOriginType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -1154,6 +1795,30 @@ impl crate::GlobalNamespace::OVRManager {
         );
         let __cordl_ret: crate::GlobalNamespace::OVRManager_TrackingOrigin = __cordl_object
             .invoke("get_trackingOriginType", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_useDynamicFixedFoveatedRendering() -> quest_hook::libil2cpp::Result<
+        bool,
+    > {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_useDynamicFixedFoveatedRendering", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_useDynamicFoveatedRendering() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_useDynamicFoveatedRendering", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_utilitiesVersion() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Version>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Version> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_utilitiesVersion", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_volumeLevel() -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_volumeLevel", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_vsyncCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -1187,6 +1852,214 @@ impl crate::GlobalNamespace::OVRManager {
         let __cordl_ret: u64 = __cordl_object.invoke("get_xrSession", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn remove_AudioInChanged(
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("remove_AudioInChanged", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_AudioOutChanged(
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("remove_AudioOutChanged", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_DisplayRefreshRateChanged(
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_2<f32, f32>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("remove_DisplayRefreshRateChanged", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_HMDAcquired(
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("remove_HMDAcquired", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_HMDLost(
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("remove_HMDLost", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_HMDMounted(
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("remove_HMDMounted", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_HMDUnmounted(
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("remove_HMDUnmounted", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_HSWDismissed(
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("remove_HSWDismissed", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_InputFocusAcquired(
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("remove_InputFocusAcquired", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_InputFocusLost(
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("remove_InputFocusLost", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_SceneCaptureComplete(
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_2<u64, bool>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("remove_SceneCaptureComplete", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_ShareSpacesComplete(
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<
+                u64,
+                crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("remove_ShareSpacesComplete", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_SpaceEraseComplete(
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_4<
+                u64,
+                bool,
+                crate::System::Guid,
+                crate::GlobalNamespace::OVRPlugin_SpaceStorageLocation,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("remove_SpaceEraseComplete", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_SpaceListSaveComplete(
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<
+                u64,
+                crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("remove_SpaceListSaveComplete", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_SpaceQueryComplete(
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_2<u64, bool>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("remove_SpaceQueryComplete", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_SpaceQueryResults(
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<u64>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("remove_SpaceQueryResults", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_SpaceSaveComplete(
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_4<
+                u64,
+                crate::GlobalNamespace::OVRSpace,
+                bool,
+                crate::System::Guid,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("remove_SpaceSaveComplete", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_SpaceSetComponentStatusComplete(
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_6<
+                u64,
+                bool,
+                crate::GlobalNamespace::OVRSpace,
+                crate::System::Guid,
+                crate::GlobalNamespace::OVRPlugin_SpaceComponentType,
+                bool,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("remove_SpaceSetComponentStatusComplete", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_SpatialAnchorCreateComplete(
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_4<
+                u64,
+                bool,
+                crate::GlobalNamespace::OVRSpace,
+                crate::System::Guid,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("remove_SpatialAnchorCreateComplete", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_TrackingAcquired(
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("remove_TrackingAcquired", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_TrackingLost(
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("remove_TrackingLost", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_VrFocusAcquired(
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("remove_VrFocusAcquired", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_VrFocusLost(
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("remove_VrFocusLost", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_boundary(
+        value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBoundary>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_boundary", (value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn set_chromatic(
         &mut self,
         value: bool,
@@ -1209,6 +2082,69 @@ impl crate::GlobalNamespace::OVRManager {
             .invoke("set_colorGamut", (value))?;
         Ok(__cordl_ret.into())
     }
+    pub fn set_cpuLevel(
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_cpuLevel", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_display(
+        value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRDisplay>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_display", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_eyeFovPremultipliedAlphaModeEnabled(
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_eyeFovPremultipliedAlphaModeEnabled", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_eyeTextureFormat(
+        value: crate::GlobalNamespace::OVRManager_EyeTextureFormat,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_eyeTextureFormat", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_eyeTrackedFoveatedRenderingEnabled(
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_eyeTrackedFoveatedRenderingEnabled", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_fixedFoveatedRenderingLevel(
+        value: crate::GlobalNamespace::OVRManager_FixedFoveatedRenderingLevel,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_fixedFoveatedRenderingLevel", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_foveatedRenderingLevel(
+        value: crate::GlobalNamespace::OVRManager_FoveatedRenderingLevel,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_foveatedRenderingLevel", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_gpuLevel(
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_gpuLevel", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_hasVrFocus(
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_hasVrFocus", (value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn set_headPoseRelativeOffsetRotation(
         &mut self,
         value: crate::UnityEngine::Vector3,
@@ -1229,6 +2165,20 @@ impl crate::GlobalNamespace::OVRManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_headPoseRelativeOffsetTranslation", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_instance(
+        value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRManager>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_instance", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_isHmdPresent(
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_isHmdPresent", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_isSupportedPlatform(
@@ -1264,6 +2214,13 @@ impl crate::GlobalNamespace::OVRManager {
             .invoke("set_monoscopic", (value))?;
         Ok(__cordl_ret.into())
     }
+    pub fn set_runtimeSettings(
+        value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRRuntimeSettings>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_runtimeSettings", (value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn set_sharpenType(
         &mut self,
         value: crate::GlobalNamespace::OVRPlugin_LayerSharpenType,
@@ -1275,6 +2232,34 @@ impl crate::GlobalNamespace::OVRManager {
             .invoke("set_sharpenType", (value))?;
         Ok(__cordl_ret.into())
     }
+    pub fn set_suggestedCpuPerfLevel(
+        value: crate::GlobalNamespace::OVRManager_ProcessorPerformanceLevel,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_suggestedCpuPerfLevel", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_suggestedGpuPerfLevel(
+        value: crate::GlobalNamespace::OVRManager_ProcessorPerformanceLevel,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_suggestedGpuPerfLevel", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_tiledMultiResLevel(
+        value: crate::GlobalNamespace::OVRManager_TiledMultiResLevel,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_tiledMultiResLevel", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_tracker(
+        value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRTracker>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_tracker", (value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn set_trackingOriginType(
         &mut self,
         value: crate::GlobalNamespace::OVRManager_TrackingOrigin,
@@ -1284,6 +2269,20 @@ impl crate::GlobalNamespace::OVRManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_trackingOriginType", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_useDynamicFixedFoveatedRendering(
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_useDynamicFixedFoveatedRendering", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_useDynamicFoveatedRendering(
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_useDynamicFoveatedRendering", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_vsyncCount(

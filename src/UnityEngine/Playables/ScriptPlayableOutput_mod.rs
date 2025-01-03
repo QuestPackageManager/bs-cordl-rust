@@ -22,6 +22,16 @@ for crate::UnityEngine::Playables::ScriptPlayableOutput {
 }
 #[cfg(feature = "UnityEngine+Playables+ScriptPlayableOutput")]
 impl crate::UnityEngine::Playables::ScriptPlayableOutput {
+    pub fn Create(
+        graph: crate::UnityEngine::Playables::PlayableGraph,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Playables::ScriptPlayableOutput,
+    > {
+        let __cordl_ret: crate::UnityEngine::Playables::ScriptPlayableOutput = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (graph, name))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetHandle(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -43,6 +53,20 @@ impl crate::UnityEngine::Playables::ScriptPlayableOutput {
             ".ctor",
             (handle),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Null() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Playables::ScriptPlayableOutput,
+    > {
+        let __cordl_ret: crate::UnityEngine::Playables::ScriptPlayableOutput = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_Null", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit(
+        output: crate::UnityEngine::Playables::ScriptPlayableOutput,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::PlayableOutput> {
+        let __cordl_ret: crate::UnityEngine::Playables::PlayableOutput = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (output))?;
         Ok(__cordl_ret.into())
     }
 }

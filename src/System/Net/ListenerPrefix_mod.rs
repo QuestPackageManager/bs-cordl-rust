@@ -30,6 +30,13 @@ impl std::ops::DerefMut for crate::System::Net::ListenerPrefix {
 }
 #[cfg(feature = "System+Net+ListenerPrefix")]
 impl crate::System::Net::ListenerPrefix {
+    pub fn CheckUri(
+        uri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckUri", (uri))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Equals(
         &mut self,
         o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

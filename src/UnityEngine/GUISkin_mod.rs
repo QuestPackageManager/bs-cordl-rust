@@ -77,6 +77,11 @@ impl crate::UnityEngine::GUISkin {
             .invoke("BuildStyleCache", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn CleanupRoots() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CleanupRoots", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn FindStyle(
         &mut self,
         styleName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -190,6 +195,13 @@ impl crate::UnityEngine::GUISkin {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GUIStyle>,
         > = __cordl_object.invoke("get_customStyles", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_error() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_error", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_font(

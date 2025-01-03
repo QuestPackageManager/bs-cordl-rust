@@ -23,7 +23,18 @@ impl std::ops::DerefMut for crate::UnityEngine::AsyncInstantiateOperationHelper 
     }
 }
 #[cfg(feature = "UnityEngine+AsyncInstantiateOperationHelper")]
-impl crate::UnityEngine::AsyncInstantiateOperationHelper {}
+impl crate::UnityEngine::AsyncInstantiateOperationHelper {
+    pub fn SetAsyncInstantiateOperationResult(
+        op: quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncInstantiateOperation>,
+        result: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetAsyncInstantiateOperationResult", (op, result))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+AsyncInstantiateOperationHelper")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::AsyncInstantiateOperationHelper {

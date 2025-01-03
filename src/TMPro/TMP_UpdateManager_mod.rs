@@ -144,6 +144,48 @@ impl crate::TMPro::TMP_UpdateManager {
             .invoke("OnCameraPreCull", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn RegisterTextElementForCullingUpdate(
+        element: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RegisterTextElementForCullingUpdate", (element))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RegisterTextElementForGraphicRebuild(
+        element: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RegisterTextElementForGraphicRebuild", (element))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RegisterTextElementForLayoutRebuild(
+        element: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RegisterTextElementForLayoutRebuild", (element))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RegisterTextObjectForUpdate(
+        textObject: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RegisterTextObjectForUpdate", (textObject))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UnRegisterTextElementForRebuild(
+        element: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UnRegisterTextElementForRebuild", (element))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UnRegisterTextObjectForUpdate(
+        textObject: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UnRegisterTextObjectForUpdate", (textObject))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -152,6 +194,13 @@ impl crate::TMPro::TMP_UpdateManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_instance() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_UpdateManager>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_UpdateManager> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_instance", ())?;
         Ok(__cordl_ret.into())
     }
 }

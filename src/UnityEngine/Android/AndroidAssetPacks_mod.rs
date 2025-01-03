@@ -36,6 +36,15 @@ impl crate::UnityEngine::Android::AndroidAssetPacks {
         feature = "UnityEngine+Android+AndroidAssetPacks+AssetPackManagerStatusQueryCallback"
     )]
     pub type AssetPackManagerStatusQueryCallback = crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerStatusQueryCallback;
+    pub fn GetAssetPackManager() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AndroidJavaObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AndroidJavaObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetAssetPackManager", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+Android+AndroidAssetPacks")]
 impl quest_hook::libil2cpp::ObjectType

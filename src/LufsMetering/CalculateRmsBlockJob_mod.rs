@@ -23,6 +23,13 @@ for crate::LufsMetering::CalculateRmsBlockJob {
 }
 #[cfg(feature = "LufsMetering+CalculateRmsBlockJob")]
 impl crate::LufsMetering::CalculateRmsBlockJob {
+    pub fn Create(
+        inputData: crate::Unity::Collections::NativeArray_1<f32>,
+    ) -> quest_hook::libil2cpp::Result<crate::LufsMetering::CalculateRmsBlockJob> {
+        let __cordl_ret: crate::LufsMetering::CalculateRmsBlockJob = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (inputData))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Execute(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -23,7 +23,28 @@ impl std::ops::DerefMut for crate::BeatmapDataLoaderVersion4::IndexFilterConvert
     }
 }
 #[cfg(feature = "BeatmapDataLoaderVersion4+IndexFilterConverter")]
-impl crate::BeatmapDataLoaderVersion4::IndexFilterConverter {}
+impl crate::BeatmapDataLoaderVersion4::IndexFilterConverter {
+    pub fn Convert(
+        indexFilter: crate::BeatmapSaveDataVersion4::IndexFilter,
+        groupSize: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IndexFilter>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IndexFilter,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Convert", (indexFilter, groupSize))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsIndexFilterValid(
+        indexFilter: crate::BeatmapSaveDataVersion4::IndexFilter,
+        groupSize: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsIndexFilterValid", (indexFilter, groupSize))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "BeatmapDataLoaderVersion4+IndexFilterConverter")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatmapDataLoaderVersion4::IndexFilterConverter {

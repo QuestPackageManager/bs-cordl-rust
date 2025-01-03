@@ -213,6 +213,16 @@ impl crate::UnityEngine::Tilemaps::Tilemap {
             .invoke("HandleSyncTileCallback", (syncTiles))?;
         Ok(__cordl_ret.into())
     }
+    pub fn HasPositionsChangedCallback() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("HasPositionsChangedCallback", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn HasSyncTileCallback() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("HasSyncTileCallback", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn HasTile(
         &mut self,
         position: crate::UnityEngine::Vector3Int,

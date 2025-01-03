@@ -32,6 +32,80 @@ impl crate::UnityEngine::EnumDataUtility {
     pub type __c__DisplayClass2_0 = crate::UnityEngine::EnumDataUtility___c__DisplayClass2_0;
     #[cfg(feature = "UnityEngine+EnumDataUtility+__c__DisplayClass8_0")]
     pub type __c__DisplayClass8_0 = crate::UnityEngine::EnumDataUtility___c__DisplayClass8_0;
+    pub fn CheckObsoleteAddition(
+        field: quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
+        cachedType: crate::UnityEngine::EnumDataUtility_CachedType,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckObsoleteAddition", (field, cachedType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EnumNameFromEnumField(
+        field: quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
+        nicifyName: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<
+                *mut quest_hook::libil2cpp::Il2CppString,
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EnumNameFromEnumField", (field, nicifyName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EnumTooltipFromEnumField(
+        field: quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EnumTooltipFromEnumField", (field))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCachedEnumData(
+        enumType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        cachedType: crate::UnityEngine::EnumDataUtility_CachedType,
+        nicifyName: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<
+                *mut quest_hook::libil2cpp::Il2CppString,
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::EnumData> {
+        let __cordl_ret: crate::UnityEngine::EnumData = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCachedEnumData", (enumType, cachedType, nicifyName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn HandleInspectorOrderAttribute(
+        enumType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        enumData: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::EnumData>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("HandleInspectorOrderAttribute", (enumType, enumData))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _EnumNameFromEnumField_g__NicifyName_8_0(
+        _cordl_fixed_empty_name_whitespace: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::EnumDataUtility___c__DisplayClass8_0,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "<EnumNameFromEnumField>g__NicifyName|8_0",
+                (_cordl_fixed_empty_name_whitespace),
+            )?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+EnumDataUtility")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::EnumDataUtility {

@@ -54,4 +54,20 @@ impl crate::UnityEngine::TextCore::Text::HighlightState {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Equality(
+        lhs: crate::UnityEngine::TextCore::Text::HighlightState,
+        rhs: crate::UnityEngine::TextCore::Text::HighlightState,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        lhs: crate::UnityEngine::TextCore::Text::HighlightState,
+        rhs: crate::UnityEngine::TextCore::Text::HighlightState,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
 }

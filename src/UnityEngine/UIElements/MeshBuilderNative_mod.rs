@@ -30,6 +30,223 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
     pub type NativeColorPage = crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage;
     #[cfg(feature = "UnityEngine+UIElements+MeshBuilderNative+NativeRectParams")]
     pub type NativeRectParams = crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams;
+    pub fn MakeBorder(
+        borderParams: crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams,
+        posZ: f32,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::MeshWriteDataInterface,
+    > {
+        let __cordl_ret: crate::UnityEngine::UIElements::MeshWriteDataInterface = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MakeBorder", (borderParams, posZ))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MakeBorder_Injected(
+        borderParams: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::UIElements::MeshBuilderNative_NativeBorderParams,
+        >,
+        posZ: f32,
+        ret: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::UIElements::MeshWriteDataInterface,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MakeBorder_Injected", (borderParams, posZ, ret))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MakeSolidRect(
+        rectParams: crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams,
+        posZ: f32,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::MeshWriteDataInterface,
+    > {
+        let __cordl_ret: crate::UnityEngine::UIElements::MeshWriteDataInterface = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MakeSolidRect", (rectParams, posZ))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MakeSolidRect_Injected(
+        rectParams: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams,
+        >,
+        posZ: f32,
+        ret: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::UIElements::MeshWriteDataInterface,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MakeSolidRect_Injected", (rectParams, posZ, ret))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MakeTexturedRect(
+        rectParams: crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams,
+        posZ: f32,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::MeshWriteDataInterface,
+    > {
+        let __cordl_ret: crate::UnityEngine::UIElements::MeshWriteDataInterface = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MakeTexturedRect", (rectParams, posZ))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MakeTexturedRect_Injected(
+        rectParams: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::UIElements::MeshBuilderNative_NativeRectParams,
+        >,
+        posZ: f32,
+        ret: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::UIElements::MeshWriteDataInterface,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MakeTexturedRect_Injected", (rectParams, posZ, ret))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MakeVectorGraphics9SliceBackground(
+        svgVertices: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::UIElements::Vertex>,
+        >,
+        svgIndices: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u16>>,
+        svgWidth: f32,
+        svgHeight: f32,
+        targetRect: crate::UnityEngine::Rect,
+        sliceLTRB: crate::UnityEngine::Vector4,
+        tint: crate::UnityEngine::Color,
+        colorPage: crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage,
+        settingIndexOffset: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::MeshWriteDataInterface,
+    > {
+        let __cordl_ret: crate::UnityEngine::UIElements::MeshWriteDataInterface = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "MakeVectorGraphics9SliceBackground",
+                (
+                    svgVertices,
+                    svgIndices,
+                    svgWidth,
+                    svgHeight,
+                    targetRect,
+                    sliceLTRB,
+                    tint,
+                    colorPage,
+                    settingIndexOffset,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MakeVectorGraphics9SliceBackground_Injected(
+        svgVertices: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::UIElements::Vertex>,
+        >,
+        svgIndices: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u16>>,
+        svgWidth: f32,
+        svgHeight: f32,
+        targetRect: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Rect>,
+        sliceLTRB: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector4>,
+        tint: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Color>,
+        colorPage: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage,
+        >,
+        settingIndexOffset: i32,
+        ret: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::UIElements::MeshWriteDataInterface,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "MakeVectorGraphics9SliceBackground_Injected",
+                (
+                    svgVertices,
+                    svgIndices,
+                    svgWidth,
+                    svgHeight,
+                    targetRect,
+                    sliceLTRB,
+                    tint,
+                    colorPage,
+                    settingIndexOffset,
+                    ret,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MakeVectorGraphicsStretchBackground(
+        svgVertices: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::UIElements::Vertex>,
+        >,
+        svgIndices: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u16>>,
+        svgWidth: f32,
+        svgHeight: f32,
+        targetRect: crate::UnityEngine::Rect,
+        sourceUV: crate::UnityEngine::Rect,
+        scaleMode: crate::UnityEngine::ScaleMode,
+        tint: crate::UnityEngine::Color,
+        colorPage: crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage,
+        settingIndexOffset: i32,
+        finalVertexCount: quest_hook::libil2cpp::ByRefMut<i32>,
+        finalIndexCount: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::MeshWriteDataInterface,
+    > {
+        let __cordl_ret: crate::UnityEngine::UIElements::MeshWriteDataInterface = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "MakeVectorGraphicsStretchBackground",
+                (
+                    svgVertices,
+                    svgIndices,
+                    svgWidth,
+                    svgHeight,
+                    targetRect,
+                    sourceUV,
+                    scaleMode,
+                    tint,
+                    colorPage,
+                    settingIndexOffset,
+                    finalVertexCount,
+                    finalIndexCount,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MakeVectorGraphicsStretchBackground_Injected(
+        svgVertices: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::UIElements::Vertex>,
+        >,
+        svgIndices: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u16>>,
+        svgWidth: f32,
+        svgHeight: f32,
+        targetRect: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Rect>,
+        sourceUV: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Rect>,
+        scaleMode: crate::UnityEngine::ScaleMode,
+        tint: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Color>,
+        colorPage: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage,
+        >,
+        settingIndexOffset: i32,
+        finalVertexCount: quest_hook::libil2cpp::ByRefMut<i32>,
+        finalIndexCount: quest_hook::libil2cpp::ByRefMut<i32>,
+        ret: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::UIElements::MeshWriteDataInterface,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "MakeVectorGraphicsStretchBackground_Injected",
+                (
+                    svgVertices,
+                    svgIndices,
+                    svgWidth,
+                    svgHeight,
+                    targetRect,
+                    sourceUV,
+                    scaleMode,
+                    tint,
+                    colorPage,
+                    settingIndexOffset,
+                    finalVertexCount,
+                    finalIndexCount,
+                    ret,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+UIElements+MeshBuilderNative")]
 impl quest_hook::libil2cpp::ObjectType

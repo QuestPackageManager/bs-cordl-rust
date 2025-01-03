@@ -164,6 +164,22 @@ impl crate::Zenject::GameObjectCreationParameters {
             .invoke("get_Rotation", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Equality(
+        left: quest_hook::libil2cpp::Gc<crate::Zenject::GameObjectCreationParameters>,
+        right: quest_hook::libil2cpp::Gc<crate::Zenject::GameObjectCreationParameters>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        left: quest_hook::libil2cpp::Gc<crate::Zenject::GameObjectCreationParameters>,
+        right: quest_hook::libil2cpp::Gc<crate::Zenject::GameObjectCreationParameters>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn set_GroupName(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

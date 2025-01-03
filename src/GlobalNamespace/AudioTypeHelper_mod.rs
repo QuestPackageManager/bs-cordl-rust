@@ -23,7 +23,15 @@ impl std::ops::DerefMut for crate::GlobalNamespace::AudioTypeHelper {
     }
 }
 #[cfg(feature = "AudioTypeHelper")]
-impl crate::GlobalNamespace::AudioTypeHelper {}
+impl crate::GlobalNamespace::AudioTypeHelper {
+    pub fn GetAudioTypeFromPath(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::AudioType> {
+        let __cordl_ret: crate::UnityEngine::AudioType = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetAudioTypeFromPath", (path))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "AudioTypeHelper")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::AudioTypeHelper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

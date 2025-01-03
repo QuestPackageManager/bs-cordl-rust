@@ -45,6 +45,22 @@ impl crate::Unity::Mathematics::Geometry::MinMaxAABB {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn CreateFromCenterAndExtents(
+        center: crate::Unity::Mathematics::float3,
+        extents: crate::Unity::Mathematics::float3,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::Geometry::MinMaxAABB> {
+        let __cordl_ret: crate::Unity::Mathematics::Geometry::MinMaxAABB = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateFromCenterAndExtents", (center, extents))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateFromCenterAndHalfExtents(
+        center: crate::Unity::Mathematics::float3,
+        halfExtents: crate::Unity::Mathematics::float3,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::Geometry::MinMaxAABB> {
+        let __cordl_ret: crate::Unity::Mathematics::Geometry::MinMaxAABB = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateFromCenterAndHalfExtents", (center, halfExtents))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Encapsulate_MinMaxAABB0(
         &mut self,
         aabb: crate::Unity::Mathematics::Geometry::MinMaxAABB,

@@ -26,6 +26,15 @@ for crate::System::Net::NetworkInformation::AixNetworkInterfaceAPI {
 }
 #[cfg(feature = "System+Net+NetworkInformation+AixNetworkInterfaceAPI")]
 impl crate::System::Net::NetworkInformation::AixNetworkInterfaceAPI {
+    pub fn ByteArrayCopy(
+        dst: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        src: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        elements: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ByteArrayCopy", (dst, src, elements))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetAllNetworkInterfaces(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -60,6 +69,62 @@ impl crate::System::Net::NetworkInformation::AixNetworkInterfaceAPI {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn close(fd: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("close", (fd))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ioctl_i32_AixIoctlRequest_ByRefMut0(
+        fd: i32,
+        request: crate::System::Net::NetworkInformation::AixIoctlRequest,
+        arg: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ioctl", (fd, request, arg))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ioctl_i32_AixIoctlRequest_ByRefMut1(
+        fd: i32,
+        request: crate::System::Net::NetworkInformation::AixIoctlRequest,
+        arg: quest_hook::libil2cpp::ByRefMut<
+            crate::System::Net::NetworkInformation::AixStructs::ifconf,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ioctl", (fd, request, arg))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ioctl_i32_AixIoctlRequest_ByRefMut2(
+        fd: i32,
+        request: crate::System::Net::NetworkInformation::AixIoctlRequest,
+        arg: quest_hook::libil2cpp::ByRefMut<
+            crate::System::Net::NetworkInformation::AixStructs::ifreq_flags,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ioctl", (fd, request, arg))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ioctl_i32_AixIoctlRequest_ByRefMut3(
+        fd: i32,
+        request: crate::System::Net::NetworkInformation::AixIoctlRequest,
+        arg: quest_hook::libil2cpp::ByRefMut<
+            crate::System::Net::NetworkInformation::AixStructs::ifreq_mtu,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ioctl", (fd, request, arg))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn socket(
+        family: crate::System::Net::NetworkInformation::AixAddressFamily,
+        _cordl_type: i32,
+        protocol: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("socket", (family, _cordl_type, protocol))?;
         Ok(__cordl_ret.into())
     }
 }

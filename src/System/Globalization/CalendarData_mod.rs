@@ -72,6 +72,50 @@ impl std::ops::DerefMut for crate::System::Globalization::CalendarData {
 #[cfg(feature = "System+Globalization+CalendarData")]
 impl crate::System::Globalization::CalendarData {
     pub const MAX_CALENDARS: i32 = 23i32;
+    pub fn CalendarIdToCultureName(
+        calendarId: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CalendarIdToCultureName", (calendarId))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCalendarData(
+        calendarId: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Globalization::CalendarData>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Globalization::CalendarData,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCalendarData", (calendarId))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetJapaneseEnglishEraNames() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetJapaneseEnglishEraNames", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetJapaneseEraNames() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetJapaneseEraNames", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn InitializeAbbreviatedEraNames(
         &mut self,
         localeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -147,6 +191,20 @@ impl crate::System::Globalization::CalendarData {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("fill_calendar_data", (localeName, datetimeIndex))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn nativeGetCalendarData(
+        data: quest_hook::libil2cpp::Gc<crate::System::Globalization::CalendarData>,
+        localeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        calendarId: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("nativeGetCalendarData", (data, localeName, calendarId))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn nativeGetTwoDigitYearMax(calID: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("nativeGetTwoDigitYearMax", (calID))?;
         Ok(__cordl_ret.into())
     }
 }

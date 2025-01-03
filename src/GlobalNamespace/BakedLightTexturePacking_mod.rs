@@ -25,6 +25,20 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BakedLightTexturePacking {
 #[cfg(feature = "BakedLightTexturePacking")]
 impl crate::GlobalNamespace::BakedLightTexturePacking {
     pub const kBakedLightTexturePackingShaderName: &'static str = "Hidden/BakedLightTexturePacking";
+    pub fn PackTextures(
+        textures: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                *mut crate::UnityEngine::RenderTexture,
+            >,
+        >,
+        descriptor: crate::UnityEngine::RenderTextureDescriptor,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PackTextures", (textures, descriptor))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "BakedLightTexturePacking")]
 impl quest_hook::libil2cpp::ObjectType

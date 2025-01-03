@@ -63,6 +63,14 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::JZlib {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn version() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("version", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+Zlib+JZlib")]
 impl quest_hook::libil2cpp::ObjectType

@@ -80,6 +80,11 @@ impl crate::UnityEngine::UIElements::Panel {
             .invoke("CreateMarkers", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn DefaultTimeSinceStartupMs() -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DefaultTimeSinceStartupMs", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Dispose(
         &mut self,
         disposing: bool,
@@ -115,6 +120,17 @@ impl crate::UnityEngine::UIElements::Panel {
         > = __cordl_object.invoke("GetUpdater", (phase))?;
         Ok(__cordl_ret.into())
     }
+    pub fn LoadResource(
+        pathName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        dpiScaling: f32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LoadResource", (pathName, _cordl_type, dpiScaling))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         ownerObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
         contextType: crate::UnityEngine::UIElements::ContextType,
@@ -140,6 +156,24 @@ impl crate::UnityEngine::UIElements::Panel {
             .invoke("OnVersionChanged", (ve, versionChangeType))?;
         Ok(__cordl_ret.into())
     }
+    pub fn PerformPick(
+        root: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        point: crate::UnityEngine::Vector2,
+        picked: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::UIElements::VisualElement,
+            >,
+        >,
+        includeIgnoredElement: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::VisualElement,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PerformPick", (root, point, picked, includeIgnoredElement))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Pick(
         &mut self,
         point: crate::UnityEngine::Vector2,
@@ -154,7 +188,7 @@ impl crate::UnityEngine::UIElements::Panel {
         > = __cordl_object.invoke("Pick", (point))?;
         Ok(__cordl_ret.into())
     }
-    pub fn PickAll(
+    pub fn PickAll_Vector2_List_1_1(
         &mut self,
         point: crate::UnityEngine::Vector2,
         picked: quest_hook::libil2cpp::Gc<
@@ -173,6 +207,24 @@ impl crate::UnityEngine::UIElements::Panel {
         > = __cordl_object.invoke("PickAll", (point, picked))?;
         Ok(__cordl_ret.into())
     }
+    pub fn PickAll_VisualElement_Vector2_List_1__cordl_bool0(
+        root: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        point: crate::UnityEngine::Vector2,
+        picked: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::UIElements::VisualElement,
+            >,
+        >,
+        includeIgnoredElement: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::VisualElement,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PickAll", (root, point, picked, includeIgnoredElement))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Repaint(
         &mut self,
         e: quest_hook::libil2cpp::Gc<crate::UnityEngine::Event>,
@@ -182,6 +234,11 @@ impl crate::UnityEngine::UIElements::Panel {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Repaint", (e))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TimeSinceStartupMs() -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TimeSinceStartupMs", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn UpdateAnimations(
@@ -234,6 +291,13 @@ impl crate::UnityEngine::UIElements::Panel {
             .invoke("ValidateLayout", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn _Pick_g__PixelOf_101_0(
+        p: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2Int> {
+        let __cordl_ret: crate::UnityEngine::Vector2Int = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("<Pick>g__PixelOf|101_0", (p))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
         ownerObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
@@ -264,6 +328,15 @@ impl crate::UnityEngine::UIElements::Panel {
         );
         let __cordl_ret: crate::UnityEngine::EventInterests = __cordl_object
             .invoke("get_IMGUIEventInterests", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_TimeSinceStartup() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TimeMsFunction>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::TimeMsFunction,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_TimeSinceStartup", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_atlas(
@@ -333,6 +406,15 @@ impl crate::UnityEngine::UIElements::Panel {
             self,
         );
         let __cordl_ret: u32 = __cordl_object.invoke("get_hierarchyVersion", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_loadResourceFunc() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::LoadResourceFunction>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::LoadResourceFunction,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_loadResourceFunc", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_name(

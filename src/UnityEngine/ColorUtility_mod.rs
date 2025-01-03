@@ -23,7 +23,19 @@ impl std::ops::DerefMut for crate::UnityEngine::ColorUtility {
     }
 }
 #[cfg(feature = "UnityEngine+ColorUtility")]
-impl crate::UnityEngine::ColorUtility {}
+impl crate::UnityEngine::ColorUtility {
+    pub fn ToHtmlStringRGB(
+        color: crate::UnityEngine::Color,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToHtmlStringRGB", (color))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+ColorUtility")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ColorUtility {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

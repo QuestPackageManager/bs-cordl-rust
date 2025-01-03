@@ -58,6 +58,11 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::Tree {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn bi_reverse(code: i32, len: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("bi_reverse", (code, len))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn build_tree(
         &mut self,
         s: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Zlib::Deflate>,
@@ -69,6 +74,11 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::Tree {
             .invoke("build_tree", (s))?;
         Ok(__cordl_ret.into())
     }
+    pub fn d_code(dist: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("d_code", (dist))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn gen_bitlen(
         &mut self,
         s: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Zlib::Deflate>,
@@ -78,6 +88,15 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::Tree {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("gen_bitlen", (s))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn gen_codes(
+        tree: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i16>>,
+        max_code: i32,
+        bl_count: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i16>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("gen_codes", (tree, max_code, bl_count))?;
         Ok(__cordl_ret.into())
     }
 }

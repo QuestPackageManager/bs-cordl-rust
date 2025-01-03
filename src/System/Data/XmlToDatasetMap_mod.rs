@@ -230,6 +230,13 @@ impl crate::System::Data::XmlToDatasetMap {
             .invoke("HandleSpecialColumn", (col, nameTable, columns))?;
         Ok(__cordl_ret.into())
     }
+    pub fn IsMappedColumn(
+        c: quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsMappedColumn", (c))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_DataSet_XmlNameTable0(
         dataSet: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
         nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,

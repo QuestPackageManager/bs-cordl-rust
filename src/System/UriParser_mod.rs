@@ -35,6 +35,15 @@ impl crate::System::UriParser {
     pub type BuiltInUriParser = crate::GlobalNamespace::UriParser_BuiltInUriParser;
     #[cfg(feature = "System+UriParser+UriQuirksVersion")]
     pub type UriQuirksVersion = crate::System::UriParser_UriQuirksVersion;
+    pub fn FindOrFetchAsUnknownV1Syntax(
+        lwrCaseScheme: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::UriParser>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::UriParser> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FindOrFetchAsUnknownV1Syntax", (lwrCaseScheme))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetComponents(
         &mut self,
         uri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
@@ -49,6 +58,15 @@ impl crate::System::UriParser {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("GetComponents", (uri, components, format))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetSyntax(
+        lwrCaseScheme: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::UriParser>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::UriParser> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSyntax", (lwrCaseScheme))?;
         Ok(__cordl_ret.into())
     }
     pub fn InFact(
@@ -299,6 +317,11 @@ impl crate::System::UriParser {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("get_SchemeName", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_ShouldUseLegacyV2Quirks() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_ShouldUseLegacyV2Quirks", ())?;
         Ok(__cordl_ret.into())
     }
 }

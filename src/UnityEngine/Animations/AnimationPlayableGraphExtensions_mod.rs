@@ -26,7 +26,21 @@ for crate::UnityEngine::Animations::AnimationPlayableGraphExtensions {
     }
 }
 #[cfg(feature = "UnityEngine+Animations+AnimationPlayableGraphExtensions")]
-impl crate::UnityEngine::Animations::AnimationPlayableGraphExtensions {}
+impl crate::UnityEngine::Animations::AnimationPlayableGraphExtensions {
+    pub fn InternalCreateAnimationOutput(
+        graph: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableGraph,
+        >,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        handle: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableOutputHandle,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InternalCreateAnimationOutput", (graph, name, handle))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+Animations+AnimationPlayableGraphExtensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Animations::AnimationPlayableGraphExtensions {

@@ -25,6 +25,60 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Tls::DtlsProtocol 
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsProtocol")]
 impl crate::Org::BouncyCastle::Crypto::Tls::DtlsProtocol {
+    pub fn ApplyMaxFragmentLengthExtension(
+        recordLayer: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::DtlsRecordLayer,
+        >,
+        maxFragmentLength: i16,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ApplyMaxFragmentLengthExtension",
+                (recordLayer, maxFragmentLength),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EvaluateMaxFragmentLengthExtension(
+        resumedSession: bool,
+        clientExtensions: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IDictionary,
+        >,
+        serverExtensions: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IDictionary,
+        >,
+        alertDescription: u8,
+    ) -> quest_hook::libil2cpp::Result<i16> {
+        let __cordl_ret: i16 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "EvaluateMaxFragmentLengthExtension",
+                (resumedSession, clientExtensions, serverExtensions, alertDescription),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GenerateCertificate(
+        certificate: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::Certificate,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GenerateCertificate", (certificate))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GenerateSupplementalData(
+        supplementalData: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GenerateSupplementalData", (supplementalData))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         secureRandom: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Security::SecureRandom,
@@ -48,6 +102,17 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsProtocol {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ProcessFinished", (body, expected_verify_data))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ValidateSelectedCipherSuite(
+        selectedCipherSuite: i32,
+        alertDescription: u8,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ValidateSelectedCipherSuite",
+                (selectedCipherSuite, alertDescription),
+            )?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

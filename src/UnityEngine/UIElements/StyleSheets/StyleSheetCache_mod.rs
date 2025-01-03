@@ -32,6 +32,51 @@ impl crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache {
         feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKeyComparer"
     )]
     pub type SheetHandleKeyComparer = crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKeyComparer;
+    pub fn GetPropertyId(
+        rule: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleRule>,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+    > {
+        let __cordl_ret: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPropertyId", (rule, index))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPropertyIds_StyleRule1(
+        rule: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleRule>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPropertyIds", (rule))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPropertyIds_StyleSheet_i32_0(
+        sheet: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheet>,
+        ruleIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPropertyIds", (sheet, ruleIndex))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache")]
 impl quest_hook::libil2cpp::ObjectType

@@ -42,6 +42,15 @@ impl crate::System::Linq::Expressions::BinaryExpression {
         > = __cordl_object.invoke("Accept", (visitor))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetBinaryOpFromAssignmentOp(
+        op: crate::System::Linq::Expressions::ExpressionType,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Linq::Expressions::ExpressionType,
+    > {
+        let __cordl_ret: crate::System::Linq::Expressions::ExpressionType = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetBinaryOpFromAssignmentOp", (op))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetConversion(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -66,6 +75,13 @@ impl crate::System::Linq::Expressions::BinaryExpression {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Reflection::MethodInfo,
         > = __cordl_object.invoke("GetMethod", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsOpAssignment(
+        op: crate::System::Linq::Expressions::ExpressionType,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsOpAssignment", (op))?;
         Ok(__cordl_ret.into())
     }
     pub fn New(

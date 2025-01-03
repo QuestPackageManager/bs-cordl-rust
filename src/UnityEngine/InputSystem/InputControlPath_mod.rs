@@ -42,6 +42,411 @@ impl crate::UnityEngine::InputSystem::InputControlPath {
     pub type _Parse_d__34 = crate::UnityEngine::InputSystem::InputControlPath__Parse_d__34;
     #[cfg(feature = "UnityEngine+InputSystem+InputControlPath+__c")]
     pub type __c = crate::UnityEngine::InputSystem::InputControlPath___c;
+    pub fn CleanSlashes(
+        pathComponent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CleanSlashes", (pathComponent))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Combine(
+        parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Combine", (parent, path))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ControlLayoutMatchesPathComponent(
+        controlItem: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem,
+        >,
+        parser: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::InputSystem::InputControlPath_PathParser,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ControlLayoutMatchesPathComponent", (controlItem, parser))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FindControlLayoutRecursive_Il2CppString0(
+        parser: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::InputSystem::InputControlPath_PathParser,
+        >,
+        layoutName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FindControlLayoutRecursive", (parser, layoutName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FindControlLayoutRecursive_InputControlLayout1(
+        parser: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::InputSystem::InputControlPath_PathParser,
+        >,
+        layout: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Layouts::InputControlLayout,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FindControlLayoutRecursive", (parser, layout))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MatchByUsageAtDeviceRootRecursive<TControl>(
+        device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        indexInPath: i32,
+        matches: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::InputSystem::InputControlList_1<TControl>,
+        >,
+        matchMultiple: bool,
+    ) -> quest_hook::libil2cpp::Result<TControl>
+    where
+        TControl: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: TControl = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "MatchByUsageAtDeviceRootRecursive",
+                (device, path, indexInPath, matches, matchMultiple),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MatchChildrenRecursive<TControl>(
+        control: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl,
+        >,
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        indexInPath: i32,
+        matches: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::InputSystem::InputControlList_1<TControl>,
+        >,
+        matchMultiple: bool,
+    ) -> quest_hook::libil2cpp::Result<TControl>
+    where
+        TControl: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: TControl = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "MatchChildrenRecursive",
+                (control, path, indexInPath, matches, matchMultiple),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MatchControlComponent(
+        expectedControlComponent: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent,
+        >,
+        controlItem: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem,
+        >,
+        matchAlias: bool,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "MatchControlComponent",
+                (expectedControlComponent, controlItem, matchAlias),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MatchControlsRecursive<TControl>(
+        control: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl,
+        >,
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        indexInPath: i32,
+        matches: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::InputSystem::InputControlList_1<TControl>,
+        >,
+        matchMultiple: bool,
+    ) -> quest_hook::libil2cpp::Result<TControl>
+    where
+        TControl: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: TControl = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "MatchControlsRecursive",
+                (control, path, indexInPath, matches, matchMultiple),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MatchPathComponent(
+        component: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        indexInPath: quest_hook::libil2cpp::ByRefMut<i32>,
+        componentType: crate::UnityEngine::InputSystem::InputControlPath_PathComponentType,
+        startIndexInComponent: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "MatchPathComponent",
+                (component, path, indexInPath, componentType, startIndexInComponent),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Matches(
+        expected: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        control: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Matches", (expected, control))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MatchesPrefix(
+        expected: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        control: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MatchesPrefix", (expected, control))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MatchesRecursive(
+        parser: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::InputSystem::InputControlPath_PathParser,
+        >,
+        currentControl: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl,
+        >,
+        prefixOnly: bool,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MatchesRecursive", (parser, currentControl, prefixOnly))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Parse(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Parse", (path))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn PathComponentCanYieldMultipleMatches(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        indexInPath: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PathComponentCanYieldMultipleMatches", (path, indexInPath))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StringMatches(
+        str: crate::UnityEngine::InputSystem::Utilities::Substring,
+        matchTo: crate::UnityEngine::InputSystem::Utilities::InternedString,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StringMatches", (str, matchTo))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToHumanReadableString_ByRefMut_ByRefMut_InputControlPath_HumanReadableStringOptions_InputControl1(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        deviceLayoutName: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+        controlPath: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+        options: crate::UnityEngine::InputSystem::InputControlPath_HumanReadableStringOptions,
+        control: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ToHumanReadableString",
+                (path, deviceLayoutName, controlPath, options, control),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToHumanReadableString_InputControlPath_HumanReadableStringOptions_InputControl0(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        options: crate::UnityEngine::InputSystem::InputControlPath_HumanReadableStringOptions,
+        control: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToHumanReadableString", (path, options, control))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryFindChild_InputControl_Il2CppString_i32_0(
+        control: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl,
+        >,
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        indexInPath: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryFindChild", (control, path, indexInPath))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryFindChild_InputControl_Il2CppString_i32_1<TControl>(
+        control: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl,
+        >,
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        indexInPath: i32,
+    ) -> quest_hook::libil2cpp::Result<TControl>
+    where
+        TControl: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: TControl = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryFindChild", (control, path, indexInPath))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryFindControl_InputControl_Il2CppString_i32_0(
+        control: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl,
+        >,
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        indexInPath: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryFindControl", (control, path, indexInPath))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryFindControl_InputControl_Il2CppString_i32_1<TControl>(
+        control: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl,
+        >,
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        indexInPath: i32,
+    ) -> quest_hook::libil2cpp::Result<TControl>
+    where
+        TControl: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: TControl = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryFindControl", (control, path, indexInPath))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryFindControls_ByRefMut_i32_1(
+        control: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl,
+        >,
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        matches: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::InputSystem::InputControlList_1<
+                *mut crate::UnityEngine::InputSystem::InputControl,
+            >,
+        >,
+        indexInPath: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryFindControls", (control, path, matches, indexInPath))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryFindControls_i32_0(
+        control: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl,
+        >,
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        indexInPath: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::UnityEngine::InputSystem::InputControl,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::UnityEngine::InputSystem::InputControl,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryFindControls", (control, path, indexInPath))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryFindControls_i32_ByRefMut2<TControl>(
+        control: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl,
+        >,
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        indexInPath: i32,
+        matches: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::InputSystem::InputControlList_1<TControl>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32>
+    where
+        TControl: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryFindControls", (control, path, indexInPath, matches))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryGetControlLayout(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryGetControlLayout", (path))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryGetDeviceLayout(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryGetDeviceLayout", (path))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryGetDeviceUsages(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryGetDeviceUsages", (path))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputControlPath")]
 impl quest_hook::libil2cpp::ObjectType
@@ -99,6 +504,14 @@ for crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent {
 impl crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent {
     #[cfg(feature = "UnityEngine+InputSystem+InputControlPath+ParsedPathComponent+__c")]
     pub type __c = crate::UnityEngine::InputSystem::ParsedPathComponent_InputControlPath___c;
+    pub fn ComparePathElementToString(
+        pathElement: crate::UnityEngine::InputSystem::Utilities::Substring,
+        element: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ComparePathElementToString", (pathElement, element))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Matches(
         &mut self,
         control: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
@@ -110,7 +523,7 @@ impl crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToHumanReadableString(
+    pub fn ToHumanReadableString_Il2CppString_Il2CppString_ByRefMut_ByRefMut_InputControlPath_HumanReadableStringOptions0(
         &mut self,
         parentLayoutName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         parentControlPath: quest_hook::libil2cpp::Gc<
@@ -139,6 +552,17 @@ impl crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent {
                 options,
             ),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToHumanReadableString_Substring1(
+        substring: crate::UnityEngine::InputSystem::Utilities::Substring,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToHumanReadableString", (substring))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_displayName(

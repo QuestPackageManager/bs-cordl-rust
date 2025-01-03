@@ -37,6 +37,15 @@ impl crate::GlobalNamespace::OculusInit {
     pub type _InitializeInternalAsync_d__3 = crate::GlobalNamespace::OculusInit__InitializeInternalAsync_d__3;
     #[cfg(feature = "OculusInit+_InitializeOculusAsync_d__6")]
     pub type _InitializeOculusAsync_d__6 = crate::GlobalNamespace::OculusInit__InitializeOculusAsync_d__6;
+    pub fn CheckEntitlementsAsync() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckEntitlementsAsync", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CheckUserAgeCategoryAsync(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -86,6 +95,15 @@ impl crate::GlobalNamespace::OculusInit {
                 *mut quest_hook::libil2cpp::Il2CppString,
             >,
         > = __cordl_object.invoke("GetAppVersionQuestAsync", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InitializeCoreAsync() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InitializeCoreAsync", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn InitializeInternalAsync(

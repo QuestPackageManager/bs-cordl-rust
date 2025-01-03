@@ -32,6 +32,87 @@ impl crate::GlobalNamespace::OVRPermissionsRequester {
     pub type Permission = crate::GlobalNamespace::OVRPermissionsRequester_Permission;
     #[cfg(feature = "OVRPermissionsRequester+__c")]
     pub type __c = crate::GlobalNamespace::OVRPermissionsRequester___c;
+    pub fn BuildPermissionCallbacks() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Android::PermissionCallbacks>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Android::PermissionCallbacks,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BuildPermissionCallbacks", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPermissionId(
+        permission: crate::GlobalNamespace::OVRPermissionsRequester_Permission,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPermissionId", (permission))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsPermissionGranted(
+        permission: crate::GlobalNamespace::OVRPermissionsRequester_Permission,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsPermissionGranted", (permission))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsPermissionSupportedByPlatform(
+        permission: crate::GlobalNamespace::OVRPermissionsRequester_Permission,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsPermissionSupportedByPlatform", (permission))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Request(
+        permissions: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::GlobalNamespace::OVRPermissionsRequester_Permission,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Request", (permissions))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RequestPermissions(
+        permissions: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::GlobalNamespace::OVRPermissionsRequester_Permission,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RequestPermissions", (permissions))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ShouldRequestPermission(
+        permission: crate::GlobalNamespace::OVRPermissionsRequester_Permission,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ShouldRequestPermission", (permission))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn add_PermissionGranted(
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("add_PermissionGranted", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_PermissionGranted(
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("remove_PermissionGranted", (value))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "OVRPermissionsRequester")]
 impl quest_hook::libil2cpp::ObjectType

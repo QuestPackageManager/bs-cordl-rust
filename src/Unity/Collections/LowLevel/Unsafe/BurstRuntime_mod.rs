@@ -29,6 +29,22 @@ impl crate::Unity::Collections::LowLevel::Unsafe::BurstRuntime {
     pub type HashCode64_1<T: quest_hook::libil2cpp::Type> = crate::Unity::Collections::LowLevel::Unsafe::BurstRuntime_HashCode64_1<
         T,
     >;
+    pub fn GetHashCode64<T>() -> quest_hook::libil2cpp::Result<i64>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetHashCode64", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn HashStringWithFNV1A64(
+        text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("HashStringWithFNV1A64", (text))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "Unity+Collections+LowLevel+Unsafe+BurstRuntime")]
 impl quest_hook::libil2cpp::ObjectType

@@ -34,6 +34,18 @@ impl crate::System::Security::Cryptography::KeySizes {
         let __cordl_ret: bool = __cordl_object.invoke("IsLegal", (keySize))?;
         Ok(__cordl_ret.into())
     }
+    pub fn IsLegalKeySize(
+        legalKeys: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Security::Cryptography::KeySizes,
+            >,
+        >,
+        _cordl_size: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsLegalKeySize", (legalKeys, _cordl_size))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         minSize: i32,
         maxSize: i32,

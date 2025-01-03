@@ -171,6 +171,82 @@ impl crate::UnityEngine::Camera {
             .invoke("CalculateObliqueMatrix_Injected", (clipPlane, ret))?;
         Ok(__cordl_ret.into())
     }
+    pub fn CalculateProjectionMatrixFromPhysicalProperties(
+        output: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>,
+        focalLength: f32,
+        sensorSize: crate::UnityEngine::Vector2,
+        lensShift: crate::UnityEngine::Vector2,
+        nearClip: f32,
+        farClip: f32,
+        gateFitParameters: crate::UnityEngine::Camera_GateFitParameters,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CalculateProjectionMatrixFromPhysicalProperties",
+                (
+                    output,
+                    focalLength,
+                    sensorSize,
+                    lensShift,
+                    nearClip,
+                    farClip,
+                    gateFitParameters,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CalculateProjectionMatrixFromPhysicalPropertiesInternal(
+        output: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>,
+        focalLength: f32,
+        sensorSize: crate::UnityEngine::Vector2,
+        lensShift: crate::UnityEngine::Vector2,
+        nearClip: f32,
+        farClip: f32,
+        gateAspect: f32,
+        gateFitMode: crate::UnityEngine::Camera_GateFitMode,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CalculateProjectionMatrixFromPhysicalPropertiesInternal",
+                (
+                    output,
+                    focalLength,
+                    sensorSize,
+                    lensShift,
+                    nearClip,
+                    farClip,
+                    gateAspect,
+                    gateFitMode,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CalculateProjectionMatrixFromPhysicalPropertiesInternal_Injected(
+        output: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>,
+        focalLength: f32,
+        sensorSize: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
+        lensShift: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
+        nearClip: f32,
+        farClip: f32,
+        gateAspect: f32,
+        gateFitMode: crate::UnityEngine::Camera_GateFitMode,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CalculateProjectionMatrixFromPhysicalPropertiesInternal_Injected",
+                (
+                    output,
+                    focalLength,
+                    sensorSize,
+                    lensShift,
+                    nearClip,
+                    farClip,
+                    gateAspect,
+                    gateFitMode,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CopyFrom(
         &mut self,
         other: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
@@ -191,6 +267,66 @@ impl crate::UnityEngine::Camera {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CopyStereoDeviceProjectionMatrixToNonJittered", (eye))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FieldOfViewToFocalLength(
+        fieldOfView: f32,
+        sensorSize: f32,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FieldOfViewToFocalLength", (fieldOfView, sensorSize))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FireOnPostRender(
+        cam: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FireOnPostRender", (cam))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FireOnPreCull(
+        cam: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FireOnPreCull", (cam))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FireOnPreRender(
+        cam: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FireOnPreRender", (cam))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FocalLengthToFieldOfView(
+        focalLength: f32,
+        sensorSize: f32,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FocalLengthToFieldOfView", (focalLength, sensorSize))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetAllCameras(
+        cameras: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Camera>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetAllCameras", (cameras))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetAllCamerasCount() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetAllCamerasCount", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetAllCamerasImpl(
+        cam: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Camera>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetAllCamerasImpl", (cam))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetCameraBufferWarnings(
@@ -226,6 +362,21 @@ impl crate::UnityEngine::Camera {
                 *mut crate::UnityEngine::Rendering::CommandBuffer,
             >,
         > = __cordl_object.invoke("GetCommandBuffers", (evt))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCullingParameters_Internal(
+        camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+        stereoAware: bool,
+        cullingParameters: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Rendering::ScriptableCullingParameters,
+        >,
+        managedCullingParametersSize: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetCullingParameters_Internal",
+                (camera, stereoAware, cullingParameters, managedCullingParametersSize),
+            )?;
         Ok(__cordl_ret.into())
     }
     pub fn GetFilterMode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -387,6 +538,17 @@ impl crate::UnityEngine::Camera {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GetStereoViewMatrix_Injected", (eye, ret))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn HorizontalToVerticalFieldOfView(
+        horizontalFieldOfView: f32,
+        aspectRatio: f32,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "HorizontalToVerticalFieldOfView",
+                (horizontalFieldOfView, aspectRatio),
+            )?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -921,6 +1083,13 @@ impl crate::UnityEngine::Camera {
             .invoke("SetTargetBuffers", (colorBuffer, depthBuffer))?;
         Ok(__cordl_ret.into())
     }
+    pub fn SetupCurrent(
+        cur: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetupCurrent", (cur))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn SubmitBuiltInObjectIDRenderRequest(
         &mut self,
         target: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
@@ -1010,6 +1179,17 @@ impl crate::UnityEngine::Camera {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("TryGetCullingParameters", (stereoAware, cullingParameters))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn VerticalToHorizontalFieldOfView(
+        verticalFieldOfView: f32,
+        aspectRatio: f32,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "VerticalToHorizontalFieldOfView",
+                (verticalFieldOfView, aspectRatio),
+            )?;
         Ok(__cordl_ret.into())
     }
     pub fn ViewportPointToRay_Injected(
@@ -1201,6 +1381,11 @@ impl crate::UnityEngine::Camera {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_PreviewCullingLayer() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_PreviewCullingLayer", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_activeTexture(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -1221,6 +1406,21 @@ impl crate::UnityEngine::Camera {
         );
         let __cordl_ret: crate::UnityEngine::RenderingPath = __cordl_object
             .invoke("get_actualRenderingPath", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_allCameras() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Camera>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Camera>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_allCameras", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_allCamerasCount() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_allCamerasCount", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_allowDynamicResolution(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -1396,6 +1596,13 @@ impl crate::UnityEngine::Camera {
             .invoke("get_cullingMatrix_Injected", (ret))?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_current() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_current", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_curvature(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
@@ -1532,6 +1739,13 @@ impl crate::UnityEngine::Camera {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("get_lensShift_Injected", (ret))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_main() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_main", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_nearClipPlane(&mut self) -> quest_hook::libil2cpp::Result<f32> {

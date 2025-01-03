@@ -23,7 +23,22 @@ impl std::ops::DerefMut for crate::GlobalNamespace::UnitySpecificRandomExtension
     }
 }
 #[cfg(feature = "UnitySpecificRandomExtensions")]
-impl crate::GlobalNamespace::UnitySpecificRandomExtensions {}
+impl crate::GlobalNamespace::UnitySpecificRandomExtensions {
+    pub fn InsideUnitSphere(
+        random: quest_hook::libil2cpp::Gc<crate::System::Random>,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InsideUnitSphere", (random))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn OnUnitSphere(
+        random: quest_hook::libil2cpp::Gc<crate::System::Random>,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("OnUnitSphere", (random))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnitySpecificRandomExtensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::UnitySpecificRandomExtensions {

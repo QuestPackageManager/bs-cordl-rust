@@ -44,6 +44,15 @@ impl crate::UnityEngine::UI::Selectable {
     pub type SelectionState = crate::UnityEngine::UI::Selectable_SelectionState;
     #[cfg(feature = "UnityEngine+UI+Selectable+Transition")]
     pub type Transition = crate::UnityEngine::UI::Selectable_Transition;
+    pub fn AllSelectablesNoAlloc(
+        selectables: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::UI::Selectable>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AllSelectablesNoAlloc", (selectables))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -146,6 +155,14 @@ impl crate::UnityEngine::UI::Selectable {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Selectable> = __cordl_object
             .invoke("FindSelectableOnUp", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPointOnRectEdge(
+        rect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
+        dir: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPointOnRectEdge", (rect, dir))?;
         Ok(__cordl_ret.into())
     }
     pub fn InstantClearState(
@@ -413,6 +430,37 @@ impl crate::UnityEngine::UI::Selectable {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_allSelectableCount() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_allSelectableCount", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_allSelectables() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::UI::Selectable,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::UI::Selectable,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_allSelectables", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_allSelectablesArray() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::UI::Selectable>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::UI::Selectable>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_allSelectablesArray", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_animationTriggers(

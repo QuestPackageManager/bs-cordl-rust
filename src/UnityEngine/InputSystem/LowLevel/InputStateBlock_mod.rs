@@ -70,6 +70,22 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputStateBlock {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetPrimitiveFormatFromType(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::FourCC,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPrimitiveFormatFromType", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetSizeOfPrimitiveFormatInBits(
+        _cordl_type: crate::UnityEngine::InputSystem::Utilities::FourCC,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSizeOfPrimitiveFormatInBits", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ReadDouble(
         &mut self,
         statePtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

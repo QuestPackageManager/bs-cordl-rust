@@ -78,6 +78,14 @@ impl crate::System::Drawing::SizeF {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Equality(
+        sz1: crate::System::Drawing::SizeF,
+        sz2: crate::System::Drawing::SizeF,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (sz1, sz2))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "System+Drawing+SizeF")]
 impl AsRef<crate::System::IEquatable_1<crate::System::Drawing::SizeF>>

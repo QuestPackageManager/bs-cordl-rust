@@ -83,6 +83,60 @@ impl crate::System::Double {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn IsFinite(d: f64) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsFinite", (d))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsInfinity(d: f64) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsInfinity", (d))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsNaN(d: f64) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsNaN", (d))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsNegative(d: f64) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsNegative", (d))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsNegativeInfinity(d: f64) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsNegativeInfinity", (d))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsPositiveInfinity(d: f64) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsPositiveInfinity", (d))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Parse_IFormatProvider1(
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+    ) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_ret: f64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Parse", (s, provider))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Parse_Il2CppString0(
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_ret: f64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Parse", (s))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Parse_NumberStyles_IFormatProvider2(
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        style: crate::System::Globalization::NumberStyles,
+        provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+    ) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_ret: f64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Parse", (s, style, provider))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn System_IConvertible_ToBoolean(
         &mut self,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
@@ -313,6 +367,34 @@ impl crate::System::Double {
             "TryFormat",
             (destination, charsWritten, format, provider),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryParse_Il2CppString_ByRefMut0(
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        result: quest_hook::libil2cpp::ByRefMut<f64>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryParse", (s, result))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryParse_Il2CppString_NumberStyles_IFormatProvider_ByRefMut1(
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        style: crate::System::Globalization::NumberStyles,
+        provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+        result: quest_hook::libil2cpp::ByRefMut<f64>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryParse", (s, style, provider, result))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryParse_ReadOnlySpan_1_NumberStyles_NumberFormatInfo_ByRefMut2(
+        s: crate::System::ReadOnlySpan_1<char>,
+        style: crate::System::Globalization::NumberStyles,
+        info: quest_hook::libil2cpp::Gc<crate::System::Globalization::NumberFormatInfo>,
+        result: quest_hook::libil2cpp::ByRefMut<f64>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryParse", (s, style, info, result))?;
         Ok(__cordl_ret.into())
     }
 }

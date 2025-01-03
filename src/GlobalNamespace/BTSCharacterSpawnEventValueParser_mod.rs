@@ -31,6 +31,33 @@ impl crate::GlobalNamespace::BTSCharacterSpawnEventValueParser {
     pub const kAnimationMask: i32 = 65280i32;
     pub const kPrefabBitOffset: i32 = 0i32;
     pub const kPrefabMask: i32 = 255i32;
+    pub fn GetAnimationId(value: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetAnimationId", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetIsAlternativeMaterial(value: i32) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetIsAlternativeMaterial", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPrefabId(value: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPrefabId", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MergeValuesIntoOneInt(
+        prefabId: i32,
+        animationId: i32,
+        isAlternativeMaterial: bool,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "MergeValuesIntoOneInt",
+                (prefabId, animationId, isAlternativeMaterial),
+            )?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "BTSCharacterSpawnEventValueParser")]
 impl quest_hook::libil2cpp::ObjectType

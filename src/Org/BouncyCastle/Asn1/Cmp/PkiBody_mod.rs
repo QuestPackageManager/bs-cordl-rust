@@ -53,6 +53,28 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiBody {
     pub const TYPE_REVOCATION_ANN: i32 = 17i32;
     pub const TYPE_REVOCATION_REP: i32 = 12i32;
     pub const TYPE_REVOCATION_REQ: i32 = 11i32;
+    pub fn GetBodyForType(
+        _cordl_type: i32,
+        o: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetBodyForType", (_cordl_type, o))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetInstance(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cmp::PkiBody>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cmp::PkiBody,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_Asn1TaggedObject0(
         tagged: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Asn1TaggedObject,

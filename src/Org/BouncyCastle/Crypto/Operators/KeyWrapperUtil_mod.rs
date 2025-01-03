@@ -32,6 +32,34 @@ impl crate::Org::BouncyCastle::Crypto::Operators::KeyWrapperUtil {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
+    pub fn UnwrapperForName(
+        algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        parameters: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::ICipherParameters,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IKeyUnwrapper>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::IKeyUnwrapper,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UnwrapperForName", (algorithm, parameters))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WrapperForName(
+        algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        parameters: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::ICipherParameters,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IKeyWrapper>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::IKeyWrapper,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WrapperForName", (algorithm, parameters))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

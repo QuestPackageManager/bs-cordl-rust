@@ -26,6 +26,32 @@ impl std::ops::DerefMut for crate::UnityEngine::BeforeRenderHelper {
 impl crate::UnityEngine::BeforeRenderHelper {
     #[cfg(feature = "UnityEngine+BeforeRenderHelper+OrderBlock")]
     pub type OrderBlock = crate::UnityEngine::BeforeRenderHelper_OrderBlock;
+    pub fn GetUpdateOrder(
+        callback: quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityAction>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetUpdateOrder", (callback))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Invoke() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Invoke", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RegisterCallback(
+        callback: quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityAction>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RegisterCallback", (callback))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UnregisterCallback(
+        callback: quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityAction>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UnregisterCallback", (callback))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+BeforeRenderHelper")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::BeforeRenderHelper {

@@ -24,12 +24,134 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIElementsUtility {
 }
 #[cfg(feature = "UnityEngine+UIElements+UIElementsUtility")]
 impl crate::UnityEngine::UIElements::UIElementsUtility {
+    pub fn BeginContainerGUI(
+        cache: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::GUILayoutUtility_LayoutCache,
+        >,
+        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::Event>,
+        container: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::IMGUIContainer,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BeginContainerGUI", (cache, evt, container))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateEvent_Event0(
+        systemEvent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Event>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::EventBase,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateEvent", (systemEvent))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateEvent_EventType1(
+        systemEvent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Event>,
+        eventType: crate::UnityEngine::EventType,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::EventBase,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateEvent", (systemEvent, eventType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DoDispatch(
+        panel: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::BaseVisualElementPanel,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DoDispatch", (panel))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EndContainerGUI(
+        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::Event>,
+        layoutSize: crate::UnityEngine::Rect,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EndContainerGUI", (evt, layoutSize))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetAllPanels(
+        panels: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::UIElements::Panel,
+            >,
+        >,
+        contextType: crate::UnityEngine::UIElements::ContextType,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetAllPanels", (panels, contextType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPanelsIterator() -> quest_hook::libil2cpp::Result<
+        crate::System::Collections::Generic::Dictionary_2_Enumerator<
+            i32,
+            *mut crate::UnityEngine::UIElements::Panel,
+        >,
+    > {
+        let __cordl_ret: crate::System::Collections::Generic::Dictionary_2_Enumerator<
+            i32,
+            *mut crate::UnityEngine::UIElements::Panel,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPanelsIterator", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
+    }
+    pub fn ParseMenuName(
+        menuName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ParseMenuName", (menuName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn PixelsPerUnitScaleForElement(
+        ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        sprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PixelsPerUnitScaleForElement", (ve, sprite))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RegisterCachedPanel(
+        instanceID: i32,
+        panel: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Panel>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RegisterCachedPanel", (instanceID, panel))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RemoveCachedPanel(
+        instanceID: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RemoveCachedPanel", (instanceID))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryGetPanel(
+        instanceID: i32,
+        panel: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::UnityEngine::UIElements::Panel,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryGetPanel", (instanceID, panel))?;
+        Ok(__cordl_ret.into())
     }
     pub fn UnityEngine_UIElements_IUIElementsUtility_CleanupRoots(
         &mut self,

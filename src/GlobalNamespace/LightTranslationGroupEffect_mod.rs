@@ -52,6 +52,26 @@ impl crate::GlobalNamespace::LightTranslationGroupEffect {
             .invoke("Cleanup", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn ComputeTranslation(
+        translation: f32,
+        translationLimits: crate::UnityEngine::Vector2,
+        distribution: f32,
+        distributionLimits: crate::UnityEngine::Vector2,
+        mirrored: bool,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ComputeTranslation",
+                (
+                    translation,
+                    translationLimits,
+                    distribution,
+                    distributionLimits,
+                    mirrored,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetTranslationEventHandler(
         &mut self,
         translationTween: quest_hook::libil2cpp::Gc<crate::Tweening::FloatTween>,
@@ -108,6 +128,18 @@ impl crate::GlobalNamespace::LightTranslationGroupEffect {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetTranslation", (_cordl__))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetTweenData(
+        tween: quest_hook::libil2cpp::Gc<crate::Tweening::FloatTween>,
+        from: f32,
+        to: f32,
+        startTime: f32,
+        endTime: f32,
+        easeType: crate::GlobalNamespace::EaseType,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetTweenData", (tween, from, to, startTime, endTime, easeType))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

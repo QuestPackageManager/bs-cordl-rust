@@ -73,6 +73,18 @@ impl crate::GlobalNamespace::NetworkStatisticsState {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Subtraction(
+        a: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::NetworkStatisticsState,
+        >,
+        b: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::NetworkStatisticsState,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NetworkStatisticsDelta> {
+        let __cordl_ret: crate::GlobalNamespace::NetworkStatisticsDelta = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Subtraction", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "NetworkStatisticsState+NetworkStatisticsUpdateDelegate")]
 #[repr(C)]

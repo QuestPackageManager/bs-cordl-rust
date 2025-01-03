@@ -25,6 +25,80 @@ impl std::ops::DerefMut for crate::GlobalNamespace::PerformanceReport {
 #[cfg(feature = "PerformanceReport")]
 impl crate::GlobalNamespace::PerformanceReport {
     pub const kDefaultFpsWindow: f32 = 1f32;
+    pub fn CreateReportDescriptor(
+        timestamp: crate::System::DateTime,
+        sceneSetupData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::GameplayCoreSceneSetupData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateReportDescriptor", (timestamp, sceneSetupData))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateTimestamp(
+        timestamp: crate::System::DateTime,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateTimestamp", (timestamp))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ListAggregatedFps(
+        frameDurations: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<f32>,
+        >,
+        minWindowSize: f32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ListAggregatedFps", (frameDurations, minWindowSize))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ListFrameDurations(
+        frameDurations: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<f32>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ListFrameDurations", (frameDurations))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ListStat_Il2CppArray0(
+        statList: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ListStat", (statList))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ListStat_Il2CppArray1(
+        statList: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i64>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ListStat", (statList))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "PerformanceReport")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PerformanceReport {

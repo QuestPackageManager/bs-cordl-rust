@@ -25,6 +25,16 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::Cms::RecipientInfo {
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cms+RecipientInfo")]
 impl crate::Org::BouncyCastle::Asn1::Cms::RecipientInfo {
+    pub fn GetInstance(
+        o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cms::RecipientInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cms::RecipientInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (o))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetKekInfo(
         &mut self,
         o: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1TaggedObject>,

@@ -23,7 +23,29 @@ impl std::ops::DerefMut for crate::Oculus::Platform::Media {
     }
 }
 #[cfg(feature = "Oculus+Platform+Media")]
-impl crate::Oculus::Platform::Media {}
+impl crate::Oculus::Platform::Media {
+    pub fn ShareToFacebook(
+        postTextSuggestion: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+        filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        contentType: crate::Oculus::Platform::MediaContentType,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Request_1<
+                *mut crate::Oculus::Platform::Models::ShareMediaResult,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Request_1<
+                *mut crate::Oculus::Platform::Models::ShareMediaResult,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ShareToFacebook", (postTextSuggestion, filePath, contentType))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "Oculus+Platform+Media")]
 impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Platform::Media {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

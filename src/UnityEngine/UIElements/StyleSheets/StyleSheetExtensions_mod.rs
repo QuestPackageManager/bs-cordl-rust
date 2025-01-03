@@ -26,7 +26,27 @@ for crate::UnityEngine::UIElements::StyleSheets::StyleSheetExtensions {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleSheetExtensions")]
-impl crate::UnityEngine::UIElements::StyleSheets::StyleSheetExtensions {}
+impl crate::UnityEngine::UIElements::StyleSheets::StyleSheetExtensions {
+    pub fn IsVarFunction(
+        handle: crate::UnityEngine::UIElements::StyleValueHandle,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsVarFunction", (handle))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReadAsString(
+        sheet: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheet>,
+        handle: crate::UnityEngine::UIElements::StyleValueHandle,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadAsString", (sheet, handle))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleSheetExtensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::StyleSheets::StyleSheetExtensions {

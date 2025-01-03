@@ -23,7 +23,18 @@ impl std::ops::DerefMut for crate::GlobalNamespace::DebugConsoleExtensionMethods
     }
 }
 #[cfg(feature = "DebugConsoleExtensionMethods")]
-impl crate::GlobalNamespace::DebugConsoleExtensionMethods {}
+impl crate::GlobalNamespace::DebugConsoleExtensionMethods {
+    pub fn ToConsoleMessage(
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        _cordl_type: crate::UnityEngine::LogType,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::DebugConsoleController_ConsoleMessage,
+    > {
+        let __cordl_ret: crate::GlobalNamespace::DebugConsoleController_ConsoleMessage = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToConsoleMessage", (message, _cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "DebugConsoleExtensionMethods")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::DebugConsoleExtensionMethods {

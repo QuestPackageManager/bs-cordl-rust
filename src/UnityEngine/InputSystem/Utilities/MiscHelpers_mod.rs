@@ -28,6 +28,57 @@ impl crate::UnityEngine::InputSystem::Utilities::MiscHelpers {
     pub type _EveryNth_d__1_1<TValue: quest_hook::libil2cpp::Type> = crate::UnityEngine::InputSystem::Utilities::MiscHelpers__EveryNth_d__1_1<
         TValue,
     >;
+    pub fn EveryNth<TValue>(
+        enumerable: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TValue>,
+        >,
+        n: i32,
+        start: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TValue>,
+        >,
+    >
+    where
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TValue>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EveryNth", (enumerable, n, start))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetValueOrDefault<TKey, TValue>(
+        dictionary: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<TKey, TValue>,
+        >,
+        key: TKey,
+    ) -> quest_hook::libil2cpp::Result<TValue>
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: TValue = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetValueOrDefault", (dictionary, key))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IndexOf<TValue>(
+        enumerable: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TValue>,
+        >,
+        value: TValue,
+    ) -> quest_hook::libil2cpp::Result<i32>
+    where
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IndexOf", (enumerable, value))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+MiscHelpers")]
 impl quest_hook::libil2cpp::ObjectType

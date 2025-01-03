@@ -57,6 +57,13 @@ impl crate::System::Threading::ThreadHelper {
             .invoke("ThreadStart", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn ThreadStart_Context(
+        state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ThreadStart_Context", (state))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ThreadStart_Il2CppObject0(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

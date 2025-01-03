@@ -29,6 +29,22 @@ for crate::System::Linq::Expressions::Interpreter::GotoInstruction {
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+GotoInstruction")]
 impl crate::System::Linq::Expressions::Interpreter::GotoInstruction {
+    pub fn Create(
+        labelIndex: i32,
+        hasResult: bool,
+        hasValue: bool,
+        labelTargetGetsValue: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::GotoInstruction,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::GotoInstruction,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (labelIndex, hasResult, hasValue, labelTargetGetsValue))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         targetIndex: i32,
         hasResult: bool,

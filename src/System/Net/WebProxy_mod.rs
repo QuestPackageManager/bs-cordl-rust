@@ -34,6 +34,25 @@ impl std::ops::DerefMut for crate::System::Net::WebProxy {
 }
 #[cfg(feature = "System+Net+WebProxy")]
 impl crate::System::Net::WebProxy {
+    pub fn AreAllBypassed(
+        proxies: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
+        >,
+        checkFirstOnly: bool,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AreAllBypassed", (proxies, checkFirstOnly))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateDefaultProxy() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Net::IWebProxy>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::IWebProxy> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateDefaultProxy", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetObjectData(
         &mut self,
         serializationInfo: quest_hook::libil2cpp::Gc<
@@ -174,6 +193,13 @@ impl crate::System::Net::WebProxy {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (enableAutoproxy))?;
         Ok(__cordl_object.into())
+    }
+    pub fn ProxyUri(
+        proxyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Uri>> {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Uri> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ProxyUri", (proxyName))?;
+        Ok(__cordl_ret.into())
     }
     pub fn System_Runtime_Serialization_ISerializable_GetObjectData(
         &mut self,

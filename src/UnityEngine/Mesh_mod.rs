@@ -27,6 +27,31 @@ impl crate::UnityEngine::Mesh {
     pub type MeshData = crate::UnityEngine::Mesh_MeshData;
     #[cfg(feature = "UnityEngine+Mesh+MeshDataArray")]
     pub type MeshDataArray = crate::UnityEngine::Mesh_MeshDataArray;
+    pub fn AcquireReadOnlyMeshData_Il2CppArray1(
+        meshes: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Mesh>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Mesh_MeshDataArray> {
+        let __cordl_ret: crate::UnityEngine::Mesh_MeshDataArray = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AcquireReadOnlyMeshData", (meshes))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AcquireReadOnlyMeshData_List_1_2(
+        meshes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<*mut crate::UnityEngine::Mesh>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Mesh_MeshDataArray> {
+        let __cordl_ret: crate::UnityEngine::Mesh_MeshDataArray = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AcquireReadOnlyMeshData", (meshes))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AcquireReadOnlyMeshData_Mesh0(
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Mesh_MeshDataArray> {
+        let __cordl_ret: crate::UnityEngine::Mesh_MeshDataArray = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AcquireReadOnlyMeshData", (mesh))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn AddBlendShapeFrame(
         &mut self,
         shapeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -49,6 +74,44 @@ impl crate::UnityEngine::Mesh {
                 "AddBlendShapeFrame",
                 (shapeName, frameWeight, deltaVertices, deltaNormals, deltaTangents),
             )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AllocateWritableMeshData(
+        meshCount: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Mesh_MeshDataArray> {
+        let __cordl_ret: crate::UnityEngine::Mesh_MeshDataArray = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AllocateWritableMeshData", (meshCount))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ApplyAndDisposeWritableMeshData_Il2CppArray1(
+        data: crate::UnityEngine::Mesh_MeshDataArray,
+        meshes: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Mesh>,
+        >,
+        flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ApplyAndDisposeWritableMeshData", (data, meshes, flags))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ApplyAndDisposeWritableMeshData_List_1_2(
+        data: crate::UnityEngine::Mesh_MeshDataArray,
+        meshes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<*mut crate::UnityEngine::Mesh>,
+        >,
+        flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ApplyAndDisposeWritableMeshData", (data, meshes, flags))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ApplyAndDisposeWritableMeshData_Mesh0(
+        data: crate::UnityEngine::Mesh_MeshDataArray,
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+        flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ApplyAndDisposeWritableMeshData", (data, mesh, flags))?;
         Ok(__cordl_ret.into())
     }
     pub fn CheckCanAccessSubmesh(
@@ -218,6 +281,22 @@ impl crate::UnityEngine::Mesh {
                 "CombineMeshes",
                 (combine, mergeSubMeshes, useMatrices, hasLightmapData),
             )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DefaultDimensionForChannel(
+        channel: crate::UnityEngine::Rendering::VertexAttribute,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DefaultDimensionForChannel", (channel))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromInstanceID(
+        id: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromInstanceID", (id))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetAllBoneWeights(
@@ -1097,6 +1176,13 @@ impl crate::UnityEngine::Mesh {
         > = __cordl_object.invoke("GetTriangles", (submesh, applyBaseVertex))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetUVChannel(
+        uvIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rendering::VertexAttribute> {
+        let __cordl_ret: crate::UnityEngine::Rendering::VertexAttribute = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetUVChannel", (uvIndex))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetUVDistributionMetric(
         &mut self,
         uvSetIndex: i32,
@@ -1495,6 +1581,13 @@ impl crate::UnityEngine::Mesh {
                 "InternalSetVertexBufferDataFromArray",
                 (stream, data, dataStart, meshBufferStart, count, elemSize, flags),
             )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Internal_Create(
+        mono: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Internal_Create", (mono))?;
         Ok(__cordl_ret.into())
     }
     pub fn MarkDynamic(
@@ -4666,6 +4759,27 @@ impl crate::UnityEngine::Mesh_MeshData {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetIndexDataPtr(
+        _cordl_self: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetIndexDataPtr", (_cordl_self))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetIndexDataSize(
+        _cordl_self: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetIndexDataSize", (_cordl_self))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetVertexBufferCount(
+        _cordl_self: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetVertexBufferCount", (_cordl_self))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetVertexData<T>(
         &mut self,
         stream: i32,
@@ -4681,6 +4795,22 @@ impl crate::UnityEngine::Mesh_MeshData {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetVertexDataPtr(
+        _cordl_self: crate::System::IntPtr,
+        stream: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetVertexDataPtr", (_cordl_self, stream))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetVertexDataSize(
+        _cordl_self: crate::System::IntPtr,
+        stream: i32,
+    ) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetVertexDataSize", (_cordl_self, stream))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn SetIndexBufferParams(
         &mut self,
         indexCount: i32,
@@ -4691,6 +4821,15 @@ impl crate::UnityEngine::Mesh_MeshData {
             "SetIndexBufferParams",
             (indexCount, format),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetIndexBufferParamsImpl(
+        _cordl_self: crate::System::IntPtr,
+        indexCount: i32,
+        indexFormat: crate::UnityEngine::Rendering::IndexFormat,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetIndexBufferParamsImpl", (_cordl_self, indexCount, indexFormat))?;
         Ok(__cordl_ret.into())
     }
     pub fn SetSubMesh(
@@ -4704,6 +4843,36 @@ impl crate::UnityEngine::Mesh_MeshData {
             "SetSubMesh",
             (index, desc, flags),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetSubMeshCount(
+        _cordl_self: crate::System::IntPtr,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetSubMeshCount", (_cordl_self, count))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetSubMeshImpl(
+        _cordl_self: crate::System::IntPtr,
+        index: i32,
+        desc: crate::UnityEngine::Rendering::SubMeshDescriptor,
+        flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetSubMeshImpl", (_cordl_self, index, desc, flags))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetSubMeshImpl_Injected(
+        _cordl_self: crate::System::IntPtr,
+        index: i32,
+        desc: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Rendering::SubMeshDescriptor,
+        >,
+        flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetSubMeshImpl_Injected", (_cordl_self, index, desc, flags))?;
         Ok(__cordl_ret.into())
     }
     pub fn SetVertexBufferParams(
@@ -4720,6 +4889,22 @@ impl crate::UnityEngine::Mesh_MeshData {
             "SetVertexBufferParams",
             (vertexCount, attributes),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetVertexBufferParamsFromArray(
+        _cordl_self: crate::System::IntPtr,
+        vertexCount: i32,
+        attributes: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::UnityEngine::Rendering::VertexAttributeDescriptor,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "SetVertexBufferParamsFromArray",
+                (_cordl_self, vertexCount, attributes),
+            )?;
         Ok(__cordl_ret.into())
     }
     pub fn get_vertexBufferCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -4767,6 +4952,25 @@ for crate::UnityEngine::Mesh_MeshDataArray {
 }
 #[cfg(feature = "UnityEngine+Mesh+MeshDataArray")]
 impl crate::UnityEngine::Mesh_MeshDataArray {
+    pub fn AcquireReadOnlyMeshData(
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+        datas: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AcquireReadOnlyMeshData", (mesh, datas))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AcquireReadOnlyMeshDatas(
+        meshes: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Mesh>,
+        >,
+        datas: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AcquireReadOnlyMeshDatas", (meshes, datas, count))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ApplyToMeshAndDispose(
         &mut self,
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
@@ -4777,6 +4981,15 @@ impl crate::UnityEngine::Mesh_MeshDataArray {
             "ApplyToMeshAndDispose",
             (mesh, flags),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ApplyToMeshImpl(
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+        data: crate::System::IntPtr,
+        flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ApplyToMeshImpl", (mesh, data, flags))?;
         Ok(__cordl_ret.into())
     }
     pub fn ApplyToMeshesAndDispose(
@@ -4793,6 +5006,26 @@ impl crate::UnityEngine::Mesh_MeshDataArray {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn ApplyToMeshesImpl(
+        meshes: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Mesh>,
+        >,
+        datas: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        count: i32,
+        flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ApplyToMeshesImpl", (meshes, datas, count, flags))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateNewMeshDatas(
+        datas: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateNewMeshDatas", (datas, count))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -4801,6 +5034,14 @@ impl crate::UnityEngine::Mesh_MeshDataArray {
             "Dispose",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReleaseMeshDatas(
+        datas: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReleaseMeshDatas", (datas, count))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_Il2CppArray_i32__cordl_bool1(

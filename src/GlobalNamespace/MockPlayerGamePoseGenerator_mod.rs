@@ -29,6 +29,17 @@ impl std::ops::DerefMut for crate::GlobalNamespace::MockPlayerGamePoseGenerator 
 }
 #[cfg(feature = "MockPlayerGamePoseGenerator")]
 impl crate::GlobalNamespace::MockPlayerGamePoseGenerator {
+    pub fn CreateEmptyLevelCompletionResults(
+        levelEndStateType: crate::GlobalNamespace::LevelCompletionResults_LevelEndStateType,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::LevelCompletionResults,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateEmptyLevelCompletionResults", (levelEndStateType))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

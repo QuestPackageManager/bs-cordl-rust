@@ -26,6 +26,13 @@ impl std::ops::DerefMut for crate::UnityEngine::UnhandledExceptionHandler {
 impl crate::UnityEngine::UnhandledExceptionHandler {
     #[cfg(feature = "UnityEngine+UnhandledExceptionHandler+__c")]
     pub type __c = crate::UnityEngine::UnhandledExceptionHandler___c;
+    pub fn RegisterUECatcher() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RegisterUECatcher", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+UnhandledExceptionHandler")]
 impl quest_hook::libil2cpp::ObjectType

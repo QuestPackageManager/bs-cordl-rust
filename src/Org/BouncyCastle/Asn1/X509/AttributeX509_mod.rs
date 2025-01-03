@@ -45,6 +45,16 @@ impl crate::Org::BouncyCastle::Asn1::X509::AttributeX509 {
         > = __cordl_object.invoke("GetAttributeValues", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetInstance(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::AttributeX509>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::AttributeX509,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_Asn1Sequence0(
         seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

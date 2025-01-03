@@ -497,6 +497,18 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn CompareChanges(
+        x: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::UIElements::ComputedStyle,
+        >,
+        y: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::UIElements::ComputedStyle>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::VersionChangeType,
+    > {
+        let __cordl_ret: crate::UnityEngine::UIElements::VersionChangeType = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CompareChanges", (x, y))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CopyFrom(
         &mut self,
         other: quest_hook::libil2cpp::ByRefMut<
@@ -508,6 +520,22 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "CopyFrom",
             (other),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Create(
+        parentStyle: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::UIElements::ComputedStyle,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::ComputedStyle> {
+        let __cordl_ret: crate::UnityEngine::UIElements::ComputedStyle = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (parentStyle))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateInitial() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::ComputedStyle,
+    > {
+        let __cordl_ret: crate::UnityEngine::UIElements::ComputedStyle = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateInitial", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn FinalizeApply(
@@ -554,6 +582,88 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
             "ResetComputedTransitions",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StartAnimation(
+        element: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::VisualElement,
+        >,
+        id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+        oldStyle: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::UIElements::ComputedStyle,
+        >,
+        newStyle: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::UIElements::ComputedStyle,
+        >,
+        durationMs: i32,
+        delayMs: i32,
+        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "StartAnimation",
+                (element, id, oldStyle, newStyle, durationMs, delayMs, easingCurve),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StartAnimationAllProperty(
+        element: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::VisualElement,
+        >,
+        oldStyle: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::UIElements::ComputedStyle,
+        >,
+        newStyle: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::UIElements::ComputedStyle,
+        >,
+        durationMs: i32,
+        delayMs: i32,
+        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "StartAnimationAllProperty",
+                (element, oldStyle, newStyle, durationMs, delayMs, easingCurve),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StartAnimationInline(
+        element: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::VisualElement,
+        >,
+        id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+        computedStyle: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::UIElements::ComputedStyle,
+        >,
+        sv: crate::UnityEngine::UIElements::StyleSheets::StyleValue,
+        durationMs: i32,
+        delayMs: i32,
+        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "StartAnimationInline",
+                (element, id, computedStyle, sv, durationMs, delayMs, easingCurve),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StartAnimationInlineTranslate(
+        element: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::VisualElement,
+        >,
+        computedStyle: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::UIElements::ComputedStyle,
+        >,
+        translate: crate::UnityEngine::UIElements::StyleTranslate,
+        durationMs: i32,
+        delayMs: i32,
+        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "StartAnimationInlineTranslate",
+                (element, computedStyle, translate, durationMs, delayMs, easingCurve),
+            )?;
         Ok(__cordl_ret.into())
     }
     pub fn SyncWithLayout(

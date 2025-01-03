@@ -138,6 +138,24 @@ impl crate::System::Net::MonoChunkParser {
             .invoke("ReadTrailer", (buffer, offset, _cordl_size))?;
         Ok(__cordl_ret.into())
     }
+    pub fn RemoveChunkExtension(
+        input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RemoveChunkExtension", (input))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ThrowProtocolViolation(
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ThrowProtocolViolation", (message))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Write(
         &mut self,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,

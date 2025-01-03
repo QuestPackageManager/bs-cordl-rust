@@ -23,7 +23,45 @@ impl std::ops::DerefMut for crate::BGLib::Polyglot::LanguageExtensions {
     }
 }
 #[cfg(feature = "BGLib+Polyglot+LanguageExtensions")]
-impl crate::BGLib::Polyglot::LanguageExtensions {}
+impl crate::BGLib::Polyglot::LanguageExtensions {
+    pub fn ToCultureInfoName(
+        lang: crate::BGLib::Polyglot::Language,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToCultureInfoName", (lang))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToLanguage_Il2CppString0(
+        serializedName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::BGLib::Polyglot::Language> {
+        let __cordl_ret: crate::BGLib::Polyglot::Language = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToLanguage", (serializedName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToLanguage_SystemLanguage__cordl_bool1(
+        systemLanguage: crate::UnityEngine::SystemLanguage,
+        useFallbackLanguage: bool,
+    ) -> quest_hook::libil2cpp::Result<crate::BGLib::Polyglot::Language> {
+        let __cordl_ret: crate::BGLib::Polyglot::Language = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToLanguage", (systemLanguage, useFallbackLanguage))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToSerializedName(
+        lang: crate::BGLib::Polyglot::Language,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToSerializedName", (lang))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "BGLib+Polyglot+LanguageExtensions")]
 impl quest_hook::libil2cpp::ObjectType for crate::BGLib::Polyglot::LanguageExtensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -29,6 +29,58 @@ impl crate::GlobalNamespace::MultiplayerUnavailableReasonMethods {
     pub const kMultiplayerUnavailableServerOffline: &'static str = "MULTIPLAYER_UNAVAILABLE_SERVER_OFFLINE";
     pub const kMultiplayerUnavailableTryAgain: &'static str = "MULTIPLAYER_UNAVAILABLE_TRY_AGAIN";
     pub const kMultiplayerUnavailableUpdateRequired: &'static str = "MULTIPLAYER_UNAVAILABLE_UPDATE_REQUIRED";
+    pub fn ErrorCode(
+        multiplayerUnavailableReason: crate::GlobalNamespace::MultiplayerUnavailableReason,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ErrorCode", (multiplayerUnavailableReason))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetLocalizedMessage(
+        data: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerStatusData>,
+        language: crate::BGLib::Polyglot::Language,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetLocalizedMessage", (data, language))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LocalizedKey(
+        multiplayerUnavailableReason: crate::GlobalNamespace::MultiplayerUnavailableReason,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LocalizedKey", (multiplayerUnavailableReason))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryGetMultiplayerUnavailableReason(
+        data: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerStatusData>,
+        reason: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::MultiplayerUnavailableReason,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryGetMultiplayerUnavailableReason", (data, reason))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn VersionLessThan(
+        currentVersion: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        minVersion: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("VersionLessThan", (currentVersion, minVersion))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "MultiplayerUnavailableReasonMethods")]
 impl quest_hook::libil2cpp::ObjectType

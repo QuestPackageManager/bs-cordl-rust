@@ -23,7 +23,65 @@ impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_GeometryUtility {
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_GeometryUtility")]
-impl crate::HoudiniEngineUnity::HEU_GeometryUtility {}
+impl crate::HoudiniEngineUnity::HEU_GeometryUtility {
+    pub fn CalculateMeshTangents(
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CalculateMeshTangents", (mesh))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GenerateCubeMeshFromPoints(
+        points: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+        >,
+        pointsColor: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
+        >,
+        _cordl_size: f32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GenerateCubeMeshFromPoints", (points, pointsColor, _cordl_size))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GeneratePerTriangle(
+        meshSrc: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GeneratePerTriangle", (meshSrc))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GenerateSecondaryUVSet(
+        meshsrc: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GenerateSecondaryUVSet", (meshsrc))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetInstanceOutputName(
+        partName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        userPrefix: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetInstanceOutputName", (partName, userPrefix, index))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "HoudiniEngineUnity+HEU_GeometryUtility")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::HoudiniEngineUnity::HEU_GeometryUtility {

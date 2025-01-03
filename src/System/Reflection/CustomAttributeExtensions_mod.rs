@@ -23,7 +23,183 @@ impl std::ops::DerefMut for crate::System::Reflection::CustomAttributeExtensions
     }
 }
 #[cfg(feature = "System+Reflection+CustomAttributeExtensions")]
-impl crate::System::Reflection::CustomAttributeExtensions {}
+impl crate::System::Reflection::CustomAttributeExtensions {
+    pub fn GetCustomAttribute_Assembly2<T>(
+        element: quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCustomAttribute", (element))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCustomAttribute_Assembly_Type0(
+        element: quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
+        attributeType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Attribute> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCustomAttribute", (element, attributeType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCustomAttribute_MemberInfo3<T>(
+        element: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCustomAttribute", (element))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCustomAttribute_MemberInfo_Type1(
+        element: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+        attributeType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Attribute> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCustomAttribute", (element, attributeType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCustomAttribute_MemberInfo_Type__cordl_bool4(
+        element: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+        attributeType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        inherit: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Attribute> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCustomAttribute", (element, attributeType, inherit))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCustomAttribute_MemberInfo__cordl_bool5<T>(
+        element: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+        inherit: bool,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCustomAttribute", (element, inherit))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCustomAttributes_Assembly0(
+        element: quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::System::Attribute,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::System::Attribute,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCustomAttributes", (element))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCustomAttributes_MemberInfo1(
+        element: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::System::Attribute,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::System::Attribute,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCustomAttributes", (element))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCustomAttributes_MemberInfo3<T>(
+        element: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IEnumerable_1<T>>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<T>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCustomAttributes", (element))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCustomAttributes_MemberInfo_Type2(
+        element: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+        attributeType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::System::Attribute,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::System::Attribute,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCustomAttributes", (element, attributeType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCustomAttributes_MemberInfo_Type__cordl_bool4(
+        element: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+        attributeType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        inherit: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::System::Attribute,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::System::Attribute,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCustomAttributes", (element, attributeType, inherit))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCustomAttributes_MemberInfo__cordl_bool5<T>(
+        element: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+        inherit: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IEnumerable_1<T>>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<T>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCustomAttributes", (element, inherit))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsDefined(
+        element: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+        attributeType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsDefined", (element, attributeType))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Reflection+CustomAttributeExtensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Reflection::CustomAttributeExtensions {

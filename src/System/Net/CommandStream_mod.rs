@@ -251,6 +251,13 @@ impl crate::System::Net::CommandStream {
             .invoke("PostSendCommandProcessing", (stream))?;
         Ok(__cordl_ret.into())
     }
+    pub fn ReadCallback(
+        asyncResult: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadCallback", (asyncResult))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ReceiveCommandResponse(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -289,6 +296,13 @@ impl crate::System::Net::CommandStream {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IO::Stream> = __cordl_object
             .invoke("SubmitRequest", (request, isAsync, readInitalResponseOnConnect))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WriteCallback(
+        asyncResult: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WriteCallback", (asyncResult))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

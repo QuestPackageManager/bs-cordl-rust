@@ -62,6 +62,19 @@ impl crate::System::Net::Http::HttpContent {
         > = __cordl_object.invoke("CopyToAsync", (stream, context))?;
         Ok(__cordl_ret.into())
     }
+    pub fn CreateFixedMemoryStream(
+        maxBufferSize: i64,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Net::Http::HttpContent_FixedMemoryStream,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Http::HttpContent_FixedMemoryStream,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateFixedMemoryStream", (maxBufferSize))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Dispose_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -81,6 +94,17 @@ impl crate::System::Net::Http::HttpContent {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", (disposing))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetEncodingFromBuffer(
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        length: i32,
+        preambleLength: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetEncodingFromBuffer", (buffer, length, preambleLength))?;
         Ok(__cordl_ret.into())
     }
     pub fn LoadIntoBufferAsync_0(
@@ -149,6 +173,15 @@ impl crate::System::Net::Http::HttpContent {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task,
         > = __cordl_object.invoke("SerializeToStreamAsync", (stream, context))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StartsWith(
+        array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        length: i32,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StartsWith", (array, length, value))?;
         Ok(__cordl_ret.into())
     }
     pub fn TryComputeLength(

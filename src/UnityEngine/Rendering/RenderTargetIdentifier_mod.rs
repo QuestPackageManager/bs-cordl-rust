@@ -101,6 +101,33 @@ impl crate::UnityEngine::Rendering::RenderTargetIdentifier {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Implicit_BuiltinRenderTextureType0(
+        _cordl_type: crate::UnityEngine::Rendering::BuiltinRenderTextureType,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Rendering::RenderTargetIdentifier,
+    > {
+        let __cordl_ret: crate::UnityEngine::Rendering::RenderTargetIdentifier = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_Texture2(
+        tex: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Rendering::RenderTargetIdentifier,
+    > {
+        let __cordl_ret: crate::UnityEngine::Rendering::RenderTargetIdentifier = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (tex))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_i32_1(
+        nameID: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Rendering::RenderTargetIdentifier,
+    > {
+        let __cordl_ret: crate::UnityEngine::Rendering::RenderTargetIdentifier = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (nameID))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+Rendering+RenderTargetIdentifier")]
 impl AsRef<

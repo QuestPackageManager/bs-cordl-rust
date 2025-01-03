@@ -24,6 +24,11 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Utilities::Times {
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+Times")]
 impl crate::Org::BouncyCastle::Utilities::Times {
+    pub fn NanoTime() -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("NanoTime", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

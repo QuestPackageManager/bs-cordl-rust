@@ -23,7 +23,29 @@ impl std::ops::DerefMut for crate::UnityEngine::UI::FontUpdateTracker {
     }
 }
 #[cfg(feature = "UnityEngine+UI+FontUpdateTracker")]
-impl crate::UnityEngine::UI::FontUpdateTracker {}
+impl crate::UnityEngine::UI::FontUpdateTracker {
+    pub fn RebuildForFont(
+        f: quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RebuildForFont", (f))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TrackText(
+        t: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Text>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TrackText", (t))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UntrackText(
+        t: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Text>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UntrackText", (t))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+UI+FontUpdateTracker")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::FontUpdateTracker {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

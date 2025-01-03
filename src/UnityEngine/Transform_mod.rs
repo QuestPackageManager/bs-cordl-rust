@@ -62,6 +62,17 @@ impl crate::UnityEngine::Transform {
             .invoke("FindChild", (n))?;
         Ok(__cordl_ret.into())
     }
+    pub fn FindRelativeTransformWithPath(
+        transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        isActiveOnly: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FindRelativeTransformWithPath", (transform, path, isActiveOnly))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetChild(
         &mut self,
         index: i32,

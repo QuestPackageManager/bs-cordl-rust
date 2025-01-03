@@ -30,6 +30,48 @@ for crate::UnityEngine::TextCore::Text::MaterialReference {
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+MaterialReference")]
 impl crate::UnityEngine::TextCore::Text::MaterialReference {
+    pub fn AddMaterialReference_FontAsset0(
+        material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+        fontAsset: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::FontAsset,
+        >,
+        materialReferences: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<
+                crate::UnityEngine::TextCore::Text::MaterialReference,
+            >,
+        >,
+        materialReferenceIndexLookup: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<i32, i32>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "AddMaterialReference",
+                (material, fontAsset, materialReferences, materialReferenceIndexLookup),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddMaterialReference_SpriteAsset1(
+        material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+        spriteAsset: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::SpriteAsset,
+        >,
+        materialReferences: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<
+                crate::UnityEngine::TextCore::Text::MaterialReference,
+            >,
+        >,
+        materialReferenceIndexLookup: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<i32, i32>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "AddMaterialReference",
+                (material, spriteAsset, materialReferences, materialReferenceIndexLookup),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
         index: i32,

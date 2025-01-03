@@ -34,6 +34,26 @@ impl crate::BGLib::AsyncInitialization::AddressablesLoader {
         TInstantiate,
         TReturn,
     >;
+    pub fn InstantiateFromAddressableToContainer<TInstantiate, TReturn>(
+        prefab: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AddressableAssets::AssetReferenceGameObject,
+        >,
+        container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<TReturn>>,
+    >
+    where
+        TInstantiate: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TReturn: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<TReturn>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InstantiateFromAddressableToContainer", (prefab, container))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "BGLib+AsyncInitialization+AddressablesLoader")]
 impl quest_hook::libil2cpp::ObjectType

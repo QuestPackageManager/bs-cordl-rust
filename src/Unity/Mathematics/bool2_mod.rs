@@ -386,6 +386,140 @@ impl crate::Unity::Mathematics::bool2 {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_BitwiseAnd__cordl_bool_bool2_2(
+        lhs: bool,
+        rhs: crate::Unity::Mathematics::bool2,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool2> {
+        let __cordl_ret: crate::Unity::Mathematics::bool2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_BitwiseAnd", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_BitwiseAnd_bool2__cordl_bool1(
+        lhs: crate::Unity::Mathematics::bool2,
+        rhs: bool,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool2> {
+        let __cordl_ret: crate::Unity::Mathematics::bool2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_BitwiseAnd", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_BitwiseAnd_bool2_bool2_0(
+        lhs: crate::Unity::Mathematics::bool2,
+        rhs: crate::Unity::Mathematics::bool2,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool2> {
+        let __cordl_ret: crate::Unity::Mathematics::bool2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_BitwiseAnd", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_BitwiseOr__cordl_bool_bool2_2(
+        lhs: bool,
+        rhs: crate::Unity::Mathematics::bool2,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool2> {
+        let __cordl_ret: crate::Unity::Mathematics::bool2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_BitwiseOr", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_BitwiseOr_bool2__cordl_bool1(
+        lhs: crate::Unity::Mathematics::bool2,
+        rhs: bool,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool2> {
+        let __cordl_ret: crate::Unity::Mathematics::bool2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_BitwiseOr", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_BitwiseOr_bool2_bool2_0(
+        lhs: crate::Unity::Mathematics::bool2,
+        rhs: crate::Unity::Mathematics::bool2,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool2> {
+        let __cordl_ret: crate::Unity::Mathematics::bool2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_BitwiseOr", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality__cordl_bool_bool2_2(
+        lhs: bool,
+        rhs: crate::Unity::Mathematics::bool2,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool2> {
+        let __cordl_ret: crate::Unity::Mathematics::bool2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality_bool2__cordl_bool1(
+        lhs: crate::Unity::Mathematics::bool2,
+        rhs: bool,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool2> {
+        let __cordl_ret: crate::Unity::Mathematics::bool2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality_bool2_bool2_0(
+        lhs: crate::Unity::Mathematics::bool2,
+        rhs: crate::Unity::Mathematics::bool2,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool2> {
+        let __cordl_ret: crate::Unity::Mathematics::bool2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_ExclusiveOr__cordl_bool_bool2_2(
+        lhs: bool,
+        rhs: crate::Unity::Mathematics::bool2,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool2> {
+        let __cordl_ret: crate::Unity::Mathematics::bool2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_ExclusiveOr", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_ExclusiveOr_bool2__cordl_bool1(
+        lhs: crate::Unity::Mathematics::bool2,
+        rhs: bool,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool2> {
+        let __cordl_ret: crate::Unity::Mathematics::bool2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_ExclusiveOr", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_ExclusiveOr_bool2_bool2_0(
+        lhs: crate::Unity::Mathematics::bool2,
+        rhs: crate::Unity::Mathematics::bool2,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool2> {
+        let __cordl_ret: crate::Unity::Mathematics::bool2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_ExclusiveOr", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit(
+        v: bool,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool2> {
+        let __cordl_ret: crate::Unity::Mathematics::bool2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (v))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality__cordl_bool_bool2_2(
+        lhs: bool,
+        rhs: crate::Unity::Mathematics::bool2,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool2> {
+        let __cordl_ret: crate::Unity::Mathematics::bool2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality_bool2__cordl_bool1(
+        lhs: crate::Unity::Mathematics::bool2,
+        rhs: bool,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool2> {
+        let __cordl_ret: crate::Unity::Mathematics::bool2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality_bool2_bool2_0(
+        lhs: crate::Unity::Mathematics::bool2,
+        rhs: crate::Unity::Mathematics::bool2,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool2> {
+        let __cordl_ret: crate::Unity::Mathematics::bool2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_LogicalNot(
+        val: crate::Unity::Mathematics::bool2,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool2> {
+        let __cordl_ret: crate::Unity::Mathematics::bool2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_LogicalNot", (val))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn set_Item(
         &mut self,
         index: i32,

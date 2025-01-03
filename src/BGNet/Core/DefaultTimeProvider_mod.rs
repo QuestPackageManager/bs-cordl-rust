@@ -23,7 +23,15 @@ impl std::ops::DerefMut for crate::BGNet::Core::DefaultTimeProvider {
     }
 }
 #[cfg(feature = "BGNet+Core+DefaultTimeProvider")]
-impl crate::BGNet::Core::DefaultTimeProvider {}
+impl crate::BGNet::Core::DefaultTimeProvider {
+    pub fn get_instance() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITimeProvider>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITimeProvider> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_instance", ())?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "BGNet+Core+DefaultTimeProvider")]
 impl quest_hook::libil2cpp::ObjectType for crate::BGNet::Core::DefaultTimeProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

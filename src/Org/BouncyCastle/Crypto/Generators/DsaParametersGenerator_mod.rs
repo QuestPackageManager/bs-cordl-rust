@@ -131,6 +131,27 @@ impl crate::Org::BouncyCastle::Crypto::Generators::DsaParametersGenerator {
         > = __cordl_object.invoke("GenerateParameters_FIPS186_3", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetDefaultN(L: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetDefaultN", (L))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Hash(
+        d: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
+        input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        output: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Hash", (d, input, output))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Inc(
+        buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Inc", (buf))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Init_DsaParameterGenerationParameters1(
         &mut self,
         parameters: quest_hook::libil2cpp::Gc<
@@ -157,6 +178,11 @@ impl crate::Org::BouncyCastle::Crypto::Generators::DsaParametersGenerator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Init", (_cordl_size, certainty, random))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsValidDsaStrength(strength: i32) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsValidDsaStrength", (strength))?;
         Ok(__cordl_ret.into())
     }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

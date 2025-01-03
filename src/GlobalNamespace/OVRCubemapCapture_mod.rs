@@ -37,6 +37,31 @@ impl crate::GlobalNamespace::OVRCubemapCapture {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
+    pub fn RenderIntoCubemap(
+        ownerCamera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+        outCubemap: quest_hook::libil2cpp::Gc<crate::UnityEngine::Cubemap>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RenderIntoCubemap", (ownerCamera, outCubemap))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SaveCubemapCapture(
+        cubemap: quest_hook::libil2cpp::Gc<crate::UnityEngine::Cubemap>,
+        pathName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SaveCubemapCapture", (cubemap, pathName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TriggerCubemapCapture(
+        capturePos: crate::UnityEngine::Vector3,
+        cubemapSize: i32,
+        pathName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TriggerCubemapCapture", (capturePos, cubemapSize, pathName))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Update(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

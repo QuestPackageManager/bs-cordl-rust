@@ -31,6 +31,18 @@ for crate::GlobalNamespace::PlayingDifficultyBeatmapRichPresenceData {
 }
 #[cfg(feature = "PlayingDifficultyBeatmapRichPresenceData")]
 impl crate::GlobalNamespace::PlayingDifficultyBeatmapRichPresenceData {
+    pub fn GetDestinationLocalizedString(
+        beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
+        beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetDestinationLocalizedString", (beatmapKey, beatmapLevel))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
         beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,

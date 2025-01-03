@@ -74,6 +74,15 @@ impl crate::UnityEngine::UIElements::UIR::RenderChain {
     pub type RenderNodeData = crate::UnityEngine::UIElements::UIR::RenderChain_RenderNodeData;
     #[cfg(feature = "UnityEngine+UIElements+UIR+RenderChain+__c")]
     pub type __c = crate::UnityEngine::UIElements::UIR::RenderChain___c;
+    pub fn AccessRenderNodeData(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::UIR::RenderChain_RenderNodeData,
+    > {
+        let __cordl_ret: crate::UnityEngine::UIElements::UIR::RenderChain_RenderNodeData = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AccessRenderNodeData", (obj))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn AllocCommand(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -199,6 +208,17 @@ impl crate::UnityEngine::UIElements::UIR::RenderChain {
             .invoke("FreeCommand", (cmd))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetFirstElementInPanel(
+        ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::VisualElement,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetFirstElementInPanel", (ve))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetStandardMaterial(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -234,6 +254,31 @@ impl crate::UnityEngine::UIElements::UIR::RenderChain {
             .invoke_void(".ctor", (panel))?;
         Ok(__cordl_object.into())
     }
+    pub fn OnRegisterIntermediateRendererMat(
+        rtp: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::BaseRuntimePanel>,
+        renderChain: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UIR::RenderChain,
+        >,
+        rnd: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::UIElements::UIR::RenderChain_RenderNodeData,
+        >,
+        camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+        sameDistanceSortPriority: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "OnRegisterIntermediateRendererMat",
+                (rtp, renderChain, rnd, camera, sameDistanceSortPriority),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn OnRegisterIntermediateRenderers(
+        camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("OnRegisterIntermediateRenderers", (camera))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn OnRenderCommandAdded(
         &mut self,
         command: quest_hook::libil2cpp::Gc<
@@ -261,6 +306,13 @@ impl crate::UnityEngine::UIElements::UIR::RenderChain {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnRenderCommandsRemoved", (firstCommand, lastCommand))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn OnRenderNodeExecute(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("OnRenderNodeExecute", (obj))?;
         Ok(__cordl_ret.into())
     }
     pub fn ProcessChanges(
@@ -892,7 +944,35 @@ for crate::UnityEngine::UIElements::UIR::RenderChain_RenderChainStaticIndexAlloc
 #[cfg(
     feature = "UnityEngine+UIElements+UIR+RenderChain+RenderChainStaticIndexAllocator"
 )]
-impl crate::UnityEngine::UIElements::UIR::RenderChain_RenderChainStaticIndexAllocator {}
+impl crate::UnityEngine::UIElements::UIR::RenderChain_RenderChainStaticIndexAllocator {
+    pub fn AccessIndex(
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::RenderChain>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UIR::RenderChain,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AccessIndex", (index))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AllocateIndex(
+        renderChain: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UIR::RenderChain,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AllocateIndex", (renderChain))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FreeIndex(
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FreeIndex", (index))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+UIR+RenderChain+RenderNodeData")]
 #[repr(C)]
 #[derive(Debug, Clone)]

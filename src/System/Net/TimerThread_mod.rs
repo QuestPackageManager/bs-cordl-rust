@@ -52,6 +52,62 @@ impl crate::System::Net::TimerThread {
     pub type TimerNode = crate::System::Net::TimerThread_TimerNode;
     #[cfg(feature = "System+Net+TimerThread+TimerQueue")]
     pub type TimerQueue = crate::System::Net::TimerThread_TimerQueue;
+    pub fn CreateQueue(
+        durationMilliseconds: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Net::TimerThread_Queue>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Net::TimerThread_Queue,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateQueue", (durationMilliseconds))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetOrCreateQueue(
+        durationMilliseconds: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Net::TimerThread_Queue>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Net::TimerThread_Queue,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetOrCreateQueue", (durationMilliseconds))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsTickBetween(
+        start: i32,
+        end: i32,
+        comparand: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsTickBetween", (start, end, comparand))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn OnDomainUnload(
+        sender: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        e: quest_hook::libil2cpp::Gc<crate::System::EventArgs>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("OnDomainUnload", (sender, e))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Prod() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Prod", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StopTimerThread() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StopTimerThread", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ThreadProc() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ThreadProc", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "System+Net+TimerThread")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Net::TimerThread {

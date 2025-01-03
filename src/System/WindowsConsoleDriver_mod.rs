@@ -27,12 +27,42 @@ impl std::ops::DerefMut for crate::System::WindowsConsoleDriver {
 }
 #[cfg(feature = "System+WindowsConsoleDriver")]
 impl crate::System::WindowsConsoleDriver {
+    pub fn GetConsoleScreenBufferInfo(
+        handle: crate::System::IntPtr,
+        info: quest_hook::libil2cpp::ByRefMut<crate::System::ConsoleScreenBufferInfo>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetConsoleScreenBufferInfo", (handle, info))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetStdHandle(
+        handle: crate::System::Handles,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetStdHandle", (handle))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsModifierKey(virtualKeyCode: i16) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsModifierKey", (virtualKeyCode))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
+    }
+    pub fn ReadConsoleInput(
+        handle: crate::System::IntPtr,
+        record: quest_hook::libil2cpp::ByRefMut<crate::System::InputRecord>,
+        length: i32,
+        nread: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadConsoleInput", (handle, record, length, nread))?;
+        Ok(__cordl_ret.into())
     }
     pub fn ReadKey(
         &mut self,

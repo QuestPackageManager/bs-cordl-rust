@@ -33,6 +33,15 @@ impl std::ops::DerefMut for crate::UnityEngine::Yoga::YogaNode {
 }
 #[cfg(feature = "UnityEngine+Yoga+YogaNode")]
 impl crate::UnityEngine::Yoga::YogaNode {
+    pub fn BaselineInternal(
+        node: quest_hook::libil2cpp::Gc<crate::UnityEngine::Yoga::YogaNode>,
+        width: f32,
+        height: f32,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BaselineInternal", (node, width, height))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CalculateLayout(
         &mut self,
         width: f32,
@@ -125,6 +134,17 @@ impl crate::UnityEngine::Yoga::YogaNode {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MarkLayoutSeen", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MeasureInternal(
+        node: quest_hook::libil2cpp::Gc<crate::UnityEngine::Yoga::YogaNode>,
+        width: f32,
+        widthMode: crate::UnityEngine::Yoga::YogaMeasureMode,
+        height: f32,
+        heightMode: crate::UnityEngine::Yoga::YogaMeasureMode,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Yoga::YogaSize> {
+        let __cordl_ret: crate::UnityEngine::Yoga::YogaSize = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MeasureInternal", (node, width, widthMode, height, heightMode))?;
         Ok(__cordl_ret.into())
     }
     pub fn New(

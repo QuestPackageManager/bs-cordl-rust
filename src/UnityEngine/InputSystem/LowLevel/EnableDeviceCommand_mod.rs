@@ -24,6 +24,20 @@ for crate::UnityEngine::InputSystem::LowLevel::EnableDeviceCommand {
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+EnableDeviceCommand")]
 impl crate::UnityEngine::InputSystem::LowLevel::EnableDeviceCommand {
     pub const kSize: i32 = 8i32;
+    pub fn Create() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::LowLevel::EnableDeviceCommand,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::EnableDeviceCommand = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Type() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::FourCC,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_Type", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_typeStatic(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

@@ -23,7 +23,16 @@ impl std::ops::DerefMut for crate::GlobalNamespace::Interpolation {
     }
 }
 #[cfg(feature = "Interpolation")]
-impl crate::GlobalNamespace::Interpolation {}
+impl crate::GlobalNamespace::Interpolation {
+    pub fn Interpolate(
+        t: f32,
+        easeType: crate::GlobalNamespace::EaseType,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Interpolate", (t, easeType))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "Interpolation")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::Interpolation {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

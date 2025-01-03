@@ -25,6 +25,18 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::X509::TargetInformat
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+TargetInformation")]
 impl crate::Org::BouncyCastle::Asn1::X509::TargetInformation {
+    pub fn GetInstance(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::TargetInformation,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::TargetInformation,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetTargetsObjects(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

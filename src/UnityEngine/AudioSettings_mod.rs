@@ -28,6 +28,93 @@ impl crate::UnityEngine::AudioSettings {
     pub type AudioConfigurationChangeHandler = crate::UnityEngine::AudioSettings_AudioConfigurationChangeHandler;
     #[cfg(feature = "UnityEngine+AudioSettings+Mobile")]
     pub type Mobile = crate::UnityEngine::AudioSettings_Mobile;
+    pub fn GetConfiguration() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::AudioConfiguration,
+    > {
+        let __cordl_ret: crate::UnityEngine::AudioConfiguration = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetConfiguration", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetConfiguration_Injected(
+        ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::AudioConfiguration>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetConfiguration_Injected", (ret))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetSampleRate() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSampleRate", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetSpatializerPluginName() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSpatializerPluginName", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InvokeOnAudioConfigurationChanged(
+        deviceWasChanged: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InvokeOnAudioConfigurationChanged", (deviceWasChanged))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InvokeOnAudioSystemShuttingDown() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InvokeOnAudioSystemShuttingDown", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InvokeOnAudioSystemStartedUp() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InvokeOnAudioSystemStartedUp", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StartAudioOutput() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StartAudioOutput", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StopAudioOutput() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StopAudioOutput", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn add_OnAudioConfigurationChanged(
+        value: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AudioSettings_AudioConfigurationChangeHandler,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("add_OnAudioConfigurationChanged", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_dspTime() -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_ret: f64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_dspTime", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_outputSampleRate() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_outputSampleRate", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_OnAudioConfigurationChanged(
+        value: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AudioSettings_AudioConfigurationChangeHandler,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("remove_OnAudioConfigurationChanged", (value))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+AudioSettings")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::AudioSettings {
@@ -136,7 +223,53 @@ impl std::ops::DerefMut for crate::UnityEngine::AudioSettings_Mobile {
     }
 }
 #[cfg(feature = "UnityEngine+AudioSettings+Mobile")]
-impl crate::UnityEngine::AudioSettings_Mobile {}
+impl crate::UnityEngine::AudioSettings_Mobile {
+    pub fn InvokeIsStopAudioOutputOnMuteEnabled() -> quest_hook::libil2cpp::Result<
+        bool,
+    > {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InvokeIsStopAudioOutputOnMuteEnabled", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InvokeOnMuteStateChanged(
+        mute: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InvokeOnMuteStateChanged", (mute))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StartAudioOutput() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StartAudioOutput", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StopAudioOutput() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StopAudioOutput", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_muteState() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_muteState", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_stopAudioOutputOnMute() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_stopAudioOutputOnMute", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_muteState(
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_muteState", (value))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+AudioSettings+Mobile")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::AudioSettings_Mobile {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

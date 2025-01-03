@@ -81,6 +81,13 @@ impl crate::System::Xml::DtdParser {
             .invoke("AddUndeclaredNotation", (notationName))?;
         Ok(__cordl_ret.into())
     }
+    pub fn Create() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdParser>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdParser> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn EatPublicKeyword(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -958,6 +965,17 @@ impl crate::System::Xml::DtdParser {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SendValidationEvent", (pos, severity, code, arg))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StripSpaces(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StripSpaces", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn System_Xml_IDtdParser_ParseFreeFloatingDtd(

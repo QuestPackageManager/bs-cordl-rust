@@ -34,6 +34,13 @@ impl crate::GlobalNamespace::BitMask256 {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn Deserialize(
+        reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::BitMask256> {
+        let __cordl_ret: crate::GlobalNamespace::BitMask256 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Deserialize", (reader))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Equals_BitMask256_0(
         &mut self,
         other: crate::GlobalNamespace::BitMask256,
@@ -140,6 +147,76 @@ impl crate::GlobalNamespace::BitMask256 {
             "get_bitCount",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_maxValue() -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::BitMask256,
+    > {
+        let __cordl_ret: crate::GlobalNamespace::BitMask256 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_maxValue", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_BitwiseAnd(
+        a: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BitMask256>,
+        b: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BitMask256>,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::BitMask256> {
+        let __cordl_ret: crate::GlobalNamespace::BitMask256 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_BitwiseAnd", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_BitwiseOr(
+        a: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BitMask256>,
+        b: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BitMask256>,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::BitMask256> {
+        let __cordl_ret: crate::GlobalNamespace::BitMask256 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_BitwiseOr", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        a: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BitMask256>,
+        b: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BitMask256>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_ExclusiveOr(
+        a: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BitMask256>,
+        b: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BitMask256>,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::BitMask256> {
+        let __cordl_ret: crate::GlobalNamespace::BitMask256 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_ExclusiveOr", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit(
+        value: u64,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::BitMask256> {
+        let __cordl_ret: crate::GlobalNamespace::BitMask256 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        a: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BitMask256>,
+        b: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BitMask256>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_LeftShift(
+        a: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BitMask256>,
+        bits: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::BitMask256> {
+        let __cordl_ret: crate::GlobalNamespace::BitMask256 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_LeftShift", (a, bits))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_RightShift(
+        a: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BitMask256>,
+        bits: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::BitMask256> {
+        let __cordl_ret: crate::GlobalNamespace::BitMask256 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_RightShift", (a, bits))?;
         Ok(__cordl_ret.into())
     }
 }

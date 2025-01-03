@@ -22,7 +22,36 @@ impl std::ops::DerefMut for crate::System::IO::Error {
     }
 }
 #[cfg(feature = "System+IO+Error")]
-impl crate::System::IO::Error {}
+impl crate::System::IO::Error {
+    pub fn GetEndOfFile() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetEndOfFile", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetReadNotSupported() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetReadNotSupported", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetStreamIsClosed() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetStreamIsClosed", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetWriteNotSupported() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetWriteNotSupported", ())?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+IO+Error")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::IO::Error {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

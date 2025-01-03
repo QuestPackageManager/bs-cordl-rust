@@ -57,6 +57,20 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaNode {
         > = __cordl_object.invoke("Combine", (schema))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetId(
+        schemata: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::Newtonsoft::Json::Schema::JsonSchema,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetId", (schemata))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_JsonSchema0(
         schema: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchema>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

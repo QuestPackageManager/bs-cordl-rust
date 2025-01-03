@@ -26,6 +26,78 @@ impl std::ops::DerefMut for crate::UnityEngine::UI::StencilMaterial {
 impl crate::UnityEngine::UI::StencilMaterial {
     #[cfg(feature = "UnityEngine+UI+StencilMaterial+MatEntry")]
     pub type MatEntry = crate::UnityEngine::UI::StencilMaterial_MatEntry;
+    pub fn Add_Material_i32_0(
+        baseMat: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+        stencilID: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Add", (baseMat, stencilID))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Add_StencilOp_CompareFunction_ColorWriteMask1(
+        baseMat: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+        stencilID: i32,
+        operation: crate::UnityEngine::Rendering::StencilOp,
+        compareFunction: crate::UnityEngine::Rendering::CompareFunction,
+        colorWriteMask: crate::UnityEngine::Rendering::ColorWriteMask,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "Add",
+                (baseMat, stencilID, operation, compareFunction, colorWriteMask),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Add_StencilOp_CompareFunction_ColorWriteMask_i32_i32_2(
+        baseMat: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+        stencilID: i32,
+        operation: crate::UnityEngine::Rendering::StencilOp,
+        compareFunction: crate::UnityEngine::Rendering::CompareFunction,
+        colorWriteMask: crate::UnityEngine::Rendering::ColorWriteMask,
+        readMask: i32,
+        writeMask: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "Add",
+                (
+                    baseMat,
+                    stencilID,
+                    operation,
+                    compareFunction,
+                    colorWriteMask,
+                    readMask,
+                    writeMask,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ClearAll() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ClearAll", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LogWarningWhenNotInBatchmode(
+        warning: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        context: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LogWarningWhenNotInBatchmode", (warning, context))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Remove(
+        customMat: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Remove", (customMat))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+UI+StencilMaterial")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::StencilMaterial {

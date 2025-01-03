@@ -115,6 +115,28 @@ impl crate::UnityEngine::UIElements::StyleFloat {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Equality(
+        lhs: crate::UnityEngine::UIElements::StyleFloat,
+        rhs: crate::UnityEngine::UIElements::StyleFloat,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_StyleKeyword0(
+        keyword: crate::UnityEngine::UIElements::StyleKeyword,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::StyleFloat> {
+        let __cordl_ret: crate::UnityEngine::UIElements::StyleFloat = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (keyword))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_f32_1(
+        v: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::StyleFloat> {
+        let __cordl_ret: crate::UnityEngine::UIElements::StyleFloat = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (v))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleFloat")]
 impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleFloat>>

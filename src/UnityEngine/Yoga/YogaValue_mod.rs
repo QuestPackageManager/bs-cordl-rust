@@ -22,6 +22,11 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::Yoga::Yo
 }
 #[cfg(feature = "UnityEngine+Yoga+YogaValue")]
 impl crate::UnityEngine::Yoga::YogaValue {
+    pub fn Auto() -> quest_hook::libil2cpp::Result<crate::UnityEngine::Yoga::YogaValue> {
+        let __cordl_ret: crate::UnityEngine::Yoga::YogaValue = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Auto", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Equals_Il2CppObject1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -52,6 +57,20 @@ impl crate::UnityEngine::Yoga::YogaValue {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn Percent(
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Yoga::YogaValue> {
+        let __cordl_ret: crate::UnityEngine::Yoga::YogaValue = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Percent", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Point(
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Yoga::YogaValue> {
+        let __cordl_ret: crate::UnityEngine::Yoga::YogaValue = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Point", (value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_Unit(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Yoga::YogaUnit> {
@@ -68,6 +87,13 @@ impl crate::UnityEngine::Yoga::YogaValue {
             "get_Value",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit(
+        pointValue: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Yoga::YogaValue> {
+        let __cordl_ret: crate::UnityEngine::Yoga::YogaValue = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (pointValue))?;
         Ok(__cordl_ret.into())
     }
 }

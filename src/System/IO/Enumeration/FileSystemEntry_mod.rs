@@ -35,6 +35,30 @@ impl crate::System::IO::Enumeration::FileSystemEntry {
         feature = "System+IO+Enumeration+FileSystemEntry+__fileNameBuffer_e__FixedBuffer"
     )]
     pub type __fileNameBuffer_e__FixedBuffer = crate::System::IO::Enumeration::FileSystemEntry___fileNameBuffer_e__FixedBuffer;
+    pub fn Initialize(
+        entry: quest_hook::libil2cpp::ByRefMut<
+            crate::System::IO::Enumeration::FileSystemEntry,
+        >,
+        directoryEntry: crate::GlobalNamespace::Sys_Interop_DirectoryEntry,
+        directory: crate::System::ReadOnlySpan_1<char>,
+        rootDirectory: crate::System::ReadOnlySpan_1<char>,
+        originalRootDirectory: crate::System::ReadOnlySpan_1<char>,
+        pathBuffer: crate::System::Span_1<char>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IO::FileAttributes> {
+        let __cordl_ret: crate::System::IO::FileAttributes = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "Initialize",
+                (
+                    entry,
+                    directoryEntry,
+                    directory,
+                    rootDirectory,
+                    originalRootDirectory,
+                    pathBuffer,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ToFileSystemInfo(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

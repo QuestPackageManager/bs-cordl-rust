@@ -23,7 +23,23 @@ impl std::ops::DerefMut for crate::Unity::XR::Oculus::RegisterUpdateCallback {
     }
 }
 #[cfg(feature = "Unity+XR+Oculus+RegisterUpdateCallback")]
-impl crate::Unity::XR::Oculus::RegisterUpdateCallback {}
+impl crate::Unity::XR::Oculus::RegisterUpdateCallback {
+    pub fn Deinitialize() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Deinitialize", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Initialize() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Initialize", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Update() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Update", ())?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "Unity+XR+Oculus+RegisterUpdateCallback")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::XR::Oculus::RegisterUpdateCallback {

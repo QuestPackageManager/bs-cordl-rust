@@ -123,6 +123,69 @@ impl crate::Newtonsoft::Json::Linq::JProperty {
             .invoke("InsertItem", (index, item, skipParentCheck, copyAnnotations))?;
         Ok(__cordl_ret.into())
     }
+    pub fn LoadAsync_CancellationToken0(
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut crate::Newtonsoft::Json::Linq::JProperty,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut crate::Newtonsoft::Json::Linq::JProperty,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LoadAsync", (reader, cancellationToken))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LoadAsync_JsonLoadSettings_CancellationToken1(
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+        settings: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Linq::JsonLoadSettings,
+        >,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut crate::Newtonsoft::Json::Linq::JProperty,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut crate::Newtonsoft::Json::Linq::JProperty,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LoadAsync", (reader, settings, cancellationToken))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Load_JsonLoadSettings1(
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+        settings: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Linq::JsonLoadSettings,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JProperty>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Linq::JProperty,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Load", (reader, settings))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Load_JsonReader0(
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JProperty>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Linq::JProperty,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Load", (reader))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn MergeItem(
         &mut self,
         content: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

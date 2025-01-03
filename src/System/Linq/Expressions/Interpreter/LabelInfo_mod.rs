@@ -47,6 +47,19 @@ impl crate::System::Linq::Expressions::Interpreter::LabelInfo {
             .invoke("AddDefinition", (scope))?;
         Ok(__cordl_ret.into())
     }
+    pub fn CommonNode<T>(
+        first: T,
+        second: T,
+        parent: quest_hook::libil2cpp::Gc<crate::System::Func_2<T, T>>,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CommonNode", (first, second, parent))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Define(
         &mut self,
         block: quest_hook::libil2cpp::Gc<

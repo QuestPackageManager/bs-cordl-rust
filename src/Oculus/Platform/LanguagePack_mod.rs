@@ -23,7 +23,38 @@ impl std::ops::DerefMut for crate::Oculus::Platform::LanguagePack {
     }
 }
 #[cfg(feature = "Oculus+Platform+LanguagePack")]
-impl crate::Oculus::Platform::LanguagePack {}
+impl crate::Oculus::Platform::LanguagePack {
+    pub fn GetCurrent() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Request_1<
+                *mut crate::Oculus::Platform::Models::AssetDetails,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Request_1<
+                *mut crate::Oculus::Platform::Models::AssetDetails,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetCurrent", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetCurrent(
+        tag: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Request_1<
+                *mut crate::Oculus::Platform::Models::AssetFileDownloadResult,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Request_1<
+                *mut crate::Oculus::Platform::Models::AssetFileDownloadResult,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("SetCurrent", (tag))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "Oculus+Platform+LanguagePack")]
 impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Platform::LanguagePack {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

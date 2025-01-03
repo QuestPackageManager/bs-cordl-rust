@@ -23,7 +23,93 @@ impl std::ops::DerefMut for crate::System::Dynamic::Utils::CollectionExtensions 
     }
 }
 #[cfg(feature = "System+Dynamic+Utils+CollectionExtensions")]
-impl crate::System::Dynamic::Utils::CollectionExtensions {}
+impl crate::System::Dynamic::Utils::CollectionExtensions {
+    pub fn AddFirst<T>(
+        list: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<T>,
+        >,
+        item: T,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::CompilerServices::TrueReadOnlyCollection_1<T>,
+        >,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::CompilerServices::TrueReadOnlyCollection_1<T>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddFirst", (list, item))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddLast<T>(
+        array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+        item: T,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<T>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddLast", (array, item))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RemoveFirst<T>(
+        array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<T>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RemoveFirst", (array))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RemoveLast<T>(
+        array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<T>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RemoveLast", (array))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToReadOnly<T>(
+        enumerable: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<T>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<T>,
+        >,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<T>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToReadOnly", (enumerable))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Dynamic+Utils+CollectionExtensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Dynamic::Utils::CollectionExtensions {

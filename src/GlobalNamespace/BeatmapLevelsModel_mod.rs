@@ -297,6 +297,17 @@ impl crate::GlobalNamespace::BeatmapLevelsModel {
         > = __cordl_object.invoke("SelectPacks", (include, exclude))?;
         Ok(__cordl_ret.into())
     }
+    pub fn _CreateBeatmapLevelPack_g__ShouldBeKeptIntact_31_2(
+        desiredSensitivityFlag: crate::GlobalNamespace::PlayerSensitivityFlag,
+        contentRating: crate::GlobalNamespace::PlayerSensitivityFlag,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "<CreateBeatmapLevelPack>g__ShouldBeKeptIntact|31_2",
+                (desiredSensitivityFlag, contentRating),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
         entitlementChecker: quest_hook::libil2cpp::Gc<

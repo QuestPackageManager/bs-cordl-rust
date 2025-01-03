@@ -25,7 +25,32 @@ for crate::UnityEngine::UIElements::StyleSheets::StylePropertyUtil {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+StylePropertyUtil")]
-impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyUtil {}
+impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyUtil {
+    pub fn IsAnimatable(
+        id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsAnimatable", (id))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsMatchingShorthand(
+        shorthand: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+        id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsMatchingShorthand", (shorthand, id))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryGetEnumIntValue(
+        enumType: crate::UnityEngine::UIElements::StyleSheets::StyleEnumType,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        intValue: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryGetEnumIntValue", (enumType, value, intValue))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+StylePropertyUtil")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::StyleSheets::StylePropertyUtil {

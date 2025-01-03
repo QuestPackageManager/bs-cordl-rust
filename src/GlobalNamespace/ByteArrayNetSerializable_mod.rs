@@ -204,6 +204,19 @@ impl crate::GlobalNamespace::ByteArrayNetSerializable {
         let __cordl_ret: i32 = __cordl_object.invoke("get_length", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Implicit(
+        byteArrayNetSerializable: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ByteArrayNetSerializable,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (byteArrayNetSerializable))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn set_data(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,

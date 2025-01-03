@@ -35,6 +35,48 @@ impl crate::LIV::SDK::Unity::SDKShaders {
     pub const LIV_MR_KEYWORD: &'static str = "LIV_MR";
     pub const LIV_WRITE_OPAQUE_TO_ALPHA_SHADER: &'static str = "Hidden/LIV_WriteOpaqueToAlpha";
     pub const LIV_WRITE_SHADER: &'static str = "Hidden/LIV_Write";
+    pub fn StartBackgroundRendering() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StartBackgroundRendering", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StartForegroundRendering() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StartForegroundRendering", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StartRendering() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StartRendering", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StopBackgroundRendering() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StopBackgroundRendering", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StopForegroundRendering() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StopForegroundRendering", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StopRendering() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StopRendering", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "LIV+SDK+Unity+SDKShaders")]
 impl quest_hook::libil2cpp::ObjectType for crate::LIV::SDK::Unity::SDKShaders {

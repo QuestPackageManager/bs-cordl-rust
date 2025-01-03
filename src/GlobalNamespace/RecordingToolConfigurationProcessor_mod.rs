@@ -139,6 +139,13 @@ impl crate::GlobalNamespace::RecordingToolConfigurationProcessor {
         > = __cordl_object.invoke("GetConfigFilePath", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetDefaultMrcLayersMask() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::LayerMask,
+    > {
+        let __cordl_ret: crate::UnityEngine::LayerMask = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetDefaultMrcLayersMask", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetLayerMask(
         &mut self,
         layerName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -161,6 +168,28 @@ impl crate::GlobalNamespace::RecordingToolConfigurationProcessor {
         );
         let __cordl_ret: crate::UnityEngine::LayerMask = __cordl_object
             .invoke("GetLayersMask", (layerNames))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetLevelPackAndLevelPreviewForLevelId(
+        packId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        beatmapLevelsModel: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapLevelsModel,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::ValueTuple_2<
+            *mut crate::GlobalNamespace::BeatmapLevelPack,
+            *mut crate::GlobalNamespace::BeatmapLevel,
+        >,
+    > {
+        let __cordl_ret: crate::System::ValueTuple_2<
+            *mut crate::GlobalNamespace::BeatmapLevelPack,
+            *mut crate::GlobalNamespace::BeatmapLevel,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetLevelPackAndLevelPreviewForLevelId",
+                (packId, levelId, beatmapLevelsModel),
+            )?;
         Ok(__cordl_ret.into())
     }
     pub fn IsRecordingToolEnabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {

@@ -26,7 +26,23 @@ for crate::UnityEngine::InputSystem::LowLevel::InputRuntimeExtensions {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputRuntimeExtensions")]
-impl crate::UnityEngine::InputSystem::LowLevel::InputRuntimeExtensions {}
+impl crate::UnityEngine::InputSystem::LowLevel::InputRuntimeExtensions {
+    pub fn DeviceCommand<TCommand>(
+        runtime: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::LowLevel::IInputRuntime,
+        >,
+        deviceId: i32,
+        command: quest_hook::libil2cpp::ByRefMut<TCommand>,
+    ) -> quest_hook::libil2cpp::Result<i64>
+    where
+        TCommand: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DeviceCommand", (runtime, deviceId, command))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputRuntimeExtensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::LowLevel::InputRuntimeExtensions {

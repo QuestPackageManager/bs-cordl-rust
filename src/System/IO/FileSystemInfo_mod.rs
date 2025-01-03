@@ -28,6 +28,17 @@ impl std::ops::DerefMut for crate::System::IO::FileSystemInfo {
 }
 #[cfg(feature = "System+IO+FileSystemInfo")]
 impl crate::System::IO::FileSystemInfo {
+    pub fn Create(
+        fullPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        fileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        fileStatus: quest_hook::libil2cpp::ByRefMut<crate::System::IO::FileStatus>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IO::FileSystemInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IO::FileSystemInfo> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (fullPath, fileName, fileStatus))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Delete(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -90,6 +101,13 @@ impl crate::System::IO::FileSystemInfo {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Refresh", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ThrowNotFound(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ThrowNotFound", (path))?;
         Ok(__cordl_ret.into())
     }
     pub fn ToString(

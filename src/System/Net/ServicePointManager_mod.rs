@@ -26,6 +26,78 @@ impl std::ops::DerefMut for crate::System::Net::ServicePointManager {
 impl crate::System::Net::ServicePointManager {
     #[cfg(feature = "System+Net+ServicePointManager+SPKey")]
     pub type SPKey = crate::System::Net::ServicePointManager_SPKey;
+    pub fn CloseConnectionGroup(
+        connectionGroupName: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CloseConnectionGroup", (connectionGroupName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FindServicePoint(
+        address: quest_hook::libil2cpp::Gc<crate::System::Uri>,
+        proxy: quest_hook::libil2cpp::Gc<crate::System::Net::IWebProxy>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Net::ServicePoint>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::ServicePoint> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FindServicePoint", (address, proxy))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetLegacyCertificatePolicy() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Net::ICertificatePolicy>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Net::ICertificatePolicy,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetLegacyCertificatePolicy", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RemoveServicePoint(
+        sp: quest_hook::libil2cpp::Gc<crate::System::Net::ServicePoint>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RemoveServicePoint", (sp))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_CheckCertificateRevocationList() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_CheckCertificateRevocationList", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_DnsRefreshTimeout() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_DnsRefreshTimeout", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_SecurityProtocol() -> quest_hook::libil2cpp::Result<
+        crate::System::Net::SecurityProtocolType,
+    > {
+        let __cordl_ret: crate::System::Net::SecurityProtocolType = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_SecurityProtocol", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_ServerCertValidationCallback() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Net::ServerCertValidationCallback>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Net::ServerCertValidationCallback,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_ServerCertValidationCallback", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_ServerCertificateValidationCallback() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Net::Security::RemoteCertificateValidationCallback,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Security::RemoteCertificateValidationCallback,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_ServerCertificateValidationCallback", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "System+Net+ServicePointManager")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Net::ServicePointManager {

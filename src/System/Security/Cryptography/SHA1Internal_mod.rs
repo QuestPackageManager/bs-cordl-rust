@@ -42,6 +42,13 @@ impl crate::System::Security::Cryptography::SHA1Internal {
             .invoke("AddLength", (length, buffer, position))?;
         Ok(__cordl_ret.into())
     }
+    pub fn FillBuff(
+        buff: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FillBuff", (buff))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn HashCore(
         &mut self,
         rgb: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -66,6 +73,15 @@ impl crate::System::Security::Cryptography::SHA1Internal {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
         > = __cordl_object.invoke("HashFinal", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InitialiseBuff(
+        buff: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+        input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        inputOffset: u32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InitialiseBuff", (buff, input, inputOffset))?;
         Ok(__cordl_ret.into())
     }
     pub fn Initialize(

@@ -39,6 +39,11 @@ impl crate::GlobalNamespace::OVRVirtualKeyboardSampleInputHandler {
     pub const LINEPOINTER_THINNING_THRESHOLD: f32 = 0.015f32;
     pub const RAY_MAX_DISTANCE: f32 = 100f32;
     pub const THUMBSTICK_DEADZONE: f32 = 0.2f32;
+    pub fn ApplyDeadzone(value: f32) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ApplyDeadzone", (value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

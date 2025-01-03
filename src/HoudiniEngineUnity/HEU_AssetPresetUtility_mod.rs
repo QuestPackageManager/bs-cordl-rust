@@ -23,7 +23,24 @@ impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_AssetPresetUtility {
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_AssetPresetUtility")]
-impl crate::HoudiniEngineUnity::HEU_AssetPresetUtility {}
+impl crate::HoudiniEngineUnity::HEU_AssetPresetUtility {
+    pub fn LoadPresetFileIntoAssetAndCook(
+        asset: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAsset>,
+        filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LoadPresetFileIntoAssetAndCook", (asset, filePath))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SaveAssetPresetToFile(
+        asset: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAsset>,
+        filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SaveAssetPresetToFile", (asset, filePath))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "HoudiniEngineUnity+HEU_AssetPresetUtility")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::HoudiniEngineUnity::HEU_AssetPresetUtility {

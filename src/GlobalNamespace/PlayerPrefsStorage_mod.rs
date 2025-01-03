@@ -34,6 +34,11 @@ impl crate::GlobalNamespace::PlayerPrefsStorage {
         let __cordl_ret: bool = __cordl_object.invoke("FileExists", (filePath))?;
         Ok(__cordl_ret.into())
     }
+    pub fn Initialize() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Initialize", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn LoadFile(
         &mut self,
         filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

@@ -30,6 +30,16 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::Crmf::EncryptedValue
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Crmf+EncryptedValue")]
 impl crate::Org::BouncyCastle::Asn1::Crmf::EncryptedValue {
+    pub fn GetInstance(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Crmf::EncryptedValue>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Crmf::EncryptedValue,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_AlgorithmIdentifier_AlgorithmIdentifier_DerBitString_AlgorithmIdentifier_Asn1OctetString_DerBitString1(
         intendedAlg: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,

@@ -30,6 +30,31 @@ impl crate::UnityEngine::ReflectionProbe {
     pub type __c__DisplayClass95_0 = crate::UnityEngine::ReflectionProbe___c__DisplayClass95_0;
     #[cfg(feature = "UnityEngine+ReflectionProbe+__c__DisplayClass98_0")]
     pub type __c__DisplayClass98_0 = crate::UnityEngine::ReflectionProbe___c__DisplayClass98_0;
+    pub fn BlendCubemap(
+        src: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+        dst: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+        blend: f32,
+        target: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BlendCubemap", (src, dst, blend, target))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CallReflectionProbeEvent(
+        probe: quest_hook::libil2cpp::Gc<crate::UnityEngine::ReflectionProbe>,
+        probeEvent: crate::UnityEngine::ReflectionProbe_ReflectionProbeEvent,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CallReflectionProbeEvent", (probe, probeEvent))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CallSetDefaultReflection(
+        defaultReflectionCubemap: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CallSetDefaultReflection", (defaultReflectionCubemap))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn IsFinishedRendering(
         &mut self,
         renderId: i32,
@@ -87,6 +112,13 @@ impl crate::UnityEngine::ReflectionProbe {
             .invoke("ScheduleRender", (timeSlicingMode, targetTexture))?;
         Ok(__cordl_ret.into())
     }
+    pub fn UpdateCachedState() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UpdateCachedState", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -95,6 +127,36 @@ impl crate::UnityEngine::ReflectionProbe {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn add_defaultReflectionSet(
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::UnityEngine::Cubemap>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("add_defaultReflectionSet", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn add_defaultReflectionTexture(
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::UnityEngine::Texture>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("add_defaultReflectionTexture", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn add_reflectionProbeChanged(
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<
+                *mut crate::UnityEngine::ReflectionProbe,
+                crate::UnityEngine::ReflectionProbe_ReflectionProbeEvent,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("add_reflectionProbeChanged", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_backgroundColor(
@@ -217,6 +279,27 @@ impl crate::UnityEngine::ReflectionProbe {
             .invoke("get_customBakedTexture", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_defaultTexture() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_defaultTexture", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_defaultTextureHDRDecodeValues() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Vector4,
+    > {
+        let __cordl_ret: crate::UnityEngine::Vector4 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_defaultTextureHDRDecodeValues", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_defaultTextureHDRDecodeValues_Injected(
+        ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector4>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_defaultTextureHDRDecodeValues_Injected", (ret))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_farClipPlane(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -243,6 +326,16 @@ impl crate::UnityEngine::ReflectionProbe {
             self,
         );
         let __cordl_ret: f32 = __cordl_object.invoke("get_intensity", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_maxBakedCubemapResolution() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_maxBakedCubemapResolution", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_minBakedCubemapResolution() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_minBakedCubemapResolution", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_mode(
@@ -385,6 +478,36 @@ impl crate::UnityEngine::ReflectionProbe {
         );
         let __cordl_ret: crate::UnityEngine::Rendering::ReflectionProbeType = __cordl_object
             .invoke("get_type", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_defaultReflectionSet(
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::UnityEngine::Cubemap>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("remove_defaultReflectionSet", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_defaultReflectionTexture(
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::UnityEngine::Texture>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("remove_defaultReflectionTexture", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_reflectionProbeChanged(
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<
+                *mut crate::UnityEngine::ReflectionProbe,
+                crate::UnityEngine::ReflectionProbe_ReflectionProbeEvent,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("remove_reflectionProbeChanged", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_backgroundColor(

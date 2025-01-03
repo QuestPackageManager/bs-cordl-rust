@@ -66,6 +66,36 @@ impl crate::System::Globalization::DateTimeFormatInfoScanner {
             .invoke("AddIgnorableSymbols", (text))?;
         Ok(__cordl_ret.into())
     }
+    pub fn ArrayElementsBeginWithDigit(
+        array: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ArrayElementsBeginWithDigit", (array))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ArrayElementsHaveSpace(
+        array: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ArrayElementsHaveSpace", (array))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EqualStringArrays(
+        array1: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+        array2: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EqualStringArrays", (array1, array2))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetDateWordsOfDTFI(
         &mut self,
         dtfi: quest_hook::libil2cpp::Gc<crate::System::Globalization::DateTimeFormatInfo>,
@@ -80,6 +110,77 @@ impl crate::System::Globalization::DateTimeFormatInfoScanner {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         > = __cordl_object.invoke("GetDateWordsOfDTFI", (dtfi))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetFormatFlagGenitiveMonth(
+        monthNames: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+        genitveMonthNames: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+        abbrevMonthNames: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+        genetiveAbbrevMonthNames: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Globalization::FORMATFLAGS> {
+        let __cordl_ret: crate::System::Globalization::FORMATFLAGS = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetFormatFlagGenitiveMonth",
+                (
+                    monthNames,
+                    genitveMonthNames,
+                    abbrevMonthNames,
+                    genetiveAbbrevMonthNames,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetFormatFlagUseHebrewCalendar(
+        calID: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Globalization::FORMATFLAGS> {
+        let __cordl_ret: crate::System::Globalization::FORMATFLAGS = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetFormatFlagUseHebrewCalendar", (calID))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetFormatFlagUseSpaceInDayNames(
+        dayNames: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+        abbrevDayNames: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Globalization::FORMATFLAGS> {
+        let __cordl_ret: crate::System::Globalization::FORMATFLAGS = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetFormatFlagUseSpaceInDayNames", (dayNames, abbrevDayNames))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetFormatFlagUseSpaceInMonthNames(
+        monthNames: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+        genitveMonthNames: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+        abbrevMonthNames: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+        genetiveAbbrevMonthNames: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Globalization::FORMATFLAGS> {
+        let __cordl_ret: crate::System::Globalization::FORMATFLAGS = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetFormatFlagUseSpaceInMonthNames",
+                (
+                    monthNames,
+                    genitveMonthNames,
+                    abbrevMonthNames,
+                    genetiveAbbrevMonthNames,
+                ),
+            )?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -100,6 +201,24 @@ impl crate::System::Globalization::DateTimeFormatInfoScanner {
             .invoke("ScanDateWord", (pattern))?;
         Ok(__cordl_ret.into())
     }
+    pub fn ScanRepeatChar(
+        pattern: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        ch: char,
+        index: i32,
+        count: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ScanRepeatChar", (pattern, ch, index, count))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SkipWhiteSpacesAndNonLetter(
+        pattern: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        currentIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SkipWhiteSpacesAndNonLetter", (pattern, currentIndex))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -108,6 +227,22 @@ impl crate::System::Globalization::DateTimeFormatInfoScanner {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_KnownWords() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<
+                *mut quest_hook::libil2cpp::Il2CppString,
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<
+                *mut quest_hook::libil2cpp::Il2CppString,
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_KnownWords", ())?;
         Ok(__cordl_ret.into())
     }
 }

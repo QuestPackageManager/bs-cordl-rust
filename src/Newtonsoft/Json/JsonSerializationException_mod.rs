@@ -27,6 +27,45 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::JsonSerializationException 
 }
 #[cfg(feature = "Newtonsoft+Json+JsonSerializationException")]
 impl crate::Newtonsoft::Json::JsonSerializationException {
+    pub fn Create_IJsonLineInfo_Il2CppString_Exception2(
+        lineInfo: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::IJsonLineInfo>,
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        ex: quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonSerializationException>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::JsonSerializationException,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (lineInfo, path, message, ex))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Create_JsonReader0(
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonSerializationException>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::JsonSerializationException,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (reader, message))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Create_JsonReader_Exception1(
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        ex: quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonSerializationException>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::JsonSerializationException,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (reader, message, ex))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

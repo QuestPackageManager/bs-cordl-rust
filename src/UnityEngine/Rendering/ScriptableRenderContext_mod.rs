@@ -69,6 +69,20 @@ impl crate::UnityEngine::Rendering::ScriptableRenderContext {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetCameras_Internal_Injected(
+        _unity_self: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Rendering::ScriptableRenderContext,
+        >,
+        listType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        resultList: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetCameras_Internal_Injected",
+                (_unity_self, listType, resultList),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

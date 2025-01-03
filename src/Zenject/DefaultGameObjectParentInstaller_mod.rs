@@ -54,6 +54,25 @@ impl crate::Zenject::DefaultGameObjectParentInstaller {
             .invoke_void(".ctor", (name))?;
         Ok(__cordl_object.into())
     }
+    pub fn __zenCreate(
+        P_0: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("__zenCreate", (P_0))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn __zenCreateInjectTypeInfo() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Zenject::InjectTypeInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::InjectTypeInfo> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("__zenCreateInjectTypeInfo", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -124,6 +143,25 @@ impl crate::Zenject::DefaultGameObjectParentInstaller_DefaultParentObjectDestroy
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (gameObject))?;
         Ok(__cordl_object.into())
+    }
+    pub fn __zenCreate(
+        P_0: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("__zenCreate", (P_0))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn __zenCreateInjectTypeInfo() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Zenject::InjectTypeInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::InjectTypeInfo> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("__zenCreateInjectTypeInfo", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,

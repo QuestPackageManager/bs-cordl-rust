@@ -66,6 +66,44 @@ impl crate::UnityEngine::EventSystems::BaseInputModule {
             .invoke("DeactivateModule", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn DetermineMoveDirection_f32_1(
+        x: f32,
+        y: f32,
+        deadZone: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::EventSystems::MoveDirection> {
+        let __cordl_ret: crate::UnityEngine::EventSystems::MoveDirection = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DetermineMoveDirection", (x, y, deadZone))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DetermineMoveDirection_f32_f32_0(
+        x: f32,
+        y: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::EventSystems::MoveDirection> {
+        let __cordl_ret: crate::UnityEngine::EventSystems::MoveDirection = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DetermineMoveDirection", (x, y))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FindCommonRoot(
+        g1: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        g2: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FindCommonRoot", (g1, g2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FindFirstRaycast(
+        candidates: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::EventSystems::RaycastResult,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::EventSystems::RaycastResult> {
+        let __cordl_ret: crate::UnityEngine::EventSystems::RaycastResult = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FindFirstRaycast", (candidates))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetAxisEventData(
         &mut self,
         x: f32,

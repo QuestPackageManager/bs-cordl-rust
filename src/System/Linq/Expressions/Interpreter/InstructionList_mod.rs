@@ -113,6 +113,19 @@ for crate::System::Linq::Expressions::Interpreter::InstructionList {
 impl crate::System::Linq::Expressions::Interpreter::InstructionList {
     #[cfg(feature = "System+Linq+Expressions+Interpreter+InstructionList+DebugView")]
     pub type DebugView = crate::System::Linq::Expressions::Interpreter::InstructionList_DebugView;
+    pub fn AssignLocalBoxed(
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::Instruction,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::Instruction,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AssignLocalBoxed", (index))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn BuildRuntimeLabels(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -1274,6 +1287,45 @@ impl crate::System::Linq::Expressions::Interpreter::InstructionList {
         > = __cordl_object.invoke("GetLoadField", (field))?;
         Ok(__cordl_ret.into())
     }
+    pub fn InitImmutableRefBox(
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::Instruction,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::Instruction,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InitImmutableRefBox", (index))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InitReference(
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::Instruction,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::Instruction,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InitReference", (index))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LoadLocalBoxed(
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::Instruction,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::Instruction,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LoadLocalBoxed", (index))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn MakeLabel(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -1315,6 +1367,44 @@ impl crate::System::Linq::Expressions::Interpreter::InstructionList {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
+    }
+    pub fn Parameter(
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::Instruction,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::Instruction,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Parameter", (index))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ParameterBox(
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::Instruction,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::Instruction,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ParameterBox", (index))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StoreLocalBoxed(
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::Instruction,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::Instruction,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StoreLocalBoxed", (index))?;
+        Ok(__cordl_ret.into())
     }
     pub fn SwitchToBoxed(
         &mut self,
@@ -1441,6 +1531,44 @@ impl crate::System::Linq::Expressions::Interpreter::InstructionList_DebugView {
         feature = "System+Linq+Expressions+Interpreter+InstructionList+DebugView+InstructionView"
     )]
     pub type InstructionView = crate::System::Linq::Expressions::Interpreter::DebugView_InstructionList_InstructionView;
+    pub fn GetInstructionViews(
+        instructions: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                *mut crate::System::Linq::Expressions::Interpreter::Instruction,
+            >,
+        >,
+        objects: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
+        >,
+        labelIndexer: quest_hook::libil2cpp::Gc<crate::System::Func_2<i32, i32>>,
+        debugCookies: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                crate::System::Collections::Generic::KeyValuePair_2<
+                    i32,
+                    *mut quest_hook::libil2cpp::Il2CppObject,
+                >,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::System::Linq::Expressions::Interpreter::DebugView_InstructionList_InstructionView,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::System::Linq::Expressions::Interpreter::DebugView_InstructionList_InstructionView,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetInstructionViews",
+                (instructions, objects, labelIndexer, debugCookies),
+            )?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+InstructionList+DebugView")]
 impl quest_hook::libil2cpp::ObjectType

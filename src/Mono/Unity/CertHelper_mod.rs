@@ -23,7 +23,40 @@ impl std::ops::DerefMut for crate::Mono::Unity::CertHelper {
     }
 }
 #[cfg(feature = "Mono+Unity+CertHelper")]
-impl crate::Mono::Unity::CertHelper {}
+impl crate::Mono::Unity::CertHelper {
+    pub fn AddCertificateToNativeChain(
+        nativeCertificateChain: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        >,
+        certificate: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509Certificate,
+        >,
+        errorState: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "AddCertificateToNativeChain",
+                (nativeCertificateChain, certificate, errorState),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddCertificatesToNativeChain(
+        nativeCertificateChain: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        >,
+        certificates: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
+        >,
+        errorState: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "AddCertificatesToNativeChain",
+                (nativeCertificateChain, certificates, errorState),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "Mono+Unity+CertHelper")]
 impl quest_hook::libil2cpp::ObjectType for crate::Mono::Unity::CertHelper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

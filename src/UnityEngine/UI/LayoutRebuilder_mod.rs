@@ -48,6 +48,13 @@ impl crate::UnityEngine::UI::LayoutRebuilder {
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
         Ok(__cordl_ret.into())
     }
+    pub fn ForceRebuildLayoutImmediate(
+        layoutRoot: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ForceRebuildLayoutImmediate", (layoutRoot))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -93,6 +100,20 @@ impl crate::UnityEngine::UI::LayoutRebuilder {
             .invoke("LayoutComplete", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn MarkLayoutForRebuild(
+        rect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MarkLayoutForRebuild", (rect))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MarkLayoutRootForRebuild(
+        controller: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MarkLayoutRootForRebuild", (controller))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -128,6 +149,13 @@ impl crate::UnityEngine::UI::LayoutRebuilder {
             .invoke("PerformLayoutControl", (rect, action))?;
         Ok(__cordl_ret.into())
     }
+    pub fn ReapplyDrivenProperties(
+        driven: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReapplyDrivenProperties", (driven))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Rebuild(
         &mut self,
         executing: crate::UnityEngine::UI::CanvasUpdate,
@@ -137,6 +165,17 @@ impl crate::UnityEngine::UI::LayoutRebuilder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Rebuild", (executing))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StripDisabledBehavioursFromList(
+        components: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::Component,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StripDisabledBehavioursFromList", (components))?;
         Ok(__cordl_ret.into())
     }
     pub fn ToString(
@@ -150,6 +189,18 @@ impl crate::UnityEngine::UI::LayoutRebuilder {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("ToString", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ValidController(
+        layoutRoot: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
+        comps: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::Component,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ValidController", (layoutRoot, comps))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

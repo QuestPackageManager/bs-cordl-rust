@@ -26,6 +26,13 @@ impl std::ops::DerefMut for crate::TMPro::TMP_Compatibility {
 impl crate::TMPro::TMP_Compatibility {
     #[cfg(feature = "TMPro+TMP_Compatibility+AnchorPositions")]
     pub type AnchorPositions = crate::TMPro::TMP_Compatibility_AnchorPositions;
+    pub fn ConvertTextAlignmentEnumValues(
+        oldValue: crate::TMPro::TextAlignmentOptions,
+    ) -> quest_hook::libil2cpp::Result<crate::TMPro::TextAlignmentOptions> {
+        let __cordl_ret: crate::TMPro::TextAlignmentOptions = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ConvertTextAlignmentEnumValues", (oldValue))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "TMPro+TMP_Compatibility")]
 impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_Compatibility {

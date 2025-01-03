@@ -230,6 +230,22 @@ impl crate::UnityEngine::InputSystem::InputActionMap {
             .invoke("FindBindingRelativeToMap", (mask))?;
         Ok(__cordl_ret.into())
     }
+    pub fn FromJson(
+        json: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::UnityEngine::InputSystem::InputActionMap,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::UnityEngine::InputSystem::InputActionMap,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("FromJson", (json))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GenerateId(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -441,7 +457,7 @@ impl crate::UnityEngine::InputSystem::InputActionMap {
         > = __cordl_object.invoke("System.ICloneable.Clone", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToJson(
+    pub fn ToJson_1(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -452,6 +468,20 @@ impl crate::UnityEngine::InputSystem::InputActionMap {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("ToJson", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToJson_IEnumerable_1_0(
+        maps: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::UnityEngine::InputSystem::InputActionMap,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("ToJson", (maps))?;
         Ok(__cordl_ret.into())
     }
     pub fn ToString(
@@ -946,6 +976,17 @@ for crate::UnityEngine::InputSystem::InputActionMap_BindingJson {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionMap+BindingJson")]
 impl crate::UnityEngine::InputSystem::InputActionMap_BindingJson {
+    pub fn FromBinding(
+        binding: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::InputSystem::InputBinding,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputActionMap_BindingJson,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionMap_BindingJson = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromBinding", (binding))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ToBinding(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::InputSystem::InputBinding> {
@@ -985,7 +1026,34 @@ for crate::UnityEngine::InputSystem::InputActionMap_BindingOverrideJson {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionMap+BindingOverrideJson")]
-impl crate::UnityEngine::InputSystem::InputActionMap_BindingOverrideJson {}
+impl crate::UnityEngine::InputSystem::InputActionMap_BindingOverrideJson {
+    pub fn FromBinding_Il2CppString0(
+        binding: crate::UnityEngine::InputSystem::InputBinding,
+        actionName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputActionMap_BindingOverrideJson,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionMap_BindingOverrideJson = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromBinding", (binding, actionName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromBinding_InputBinding1(
+        binding: crate::UnityEngine::InputSystem::InputBinding,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputActionMap_BindingOverrideJson,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionMap_BindingOverrideJson = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromBinding", (binding))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToBinding(
+        bindingOverride: crate::UnityEngine::InputSystem::InputActionMap_BindingOverrideJson,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::InputSystem::InputBinding> {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputBinding = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToBinding", (bindingOverride))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+InputActionMap+BindingOverrideListJson")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -1267,7 +1335,17 @@ for crate::UnityEngine::InputSystem::InputActionMap_WriteActionJson {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionMap+WriteActionJson")]
-impl crate::UnityEngine::InputSystem::InputActionMap_WriteActionJson {}
+impl crate::UnityEngine::InputSystem::InputActionMap_WriteActionJson {
+    pub fn FromAction(
+        action: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputActionMap_WriteActionJson,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionMap_WriteActionJson = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromAction", (action))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+InputActionMap+WriteFileJson")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -1294,7 +1372,30 @@ for crate::UnityEngine::InputSystem::InputActionMap_WriteFileJson {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionMap+WriteFileJson")]
-impl crate::UnityEngine::InputSystem::InputActionMap_WriteFileJson {}
+impl crate::UnityEngine::InputSystem::InputActionMap_WriteFileJson {
+    pub fn FromMap(
+        map: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputActionMap>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputActionMap_WriteFileJson,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionMap_WriteFileJson = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromMap", (map))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromMaps(
+        maps: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::UnityEngine::InputSystem::InputActionMap,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputActionMap_WriteFileJson,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionMap_WriteFileJson = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromMaps", (maps))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+InputActionMap+WriteMapJson")]
 #[repr(C)]
 #[derive(Debug, Clone)]
@@ -1326,4 +1427,14 @@ for crate::UnityEngine::InputSystem::InputActionMap_WriteMapJson {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionMap+WriteMapJson")]
-impl crate::UnityEngine::InputSystem::InputActionMap_WriteMapJson {}
+impl crate::UnityEngine::InputSystem::InputActionMap_WriteMapJson {
+    pub fn FromMap(
+        map: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputActionMap>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputActionMap_WriteMapJson,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionMap_WriteMapJson = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromMap", (map))?;
+        Ok(__cordl_ret.into())
+    }
+}

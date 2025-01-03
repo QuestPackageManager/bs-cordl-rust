@@ -27,6 +27,17 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::RuntimePanel {
 impl crate::UnityEngine::UIElements::RuntimePanel {
     #[cfg(feature = "UnityEngine+UIElements+RuntimePanel+__c")]
     pub type __c = crate::UnityEngine::UIElements::RuntimePanel___c;
+    pub fn Create(
+        ownerObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::RuntimePanel>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::RuntimePanel,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (ownerObject))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         ownerObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

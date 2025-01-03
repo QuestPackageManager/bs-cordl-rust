@@ -103,6 +103,18 @@ impl crate::System::Net::Http::Headers::Lexer {
         let __cordl_ret: bool = __cordl_object.invoke("IsStarStringValue", (token))?;
         Ok(__cordl_ret.into())
     }
+    pub fn IsValidCharacter(input: char) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsValidCharacter", (input))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsValidToken(
+        input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsValidToken", (input))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         stream: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -144,7 +156,15 @@ impl crate::System::Net::Http::Headers::Lexer {
             .invoke("ScanCommentOptional", (value, readToken))?;
         Ok(__cordl_ret.into())
     }
-    pub fn TryGetDateValue(
+    pub fn TryGetDateValue_Il2CppString1(
+        text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::ByRefMut<crate::System::DateTimeOffset>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryGetDateValue", (text, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryGetDateValue_Token0(
         &mut self,
         token: crate::System::Net::Http::Headers::Token,
         value: quest_hook::libil2cpp::ByRefMut<crate::System::DateTimeOffset>,

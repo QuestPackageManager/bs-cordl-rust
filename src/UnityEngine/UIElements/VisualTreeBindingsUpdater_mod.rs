@@ -45,6 +45,22 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::VisualTreeBindingsUp
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeBindingsUpdater")]
 impl crate::UnityEngine::UIElements::VisualTreeBindingsUpdater {
+    pub fn CurrentTime() -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CurrentTime", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetAdditionalBinding(
+        ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IBinding>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::IBinding,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetAdditionalBinding", (ve))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetBindingObjectFromElement(
         &mut self,
         ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
@@ -172,6 +188,11 @@ impl crate::UnityEngine::UIElements::VisualTreeBindingsUpdater {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_disableBindingsThrottling() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_disableBindingsThrottling", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_profilerMarker(

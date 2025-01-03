@@ -27,6 +27,11 @@ for crate::UnityEngine::Experimental::Rendering::BuiltinRuntimeReflectionSystem 
 }
 #[cfg(feature = "UnityEngine+Experimental+Rendering+BuiltinRuntimeReflectionSystem")]
 impl crate::UnityEngine::Experimental::Rendering::BuiltinRuntimeReflectionSystem {
+    pub fn BuiltinUpdate() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BuiltinUpdate", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Dispose_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -46,6 +51,17 @@ impl crate::UnityEngine::Experimental::Rendering::BuiltinRuntimeReflectionSystem
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", (disposing))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Internal_BuiltinRuntimeReflectionSystem_New() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Experimental::Rendering::BuiltinRuntimeReflectionSystem,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Experimental::Rendering::BuiltinRuntimeReflectionSystem,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Internal_BuiltinRuntimeReflectionSystem_New", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

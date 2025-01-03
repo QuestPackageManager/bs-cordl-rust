@@ -74,6 +74,13 @@ impl crate::System::Net::IPAddress {
         let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn IsLoopback(
+        address: quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsLoopback", (address))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn MapToIPv6(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -154,6 +161,24 @@ impl crate::System::Net::IPAddress {
             .invoke_void(".ctor", (newAddress))?;
         Ok(__cordl_object.into())
     }
+    pub fn Parse(
+        ipString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Parse", (ipString))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ThrowAddressNullException() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ThrowAddressNullException", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ToString(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -165,6 +190,14 @@ impl crate::System::Net::IPAddress {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("ToString", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryParse(
+        ipString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        address: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Net::IPAddress>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryParse", (ipString, address))?;
         Ok(__cordl_ret.into())
     }
     pub fn TryWriteBytes(

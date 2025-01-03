@@ -34,6 +34,67 @@ impl crate::UnityEngine::UIElements::NavigationMoveEvent {
     pub type Direction = crate::UnityEngine::UIElements::NavigationMoveEvent_Direction;
     #[cfg(feature = "UnityEngine+UIElements+NavigationMoveEvent+__c")]
     pub type __c = crate::UnityEngine::UIElements::NavigationMoveEvent___c;
+    pub fn DetermineMoveDirection(
+        x: f32,
+        y: f32,
+        deadZone: f32,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::NavigationMoveEvent_Direction,
+    > {
+        let __cordl_ret: crate::UnityEngine::UIElements::NavigationMoveEvent_Direction = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DetermineMoveDirection", (x, y, deadZone))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPooled_NavigationMoveEvent_Direction_EventModifiers2(
+        direction: crate::UnityEngine::UIElements::NavigationMoveEvent_Direction,
+        modifiers: crate::UnityEngine::EventModifiers,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::NavigationMoveEvent>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::NavigationMoveEvent,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPooled", (direction, modifiers))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPooled_NavigationMoveEvent_Direction_NavigationDeviceType_EventModifiers3(
+        direction: crate::UnityEngine::UIElements::NavigationMoveEvent_Direction,
+        deviceType: crate::UnityEngine::UIElements::NavigationDeviceType,
+        modifiers: crate::UnityEngine::EventModifiers,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::NavigationMoveEvent>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::NavigationMoveEvent,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPooled", (direction, deviceType, modifiers))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPooled_Vector2_EventModifiers0(
+        moveVector: crate::UnityEngine::Vector2,
+        modifiers: crate::UnityEngine::EventModifiers,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::NavigationMoveEvent>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::NavigationMoveEvent,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPooled", (moveVector, modifiers))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPooled_Vector2_NavigationDeviceType_EventModifiers1(
+        moveVector: crate::UnityEngine::Vector2,
+        deviceType: crate::UnityEngine::UIElements::NavigationDeviceType,
+        modifiers: crate::UnityEngine::EventModifiers,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::NavigationMoveEvent>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::NavigationMoveEvent,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPooled", (moveVector, deviceType, modifiers))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Init(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

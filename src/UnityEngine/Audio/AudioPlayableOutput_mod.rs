@@ -22,6 +22,15 @@ for crate::UnityEngine::Audio::AudioPlayableOutput {
 }
 #[cfg(feature = "UnityEngine+Audio+AudioPlayableOutput")]
 impl crate::UnityEngine::Audio::AudioPlayableOutput {
+    pub fn Create(
+        graph: crate::UnityEngine::Playables::PlayableGraph,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        target: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Audio::AudioPlayableOutput> {
+        let __cordl_ret: crate::UnityEngine::Audio::AudioPlayableOutput = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (graph, name, target))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetEvaluateOnSeek(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -52,6 +61,46 @@ impl crate::UnityEngine::Audio::AudioPlayableOutput {
             "GetTarget",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InternalGetEvaluateOnSeek(
+        output: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableOutputHandle,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InternalGetEvaluateOnSeek", (output))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InternalGetTarget(
+        output: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableOutputHandle,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InternalGetTarget", (output))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InternalSetEvaluateOnSeek(
+        output: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableOutputHandle,
+        >,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InternalSetEvaluateOnSeek", (output, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InternalSetTarget(
+        output: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableOutputHandle,
+        >,
+        target: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InternalSetTarget", (output, target))?;
         Ok(__cordl_ret.into())
     }
     pub fn SetEvaluateOnSeek(
@@ -85,6 +134,27 @@ impl crate::UnityEngine::Audio::AudioPlayableOutput {
             ".ctor",
             (handle),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Null() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Audio::AudioPlayableOutput,
+    > {
+        let __cordl_ret: crate::UnityEngine::Audio::AudioPlayableOutput = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_Null", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Explicit(
+        output: crate::UnityEngine::Playables::PlayableOutput,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Audio::AudioPlayableOutput> {
+        let __cordl_ret: crate::UnityEngine::Audio::AudioPlayableOutput = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Explicit", (output))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit(
+        output: crate::UnityEngine::Audio::AudioPlayableOutput,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::PlayableOutput> {
+        let __cordl_ret: crate::UnityEngine::Playables::PlayableOutput = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (output))?;
         Ok(__cordl_ret.into())
     }
 }

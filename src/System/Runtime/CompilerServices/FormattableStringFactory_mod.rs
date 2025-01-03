@@ -31,6 +31,18 @@ impl crate::System::Runtime::CompilerServices::FormattableStringFactory {
         feature = "System+Runtime+CompilerServices+FormattableStringFactory+ConcreteFormattableString"
     )]
     pub type ConcreteFormattableString = crate::System::Runtime::CompilerServices::FormattableStringFactory_ConcreteFormattableString;
+    pub fn Create(
+        format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        arguments: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::FormattableString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::FormattableString> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (format, arguments))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "System+Runtime+CompilerServices+FormattableStringFactory")]
 impl quest_hook::libil2cpp::ObjectType

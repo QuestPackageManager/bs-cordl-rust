@@ -25,6 +25,37 @@ impl std::ops::DerefMut for crate::System::Globalization::HijriCalendar {
 }
 #[cfg(feature = "System+Globalization+HijriCalendar")]
 impl crate::System::Globalization::HijriCalendar {
+    pub fn CheckEraRange(
+        era: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckEraRange", (era))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CheckTicksRange(
+        ticks: i64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckTicksRange", (ticks))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CheckYearMonthRange(
+        year: i32,
+        month: i32,
+        era: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckYearMonthRange", (year, month, era))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CheckYearRange(
+        year: i32,
+        era: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckYearRange", (year, era))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn DaysUpToHijriYear(
         &mut self,
         HijriYear: i32,
@@ -45,6 +76,11 @@ impl crate::System::Globalization::HijriCalendar {
             self,
         );
         let __cordl_ret: i64 = __cordl_object.invoke("GetAbsoluteDateHijri", (y, m, d))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetAdvanceHijriDate() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetAdvanceHijriDate", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn GetDatePart(

@@ -37,6 +37,49 @@ impl crate::Newtonsoft::Json::Utilities::AotHelper {
         TKey: quest_hook::libil2cpp::Type,
         TValue: quest_hook::libil2cpp::Type,
     > = crate::Newtonsoft::Json::Utilities::AotHelper___c__3_2<TKey, TValue>;
+    pub fn Ensure(
+        action: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Ensure", (action))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EnsureDictionary<TKey, TValue>() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    >
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EnsureDictionary", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EnsureList<T>() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EnsureList", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EnsureType<T>() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EnsureType", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsFalse() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsFalse", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "Newtonsoft+Json+Utilities+AotHelper")]
 impl quest_hook::libil2cpp::ObjectType

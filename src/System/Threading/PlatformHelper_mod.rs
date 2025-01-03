@@ -23,7 +23,13 @@ impl std::ops::DerefMut for crate::System::Threading::PlatformHelper {
     }
 }
 #[cfg(feature = "System+Threading+PlatformHelper")]
-impl crate::System::Threading::PlatformHelper {}
+impl crate::System::Threading::PlatformHelper {
+    pub fn get_ProcessorCount() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_ProcessorCount", ())?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Threading+PlatformHelper")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Threading::PlatformHelper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

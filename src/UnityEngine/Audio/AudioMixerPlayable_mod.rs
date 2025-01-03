@@ -22,6 +22,40 @@ for crate::UnityEngine::Audio::AudioMixerPlayable {
 }
 #[cfg(feature = "UnityEngine+Audio+AudioMixerPlayable")]
 impl crate::UnityEngine::Audio::AudioMixerPlayable {
+    pub fn Create(
+        graph: crate::UnityEngine::Playables::PlayableGraph,
+        inputCount: i32,
+        normalizeInputVolumes: bool,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Audio::AudioMixerPlayable> {
+        let __cordl_ret: crate::UnityEngine::Audio::AudioMixerPlayable = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (graph, inputCount, normalizeInputVolumes))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateAudioMixerPlayableInternal(
+        graph: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableGraph,
+        >,
+        normalizeInputVolumes: bool,
+        handle: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableHandle,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CreateAudioMixerPlayableInternal",
+                (graph, normalizeInputVolumes, handle),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateHandle(
+        graph: crate::UnityEngine::Playables::PlayableGraph,
+        inputCount: i32,
+        normalizeInputVolumes: bool,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::PlayableHandle> {
+        let __cordl_ret: crate::UnityEngine::Playables::PlayableHandle = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateHandle", (graph, inputCount, normalizeInputVolumes))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Equals(
         &mut self,
         other: crate::UnityEngine::Audio::AudioMixerPlayable,
@@ -52,6 +86,20 @@ impl crate::UnityEngine::Audio::AudioMixerPlayable {
             ".ctor",
             (handle),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Explicit(
+        playable: crate::UnityEngine::Playables::Playable,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Audio::AudioMixerPlayable> {
+        let __cordl_ret: crate::UnityEngine::Audio::AudioMixerPlayable = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Explicit", (playable))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit(
+        playable: crate::UnityEngine::Audio::AudioMixerPlayable,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::Playable> {
+        let __cordl_ret: crate::UnityEngine::Playables::Playable = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (playable))?;
         Ok(__cordl_ret.into())
     }
 }

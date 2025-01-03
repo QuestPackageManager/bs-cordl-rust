@@ -28,6 +28,21 @@ impl std::ops::DerefMut for crate::UnityEngine::AddressableAssets::AssetReferenc
 }
 #[cfg(feature = "UnityEngine+AddressableAssets+AssetReference")]
 impl crate::UnityEngine::AddressableAssets::AssetReference {
+    pub fn CreateFailedOperation<T>() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+            T,
+        >,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+            T,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateFailedOperation", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn InstantiateAsync_Transform__cordl_bool1(
         &mut self,
         parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,

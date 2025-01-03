@@ -142,6 +142,14 @@ impl crate::UnityEngine::TextEditingUtilities {
             .invoke("Insert", (c))?;
         Ok(__cordl_ret.into())
     }
+    pub fn MapKey(
+        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        action: crate::UnityEngine::TextEditOp,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MapKey", (key, action))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         selectingUtilities: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::TextSelectingUtilities,
@@ -183,6 +191,17 @@ impl crate::UnityEngine::TextEditingUtilities {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("PerformOperation", (operation))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReplaceNewlinesWithSpaces(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReplaceNewlinesWithSpaces", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn ReplaceSelection(

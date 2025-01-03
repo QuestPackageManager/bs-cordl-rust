@@ -27,6 +27,19 @@ impl std::ops::DerefMut for crate::GlobalNamespace::HEU_ScriptMeshInputUVLayoutE
 impl crate::GlobalNamespace::HEU_ScriptMeshInputUVLayoutExample {
     #[cfg(feature = "HEU_ScriptMeshInputUVLayoutExample+OutputMode")]
     pub type OutputMode = crate::GlobalNamespace::HEU_ScriptMeshInputUVLayoutExample_OutputMode;
+    pub fn ApplyUVLayoutTo(
+        gameObjects: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
+        >,
+        outputMode: crate::GlobalNamespace::HEU_ScriptMeshInputUVLayoutExample_OutputMode,
+        output_name_suffix: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ApplyUVLayoutTo", (gameObjects, outputMode, output_name_suffix))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

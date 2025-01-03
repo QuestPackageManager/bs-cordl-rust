@@ -33,6 +33,14 @@ impl crate::GlobalNamespace::ScoreUIController {
     pub type InitData = crate::GlobalNamespace::ScoreUIController_InitData;
     #[cfg(feature = "ScoreUIController+ScoreDisplayType")]
     pub type ScoreDisplayType = crate::GlobalNamespace::ScoreUIController_ScoreDisplayType;
+    pub fn Append000Number(
+        stringBuilder: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+        number: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Append000Number", (stringBuilder, number))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn HandleScoreDidChangeRealtime(
         &mut self,
         multipliedScore: i32,

@@ -42,6 +42,28 @@ impl crate::System::Threading::ExecutionContext {
     pub type Flags = crate::System::Threading::ExecutionContext_Flags;
     #[cfg(feature = "System+Threading+ExecutionContext+Reader")]
     pub type Reader = crate::System::Threading::ExecutionContext_Reader;
+    pub fn Capture_0() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::ExecutionContext>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::ExecutionContext,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Capture", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Capture_ByRefMut_ExecutionContext_CaptureOptions1(
+        stackMark: quest_hook::libil2cpp::ByRefMut<
+            crate::System::Threading::StackCrawlMark,
+        >,
+        options: crate::System::Threading::ExecutionContext_CaptureOptions,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::ExecutionContext>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::ExecutionContext,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Capture", (stackMark, options))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CreateCopy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -78,6 +100,37 @@ impl crate::System::Threading::ExecutionContext {
             .invoke("Dispose", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn EstablishCopyOnWriteScope_ByRefMut0(
+        ecsw: quest_hook::libil2cpp::ByRefMut<
+            crate::System::Threading::ExecutionContextSwitcher,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EstablishCopyOnWriteScope", (ecsw))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EstablishCopyOnWriteScope_Thread__cordl_bool_ByRefMut1(
+        currentThread: quest_hook::libil2cpp::Gc<crate::System::Threading::Thread>,
+        knownNullWindowsIdentity: bool,
+        ecsw: quest_hook::libil2cpp::ByRefMut<
+            crate::System::Threading::ExecutionContextSwitcher,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "EstablishCopyOnWriteScope",
+                (currentThread, knownNullWindowsIdentity, ecsw),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FastCapture() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::ExecutionContext>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::ExecutionContext,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("FastCapture", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetObjectData(
         &mut self,
         info: quest_hook::libil2cpp::Gc<
@@ -101,6 +154,11 @@ impl crate::System::Threading::ExecutionContext {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("IsDefaultFTContext", (ignoreSyncCtx))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsFlowSuppressed() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsFlowSuppressed", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -130,6 +188,84 @@ impl crate::System::Threading::ExecutionContext {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (isPreAllocatedDefault))?;
         Ok(__cordl_object.into())
+    }
+    pub fn OnAsyncLocalContextChanged(
+        previous: quest_hook::libil2cpp::Gc<crate::System::Threading::ExecutionContext>,
+        current: quest_hook::libil2cpp::Gc<crate::System::Threading::ExecutionContext>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("OnAsyncLocalContextChanged", (previous, current))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RunInternal_ExecutionContext_ContextCallback_Il2CppObject0(
+        executionContext: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::ExecutionContext,
+        >,
+        callback: quest_hook::libil2cpp::Gc<crate::System::Threading::ContextCallback>,
+        state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RunInternal", (executionContext, callback, state))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RunInternal__cordl_bool1(
+        executionContext: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::ExecutionContext,
+        >,
+        callback: quest_hook::libil2cpp::Gc<crate::System::Threading::ContextCallback>,
+        state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        preserveSyncCtx: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "RunInternal",
+                (executionContext, callback, state, preserveSyncCtx),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Run_ExecutionContext_ContextCallback_Il2CppObject0(
+        executionContext: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::ExecutionContext,
+        >,
+        callback: quest_hook::libil2cpp::Gc<crate::System::Threading::ContextCallback>,
+        state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Run", (executionContext, callback, state))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Run__cordl_bool1(
+        executionContext: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::ExecutionContext,
+        >,
+        callback: quest_hook::libil2cpp::Gc<crate::System::Threading::ContextCallback>,
+        state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        preserveSyncCtx: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Run", (executionContext, callback, state, preserveSyncCtx))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetExecutionContext(
+        executionContext: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::ExecutionContext,
+        >,
+        preserveSyncCtx: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Threading::ExecutionContextSwitcher,
+    > {
+        let __cordl_ret: crate::System::Threading::ExecutionContextSwitcher = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetExecutionContext", (executionContext, preserveSyncCtx))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetLocalValue(
+        local: quest_hook::libil2cpp::Gc<crate::System::Threading::IAsyncLocal>,
+        newValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        needChangeNotifications: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetLocalValue", (local, newValue, needChangeNotifications))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_0(
         &mut self,

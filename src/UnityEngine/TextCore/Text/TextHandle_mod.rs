@@ -53,6 +53,15 @@ impl crate::UnityEngine::TextCore::Text::TextHandle {
         let __cordl_ret: f32 = __cordl_object.invoke("ComputeTextWidth", (tgs))?;
         Ok(__cordl_ret.into())
     }
+    pub fn DistanceToLine(
+        a: crate::UnityEngine::Vector3,
+        b: crate::UnityEngine::Vector3,
+        point: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DistanceToLine", (a, b, point))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn FindIntersectingLink(
         &mut self,
         position: crate::UnityEngine::Vector3,
@@ -236,6 +245,17 @@ impl crate::UnityEngine::TextCore::Text::TextHandle {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
+    pub fn PointIntersectRectangle(
+        m: crate::UnityEngine::Vector3,
+        a: crate::UnityEngine::Vector3,
+        b: crate::UnityEngine::Vector3,
+        c: crate::UnityEngine::Vector3,
+        d: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PointIntersectRectangle", (m, a, b, c, d))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Substring(
         &mut self,
         startIndex: i32,
@@ -288,6 +308,15 @@ impl crate::UnityEngine::TextCore::Text::TextHandle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_layoutTextInfo() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::TextInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::TextInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_layoutTextInfo", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_textInfo(

@@ -59,12 +59,50 @@ impl crate::System::Xml::Schema::XmlSchemaAnyAttribute {
             .invoke("BuildNamespaceListV1Compat", (targetNamespace))?;
         Ok(__cordl_ret.into())
     }
+    pub fn Intersection(
+        o1: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaAnyAttribute>,
+        o2: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaAnyAttribute>,
+        v1Compat: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaAnyAttribute>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaAnyAttribute,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Intersection", (o1, o2, v1Compat))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsSubset(
+        sub: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaAnyAttribute,
+        >,
+        _cordl_super: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaAnyAttribute,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsSubset", (sub, _cordl_super))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
+    }
+    pub fn Union(
+        o1: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaAnyAttribute>,
+        o2: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaAnyAttribute>,
+        v1Compat: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaAnyAttribute>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaAnyAttribute,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Union", (o1, o2, v1Compat))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,

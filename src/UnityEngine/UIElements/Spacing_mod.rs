@@ -55,4 +55,12 @@ impl crate::UnityEngine::UIElements::Spacing {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Subtraction(
+        r: crate::UnityEngine::Rect,
+        a: crate::UnityEngine::UIElements::Spacing,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rect> {
+        let __cordl_ret: crate::UnityEngine::Rect = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Subtraction", (r, a))?;
+        Ok(__cordl_ret.into())
+    }
 }

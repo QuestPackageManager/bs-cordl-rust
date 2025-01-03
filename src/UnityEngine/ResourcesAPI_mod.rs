@@ -127,6 +127,20 @@ impl crate::UnityEngine::ResourcesAPI {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_ActiveAPI() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ResourcesAPI>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::ResourcesAPI> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_ActiveAPI", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_overrideAPI() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ResourcesAPI>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::ResourcesAPI> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_overrideAPI", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+ResourcesAPI")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ResourcesAPI {

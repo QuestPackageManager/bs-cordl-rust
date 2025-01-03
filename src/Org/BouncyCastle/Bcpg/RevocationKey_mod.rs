@@ -24,6 +24,19 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Bcpg::RevocationKey {
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+RevocationKey")]
 impl crate::Org::BouncyCastle::Bcpg::RevocationKey {
+    pub fn CreateData(
+        signatureClass: crate::Org::BouncyCastle::Bcpg::RevocationKeyTag,
+        keyAlgorithm: crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag,
+        fingerprint: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateData", (signatureClass, keyAlgorithm, fingerprint))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetFingerprint(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

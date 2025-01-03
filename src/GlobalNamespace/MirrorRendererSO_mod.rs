@@ -58,6 +58,22 @@ impl crate::GlobalNamespace::MirrorRendererSO {
             .invoke("Awake", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn CalculateReflectionMatrix(
+        plane: crate::UnityEngine::Vector4,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Matrix4x4> {
+        let __cordl_ret: crate::UnityEngine::Matrix4x4 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CalculateReflectionMatrix", (plane))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CameraSpacePlane(
+        worldToCameraMatrix: crate::UnityEngine::Matrix4x4,
+        pos: crate::UnityEngine::Vector3,
+        normal: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
+        let __cordl_ret: crate::UnityEngine::Vector4 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CameraSpacePlane", (worldToCameraMatrix, pos, normal))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CreateOrUpdateMirrorCamera(
         &mut self,
         currentCamera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
@@ -123,6 +139,14 @@ impl crate::GlobalNamespace::MirrorRendererSO {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnValidate", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Plane(
+        pos: crate::UnityEngine::Vector3,
+        normal: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
+        let __cordl_ret: crate::UnityEngine::Vector4 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Plane", (pos, normal))?;
         Ok(__cordl_ret.into())
     }
     pub fn PrepareForNextFrame(
@@ -261,6 +285,22 @@ impl crate::GlobalNamespace::MirrorRendererSO_CameraTransformData {
             "GetHashCode",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        left: crate::GlobalNamespace::MirrorRendererSO_CameraTransformData,
+        right: crate::GlobalNamespace::MirrorRendererSO_CameraTransformData,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        left: crate::GlobalNamespace::MirrorRendererSO_CameraTransformData,
+        right: crate::GlobalNamespace::MirrorRendererSO_CameraTransformData,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (left, right))?;
         Ok(__cordl_ret.into())
     }
 }

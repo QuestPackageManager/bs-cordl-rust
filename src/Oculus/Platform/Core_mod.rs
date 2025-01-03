@@ -24,6 +24,75 @@ impl std::ops::DerefMut for crate::Oculus::Platform::Core {
 }
 #[cfg(feature = "Oculus+Platform+Core")]
 impl crate::Oculus::Platform::Core {
+    pub fn AsyncInitialize_Dictionary_2_Il2CppString1(
+        accessToken: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        initConfigOptions: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<
+                crate::Oculus::Platform::InitConfigOptions,
+                bool,
+            >,
+        >,
+        appId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Request_1<
+                *mut crate::Oculus::Platform::Models::PlatformInitialize,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Request_1<
+                *mut crate::Oculus::Platform::Models::PlatformInitialize,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AsyncInitialize", (accessToken, initConfigOptions, appId))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AsyncInitialize_Il2CppString0(
+        appId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Request_1<
+                *mut crate::Oculus::Platform::Models::PlatformInitialize,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Request_1<
+                *mut crate::Oculus::Platform::Models::PlatformInitialize,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AsyncInitialize", (appId))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ForceInitialized() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ForceInitialized", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetAppIDFromConfig() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetAppIDFromConfig", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Initialize(
+        appId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Initialize", (appId))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsInitialized() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsInitialized", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -39,6 +108,16 @@ impl crate::Oculus::Platform::Core {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn getAppID(
+        appId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("getAppID", (appId))?;
         Ok(__cordl_ret.into())
     }
 }

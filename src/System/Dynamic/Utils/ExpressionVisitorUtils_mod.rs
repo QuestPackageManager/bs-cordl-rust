@@ -23,7 +23,75 @@ impl std::ops::DerefMut for crate::System::Dynamic::Utils::ExpressionVisitorUtil
     }
 }
 #[cfg(feature = "System+Dynamic+Utils+ExpressionVisitorUtils")]
-impl crate::System::Dynamic::Utils::ExpressionVisitorUtils {}
+impl crate::System::Dynamic::Utils::ExpressionVisitorUtils {
+    pub fn VisitArguments(
+        visitor: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::ExpressionVisitor,
+        >,
+        nodes: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::IArgumentProvider,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Linq::Expressions::Expression,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Linq::Expressions::Expression,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("VisitArguments", (visitor, nodes))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn VisitBlockExpressions(
+        visitor: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::ExpressionVisitor,
+        >,
+        block: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BlockExpression,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Linq::Expressions::Expression,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Linq::Expressions::Expression,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("VisitBlockExpressions", (visitor, block))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn VisitParameters(
+        visitor: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::ExpressionVisitor,
+        >,
+        nodes: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::IParameterProvider,
+        >,
+        callerName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Linq::Expressions::ParameterExpression,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Linq::Expressions::ParameterExpression,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("VisitParameters", (visitor, nodes, callerName))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Dynamic+Utils+ExpressionVisitorUtils")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Dynamic::Utils::ExpressionVisitorUtils {

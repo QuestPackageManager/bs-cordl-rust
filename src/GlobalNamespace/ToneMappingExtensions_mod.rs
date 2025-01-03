@@ -23,7 +23,15 @@ impl std::ops::DerefMut for crate::GlobalNamespace::ToneMappingExtensions {
     }
 }
 #[cfg(feature = "ToneMappingExtensions")]
-impl crate::GlobalNamespace::ToneMappingExtensions {}
+impl crate::GlobalNamespace::ToneMappingExtensions {
+    pub fn SetShaderKeyword(
+        toneMapping: crate::GlobalNamespace::ToneMapping,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetShaderKeyword", (toneMapping))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "ToneMappingExtensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ToneMappingExtensions {

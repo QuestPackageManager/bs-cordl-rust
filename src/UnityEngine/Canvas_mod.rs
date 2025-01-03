@@ -25,12 +25,83 @@ impl std::ops::DerefMut for crate::UnityEngine::Canvas {
 impl crate::UnityEngine::Canvas {
     #[cfg(feature = "UnityEngine+Canvas+WillRenderCanvases")]
     pub type WillRenderCanvases = crate::UnityEngine::Canvas_WillRenderCanvases;
+    pub fn BeginRenderExtraOverlays(
+        displayIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BeginRenderExtraOverlays", (displayIndex))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EndRenderExtraOverlays(
+        displayIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EndRenderExtraOverlays", (displayIndex))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ForceUpdateCanvases() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ForceUpdateCanvases", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetDefaultCanvasMaterial() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetDefaultCanvasMaterial", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetDefaultCanvasTextMaterial() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetDefaultCanvasTextMaterial", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetETC1SupportedCanvasMaterial() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetETC1SupportedCanvasMaterial", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
+    }
+    pub fn RenderExtraOverlaysBefore(
+        displayIndex: i32,
+        sortingOrder: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RenderExtraOverlaysBefore", (displayIndex, sortingOrder))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SendPreWillRenderCanvases() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SendPreWillRenderCanvases", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SendWillRenderCanvases() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SendWillRenderCanvases", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetExternalCanvasEnabled(
+        enabled: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetExternalCanvasEnabled", (enabled))?;
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateCanvasRectTransform(
         &mut self,
@@ -53,6 +124,20 @@ impl crate::UnityEngine::Canvas {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn add_preWillRenderCanvases(
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas_WillRenderCanvases>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("add_preWillRenderCanvases", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn add_willRenderCanvases(
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas_WillRenderCanvases>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("add_willRenderCanvases", (value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_additionalShaderChannels(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -70,6 +155,27 @@ impl crate::UnityEngine::Canvas {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_cachedSortingLayerValue", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_externBeginRenderOverlays() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_externBeginRenderOverlays", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_externEndRenderOverlays() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_externEndRenderOverlays", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_externRenderOverlaysBefore() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Action_2<i32, i32>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Action_2<i32, i32>> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_externRenderOverlaysBefore", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_isRootCanvas(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -278,6 +384,20 @@ impl crate::UnityEngine::Canvas {
             .invoke("get_worldCamera", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn remove_preWillRenderCanvases(
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas_WillRenderCanvases>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("remove_preWillRenderCanvases", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_willRenderCanvases(
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas_WillRenderCanvases>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("remove_willRenderCanvases", (value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn set_additionalShaderChannels(
         &mut self,
         value: crate::UnityEngine::AdditionalCanvasShaderChannels,
@@ -287,6 +407,27 @@ impl crate::UnityEngine::Canvas {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_additionalShaderChannels", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_externBeginRenderOverlays(
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_externBeginRenderOverlays", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_externEndRenderOverlays(
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_externEndRenderOverlays", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_externRenderOverlaysBefore(
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_2<i32, i32>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_externRenderOverlaysBefore", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_normalizedSortingGridSize(

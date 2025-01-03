@@ -22,7 +22,27 @@ impl std::ops::DerefMut for crate::ENet::ArrayPool {
     }
 }
 #[cfg(feature = "ENet+ArrayPool")]
-impl crate::ENet::ArrayPool {}
+impl crate::ENet::ArrayPool {
+    pub fn GetByteBuffer() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetByteBuffer", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPointerBuffer() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::System::IntPtr>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::System::IntPtr>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPointerBuffer", ())?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "ENet+ArrayPool")]
 impl quest_hook::libil2cpp::ObjectType for crate::ENet::ArrayPool {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

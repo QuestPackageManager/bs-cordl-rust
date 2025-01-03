@@ -57,6 +57,13 @@ impl crate::UnityEngine::UI::Graphic {
             .invoke("CacheCanvas", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn CreateColorFromAlpha(
+        alpha: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_ret: crate::UnityEngine::Color = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateColorFromAlpha", (alpha))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CrossFadeAlpha(
         &mut self,
         alpha: f32,
@@ -522,6 +529,13 @@ impl crate::UnityEngine::UI::Graphic {
             .invoke("get_color", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_defaultGraphicMaterial() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_defaultGraphicMaterial", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_defaultMaterial(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -614,6 +628,13 @@ impl crate::UnityEngine::UI::Graphic {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("get_useLegacyMeshGeneration", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_workerMesh() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_workerMesh", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn set_color(

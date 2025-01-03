@@ -59,6 +59,29 @@ impl crate::UnityEngine::TrackedReference {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Equality(
+        x: quest_hook::libil2cpp::Gc<crate::UnityEngine::TrackedReference>,
+        y: quest_hook::libil2cpp::Gc<crate::UnityEngine::TrackedReference>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (x, y))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit(
+        exists: quest_hook::libil2cpp::Gc<crate::UnityEngine::TrackedReference>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (exists))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        x: quest_hook::libil2cpp::Gc<crate::UnityEngine::TrackedReference>,
+        y: quest_hook::libil2cpp::Gc<crate::UnityEngine::TrackedReference>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (x, y))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+TrackedReference")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::TrackedReference {

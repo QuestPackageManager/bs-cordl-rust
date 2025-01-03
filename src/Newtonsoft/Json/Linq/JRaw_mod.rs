@@ -42,6 +42,34 @@ impl crate::Newtonsoft::Json::Linq::JRaw {
         > = __cordl_object.invoke("CloneToken", (settings))?;
         Ok(__cordl_ret.into())
     }
+    pub fn Create(
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JRaw>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Linq::JRaw,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Create", (reader))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateAsync(
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut crate::Newtonsoft::Json::Linq::JRaw,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut crate::Newtonsoft::Json::Linq::JRaw,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateAsync", (reader, cancellationToken))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_Il2CppObject2(
         rawJson: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

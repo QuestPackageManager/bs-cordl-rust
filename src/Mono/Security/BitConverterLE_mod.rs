@@ -23,7 +23,92 @@ impl std::ops::DerefMut for crate::Mono::Security::BitConverterLE {
     }
 }
 #[cfg(feature = "Mono+Security+BitConverterLE")]
-impl crate::Mono::Security::BitConverterLE {}
+impl crate::Mono::Security::BitConverterLE {
+    pub fn GetBytes_i32_0(
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetBytes", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetBytes_i64_1(
+        value: i64,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetBytes", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetUIntBytes(
+        bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetUIntBytes", (bytes))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetULongBytes(
+        bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetULongBytes", (bytes))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToInt32(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        startIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToInt32", (value, startIndex))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToUInt16(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        startIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<u16> {
+        let __cordl_ret: u16 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToUInt16", (value, startIndex))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToUInt32(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        startIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToUInt32", (value, startIndex))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UIntFromBytes(
+        dst: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        src: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        startIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UIntFromBytes", (dst, src, startIndex))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UShortFromBytes(
+        dst: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        src: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        startIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UShortFromBytes", (dst, src, startIndex))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "Mono+Security+BitConverterLE")]
 impl quest_hook::libil2cpp::ObjectType for crate::Mono::Security::BitConverterLE {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

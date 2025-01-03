@@ -78,6 +78,30 @@ impl crate::System::Int64 {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn Parse_IFormatProvider1(
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+    ) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Parse", (s, provider))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Parse_Il2CppString0(
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Parse", (s))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Parse_NumberStyles_IFormatProvider2(
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        style: crate::System::Globalization::NumberStyles,
+        provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+    ) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Parse", (s, style, provider))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn System_IConvertible_ToBoolean(
         &mut self,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
@@ -308,6 +332,24 @@ impl crate::System::Int64 {
             "TryFormat",
             (destination, charsWritten, format, provider),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryParse_ByRefMut0(
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        result: quest_hook::libil2cpp::ByRefMut<i64>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryParse", (s, result))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryParse_NumberStyles_IFormatProvider_ByRefMut1(
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        style: crate::System::Globalization::NumberStyles,
+        provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+        result: quest_hook::libil2cpp::ByRefMut<i64>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryParse", (s, style, provider, result))?;
         Ok(__cordl_ret.into())
     }
 }

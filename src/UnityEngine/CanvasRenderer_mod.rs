@@ -25,6 +25,72 @@ impl std::ops::DerefMut for crate::UnityEngine::CanvasRenderer {
 }
 #[cfg(feature = "UnityEngine+CanvasRenderer")]
 impl crate::UnityEngine::CanvasRenderer {
+    pub fn AddUIVertexStream_List_1_List_1_1(
+        verts: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::UIVertex>,
+        >,
+        positions: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
+        >,
+        colors: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Color32>,
+        >,
+        uv0S: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
+        >,
+        uv1S: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
+        >,
+        uv2S: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
+        >,
+        uv3S: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
+        >,
+        normals: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
+        >,
+        tangents: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "AddUIVertexStream",
+                (verts, positions, colors, uv0S, uv1S, uv2S, uv3S, normals, tangents),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddUIVertexStream_List_1_List_1_List_1_List_1_List_1_List_1_List_1_0(
+        verts: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::UIVertex>,
+        >,
+        positions: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
+        >,
+        colors: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Color32>,
+        >,
+        uv0S: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
+        >,
+        uv1S: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
+        >,
+        normals: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
+        >,
+        tangents: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "AddUIVertexStream",
+                (verts, positions, colors, uv0S, uv1S, normals, tangents),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Clear(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -33,6 +99,119 @@ impl crate::UnityEngine::CanvasRenderer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Clear", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateUIVertexStreamInternal(
+        verts: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        positions: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        colors: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        uv0S: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        uv1S: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        uv2S: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        uv3S: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        normals: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        tangents: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        indices: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CreateUIVertexStreamInternal",
+                (
+                    verts,
+                    positions,
+                    colors,
+                    uv0S,
+                    uv1S,
+                    uv2S,
+                    uv3S,
+                    normals,
+                    tangents,
+                    indices,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateUIVertexStream_List_1_List_1_1(
+        verts: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::UIVertex>,
+        >,
+        positions: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
+        >,
+        colors: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Color32>,
+        >,
+        uv0S: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
+        >,
+        uv1S: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
+        >,
+        uv2S: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
+        >,
+        uv3S: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
+        >,
+        normals: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
+        >,
+        tangents: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
+        >,
+        indices: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<i32>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CreateUIVertexStream",
+                (
+                    verts,
+                    positions,
+                    colors,
+                    uv0S,
+                    uv1S,
+                    uv2S,
+                    uv3S,
+                    normals,
+                    tangents,
+                    indices,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateUIVertexStream_List_1_List_1_List_1_List_1_List_1_List_1_List_1_List_1_0(
+        verts: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::UIVertex>,
+        >,
+        positions: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
+        >,
+        colors: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Color32>,
+        >,
+        uv0S: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
+        >,
+        uv1S: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
+        >,
+        normals: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
+        >,
+        tangents: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
+        >,
+        indices: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<i32>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CreateUIVertexStream",
+                (verts, positions, colors, uv0S, uv1S, normals, tangents, indices),
+            )?;
         Ok(__cordl_ret.into())
     }
     pub fn DisableRectClipping(
@@ -286,6 +465,115 @@ impl crate::UnityEngine::CanvasRenderer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetVertices", (vertices))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SplitIndicesStreamsInternal(
+        verts: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        indices: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SplitIndicesStreamsInternal", (verts, indices))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SplitUIVertexStreamsInternal(
+        verts: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        positions: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        colors: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        uv0S: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        uv1S: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        uv2S: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        uv3S: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        normals: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        tangents: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "SplitUIVertexStreamsInternal",
+                (verts, positions, colors, uv0S, uv1S, uv2S, uv3S, normals, tangents),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SplitUIVertexStreams_List_1_List_1_1(
+        verts: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::UIVertex>,
+        >,
+        positions: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
+        >,
+        colors: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Color32>,
+        >,
+        uv0S: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
+        >,
+        uv1S: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
+        >,
+        uv2S: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
+        >,
+        uv3S: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
+        >,
+        normals: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
+        >,
+        tangents: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
+        >,
+        indices: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<i32>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "SplitUIVertexStreams",
+                (
+                    verts,
+                    positions,
+                    colors,
+                    uv0S,
+                    uv1S,
+                    uv2S,
+                    uv3S,
+                    normals,
+                    tangents,
+                    indices,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SplitUIVertexStreams_List_1_List_1_List_1_List_1_List_1_List_1_List_1_List_1_0(
+        verts: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::UIVertex>,
+        >,
+        positions: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
+        >,
+        colors: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Color32>,
+        >,
+        uv0S: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
+        >,
+        uv1S: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
+        >,
+        normals: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
+        >,
+        tangents: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
+        >,
+        indices: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<i32>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "SplitUIVertexStreams",
+                (verts, positions, colors, uv0S, uv1S, normals, tangents, indices),
+            )?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

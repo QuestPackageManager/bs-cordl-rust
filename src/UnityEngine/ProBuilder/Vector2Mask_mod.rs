@@ -63,4 +63,50 @@ impl crate::UnityEngine::ProBuilder::Vector2Mask {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_BitwiseAnd(
+        left: crate::UnityEngine::ProBuilder::Vector2Mask,
+        right: crate::UnityEngine::ProBuilder::Vector2Mask,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ProBuilder::Vector2Mask> {
+        let __cordl_ret: crate::UnityEngine::ProBuilder::Vector2Mask = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_BitwiseAnd", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_BitwiseOr(
+        left: crate::UnityEngine::ProBuilder::Vector2Mask,
+        right: crate::UnityEngine::ProBuilder::Vector2Mask,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ProBuilder::Vector2Mask> {
+        let __cordl_ret: crate::UnityEngine::ProBuilder::Vector2Mask = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_BitwiseOr", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_ExclusiveOr(
+        left: crate::UnityEngine::ProBuilder::Vector2Mask,
+        right: crate::UnityEngine::ProBuilder::Vector2Mask,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ProBuilder::Vector2Mask> {
+        let __cordl_ret: crate::UnityEngine::ProBuilder::Vector2Mask = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_ExclusiveOr", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_Vector2Mask0(
+        mask: crate::UnityEngine::ProBuilder::Vector2Mask,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (mask))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_Vector2_1(
+        v: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ProBuilder::Vector2Mask> {
+        let __cordl_ret: crate::UnityEngine::ProBuilder::Vector2Mask = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (v))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Multiply(
+        mask: crate::UnityEngine::ProBuilder::Vector2Mask,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Multiply", (mask, value))?;
+        Ok(__cordl_ret.into())
+    }
 }

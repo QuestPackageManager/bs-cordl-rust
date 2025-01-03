@@ -75,6 +75,39 @@ impl<
         > = __cordl_object.invoke("CreatePerCoreLockedStacks", (bucketIndex))?;
         Ok(__cordl_ret.into())
     }
+    pub fn Gen2GcCallbackFunc(
+        target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Gen2GcCallbackFunc", (target))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetMemoryPressure() -> quest_hook::libil2cpp::Result<
+        crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_MemoryPressure<T>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_MemoryPressure<
+            T,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetMemoryPressure", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetTrimBuffers() -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetTrimBuffers", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type

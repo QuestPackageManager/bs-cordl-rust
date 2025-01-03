@@ -24,6 +24,38 @@ impl std::ops::DerefMut for crate::UnityEngine::CubemapArray {
 }
 #[cfg(feature = "UnityEngine+CubemapArray")]
 impl crate::UnityEngine::CubemapArray {
+    pub fn Internal_Create(
+        mono: quest_hook::libil2cpp::Gc<crate::UnityEngine::CubemapArray>,
+        ext: i32,
+        count: i32,
+        mipCount: i32,
+        format: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+        colorSpace: crate::UnityEngine::TextureColorSpace,
+        flags: crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "Internal_Create",
+                (mono, ext, count, mipCount, format, colorSpace, flags),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Internal_CreateImpl(
+        mono: quest_hook::libil2cpp::Gc<crate::UnityEngine::CubemapArray>,
+        ext: i32,
+        count: i32,
+        mipCount: i32,
+        format: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+        colorSpace: crate::UnityEngine::TextureColorSpace,
+        flags: crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "Internal_CreateImpl",
+                (mono, ext, count, mipCount, format, colorSpace, flags),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_DefaultFormat_TextureCreationFlags0(
         width: i32,
         cubemapCount: i32,
@@ -165,6 +197,13 @@ impl crate::UnityEngine::CubemapArray {
                 ),
             )?;
         Ok(__cordl_object.into())
+    }
+    pub fn ValidateIsNotCrunched(
+        flags: crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ValidateIsNotCrunched", (flags))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_DefaultFormat_TextureCreationFlags0(
         &mut self,

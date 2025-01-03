@@ -110,6 +110,74 @@ impl crate::Unity::Mathematics::half {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_MaxValue() -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_MaxValue", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_MaxValueAsHalf() -> quest_hook::libil2cpp::Result<
+        crate::Unity::Mathematics::half,
+    > {
+        let __cordl_ret: crate::Unity::Mathematics::half = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_MaxValueAsHalf", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_MinValue() -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_MinValue", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_MinValueAsHalf() -> quest_hook::libil2cpp::Result<
+        crate::Unity::Mathematics::half,
+    > {
+        let __cordl_ret: crate::Unity::Mathematics::half = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_MinValueAsHalf", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        lhs: crate::Unity::Mathematics::half,
+        rhs: crate::Unity::Mathematics::half,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Explicit_f32_0(
+        v: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::half> {
+        let __cordl_ret: crate::Unity::Mathematics::half = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Explicit", (v))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Explicit_f64_1(
+        v: f64,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::half> {
+        let __cordl_ret: crate::Unity::Mathematics::half = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Explicit", (v))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_half0(
+        d: crate::Unity::Mathematics::half,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (d))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_half1(
+        d: crate::Unity::Mathematics::half,
+    ) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_ret: f64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (d))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        lhs: crate::Unity::Mathematics::half,
+        rhs: crate::Unity::Mathematics::half,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "Unity+Mathematics+half")]
 impl AsRef<crate::System::IEquatable_1<crate::Unity::Mathematics::half>>

@@ -32,6 +32,21 @@ for crate::UnityEngine::UIElements::PointerCaptureEventBase_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::UnityEngine::UIElements::PointerCaptureEventBase_1<T> {
+    pub fn GetPooled(
+        target: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IEventHandler>,
+        relatedTarget: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::IEventHandler,
+        >,
+        pointerId: i32,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPooled", (target, relatedTarget, pointerId))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Init(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type

@@ -151,6 +151,15 @@ impl crate::System::Xml::Schema::XmlSchemaInference {
         > = __cordl_object.invoke("CreateXmlSchema", (targetNS))?;
         Ok(__cordl_ret.into())
     }
+    pub fn DateTime(
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        bDate: bool,
+        bTime: bool,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DateTime", (s, bDate, bTime))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn FindAttribute(
         &mut self,
         attributes: quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
@@ -284,6 +293,13 @@ impl crate::System::Xml::Schema::XmlSchemaInference {
         > = __cordl_object.invoke("GetEffectiveSchemaType", (elem, bCreatingNewType))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetSchemaType(
+        qname: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSchemaType", (qname))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn InferElement(
         &mut self,
         xse: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaElement>,
@@ -324,6 +340,14 @@ impl crate::System::Xml::Schema::XmlSchemaInference {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlSchemaSet,
         > = __cordl_object.invoke("InferSchema1", (instanceDocument, schemas))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InferSimpleType(
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        bNeedsRangeCheck: quest_hook::libil2cpp::ByRefMut<bool>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InferSimpleType", (s, bNeedsRangeCheck))?;
         Ok(__cordl_ret.into())
     }
     pub fn MakeExistingAttributesOptional(

@@ -26,6 +26,28 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Tls::AlertLevel {
 impl crate::Org::BouncyCastle::Crypto::Tls::AlertLevel {
     pub const fatal: u8 = 2u8;
     pub const warning: u8 = 1u8;
+    pub fn GetName(
+        alertDescription: u8,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetName", (alertDescription))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetText(
+        alertDescription: u8,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetText", (alertDescription))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

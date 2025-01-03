@@ -23,7 +23,15 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapEventTypeExtensions {
     }
 }
 #[cfg(feature = "BeatmapEventTypeExtensions")]
-impl crate::GlobalNamespace::BeatmapEventTypeExtensions {}
+impl crate::GlobalNamespace::BeatmapEventTypeExtensions {
+    pub fn IsCoreLightIntensityChangeEvent(
+        basicBeatmapEventType: crate::GlobalNamespace::BasicBeatmapEventType,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsCoreLightIntensityChangeEvent", (basicBeatmapEventType))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "BeatmapEventTypeExtensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BeatmapEventTypeExtensions {

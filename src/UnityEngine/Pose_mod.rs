@@ -94,6 +94,11 @@ impl crate::UnityEngine::Pose {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_identity() -> quest_hook::libil2cpp::Result<crate::UnityEngine::Pose> {
+        let __cordl_ret: crate::UnityEngine::Pose = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_identity", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+Pose")]
 impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::Pose>>

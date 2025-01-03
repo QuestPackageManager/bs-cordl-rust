@@ -95,6 +95,22 @@ impl crate::GlobalNamespace::MissionObjective {
         > = __cordl_object.invoke("get_type", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Equality(
+        obj1: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionObjective>,
+        obj2: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionObjective>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (obj1, obj2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        obj1: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionObjective>,
+        obj2: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionObjective>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (obj1, obj2))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "MissionObjective")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MissionObjective {

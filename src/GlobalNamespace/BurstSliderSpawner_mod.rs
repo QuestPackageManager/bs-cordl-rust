@@ -26,6 +26,44 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BurstSliderSpawner {
 impl crate::GlobalNamespace::BurstSliderSpawner {
     #[cfg(feature = "BurstSliderSpawner+ProcessNoteDataDelegate")]
     pub type ProcessNoteDataDelegate = crate::GlobalNamespace::BurstSliderSpawner_ProcessNoteDataDelegate;
+    pub fn BezierCurve(
+        p0: crate::UnityEngine::Vector2,
+        p1: crate::UnityEngine::Vector2,
+        p2: crate::UnityEngine::Vector2,
+        t: f32,
+        pos: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
+        tangent: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BezierCurve", (p0, p1, p2, t, pos, tangent))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ProcessSliderData(
+        sliderData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderData>,
+        sliderSpawnData: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::SliderSpawnData,
+        >,
+        forceIsFirstNote: bool,
+        variableMovementDataProvider: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::VariableMovementDataProvider,
+        >,
+        processNoteData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BurstSliderSpawner_ProcessNoteDataDelegate,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ProcessSliderData",
+                (
+                    sliderData,
+                    sliderSpawnData,
+                    forceIsFirstNote,
+                    variableMovementDataProvider,
+                    processNoteData,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "BurstSliderSpawner")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BurstSliderSpawner {

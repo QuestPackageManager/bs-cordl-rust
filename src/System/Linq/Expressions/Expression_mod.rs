@@ -96,12 +96,2418 @@ impl crate::System::Linq::Expressions::Expression {
         > = __cordl_object.invoke("Accept", (visitor))?;
         Ok(__cordl_ret.into())
     }
+    pub fn Add(
+        left: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BinaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BinaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Add", (left, right, method))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddAssign(
+        left: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+        conversion: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::LambdaExpression,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BinaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BinaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddAssign", (left, right, method, conversion))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddAssignChecked(
+        left: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+        conversion: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::LambdaExpression,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BinaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BinaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddAssignChecked", (left, right, method, conversion))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddChecked(
+        left: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BinaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BinaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddChecked", (left, right, method))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn And(
+        left: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BinaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BinaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("And", (left, right, method))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AndAlso_Expression_Expression0(
+        left: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BinaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BinaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AndAlso", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AndAlso_MethodInfo1(
+        left: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BinaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BinaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AndAlso", (left, right, method))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AndAssign(
+        left: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+        conversion: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::LambdaExpression,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BinaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BinaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AndAssign", (left, right, method, conversion))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ApplyTypeArgs(
+        m: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+        typeArgs: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::MethodInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ApplyTypeArgs", (m, typeArgs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ArrayAccess_IEnumerable_1_1(
+        array: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        indexes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::System::Linq::Expressions::Expression,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::IndexExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::IndexExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ArrayAccess", (array, indexes))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ArrayAccess_Il2CppArray0(
+        array: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        indexes: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Linq::Expressions::Expression,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::IndexExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::IndexExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ArrayAccess", (array, indexes))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ArrayIndex(
+        array: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        index: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BinaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BinaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ArrayIndex", (array, index))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ArrayLength(
+        array: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::UnaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::UnaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ArrayLength", (array))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Assign(
+        left: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BinaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BinaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Assign", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn BlockCore(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        variables: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                *mut crate::System::Linq::Expressions::ParameterExpression,
+            >,
+        >,
+        expressions: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                *mut crate::System::Linq::Expressions::Expression,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BlockExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BlockExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BlockCore", (_cordl_type, variables, expressions))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Block_Expression_Expression0(
+        arg0: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        arg1: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BlockExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BlockExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Block", (arg0, arg1))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Block_Expression_Expression_Expression1(
+        arg0: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        arg1: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        arg2: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BlockExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BlockExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Block", (arg0, arg1, arg2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Block_Expression_Expression_Expression_Expression2(
+        arg0: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        arg1: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        arg2: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        arg3: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BlockExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BlockExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Block", (arg0, arg1, arg2, arg3))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Block_Expression_Expression_Expression_Expression_Expression3(
+        arg0: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        arg1: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        arg2: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        arg3: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        arg4: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BlockExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BlockExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Block", (arg0, arg1, arg2, arg3, arg4))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Block_IEnumerable_1_4(
+        expressions: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::System::Linq::Expressions::Expression,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BlockExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BlockExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Block", (expressions))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Block_IEnumerable_1_IEnumerable_1_9(
+        variables: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::System::Linq::Expressions::ParameterExpression,
+            >,
+        >,
+        expressions: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::System::Linq::Expressions::Expression,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BlockExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BlockExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Block", (variables, expressions))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Block_IEnumerable_1_Il2CppArray7(
+        variables: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::System::Linq::Expressions::ParameterExpression,
+            >,
+        >,
+        expressions: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Linq::Expressions::Expression,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BlockExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BlockExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Block", (variables, expressions))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Block_Type_IEnumerable_1_6(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        expressions: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::System::Linq::Expressions::Expression,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BlockExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BlockExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Block", (_cordl_type, expressions))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Block_Type_IEnumerable_1_IEnumerable_1_10(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        variables: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::System::Linq::Expressions::ParameterExpression,
+            >,
+        >,
+        expressions: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::System::Linq::Expressions::Expression,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BlockExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BlockExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Block", (_cordl_type, variables, expressions))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Block_Type_IEnumerable_1_Il2CppArray8(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        variables: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::System::Linq::Expressions::ParameterExpression,
+            >,
+        >,
+        expressions: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Linq::Expressions::Expression,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BlockExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BlockExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Block", (_cordl_type, variables, expressions))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Block_Type_Il2CppArray5(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        expressions: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Linq::Expressions::Expression,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BlockExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BlockExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Block", (_cordl_type, expressions))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Break(
+        target: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::LabelTarget>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::GotoExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::GotoExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Break", (target))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Call_Expression_Il2CppString_Il2CppArray_Il2CppArray13(
+        instance: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+        methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        typeArguments: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+        >,
+        arguments: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Linq::Expressions::Expression,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::MethodCallExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::MethodCallExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Call", (instance, methodName, typeArguments, arguments))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Call_Expression_MethodInfo8(
+        instance: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::MethodCallExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::MethodCallExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Call", (instance, method))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Call_Expression_MethodInfo_Expression10(
+        instance: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+        arg0: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::MethodCallExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::MethodCallExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Call", (instance, method, arg0))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Call_Expression_MethodInfo_Expression_Expression11(
+        instance: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+        arg0: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        arg1: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::MethodCallExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::MethodCallExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Call", (instance, method, arg0, arg1))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Call_Expression_MethodInfo_Expression_Expression_Expression12(
+        instance: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+        arg0: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        arg1: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        arg2: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::MethodCallExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::MethodCallExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Call", (instance, method, arg0, arg1, arg2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Call_Expression_MethodInfo_IEnumerable_1_14(
+        instance: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+        arguments: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::System::Linq::Expressions::Expression,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::MethodCallExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::MethodCallExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Call", (instance, method, arguments))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Call_Expression_MethodInfo_Il2CppArray9(
+        instance: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+        arguments: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Linq::Expressions::Expression,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::MethodCallExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::MethodCallExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Call", (instance, method, arguments))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Call_MethodInfo0(
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::MethodCallExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::MethodCallExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Call", (method))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Call_MethodInfo_Expression1(
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+        arg0: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::MethodCallExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::MethodCallExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Call", (method, arg0))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Call_MethodInfo_Expression_Expression2(
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+        arg0: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        arg1: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::MethodCallExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::MethodCallExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Call", (method, arg0, arg1))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Call_MethodInfo_Expression_Expression_Expression3(
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+        arg0: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        arg1: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        arg2: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::MethodCallExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::MethodCallExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Call", (method, arg0, arg1, arg2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Call_MethodInfo_Expression_Expression_Expression_Expression4(
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+        arg0: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        arg1: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        arg2: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        arg3: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::MethodCallExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::MethodCallExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Call", (method, arg0, arg1, arg2, arg3))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Call_MethodInfo_Expression_Expression_Expression_Expression_Expression5(
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+        arg0: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        arg1: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        arg2: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        arg3: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        arg4: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::MethodCallExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::MethodCallExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Call", (method, arg0, arg1, arg2, arg3, arg4))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Call_MethodInfo_IEnumerable_1_7(
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+        arguments: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::System::Linq::Expressions::Expression,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::MethodCallExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::MethodCallExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Call", (method, arguments))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Call_MethodInfo_Il2CppArray6(
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+        arguments: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Linq::Expressions::Expression,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::MethodCallExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::MethodCallExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Call", (method, arguments))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Coalesce(
+        left: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        conversion: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::LambdaExpression,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BinaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BinaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Coalesce", (left, right, conversion))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Condition_Expression_Expression_Expression0(
+        test: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        ifTrue: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        ifFalse: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::ConditionalExpression,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::ConditionalExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Condition", (test, ifTrue, ifFalse))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Condition_Type1(
+        test: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        ifTrue: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        ifFalse: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::ConditionalExpression,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::ConditionalExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Condition", (test, ifTrue, ifFalse, _cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Constant_Il2CppObject0(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::ConstantExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::ConstantExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Constant", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Constant_Type1(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::ConstantExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::ConstantExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Constant", (value, _cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ConvertChecked(
+        expression: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::UnaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::UnaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ConvertChecked", (expression, _cordl_type, method))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Convert_Expression_Type0(
+        expression: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::UnaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::UnaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Convert", (expression, _cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Convert_MethodInfo1(
+        expression: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::UnaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::UnaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Convert", (expression, _cordl_type, method))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateLambda(
+        delegateType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        body: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        tailCall: bool,
+        parameters: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                *mut crate::System::Linq::Expressions::ParameterExpression,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::LambdaExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::LambdaExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateLambda", (delegateType, body, name, tailCall, parameters))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Decrement(
+        expression: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::UnaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::UnaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Decrement", (expression, method))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Default(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::DefaultExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::DefaultExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Default", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Divide(
+        left: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BinaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BinaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Divide", (left, right, method))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DivideAssign(
+        left: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+        conversion: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::LambdaExpression,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BinaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BinaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DivideAssign", (left, right, method, conversion))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Empty() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::DefaultExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::DefaultExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Empty", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Equal_Expression_Expression0(
+        left: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BinaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BinaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Equal", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Equal__cordl_bool_MethodInfo1(
+        left: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        liftToNull: bool,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BinaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BinaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Equal", (left, right, liftToNull, method))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ExclusiveOr(
+        left: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BinaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BinaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ExclusiveOr", (left, right, method))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ExclusiveOrAssign(
+        left: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+        conversion: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::LambdaExpression,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BinaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BinaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ExclusiveOrAssign", (left, right, method, conversion))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Field_FieldInfo0(
+        expression: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+        field: quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::MemberExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::MemberExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Field", (expression, field))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Field_Il2CppString1(
+        expression: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+        fieldName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::MemberExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::MemberExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Field", (expression, fieldName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FindMethod(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        typeArgs: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+        >,
+        args: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Linq::Expressions::Expression,
+            >,
+        >,
+        flags: crate::System::Reflection::BindingFlags,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::MethodInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FindMethod", (_cordl_type, methodName, typeArgs, args, flags))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetComparisonOperator(
+        binaryType: crate::System::Linq::Expressions::ExpressionType,
+        opName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        left: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        liftToNull: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BinaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BinaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetComparisonOperator",
+                (binaryType, opName, left, right, liftToNull),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetEqualityComparisonOperator(
+        binaryType: crate::System::Linq::Expressions::ExpressionType,
+        opName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        left: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        liftToNull: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BinaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BinaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetEqualityComparisonOperator",
+                (binaryType, opName, left, right, liftToNull),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetInvokeMethod(
+        expression: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::MethodInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetInvokeMethod", (expression))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetMethodBasedAssignOperator(
+        binaryType: crate::System::Linq::Expressions::ExpressionType,
+        left: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+        conversion: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::LambdaExpression,
+        >,
+        liftToNull: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BinaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BinaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetMethodBasedAssignOperator",
+                (binaryType, left, right, method, conversion, liftToNull),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetMethodBasedBinaryOperator(
+        binaryType: crate::System::Linq::Expressions::ExpressionType,
+        left: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+        liftToNull: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BinaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BinaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetMethodBasedBinaryOperator",
+                (binaryType, left, right, method, liftToNull),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetMethodBasedCoercionOperator(
+        unaryType: crate::System::Linq::Expressions::ExpressionType,
+        operand: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        convertToType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::UnaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::UnaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetMethodBasedCoercionOperator",
+                (unaryType, operand, convertToType, method),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetMethodBasedUnaryOperator(
+        unaryType: crate::System::Linq::Expressions::ExpressionType,
+        operand: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::UnaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::UnaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetMethodBasedUnaryOperator", (unaryType, operand, method))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetOptimizedBlockExpression(
+        expressions: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                *mut crate::System::Linq::Expressions::Expression,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BlockExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BlockExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetOptimizedBlockExpression", (expressions))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetParametersForValidation(
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
+        nodeKind: crate::System::Linq::Expressions::ExpressionType,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Reflection::ParameterInfo,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Reflection::ParameterInfo,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetParametersForValidation", (method, nodeKind))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetResultTypeOfShift(
+        left: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetResultTypeOfShift", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetUserDefinedAssignOperatorOrThrow(
+        binaryType: crate::System::Linq::Expressions::ExpressionType,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        left: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        conversion: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::LambdaExpression,
+        >,
+        liftToNull: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BinaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BinaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetUserDefinedAssignOperatorOrThrow",
+                (binaryType, name, left, right, conversion, liftToNull),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetUserDefinedBinaryOperatorOrThrow(
+        binaryType: crate::System::Linq::Expressions::ExpressionType,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        left: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        liftToNull: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BinaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BinaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetUserDefinedBinaryOperatorOrThrow",
+                (binaryType, name, left, right, liftToNull),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetUserDefinedBinaryOperator_Il2CppString_Expression_Expression__cordl_bool0(
+        binaryType: crate::System::Linq::Expressions::ExpressionType,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        left: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        liftToNull: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BinaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BinaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetUserDefinedBinaryOperator",
+                (binaryType, name, left, right, liftToNull),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetUserDefinedBinaryOperator_Type_Type_Il2CppString1(
+        binaryType: crate::System::Linq::Expressions::ExpressionType,
+        leftType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        rightType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::MethodInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetUserDefinedBinaryOperator",
+                (binaryType, leftType, rightType, name),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetUserDefinedCoercion(
+        coercionType: crate::System::Linq::Expressions::ExpressionType,
+        expression: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+        convertToType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::UnaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::UnaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetUserDefinedCoercion",
+                (coercionType, expression, convertToType),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetUserDefinedCoercionOrThrow(
+        coercionType: crate::System::Linq::Expressions::ExpressionType,
+        expression: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+        convertToType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::UnaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::UnaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetUserDefinedCoercionOrThrow",
+                (coercionType, expression, convertToType),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetUserDefinedUnaryOperator(
+        unaryType: crate::System::Linq::Expressions::ExpressionType,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        operand: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::UnaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::UnaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetUserDefinedUnaryOperator", (unaryType, name, operand))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetUserDefinedUnaryOperatorOrThrow(
+        unaryType: crate::System::Linq::Expressions::ExpressionType,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        operand: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::UnaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::UnaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetUserDefinedUnaryOperatorOrThrow", (unaryType, name, operand))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Goto_Expression1(
+        target: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::LabelTarget>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::GotoExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::GotoExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Goto", (target, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Goto_Type0(
+        target: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::LabelTarget>,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::GotoExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::GotoExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Goto", (target, _cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GreaterThan(
+        left: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        liftToNull: bool,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BinaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BinaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GreaterThan", (left, right, liftToNull, method))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GreaterThanOrEqual(
+        left: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        liftToNull: bool,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BinaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BinaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GreaterThanOrEqual", (left, right, liftToNull, method))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IfThen(
+        test: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        ifTrue: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::ConditionalExpression,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::ConditionalExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IfThen", (test, ifTrue))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Increment(
+        expression: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::UnaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::UnaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Increment", (expression, method))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Invoke_Expression0(
+        expression: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::InvocationExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::InvocationExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Invoke", (expression))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Invoke_Expression1(
+        expression: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+        arg0: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::InvocationExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::InvocationExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Invoke", (expression, arg0))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Invoke_Expression_Expression2(
+        expression: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+        arg0: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        arg1: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::InvocationExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::InvocationExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Invoke", (expression, arg0, arg1))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Invoke_Expression_Expression_Expression3(
+        expression: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+        arg0: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        arg1: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        arg2: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::InvocationExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::InvocationExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Invoke", (expression, arg0, arg1, arg2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Invoke_Expression_Expression_Expression_Expression4(
+        expression: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+        arg0: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        arg1: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        arg2: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        arg3: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::InvocationExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::InvocationExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Invoke", (expression, arg0, arg1, arg2, arg3))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Invoke_Expression_Expression_Expression_Expression_Expression5(
+        expression: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+        arg0: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        arg1: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        arg2: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        arg3: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        arg4: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::InvocationExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::InvocationExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Invoke", (expression, arg0, arg1, arg2, arg3, arg4))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Invoke_IEnumerable_1_6(
+        expression: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+        arguments: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::System::Linq::Expressions::Expression,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::InvocationExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::InvocationExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Invoke", (expression, arguments))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsCompatible(
+        m: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
+        arguments: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Linq::Expressions::Expression,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsCompatible", (m, arguments))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsFalse(
+        expression: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::UnaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::UnaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsFalse", (expression, method))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsLiftingConditionalLogicalOperator(
+        left: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+        binaryType: crate::System::Linq::Expressions::ExpressionType,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "IsLiftingConditionalLogicalOperator",
+                (left, right, method, binaryType),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsNullComparison(
+        left: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsNullComparison", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsNullConstant(
+        e: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsNullConstant", (e))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsSimpleShift(
+        left: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsSimpleShift", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsTrue(
+        expression: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::UnaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::UnaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsTrue", (expression, method))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsValidLiftedConditionalLogicalOperator(
+        left: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        pms: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Reflection::ParameterInfo,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsValidLiftedConditionalLogicalOperator", (left, right, pms))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Label_2() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::LabelTarget>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::LabelTarget,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Label", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Label_Il2CppString3(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::LabelTarget>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::LabelTarget,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Label", (name))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Label_LabelTarget0(
+        target: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::LabelTarget>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::LabelExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::LabelExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Label", (target))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Label_LabelTarget_Expression1(
+        target: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::LabelTarget>,
+        defaultValue: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::LabelExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::LabelExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Label", (target, defaultValue))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Label_Type4(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::LabelTarget>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::LabelTarget,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Label", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Label_Type_Il2CppString5(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::LabelTarget>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::LabelTarget,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Label", (_cordl_type, name))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Lambda_Expression_IEnumerable_1_1<TDelegate>(
+        body: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        parameters: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::System::Linq::Expressions::ParameterExpression,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression_1<TDelegate>,
+        >,
+    >
+    where
+        TDelegate: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression_1<TDelegate>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Lambda", (body, parameters))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Lambda_Expression_Il2CppArray0<TDelegate>(
+        body: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        parameters: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Linq::Expressions::ParameterExpression,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression_1<TDelegate>,
+        >,
+    >
+    where
+        TDelegate: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression_1<TDelegate>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Lambda", (body, parameters))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Lambda_Expression_Il2CppString__cordl_bool_IEnumerable_1_3<TDelegate>(
+        body: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        tailCall: bool,
+        parameters: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::System::Linq::Expressions::ParameterExpression,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression_1<TDelegate>,
+        >,
+    >
+    where
+        TDelegate: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression_1<TDelegate>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Lambda", (body, name, tailCall, parameters))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Lambda_Expression__cordl_bool_IEnumerable_1_2<TDelegate>(
+        body: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        tailCall: bool,
+        parameters: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::System::Linq::Expressions::ParameterExpression,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression_1<TDelegate>,
+        >,
+    >
+    where
+        TDelegate: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression_1<TDelegate>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Lambda", (body, tailCall, parameters))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Lambda_Type_Expression_Il2CppArray4(
+        delegateType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        body: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        parameters: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Linq::Expressions::ParameterExpression,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::LambdaExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::LambdaExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Lambda", (delegateType, body, parameters))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Lambda_Type_Expression_Il2CppString__cordl_bool_IEnumerable_1_5(
+        delegateType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        body: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        tailCall: bool,
+        parameters: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::System::Linq::Expressions::ParameterExpression,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::LambdaExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::LambdaExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Lambda", (delegateType, body, name, tailCall, parameters))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LeftShift(
+        left: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BinaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BinaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LeftShift", (left, right, method))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LeftShiftAssign(
+        left: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+        conversion: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::LambdaExpression,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BinaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BinaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LeftShiftAssign", (left, right, method, conversion))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LessThan(
+        left: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        liftToNull: bool,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BinaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BinaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LessThan", (left, right, liftToNull, method))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LessThanOrEqual(
+        left: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        liftToNull: bool,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BinaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BinaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LessThanOrEqual", (left, right, liftToNull, method))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Loop(
+        body: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        _cordl_break: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::LabelTarget,
+        >,
+        _cordl_continue: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::LabelTarget,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::LoopExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::LoopExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Loop", (body, _cordl_break, _cordl_continue))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MakeBinary_ExpressionType_Expression_Expression__cordl_bool_MethodInfo0(
+        binaryType: crate::System::Linq::Expressions::ExpressionType,
+        left: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        liftToNull: bool,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BinaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BinaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MakeBinary", (binaryType, left, right, liftToNull, method))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MakeBinary_LambdaExpression1(
+        binaryType: crate::System::Linq::Expressions::ExpressionType,
+        left: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        liftToNull: bool,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+        conversion: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::LambdaExpression,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BinaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BinaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "MakeBinary",
+                (binaryType, left, right, liftToNull, method, conversion),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MakeCatchBlock(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        variable: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::ParameterExpression,
+        >,
+        body: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        filter: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::CatchBlock>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::CatchBlock,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MakeCatchBlock", (_cordl_type, variable, body, filter))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MakeGoto(
+        kind: crate::System::Linq::Expressions::GotoExpressionKind,
+        target: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::LabelTarget>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::GotoExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::GotoExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MakeGoto", (kind, target, value, _cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MakeIndex(
+        instance: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+        indexer: quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
+        arguments: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::System::Linq::Expressions::Expression,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::IndexExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::IndexExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MakeIndex", (instance, indexer, arguments))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MakeIndexProperty(
+        instance: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+        indexer: quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
+        paramName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        argList: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                *mut crate::System::Linq::Expressions::Expression,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::IndexExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::IndexExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MakeIndexProperty", (instance, indexer, paramName, argList))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MakeMemberAccess(
+        expression: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+        member: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::MemberExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::MemberExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MakeMemberAccess", (expression, member))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MakeOpAssignUnary(
+        kind: crate::System::Linq::Expressions::ExpressionType,
+        expression: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::UnaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::UnaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MakeOpAssignUnary", (kind, expression, method))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MakeTry(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        body: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        finally: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        fault: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        handlers: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::System::Linq::Expressions::CatchBlock,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::TryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::TryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MakeTry", (_cordl_type, body, finally, fault, handlers))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MakeUnary(
+        unaryType: crate::System::Linq::Expressions::ExpressionType,
+        operand: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::UnaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::UnaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MakeUnary", (unaryType, operand, _cordl_type, method))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Modulo(
+        left: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BinaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BinaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Modulo", (left, right, method))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ModuloAssign(
+        left: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+        conversion: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::LambdaExpression,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BinaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BinaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ModuloAssign", (left, right, method, conversion))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Multiply(
+        left: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BinaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BinaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Multiply", (left, right, method))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MultiplyAssign(
+        left: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+        conversion: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::LambdaExpression,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BinaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BinaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MultiplyAssign", (left, right, method, conversion))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MultiplyAssignChecked(
+        left: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+        conversion: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::LambdaExpression,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BinaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BinaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MultiplyAssignChecked", (left, right, method, conversion))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MultiplyChecked(
+        left: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BinaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BinaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MultiplyChecked", (left, right, method))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Negate(
+        expression: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::UnaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::UnaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Negate", (expression, method))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn NegateChecked(
+        expression: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::UnaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::UnaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("NegateChecked", (expression, method))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
+    }
+    pub fn NewArrayBounds(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        bounds: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::System::Linq::Expressions::Expression,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::NewArrayExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::NewArrayExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("NewArrayBounds", (_cordl_type, bounds))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn NewArrayInit_IEnumerable_1_1(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        initializers: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::System::Linq::Expressions::Expression,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::NewArrayExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::NewArrayExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("NewArrayInit", (_cordl_type, initializers))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn NewArrayInit_Il2CppArray0(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        initializers: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Linq::Expressions::Expression,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::NewArrayExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::NewArrayExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("NewArrayInit", (_cordl_type, initializers))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn NotEqual_Expression_Expression0(
+        left: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BinaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BinaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("NotEqual", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn NotEqual__cordl_bool_MethodInfo1(
+        left: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        liftToNull: bool,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BinaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BinaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("NotEqual", (left, right, liftToNull, method))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Not_Expression0(
+        expression: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::UnaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::UnaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Not", (expression))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Not_MethodInfo1(
+        expression: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::UnaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::UnaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Not", (expression, method))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn OnesComplement(
+        expression: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::UnaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::UnaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("OnesComplement", (expression, method))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Or(
+        left: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BinaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BinaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Or", (left, right, method))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn OrAssign(
+        left: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+        conversion: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::LambdaExpression,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BinaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BinaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("OrAssign", (left, right, method, conversion))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn OrElse(
+        left: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BinaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BinaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("OrElse", (left, right, method))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ParameterIsAssignable(
+        pi: quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
+        argType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ParameterIsAssignable", (pi, argType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Parameter_Il2CppString1(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::ParameterExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::ParameterExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Parameter", (_cordl_type, name))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Parameter_Type0(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::ParameterExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::ParameterExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Parameter", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn PostDecrementAssign(
+        expression: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::UnaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::UnaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PostDecrementAssign", (expression, method))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn PostIncrementAssign(
+        expression: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::UnaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::UnaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PostIncrementAssign", (expression, method))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Power(
+        left: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BinaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BinaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Power", (left, right, method))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn PowerAssign(
+        left: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+        conversion: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::LambdaExpression,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BinaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BinaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PowerAssign", (left, right, method, conversion))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn PreDecrementAssign(
+        expression: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::UnaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::UnaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PreDecrementAssign", (expression, method))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn PreIncrementAssign_Expression0(
+        expression: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::UnaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::UnaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PreIncrementAssign", (expression))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn PreIncrementAssign_MethodInfo1(
+        expression: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::UnaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::UnaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PreIncrementAssign", (expression, method))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Property_Il2CppString1(
+        expression: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+        propertyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::MemberExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::MemberExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Property", (expression, propertyName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Property_PropertyInfo2(
+        expression: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+        property: quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::MemberExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::MemberExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Property", (expression, property))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Property_PropertyInfo_IEnumerable_1_0(
+        instance: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+        indexer: quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
+        arguments: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::System::Linq::Expressions::Expression,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::IndexExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::IndexExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Property", (instance, indexer, arguments))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Quote(
+        expression: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::UnaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::UnaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Quote", (expression))?;
+        Ok(__cordl_ret.into())
     }
     pub fn Reduce(
         &mut self,
@@ -129,6 +2535,173 @@ impl crate::System::Linq::Expressions::Expression {
         > = __cordl_object.invoke("ReduceAndCheck", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn ReferenceEqual(
+        left: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BinaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BinaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReferenceEqual", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReferenceNotEqual(
+        left: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BinaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BinaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReferenceNotEqual", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RequiresCanRead(
+        items: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                *mut crate::System::Linq::Expressions::Expression,
+            >,
+        >,
+        paramName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RequiresCanRead", (items, paramName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RequiresCanWrite(
+        expression: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+        paramName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RequiresCanWrite", (expression, paramName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Return_Expression1(
+        target: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::LabelTarget>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::GotoExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::GotoExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Return", (target, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Return_LabelTarget0(
+        target: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::LabelTarget>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::GotoExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::GotoExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Return", (target))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RightShift(
+        left: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BinaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BinaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RightShift", (left, right, method))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RightShiftAssign(
+        left: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+        conversion: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::LambdaExpression,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BinaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BinaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RightShiftAssign", (left, right, method, conversion))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Subtract(
+        left: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BinaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BinaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Subtract", (left, right, method))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SubtractAssign(
+        left: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+        conversion: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::LambdaExpression,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BinaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BinaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SubtractAssign", (left, right, method, conversion))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SubtractAssignChecked(
+        left: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+        conversion: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::LambdaExpression,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BinaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BinaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SubtractAssignChecked", (left, right, method, conversion))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SubtractChecked(
+        left: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BinaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BinaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SubtractChecked", (left, right, method))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Throw(
+        value: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::UnaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::UnaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Throw", (value, _cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ToString(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -140,6 +2713,412 @@ impl crate::System::Linq::Expressions::Expression {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("ToString", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryFinally(
+        body: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        finally: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::TryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::TryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryFinally", (body, finally))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryQuote(
+        parameterType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        argument: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::System::Linq::Expressions::Expression,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryQuote", (parameterType, argument))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TypeAs(
+        expression: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::UnaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::UnaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TypeAs", (expression, _cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TypeEqual(
+        expression: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::TypeBinaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::TypeBinaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TypeEqual", (expression, _cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TypeIs(
+        expression: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::TypeBinaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::TypeBinaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TypeIs", (expression, _cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UnaryPlus(
+        expression: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::UnaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::UnaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UnaryPlus", (expression, method))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Unbox(
+        expression: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::UnaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::UnaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Unbox", (expression, _cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Validate(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        allowByRef: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Validate", (_cordl_type, allowByRef))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ValidateAccessor(
+        instance: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+        indexes: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Reflection::ParameterInfo,
+            >,
+        >,
+        arguments: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                *mut crate::System::Linq::Expressions::Expression,
+            >,
+        >,
+        paramName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ValidateAccessor",
+                (instance, method, indexes, arguments, paramName),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ValidateAccessorArgumentTypes(
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+        indexes: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Reflection::ParameterInfo,
+            >,
+        >,
+        arguments: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                *mut crate::System::Linq::Expressions::Expression,
+            >,
+        >,
+        paramName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ValidateAccessorArgumentTypes",
+                (method, indexes, arguments, paramName),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ValidateArgumentCount(
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
+        nodeKind: crate::System::Linq::Expressions::ExpressionType,
+        count: i32,
+        pis: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Reflection::ParameterInfo,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ValidateArgumentCount", (method, nodeKind, count, pis))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ValidateArgumentTypes(
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
+        nodeKind: crate::System::Linq::Expressions::ExpressionType,
+        arguments: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                *mut crate::System::Linq::Expressions::Expression,
+            >,
+        >,
+        methodParamName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ValidateArgumentTypes",
+                (method, nodeKind, arguments, methodParamName),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ValidateCallInstanceType(
+        instanceType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ValidateCallInstanceType", (instanceType, method))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ValidateCoalesceArgTypes(
+        left: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ValidateCoalesceArgTypes", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ValidateGoto(
+        target: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::LabelTarget>,
+        value: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::System::Linq::Expressions::Expression,
+        >,
+        targetParameter: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        valueParameter: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ValidateGoto",
+                (target, value, targetParameter, valueParameter, _cordl_type),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ValidateGotoType(
+        expectedType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        value: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::System::Linq::Expressions::Expression,
+        >,
+        paramName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ValidateGotoType", (expectedType, value, paramName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ValidateIndexedProperty(
+        instance: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+        indexer: quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
+        paramName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        argList: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                *mut crate::System::Linq::Expressions::Expression,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ValidateIndexedProperty", (instance, indexer, paramName, argList))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ValidateLambdaArgs(
+        delegateType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        body: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::System::Linq::Expressions::Expression,
+        >,
+        parameters: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                *mut crate::System::Linq::Expressions::ParameterExpression,
+            >,
+        >,
+        paramName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ValidateLambdaArgs", (delegateType, body, parameters, paramName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ValidateMethodAndGetParameters(
+        instance: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Reflection::ParameterInfo,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Reflection::ParameterInfo,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ValidateMethodAndGetParameters", (instance, method))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ValidateMethodInfo(
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+        paramName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ValidateMethodInfo", (method, paramName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ValidateOneArgument(
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
+        nodeKind: crate::System::Linq::Expressions::ExpressionType,
+        arg: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        pi: quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
+        methodParamName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        argumentParamName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ValidateOneArgument",
+                (method, nodeKind, arg, pi, methodParamName, argumentParamName),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ValidateOpAssignConversionLambda(
+        conversion: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::LambdaExpression,
+        >,
+        left: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+        nodeType: crate::System::Linq::Expressions::ExpressionType,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ValidateOpAssignConversionLambda",
+                (conversion, left, method, nodeType),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ValidateOperator(
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ValidateOperator", (method))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ValidateParamswithOperandsOrThrow(
+        paramType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        operandType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        exprType: crate::System::Linq::Expressions::ExpressionType,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ValidateParamswithOperandsOrThrow",
+                (paramType, operandType, exprType, name),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ValidateStaticOrInstanceMethod(
+        instance: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ValidateStaticOrInstanceMethod", (instance, method))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ValidateTryAndCatchHaveSameType(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        tryBody: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        handlers: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                *mut crate::System::Linq::Expressions::CatchBlock,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ValidateTryAndCatchHaveSameType",
+                (_cordl_type, tryBody, handlers),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ValidateUserDefinedConditionalLogicOperator(
+        nodeType: crate::System::Linq::Expressions::ExpressionType,
+        left: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ValidateUserDefinedConditionalLogicOperator",
+                (nodeType, left, right, method),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ValidateVariables(
+        varList: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                *mut crate::System::Linq::Expressions::ParameterExpression,
+            >,
+        >,
+        collectionName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ValidateVariables", (varList, collectionName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Variable(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::ParameterExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::ParameterExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Variable", (_cordl_type, name))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn VerifyOpTrueFalse(
+        nodeType: crate::System::Linq::Expressions::ExpressionType,
+        left: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        opTrue: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+        paramName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("VerifyOpTrueFalse", (nodeType, left, opTrue, paramName))?;
         Ok(__cordl_ret.into())
     }
     pub fn VisitChildren(

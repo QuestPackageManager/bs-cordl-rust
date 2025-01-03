@@ -580,6 +580,24 @@ impl crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData {
         let __cordl_ret: i64 = __cordl_object.invoke("get_totalScore", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Addition(
+        a: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+        >,
+        b: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Addition", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn set_badCutsCount(
         &mut self,
         value: i32,

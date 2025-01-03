@@ -23,6 +23,15 @@ impl std::ops::DerefMut for crate::TMPro::TMP_Glyph {
 }
 #[cfg(feature = "TMPro+TMP_Glyph")]
 impl crate::TMPro::TMP_Glyph {
+    pub fn Clone(
+        source: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Glyph>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Glyph>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Glyph> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Clone", (source))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

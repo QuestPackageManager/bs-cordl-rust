@@ -32,6 +32,27 @@ impl crate::Mono::SafeStringMarshal {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn GFree(
+        ptr: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GFree", (ptr))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StringToUtf8(
+        str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StringToUtf8", (str))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StringToUtf8_icall(
+        str: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StringToUtf8_icall", (str))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
         str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

@@ -26,7 +26,65 @@ for crate::GlobalNamespace::UnityEditorBeatmapLevelDataAssetFileModel {
     }
 }
 #[cfg(feature = "UnityEditorBeatmapLevelDataAssetFileModel")]
-impl crate::GlobalNamespace::UnityEditorBeatmapLevelDataAssetFileModel {}
+impl crate::GlobalNamespace::UnityEditorBeatmapLevelDataAssetFileModel {
+    pub fn LoadAllAssetsFromAssetDatabase<T>() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<T>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LoadAllAssetsFromAssetDatabase", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LoadBeatmapLevelDataFromAssetDatabase(
+        levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelDataSO>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapLevelDataSO,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LoadBeatmapLevelDataFromAssetDatabase", (levelId))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LoadBeatmapLevelFromAssetDatabase(
+        levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelSO>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapLevelSO,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LoadBeatmapLevelFromAssetDatabase", (levelId))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LoadBeatmapLevelPackFromAssetDatabase(
+        packId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPackSO>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapLevelPackSO,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LoadBeatmapLevelPackFromAssetDatabase", (packId))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LoadUniqueAssetFromAssetDatabase<T>(
+        filename: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LoadUniqueAssetFromAssetDatabase", (filename))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEditorBeatmapLevelDataAssetFileModel")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::UnityEditorBeatmapLevelDataAssetFileModel {

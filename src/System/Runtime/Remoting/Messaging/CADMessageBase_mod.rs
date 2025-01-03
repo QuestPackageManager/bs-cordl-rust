@@ -61,6 +61,27 @@ impl crate::System::Runtime::Remoting::Messaging::CADMessageBase {
         > = __cordl_object.invoke("GetMethod", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetSignature(
+        methodBase: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
+        load: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSignature", (methodBase, load))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsPossibleToIgnoreMarshal(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsPossibleToIgnoreMarshal", (obj))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn MarshalArgument(
         &mut self,
         arg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -93,6 +114,14 @@ impl crate::System::Runtime::Remoting::Messaging::CADMessageBase {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         > = __cordl_object.invoke("MarshalArguments", (arguments, args))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MarshalProperties(
+        dict: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
+        args: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Collections::ArrayList>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MarshalProperties", (dict, args))?;
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -154,6 +183,15 @@ impl crate::System::Runtime::Remoting::Messaging::CADMessageBase {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
         > = __cordl_object.invoke("UnmarshalArguments", (arguments, args))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UnmarshalProperties(
+        dict: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
+        count: i32,
+        args: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UnmarshalProperties", (dict, count, args))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

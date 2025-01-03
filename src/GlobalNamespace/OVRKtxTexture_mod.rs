@@ -26,6 +26,14 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRKtxTexture {
 impl crate::GlobalNamespace::OVRKtxTexture {
     pub const KTX_TTF_ASTC_4x4_RGBA: u32 = 33570826u32;
     pub const KTX_TTF_BC7_RGBA: u32 = 4196870u32;
+    pub fn Load(
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        ktxData: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::OVRTextureData>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Load", (data, ktxData))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

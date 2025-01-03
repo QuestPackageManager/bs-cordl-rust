@@ -28,6 +28,18 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::Pkcs::RsaesOaepParam
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Pkcs+RsaesOaepParameters")]
 impl crate::Org::BouncyCastle::Asn1::Pkcs::RsaesOaepParameters {
+    pub fn GetInstance(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Pkcs::RsaesOaepParameters,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Pkcs::RsaesOaepParameters,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

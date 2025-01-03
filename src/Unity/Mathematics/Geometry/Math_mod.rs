@@ -23,7 +23,32 @@ impl std::ops::DerefMut for crate::Unity::Mathematics::Geometry::Math {
     }
 }
 #[cfg(feature = "Unity+Mathematics+Geometry+Math")]
-impl crate::Unity::Mathematics::Geometry::Math {}
+impl crate::Unity::Mathematics::Geometry::Math {
+    pub fn Transform_RigidTransform0(
+        transform: crate::Unity::Mathematics::RigidTransform,
+        aabb: crate::Unity::Mathematics::Geometry::MinMaxAABB,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::Geometry::MinMaxAABB> {
+        let __cordl_ret: crate::Unity::Mathematics::Geometry::MinMaxAABB = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Transform", (transform, aabb))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Transform_float3x3_2(
+        transform: crate::Unity::Mathematics::float3x3,
+        aabb: crate::Unity::Mathematics::Geometry::MinMaxAABB,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::Geometry::MinMaxAABB> {
+        let __cordl_ret: crate::Unity::Mathematics::Geometry::MinMaxAABB = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Transform", (transform, aabb))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Transform_float4x4_1(
+        transform: crate::Unity::Mathematics::float4x4,
+        aabb: crate::Unity::Mathematics::Geometry::MinMaxAABB,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::Geometry::MinMaxAABB> {
+        let __cordl_ret: crate::Unity::Mathematics::Geometry::MinMaxAABB = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Transform", (transform, aabb))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "Unity+Mathematics+Geometry+Math")]
 impl quest_hook::libil2cpp::ObjectType for crate::Unity::Mathematics::Geometry::Math {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

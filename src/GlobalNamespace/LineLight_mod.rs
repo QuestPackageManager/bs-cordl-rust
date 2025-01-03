@@ -83,6 +83,20 @@ impl crate::GlobalNamespace::LineLight {
             .invoke("get_color", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_lineLights() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::GlobalNamespace::LineLight,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::GlobalNamespace::LineLight,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_lineLights", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_p0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {

@@ -41,6 +41,34 @@ impl crate::System::Xml::Schema::Asttree {
             .invoke("CompileXPath", (xPath, isField, nsmgr))?;
         Ok(__cordl_ret.into())
     }
+    pub fn IsAttribute(
+        ast: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::Axis>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsAttribute", (ast))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsDescendantOrSelf(
+        ast: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::Axis>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsDescendantOrSelf", (ast))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsNameTest(
+        ast: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::Axis>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsNameTest", (ast))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsSelf(
+        ast: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::Axis>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsSelf", (ast))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         xPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         isField: bool,

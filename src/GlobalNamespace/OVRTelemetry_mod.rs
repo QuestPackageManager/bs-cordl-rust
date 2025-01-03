@@ -32,6 +32,43 @@ impl crate::GlobalNamespace::OVRTelemetry {
     pub type QPLTelemetryClient = crate::GlobalNamespace::OVRTelemetry_QPLTelemetryClient;
     #[cfg(feature = "OVRTelemetry+TelemetryClient")]
     pub type TelemetryClient = crate::GlobalNamespace::OVRTelemetry_TelemetryClient;
+    pub fn AddSDKVersionAnnotation(
+        marker: crate::GlobalNamespace::OVRTelemetryMarker,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRTelemetryMarker> {
+        let __cordl_ret: crate::GlobalNamespace::OVRTelemetryMarker = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddSDKVersionAnnotation", (marker))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SendEvent(
+        markerId: i32,
+        result: crate::GlobalNamespace::Qpl_OVRPlugin_ResultType,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SendEvent", (markerId, result))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Start(
+        markerId: i32,
+        instanceKey: i32,
+        timestampMs: i64,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRTelemetryMarker> {
+        let __cordl_ret: crate::GlobalNamespace::OVRTelemetryMarker = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Start", (markerId, instanceKey, timestampMs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Client() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRTelemetry_TelemetryClient>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OVRTelemetry_TelemetryClient,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_Client", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_IsActive() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_IsActive", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "OVRTelemetry")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRTelemetry {

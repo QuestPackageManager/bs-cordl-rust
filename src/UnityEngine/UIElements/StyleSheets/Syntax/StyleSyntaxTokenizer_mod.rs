@@ -31,6 +31,40 @@ for crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxTokenizer {
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+Syntax+StyleSyntaxTokenizer")]
 impl crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxTokenizer {
+    pub fn GlobCharacter(
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        index: i32,
+        c: char,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GlobCharacter", (s, index, c))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsNextCharacter(
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        index: i32,
+        c: char,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsNextCharacter", (s, index, c))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsNextLetterOrDash(
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsNextLetterOrDash", (s, index))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsNextNumber(
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsNextNumber", (s, index))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn MoveNext(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

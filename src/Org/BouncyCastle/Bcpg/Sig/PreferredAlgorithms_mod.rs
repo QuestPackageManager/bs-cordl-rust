@@ -38,6 +38,17 @@ impl crate::Org::BouncyCastle::Bcpg::Sig::PreferredAlgorithms {
         > = __cordl_object.invoke("GetPreferences", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn IntToByteArray(
+        v: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IntToByteArray", (v))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_Il2CppArray1(
         _cordl_type: crate::Org::BouncyCastle::Bcpg::SignatureSubpacketTag,
         critical: bool,

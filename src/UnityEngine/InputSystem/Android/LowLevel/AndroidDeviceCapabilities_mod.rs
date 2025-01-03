@@ -34,6 +34,15 @@ impl crate::UnityEngine::InputSystem::Android::LowLevel::AndroidDeviceCapabiliti
         feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidDeviceCapabilities+__c"
     )]
     pub type __c = crate::UnityEngine::InputSystem::Android::LowLevel::AndroidDeviceCapabilities___c;
+    pub fn FromJson(
+        json: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Android::LowLevel::AndroidDeviceCapabilities,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Android::LowLevel::AndroidDeviceCapabilities = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromJson", (json))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ToJson(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

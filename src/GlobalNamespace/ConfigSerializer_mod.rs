@@ -24,12 +24,28 @@ impl std::ops::DerefMut for crate::GlobalNamespace::ConfigSerializer {
 }
 #[cfg(feature = "ConfigSerializer")]
 impl crate::GlobalNamespace::ConfigSerializer {
+    pub fn LoadConfig(
+        config: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LoadConfig", (config, filePath))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
+    }
+    pub fn SaveConfig(
+        config: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SaveConfig", (config, filePath))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,

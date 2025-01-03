@@ -30,6 +30,42 @@ for crate::Org::BouncyCastle::Asn1::X509::AuthorityInformationAccess {
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+AuthorityInformationAccess")]
 impl crate::Org::BouncyCastle::Asn1::X509::AuthorityInformationAccess {
+    pub fn Copy(
+        descriptions: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::Org::BouncyCastle::Asn1::X509::AccessDescription,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::Org::BouncyCastle::Asn1::X509::AccessDescription,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::Org::BouncyCastle::Asn1::X509::AccessDescription,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Copy", (descriptions))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromExtensions(
+        extensions: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::AuthorityInformationAccess,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::AuthorityInformationAccess,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromExtensions", (extensions))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetAccessDescriptions(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -47,6 +83,18 @@ impl crate::Org::BouncyCastle::Asn1::X509::AuthorityInformationAccess {
                 *mut crate::Org::BouncyCastle::Asn1::X509::AccessDescription,
             >,
         > = __cordl_object.invoke("GetAccessDescriptions", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetInstance(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::AuthorityInformationAccess,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::AuthorityInformationAccess,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
         Ok(__cordl_ret.into())
     }
     pub fn New_AccessDescription1(

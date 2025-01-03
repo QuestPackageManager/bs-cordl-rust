@@ -62,6 +62,32 @@ impl crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine {
             .invoke("CheckInitialised", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn Clone(
+        data: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Parameter,
+            >,
+        >,
+        existing: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Parameter,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Parameter,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Parameter,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Clone", (data, existing))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Copy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -131,6 +157,15 @@ impl crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InitParams", (parameters))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InitialState(
+        blockSize: i32,
+        outputSize: i32,
+        state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InitialState", (blockSize, outputSize, state))?;
         Ok(__cordl_ret.into())
     }
     pub fn New_SkeinEngine1(
@@ -244,6 +279,14 @@ impl crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Update", (inByte))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn VariantIdentifier(
+        blockSizeBytes: i32,
+        outputSizeBytes: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("VariantIdentifier", (blockSizeBytes, outputSizeBytes))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_SkeinEngine1(

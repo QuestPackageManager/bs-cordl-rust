@@ -23,12 +23,59 @@ impl std::ops::DerefMut for crate::GlobalNamespace::PerlinNoise {
 }
 #[cfg(feature = "PerlinNoise")]
 impl crate::GlobalNamespace::PerlinNoise {
+    pub fn Fade(t: f32) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Fade", (t))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Grad3D(
+        hash: i32,
+        x: f32,
+        y: f32,
+        z: f32,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Grad3D", (hash, x, y, z))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Inc(num: i32, repeat: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Inc", (num, repeat))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Lerp(a: f32, b: f32, x: f32) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Lerp", (a, b, x))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
+    }
+    pub fn OctavePerlin3D(
+        x: f32,
+        y: f32,
+        z: f32,
+        octaves: i32,
+        persistence: f32,
+        repeat: i32,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("OctavePerlin3D", (x, y, z, octaves, persistence, repeat))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Perlin3D(
+        x: f32,
+        y: f32,
+        z: f32,
+        repeat: i32,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Perlin3D", (x, y, z, repeat))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,

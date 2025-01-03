@@ -26,6 +26,150 @@ for crate::Org::BouncyCastle::Pkcs::EncryptedPrivateKeyInfoFactory {
 }
 #[cfg(feature = "Org+BouncyCastle+Pkcs+EncryptedPrivateKeyInfoFactory")]
 impl crate::Org::BouncyCastle::Pkcs::EncryptedPrivateKeyInfoFactory {
+    pub fn CreateEncryptedPrivateKeyInfo_DerObjectIdentifier_DerObjectIdentifier_Il2CppArray_i32_SecureRandom_AsymmetricKeyParameter3(
+        cipherAlgorithm: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
+        prfAlgorithm: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
+        passPhrase: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+        salt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        iterationCount: i32,
+        random: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Security::SecureRandom,
+        >,
+        key: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Pkcs::EncryptedPrivateKeyInfo,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Pkcs::EncryptedPrivateKeyInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CreateEncryptedPrivateKeyInfo",
+                (
+                    cipherAlgorithm,
+                    prfAlgorithm,
+                    passPhrase,
+                    salt,
+                    iterationCount,
+                    random,
+                    key,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateEncryptedPrivateKeyInfo_DerObjectIdentifier_DerObjectIdentifier_Il2CppArray_i32_SecureRandom_PrivateKeyInfo4(
+        cipherAlgorithm: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
+        prfAlgorithm: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
+        passPhrase: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+        salt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        iterationCount: i32,
+        random: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Security::SecureRandom,
+        >,
+        keyInfo: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Pkcs::PrivateKeyInfo,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Pkcs::EncryptedPrivateKeyInfo,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Pkcs::EncryptedPrivateKeyInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CreateEncryptedPrivateKeyInfo",
+                (
+                    cipherAlgorithm,
+                    prfAlgorithm,
+                    passPhrase,
+                    salt,
+                    iterationCount,
+                    random,
+                    keyInfo,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateEncryptedPrivateKeyInfo_DerObjectIdentifier_Il2CppArray_i32_AsymmetricKeyParameter0(
+        algorithm: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
+        passPhrase: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+        salt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        iterationCount: i32,
+        key: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Pkcs::EncryptedPrivateKeyInfo,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Pkcs::EncryptedPrivateKeyInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CreateEncryptedPrivateKeyInfo",
+                (algorithm, passPhrase, salt, iterationCount, key),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateEncryptedPrivateKeyInfo_Il2CppString_Il2CppArray_i32_AsymmetricKeyParameter1(
+        algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        passPhrase: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+        salt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        iterationCount: i32,
+        key: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Pkcs::EncryptedPrivateKeyInfo,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Pkcs::EncryptedPrivateKeyInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CreateEncryptedPrivateKeyInfo",
+                (algorithm, passPhrase, salt, iterationCount, key),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateEncryptedPrivateKeyInfo_Il2CppString_Il2CppArray_i32_PrivateKeyInfo2(
+        algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        passPhrase: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+        salt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        iterationCount: i32,
+        keyInfo: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Pkcs::PrivateKeyInfo,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Pkcs::EncryptedPrivateKeyInfo,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Pkcs::EncryptedPrivateKeyInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CreateEncryptedPrivateKeyInfo",
+                (algorithm, passPhrase, salt, iterationCount, keyInfo),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

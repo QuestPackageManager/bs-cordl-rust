@@ -23,6 +23,15 @@ for crate::GlobalNamespace::GetAssetBundleFileResult {
 }
 #[cfg(feature = "GetAssetBundleFileResult")]
 impl crate::GlobalNamespace::GetAssetBundleFileResult {
+    pub fn Success(
+        assetBundlePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::GetAssetBundleFileResult,
+    > {
+        let __cordl_ret: crate::GlobalNamespace::GetAssetBundleFileResult = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Success", (assetBundlePath))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
         isError: bool,

@@ -28,6 +28,20 @@ for crate::System::Linq::Expressions::Interpreter::LeaveExceptionHandlerInstruct
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+LeaveExceptionHandlerInstruction")]
 impl crate::System::Linq::Expressions::Interpreter::LeaveExceptionHandlerInstruction {
+    pub fn Create(
+        labelIndex: i32,
+        hasValue: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::LeaveExceptionHandlerInstruction,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::LeaveExceptionHandlerInstruction,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (labelIndex, hasValue))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         labelIndex: i32,
         hasValue: bool,

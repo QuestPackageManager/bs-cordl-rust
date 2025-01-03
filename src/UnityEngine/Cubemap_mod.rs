@@ -78,6 +78,18 @@ impl crate::UnityEngine::Cubemap {
             .invoke("ClearRequestedMipmapLevel", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn CreateExternalTexture(
+        width: i32,
+        format: crate::UnityEngine::TextureFormat,
+        mipmap: bool,
+        nativeTex: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Cubemap>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Cubemap> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateExternalTexture", (width, format, mipmap, nativeTex))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetPixelData<T>(
         &mut self,
         mipLevel: i32,
@@ -192,6 +204,38 @@ impl crate::UnityEngine::Cubemap {
         );
         let __cordl_ret: crate::System::IntPtr = __cordl_object
             .invoke("GetWritableImageData", (frame))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Internal_Create(
+        mono: quest_hook::libil2cpp::Gc<crate::UnityEngine::Cubemap>,
+        ext: i32,
+        mipCount: i32,
+        format: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+        colorSpace: crate::UnityEngine::TextureColorSpace,
+        flags: crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
+        nativeTex: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "Internal_Create",
+                (mono, ext, mipCount, format, colorSpace, flags, nativeTex),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Internal_CreateImpl(
+        mono: quest_hook::libil2cpp::Gc<crate::UnityEngine::Cubemap>,
+        ext: i32,
+        mipCount: i32,
+        format: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+        colorSpace: crate::UnityEngine::TextureColorSpace,
+        flags: crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
+        nativeTex: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "Internal_CreateImpl",
+                (mono, ext, mipCount, format, colorSpace, flags, nativeTex),
+            )?;
         Ok(__cordl_ret.into())
     }
     pub fn IsRequestedMipmapLevelLoaded(
@@ -531,6 +575,13 @@ impl crate::UnityEngine::Cubemap {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("ValidateFormat", (format, width))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ValidateIsNotCrunched(
+        flags: crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ValidateIsNotCrunched", (flags))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_DefaultFormat_TextureCreationFlags0(

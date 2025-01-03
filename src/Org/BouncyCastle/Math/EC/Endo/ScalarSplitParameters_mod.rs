@@ -34,6 +34,18 @@ for crate::Org::BouncyCastle::Math::EC::Endo::ScalarSplitParameters {
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Endo+ScalarSplitParameters")]
 impl crate::Org::BouncyCastle::Math::EC::Endo::ScalarSplitParameters {
+    pub fn CheckVector(
+        v: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::Org::BouncyCastle::Math::BigInteger,
+            >,
+        >,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckVector", (v, name))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         v1: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<

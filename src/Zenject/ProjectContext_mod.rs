@@ -114,12 +114,40 @@ impl crate::Zenject::ProjectContext {
             .invoke("InstallBindings", (injectableMonoBehaviours))?;
         Ok(__cordl_ret.into())
     }
+    pub fn InstantiateAndInitialize() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InstantiateAndInitialize", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
+    }
+    pub fn NoDomainReloadInit() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("NoDomainReloadInit", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryGetPrefab() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryGetPrefab", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn __zenCreateInjectTypeInfo() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Zenject::InjectTypeInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::InjectTypeInfo> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("__zenCreateInjectTypeInfo", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -187,6 +215,18 @@ impl crate::Zenject::ProjectContext {
             .invoke("get_Container", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_HasInstance() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_HasInstance", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Instance() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Zenject::ProjectContext>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::ProjectContext> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_Instance", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_ParentNewObjectsUnderContext(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -195,6 +235,11 @@ impl crate::Zenject::ProjectContext {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("get_ParentNewObjectsUnderContext", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_ValidateOnNextRun() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_ValidateOnNextRun", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn remove_PostInstall(
@@ -250,6 +295,13 @@ impl crate::Zenject::ProjectContext {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_ParentNewObjectsUnderContext", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_ValidateOnNextRun(
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_ValidateOnNextRun", (value))?;
         Ok(__cordl_ret.into())
     }
 }

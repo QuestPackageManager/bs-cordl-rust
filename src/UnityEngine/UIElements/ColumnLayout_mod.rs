@@ -231,6 +231,15 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
         let __cordl_ret: f32 = __cordl_object.invoke("GetDesiredWidth", (c))?;
         Ok(__cordl_ret.into())
     }
+    pub fn IsClamped(
+        value: f32,
+        min: f32,
+        max: f32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsClamped", (value, min, max))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         columns: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Columns>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

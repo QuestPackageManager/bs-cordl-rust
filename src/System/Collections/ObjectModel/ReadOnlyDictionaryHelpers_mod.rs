@@ -26,7 +26,23 @@ for crate::System::Collections::ObjectModel::ReadOnlyDictionaryHelpers {
     }
 }
 #[cfg(feature = "System+Collections+ObjectModel+ReadOnlyDictionaryHelpers")]
-impl crate::System::Collections::ObjectModel::ReadOnlyDictionaryHelpers {}
+impl crate::System::Collections::ObjectModel::ReadOnlyDictionaryHelpers {
+    pub fn CopyToNonGenericICollectionHelper<T>(
+        collection: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::ICollection_1<T>,
+        >,
+        array: quest_hook::libil2cpp::Gc<crate::System::Array>,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CopyToNonGenericICollectionHelper", (collection, array, index))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Collections+ObjectModel+ReadOnlyDictionaryHelpers")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Collections::ObjectModel::ReadOnlyDictionaryHelpers {

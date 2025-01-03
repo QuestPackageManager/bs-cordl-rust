@@ -62,6 +62,11 @@ impl crate::System::Collections::BitArray {
         let __cordl_ret: bool = __cordl_object.invoke("Get", (index))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetArrayLength(n: i32, div: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetArrayLength", (n, div))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetEnumerator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

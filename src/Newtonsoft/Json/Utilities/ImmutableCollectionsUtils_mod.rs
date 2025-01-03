@@ -61,6 +61,47 @@ impl crate::Newtonsoft::Json::Utilities::ImmutableCollectionsUtils {
         feature = "Newtonsoft+Json+Utilities+ImmutableCollectionsUtils+__c__DisplayClass25_0"
     )]
     pub type __c__DisplayClass25_0 = crate::Newtonsoft::Json::Utilities::ImmutableCollectionsUtils___c__DisplayClass25_0;
+    pub fn TryBuildImmutableForArrayContract(
+        underlyingType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        collectionItemType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        createdType: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Type>,
+        parameterizedCreator: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "TryBuildImmutableForArrayContract",
+                (underlyingType, collectionItemType, createdType, parameterizedCreator),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryBuildImmutableForDictionaryContract(
+        underlyingType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        keyItemType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        valueItemType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        createdType: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Type>,
+        parameterizedCreator: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "TryBuildImmutableForDictionaryContract",
+                (
+                    underlyingType,
+                    keyItemType,
+                    valueItemType,
+                    createdType,
+                    parameterizedCreator,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "Newtonsoft+Json+Utilities+ImmutableCollectionsUtils")]
 impl quest_hook::libil2cpp::ObjectType

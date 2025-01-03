@@ -90,4 +90,27 @@ impl crate::UnityEngine::TextCore::Text::Offset {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_zero() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::TextCore::Text::Offset,
+    > {
+        let __cordl_ret: crate::UnityEngine::TextCore::Text::Offset = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_zero", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        lhs: crate::UnityEngine::TextCore::Text::Offset,
+        rhs: crate::UnityEngine::TextCore::Text::Offset,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Multiply(
+        a: crate::UnityEngine::TextCore::Text::Offset,
+        b: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::TextCore::Text::Offset> {
+        let __cordl_ret: crate::UnityEngine::TextCore::Text::Offset = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Multiply", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
 }

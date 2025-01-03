@@ -28,6 +28,30 @@ impl crate::GlobalNamespace::BatchExtensions {
     pub type _Batch_d__0_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::BatchExtensions__Batch_d__0_1<
         T,
     >;
+    pub fn Batch<T>(
+        enumerable: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<T>,
+        >,
+        batchSize: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::System::Collections::Generic::List_1<T>,
+            >,
+        >,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::System::Collections::Generic::List_1<T>,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Batch", (enumerable, batchSize))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "BatchExtensions")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BatchExtensions {

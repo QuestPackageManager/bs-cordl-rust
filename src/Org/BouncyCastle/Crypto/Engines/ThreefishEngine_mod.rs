@@ -56,6 +56,14 @@ impl crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine {
     pub type Threefish512Cipher = crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_Threefish512Cipher;
     #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+ThreefishEngine+ThreefishCipher")]
     pub type ThreefishCipher = crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_ThreefishCipher;
+    pub fn BytesToWord(
+        bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        off: i32,
+    ) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BytesToWord", (bytes, off))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetBlockSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -135,6 +143,15 @@ impl crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine {
             .invoke("Reset", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn RotlXor(
+        x: u64,
+        n: i32,
+        _cordl_xor: u64,
+    ) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RotlXor", (x, n, _cordl_xor))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn SetKey(
         &mut self,
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
@@ -155,6 +172,24 @@ impl crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetTweak", (tweak))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WordToBytes(
+        word: u64,
+        bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        off: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WordToBytes", (word, bytes, off))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn XorRotr(
+        x: u64,
+        n: i32,
+        _cordl_xor: u64,
+    ) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("XorRotr", (x, n, _cordl_xor))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

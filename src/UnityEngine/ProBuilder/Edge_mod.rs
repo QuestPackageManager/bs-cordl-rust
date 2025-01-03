@@ -23,6 +23,14 @@ for crate::UnityEngine::ProBuilder::Edge {
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Edge")]
 impl crate::UnityEngine::ProBuilder::Edge {
+    pub fn Add(
+        a: crate::UnityEngine::ProBuilder::Edge,
+        b: crate::UnityEngine::ProBuilder::Edge,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ProBuilder::Edge> {
+        let __cordl_ret: crate::UnityEngine::ProBuilder::Edge = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Add", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Contains_Edge1(
         &mut self,
         other: crate::UnityEngine::ProBuilder::Edge,
@@ -100,12 +108,34 @@ impl crate::UnityEngine::ProBuilder::Edge {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetIndices(
+        edges: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::UnityEngine::ProBuilder::Edge,
+            >,
+        >,
+        indices: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<i32>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetIndices", (edges, indices))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn IsValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "IsValid",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Subtract(
+        a: crate::UnityEngine::ProBuilder::Edge,
+        b: crate::UnityEngine::ProBuilder::Edge,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ProBuilder::Edge> {
+        let __cordl_ret: crate::UnityEngine::ProBuilder::Edge = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Subtract", (a, b))?;
         Ok(__cordl_ret.into())
     }
     pub fn ToString(
@@ -128,6 +158,54 @@ impl crate::UnityEngine::ProBuilder::Edge {
             ".ctor",
             (a, b),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Addition_Edge0(
+        a: crate::UnityEngine::ProBuilder::Edge,
+        b: crate::UnityEngine::ProBuilder::Edge,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ProBuilder::Edge> {
+        let __cordl_ret: crate::UnityEngine::ProBuilder::Edge = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Addition", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Addition_i32_1(
+        a: crate::UnityEngine::ProBuilder::Edge,
+        b: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ProBuilder::Edge> {
+        let __cordl_ret: crate::UnityEngine::ProBuilder::Edge = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Addition", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        a: crate::UnityEngine::ProBuilder::Edge,
+        b: crate::UnityEngine::ProBuilder::Edge,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        a: crate::UnityEngine::ProBuilder::Edge,
+        b: crate::UnityEngine::ProBuilder::Edge,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Subtraction_Edge0(
+        a: crate::UnityEngine::ProBuilder::Edge,
+        b: crate::UnityEngine::ProBuilder::Edge,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ProBuilder::Edge> {
+        let __cordl_ret: crate::UnityEngine::ProBuilder::Edge = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Subtraction", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Subtraction_i32_1(
+        a: crate::UnityEngine::ProBuilder::Edge,
+        b: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ProBuilder::Edge> {
+        let __cordl_ret: crate::UnityEngine::ProBuilder::Edge = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Subtraction", (a, b))?;
         Ok(__cordl_ret.into())
     }
 }

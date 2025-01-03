@@ -41,7 +41,25 @@ impl std::ops::DerefMut for crate::Mono::Unity::UnityTlsContext {
 }
 #[cfg(feature = "Mono+Unity+UnityTlsContext")]
 impl crate::Mono::Unity::UnityTlsContext {
-    pub fn CertificateCallback(
+    pub fn CertificateCallback_Il2CppObject_IntPtr_Il2CppObject_IntPtr_Il2CppObject0(
+        userData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        ctx: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        cn: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        cnLen: crate::System::IntPtr,
+        caList: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        caListLen: crate::System::IntPtr,
+        chain: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        errorState: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CertificateCallback",
+                (userData, ctx, cn, cnLen, caList, caListLen, chain, key, errorState),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CertificateCallback_IntPtr_Il2CppObject_IntPtr_Il2CppObject1(
         &mut self,
         ctx: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         cn: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -71,6 +89,25 @@ impl crate::Mono::Unity::UnityTlsContext {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", (disposing))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ExtractNativeKeyAndChainFromManagedCertificate(
+        cert: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509Certificate,
+        >,
+        errorState: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        nativeCertChain: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
+        nativeKey: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ExtractNativeKeyAndChainFromManagedCertificate",
+                (cert, errorState, nativeCertChain, nativeKey),
+            )?;
         Ok(__cordl_ret.into())
     }
     pub fn FinishHandshake(
@@ -124,7 +161,17 @@ impl crate::Mono::Unity::UnityTlsContext {
             .invoke("Read", (buffer, offset, count))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ReadCallback(
+    pub fn ReadCallback_Il2CppObject_IntPtr_Il2CppObject0(
+        userData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        bufferLen: crate::System::IntPtr,
+        errorState: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadCallback", (userData, buffer, bufferLen, errorState))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReadCallback_IntPtr_Il2CppObject1(
         &mut self,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         bufferLen: crate::System::IntPtr,
@@ -167,7 +214,18 @@ impl crate::Mono::Unity::UnityTlsContext {
             .invoke("StartHandshake", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn VerifyCallback(
+    pub fn VerifyCallback_Il2CppObject_UnityTls_unitytls_x509list_ref_Il2CppObject0(
+        userData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        chain: crate::Mono::Unity::UnityTls_unitytls_x509list_ref,
+        errorState: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::Mono::Unity::UnityTls_unitytls_x509verify_result,
+    > {
+        let __cordl_ret: crate::Mono::Unity::UnityTls_unitytls_x509verify_result = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("VerifyCallback", (userData, chain, errorState))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn VerifyCallback_UnityTls_unitytls_x509list_ref_Il2CppObject1(
         &mut self,
         chain: crate::Mono::Unity::UnityTls_unitytls_x509list_ref,
         errorState: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -194,7 +252,17 @@ impl crate::Mono::Unity::UnityTlsContext {
             .invoke("Write", (buffer, offset, count))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteCallback(
+    pub fn WriteCallback_Il2CppObject_IntPtr_Il2CppObject0(
+        userData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        bufferLen: crate::System::IntPtr,
+        errorState: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WriteCallback", (userData, data, bufferLen, errorState))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WriteCallback_IntPtr_Il2CppObject1(
         &mut self,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         bufferLen: crate::System::IntPtr,

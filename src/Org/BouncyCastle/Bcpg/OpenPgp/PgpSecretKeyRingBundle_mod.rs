@@ -29,6 +29,24 @@ for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRingBundle {
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpSecretKeyRingBundle")]
 impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRingBundle {
+    pub fn AddSecretKeyRing(
+        bundle: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRingBundle,
+        >,
+        secretKeyRing: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRingBundle,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRingBundle,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddSecretKeyRing", (bundle, secretKeyRing))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Contains(&mut self, keyID: i64) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -184,6 +202,24 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRingBundle {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (inputStream))?;
         Ok(__cordl_object.into())
+    }
+    pub fn RemoveSecretKeyRing(
+        bundle: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRingBundle,
+        >,
+        secretKeyRing: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRing,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRingBundle,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKeyRingBundle,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RemoveSecretKeyRing", (bundle, secretKeyRing))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_IDictionary_IList0(
         &mut self,

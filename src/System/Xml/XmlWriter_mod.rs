@@ -35,6 +35,26 @@ impl crate::System::Xml::XmlWriter {
             .invoke("Close", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn Create_Stream0(
+        output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+        settings: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriterSettings>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (output, settings))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Create_TextWriter1(
+        output: quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,
+        settings: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriterSettings>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (output, settings))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Dispose_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

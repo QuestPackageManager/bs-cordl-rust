@@ -110,6 +110,15 @@ impl crate::System::Xml::Schema::XsdDateTime {
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn TryParse(
+        text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        kinds: crate::System::Xml::Schema::XsdDateTimeFlags,
+        result: quest_hook::libil2cpp::ByRefMut<crate::System::Xml::Schema::XsdDateTime>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryParse", (text, kinds, result))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor_DateTimeOffset3(
         &mut self,
         dateTimeOffset: crate::System::DateTimeOffset,
@@ -262,6 +271,20 @@ impl crate::System::Xml::Schema::XsdDateTime {
             "get_ZoneMinute",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_XsdDateTime0(
+        xdt: crate::System::Xml::Schema::XsdDateTime,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
+        let __cordl_ret: crate::System::DateTime = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (xdt))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_XsdDateTime1(
+        xdt: crate::System::Xml::Schema::XsdDateTime,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTimeOffset> {
+        let __cordl_ret: crate::System::DateTimeOffset = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (xdt))?;
         Ok(__cordl_ret.into())
     }
 }
@@ -419,6 +442,14 @@ impl crate::System::Xml::Schema::XsdDateTime_Parser {
             "ParseZoneAndWhitespace",
             (start),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Test(
+        left: crate::System::Xml::Schema::XsdDateTimeFlags,
+        right: crate::System::Xml::Schema::XsdDateTimeFlags,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Test", (left, right))?;
         Ok(__cordl_ret.into())
     }
 }

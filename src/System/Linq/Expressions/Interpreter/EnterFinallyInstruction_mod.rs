@@ -27,6 +27,19 @@ for crate::System::Linq::Expressions::Interpreter::EnterFinallyInstruction {
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+EnterFinallyInstruction")]
 impl crate::System::Linq::Expressions::Interpreter::EnterFinallyInstruction {
+    pub fn Create(
+        labelIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::EnterFinallyInstruction,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::EnterFinallyInstruction,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (labelIndex))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         labelIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

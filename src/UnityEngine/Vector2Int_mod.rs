@@ -44,6 +44,13 @@ impl crate::UnityEngine::Vector2Int {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn FloorToInt(
+        v: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2Int> {
+        let __cordl_ret: crate::UnityEngine::Vector2Int = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FloorToInt", (v))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -104,6 +111,21 @@ impl crate::UnityEngine::Vector2Int {
             "get_y",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        lhs: crate::UnityEngine::Vector2Int,
+        rhs: crate::UnityEngine::Vector2Int,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit(
+        v: crate::UnityEngine::Vector2Int,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (v))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_x(

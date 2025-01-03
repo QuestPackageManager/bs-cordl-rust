@@ -83,6 +83,21 @@ impl crate::UnityEngine::UIElements::EasingFunction {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Equality(
+        lhs: crate::UnityEngine::UIElements::EasingFunction,
+        rhs: crate::UnityEngine::UIElements::EasingFunction,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit(
+        easingMode: crate::UnityEngine::UIElements::EasingMode,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::EasingFunction> {
+        let __cordl_ret: crate::UnityEngine::UIElements::EasingFunction = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (easingMode))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+UIElements+EasingFunction")]
 impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::EasingFunction>>

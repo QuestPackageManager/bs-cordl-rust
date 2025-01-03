@@ -31,6 +31,18 @@ for crate::UnityEngine::UIElements::TransitionEventBase_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::UnityEngine::UIElements::TransitionEventBase_1<T> {
+    pub fn GetPooled(
+        stylePropertyName: crate::UnityEngine::UIElements::StylePropertyName,
+        elapsedTime: f64,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPooled", (stylePropertyName, elapsedTime))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Init(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type

@@ -43,6 +43,13 @@ impl crate::System::Text::RegularExpressions::RegexPrefix {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_Empty() -> quest_hook::libil2cpp::Result<
+        crate::System::Text::RegularExpressions::RegexPrefix,
+    > {
+        let __cordl_ret: crate::System::Text::RegularExpressions::RegexPrefix = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_Empty", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_Prefix(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

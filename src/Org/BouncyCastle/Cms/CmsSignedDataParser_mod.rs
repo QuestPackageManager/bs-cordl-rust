@@ -36,6 +36,19 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Cms::CmsSignedDataParser {
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsSignedDataParser")]
 impl crate::Org::BouncyCastle::Cms::CmsSignedDataParser {
+    pub fn GetAsn1Set(
+        asn1SetParser: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1SetParser,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Set>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1Set,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetAsn1Set", (asn1SetParser))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetAttributeCertificates(
         &mut self,
         _cordl_type: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -154,6 +167,41 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedDataParser {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("PopulateCertCrlSets", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReplaceCertificatesAndCrls(
+        original: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+        x509Certs: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::X509::Store::IX509Store,
+        >,
+        x509Crls: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::X509::Store::IX509Store,
+        >,
+        x509AttrCerts: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::X509::Store::IX509Store,
+        >,
+        outStr: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IO::Stream> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ReplaceCertificatesAndCrls",
+                (original, x509Certs, x509Crls, x509AttrCerts, outStr),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReplaceSigners(
+        original: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+        signerInformationStore: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cms::SignerInformationStore,
+        >,
+        outStr: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IO::Stream> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReplaceSigners", (original, signerInformationStore, outStr))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_CmsTypedStream_Il2CppArray1(

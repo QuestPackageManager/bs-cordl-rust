@@ -37,6 +37,35 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionObject {
     pub type __c__DisplayClass11_1 = crate::Newtonsoft::Json::Utilities::ReflectionObject___c__DisplayClass11_1;
     #[cfg(feature = "Newtonsoft+Json+Utilities+ReflectionObject+__c__DisplayClass11_2")]
     pub type __c__DisplayClass11_2 = crate::Newtonsoft::Json::Utilities::ReflectionObject___c__DisplayClass11_2;
+    pub fn Create_Il2CppArray0(
+        t: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        memberNames: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Utilities::ReflectionObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Utilities::ReflectionObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (t, memberNames))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Create_MethodBase_Il2CppArray1(
+        t: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        creator: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
+        memberNames: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Utilities::ReflectionObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Utilities::ReflectionObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (t, creator, memberNames))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetType(
         &mut self,
         member: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

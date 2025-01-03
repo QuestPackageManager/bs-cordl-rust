@@ -58,6 +58,14 @@ impl crate::Org::BouncyCastle::Math::EC::F2mFieldElement {
         > = __cordl_object.invoke("AddOne", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn CheckFieldElements(
+        a: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECFieldElement>,
+        b: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECFieldElement>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckFieldElements", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Divide(
         &mut self,
         b: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECFieldElement>,

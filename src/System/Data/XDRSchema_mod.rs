@@ -30,6 +30,17 @@ impl std::ops::DerefMut for crate::System::Data::XDRSchema {
 impl crate::System::Data::XDRSchema {
     #[cfg(feature = "System+Data+XDRSchema+NameType")]
     pub type NameType = crate::System::Data::XDRSchema_NameType;
+    pub fn FindNameType(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Data::XDRSchema_NameType>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Data::XDRSchema_NameType,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FindNameType", (name))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn FindTypeNode(
         &mut self,
         node: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlElement>,

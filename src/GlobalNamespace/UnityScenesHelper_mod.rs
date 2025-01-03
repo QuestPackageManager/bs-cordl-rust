@@ -23,7 +23,31 @@ impl std::ops::DerefMut for crate::GlobalNamespace::UnityScenesHelper {
     }
 }
 #[cfg(feature = "UnityScenesHelper")]
-impl crate::GlobalNamespace::UnityScenesHelper {}
+impl crate::GlobalNamespace::UnityScenesHelper {
+    pub fn GetComponentsInScene<T>(
+        scene: crate::UnityEngine::SceneManagement::Scene,
+        components: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<T>,
+        >,
+        includeInactive: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetComponentsInScene", (scene, components, includeInactive))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetActiveRootObjectsInScene(
+        scene: crate::UnityEngine::SceneManagement::Scene,
+        active: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetActiveRootObjectsInScene", (scene, active))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityScenesHelper")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::UnityScenesHelper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

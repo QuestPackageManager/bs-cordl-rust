@@ -23,7 +23,73 @@ impl std::ops::DerefMut for crate::System::Runtime::CompilerServices::RuntimeOps
     }
 }
 #[cfg(feature = "System+Runtime+CompilerServices+RuntimeOps")]
-impl crate::System::Runtime::CompilerServices::RuntimeOps {}
+impl crate::System::Runtime::CompilerServices::RuntimeOps {
+    pub fn ExpandoCheckVersion(
+        expando: quest_hook::libil2cpp::Gc<crate::System::Dynamic::ExpandoObject>,
+        version: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ExpandoCheckVersion", (expando, version))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ExpandoPromoteClass(
+        expando: quest_hook::libil2cpp::Gc<crate::System::Dynamic::ExpandoObject>,
+        oldClass: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        newClass: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ExpandoPromoteClass", (expando, oldClass, newClass))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ExpandoTryDeleteValue(
+        expando: quest_hook::libil2cpp::Gc<crate::System::Dynamic::ExpandoObject>,
+        indexClass: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        index: i32,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        ignoreCase: bool,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ExpandoTryDeleteValue",
+                (expando, indexClass, index, name, ignoreCase),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ExpandoTryGetValue(
+        expando: quest_hook::libil2cpp::Gc<crate::System::Dynamic::ExpandoObject>,
+        indexClass: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        index: i32,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        ignoreCase: bool,
+        value: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ExpandoTryGetValue",
+                (expando, indexClass, index, name, ignoreCase, value),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ExpandoTrySetValue(
+        expando: quest_hook::libil2cpp::Gc<crate::System::Dynamic::ExpandoObject>,
+        indexClass: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        index: i32,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        ignoreCase: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ExpandoTrySetValue",
+                (expando, indexClass, index, value, name, ignoreCase),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Runtime+CompilerServices+RuntimeOps")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::CompilerServices::RuntimeOps {

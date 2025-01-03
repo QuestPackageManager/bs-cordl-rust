@@ -23,7 +23,59 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIR::JobProcessor {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+JobProcessor")]
-impl crate::UnityEngine::UIElements::UIR::JobProcessor {}
+impl crate::UnityEngine::UIElements::UIR::JobProcessor {
+    pub fn ScheduleConvertMeshJobs(
+        buffer: crate::System::IntPtr,
+        jobCount: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Jobs::JobHandle> {
+        let __cordl_ret: crate::Unity::Jobs::JobHandle = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ScheduleConvertMeshJobs", (buffer, jobCount))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ScheduleConvertMeshJobs_Injected(
+        buffer: crate::System::IntPtr,
+        jobCount: i32,
+        ret: quest_hook::libil2cpp::ByRefMut<crate::Unity::Jobs::JobHandle>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ScheduleConvertMeshJobs_Injected", (buffer, jobCount, ret))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ScheduleCopyClosingMeshJobs(
+        buffer: crate::System::IntPtr,
+        jobCount: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Jobs::JobHandle> {
+        let __cordl_ret: crate::Unity::Jobs::JobHandle = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ScheduleCopyClosingMeshJobs", (buffer, jobCount))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ScheduleCopyClosingMeshJobs_Injected(
+        buffer: crate::System::IntPtr,
+        jobCount: i32,
+        ret: quest_hook::libil2cpp::ByRefMut<crate::Unity::Jobs::JobHandle>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ScheduleCopyClosingMeshJobs_Injected", (buffer, jobCount, ret))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ScheduleNudgeJobs(
+        buffer: crate::System::IntPtr,
+        jobCount: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Jobs::JobHandle> {
+        let __cordl_ret: crate::Unity::Jobs::JobHandle = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ScheduleNudgeJobs", (buffer, jobCount))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ScheduleNudgeJobs_Injected(
+        buffer: crate::System::IntPtr,
+        jobCount: i32,
+        ret: quest_hook::libil2cpp::ByRefMut<crate::Unity::Jobs::JobHandle>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ScheduleNudgeJobs_Injected", (buffer, jobCount, ret))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+UIR+JobProcessor")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::UIR::JobProcessor {

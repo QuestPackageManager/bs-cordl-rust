@@ -51,6 +51,15 @@ impl crate::System::Net::KnownHttpVerb {
             )?;
         Ok(__cordl_object.into())
     }
+    pub fn Parse(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Net::KnownHttpVerb>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::KnownHttpVerb> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Parse", (name))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

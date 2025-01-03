@@ -25,12 +25,48 @@ for crate::Newtonsoft::Json::JsonPosition {
 }
 #[cfg(feature = "Newtonsoft+Json+JsonPosition")]
 impl crate::Newtonsoft::Json::JsonPosition {
+    pub fn BuildPath(
+        positions: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::Newtonsoft::Json::JsonPosition,
+            >,
+        >,
+        currentPosition: crate::System::Nullable_1<crate::Newtonsoft::Json::JsonPosition>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BuildPath", (positions, currentPosition))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CalculateLength(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "CalculateLength",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FormatMessage(
+        lineInfo: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::IJsonLineInfo>,
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FormatMessage", (lineInfo, path, message))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TypeHasIndex(
+        _cordl_type: crate::Newtonsoft::Json::JsonContainerType,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TypeHasIndex", (_cordl_type))?;
         Ok(__cordl_ret.into())
     }
     pub fn WriteTo(

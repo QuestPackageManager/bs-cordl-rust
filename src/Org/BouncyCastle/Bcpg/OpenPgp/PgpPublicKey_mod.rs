@@ -34,6 +34,88 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKe
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpPublicKey")]
 impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey {
+    pub fn AddCert(
+        key: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
+        >,
+        id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        certification: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignature,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddCert", (key, id, certification))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddCertification_Il2CppString_PgpSignature0(
+        key: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
+        >,
+        id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        certification: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignature,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddCertification", (key, id, certification))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddCertification_PgpSignature2(
+        key: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
+        >,
+        certification: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignature,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddCertification", (key, certification))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddCertification_PgpUserAttributeSubpacketVector_PgpSignature1(
+        key: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
+        >,
+        userAttributes: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpUserAttributeSubpacketVector,
+        >,
+        certification: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignature,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddCertification", (key, userAttributes, certification))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CalculateFingerprint(
+        publicPk: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::PublicKeyPacket,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CalculateFingerprint", (publicPk))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Encode(
         &mut self,
         outStr: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
@@ -336,6 +418,127 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (publicPk, trustPk, keySigs, ids, idTrusts, idSigs))?;
         Ok(__cordl_object.into())
+    }
+    pub fn RemoveCert_PgpPublicKey_Il2CppObject0(
+        key: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
+        >,
+        id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RemoveCert", (key, id))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RemoveCert_PgpSignature1(
+        key: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
+        >,
+        id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        certification: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignature,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RemoveCert", (key, id, certification))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RemoveCertification_Il2CppString1(
+        key: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
+        >,
+        id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RemoveCertification", (key, id))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RemoveCertification_Il2CppString_PgpSignature2(
+        key: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
+        >,
+        id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        certification: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignature,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RemoveCertification", (key, id, certification))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RemoveCertification_PgpSignature4(
+        key: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
+        >,
+        certification: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignature,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RemoveCertification", (key, certification))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RemoveCertification_PgpUserAttributeSubpacketVector0(
+        key: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
+        >,
+        userAttributes: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpUserAttributeSubpacketVector,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RemoveCertification", (key, userAttributes))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RemoveCertification_PgpUserAttributeSubpacketVector_PgpSignature3(
+        key: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
+        >,
+        userAttributes: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpUserAttributeSubpacketVector,
+        >,
+        certification: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignature,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RemoveCertification", (key, userAttributes, certification))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UpdateDigest(
+        d: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
+        b: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UpdateDigest", (d, b))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_PgpPublicKey4(
         &mut self,

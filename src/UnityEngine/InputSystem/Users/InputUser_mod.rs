@@ -77,6 +77,24 @@ impl crate::UnityEngine::InputSystem::Users::InputUser {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn AddDeviceToUser(
+        userIndex: i32,
+        device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+        asLostDevice: bool,
+        dontUpdateControlScheme: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "AddDeviceToUser",
+                (userIndex, device, asLostDevice, dontUpdateControlScheme),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddUser() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddUser", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn AssociateActionsWithUser(
         &mut self,
         actions: quest_hook::libil2cpp::Gc<
@@ -88,6 +106,20 @@ impl crate::UnityEngine::InputSystem::Users::InputUser {
             "AssociateActionsWithUser",
             (actions),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateUserWithoutPairedDevices() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Users::InputUser,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Users::InputUser = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateUserWithoutPairedDevices", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DisposeAndResetGlobalState() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DisposeAndResetGlobalState", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn Equals_Il2CppObject1(
@@ -126,12 +158,205 @@ impl crate::UnityEngine::InputSystem::Users::InputUser {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn FindLostDevice(
+        device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+        startIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FindLostDevice", (device, startIndex))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FindUserByAccount(
+        platformUserAccountHandle: crate::UnityEngine::InputSystem::Users::InputUserAccountHandle,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Nullable_1<crate::UnityEngine::InputSystem::Users::InputUser>,
+    > {
+        let __cordl_ret: crate::System::Nullable_1<
+            crate::UnityEngine::InputSystem::Users::InputUser,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FindUserByAccount", (platformUserAccountHandle))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FindUserPairedToDevice(
+        device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Nullable_1<crate::UnityEngine::InputSystem::Users::InputUser>,
+    > {
+        let __cordl_ret: crate::System::Nullable_1<
+            crate::UnityEngine::InputSystem::Users::InputUser,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FindUserPairedToDevice", (device))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "GetHashCode",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetUnpairedInputDevices_0() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputControlList_1<
+            *mut crate::UnityEngine::InputSystem::InputDevice,
+        >,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlList_1<
+            *mut crate::UnityEngine::InputSystem::InputDevice,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetUnpairedInputDevices", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetUnpairedInputDevices_ByRefMut1(
+        list: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::InputSystem::InputControlList_1<
+                *mut crate::UnityEngine::InputSystem::InputDevice,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetUnpairedInputDevices", (list))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn HookIntoActionChange() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("HookIntoActionChange", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn HookIntoDeviceChange() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("HookIntoDeviceChange", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn HookIntoEvents() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("HookIntoEvents", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InitiateUserAccountSelection(
+        userIndex: i32,
+        device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+        options: crate::UnityEngine::InputSystem::Users::InputUserPairingOptions,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InitiateUserAccountSelection", (userIndex, device, options))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InitiateUserAccountSelectionAtPlatformLevel(
+        device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InitiateUserAccountSelectionAtPlatformLevel", (device))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Notify(
+        userIndex: i32,
+        change: crate::UnityEngine::InputSystem::Users::InputUserChange,
+        device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Notify", (userIndex, change, device))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn OnActionChange(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        change: crate::UnityEngine::InputSystem::InputActionChange,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("OnActionChange", (obj, change))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn OnDeviceChange(
+        device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+        change: crate::UnityEngine::InputSystem::InputDeviceChange,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("OnDeviceChange", (device, change))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn OnEvent(
+        eventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+        device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("OnEvent", (eventPtr, device))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn PerformPairingWithDevice(
+        device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+        user: crate::UnityEngine::InputSystem::Users::InputUser,
+        options: crate::UnityEngine::InputSystem::Users::InputUserPairingOptions,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Users::InputUser,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Users::InputUser = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PerformPairingWithDevice", (device, user, options))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn QueryPairedPlatformUserAccount(
+        device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+        platformAccountHandle: quest_hook::libil2cpp::ByRefMut<
+            crate::System::Nullable_1<
+                crate::UnityEngine::InputSystem::Users::InputUserAccountHandle,
+            >,
+        >,
+        platformAccountName: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+        platformAccountId: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "QueryPairedPlatformUserAccount",
+                (device, platformAccountHandle, platformAccountName, platformAccountId),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RemoveDeviceFromUser(
+        userIndex: i32,
+        device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+        asLostDevice: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RemoveDeviceFromUser", (userIndex, device, asLostDevice))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RemoveLostDevicesForUser(
+        userIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RemoveLostDevicesForUser", (userIndex))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RemoveUser(
+        userIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RemoveUser", (userIndex))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ResetGlobals() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ResetGlobals", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SaveAndResetState() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Utilities::ISavedState,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Utilities::ISavedState,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SaveAndResetState", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn ToString(
@@ -156,6 +381,46 @@ impl crate::UnityEngine::InputSystem::Users::InputUser {
             "TryFindControlScheme",
             (schemeName, scheme),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryFindUserIndex_InputDevice2(
+        device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryFindUserIndex", (device))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryFindUserIndex_InputUserAccountHandle1(
+        platformHandle: crate::UnityEngine::InputSystem::Users::InputUserAccountHandle,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryFindUserIndex", (platformHandle))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryFindUserIndex_u32_0(userId: u32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryFindUserIndex", (userId))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UnhookFromActionChange() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UnhookFromActionChange", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UnhookFromDeviceChange() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UnhookFromDeviceChange", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UnhookFromDeviceStateChange() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UnhookFromDeviceStateChange", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn UnpairDevice(
@@ -189,6 +454,60 @@ impl crate::UnityEngine::InputSystem::Users::InputUser {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn UpdateControlSchemeMatch(
+        userIndex: i32,
+        autoPairMissing: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UpdateControlSchemeMatch", (userIndex, autoPairMissing))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UpdatePlatformUserAccount(
+        userIndex: i32,
+        device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+    ) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UpdatePlatformUserAccount", (userIndex, device))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn add_onChange(
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_3<
+                crate::UnityEngine::InputSystem::Users::InputUser,
+                crate::UnityEngine::InputSystem::Users::InputUserChange,
+                *mut crate::UnityEngine::InputSystem::InputDevice,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("add_onChange", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn add_onPrefilterUnpairedDeviceActivity(
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Func_3<
+                *mut crate::UnityEngine::InputSystem::InputDevice,
+                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+                bool,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("add_onPrefilterUnpairedDeviceActivity", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn add_onUnpairedDeviceUsed(
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<
+                *mut crate::UnityEngine::InputSystem::InputControl,
+                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("add_onUnpairedDeviceUsed", (value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_actions(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -199,6 +518,16 @@ impl crate::UnityEngine::InputSystem::Users::InputUser {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::IInputActionCollection,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_actions", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_all() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
+            crate::UnityEngine::InputSystem::Users::InputUser,
+        >,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
+            crate::UnityEngine::InputSystem::Users::InputUser,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_all", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_controlScheme(
@@ -247,6 +576,11 @@ impl crate::UnityEngine::InputSystem::Users::InputUser {
             "get_index",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_listenForUnpairedDeviceActivity() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_listenForUnpairedDeviceActivity", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_lostDevices(
@@ -325,6 +659,67 @@ impl crate::UnityEngine::InputSystem::Users::InputUser {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Equality(
+        left: crate::UnityEngine::InputSystem::Users::InputUser,
+        right: crate::UnityEngine::InputSystem::Users::InputUser,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        left: crate::UnityEngine::InputSystem::Users::InputUser,
+        right: crate::UnityEngine::InputSystem::Users::InputUser,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_onChange(
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_3<
+                crate::UnityEngine::InputSystem::Users::InputUser,
+                crate::UnityEngine::InputSystem::Users::InputUserChange,
+                *mut crate::UnityEngine::InputSystem::InputDevice,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("remove_onChange", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_onPrefilterUnpairedDeviceActivity(
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Func_3<
+                *mut crate::UnityEngine::InputSystem::InputDevice,
+                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+                bool,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("remove_onPrefilterUnpairedDeviceActivity", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_onUnpairedDeviceUsed(
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<
+                *mut crate::UnityEngine::InputSystem::InputControl,
+                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("remove_onUnpairedDeviceUsed", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_listenForUnpairedDeviceActivity(
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_listenForUnpairedDeviceActivity", (value))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Users+InputUser")]
 impl AsRef<
@@ -385,6 +780,19 @@ impl crate::UnityEngine::InputSystem::Users::InputUser_CompareDevicesByUserAccou
             "Compare",
             (x, y),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetUserAccountHandleForDevice(
+        device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Nullable_1<
+            crate::UnityEngine::InputSystem::Users::InputUserAccountHandle,
+        >,
+    > {
+        let __cordl_ret: crate::System::Nullable_1<
+            crate::UnityEngine::InputSystem::Users::InputUserAccountHandle,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetUserAccountHandleForDevice", (device))?;
         Ok(__cordl_ret.into())
     }
 }

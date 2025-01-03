@@ -67,6 +67,83 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectMap {
         > = __cordl_object.invoke("CreateObjectInfo", (si, memberData))?;
         Ok(__cordl_ret.into())
     }
+    pub fn Create_Il2CppArray_Il2CppArray_Il2CppArray_ObjectReader_i32_BinaryAssemblyInfo_SizedArray1(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        memberNames: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+        binaryTypeEnumA: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum,
+            >,
+        >,
+        typeInformationA: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        >,
+        memberAssemIds: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<i32>,
+        >,
+        objectReader: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader,
+        >,
+        objectId: i32,
+        assemblyInfo: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::Formatters::Binary::BinaryAssemblyInfo,
+        >,
+        assemIdToAssemblyTable: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::Formatters::Binary::SizedArray,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::Formatters::Binary::ObjectMap,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::Formatters::Binary::ObjectMap,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "Create",
+                (
+                    name,
+                    memberNames,
+                    binaryTypeEnumA,
+                    typeInformationA,
+                    memberAssemIds,
+                    objectReader,
+                    objectId,
+                    assemblyInfo,
+                    assemIdToAssemblyTable,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Create_Type_ObjectReader_i32_BinaryAssemblyInfo0(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        memberNames: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+        objectReader: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader,
+        >,
+        objectId: i32,
+        assemblyInfo: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::Formatters::Binary::BinaryAssemblyInfo,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::Formatters::Binary::ObjectMap,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::Formatters::Binary::ObjectMap,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "Create",
+                (name, objectType, memberNames, objectReader, objectId, assemblyInfo),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_Il2CppArray_Il2CppArray_Il2CppArray_ObjectReader_i32_BinaryAssemblyInfo_SizedArray1(
         objectName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         memberNames: quest_hook::libil2cpp::Gc<

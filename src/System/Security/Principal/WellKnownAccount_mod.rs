@@ -30,6 +30,37 @@ impl std::ops::DerefMut for crate::System::Security::Principal::WellKnownAccount
 }
 #[cfg(feature = "System+Security+Principal+WellKnownAccount")]
 impl crate::System::Security::Principal::WellKnownAccount {
+    pub fn LookupByName(
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Security::Principal::WellKnownAccount>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Principal::WellKnownAccount,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("LookupByName", (s))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LookupBySddlForm(
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Security::Principal::WellKnownAccount>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Principal::WellKnownAccount,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LookupBySddlForm", (s))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LookupBySid(
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Security::Principal::WellKnownAccount>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Principal::WellKnownAccount,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("LookupBySid", (s))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

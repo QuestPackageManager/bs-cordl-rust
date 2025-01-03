@@ -107,6 +107,13 @@ impl crate::Oculus::Platform::ApplicationOptions {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Explicit(
+        options: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::ApplicationOptions>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Explicit", (options))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "Oculus+Platform+ApplicationOptions")]
 impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Platform::ApplicationOptions {

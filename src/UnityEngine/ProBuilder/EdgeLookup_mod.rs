@@ -47,6 +47,54 @@ impl crate::UnityEngine::ProBuilder::EdgeLookup {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetEdgeLookup(
+        edges: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::UnityEngine::ProBuilder::Edge,
+            >,
+        >,
+        lookup: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<i32, i32>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::UnityEngine::ProBuilder::EdgeLookup,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::UnityEngine::ProBuilder::EdgeLookup,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetEdgeLookup", (edges, lookup))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetEdgeLookupHashSet(
+        edges: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::UnityEngine::ProBuilder::Edge,
+            >,
+        >,
+        lookup: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<i32, i32>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::HashSet_1<
+                crate::UnityEngine::ProBuilder::EdgeLookup,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::HashSet_1<
+                crate::UnityEngine::ProBuilder::EdgeLookup,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetEdgeLookupHashSet", (edges, lookup))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -109,6 +157,22 @@ impl crate::UnityEngine::ProBuilder::EdgeLookup {
             "get_local",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        a: crate::UnityEngine::ProBuilder::EdgeLookup,
+        b: crate::UnityEngine::ProBuilder::EdgeLookup,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        a: crate::UnityEngine::ProBuilder::EdgeLookup,
+        b: crate::UnityEngine::ProBuilder::EdgeLookup,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (a, b))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_common(

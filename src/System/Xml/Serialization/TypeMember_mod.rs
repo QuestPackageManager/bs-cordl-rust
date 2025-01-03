@@ -26,7 +26,7 @@ impl std::ops::DerefMut for crate::System::Xml::Serialization::TypeMember {
 }
 #[cfg(feature = "System+Xml+Serialization+TypeMember")]
 impl crate::System::Xml::Serialization::TypeMember {
-    pub fn Equals(
+    pub fn Equals_Il2CppObject0(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -34,6 +34,14 @@ impl crate::System::Xml::Serialization::TypeMember {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Equals_TypeMember_TypeMember1(
+        tm1: quest_hook::libil2cpp::Gc<crate::System::Xml::Serialization::TypeMember>,
+        tm2: quest_hook::libil2cpp::Gc<crate::System::Xml::Serialization::TypeMember>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Equals", (tm1, tm2))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {

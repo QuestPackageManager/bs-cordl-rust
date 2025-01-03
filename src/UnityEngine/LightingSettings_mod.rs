@@ -24,6 +24,13 @@ impl std::ops::DerefMut for crate::UnityEngine::LightingSettings {
 }
 #[cfg(feature = "UnityEngine+LightingSettings")]
 impl crate::UnityEngine::LightingSettings {
+    pub fn Internal_Create(
+        _cordl_self: quest_hook::libil2cpp::Gc<crate::UnityEngine::LightingSettings>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Internal_Create", (_cordl_self))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn LightingSettingsDontStripMe(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

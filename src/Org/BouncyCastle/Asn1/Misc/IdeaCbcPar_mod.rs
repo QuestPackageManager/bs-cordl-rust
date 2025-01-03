@@ -38,6 +38,16 @@ impl crate::Org::BouncyCastle::Asn1::Misc::IdeaCbcPar {
         > = __cordl_object.invoke("GetIV", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetInstance(
+        o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Misc::IdeaCbcPar>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Misc::IdeaCbcPar,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (o))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_Asn1Sequence1(
         seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

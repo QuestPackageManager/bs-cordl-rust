@@ -59,6 +59,13 @@ impl crate::UnityEngine::TerrainData {
         > = __cordl_object.invoke("GetAlphamaps", (x, y, width, height))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetBoundaryValue(
+        _cordl_type: crate::UnityEngine::TerrainData_BoundaryValueType,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetBoundaryValue", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetHeights(
         &mut self,
         xBase: i32,
@@ -74,6 +81,13 @@ impl crate::UnityEngine::TerrainData {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
         > = __cordl_object.invoke("GetHeights", (xBase, yBase, width, height))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Internal_Create(
+        terrainData: quest_hook::libil2cpp::Gc<crate::UnityEngine::TerrainData>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Internal_Create", (terrainData))?;
         Ok(__cordl_ret.into())
     }
     pub fn Internal_GetAlphamaps(

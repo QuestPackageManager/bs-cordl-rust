@@ -61,6 +61,13 @@ impl crate::System::Security::SecurityDocument {
             .invoke("AppendString", (str, position))?;
         Ok(__cordl_ret.into())
     }
+    pub fn EncodedStringSize(
+        str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EncodedStringSize", (str))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetElement(
         &mut self,
         position: i32,

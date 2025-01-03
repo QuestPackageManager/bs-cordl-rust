@@ -55,6 +55,17 @@ impl crate::Org::BouncyCastle::Asn1::DerGeneralizedTime {
         > = __cordl_object.invoke("CalculateGmtOffset", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn Convert(
+        _cordl_time: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Convert", (_cordl_time))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Encode(
         &mut self,
         derOut: quest_hook::libil2cpp::Gc<
@@ -80,6 +91,28 @@ impl crate::Org::BouncyCastle::Asn1::DerGeneralizedTime {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("FString", (count))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetInstance_Asn1TaggedObject__cordl_bool1(
+        obj: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1TaggedObject>,
+        isExplicit: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerGeneralizedTime>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerGeneralizedTime,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetInstance", (obj, isExplicit))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetInstance_Il2CppObject0(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerGeneralizedTime>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerGeneralizedTime,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetOctets(

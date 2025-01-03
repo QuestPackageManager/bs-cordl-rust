@@ -29,6 +29,82 @@ impl crate::GlobalNamespace::Interop {
     pub type ErrorInfo = crate::GlobalNamespace::Interop_ErrorInfo;
     #[cfg(feature = "Interop+Sys")]
     pub type Sys = crate::GlobalNamespace::Interop_Sys;
+    pub fn CheckIo_i32_1(
+        result: i32,
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        isDirectory: bool,
+        errorRewriter: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<
+                crate::GlobalNamespace::Interop_ErrorInfo,
+                crate::GlobalNamespace::Interop_ErrorInfo,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckIo", (result, path, isDirectory, errorRewriter))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CheckIo_i64_0(
+        result: i64,
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        isDirectory: bool,
+        errorRewriter: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<
+                crate::GlobalNamespace::Interop_ErrorInfo,
+                crate::GlobalNamespace::Interop_ErrorInfo,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckIo", (result, path, isDirectory, errorRewriter))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetExceptionForIoErrno(
+        errorInfo: crate::GlobalNamespace::Interop_ErrorInfo,
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        isDirectory: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetExceptionForIoErrno", (errorInfo, path, isDirectory))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetIOException(
+        errorInfo: crate::GlobalNamespace::Interop_ErrorInfo,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetIOException", (errorInfo))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetRandomBytes(
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetRandomBytes", (buffer, length))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ThrowExceptionForIoErrno(
+        errorInfo: crate::GlobalNamespace::Interop_ErrorInfo,
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        isDirectory: bool,
+        errorRewriter: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<
+                crate::GlobalNamespace::Interop_ErrorInfo,
+                crate::GlobalNamespace::Interop_ErrorInfo,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ThrowExceptionForIoErrno",
+                (errorInfo, path, isDirectory, errorRewriter),
+            )?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "Interop")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::Interop {
@@ -249,6 +325,250 @@ impl crate::GlobalNamespace::Interop_Sys {
     pub type NodeType = crate::GlobalNamespace::Sys_Interop_NodeType;
     #[cfg(feature = "Interop+Sys+Permissions")]
     pub type Permissions = crate::GlobalNamespace::Sys_Interop_Permissions;
+    pub fn CloseDir(dir: crate::System::IntPtr) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CloseDir", (dir))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ConvertErrorPalToPlatform(
+        error: crate::GlobalNamespace::Interop_Error,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ConvertErrorPalToPlatform", (error))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ConvertErrorPlatformToPal(
+        platformErrno: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::Interop_Error> {
+        let __cordl_ret: crate::GlobalNamespace::Interop_Error = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ConvertErrorPlatformToPal", (platformErrno))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CopyFile(
+        source: quest_hook::libil2cpp::Gc<
+            crate::Microsoft::Win32::SafeHandles::SafeFileHandle,
+        >,
+        destination: quest_hook::libil2cpp::Gc<
+            crate::Microsoft::Win32::SafeHandles::SafeFileHandle,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CopyFile", (source, destination))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DoubleToString(
+        value: f64,
+        format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        bufferLength: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DoubleToString", (value, format, buffer, bufferLength))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetEGid() -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetEGid", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetEUid() -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetEUid", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetLastErrorInfo() -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::Interop_ErrorInfo,
+    > {
+        let __cordl_ret: crate::GlobalNamespace::Interop_ErrorInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetLastErrorInfo", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetNonCryptographicallySecureRandomBytes(
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetNonCryptographicallySecureRandomBytes", (buffer, length))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetReadDirRBufferSize() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetReadDirRBufferSize", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LChflagsCanSetHiddenFlag() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LChflagsCanSetHiddenFlag", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LStat_ByRefMut1(
+        path: quest_hook::libil2cpp::ByRefMut<u8>,
+        output: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::Sys_Interop_FileStatus,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LStat", (path, output))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LStat_Il2CppString0(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        output: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::Sys_Interop_FileStatus,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LStat", (path, output))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LStat_ReadOnlySpan_1_2(
+        path: crate::System::ReadOnlySpan_1<char>,
+        output: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::Sys_Interop_FileStatus,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LStat", (path, output))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Link(
+        source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        link: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Link", (source, link))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MkDir(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        mode: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MkDir", (path, mode))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn OpenDir(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("OpenDir", (path))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReadDirR(
+        dir: crate::System::IntPtr,
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        bufferSize: i32,
+        outputEntry: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::Sys_Interop_DirectoryEntry,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadDirR", (dir, buffer, bufferSize, outputEntry))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReadLink_Il2CppArray_i32_0(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        bufferSize: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadLink", (path, buffer, bufferSize))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReadLink_Il2CppString1(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("ReadLink", (path))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Rename(
+        oldPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        newPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Rename", (oldPath, newPath))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RmDir(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RmDir", (path))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Stat_ByRefMut1(
+        path: quest_hook::libil2cpp::ByRefMut<u8>,
+        output: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::Sys_Interop_FileStatus,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Stat", (path, output))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Stat_Il2CppString0(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        output: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::Sys_Interop_FileStatus,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Stat", (path, output))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Stat_ReadOnlySpan_1_2(
+        path: crate::System::ReadOnlySpan_1<char>,
+        output: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::Sys_Interop_FileStatus,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Stat", (path, output))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StrError(
+        platformErrno: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StrError", (platformErrno))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StrErrorR(
+        platformErrno: i32,
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        bufferSize: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StrErrorR", (platformErrno, buffer, bufferSize))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Symlink(
+        target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        linkPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Symlink", (target, linkPath))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Unlink(
+        pathname: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Unlink", (pathname))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "Interop+Sys")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::Interop_Sys {

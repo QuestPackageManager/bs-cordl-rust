@@ -50,6 +50,14 @@ impl crate::System::TimeSpan {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn Compare(
+        t1: crate::System::TimeSpan,
+        t2: crate::System::TimeSpan,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Compare", (t1, t2))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CompareTo_Il2CppObject0(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -104,6 +112,48 @@ impl crate::System::TimeSpan {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn FromDays(
+        value: f64,
+    ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
+        let __cordl_ret: crate::System::TimeSpan = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromDays", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromHours(
+        value: f64,
+    ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
+        let __cordl_ret: crate::System::TimeSpan = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromHours", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromMilliseconds(
+        value: f64,
+    ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
+        let __cordl_ret: crate::System::TimeSpan = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromMilliseconds", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromMinutes(
+        value: f64,
+    ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
+        let __cordl_ret: crate::System::TimeSpan = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromMinutes", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromSeconds(
+        value: f64,
+    ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
+        let __cordl_ret: crate::System::TimeSpan = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromSeconds", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromTicks(
+        value: i64,
+    ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
+        let __cordl_ret: crate::System::TimeSpan = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromTicks", (value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -112,12 +162,35 @@ impl crate::System::TimeSpan {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn Interval(
+        value: f64,
+        scale: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
+        let __cordl_ret: crate::System::TimeSpan = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Interval", (value, scale))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Negate(&mut self) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
         let __cordl_ret: crate::System::TimeSpan = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "Negate",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Parse_IFormatProvider1(
+        input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        formatProvider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
+        let __cordl_ret: crate::System::TimeSpan = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Parse", (input, formatProvider))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Parse_Il2CppString0(
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
+        let __cordl_ret: crate::System::TimeSpan = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Parse", (s))?;
         Ok(__cordl_ret.into())
     }
     pub fn Subtract(
@@ -129,6 +202,15 @@ impl crate::System::TimeSpan {
             "Subtract",
             (ts),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TimeToTicks(
+        hour: i32,
+        minute: i32,
+        second: i32,
+    ) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TimeToTicks", (hour, minute, second))?;
         Ok(__cordl_ret.into())
     }
     pub fn ToString_0(
@@ -180,6 +262,16 @@ impl crate::System::TimeSpan {
             "TryFormat",
             (destination, charsWritten, format, formatProvider),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryParseExact(
+        input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        formatProvider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+        result: quest_hook::libil2cpp::ByRefMut<crate::System::TimeSpan>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryParseExact", (input, format, formatProvider, result))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_i32_i32_i32_1(
@@ -299,6 +391,77 @@ impl crate::System::TimeSpan {
             "get_TotalSeconds",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Addition(
+        t1: crate::System::TimeSpan,
+        t2: crate::System::TimeSpan,
+    ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
+        let __cordl_ret: crate::System::TimeSpan = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Addition", (t1, t2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        t1: crate::System::TimeSpan,
+        t2: crate::System::TimeSpan,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (t1, t2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_GreaterThan(
+        t1: crate::System::TimeSpan,
+        t2: crate::System::TimeSpan,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_GreaterThan", (t1, t2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_GreaterThanOrEqual(
+        t1: crate::System::TimeSpan,
+        t2: crate::System::TimeSpan,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_GreaterThanOrEqual", (t1, t2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        t1: crate::System::TimeSpan,
+        t2: crate::System::TimeSpan,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (t1, t2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_LessThan(
+        t1: crate::System::TimeSpan,
+        t2: crate::System::TimeSpan,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_LessThan", (t1, t2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_LessThanOrEqual(
+        t1: crate::System::TimeSpan,
+        t2: crate::System::TimeSpan,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_LessThanOrEqual", (t1, t2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Subtraction(
+        t1: crate::System::TimeSpan,
+        t2: crate::System::TimeSpan,
+    ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
+        let __cordl_ret: crate::System::TimeSpan = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Subtraction", (t1, t2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_UnaryNegation(
+        t: crate::System::TimeSpan,
+    ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
+        let __cordl_ret: crate::System::TimeSpan = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_UnaryNegation", (t))?;
         Ok(__cordl_ret.into())
     }
 }

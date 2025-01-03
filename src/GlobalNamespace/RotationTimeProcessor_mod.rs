@@ -78,6 +78,11 @@ impl crate::GlobalNamespace::RotationTimeProcessor {
             .invoke("Reset", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn SpawnRotationForEventValue(index: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SpawnRotationForEventValue", (index))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor_IReadOnlyList_1_0(
         &mut self,
         events: quest_hook::libil2cpp::Gc<

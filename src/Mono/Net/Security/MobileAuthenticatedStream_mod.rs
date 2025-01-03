@@ -181,6 +181,39 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
             .invoke("Flush", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetIOException(
+        e: quest_hook::libil2cpp::Gc<crate::System::Exception>,
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetIOException", (e, message))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetInternalError() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetInternalError", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetInvalidNestedCallException() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetInvalidNestedCallException", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetSSPIException(
+        e: quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSSPIException", (e))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn InnerRead(
         &mut self,
         sync: bool,

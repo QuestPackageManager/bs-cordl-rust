@@ -51,6 +51,22 @@ impl crate::UnityEngine::InputSystem::XR::XRController {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_leftHand() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::XR::XRController>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::XR::XRController,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_leftHand", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_rightHand() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::XR::XRController>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::XR::XRController,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_rightHand", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+InputSystem+XR+XRController")]
 impl quest_hook::libil2cpp::ObjectType

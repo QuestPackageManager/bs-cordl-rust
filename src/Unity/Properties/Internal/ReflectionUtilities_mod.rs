@@ -23,7 +23,19 @@ impl std::ops::DerefMut for crate::Unity::Properties::Internal::ReflectionUtilit
     }
 }
 #[cfg(feature = "Unity+Properties+Internal+ReflectionUtilities")]
-impl crate::Unity::Properties::Internal::ReflectionUtilities {}
+impl crate::Unity::Properties::Internal::ReflectionUtilities {
+    pub fn SanitizeMemberName(
+        info: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SanitizeMemberName", (info))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "Unity+Properties+Internal+ReflectionUtilities")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::Properties::Internal::ReflectionUtilities {

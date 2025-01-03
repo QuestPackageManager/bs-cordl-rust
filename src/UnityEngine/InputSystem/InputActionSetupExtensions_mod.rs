@@ -39,6 +39,410 @@ impl crate::UnityEngine::InputSystem::InputActionSetupExtensions {
         feature = "UnityEngine+InputSystem+InputActionSetupExtensions+__c__DisplayClass5_0"
     )]
     pub type __c__DisplayClass5_0 = crate::UnityEngine::InputSystem::InputActionSetupExtensions___c__DisplayClass5_0;
+    pub fn AddAction(
+        map: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputActionMap>,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        _cordl_type: crate::UnityEngine::InputSystem::InputActionType,
+        binding: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        interactions: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        processors: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        groups: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        expectedControlLayout: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputAction,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "AddAction",
+                (
+                    map,
+                    name,
+                    _cordl_type,
+                    binding,
+                    interactions,
+                    processors,
+                    groups,
+                    expectedControlLayout,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddActionMap_Il2CppString0(
+        asset: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputActionAsset,
+        >,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputActionMap>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputActionMap,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddActionMap", (asset, name))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddActionMap_InputActionMap1(
+        asset: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputActionAsset,
+        >,
+        map: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputActionMap>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddActionMap", (asset, map))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddBindingInternal(
+        map: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputActionMap>,
+        binding: crate::UnityEngine::InputSystem::InputBinding,
+        bindingIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddBindingInternal", (map, binding, bindingIndex))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddBinding_InputActionMap_Il2CppString_Guid_Il2CppString_Il2CppString5(
+        actionMap: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputActionMap,
+        >,
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        action: crate::System::Guid,
+        interactions: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        groups: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddBinding", (actionMap, path, action, interactions, groups))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddBinding_InputActionMap_Il2CppString_Il2CppString_Il2CppString_Il2CppString_Il2CppString3(
+        actionMap: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputActionMap,
+        >,
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        interactions: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        groups: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        action: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        processors: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "AddBinding",
+                (actionMap, path, interactions, groups, action, processors),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddBinding_InputActionMap_Il2CppString_InputAction_Il2CppString_Il2CppString4(
+        actionMap: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputActionMap,
+        >,
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        action: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
+        interactions: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        groups: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddBinding", (actionMap, path, action, interactions, groups))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddBinding_InputActionMap_InputBinding6(
+        actionMap: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputActionMap,
+        >,
+        binding: crate::UnityEngine::InputSystem::InputBinding,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddBinding", (actionMap, binding))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddBinding_InputAction_Il2CppString_Il2CppString_Il2CppString_Il2CppString0(
+        action: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        interactions: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        processors: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        groups: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddBinding", (action, path, interactions, processors, groups))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddBinding_InputAction_InputBinding2(
+        action: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
+        binding: crate::UnityEngine::InputSystem::InputBinding,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddBinding", (action, binding))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddBinding_InputAction_InputControl1(
+        action: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
+        control: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddBinding", (action, control))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddCompositeBinding(
+        action: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
+        composite: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        interactions: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        processors: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputActionSetupExtensions_CompositeSyntax,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionSetupExtensions_CompositeSyntax = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "AddCompositeBinding",
+                (action, composite, interactions, processors),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddControlScheme_Il2CppString1(
+        asset: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputActionAsset,
+        >,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputActionSetupExtensions_ControlSchemeSyntax,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionSetupExtensions_ControlSchemeSyntax = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddControlScheme", (asset, name))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddControlScheme_InputControlScheme0(
+        asset: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputActionAsset,
+        >,
+        controlScheme: crate::UnityEngine::InputSystem::InputControlScheme,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddControlScheme", (asset, controlScheme))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ChangeBindingWithGroup(
+        action: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
+        group: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ChangeBindingWithGroup", (action, group))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ChangeBindingWithId_Guid1(
+        action: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
+        id: crate::System::Guid,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ChangeBindingWithId", (action, id))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ChangeBindingWithId_Il2CppString0(
+        action: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
+        id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ChangeBindingWithId", (action, id))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ChangeBindingWithPath(
+        action: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ChangeBindingWithPath", (action, path))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ChangeBinding_InputActionMap_i32_2(
+        actionMap: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputActionMap,
+        >,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ChangeBinding", (actionMap, index))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ChangeBinding_InputAction_Il2CppString1(
+        action: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ChangeBinding", (action, name))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ChangeBinding_InputAction_InputBinding3(
+        action: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
+        _cordl_match: crate::UnityEngine::InputSystem::InputBinding,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ChangeBinding", (action, _cordl_match))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ChangeBinding_InputAction_i32_0(
+        action: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ChangeBinding", (action, index))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ChangeCompositeBinding(
+        action: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
+        compositeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ChangeCompositeBinding", (action, compositeName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn OrWithOptionalDevice(
+        scheme: crate::UnityEngine::InputSystem::InputControlScheme,
+        controlPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputControlScheme,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlScheme = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("OrWithOptionalDevice", (scheme, controlPath))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn OrWithRequiredDevice(
+        scheme: crate::UnityEngine::InputSystem::InputControlScheme,
+        controlPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputControlScheme,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlScheme = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("OrWithRequiredDevice", (scheme, controlPath))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RemoveActionMap_Il2CppString1(
+        asset: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputActionAsset,
+        >,
+        nameOrId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RemoveActionMap", (asset, nameOrId))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RemoveActionMap_InputActionMap0(
+        asset: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputActionAsset,
+        >,
+        map: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputActionMap>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RemoveActionMap", (asset, map))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RemoveAction_InputAction0(
+        action: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RemoveAction", (action))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RemoveAction_InputActionAsset_Il2CppString1(
+        asset: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputActionAsset,
+        >,
+        nameOrId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RemoveAction", (asset, nameOrId))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RemoveControlScheme(
+        asset: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputActionAsset,
+        >,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RemoveControlScheme", (asset, name))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Rename(
+        action: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
+        newName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Rename", (action, newName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WithBindingGroup(
+        scheme: crate::UnityEngine::InputSystem::InputControlScheme,
+        bindingGroup: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputControlScheme,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlScheme = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WithBindingGroup", (scheme, bindingGroup))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WithDevice(
+        scheme: crate::UnityEngine::InputSystem::InputControlScheme,
+        controlPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        required: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputControlScheme,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlScheme = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WithDevice", (scheme, controlPath, required))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WithOptionalDevice(
+        scheme: crate::UnityEngine::InputSystem::InputControlScheme,
+        controlPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputControlScheme,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlScheme = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WithOptionalDevice", (scheme, controlPath))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WithRequiredDevice(
+        scheme: crate::UnityEngine::InputSystem::InputControlScheme,
+        controlPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputControlScheme,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlScheme = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WithRequiredDevice", (scheme, controlPath))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionSetupExtensions")]
 impl quest_hook::libil2cpp::ObjectType

@@ -29,6 +29,18 @@ for crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo {
 }
 #[cfg(feature = "System+Runtime+ExceptionServices+ExceptionDispatchInfo")]
 impl crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo {
+    pub fn Capture(
+        source: quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Capture", (source))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         exception: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -38,7 +50,7 @@ impl crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo {
             .invoke_void(".ctor", (exception))?;
         Ok(__cordl_object.into())
     }
-    pub fn Throw(
+    pub fn Throw_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -46,6 +58,13 @@ impl crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Throw", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Throw_Exception1(
+        source: quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Throw", (source))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

@@ -22,7 +22,16 @@ impl std::ops::DerefMut for crate::System::Xml::Ref {
     }
 }
 #[cfg(feature = "System+Xml+Ref")]
-impl crate::System::Xml::Ref {}
+impl crate::System::Xml::Ref {
+    pub fn Equal(
+        strA: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        strB: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Equal", (strA, strB))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Xml+Ref")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Ref {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

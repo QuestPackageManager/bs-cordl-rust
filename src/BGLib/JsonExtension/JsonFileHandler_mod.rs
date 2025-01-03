@@ -28,6 +28,106 @@ impl crate::BGLib::JsonExtension::JsonFileHandler {
     pub type __c__DisplayClass0_0_1<T: quest_hook::libil2cpp::Type> = crate::BGLib::JsonExtension::JsonFileHandler___c__DisplayClass0_0_1<
         T,
     >;
+    pub fn ReadFromFile_Il2CppString0<T>(
+        filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadFromFile", (filePath))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReadFromFile_JsonSerializerSettings1<T>(
+        filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        settings: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::JsonSerializerSettings,
+        >,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadFromFile", (filePath, settings))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReadFromText<T>(
+        textReader: quest_hook::libil2cpp::Gc<crate::System::IO::TextReader>,
+        settings: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::JsonSerializerSettings,
+        >,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadFromText", (textReader, settings))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WriteCompactWithoutDefault<T>(
+        content: T,
+        filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WriteCompactWithoutDefault", (content, filePath))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WriteIndentedWithDefault<T>(
+        content: T,
+        filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        indentation: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WriteIndentedWithDefault", (content, filePath, indentation))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WriteToFile<T>(
+        content: T,
+        filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        settings: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::JsonSerializerSettings,
+        >,
+        beforeSerialize: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::Newtonsoft::Json::JsonTextWriter>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WriteToFile", (content, filePath, settings, beforeSerialize))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WriteToText<T>(
+        writer: quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,
+        content: T,
+        settings: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::JsonSerializerSettings,
+        >,
+        beforeSerialize: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::Newtonsoft::Json::JsonTextWriter>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WriteToText", (writer, content, settings, beforeSerialize))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "BGLib+JsonExtension+JsonFileHandler")]
 impl quest_hook::libil2cpp::ObjectType for crate::BGLib::JsonExtension::JsonFileHandler {

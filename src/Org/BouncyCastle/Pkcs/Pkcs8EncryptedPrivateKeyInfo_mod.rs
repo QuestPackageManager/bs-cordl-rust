@@ -132,6 +132,19 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs8EncryptedPrivateKeyInfo {
             .invoke(".ctor", (encryptedPrivateKeyInfo))?;
         Ok(__cordl_ret.into())
     }
+    pub fn parseBytes(
+        pkcs8Encoding: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Pkcs::EncryptedPrivateKeyInfo,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Pkcs::EncryptedPrivateKeyInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("parseBytes", (pkcs8Encoding))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs8EncryptedPrivateKeyInfo")]
 impl quest_hook::libil2cpp::ObjectType

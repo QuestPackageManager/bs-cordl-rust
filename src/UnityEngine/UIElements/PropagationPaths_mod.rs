@@ -37,6 +37,17 @@ impl crate::UnityEngine::UIElements::PropagationPaths {
     pub const k_DefaultTargetCount: i32 = 4i32;
     #[cfg(feature = "UnityEngine+UIElements+PropagationPaths+__c")]
     pub type __c = crate::UnityEngine::UIElements::PropagationPaths___c;
+    pub fn Build(
+        elem: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::PropagationPaths>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::PropagationPaths,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Build", (elem, evt))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

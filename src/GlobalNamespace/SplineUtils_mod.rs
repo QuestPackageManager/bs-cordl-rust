@@ -22,7 +22,19 @@ impl std::ops::DerefMut for crate::GlobalNamespace::SplineUtils {
     }
 }
 #[cfg(feature = "SplineUtils")]
-impl crate::GlobalNamespace::SplineUtils {}
+impl crate::GlobalNamespace::SplineUtils {
+    pub fn Interpolate(
+        t0: crate::UnityEngine::Vector3,
+        p0: crate::UnityEngine::Vector3,
+        p1: crate::UnityEngine::Vector3,
+        t1: crate::UnityEngine::Vector3,
+        f: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Interpolate", (t0, p0, p1, t1, f))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "SplineUtils")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SplineUtils {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

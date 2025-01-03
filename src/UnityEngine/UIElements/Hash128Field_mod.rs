@@ -217,6 +217,13 @@ impl crate::UnityEngine::UIElements::Hash128Field_Hash128Input {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
+    pub fn Parse(
+        str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Hash128> {
+        let __cordl_ret: crate::UnityEngine::Hash128 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Parse", (str))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn StringToValue(
         &mut self,
         str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

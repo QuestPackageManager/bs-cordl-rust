@@ -209,6 +209,17 @@ impl crate::System::Runtime::Serialization::ObjectManager {
             .invoke("GetCompletionInfo", (fixup, holder, member, bThrowIfMissing))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetConstructor(
+        t: quest_hook::libil2cpp::Gc<crate::System::RuntimeType>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Reflection::RuntimeConstructorInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::RuntimeConstructorInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetConstructor", (t))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetObject(
         &mut self,
         objectID: i64,

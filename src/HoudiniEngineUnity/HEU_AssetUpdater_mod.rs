@@ -24,12 +24,59 @@ impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_AssetUpdater {
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_AssetUpdater")]
 impl crate::HoudiniEngineUnity::HEU_AssetUpdater {
+    pub fn AddAssetForUpdate(
+        asset: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAsset>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddAssetForUpdate", (asset))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddNodeSyncForUpdate(
+        nodeSync: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_BaseSync>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddNodeSyncForUpdate", (nodeSync))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
+    }
+    pub fn OnBeforeAssemblyReload() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("OnBeforeAssemblyReload", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn OnPrefabInstanceUpdate(
+        instance: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("OnPrefabInstanceUpdate", (instance))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RemoveAsset(
+        asset: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAsset>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RemoveAsset", (asset))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RemoveNodeSync(
+        nodeSync: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_BaseSync>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RemoveNodeSync", (nodeSync))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Update() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Update", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,

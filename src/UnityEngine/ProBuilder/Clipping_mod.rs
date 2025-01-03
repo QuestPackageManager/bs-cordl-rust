@@ -26,6 +26,28 @@ impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::Clipping {
 impl crate::UnityEngine::ProBuilder::Clipping {
     #[cfg(feature = "UnityEngine+ProBuilder+Clipping+OutCode")]
     pub type OutCode = crate::UnityEngine::ProBuilder::Clipping_OutCode;
+    pub fn ComputeOutCode(
+        rect: crate::UnityEngine::Rect,
+        x: f32,
+        y: f32,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ProBuilder::Clipping_OutCode,
+    > {
+        let __cordl_ret: crate::UnityEngine::ProBuilder::Clipping_OutCode = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ComputeOutCode", (rect, x, y))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RectContainsLineSegment(
+        rect: crate::UnityEngine::Rect,
+        x0: f32,
+        y0: f32,
+        x1: f32,
+        y1: f32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RectContainsLineSegment", (rect, x0, y0, x1, y1))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Clipping")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ProBuilder::Clipping {

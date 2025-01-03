@@ -28,6 +28,29 @@ impl crate::Unity::Jobs::IJobParallelForExtensions {
     pub type ParallelForJobStruct_1<T: quest_hook::libil2cpp::Type> = crate::Unity::Jobs::IJobParallelForExtensions_ParallelForJobStruct_1<
         T,
     >;
+    pub fn GetReflectionData<T>() -> quest_hook::libil2cpp::Result<crate::System::IntPtr>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetReflectionData", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Schedule<T>(
+        jobData: T,
+        arrayLength: i32,
+        innerloopBatchCount: i32,
+        dependsOn: crate::Unity::Jobs::JobHandle,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Jobs::JobHandle>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: crate::Unity::Jobs::JobHandle = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Schedule", (jobData, arrayLength, innerloopBatchCount, dependsOn))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "Unity+Jobs+IJobParallelForExtensions")]
 impl quest_hook::libil2cpp::ObjectType
@@ -74,6 +97,35 @@ impl<
     pub type ExecuteJobFunction = crate::Unity::Jobs::ParallelForJobStruct_1_IJobParallelForExtensions_ExecuteJobFunction<
         T,
     >;
+    pub fn Execute(
+        jobData: quest_hook::libil2cpp::ByRefMut<T>,
+        additionalPtr: crate::System::IntPtr,
+        bufferRangePatchData: crate::System::IntPtr,
+        ranges: quest_hook::libil2cpp::ByRefMut<
+            crate::Unity::Jobs::LowLevel::Unsafe::JobRanges,
+        >,
+        jobIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "Execute",
+                (jobData, additionalPtr, bufferRangePatchData, ranges, jobIndex),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Initialize() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Initialize", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(
     feature = "Unity+Jobs+IJobParallelForExtensions+ParallelForJobStruct_1+ExecuteJobFunction"

@@ -25,6 +25,21 @@ impl std::ops::DerefMut for crate::System::AppContext {
 impl crate::System::AppContext {
     #[cfg(feature = "System+AppContext+SwitchValueState")]
     pub type SwitchValueState = crate::System::AppContext_SwitchValueState;
+    pub fn InitializeDefaultSwitchValues() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InitializeDefaultSwitchValues", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryGetSwitch(
+        switchName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        isEnabled: quest_hook::libil2cpp::ByRefMut<bool>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryGetSwitch", (switchName, isEnabled))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "System+AppContext")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::AppContext {

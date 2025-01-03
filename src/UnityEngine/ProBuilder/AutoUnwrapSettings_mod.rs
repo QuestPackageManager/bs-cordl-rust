@@ -77,6 +77,13 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_defaultAutoUnwrapSettings() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ProBuilder::AutoUnwrapSettings,
+    > {
+        let __cordl_ret: crate::UnityEngine::ProBuilder::AutoUnwrapSettings = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_defaultAutoUnwrapSettings", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_fill(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -87,6 +94,13 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
             "get_fill",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_fit() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ProBuilder::AutoUnwrapSettings,
+    > {
+        let __cordl_ret: crate::UnityEngine::ProBuilder::AutoUnwrapSettings = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_fit", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_flipU(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -133,12 +147,26 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_stretch() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ProBuilder::AutoUnwrapSettings,
+    > {
+        let __cordl_ret: crate::UnityEngine::ProBuilder::AutoUnwrapSettings = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_stretch", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_swapUV(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_swapUV",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_tile() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ProBuilder::AutoUnwrapSettings,
+    > {
+        let __cordl_ret: crate::UnityEngine::ProBuilder::AutoUnwrapSettings = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_tile", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_useWorldSpace(&mut self) -> quest_hook::libil2cpp::Result<bool> {

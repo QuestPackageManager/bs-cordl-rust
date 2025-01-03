@@ -36,6 +36,15 @@ impl crate::BGLib::UnityExtension::BezierCurves::GenericBezierCurveData {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
+    pub fn RotatePointAroundPivot(
+        point: crate::UnityEngine::Vector3,
+        pivot: crate::UnityEngine::Vector3,
+        rot: crate::UnityEngine::Quaternion,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RotatePointAroundPivot", (point, pivot, rot))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn RotatePointsAroundPivot(
         &mut self,
         pivot: crate::UnityEngine::Vector3,

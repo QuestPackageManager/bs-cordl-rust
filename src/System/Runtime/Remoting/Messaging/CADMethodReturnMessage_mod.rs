@@ -30,6 +30,20 @@ for crate::System::Runtime::Remoting::Messaging::CADMethodReturnMessage {
 }
 #[cfg(feature = "System+Runtime+Remoting+Messaging+CADMethodReturnMessage")]
 impl crate::System::Runtime::Remoting::Messaging::CADMethodReturnMessage {
+    pub fn Create(
+        callMsg: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Messaging::IMessage,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Messaging::CADMethodReturnMessage,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Messaging::CADMethodReturnMessage,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Create", (callMsg))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetArgs(
         &mut self,
         args: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,

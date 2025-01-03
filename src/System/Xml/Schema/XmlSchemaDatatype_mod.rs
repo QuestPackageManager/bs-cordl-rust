@@ -35,6 +35,17 @@ impl crate::System::Xml::Schema::XmlSchemaDatatype {
         let __cordl_ret: i32 = __cordl_object.invoke("Compare", (value1, value2))?;
         Ok(__cordl_ret.into())
     }
+    pub fn ConcatenatedToString(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ConcatenatedToString", (value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn DeriveByList(
         &mut self,
         schemaType: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaType>,
@@ -66,6 +77,55 @@ impl crate::System::Xml::Schema::XmlSchemaDatatype {
             crate::System::Xml::Schema::XmlSchemaDatatype,
         > = __cordl_object
             .invoke("DeriveByRestriction", (facets, nameTable, schemaType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DeriveByUnion(
+        types: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Xml::Schema::XmlSchemaSimpleType,
+            >,
+        >,
+        schemaType: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaType>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaDatatype>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaDatatype,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DeriveByUnion", (types, schemaType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromXdrName(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaDatatype>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaDatatype,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromXdrName", (name))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromXmlTokenizedType(
+        token: crate::System::Xml::XmlTokenizedType,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaDatatype>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaDatatype,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromXmlTokenizedType", (token))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromXmlTokenizedTypeXsd(
+        token: crate::System::Xml::XmlTokenizedType,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaDatatype>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaDatatype,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromXmlTokenizedTypeXsd", (token))?;
         Ok(__cordl_ret.into())
     }
     pub fn IsComparable(
@@ -206,6 +266,19 @@ impl crate::System::Xml::Schema::XmlSchemaDatatype {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("VerifySchemaValid", (notations, caller))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn XdrCanonizeUri(
+        uri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
+        schemaNames: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaNames>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("XdrCanonizeUri", (uri, nameTable, schemaNames))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

@@ -26,7 +26,32 @@ for crate::GlobalNamespace::OVRMixedRealityCaptureConfigurationExtensions {
     }
 }
 #[cfg(feature = "OVRMixedRealityCaptureConfigurationExtensions")]
-impl crate::GlobalNamespace::OVRMixedRealityCaptureConfigurationExtensions {}
+impl crate::GlobalNamespace::OVRMixedRealityCaptureConfigurationExtensions {
+    pub fn ApplyTo(
+        dest: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
+        >,
+        source: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ApplyTo", (dest, source))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReadFrom(
+        dest: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
+        >,
+        source: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadFrom", (dest, source))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "OVRMixedRealityCaptureConfigurationExtensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OVRMixedRealityCaptureConfigurationExtensions {

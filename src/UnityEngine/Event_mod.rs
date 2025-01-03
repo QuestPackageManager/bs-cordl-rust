@@ -66,11 +66,44 @@ impl crate::UnityEngine::Event {
             .invoke("Finalize", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetDoubleClickTime() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetDoubleClickTime", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Internal_Create(
+        displayIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Internal_Create", (displayIndex))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Internal_Destroy(
+        ptr: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Internal_Destroy", (ptr))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Internal_MakeMasterEventCurrent(
+        displayIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Internal_MakeMasterEventCurrent", (displayIndex))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Internal_SetNativeEvent(
+        ptr: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Internal_SetNativeEvent", (ptr))?;
         Ok(__cordl_ret.into())
     }
     pub fn Internal_Use(
@@ -81,6 +114,15 @@ impl crate::UnityEngine::Event {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Internal_Use", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn KeyboardEvent(
+        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Event>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Event> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("KeyboardEvent", (key))?;
         Ok(__cordl_ret.into())
     }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -98,6 +140,13 @@ impl crate::UnityEngine::Event {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (displayIndex))?;
         Ok(__cordl_object.into())
+    }
+    pub fn PopEvent(
+        outEvent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Event>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PopEvent", (outEvent))?;
+        Ok(__cordl_ret.into())
     }
     pub fn ToString(
         &mut self,
@@ -172,6 +221,13 @@ impl crate::UnityEngine::Event {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("get_commandName", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_current() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Event>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Event> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_current", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_delta(
@@ -369,6 +425,13 @@ impl crate::UnityEngine::Event {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_commandName", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_current(
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::Event>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_current", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_delta(

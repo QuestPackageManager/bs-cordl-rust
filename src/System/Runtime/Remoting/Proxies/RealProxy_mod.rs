@@ -93,6 +93,13 @@ impl crate::System::Runtime::Remoting::Proxies::RealProxy {
         > = __cordl_object.invoke("GetTransparentProxy", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn InternalGetProxyType(
+        transparentProxy: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InternalGetProxyType", (transparentProxy))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn InternalGetTransparentProxy(
         &mut self,
         className: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -161,6 +168,46 @@ impl crate::System::Runtime::Remoting::Proxies::RealProxy {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (classToProxy, stub, stubData))?;
         Ok(__cordl_object.into())
+    }
+    pub fn PrivateInvoke(
+        rp: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Proxies::RealProxy,
+        >,
+        msg: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Messaging::IMessage,
+        >,
+        exc: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Exception>,
+        out_args: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PrivateInvoke", (rp, msg, exc, out_args))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ProcessResponse(
+        mrm: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Messaging::IMethodReturnMessage,
+        >,
+        call: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Messaging::MonoMethodMessage,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ProcessResponse", (mrm, call))?;
+        Ok(__cordl_ret.into())
     }
     pub fn SetTargetDomain(
         &mut self,

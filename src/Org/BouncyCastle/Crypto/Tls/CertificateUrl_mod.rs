@@ -80,6 +80,20 @@ impl crate::Org::BouncyCastle::Crypto::Tls::CertificateUrl {
             .invoke("get_UrlAndHashList", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn parse(
+        context: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
+        >,
+        input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::CertificateUrl>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::CertificateUrl,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("parse", (context, input))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+CertificateUrl")]
 impl quest_hook::libil2cpp::ObjectType

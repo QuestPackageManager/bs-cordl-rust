@@ -27,6 +27,34 @@ impl std::ops::DerefMut for crate::GlobalNamespace::ProcessPort {
 }
 #[cfg(feature = "ProcessPort")]
 impl crate::GlobalNamespace::ProcessPort {
+    pub fn GetProcessesByPort(
+        targetPort: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::GlobalNamespace::ProcessPort,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::GlobalNamespace::ProcessPort,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetProcessesByPort", (targetPort))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LookupProcess(
+        pid: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LookupProcess", (pid))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

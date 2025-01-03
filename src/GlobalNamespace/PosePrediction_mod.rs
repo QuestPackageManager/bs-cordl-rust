@@ -24,12 +24,55 @@ impl std::ops::DerefMut for crate::GlobalNamespace::PosePrediction {
 }
 #[cfg(feature = "PosePrediction")]
 impl crate::GlobalNamespace::PosePrediction {
+    pub fn InterpolatePose(
+        prev: crate::UnityEngine::Pose,
+        curr: crate::UnityEngine::Pose,
+        t: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Pose> {
+        let __cordl_ret: crate::UnityEngine::Pose = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InterpolatePose", (prev, curr, t))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InterpolatePoseSerializable(
+        a: crate::GlobalNamespace::PoseSerializable,
+        b: crate::GlobalNamespace::PoseSerializable,
+        t: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::PoseSerializable> {
+        let __cordl_ret: crate::GlobalNamespace::PoseSerializable = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InterpolatePoseSerializable", (a, b, t))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
+    }
+    pub fn PredictPose(
+        prev: crate::UnityEngine::Pose,
+        prevTime: i64,
+        curr: crate::UnityEngine::Pose,
+        currTime: i64,
+        _cordl_time: i64,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Pose> {
+        let __cordl_ret: crate::UnityEngine::Pose = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PredictPose", (prev, prevTime, curr, currTime, _cordl_time))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn PredictPoseSerializable(
+        prev: crate::GlobalNamespace::PoseSerializable,
+        prevTime: i64,
+        curr: crate::GlobalNamespace::PoseSerializable,
+        currTime: i64,
+        _cordl_time: i64,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::PoseSerializable> {
+        let __cordl_ret: crate::GlobalNamespace::PoseSerializable = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "PredictPoseSerializable",
+                (prev, prevTime, curr, currTime, _cordl_time),
+            )?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,

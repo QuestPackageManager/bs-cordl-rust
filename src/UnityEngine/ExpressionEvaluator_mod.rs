@@ -36,6 +36,179 @@ impl crate::UnityEngine::ExpressionEvaluator {
     pub type PcgRandom = crate::UnityEngine::ExpressionEvaluator_PcgRandom;
     #[cfg(feature = "UnityEngine+ExpressionEvaluator+__c")]
     pub type __c = crate::UnityEngine::ExpressionEvaluator___c;
+    pub fn Evaluate<T>(
+        expression: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::ByRefMut<T>,
+        delayed: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::UnityEngine::ExpressionEvaluator_Expression,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Evaluate", (expression, value, delayed))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EvaluateDouble(
+        tokens: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+        value: quest_hook::libil2cpp::ByRefMut<f64>,
+        index: i32,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EvaluateDouble", (tokens, value, index, count))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EvaluateOp(
+        values: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f64>>,
+        op: crate::UnityEngine::ExpressionEvaluator_Op,
+        index: i32,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_ret: f64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EvaluateOp", (values, op, index, count))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EvaluateTokens<T>(
+        tokens: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+        value: quest_hook::libil2cpp::ByRefMut<T>,
+        index: i32,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EvaluateTokens", (tokens, value, index, count))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ExpressionToTokens(
+        expression: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        hasVariables: quest_hook::libil2cpp::ByRefMut<bool>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ExpressionToTokens", (expression, hasVariables))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FixUnaryOperators(
+        tokens: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FixUnaryOperators", (tokens))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InfixToRPN(
+        tokens: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InfixToRPN", (tokens))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsCommand(
+        token: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsCommand", (token))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsDelayedFunction(
+        token: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsDelayedFunction", (token))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsOperator(
+        token: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsOperator", (token))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsVariable(
+        token: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsVariable", (token))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn NeedToPop(
+        operatorStack: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Stack_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
+        >,
+        newOperator: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ExpressionEvaluator_Operator,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("NeedToPop", (operatorStack, newOperator))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn PreFormatExpression(
+        expression: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PreFormatExpression", (expression))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TokenToOperator(
+        token: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ExpressionEvaluator_Operator>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ExpressionEvaluator_Operator,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TokenToOperator", (token))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryParse<T>(
+        expression: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        result: quest_hook::libil2cpp::ByRefMut<T>,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryParse", (expression, result))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+ExpressionEvaluator")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ExpressionEvaluator {
@@ -262,6 +435,11 @@ impl crate::UnityEngine::ExpressionEvaluator_PcgRandom {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn RotateRight(v: u32, rot: i32) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RotateRight", (v, rot))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Step(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -270,6 +448,11 @@ impl crate::UnityEngine::ExpressionEvaluator_PcgRandom {
             "Step",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn XshRr(s: u64) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("XshRr", (s))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

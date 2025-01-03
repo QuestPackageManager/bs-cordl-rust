@@ -75,6 +75,24 @@ impl<
         let __cordl_ret: bool = __cordl_object.invoke("Add", (key, value))?;
         Ok(__cordl_ret.into())
     }
+    pub fn CompareEntries(
+        a: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ExpiringDictionary_2_Entry<TKey, TValue>,
+        >,
+        b: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ExpiringDictionary_2_Entry<TKey, TValue>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32>
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CompareEntries", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ContainsKey(&mut self, key: TKey) -> quest_hook::libil2cpp::Result<bool>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type

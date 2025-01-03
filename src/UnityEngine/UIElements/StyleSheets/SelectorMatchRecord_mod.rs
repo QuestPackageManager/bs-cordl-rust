@@ -25,6 +25,14 @@ for crate::UnityEngine::UIElements::StyleSheets::SelectorMatchRecord {
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+SelectorMatchRecord")]
 impl crate::UnityEngine::UIElements::StyleSheets::SelectorMatchRecord {
+    pub fn Compare(
+        a: crate::UnityEngine::UIElements::StyleSheets::SelectorMatchRecord,
+        b: crate::UnityEngine::UIElements::StyleSheets::SelectorMatchRecord,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Compare", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
         sheet: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheet>,

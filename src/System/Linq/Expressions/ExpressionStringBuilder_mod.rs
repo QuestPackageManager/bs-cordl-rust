@@ -30,6 +30,17 @@ impl std::ops::DerefMut for crate::System::Linq::Expressions::ExpressionStringBu
 }
 #[cfg(feature = "System+Linq+Expressions+ExpressionStringBuilder")]
 impl crate::System::Linq::Expressions::ExpressionStringBuilder {
+    pub fn CatchBlockToString(
+        node: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::CatchBlock>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CatchBlockToString", (node))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn DumpLabel(
         &mut self,
         target: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::LabelTarget>,
@@ -39,6 +50,17 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DumpLabel", (target))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ExpressionToString(
+        node: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ExpressionToString", (node))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetId(
@@ -71,6 +93,13 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetParamId", (p))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsBool(
+        node: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsBool", (node))?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

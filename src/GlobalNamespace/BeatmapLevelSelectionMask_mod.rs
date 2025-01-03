@@ -24,6 +24,16 @@ for crate::GlobalNamespace::BeatmapLevelSelectionMask {
 }
 #[cfg(feature = "BeatmapLevelSelectionMask")]
 impl crate::GlobalNamespace::BeatmapLevelSelectionMask {
+    pub fn Deserialize(
+        reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
+        version: u32,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::BeatmapLevelSelectionMask,
+    > {
+        let __cordl_ret: crate::GlobalNamespace::BeatmapLevelSelectionMask = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Deserialize", (reader, version))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Equals_BeatmapLevelSelectionMask1(
         &mut self,
         other: crate::GlobalNamespace::BeatmapLevelSelectionMask,
@@ -77,6 +87,22 @@ impl crate::GlobalNamespace::BeatmapLevelSelectionMask {
             ".ctor",
             (difficulties, modifiers, songPacks),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        l: crate::GlobalNamespace::BeatmapLevelSelectionMask,
+        r: crate::GlobalNamespace::BeatmapLevelSelectionMask,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (l, r))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        l: crate::GlobalNamespace::BeatmapLevelSelectionMask,
+        r: crate::GlobalNamespace::BeatmapLevelSelectionMask,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (l, r))?;
         Ok(__cordl_ret.into())
     }
 }

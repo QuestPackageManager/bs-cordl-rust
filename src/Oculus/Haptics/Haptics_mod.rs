@@ -41,6 +41,11 @@ impl crate::Oculus::Haptics::Haptics {
             .invoke("Dispose", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn EnsureInitialized() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EnsureInitialized", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetAmplitudeHapticPlayer(
         &mut self,
         playerId: i32,
@@ -95,6 +100,16 @@ impl crate::Oculus::Haptics::Haptics {
             .invoke("IsHapticPlayerLooping", (playerId))?;
         Ok(__cordl_ret.into())
     }
+    pub fn IsInitialized() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsInitialized", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsSupportedPlatform() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsSupportedPlatform", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn LoadClip(
         &mut self,
         clipJson: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -115,6 +130,17 @@ impl crate::Oculus::Haptics::Haptics {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("LoopHapticPlayer", (playerId, enabled))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MapPriority(
+        input: u32,
+        inMin: i32,
+        inMax: i32,
+        outMin: i32,
+        outMax: i32,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MapPriority", (input, inMin, inMax, outMin, outMax))?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -221,6 +247,13 @@ impl crate::Oculus::Haptics::Haptics {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Instance() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Oculus::Haptics::Haptics>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Haptics::Haptics> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_Instance", ())?;
         Ok(__cordl_ret.into())
     }
 }

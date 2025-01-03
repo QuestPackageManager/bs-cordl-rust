@@ -47,7 +47,25 @@ impl crate::Org::BouncyCastle::Asn1::DerGenerator {
             .invoke_void(".ctor", (outStream, tagNo, isExplicit))?;
         Ok(__cordl_object.into())
     }
-    pub fn WriteDerEncoded(
+    pub fn WriteDerEncoded_Stream_i32_Il2CppArray0(
+        outStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+        tag: i32,
+        bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WriteDerEncoded", (outStream, tag, bytes))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WriteDerEncoded_Stream_i32_Stream2(
+        outStr: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+        tag: i32,
+        inStr: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WriteDerEncoded", (outStr, tag, inStr))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WriteDerEncoded_i32_Il2CppArray1(
         &mut self,
         tag: i32,
         bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -57,6 +75,14 @@ impl crate::Org::BouncyCastle::Asn1::DerGenerator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WriteDerEncoded", (tag, bytes))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WriteLength(
+        outStr: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WriteLength", (outStr, length))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_Stream0(

@@ -38,6 +38,20 @@ impl crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore {
         feature = "System+Runtime+CompilerServices+AsyncMethodBuilderCore+__c__DisplayClass5_0"
     )]
     pub type __c__DisplayClass5_0 = crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore___c__DisplayClass5_0;
+    pub fn CreateContinuationWrapper(
+        continuation: quest_hook::libil2cpp::Gc<crate::System::Action>,
+        invokeAction: quest_hook::libil2cpp::Gc<crate::System::Action>,
+        innerTask: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Action>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Action> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CreateContinuationWrapper",
+                (continuation, invokeAction, innerTask),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetCompletionAction(
         &mut self,
         taskForTracing: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -96,6 +110,27 @@ impl crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore {
             "SetStateMachine",
             (stateMachine),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ThrowAsync(
+        exception: quest_hook::libil2cpp::Gc<crate::System::Exception>,
+        targetContext: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::SynchronizationContext,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ThrowAsync", (exception, targetContext))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryGetContinuationTask(
+        action: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryGetContinuationTask", (action))?;
         Ok(__cordl_ret.into())
     }
 }
@@ -219,6 +254,13 @@ for crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore_MoveNextRun
 }
 #[cfg(feature = "System+Runtime+CompilerServices+AsyncMethodBuilderCore+MoveNextRunner")]
 impl crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore_MoveNextRunner {
+    pub fn InvokeMoveNext(
+        stateMachine: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InvokeMoveNext", (stateMachine))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         context: quest_hook::libil2cpp::Gc<crate::System::Threading::ExecutionContext>,
         stateMachine: quest_hook::libil2cpp::Gc<

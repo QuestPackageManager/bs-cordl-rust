@@ -26,6 +26,53 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilit
 impl crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities {
     #[cfg(feature = "Org+BouncyCastle+Math+EC+Endo+EndoUtilities+MapPointCallback")]
     pub type MapPointCallback = crate::Org::BouncyCastle::Math::EC::Endo::EndoUtilities_MapPointCallback;
+    pub fn CalculateB(
+        k: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+        g: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+        t: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::BigInteger,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CalculateB", (k, g, t))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DecomposeScalar(
+        p: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::EC::Endo::ScalarSplitParameters,
+        >,
+        k: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::Org::BouncyCastle::Math::BigInteger,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::Org::BouncyCastle::Math::BigInteger,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DecomposeScalar", (p, k))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MapPoint(
+        endomorphism: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::EC::Endo::ECEndomorphism,
+        >,
+        p: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::EC::ECPoint,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MapPoint", (endomorphism, p))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

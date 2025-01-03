@@ -29,6 +29,21 @@ impl std::ops::DerefMut for crate::UnityEngine::Timeline::ParticleControlPlayabl
 #[cfg(feature = "UnityEngine+Timeline+ParticleControlPlayable")]
 impl crate::UnityEngine::Timeline::ParticleControlPlayable {
     pub const kUnsetTime: f32 = 340282350000000000000000000000000000000f32;
+    pub fn Create(
+        graph: crate::UnityEngine::Playables::PlayableGraph,
+        component: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
+        randomSeed: u32,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Playables::ScriptPlayable_1<
+            *mut crate::UnityEngine::Timeline::ParticleControlPlayable,
+        >,
+    > {
+        let __cordl_ret: crate::UnityEngine::Playables::ScriptPlayable_1<
+            *mut crate::UnityEngine::Timeline::ParticleControlPlayable,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (graph, component, randomSeed))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Initialize(
         &mut self,
         ps: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
@@ -82,6 +97,14 @@ impl crate::UnityEngine::Timeline::ParticleControlPlayable {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("PrepareFrame", (playable, data))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetRandomSeed(
+        particleSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
+        randomSeed: u32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetRandomSeed", (particleSystem, randomSeed))?;
         Ok(__cordl_ret.into())
     }
     pub fn Simulate(

@@ -156,6 +156,14 @@ impl crate::System::AppDomain {
         > = __cordl_object.invoke("GetMarshalledDomainObjRef", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetProcessGuid() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetProcessGuid", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn InitializeLifetimeService(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -167,6 +175,108 @@ impl crate::System::AppDomain {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
         > = __cordl_object.invoke("InitializeLifetimeService", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InternalGetContext() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Contexts::Context>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Contexts::Context,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InternalGetContext", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InternalGetDefaultContext() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Contexts::Context>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Contexts::Context,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InternalGetDefaultContext", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InternalGetProcessGuid(
+        newguid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InternalGetProcessGuid", (newguid))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InternalIsFinalizingForUnload(
+        domain_id: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InternalIsFinalizingForUnload", (domain_id))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InternalPopDomainRef() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InternalPopDomainRef", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InternalPushDomainRefByID(
+        domain_id: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InternalPushDomainRefByID", (domain_id))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InternalSetContext(
+        context: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Contexts::Context,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Contexts::Context>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Contexts::Context,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InternalSetContext", (context))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InternalSetDomain(
+        context: quest_hook::libil2cpp::Gc<crate::System::AppDomain>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::AppDomain>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::AppDomain> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InternalSetDomain", (context))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InternalSetDomainByID(
+        domain_id: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::AppDomain>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::AppDomain> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InternalSetDomainByID", (domain_id))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InvokeInDomainByID(
+        domain_id: i32,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        args: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InvokeInDomainByID", (domain_id, method, obj, args))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsAppXModel() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsAppXModel", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn IsFinalizingForUnload(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -323,6 +433,13 @@ impl crate::System::AppDomain {
             .invoke("add_UnhandledException", (value))?;
         Ok(__cordl_ret.into())
     }
+    pub fn getCurDomain() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::AppDomain>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::AppDomain> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("getCurDomain", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn getDomainID(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -341,6 +458,13 @@ impl crate::System::AppDomain {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("getFriendlyName", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_CurrentDomain() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::AppDomain>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::AppDomain> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_CurrentDomain", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_IsFullyTrusted(&mut self) -> quest_hook::libil2cpp::Result<bool> {

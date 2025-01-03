@@ -23,7 +23,26 @@ impl std::ops::DerefMut for crate::System::Threading::Tasks::TaskExtensions {
     }
 }
 #[cfg(feature = "System+Threading+Tasks+TaskExtensions")]
-impl crate::System::Threading::Tasks::TaskExtensions {}
+impl crate::System::Threading::Tasks::TaskExtensions {
+    pub fn Unwrap<TResult>(
+        task: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut crate::System::Threading::Tasks::Task_1<TResult>,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<TResult>>,
+    >
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<TResult>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Unwrap", (task))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Threading+Tasks+TaskExtensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Threading::Tasks::TaskExtensions {

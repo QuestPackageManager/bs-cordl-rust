@@ -27,6 +27,15 @@ impl std::ops::DerefMut for crate::GlobalNamespace::PlaybackScreenshotRecorder {
 }
 #[cfg(feature = "PlaybackScreenshotRecorder")]
 impl crate::GlobalNamespace::PlaybackScreenshotRecorder {
+    pub fn ConvertRenderTexture(
+        renderTexture: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ConvertRenderTexture", (renderTexture))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn HandleTexturesReady(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

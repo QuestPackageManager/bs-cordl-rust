@@ -262,6 +262,19 @@ impl crate::System::Data::Index {
             .invoke("FireResetEvent", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetAllFields(
+        columns: quest_hook::libil2cpp::Gc<crate::System::Data::DataColumnCollection>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::System::Data::IndexField>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::System::Data::IndexField>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetAllFields", (columns))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetChangeAction(
         &mut self,
         oldState: crate::System::Data::DataViewRowState,
@@ -322,6 +335,13 @@ impl crate::System::Data::Index {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetRecord", (recordIndex))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetReplaceAction(
+        oldState: crate::System::Data::DataViewRowState,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetReplaceAction", (oldState))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetRow(
@@ -402,6 +422,18 @@ impl crate::System::Data::Index {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GetUniqueKeyValues", (list, curNodeId))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IndexOfReference<T>(
+        list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
+        item: T,
+    ) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IndexOfReference", (list, item))?;
         Ok(__cordl_ret.into())
     }
     pub fn InitRecords(

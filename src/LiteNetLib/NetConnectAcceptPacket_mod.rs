@@ -28,6 +28,27 @@ impl std::ops::DerefMut for crate::LiteNetLib::NetConnectAcceptPacket {
 #[cfg(feature = "LiteNetLib+NetConnectAcceptPacket")]
 impl crate::LiteNetLib::NetConnectAcceptPacket {
     pub const Size: i32 = 11i32;
+    pub fn FromData(
+        packet: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacket>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetConnectAcceptPacket>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::LiteNetLib::NetConnectAcceptPacket,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("FromData", (packet))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Make(
+        connectId: i64,
+        connectNum: u8,
+        reusedPeer: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacket>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacket> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Make", (connectId, connectNum, reusedPeer))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         connectionId: i64,
         connectionNumber: u8,

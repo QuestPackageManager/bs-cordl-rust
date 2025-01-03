@@ -59,6 +59,19 @@ impl crate::System::Linq::Expressions::Interpreter::DecrementInstruction {
         feature = "System+Linq+Expressions+Interpreter+DecrementInstruction+DecrementUInt64"
     )]
     pub type DecrementUInt64 = crate::GlobalNamespace::DecrementInstruction_DecrementUInt64;
+    pub fn Create(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::Instruction,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::Instruction,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

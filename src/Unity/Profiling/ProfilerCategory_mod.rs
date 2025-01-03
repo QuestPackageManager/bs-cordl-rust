@@ -43,6 +43,20 @@ impl crate::Unity::Profiling::ProfilerCategory {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_Internal() -> quest_hook::libil2cpp::Result<
+        crate::Unity::Profiling::ProfilerCategory,
+    > {
+        let __cordl_ret: crate::Unity::Profiling::ProfilerCategory = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_Internal", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Memory() -> quest_hook::libil2cpp::Result<
+        crate::Unity::Profiling::ProfilerCategory,
+    > {
+        let __cordl_ret: crate::Unity::Profiling::ProfilerCategory = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_Memory", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_Name(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -51,6 +65,27 @@ impl crate::Unity::Profiling::ProfilerCategory {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_Name", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Render() -> quest_hook::libil2cpp::Result<
+        crate::Unity::Profiling::ProfilerCategory,
+    > {
+        let __cordl_ret: crate::Unity::Profiling::ProfilerCategory = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_Render", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Scripts() -> quest_hook::libil2cpp::Result<
+        crate::Unity::Profiling::ProfilerCategory,
+    > {
+        let __cordl_ret: crate::Unity::Profiling::ProfilerCategory = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_Scripts", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit(
+        category: crate::Unity::Profiling::ProfilerCategory,
+    ) -> quest_hook::libil2cpp::Result<u16> {
+        let __cordl_ret: u16 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (category))?;
         Ok(__cordl_ret.into())
     }
 }

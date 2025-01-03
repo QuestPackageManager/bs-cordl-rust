@@ -35,4 +35,11 @@ impl crate::BeatSaber::RecPlay::PoseNoise {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn SampleLemniscateOfBernoulli(
+        _cordl_time: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SampleLemniscateOfBernoulli", (_cordl_time))?;
+        Ok(__cordl_ret.into())
+    }
 }

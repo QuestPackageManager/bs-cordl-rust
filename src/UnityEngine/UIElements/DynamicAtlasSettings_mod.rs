@@ -73,6 +73,21 @@ impl crate::UnityEngine::UIElements::DynamicAtlasSettings {
         > = __cordl_object.invoke("get_customFilter", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_defaultFilters() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::DynamicAtlasFilters,
+    > {
+        let __cordl_ret: crate::UnityEngine::UIElements::DynamicAtlasFilters = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_defaultFilters", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_defaults() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DynamicAtlasSettings>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::DynamicAtlasSettings,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_defaults", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_maxAtlasSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

@@ -23,7 +23,122 @@ impl std::ops::DerefMut for crate::UnityEngine::GUILayout {
     }
 }
 #[cfg(feature = "UnityEngine+GUILayout")]
-impl crate::UnityEngine::GUILayout {}
+impl crate::UnityEngine::GUILayout {
+    pub fn BeginArea_GUIContent_GUIStyle1(
+        screenRect: crate::UnityEngine::Rect,
+        content: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIContent>,
+        style: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BeginArea", (screenRect, content, style))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn BeginArea_Rect0(
+        screenRect: crate::UnityEngine::Rect,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BeginArea", (screenRect))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn BeginHorizontal_GUIContent_GUIStyle_Il2CppArray1(
+        content: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIContent>,
+        style: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle>,
+        options: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GUILayoutOption>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BeginHorizontal", (content, style, options))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn BeginHorizontal_Il2CppArray0(
+        options: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GUILayoutOption>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BeginHorizontal", (options))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn BeginVertical_GUIContent_GUIStyle_Il2CppArray1(
+        content: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIContent>,
+        style: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle>,
+        options: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GUILayoutOption>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BeginVertical", (content, style, options))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn BeginVertical_Il2CppArray0(
+        options: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GUILayoutOption>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BeginVertical", (options))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DoLabel(
+        content: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIContent>,
+        style: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle>,
+        options: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GUILayoutOption>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DoLabel", (content, style, options))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EndArea() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EndArea", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EndVertical() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EndVertical", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Height(
+        height: f32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GUILayoutOption>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::GUILayoutOption,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Height", (height))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Label(
+        text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        options: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GUILayoutOption>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Label", (text, options))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Space(
+        pixels: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Space", (pixels))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Width(
+        width: f32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GUILayoutOption>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::GUILayoutOption,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Width", (width))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+GUILayout")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::GUILayout {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

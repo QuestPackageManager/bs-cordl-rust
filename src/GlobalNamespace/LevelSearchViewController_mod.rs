@@ -92,6 +92,29 @@ impl crate::GlobalNamespace::LevelSearchViewController {
         let __cordl_ret: bool = __cordl_object.invoke("IsFilteringPlayCounts", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn LocalizedLevelFilterParamsDescription(
+        filter: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::LevelFilter>,
+        songPackMasksModel: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::SongPackMasksModel,
+        >,
+        characteristics: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
+            >,
+        >,
+        isPlayerSensitivityForced: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "LocalizedLevelFilterParamsDescription",
+                (filter, songPackMasksModel, characteristics, isPlayerSensitivityForced),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -218,6 +241,17 @@ impl crate::GlobalNamespace::LevelSearchViewController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("<DidActivate>b__30_1", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _LocalizedLevelFilterParamsDescription_g__Append_37_0(
+        sb: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "<LocalizedLevelFilterParamsDescription>g__Append|37_0",
+                (sb, value),
+            )?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

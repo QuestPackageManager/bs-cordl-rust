@@ -95,6 +95,13 @@ impl crate::GlobalNamespace::BasicBeatmapEventData {
             .invoke("SetFirstSameTypeIndex", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn SubtypeIdentifier(
+        _cordl_type: crate::GlobalNamespace::BasicBeatmapEventType,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SubtypeIdentifier", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
         _cordl_time: f32,

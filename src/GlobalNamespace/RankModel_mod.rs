@@ -25,6 +25,30 @@ impl std::ops::DerefMut for crate::GlobalNamespace::RankModel {
 impl crate::GlobalNamespace::RankModel {
     #[cfg(feature = "RankModel+Rank")]
     pub type Rank = crate::GlobalNamespace::RankModel_Rank;
+    pub fn GetRankForScore(
+        multipliedScore: i32,
+        modifiedScore: i32,
+        maxMultipliedScore: i32,
+        maxModifiedScore: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::RankModel_Rank> {
+        let __cordl_ret: crate::GlobalNamespace::RankModel_Rank = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetRankForScore",
+                (multipliedScore, modifiedScore, maxMultipliedScore, maxModifiedScore),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetRankName(
+        rank: crate::GlobalNamespace::RankModel_Rank,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetRankName", (rank))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "RankModel")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::RankModel {

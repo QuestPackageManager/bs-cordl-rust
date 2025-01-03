@@ -161,6 +161,30 @@ impl crate::Org::BouncyCastle::Crypto::Modes::OcbBlockCipher {
             .invoke_void(".ctor", (hashCipher, mainCipher))?;
         Ok(__cordl_object.into())
     }
+    pub fn OCB_double(
+        block: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("OCB_double", (block))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn OCB_extend(
+        block: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        pos: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("OCB_extend", (block, pos))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn OCB_ntz(x: i64) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("OCB_ntz", (x))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ProcessAadByte(
         &mut self,
         input: u8,
@@ -266,6 +290,14 @@ impl crate::Org::BouncyCastle::Crypto::Modes::OcbBlockCipher {
             .invoke("Reset", (clearMac))?;
         Ok(__cordl_ret.into())
     }
+    pub fn ShiftLeft(
+        block: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        output: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ShiftLeft", (block, output))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn UpdateHASH(
         &mut self,
         LSub: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -275,6 +307,14 @@ impl crate::Org::BouncyCastle::Crypto::Modes::OcbBlockCipher {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateHASH", (LSub))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Xor(
+        block: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        val: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Xor", (block, val))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

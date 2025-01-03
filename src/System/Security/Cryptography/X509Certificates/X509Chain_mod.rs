@@ -40,6 +40,16 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Chain {
         let __cordl_ret: bool = __cordl_object.invoke("Build", (certificate))?;
         Ok(__cordl_ret.into())
     }
+    pub fn Create() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509Chain,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509Chain,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Create", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Dispose_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

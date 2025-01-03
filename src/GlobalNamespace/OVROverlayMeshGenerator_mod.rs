@@ -59,6 +59,138 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
             .invoke("Awake", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn BuildCube(
+        verts: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
+        >,
+        uv: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector2>,
+        >,
+        triangles: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<i32>,
+        >,
+        position: crate::UnityEngine::Vector3,
+        rotation: crate::UnityEngine::Quaternion,
+        scale: crate::UnityEngine::Vector3,
+        worldScale: f32,
+        subQuads: i32,
+        expand_coef: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "BuildCube",
+                (
+                    verts,
+                    uv,
+                    triangles,
+                    position,
+                    rotation,
+                    scale,
+                    worldScale,
+                    subQuads,
+                    expand_coef,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn BuildHemicylinder(
+        verts: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
+        >,
+        uv: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector2>,
+        >,
+        triangles: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<i32>,
+        >,
+        scale: crate::UnityEngine::Vector3,
+        rect: crate::UnityEngine::Rect,
+        longitudes: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "BuildHemicylinder",
+                (verts, uv, triangles, scale, rect, longitudes),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn BuildQuad(
+        verts: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
+        >,
+        uv: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector2>,
+        >,
+        triangles: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<i32>,
+        >,
+        rect: crate::UnityEngine::Rect,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BuildQuad", (verts, uv, triangles, rect))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn BuildSphere(
+        verts: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
+        >,
+        uv: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector2>,
+        >,
+        triangles: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<i32>,
+        >,
+        position: crate::UnityEngine::Vector3,
+        rotation: crate::UnityEngine::Quaternion,
+        scale: crate::UnityEngine::Vector3,
+        rect: crate::UnityEngine::Rect,
+        worldScale: f32,
+        latitudes: i32,
+        longitudes: i32,
+        expand_coef: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "BuildSphere",
+                (
+                    verts,
+                    uv,
+                    triangles,
+                    position,
+                    rotation,
+                    scale,
+                    rect,
+                    worldScale,
+                    latitudes,
+                    longitudes,
+                    expand_coef,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GenerateMesh(
+        verts: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
+        >,
+        uvs: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector2>,
+        >,
+        tris: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<i32>,
+        >,
+        shape: crate::GlobalNamespace::OVROverlay_OverlayShape,
+        position: crate::UnityEngine::Vector3,
+        rotation: crate::UnityEngine::Quaternion,
+        scale: crate::UnityEngine::Vector3,
+        rect: crate::UnityEngine::Rect,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GenerateMesh",
+                (verts, uvs, tris, shape, position, rotation, scale, rect),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetBoundingRect(
         &mut self,
         a: crate::UnityEngine::Rect,
@@ -69,6 +201,41 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
         );
         let __cordl_ret: crate::UnityEngine::Rect = __cordl_object
             .invoke("GetBoundingRect", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCubeUV(
+        face: crate::GlobalNamespace::OVROverlayMeshGenerator_CubeFace,
+        sideUV: crate::UnityEngine::Vector2,
+        expand_coef: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCubeUV", (face, sideUV, expand_coef))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCubeVert(
+        face: crate::GlobalNamespace::OVROverlayMeshGenerator_CubeFace,
+        sideUV: crate::UnityEngine::Vector2,
+        expand_coef: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCubeVert", (face, sideUV, expand_coef))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetSphereUV(
+        theta: f32,
+        phi: f32,
+        expand_coef: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSphereUV", (theta, phi, expand_coef))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetSphereVert(
+        theta: f32,
+        phi: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSphereVert", (theta, phi))?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

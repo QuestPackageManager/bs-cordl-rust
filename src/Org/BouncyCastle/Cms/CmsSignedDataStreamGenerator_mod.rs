@@ -331,6 +331,16 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator {
             )?;
         Ok(__cordl_ret.into())
     }
+    pub fn AttachDigestsToOutputStream(
+        digests: quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
+        s: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IO::Stream> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AttachDigestsToOutputStream", (digests, s))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CalculateVersion(
         &mut self,
         contentOid: quest_hook::libil2cpp::Gc<
@@ -419,6 +429,25 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator {
                 "Generate",
                 (outStream, eContentType, encapsulate, dataOutputStream, content),
             )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetSafeOutputStream(
+        s: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IO::Stream> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSafeOutputStream", (s))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetSafeTeeOutputStream(
+        s1: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+        s2: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IO::Stream> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSafeTeeOutputStream", (s1, s2))?;
         Ok(__cordl_ret.into())
     }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -684,6 +713,14 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator_CmsSignedDataOu
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WriteByte", (b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WriteToGenerator(
+        ag: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Generator>,
+        ae: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WriteToGenerator", (ag, ae))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

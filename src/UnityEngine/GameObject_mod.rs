@@ -119,6 +119,55 @@ impl crate::UnityEngine::GameObject {
         let __cordl_ret: bool = __cordl_object.invoke("CompareTag", (tag))?;
         Ok(__cordl_ret.into())
     }
+    pub fn CreatePrimitive(
+        _cordl_type: crate::UnityEngine::PrimitiveType,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreatePrimitive", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Find(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Find", (name))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FindGameObjectWithTag(
+        tag: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FindGameObjectWithTag", (tag))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FindGameObjectsWithTag(
+        tag: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FindGameObjectsWithTag", (tag))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FindWithTag(
+        tag: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FindWithTag", (tag))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetComponentAtIndex_i32_0(
         &mut self,
         index: i32,
@@ -628,6 +677,83 @@ impl crate::UnityEngine::GameObject {
             .invoke("GetComponents", (_cordl_type, results))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetScene(
+        instanceID: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::SceneManagement::Scene> {
+        let __cordl_ret: crate::UnityEngine::SceneManagement::Scene = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetScene", (instanceID))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetScene_Injected(
+        instanceID: i32,
+        ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::SceneManagement::Scene>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetScene_Injected", (instanceID, ret))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InstantiateGameObjects_Injected(
+        sourceInstanceID: i32,
+        newInstanceIDs: crate::System::IntPtr,
+        newTransformInstanceIDs: crate::System::IntPtr,
+        count: i32,
+        destinationScene: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::SceneManagement::Scene,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "InstantiateGameObjects_Injected",
+                (
+                    sourceInstanceID,
+                    newInstanceIDs,
+                    newTransformInstanceIDs,
+                    count,
+                    destinationScene,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InstantiateGameObjects_IntPtr_IntPtr_i32_0(
+        sourceInstanceID: i32,
+        newInstanceIDs: crate::System::IntPtr,
+        newTransformInstanceIDs: crate::System::IntPtr,
+        count: i32,
+        destinationScene: crate::UnityEngine::SceneManagement::Scene,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "InstantiateGameObjects",
+                (
+                    sourceInstanceID,
+                    newInstanceIDs,
+                    newTransformInstanceIDs,
+                    count,
+                    destinationScene,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InstantiateGameObjects_i32_NativeArray_1_NativeArray_1_1(
+        sourceInstanceID: i32,
+        count: i32,
+        newInstanceIDs: crate::Unity::Collections::NativeArray_1<i32>,
+        newTransformInstanceIDs: crate::Unity::Collections::NativeArray_1<i32>,
+        destinationScene: crate::UnityEngine::SceneManagement::Scene,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "InstantiateGameObjects",
+                (
+                    sourceInstanceID,
+                    count,
+                    newInstanceIDs,
+                    newTransformInstanceIDs,
+                    destinationScene,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Internal_AddComponentWithType(
         &mut self,
         componentType: quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -639,6 +765,14 @@ impl crate::UnityEngine::GameObject {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Component> = __cordl_object
             .invoke("Internal_AddComponentWithType", (componentType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Internal_CreateGameObject(
+        _cordl_self: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Internal_CreateGameObject", (_cordl_self, name))?;
         Ok(__cordl_ret.into())
     }
     pub fn New_1() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -798,6 +932,31 @@ impl crate::UnityEngine::GameObject {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetActiveRecursively", (state))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetGameObjectsActive_IntPtr_i32__cordl_bool0(
+        instanceIds: crate::System::IntPtr,
+        instanceCount: i32,
+        active: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetGameObjectsActive", (instanceIds, instanceCount, active))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetGameObjectsActive_NativeArray_1__cordl_bool1(
+        instanceIDs: crate::Unity::Collections::NativeArray_1<i32>,
+        active: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetGameObjectsActive", (instanceIDs, active))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetGameObjectsActive_ReadOnlySpan_1__cordl_bool2(
+        instanceIDs: crate::System::ReadOnlySpan_1<i32>,
+        active: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetGameObjectsActive", (instanceIDs, active))?;
         Ok(__cordl_ret.into())
     }
     pub fn TryGetComponentFastPath(

@@ -28,6 +28,15 @@ impl std::ops::DerefMut for crate::System::Net::FtpMethodInfo {
 }
 #[cfg(feature = "System+Net+FtpMethodInfo")]
 impl crate::System::Net::FtpMethodInfo {
+    pub fn GetMethodInfo(
+        method: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Net::FtpMethodInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::FtpMethodInfo> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetMethodInfo", (method))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn HasFlag(
         &mut self,
         flags: crate::System::Net::FtpMethodFlags,

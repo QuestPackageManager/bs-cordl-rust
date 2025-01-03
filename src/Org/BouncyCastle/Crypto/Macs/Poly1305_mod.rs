@@ -184,6 +184,11 @@ impl crate::Org::BouncyCastle::Crypto::Macs::Poly1305 {
         > = __cordl_object.invoke("get_AlgorithmName", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn mul32x32_64(i1: u32, i2: u32) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("mul32x32_64", (i1, i2))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Macs+Poly1305")]
 impl quest_hook::libil2cpp::ObjectType

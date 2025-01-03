@@ -24,7 +24,19 @@ impl std::ops::DerefMut for crate::HoudiniEngineUnity::Test_HAPI_ParmInfo_Extens
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+Test_HAPI_ParmInfo_Extensions")]
-impl crate::HoudiniEngineUnity::Test_HAPI_ParmInfo_Extensions {}
+impl crate::HoudiniEngineUnity::Test_HAPI_ParmInfo_Extensions {
+    pub fn ToTestObject(
+        _cordl_self: crate::HoudiniEngineUnity::HAPI_ParmInfo,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_HAPI_ParmInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::Test_HAPI_ParmInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToTestObject", (_cordl_self))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "HoudiniEngineUnity+Test_HAPI_ParmInfo_Extensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::HoudiniEngineUnity::Test_HAPI_ParmInfo_Extensions {

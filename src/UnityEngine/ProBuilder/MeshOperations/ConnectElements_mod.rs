@@ -37,6 +37,234 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ConnectElements {
         feature = "UnityEngine+ProBuilder+MeshOperations+ConnectElements+__c__DisplayClass3_0"
     )]
     pub type __c__DisplayClass3_0 = crate::UnityEngine::ProBuilder::MeshOperations::ConnectElements___c__DisplayClass3_0;
+    pub fn ConnectEdgesInFace_List_1_List_1_1(
+        face: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+        edges: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::ProBuilder::WingedEdge,
+            >,
+        >,
+        vertices: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::ProBuilder::Vertex,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::ProBuilder::MeshOperations::ConnectFaceRebuildData,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::ProBuilder::MeshOperations::ConnectFaceRebuildData,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ConnectEdgesInFace", (face, edges, vertices))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ConnectEdgesInFace_WingedEdge_WingedEdge_List_1_0(
+        face: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+        a: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
+        b: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
+        vertices: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::ProBuilder::Vertex,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::ProBuilder::MeshOperations::ConnectFaceRebuildData,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::ProBuilder::MeshOperations::ConnectFaceRebuildData,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ConnectEdgesInFace", (face, a, b, vertices))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ConnectIndexesPerFace_List_1_List_1_Dictionary_2_i32_1(
+        face: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+        indexes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<i32>,
+        >,
+        vertices: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::ProBuilder::Vertex,
+            >,
+        >,
+        lookup: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<i32, i32>,
+        >,
+        sharedIndexOffset: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::ProBuilder::MeshOperations::ConnectFaceRebuildData,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::ProBuilder::MeshOperations::ConnectFaceRebuildData,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ConnectIndexesPerFace",
+                (face, indexes, vertices, lookup, sharedIndexOffset),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ConnectIndexesPerFace_i32_i32_List_1_Dictionary_2_0(
+        face: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+        a: i32,
+        b: i32,
+        vertices: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::ProBuilder::Vertex,
+            >,
+        >,
+        lookup: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<i32, i32>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::ProBuilder::MeshOperations::ConnectFaceRebuildData,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::ProBuilder::MeshOperations::ConnectFaceRebuildData,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ConnectIndexesPerFace", (face, a, b, vertices, lookup))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Connect_IEnumerable_1_0(
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+        faces: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::UnityEngine::ProBuilder::Face,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::ProBuilder::Face>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::ProBuilder::Face>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Connect", (mesh, faces))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Connect_IEnumerable_1_1(
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+        edges: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::UnityEngine::ProBuilder::Edge,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ProBuilder::SimpleTuple_2<
+            *mut quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::UnityEngine::ProBuilder::Face,
+            >,
+            *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::ProBuilder::Edge>,
+        >,
+    > {
+        let __cordl_ret: crate::UnityEngine::ProBuilder::SimpleTuple_2<
+            *mut quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::UnityEngine::ProBuilder::Face,
+            >,
+            *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::ProBuilder::Edge>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Connect", (mesh, edges))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Connect_IEnumerable_1_ByRefMut_ByRefMut__cordl_bool__cordl_bool_HashSet_1_3(
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+        edges: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::UnityEngine::ProBuilder::Edge,
+            >,
+        >,
+        addedFaces: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::UnityEngine::ProBuilder::Face,
+            >,
+        >,
+        connections: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::ProBuilder::Edge>,
+        >,
+        returnFaces: bool,
+        returnEdges: bool,
+        faceMask: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::HashSet_1<
+                *mut crate::UnityEngine::ProBuilder::Face,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ActionResult>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::ActionResult,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "Connect",
+                (
+                    mesh,
+                    edges,
+                    addedFaces,
+                    connections,
+                    returnFaces,
+                    returnEdges,
+                    faceMask,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Connect_IList_1_2(
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+        indexes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<i32>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<i32>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Connect", (mesh, indexes))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InsertVertices(
+        face: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+        edges: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::ProBuilder::WingedEdge,
+            >,
+        >,
+        vertices: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::ProBuilder::Vertex,
+            >,
+        >,
+        data: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::UnityEngine::ProBuilder::MeshOperations::ConnectFaceRebuildData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InsertVertices", (face, edges, vertices, data))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+ConnectElements")]
 impl quest_hook::libil2cpp::ObjectType

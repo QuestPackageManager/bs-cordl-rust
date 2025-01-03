@@ -25,6 +25,15 @@ impl std::ops::DerefMut for crate::System::Globalization::GregorianCalendar {
 }
 #[cfg(feature = "System+Globalization+GregorianCalendar")]
 impl crate::System::Globalization::GregorianCalendar {
+    pub fn GetAbsoluteDate(
+        year: i32,
+        month: i32,
+        day: i32,
+    ) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetAbsoluteDate", (year, month, day))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetDatePart(
         &mut self,
         ticks: i64,
@@ -79,6 +88,15 @@ impl crate::System::Globalization::GregorianCalendar {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetDaysInYear", (year, era))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetDefaultInstance() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Globalization::Calendar>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Globalization::Calendar,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetDefaultInstance", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn GetEra(

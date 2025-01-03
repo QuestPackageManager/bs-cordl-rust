@@ -54,6 +54,20 @@ impl crate::UnityEngine::UIElements::Rotate {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn Initial() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::Rotate,
+    > {
+        let __cordl_ret: crate::UnityEngine::UIElements::Rotate = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Initial", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn None() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::Rotate,
+    > {
+        let __cordl_ret: crate::UnityEngine::UIElements::Rotate = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("None", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ToQuaternion(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
@@ -103,6 +117,22 @@ impl crate::UnityEngine::UIElements::Rotate {
             "get_axis",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        lhs: crate::UnityEngine::UIElements::Rotate,
+        rhs: crate::UnityEngine::UIElements::Rotate,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        lhs: crate::UnityEngine::UIElements::Rotate,
+        rhs: crate::UnityEngine::UIElements::Rotate,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (lhs, rhs))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_angle(

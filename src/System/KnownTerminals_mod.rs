@@ -23,7 +23,32 @@ impl std::ops::DerefMut for crate::System::KnownTerminals {
     }
 }
 #[cfg(feature = "System+KnownTerminals")]
-impl crate::System::KnownTerminals {}
+impl crate::System::KnownTerminals {
+    pub fn get_ansi() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_ansi", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_linux() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_linux", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_xterm() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_xterm", ())?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+KnownTerminals")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::KnownTerminals {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

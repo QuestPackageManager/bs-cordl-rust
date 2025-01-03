@@ -70,6 +70,21 @@ impl crate::UnityEngine::UIElements::EventDispatcher {
             .invoke("CloseGate", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn CreateForRuntime(
+        strategies: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                *mut crate::UnityEngine::UIElements::IEventDispatchingStrategy,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventDispatcher>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::EventDispatcher,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateForRuntime", (strategies))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Dispatch(
         &mut self,
         evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,

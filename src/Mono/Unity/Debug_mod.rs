@@ -22,7 +22,27 @@ impl std::ops::DerefMut for crate::Mono::Unity::Debug {
     }
 }
 #[cfg(feature = "Mono+Unity+Debug")]
-impl crate::Mono::Unity::Debug {}
+impl crate::Mono::Unity::Debug {
+    pub fn CheckAndThrow_Il2CppString_AlertDescription0(
+        errorState: crate::Mono::Unity::UnityTls_unitytls_errorstate,
+        context: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        defaultAlert: crate::Mono::Security::Interface::AlertDescription,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckAndThrow", (errorState, context, defaultAlert))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CheckAndThrow_UnityTls_unitytls_x509verify_result_Il2CppString_AlertDescription1(
+        errorState: crate::Mono::Unity::UnityTls_unitytls_errorstate,
+        verifyResult: crate::Mono::Unity::UnityTls_unitytls_x509verify_result,
+        context: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        defaultAlert: crate::Mono::Security::Interface::AlertDescription,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckAndThrow", (errorState, verifyResult, context, defaultAlert))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "Mono+Unity+Debug")]
 impl quest_hook::libil2cpp::ObjectType for crate::Mono::Unity::Debug {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

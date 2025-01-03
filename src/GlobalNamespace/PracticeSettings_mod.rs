@@ -101,6 +101,15 @@ impl crate::GlobalNamespace::PracticeSettings {
             .invoke(".ctor", (startSongTime, songSpeedMul))?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_defaultPracticeSettings() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PracticeSettings>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PracticeSettings,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_defaultPracticeSettings", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_songSpeedMul(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

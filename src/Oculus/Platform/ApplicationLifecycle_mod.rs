@@ -23,7 +23,36 @@ impl std::ops::DerefMut for crate::Oculus::Platform::ApplicationLifecycle {
     }
 }
 #[cfg(feature = "Oculus+Platform+ApplicationLifecycle")]
-impl crate::Oculus::Platform::ApplicationLifecycle {}
+impl crate::Oculus::Platform::ApplicationLifecycle {
+    pub fn GetLaunchDetails() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::LaunchDetails>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::LaunchDetails,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetLaunchDetails", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LogDeeplinkResult(
+        trackingID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        result: crate::Oculus::Platform::LaunchResult,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LogDeeplinkResult", (trackingID, result))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetLaunchIntentChangedNotificationCallback(
+        callback: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Message_1_Callback<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetLaunchIntentChangedNotificationCallback", (callback))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "Oculus+Platform+ApplicationLifecycle")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Oculus::Platform::ApplicationLifecycle {

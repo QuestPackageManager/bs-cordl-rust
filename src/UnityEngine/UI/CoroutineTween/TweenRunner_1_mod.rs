@@ -61,6 +61,20 @@ impl<
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
+    pub fn Start(
+        tweenInfo: T,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IEnumerator,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Start", (tweenInfo))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn StartTween(
         &mut self,
         info: T,

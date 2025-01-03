@@ -52,6 +52,17 @@ impl crate::GlobalNamespace::SonyVersion {
         > = __cordl_object.invoke("Get", (format))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetFromString(
+        versionString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SonyVersion>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::SonyVersion,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetFromString", (versionString))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn IncreaseVersion(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -60,6 +71,13 @@ impl crate::GlobalNamespace::SonyVersion {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("IncreaseVersion", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsVersionFormatValid(
+        versionString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsVersionFormatValid", (versionString))?;
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -109,6 +127,17 @@ impl crate::GlobalNamespace::SonyVersion {
             self,
         );
         let __cordl_ret: u32 = __cordl_object.invoke("get_minorVersion", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit(
+        version: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SonyVersion>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (version))?;
         Ok(__cordl_ret.into())
     }
 }

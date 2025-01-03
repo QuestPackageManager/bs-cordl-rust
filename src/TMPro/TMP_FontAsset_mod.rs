@@ -223,6 +223,65 @@ impl crate::TMPro::TMP_FontAsset {
             .invoke("CopyListDataToArray", (srcList, dstArray))?;
         Ok(__cordl_ret.into())
     }
+    pub fn CreateFontAsset_Font0(
+        font: quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateFontAsset", (font))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateFontAsset_i32_i32_GlyphRenderMode_i32_i32_AtlasPopulationMode__cordl_bool1(
+        font: quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
+        samplingPointSize: i32,
+        atlasPadding: i32,
+        renderMode: crate::UnityEngine::TextCore::LowLevel::GlyphRenderMode,
+        atlasWidth: i32,
+        atlasHeight: i32,
+        atlasPopulationMode: crate::TMPro::AtlasPopulationMode,
+        enableMultiAtlasSupport: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CreateFontAsset",
+                (
+                    font,
+                    samplingPointSize,
+                    atlasPadding,
+                    renderMode,
+                    atlasWidth,
+                    atlasHeight,
+                    atlasPopulationMode,
+                    enableMultiAtlasSupport,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCharacters(
+        fontAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCharacters", (fontAsset))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCharactersArray(
+        fontAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<i32>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCharactersArray", (fontAsset))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetGlyphIndex(&mut self, unicode: u32) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -367,6 +426,20 @@ impl crate::TMPro::TMP_FontAsset {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReadFontAssetDefinition", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RegisterFontAssetForAtlasTextureUpdate(
+        fontAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RegisterFontAssetForAtlasTextureUpdate", (fontAsset))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RegisterFontAssetForFontFeatureUpdate(
+        fontAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RegisterFontAssetForFontFeatureUpdate", (fontAsset))?;
         Ok(__cordl_ret.into())
     }
     pub fn SetupNewAtlasTexture(
@@ -533,6 +606,13 @@ impl crate::TMPro::TMP_FontAsset {
             .invoke("UpdateAtlasTexture", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn UpdateAtlasTexturesForFontAssetsInQueue() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UpdateAtlasTexturesForFontAssetsInQueue", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn UpdateFontAssetData(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -541,6 +621,13 @@ impl crate::TMPro::TMP_FontAsset {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateFontAssetData", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UpdateFontFeaturesForFontAssetsInQueue() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UpdateFontFeaturesForFontAssetsInQueue", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn UpdateGlyphAdjustmentRecords_0(

@@ -81,6 +81,28 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Name {
         let __cordl_ret: bool = __cordl_object.invoke("Equivalent", (other, inOrder))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetInstance_Asn1TaggedObject__cordl_bool0(
+        obj: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1TaggedObject>,
+        explicitly: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::X509Name>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::X509Name,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetInstance", (obj, explicitly))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetInstance_Il2CppObject1(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::X509Name>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::X509Name,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetOidList(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -446,6 +468,57 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509Name {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (reverse, dirName, converter))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn canonicalize(
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("canonicalize", (s))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn decodeObject(
+        v: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Object>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1Object,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("decodeObject", (v))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn equivalentStrings(
+        s1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        s2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("equivalentStrings", (s1, s2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_DefaultReverse() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_DefaultReverse", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_DefaultReverse(
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_DefaultReverse", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn stripInternalSpaces(
+        str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("stripInternalSpaces", (str))?;
         Ok(__cordl_ret.into())
     }
 }

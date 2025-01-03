@@ -29,6 +29,29 @@ for crate::System::Xml::BinXmlSqlDecimal {
 }
 #[cfg(feature = "System+Xml+BinXmlSqlDecimal")]
 impl crate::System::Xml::BinXmlSqlDecimal {
+    pub fn ChFromDigit(uiDigit: u32) -> quest_hook::libil2cpp::Result<char> {
+        let __cordl_ret: char = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ChFromDigit", (uiDigit))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MpDiv1(
+        rgulU: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+        ciulU: quest_hook::libil2cpp::ByRefMut<i32>,
+        iulD: u32,
+        iulR: quest_hook::libil2cpp::ByRefMut<u32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MpDiv1", (rgulU, ciulU, iulD, iulR))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MpNormalize(
+        rgulU: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+        ciulU: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MpNormalize", (rgulU, ciulU))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ToDecimal(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::Decimal> {
@@ -57,6 +80,14 @@ impl crate::System::Xml::BinXmlSqlDecimal {
             "TrimTrailingZeros",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UIntFromByteArray(
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        offset: i32,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UIntFromByteArray", (data, offset))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

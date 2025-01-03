@@ -98,6 +98,20 @@ impl crate::GlobalNamespace::NodePoseSyncStateDeltaNetSerializable {
             .invoke("get_delta", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_pool() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IPacketPool_1<
+                *mut crate::GlobalNamespace::NodePoseSyncStateDeltaNetSerializable,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IPacketPool_1<
+                *mut crate::GlobalNamespace::NodePoseSyncStateDeltaNetSerializable,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_pool", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_timeOffsetMs(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

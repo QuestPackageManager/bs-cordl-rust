@@ -29,6 +29,14 @@ for crate::UnityEngine::UIElements::UxmlUnsignedLongAttributeDescription {
 impl crate::UnityEngine::UIElements::UxmlUnsignedLongAttributeDescription {
     #[cfg(feature = "UnityEngine+UIElements+UxmlUnsignedLongAttributeDescription+__c")]
     pub type __c = crate::UnityEngine::UIElements::UxmlUnsignedLongAttributeDescription___c;
+    pub fn ConvertValueToUlong(
+        v: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        defaultValue: u64,
+    ) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ConvertValueToUlong", (v, defaultValue))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetValueFromBag(
         &mut self,
         bag: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IUxmlAttributes>,

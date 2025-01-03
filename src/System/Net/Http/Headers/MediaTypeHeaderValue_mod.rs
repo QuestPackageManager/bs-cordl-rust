@@ -100,6 +100,28 @@ impl crate::System::Net::Http::Headers::MediaTypeHeaderValue {
         > = __cordl_object.invoke("ToString", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn TryParse(
+        input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        parsedValue: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::System::Net::Http::Headers::MediaTypeHeaderValue,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryParse", (input, parsedValue))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryParseMediaType(
+        lexer: quest_hook::libil2cpp::Gc<crate::System::Net::Http::Headers::Lexer>,
+        media: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Nullable_1<crate::System::Net::Http::Headers::Token>,
+    > {
+        let __cordl_ret: crate::System::Nullable_1<
+            crate::System::Net::Http::Headers::Token,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryParseMediaType", (lexer, media))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor_2(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

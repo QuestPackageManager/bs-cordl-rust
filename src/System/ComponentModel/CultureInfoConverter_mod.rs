@@ -313,7 +313,37 @@ for crate::System::ComponentModel::CultureInfoConverter_CultureInfoMapper {
     }
 }
 #[cfg(feature = "System+ComponentModel+CultureInfoConverter+CultureInfoMapper")]
-impl crate::System::ComponentModel::CultureInfoConverter_CultureInfoMapper {}
+impl crate::System::ComponentModel::CultureInfoConverter_CultureInfoMapper {
+    pub fn CreateMap() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<
+                *mut quest_hook::libil2cpp::Il2CppString,
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<
+                *mut quest_hook::libil2cpp::Il2CppString,
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("CreateMap", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCultureInfoName(
+        cultureInfoDisplayName: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCultureInfoName", (cultureInfoDisplayName))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+ComponentModel+CultureInfoConverter+CultureInfoMapper")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::ComponentModel::CultureInfoConverter_CultureInfoMapper {

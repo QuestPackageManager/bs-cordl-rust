@@ -30,6 +30,19 @@ for crate::Org::BouncyCastle::Crypto::Parameters::HkdfParameters {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+HkdfParameters")]
 impl crate::Org::BouncyCastle::Crypto::Parameters::HkdfParameters {
+    pub fn DefaultParameters(
+        ikm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Parameters::HkdfParameters,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Parameters::HkdfParameters,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DefaultParameters", (ikm))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetIkm(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -91,6 +104,20 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::HkdfParameters {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (ikm, skip, salt, info))?;
         Ok(__cordl_object.into())
+    }
+    pub fn SkipExtractParameters(
+        ikm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        info: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Parameters::HkdfParameters,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Parameters::HkdfParameters,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SkipExtractParameters", (ikm, info))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Il2CppArray1(
         &mut self,

@@ -41,6 +41,27 @@ impl crate::GlobalNamespace::Noise3DTexturesGenerator {
             .invoke("Awake", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn CreateNoisePixels(
+        width: i32,
+        height: i32,
+        depth: i32,
+        scale: f32,
+        repeat: i32,
+        contrast: f32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color32>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color32>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CreateNoisePixels",
+                (width, height, depth, scale, repeat, contrast),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

@@ -227,6 +227,16 @@ impl crate::Newtonsoft::Json::Utilities::LateBoundReflectionDelegateFactory {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_Instance() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Utilities::ReflectionDelegateFactory,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Utilities::ReflectionDelegateFactory,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_Instance", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "Newtonsoft+Json+Utilities+LateBoundReflectionDelegateFactory")]
 impl quest_hook::libil2cpp::ObjectType

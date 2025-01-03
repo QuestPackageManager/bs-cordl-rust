@@ -23,7 +23,29 @@ impl std::ops::DerefMut for crate::UnityEngine::SetupCoroutine {
     }
 }
 #[cfg(feature = "UnityEngine+SetupCoroutine")]
-impl crate::UnityEngine::SetupCoroutine {}
+impl crate::UnityEngine::SetupCoroutine {
+    pub fn InvokeMember(
+        behaviour: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        variable: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InvokeMember", (behaviour, name, variable))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InvokeMoveNext(
+        enumerator: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+        returnValueAddress: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InvokeMoveNext", (enumerator, returnValueAddress))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+SetupCoroutine")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::SetupCoroutine {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

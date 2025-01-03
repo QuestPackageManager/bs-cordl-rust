@@ -57,12 +57,53 @@ impl crate::System::Data::SqlTypes::SqlDateTime {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn FromDateTime(
+        value: crate::System::DateTime,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlDateTime> {
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlDateTime = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromDateTime", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromTimeSpan(
+        value: crate::System::TimeSpan,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlDateTime> {
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlDateTime = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromTimeSpan", (value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "GetHashCode",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetXsdType(
+        schemaSet: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSet>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::XmlQualifiedName,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetXsdType", (schemaSet))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GreaterThan(
+        x: crate::System::Data::SqlTypes::SqlDateTime,
+        y: crate::System::Data::SqlTypes::SqlDateTime,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlBoolean> {
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlBoolean = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GreaterThan", (x, y))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LessThan(
+        x: crate::System::Data::SqlTypes::SqlDateTime,
+        y: crate::System::Data::SqlTypes::SqlDateTime,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlBoolean> {
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlBoolean = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LessThan", (x, y))?;
         Ok(__cordl_ret.into())
     }
     pub fn System_Xml_Serialization_IXmlSerializable_GetSchema(
@@ -101,6 +142,13 @@ impl crate::System::Data::SqlTypes::SqlDateTime {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn ToDateTime(
+        value: crate::System::Data::SqlTypes::SqlDateTime,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
+        let __cordl_ret: crate::System::DateTime = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToDateTime", (value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ToString(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -109,6 +157,13 @@ impl crate::System::Data::SqlTypes::SqlDateTime {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToTimeSpan(
+        value: crate::System::Data::SqlTypes::SqlDateTime,
+    ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
+        let __cordl_ret: crate::System::TimeSpan = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToTimeSpan", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_DateTime1(
@@ -177,6 +232,37 @@ impl crate::System::Data::SqlTypes::SqlDateTime {
             "get_Value",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        x: crate::System::Data::SqlTypes::SqlDateTime,
+        y: crate::System::Data::SqlTypes::SqlDateTime,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlBoolean> {
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlBoolean = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (x, y))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_GreaterThan(
+        x: crate::System::Data::SqlTypes::SqlDateTime,
+        y: crate::System::Data::SqlTypes::SqlDateTime,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlBoolean> {
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlBoolean = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_GreaterThan", (x, y))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit(
+        value: crate::System::DateTime,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlDateTime> {
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlDateTime = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_LessThan(
+        x: crate::System::Data::SqlTypes::SqlDateTime,
+        y: crate::System::Data::SqlTypes::SqlDateTime,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlBoolean> {
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlBoolean = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_LessThan", (x, y))?;
         Ok(__cordl_ret.into())
     }
 }

@@ -35,6 +35,17 @@ impl crate::UnityEngine::Networking::DownloadHandler {
             .invoke("CompleteContent", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn CreateNativeArrayForNativeData(
+        data: quest_hook::libil2cpp::ByRefMut<
+            crate::Unity::Collections::NativeArray_1<u8>,
+        >,
+        bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateNativeArrayForNativeData", (data, bytes, length))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -45,6 +56,15 @@ impl crate::UnityEngine::Networking::DownloadHandler {
             .invoke("Dispose", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn DisposeNativeArray(
+        data: quest_hook::libil2cpp::ByRefMut<
+            crate::Unity::Collections::NativeArray_1<u8>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DisposeNativeArray", (data))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Finalize(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -53,6 +73,17 @@ impl crate::UnityEngine::Networking::DownloadHandler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Finalize", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCheckedDownloader<T>(
+        www: quest_hook::libil2cpp::Gc<crate::UnityEngine::Networking::UnityWebRequest>,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCheckedDownloader", (www))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetContentType(
@@ -134,6 +165,39 @@ impl crate::UnityEngine::Networking::DownloadHandler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding> = __cordl_object
             .invoke("GetTextEncoder", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InternalGetByteArray_ByRefMut0(
+        dh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Networking::DownloadHandler>,
+        length: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InternalGetByteArray", (dh, length))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InternalGetByteArray_DownloadHandler1(
+        dh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Networking::DownloadHandler>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InternalGetByteArray", (dh))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InternalGetNativeArray(
+        dh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Networking::DownloadHandler>,
+        nativeArray: quest_hook::libil2cpp::ByRefMut<
+            crate::Unity::Collections::NativeArray_1<u8>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::NativeArray_1<u8>> {
+        let __cordl_ret: crate::Unity::Collections::NativeArray_1<u8> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InternalGetNativeArray", (dh, nativeArray))?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

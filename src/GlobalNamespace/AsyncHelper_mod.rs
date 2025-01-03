@@ -25,6 +25,43 @@ impl std::ops::DerefMut for crate::GlobalNamespace::AsyncHelper {
 impl crate::GlobalNamespace::AsyncHelper {
     #[cfg(feature = "AsyncHelper+_AnyTaskTrueNonAlloc_d__2")]
     pub type _AnyTaskTrueNonAlloc_d__2 = crate::GlobalNamespace::AsyncHelper__AnyTaskTrueNonAlloc_d__2;
+    pub fn AnyTaskTrueNonAlloc(
+        tasks: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::System::Threading::Tasks::Task_1<bool>,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<bool>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AnyTaskTrueNonAlloc", (tasks))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RunSync_Func_1_0(
+        asyncTask: quest_hook::libil2cpp::Gc<
+            crate::System::Func_1<*mut crate::System::Threading::Tasks::Task>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RunSync", (asyncTask))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RunSync_Func_1_1<T>(
+        asyncTask: quest_hook::libil2cpp::Gc<
+            crate::System::Func_1<*mut crate::System::Threading::Tasks::Task_1<T>>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RunSync", (asyncTask))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "AsyncHelper")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::AsyncHelper {

@@ -26,6 +26,18 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::IsisMtt::Ocsp::CertH
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+Ocsp+CertHash")]
 impl crate::Org::BouncyCastle::Asn1::IsisMtt::Ocsp::CertHash {
+    pub fn GetInstance(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::IsisMtt::Ocsp::CertHash,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::IsisMtt::Ocsp::CertHash,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_AlgorithmIdentifier_Il2CppArray1(
         hashAlgorithm: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,

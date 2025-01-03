@@ -1056,6 +1056,13 @@ impl crate::System::Linq::Expressions::Interpreter::LightCompiler {
         > = __cordl_object.invoke("EnsureLabel", (node))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetMemberType(
+        member: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetMemberType", (member))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn LoadLocalNoValueTypeCopy(
         &mut self,
         variable: quest_hook::libil2cpp::Gc<
@@ -1168,6 +1175,13 @@ impl crate::System::Linq::Expressions::Interpreter::LightCompiler {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Linq::Expressions::Interpreter::LocalVariable,
         > = __cordl_object.invoke("ResolveLocal", (variable))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ShouldWritebackNode(
+        node: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ShouldWritebackNode", (node))?;
         Ok(__cordl_ret.into())
     }
     pub fn TryPushLabelBlock(

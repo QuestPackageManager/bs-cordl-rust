@@ -24,6 +24,24 @@ for crate::UnityEngine::InputSystem::XR::Haptics::SendHapticImpulseCommand {
 #[cfg(feature = "UnityEngine+InputSystem+XR+Haptics+SendHapticImpulseCommand")]
 impl crate::UnityEngine::InputSystem::XR::Haptics::SendHapticImpulseCommand {
     pub const kSize: i32 = 20i32;
+    pub fn Create(
+        motorChannel: i32,
+        motorAmplitude: f32,
+        motorDuration: f32,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::XR::Haptics::SendHapticImpulseCommand,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::XR::Haptics::SendHapticImpulseCommand = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (motorChannel, motorAmplitude, motorDuration))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Type() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::FourCC,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_Type", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_typeStatic(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

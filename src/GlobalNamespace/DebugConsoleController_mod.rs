@@ -362,4 +362,14 @@ impl crate::GlobalNamespace::DebugConsoleController_ConsoleMessage {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Addition(
+        a: crate::GlobalNamespace::DebugConsoleController_ConsoleMessage,
+        b: crate::GlobalNamespace::DebugConsoleController_ConsoleMessage,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::DebugConsoleController_ConsoleMessage,
+    > {
+        let __cordl_ret: crate::GlobalNamespace::DebugConsoleController_ConsoleMessage = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Addition", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
 }

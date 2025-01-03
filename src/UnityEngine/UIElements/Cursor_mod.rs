@@ -94,6 +94,14 @@ impl crate::UnityEngine::UIElements::Cursor {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Equality(
+        style1: crate::UnityEngine::UIElements::Cursor,
+        style2: crate::UnityEngine::UIElements::Cursor,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (style1, style2))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn set_defaultCursorId(
         &mut self,
         value: i32,

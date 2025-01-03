@@ -36,6 +36,18 @@ impl crate::UnityEngine::AnimationCurve {
         let __cordl_ret: i32 = __cordl_object.invoke("AddKey", (_cordl_time, value))?;
         Ok(__cordl_ret.into())
     }
+    pub fn EaseInOut(
+        timeStart: f32,
+        valueStart: f32,
+        timeEnd: f32,
+        valueEnd: f32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EaseInOut", (timeStart, valueStart, timeEnd, valueEnd))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Equals_AnimationCurve1(
         &mut self,
         other: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
@@ -80,6 +92,22 @@ impl crate::UnityEngine::AnimationCurve {
         let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn Internal_Create(
+        keys: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Keyframe>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Internal_Create", (keys))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Internal_Destroy(
+        ptr: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Internal_Destroy", (ptr))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Internal_Equals(
         &mut self,
         other: crate::System::IntPtr,
@@ -88,6 +116,18 @@ impl crate::UnityEngine::AnimationCurve {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Internal_Equals", (other))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Linear(
+        timeStart: f32,
+        valueStart: f32,
+        timeEnd: f32,
+        valueEnd: f32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Linear", (timeStart, valueStart, timeEnd, valueEnd))?;
         Ok(__cordl_ret.into())
     }
     pub fn New_1() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

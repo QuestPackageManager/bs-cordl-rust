@@ -23,7 +23,13 @@ impl std::ops::DerefMut for crate::UnityEngine::Rendering::SplashScreen {
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+SplashScreen")]
-impl crate::UnityEngine::Rendering::SplashScreen {}
+impl crate::UnityEngine::Rendering::SplashScreen {
+    pub fn get_isFinished() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_isFinished", ())?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+Rendering+SplashScreen")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Rendering::SplashScreen {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -23,7 +23,15 @@ impl std::ops::DerefMut for crate::UnityEngine::Rendering::CameraEventUtils {
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+CameraEventUtils")]
-impl crate::UnityEngine::Rendering::CameraEventUtils {}
+impl crate::UnityEngine::Rendering::CameraEventUtils {
+    pub fn IsValid(
+        value: crate::UnityEngine::Rendering::CameraEvent,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsValid", (value))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+Rendering+CameraEventUtils")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Rendering::CameraEventUtils {

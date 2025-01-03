@@ -47,6 +47,15 @@ impl crate::GlobalNamespace::StandaloneMonobehavior {
             .invoke("Awake", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn Create<T>() -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetLastFrameTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

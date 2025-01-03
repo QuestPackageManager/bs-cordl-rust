@@ -48,6 +48,14 @@ impl crate::BeatSaber::AvatarCore::AvatarSystemCollection {
     pub type _GetMultiplayerAvatarsData_d__16 = crate::BeatSaber::AvatarCore::AvatarSystemCollection__GetMultiplayerAvatarsData_d__16;
     #[cfg(feature = "BeatSaber+AvatarCore+AvatarSystemCollection+__c")]
     pub type __c = crate::BeatSaber::AvatarCore::AvatarSystemCollection___c;
+    pub fn AvatarSystemBySelectionSortOrder(
+        system1: quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::IAvatarSystem>,
+        system2: quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::IAvatarSystem>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AvatarSystemBySelectionSortOrder", (system1, system2))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CreateDefaultAvatarsForAvatarSystemsWithoutUserCreatedAvatarAsync(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

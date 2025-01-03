@@ -24,7 +24,20 @@ impl std::ops::DerefMut for crate::UnityEngine::Networking::UnityWebRequestMulti
     }
 }
 #[cfg(feature = "UnityEngine+Networking+UnityWebRequestMultimedia")]
-impl crate::UnityEngine::Networking::UnityWebRequestMultimedia {}
+impl crate::UnityEngine::Networking::UnityWebRequestMultimedia {
+    pub fn GetAudioClip(
+        uri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        audioType: crate::UnityEngine::AudioType,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Networking::UnityWebRequest>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Networking::UnityWebRequest,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetAudioClip", (uri, audioType))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+Networking+UnityWebRequestMultimedia")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Networking::UnityWebRequestMultimedia {

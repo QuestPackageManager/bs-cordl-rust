@@ -23,7 +23,13 @@ impl std::ops::DerefMut for crate::UnityEngine::InputSystem::XInput::XInputSuppo
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+XInput+XInputSupport")]
-impl crate::UnityEngine::InputSystem::XInput::XInputSupport {}
+impl crate::UnityEngine::InputSystem::XInput::XInputSupport {
+    pub fn Initialize() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Initialize", ())?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+XInput+XInputSupport")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::XInput::XInputSupport {

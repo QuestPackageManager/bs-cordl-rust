@@ -41,6 +41,54 @@ impl crate::Oculus::Platform::StandalonePlatformSettings {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_OculusPlatformTestUserAccessToken() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_OculusPlatformTestUserAccessToken", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_OculusPlatformTestUserEmail() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_OculusPlatformTestUserEmail", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_OculusPlatformTestUserPassword() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_OculusPlatformTestUserPassword", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_OculusPlatformTestUserAccessToken(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_OculusPlatformTestUserAccessToken", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_OculusPlatformTestUserEmail(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_OculusPlatformTestUserEmail", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_OculusPlatformTestUserPassword(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_OculusPlatformTestUserPassword", (value))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "Oculus+Platform+StandalonePlatformSettings")]
 impl quest_hook::libil2cpp::ObjectType

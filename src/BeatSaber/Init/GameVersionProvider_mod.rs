@@ -32,6 +32,27 @@ impl crate::BeatSaber::Init::GameVersionProvider {
     pub type _GetVersionInternalAsync_d__9 = crate::BeatSaber::Init::GameVersionProvider__GetVersionInternalAsync_d__9;
     #[cfg(feature = "BeatSaber+Init+GameVersionProvider+_Initialize_d__5")]
     pub type _Initialize_d__5 = crate::BeatSaber::Init::GameVersionProvider__Initialize_d__5;
+    pub fn GetBuildId() -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetBuildId", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetBuildTimeGameVersion() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::Init::GameVersion,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetBuildTimeGameVersion", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetContentVersion() -> quest_hook::libil2cpp::Result<
+        crate::BeatSaber::Init::GameVersion_Content,
+    > {
+        let __cordl_ret: crate::BeatSaber::Init::GameVersion_Content = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetContentVersion", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetVersionAsync(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -86,6 +107,13 @@ impl crate::BeatSaber::Init::GameVersionProvider {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
+    }
+    pub fn NoDomainReloadInit() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("NoDomainReloadInit", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,

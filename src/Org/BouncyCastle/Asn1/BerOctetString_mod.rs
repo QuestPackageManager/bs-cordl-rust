@@ -43,6 +43,17 @@ impl crate::Org::BouncyCastle::Asn1::BerOctetString {
             .invoke("Encode", (derOut))?;
         Ok(__cordl_ret.into())
     }
+    pub fn FromSequence(
+        seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::BerOctetString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::BerOctetString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromSequence", (seq))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetEnumerator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -138,6 +149,37 @@ impl crate::Org::BouncyCastle::Asn1::BerOctetString {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (octs, chunkSize))?;
         Ok(__cordl_object.into())
+    }
+    pub fn ToBytes(
+        octs: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("ToBytes", (octs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToOctetStringArray(
+        e: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToOctetStringArray", (e))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_IEnumerable0(
         &mut self,

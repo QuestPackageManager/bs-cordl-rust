@@ -23,7 +23,25 @@ impl std::ops::DerefMut for crate::Oculus::Platform::Avatar {
     }
 }
 #[cfg(feature = "Oculus+Platform+Avatar")]
-impl crate::Oculus::Platform::Avatar {}
+impl crate::Oculus::Platform::Avatar {
+    pub fn LaunchAvatarEditor(
+        options: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::AvatarEditorOptions>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Request_1<
+                *mut crate::Oculus::Platform::Models::AvatarEditorResult,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Request_1<
+                *mut crate::Oculus::Platform::Models::AvatarEditorResult,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LaunchAvatarEditor", (options))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "Oculus+Platform+Avatar")]
 impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Platform::Avatar {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

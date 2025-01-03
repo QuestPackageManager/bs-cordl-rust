@@ -66,6 +66,11 @@ impl crate::System::Collections::Generic::BitHelper {
             .invoke_void(".ctor", (bitArrayPtr, length))?;
         Ok(__cordl_object.into())
     }
+    pub fn ToIntArrayLength(n: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToIntArrayLength", (n))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor_Il2CppArray1(
         &mut self,
         bitArray: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,

@@ -24,6 +24,32 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::X9::X9IntegerConvert
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X9+X9IntegerConverter")]
 impl crate::Org::BouncyCastle::Asn1::X9::X9IntegerConverter {
+    pub fn GetByteLength_ECCurve1(
+        c: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECCurve>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetByteLength", (c))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetByteLength_ECFieldElement0(
+        fe: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECFieldElement>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetByteLength", (fe))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IntegerToBytes(
+        s: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+        qLength: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IntegerToBytes", (s, qLength))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

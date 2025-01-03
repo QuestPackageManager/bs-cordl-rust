@@ -56,6 +56,11 @@ impl crate::UnityEngine::UIElements::UIR::BitmapAllocator32 {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn CountTrailingZeroes(val: u32) -> quest_hook::libil2cpp::Result<u8> {
+        let __cordl_ret: u8 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CountTrailingZeroes", (val))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ForceFirstAlloc(
         &mut self,
         firstPageX: u16,

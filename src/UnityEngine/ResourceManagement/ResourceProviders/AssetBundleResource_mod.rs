@@ -192,6 +192,33 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResou
             .invoke("GetDownloadStatus", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetLoadInfo_IResourceLocation_ResourceManager_ByRefMut1(
+        location: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+        >,
+        resourceManager: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::ResourceManager,
+        >,
+        loadType: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResource_LoadType,
+        >,
+        path: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetLoadInfo", (location, resourceManager, loadType, path))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetLoadInfo_ProvideHandle_ByRefMut0(
+        handle: crate::UnityEngine::ResourceManagement::ResourceProviders::ProvideHandle,
+        loadType: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResource_LoadType,
+        >,
+        path: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetLoadInfo", (handle, loadType, path))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn LoadLocalBundle(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

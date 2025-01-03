@@ -183,6 +183,16 @@ impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
         > = __cordl_object.invoke("get_R3", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_current() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::DualShock::DualShockGamepad,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::DualShock::DualShockGamepad,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_current", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_optionsButton(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -304,6 +314,15 @@ impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_R3", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_current(
+        value: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::DualShock::DualShockGamepad,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_current", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_optionsButton(

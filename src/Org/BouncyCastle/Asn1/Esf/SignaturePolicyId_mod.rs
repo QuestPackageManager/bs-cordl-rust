@@ -27,6 +27,16 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::Esf::SignaturePolicy
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Esf+SignaturePolicyId")]
 impl crate::Org::BouncyCastle::Asn1::Esf::SignaturePolicyId {
+    pub fn GetInstance(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Esf::SignaturePolicyId>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Esf::SignaturePolicyId,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetSigPolicyQualifiers(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

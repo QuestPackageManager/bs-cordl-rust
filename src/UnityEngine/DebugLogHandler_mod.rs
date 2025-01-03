@@ -24,6 +24,24 @@ impl std::ops::DerefMut for crate::UnityEngine::DebugLogHandler {
 }
 #[cfg(feature = "UnityEngine+DebugLogHandler")]
 impl crate::UnityEngine::DebugLogHandler {
+    pub fn Internal_Log(
+        level: crate::UnityEngine::LogType,
+        options: crate::UnityEngine::LogOption,
+        msg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        obj: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Internal_Log", (level, options, msg, obj))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Internal_LogException(
+        ex: quest_hook::libil2cpp::Gc<crate::System::Exception>,
+        obj: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Internal_LogException", (ex, obj))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn LogException(
         &mut self,
         exception: quest_hook::libil2cpp::Gc<crate::System::Exception>,

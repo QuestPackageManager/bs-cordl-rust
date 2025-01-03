@@ -42,6 +42,47 @@ impl crate::System::Threading::Thread {
             .invoke("Abort", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn Abort_internal(
+        thread: quest_hook::libil2cpp::Gc<crate::System::Threading::InternalThread>,
+        stateInfo: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Abort_internal", (thread, stateInfo))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AsyncLocalSetCurrentCulture(
+        args: crate::System::Threading::AsyncLocalValueChangedArgs_1<
+            *mut crate::System::Globalization::CultureInfo,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AsyncLocalSetCurrentCulture", (args))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AsyncLocalSetCurrentUICulture(
+        args: crate::System::Threading::AsyncLocalValueChangedArgs_1<
+            *mut crate::System::Globalization::CultureInfo,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AsyncLocalSetCurrentUICulture", (args))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn BeginCriticalRegion() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BeginCriticalRegion", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ClrState(
+        thread: quest_hook::libil2cpp::Gc<crate::System::Threading::InternalThread>,
+        clr: crate::System::Threading::ThreadState,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ClrState", (thread, clr))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ConstructInternalThread(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -50,6 +91,13 @@ impl crate::System::Threading::Thread {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ConstructInternalThread", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EndCriticalRegion() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EndCriticalRegion", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn Finalize(
@@ -75,6 +123,20 @@ impl crate::System::Threading::Thread {
         > = __cordl_object.invoke("GetCurrentCultureNoAppX", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetCurrentThread() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Thread>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Threading::Thread> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCurrentThread", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCurrentThread_icall(
+        thread: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Threading::Thread>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCurrentThread_icall", (thread))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetCurrentUICultureNoAppX(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -86,6 +148,11 @@ impl crate::System::Threading::Thread {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Globalization::CultureInfo,
         > = __cordl_object.invoke("GetCurrentUICultureNoAppX", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetDomainID() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetDomainID", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn GetExecutionContextReader(
@@ -127,6 +194,20 @@ impl crate::System::Threading::Thread {
         let __cordl_ret: i32 = __cordl_object.invoke("GetPriorityNative", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetProcessDefaultStackSize(
+        maxStackSize: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetProcessDefaultStackSize", (maxStackSize))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetState(
+        thread: quest_hook::libil2cpp::Gc<crate::System::Threading::InternalThread>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Threading::ThreadState> {
+        let __cordl_ret: crate::System::Threading::ThreadState = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetState", (thread))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Join(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -146,6 +227,13 @@ impl crate::System::Threading::Thread {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("JoinInternal", (millisecondsTimeout))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MemoryBarrier() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MemoryBarrier", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn New_ParameterizedThreadStart1(
@@ -204,6 +292,23 @@ impl crate::System::Threading::Thread {
             .invoke("SetExecutionContext", (value, belongsToCurrentScope))?;
         Ok(__cordl_ret.into())
     }
+    pub fn SetName_icall(
+        thread: quest_hook::libil2cpp::Gc<crate::System::Threading::InternalThread>,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        nameLength: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetName_icall", (thread, name, nameLength))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetName_internal(
+        thread: quest_hook::libil2cpp::Gc<crate::System::Threading::InternalThread>,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetName_internal", (thread, name))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn SetPriorityNative(
         &mut self,
         priority: i32,
@@ -237,6 +342,40 @@ impl crate::System::Threading::Thread {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetStartHelper", (start, maxStackSize))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetState(
+        thread: quest_hook::libil2cpp::Gc<crate::System::Threading::InternalThread>,
+        set: crate::System::Threading::ThreadState,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetState", (thread, set))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Sleep(
+        millisecondsTimeout: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Sleep", (millisecondsTimeout))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SleepInternal(
+        millisecondsTimeout: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SleepInternal", (millisecondsTimeout))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SpinWait(
+        iterations: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SpinWait", (iterations))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SpinWait_nop() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SpinWait_nop", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn StartInternal(
@@ -287,6 +426,11 @@ impl crate::System::Threading::Thread {
             .invoke("Start", (parameter))?;
         Ok(__cordl_ret.into())
     }
+    pub fn SystemMaxStackStize() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SystemMaxStackStize", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Thread_internal(
         &mut self,
         start: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
@@ -305,6 +449,16 @@ impl crate::System::Threading::Thread {
         );
         let __cordl_ret: crate::System::Threading::ThreadState = __cordl_object
             .invoke("ValidateThreadState", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Yield() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Yield", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn YieldInternal() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("YieldInternal", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_ParameterizedThreadStart1(
@@ -345,6 +499,15 @@ impl crate::System::Threading::Thread {
             .invoke(".ctor", (start))?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_CurrentContext() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Contexts::Context>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Contexts::Context,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_CurrentContext", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_CurrentCulture(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -356,6 +519,18 @@ impl crate::System::Threading::Thread {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Globalization::CultureInfo,
         > = __cordl_object.invoke("get_CurrentCulture", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_CurrentThread() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Thread>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Threading::Thread> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_CurrentThread", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_CurrentThreadId() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_CurrentThreadId", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_CurrentUICulture(
@@ -433,6 +608,13 @@ impl crate::System::Threading::Thread {
         );
         let __cordl_ret: crate::System::Threading::ThreadPriority = __cordl_object
             .invoke("get_Priority", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn nativeInitCultureAccessors() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("nativeInitCultureAccessors", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn set_CurrentCulture(

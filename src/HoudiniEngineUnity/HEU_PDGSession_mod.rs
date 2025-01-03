@@ -182,6 +182,14 @@ impl crate::HoudiniEngineUnity::HEU_PDGSession {
         > = __cordl_object.invoke("GetHAPIPDGSession", (bCreate))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetPDGSession() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_PDGSession>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_PDGSession,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetPDGSession", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetTOPAssetLinkAndNode(
         &mut self,
         nodeID: i32,
@@ -355,6 +363,15 @@ impl crate::HoudiniEngineUnity::HEU_PDGSession {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RemoveAsset", (asset))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ResetPDGEventInfo(
+        eventInfo: quest_hook::libil2cpp::ByRefMut<
+            crate::HoudiniEngineUnity::HAPI_PDG_EventInfo,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ResetPDGEventInfo", (eventInfo))?;
         Ok(__cordl_ret.into())
     }
     pub fn SetErrorState(

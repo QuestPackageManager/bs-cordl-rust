@@ -44,6 +44,31 @@ impl crate::Newtonsoft::Json::Linq::JValue {
         > = __cordl_object.invoke("CloneToken", (settings))?;
         Ok(__cordl_ret.into())
     }
+    pub fn Compare(
+        valueType: crate::Newtonsoft::Json::Linq::JTokenType,
+        objA: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        objB: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Compare", (valueType, objA, objB))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CompareBigInteger(
+        i1: crate::System::Numerics::BigInteger,
+        i2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CompareBigInteger", (i1, i2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CompareFloat(
+        objA: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        objB: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CompareFloat", (objA, objB))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CompareTo(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
@@ -52,6 +77,45 @@ impl crate::Newtonsoft::Json::Linq::JValue {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("CompareTo", (obj))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateComment(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Linq::JValue,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateComment", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateNull() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Linq::JValue,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("CreateNull", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateString(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Linq::JValue,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateString", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateUndefined() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Linq::JValue,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateUndefined", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn DeepEquals(
@@ -112,6 +176,21 @@ impl crate::Newtonsoft::Json::Linq::JValue {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Dynamic::DynamicMetaObject,
         > = __cordl_object.invoke("GetMetaObject", (parameter))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetStringValueType(
+        current: crate::System::Nullable_1<crate::Newtonsoft::Json::Linq::JTokenType>,
+    ) -> quest_hook::libil2cpp::Result<crate::Newtonsoft::Json::Linq::JTokenType> {
+        let __cordl_ret: crate::Newtonsoft::Json::Linq::JTokenType = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetStringValueType", (current))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetValueType(
+        current: crate::System::Nullable_1<crate::Newtonsoft::Json::Linq::JTokenType>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<crate::Newtonsoft::Json::Linq::JTokenType> {
+        let __cordl_ret: crate::Newtonsoft::Json::Linq::JTokenType = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetValueType", (current, value))?;
         Ok(__cordl_ret.into())
     }
     pub fn New_DateTime9(
@@ -270,6 +349,16 @@ impl crate::Newtonsoft::Json::Linq::JValue {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (value))?;
         Ok(__cordl_object.into())
+    }
+    pub fn Operation(
+        operation: crate::System::Linq::Expressions::ExpressionType,
+        objA: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        objB: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        result: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Operation", (operation, objA, objB, result))?;
+        Ok(__cordl_ret.into())
     }
     pub fn System_IComparable_CompareTo(
         &mut self,
@@ -516,6 +605,14 @@ impl crate::Newtonsoft::Json::Linq::JValue {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("ToString", (format, formatProvider))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ValuesEquals(
+        v1: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
+        v2: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ValuesEquals", (v1, v2))?;
         Ok(__cordl_ret.into())
     }
     pub fn WriteTo(

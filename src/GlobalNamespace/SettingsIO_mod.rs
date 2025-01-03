@@ -33,6 +33,69 @@ impl crate::GlobalNamespace::SettingsIO {
     pub type _SaveAsync_d__7 = crate::GlobalNamespace::SettingsIO__SaveAsync_d__7;
     #[cfg(feature = "SettingsIO+_WipeAsync_d__6")]
     pub type _WipeAsync_d__6 = crate::GlobalNamespace::SettingsIO__WipeAsync_d__6;
+    pub fn Decode(
+        settings: quest_hook::libil2cpp::ByRefMut<crate::BeatSaber::Settings::Settings>,
+        text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Decode", (settings, text))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Encode(
+        settings: quest_hook::libil2cpp::ByRefMut<crate::BeatSaber::Settings::Settings>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Encode", (settings))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Load(
+        fileStorage: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IFileStorage>,
+        platform: crate::GlobalNamespace::HardwareCategory,
+    ) -> quest_hook::libil2cpp::Result<crate::BeatSaber::Settings::Settings> {
+        let __cordl_ret: crate::BeatSaber::Settings::Settings = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Load", (fileStorage, platform))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LoadAsync(
+        fileStorage: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IFileStorage>,
+        platform: crate::GlobalNamespace::HardwareCategory,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<crate::BeatSaber::Settings::Settings>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<crate::BeatSaber::Settings::Settings>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LoadAsync", (fileStorage, platform))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SaveAsync(
+        fileStorage: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IFileStorage>,
+        settings: crate::BeatSaber::Settings::Settings,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SaveAsync", (fileStorage, settings))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WipeAsync(
+        fileStorage: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IFileStorage>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WipeAsync", (fileStorage))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "SettingsIO")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SettingsIO {

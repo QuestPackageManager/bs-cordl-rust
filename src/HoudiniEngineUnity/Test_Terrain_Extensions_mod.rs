@@ -26,6 +26,55 @@ impl std::ops::DerefMut for crate::HoudiniEngineUnity::Test_Terrain_Extensions {
 impl crate::HoudiniEngineUnity::Test_Terrain_Extensions {
     #[cfg(feature = "HoudiniEngineUnity+Test_Terrain_Extensions+__c")]
     pub type __c = crate::HoudiniEngineUnity::Test_Terrain_Extensions___c;
+    pub fn ToTestObject_Il2CppArray1(
+        _cordl_self: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Terrain>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::HoudiniEngineUnity::Test_Terrain,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::HoudiniEngineUnity::Test_Terrain,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToTestObject", (_cordl_self))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToTestObject_List_1_2(
+        _cordl_self: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<*mut crate::UnityEngine::Terrain>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::HoudiniEngineUnity::Test_Terrain,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::HoudiniEngineUnity::Test_Terrain,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToTestObject", (_cordl_self))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToTestObject_Terrain0(
+        _cordl_self: quest_hook::libil2cpp::Gc<crate::UnityEngine::Terrain>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_Terrain>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::Test_Terrain,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToTestObject", (_cordl_self))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "HoudiniEngineUnity+Test_Terrain_Extensions")]
 impl quest_hook::libil2cpp::ObjectType

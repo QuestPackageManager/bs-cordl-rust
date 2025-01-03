@@ -36,7 +36,41 @@ for crate::UnityEngine::Experimental::Rendering::ScriptableRuntimeReflectionSyst
 #[cfg(
     feature = "UnityEngine+Experimental+Rendering+ScriptableRuntimeReflectionSystemSettings"
 )]
-impl crate::UnityEngine::Experimental::Rendering::ScriptableRuntimeReflectionSystemSettings {}
+impl crate::UnityEngine::Experimental::Rendering::ScriptableRuntimeReflectionSystemSettings {
+    pub fn ScriptingDirtyReflectionSystemInstance() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ScriptingDirtyReflectionSystemInstance", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Internal_ScriptableRuntimeReflectionSystemSettings_instance() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Experimental::Rendering::ScriptableRuntimeReflectionSystemWrapper,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Experimental::Rendering::ScriptableRuntimeReflectionSystemWrapper,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "get_Internal_ScriptableRuntimeReflectionSystemSettings_instance",
+                (),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_Internal_ScriptableRuntimeReflectionSystemSettings_system(
+        value: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Experimental::Rendering::IScriptableRuntimeReflectionSystem,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "set_Internal_ScriptableRuntimeReflectionSystemSettings_system",
+                (value),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(
     feature = "UnityEngine+Experimental+Rendering+ScriptableRuntimeReflectionSystemSettings"
 )]

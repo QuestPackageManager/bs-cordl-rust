@@ -201,6 +201,18 @@ impl crate::System::Data::ConstraintCollection {
             .invoke("Clear", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn CompareArrays(
+        a1: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataColumn>,
+        >,
+        a2: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataColumn>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CompareArrays", (a1, a2))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Contains_Il2CppString0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

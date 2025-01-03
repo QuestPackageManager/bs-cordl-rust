@@ -28,7 +28,20 @@ for crate::GlobalNamespace::ThreadStaticPacketPool_1<T> {
 #[cfg(feature = "ThreadStaticPacketPool_1")]
 impl<
     T: quest_hook::libil2cpp::Type,
-> crate::GlobalNamespace::ThreadStaticPacketPool_1<T> {}
+> crate::GlobalNamespace::ThreadStaticPacketPool_1<T> {
+    pub fn get_pool() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PacketPool_1<T>>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PacketPool_1<T>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_pool", ())?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "ThreadStaticPacketPool_1")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ThreadStaticPacketPool_1<T> {

@@ -38,6 +38,38 @@ impl crate::GlobalNamespace::AuthenticationToken {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn Deserialize(
+        reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::AuthenticationToken> {
+        let __cordl_ret: crate::GlobalNamespace::AuthenticationToken = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Deserialize", (reader))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromHex(
+        str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("FromHex", (str))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromUtf8(
+        str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("FromUtf8", (str))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetHexVal(c: char) -> quest_hook::libil2cpp::Result<u8> {
+        let __cordl_ret: u8 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetHexVal", (c))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Serialize(
         &mut self,
         writer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
@@ -47,6 +79,26 @@ impl crate::GlobalNamespace::AuthenticationToken {
             "Serialize",
             (writer),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToHex(
+        bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("ToHex", (bytes))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToUtf8(
+        bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("ToUtf8", (bytes))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

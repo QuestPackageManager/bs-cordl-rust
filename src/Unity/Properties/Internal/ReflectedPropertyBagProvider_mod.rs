@@ -272,6 +272,37 @@ impl crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
         > = __cordl_object.invoke("CreateSetPropertyBag", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetPropertyMembers(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::System::Reflection::MemberInfo,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::System::Reflection::MemberInfo,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPropertyMembers", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsValidMember(
+        memberInfo: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsValidMember", (memberInfo))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsValidPropertyType(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsValidPropertyType", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

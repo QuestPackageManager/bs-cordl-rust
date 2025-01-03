@@ -54,6 +54,18 @@ impl crate::Org::BouncyCastle::Crypto::Tls::HeartbeatMessage {
             .invoke_void(".ctor", (_cordl_type, payload, paddingLength))?;
         Ok(__cordl_object.into())
     }
+    pub fn Parse(
+        input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::HeartbeatMessage,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::HeartbeatMessage,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Parse", (input))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
         _cordl_type: u8,

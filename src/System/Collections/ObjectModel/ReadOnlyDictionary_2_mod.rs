@@ -111,6 +111,19 @@ impl<
         > = __cordl_object.invoke("GetEnumerator", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn IsCompatibleKey(
+        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsCompatibleKey", (key))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn System_Collections_Generic_ICollection_System_Collections_Generic_KeyValuePair_TKey_TValue___Add(
         &mut self,
         item: crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,

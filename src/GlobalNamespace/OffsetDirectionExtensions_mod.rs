@@ -23,7 +23,15 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OffsetDirectionExtensions {
     }
 }
 #[cfg(feature = "OffsetDirectionExtensions")]
-impl crate::GlobalNamespace::OffsetDirectionExtensions {}
+impl crate::GlobalNamespace::OffsetDirectionExtensions {
+    pub fn OppositeDirection(
+        offsetDirection: crate::GlobalNamespace::OffsetDirection,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OffsetDirection> {
+        let __cordl_ret: crate::GlobalNamespace::OffsetDirection = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("OppositeDirection", (offsetDirection))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "OffsetDirectionExtensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OffsetDirectionExtensions {

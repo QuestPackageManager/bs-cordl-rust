@@ -23,7 +23,7 @@ impl std::ops::DerefMut for crate::System::Object {
 }
 #[cfg(feature = "System+Object")]
 impl crate::System::Object {
-    pub fn Equals(
+    pub fn Equals_Il2CppObject0(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -31,6 +31,14 @@ impl crate::System::Object {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Equals_Il2CppObject1(
+        objA: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        objB: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Equals", (objA, objB))?;
         Ok(__cordl_ret.into())
     }
     pub fn FieldGetter(
@@ -86,6 +94,13 @@ impl crate::System::Object {
             .invoke("GetType", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn InternalGetHashCode(
+        o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InternalGetHashCode", (o))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn MemberwiseClone(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -105,6 +120,14 @@ impl crate::System::Object {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
+    }
+    pub fn ReferenceEquals(
+        objA: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        objB: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReferenceEquals", (objA, objB))?;
+        Ok(__cordl_ret.into())
     }
     pub fn ToString(
         &mut self,

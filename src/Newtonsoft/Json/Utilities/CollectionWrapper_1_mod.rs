@@ -103,6 +103,17 @@ impl<
         > = __cordl_object.invoke("GetEnumerator", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn IsCompatibleObject(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsCompatibleObject", (value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_ICollection_1_1(
         list: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::ICollection_1<T>,
@@ -343,6 +354,17 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("System.Collections.IList.set_Item", (index, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn VerifyValueType(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("VerifyValueType", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_ICollection_1_1(

@@ -47,6 +47,44 @@ impl crate::System::IO::Compression::DeflateStreamNative {
             .invoke("CheckResult", (result, _cordl_where))?;
         Ok(__cordl_ret.into())
     }
+    pub fn CloseZStream(
+        stream: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CloseZStream", (stream))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Create(
+        compressedStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+        mode: crate::System::IO::Compression::CompressionMode,
+        gzip: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IO::Compression::DeflateStreamNative>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::IO::Compression::DeflateStreamNative,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (compressedStream, mode, gzip))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateZStream(
+        compress: crate::System::IO::Compression::CompressionMode,
+        gzip: bool,
+        feeder: quest_hook::libil2cpp::Gc<
+            crate::System::IO::Compression::DeflateStreamNative_UnmanagedReadOrWrite,
+        >,
+        data: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::IO::Compression::DeflateStreamNative_SafeDeflateStreamHandle,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::IO::Compression::DeflateStreamNative_SafeDeflateStreamHandle,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateZStream", (compress, gzip, feeder, data))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Dispose(
         &mut self,
         disposing: bool,
@@ -68,7 +106,7 @@ impl crate::System::IO::Compression::DeflateStreamNative {
             .invoke("Finalize", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn Flush(
+    pub fn Flush_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -78,6 +116,15 @@ impl crate::System::IO::Compression::DeflateStreamNative {
             .invoke("Flush", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn Flush_DeflateStreamNative_SafeDeflateStreamHandle1(
+        stream: quest_hook::libil2cpp::Gc<
+            crate::System::IO::Compression::DeflateStreamNative_SafeDeflateStreamHandle,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Flush", (stream))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -85,7 +132,18 @@ impl crate::System::IO::Compression::DeflateStreamNative {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn ReadZStream(
+    pub fn ReadZStream_DeflateStreamNative_SafeDeflateStreamHandle_IntPtr_i32_1(
+        stream: quest_hook::libil2cpp::Gc<
+            crate::System::IO::Compression::DeflateStreamNative_SafeDeflateStreamHandle,
+        >,
+        buffer: crate::System::IntPtr,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadZStream", (stream, buffer, length))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReadZStream_IntPtr_i32_0(
         &mut self,
         buffer: crate::System::IntPtr,
         length: i32,
@@ -96,7 +154,16 @@ impl crate::System::IO::Compression::DeflateStreamNative {
         let __cordl_ret: i32 = __cordl_object.invoke("ReadZStream", (buffer, length))?;
         Ok(__cordl_ret.into())
     }
-    pub fn UnmanagedRead(
+    pub fn UnmanagedRead_IntPtr0(
+        buffer: crate::System::IntPtr,
+        length: i32,
+        data: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UnmanagedRead", (buffer, length, data))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UnmanagedRead_IntPtr_i32_1(
         &mut self,
         buffer: crate::System::IntPtr,
         length: i32,
@@ -107,7 +174,16 @@ impl crate::System::IO::Compression::DeflateStreamNative {
         let __cordl_ret: i32 = __cordl_object.invoke("UnmanagedRead", (buffer, length))?;
         Ok(__cordl_ret.into())
     }
-    pub fn UnmanagedWrite(
+    pub fn UnmanagedWrite_IntPtr0(
+        buffer: crate::System::IntPtr,
+        length: i32,
+        data: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UnmanagedWrite", (buffer, length, data))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UnmanagedWrite_IntPtr_i32_1(
         &mut self,
         buffer: crate::System::IntPtr,
         length: i32,
@@ -119,7 +195,18 @@ impl crate::System::IO::Compression::DeflateStreamNative {
             .invoke("UnmanagedWrite", (buffer, length))?;
         Ok(__cordl_ret.into())
     }
-    pub fn WriteZStream(
+    pub fn WriteZStream_DeflateStreamNative_SafeDeflateStreamHandle_IntPtr_i32_1(
+        stream: quest_hook::libil2cpp::Gc<
+            crate::System::IO::Compression::DeflateStreamNative_SafeDeflateStreamHandle,
+        >,
+        buffer: crate::System::IntPtr,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WriteZStream", (stream, buffer, length))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WriteZStream_IntPtr_i32_0(
         &mut self,
         buffer: crate::System::IntPtr,
         length: i32,

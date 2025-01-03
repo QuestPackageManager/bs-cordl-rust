@@ -24,7 +24,36 @@ impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::MeshOperations::Subd
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+Subdivision")]
-impl crate::UnityEngine::ProBuilder::MeshOperations::Subdivision {}
+impl crate::UnityEngine::ProBuilder::MeshOperations::Subdivision {
+    pub fn Subdivide_IList_1_1(
+        pb: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+        faces: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                *mut crate::UnityEngine::ProBuilder::Face,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::ProBuilder::Face>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::ProBuilder::Face>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Subdivide", (pb, faces))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Subdivide_ProBuilderMesh0(
+        pb: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ActionResult>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::ActionResult,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Subdivide", (pb))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+Subdivision")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ProBuilder::MeshOperations::Subdivision {

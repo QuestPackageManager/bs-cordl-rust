@@ -23,6 +23,28 @@ for crate::GlobalNamespace::LoadBeatmapLevelDataResult {
 }
 #[cfg(feature = "LoadBeatmapLevelDataResult")]
 impl crate::GlobalNamespace::LoadBeatmapLevelDataResult {
+    pub fn FromValue(
+        beatmapLevelData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IBeatmapLevelData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::LoadBeatmapLevelDataResult,
+    > {
+        let __cordl_ret: crate::GlobalNamespace::LoadBeatmapLevelDataResult = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromValue", (beatmapLevelData))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Success(
+        beatmapLevelData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IBeatmapLevelData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::LoadBeatmapLevelDataResult,
+    > {
+        let __cordl_ret: crate::GlobalNamespace::LoadBeatmapLevelDataResult = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Success", (beatmapLevelData))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
         isError: bool,

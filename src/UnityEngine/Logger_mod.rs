@@ -26,6 +26,17 @@ impl std::ops::DerefMut for crate::UnityEngine::Logger {
 }
 #[cfg(feature = "UnityEngine+Logger")]
 impl crate::UnityEngine::Logger {
+    pub fn GetString(
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetString", (message))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn IsLogTypeAllowed(
         &mut self,
         logType: crate::UnityEngine::LogType,

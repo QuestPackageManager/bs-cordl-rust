@@ -27,6 +27,36 @@ for crate::Org::BouncyCastle::Crypto::Utilities::CipherKeyGeneratorFactory {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Utilities+CipherKeyGeneratorFactory")]
 impl crate::Org::BouncyCastle::Crypto::Utilities::CipherKeyGeneratorFactory {
+    pub fn CreateCipherKeyGenerator(
+        random: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Security::SecureRandom,
+        >,
+        keySize: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::CipherKeyGenerator>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::CipherKeyGenerator,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateCipherKeyGenerator", (random, keySize))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateKeyGenerator(
+        algorithm: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
+        random: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Security::SecureRandom,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::CipherKeyGenerator>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::CipherKeyGenerator,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateKeyGenerator", (algorithm, random))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

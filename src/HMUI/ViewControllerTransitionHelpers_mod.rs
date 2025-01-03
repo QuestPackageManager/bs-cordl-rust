@@ -41,6 +41,104 @@ impl crate::HMUI::ViewControllerTransitionHelpers {
     pub type __c__DisplayClass5_0 = crate::HMUI::ViewControllerTransitionHelpers___c__DisplayClass5_0;
     #[cfg(feature = "HMUI+ViewControllerTransitionHelpers+__c__DisplayClass6_0")]
     pub type __c__DisplayClass6_0 = crate::HMUI::ViewControllerTransitionHelpers___c__DisplayClass6_0;
+    pub fn AnimationCoroutine(
+        transitionAnimation: quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IEnumerator,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AnimationCoroutine", (transitionAnimation))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DoDismissTransition(
+        toPresentViewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+        toDismissViewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+        animationDirection: crate::HMUI::ViewController_AnimationDirection,
+        moveOffsetMultiplier: f32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IEnumerator,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "DoDismissTransition",
+                (
+                    toPresentViewController,
+                    toDismissViewController,
+                    animationDirection,
+                    moveOffsetMultiplier,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DoHorizontalTransition(
+        toPresentViewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+        toDismissViewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+        moveOffsetMultiplier: f32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IEnumerator,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "DoHorizontalTransition",
+                (toPresentViewController, toDismissViewController, moveOffsetMultiplier),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DoPresentTransition(
+        toPresentViewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+        toDismissViewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+        animationDirection: crate::HMUI::ViewController_AnimationDirection,
+        moveOffsetMultiplier: f32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IEnumerator,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "DoPresentTransition",
+                (
+                    toPresentViewController,
+                    toDismissViewController,
+                    animationDirection,
+                    moveOffsetMultiplier,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DoVerticalTransition(
+        toPresentViewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+        toDismissViewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+        moveOffsetMultiplier: f32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IEnumerator,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "DoVerticalTransition",
+                (toPresentViewController, toDismissViewController, moveOffsetMultiplier),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ImmediateTransition(
+        toPresentViewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+        toDismissViewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ImmediateTransition",
+                (toPresentViewController, toDismissViewController),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

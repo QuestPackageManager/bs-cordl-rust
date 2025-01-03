@@ -98,6 +98,13 @@ impl crate::UnityEngine::UIElements::AtlasBase {
             .invoke("OnUpdateDynamicTextures", (panel))?;
         Ok(__cordl_ret.into())
     }
+    pub fn RepaintTexturedElements(
+        panel: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RepaintTexturedElements", (panel))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Reset(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

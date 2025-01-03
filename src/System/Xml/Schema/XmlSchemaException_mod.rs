@@ -33,6 +33,20 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::XmlSchemaException {
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaException")]
 impl crate::System::Xml::Schema::XmlSchemaException {
+    pub fn CreateMessage(
+        res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        args: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateMessage", (res, args))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetObjectData(
         &mut self,
         info: quest_hook::libil2cpp::Gc<

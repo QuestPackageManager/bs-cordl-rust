@@ -27,6 +27,19 @@ impl crate::Org::BouncyCastle::Bcpg::Sig::NotationData {
     pub const HeaderFlagLength: i32 = 4i32;
     pub const HeaderNameLength: i32 = 2i32;
     pub const HeaderValueLength: i32 = 2i32;
+    pub fn CreateData(
+        humanReadable: bool,
+        notationName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        notationValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateData", (humanReadable, notationName, notationValue))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetNotationName(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

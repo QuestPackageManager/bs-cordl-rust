@@ -24,6 +24,13 @@ impl std::ops::DerefMut for crate::System::Xml::XmlReader {
 }
 #[cfg(feature = "System+Xml+XmlReader")]
 impl crate::System::Xml::XmlReader {
+    pub fn CalcBufferSize(
+        input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CalcBufferSize", (input))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Close(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -32,6 +39,17 @@ impl crate::System::Xml::XmlReader {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Close", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateSqlReader(
+        input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+        settings: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReaderSettings>,
+        inputContext: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlParserContext>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateSqlReader", (input, settings, inputContext))?;
         Ok(__cordl_ret.into())
     }
     pub fn CreateWriterForInnerOuterXml(
@@ -45,6 +63,28 @@ impl crate::System::Xml::XmlReader {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter> = __cordl_object
             .invoke("CreateWriterForInnerOuterXml", (sw))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Create_Stream0(
+        input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+        settings: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReaderSettings>,
+        baseUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (input, settings, baseUri))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Create_TextReader1(
+        input: quest_hook::libil2cpp::Gc<crate::System::IO::TextReader>,
+        settings: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReaderSettings>,
+        baseUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (input, settings, baseUri))?;
         Ok(__cordl_ret.into())
     }
     pub fn Dispose_0(
@@ -111,6 +151,13 @@ impl crate::System::Xml::XmlReader {
         > = __cordl_object.invoke("GetAttribute", (i))?;
         Ok(__cordl_ret.into())
     }
+    pub fn HasValueInternal(
+        nodeType: crate::System::Xml::XmlNodeType,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("HasValueInternal", (nodeType))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn IsStartElement(
         &mut self,
         localname: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -121,6 +168,13 @@ impl crate::System::Xml::XmlReader {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("IsStartElement", (localname, ns))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsTextualNode(
+        nodeType: crate::System::Xml::XmlNodeType,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsTextualNode", (nodeType))?;
         Ok(__cordl_ret.into())
     }
     pub fn LookupNamespace(

@@ -26,7 +26,59 @@ for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArrayExtensions {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+ReadOnlyArrayExtensions")]
-impl crate::UnityEngine::InputSystem::Utilities::ReadOnlyArrayExtensions {}
+impl crate::UnityEngine::InputSystem::Utilities::ReadOnlyArrayExtensions {
+    pub fn Contains<TValue>(
+        array: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<TValue>,
+        value: TValue,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Contains", (array, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ContainsReference<TValue>(
+        array: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<TValue>,
+        value: TValue,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ContainsReference", (array, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn HaveEqualReferences<TValue>(
+        array1: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<TValue>,
+        array2: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyList_1<TValue>,
+        >,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("HaveEqualReferences", (array1, array2, count))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IndexOfReference<TValue>(
+        array: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<TValue>,
+        value: TValue,
+    ) -> quest_hook::libil2cpp::Result<i32>
+    where
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IndexOfReference", (array, value))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+ReadOnlyArrayExtensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::Utilities::ReadOnlyArrayExtensions {

@@ -24,6 +24,16 @@ impl std::ops::DerefMut for crate::GlobalNamespace::NamedValueChecker {
 }
 #[cfg(feature = "NamedValueChecker")]
 impl crate::GlobalNamespace::NamedValueChecker {
+    pub fn Check(
+        fieldName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        expectedValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        assertMessageSb: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Check", (fieldName, value, expectedValue, assertMessageSb))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

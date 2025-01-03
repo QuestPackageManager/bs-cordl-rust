@@ -128,6 +128,35 @@ impl crate::UnityEngine::UIElements::StyleLength {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Equality(
+        lhs: crate::UnityEngine::UIElements::StyleLength,
+        rhs: crate::UnityEngine::UIElements::StyleLength,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_Length2(
+        v: crate::UnityEngine::UIElements::Length,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::StyleLength> {
+        let __cordl_ret: crate::UnityEngine::UIElements::StyleLength = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (v))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_StyleKeyword0(
+        keyword: crate::UnityEngine::UIElements::StyleKeyword,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::StyleLength> {
+        let __cordl_ret: crate::UnityEngine::UIElements::StyleLength = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (keyword))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_f32_1(
+        v: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::StyleLength> {
+        let __cordl_ret: crate::UnityEngine::UIElements::StyleLength = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (v))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleLength")]
 impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleLength>>

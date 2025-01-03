@@ -93,6 +93,13 @@ impl crate::UnityEngine::RectTransform {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
+    pub fn SendReapplyDrivenProperties(
+        driven: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SendReapplyDrivenProperties", (driven))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn SetInsetAndSizeFromParentEdge(
         &mut self,
         edge: crate::UnityEngine::RectTransform_Edge,
@@ -126,6 +133,15 @@ impl crate::UnityEngine::RectTransform {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn add_reapplyDrivenProperties(
+        value: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::RectTransform_ReapplyDrivenProperties,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("add_reapplyDrivenProperties", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_anchorMax(
@@ -304,6 +320,15 @@ impl crate::UnityEngine::RectTransform {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("get_sizeDelta_Injected", (ret))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_reapplyDrivenProperties(
+        value: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::RectTransform_ReapplyDrivenProperties,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("remove_reapplyDrivenProperties", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_anchorMax(

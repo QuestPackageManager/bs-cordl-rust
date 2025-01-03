@@ -38,6 +38,15 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAssetRoot {
             .invoke("ClearHoudiniEngineReferences", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn DestroyRootComponent(
+        assetRoot: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_HoudiniAssetRoot,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DestroyRootComponent", (assetRoot))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

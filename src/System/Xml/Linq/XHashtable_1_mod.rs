@@ -276,6 +276,19 @@ impl<
     pub type Entry = crate::System::Xml::Linq::XHashtableState_XHashtable_1_Entry<
         TValue,
     >;
+    pub fn ComputeHashCode(
+        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        index: i32,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<i32>
+    where
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ComputeHashCode", (key, index, count))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn FindEntry(
         &mut self,
         hashCode: i32,

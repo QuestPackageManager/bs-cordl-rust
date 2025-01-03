@@ -102,6 +102,15 @@ impl crate::System::Xml::Schema::XdrBuilder {
             .invoke("CheckDefaultAttValue", (attDef))?;
         Ok(__cordl_ret.into())
     }
+    pub fn CompareMinMaxLength(
+        cMin: u32,
+        cMax: u32,
+        builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XdrBuilder>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CompareMinMaxLength", (cMin, cMax, builder))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn EndChildren(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -152,6 +161,17 @@ impl crate::System::Xml::Schema::XdrBuilder {
         let __cordl_ret: i32 = __cordl_object.invoke("GetOrder", (qname))?;
         Ok(__cordl_ret.into())
     }
+    pub fn HandleMinMax(
+        pContent: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::ParticleContentValidator,
+        >,
+        cMin: u32,
+        cMax: u32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("HandleMinMax", (pContent, cMin, cMax))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn IsContentParsed(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -184,6 +204,21 @@ impl crate::System::Xml::Schema::XdrBuilder {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("IsSkipableElement", (qname))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsXdrSchema(
+        uri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsXdrSchema", (uri))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsYes(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XdrBuilder>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsYes", (obj, builder))?;
         Ok(__cordl_ret.into())
     }
     pub fn LoadSchema(
@@ -223,6 +258,48 @@ impl crate::System::Xml::Schema::XdrBuilder {
                 ),
             )?;
         Ok(__cordl_object.into())
+    }
+    pub fn ParseDtMaxLength(
+        cVal: quest_hook::libil2cpp::ByRefMut<u32>,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XdrBuilder>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ParseDtMaxLength", (cVal, obj, builder))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ParseDtMinLength(
+        cVal: quest_hook::libil2cpp::ByRefMut<u32>,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XdrBuilder>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ParseDtMinLength", (cVal, obj, builder))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ParseInteger(
+        str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        n: quest_hook::libil2cpp::ByRefMut<u32>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ParseInteger", (str, n))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ParseMaxOccurs(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XdrBuilder>,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ParseMaxOccurs", (obj, builder))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ParseMinOccurs(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XdrBuilder>,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ParseMinOccurs", (obj, builder))?;
+        Ok(__cordl_ret.into())
     }
     pub fn Pop(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -384,6 +461,268 @@ impl crate::System::Xml::Schema::XdrBuilder {
             .invoke("StartChildren", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn XDR_BeginAttribute(
+        builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XdrBuilder>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("XDR_BeginAttribute", (builder))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn XDR_BeginAttributeType(
+        builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XdrBuilder>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("XDR_BeginAttributeType", (builder))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn XDR_BeginElementType(
+        builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XdrBuilder>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("XDR_BeginElementType", (builder))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn XDR_BeginRoot(
+        builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XdrBuilder>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("XDR_BeginRoot", (builder))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn XDR_BuildAttributeType_Default(
+        builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XdrBuilder>,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("XDR_BuildAttributeType_Default", (builder, obj, prefix))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn XDR_BuildAttributeType_DtMaxLength(
+        builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XdrBuilder>,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("XDR_BuildAttributeType_DtMaxLength", (builder, obj, prefix))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn XDR_BuildAttributeType_DtMinLength(
+        builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XdrBuilder>,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("XDR_BuildAttributeType_DtMinLength", (builder, obj, prefix))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn XDR_BuildAttributeType_DtType(
+        builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XdrBuilder>,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("XDR_BuildAttributeType_DtType", (builder, obj, prefix))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn XDR_BuildAttributeType_DtValues(
+        builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XdrBuilder>,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("XDR_BuildAttributeType_DtValues", (builder, obj, prefix))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn XDR_BuildAttributeType_Name(
+        builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XdrBuilder>,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("XDR_BuildAttributeType_Name", (builder, obj, prefix))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn XDR_BuildAttributeType_Required(
+        builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XdrBuilder>,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("XDR_BuildAttributeType_Required", (builder, obj, prefix))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn XDR_BuildAttribute_Default(
+        builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XdrBuilder>,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("XDR_BuildAttribute_Default", (builder, obj, prefix))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn XDR_BuildAttribute_Required(
+        builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XdrBuilder>,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("XDR_BuildAttribute_Required", (builder, obj, prefix))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn XDR_BuildAttribute_Type(
+        builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XdrBuilder>,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("XDR_BuildAttribute_Type", (builder, obj, prefix))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn XDR_BuildElementType_Content(
+        builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XdrBuilder>,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("XDR_BuildElementType_Content", (builder, obj, prefix))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn XDR_BuildElementType_DtMaxLength(
+        builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XdrBuilder>,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("XDR_BuildElementType_DtMaxLength", (builder, obj, prefix))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn XDR_BuildElementType_DtMinLength(
+        builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XdrBuilder>,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("XDR_BuildElementType_DtMinLength", (builder, obj, prefix))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn XDR_BuildElementType_DtType(
+        builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XdrBuilder>,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("XDR_BuildElementType_DtType", (builder, obj, prefix))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn XDR_BuildElementType_DtValues(
+        builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XdrBuilder>,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("XDR_BuildElementType_DtValues", (builder, obj, prefix))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn XDR_BuildElementType_Model(
+        builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XdrBuilder>,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("XDR_BuildElementType_Model", (builder, obj, prefix))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn XDR_BuildElementType_Name(
+        builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XdrBuilder>,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("XDR_BuildElementType_Name", (builder, obj, prefix))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn XDR_BuildElementType_Order(
+        builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XdrBuilder>,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("XDR_BuildElementType_Order", (builder, obj, prefix))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn XDR_BuildElement_MaxOccurs(
+        builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XdrBuilder>,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("XDR_BuildElement_MaxOccurs", (builder, obj, prefix))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn XDR_BuildElement_MinOccurs(
+        builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XdrBuilder>,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("XDR_BuildElement_MinOccurs", (builder, obj, prefix))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn XDR_BuildElement_Type(
+        builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XdrBuilder>,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("XDR_BuildElement_Type", (builder, obj, prefix))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn XDR_BuildGroup_MaxOccurs(
+        builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XdrBuilder>,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("XDR_BuildGroup_MaxOccurs", (builder, obj, prefix))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn XDR_BuildGroup_MinOccurs(
+        builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XdrBuilder>,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("XDR_BuildGroup_MinOccurs", (builder, obj, prefix))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn XDR_BuildGroup_Order(
+        builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XdrBuilder>,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("XDR_BuildGroup_Order", (builder, obj, prefix))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn XDR_BuildRoot_ID(
+        builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XdrBuilder>,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("XDR_BuildRoot_ID", (builder, obj, prefix))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn XDR_BuildRoot_Name(
+        builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XdrBuilder>,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("XDR_BuildRoot_Name", (builder, obj, prefix))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn XDR_CheckAttributeDefault(
         &mut self,
         decl: quest_hook::libil2cpp::Gc<
@@ -396,6 +735,126 @@ impl crate::System::Xml::Schema::XdrBuilder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("XDR_CheckAttributeDefault", (decl, pAttdef))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn XDR_EndAttribute(
+        builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XdrBuilder>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("XDR_EndAttribute", (builder))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn XDR_EndAttributeDtType(
+        builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XdrBuilder>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("XDR_EndAttributeDtType", (builder))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn XDR_EndAttributeType(
+        builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XdrBuilder>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("XDR_EndAttributeType", (builder))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn XDR_EndElement(
+        builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XdrBuilder>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("XDR_EndElement", (builder))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn XDR_EndElementDtType(
+        builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XdrBuilder>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("XDR_EndElementDtType", (builder))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn XDR_EndElementType(
+        builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XdrBuilder>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("XDR_EndElementType", (builder))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn XDR_EndGroup(
+        builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XdrBuilder>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("XDR_EndGroup", (builder))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn XDR_EndRoot(
+        builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XdrBuilder>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("XDR_EndRoot", (builder))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn XDR_InitAttribute(
+        builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XdrBuilder>,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("XDR_InitAttribute", (builder, obj))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn XDR_InitAttributeDtType(
+        builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XdrBuilder>,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("XDR_InitAttributeDtType", (builder, obj))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn XDR_InitAttributeType(
+        builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XdrBuilder>,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("XDR_InitAttributeType", (builder, obj))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn XDR_InitElement(
+        builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XdrBuilder>,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("XDR_InitElement", (builder, obj))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn XDR_InitElementDtType(
+        builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XdrBuilder>,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("XDR_InitElementDtType", (builder, obj))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn XDR_InitElementType(
+        builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XdrBuilder>,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("XDR_InitElementType", (builder, obj))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn XDR_InitGroup(
+        builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XdrBuilder>,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("XDR_InitGroup", (builder, obj))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn XDR_InitRoot(
+        builder: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XdrBuilder>,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("XDR_InitRoot", (builder, obj))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -690,6 +1149,30 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::XdrBuilder_GroupContent 
 }
 #[cfg(feature = "System+Xml+Schema+XdrBuilder+GroupContent")]
 impl crate::System::Xml::Schema::XdrBuilder_GroupContent {
+    pub fn Copy_XdrBuilder_GroupContent0(
+        from: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XdrBuilder_GroupContent,
+        >,
+        to: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XdrBuilder_GroupContent,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Copy", (from, to))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Copy_XdrBuilder_GroupContent1(
+        other: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XdrBuilder_GroupContent,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XdrBuilder_GroupContent>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XdrBuilder_GroupContent,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Copy", (other))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

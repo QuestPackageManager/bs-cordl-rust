@@ -23,7 +23,49 @@ impl std::ops::DerefMut for crate::GlobalNamespace::FileSystemHelper {
     }
 }
 #[cfg(feature = "FileSystemHelper")]
-impl crate::GlobalNamespace::FileSystemHelper {}
+impl crate::GlobalNamespace::FileSystemHelper {
+    pub fn FindFirstExistedParentPath(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FindFirstExistedParentPath", (path))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn HasWritePermission(
+        accessControlList: quest_hook::libil2cpp::Gc<
+            crate::System::Security::AccessControl::FileSystemSecurity,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("HasWritePermission", (accessControlList))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn HasWritePermissionOnDirectory(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("HasWritePermissionOnDirectory", (path))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn HasWritePermissionOnFile(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("HasWritePermissionOnFile", (path))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsFileWritable(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsFileWritable", (path))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "FileSystemHelper")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::FileSystemHelper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

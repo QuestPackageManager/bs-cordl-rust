@@ -36,4 +36,11 @@ impl crate::LIV::SDK::Unity::SDKTrackedSpace {
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_empty() -> quest_hook::libil2cpp::Result<
+        crate::LIV::SDK::Unity::SDKTrackedSpace,
+    > {
+        let __cordl_ret: crate::LIV::SDK::Unity::SDKTrackedSpace = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_empty", ())?;
+        Ok(__cordl_ret.into())
+    }
 }

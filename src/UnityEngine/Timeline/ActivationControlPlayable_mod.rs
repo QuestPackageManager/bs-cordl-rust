@@ -31,6 +31,21 @@ impl crate::UnityEngine::Timeline::ActivationControlPlayable {
     pub type InitialState = crate::UnityEngine::Timeline::ActivationControlPlayable_InitialState;
     #[cfg(feature = "UnityEngine+Timeline+ActivationControlPlayable+PostPlaybackState")]
     pub type PostPlaybackState = crate::UnityEngine::Timeline::ActivationControlPlayable_PostPlaybackState;
+    pub fn Create(
+        graph: crate::UnityEngine::Playables::PlayableGraph,
+        gameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        postPlaybackState: crate::UnityEngine::Timeline::ActivationControlPlayable_PostPlaybackState,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Playables::ScriptPlayable_1<
+            *mut crate::UnityEngine::Timeline::ActivationControlPlayable,
+        >,
+    > {
+        let __cordl_ret: crate::UnityEngine::Playables::ScriptPlayable_1<
+            *mut crate::UnityEngine::Timeline::ActivationControlPlayable,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (graph, gameObject, postPlaybackState))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

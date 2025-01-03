@@ -27,6 +27,45 @@ impl crate::GlobalNamespace::GenericLogger {
     pub const kVerboseLogDefineSymbol: &'static str = "BS_VERBOSE_LOGGING";
     #[cfg(feature = "GenericLogger+ScopedStopwatch")]
     pub type ScopedStopwatch = crate::GlobalNamespace::GenericLogger_ScopedStopwatch;
+    pub fn Format(
+        logger: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IVerboseLogger>,
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Format", (logger, message))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LogWithTimestamp(
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LogWithTimestamp", (message))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Log_IVerboseLogger0(
+        logger: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IVerboseLogger>,
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Log", (logger, message))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Log_T1<T>(
+        logger: T,
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Log", (logger, message))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "GenericLogger")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GenericLogger {

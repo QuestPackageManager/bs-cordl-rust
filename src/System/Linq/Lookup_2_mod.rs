@@ -51,6 +51,34 @@ impl<
         TKey,
         TElement,
     >;
+    pub fn Create<TSource>(
+        source: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TSource>,
+        >,
+        keySelector: quest_hook::libil2cpp::Gc<crate::System::Func_2<TSource, TKey>>,
+        elementSelector: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<TSource, TElement>,
+        >,
+        comparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEqualityComparer_1<TKey>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Lookup_2<TKey, TElement>>,
+    >
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TElement: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Lookup_2<TKey, TElement>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (source, keySelector, elementSelector, comparer))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetEnumerator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

@@ -20,6 +20,15 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::Color32 
 }
 #[cfg(feature = "UnityEngine+Color32")]
 impl crate::UnityEngine::Color32 {
+    pub fn Lerp(
+        a: crate::UnityEngine::Color32,
+        b: crate::UnityEngine::Color32,
+        t: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color32> {
+        let __cordl_ret: crate::UnityEngine::Color32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Lerp", (a, b, t))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ToString_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -66,6 +75,20 @@ impl crate::UnityEngine::Color32 {
             "get_Item",
             (index),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_Color0(
+        c: crate::UnityEngine::Color,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color32> {
+        let __cordl_ret: crate::UnityEngine::Color32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (c))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_Color32_1(
+        c: crate::UnityEngine::Color32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_ret: crate::UnityEngine::Color = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (c))?;
         Ok(__cordl_ret.into())
     }
 }

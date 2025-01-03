@@ -40,6 +40,243 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
         feature = "UnityEngine+ProBuilder+MeshOperations+MeshValidation+__c__DisplayClass5_0"
     )]
     pub type __c__DisplayClass5_0 = crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation___c__DisplayClass5_0;
+    pub fn CollectFaceGroups(
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+        face: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::System::Collections::Generic::List_1<
+                    crate::UnityEngine::ProBuilder::Triangle,
+                >,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::System::Collections::Generic::List_1<
+                    crate::UnityEngine::ProBuilder::Triangle,
+                >,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CollectFaceGroups", (mesh, face))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ContainsDegenerateTriangles_Face2(
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+        face: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ContainsDegenerateTriangles", (mesh, face))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ContainsDegenerateTriangles_IList_1_1(
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+        faces: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                *mut crate::UnityEngine::ProBuilder::Face,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ContainsDegenerateTriangles", (mesh, faces))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ContainsDegenerateTriangles_ProBuilderMesh0(
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ContainsDegenerateTriangles", (mesh))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ContainsNonContiguousTriangles(
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+        face: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ContainsNonContiguousTriangles", (mesh, face))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EnsureArraySize<T>(
+        attribute: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<T>,
+        >,
+        expectedVertexCount: i32,
+        strategy: crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation_AttributeValidationStrategy,
+        fill: T,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "EnsureArraySize",
+                (attribute, expectedVertexCount, strategy, fill),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EnsureFacesAreComposedOfContiguousTriangles(
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+        faces: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::UnityEngine::ProBuilder::Face,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::ProBuilder::Face,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::ProBuilder::Face,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EnsureFacesAreComposedOfContiguousTriangles", (mesh, faces))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EnsureListSize<T>(
+        attribute: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::System::Collections::Generic::List_1<T>,
+        >,
+        expectedVertexCount: i32,
+        strategy: crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation_AttributeValidationStrategy,
+        fill: T,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EnsureListSize", (attribute, expectedVertexCount, strategy, fill))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EnsureMeshIsValid(
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+        removedVertices: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EnsureMeshIsValid", (mesh, removedVertices))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EnsureRealNumbers_IList_1_0(
+        attribute: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector2>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EnsureRealNumbers", (attribute))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EnsureRealNumbers_IList_1_1(
+        attribute: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector3>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EnsureRealNumbers", (attribute))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EnsureRealNumbers_IList_1_2(
+        attribute: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector4>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EnsureRealNumbers", (attribute))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EnsureValidAttributes(
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EnsureValidAttributes", (mesh))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RebuildEdges(
+        edges: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::UnityEngine::ProBuilder::Edge,
+            >,
+        >,
+        removed: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<i32>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::ProBuilder::Edge,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::ProBuilder::Edge,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RebuildEdges", (edges, removed))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RebuildIndexes(
+        indices: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<i32>,
+        >,
+        removed: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<i32>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<i32>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<i32>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RebuildIndexes", (indices, removed))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RebuildSelectionIndexes(
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+        faces: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::UnityEngine::ProBuilder::Face,
+            >,
+        >,
+        edges: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::ProBuilder::Edge>,
+        >,
+        indices: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+        >,
+        removed: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<i32>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RebuildSelectionIndexes", (mesh, faces, edges, indices, removed))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RemoveDegenerateTriangles(
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+        removed: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<i32>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RemoveDegenerateTriangles", (mesh, removed))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RemoveUnusedVertices(
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+        removed: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<i32>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RemoveUnusedVertices", (mesh, removed))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+MeshValidation")]
 impl quest_hook::libil2cpp::ObjectType

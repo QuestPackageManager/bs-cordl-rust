@@ -286,6 +286,13 @@ impl crate::ENet::Host {
             .invoke("SetMaxDuplicatePeers", (number))?;
         Ok(__cordl_ret.into())
     }
+    pub fn ThrowIfChannelsExceeded(
+        channelLimit: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ThrowIfChannelsExceeded", (channelLimit))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ThrowIfNotCreated(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

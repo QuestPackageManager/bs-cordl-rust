@@ -31,6 +31,44 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyRing {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
+    pub fn ReadOptionalTrustPacket(
+        bcpgInput: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::BcpgInputStream,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::TrustPacket>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::TrustPacket,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadOptionalTrustPacket", (bcpgInput))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReadSignaturesAndTrust(
+        bcpgInput: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::BcpgInputStream,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Collections::IList> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadSignaturesAndTrust", (bcpgInput))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReadUserIDs(
+        bcpgInput: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::BcpgInputStream,
+        >,
+        ids: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Collections::IList>,
+        idTrusts: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::System::Collections::IList,
+        >,
+        idSigs: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Collections::IList>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadUserIDs", (bcpgInput, ids, idTrusts, idSigs))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

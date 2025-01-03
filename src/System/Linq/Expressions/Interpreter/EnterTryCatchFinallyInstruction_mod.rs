@@ -29,6 +29,29 @@ for crate::System::Linq::Expressions::Interpreter::EnterTryCatchFinallyInstructi
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+EnterTryCatchFinallyInstruction")]
 impl crate::System::Linq::Expressions::Interpreter::EnterTryCatchFinallyInstruction {
+    pub fn CreateTryCatch() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::EnterTryCatchFinallyInstruction,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::EnterTryCatchFinallyInstruction,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("CreateTryCatch", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateTryFinally(
+        labelIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::EnterTryCatchFinallyInstruction,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::EnterTryCatchFinallyInstruction,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateTryFinally", (labelIndex))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         targetIndex: i32,
         hasFinally: bool,

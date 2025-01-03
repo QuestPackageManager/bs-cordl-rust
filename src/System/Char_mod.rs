@@ -27,6 +27,41 @@ impl crate::System::Char {
     pub const UNICODE_PLANE00_END: i32 = 65535i32;
     pub const UNICODE_PLANE01_START: i32 = 65536i32;
     pub const UNICODE_PLANE16_END: i32 = 1114111i32;
+    pub fn CheckLetter(
+        uc: crate::System::Globalization::UnicodeCategory,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckLetter", (uc))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CheckLetterOrDigit(
+        uc: crate::System::Globalization::UnicodeCategory,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckLetterOrDigit", (uc))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CheckNumber(
+        uc: crate::System::Globalization::UnicodeCategory,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckNumber", (uc))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CheckPunctuation(
+        uc: crate::System::Globalization::UnicodeCategory,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckPunctuation", (uc))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CheckSeparator(
+        uc: crate::System::Globalization::UnicodeCategory,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckSeparator", (uc))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CompareTo_Il2CppObject0(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -47,6 +82,25 @@ impl crate::System::Char {
             "CompareTo",
             (value),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ConvertFromUtf32(
+        utf32: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ConvertFromUtf32", (utf32))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ConvertToUtf32(
+        highSurrogate: char,
+        lowSurrogate: char,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ConvertToUtf32", (highSurrogate, lowSurrogate))?;
         Ok(__cordl_ret.into())
     }
     pub fn Equals_Il2CppObject0(
@@ -79,6 +133,18 @@ impl crate::System::Char {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetLatin1UnicodeCategory(
+        ch: char,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Globalization::UnicodeCategory> {
+        let __cordl_ret: crate::System::Globalization::UnicodeCategory = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetLatin1UnicodeCategory", (ch))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetNumericValue(c: char) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_ret: f64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetNumericValue", (c))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetTypeCode(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::TypeCode> {
@@ -87,6 +153,153 @@ impl crate::System::Char {
             "GetTypeCode",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetUnicodeCategory_Il2CppString_i32_1(
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Globalization::UnicodeCategory> {
+        let __cordl_ret: crate::System::Globalization::UnicodeCategory = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetUnicodeCategory", (s, index))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetUnicodeCategory__cordl_char0(
+        c: char,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Globalization::UnicodeCategory> {
+        let __cordl_ret: crate::System::Globalization::UnicodeCategory = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetUnicodeCategory", (c))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsAscii(ch: char) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsAscii", (ch))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsControl(c: char) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsControl", (c))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsDigit(c: char) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsDigit", (c))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsHighSurrogate_Il2CppString_i32_1(
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsHighSurrogate", (s, index))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsHighSurrogate__cordl_char0(c: char) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsHighSurrogate", (c))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsLatin1(ch: char) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsLatin1", (ch))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsLetter(c: char) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsLetter", (c))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsLetterOrDigit(c: char) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsLetterOrDigit", (c))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsLowSurrogate(c: char) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsLowSurrogate", (c))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsLower(c: char) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsLower", (c))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsNumber_Il2CppString_i32_1(
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsNumber", (s, index))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsNumber__cordl_char0(c: char) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsNumber", (c))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsPunctuation(c: char) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsPunctuation", (c))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsSeparator(c: char) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsSeparator", (c))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsSeparatorLatin1(c: char) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsSeparatorLatin1", (c))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsSurrogatePair(
+        highSurrogate: char,
+        lowSurrogate: char,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsSurrogatePair", (highSurrogate, lowSurrogate))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsSurrogate_Il2CppString_i32_1(
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsSurrogate", (s, index))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsSurrogate__cordl_char0(c: char) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsSurrogate", (c))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsUpper(c: char) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsUpper", (c))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsWhiteSpaceLatin1(c: char) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsWhiteSpaceLatin1", (c))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsWhiteSpace_Il2CppString_i32_1(
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsWhiteSpace", (s, index))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsWhiteSpace__cordl_char0(c: char) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsWhiteSpace", (c))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Parse(
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<char> {
+        let __cordl_ret: char = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Parse", (s))?;
         Ok(__cordl_ret.into())
     }
     pub fn System_IConvertible_ToBoolean(
@@ -259,6 +472,24 @@ impl crate::System::Char {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn ToLowerInvariant(c: char) -> quest_hook::libil2cpp::Result<char> {
+        let __cordl_ret: char = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToLowerInvariant", (c))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToLower_CultureInfo0(
+        c: char,
+        culture: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
+    ) -> quest_hook::libil2cpp::Result<char> {
+        let __cordl_ret: char = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToLower", (c, culture))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToLower__cordl_char1(c: char) -> quest_hook::libil2cpp::Result<char> {
+        let __cordl_ret: char = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToLower", (c))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ToString_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -278,6 +509,42 @@ impl crate::System::Char {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", (provider))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToString__cordl_char2(
+        c: char,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("ToString", (c))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToUpperInvariant(c: char) -> quest_hook::libil2cpp::Result<char> {
+        let __cordl_ret: char = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToUpperInvariant", (c))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToUpper_CultureInfo0(
+        c: char,
+        culture: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
+    ) -> quest_hook::libil2cpp::Result<char> {
+        let __cordl_ret: char = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToUpper", (c, culture))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToUpper__cordl_char1(c: char) -> quest_hook::libil2cpp::Result<char> {
+        let __cordl_ret: char = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToUpper", (c))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryParse(
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        result: quest_hook::libil2cpp::ByRefMut<char>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryParse", (s, result))?;
         Ok(__cordl_ret.into())
     }
 }

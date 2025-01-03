@@ -63,6 +63,14 @@ impl crate::UnityEngine::UI::ReflectionMethodsCache {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_Singleton() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ReflectionMethodsCache>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UI::ReflectionMethodsCache,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_Singleton", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+UI+ReflectionMethodsCache")]
 impl quest_hook::libil2cpp::ObjectType

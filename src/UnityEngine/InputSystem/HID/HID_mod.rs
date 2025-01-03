@@ -61,6 +61,66 @@ impl crate::UnityEngine::InputSystem::HID::HID {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
+    pub fn OnFindLayoutForDevice(
+        description: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription,
+        >,
+        matchedLayout: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        executeDeviceCommand: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::LowLevel::InputDeviceExecuteCommandDelegate,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "OnFindLayoutForDevice",
+                (description, matchedLayout, executeDeviceCommand),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReadHIDDeviceDescriptor(
+        deviceDescription: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription,
+        >,
+        executeCommandDelegate: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::LowLevel::InputDeviceExecuteCommandDelegate,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ReadHIDDeviceDescriptor",
+                (deviceDescription, executeCommandDelegate),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UsagePageToString(
+        usagePage: crate::UnityEngine::InputSystem::HID::HID_UsagePage,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UsagePageToString", (usagePage))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UsageToString(
+        usagePage: crate::UnityEngine::InputSystem::HID::HID_UsagePage,
+        usage: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UsageToString", (usagePage, usage))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -69,6 +129,27 @@ impl crate::UnityEngine::InputSystem::HID::HID {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_QueryHIDParsedReportDescriptorDeviceCommandType() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::FourCC,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_QueryHIDParsedReportDescriptorDeviceCommandType", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_QueryHIDReportDescriptorDeviceCommandType() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::FourCC,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_QueryHIDReportDescriptorDeviceCommandType", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_QueryHIDReportDescriptorSizeDeviceCommandType() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::FourCC,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_QueryHIDReportDescriptorSizeDeviceCommandType", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_hidDescriptor(
@@ -274,6 +355,15 @@ for crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor {
 }
 #[cfg(feature = "UnityEngine+InputSystem+HID+HID+HIDDeviceDescriptor")]
 impl crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor {
+    pub fn FromJson(
+        json: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromJson", (json))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ToJson(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

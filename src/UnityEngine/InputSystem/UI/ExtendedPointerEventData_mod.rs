@@ -33,6 +33,30 @@ for crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData {
 }
 #[cfg(feature = "UnityEngine+InputSystem+UI+ExtendedPointerEventData")]
 impl crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData {
+    pub fn GetPenPointerId(
+        pen: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Pen>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPenPointerId", (pen))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetTouchPointerId(
+        touchControl: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Controls::TouchControl,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetTouchPointerId", (touchControl))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MakePointerIdForTouch(
+        deviceId: i32,
+        touchId: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MakePointerIdForTouch", (deviceId, touchId))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         eventSystem: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::EventSystems::EventSystem,
@@ -65,6 +89,11 @@ impl crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("ToString", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TouchIdFromPointerId(pointerId: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TouchIdFromPointerId", (pointerId))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

@@ -32,6 +32,39 @@ impl crate::UnityEngine::InputSystem::HID::HIDParser {
     pub type HIDItemTypeAndTag = crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemTypeAndTag;
     #[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser+HIDReportData")]
     pub type HIDReportData = crate::UnityEngine::InputSystem::HID::HIDParser_HIDReportData;
+    pub fn ParseReportDescriptor_Il2CppArray_ByRefMut0(
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        deviceDescriptor: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ParseReportDescriptor", (buffer, deviceDescriptor))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ParseReportDescriptor_Il2CppObject_i32_ByRefMut1(
+        bufferPtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        bufferLength: i32,
+        deviceDescriptor: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ParseReportDescriptor",
+                (bufferPtr, bufferLength, deviceDescriptor),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReadData(
+        itemSize: i32,
+        currentPtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        endPtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadData", (itemSize, currentPtr, endPtr))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser")]
 impl quest_hook::libil2cpp::ObjectType
@@ -152,6 +185,15 @@ impl crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateLocal {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn Reset(
+        state: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateLocal,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Reset", (state))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn SetUsage(
         &mut self,
         value: i32,
@@ -228,4 +270,18 @@ for crate::UnityEngine::InputSystem::HID::HIDParser_HIDReportData {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser+HIDReportData")]
-impl crate::UnityEngine::InputSystem::HID::HIDParser_HIDReportData {}
+impl crate::UnityEngine::InputSystem::HID::HIDParser_HIDReportData {
+    pub fn FindOrAddReport(
+        reportId: crate::System::Nullable_1<i32>,
+        reportType: crate::UnityEngine::InputSystem::HID::HID_HIDReportType,
+        reports: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::InputSystem::HID::HIDParser_HIDReportData,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FindOrAddReport", (reportId, reportType, reports))?;
+        Ok(__cordl_ret.into())
+    }
+}

@@ -25,7 +25,23 @@ for crate::System::Net::NetworkInformation::SystemNetworkInterface {
     }
 }
 #[cfg(feature = "System+Net+NetworkInformation+SystemNetworkInterface")]
-impl crate::System::Net::NetworkInformation::SystemNetworkInterface {}
+impl crate::System::Net::NetworkInformation::SystemNetworkInterface {
+    pub fn GetNetworkInterfaces() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Net::NetworkInformation::NetworkInterface,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Net::NetworkInformation::NetworkInterface,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetNetworkInterfaces", ())?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Net+NetworkInformation+SystemNetworkInterface")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Net::NetworkInformation::SystemNetworkInterface {

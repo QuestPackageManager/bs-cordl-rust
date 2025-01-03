@@ -23,7 +23,22 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::EnumFieldHelpers {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+EnumFieldHelpers")]
-impl crate::UnityEngine::UIElements::EnumFieldHelpers {}
+impl crate::UnityEngine::UIElements::EnumFieldHelpers {
+    pub fn ExtractValue(
+        bag: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IUxmlAttributes>,
+        cc: crate::UnityEngine::UIElements::CreationContext,
+        resEnumType: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Type>,
+        resEnumValue: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Enum>,
+        resIncludeObsoleteValues: quest_hook::libil2cpp::ByRefMut<bool>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ExtractValue",
+                (bag, cc, resEnumType, resEnumValue, resIncludeObsoleteValues),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+EnumFieldHelpers")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::EnumFieldHelpers {

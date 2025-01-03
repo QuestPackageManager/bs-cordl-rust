@@ -94,6 +94,27 @@ impl<
         let __cordl_ret: T = __cordl_object.invoke("GetDataForId", (id))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetItemIds(
+        items: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::UnityEngine::UIElements::TreeViewItemData_1<T>,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<i32>,
+        >,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<i32>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetItemIds", (items))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetParentId(&mut self, id: i32) -> quest_hook::libil2cpp::Result<i32>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type

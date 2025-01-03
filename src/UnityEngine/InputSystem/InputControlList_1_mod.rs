@@ -178,6 +178,15 @@ impl<
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn FromIndex(index: u64) -> quest_hook::libil2cpp::Result<TControl>
+    where
+        TControl: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: TControl = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromIndex", (index))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetEnumerator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -350,6 +359,15 @@ impl<
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<TControl>,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToArray", (dispose))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToIndex(control: TControl) -> quest_hook::libil2cpp::Result<u64>
+    where
+        TControl: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: u64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToIndex", (control))?;
         Ok(__cordl_ret.into())
     }
     pub fn ToString(

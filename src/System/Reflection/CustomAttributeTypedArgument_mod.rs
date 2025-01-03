@@ -23,6 +23,17 @@ for crate::System::Reflection::CustomAttributeTypedArgument {
 }
 #[cfg(feature = "System+Reflection+CustomAttributeTypedArgument")]
 impl crate::System::Reflection::CustomAttributeTypedArgument {
+    pub fn CanonicalizeValue(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CanonicalizeValue", (value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Equals(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -104,6 +115,22 @@ impl crate::System::Reflection::CustomAttributeTypedArgument {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_Value", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        left: crate::System::Reflection::CustomAttributeTypedArgument,
+        right: crate::System::Reflection::CustomAttributeTypedArgument,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        left: crate::System::Reflection::CustomAttributeTypedArgument,
+        right: crate::System::Reflection::CustomAttributeTypedArgument,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (left, right))?;
         Ok(__cordl_ret.into())
     }
 }

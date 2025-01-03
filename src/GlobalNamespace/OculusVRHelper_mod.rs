@@ -252,6 +252,13 @@ impl crate::GlobalNamespace::OculusVRHelper {
             .invoke("Update", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn XRNodeToOVRNode(
+        node: crate::UnityEngine::XR::XRNode,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Node> {
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Node = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("XRNodeToOVRNode", (node))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -97,6 +97,15 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPath {
             .invoke_void(".ctor", (inStream, encoding))?;
         Ok(__cordl_object.into())
     }
+    pub fn SortCerts(
+        certs: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Collections::IList> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SortCerts", (certs))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ToAsn1Object(
         &mut self,
         cert: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Certificate>,

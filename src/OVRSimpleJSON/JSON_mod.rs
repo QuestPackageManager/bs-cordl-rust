@@ -22,7 +22,17 @@ impl std::ops::DerefMut for crate::OVRSimpleJSON::JSON {
     }
 }
 #[cfg(feature = "OVRSimpleJSON+JSON")]
-impl crate::OVRSimpleJSON::JSON {}
+impl crate::OVRSimpleJSON::JSON {
+    pub fn Parse(
+        aJSON: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Parse", (aJSON))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "OVRSimpleJSON+JSON")]
 impl quest_hook::libil2cpp::ObjectType for crate::OVRSimpleJSON::JSON {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

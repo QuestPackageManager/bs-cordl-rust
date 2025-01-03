@@ -32,6 +32,20 @@ impl crate::GlobalNamespace::MediaAsyncLoader {
     pub type _LoadTextureAsync_d__3 = crate::GlobalNamespace::MediaAsyncLoader__LoadTextureAsync_d__3;
     #[cfg(feature = "MediaAsyncLoader+_LoadWebpage_d__0")]
     pub type _LoadWebpage_d__0 = crate::GlobalNamespace::MediaAsyncLoader__LoadWebpage_d__0;
+    pub fn LoadAudioClipAsync(
+        filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        streamAudio: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<*mut crate::UnityEngine::AudioClip>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<*mut crate::UnityEngine::AudioClip>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LoadAudioClipAsync", (filePath, streamAudio))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn LoadAudioClipFromFilePathAsync(
         &mut self,
         filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -46,6 +60,59 @@ impl crate::GlobalNamespace::MediaAsyncLoader {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<*mut crate::UnityEngine::AudioClip>,
         > = __cordl_object.invoke("LoadAudioClipFromFilePathAsync", (filePath))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LoadSpriteAsync(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<*mut crate::UnityEngine::Sprite>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<*mut crate::UnityEngine::Sprite>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LoadSpriteAsync", (path, cancellationToken))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LoadTextureAsync(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<*mut crate::UnityEngine::Texture2D>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<*mut crate::UnityEngine::Texture2D>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LoadTextureAsync", (path, cancellationToken))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LoadWebpage(
+        uri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LoadWebpage", (uri, cancellationToken))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Log(
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Log", (message))?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

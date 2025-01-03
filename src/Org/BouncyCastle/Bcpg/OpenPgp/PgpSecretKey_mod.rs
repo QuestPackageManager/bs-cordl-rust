@@ -26,6 +26,187 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKe
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpSecretKey")]
 impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
+    pub fn CertifiedPublicKey_HashAlgorithmTag1(
+        certificationLevel: i32,
+        keyPair: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
+        >,
+        id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        hashedPackets: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
+        >,
+        unhashedPackets: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
+        >,
+        hashAlgorithm: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CertifiedPublicKey",
+                (
+                    certificationLevel,
+                    keyPair,
+                    id,
+                    hashedPackets,
+                    unhashedPackets,
+                    hashAlgorithm,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CertifiedPublicKey_i32_PgpKeyPair_Il2CppString_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector0(
+        certificationLevel: i32,
+        keyPair: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
+        >,
+        id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        hashedPackets: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
+        >,
+        unhashedPackets: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CertifiedPublicKey",
+                (certificationLevel, keyPair, id, hashedPackets, unhashedPackets),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Checksum(
+        useSha1: bool,
+        bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Checksum", (useSha1, bytes, length))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CopyWithNewPassword(
+        key: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey,
+        >,
+        oldPassPhrase: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<char>,
+        >,
+        newPassPhrase: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<char>,
+        >,
+        newEncAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
+        _cordl_rand: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Security::SecureRandom,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CopyWithNewPassword",
+                (key, oldPassPhrase, newPassPhrase, newEncAlgorithm, _cordl_rand),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CopyWithNewPasswordRaw(
+        key: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey,
+        >,
+        rawOldPassPhrase: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        >,
+        rawNewPassPhrase: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        >,
+        newEncAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
+        _cordl_rand: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Security::SecureRandom,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CopyWithNewPasswordRaw",
+                (key, rawOldPassPhrase, rawNewPassPhrase, newEncAlgorithm, _cordl_rand),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CopyWithNewPasswordUtf8(
+        key: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey,
+        >,
+        oldPassPhrase: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<char>,
+        >,
+        newPassPhrase: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<char>,
+        >,
+        newEncAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
+        _cordl_rand: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Security::SecureRandom,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CopyWithNewPasswordUtf8",
+                (key, oldPassPhrase, newPassPhrase, newEncAlgorithm, _cordl_rand),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DoCopyWithNewPassword(
+        key: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey,
+        >,
+        rawOldPassPhrase: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        >,
+        rawNewPassPhrase: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        >,
+        clearPassPhrase: bool,
+        newEncAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
+        _cordl_rand: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Security::SecureRandom,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "DoCopyWithNewPassword",
+                (
+                    key,
+                    rawOldPassPhrase,
+                    rawNewPassPhrase,
+                    clearPassPhrase,
+                    newEncAlgorithm,
+                    _cordl_rand,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn DoExtractPrivateKey(
         &mut self,
         rawPassPhrase: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -42,6 +223,41 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             .invoke("DoExtractPrivateKey", (rawPassPhrase, clearPassPhrase))?;
         Ok(__cordl_ret.into())
     }
+    pub fn DoParseSecretKeyFromSExpr_PgpPublicKey0(
+        inputStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+        rawPassPhrase: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        clearPassPhrase: bool,
+        pubKey: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "DoParseSecretKeyFromSExpr",
+                (inputStream, rawPassPhrase, clearPassPhrase, pubKey),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DoParseSecretKeyFromSExpr_Stream_Il2CppArray__cordl_bool1(
+        inputStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+        rawPassPhrase: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        clearPassPhrase: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "DoParseSecretKeyFromSExpr",
+                (inputStream, rawPassPhrase, clearPassPhrase),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Encode(
         &mut self,
         outStr: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
@@ -51,6 +267,92 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Encode", (outStr))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EncryptData(
+        encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
+        key: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
+        >,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        dataOff: i32,
+        dataLen: i32,
+        random: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Security::SecureRandom,
+        >,
+        iv: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "EncryptData",
+                (encAlgorithm, key, data, dataOff, dataLen, random, iv),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EncryptKeyDataV3(
+        rawKeyData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
+        rawPassPhrase: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        clearPassPhrase: bool,
+        random: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Security::SecureRandom,
+        >,
+        s2k: quest_hook::libil2cpp::ByRefMut<*mut crate::Org::BouncyCastle::Bcpg::S2k>,
+        iv: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "EncryptKeyDataV3",
+                (
+                    rawKeyData,
+                    encAlgorithm,
+                    rawPassPhrase,
+                    clearPassPhrase,
+                    random,
+                    s2k,
+                    iv,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EncryptKeyDataV4(
+        rawKeyData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
+        hashAlgorithm: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
+        rawPassPhrase: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        clearPassPhrase: bool,
+        random: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Security::SecureRandom,
+        >,
+        s2k: quest_hook::libil2cpp::ByRefMut<*mut crate::Org::BouncyCastle::Bcpg::S2k>,
+        iv: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "EncryptKeyDataV4",
+                (
+                    rawKeyData,
+                    encAlgorithm,
+                    hashAlgorithm,
+                    rawPassPhrase,
+                    clearPassPhrase,
+                    random,
+                    s2k,
+                    iv,
+                ),
+            )?;
         Ok(__cordl_ret.into())
     }
     pub fn ExtractKeyData(
@@ -108,6 +410,23 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPrivateKey,
         > = __cordl_object.invoke("ExtractPrivateKeyUtf8", (passPhrase))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetDValue(
+        inputStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+        rawPassPhrase: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        clearPassPhrase: bool,
+        curveName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetDValue",
+                (inputStream, rawPassPhrase, clearPassPhrase, curveName),
+            )?;
         Ok(__cordl_ret.into())
     }
     pub fn GetECKey(
@@ -635,6 +954,125 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
                 ),
             )?;
         Ok(__cordl_object.into())
+    }
+    pub fn ParseSecretKeyFromSExprRaw_PgpPublicKey0(
+        inputStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+        rawPassPhrase: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        pubKey: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ParseSecretKeyFromSExprRaw", (inputStream, rawPassPhrase, pubKey))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ParseSecretKeyFromSExprRaw_Stream_Il2CppArray1(
+        inputStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+        rawPassPhrase: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ParseSecretKeyFromSExprRaw", (inputStream, rawPassPhrase))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ParseSecretKeyFromSExprUtf8_PgpPublicKey0(
+        inputStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+        passPhrase: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+        pubKey: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ParseSecretKeyFromSExprUtf8", (inputStream, passPhrase, pubKey))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ParseSecretKeyFromSExprUtf8_Stream_Il2CppArray1(
+        inputStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+        passPhrase: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ParseSecretKeyFromSExprUtf8", (inputStream, passPhrase))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ParseSecretKeyFromSExpr_PgpPublicKey0(
+        inputStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+        passPhrase: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+        pubKey: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ParseSecretKeyFromSExpr", (inputStream, passPhrase, pubKey))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ParseSecretKeyFromSExpr_Stream_Il2CppArray1(
+        inputStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+        passPhrase: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ParseSecretKeyFromSExpr", (inputStream, passPhrase))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RecoverKeyData(
+        encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
+        modeAndPadding: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        key: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
+        >,
+        iv: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        keyData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        keyOff: i32,
+        keyLen: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "RecoverKeyData",
+                (encAlgorithm, modeAndPadding, key, iv, keyData, keyOff, keyLen),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReplacePublicKey(
+        secretKey: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey,
+        >,
+        publicKey: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReplacePublicKey", (secretKey, publicKey))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_PgpPrivateKey_PgpPublicKey_SymmetricKeyAlgorithmTag_Il2CppArray__cordl_bool__cordl_bool_SecureRandom__cordl_bool1(
         &mut self,

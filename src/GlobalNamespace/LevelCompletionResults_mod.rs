@@ -63,6 +63,17 @@ impl crate::GlobalNamespace::LevelCompletionResults {
         let __cordl_ret: i32 = __cordl_object.invoke("CompareTo", (obj))?;
         Ok(__cordl_ret.into())
     }
+    pub fn CreateFromSerializedData(
+        reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::LevelCompletionResults,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateFromSerializedData", (reader))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn LiteNetLib_Utils_INetImmutableSerializable_LevelCompletionResults__CreateFromSerializedData(
         &mut self,
         reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,

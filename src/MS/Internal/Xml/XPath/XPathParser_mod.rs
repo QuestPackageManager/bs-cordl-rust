@@ -50,6 +50,40 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
             .invoke("CheckToken", (t))?;
         Ok(__cordl_ret.into())
     }
+    pub fn CreateAxesTable() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<
+                *mut quest_hook::libil2cpp::Il2CppString,
+                crate::MS::Internal::Xml::XPath::Axis_AxisType,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<
+                *mut quest_hook::libil2cpp::Il2CppString,
+                crate::MS::Internal::Xml::XPath::Axis_AxisType,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateAxesTable", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateFunctionTable() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<
+                *mut quest_hook::libil2cpp::Il2CppString,
+                *mut crate::MS::Internal::Xml::XPath::XPathParser_ParamInfo,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<
+                *mut quest_hook::libil2cpp::Il2CppString,
+                *mut crate::MS::Internal::Xml::XPath::XPathParser_ParamInfo,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateFunctionTable", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetAxis(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::MS::Internal::Xml::XPath::Axis_AxisType> {
@@ -58,6 +92,27 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
         );
         let __cordl_ret: crate::MS::Internal::Xml::XPath::Axis_AxisType = __cordl_object
             .invoke("GetAxis", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsNodeType(
+        scaner: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::XPathScanner>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsNodeType", (scaner))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsPrimaryExpr(
+        scanner: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::XPathScanner>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsPrimaryExpr", (scanner))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsStep(
+        lexKind: crate::MS::Internal::Xml::XPath::XPathScanner_LexKind,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsStep", (lexKind))?;
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -331,6 +386,17 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::MS::Internal::Xml::XPath::AstNode,
         > = __cordl_object.invoke("ParseUnionExpr", (qyInput))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ParseXPathExpression(
+        xpathExpression: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::AstNode>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::MS::Internal::Xml::XPath::AstNode,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ParseXPathExpression", (xpathExpression))?;
         Ok(__cordl_ret.into())
     }
     pub fn PassToken(

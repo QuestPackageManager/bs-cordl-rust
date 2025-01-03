@@ -23,7 +23,22 @@ impl std::ops::DerefMut for crate::System::Diagnostics::Contracts::Contract {
     }
 }
 #[cfg(feature = "System+Diagnostics+Contracts+Contract")]
-impl crate::System::Diagnostics::Contracts::Contract {}
+impl crate::System::Diagnostics::Contracts::Contract {
+    pub fn ForAll<T>(
+        collection: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<T>,
+        >,
+        predicate: quest_hook::libil2cpp::Gc<crate::System::Predicate_1<T>>,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ForAll", (collection, predicate))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Diagnostics+Contracts+Contract")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Diagnostics::Contracts::Contract {

@@ -47,6 +47,40 @@ impl crate::System::Xml::Serialization::TypeData {
             .invoke("ConvertForAssignment", (value))?;
         Ok(__cordl_ret.into())
     }
+    pub fn CreateMissingAddMethodException(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        inheritFrom: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        argumentType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::InvalidOperationException>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::InvalidOperationException,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CreateMissingAddMethodException",
+                (_cordl_type, inheritFrom, argumentType),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetGenericListItemType(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetGenericListItemType", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetIndexerProperty(
+        collectionType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::PropertyInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetIndexerProperty", (collectionType))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn LookupTypeConvertor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -46,6 +46,22 @@ impl crate::System::Threading::Tasks::AwaitTaskContinuation {
         > = __cordl_object.invoke("CreateTask", (action, state, scheduler))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetInvokeActionCallback() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::ContextCallback>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::ContextCallback,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetInvokeActionCallback", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InvokeAction(
+        state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InvokeAction", (state))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn MarkAborted(
         &mut self,
         e: quest_hook::libil2cpp::Gc<crate::System::Threading::ThreadAbortException>,
@@ -94,6 +110,17 @@ impl crate::System::Threading::Tasks::AwaitTaskContinuation {
             .invoke("RunCallback", (callback, state, currentTask))?;
         Ok(__cordl_ret.into())
     }
+    pub fn RunOrScheduleAction(
+        action: quest_hook::libil2cpp::Gc<crate::System::Action>,
+        allowInlining: bool,
+        currentTask: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::System::Threading::Tasks::Task,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RunOrScheduleAction", (action, allowInlining, currentTask))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn System_Threading_IThreadPoolWorkItem_ExecuteWorkItem(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -102,6 +129,20 @@ impl crate::System::Threading::Tasks::AwaitTaskContinuation {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("System.Threading.IThreadPoolWorkItem.ExecuteWorkItem", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ThrowAsyncIfNecessary(
+        exc: quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ThrowAsyncIfNecessary", (exc))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UnsafeScheduleAction(
+        action: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UnsafeScheduleAction", (action))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -114,6 +155,11 @@ impl crate::System::Threading::Tasks::AwaitTaskContinuation {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (action, flowExecutionContext))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_IsValidLocationForInlining() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_IsValidLocationForInlining", ())?;
         Ok(__cordl_ret.into())
     }
 }

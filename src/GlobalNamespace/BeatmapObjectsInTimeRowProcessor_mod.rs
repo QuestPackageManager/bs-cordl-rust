@@ -193,6 +193,30 @@ impl crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor {
             .invoke("ProcessSlider", (sliderData))?;
         Ok(__cordl_ret.into())
     }
+    pub fn SliderHeadPositionOverlapsWithBurstTail(
+        slider: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderData>,
+        sliderTail: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderData>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SliderHeadPositionOverlapsWithBurstTail", (slider, sliderTail))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SliderHeadPositionOverlapsWithNote(
+        slider: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderData>,
+        note: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SliderHeadPositionOverlapsWithNote", (slider, note))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SliderTailPositionOverlapsWithNote(
+        slider: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderData>,
+        note: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SliderTailPositionOverlapsWithNote", (slider, note))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
         numberOfLines: i32,

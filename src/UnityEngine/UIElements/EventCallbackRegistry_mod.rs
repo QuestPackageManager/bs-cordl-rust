@@ -27,6 +27,19 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::EventCallbackRegistr
 }
 #[cfg(feature = "UnityEngine+UIElements+EventCallbackRegistry")]
 impl crate::UnityEngine::UIElements::EventCallbackRegistry {
+    pub fn GetCallbackList(
+        initializer: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::EventCallbackList,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventCallbackList>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::EventCallbackList,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCallbackList", (initializer))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetCallbackListForReading(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -131,6 +144,15 @@ impl crate::UnityEngine::UIElements::EventCallbackRegistry {
                 "RegisterCallback",
                 (callback, userArgs, useTrickleDown, invokePolicy),
             )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReleaseCallbackList(
+        toRelease: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::EventCallbackList,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReleaseCallbackList", (toRelease))?;
         Ok(__cordl_ret.into())
     }
     pub fn UnregisterCallback_EventCallback_1_TrickleDown1<TEventType>(

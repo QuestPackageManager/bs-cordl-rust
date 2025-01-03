@@ -374,6 +374,17 @@ impl crate::System::Collections::Hashtable {
             .invoke("Remove", (key))?;
         Ok(__cordl_ret.into())
     }
+    pub fn Synchronized(
+        table: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Hashtable,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Synchronized", (table))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn System_Collections_IEnumerable_GetEnumerator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -598,6 +609,23 @@ impl crate::System::Collections::Hashtable {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::ICollection,
         > = __cordl_object.invoke("get_Keys", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_SerializationInfoTable() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::CompilerServices::ConditionalWeakTable_2<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+                *mut crate::System::Runtime::Serialization::SerializationInfo,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::CompilerServices::ConditionalWeakTable_2<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+                *mut crate::System::Runtime::Serialization::SerializationInfo,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_SerializationInfoTable", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_SyncRoot(

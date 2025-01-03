@@ -35,6 +35,14 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Encodings::Pkcs1En
 impl crate::Org::BouncyCastle::Crypto::Encodings::Pkcs1Encoding {
     pub const HeaderLength: i32 = 10i32;
     pub const StrictLengthEnabledProperty: &'static str = "Org.BouncyCastle.Pkcs1.Strict";
+    pub fn CheckPkcs1Encoding(
+        encoded: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        pLen: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckPkcs1Encoding", (encoded, pLen))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn DecodeBlock(
         &mut self,
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -240,6 +248,18 @@ impl crate::Org::BouncyCastle::Crypto::Encodings::Pkcs1Encoding {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("get_AlgorithmName", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_StrictLengthEnabled() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_StrictLengthEnabled", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_StrictLengthEnabled(
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_StrictLengthEnabled", (value))?;
         Ok(__cordl_ret.into())
     }
 }

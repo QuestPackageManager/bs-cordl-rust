@@ -23,7 +23,43 @@ impl std::ops::DerefMut for crate::System::Net::Http::PlatformHelper {
     }
 }
 #[cfg(feature = "System+Net+Http+PlatformHelper")]
-impl crate::System::Net::Http::PlatformHelper {}
+impl crate::System::Net::Http::PlatformHelper {
+    pub fn CreateStreamContent(
+        stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Net::Http::StreamContent>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Http::StreamContent,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateStreamContent", (stream, cancellationToken))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetSingleHeaderString(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        values: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSingleHeaderString", (name, values))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsContentHeader(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsContentHeader", (name))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Net+Http+PlatformHelper")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Net::Http::PlatformHelper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

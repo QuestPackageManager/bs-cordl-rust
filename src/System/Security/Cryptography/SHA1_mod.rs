@@ -24,6 +24,14 @@ impl std::ops::DerefMut for crate::System::Security::Cryptography::SHA1 {
 }
 #[cfg(feature = "System+Security+Cryptography+SHA1")]
 impl crate::System::Security::Cryptography::SHA1 {
+    pub fn Create() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::SHA1>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::SHA1,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Create", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

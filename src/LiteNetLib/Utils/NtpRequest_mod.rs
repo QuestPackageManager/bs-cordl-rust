@@ -40,6 +40,63 @@ impl crate::LiteNetLib::Utils::NtpRequest {
             .invoke("Close", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn Create_IPAddress_Action_1_1(
+        ipAddress: quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
+        onRequestComplete: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::LiteNetLib::Utils::NtpPacket>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NtpRequest>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::LiteNetLib::Utils::NtpRequest,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (ipAddress, onRequestComplete))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Create_IPEndPoint_Action_1_0(
+        endPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
+        onRequestComplete: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::LiteNetLib::Utils::NtpPacket>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NtpRequest>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::LiteNetLib::Utils::NtpRequest,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (endPoint, onRequestComplete))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Create_Il2CppString_Action_1_3(
+        ntpServerAddress: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        onRequestComplete: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::LiteNetLib::Utils::NtpPacket>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NtpRequest>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::LiteNetLib::Utils::NtpRequest,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (ntpServerAddress, onRequestComplete))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Create_Il2CppString_i32_Action_1_2(
+        ntpServerAddress: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        port: i32,
+        onRequestComplete: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::LiteNetLib::Utils::NtpPacket>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NtpRequest>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::LiteNetLib::Utils::NtpRequest,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (ntpServerAddress, port, onRequestComplete))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn LiteNetLib_INetSocketListener_OnMessageReceived(
         &mut self,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,

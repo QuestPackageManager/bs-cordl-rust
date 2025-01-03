@@ -28,6 +28,115 @@ impl crate::UnityEngine::UIElements::PointerDeviceState {
     pub type LocationFlag = crate::UnityEngine::UIElements::PointerDeviceState_LocationFlag;
     #[cfg(feature = "UnityEngine+UIElements+PointerDeviceState+PointerLocation")]
     pub type PointerLocation = crate::UnityEngine::UIElements::PointerDeviceState_PointerLocation;
+    pub fn GetPanel(
+        pointerId: i32,
+        contextType: crate::UnityEngine::UIElements::ContextType,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::IPanel,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPanel", (pointerId, contextType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPlayerPanelWithSoftPointerCapture(
+        pointerId: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::IPanel,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPlayerPanelWithSoftPointerCapture", (pointerId))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPointerPosition(
+        pointerId: i32,
+        contextType: crate::UnityEngine::UIElements::ContextType,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPointerPosition", (pointerId, contextType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPressedButtons(pointerId: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPressedButtons", (pointerId))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn HasAdditionalPressedButtons(
+        pointerId: i32,
+        exceptButtonId: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("HasAdditionalPressedButtons", (pointerId, exceptButtonId))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn HasFlagFast(
+        flagSet: crate::UnityEngine::UIElements::PointerDeviceState_LocationFlag,
+        flag: crate::UnityEngine::UIElements::PointerDeviceState_LocationFlag,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("HasFlagFast", (flagSet, flag))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn HasLocationFlag(
+        pointerId: i32,
+        contextType: crate::UnityEngine::UIElements::ContextType,
+        flag: crate::UnityEngine::UIElements::PointerDeviceState_LocationFlag,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("HasLocationFlag", (pointerId, contextType, flag))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn PressButton(
+        pointerId: i32,
+        buttonId: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PressButton", (pointerId, buttonId))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReleaseAllButtons(
+        pointerId: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReleaseAllButtons", (pointerId))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReleaseButton(
+        pointerId: i32,
+        buttonId: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReleaseButton", (pointerId, buttonId))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RemovePanelData(
+        panel: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RemovePanelData", (panel))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SavePointerPosition(
+        pointerId: i32,
+        position: crate::UnityEngine::Vector2,
+        panel: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel>,
+        contextType: crate::UnityEngine::UIElements::ContextType,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SavePointerPosition", (pointerId, position, panel, contextType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetPlayerPanelWithSoftPointerCapture(
+        pointerId: i32,
+        panel: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetPlayerPanelWithSoftPointerCapture", (pointerId, panel))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+UIElements+PointerDeviceState")]
 impl quest_hook::libil2cpp::ObjectType

@@ -44,6 +44,38 @@ impl crate::System::Xml::Schema::XdrValidator {
             .invoke("AddID", (name, node))?;
         Ok(__cordl_ret.into())
     }
+    pub fn CheckDefaultValue(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        attdef: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaAttDef>,
+        sinfo: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaInfo>,
+        nsManager: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNamespaceManager>,
+        NameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
+        sender: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        eventhandler: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::ValidationEventHandler,
+        >,
+        baseUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        lineNo: i32,
+        linePos: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CheckDefaultValue",
+                (
+                    value,
+                    attdef,
+                    sinfo,
+                    nsManager,
+                    NameTable,
+                    sender,
+                    eventhandler,
+                    baseUri,
+                    lineNo,
+                    linePos,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CheckForwardRefs(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

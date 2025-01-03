@@ -61,6 +61,36 @@ impl crate::Newtonsoft::Json::Serialization::JsonContract {
     pub type __c__DisplayClass57_0 = crate::Newtonsoft::Json::Serialization::JsonContract___c__DisplayClass57_0;
     #[cfg(feature = "Newtonsoft+Json+Serialization+JsonContract+__c__DisplayClass58_0")]
     pub type __c__DisplayClass58_0 = crate::Newtonsoft::Json::Serialization::JsonContract___c__DisplayClass58_0;
+    pub fn CreateSerializationCallback(
+        callbackMethodInfo: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::MethodInfo,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::SerializationCallback,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::SerializationCallback,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateSerializationCallback", (callbackMethodInfo))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateSerializationErrorCallback(
+        callbackMethodInfo: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::MethodInfo,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::SerializationErrorCallback,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::SerializationErrorCallback,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateSerializationErrorCallback", (callbackMethodInfo))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn InvokeOnDeserialized(
         &mut self,
         o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

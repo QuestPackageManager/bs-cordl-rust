@@ -23,7 +23,17 @@ impl std::ops::DerefMut for crate::BGLib::DotnetExtension::IntegerExtensions {
     }
 }
 #[cfg(feature = "BGLib+DotnetExtension+IntegerExtensions")]
-impl crate::BGLib::DotnetExtension::IntegerExtensions {}
+impl crate::BGLib::DotnetExtension::IntegerExtensions {
+    pub fn ToUInt(
+        number: i32,
+        uNumber: quest_hook::libil2cpp::ByRefMut<u32>,
+        isNegative: quest_hook::libil2cpp::ByRefMut<bool>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToUInt", (number, uNumber, isNegative))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "BGLib+DotnetExtension+IntegerExtensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BGLib::DotnetExtension::IntegerExtensions {

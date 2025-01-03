@@ -28,6 +28,11 @@ impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::ActionResult {
 impl crate::UnityEngine::ProBuilder::ActionResult {
     #[cfg(feature = "UnityEngine+ProBuilder+ActionResult+Status")]
     pub type Status = crate::UnityEngine::ProBuilder::ActionResult_Status;
+    pub fn FromBool(success: bool) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromBool", (success))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         status: crate::UnityEngine::ProBuilder::ActionResult_Status,
         notification: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -57,6 +62,32 @@ impl crate::UnityEngine::ProBuilder::ActionResult {
             .invoke(".ctor", (status, notification))?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_NoSelection() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ActionResult>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::ActionResult,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_NoSelection", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Success() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ActionResult>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::ActionResult,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_Success", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_UserCanceled() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ActionResult>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::ActionResult,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_UserCanceled", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_notification(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -80,6 +111,13 @@ impl crate::UnityEngine::ProBuilder::ActionResult {
         );
         let __cordl_ret: crate::UnityEngine::ProBuilder::ActionResult_Status = __cordl_object
             .invoke("get_status", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit(
+        res: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ActionResult>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (res))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_notification(

@@ -115,6 +115,15 @@ impl crate::Org::BouncyCastle::Crypto::Operators::Asn1SignatureFactory {
         > = __cordl_object.invoke("get_AlgorithmDetails", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_SignatureAlgNames() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IEnumerable,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_SignatureAlgNames", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Operators+Asn1SignatureFactory")]
 impl quest_hook::libil2cpp::ObjectType

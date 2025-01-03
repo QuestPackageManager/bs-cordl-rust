@@ -32,6 +32,24 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedHelper {
         feature = "Org+BouncyCastle+Cms+CmsEnvelopedHelper+CmsEnvelopedSecureReadable"
     )]
     pub type CmsEnvelopedSecureReadable = crate::Org::BouncyCastle::Cms::CmsEnvelopedHelper_CmsEnvelopedSecureReadable;
+    pub fn BuildRecipientInformationStore(
+        recipientInfos: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1Set,
+        >,
+        secureReadable: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cms::CmsSecureReadable,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cms::RecipientInformationStore,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cms::RecipientInformationStore,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BuildRecipientInformationStore", (recipientInfos, secureReadable))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CreateAsymmetricCipher(
         &mut self,
         encryptionOid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -104,6 +122,19 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedHelper {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
+    }
+    pub fn ReadRecipientInfo(
+        infos: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+        info: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cms::RecipientInfo,
+        >,
+        secureReadable: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cms::CmsSecureReadable,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadRecipientInfo", (infos, info, secureReadable))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,

@@ -23,7 +23,24 @@ impl std::ops::DerefMut for crate::GlobalNamespace::RankModelHelper {
     }
 }
 #[cfg(feature = "RankModelHelper")]
-impl crate::GlobalNamespace::RankModelHelper {}
+impl crate::GlobalNamespace::RankModelHelper {
+    pub fn MaxRankForGameplayModifiers(
+        gameplayModifiers: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::GameplayModifiers,
+        >,
+        gameplayModifiersModel: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::GameplayModifiersModelSO,
+        >,
+        energy: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::RankModel_Rank> {
+        let __cordl_ret: crate::GlobalNamespace::RankModel_Rank = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "MaxRankForGameplayModifiers",
+                (gameplayModifiers, gameplayModifiersModel, energy),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "RankModelHelper")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::RankModelHelper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

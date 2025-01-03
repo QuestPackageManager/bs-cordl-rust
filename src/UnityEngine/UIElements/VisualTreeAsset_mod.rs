@@ -82,6 +82,26 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
             .invoke("AssetEntryExists", (path, _cordl_type))?;
         Ok(__cordl_ret.into())
     }
+    pub fn AssignClassListFromAssetToElement(
+        asset: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::VisualElementAsset,
+        >,
+        element: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AssignClassListFromAssetToElement", (asset, element))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AssignStyleSheetFromAssetToElement(
+        asset: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::VisualElementAsset,
+        >,
+        element: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AssignStyleSheetFromAssetToElement", (asset, element))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CloneSetupRecursively(
         &mut self,
         root: quest_hook::libil2cpp::Gc<
@@ -179,6 +199,28 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CloneTree", (target, slotInsertionPoints, attributeOverrides))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CompareForOrder(
+        a: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElementAsset>,
+        b: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElementAsset>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CompareForOrder", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Create(
+        asset: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::VisualElementAsset,
+        >,
+        ctx: crate::UnityEngine::UIElements::CreationContext,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::VisualElement,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (asset, ctx))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetAsset<T>(
@@ -338,6 +380,22 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("TryGetSlotInsertionPoint", (insertionPointId, slotName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _Create_g__CreateError_65_0(
+        _cordl_fixed_empty_name_whitespace: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::UIElements::VisualTreeAsset___c__DisplayClass65_0,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::VisualElement,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "<Create>g__CreateError|65_0",
+                (_cordl_fixed_empty_name_whitespace),
+            )?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

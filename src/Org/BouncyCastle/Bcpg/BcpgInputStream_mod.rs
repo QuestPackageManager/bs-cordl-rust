@@ -127,6 +127,16 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgInputStream {
         > = __cordl_object.invoke("ReadPacket", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn Wrap(
+        inStr: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::BcpgInputStream>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::BcpgInputStream,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Wrap", (inStr))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
         inputStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,

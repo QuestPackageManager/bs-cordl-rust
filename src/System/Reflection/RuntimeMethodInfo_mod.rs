@@ -27,6 +27,23 @@ impl std::ops::DerefMut for crate::System::Reflection::RuntimeMethodInfo {
 }
 #[cfg(feature = "System+Reflection+RuntimeMethodInfo")]
 impl crate::System::Reflection::RuntimeMethodInfo {
+    pub fn ConvertValues(
+        binder: quest_hook::libil2cpp::Gc<crate::System::Reflection::Binder>,
+        args: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        >,
+        pinfo: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Reflection::ParameterInfo,
+            >,
+        >,
+        culture: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
+        invokeAttr: crate::System::Reflection::BindingFlags,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ConvertValues", (binder, args, pinfo, culture, invokeAttr))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CreateDelegate_Il2CppObject1(
         &mut self,
         delegateType: quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -179,6 +196,57 @@ impl crate::System::Reflection::RuntimeMethodInfo {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Reflection::MethodInfo,
         > = __cordl_object.invoke("GetGenericMethodDefinition_impl", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetMethodFromHandleInternalType(
+        method_handle: crate::System::IntPtr,
+        type_handle: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::MethodBase,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetMethodFromHandleInternalType", (method_handle, type_handle))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetMethodFromHandleInternalType_native(
+        method_handle: crate::System::IntPtr,
+        type_handle: crate::System::IntPtr,
+        genericCheck: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::MethodBase,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetMethodFromHandleInternalType_native",
+                (method_handle, type_handle, genericCheck),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetMethodFromHandleNoGenericCheck_RuntimeMethodHandle0(
+        handle: crate::System::RuntimeMethodHandle,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::MethodBase,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetMethodFromHandleNoGenericCheck", (handle))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetMethodFromHandleNoGenericCheck_RuntimeTypeHandle1(
+        handle: crate::System::RuntimeMethodHandle,
+        reflectedType: crate::System::RuntimeTypeHandle,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::MethodBase,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetMethodFromHandleNoGenericCheck", (handle, reflectedType))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetMethodImplementationFlags(
@@ -601,6 +669,40 @@ impl crate::System::Reflection::RuntimeMethodInfo {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = __cordl_object
             .invoke("get_ReturnType", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_base_method(
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::RuntimeMethodInfo>,
+        definition: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Reflection::RuntimeMethodInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::RuntimeMethodInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_base_method", (method, definition))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_core_clr_security_level() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_core_clr_security_level", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_metadata_token(
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::RuntimeMethodInfo>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_metadata_token", (method))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_name(
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_name", (method))?;
         Ok(__cordl_ret.into())
     }
 }

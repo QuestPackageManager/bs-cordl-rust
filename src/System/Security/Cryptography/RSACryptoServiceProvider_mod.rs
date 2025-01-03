@@ -257,6 +257,11 @@ impl crate::System::Security::Cryptography::RSACryptoServiceProvider {
         let __cordl_ret: bool = __cordl_object.invoke("get_PublicOnly", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_UseMachineKeyStore() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_UseMachineKeyStore", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "System+Security+Cryptography+RSACryptoServiceProvider")]
 impl quest_hook::libil2cpp::ObjectType

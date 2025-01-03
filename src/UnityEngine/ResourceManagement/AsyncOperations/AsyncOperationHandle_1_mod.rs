@@ -527,6 +527,21 @@ impl<
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Implicit(
+        obj: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+            TObject,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+    >
+    where
+        TObject: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (obj))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn remove_Completed(
         &mut self,
         value: quest_hook::libil2cpp::Gc<

@@ -30,6 +30,18 @@ for crate::Org::BouncyCastle::Asn1::X509::Qualified::TypeOfBiometricData {
 impl crate::Org::BouncyCastle::Asn1::X509::Qualified::TypeOfBiometricData {
     pub const HandwrittenSignature: i32 = 1i32;
     pub const Picture: i32 = 0i32;
+    pub fn GetInstance(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::Qualified::TypeOfBiometricData,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::Qualified::TypeOfBiometricData,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_DerObjectIdentifier1(
         biometricDataOid: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,

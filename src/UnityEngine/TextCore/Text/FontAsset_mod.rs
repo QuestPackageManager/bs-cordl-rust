@@ -216,6 +216,180 @@ impl crate::UnityEngine::TextCore::Text::FontAsset {
             .invoke("CopyListDataToArray", (srcList, dstArray))?;
         Ok(__cordl_ret.into())
     }
+    pub fn CreateFontAssetInstance(
+        font: quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
+        atlasPadding: i32,
+        renderMode: crate::UnityEngine::TextCore::LowLevel::GlyphRenderMode,
+        atlasWidth: i32,
+        atlasHeight: i32,
+        atlasPopulationMode: crate::UnityEngine::TextCore::Text::AtlasPopulationMode,
+        enableMultiAtlasSupport: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::FontAsset>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::FontAsset,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CreateFontAssetInstance",
+                (
+                    font,
+                    atlasPadding,
+                    renderMode,
+                    atlasWidth,
+                    atlasHeight,
+                    atlasPopulationMode,
+                    enableMultiAtlasSupport,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateFontAsset_Font3(
+        font: quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::FontAsset>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::FontAsset,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateFontAsset", (font))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateFontAsset_Font_i32_i32_GlyphRenderMode_i32_i32_AtlasPopulationMode__cordl_bool4(
+        font: quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
+        samplingPointSize: i32,
+        atlasPadding: i32,
+        renderMode: crate::UnityEngine::TextCore::LowLevel::GlyphRenderMode,
+        atlasWidth: i32,
+        atlasHeight: i32,
+        atlasPopulationMode: crate::UnityEngine::TextCore::Text::AtlasPopulationMode,
+        enableMultiAtlasSupport: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::FontAsset>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::FontAsset,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CreateFontAsset",
+                (
+                    font,
+                    samplingPointSize,
+                    atlasPadding,
+                    renderMode,
+                    atlasWidth,
+                    atlasHeight,
+                    atlasPopulationMode,
+                    enableMultiAtlasSupport,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateFontAsset_Font_i32_i32_i32_GlyphRenderMode_i32_i32_AtlasPopulationMode__cordl_bool5(
+        font: quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
+        faceIndex: i32,
+        samplingPointSize: i32,
+        atlasPadding: i32,
+        renderMode: crate::UnityEngine::TextCore::LowLevel::GlyphRenderMode,
+        atlasWidth: i32,
+        atlasHeight: i32,
+        atlasPopulationMode: crate::UnityEngine::TextCore::Text::AtlasPopulationMode,
+        enableMultiAtlasSupport: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::FontAsset>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::FontAsset,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CreateFontAsset",
+                (
+                    font,
+                    faceIndex,
+                    samplingPointSize,
+                    atlasPadding,
+                    renderMode,
+                    atlasWidth,
+                    atlasHeight,
+                    atlasPopulationMode,
+                    enableMultiAtlasSupport,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateFontAsset_Il2CppString_Il2CppString_i32_0(
+        familyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        styleName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        pointSize: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::FontAsset>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::FontAsset,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateFontAsset", (familyName, styleName, pointSize))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateFontAsset_Il2CppString_i32_i32_i32_GlyphRenderMode_i32_i32_1(
+        fontFilePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        faceIndex: i32,
+        samplingPointSize: i32,
+        atlasPadding: i32,
+        renderMode: crate::UnityEngine::TextCore::LowLevel::GlyphRenderMode,
+        atlasWidth: i32,
+        atlasHeight: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::FontAsset>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::FontAsset,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CreateFontAsset",
+                (
+                    fontFilePath,
+                    faceIndex,
+                    samplingPointSize,
+                    atlasPadding,
+                    renderMode,
+                    atlasWidth,
+                    atlasHeight,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateFontAsset_Il2CppString_i32_i32_i32_GlyphRenderMode_i32_i32_AtlasPopulationMode__cordl_bool2(
+        fontFilePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        faceIndex: i32,
+        samplingPointSize: i32,
+        atlasPadding: i32,
+        renderMode: crate::UnityEngine::TextCore::LowLevel::GlyphRenderMode,
+        atlasWidth: i32,
+        atlasHeight: i32,
+        atlasPopulationMode: crate::UnityEngine::TextCore::Text::AtlasPopulationMode,
+        enableMultiAtlasSupport: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::FontAsset>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::FontAsset,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CreateFontAsset",
+                (
+                    fontFilePath,
+                    faceIndex,
+                    samplingPointSize,
+                    atlasPadding,
+                    renderMode,
+                    atlasWidth,
+                    atlasHeight,
+                    atlasPopulationMode,
+                    enableMultiAtlasSupport,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn DestroyAtlasTextures(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -224,6 +398,32 @@ impl crate::UnityEngine::TextCore::Text::FontAsset {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("DestroyAtlasTextures", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCharacters(
+        fontAsset: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::FontAsset,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCharacters", (fontAsset))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCharactersArray(
+        fontAsset: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::FontAsset,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<i32>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCharactersArray", (fontAsset))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetGlyphIndex(&mut self, unicode: u32) -> quest_hook::libil2cpp::Result<u32> {
@@ -437,6 +637,22 @@ impl crate::UnityEngine::TextCore::Text::FontAsset {
             .invoke("ReadFontAssetDefinition", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn RegisterAtlasTextureForApply(
+        texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RegisterAtlasTextureForApply", (texture))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RegisterFontAssetForFontFeatureUpdate(
+        fontAsset: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::FontAsset,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RegisterFontAssetForFontFeatureUpdate", (fontAsset))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn SetupNewAtlasTexture(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -625,6 +841,13 @@ impl crate::UnityEngine::TextCore::Text::FontAsset {
             .invoke("UpdateAllFontFeatures", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn UpdateAtlasTexturesInQueue() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UpdateAtlasTexturesInQueue", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn UpdateFontAssetData(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -633,6 +856,20 @@ impl crate::UnityEngine::TextCore::Text::FontAsset {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateFontAssetData", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UpdateFontAssetsInUpdateQueue() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UpdateFontAssetsInUpdateQueue", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UpdateFontFeaturesForFontAssetsInQueue() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UpdateFontFeaturesForFontAssetsInQueue", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn UpdateGlyphAdjustmentRecords_0(

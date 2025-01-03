@@ -23,7 +23,38 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OculusPlatformExtensions {
     }
 }
 #[cfg(feature = "OculusPlatformExtensions")]
-impl crate::GlobalNamespace::OculusPlatformExtensions {}
+impl crate::GlobalNamespace::OculusPlatformExtensions {
+    pub fn GetAwaiter_Request1(
+        oculusRequest: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Runtime::CompilerServices::TaskAwaiter_1<
+            *mut crate::Oculus::Platform::Message,
+        >,
+    > {
+        let __cordl_ret: crate::System::Runtime::CompilerServices::TaskAwaiter_1<
+            *mut crate::Oculus::Platform::Message,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetAwaiter", (oculusRequest))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetAwaiter_Request_1_0<T>(
+        oculusRequest: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request_1<T>>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Runtime::CompilerServices::TaskAwaiter_1<
+            *mut crate::Oculus::Platform::Message_1<T>,
+        >,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: crate::System::Runtime::CompilerServices::TaskAwaiter_1<
+            *mut crate::Oculus::Platform::Message_1<T>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetAwaiter", (oculusRequest))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "OculusPlatformExtensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OculusPlatformExtensions {

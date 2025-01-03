@@ -106,6 +106,21 @@ impl crate::UnityEngine::UIElements::StyleTextShadow {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Equality(
+        lhs: crate::UnityEngine::UIElements::StyleTextShadow,
+        rhs: crate::UnityEngine::UIElements::StyleTextShadow,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit(
+        keyword: crate::UnityEngine::UIElements::StyleKeyword,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::StyleTextShadow> {
+        let __cordl_ret: crate::UnityEngine::UIElements::StyleTextShadow = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (keyword))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleTextShadow")]
 impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleTextShadow>>

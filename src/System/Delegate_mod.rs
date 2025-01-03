@@ -36,6 +36,15 @@ impl std::ops::DerefMut for crate::System::Delegate {
 }
 #[cfg(feature = "System+Delegate")]
 impl crate::System::Delegate {
+    pub fn AllocDelegateLike_internal(
+        d: quest_hook::libil2cpp::Gc<crate::System::Delegate>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::MulticastDelegate> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AllocDelegateLike_internal", (d))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Clone(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -60,6 +69,156 @@ impl crate::System::Delegate {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Delegate> = __cordl_object
             .invoke("CombineImpl", (d))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Combine_Delegate_Delegate0(
+        a: quest_hook::libil2cpp::Gc<crate::System::Delegate>,
+        b: quest_hook::libil2cpp::Gc<crate::System::Delegate>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Delegate>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Delegate> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Combine", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Combine_Il2CppArray1(
+        delegates: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Delegate>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Delegate>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Delegate> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Combine", (delegates))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateDelegate_Il2CppObject_Il2CppString4(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        method: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Delegate>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Delegate> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateDelegate", (_cordl_type, target, method))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateDelegate_Il2CppObject_Il2CppString__cordl_bool8(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        method: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        ignoreCase: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Delegate>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Delegate> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateDelegate", (_cordl_type, target, method, ignoreCase))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateDelegate_Il2CppObject_Il2CppString__cordl_bool__cordl_bool7(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        method: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        ignoreCase: bool,
+        throwOnBindFailure: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Delegate>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Delegate> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CreateDelegate",
+                (_cordl_type, target, method, ignoreCase, throwOnBindFailure),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateDelegate_Il2CppObject_MethodInfo1(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        firstArgument: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Delegate>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Delegate> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateDelegate", (_cordl_type, firstArgument, method))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateDelegate_Il2CppObject_MethodInfo__cordl_bool__cordl_bool0(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        firstArgument: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+        throwOnBindFailure: bool,
+        allowClosed: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Delegate>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Delegate> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CreateDelegate",
+                (_cordl_type, firstArgument, method, throwOnBindFailure, allowClosed),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateDelegate_MethodInfo3(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Delegate>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Delegate> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateDelegate", (_cordl_type, method))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateDelegate_MethodInfo__cordl_bool2(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+        throwOnBindFailure: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Delegate>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Delegate> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateDelegate", (_cordl_type, method, throwOnBindFailure))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateDelegate_Type_Il2CppString6(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        target: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        method: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Delegate>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Delegate> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateDelegate", (_cordl_type, target, method))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateDelegate_Type_Il2CppString__cordl_bool__cordl_bool5(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        target: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        method: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        ignoreCase: bool,
+        throwOnBindFailure: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Delegate>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Delegate> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CreateDelegate",
+                (_cordl_type, target, method, ignoreCase, throwOnBindFailure),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateDelegate_internal(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        info: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+        throwOnBindFailure: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Delegate>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Delegate> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CreateDelegate_internal",
+                (_cordl_type, target, info, throwOnBindFailure),
+            )?;
         Ok(__cordl_ret.into())
     }
     pub fn DynamicInvoke(
@@ -102,6 +261,25 @@ impl crate::System::Delegate {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCandidateMethod(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        target: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        method: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        bflags: crate::System::Reflection::BindingFlags,
+        ignoreCase: bool,
+        throwOnBindFailure: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::MethodInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetCandidateMethod",
+                (_cordl_type, target, method, bflags, ignoreCase, throwOnBindFailure),
+            )?;
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -176,6 +354,16 @@ impl crate::System::Delegate {
             .invoke("InitializeDelegateData", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn Remove(
+        source: quest_hook::libil2cpp::Gc<crate::System::Delegate>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Delegate>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Delegate>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Delegate> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Remove", (source, value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn RemoveImpl(
         &mut self,
         d: quest_hook::libil2cpp::Gc<crate::System::Delegate>,
@@ -187,6 +375,23 @@ impl crate::System::Delegate {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Delegate> = __cordl_object
             .invoke("RemoveImpl", (d))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn arg_type_match(
+        delArgType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        argType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("arg_type_match", (delArgType, argType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn arg_type_match_this(
+        delArgType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        argType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        boxedThis: bool,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("arg_type_match_this", (delArgType, argType, boxedThis))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_Method(
@@ -213,6 +418,30 @@ impl crate::System::Delegate {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
         > = __cordl_object.invoke("get_Target", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        d1: quest_hook::libil2cpp::Gc<crate::System::Delegate>,
+        d2: quest_hook::libil2cpp::Gc<crate::System::Delegate>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (d1, d2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        d1: quest_hook::libil2cpp::Gc<crate::System::Delegate>,
+        d2: quest_hook::libil2cpp::Gc<crate::System::Delegate>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (d1, d2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn return_type_match(
+        delReturnType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        returnType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("return_type_match", (delReturnType, returnType))?;
         Ok(__cordl_ret.into())
     }
 }

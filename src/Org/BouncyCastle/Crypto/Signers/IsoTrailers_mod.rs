@@ -35,12 +35,35 @@ impl crate::Org::BouncyCastle::Crypto::Signers::IsoTrailers {
     pub const TRAILER_SHA512_224: i32 = 14796i32;
     pub const TRAILER_SHA512_256: i32 = 16588i32;
     pub const TRAILER_WHIRLPOOL: i32 = 14284i32;
+    pub fn CreateTrailerMap() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IDictionary,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateTrailerMap", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetTrailer(
+        digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetTrailer", (digest))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
+    }
+    pub fn NoTrailerAvailable(
+        digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("NoTrailerAvailable", (digest))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,

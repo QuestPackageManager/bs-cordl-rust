@@ -54,11 +54,29 @@ impl crate::System::Text::DecoderFallback {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_ExceptionFallback() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Text::DecoderFallback>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Text::DecoderFallback,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_ExceptionFallback", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_MaxCharCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_MaxCharCount", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_ReplacementFallback() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Text::DecoderFallback>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Text::DecoderFallback,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_ReplacementFallback", ())?;
         Ok(__cordl_ret.into())
     }
 }

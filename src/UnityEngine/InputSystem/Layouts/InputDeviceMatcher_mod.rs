@@ -58,12 +58,28 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn FromDeviceDescription(
+        deviceDescription: crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromDeviceDescription", (deviceDescription))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "GetHashCode",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetNumPropertiesIn(
+        description: crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetNumPropertiesIn", (description))?;
         Ok(__cordl_ret.into())
     }
     pub fn MatchPercentage(
@@ -75,6 +91,14 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher {
             "MatchPercentage",
             (deviceDescription),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MatchSingleProperty(
+        pattern: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MatchSingleProperty", (pattern, value))?;
         Ok(__cordl_ret.into())
     }
     pub fn ToString(
@@ -220,6 +244,22 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher {
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_patterns", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Equality(
+        left: crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher,
+        right: crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        left: crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher,
+        right: crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceMatcher")]
 impl AsRef<
@@ -300,6 +340,15 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher_MatcherJson {
         feature = "UnityEngine+InputSystem+Layouts+InputDeviceMatcher+MatcherJson+Capability"
     )]
     pub type Capability = crate::UnityEngine::InputSystem::Layouts::MatcherJson_InputDeviceMatcher_Capability;
+    pub fn FromMatcher(
+        matcher: crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher_MatcherJson,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher_MatcherJson = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromMatcher", (matcher))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ToMatcher(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

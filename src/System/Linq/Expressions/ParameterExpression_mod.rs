@@ -48,6 +48,19 @@ impl crate::System::Linq::Expressions::ParameterExpression {
         let __cordl_ret: bool = __cordl_object.invoke("GetIsByRef", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn Make(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        isByRef: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::ParameterExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::ParameterExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Make", (_cordl_type, name, isByRef))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

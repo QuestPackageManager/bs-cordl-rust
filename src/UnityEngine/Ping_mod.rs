@@ -44,6 +44,20 @@ impl crate::UnityEngine::Ping {
             .invoke("Finalize", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn Internal_Create(
+        address: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Internal_Create", (address))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Internal_Destroy(
+        ptr: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Internal_Destroy", (ptr))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Internal_IsDone(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

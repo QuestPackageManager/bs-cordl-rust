@@ -41,6 +41,15 @@ impl crate::HMUI::CurvedCanvasSettingsHelper {
             .invoke("GetCurvedCanvasSettings", (canvas))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetCurvedCanvasSettingsForCanvas(
+        canvas: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::HMUI::CurvedCanvasSettings>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::HMUI::CurvedCanvasSettings> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCurvedCanvasSettingsForCanvas", (canvas))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

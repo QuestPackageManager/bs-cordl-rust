@@ -23,7 +23,28 @@ impl std::ops::DerefMut for crate::System::Net::HttpStatusDescription {
     }
 }
 #[cfg(feature = "System+Net+HttpStatusDescription")]
-impl crate::System::Net::HttpStatusDescription {}
+impl crate::System::Net::HttpStatusDescription {
+    pub fn Get_HttpStatusCode0(
+        code: crate::System::Net::HttpStatusCode,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Get", (code))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Get_i32_1(
+        code: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Get", (code))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Net+HttpStatusDescription")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Net::HttpStatusDescription {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

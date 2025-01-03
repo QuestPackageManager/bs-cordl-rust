@@ -126,6 +126,20 @@ impl crate::Org::BouncyCastle::Crypto::Digests::Gost3411Digest {
         let __cordl_ret: i32 = __cordl_object.invoke("GetDigestSize", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn MakeC() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("MakeC", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -231,6 +245,22 @@ impl crate::Org::BouncyCastle::Crypto::Digests::Gost3411Digest {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (sBoxParam))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn cpyBytesToShort(
+        S: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        wS: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i16>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("cpyBytesToShort", (S, wS))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn cpyShortToBytes(
+        wS: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i16>>,
+        S: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("cpyShortToBytes", (wS, S))?;
         Ok(__cordl_ret.into())
     }
     pub fn finish(

@@ -29,6 +29,28 @@ for crate::Org::BouncyCastle::Crypto::Generators::Poly1305KeyGenerator {
 impl crate::Org::BouncyCastle::Crypto::Generators::Poly1305KeyGenerator {
     pub const R_MASK_HIGH_4: u8 = 15u8;
     pub const R_MASK_LOW_2: u8 = 252u8;
+    pub fn CheckKey(
+        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckKey", (key))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CheckMask(
+        b: u8,
+        mask: u8,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckMask", (b, mask))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Clamp(
+        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Clamp", (key))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

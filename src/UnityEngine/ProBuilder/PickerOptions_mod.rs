@@ -53,6 +53,13 @@ impl crate::UnityEngine::ProBuilder::PickerOptions {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_Default() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ProBuilder::PickerOptions,
+    > {
+        let __cordl_ret: crate::UnityEngine::ProBuilder::PickerOptions = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_Default", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_depthTest(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -69,6 +76,22 @@ impl crate::UnityEngine::ProBuilder::PickerOptions {
             "get_rectSelectMode",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        a: crate::UnityEngine::ProBuilder::PickerOptions,
+        b: crate::UnityEngine::ProBuilder::PickerOptions,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        a: crate::UnityEngine::ProBuilder::PickerOptions,
+        b: crate::UnityEngine::ProBuilder::PickerOptions,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (a, b))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_depthTest(

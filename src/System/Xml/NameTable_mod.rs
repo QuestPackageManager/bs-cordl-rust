@@ -108,6 +108,16 @@ impl crate::System::Xml::NameTable {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
+    pub fn TextEquals(
+        str1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        str2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+        str2Start: i32,
+        str2Length: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TextEquals", (str1, str2, str2Start, str2Length))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

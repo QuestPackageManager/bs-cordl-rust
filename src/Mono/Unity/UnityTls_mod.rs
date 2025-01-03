@@ -65,6 +65,27 @@ impl crate::Mono::Unity::UnityTls {
     pub type unitytls_x509verify_callback = crate::Mono::Unity::UnityTls_unitytls_x509verify_callback;
     #[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509verify_result")]
     pub type unitytls_x509verify_result = crate::Mono::Unity::UnityTls_unitytls_x509verify_result;
+    pub fn GetUnityTlsInterface() -> quest_hook::libil2cpp::Result<
+        crate::System::IntPtr,
+    > {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetUnityTlsInterface", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_IsSupported() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_IsSupported", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_NativeInterface() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Mono::Unity::UnityTls_unitytls_interface_struct>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Mono::Unity::UnityTls_unitytls_interface_struct,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_NativeInterface", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "Mono+Unity+UnityTls")]
 impl quest_hook::libil2cpp::ObjectType for crate::Mono::Unity::UnityTls {

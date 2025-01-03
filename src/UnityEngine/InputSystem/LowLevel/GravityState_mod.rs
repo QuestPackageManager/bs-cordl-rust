@@ -34,6 +34,13 @@ impl crate::UnityEngine::InputSystem::LowLevel::GravityState {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_kFormat() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::FourCC,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_kFormat", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+GravityState")]
 impl AsRef<crate::UnityEngine::InputSystem::LowLevel::IInputStateTypeInfo>

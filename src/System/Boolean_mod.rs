@@ -86,6 +86,20 @@ impl crate::System::Boolean {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn Parse_Il2CppString0(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Parse", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Parse_ReadOnlySpan_1_1(
+        value: crate::System::ReadOnlySpan_1<char>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Parse", (value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn System_IConvertible_ToBoolean(
         &mut self,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
@@ -275,6 +289,29 @@ impl crate::System::Boolean {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", (provider))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TrimWhiteSpaceAndNull(
+        value: crate::System::ReadOnlySpan_1<char>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::ReadOnlySpan_1<char>> {
+        let __cordl_ret: crate::System::ReadOnlySpan_1<char> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TrimWhiteSpaceAndNull", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryParse_Il2CppString0(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        result: quest_hook::libil2cpp::ByRefMut<bool>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryParse", (value, result))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryParse_ReadOnlySpan_1_1(
+        value: crate::System::ReadOnlySpan_1<char>,
+        result: quest_hook::libil2cpp::ByRefMut<bool>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryParse", (value, result))?;
         Ok(__cordl_ret.into())
     }
 }

@@ -28,6 +28,18 @@ impl std::ops::DerefMut for crate::System::Globalization::CodePageDataItem {
 }
 #[cfg(feature = "System+Globalization+CodePageDataItem")]
 impl crate::System::Globalization::CodePageDataItem {
+    pub fn CreateString(
+        pStrings: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        index: u32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateString", (pStrings, index))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         dataIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

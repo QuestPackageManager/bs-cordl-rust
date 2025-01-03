@@ -23,7 +23,20 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OculusRequestExtensions {
     }
 }
 #[cfg(feature = "OculusRequestExtensions")]
-impl crate::GlobalNamespace::OculusRequestExtensions {}
+impl crate::GlobalNamespace::OculusRequestExtensions {
+    pub fn ToPlatformException(
+        error: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Error>,
+        errorType: crate::GlobalNamespace::PlatformException_ErrorType,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlatformException>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlatformException,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToPlatformException", (error, errorType))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "OculusRequestExtensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OculusRequestExtensions {

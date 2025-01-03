@@ -25,7 +25,19 @@ for crate::System::Security::Cryptography::CryptoConfigForwarder {
     }
 }
 #[cfg(feature = "System+Security+Cryptography+CryptoConfigForwarder")]
-impl crate::System::Security::Cryptography::CryptoConfigForwarder {}
+impl crate::System::Security::Cryptography::CryptoConfigForwarder {
+    pub fn CreateFromName(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateFromName", (name))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Security+Cryptography+CryptoConfigForwarder")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Security::Cryptography::CryptoConfigForwarder {

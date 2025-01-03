@@ -25,6 +25,15 @@ impl std::ops::DerefMut for crate::UnityEngine::Networking::DownloadHandlerBuffe
 }
 #[cfg(feature = "UnityEngine+Networking+DownloadHandlerBuffer")]
 impl crate::UnityEngine::Networking::DownloadHandlerBuffer {
+    pub fn Create(
+        obj: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Networking::DownloadHandlerBuffer,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (obj))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

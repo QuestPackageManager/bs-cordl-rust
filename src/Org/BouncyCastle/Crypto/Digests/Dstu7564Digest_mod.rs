@@ -103,6 +103,11 @@ impl crate::Org::BouncyCastle::Crypto::Digests::Dstu7564Digest {
         let __cordl_ret: i32 = __cordl_object.invoke("GetDigestSize", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn MixColumn(c: u64) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MixColumn", (c))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn MixColumns(
         &mut self,
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
@@ -185,6 +190,11 @@ impl crate::Org::BouncyCastle::Crypto::Digests::Dstu7564Digest {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Reset", (other))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Rotate(n: i32, x: u64) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Rotate", (n, x))?;
         Ok(__cordl_ret.into())
     }
     pub fn ShiftRows(

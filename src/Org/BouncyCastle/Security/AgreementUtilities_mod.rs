@@ -24,6 +24,104 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Security::AgreementUtiliti
 }
 #[cfg(feature = "Org+BouncyCastle+Security+AgreementUtilities")]
 impl crate::Org::BouncyCastle::Security::AgreementUtilities {
+    pub fn GetAlgorithmName(
+        oid: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetAlgorithmName", (oid))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetBasicAgreementWithKdf_DerObjectIdentifier0(
+        oid: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
+        wrapAlgorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IBasicAgreement>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::IBasicAgreement,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetBasicAgreementWithKdf", (oid, wrapAlgorithm))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetBasicAgreementWithKdf_Il2CppString1(
+        agreeAlgorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        wrapAlgorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IBasicAgreement>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::IBasicAgreement,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetBasicAgreementWithKdf", (agreeAlgorithm, wrapAlgorithm))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetBasicAgreement_DerObjectIdentifier0(
+        oid: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IBasicAgreement>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::IBasicAgreement,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetBasicAgreement", (oid))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetBasicAgreement_Il2CppString1(
+        algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IBasicAgreement>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::IBasicAgreement,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetBasicAgreement", (algorithm))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetMechanism(
+        algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetMechanism", (algorithm))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetRawAgreement_DerObjectIdentifier0(
+        oid: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IRawAgreement>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::IRawAgreement,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetRawAgreement", (oid))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetRawAgreement_Il2CppString1(
+        algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IRawAgreement>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::IRawAgreement,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetRawAgreement", (algorithm))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

@@ -30,6 +30,13 @@ impl crate::UnityEngine::AudioClip {
     pub type PCMReaderCallback = crate::UnityEngine::AudioClip_PCMReaderCallback;
     #[cfg(feature = "UnityEngine+AudioClip+PCMSetPositionCallback")]
     pub type PCMSetPositionCallback = crate::UnityEngine::AudioClip_PCMSetPositionCallback;
+    pub fn Construct_Internal() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Construct_Internal", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CreateUserSound(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -48,7 +55,155 @@ impl crate::UnityEngine::AudioClip {
             )?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetData(
+    pub fn Create_AudioClip_PCMReaderCallback4(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        lengthSamples: i32,
+        channels: i32,
+        frequency: i32,
+        stream: bool,
+        pcmreadercallback: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AudioClip_PCMReaderCallback,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "Create",
+                (name, lengthSamples, channels, frequency, stream, pcmreadercallback),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Create_AudioClip_PCMReaderCallback_AudioClip_PCMSetPositionCallback5(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        lengthSamples: i32,
+        channels: i32,
+        frequency: i32,
+        stream: bool,
+        pcmreadercallback: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AudioClip_PCMReaderCallback,
+        >,
+        pcmsetpositioncallback: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AudioClip_PCMSetPositionCallback,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "Create",
+                (
+                    name,
+                    lengthSamples,
+                    channels,
+                    frequency,
+                    stream,
+                    pcmreadercallback,
+                    pcmsetpositioncallback,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Create_Il2CppString_i32_i32_i32__cordl_bool3(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        lengthSamples: i32,
+        channels: i32,
+        frequency: i32,
+        stream: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (name, lengthSamples, channels, frequency, stream))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Create__cordl_bool0(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        lengthSamples: i32,
+        channels: i32,
+        frequency: i32,
+        _3D: bool,
+        stream: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (name, lengthSamples, channels, frequency, _3D, stream))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Create__cordl_bool_AudioClip_PCMReaderCallback1(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        lengthSamples: i32,
+        channels: i32,
+        frequency: i32,
+        _3D: bool,
+        stream: bool,
+        pcmreadercallback: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AudioClip_PCMReaderCallback,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "Create",
+                (
+                    name,
+                    lengthSamples,
+                    channels,
+                    frequency,
+                    _3D,
+                    stream,
+                    pcmreadercallback,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Create__cordl_bool_AudioClip_PCMReaderCallback_AudioClip_PCMSetPositionCallback2(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        lengthSamples: i32,
+        channels: i32,
+        frequency: i32,
+        _3D: bool,
+        stream: bool,
+        pcmreadercallback: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AudioClip_PCMReaderCallback,
+        >,
+        pcmsetpositioncallback: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AudioClip_PCMSetPositionCallback,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "Create",
+                (
+                    name,
+                    lengthSamples,
+                    channels,
+                    frequency,
+                    _3D,
+                    stream,
+                    pcmreadercallback,
+                    pcmsetpositioncallback,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetData_AudioClip_ByRefMut_i32_i32_0(
+        clip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+        data: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<f32>,
+        >,
+        numSamples: i32,
+        samplesOffset: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetData", (clip, data, numSamples, samplesOffset))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetData_Il2CppArray_i32_1(
         &mut self,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
         offsetSamples: i32,
@@ -108,7 +263,17 @@ impl crate::UnityEngine::AudioClip {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn SetData(
+    pub fn SetData_AudioClip_Il2CppArray_i32_i32_0(
+        clip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
+        numsamples: i32,
+        samplesOffset: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetData", (clip, data, numsamples, samplesOffset))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetData_Il2CppArray_i32_1(
         &mut self,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
         offsetSamples: i32,

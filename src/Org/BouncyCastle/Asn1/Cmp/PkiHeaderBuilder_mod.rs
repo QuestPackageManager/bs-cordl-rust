@@ -64,6 +64,34 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::PkiHeaderBuilder {
         > = __cordl_object.invoke("Build", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn MakeGeneralInfoSeq_Il2CppArray1(
+        generalInfos: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::Org::BouncyCastle::Asn1::Cmp::InfoTypeAndValue,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MakeGeneralInfoSeq", (generalInfos))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MakeGeneralInfoSeq_InfoTypeAndValue0(
+        generalInfo: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cmp::InfoTypeAndValue,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MakeGeneralInfoSeq", (generalInfo))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_DerInteger1(
         pvno: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
         sender: quest_hook::libil2cpp::Gc<

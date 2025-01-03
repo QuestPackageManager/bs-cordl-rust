@@ -27,6 +27,32 @@ for crate::Org::BouncyCastle::Asn1::Cms::OriginatorIdentifierOrKey {
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cms+OriginatorIdentifierOrKey")]
 impl crate::Org::BouncyCastle::Asn1::Cms::OriginatorIdentifierOrKey {
+    pub fn GetInstance_Asn1TaggedObject__cordl_bool0(
+        o: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1TaggedObject>,
+        explicitly: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cms::OriginatorIdentifierOrKey,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cms::OriginatorIdentifierOrKey,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetInstance", (o, explicitly))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetInstance_Il2CppObject1(
+        o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cms::OriginatorIdentifierOrKey,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cms::OriginatorIdentifierOrKey,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (o))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_Asn1Object4(
         id: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Object>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

@@ -28,6 +28,39 @@ impl crate::GlobalNamespace::BeatmapDataStrobeFilterTransform {
     pub const kMaxSecondsToConsiderStrobe: f32 = 0.1f32;
     #[cfg(feature = "BeatmapDataStrobeFilterTransform+StrobeStreakData")]
     pub type StrobeStreakData = crate::GlobalNamespace::BeatmapDataStrobeFilterTransform_StrobeStreakData;
+    pub fn CreateTransformedData(
+        beatmapData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IReadonlyBeatmapData,
+        >,
+        environmentIntensityReductionOptions: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::EnvironmentIntensityReductionOptions,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IReadonlyBeatmapData>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IReadonlyBeatmapData,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CreateTransformedData",
+                (beatmapData, environmentIntensityReductionOptions),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetFlashAndFadeToBlackEventDataValue(
+        lightColorType: crate::GlobalNamespace::EnvironmentColorType,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetFlashAndFadeToBlackEventDataValue", (lightColorType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetOnEventDataValue(
+        lightColorType: crate::GlobalNamespace::EnvironmentColorType,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetOnEventDataValue", (lightColorType))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "BeatmapDataStrobeFilterTransform")]
 impl quest_hook::libil2cpp::ObjectType

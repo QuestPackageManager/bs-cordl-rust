@@ -24,6 +24,60 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::Nist::NistNamedCurve
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Nist+NistNamedCurves")]
 impl crate::Org::BouncyCastle::Asn1::Nist::NistNamedCurves {
+    pub fn DefineCurveAlias(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        oid: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DefineCurveAlias", (name, oid))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetByName(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X9::X9ECParameters>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X9::X9ECParameters,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetByName", (name))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetByOid(
+        oid: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X9::X9ECParameters>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X9::X9ECParameters,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetByOid", (oid))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetName(
+        oid: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetName", (oid))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetOid(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerObjectIdentifier>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetOid", (name))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -39,6 +93,14 @@ impl crate::Org::BouncyCastle::Asn1::Nist::NistNamedCurves {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Names() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IEnumerable,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_Names", ())?;
         Ok(__cordl_ret.into())
     }
 }

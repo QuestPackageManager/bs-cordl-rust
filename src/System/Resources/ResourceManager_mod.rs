@@ -42,6 +42,15 @@ impl crate::System::Resources::ResourceManager {
     pub type CultureNameResourceSetPair = crate::System::Resources::ResourceManager_CultureNameResourceSetPair;
     #[cfg(feature = "System+Resources+ResourceManager+ResourceManagerMediator")]
     pub type ResourceManagerMediator = crate::System::Resources::ResourceManager_ResourceManagerMediator;
+    pub fn CompareNames(
+        asmTypeName1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        typeName2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        asmName2: quest_hook::libil2cpp::Gc<crate::System::Reflection::AssemblyName>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CompareNames", (asmTypeName1, typeName2, asmName2))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Init(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

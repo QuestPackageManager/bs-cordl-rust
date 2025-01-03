@@ -23,7 +23,16 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Utilities::ValidationUtils 
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Utilities+ValidationUtils")]
-impl crate::Newtonsoft::Json::Utilities::ValidationUtils {}
+impl crate::Newtonsoft::Json::Utilities::ValidationUtils {
+    pub fn ArgumentNotNull(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        parameterName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ArgumentNotNull", (value, parameterName))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "Newtonsoft+Json+Utilities+ValidationUtils")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::Utilities::ValidationUtils {

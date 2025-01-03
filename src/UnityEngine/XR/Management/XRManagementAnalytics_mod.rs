@@ -31,6 +31,11 @@ impl crate::UnityEngine::XR::Management::XRManagementAnalytics {
     pub const kVendorKey: &'static str = "unity.xrmanagement";
     #[cfg(feature = "UnityEngine+XR+Management+XRManagementAnalytics+BuildEvent")]
     pub type BuildEvent = crate::UnityEngine::XR::Management::XRManagementAnalytics_BuildEvent;
+    pub fn Initialize() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Initialize", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+XR+Management+XRManagementAnalytics")]
 impl quest_hook::libil2cpp::ObjectType

@@ -205,6 +205,11 @@ impl crate::Org::BouncyCastle::Crypto::Digests::Blake2bDigest {
             .invoke("Reset", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn Rotr64(x: u64, rot: i32) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Rotr64", (x, rot))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Update(
         &mut self,
         b: u8,

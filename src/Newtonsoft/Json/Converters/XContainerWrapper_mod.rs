@@ -52,6 +52,16 @@ impl crate::Newtonsoft::Json::Converters::XContainerWrapper {
             .invoke_void(".ctor", (container))?;
         Ok(__cordl_object.into())
     }
+    pub fn WrapNode(
+        node: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Converters::IXmlNode>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Converters::IXmlNode,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("WrapNode", (node))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
         container: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XContainer>,

@@ -134,7 +134,19 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::ECDomainParameters {
         > = __cordl_object.invoke("ValidatePrivateScalar", (d))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ValidatePublicPoint(
+    pub fn ValidatePublicPoint_ECCurve_ECPoint1(
+        c: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECCurve>,
+        q: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::EC::ECPoint,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ValidatePublicPoint", (c, q))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ValidatePublicPoint_ECPoint0(
         &mut self,
         q: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
     ) -> quest_hook::libil2cpp::Result<

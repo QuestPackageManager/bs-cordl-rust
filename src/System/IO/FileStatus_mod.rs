@@ -84,6 +84,14 @@ impl crate::System::IO::FileStatus {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn Initialize(
+        status: quest_hook::libil2cpp::ByRefMut<crate::System::IO::FileStatus>,
+        isDirectory: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Initialize", (status, isDirectory))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn IsReadOnly(
         &mut self,
         path: crate::System::ReadOnlySpan_1<char>,

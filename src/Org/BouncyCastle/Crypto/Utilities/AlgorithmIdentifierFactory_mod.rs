@@ -27,6 +27,25 @@ for crate::Org::BouncyCastle::Crypto::Utilities::AlgorithmIdentifierFactory {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Utilities+AlgorithmIdentifierFactory")]
 impl crate::Org::BouncyCastle::Crypto::Utilities::AlgorithmIdentifierFactory {
+    pub fn GenerateEncryptionAlgID(
+        encryptionOID: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
+        keySize: i32,
+        random: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Security::SecureRandom,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GenerateEncryptionAlgID", (encryptionOID, keySize, random))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

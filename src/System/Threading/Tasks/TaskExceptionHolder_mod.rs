@@ -155,6 +155,11 @@ impl crate::System::Threading::Tasks::TaskExceptionHolder {
             .invoke("SetCancellationException", (exceptionObject))?;
         Ok(__cordl_ret.into())
     }
+    pub fn ShouldFailFastOnUnobservedException() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ShouldFailFastOnUnobservedException", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
         task: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,

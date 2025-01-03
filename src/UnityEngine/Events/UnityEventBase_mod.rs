@@ -117,6 +117,21 @@ impl crate::UnityEngine::Events::UnityEventBase {
         let __cordl_ret: i32 = __cordl_object.invoke("GetPersistentEventCount", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetValidMethodInfo(
+        objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        functionName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        argumentTypes: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::MethodInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetValidMethodInfo", (objectType, functionName, argumentTypes))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

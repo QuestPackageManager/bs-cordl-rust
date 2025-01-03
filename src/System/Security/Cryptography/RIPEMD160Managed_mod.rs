@@ -28,6 +28,21 @@ impl std::ops::DerefMut for crate::System::Security::Cryptography::RIPEMD160Mana
 }
 #[cfg(feature = "System+Security+Cryptography+RIPEMD160Managed")]
 impl crate::System::Security::Cryptography::RIPEMD160Managed {
+    pub fn F(x: u32, y: u32, z: u32) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("F", (x, y, z))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn G(x: u32, y: u32, z: u32) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("G", (x, y, z))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn H(x: u32, y: u32, z: u32) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("H", (x, y, z))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn HashCore(
         &mut self,
         rgb: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -54,6 +69,11 @@ impl crate::System::Security::Cryptography::RIPEMD160Managed {
         > = __cordl_object.invoke("HashFinal", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn I(x: u32, y: u32, z: u32) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("I", (x, y, z))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Initialize(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -72,6 +92,20 @@ impl crate::System::Security::Cryptography::RIPEMD160Managed {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InitializeState", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn J(x: u32, y: u32, z: u32) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("J", (x, y, z))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MDTransform(
+        blockDWords: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        block: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MDTransform", (blockDWords, state, block))?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

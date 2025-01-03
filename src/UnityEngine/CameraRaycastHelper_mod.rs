@@ -23,7 +23,56 @@ impl std::ops::DerefMut for crate::UnityEngine::CameraRaycastHelper {
     }
 }
 #[cfg(feature = "UnityEngine+CameraRaycastHelper")]
-impl crate::UnityEngine::CameraRaycastHelper {}
+impl crate::UnityEngine::CameraRaycastHelper {
+    pub fn RaycastTry(
+        cam: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+        ray: crate::UnityEngine::Ray,
+        distance: f32,
+        layerMask: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RaycastTry", (cam, ray, distance, layerMask))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RaycastTry2D(
+        cam: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+        ray: crate::UnityEngine::Ray,
+        distance: f32,
+        layerMask: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RaycastTry2D", (cam, ray, distance, layerMask))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RaycastTry2D_Injected(
+        cam: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+        ray: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Ray>,
+        distance: f32,
+        layerMask: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RaycastTry2D_Injected", (cam, ray, distance, layerMask))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RaycastTry_Injected(
+        cam: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+        ray: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Ray>,
+        distance: f32,
+        layerMask: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RaycastTry_Injected", (cam, ray, distance, layerMask))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+CameraRaycastHelper")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::CameraRaycastHelper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

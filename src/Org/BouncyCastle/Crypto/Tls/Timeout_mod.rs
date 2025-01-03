@@ -26,6 +26,60 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Tls::Timeout {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+Timeout")]
 impl crate::Org::BouncyCastle::Crypto::Tls::Timeout {
+    pub fn ConstrainWaitMillis(
+        waitMillis: i32,
+        timeout: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::Timeout,
+        >,
+        currentTimeMillis: i64,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ConstrainWaitMillis", (waitMillis, timeout, currentTimeMillis))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ForWaitMillis_i32_0(
+        waitMillis: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::Timeout>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::Timeout,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ForWaitMillis", (waitMillis))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ForWaitMillis_i64_1(
+        waitMillis: i32,
+        currentTimeMillis: i64,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::Timeout>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::Timeout,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ForWaitMillis", (waitMillis, currentTimeMillis))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetWaitMillis(
+        timeout: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::Timeout,
+        >,
+        currentTimeMillis: i64,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetWaitMillis", (timeout, currentTimeMillis))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn HasExpired(
+        timeout: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::Timeout,
+        >,
+        currentTimeMillis: i64,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("HasExpired", (timeout, currentTimeMillis))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_i64_0(
         durationMillis: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

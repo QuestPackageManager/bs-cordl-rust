@@ -51,6 +51,13 @@ impl crate::System::Text::Encoding {
         > = __cordl_object.invoke("Clone", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn CreateDefaultEncoding() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateDefaultEncoding", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn DeserializeEncoding(
         &mut self,
         info: quest_hook::libil2cpp::Gc<
@@ -404,6 +411,35 @@ impl crate::System::Text::Encoding {
             .invoke("GetEncoder", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetEncoding_Il2CppString2(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetEncoding", (name))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetEncoding_i32_0(
+        codepage: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetEncoding", (codepage))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetEncoding_i32_EncoderFallback_DecoderFallback1(
+        codepage: i32,
+        encoderFallback: quest_hook::libil2cpp::Gc<crate::System::Text::EncoderFallback>,
+        decoderFallback: quest_hook::libil2cpp::Gc<crate::System::Text::DecoderFallback>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetEncoding", (codepage, encoderFallback, decoderFallback))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -661,6 +697,20 @@ impl crate::System::Text::Encoding {
             .invoke(".ctor", (codePage))?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_ASCII() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_ASCII", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_BigEndianUnicode() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_BigEndianUnicode", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_CodePage(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -679,6 +729,13 @@ impl crate::System::Text::Encoding {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Text::DecoderFallback,
         > = __cordl_object.invoke("get_DecoderFallback", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Default() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_Default", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_EncoderFallback(
@@ -707,11 +764,27 @@ impl crate::System::Text::Encoding {
         > = __cordl_object.invoke("get_EncodingName", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_InternalSyncObject() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_InternalSyncObject", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_IsReadOnly(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_IsReadOnly", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Latin1() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_Latin1", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_Preamble(
@@ -722,6 +795,34 @@ impl crate::System::Text::Encoding {
         );
         let __cordl_ret: crate::System::ReadOnlySpan_1<u8> = __cordl_object
             .invoke("get_Preamble", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_UTF32() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_UTF32", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_UTF7() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_UTF7", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_UTF8() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_UTF8", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Unicode() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_Unicode", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_WebName(

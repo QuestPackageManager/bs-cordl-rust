@@ -25,6 +25,17 @@ impl std::ops::DerefMut for crate::System::Net::CookieParser {
 }
 #[cfg(feature = "System+Net+CookieParser")]
 impl crate::System::Net::CookieParser {
+    pub fn CheckQuoted(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckQuoted", (value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Get(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

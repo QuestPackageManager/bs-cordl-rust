@@ -23,6 +23,38 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::Vector2 
 impl crate::UnityEngine::Vector2 {
     pub const kEpsilon: f32 = 0.00001f32;
     pub const kEpsilonNormalSqrt: f32 = 0.000000000000001f32;
+    pub fn Angle(
+        from: crate::UnityEngine::Vector2,
+        to: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Angle", (from, to))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ClampMagnitude(
+        vector: crate::UnityEngine::Vector2,
+        maxLength: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ClampMagnitude", (vector, maxLength))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Distance(
+        a: crate::UnityEngine::Vector2,
+        b: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Distance", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Dot(
+        lhs: crate::UnityEngine::Vector2,
+        rhs: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Dot", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Equals_Il2CppObject0(
         &mut self,
         other: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -53,6 +85,40 @@ impl crate::UnityEngine::Vector2 {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn Lerp(
+        a: crate::UnityEngine::Vector2,
+        b: crate::UnityEngine::Vector2,
+        t: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Lerp", (a, b, t))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LerpUnclamped(
+        a: crate::UnityEngine::Vector2,
+        b: crate::UnityEngine::Vector2,
+        t: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LerpUnclamped", (a, b, t))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Max(
+        lhs: crate::UnityEngine::Vector2,
+        rhs: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Max", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Min(
+        lhs: crate::UnityEngine::Vector2,
+        rhs: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Min", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Normalize(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -63,7 +129,22 @@ impl crate::UnityEngine::Vector2 {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn Scale(
+    pub fn Perpendicular(
+        inDirection: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Perpendicular", (inDirection))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Scale_Vector2_0(
+        a: crate::UnityEngine::Vector2,
+        b: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Scale", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Scale_Vector2_1(
         &mut self,
         scale: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -72,6 +153,21 @@ impl crate::UnityEngine::Vector2 {
             "Scale",
             (scale),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SignedAngle(
+        from: crate::UnityEngine::Vector2,
+        to: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SignedAngle", (from, to))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SqrMagnitude(
+        a: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SqrMagnitude", (a))?;
         Ok(__cordl_ret.into())
     }
     pub fn ToString_0(
@@ -131,12 +227,29 @@ impl crate::UnityEngine::Vector2 {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_down() -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_down", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_left() -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_left", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_magnitude(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_magnitude",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_negativeInfinity() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Vector2,
+    > {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_negativeInfinity", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_normalized(
@@ -149,12 +262,125 @@ impl crate::UnityEngine::Vector2 {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_one() -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_one", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_right() -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_right", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_sqrMagnitude(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_sqrMagnitude",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_up() -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_up", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_zero() -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_zero", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Addition(
+        a: crate::UnityEngine::Vector2,
+        b: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Addition", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Division_Vector2_0(
+        a: crate::UnityEngine::Vector2,
+        b: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Division", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Division_f32_1(
+        a: crate::UnityEngine::Vector2,
+        d: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Division", (a, d))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        lhs: crate::UnityEngine::Vector2,
+        rhs: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_Vector2_1(
+        v: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (v))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_Vector3_0(
+        v: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (v))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        lhs: crate::UnityEngine::Vector2,
+        rhs: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Multiply_Vector2_Vector2_0(
+        a: crate::UnityEngine::Vector2,
+        b: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Multiply", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Multiply_Vector2_f32_1(
+        a: crate::UnityEngine::Vector2,
+        d: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Multiply", (a, d))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Multiply_f32_Vector2_2(
+        d: f32,
+        a: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Multiply", (d, a))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Subtraction(
+        a: crate::UnityEngine::Vector2,
+        b: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Subtraction", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_UnaryNegation(
+        a: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_UnaryNegation", (a))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_Item(

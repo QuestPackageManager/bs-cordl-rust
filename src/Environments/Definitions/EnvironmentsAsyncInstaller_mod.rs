@@ -45,6 +45,25 @@ impl crate::Environments::Definitions::EnvironmentsAsyncInstaller {
             .invoke("InstallBindings", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn LoadEnvironmentInfoListAsync() -> quest_hook::libil2cpp::Result<
+        crate::System::Nullable_1<
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+                *mut crate::System::Collections::Generic::IList_1<
+                    *mut crate::GlobalNamespace::EnvironmentInfoSO,
+                >,
+            >,
+        >,
+    > {
+        let __cordl_ret: crate::System::Nullable_1<
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+                *mut crate::System::Collections::Generic::IList_1<
+                    *mut crate::GlobalNamespace::EnvironmentInfoSO,
+                >,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LoadEnvironmentInfoListAsync", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn LoadResourcesBeforeInstall(
         &mut self,
         environmentInfos: quest_hook::libil2cpp::Gc<

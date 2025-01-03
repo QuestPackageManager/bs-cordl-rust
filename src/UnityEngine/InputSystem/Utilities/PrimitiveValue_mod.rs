@@ -58,6 +58,145 @@ impl crate::UnityEngine::InputSystem::Utilities::PrimitiveValue {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn From<TValue>(
+        value: TValue,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
+    >
+    where
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("From", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromBoolean(
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromBoolean", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromByte(
+        value: u8,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromByte", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromChar(
+        value: char,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromChar", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromDouble(
+        value: f64,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromDouble", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromInt16(
+        value: i16,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromInt16", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromInt32(
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromInt32", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromInt64(
+        value: i64,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromInt64", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromObject(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromObject", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromSByte(
+        value: i8,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromSByte", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromSingle(
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromSingle", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromString(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromString", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromUInt16(
+        value: u16,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromUInt16", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromUInt32(
+        value: u32,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromUInt32", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromUInt64(
+        value: u64,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromUInt64", (value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -435,6 +574,130 @@ impl crate::UnityEngine::InputSystem::Utilities::PrimitiveValue {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_valuePtr", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        left: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
+        right: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit__cordl_bool0(
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit__cordl_char1(
+        value: char,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_f32_10(
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_f64_11(
+        value: f64,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_i16_4(
+        value: i16,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_i32_6(
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_i64_8(
+        value: i64,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_i8_3(
+        value: i8,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_u16_5(
+        value: u16,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_u32_7(
+        value: u32,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_u64_9(
+        value: u64,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_u8_2(
+        value: u8,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        left: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
+        right: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (left, right))?;
         Ok(__cordl_ret.into())
     }
 }

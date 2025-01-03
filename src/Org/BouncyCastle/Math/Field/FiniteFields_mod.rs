@@ -24,6 +24,32 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Math::Field::FiniteFields 
 }
 #[cfg(feature = "Org+BouncyCastle+Math+Field+FiniteFields")]
 impl crate::Org::BouncyCastle::Math::Field::FiniteFields {
+    pub fn GetBinaryExtensionField(
+        exponents: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::Field::IPolynomialExtensionField,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::Field::IPolynomialExtensionField,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetBinaryExtensionField", (exponents))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPrimeField(
+        characteristic: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::BigInteger,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::Field::IFiniteField>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::Field::IFiniteField,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPrimeField", (characteristic))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

@@ -57,6 +57,13 @@ impl crate::GlobalNamespace::PlayerStateHash {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn Deserialize(
+        reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::PlayerStateHash> {
+        let __cordl_ret: crate::GlobalNamespace::PlayerStateHash = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Deserialize", (reader))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Equals_Il2CppObject1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -79,12 +86,29 @@ impl crate::GlobalNamespace::PlayerStateHash {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn FromBytes(
+        bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        offset: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::PlayerStateHash> {
+        let __cordl_ret: crate::GlobalNamespace::PlayerStateHash = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromBytes", (bytes, offset))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "GetHashCode",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Parse(
+        stringSerializedMask: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::PlayerStateHash> {
+        let __cordl_ret: crate::GlobalNamespace::PlayerStateHash = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Parse", (stringSerializedMask))?;
         Ok(__cordl_ret.into())
     }
     pub fn Serialize(
@@ -126,6 +150,18 @@ impl crate::GlobalNamespace::PlayerStateHash {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryParse(
+        stringSerializedMask: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+        playerStateHash: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::PlayerStateHash,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryParse", (stringSerializedMask, playerStateHash))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_BitMask128_0(

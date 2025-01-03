@@ -22,6 +22,15 @@ for crate::System::Runtime::InteropServices::OSPlatform {
 }
 #[cfg(feature = "System+Runtime+InteropServices+OSPlatform")]
 impl crate::System::Runtime::InteropServices::OSPlatform {
+    pub fn Create(
+        osPlatform: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Runtime::InteropServices::OSPlatform,
+    > {
+        let __cordl_ret: crate::System::Runtime::InteropServices::OSPlatform = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (osPlatform))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Equals_Il2CppObject2(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -82,6 +91,35 @@ impl crate::System::Runtime::InteropServices::OSPlatform {
             ".ctor",
             (osPlatform),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Linux() -> quest_hook::libil2cpp::Result<
+        crate::System::Runtime::InteropServices::OSPlatform,
+    > {
+        let __cordl_ret: crate::System::Runtime::InteropServices::OSPlatform = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_Linux", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_OSX() -> quest_hook::libil2cpp::Result<
+        crate::System::Runtime::InteropServices::OSPlatform,
+    > {
+        let __cordl_ret: crate::System::Runtime::InteropServices::OSPlatform = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_OSX", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Windows() -> quest_hook::libil2cpp::Result<
+        crate::System::Runtime::InteropServices::OSPlatform,
+    > {
+        let __cordl_ret: crate::System::Runtime::InteropServices::OSPlatform = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_Windows", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        left: crate::System::Runtime::InteropServices::OSPlatform,
+        right: crate::System::Runtime::InteropServices::OSPlatform,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (left, right))?;
         Ok(__cordl_ret.into())
     }
 }

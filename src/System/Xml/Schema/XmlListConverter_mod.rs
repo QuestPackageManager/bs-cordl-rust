@@ -58,6 +58,19 @@ impl crate::System::Xml::Schema::XmlListConverter {
         > = __cordl_object.invoke("ChangeType", (value, destinationType, nsResolver))?;
         Ok(__cordl_ret.into())
     }
+    pub fn Create(
+        atomicConverter: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlValueConverter,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlValueConverter>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlValueConverter,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (atomicConverter))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CreateInvalidClrMappingException(
         &mut self,
         sourceType: quest_hook::libil2cpp::Gc<crate::System::Type>,

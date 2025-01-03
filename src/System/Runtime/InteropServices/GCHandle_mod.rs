@@ -32,6 +32,32 @@ impl crate::System::Runtime::InteropServices::GCHandle {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn Alloc_GCHandleType1(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        _cordl_type: crate::System::Runtime::InteropServices::GCHandleType,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Runtime::InteropServices::GCHandle,
+    > {
+        let __cordl_ret: crate::System::Runtime::InteropServices::GCHandle = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Alloc", (value, _cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Alloc_Il2CppObject0(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Runtime::InteropServices::GCHandle,
+    > {
+        let __cordl_ret: crate::System::Runtime::InteropServices::GCHandle = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Alloc", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CheckCurrentDomain(
+        handle: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckCurrentDomain", (handle))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Equals(
         &mut self,
         o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -53,12 +79,62 @@ impl crate::System::Runtime::InteropServices::GCHandle {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn FreeHandle(
+        handle: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FreeHandle", (handle))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromIntPtr(
+        value: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Runtime::InteropServices::GCHandle,
+    > {
+        let __cordl_ret: crate::System::Runtime::InteropServices::GCHandle = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromIntPtr", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetAddrOfPinnedObject(
+        handle: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetAddrOfPinnedObject", (handle))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "GetHashCode",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetTarget(
+        handle: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetTarget", (handle))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetTargetHandle(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        handle: crate::System::IntPtr,
+        _cordl_type: crate::System::Runtime::InteropServices::GCHandleType,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetTargetHandle", (obj, handle, _cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToIntPtr(
+        value: crate::System::Runtime::InteropServices::GCHandle,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToIntPtr", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_Il2CppObject1(
@@ -111,6 +187,30 @@ impl crate::System::Runtime::InteropServices::GCHandle {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_Target", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        a: crate::System::Runtime::InteropServices::GCHandle,
+        b: crate::System::Runtime::InteropServices::GCHandle,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Explicit_GCHandle0(
+        value: crate::System::Runtime::InteropServices::GCHandle,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Explicit", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Explicit_IntPtr1(
+        value: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Runtime::InteropServices::GCHandle,
+    > {
+        let __cordl_ret: crate::System::Runtime::InteropServices::GCHandle = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Explicit", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_Target(

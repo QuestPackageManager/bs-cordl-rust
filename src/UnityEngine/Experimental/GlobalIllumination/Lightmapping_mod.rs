@@ -33,6 +33,43 @@ impl crate::UnityEngine::Experimental::GlobalIllumination::Lightmapping {
     pub type RequestLightsDelegate = crate::UnityEngine::Experimental::GlobalIllumination::Lightmapping_RequestLightsDelegate;
     #[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+Lightmapping+__c")]
     pub type __c = crate::UnityEngine::Experimental::GlobalIllumination::Lightmapping___c;
+    pub fn GetDelegate() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Experimental::GlobalIllumination::Lightmapping_RequestLightsDelegate,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Experimental::GlobalIllumination::Lightmapping_RequestLightsDelegate,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetDelegate", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RequestLights(
+        lights: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Light>,
+        >,
+        outLightsPtr: crate::System::IntPtr,
+        outLightsCount: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RequestLights", (lights, outLightsPtr, outLightsCount))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ResetDelegate() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ResetDelegate", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetDelegate(
+        del: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Experimental::GlobalIllumination::Lightmapping_RequestLightsDelegate,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetDelegate", (del))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+Lightmapping")]
 impl quest_hook::libil2cpp::ObjectType

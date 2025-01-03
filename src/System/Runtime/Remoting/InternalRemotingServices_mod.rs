@@ -24,7 +24,21 @@ impl std::ops::DerefMut for crate::System::Runtime::Remoting::InternalRemotingSe
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+InternalRemotingServices")]
-impl crate::System::Runtime::Remoting::InternalRemotingServices {}
+impl crate::System::Runtime::Remoting::InternalRemotingServices {
+    pub fn GetCachedSoapAttribute(
+        reflectionObject: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Metadata::SoapAttribute,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Metadata::SoapAttribute,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCachedSoapAttribute", (reflectionObject))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Runtime+Remoting+InternalRemotingServices")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Remoting::InternalRemotingServices {

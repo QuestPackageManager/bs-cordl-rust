@@ -114,6 +114,29 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::BeatAvatarEditorViewCont
             .invoke("CreateColorValuePairsForAvatarPartCollection", (colors))?;
         Ok(__cordl_ret.into())
     }
+    pub fn CreateTextValuePairsForAvatarPartCollection<T>(
+        partCollection: quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<T>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::GlobalNamespace::NamedIntListController_TextValuePair,
+            >,
+        >,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::GlobalNamespace::NamedIntListController_TextValuePair,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateTextValuePairsForAvatarPartCollection", (partCollection))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn DidActivate(
         &mut self,
         firstActivation: bool,

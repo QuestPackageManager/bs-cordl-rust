@@ -123,6 +123,11 @@ impl crate::System::Text::RegularExpressions::RegexCode {
             )?;
         Ok(__cordl_object.into())
     }
+    pub fn OpcodeBacktracks(Op: i32) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("OpcodeBacktracks", (Op))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
         codes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,

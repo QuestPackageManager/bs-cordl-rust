@@ -188,6 +188,13 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
     pub type ColorLutTextureConverter = crate::GlobalNamespace::OVRPassthroughColorLut_ColorLutTextureConverter;
     #[cfg(feature = "OVRPassthroughColorLut+WriteColorsAsBytesJob")]
     pub type WriteColorsAsBytesJob = crate::GlobalNamespace::OVRPassthroughColorLut_WriteColorsAsBytesJob;
+    pub fn ChannelsToCount(
+        channels: crate::GlobalNamespace::OVRPassthroughColorLut_ColorChannels,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ChannelsToCount", (channels))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Create(
         &mut self,
         lutData: crate::GlobalNamespace::OVRPlugin_PassthroughColorLutData,
@@ -299,6 +306,76 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Finalize", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetArraySize<T>(
+        array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+    ) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetArraySize", (array))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetChannelsForTextureFormat(
+        format: crate::UnityEngine::TextureFormat,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::OVRPassthroughColorLut_ColorChannels,
+    > {
+        let __cordl_ret: crate::GlobalNamespace::OVRPassthroughColorLut_ColorChannels = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetChannelsForTextureFormat", (format))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetResolutionFromSize(
+        _cordl_size: i32,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetResolutionFromSize", (_cordl_size))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetTextureSize(
+        texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetTextureSize", (texture))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetTextureSizeFromByteArray(
+        initialColorLut: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        >,
+        channels: crate::GlobalNamespace::OVRPassthroughColorLut_ColorChannels,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetTextureSizeFromByteArray", (initialColorLut, channels))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsPowerOfTwo(x: u32) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsPowerOfTwo", (x))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsResolutionAccepted(
+        resolution: u32,
+        _cordl_size: i32,
+        errorMessage: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsResolutionAccepted", (resolution, _cordl_size, errorMessage))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsTextureSupported(
+        texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+        errorMessage: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsTextureSupported", (texture, errorMessage))?;
         Ok(__cordl_ret.into())
     }
     pub fn IsValidLutUpdate<T>(
@@ -658,6 +735,52 @@ impl crate::GlobalNamespace::OVRPassthroughColorLut_ColorLutTextureConverter {
     pub type MapColorValuesJob = crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_MapColorValuesJob;
     #[cfg(feature = "OVRPassthroughColorLut+ColorLutTextureConverter+TextureSettings")]
     pub type TextureSettings = crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_TextureSettings;
+    pub fn GetTextureSettings(
+        lut: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+        channelCount: i32,
+        flipY: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_TextureSettings,
+    > {
+        let __cordl_ret: crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_TextureSettings = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetTextureSettings", (lut, channelCount, flipY))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MapColorValues(
+        settings: crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_TextureSettings,
+        source: crate::Unity::Collections::NativeArray_1<u8>,
+        target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MapColorValues", (settings, source, target))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TextureToColorByteMap(
+        lut: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+        channelCount: i32,
+        target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        flipY: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TextureToColorByteMap", (lut, channelCount, target, flipY))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryGetTextureLayout(
+        width: i32,
+        height: i32,
+        resolution: quest_hook::libil2cpp::ByRefMut<i32>,
+        slicesPerRow: quest_hook::libil2cpp::ByRefMut<i32>,
+        errorMessage: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "TryGetTextureLayout",
+                (width, height, resolution, slicesPerRow, errorMessage),
+            )?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "OVRPassthroughColorLut+ColorLutTextureConverter")]
 impl quest_hook::libil2cpp::ObjectType

@@ -25,6 +25,15 @@ for crate::UnityEngine::ProBuilder::BezierPoint {
 }
 #[cfg(feature = "UnityEngine+ProBuilder+BezierPoint")]
 impl crate::UnityEngine::ProBuilder::BezierPoint {
+    pub fn CubicPosition(
+        a: crate::UnityEngine::ProBuilder::BezierPoint,
+        b: crate::UnityEngine::ProBuilder::BezierPoint,
+        t: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CubicPosition", (a, b, t))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn EnforceTangentMode(
         &mut self,
         master: crate::UnityEngine::ProBuilder::BezierTangentDirection,
@@ -35,6 +44,29 @@ impl crate::UnityEngine::ProBuilder::BezierPoint {
             "EnforceTangentMode",
             (master, mode),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetLookDirection(
+        points: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                crate::UnityEngine::ProBuilder::BezierPoint,
+            >,
+        >,
+        index: i32,
+        previous: i32,
+        next: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetLookDirection", (points, index, previous, next))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn QuadraticPosition(
+        a: crate::UnityEngine::ProBuilder::BezierPoint,
+        b: crate::UnityEngine::ProBuilder::BezierPoint,
+        t: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("QuadraticPosition", (a, b, t))?;
         Ok(__cordl_ret.into())
     }
     pub fn SetPosition(

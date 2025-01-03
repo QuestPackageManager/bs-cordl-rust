@@ -80,6 +80,17 @@ impl crate::UnityEngine::UIElements::Focusable {
             .invoke("Focus", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetFirstFocusableChild(
+        ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Focusable>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::Focusable,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetFirstFocusableChild", (ve))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetFocusDelegate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

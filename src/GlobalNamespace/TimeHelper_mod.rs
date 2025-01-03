@@ -61,6 +61,13 @@ impl crate::GlobalNamespace::TimeHelper {
             .invoke("Update", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn __SetTime(
+        _cordl_time: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("__SetTime", (_cordl_time))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -69,6 +76,54 @@ impl crate::GlobalNamespace::TimeHelper {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_deltaTime() -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_deltaTime", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_fixedDeltaTime() -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_fixedDeltaTime", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_interpolationFactor() -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_interpolationFactor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_time() -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_time", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_deltaTime(
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_deltaTime", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_fixedDeltaTime(
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_fixedDeltaTime", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_interpolationFactor(
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_interpolationFactor", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_time(
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_time", (value))?;
         Ok(__cordl_ret.into())
     }
 }

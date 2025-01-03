@@ -176,6 +176,27 @@ impl crate::HoudiniEngineUnity::HEU_InputNode {
         > = __cordl_object.invoke("CreateInputObjectInfo", (inputGameObject))?;
         Ok(__cordl_ret.into())
     }
+    pub fn CreateSetupInput(
+        nodeID: i32,
+        inputIndex: i32,
+        inputName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        labelName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        inputNodeType: crate::HoudiniEngineUnity::HEU_InputNode_InputNodeType,
+        parentAsset: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_HoudiniAsset,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InputNode>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_InputNode,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CreateSetupInput",
+                (nodeID, inputIndex, inputName, labelName, inputNodeType, parentAsset),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn DestroyAllData(
         &mut self,
         session: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionBase>,
@@ -248,6 +269,15 @@ impl crate::HoudiniEngineUnity::HEU_InputNode {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = __cordl_object
             .invoke("GetInputEntryGameObject", (index))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetInternalObjectType(
+        _cordl_type: crate::HoudiniEngineUnity::HEU_InputNode_InputObjectType,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::HoudiniEngineUnity::HEU_InputNode_InternalObjectType,
+    > {
+        let __cordl_ret: crate::HoudiniEngineUnity::HEU_InputNode_InternalObjectType = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetInternalObjectType", (_cordl_type))?;
         Ok(__cordl_ret.into())
     }
     pub fn HandleSelectedObjectsForInputHDAs(

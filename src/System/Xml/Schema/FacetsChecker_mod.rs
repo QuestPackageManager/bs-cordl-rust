@@ -309,6 +309,14 @@ impl crate::System::Xml::Schema::FacetsChecker {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
+    pub fn Power(
+        x: i32,
+        y: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Decimal> {
+        let __cordl_ret: crate::System::Decimal = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Power", (x, y))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -589,6 +597,17 @@ impl crate::System::Xml::Schema::FacetsChecker_FacetsCompiler {
             "ParseFacetValue",
             (datatype, facet, code, nsmgr, nameTable),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Preprocess(
+        pattern: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Preprocess", (pattern))?;
         Ok(__cordl_ret.into())
     }
     pub fn SetFlag_RestrictionFlags1(

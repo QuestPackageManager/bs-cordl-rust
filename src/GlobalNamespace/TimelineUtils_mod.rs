@@ -23,7 +23,20 @@ impl std::ops::DerefMut for crate::GlobalNamespace::TimelineUtils {
     }
 }
 #[cfg(feature = "TimelineUtils")]
-impl crate::GlobalNamespace::TimelineUtils {}
+impl crate::GlobalNamespace::TimelineUtils {
+    pub fn FindTrackAssetByName(
+        timeline: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TimelineAsset>,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Timeline::TrackAsset,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FindTrackAssetByName", (timeline, name))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "TimelineUtils")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::TimelineUtils {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

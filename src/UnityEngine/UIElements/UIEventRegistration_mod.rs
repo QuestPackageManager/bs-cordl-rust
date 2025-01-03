@@ -26,6 +26,54 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIEventRegistration 
 impl crate::UnityEngine::UIElements::UIEventRegistration {
     #[cfg(feature = "UnityEngine+UIElements+UIEventRegistration+__c")]
     pub type __c = crate::UnityEngine::UIElements::UIEventRegistration___c;
+    pub fn CleanupRoots() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CleanupRoots", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EndContainerGUIFromException(
+        exception: quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EndContainerGUIFromException", (exception))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MakeCurrentIMGUIContainerDirty() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MakeCurrentIMGUIContainerDirty", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ProcessEvent(
+        instanceID: i32,
+        nativeEventPtr: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ProcessEvent", (instanceID, nativeEventPtr))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RegisterUIElementSystem(
+        utility: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::IUIElementsUtility,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RegisterUIElementSystem", (utility))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReleaseCapture() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReleaseCapture", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TakeCapture() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TakeCapture", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIEventRegistration")]
 impl quest_hook::libil2cpp::ObjectType

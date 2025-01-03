@@ -41,6 +41,35 @@ impl crate::UnityEngine::SceneManagement::Scene {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetIsLoadedInternal(sceneHandle: i32) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetIsLoadedInternal", (sceneHandle))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetNameInternal(
+        sceneHandle: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetNameInternal", (sceneHandle))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetRootCountInternal(sceneHandle: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetRootCountInternal", (sceneHandle))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetRootGameObjectsInternal(
+        sceneHandle: i32,
+        resultRootList: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetRootGameObjectsInternal", (sceneHandle, resultRootList))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetRootGameObjects_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -76,6 +105,11 @@ impl crate::UnityEngine::SceneManagement::Scene {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn IsValidInternal(sceneHandle: i32) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsValidInternal", (sceneHandle))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_handle(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -108,6 +142,14 @@ impl crate::UnityEngine::SceneManagement::Scene {
             "get_rootCount",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        lhs: crate::UnityEngine::SceneManagement::Scene,
+        rhs: crate::UnityEngine::SceneManagement::Scene,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (lhs, rhs))?;
         Ok(__cordl_ret.into())
     }
 }

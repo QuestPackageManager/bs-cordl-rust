@@ -96,6 +96,14 @@ impl crate::UnityEngine::InputSystem::Pen {
         > = __cordl_object.invoke("get_Item", (button))?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_current() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Pen>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Pen,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_current", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_eraser(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -227,6 +235,13 @@ impl crate::UnityEngine::InputSystem::Pen {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Controls::AxisControl,
         > = __cordl_object.invoke("get_twist", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_current(
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Pen>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_current", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_eraser(

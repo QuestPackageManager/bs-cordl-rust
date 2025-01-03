@@ -28,6 +28,42 @@ impl crate::Unity::Properties::Internal::PropertyBagStore {
     pub type TypedStore_1<TContainer: quest_hook::libil2cpp::Type> = crate::Unity::Properties::Internal::PropertyBagStore_TypedStore_1<
         TContainer,
     >;
+    pub fn AddPropertyBag<TContainer>(
+        propertyBag: quest_hook::libil2cpp::Gc<
+            crate::Unity::Properties::IPropertyBag_1<TContainer>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TContainer: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddPropertyBag", (propertyBag))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPropertyBag_0<TContainer>() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Unity::Properties::IPropertyBag_1<TContainer>>,
+    >
+    where
+        TContainer: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Unity::Properties::IPropertyBag_1<TContainer>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetPropertyBag", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPropertyBag_Type1(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Unity::Properties::IPropertyBag>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Unity::Properties::IPropertyBag,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPropertyBag", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "Unity+Properties+Internal+PropertyBagStore")]
 impl quest_hook::libil2cpp::ObjectType

@@ -23,7 +23,56 @@ impl std::ops::DerefMut for crate::GlobalNamespace::ConstructorStringExtensions 
     }
 }
 #[cfg(feature = "ConstructorStringExtensions")]
-impl crate::GlobalNamespace::ConstructorStringExtensions {}
+impl crate::GlobalNamespace::ConstructorStringExtensions {
+    pub fn ToConstructorString_List_1_3<T>(
+        list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToConstructorString", (list))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToConstructorString_Pose2(
+        pose: crate::UnityEngine::Pose,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToConstructorString", (pose))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToConstructorString_Quaternion1(
+        quaternion: crate::UnityEngine::Quaternion,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToConstructorString", (quaternion))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToConstructorString_Vector3_0(
+        vector: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToConstructorString", (vector))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "ConstructorStringExtensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ConstructorStringExtensions {

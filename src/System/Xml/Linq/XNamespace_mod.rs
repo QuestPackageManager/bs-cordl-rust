@@ -29,6 +29,18 @@ impl std::ops::DerefMut for crate::System::Xml::Linq::XNamespace {
 }
 #[cfg(feature = "System+Xml+Linq+XNamespace")]
 impl crate::System::Xml::Linq::XNamespace {
+    pub fn EnsureNamespace(
+        refNmsp: quest_hook::libil2cpp::ByRefMut<*mut crate::System::WeakReference>,
+        namespaceName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XNamespace>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Linq::XNamespace,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EnsureNamespace", (refNmsp, namespaceName))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Equals(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -37,6 +49,28 @@ impl crate::System::Xml::Linq::XNamespace {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ExtractLocalName(
+        n: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XName>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ExtractLocalName", (n))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ExtractNamespace(
+        r: quest_hook::libil2cpp::Gc<crate::System::WeakReference>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ExtractNamespace", (r))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -72,6 +106,30 @@ impl crate::System::Xml::Linq::XNamespace {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XName> = __cordl_object
             .invoke("GetName", (localName, index, count))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Get_Il2CppString0(
+        namespaceName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XNamespace>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Linq::XNamespace,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Get", (namespaceName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Get_i32_i32_1(
+        namespaceName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        index: i32,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XNamespace>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Linq::XNamespace,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Get", (namespaceName, index, count))?;
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -118,6 +176,57 @@ impl crate::System::Xml::Linq::XNamespace {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("get_NamespaceName", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_None() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XNamespace>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Linq::XNamespace,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_None", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Xml() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XNamespace>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Linq::XNamespace,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_Xml", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Xmlns() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XNamespace>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Linq::XNamespace,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_Xmlns", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        left: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XNamespace>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XNamespace>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit(
+        namespaceName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XNamespace>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Linq::XNamespace,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (namespaceName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        left: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XNamespace>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XNamespace>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (left, right))?;
         Ok(__cordl_ret.into())
     }
 }

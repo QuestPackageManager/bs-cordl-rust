@@ -26,6 +26,37 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapDataAddTestSlidersTra
 #[cfg(feature = "BeatmapDataAddTestSlidersTransform")]
 impl crate::GlobalNamespace::BeatmapDataAddTestSlidersTransform {
     pub const kMaxTimeDiff: f32 = 2f32;
+    pub fn CreateTransformedData(
+        beatmapData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IReadonlyBeatmapData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IReadonlyBeatmapData>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IReadonlyBeatmapData,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateTransformedData", (beatmapData))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FindNextSameColorTypeNote(
+        beatmapDataItems: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                *mut crate::GlobalNamespace::BeatmapDataItem,
+            >,
+        >,
+        startIndex: i32,
+        colorType: crate::GlobalNamespace::ColorType,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "FindNextSameColorTypeNote",
+                (beatmapDataItems, startIndex, colorType),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

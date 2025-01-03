@@ -83,6 +83,14 @@ impl crate::UnityEngine::UIElements::StyleSheet {
             .invoke("CheckAccess", (list, _cordl_type, handle))?;
         Ok(__cordl_ret.into())
     }
+    pub fn CustomStartsWith(
+        originalString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        pattern: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CustomStartsWith", (originalString, pattern))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn FlattenImportedStyleSheetsRecursive_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

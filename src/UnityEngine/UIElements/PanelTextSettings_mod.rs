@@ -45,6 +45,13 @@ impl crate::UnityEngine::UIElements::PanelTextSettings {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
+    pub fn UpdateLocalizationFontAsset() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UpdateLocalizationFontAsset", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -53,6 +60,15 @@ impl crate::UnityEngine::UIElements::PanelTextSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_defaultPanelTextSettings() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::PanelTextSettings>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::PanelTextSettings,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_defaultPanelTextSettings", ())?;
         Ok(__cordl_ret.into())
     }
 }

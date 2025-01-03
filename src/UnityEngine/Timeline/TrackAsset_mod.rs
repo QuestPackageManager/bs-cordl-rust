@@ -517,6 +517,13 @@ impl crate::UnityEngine::Timeline::TrackAsset {
             .invoke("GatherProperties", (director, driver))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetAnimationClipHash(
+        clip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetAnimationClipHash", (clip))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetChildTracks(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -941,6 +948,32 @@ impl crate::UnityEngine::Timeline::TrackAsset {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn add_OnClipPlayableCreate(
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_3<
+                *mut crate::UnityEngine::Timeline::TimelineClip,
+                *mut crate::UnityEngine::GameObject,
+                crate::UnityEngine::Playables::Playable,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("add_OnClipPlayableCreate", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn add_OnTrackAnimationPlayableCreate(
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_3<
+                *mut crate::UnityEngine::Timeline::TrackAsset,
+                *mut crate::UnityEngine::GameObject,
+                crate::UnityEngine::Playables::Playable,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("add_OnTrackAnimationPlayableCreate", (value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_clips(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -1133,6 +1166,32 @@ impl crate::UnityEngine::Timeline::TrackAsset {
         > = __cordl_object.invoke("get_timelineAsset", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn remove_OnClipPlayableCreate(
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_3<
+                *mut crate::UnityEngine::Timeline::TimelineClip,
+                *mut crate::UnityEngine::GameObject,
+                crate::UnityEngine::Playables::Playable,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("remove_OnClipPlayableCreate", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_OnTrackAnimationPlayableCreate(
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_3<
+                *mut crate::UnityEngine::Timeline::TrackAsset,
+                *mut crate::UnityEngine::GameObject,
+                crate::UnityEngine::Playables::Playable,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("remove_OnTrackAnimationPlayableCreate", (value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn set_curves(
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
@@ -1318,6 +1377,13 @@ impl crate::UnityEngine::Timeline::TrackAsset_TransientBuildData {
             "Clear",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Create() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Timeline::TrackAsset_TransientBuildData,
+    > {
+        let __cordl_ret: crate::UnityEngine::Timeline::TrackAsset_TransientBuildData = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", ())?;
         Ok(__cordl_ret.into())
     }
 }

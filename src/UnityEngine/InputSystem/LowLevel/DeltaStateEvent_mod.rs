@@ -28,6 +28,40 @@ impl crate::UnityEngine::InputSystem::LowLevel::DeltaStateEvent {
         feature = "UnityEngine+InputSystem+LowLevel+DeltaStateEvent+_stateData_e__FixedBuffer"
     )]
     pub type _stateData_e__FixedBuffer = crate::UnityEngine::InputSystem::LowLevel::DeltaStateEvent__stateData_e__FixedBuffer;
+    pub fn FromUnchecked(
+        ptr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromUnchecked", (ptr))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn From_InputControl_ByRefMut_Allocator1(
+        control: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl,
+        >,
+        eventPtr: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+        >,
+        allocator: crate::Unity::Collections::Allocator,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::NativeArray_1<u8>> {
+        let __cordl_ret: crate::Unity::Collections::NativeArray_1<u8> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("From", (control, eventPtr, allocator))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn From_InputEventPtr0(
+        ptr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("From", (ptr))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ToEventPtr(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

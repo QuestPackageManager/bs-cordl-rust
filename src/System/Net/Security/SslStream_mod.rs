@@ -249,6 +249,14 @@ impl crate::System::Net::Security::SslStream {
         > = __cordl_object.invoke("FlushAsync", (cancellationToken))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetProvider() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Mono::Net::Security::MobileTlsProvider>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Mono::Net::Security::MobileTlsProvider,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetProvider", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_MonoTlsProvider_MonoTlsSettings2(
         innerStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         leaveInnerStreamOpen: bool,

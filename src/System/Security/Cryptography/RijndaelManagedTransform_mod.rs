@@ -173,6 +173,11 @@ impl crate::System::Security::Cryptography::RijndaelManagedTransform {
             .invoke("GenerateKeyExpansion", (rgbKey))?;
         Ok(__cordl_ret.into())
     }
+    pub fn MulX(x: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MulX", (x))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         rgbKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         mode: crate::System::Security::Cryptography::CipherMode,
@@ -207,6 +212,11 @@ impl crate::System::Security::Cryptography::RijndaelManagedTransform {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Reset", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SubWord(a: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SubWord", (a))?;
         Ok(__cordl_ret.into())
     }
     pub fn TransformBlock(
@@ -294,6 +304,21 @@ impl crate::System::Security::Cryptography::RijndaelManagedTransform {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_OutputBlockSize", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn rot1(val: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("rot1", (val))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn rot2(val: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("rot2", (val))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn rot3(val: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("rot3", (val))?;
         Ok(__cordl_ret.into())
     }
 }

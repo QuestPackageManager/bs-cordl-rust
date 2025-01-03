@@ -48,6 +48,26 @@ impl crate::System::Xml::SecureStringHasher {
         let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", (key))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetHashCodeDelegate() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Xml::SecureStringHasher_HashCodeOfStringDelegate,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::SecureStringHasher_HashCodeOfStringDelegate,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetHashCodeDelegate", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetHashCodeOfString(
+        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        sLen: i32,
+        additionalEntropy: i64,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetHashCodeOfString", (key, sLen, additionalEntropy))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

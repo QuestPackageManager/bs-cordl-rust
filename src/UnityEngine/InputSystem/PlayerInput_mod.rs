@@ -163,6 +163,28 @@ impl crate::UnityEngine::InputSystem::PlayerInput {
             .invoke("DebugLogAction", (context))?;
         Ok(__cordl_ret.into())
     }
+    pub fn DoInstantiate(
+        prefab: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::PlayerInput>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::PlayerInput,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DoInstantiate", (prefab))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FindFirstPairedToDevice(
+        device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::PlayerInput>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::PlayerInput,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FindFirstPairedToDevice", (device))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetDevice<TDevice>(&mut self) -> quest_hook::libil2cpp::Result<TDevice>
     where
         TDevice: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -172,6 +194,17 @@ impl crate::UnityEngine::InputSystem::PlayerInput {
             self,
         );
         let __cordl_ret: TDevice = __cordl_object.invoke("GetDevice", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPlayerByIndex(
+        playerIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::PlayerInput>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::PlayerInput,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPlayerByIndex", (playerIndex))?;
         Ok(__cordl_ret.into())
     }
     pub fn HandleControlsChanged(
@@ -234,6 +267,48 @@ impl crate::UnityEngine::InputSystem::PlayerInput {
             .invoke("InstallOnActionTriggeredHook", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn Instantiate_Il2CppArray1(
+        prefab: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        playerIndex: i32,
+        controlScheme: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        splitScreenIndex: i32,
+        pairWithDevices: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::UnityEngine::InputSystem::InputDevice,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::PlayerInput>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::PlayerInput,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "Instantiate",
+                (prefab, playerIndex, controlScheme, splitScreenIndex, pairWithDevices),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Instantiate_InputDevice0(
+        prefab: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        playerIndex: i32,
+        controlScheme: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        splitScreenIndex: i32,
+        pairWithDevice: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputDevice,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::PlayerInput>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::PlayerInput,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "Instantiate",
+                (prefab, playerIndex, controlScheme, splitScreenIndex, pairWithDevice),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -284,6 +359,14 @@ impl crate::UnityEngine::InputSystem::PlayerInput {
             .invoke("OnEnable", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn OnPreFilterUnpairedDeviceUsed(
+        device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+        eventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("OnPreFilterUnpairedDeviceUsed", (device, eventPtr))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn OnUnpairedDeviceUsed(
         &mut self,
         control: quest_hook::libil2cpp::Gc<
@@ -296,6 +379,15 @@ impl crate::UnityEngine::InputSystem::PlayerInput {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnUnpairedDeviceUsed", (control, eventPtr))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn OnUserChange(
+        user: crate::UnityEngine::InputSystem::Users::InputUser,
+        change: crate::UnityEngine::InputSystem::Users::InputUserChange,
+        device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("OnUserChange", (user, change, device))?;
         Ok(__cordl_ret.into())
     }
     pub fn PassivateInput(
@@ -548,6 +640,16 @@ impl crate::UnityEngine::InputSystem::PlayerInput {
         let __cordl_ret: bool = __cordl_object.invoke("get_active", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_all() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
+            *mut crate::UnityEngine::InputSystem::PlayerInput,
+        >,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
+            *mut crate::UnityEngine::InputSystem::PlayerInput,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_all", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_camera(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -687,6 +789,11 @@ impl crate::UnityEngine::InputSystem::PlayerInput {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_inputIsActive", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_isSinglePlayer() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_isSinglePlayer", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_neverAutoSwitchControlSchemes(

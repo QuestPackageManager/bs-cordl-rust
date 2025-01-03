@@ -23,7 +23,21 @@ impl std::ops::DerefMut for crate::Unity::Properties::PropertyBag {
     }
 }
 #[cfg(feature = "Unity+Properties+PropertyBag")]
-impl crate::Unity::Properties::PropertyBag {}
+impl crate::Unity::Properties::PropertyBag {
+    pub fn Register<TContainer>(
+        propertyBag: quest_hook::libil2cpp::Gc<
+            crate::Unity::Properties::PropertyBag_1<TContainer>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TContainer: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Register", (propertyBag))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "Unity+Properties+PropertyBag")]
 impl quest_hook::libil2cpp::ObjectType for crate::Unity::Properties::PropertyBag {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

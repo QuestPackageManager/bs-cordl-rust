@@ -23,7 +23,42 @@ impl std::ops::DerefMut for crate::System::Collections::Generic::EnumerableHelpe
     }
 }
 #[cfg(feature = "System+Collections+Generic+EnumerableHelpers")]
-impl crate::System::Collections::Generic::EnumerableHelpers {}
+impl crate::System::Collections::Generic::EnumerableHelpers {
+    pub fn ToArray_ByRefMut1<T>(
+        source: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<T>,
+        >,
+        length: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<T>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToArray", (source, length))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToArray_IEnumerable_1_0<T>(
+        source: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<T>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<T>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("ToArray", (source))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Collections+Generic+EnumerableHelpers")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Collections::Generic::EnumerableHelpers {

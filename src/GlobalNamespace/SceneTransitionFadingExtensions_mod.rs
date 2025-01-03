@@ -23,7 +23,15 @@ impl std::ops::DerefMut for crate::GlobalNamespace::SceneTransitionFadingExtensi
     }
 }
 #[cfg(feature = "SceneTransitionFadingExtensions")]
-impl crate::GlobalNamespace::SceneTransitionFadingExtensions {}
+impl crate::GlobalNamespace::SceneTransitionFadingExtensions {
+    pub fn ShouldFadeOnSceneTransition(
+        sceneTransitionType: crate::GlobalNamespace::GameScenesManager_SceneTransitionType,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ShouldFadeOnSceneTransition", (sceneTransitionType))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "SceneTransitionFadingExtensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SceneTransitionFadingExtensions {

@@ -23,7 +23,21 @@ impl std::ops::DerefMut for crate::Oculus::Platform::DeviceApplicationIntegrity 
     }
 }
 #[cfg(feature = "Oculus+Platform+DeviceApplicationIntegrity")]
-impl crate::Oculus::Platform::DeviceApplicationIntegrity {}
+impl crate::Oculus::Platform::DeviceApplicationIntegrity {
+    pub fn GetIntegrityToken(
+        challenge_nonce: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Request_1<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Request_1<*mut quest_hook::libil2cpp::Il2CppString>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetIntegrityToken", (challenge_nonce))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "Oculus+Platform+DeviceApplicationIntegrity")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Oculus::Platform::DeviceApplicationIntegrity {

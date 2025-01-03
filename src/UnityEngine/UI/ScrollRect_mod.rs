@@ -67,6 +67,19 @@ impl crate::UnityEngine::UI::ScrollRect {
     pub type ScrollRectEvent = crate::UnityEngine::UI::ScrollRect_ScrollRectEvent;
     #[cfg(feature = "UnityEngine+UI+ScrollRect+ScrollbarVisibility")]
     pub type ScrollbarVisibility = crate::UnityEngine::UI::ScrollRect_ScrollbarVisibility;
+    pub fn AdjustBounds(
+        viewBounds: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Bounds>,
+        contentPivot: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
+        contentSize: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+        contentPos: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "AdjustBounds",
+                (viewBounds, contentPivot, contentSize, contentPos),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CalculateLayoutInputHorizontal(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -126,6 +139,33 @@ impl crate::UnityEngine::UI::ScrollRect {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GraphicUpdateComplete", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InternalCalculateOffset(
+        viewBounds: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Bounds>,
+        contentBounds: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Bounds>,
+        horizontal: bool,
+        vertical: bool,
+        movementType: crate::UnityEngine::UI::ScrollRect_MovementType,
+        delta: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "InternalCalculateOffset",
+                (viewBounds, contentBounds, horizontal, vertical, movementType, delta),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InternalGetBounds(
+        corners: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+        >,
+        viewWorldToLocalMatrix: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Matrix4x4,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Bounds> {
+        let __cordl_ret: crate::UnityEngine::Bounds = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InternalGetBounds", (corners, viewWorldToLocalMatrix))?;
         Ok(__cordl_ret.into())
     }
     pub fn IsActive(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -268,6 +308,14 @@ impl crate::UnityEngine::UI::ScrollRect {
             .invoke("Rebuild", (executing))?;
         Ok(__cordl_ret.into())
     }
+    pub fn RubberDelta(
+        overStretching: f32,
+        viewSize: f32,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RubberDelta", (overStretching, viewSize))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn SetContentAnchoredPosition(
         &mut self,
         position: crate::UnityEngine::Vector2,
@@ -393,6 +441,19 @@ impl crate::UnityEngine::UI::ScrollRect {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateCachedData", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UpdateOneScrollbarVisibility(
+        xScrollingNeeded: bool,
+        xAxisEnabled: bool,
+        scrollbarVisibility: crate::UnityEngine::UI::ScrollRect_ScrollbarVisibility,
+        scrollbar: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Scrollbar>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "UpdateOneScrollbarVisibility",
+                (xScrollingNeeded, xAxisEnabled, scrollbarVisibility, scrollbar),
+            )?;
         Ok(__cordl_ret.into())
     }
     pub fn UpdatePrevData(

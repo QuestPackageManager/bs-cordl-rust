@@ -26,6 +26,16 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::Icao::LdsVersionInfo
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Icao+LdsVersionInfo")]
 impl crate::Org::BouncyCastle::Asn1::Icao::LdsVersionInfo {
+    pub fn GetInstance(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Icao::LdsVersionInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Icao::LdsVersionInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetLdsVersion(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

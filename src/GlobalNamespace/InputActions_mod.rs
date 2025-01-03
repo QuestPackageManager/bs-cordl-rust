@@ -25,12 +25,45 @@ impl std::ops::DerefMut for crate::GlobalNamespace::InputActions {
 }
 #[cfg(feature = "InputActions")]
 impl crate::GlobalNamespace::InputActions {
+    pub fn HasInputFocus(
+        eventSystem: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::EventSystem,
+        >,
+        keyboardManager: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::UIKeyboardManager,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("HasInputFocus", (eventSystem, keyboardManager))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
+    }
+    pub fn ResolveGameplayCoreSceneContext() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Zenject::SceneContext>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::SceneContext> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ResolveGameplayCoreSceneContext", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToggleAutopilot() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToggleAutopilot", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToggleLevelFreeze() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToggleLevelFreeze", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn Update(
         &mut self,

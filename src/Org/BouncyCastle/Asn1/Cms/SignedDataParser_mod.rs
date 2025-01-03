@@ -81,6 +81,16 @@ impl crate::Org::BouncyCastle::Asn1::Cms::SignedDataParser {
         > = __cordl_object.invoke("GetEncapContentInfo", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetInstance(
+        o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cms::SignedDataParser>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cms::SignedDataParser,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (o))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetSignerInfos(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

@@ -34,6 +34,181 @@ impl crate::GlobalNamespace::BeatmapLevelDataUtils {
     pub type __c__DisplayClass8_0 = crate::GlobalNamespace::BeatmapLevelDataUtils___c__DisplayClass8_0;
     #[cfg(feature = "BeatmapLevelDataUtils+__c__DisplayClass9_0")]
     pub type __c__DisplayClass9_0 = crate::GlobalNamespace::BeatmapLevelDataUtils___c__DisplayClass9_0;
+    pub fn CalculateAudioContentHash(
+        audioClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CalculateAudioContentHash", (audioClip))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CalculateBeatmapDataContentHash(
+        beatmapJson: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CalculateBeatmapDataContentHash", (beatmapJson))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CalculateHashFromData(
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CalculateHashFromData", (data))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CalculateHashFromPath(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CalculateHashFromPath", (path))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Compress(
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Compress", (data))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Decompress(
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Decompress", (data))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetBytesFromUtf8String(
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetBytesFromUtf8String", (data))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetUtf8String(
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetUtf8String", (data))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsCompressed(
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsCompressed", (data))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReadAllTextFromData(
+        inputData: crate::Unity::Collections::NativeArray_1_ReadOnly<u8>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadAllTextFromData", (inputData))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReadAllTextFromDataAsync(
+        inputData: crate::Unity::Collections::NativeArray_1_ReadOnly<u8>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadAllTextFromDataAsync", (inputData))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReadAllTextFromPath(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadAllTextFromPath", (path))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReadAllTextFromPathAsync(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadAllTextFromPathAsync", (path, cancellationToken))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReadAllTextFromUrlAsync(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadAllTextFromUrlAsync", (path, cancellationToken))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StartsWithBom(
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StartsWithBom", (data))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "BeatmapLevelDataUtils")]
 impl quest_hook::libil2cpp::ObjectType

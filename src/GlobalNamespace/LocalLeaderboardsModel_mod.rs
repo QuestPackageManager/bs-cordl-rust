@@ -95,6 +95,23 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
             )?;
         Ok(__cordl_ret.into())
     }
+    pub fn AppendLeaderboardScores(
+        main: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::GlobalNamespace::LocalLeaderboardsModel_ScoreData,
+            >,
+        >,
+        tail: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::GlobalNamespace::LocalLeaderboardsModel_ScoreData,
+            >,
+        >,
+        maxNumberOfScores: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AppendLeaderboardScores", (main, tail, maxNumberOfScores))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ClearAllLeaderboardsAsync(
         &mut self,
         deleteLeaderboardFile: bool,
@@ -311,6 +328,40 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                 >,
             >,
         > = __cordl_object.invoke("LoadLeaderboardsDataAsync", (filename))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LoadLeaderboardsDataInternal(
+        savedLeaderboardsData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::LocalLeaderboardsModel_SavedLeaderboardsData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LoadLeaderboardsDataInternal", (savedLeaderboardsData))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MigrateQuestLeaderboards(
+        leaderboardDataList: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
+            >,
+        >,
+        maxNumberOfScores: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "MigrateQuestLeaderboards",
+                (leaderboardDataList, maxNumberOfScores),
+            )?;
         Ok(__cordl_ret.into())
     }
     pub fn New(

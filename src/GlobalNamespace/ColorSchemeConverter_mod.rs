@@ -23,7 +23,19 @@ impl std::ops::DerefMut for crate::GlobalNamespace::ColorSchemeConverter {
     }
 }
 #[cfg(feature = "ColorSchemeConverter")]
-impl crate::GlobalNamespace::ColorSchemeConverter {}
+impl crate::GlobalNamespace::ColorSchemeConverter {
+    pub fn FromNetSerializable(
+        serialized: crate::GlobalNamespace::ColorSchemeNetSerializable,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ColorScheme,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromNetSerializable", (serialized))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "ColorSchemeConverter")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ColorSchemeConverter {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

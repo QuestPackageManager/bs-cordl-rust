@@ -35,6 +35,11 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Digests::Sha224Dig
 #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+Sha224Digest")]
 impl crate::Org::BouncyCastle::Crypto::Digests::Sha224Digest {
     pub const DigestLength: i32 = 28i32;
+    pub fn Ch(x: u32, y: u32, z: u32) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Ch", (x, y, z))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Copy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -77,6 +82,11 @@ impl crate::Org::BouncyCastle::Crypto::Digests::Sha224Digest {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetDigestSize", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Maj(x: u32, y: u32, z: u32) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Maj", (x, y, z))?;
         Ok(__cordl_ret.into())
     }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -149,6 +159,26 @@ impl crate::Org::BouncyCastle::Crypto::Digests::Sha224Digest {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Reset", (other))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Sum0(x: u32) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Sum0", (x))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Sum1(x: u32) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Sum1", (x))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Theta0(x: u32) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Theta0", (x))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Theta1(x: u32) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Theta1", (x))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_0(

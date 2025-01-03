@@ -33,6 +33,18 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription {
         feature = "UnityEngine+InputSystem+Layouts+InputDeviceDescription+DeviceDescriptionJson"
     )]
     pub type DeviceDescriptionJson = crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription_DeviceDescriptionJson;
+    pub fn ComparePropertyToDeviceDescriptor(
+        propertyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        propertyValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        deviceDescriptor: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ComparePropertyToDeviceDescriptor",
+                (propertyName, propertyValue, deviceDescriptor),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Equals_Il2CppObject1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -53,6 +65,15 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription {
             "Equals",
             (other),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromJson(
+        json: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromJson", (json))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -159,6 +180,22 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_version", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        left: crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription,
+        right: crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        left: crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription,
+        right: crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (left, right))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_capabilities(

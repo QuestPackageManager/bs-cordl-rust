@@ -26,12 +26,31 @@ for crate::Org::BouncyCastle::Utilities::Date::DateTimeUtilities {
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+Date+DateTimeUtilities")]
 impl crate::Org::BouncyCastle::Utilities::Date::DateTimeUtilities {
+    pub fn CurrentUnixMs() -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CurrentUnixMs", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DateTimeToUnixMs(
+        dateTime: crate::System::DateTime,
+    ) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DateTimeToUnixMs", (dateTime))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
+    }
+    pub fn UnixMsToDateTime(
+        unixMs: i64,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
+        let __cordl_ret: crate::System::DateTime = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UnixMsToDateTime", (unixMs))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,

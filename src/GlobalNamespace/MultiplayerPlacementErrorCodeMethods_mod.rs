@@ -25,7 +25,15 @@ for crate::GlobalNamespace::MultiplayerPlacementErrorCodeMethods {
     }
 }
 #[cfg(feature = "MultiplayerPlacementErrorCodeMethods")]
-impl crate::GlobalNamespace::MultiplayerPlacementErrorCodeMethods {}
+impl crate::GlobalNamespace::MultiplayerPlacementErrorCodeMethods {
+    pub fn ToConnectionFailedReason(
+        errorCode: crate::GlobalNamespace::MultiplayerPlacementErrorCode,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::ConnectionFailedReason> {
+        let __cordl_ret: crate::GlobalNamespace::ConnectionFailedReason = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToConnectionFailedReason", (errorCode))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "MultiplayerPlacementErrorCodeMethods")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::MultiplayerPlacementErrorCodeMethods {

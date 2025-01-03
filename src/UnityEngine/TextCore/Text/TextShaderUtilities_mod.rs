@@ -23,7 +23,29 @@ impl std::ops::DerefMut for crate::UnityEngine::TextCore::Text::TextShaderUtilit
     }
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+TextShaderUtilities")]
-impl crate::UnityEngine::TextCore::Text::TextShaderUtilities {}
+impl crate::UnityEngine::TextCore::Text::TextShaderUtilities {
+    pub fn GetShaderPropertyIDs() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetShaderPropertyIDs", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_ShaderRef_MobileBitmap() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_ShaderRef_MobileBitmap", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_ShaderRef_MobileSDF() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_ShaderRef_MobileSDF", ())?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+TextCore+Text+TextShaderUtilities")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::TextCore::Text::TextShaderUtilities {

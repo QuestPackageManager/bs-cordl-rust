@@ -34,6 +34,17 @@ impl crate::GlobalNamespace::ProfilerMetrics {
     pub const kExposedMetricsCap: i32 = 256i32;
     #[cfg(feature = "ProfilerMetrics+ProfilerMetric")]
     pub type ProfilerMetric = crate::GlobalNamespace::ProfilerMetrics_ProfilerMetric;
+    pub fn AddExposedMetrics(
+        list: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::GlobalNamespace::ProfilerMetrics_ProfilerMetric,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddExposedMetrics", (list))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CaptureFrame(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -98,6 +109,78 @@ impl crate::GlobalNamespace::ProfilerMetrics {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (metrics, profilerRecorders, initialFrameCapacity))?;
         Ok(__cordl_object.into())
+    }
+    pub fn Record(
+        metrics: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::GlobalNamespace::ProfilerMetrics_ProfilerMetric,
+            >,
+        >,
+        initialFrameCapacity: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ProfilerMetrics>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ProfilerMetrics,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Record", (metrics, initialFrameCapacity))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RecordAllMetrics(
+        initialFrameCapacity: i32,
+        listed: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ProfilerMetrics>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ProfilerMetrics,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RecordAllMetrics", (initialFrameCapacity, listed))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RecordFrameTimingMetrics(
+        initialFrameCapacity: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ProfilerMetrics>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ProfilerMetrics,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RecordFrameTimingMetrics", (initialFrameCapacity))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RecordListedMetrics(
+        initialFrameCapacity: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ProfilerMetrics>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ProfilerMetrics,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RecordListedMetrics", (initialFrameCapacity))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RecordMemoryMetrics(
+        initialFrameCapacity: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ProfilerMetrics>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ProfilerMetrics,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RecordMemoryMetrics", (initialFrameCapacity))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RecordRenderingMetrics(
+        initialFrameCapacity: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ProfilerMetrics>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ProfilerMetrics,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RecordRenderingMetrics", (initialFrameCapacity))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,

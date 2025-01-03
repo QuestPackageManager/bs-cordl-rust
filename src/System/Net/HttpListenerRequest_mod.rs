@@ -81,6 +81,20 @@ impl crate::System::Net::HttpListenerRequest {
         let __cordl_ret: bool = __cordl_object.invoke("FlushInput", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn IsPredefinedScheme(
+        scheme: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsPredefinedScheme", (scheme))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MaybeUri(
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MaybeUri", (s))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         context: quest_hook::libil2cpp::Gc<crate::System::Net::HttpListenerContext>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -99,6 +113,16 @@ impl crate::System::Net::HttpListenerRequest {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetRequestLine", (req))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Unquote(
+        str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Unquote", (str))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

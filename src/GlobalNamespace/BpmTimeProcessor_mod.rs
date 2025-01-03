@@ -32,6 +32,14 @@ impl crate::GlobalNamespace::BpmTimeProcessor {
     pub type BpmChangeData = crate::GlobalNamespace::BpmTimeProcessor_BpmChangeData;
     #[cfg(feature = "BpmTimeProcessor+__c")]
     pub type __c = crate::GlobalNamespace::BpmTimeProcessor___c;
+    pub fn CalculateTime(
+        prevBpmChangeData: crate::GlobalNamespace::BpmTimeProcessor_BpmChangeData,
+        beat: f32,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CalculateTime", (prevBpmChangeData, beat))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ConvertBeatToTime(
         &mut self,
         beat: f32,

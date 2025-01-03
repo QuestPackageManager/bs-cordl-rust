@@ -31,6 +31,177 @@ impl crate::SFB::StandaloneFileBrowser {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
+    pub fn OpenFilePanelAsync_Il2CppArray1(
+        title: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        directory: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        extensions: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::SFB::ExtensionFilter>,
+        >,
+        multiselect: bool,
+        cb: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<
+                *mut quest_hook::libil2cpp::Il2CppArray<
+                    *mut quest_hook::libil2cpp::Il2CppString,
+                >,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "OpenFilePanelAsync",
+                (title, directory, extensions, multiselect, cb),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn OpenFilePanelAsync_Il2CppString0(
+        title: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        directory: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        extension: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        multiselect: bool,
+        cb: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<
+                *mut quest_hook::libil2cpp::Il2CppArray<
+                    *mut quest_hook::libil2cpp::Il2CppString,
+                >,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "OpenFilePanelAsync",
+                (title, directory, extension, multiselect, cb),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn OpenFilePanel_Il2CppArray1(
+        title: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        directory: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        extensions: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::SFB::ExtensionFilter>,
+        >,
+        multiselect: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("OpenFilePanel", (title, directory, extensions, multiselect))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn OpenFilePanel_Il2CppString0(
+        title: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        directory: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        extension: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        multiselect: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("OpenFilePanel", (title, directory, extension, multiselect))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn OpenFolderPanel(
+        title: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        directory: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        multiselect: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("OpenFolderPanel", (title, directory, multiselect))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn OpenFolderPanelAsync(
+        title: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        directory: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        multiselect: bool,
+        cb: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<
+                *mut quest_hook::libil2cpp::Il2CppArray<
+                    *mut quest_hook::libil2cpp::Il2CppString,
+                >,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("OpenFolderPanelAsync", (title, directory, multiselect, cb))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SaveFilePanelAsync_Il2CppArray1(
+        title: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        directory: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        defaultName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        extensions: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::SFB::ExtensionFilter>,
+        >,
+        cb: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "SaveFilePanelAsync",
+                (title, directory, defaultName, extensions, cb),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SaveFilePanelAsync_Il2CppString0(
+        title: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        directory: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        defaultName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        extension: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        cb: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "SaveFilePanelAsync",
+                (title, directory, defaultName, extension, cb),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SaveFilePanel_Il2CppArray1(
+        title: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        directory: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        defaultName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        extensions: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::SFB::ExtensionFilter>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SaveFilePanel", (title, directory, defaultName, extensions))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SaveFilePanel_Il2CppString0(
+        title: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        directory: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        defaultName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        extension: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SaveFilePanel", (title, directory, defaultName, extension))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

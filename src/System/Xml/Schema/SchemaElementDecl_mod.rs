@@ -84,6 +84,15 @@ impl crate::System::Xml::Schema::SchemaElementDecl {
         > = __cordl_object.invoke("Clone", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn CreateAnyTypeElementDecl() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaElementDecl>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::SchemaElementDecl,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateAnyTypeElementDecl", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetAttDef(
         &mut self,
         qname: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,

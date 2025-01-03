@@ -46,6 +46,16 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::RevRepContent {
         > = __cordl_object.invoke("GetCrls", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetInstance(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cmp::RevRepContent>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cmp::RevRepContent,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetRevCerts(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

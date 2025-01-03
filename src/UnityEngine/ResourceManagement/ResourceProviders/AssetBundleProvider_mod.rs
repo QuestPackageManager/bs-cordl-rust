@@ -67,6 +67,11 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleProvi
             .invoke("GetDefaultType", (location))?;
         Ok(__cordl_ret.into())
     }
+    pub fn Init() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Init", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -99,6 +104,13 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleProvi
             .invoke("Release", (location, asset))?;
         Ok(__cordl_ret.into())
     }
+    pub fn WaitForAllUnloadingBundlesToComplete() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WaitForAllUnloadingBundlesToComplete", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -107,6 +119,45 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleProvi
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_AssetBundleCount() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_AssetBundleCount", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_UnloadingAssetBundleCount() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_UnloadingAssetBundleCount", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_UnloadingBundles() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<
+                *mut quest_hook::libil2cpp::Il2CppString,
+                *mut crate::UnityEngine::AssetBundleUnloadOperation,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<
+                *mut quest_hook::libil2cpp::Il2CppString,
+                *mut crate::UnityEngine::AssetBundleUnloadOperation,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_UnloadingBundles", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_UnloadingBundles(
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<
+                *mut quest_hook::libil2cpp::Il2CppString,
+                *mut crate::UnityEngine::AssetBundleUnloadOperation,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_UnloadingBundles", (value))?;
         Ok(__cordl_ret.into())
     }
 }

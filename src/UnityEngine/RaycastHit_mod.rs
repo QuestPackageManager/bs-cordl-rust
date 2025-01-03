@@ -26,6 +26,35 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::RaycastH
 }
 #[cfg(feature = "UnityEngine+RaycastHit")]
 impl crate::UnityEngine::RaycastHit {
+    pub fn CalculateRaycastTexCoord(
+        colliderInstanceID: i32,
+        uv: crate::UnityEngine::Vector2,
+        pos: crate::UnityEngine::Vector3,
+        face: u32,
+        textcoord: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CalculateRaycastTexCoord",
+                (colliderInstanceID, uv, pos, face, textcoord),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CalculateRaycastTexCoord_Injected(
+        colliderInstanceID: i32,
+        uv: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
+        pos: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+        face: u32,
+        textcoord: i32,
+        ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CalculateRaycastTexCoord_Injected",
+                (colliderInstanceID, uv, pos, face, textcoord, ret),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_articulationBody(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

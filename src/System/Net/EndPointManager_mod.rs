@@ -23,7 +23,76 @@ impl std::ops::DerefMut for crate::System::Net::EndPointManager {
     }
 }
 #[cfg(feature = "System+Net+EndPointManager")]
-impl crate::System::Net::EndPointManager {}
+impl crate::System::Net::EndPointManager {
+    pub fn AddListener(
+        listener: quest_hook::libil2cpp::Gc<crate::System::Net::HttpListener>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddListener", (listener))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddPrefix(
+        prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        listener: quest_hook::libil2cpp::Gc<crate::System::Net::HttpListener>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddPrefix", (prefix, listener))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddPrefixInternal(
+        p: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        listener: quest_hook::libil2cpp::Gc<crate::System::Net::HttpListener>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddPrefixInternal", (p, listener))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetEPListener(
+        host: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        port: i32,
+        listener: quest_hook::libil2cpp::Gc<crate::System::Net::HttpListener>,
+        secure: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Net::EndPointListener>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Net::EndPointListener,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetEPListener", (host, port, listener, secure))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RemoveEndPoint(
+        epl: quest_hook::libil2cpp::Gc<crate::System::Net::EndPointListener>,
+        ep: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RemoveEndPoint", (epl, ep))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RemoveListener(
+        listener: quest_hook::libil2cpp::Gc<crate::System::Net::HttpListener>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RemoveListener", (listener))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RemovePrefix(
+        prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        listener: quest_hook::libil2cpp::Gc<crate::System::Net::HttpListener>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RemovePrefix", (prefix, listener))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RemovePrefixInternal(
+        prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        listener: quest_hook::libil2cpp::Gc<crate::System::Net::HttpListener>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RemovePrefixInternal", (prefix, listener))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Net+EndPointManager")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Net::EndPointManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

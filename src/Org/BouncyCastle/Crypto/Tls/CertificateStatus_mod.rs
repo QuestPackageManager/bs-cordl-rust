@@ -51,6 +51,14 @@ impl crate::Org::BouncyCastle::Crypto::Tls::CertificateStatus {
         > = __cordl_object.invoke("GetOcspResponse", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn IsCorrectType(
+        statusType: u8,
+        response: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsCorrectType", (statusType, response))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         statusType: u8,
         response: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -60,6 +68,18 @@ impl crate::Org::BouncyCastle::Crypto::Tls::CertificateStatus {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (statusType, response))?;
         Ok(__cordl_object.into())
+    }
+    pub fn Parse(
+        input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::CertificateStatus,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::CertificateStatus,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Parse", (input))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,

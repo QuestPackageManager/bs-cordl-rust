@@ -24,6 +24,14 @@ impl std::ops::DerefMut for crate::System::Security::Cryptography::DSA {
 }
 #[cfg(feature = "System+Security+Cryptography+DSA")]
 impl crate::System::Security::Cryptography::DSA {
+    pub fn Create() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::DSA>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::DSA,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Create", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ExportParameters(
         &mut self,
         includePrivateParameters: bool,

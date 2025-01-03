@@ -24,6 +24,78 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::X509::X509Utilities {
 }
 #[cfg(feature = "Org+BouncyCastle+X509+X509Utilities")]
 impl crate::Org::BouncyCastle::X509::X509Utilities {
+    pub fn CreatePssParams(
+        hashAlgId: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        >,
+        saltSize: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Pkcs::RsassaPssParameters,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Pkcs::RsassaPssParameters,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreatePssParams", (hashAlgId, saltSize))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetAlgNames() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IEnumerable,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetAlgNames", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetAlgorithmOid(
+        algorithmName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerObjectIdentifier>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetAlgorithmOid", (algorithmName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetSigAlgID(
+        sigOid: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
+        algorithmName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSigAlgID", (sigOid, algorithmName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetSignatureForObject(
+        sigOid: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
+        sigName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        privateKey: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+        >,
+        random: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Security::SecureRandom,
+        >,
+        ae: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSignatureForObject", (sigOid, sigName, privateKey, random, ae))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

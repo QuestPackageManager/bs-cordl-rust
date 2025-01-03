@@ -85,6 +85,22 @@ impl crate::Zenject::SignalSubscriptionId {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Equality(
+        left: crate::Zenject::SignalSubscriptionId,
+        right: crate::Zenject::SignalSubscriptionId,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        left: crate::Zenject::SignalSubscriptionId,
+        right: crate::Zenject::SignalSubscriptionId,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "Zenject+SignalSubscriptionId")]
 impl AsRef<crate::System::IEquatable_1<crate::Zenject::SignalSubscriptionId>>

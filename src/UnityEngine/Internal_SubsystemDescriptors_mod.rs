@@ -23,7 +23,15 @@ impl std::ops::DerefMut for crate::UnityEngine::Internal_SubsystemDescriptors {
     }
 }
 #[cfg(feature = "UnityEngine+Internal_SubsystemDescriptors")]
-impl crate::UnityEngine::Internal_SubsystemDescriptors {}
+impl crate::UnityEngine::Internal_SubsystemDescriptors {
+    pub fn Internal_AddDescriptor(
+        descriptor: quest_hook::libil2cpp::Gc<crate::UnityEngine::SubsystemDescriptor>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Internal_AddDescriptor", (descriptor))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+Internal_SubsystemDescriptors")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Internal_SubsystemDescriptors {

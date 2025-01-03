@@ -82,6 +82,29 @@ impl crate::BeatSaber::GameSettings::ControllerProfilesModel {
         > = __cordl_object.invoke("GetControllerProfilesSaveData", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetDefaultController() -> quest_hook::libil2cpp::Result<
+        crate::BeatSaber::GameSettings::Controller,
+    > {
+        let __cordl_ret: crate::BeatSaber::GameSettings::Controller = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetDefaultController", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetDefaultControllersProfile(
+        localizationKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        index: i32,
+        modifiable: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::BeatSaber::GameSettings::ControllerProfile>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::GameSettings::ControllerProfile,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetDefaultControllersProfile",
+                (localizationKey, index, modifiable),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetDefaultCustomControllerProfile(
         &mut self,
         profileIndex: i32,

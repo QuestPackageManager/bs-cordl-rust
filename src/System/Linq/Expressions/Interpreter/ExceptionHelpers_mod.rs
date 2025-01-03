@@ -26,7 +26,17 @@ for crate::System::Linq::Expressions::Interpreter::ExceptionHelpers {
     }
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+ExceptionHelpers")]
-impl crate::System::Linq::Expressions::Interpreter::ExceptionHelpers {}
+impl crate::System::Linq::Expressions::Interpreter::ExceptionHelpers {
+    pub fn UnwrapAndRethrow(
+        exception: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::TargetInvocationException,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UnwrapAndRethrow", (exception))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Linq+Expressions+Interpreter+ExceptionHelpers")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Interpreter::ExceptionHelpers {

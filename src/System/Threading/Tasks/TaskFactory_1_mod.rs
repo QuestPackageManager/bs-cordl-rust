@@ -56,6 +56,173 @@ impl<
         TArg1,
         TArg2,
     >;
+    pub fn FromAsyncCoreLogic(
+        iar: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+        endFunction: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<*mut crate::System::IAsyncResult, TResult>,
+        >,
+        endAction: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::System::IAsyncResult>,
+        >,
+        promise: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<TResult>,
+        >,
+        requiresSynchronization: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "FromAsyncCoreLogic",
+                (iar, endFunction, endAction, promise, requiresSynchronization),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromAsyncImpl_Func_3_Il2CppObject_TaskCreationOptions0(
+        beginMethod: quest_hook::libil2cpp::Gc<
+            crate::System::Func_3<
+                *mut crate::System::AsyncCallback,
+                *mut quest_hook::libil2cpp::Il2CppObject,
+                *mut crate::System::IAsyncResult,
+            >,
+        >,
+        endFunction: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<*mut crate::System::IAsyncResult, TResult>,
+        >,
+        endAction: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::System::IAsyncResult>,
+        >,
+        state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        creationOptions: crate::System::Threading::Tasks::TaskCreationOptions,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<TResult>>,
+    >
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<TResult>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "FromAsyncImpl",
+                (beginMethod, endFunction, endAction, state, creationOptions),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromAsyncImpl_Func_4_TArg1_Il2CppObject_TaskCreationOptions1<TArg1>(
+        beginMethod: quest_hook::libil2cpp::Gc<
+            crate::System::Func_4<
+                TArg1,
+                *mut crate::System::AsyncCallback,
+                *mut quest_hook::libil2cpp::Il2CppObject,
+                *mut crate::System::IAsyncResult,
+            >,
+        >,
+        endFunction: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<*mut crate::System::IAsyncResult, TResult>,
+        >,
+        endAction: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::System::IAsyncResult>,
+        >,
+        arg1: TArg1,
+        state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        creationOptions: crate::System::Threading::Tasks::TaskCreationOptions,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<TResult>>,
+    >
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TArg1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<TResult>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "FromAsyncImpl",
+                (beginMethod, endFunction, endAction, arg1, state, creationOptions),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromAsyncImpl_Func_5_TArg1_TArg2_Il2CppObject_TaskCreationOptions2<
+        TArg1,
+        TArg2,
+    >(
+        beginMethod: quest_hook::libil2cpp::Gc<
+            crate::System::Func_5<
+                TArg1,
+                TArg2,
+                *mut crate::System::AsyncCallback,
+                *mut quest_hook::libil2cpp::Il2CppObject,
+                *mut crate::System::IAsyncResult,
+            >,
+        >,
+        endFunction: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<*mut crate::System::IAsyncResult, TResult>,
+        >,
+        endAction: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::System::IAsyncResult>,
+        >,
+        arg1: TArg1,
+        arg2: TArg2,
+        state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        creationOptions: crate::System::Threading::Tasks::TaskCreationOptions,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<TResult>>,
+    >
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TArg1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TArg2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<TResult>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "FromAsyncImpl",
+                (beginMethod, endFunction, endAction, arg1, arg2, state, creationOptions),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromAsyncTrim<TInstance, TArgs>(
+        thisRef: TInstance,
+        args: TArgs,
+        beginMethod: quest_hook::libil2cpp::Gc<
+            crate::System::Func_5<
+                TInstance,
+                TArgs,
+                *mut crate::System::AsyncCallback,
+                *mut quest_hook::libil2cpp::Il2CppObject,
+                *mut crate::System::IAsyncResult,
+            >,
+        >,
+        endMethod: quest_hook::libil2cpp::Gc<
+            crate::System::Func_3<TInstance, *mut crate::System::IAsyncResult, TResult>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<TResult>>,
+    >
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TInstance: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TArgs: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<TResult>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromAsyncTrim", (thisRef, args, beginMethod, endMethod))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn FromAsync_Func_3_Il2CppObject0(
         &mut self,
         beginMethod: quest_hook::libil2cpp::Gc<
@@ -308,6 +475,19 @@ impl<
                 "Complete",
                 (thisRef, endMethod, asyncResult, requiresSynchronization),
             )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CompleteFromAsyncResult(
+        asyncResult: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TInstance: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CompleteFromAsyncResult", (asyncResult))?;
         Ok(__cordl_ret.into())
     }
     pub fn New(

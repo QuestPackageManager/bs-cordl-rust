@@ -51,6 +51,42 @@ impl crate::UnityEngine::PhysicsScene2D {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetRayIntersectionArray_Internal(
+        physicsScene: crate::UnityEngine::PhysicsScene2D,
+        origin: crate::UnityEngine::Vector3,
+        direction: crate::UnityEngine::Vector3,
+        distance: f32,
+        layerMask: i32,
+        results: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit2D>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetRayIntersectionArray_Internal",
+                (physicsScene, origin, direction, distance, layerMask, results),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetRayIntersectionArray_Internal_Injected(
+        physicsScene: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::PhysicsScene2D,
+        >,
+        origin: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+        direction: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+        distance: f32,
+        layerMask: i32,
+        results: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit2D>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetRayIntersectionArray_Internal_Injected",
+                (physicsScene, origin, direction, distance, layerMask, results),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetRayIntersection_Il2CppArray_i32_1(
         &mut self,
         ray: crate::UnityEngine::Ray,
@@ -67,6 +103,37 @@ impl crate::UnityEngine::PhysicsScene2D {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetRayIntersection_Internal(
+        physicsScene: crate::UnityEngine::PhysicsScene2D,
+        origin: crate::UnityEngine::Vector3,
+        direction: crate::UnityEngine::Vector3,
+        distance: f32,
+        layerMask: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::RaycastHit2D> {
+        let __cordl_ret: crate::UnityEngine::RaycastHit2D = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetRayIntersection_Internal",
+                (physicsScene, origin, direction, distance, layerMask),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetRayIntersection_Internal_Injected(
+        physicsScene: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::PhysicsScene2D,
+        >,
+        origin: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+        direction: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+        distance: f32,
+        layerMask: i32,
+        ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::RaycastHit2D>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetRayIntersection_Internal_Injected",
+                (physicsScene, origin, direction, distance, layerMask, ret),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetRayIntersection_i32_0(
         &mut self,
         ray: crate::UnityEngine::Ray,
@@ -78,6 +145,82 @@ impl crate::UnityEngine::PhysicsScene2D {
             "GetRayIntersection",
             (ray, distance, layerMask),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RaycastArray_Internal(
+        physicsScene: crate::UnityEngine::PhysicsScene2D,
+        origin: crate::UnityEngine::Vector2,
+        direction: crate::UnityEngine::Vector2,
+        distance: f32,
+        contactFilter: crate::UnityEngine::ContactFilter2D,
+        results: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit2D>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "RaycastArray_Internal",
+                (physicsScene, origin, direction, distance, contactFilter, results),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RaycastArray_Internal_Injected(
+        physicsScene: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::PhysicsScene2D,
+        >,
+        origin: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
+        direction: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
+        distance: f32,
+        contactFilter: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::ContactFilter2D,
+        >,
+        results: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit2D>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "RaycastArray_Internal_Injected",
+                (physicsScene, origin, direction, distance, contactFilter, results),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RaycastList_Internal(
+        physicsScene: crate::UnityEngine::PhysicsScene2D,
+        origin: crate::UnityEngine::Vector2,
+        direction: crate::UnityEngine::Vector2,
+        distance: f32,
+        contactFilter: crate::UnityEngine::ContactFilter2D,
+        results: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::RaycastHit2D>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "RaycastList_Internal",
+                (physicsScene, origin, direction, distance, contactFilter, results),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RaycastList_Internal_Injected(
+        physicsScene: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::PhysicsScene2D,
+        >,
+        origin: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
+        direction: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
+        distance: f32,
+        contactFilter: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::ContactFilter2D,
+        >,
+        results: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::RaycastHit2D>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "RaycastList_Internal_Injected",
+                (physicsScene, origin, direction, distance, contactFilter, results),
+            )?;
         Ok(__cordl_ret.into())
     }
     pub fn Raycast_ContactFilter2D1(
@@ -126,6 +269,39 @@ impl crate::UnityEngine::PhysicsScene2D {
             "Raycast",
             (origin, direction, distance, contactFilter, results),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Raycast_Internal(
+        physicsScene: crate::UnityEngine::PhysicsScene2D,
+        origin: crate::UnityEngine::Vector2,
+        direction: crate::UnityEngine::Vector2,
+        distance: f32,
+        contactFilter: crate::UnityEngine::ContactFilter2D,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::RaycastHit2D> {
+        let __cordl_ret: crate::UnityEngine::RaycastHit2D = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "Raycast_Internal",
+                (physicsScene, origin, direction, distance, contactFilter),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Raycast_Internal_Injected(
+        physicsScene: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::PhysicsScene2D,
+        >,
+        origin: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
+        direction: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
+        distance: f32,
+        contactFilter: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::ContactFilter2D,
+        >,
+        ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::RaycastHit2D>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "Raycast_Internal_Injected",
+                (physicsScene, origin, direction, distance, contactFilter, ret),
+            )?;
         Ok(__cordl_ret.into())
     }
     pub fn Raycast_i32_0(

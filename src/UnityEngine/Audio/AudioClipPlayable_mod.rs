@@ -22,6 +22,24 @@ for crate::UnityEngine::Audio::AudioClipPlayable {
 }
 #[cfg(feature = "UnityEngine+Audio+AudioClipPlayable")]
 impl crate::UnityEngine::Audio::AudioClipPlayable {
+    pub fn Create(
+        graph: crate::UnityEngine::Playables::PlayableGraph,
+        clip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+        looping: bool,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Audio::AudioClipPlayable> {
+        let __cordl_ret: crate::UnityEngine::Audio::AudioClipPlayable = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (graph, clip, looping))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateHandle(
+        graph: crate::UnityEngine::Playables::PlayableGraph,
+        clip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+        looping: bool,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::PlayableHandle> {
+        let __cordl_ret: crate::UnityEngine::Playables::PlayableHandle = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateHandle", (graph, clip, looping))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Equals(
         &mut self,
         other: crate::UnityEngine::Audio::AudioClipPlayable,
@@ -45,6 +63,17 @@ impl crate::UnityEngine::Audio::AudioClipPlayable {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetClipInternal(
+        hdl: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableHandle,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetClipInternal", (hdl))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetHandle(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::PlayableHandle> {
@@ -55,12 +84,39 @@ impl crate::UnityEngine::Audio::AudioClipPlayable {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetIsChannelPlayingInternal(
+        hdl: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableHandle,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetIsChannelPlayingInternal", (hdl))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetLooped(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "GetLooped",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetLoopedInternal(
+        hdl: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableHandle,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetLoopedInternal", (hdl))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPauseDelayInternal(
+        hdl: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableHandle,
+        >,
+    ) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_ret: f64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPauseDelayInternal", (hdl))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetPauseDelay_0(&mut self) -> quest_hook::libil2cpp::Result<f64> {
@@ -90,12 +146,30 @@ impl crate::UnityEngine::Audio::AudioClipPlayable {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetSpatialBlendInternal(
+        hdl: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableHandle,
+        >,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSpatialBlendInternal", (hdl))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetStartDelay(&mut self) -> quest_hook::libil2cpp::Result<f64> {
         let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "GetStartDelay",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetStartDelayInternal(
+        hdl: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableHandle,
+        >,
+    ) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_ret: f64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetStartDelayInternal", (hdl))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetStereoPan(&mut self) -> quest_hook::libil2cpp::Result<f32> {
@@ -106,12 +180,44 @@ impl crate::UnityEngine::Audio::AudioClipPlayable {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetStereoPanInternal(
+        hdl: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableHandle,
+        >,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetStereoPanInternal", (hdl))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetVolume(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "GetVolume",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetVolumeInternal(
+        hdl: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableHandle,
+        >,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetVolumeInternal", (hdl))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InternalCreateAudioClipPlayable(
+        graph: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableGraph,
+        >,
+        clip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+        looping: bool,
+        handle: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableHandle,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InternalCreateAudioClipPlayable", (graph, clip, looping, handle))?;
         Ok(__cordl_ret.into())
     }
     pub fn IsChannelPlaying(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -166,6 +272,16 @@ impl crate::UnityEngine::Audio::AudioClipPlayable {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn SetClipInternal(
+        hdl: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableHandle,
+        >,
+        clip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetClipInternal", (hdl, clip))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn SetLooped(
         &mut self,
         value: bool,
@@ -175,6 +291,26 @@ impl crate::UnityEngine::Audio::AudioClipPlayable {
             "SetLooped",
             (value),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetLoopedInternal(
+        hdl: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableHandle,
+        >,
+        looped: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetLoopedInternal", (hdl, looped))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetPauseDelayInternal(
+        hdl: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableHandle,
+        >,
+        delay: f64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetPauseDelayInternal", (hdl, delay))?;
         Ok(__cordl_ret.into())
     }
     pub fn SetSpatialBlend(
@@ -188,6 +324,16 @@ impl crate::UnityEngine::Audio::AudioClipPlayable {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn SetSpatialBlendInternal(
+        hdl: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableHandle,
+        >,
+        spatialBlend: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetSpatialBlendInternal", (hdl, spatialBlend))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn SetStartDelay(
         &mut self,
         value: f64,
@@ -197,6 +343,16 @@ impl crate::UnityEngine::Audio::AudioClipPlayable {
             "SetStartDelay",
             (value),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetStartDelayInternal(
+        hdl: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableHandle,
+        >,
+        delay: f64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetStartDelayInternal", (hdl, delay))?;
         Ok(__cordl_ret.into())
     }
     pub fn SetStereoPan(
@@ -210,6 +366,16 @@ impl crate::UnityEngine::Audio::AudioClipPlayable {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn SetStereoPanInternal(
+        hdl: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableHandle,
+        >,
+        stereoPan: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetStereoPanInternal", (hdl, stereoPan))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn SetVolume(
         &mut self,
         value: f32,
@@ -221,6 +387,25 @@ impl crate::UnityEngine::Audio::AudioClipPlayable {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn SetVolumeInternal(
+        hdl: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableHandle,
+        >,
+        volume: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetVolumeInternal", (hdl, volume))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ValidateType(
+        hdl: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableHandle,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ValidateType", (hdl))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
         handle: crate::UnityEngine::Playables::PlayableHandle,
@@ -230,6 +415,20 @@ impl crate::UnityEngine::Audio::AudioClipPlayable {
             ".ctor",
             (handle),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Explicit(
+        playable: crate::UnityEngine::Playables::Playable,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Audio::AudioClipPlayable> {
+        let __cordl_ret: crate::UnityEngine::Audio::AudioClipPlayable = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Explicit", (playable))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit(
+        playable: crate::UnityEngine::Audio::AudioClipPlayable,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::Playable> {
+        let __cordl_ret: crate::UnityEngine::Playables::Playable = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (playable))?;
         Ok(__cordl_ret.into())
     }
 }

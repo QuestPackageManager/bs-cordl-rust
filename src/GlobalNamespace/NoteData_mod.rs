@@ -129,6 +129,78 @@ impl crate::GlobalNamespace::NoteData {
             )?;
         Ok(__cordl_ret.into())
     }
+    pub fn CreateBasicNoteData(
+        _cordl_time: f32,
+        beat: f32,
+        rotation: i32,
+        lineIndex: i32,
+        noteLineLayer: crate::GlobalNamespace::NoteLineLayer,
+        colorType: crate::GlobalNamespace::ColorType,
+        cutDirection: crate::GlobalNamespace::NoteCutDirection,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CreateBasicNoteData",
+                (
+                    _cordl_time,
+                    beat,
+                    rotation,
+                    lineIndex,
+                    noteLineLayer,
+                    colorType,
+                    cutDirection,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateBombNoteData(
+        _cordl_time: f32,
+        beat: f32,
+        rotation: i32,
+        lineIndex: i32,
+        noteLineLayer: crate::GlobalNamespace::NoteLineLayer,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CreateBombNoteData",
+                (_cordl_time, beat, rotation, lineIndex, noteLineLayer),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateBurstSliderNoteData(
+        _cordl_time: f32,
+        beat: f32,
+        rotation: i32,
+        lineIndex: i32,
+        noteLineLayer: crate::GlobalNamespace::NoteLineLayer,
+        beforeJumpNoteLineLayer: crate::GlobalNamespace::NoteLineLayer,
+        colorType: crate::GlobalNamespace::ColorType,
+        cutDirection: crate::GlobalNamespace::NoteCutDirection,
+        cutSfxVolumeMultiplier: f32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CreateBurstSliderNoteData",
+                (
+                    _cordl_time,
+                    beat,
+                    rotation,
+                    lineIndex,
+                    noteLineLayer,
+                    beforeJumpNoteLineLayer,
+                    colorType,
+                    cutDirection,
+                    cutSfxVolumeMultiplier,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetCopy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -268,6 +340,13 @@ impl crate::GlobalNamespace::NoteData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetNoteToAnyCutDirection", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SubtypeIdentifier(
+        colorType: crate::GlobalNamespace::ColorType,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SubtypeIdentifier", (colorType))?;
         Ok(__cordl_ret.into())
     }
     pub fn TransformNoteAOrBToRandomType(

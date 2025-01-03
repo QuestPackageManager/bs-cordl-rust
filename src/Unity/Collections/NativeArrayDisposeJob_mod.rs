@@ -32,6 +32,13 @@ impl crate::Unity::Collections::NativeArrayDisposeJob {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn RegisterNativeArrayDisposeJobReflectionData() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RegisterNativeArrayDisposeJobReflectionData", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "Unity+Collections+NativeArrayDisposeJob")]
 impl AsRef<crate::Unity::Jobs::IJob>

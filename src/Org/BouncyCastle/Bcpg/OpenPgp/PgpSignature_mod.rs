@@ -43,6 +43,16 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignature {
     pub const SubkeyBinding: i32 = 24i32;
     pub const SubkeyRevocation: i32 = 40i32;
     pub const Timestamp: i32 = 64i32;
+    pub fn Cast(
+        packet: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::Packet>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::SignaturePacket>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::SignaturePacket,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Cast", (packet))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Encode(
         &mut self,
         outStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
@@ -172,11 +182,18 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignature {
             .invoke("InitVerify", (pubKey))?;
         Ok(__cordl_ret.into())
     }
-    pub fn IsCertification(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn IsCertification_0(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("IsCertification", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsCertification_i32_1(
+        signatureType: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsCertification", (signatureType))?;
         Ok(__cordl_ret.into())
     }
     pub fn New_BcpgInputStream0(

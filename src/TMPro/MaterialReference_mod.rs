@@ -29,6 +29,50 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::TMPro::MaterialRefere
 }
 #[cfg(feature = "TMPro+MaterialReference")]
 impl crate::TMPro::MaterialReference {
+    pub fn AddMaterialReference_TMP_FontAsset0(
+        material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+        fontAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+        materialReferences: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<crate::TMPro::MaterialReference>,
+        >,
+        materialReferenceIndexLookup: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<i32, i32>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "AddMaterialReference",
+                (material, fontAsset, materialReferences, materialReferenceIndexLookup),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddMaterialReference_TMP_SpriteAsset1(
+        material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+        spriteAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
+        materialReferences: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<crate::TMPro::MaterialReference>,
+        >,
+        materialReferenceIndexLookup: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<i32, i32>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "AddMaterialReference",
+                (material, spriteAsset, materialReferences, materialReferenceIndexLookup),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Contains(
+        materialReferences: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::TMPro::MaterialReference>,
+        >,
+        fontAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Contains", (materialReferences, fontAsset))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
         index: i32,

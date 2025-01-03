@@ -42,6 +42,14 @@ impl crate::UnityEngine::UIElements::BaseListViewController {
             .invoke("AddItems", (itemCount))?;
         Ok(__cordl_ret.into())
     }
+    pub fn AddToArray(
+        source: quest_hook::libil2cpp::Gc<crate::System::Array>,
+        itemCount: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Array>> {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Array> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddToArray", (source, itemCount))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ClearItems(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -167,6 +175,16 @@ impl crate::UnityEngine::UIElements::BaseListViewController {
             .invoke("RaiseOnSizeChanged", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn RemoveFromArray(
+        source: quest_hook::libil2cpp::Gc<crate::System::Array>,
+        indicesToRemove: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<i32>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Array>> {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Array> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RemoveFromArray", (source, indicesToRemove))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn RemoveItem(
         &mut self,
         index: i32,
@@ -212,6 +230,13 @@ impl crate::UnityEngine::UIElements::BaseListViewController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Swap", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _AddItems_g__IsGenericList_15_0(
+        t: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("<AddItems>g__IsGenericList|15_0", (t))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

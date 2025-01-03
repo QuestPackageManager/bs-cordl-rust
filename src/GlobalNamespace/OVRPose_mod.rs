@@ -90,4 +90,35 @@ impl crate::GlobalNamespace::OVRPose {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_identity() -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::OVRPose,
+    > {
+        let __cordl_ret: crate::GlobalNamespace::OVRPose = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_identity", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        x: crate::GlobalNamespace::OVRPose,
+        y: crate::GlobalNamespace::OVRPose,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (x, y))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        x: crate::GlobalNamespace::OVRPose,
+        y: crate::GlobalNamespace::OVRPose,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (x, y))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Multiply(
+        lhs: crate::GlobalNamespace::OVRPose,
+        rhs: crate::GlobalNamespace::OVRPose,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPose> {
+        let __cordl_ret: crate::GlobalNamespace::OVRPose = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Multiply", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
 }

@@ -46,6 +46,14 @@ impl crate::UnityEngine::Playables::PlayableHandle {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn CompareVersion(
+        lhs: crate::UnityEngine::Playables::PlayableHandle,
+        rhs: crate::UnityEngine::Playables::PlayableHandle,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CompareVersion", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Equals_Il2CppObject0(
         &mut self,
         p: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -76,6 +84,15 @@ impl crate::UnityEngine::Playables::PlayableHandle {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetDuration_Injected(
+        _unity_self: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableHandle,
+        >,
+    ) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_ret: f64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetDuration_Injected", (_unity_self))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetGraph(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::PlayableGraph> {
@@ -84,6 +101,18 @@ impl crate::UnityEngine::Playables::PlayableHandle {
             "GetGraph",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetGraph_Injected(
+        _unity_self: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableHandle,
+        >,
+        ret: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableGraph,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetGraph_Injected", (_unity_self, ret))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -113,6 +142,15 @@ impl crate::UnityEngine::Playables::PlayableHandle {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetInputCount_Injected(
+        _unity_self: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableHandle,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetInputCount_Injected", (_unity_self))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetInputHandle(
         &mut self,
         index: i32,
@@ -122,6 +160,19 @@ impl crate::UnityEngine::Playables::PlayableHandle {
             "GetInputHandle",
             (index),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetInputHandle_Injected(
+        _unity_self: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableHandle,
+        >,
+        index: i32,
+        ret: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableHandle,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetInputHandle_Injected", (_unity_self, index, ret))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetInputWeight(
@@ -146,6 +197,16 @@ impl crate::UnityEngine::Playables::PlayableHandle {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetInputWeightFromIndex_Injected(
+        _unity_self: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableHandle,
+        >,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetInputWeightFromIndex_Injected", (_unity_self, index))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetObject<T>(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -168,6 +229,15 @@ impl crate::UnityEngine::Playables::PlayableHandle {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetPlayState_Injected(
+        _unity_self: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableHandle,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::PlayState> {
+        let __cordl_ret: crate::UnityEngine::Playables::PlayState = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPlayState_Injected", (_unity_self))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetPlayableType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
@@ -178,12 +248,30 @@ impl crate::UnityEngine::Playables::PlayableHandle {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetPlayableType_Injected(
+        _unity_self: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableHandle,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPlayableType_Injected", (_unity_self))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetPreviousTime(&mut self) -> quest_hook::libil2cpp::Result<f64> {
         let __cordl_ret: f64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "GetPreviousTime",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPreviousTime_Injected(
+        _unity_self: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableHandle,
+        >,
+    ) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_ret: f64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPreviousTime_Injected", (_unity_self))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetScriptInstance(
@@ -194,6 +282,19 @@ impl crate::UnityEngine::Playables::PlayableHandle {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "GetScriptInstance", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetScriptInstance_Injected(
+        _unity_self: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableHandle,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetScriptInstance_Injected", (_unity_self))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetTime(&mut self) -> quest_hook::libil2cpp::Result<f64> {
@@ -214,12 +315,39 @@ impl crate::UnityEngine::Playables::PlayableHandle {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetTimeWrapMode_Injected(
+        _unity_self: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableHandle,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::DirectorWrapMode> {
+        let __cordl_ret: crate::UnityEngine::Playables::DirectorWrapMode = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetTimeWrapMode_Injected", (_unity_self))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetTime_Injected(
+        _unity_self: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableHandle,
+        >,
+    ) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_ret: f64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetTime_Injected", (_unity_self))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn IsDone(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "IsDone",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsDone_Injected(
+        _unity_self: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableHandle,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsDone_Injected", (_unity_self))?;
         Ok(__cordl_ret.into())
     }
     pub fn IsPlayableOfType<T>(&mut self) -> quest_hook::libil2cpp::Result<bool>
@@ -242,6 +370,15 @@ impl crate::UnityEngine::Playables::PlayableHandle {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn IsValid_Injected(
+        _unity_self: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableHandle,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsValid_Injected", (_unity_self))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Pause(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -252,6 +389,15 @@ impl crate::UnityEngine::Playables::PlayableHandle {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn Pause_Injected(
+        _unity_self: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableHandle,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Pause_Injected", (_unity_self))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Play(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -260,6 +406,15 @@ impl crate::UnityEngine::Playables::PlayableHandle {
             "Play",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Play_Injected(
+        _unity_self: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableHandle,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Play_Injected", (_unity_self))?;
         Ok(__cordl_ret.into())
     }
     pub fn SetDone(
@@ -273,6 +428,16 @@ impl crate::UnityEngine::Playables::PlayableHandle {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn SetDone_Injected(
+        _unity_self: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableHandle,
+        >,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetDone_Injected", (_unity_self, value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn SetDuration(
         &mut self,
         value: f64,
@@ -282,6 +447,16 @@ impl crate::UnityEngine::Playables::PlayableHandle {
             "SetDuration",
             (value),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetDuration_Injected(
+        _unity_self: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableHandle,
+        >,
+        value: f64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetDuration_Injected", (_unity_self, value))?;
         Ok(__cordl_ret.into())
     }
     pub fn SetInputCount(
@@ -295,6 +470,16 @@ impl crate::UnityEngine::Playables::PlayableHandle {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn SetInputCount_Injected(
+        _unity_self: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableHandle,
+        >,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetInputCount_Injected", (_unity_self, value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn SetInputWeightFromIndex(
         &mut self,
         index: i32,
@@ -305,6 +490,30 @@ impl crate::UnityEngine::Playables::PlayableHandle {
             "SetInputWeightFromIndex",
             (index, weight),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetInputWeightFromIndex_Injected(
+        _unity_self: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableHandle,
+        >,
+        index: i32,
+        weight: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetInputWeightFromIndex_Injected", (_unity_self, index, weight))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetInputWeight_Injected(
+        _unity_self: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableHandle,
+        >,
+        input: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableHandle,
+        >,
+        weight: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetInputWeight_Injected", (_unity_self, input, weight))?;
         Ok(__cordl_ret.into())
     }
     pub fn SetInputWeight_PlayableHandle1(
@@ -342,6 +551,16 @@ impl crate::UnityEngine::Playables::PlayableHandle {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn SetPropagateSetTime_Injected(
+        _unity_self: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableHandle,
+        >,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetPropagateSetTime_Injected", (_unity_self, value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn SetScriptInstance(
         &mut self,
         scriptInstance: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -353,6 +572,16 @@ impl crate::UnityEngine::Playables::PlayableHandle {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn SetScriptInstance_Injected(
+        _unity_self: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableHandle,
+        >,
+        scriptInstance: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetScriptInstance_Injected", (_unity_self, scriptInstance))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn SetSpeed(
         &mut self,
         value: f64,
@@ -362,6 +591,16 @@ impl crate::UnityEngine::Playables::PlayableHandle {
             "SetSpeed",
             (value),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetSpeed_Injected(
+        _unity_self: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableHandle,
+        >,
+        value: f64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetSpeed_Injected", (_unity_self, value))?;
         Ok(__cordl_ret.into())
     }
     pub fn SetTime(
@@ -386,6 +625,26 @@ impl crate::UnityEngine::Playables::PlayableHandle {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn SetTimeWrapMode_Injected(
+        _unity_self: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableHandle,
+        >,
+        mode: crate::UnityEngine::Playables::DirectorWrapMode,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetTimeWrapMode_Injected", (_unity_self, mode))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetTime_Injected(
+        _unity_self: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableHandle,
+        >,
+        value: f64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetTime_Injected", (_unity_self, value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn SetTraversalMode(
         &mut self,
         mode: crate::UnityEngine::Playables::PlayableTraversalMode,
@@ -395,6 +654,31 @@ impl crate::UnityEngine::Playables::PlayableHandle {
             "SetTraversalMode",
             (mode),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetTraversalMode_Injected(
+        _unity_self: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableHandle,
+        >,
+        mode: crate::UnityEngine::Playables::PlayableTraversalMode,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetTraversalMode_Injected", (_unity_self, mode))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Null() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Playables::PlayableHandle,
+    > {
+        let __cordl_ret: crate::UnityEngine::Playables::PlayableHandle = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_Null", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        x: crate::UnityEngine::Playables::PlayableHandle,
+        y: crate::UnityEngine::Playables::PlayableHandle,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (x, y))?;
         Ok(__cordl_ret.into())
     }
 }

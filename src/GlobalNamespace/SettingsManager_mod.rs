@@ -25,6 +25,52 @@ impl std::ops::DerefMut for crate::GlobalNamespace::SettingsManager {
 }
 #[cfg(feature = "SettingsManager")]
 impl crate::GlobalNamespace::SettingsManager {
+    pub fn AdjustPlatformSettings(
+        settings: quest_hook::libil2cpp::ByRefMut<crate::BeatSaber::Settings::Settings>,
+        platform: crate::GlobalNamespace::HardwareCategory,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AdjustPlatformSettings", (settings, platform))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateInstanceWithCurrentPlatformPreset() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SettingsManager>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::SettingsManager,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateInstanceWithCurrentPlatformPreset", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateUninitialized() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SettingsManager>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::SettingsManager,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateUninitialized", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCurrentPlatformPreset() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::ByRefMut<crate::BeatSaber::Settings::Settings>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<
+            crate::BeatSaber::Settings::Settings,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCurrentPlatformPreset", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPlatformPreset(
+        platform: crate::GlobalNamespace::HardwareCategory,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::ByRefMut<crate::BeatSaber::Settings::Settings>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<
+            crate::BeatSaber::Settings::Settings,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPlatformPreset", (platform))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

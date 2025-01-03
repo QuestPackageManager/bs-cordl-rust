@@ -325,6 +325,21 @@ impl crate::System::Security::Util::Tokenizer_StringMaker {
             .invoke("CompareStringAndChars", (str, a, l))?;
         Ok(__cordl_ret.into())
     }
+    pub fn HashCharArray(
+        a: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+        l: i32,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("HashCharArray", (a, l))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn HashString(
+        str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("HashString", (str))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn MakeString(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

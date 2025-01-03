@@ -27,6 +27,25 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::ContentValidator {
 }
 #[cfg(feature = "System+Xml+Schema+ContentValidator")]
 impl crate::System::Xml::Schema::ContentValidator {
+    pub fn AddParticleToExpected_XmlSchemaParticle_XmlSchemaSet_ArrayList0(
+        p: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaParticle>,
+        schemaSet: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSet>,
+        particles: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddParticleToExpected", (p, schemaSet, particles))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddParticleToExpected__cordl_bool1(
+        p: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaParticle>,
+        schemaSet: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSet>,
+        particles: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+        global: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddParticleToExpected", (p, schemaSet, particles, global))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CompleteValidation(
         &mut self,
         context: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::ValidationState>,

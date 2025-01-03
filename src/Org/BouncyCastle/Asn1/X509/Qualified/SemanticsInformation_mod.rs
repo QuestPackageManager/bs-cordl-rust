@@ -31,6 +31,18 @@ for crate::Org::BouncyCastle::Asn1::X509::Qualified::SemanticsInformation {
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+Qualified+SemanticsInformation")]
 impl crate::Org::BouncyCastle::Asn1::X509::Qualified::SemanticsInformation {
+    pub fn GetInstance(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::Qualified::SemanticsInformation,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::Qualified::SemanticsInformation,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetNameRegistrationAuthorities(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

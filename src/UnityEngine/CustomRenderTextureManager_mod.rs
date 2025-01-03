@@ -23,7 +23,22 @@ impl std::ops::DerefMut for crate::UnityEngine::CustomRenderTextureManager {
     }
 }
 #[cfg(feature = "UnityEngine+CustomRenderTextureManager")]
-impl crate::UnityEngine::CustomRenderTextureManager {}
+impl crate::UnityEngine::CustomRenderTextureManager {
+    pub fn InvokeOnTextureLoaded_Internal(
+        source: quest_hook::libil2cpp::Gc<crate::UnityEngine::CustomRenderTexture>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InvokeOnTextureLoaded_Internal", (source))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InvokeOnTextureUnloaded_Internal(
+        source: quest_hook::libil2cpp::Gc<crate::UnityEngine::CustomRenderTexture>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InvokeOnTextureUnloaded_Internal", (source))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+CustomRenderTextureManager")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::CustomRenderTextureManager {

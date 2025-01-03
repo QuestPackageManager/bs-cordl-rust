@@ -72,6 +72,11 @@ impl crate::System::Net::Sockets::SocketException {
             .invoke_void(".ctor", (error, message))?;
         Ok(__cordl_object.into())
     }
+    pub fn WSAGetLastError_icall() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WSAGetLastError_icall", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

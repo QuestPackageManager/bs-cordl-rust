@@ -24,7 +24,20 @@ impl std::ops::DerefMut for crate::BeatmapDataLoaderVersion4::FloatFxBaseDataCon
     }
 }
 #[cfg(feature = "BeatmapDataLoaderVersion4+FloatFxBaseDataConverter")]
-impl crate::BeatmapDataLoaderVersion4::FloatFxBaseDataConverter {}
+impl crate::BeatmapDataLoaderVersion4::FloatFxBaseDataConverter {
+    pub fn Convert(
+        beat: f32,
+        floatFxEvent: crate::BeatmapSaveDataVersion4::FloatFxEvent,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FloatFxBaseData>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::FloatFxBaseData,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Convert", (beat, floatFxEvent))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "BeatmapDataLoaderVersion4+FloatFxBaseDataConverter")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatmapDataLoaderVersion4::FloatFxBaseDataConverter {

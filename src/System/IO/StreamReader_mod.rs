@@ -404,6 +404,13 @@ impl crate::System::IO::StreamReader {
         let __cordl_ret: i32 = __cordl_object.invoke("Read", (buffer))?;
         Ok(__cordl_ret.into())
     }
+    pub fn ThrowAsyncIOInProgress() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ThrowAsyncIOInProgress", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

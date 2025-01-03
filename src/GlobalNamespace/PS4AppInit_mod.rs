@@ -41,6 +41,11 @@ impl crate::GlobalNamespace::PS4AppInit {
             .invoke("AppStartAndMultiSceneEditorSetup", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn InitializeModules() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InitializeModules", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn InstallBindings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

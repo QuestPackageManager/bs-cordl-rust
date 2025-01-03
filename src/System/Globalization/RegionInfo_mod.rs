@@ -34,6 +34,13 @@ impl std::ops::DerefMut for crate::System::Globalization::RegionInfo {
 }
 #[cfg(feature = "System+Globalization+RegionInfo")]
 impl crate::System::Globalization::RegionInfo {
+    pub fn ClearCachedData() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ClearCachedData", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Equals(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -182,6 +189,15 @@ impl crate::System::Globalization::RegionInfo {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("get_CurrencySymbol", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_CurrentRegion() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Globalization::RegionInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Globalization::RegionInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_CurrentRegion", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_DisplayName(

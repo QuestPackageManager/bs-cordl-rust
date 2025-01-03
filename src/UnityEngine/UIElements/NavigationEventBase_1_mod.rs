@@ -31,6 +31,29 @@ for crate::UnityEngine::UIElements::NavigationEventBase_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::UnityEngine::UIElements::NavigationEventBase_1<T> {
+    pub fn GetPooled_EventModifiers0(
+        modifiers: crate::UnityEngine::EventModifiers,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPooled", (modifiers))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPooled_NavigationDeviceType_EventModifiers1(
+        deviceType: crate::UnityEngine::UIElements::NavigationDeviceType,
+        modifiers: crate::UnityEngine::EventModifiers,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPooled", (deviceType, modifiers))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Init(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type

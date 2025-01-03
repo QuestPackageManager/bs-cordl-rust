@@ -52,6 +52,13 @@ impl crate::System::Net::Http::HttpRequestMessage {
             .invoke("Dispose", (disposing))?;
         Ok(__cordl_ret.into())
     }
+    pub fn IsAllowedAbsoluteUri(
+        uri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsAllowedAbsoluteUri", (uri))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

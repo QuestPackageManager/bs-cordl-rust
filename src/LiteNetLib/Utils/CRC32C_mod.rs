@@ -26,6 +26,15 @@ impl std::ops::DerefMut for crate::LiteNetLib::Utils::CRC32C {
 impl crate::LiteNetLib::Utils::CRC32C {
     pub const ChecksumSize: i32 = 4i32;
     pub const Poly: u32 = 4131092720u32;
+    pub fn Compute(
+        input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        offset: i32,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Compute", (input, offset, length))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "LiteNetLib+Utils+CRC32C")]
 impl quest_hook::libil2cpp::ObjectType for crate::LiteNetLib::Utils::CRC32C {

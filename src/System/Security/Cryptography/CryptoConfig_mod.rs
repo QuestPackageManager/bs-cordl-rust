@@ -23,7 +23,70 @@ impl std::ops::DerefMut for crate::System::Security::Cryptography::CryptoConfig 
     }
 }
 #[cfg(feature = "System+Security+Cryptography+CryptoConfig")]
-impl crate::System::Security::Cryptography::CryptoConfig {}
+impl crate::System::Security::Cryptography::CryptoConfig {
+    pub fn CreateFromName_Il2CppArray1(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        args: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateFromName", (name, args))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateFromName_Il2CppString0(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateFromName", (name))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EncodeLongNumber(
+        x: i64,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EncodeLongNumber", (x))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EncodeOID(
+        str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("EncodeOID", (str))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MapNameToOID(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MapNameToOID", (name))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_AllowOnlyFipsAlgorithms() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_AllowOnlyFipsAlgorithms", ())?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Security+Cryptography+CryptoConfig")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Security::Cryptography::CryptoConfig {

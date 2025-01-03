@@ -68,6 +68,84 @@ impl crate::UnityEngine::InputSystem::InputControlScheme {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn FindControlSchemeForDevice<TSchemes>(
+        device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+        schemes: TSchemes,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Nullable_1<crate::UnityEngine::InputSystem::InputControlScheme>,
+    >
+    where
+        TSchemes: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: crate::System::Nullable_1<
+            crate::UnityEngine::InputSystem::InputControlScheme,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FindControlSchemeForDevice", (device, schemes))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FindControlSchemeForDevices_ByRefMut_ByRefMut_InputDevice__cordl_bool1<
+        TDevices,
+        TSchemes,
+    >(
+        devices: TDevices,
+        schemes: TSchemes,
+        controlScheme: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::InputSystem::InputControlScheme,
+        >,
+        matchResult: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::InputSystem::InputControlScheme_MatchResult,
+        >,
+        mustIncludeDevice: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputDevice,
+        >,
+        allowUnsuccessfulMatch: bool,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        TDevices: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TSchemes: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "FindControlSchemeForDevices",
+                (
+                    devices,
+                    schemes,
+                    controlScheme,
+                    matchResult,
+                    mustIncludeDevice,
+                    allowUnsuccessfulMatch,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FindControlSchemeForDevices_InputDevice__cordl_bool0<TDevices, TSchemes>(
+        devices: TDevices,
+        schemes: TSchemes,
+        mustIncludeDevice: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputDevice,
+        >,
+        allowUnsuccesfulMatch: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Nullable_1<crate::UnityEngine::InputSystem::InputControlScheme>,
+    >
+    where
+        TDevices: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TSchemes: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: crate::System::Nullable_1<
+            crate::UnityEngine::InputSystem::InputControlScheme,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "FindControlSchemeForDevices",
+                (devices, schemes, mustIncludeDevice, allowUnsuccesfulMatch),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -180,6 +258,22 @@ impl crate::UnityEngine::InputSystem::InputControlScheme {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_name", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        left: crate::UnityEngine::InputSystem::InputControlScheme,
+        right: crate::UnityEngine::InputSystem::InputControlScheme,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        left: crate::UnityEngine::InputSystem::InputControlScheme,
+        right: crate::UnityEngine::InputSystem::InputControlScheme,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (left, right))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_bindingGroup(
@@ -320,6 +414,22 @@ impl crate::UnityEngine::InputSystem::InputControlScheme_DeviceRequirement {
             "get_isOptional",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        left: crate::UnityEngine::InputSystem::InputControlScheme_DeviceRequirement,
+        right: crate::UnityEngine::InputSystem::InputControlScheme_DeviceRequirement,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        left: crate::UnityEngine::InputSystem::InputControlScheme_DeviceRequirement,
+        right: crate::UnityEngine::InputSystem::InputControlScheme_DeviceRequirement,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (left, right))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_controlPath(
@@ -625,6 +735,35 @@ for crate::UnityEngine::InputSystem::InputControlScheme_SchemeJson {
 impl crate::UnityEngine::InputSystem::InputControlScheme_SchemeJson {
     #[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+SchemeJson+DeviceJson")]
     pub type DeviceJson = crate::UnityEngine::InputSystem::SchemeJson_InputControlScheme_DeviceJson;
+    pub fn ToJson_Il2CppArray1(
+        schemes: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::UnityEngine::InputSystem::InputControlScheme,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::UnityEngine::InputSystem::InputControlScheme_SchemeJson,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::UnityEngine::InputSystem::InputControlScheme_SchemeJson,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("ToJson", (schemes))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToJson_InputControlScheme0(
+        scheme: crate::UnityEngine::InputSystem::InputControlScheme,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputControlScheme_SchemeJson,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlScheme_SchemeJson = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToJson", (scheme))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ToScheme(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -635,6 +774,27 @@ impl crate::UnityEngine::InputSystem::InputControlScheme_SchemeJson {
             "ToScheme",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToSchemes(
+        schemes: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::UnityEngine::InputSystem::InputControlScheme_SchemeJson,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::UnityEngine::InputSystem::InputControlScheme,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::UnityEngine::InputSystem::InputControlScheme,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToSchemes", (schemes))?;
         Ok(__cordl_ret.into())
     }
 }
@@ -901,6 +1061,15 @@ for crate::UnityEngine::InputSystem::SchemeJson_InputControlScheme_DeviceJson {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+SchemeJson+DeviceJson")]
 impl crate::UnityEngine::InputSystem::SchemeJson_InputControlScheme_DeviceJson {
+    pub fn From(
+        requirement: crate::UnityEngine::InputSystem::InputControlScheme_DeviceRequirement,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::SchemeJson_InputControlScheme_DeviceJson,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::SchemeJson_InputControlScheme_DeviceJson = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("From", (requirement))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ToDeviceEntry(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

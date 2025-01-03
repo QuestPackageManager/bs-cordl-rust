@@ -29,11 +29,41 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Engines::Gost28147
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+Gost28147Engine")]
 impl crate::Org::BouncyCastle::Crypto::Engines::Gost28147Engine {
     pub const BlockSize: i32 = 8i32;
+    pub fn AddSBox(
+        sBoxName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        sBox: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddSBox", (sBoxName, sBox))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetBlockSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetBlockSize", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetSBox(
+        sBoxName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSBox", (sBoxName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetSBoxName(
+        sBox: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSBoxName", (sBox))?;
         Ok(__cordl_ret.into())
     }
     pub fn Gost28147Func(
@@ -117,6 +147,14 @@ impl crate::Org::BouncyCastle::Crypto::Engines::Gost28147Engine {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn bytesToint(
+        inBytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        inOff: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("bytesToint", (inBytes, inOff))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn generateWorkingKey(
         &mut self,
         forEncryption: bool,
@@ -150,6 +188,15 @@ impl crate::Org::BouncyCastle::Crypto::Engines::Gost28147Engine {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_IsPartialBlockOkay", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn intTobytes(
+        num: i32,
+        outBytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        outOff: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("intTobytes", (num, outBytes, outOff))?;
         Ok(__cordl_ret.into())
     }
 }

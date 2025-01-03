@@ -23,7 +23,13 @@ impl std::ops::DerefMut for crate::UnityEngine::Yoga::YogaConstants {
     }
 }
 #[cfg(feature = "UnityEngine+Yoga+YogaConstants")]
-impl crate::UnityEngine::Yoga::YogaConstants {}
+impl crate::UnityEngine::Yoga::YogaConstants {
+    pub fn IsUndefined(value: f32) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsUndefined", (value))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+Yoga+YogaConstants")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Yoga::YogaConstants {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

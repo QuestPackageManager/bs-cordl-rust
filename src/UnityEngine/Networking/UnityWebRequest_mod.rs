@@ -69,6 +69,11 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
         > = __cordl_object.invoke("BeginWebRequest", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn Create() -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -89,6 +94,27 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             .invoke("DisposeHandlers", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn EscapeURL_Encoding1(
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        e: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("EscapeURL", (s, e))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EscapeURL_Il2CppString0(
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("EscapeURL", (s))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Finalize(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -97,6 +123,16 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Finalize", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Get(
+        uri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Networking::UnityWebRequest>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Networking::UnityWebRequest,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Get", (uri))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetCustomMethod(
@@ -122,6 +158,17 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
         );
         let __cordl_ret: crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError = __cordl_object
             .invoke("GetError", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetHTTPStatusString(
+        responseCode: i64,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetHTTPStatusString", (responseCode))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetMethod(
@@ -161,6 +208,17 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("GetUrl", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetWebErrorString(
+        err: crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetWebErrorString", (err))?;
         Ok(__cordl_ret.into())
     }
     pub fn InternalDestroy(

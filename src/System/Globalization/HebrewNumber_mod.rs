@@ -30,6 +30,33 @@ impl crate::System::Globalization::HebrewNumber {
     pub type HebrewToken = crate::System::Globalization::HebrewNumber_HebrewToken;
     #[cfg(feature = "System+Globalization+HebrewNumber+HebrewValue")]
     pub type HebrewValue = crate::System::Globalization::HebrewNumber_HebrewValue;
+    pub fn IsDigit(ch: char) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsDigit", (ch))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ParseByChar(
+        ch: char,
+        context: quest_hook::libil2cpp::ByRefMut<
+            crate::System::Globalization::HebrewNumberParsingContext,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Globalization::HebrewNumberParsingState,
+    > {
+        let __cordl_ret: crate::System::Globalization::HebrewNumberParsingState = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ParseByChar", (ch, context))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToString(
+        Number: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("ToString", (Number))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "System+Globalization+HebrewNumber")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Globalization::HebrewNumber {

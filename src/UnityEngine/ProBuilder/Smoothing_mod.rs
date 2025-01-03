@@ -31,6 +31,88 @@ impl crate::UnityEngine::ProBuilder::Smoothing {
     pub const smoothingGroupNone: i32 = 0i32;
     #[cfg(feature = "UnityEngine+ProBuilder+Smoothing+__c")]
     pub type __c = crate::UnityEngine::ProBuilder::Smoothing___c;
+    pub fn ApplySmoothingGroups_Il2CppArray1(
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+        faces: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::UnityEngine::ProBuilder::Face,
+            >,
+        >,
+        angleThreshold: f32,
+        normals: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ApplySmoothingGroups", (mesh, faces, angleThreshold, normals))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ApplySmoothingGroups_ProBuilderMesh_IEnumerable_1_f32_0(
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+        faces: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::UnityEngine::ProBuilder::Face,
+            >,
+        >,
+        angleThreshold: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ApplySmoothingGroups", (mesh, faces, angleThreshold))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FindSoftEdgesRecursive(
+        normals: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+        >,
+        wing: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
+        angleThreshold: f32,
+        processed: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::HashSet_1<
+                *mut crate::UnityEngine::ProBuilder::Face,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "FindSoftEdgesRecursive",
+                (normals, wing, angleThreshold, processed),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetNextUnusedSmoothingGroup(
+        start: i32,
+        used: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::HashSet_1<i32>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetNextUnusedSmoothingGroup", (start, used))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetUnusedSmoothingGroup(
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetUnusedSmoothingGroup", (mesh))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsSmooth(index: i32) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsSmooth", (index))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsSoftEdge(
+        normals: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+        >,
+        left: crate::UnityEngine::ProBuilder::EdgeLookup,
+        right: crate::UnityEngine::ProBuilder::EdgeLookup,
+        threshold: f32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsSoftEdge", (normals, left, right, threshold))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Smoothing")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ProBuilder::Smoothing {

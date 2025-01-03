@@ -24,6 +24,14 @@ impl std::ops::DerefMut for crate::Mono::Security::Cryptography::MD2 {
 }
 #[cfg(feature = "Mono+Security+Cryptography+MD2")]
 impl crate::Mono::Security::Cryptography::MD2 {
+    pub fn Create() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Mono::Security::Cryptography::MD2>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Mono::Security::Cryptography::MD2,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Create", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

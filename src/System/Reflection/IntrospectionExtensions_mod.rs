@@ -23,7 +23,19 @@ impl std::ops::DerefMut for crate::System::Reflection::IntrospectionExtensions {
     }
 }
 #[cfg(feature = "System+Reflection+IntrospectionExtensions")]
-impl crate::System::Reflection::IntrospectionExtensions {}
+impl crate::System::Reflection::IntrospectionExtensions {
+    pub fn GetTypeInfo(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Reflection::TypeInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::TypeInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetTypeInfo", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Reflection+IntrospectionExtensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Reflection::IntrospectionExtensions {

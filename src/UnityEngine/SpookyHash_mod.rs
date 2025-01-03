@@ -26,6 +26,124 @@ impl std::ops::DerefMut for crate::UnityEngine::SpookyHash {
 impl crate::UnityEngine::SpookyHash {
     #[cfg(feature = "UnityEngine+SpookyHash+U")]
     pub type U = crate::UnityEngine::SpookyHash_U;
+    pub fn AttemptDetectAllowUnalignedRead() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AttemptDetectAllowUnalignedRead", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn End(
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        h0: quest_hook::libil2cpp::ByRefMut<u64>,
+        h1: quest_hook::libil2cpp::ByRefMut<u64>,
+        h2: quest_hook::libil2cpp::ByRefMut<u64>,
+        h3: quest_hook::libil2cpp::ByRefMut<u64>,
+        h4: quest_hook::libil2cpp::ByRefMut<u64>,
+        h5: quest_hook::libil2cpp::ByRefMut<u64>,
+        h6: quest_hook::libil2cpp::ByRefMut<u64>,
+        h7: quest_hook::libil2cpp::ByRefMut<u64>,
+        h8: quest_hook::libil2cpp::ByRefMut<u64>,
+        h9: quest_hook::libil2cpp::ByRefMut<u64>,
+        h10: quest_hook::libil2cpp::ByRefMut<u64>,
+        h11: quest_hook::libil2cpp::ByRefMut<u64>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("End", (data, h0, h1, h2, h3, h4, h5, h6, h7, h8, h9, h10, h11))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EndPartial(
+        h0: quest_hook::libil2cpp::ByRefMut<u64>,
+        h1: quest_hook::libil2cpp::ByRefMut<u64>,
+        h2: quest_hook::libil2cpp::ByRefMut<u64>,
+        h3: quest_hook::libil2cpp::ByRefMut<u64>,
+        h4: quest_hook::libil2cpp::ByRefMut<u64>,
+        h5: quest_hook::libil2cpp::ByRefMut<u64>,
+        h6: quest_hook::libil2cpp::ByRefMut<u64>,
+        h7: quest_hook::libil2cpp::ByRefMut<u64>,
+        h8: quest_hook::libil2cpp::ByRefMut<u64>,
+        h9: quest_hook::libil2cpp::ByRefMut<u64>,
+        h10: quest_hook::libil2cpp::ByRefMut<u64>,
+        h11: quest_hook::libil2cpp::ByRefMut<u64>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EndPartial", (h0, h1, h2, h3, h4, h5, h6, h7, h8, h9, h10, h11))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Hash(
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        length: u64,
+        hash1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        hash2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Hash", (message, length, hash1, hash2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Mix(
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        s0: quest_hook::libil2cpp::ByRefMut<u64>,
+        s1: quest_hook::libil2cpp::ByRefMut<u64>,
+        s2: quest_hook::libil2cpp::ByRefMut<u64>,
+        s3: quest_hook::libil2cpp::ByRefMut<u64>,
+        s4: quest_hook::libil2cpp::ByRefMut<u64>,
+        s5: quest_hook::libil2cpp::ByRefMut<u64>,
+        s6: quest_hook::libil2cpp::ByRefMut<u64>,
+        s7: quest_hook::libil2cpp::ByRefMut<u64>,
+        s8: quest_hook::libil2cpp::ByRefMut<u64>,
+        s9: quest_hook::libil2cpp::ByRefMut<u64>,
+        s10: quest_hook::libil2cpp::ByRefMut<u64>,
+        s11: quest_hook::libil2cpp::ByRefMut<u64>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Mix", (data, s0, s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Rot64(
+        x: quest_hook::libil2cpp::ByRefMut<u64>,
+        k: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Rot64", (x, k))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Short(
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        length: u64,
+        hash1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        hash2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Short", (message, length, hash1, hash2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ShortEnd(
+        h0: quest_hook::libil2cpp::ByRefMut<u64>,
+        h1: quest_hook::libil2cpp::ByRefMut<u64>,
+        h2: quest_hook::libil2cpp::ByRefMut<u64>,
+        h3: quest_hook::libil2cpp::ByRefMut<u64>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ShortEnd", (h0, h1, h2, h3))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ShortMix(
+        h0: quest_hook::libil2cpp::ByRefMut<u64>,
+        h1: quest_hook::libil2cpp::ByRefMut<u64>,
+        h2: quest_hook::libil2cpp::ByRefMut<u64>,
+        h3: quest_hook::libil2cpp::ByRefMut<u64>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ShortMix", (h0, h1, h2, h3))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn memset(
+        dst: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        value: i32,
+        numberOfBytes: u64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("memset", (dst, value, numberOfBytes))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+SpookyHash")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::SpookyHash {

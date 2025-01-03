@@ -25,7 +25,15 @@ for crate::System::Security::Cryptography::CryptographicOperations {
     }
 }
 #[cfg(feature = "System+Security+Cryptography+CryptographicOperations")]
-impl crate::System::Security::Cryptography::CryptographicOperations {}
+impl crate::System::Security::Cryptography::CryptographicOperations {
+    pub fn ZeroMemory(
+        buffer: crate::System::Span_1<u8>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ZeroMemory", (buffer))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Security+Cryptography+CryptographicOperations")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Security::Cryptography::CryptographicOperations {

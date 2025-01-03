@@ -33,6 +33,22 @@ for crate::UnityEngine::InputSystem::Composites::OneModifierComposite {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Composites+OneModifierComposite")]
 impl crate::UnityEngine::InputSystem::Composites::OneModifierComposite {
+    pub fn DetermineValueTypeAndSize(
+        context: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::InputSystem::InputBindingCompositeContext,
+        >,
+        part: i32,
+        valueType: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Type>,
+        valueSizeInBytes: quest_hook::libil2cpp::ByRefMut<i32>,
+        isButton: quest_hook::libil2cpp::ByRefMut<bool>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "DetermineValueTypeAndSize",
+                (context, part, valueType, valueSizeInBytes, isButton),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn EvaluateMagnitude(
         &mut self,
         context: quest_hook::libil2cpp::ByRefMut<

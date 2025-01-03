@@ -24,7 +24,34 @@ impl std::ops::DerefMut for crate::GlobalNamespace::StandaloneMonobehaviorExtens
     }
 }
 #[cfg(feature = "StandaloneMonobehaviorExtensions")]
-impl crate::GlobalNamespace::StandaloneMonobehaviorExtensions {}
+impl crate::GlobalNamespace::StandaloneMonobehaviorExtensions {
+    pub fn Dispatch(
+        standaloneMonoBehavior: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IStandaloneMonobehavior,
+        >,
+        action: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Dispatch", (standaloneMonoBehavior, action))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DispatchAsync(
+        standaloneMonoBehavior: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IStandaloneMonobehavior,
+        >,
+        action: quest_hook::libil2cpp::Gc<
+            crate::System::Func_1<*mut crate::System::Threading::Tasks::Task>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DispatchAsync", (standaloneMonoBehavior, action))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "StandaloneMonobehaviorExtensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::StandaloneMonobehaviorExtensions {

@@ -112,6 +112,80 @@ impl crate::UnityEngine::InputSystem::Utilities::InternedString {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Equality_Il2CppString_InternedString2(
+        a: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        b: crate::UnityEngine::InputSystem::Utilities::InternedString,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality_InternedString_Il2CppString1(
+        a: crate::UnityEngine::InputSystem::Utilities::InternedString,
+        b: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality_InternedString_InternedString0(
+        a: crate::UnityEngine::InputSystem::Utilities::InternedString,
+        b: crate::UnityEngine::InputSystem::Utilities::InternedString,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_GreaterThan(
+        left: crate::UnityEngine::InputSystem::Utilities::InternedString,
+        right: crate::UnityEngine::InputSystem::Utilities::InternedString,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_GreaterThan", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit(
+        str: crate::UnityEngine::InputSystem::Utilities::InternedString,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("op_Implicit", (str))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality_Il2CppString_InternedString2(
+        a: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        b: crate::UnityEngine::InputSystem::Utilities::InternedString,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality_InternedString_Il2CppString1(
+        a: crate::UnityEngine::InputSystem::Utilities::InternedString,
+        b: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality_InternedString_InternedString0(
+        a: crate::UnityEngine::InputSystem::Utilities::InternedString,
+        b: crate::UnityEngine::InputSystem::Utilities::InternedString,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_LessThan(
+        left: crate::UnityEngine::InputSystem::Utilities::InternedString,
+        right: crate::UnityEngine::InputSystem::Utilities::InternedString,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_LessThan", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+InternedString")]
 impl AsRef<

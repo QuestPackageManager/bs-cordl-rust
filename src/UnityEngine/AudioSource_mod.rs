@@ -49,6 +49,27 @@ impl crate::UnityEngine::AudioSource {
             .invoke("GetCustomCurve", (_cordl_type))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetCustomCurveHelper(
+        source: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
+        _cordl_type: crate::UnityEngine::AudioSourceCurveType,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCustomCurveHelper", (source, _cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetOutputDataHelper(
+        source: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
+        samples: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<f32>,
+        >,
+        channel: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetOutputDataHelper", (source, samples, channel))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetOutputData_Il2CppArray1(
         &mut self,
         samples: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
@@ -76,6 +97,13 @@ impl crate::UnityEngine::AudioSource {
         > = __cordl_object.invoke("GetOutputData", (numSamples, channel))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetPitch(
+        source: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPitch", (source))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetSpatializerFloat(
         &mut self,
         index: i32,
@@ -86,6 +114,18 @@ impl crate::UnityEngine::AudioSource {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("GetSpatializerFloat", (index, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetSpectrumDataHelper(
+        source: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
+        samples: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<f32>,
+        >,
+        channel: i32,
+        window: crate::UnityEngine::FFTWindow,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSpectrumDataHelper", (source, samples, channel, window))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetSpectrumData_Il2CppArray1(
@@ -134,6 +174,23 @@ impl crate::UnityEngine::AudioSource {
             .invoke("Pause", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn PlayClipAtPoint_AudioClip_Vector3_0(
+        clip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+        position: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PlayClipAtPoint", (clip, position))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn PlayClipAtPoint_f32_1(
+        clip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+        position: crate::UnityEngine::Vector3,
+        volume: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PlayClipAtPoint", (clip, position, volume))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn PlayDelayed(
         &mut self,
         delay: f32,
@@ -143,6 +200,23 @@ impl crate::UnityEngine::AudioSource {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("PlayDelayed", (delay))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn PlayHelper(
+        source: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
+        delay: u64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PlayHelper", (source, delay))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn PlayOneShotHelper(
+        source: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
+        clip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+        volumeScale: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PlayOneShotHelper", (source, clip, volumeScale))?;
         Ok(__cordl_ret.into())
     }
     pub fn PlayOneShot_AudioClip0(
@@ -233,6 +307,23 @@ impl crate::UnityEngine::AudioSource {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetCustomCurve", (_cordl_type, curve))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetCustomCurveHelper(
+        source: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
+        _cordl_type: crate::UnityEngine::AudioSourceCurveType,
+        curve: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetCustomCurveHelper", (source, _cordl_type, curve))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetPitch(
+        source: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
+        pitch: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetPitch", (source, pitch))?;
         Ok(__cordl_ret.into())
     }
     pub fn SetScheduledEndTime(

@@ -108,6 +108,15 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Threading::ThreadLocal_1<T> 
             .invoke("Finalize", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetNewTableSize(minSize: i32) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetNewTableSize", (minSize))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetValueSlow(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type

@@ -218,6 +218,15 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::ReadOnlySpan_1<T> {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_Empty() -> quest_hook::libil2cpp::Result<crate::System::ReadOnlySpan_1<T>>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: crate::System::ReadOnlySpan_1<T> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_Empty", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_IsEmpty(&mut self) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -255,6 +264,17 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::ReadOnlySpan_1<T> {
             "get_Length",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit(
+        array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::ReadOnlySpan_1<T>>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: crate::System::ReadOnlySpan_1<T> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (array))?;
         Ok(__cordl_ret.into())
     }
 }

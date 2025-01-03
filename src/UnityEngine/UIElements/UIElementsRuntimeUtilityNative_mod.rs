@@ -25,7 +25,50 @@ for crate::UnityEngine::UIElements::UIElementsRuntimeUtilityNative {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIElementsRuntimeUtilityNative")]
-impl crate::UnityEngine::UIElements::UIElementsRuntimeUtilityNative {}
+impl crate::UnityEngine::UIElements::UIElementsRuntimeUtilityNative {
+    pub fn RegisterPlayerloopCallback() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RegisterPlayerloopCallback", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RepaintOffscreenPanels() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RepaintOffscreenPanels", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RepaintOverlayPanels() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RepaintOverlayPanels", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UnregisterPlayerloopCallback() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UnregisterPlayerloopCallback", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UpdateRuntimePanels() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UpdateRuntimePanels", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn VisualElementCreation() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("VisualElementCreation", ())?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+UIElementsRuntimeUtilityNative")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::UIElementsRuntimeUtilityNative {

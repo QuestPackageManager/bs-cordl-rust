@@ -23,7 +23,15 @@ impl std::ops::DerefMut for crate::UnityEngine::Timeline::WeightUtility {
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+WeightUtility")]
-impl crate::UnityEngine::Timeline::WeightUtility {}
+impl crate::UnityEngine::Timeline::WeightUtility {
+    pub fn NormalizeMixer(
+        mixer: crate::UnityEngine::Playables::Playable,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("NormalizeMixer", (mixer))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+Timeline+WeightUtility")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Timeline::WeightUtility {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

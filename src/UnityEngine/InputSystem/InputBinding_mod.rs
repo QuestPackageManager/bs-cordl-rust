@@ -92,6 +92,22 @@ impl crate::UnityEngine::InputSystem::InputBinding {
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "GetNameOfComposite", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn MaskByGroup(
+        group: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::InputSystem::InputBinding> {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputBinding = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MaskByGroup", (group))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MaskByGroups(
+        groups: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::InputSystem::InputBinding> {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputBinding = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MaskByGroups", (groups))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Matches_ByRefMut_InputBinding_MatchOptions1(
         &mut self,
         binding: quest_hook::libil2cpp::ByRefMut<
@@ -376,6 +392,22 @@ impl crate::UnityEngine::InputSystem::InputBinding {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_processors", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        left: crate::UnityEngine::InputSystem::InputBinding,
+        right: crate::UnityEngine::InputSystem::InputBinding,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        left: crate::UnityEngine::InputSystem::InputBinding,
+        right: crate::UnityEngine::InputSystem::InputBinding,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (left, right))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_action(

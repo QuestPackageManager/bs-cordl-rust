@@ -26,6 +26,37 @@ impl std::ops::DerefMut for crate::Unity::Burst::SharedStatic {
 impl crate::Unity::Burst::SharedStatic {
     #[cfg(feature = "Unity+Burst+SharedStatic+PreserveAttribute")]
     pub type PreserveAttribute = crate::Unity::Burst::SharedStatic_PreserveAttribute;
+    pub fn CheckResult(
+        result: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckResult", (result))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CheckSizeOf(
+        sizeOf: u32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckSizeOf", (sizeOf))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetOrCreateSharedStaticInternal(
+        getHashCode64: i64,
+        getSubHashCode64: i64,
+        sizeOf: u32,
+        alignment: u32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetOrCreateSharedStaticInternal",
+                (getHashCode64, getSubHashCode64, sizeOf, alignment),
+            )?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "Unity+Burst+SharedStatic")]
 impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::SharedStatic {

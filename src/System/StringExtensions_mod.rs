@@ -23,7 +23,21 @@ impl std::ops::DerefMut for crate::System::StringExtensions {
     }
 }
 #[cfg(feature = "System+StringExtensions")]
-impl crate::System::StringExtensions {}
+impl crate::System::StringExtensions {
+    pub fn SubstringTrim(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        startIndex: i32,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SubstringTrim", (value, startIndex, length))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+StringExtensions")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::StringExtensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

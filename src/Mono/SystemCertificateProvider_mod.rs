@@ -24,6 +24,20 @@ impl std::ops::DerefMut for crate::Mono::SystemCertificateProvider {
 }
 #[cfg(feature = "Mono+SystemCertificateProvider")]
 impl crate::Mono::SystemCertificateProvider {
+    pub fn EnsureInitialized() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EnsureInitialized", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetX509Pal() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Mono::X509PalImpl>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::X509PalImpl> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetX509Pal", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Import_Il2CppArray_CertificateImportFlags0(
         &mut self,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,

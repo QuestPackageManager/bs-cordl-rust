@@ -34,6 +34,63 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::XmlSchemaType {
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaType")]
 impl crate::System::Xml::Schema::XmlSchemaType {
+    pub fn GetBuiltInComplexType(
+        qualifiedName: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaComplexType>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaComplexType,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetBuiltInComplexType", (qualifiedName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetBuiltInSimpleType_XmlQualifiedName0(
+        qualifiedName: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSimpleType>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaSimpleType,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetBuiltInSimpleType", (qualifiedName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetBuiltInSimpleType_XmlTypeCode1(
+        typeCode: crate::System::Xml::Schema::XmlTypeCode,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSimpleType>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaSimpleType,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetBuiltInSimpleType", (typeCode))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsDerivedFrom(
+        derivedType: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaType,
+        >,
+        baseType: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaType>,
+        except: crate::System::Xml::Schema::XmlSchemaDerivationMethod,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsDerivedFrom", (derivedType, baseType, except))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsDerivedFromDatatype(
+        derivedDataType: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaDatatype,
+        >,
+        baseDataType: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaDatatype,
+        >,
+        except: crate::System::Xml::Schema::XmlSchemaDerivationMethod,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsDerivedFromDatatype", (derivedDataType, baseDataType, except))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

@@ -34,6 +34,18 @@ impl std::ops::DerefMut for crate::System::UnitySerializationHolder {
 }
 #[cfg(feature = "System+UnitySerializationHolder")]
 impl crate::System::UnitySerializationHolder {
+    pub fn AddElementTypes(
+        info: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::SerializationInfo,
+        >,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::RuntimeType>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::RuntimeType>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::RuntimeType> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddElementTypes", (info, _cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetObjectData(
         &mut self,
         info: quest_hook::libil2cpp::Gc<
@@ -60,6 +72,38 @@ impl crate::System::UnitySerializationHolder {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
         > = __cordl_object.invoke("GetRealObject", (context))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetUnitySerializationInfo_RuntimeType1(
+        info: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::SerializationInfo,
+        >,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::RuntimeType>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetUnitySerializationInfo", (info, _cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetUnitySerializationInfo_i32_0(
+        info: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::SerializationInfo,
+        >,
+        unityType: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetUnitySerializationInfo", (info, unityType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetUnitySerializationInfo_i32_Il2CppString_RuntimeAssembly2(
+        info: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::SerializationInfo,
+        >,
+        unityType: i32,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        assembly: quest_hook::libil2cpp::Gc<crate::System::Reflection::RuntimeAssembly>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetUnitySerializationInfo", (info, unityType, data, assembly))?;
         Ok(__cordl_ret.into())
     }
     pub fn MakeElementTypes(

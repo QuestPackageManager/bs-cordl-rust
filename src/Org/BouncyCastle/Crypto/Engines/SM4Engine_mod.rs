@@ -59,6 +59,16 @@ impl crate::Org::BouncyCastle::Crypto::Engines::SM4Engine {
             .invoke("Init", (forEncryption, parameters))?;
         Ok(__cordl_ret.into())
     }
+    pub fn L(B: u32) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("L", (B))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn L_ap(B: u32) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("L_ap", (B))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -88,6 +98,11 @@ impl crate::Org::BouncyCastle::Crypto::Engines::SM4Engine {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Reset", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn T(Z: u32) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("T", (Z))?;
         Ok(__cordl_ret.into())
     }
     pub fn T_ap(&mut self, Z: u32) -> quest_hook::libil2cpp::Result<u32> {
@@ -125,6 +140,11 @@ impl crate::Org::BouncyCastle::Crypto::Engines::SM4Engine {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_IsPartialBlockOkay", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn tau(A: u32) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("tau", (A))?;
         Ok(__cordl_ret.into())
     }
 }

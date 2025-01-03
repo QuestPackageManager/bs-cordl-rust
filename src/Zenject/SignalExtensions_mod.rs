@@ -23,7 +23,52 @@ impl std::ops::DerefMut for crate::Zenject::SignalExtensions {
     }
 }
 #[cfg(feature = "Zenject+SignalExtensions")]
-impl crate::Zenject::SignalExtensions {}
+impl crate::Zenject::SignalExtensions {
+    pub fn BindSignal<TSignal>(
+        container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Zenject::BindSignalIdToBinder_1<TSignal>>,
+    >
+    where
+        TSignal: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::BindSignalIdToBinder_1<TSignal>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BindSignal", (container))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateDefaultSignalDeclarationBindInfo(
+        container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+        signalType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Zenject::SignalDeclarationBindInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::SignalDeclarationBindInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateDefaultSignalDeclarationBindInfo", (container, signalType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DeclareSignal<TSignal>(
+        container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::DeclareSignalIdRequireHandlerAsyncTickPriorityCopyBinder,
+        >,
+    >
+    where
+        TSignal: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::DeclareSignalIdRequireHandlerAsyncTickPriorityCopyBinder,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DeclareSignal", (container))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "Zenject+SignalExtensions")]
 impl quest_hook::libil2cpp::ObjectType for crate::Zenject::SignalExtensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

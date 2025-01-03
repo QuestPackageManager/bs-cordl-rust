@@ -142,6 +142,21 @@ impl crate::UnityEngine::UIElements::IMGUIContainer {
             .invoke("GetCurrentClipRect", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetCurrentTransformAndClip(
+        container: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::IMGUIContainer,
+        >,
+        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::Event>,
+        transform: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>,
+        clipRect: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Rect>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetCurrentTransformAndClip",
+                (container, evt, transform, clipRect),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn HandleIMGUIEvent_Action__cordl_bool1(
         &mut self,
         e: quest_hook::libil2cpp::Gc<crate::UnityEngine::Event>,
@@ -193,6 +208,13 @@ impl crate::UnityEngine::UIElements::IMGUIContainer {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("IsContainerCapturingTheMouse", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsDockAreaMouseUp(
+        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsDockAreaMouseUp", (evt))?;
         Ok(__cordl_ret.into())
     }
     pub fn IsEventInsideLocalWindow(

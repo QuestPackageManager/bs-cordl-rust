@@ -27,6 +27,50 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapEventDataLightsExtens
 impl crate::GlobalNamespace::BeatmapEventDataLightsExtensions {
     #[cfg(feature = "BeatmapEventDataLightsExtensions+LightSwitchEventEffectDataValues")]
     pub type LightSwitchEventEffectDataValues = crate::GlobalNamespace::BeatmapEventDataLightsExtensions_LightSwitchEventEffectDataValues;
+    pub fn GetLightColorTypeFromEventDataValue(
+        beatmapEventValue: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::EnvironmentColorType> {
+        let __cordl_ret: crate::GlobalNamespace::EnvironmentColorType = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetLightColorTypeFromEventDataValue", (beatmapEventValue))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn HasFixedDurationLightSwitchEventDataValue_BasicBeatmapEventData0(
+        basicBeatmapEventData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BasicBeatmapEventData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "HasFixedDurationLightSwitchEventDataValue",
+                (basicBeatmapEventData),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn HasFixedDurationLightSwitchEventDataValue_i32_1(
+        beatmapEventValue: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("HasFixedDurationLightSwitchEventDataValue", (beatmapEventValue))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn HasLightFadeEventDataValue(
+        basicBeatmapEventData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BasicBeatmapEventData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("HasLightFadeEventDataValue", (basicBeatmapEventData))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LightColorTypeFromEventDataValue(
+        basicBeatmapEventData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BasicBeatmapEventData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::EnvironmentColorType> {
+        let __cordl_ret: crate::GlobalNamespace::EnvironmentColorType = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LightColorTypeFromEventDataValue", (basicBeatmapEventData))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "BeatmapEventDataLightsExtensions")]
 impl quest_hook::libil2cpp::ObjectType

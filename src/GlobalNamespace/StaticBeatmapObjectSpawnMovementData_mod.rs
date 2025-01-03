@@ -31,6 +31,27 @@ impl crate::GlobalNamespace::StaticBeatmapObjectSpawnMovementData {
     pub const kObstacleVerticalOffset: f32 = -0.15f32;
     pub const kTopLinesYPos: f32 = 1.45f32;
     pub const kUpperLinesYPos: f32 = 0.85f32;
+    pub fn Get2DNoteOffset(
+        noteLineIndex: i32,
+        noteLinesCount: i32,
+        noteLineLayer: crate::GlobalNamespace::NoteLineLayer,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Get2DNoteOffset", (noteLineIndex, noteLinesCount, noteLineLayer))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LineYPosForLineLayer(
+        lineLayer: crate::GlobalNamespace::NoteLineLayer,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LineYPosForLineLayer", (lineLayer))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_layerHeight() -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_layerHeight", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "StaticBeatmapObjectSpawnMovementData")]
 impl quest_hook::libil2cpp::ObjectType

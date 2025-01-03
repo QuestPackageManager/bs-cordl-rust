@@ -48,6 +48,24 @@ impl crate::System::Diagnostics::StackTrace {
             .invoke("AddFrames", (sb, separator, isAsync))?;
         Ok(__cordl_ret.into())
     }
+    pub fn ConvertAsyncStateMachineMethod(
+        method: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::System::Reflection::MethodBase,
+        >,
+        declaringType: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ConvertAsyncStateMachineMethod", (method, declaringType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetAotId() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetAotId", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetFrame(
         &mut self,
         index: i32,
@@ -237,6 +255,25 @@ impl crate::System::Diagnostics::StackTrace {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_FrameCount", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_trace(
+        e: quest_hook::libil2cpp::Gc<crate::System::Exception>,
+        skipFrames: i32,
+        fNeedFileInfo: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Diagnostics::StackFrame,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Diagnostics::StackFrame,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_trace", (e, skipFrames, fNeedFileInfo))?;
         Ok(__cordl_ret.into())
     }
     pub fn init_frames(

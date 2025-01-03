@@ -42,6 +42,27 @@ impl crate::UnityEngine::InputSystem::Controls::DpadControl {
             .invoke("FinishSetup", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn MakeDpadVector__cordl_bool__cordl_bool__cordl_bool__cordl_bool__cordl_bool0(
+        up: bool,
+        down: bool,
+        left: bool,
+        right: bool,
+        normalize: bool,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MakeDpadVector", (up, down, left, right, normalize))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MakeDpadVector_f32_f32_f32_f32_1(
+        up: f32,
+        down: f32,
+        left: f32,
+        right: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MakeDpadVector", (up, down, left, right))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

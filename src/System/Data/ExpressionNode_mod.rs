@@ -125,11 +125,81 @@ impl crate::System::Data::ExpressionNode {
         let __cordl_ret: bool = __cordl_object.invoke("IsConstant", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn IsFloat(
+        _cordl_type: crate::System::Data::Common::StorageType,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsFloat", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsFloatSql(
+        _cordl_type: crate::System::Data::Common::StorageType,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsFloatSql", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsInteger(
+        _cordl_type: crate::System::Data::Common::StorageType,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsInteger", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsIntegerSql(
+        _cordl_type: crate::System::Data::Common::StorageType,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsIntegerSql", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsNumeric(
+        _cordl_type: crate::System::Data::Common::StorageType,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsNumeric", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsNumericSql(
+        _cordl_type: crate::System::Data::Common::StorageType,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsNumericSql", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsSigned(
+        _cordl_type: crate::System::Data::Common::StorageType,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsSigned", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsSignedSql(
+        _cordl_type: crate::System::Data::Common::StorageType,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsSignedSql", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn IsTableConstant(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("IsTableConstant", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsUnsigned(
+        _cordl_type: crate::System::Data::Common::StorageType,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsUnsigned", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsUnsignedSql(
+        _cordl_type: crate::System::Data::Common::StorageType,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsUnsignedSql", (_cordl_type))?;
         Ok(__cordl_ret.into())
     }
     pub fn New(

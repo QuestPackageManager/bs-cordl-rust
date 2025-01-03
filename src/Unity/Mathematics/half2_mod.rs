@@ -449,6 +449,89 @@ impl crate::Unity::Mathematics::half2 {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Equality_half2_half1(
+        lhs: crate::Unity::Mathematics::half2,
+        rhs: crate::Unity::Mathematics::half,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool2> {
+        let __cordl_ret: crate::Unity::Mathematics::bool2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality_half2_half2_0(
+        lhs: crate::Unity::Mathematics::half2,
+        rhs: crate::Unity::Mathematics::half2,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool2> {
+        let __cordl_ret: crate::Unity::Mathematics::bool2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality_half_half2_2(
+        lhs: crate::Unity::Mathematics::half,
+        rhs: crate::Unity::Mathematics::half2,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool2> {
+        let __cordl_ret: crate::Unity::Mathematics::bool2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Explicit_double2_3(
+        v: crate::Unity::Mathematics::double2,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::half2> {
+        let __cordl_ret: crate::Unity::Mathematics::half2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Explicit", (v))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Explicit_f32_0(
+        v: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::half2> {
+        let __cordl_ret: crate::Unity::Mathematics::half2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Explicit", (v))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Explicit_f64_2(
+        v: f64,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::half2> {
+        let __cordl_ret: crate::Unity::Mathematics::half2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Explicit", (v))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Explicit_float2_1(
+        v: crate::Unity::Mathematics::float2,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::half2> {
+        let __cordl_ret: crate::Unity::Mathematics::half2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Explicit", (v))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit(
+        v: crate::Unity::Mathematics::half,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::half2> {
+        let __cordl_ret: crate::Unity::Mathematics::half2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (v))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality_half2_half1(
+        lhs: crate::Unity::Mathematics::half2,
+        rhs: crate::Unity::Mathematics::half,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool2> {
+        let __cordl_ret: crate::Unity::Mathematics::bool2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality_half2_half2_0(
+        lhs: crate::Unity::Mathematics::half2,
+        rhs: crate::Unity::Mathematics::half2,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool2> {
+        let __cordl_ret: crate::Unity::Mathematics::bool2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality_half_half2_2(
+        lhs: crate::Unity::Mathematics::half,
+        rhs: crate::Unity::Mathematics::half2,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool2> {
+        let __cordl_ret: crate::Unity::Mathematics::bool2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn set_Item(
         &mut self,
         index: i32,

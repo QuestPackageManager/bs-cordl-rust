@@ -50,7 +50,19 @@ impl<
             .invoke("AddProcessor", (processor))?;
         Ok(__cordl_ret.into())
     }
-    pub fn CompareValue(
+    pub fn CompareValue_ByRefMut_ByRefMut0(
+        firstValue: quest_hook::libil2cpp::ByRefMut<TValue>,
+        secondValue: quest_hook::libil2cpp::ByRefMut<TValue>,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CompareValue", (firstValue, secondValue))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CompareValue_Il2CppObject_Il2CppObject1(
         &mut self,
         firstStatePtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         secondStatePtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

@@ -246,6 +246,13 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
             .invoke("DisposeInternal", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn FromLiteNetDeliveryMethod(
+        deliveryMethod: crate::LiteNetLib::DeliveryMethod,
+    ) -> quest_hook::libil2cpp::Result<crate::BGNet::Core::DeliveryMethod> {
+        let __cordl_ret: crate::BGNet::Core::DeliveryMethod = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromLiteNetDeliveryMethod", (deliveryMethod))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetConnectionMessage(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -287,6 +294,32 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IConnection,
         > = __cordl_object.invoke("GetConnection", (index))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetLogFormatConnection(
+        netPeerConnection: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetLogFormatConnection", (netPeerConnection))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetLogFormatUserInfo(
+        userName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        ipEndPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetLogFormatUserInfo", (userName, userId, ipEndPoint))?;
         Ok(__cordl_ret.into())
     }
     pub fn HasConnectionToEndPoint(
@@ -475,6 +508,13 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
             .invoke_void(".ctor", (timeProvider, taskUtility))?;
         Ok(__cordl_object.into())
     }
+    pub fn NoDomainReloadInit() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("NoDomainReloadInit", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn PollUpdate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -566,6 +606,13 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
         );
         let __cordl_ret: crate::GlobalNamespace::DisconnectedReason = __cordl_object
             .invoke("ToDisconnectedReason", (disconnectReason))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToLiteNetDeliveryMethod(
+        deliveryMethod: crate::BGNet::Core::DeliveryMethod,
+    ) -> quest_hook::libil2cpp::Result<crate::LiteNetLib::DeliveryMethod> {
+        let __cordl_ret: crate::LiteNetLib::DeliveryMethod = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToLiteNetDeliveryMethod", (deliveryMethod))?;
         Ok(__cordl_ret.into())
     }
     pub fn TryAccept(

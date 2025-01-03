@@ -61,6 +61,41 @@ impl crate::GlobalNamespace::BTSCharacterSpawnEventEffect {
             .invoke("CleanupAddressables", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetCharacterWithAnimationClip(
+        charDictionary: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<
+                i32,
+                *mut crate::GlobalNamespace::BTSCharacter,
+            >,
+        >,
+        animDictionary: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<
+                i32,
+                *mut crate::UnityEngine::AnimationClip,
+            >,
+        >,
+        prefabId: i32,
+        animationId: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Tuple_2<
+                *mut crate::GlobalNamespace::BTSCharacter,
+                *mut crate::UnityEngine::AnimationClip,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Tuple_2<
+                *mut crate::GlobalNamespace::BTSCharacter,
+                *mut crate::UnityEngine::AnimationClip,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetCharacterWithAnimationClip",
+                (charDictionary, animDictionary, prefabId, animationId),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn HandleBeatmapEvent(
         &mut self,
         basicBeatmapEventData: quest_hook::libil2cpp::Gc<

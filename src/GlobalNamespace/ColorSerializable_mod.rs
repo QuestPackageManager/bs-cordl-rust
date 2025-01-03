@@ -95,6 +95,20 @@ impl crate::GlobalNamespace::ColorSerializable {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Implicit_Color1(
+        c: crate::UnityEngine::Color,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::ColorSerializable> {
+        let __cordl_ret: crate::GlobalNamespace::ColorSerializable = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (c))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_ColorSerializable0(
+        c: crate::GlobalNamespace::ColorSerializable,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_ret: crate::UnityEngine::Color = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (c))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "ColorSerializable")]
 impl AsRef<crate::LiteNetLib::Utils::INetSerializable>

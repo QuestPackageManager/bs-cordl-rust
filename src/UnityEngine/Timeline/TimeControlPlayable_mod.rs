@@ -26,6 +26,22 @@ impl std::ops::DerefMut for crate::UnityEngine::Timeline::TimeControlPlayable {
 }
 #[cfg(feature = "UnityEngine+Timeline+TimeControlPlayable")]
 impl crate::UnityEngine::Timeline::TimeControlPlayable {
+    pub fn Create(
+        graph: crate::UnityEngine::Playables::PlayableGraph,
+        timeControl: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Timeline::ITimeControl,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Playables::ScriptPlayable_1<
+            *mut crate::UnityEngine::Timeline::TimeControlPlayable,
+        >,
+    > {
+        let __cordl_ret: crate::UnityEngine::Playables::ScriptPlayable_1<
+            *mut crate::UnityEngine::Timeline::TimeControlPlayable,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (graph, timeControl))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Initialize(
         &mut self,
         timeControl: quest_hook::libil2cpp::Gc<

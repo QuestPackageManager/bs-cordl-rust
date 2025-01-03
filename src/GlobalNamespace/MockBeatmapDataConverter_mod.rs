@@ -26,6 +26,41 @@ impl std::ops::DerefMut for crate::GlobalNamespace::MockBeatmapDataConverter {
 impl crate::GlobalNamespace::MockBeatmapDataConverter {
     #[cfg(feature = "MockBeatmapDataConverter+__c")]
     pub type __c = crate::GlobalNamespace::MockBeatmapDataConverter___c;
+    pub fn ToMockBeatmapData(
+        beatmapData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IReadonlyBeatmapData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockBeatmapData>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MockBeatmapData,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToMockBeatmapData", (beatmapData))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToMockNoteData(
+        noteData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockNoteData>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MockNoteData,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToMockNoteData", (noteData))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToMockObstacleData(
+        obstacleData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleData>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockObstacleData>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MockObstacleData,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToMockObstacleData", (obstacleData))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "MockBeatmapDataConverter")]
 impl quest_hook::libil2cpp::ObjectType

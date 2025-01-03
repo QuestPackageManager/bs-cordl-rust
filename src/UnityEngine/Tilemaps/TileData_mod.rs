@@ -27,6 +27,13 @@ for crate::UnityEngine::Tilemaps::TileData {
 }
 #[cfg(feature = "UnityEngine+Tilemaps+TileData")]
 impl crate::UnityEngine::Tilemaps::TileData {
+    pub fn CreateDefault() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Tilemaps::TileData,
+    > {
+        let __cordl_ret: crate::UnityEngine::Tilemaps::TileData = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateDefault", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn set_colliderType(
         &mut self,
         value: crate::UnityEngine::Tilemaps::Tile_ColliderType,

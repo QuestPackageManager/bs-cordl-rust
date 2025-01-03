@@ -37,6 +37,19 @@ impl crate::Org::BouncyCastle::Asn1::DerSequence {
             .invoke("Encode", (derOut))?;
         Ok(__cordl_ret.into())
     }
+    pub fn FromVector(
+        elementVector: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1EncodableVector,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerSequence>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerSequence,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromVector", (elementVector))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

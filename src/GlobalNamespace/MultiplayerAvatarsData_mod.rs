@@ -36,6 +36,30 @@ impl crate::GlobalNamespace::MultiplayerAvatarsData {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn Deserialize(
+        reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::MultiplayerAvatarsData> {
+        let __cordl_ret: crate::GlobalNamespace::MultiplayerAvatarsData = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Deserialize", (reader))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DeserializeAvatarsData(
+        reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::GlobalNamespace::MultiplayerAvatarData,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::GlobalNamespace::MultiplayerAvatarData,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DeserializeAvatarsData", (reader))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Equals_Il2CppObject1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

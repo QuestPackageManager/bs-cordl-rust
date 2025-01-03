@@ -26,6 +26,34 @@ impl std::ops::DerefMut for crate::AddressablesInternalBridge::Runtime::Extensio
 impl crate::AddressablesInternalBridge::Runtime::Extensions {
     #[cfg(feature = "AddressablesInternalBridge+Runtime+Extensions+__c")]
     pub type __c = crate::AddressablesInternalBridge::Runtime::Extensions___c;
+    pub fn GetCatalogLocationData(
+        locatorId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::AddressablesInternalBridge::Runtime::CatalogLocationData,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::AddressablesInternalBridge::Runtime::CatalogLocationData,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCatalogLocationData", (locatorId))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetUpdateableCatalogLocationDatas() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::AddressablesInternalBridge::Runtime::CatalogLocationData,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::AddressablesInternalBridge::Runtime::CatalogLocationData,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetUpdateableCatalogLocationDatas", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "AddressablesInternalBridge+Runtime+Extensions")]
 impl quest_hook::libil2cpp::ObjectType

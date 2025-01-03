@@ -39,6 +39,32 @@ impl crate::UnityEngine::AssetBundle {
         > = __cordl_object.invoke("GetAllAssetNames", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetAllLoadedAssetBundles() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::UnityEngine::AssetBundle,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::UnityEngine::AssetBundle,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetAllLoadedAssetBundles", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetAllLoadedAssetBundles_Native() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::AssetBundle>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::AssetBundle>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetAllLoadedAssetBundles_Native", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetAllScenePaths(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -230,6 +256,62 @@ impl crate::UnityEngine::AssetBundle {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object> = __cordl_object
             .invoke("LoadAsset", (name, _cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LoadFromFile(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AssetBundle>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AssetBundle> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LoadFromFile", (path))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LoadFromFileAsync_Il2CppString0(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AssetBundleCreateRequest>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AssetBundleCreateRequest,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LoadFromFileAsync", (path))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LoadFromFileAsync_Internal(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crc: u32,
+        offset: u64,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AssetBundleCreateRequest>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AssetBundleCreateRequest,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LoadFromFileAsync_Internal", (path, crc, offset))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LoadFromFileAsync_u32_1(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crc: u32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AssetBundleCreateRequest>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AssetBundleCreateRequest,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LoadFromFileAsync", (path, crc))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LoadFromFile_Internal(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crc: u32,
+        offset: u64,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AssetBundle>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AssetBundle> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LoadFromFile_Internal", (path, crc, offset))?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

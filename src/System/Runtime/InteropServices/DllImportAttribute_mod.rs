@@ -34,6 +34,22 @@ impl std::ops::DerefMut for crate::System::Runtime::InteropServices::DllImportAt
 }
 #[cfg(feature = "System+Runtime+InteropServices+DllImportAttribute")]
 impl crate::System::Runtime::InteropServices::DllImportAttribute {
+    pub fn GetCustomAttribute(
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::RuntimeMethodInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Attribute> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCustomAttribute", (method))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsDefined(
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::RuntimeMethodInfo>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsDefined", (method))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_Il2CppString1(
         dllName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

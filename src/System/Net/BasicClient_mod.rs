@@ -39,6 +39,26 @@ impl crate::System::Net::BasicClient {
             .invoke("Authenticate", (challenge, webRequest, credentials))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetBytes(
+        str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetBytes", (str))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InternalAuthenticate(
+        webRequest: quest_hook::libil2cpp::Gc<crate::System::Net::WebRequest>,
+        credentials: quest_hook::libil2cpp::Gc<crate::System::Net::ICredentials>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Net::Authorization>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::Authorization> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InternalAuthenticate", (webRequest, credentials))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

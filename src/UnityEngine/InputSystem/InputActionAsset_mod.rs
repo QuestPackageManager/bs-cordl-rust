@@ -173,6 +173,16 @@ impl crate::UnityEngine::InputSystem::InputActionAsset {
         let __cordl_ret: i32 = __cordl_object.invoke("FindControlSchemeIndex", (name))?;
         Ok(__cordl_ret.into())
     }
+    pub fn FromJson(
+        json: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputActionAsset>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputActionAsset,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("FromJson", (json))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetEnumerator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

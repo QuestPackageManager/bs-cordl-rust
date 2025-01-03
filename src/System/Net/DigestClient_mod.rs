@@ -39,6 +39,13 @@ impl crate::System::Net::DigestClient {
             .invoke("Authenticate", (challenge, webRequest, credentials))?;
         Ok(__cordl_ret.into())
     }
+    pub fn CheckExpired(
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckExpired", (count))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -81,6 +88,14 @@ impl crate::System::Net::DigestClient {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("get_AuthenticationType", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Cache() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Hashtable,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_Cache", ())?;
         Ok(__cordl_ret.into())
     }
 }

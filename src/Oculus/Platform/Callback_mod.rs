@@ -30,6 +30,68 @@ impl crate::Oculus::Platform::Callback {
     pub type RequestCallback_1<T: quest_hook::libil2cpp::Type> = crate::Oculus::Platform::Callback_RequestCallback_1<
         T,
     >;
+    pub fn AddRequest(
+        request: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddRequest", (request))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FlushJoinIntentNotificationQueue() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FlushJoinIntentNotificationQueue", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn HandleMessage(
+        msg: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Message>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("HandleMessage", (msg))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn OnApplicationQuit() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("OnApplicationQuit", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RunCallbacks() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RunCallbacks", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RunLimitedCallbacks(
+        limit: u32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RunLimitedCallbacks", (limit))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetNotificationCallback_Message_1_Callback0<T>(
+        _cordl_type: crate::Oculus::Platform::Message_MessageType,
+        callback: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Message_1_Callback<T>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetNotificationCallback", (_cordl_type, callback))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetNotificationCallback_Message_Callback1(
+        _cordl_type: crate::Oculus::Platform::Message_MessageType,
+        callback: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Message_Callback>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetNotificationCallback", (_cordl_type, callback))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "Oculus+Platform+Callback")]
 impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Platform::Callback {

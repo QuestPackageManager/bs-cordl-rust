@@ -45,6 +45,27 @@ impl crate::UnityEngine::UIElements::FontDefinition {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn FromFont(
+        f: quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::FontDefinition> {
+        let __cordl_ret: crate::UnityEngine::UIElements::FontDefinition = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromFont", (f))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromObject(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::FontDefinition> {
+        let __cordl_ret: crate::UnityEngine::UIElements::FontDefinition = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromObject", (obj))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromSDFFont(
+        f: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::FontAsset>,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::FontDefinition> {
+        let __cordl_ret: crate::UnityEngine::UIElements::FontDefinition = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromSDFFont", (f))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -91,6 +112,22 @@ impl crate::UnityEngine::UIElements::FontDefinition {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::TextCore::Text::FontAsset,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_fontAsset", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        left: crate::UnityEngine::UIElements::FontDefinition,
+        right: crate::UnityEngine::UIElements::FontDefinition,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        left: crate::UnityEngine::UIElements::FontDefinition,
+        right: crate::UnityEngine::UIElements::FontDefinition,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (left, right))?;
         Ok(__cordl_ret.into())
     }
 }

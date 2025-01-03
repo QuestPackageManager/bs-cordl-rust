@@ -67,6 +67,13 @@ impl crate::System::Net::WebHeaderCollection {
             .invoke("Add", (header))?;
         Ok(__cordl_ret.into())
     }
+    pub fn AllowMultiValues(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AllowMultiValues", (name))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ChangeInternal(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -77,6 +84,40 @@ impl crate::System::Net::WebHeaderCollection {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ChangeInternal", (name, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CheckBadChars(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        isHeaderValue: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckBadChars", (name, isHeaderValue))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ContainsNonAsciiChars(
+        token: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ContainsNonAsciiChars", (token))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetAsString(
+        cc: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Specialized::NameValueCollection,
+        >,
+        winInetCompat: bool,
+        forTrace: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetAsString", (cc, winInetCompat, forTrace))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetEnumerator(

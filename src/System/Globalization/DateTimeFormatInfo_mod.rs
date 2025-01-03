@@ -274,6 +274,25 @@ impl crate::System::Globalization::DateTimeFormatInfo {
         > = __cordl_object.invoke("GetAllDateTimePatterns", (format))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetCombinedPatterns(
+        patterns1: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+        patterns2: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+        connectString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCombinedPatterns", (patterns1, patterns2, connectString))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetDayName(
         &mut self,
         dayofweek: crate::System::DayOfWeek,
@@ -316,6 +335,42 @@ impl crate::System::Globalization::DateTimeFormatInfo {
         > = __cordl_object.invoke("GetFormat", (formatType))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetInstance(
+        provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Globalization::DateTimeFormatInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Globalization::DateTimeFormatInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetInstance", (provider))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetJapaneseCalendarDTFI() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Globalization::DateTimeFormatInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Globalization::DateTimeFormatInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetJapaneseCalendarDTFI", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetMergedPatterns(
+        patterns: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+        defaultPattern: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetMergedPatterns", (patterns, defaultPattern))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetMonthName(
         &mut self,
         month: i32,
@@ -328,6 +383,15 @@ impl crate::System::Globalization::DateTimeFormatInfo {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("GetMonthName", (month))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetTaiwanCalendarDTFI() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Globalization::DateTimeFormatInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Globalization::DateTimeFormatInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetTaiwanCalendarDTFI", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn InitializeFormatFlags(
@@ -414,6 +478,18 @@ impl crate::System::Globalization::DateTimeFormatInfo {
             )?;
         Ok(__cordl_ret.into())
     }
+    pub fn IsHebrewChar(ch: char) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsHebrewChar", (ch))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsJapaneseCalendar(
+        calendar: quest_hook::libil2cpp::Gc<crate::System::Globalization::Calendar>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsJapaneseCalendar", (calendar))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -464,6 +540,23 @@ impl crate::System::Globalization::DateTimeFormatInfo {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("Tokenize", (TokenMask, tokenType, tokenValue, str))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryParseHebrewNumber(
+        str: quest_hook::libil2cpp::ByRefMut<crate::System::__DTString>,
+        badFormat: quest_hook::libil2cpp::ByRefMut<bool>,
+        number: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryParseHebrewNumber", (str, badFormat, number))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ValidateStyles(
+        style: crate::System::Globalization::DateTimeStyles,
+        parameterName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ValidateStyles", (style, parameterName))?;
         Ok(__cordl_ret.into())
     }
     pub fn YearMonthAdjustment(
@@ -703,6 +796,15 @@ impl crate::System::Globalization::DateTimeFormatInfo {
         > = __cordl_object.invoke("get_CultureName", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_CurrentInfo() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Globalization::DateTimeFormatInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Globalization::DateTimeFormatInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_CurrentInfo", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_DateSeparator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -862,6 +964,15 @@ impl crate::System::Globalization::DateTimeFormatInfo {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_HasYearMonthAdjustment", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_InvariantInfo() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Globalization::DateTimeFormatInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Globalization::DateTimeFormatInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_InvariantInfo", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_IsReadOnly(&mut self) -> quest_hook::libil2cpp::Result<bool> {

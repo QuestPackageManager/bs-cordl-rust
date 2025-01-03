@@ -75,6 +75,23 @@ impl crate::UnityEngine::Rect {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn MinMaxRect(
+        xmin: f32,
+        ymin: f32,
+        xmax: f32,
+        ymax: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rect> {
+        let __cordl_ret: crate::UnityEngine::Rect = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MinMaxRect", (xmin, ymin, xmax, ymax))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn OrderMinMax(
+        rect: crate::UnityEngine::Rect,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rect> {
+        let __cordl_ret: crate::UnityEngine::Rect = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("OrderMinMax", (rect))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Overlaps_Rect0(
         &mut self,
         other: crate::UnityEngine::Rect,
@@ -273,6 +290,27 @@ impl crate::UnityEngine::Rect {
             "get_yMin",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_zero() -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rect> {
+        let __cordl_ret: crate::UnityEngine::Rect = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_zero", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        lhs: crate::UnityEngine::Rect,
+        rhs: crate::UnityEngine::Rect,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        lhs: crate::UnityEngine::Rect,
+        rhs: crate::UnityEngine::Rect,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (lhs, rhs))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_height(

@@ -24,6 +24,40 @@ impl std::ops::DerefMut for crate::UnityEngine::Texture2DArray {
 }
 #[cfg(feature = "UnityEngine+Texture2DArray")]
 impl crate::UnityEngine::Texture2DArray {
+    pub fn Internal_Create(
+        mono: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2DArray>,
+        w: i32,
+        h: i32,
+        d: i32,
+        mipCount: i32,
+        format: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+        colorSpace: crate::UnityEngine::TextureColorSpace,
+        flags: crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "Internal_Create",
+                (mono, w, h, d, mipCount, format, colorSpace, flags),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Internal_CreateImpl(
+        mono: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2DArray>,
+        w: i32,
+        h: i32,
+        d: i32,
+        mipCount: i32,
+        format: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+        colorSpace: crate::UnityEngine::TextureColorSpace,
+        flags: crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "Internal_CreateImpl",
+                (mono, w, h, d, mipCount, format, colorSpace, flags),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_DefaultFormat_TextureCreationFlags0(
         width: i32,
         height: i32,
@@ -203,6 +237,13 @@ impl crate::UnityEngine::Texture2DArray {
             .invoke("ValidateFormat", (format, width, height))?;
         Ok(__cordl_ret.into())
     }
+    pub fn ValidateIsNotCrunched(
+        flags: crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ValidateIsNotCrunched", (flags))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor_DefaultFormat_TextureCreationFlags0(
         &mut self,
         width: i32,
@@ -366,6 +407,11 @@ impl crate::UnityEngine::Texture2DArray {
                     createUninitialized,
                 ),
             )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_allSlices() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_allSlices", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_isReadable(&mut self) -> quest_hook::libil2cpp::Result<bool> {

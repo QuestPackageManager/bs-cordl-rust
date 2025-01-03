@@ -24,6 +24,16 @@ for crate::UnityEngine::InputSystem::LowLevel::DeviceRemoveEvent {
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+DeviceRemoveEvent")]
 impl crate::UnityEngine::InputSystem::LowLevel::DeviceRemoveEvent {
     pub const Type: i32 = 1146242381i32;
+    pub fn Create(
+        deviceId: i32,
+        _cordl_time: f64,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::LowLevel::DeviceRemoveEvent,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::DeviceRemoveEvent = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (deviceId, _cordl_time))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ToEventPtr(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

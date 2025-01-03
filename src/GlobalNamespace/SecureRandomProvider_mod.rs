@@ -26,6 +26,37 @@ impl std::ops::DerefMut for crate::GlobalNamespace::SecureRandomProvider {
 impl crate::GlobalNamespace::SecureRandomProvider {
     #[cfg(feature = "SecureRandomProvider+SecureRandomState")]
     pub type SecureRandomState = crate::GlobalNamespace::SecureRandomProvider_SecureRandomState;
+    pub fn GetByte() -> quest_hook::libil2cpp::Result<u8> {
+        let __cordl_ret: u8 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetByte", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetBytes_Il2CppArray2(
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetBytes", (buffer))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetBytes_Il2CppArray_i32_i32_1(
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        offset: i32,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetBytes", (buffer, offset, length))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetBytes_i32_0(
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetBytes", (length))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "SecureRandomProvider")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SecureRandomProvider {

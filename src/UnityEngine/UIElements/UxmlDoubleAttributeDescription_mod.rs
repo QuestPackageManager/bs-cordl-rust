@@ -28,6 +28,14 @@ for crate::UnityEngine::UIElements::UxmlDoubleAttributeDescription {
 impl crate::UnityEngine::UIElements::UxmlDoubleAttributeDescription {
     #[cfg(feature = "UnityEngine+UIElements+UxmlDoubleAttributeDescription+__c")]
     pub type __c = crate::UnityEngine::UIElements::UxmlDoubleAttributeDescription___c;
+    pub fn ConvertValueToDouble(
+        v: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        defaultValue: f64,
+    ) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_ret: f64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ConvertValueToDouble", (v, defaultValue))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetValueFromBag(
         &mut self,
         bag: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IUxmlAttributes>,

@@ -30,6 +30,17 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::MouseLeaveWindowEven
 impl crate::UnityEngine::UIElements::MouseLeaveWindowEvent {
     #[cfg(feature = "UnityEngine+UIElements+MouseLeaveWindowEvent+__c")]
     pub type __c = crate::UnityEngine::UIElements::MouseLeaveWindowEvent___c;
+    pub fn GetPooled(
+        systemEvent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Event>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MouseLeaveWindowEvent>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::MouseLeaveWindowEvent,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPooled", (systemEvent))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Init(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

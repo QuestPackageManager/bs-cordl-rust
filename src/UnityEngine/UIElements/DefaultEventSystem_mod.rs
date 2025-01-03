@@ -98,6 +98,30 @@ impl crate::UnityEngine::UIElements::DefaultEventSystem {
             .invoke("GetRawMoveVector", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn MakePenEvent(
+        pen: crate::UnityEngine::PenData,
+        modifiers: crate::UnityEngine::EventModifiers,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::EventBase,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MakePenEvent", (pen, modifiers))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MakeTouchEvent(
+        touch: crate::UnityEngine::Touch,
+        modifiers: crate::UnityEngine::EventModifiers,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::EventBase,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MakeTouchEvent", (touch, modifiers))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

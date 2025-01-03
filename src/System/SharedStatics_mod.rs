@@ -25,12 +25,30 @@ impl std::ops::DerefMut for crate::System::SharedStatics {
 }
 #[cfg(feature = "System+SharedStatics")]
 impl crate::System::SharedStatics {
+    pub fn GetSharedStringMaker() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Security::Util::Tokenizer_StringMaker>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Util::Tokenizer_StringMaker,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSharedStringMaker", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
+    }
+    pub fn ReleaseSharedStringMaker(
+        maker: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::System::Security::Util::Tokenizer_StringMaker,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReleaseSharedStringMaker", (maker))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,

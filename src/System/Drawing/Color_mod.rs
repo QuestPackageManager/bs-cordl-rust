@@ -122,6 +122,14 @@ impl crate::System::Drawing::Color {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Equality(
+        left: crate::System::Drawing::Color,
+        right: crate::System::Drawing::Color,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "System+Drawing+Color")]
 impl AsRef<crate::System::IEquatable_1<crate::System::Drawing::Color>>

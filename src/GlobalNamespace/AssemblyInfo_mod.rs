@@ -41,6 +41,14 @@ impl crate::GlobalNamespace::AssemblyInfo {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_Version() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_Version", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "AssemblyInfo")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::AssemblyInfo {

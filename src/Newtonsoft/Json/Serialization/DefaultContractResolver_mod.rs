@@ -83,6 +83,13 @@ impl crate::Newtonsoft::Json::Serialization::DefaultContractResolver {
         feature = "Newtonsoft+Json+Serialization+DefaultContractResolver+__c__DisplayClass81_0"
     )]
     pub type __c__DisplayClass81_0 = crate::Newtonsoft::Json::Serialization::DefaultContractResolver___c__DisplayClass81_0;
+    pub fn CanConvertToString(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CanConvertToString", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CreateArrayContract(
         &mut self,
         objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -341,6 +348,13 @@ impl crate::Newtonsoft::Json::Serialization::DefaultContractResolver {
         > = __cordl_object.invoke("CreateStringContract", (objectType))?;
         Ok(__cordl_ret.into())
     }
+    pub fn FilterMembers(
+        member: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FilterMembers", (member))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetAttributeConstructor(
         &mut self,
         objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -415,6 +429,17 @@ impl crate::Newtonsoft::Json::Serialization::DefaultContractResolver {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<*mut crate::System::Type>,
         > = __cordl_object.invoke("GetClassHierarchyForType", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetClrTypeFullName(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetClrTypeFullName", (_cordl_type))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetDefaultCreator(
@@ -539,6 +564,47 @@ impl crate::Newtonsoft::Json::Serialization::DefaultContractResolver {
             .invoke("InitializeContract", (contract))?;
         Ok(__cordl_ret.into())
     }
+    pub fn IsConcurrentOrObservableCollection(
+        t: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsConcurrentOrObservableCollection", (t))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsIConvertible(
+        t: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsIConvertible", (t))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsJsonPrimitiveType(
+        t: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsJsonPrimitiveType", (t))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsValidCallback(
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+        parameters: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Reflection::ParameterInfo,
+            >,
+        >,
+        attributeType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        currentCallback: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::MethodInfo,
+        >,
+        prevAttributeType: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "IsValidCallback",
+                (method, parameters, attributeType, currentCallback, prevAttributeType),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn MatchProperty(
         &mut self,
         properties: quest_hook::libil2cpp::Gc<
@@ -648,6 +714,16 @@ impl crate::Newtonsoft::Json::Serialization::DefaultContractResolver {
         > = __cordl_object.invoke("ResolvePropertyName", (propertyName))?;
         Ok(__cordl_ret.into())
     }
+    pub fn SetExtensionDataDelegates(
+        contract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonObjectContract,
+        >,
+        member: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetExtensionDataDelegates", (contract, member))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn SetIsSpecifiedActions(
         &mut self,
         property: quest_hook::libil2cpp::Gc<
@@ -702,6 +778,28 @@ impl crate::Newtonsoft::Json::Serialization::DefaultContractResolver {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("ShouldSerializeEntityMember", (memberInfo))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ShouldSkipDeserialized(
+        t: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ShouldSkipDeserialized", (t))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ShouldSkipSerializing(
+        t: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ShouldSkipSerializing", (t))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ThrowUnableToSerializeError(
+        o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        context: crate::System::Runtime::Serialization::StreamingContext,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ThrowUnableToSerializeError", (o, context))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -769,6 +867,16 @@ impl crate::Newtonsoft::Json::Serialization::DefaultContractResolver {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("get_IgnoreShouldSerializeMembers", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Instance() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::IContractResolver,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::IContractResolver,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_Instance", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_NamingStrategy(

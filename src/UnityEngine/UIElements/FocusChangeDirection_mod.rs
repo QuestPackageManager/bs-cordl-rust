@@ -79,6 +79,40 @@ impl crate::UnityEngine::UIElements::FocusChangeDirection {
             .invoke(".ctor", (value))?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_lastValue() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::FocusChangeDirection>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::FocusChangeDirection,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_lastValue", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_none() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::FocusChangeDirection>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::FocusChangeDirection,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_none", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_unspecified() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::FocusChangeDirection>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::FocusChangeDirection,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_unspecified", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit(
+        fcd: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::FocusChangeDirection,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (fcd))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+UIElements+FocusChangeDirection")]
 impl quest_hook::libil2cpp::ObjectType

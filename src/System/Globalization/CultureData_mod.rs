@@ -223,6 +223,67 @@ impl crate::System::Globalization::CultureData {
         > = __cordl_object.invoke("GetCalendarIds", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetCultureData_Il2CppString__cordl_bool0(
+        cultureName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        useUserOverride: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureData>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Globalization::CultureData,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCultureData", (cultureName, useUserOverride))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCultureData_i32_i32_i32_Il2CppString_i32_i32_i32_i32__cordl_bool_Il2CppString1(
+        cultureName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        useUserOverride: bool,
+        datetimeIndex: i32,
+        calendarId: i32,
+        numberIndex: i32,
+        iso2lang: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        ansiCodePage: i32,
+        oemCodePage: i32,
+        macCodePage: i32,
+        ebcdicCodePage: i32,
+        rightToLeft: bool,
+        listSeparator: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureData>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Globalization::CultureData,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetCultureData",
+                (
+                    cultureName,
+                    useUserOverride,
+                    datetimeIndex,
+                    calendarId,
+                    numberIndex,
+                    iso2lang,
+                    ansiCodePage,
+                    oemCodePage,
+                    macCodePage,
+                    ebcdicCodePage,
+                    rightToLeft,
+                    listSeparator,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetDateSeparator(
+        format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetDateSeparator", (format))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetNFIValues(
         &mut self,
         nfi: quest_hook::libil2cpp::Gc<crate::System::Globalization::NumberFormatInfo>,
@@ -232,6 +293,27 @@ impl crate::System::Globalization::CultureData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GetNFIValues", (nfi))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetSeparator(
+        format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        timeParts: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSeparator", (format, timeParts))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IndexOfTimePart(
+        format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        startIndex: i32,
+        timeParts: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IndexOfTimePart", (format, startIndex, timeParts))?;
         Ok(__cordl_ret.into())
     }
     pub fn LeapYearMonthNames(
@@ -305,6 +387,32 @@ impl crate::System::Globalization::CultureData {
             .invoke_void(".ctor", (name))?;
         Ok(__cordl_object.into())
     }
+    pub fn ReescapeWin32String(
+        str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReescapeWin32String", (str))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReescapeWin32Strings(
+        array: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReescapeWin32Strings", (array))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ShortDates(
         &mut self,
         calendarId: i32,
@@ -319,6 +427,19 @@ impl crate::System::Globalization::CultureData {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
         > = __cordl_object.invoke("ShortDates", (calendarId))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UnescapeNlsString(
+        str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        start: i32,
+        end: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UnescapeNlsString", (str, start, end))?;
         Ok(__cordl_ret.into())
     }
     pub fn YearMonths(
@@ -374,6 +495,20 @@ impl crate::System::Globalization::CultureData {
             .invoke("fill_culture_data", (datetimeIndex))?;
         Ok(__cordl_ret.into())
     }
+    pub fn fill_number_data(
+        index: i32,
+        nfe: quest_hook::libil2cpp::ByRefMut<
+            crate::System::Globalization::CultureData_NumberFormatEntryManaged,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("fill_number_data", (index, nfe))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_CalendarIds(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -412,6 +547,14 @@ impl crate::System::Globalization::CultureData {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_IFIRSTWEEKOFYEAR", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Invariant() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureData>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Globalization::CultureData,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_Invariant", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_IsInvariantCulture(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -534,6 +677,25 @@ impl crate::System::Globalization::CultureData {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_UseUserOverride", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn idx2string(
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        idx: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("idx2string", (data, idx))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn strlen(
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("strlen", (s))?;
         Ok(__cordl_ret.into())
     }
 }

@@ -53,6 +53,16 @@ impl crate::System::Security::SecurityElement {
             .invoke("AddChild", (child))?;
         Ok(__cordl_ret.into())
     }
+    pub fn Escape(
+        str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Escape", (str))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetAttribute(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -67,6 +77,34 @@ impl crate::System::Security::SecurityElement {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::SecurityElement_SecurityAttribute,
         > = __cordl_object.invoke("GetAttribute", (name))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsValidAttributeName(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsValidAttributeName", (name))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsValidAttributeValue(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsValidAttributeValue", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsValidTag(
+        tag: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsValidTag", (tag))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsValidText(
+        text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsValidText", (text))?;
         Ok(__cordl_ret.into())
     }
     pub fn New_Il2CppString0(
@@ -139,6 +177,16 @@ impl crate::System::Security::SecurityElement {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ToXml", (s, level))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Unescape(
+        str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Unescape", (str))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_Il2CppString0(

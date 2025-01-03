@@ -50,11 +50,74 @@ impl crate::System::Enum {
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
         Ok(__cordl_ret.into())
     }
+    pub fn Format(
+        enumType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Format", (enumType, value, format))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCachedValuesAndNames(
+        enumType: quest_hook::libil2cpp::Gc<crate::System::RuntimeType>,
+        getNames: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Enum_ValuesAndNames>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Enum_ValuesAndNames> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCachedValuesAndNames", (enumType, getNames))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetEnumValuesAndNames(
+        enumType: quest_hook::libil2cpp::Gc<crate::System::RuntimeType>,
+        values: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<u64>,
+        >,
+        names: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetEnumValuesAndNames", (enumType, values, names))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetName(
+        enumType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetName", (enumType, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetNames(
+        enumType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetNames", (enumType))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetTypeCode(
@@ -65,6 +128,13 @@ impl crate::System::Enum {
         );
         let __cordl_ret: crate::System::TypeCode = __cordl_object
             .invoke("GetTypeCode", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetUnderlyingType(
+        enumType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetUnderlyingType", (enumType))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetValue(
@@ -80,6 +150,13 @@ impl crate::System::Enum {
         > = __cordl_object.invoke("GetValue", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetValues(
+        enumType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Array>> {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Array> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetValues", (enumType))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn HasFlag(
         &mut self,
         flag: quest_hook::libil2cpp::Gc<crate::System::Enum>,
@@ -88,6 +165,94 @@ impl crate::System::Enum {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("HasFlag", (flag))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InternalBoxEnum(
+        enumType: quest_hook::libil2cpp::Gc<crate::System::RuntimeType>,
+        value: i64,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InternalBoxEnum", (enumType, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InternalCompareTo(
+        o1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        o2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InternalCompareTo", (o1, o2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InternalFlagsFormat(
+        eT: quest_hook::libil2cpp::Gc<crate::System::RuntimeType>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InternalFlagsFormat", (eT, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InternalFormat(
+        eT: quest_hook::libil2cpp::Gc<crate::System::RuntimeType>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InternalFormat", (eT, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InternalFormattedHexString(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InternalFormattedHexString", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InternalGetNames(
+        enumType: quest_hook::libil2cpp::Gc<crate::System::RuntimeType>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InternalGetNames", (enumType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InternalGetUnderlyingType(
+        enumType: quest_hook::libil2cpp::Gc<crate::System::RuntimeType>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::RuntimeType>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::RuntimeType> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InternalGetUnderlyingType", (enumType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InternalGetValues(
+        enumType: quest_hook::libil2cpp::Gc<crate::System::RuntimeType>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u64>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InternalGetValues", (enumType))?;
         Ok(__cordl_ret.into())
     }
     pub fn InternalHasFlag(
@@ -100,12 +265,45 @@ impl crate::System::Enum {
         let __cordl_ret: bool = __cordl_object.invoke("InternalHasFlag", (flags))?;
         Ok(__cordl_ret.into())
     }
+    pub fn IsDefined(
+        enumType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsDefined", (enumType, value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
+    }
+    pub fn Parse_Type_Il2CppString0(
+        enumType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Parse", (enumType, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Parse__cordl_bool1(
+        enumType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        ignoreCase: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Parse", (enumType, value, ignoreCase))?;
+        Ok(__cordl_ret.into())
     }
     pub fn System_IConvertible_ToBoolean(
         &mut self,
@@ -277,6 +475,138 @@ impl crate::System::Enum {
             .invoke("System.IConvertible.ToUInt64", (provider))?;
         Ok(__cordl_ret.into())
     }
+    pub fn ToObject_Il2CppObject0(
+        enumType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToObject", (enumType, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToObject__cordl_bool10(
+        enumType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToObject", (enumType, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToObject__cordl_char9(
+        enumType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        value: char,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToObject", (enumType, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToObject_i16_2(
+        enumType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        value: i16,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToObject", (enumType, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToObject_i32_3(
+        enumType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToObject", (enumType, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToObject_i64_7(
+        enumType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        value: i64,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToObject", (enumType, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToObject_i8_1(
+        enumType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        value: i8,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToObject", (enumType, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToObject_u16_5(
+        enumType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        value: u16,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToObject", (enumType, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToObject_u32_6(
+        enumType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        value: u32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToObject", (enumType, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToObject_u64_8(
+        enumType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        value: u64,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToObject", (enumType, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToObject_u8_4(
+        enumType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        value: u8,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToObject", (enumType, value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ToString_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -331,6 +661,46 @@ impl crate::System::Enum {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("ToString", (format, provider))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToUInt64(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToUInt64", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryParseEnum(
+        enumType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        ignoreCase: bool,
+        parseResult: quest_hook::libil2cpp::ByRefMut<crate::System::Enum_EnumResult>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryParseEnum", (enumType, value, ignoreCase, parseResult))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryParse_Il2CppString__cordl_bool_ByRefMut0<TEnum>(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        ignoreCase: bool,
+        result: quest_hook::libil2cpp::ByRefMut<TEnum>,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        TEnum: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryParse", (value, ignoreCase, result))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryParse_Type_Il2CppString__cordl_bool_ByRefMut1(
+        enumType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        ignoreCase: bool,
+        result: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryParse", (enumType, value, ignoreCase, result))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

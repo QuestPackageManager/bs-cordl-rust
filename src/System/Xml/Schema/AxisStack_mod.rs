@@ -27,6 +27,16 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::AxisStack {
 }
 #[cfg(feature = "System+Xml+Schema+AxisStack")]
 impl crate::System::Xml::Schema::AxisStack {
+    pub fn Equal(
+        thisname: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        thisURN: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        URN: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Equal", (thisname, thisURN, name, URN))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn MoveToAttribute(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

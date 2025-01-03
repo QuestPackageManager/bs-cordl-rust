@@ -25,6 +25,19 @@ for crate::UnityEngine::InputSystem::LowLevel::IMECompositionEvent {
 impl crate::UnityEngine::InputSystem::LowLevel::IMECompositionEvent {
     pub const Type: i32 = 1229800787i32;
     pub const kIMECharBufferSize: i32 = 64i32;
+    pub fn Create(
+        deviceId: i32,
+        compositionString: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+        _cordl_time: f64,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::LowLevel::IMECompositionEvent,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::IMECompositionEvent = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (deviceId, compositionString, _cordl_time))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_typeStatic(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

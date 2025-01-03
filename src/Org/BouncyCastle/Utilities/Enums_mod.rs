@@ -24,6 +24,35 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Utilities::Enums {
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+Enums")]
 impl crate::Org::BouncyCastle::Utilities::Enums {
+    pub fn GetArbitraryValue(
+        enumType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Enum>> {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Enum> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetArbitraryValue", (enumType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetEnumValue(
+        enumType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Enum>> {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Enum> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetEnumValue", (enumType, s))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetEnumValues(
+        enumType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Array>> {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Array> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetEnumValues", (enumType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsEnumType(
+        t: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsEnumType", (t))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

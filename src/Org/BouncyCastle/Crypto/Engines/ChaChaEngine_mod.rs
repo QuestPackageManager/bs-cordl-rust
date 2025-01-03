@@ -34,6 +34,15 @@ impl crate::Org::BouncyCastle::Crypto::Engines::ChaChaEngine {
             .invoke("AdvanceCounter", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn ChachaCore(
+        rounds: i32,
+        input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+        x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ChachaCore", (rounds, input, x))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GenerateKeyStream(
         &mut self,
         output: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,

@@ -147,6 +147,18 @@ impl crate::UnityEngine::TextGenerator {
             .invoke("GetVerticesInternal", (vertices))?;
         Ok(__cordl_ret.into())
     }
+    pub fn Internal_Create() -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Internal_Create", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Internal_Destroy(
+        ptr: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Internal_Destroy", (ptr))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Invalidate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

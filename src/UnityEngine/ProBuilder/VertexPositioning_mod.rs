@@ -23,7 +23,110 @@ impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::VertexPositioning {
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+VertexPositioning")]
-impl crate::UnityEngine::ProBuilder::VertexPositioning {}
+impl crate::UnityEngine::ProBuilder::VertexPositioning {
+    pub fn SetSharedVertexPosition(
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+        sharedVertexHandle: i32,
+        position: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetSharedVertexPosition", (mesh, sharedVertexHandle, position))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetSharedVertexValues(
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+        sharedVertexHandle: i32,
+        vertex: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetSharedVertexValues", (mesh, sharedVertexHandle, vertex))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TranslateVerticesInWorldSpace_ProBuilderMesh_Il2CppArray_Vector3_0(
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+        indexes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+        offset: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TranslateVerticesInWorldSpace", (mesh, indexes, offset))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TranslateVerticesInWorldSpace_f32__cordl_bool1(
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+        indexes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+        offset: crate::UnityEngine::Vector3,
+        snapValue: f32,
+        snapAxisOnly: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "TranslateVerticesInWorldSpace",
+                (mesh, indexes, offset, snapValue, snapAxisOnly),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TranslateVerticesInternal(
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+        indices: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<i32>,
+        >,
+        offset: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TranslateVerticesInternal", (mesh, indices, offset))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TranslateVertices_ProBuilderMesh_IEnumerable_1_Vector3_0(
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+        indexes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<i32>,
+        >,
+        offset: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TranslateVertices", (mesh, indexes, offset))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TranslateVertices_ProBuilderMesh_IEnumerable_1_Vector3_1(
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+        edges: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::UnityEngine::ProBuilder::Edge,
+            >,
+        >,
+        offset: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TranslateVertices", (mesh, edges, offset))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TranslateVertices_ProBuilderMesh_IEnumerable_1_Vector3_2(
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+        faces: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::UnityEngine::ProBuilder::Face,
+            >,
+        >,
+        offset: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TranslateVertices", (mesh, faces, offset))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn VerticesInWorldSpace(
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("VerticesInWorldSpace", (mesh))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+ProBuilder+VertexPositioning")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ProBuilder::VertexPositioning {

@@ -81,6 +81,15 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
         > = __cordl_object.invoke("CloneWithValidator", (validator))?;
         Ok(__cordl_ret.into())
     }
+    pub fn CopyDefaultSettings() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Mono::Security::Interface::MonoTlsSettings>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Mono::Security::Interface::MonoTlsSettings,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CopyDefaultSettings", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -202,6 +211,15 @@ impl crate::Mono::Security::Interface::MonoTlsSettings {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Mono::Security::Interface::MonoLocalCertificateSelectionCallback,
         > = __cordl_object.invoke("get_ClientCertificateSelectionCallback", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_DefaultSettings() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Mono::Security::Interface::MonoTlsSettings>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Mono::Security::Interface::MonoTlsSettings,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_DefaultSettings", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_DisallowUnauthenticatedCertificateRequest(

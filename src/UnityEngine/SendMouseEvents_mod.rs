@@ -26,6 +26,33 @@ impl std::ops::DerefMut for crate::UnityEngine::SendMouseEvents {
 impl crate::UnityEngine::SendMouseEvents {
     #[cfg(feature = "UnityEngine+SendMouseEvents+HitInfo")]
     pub type HitInfo = crate::UnityEngine::SendMouseEvents_HitInfo;
+    pub fn DoSendMouseEvents(
+        skipRTCameras: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DoSendMouseEvents", (skipRTCameras))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SendEvents(
+        i: i32,
+        hit: crate::UnityEngine::SendMouseEvents_HitInfo,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SendEvents", (i, hit))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetMouseMoved() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetMouseMoved", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UpdateMouse() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UpdateMouse", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+SendMouseEvents")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::SendMouseEvents {
@@ -61,6 +88,14 @@ for crate::UnityEngine::SendMouseEvents_HitInfo {
 }
 #[cfg(feature = "UnityEngine+SendMouseEvents+HitInfo")]
 impl crate::UnityEngine::SendMouseEvents_HitInfo {
+    pub fn Compare(
+        lhs: crate::UnityEngine::SendMouseEvents_HitInfo,
+        rhs: crate::UnityEngine::SendMouseEvents_HitInfo,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Compare", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn SendMessage(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -70,6 +105,13 @@ impl crate::UnityEngine::SendMouseEvents_HitInfo {
             "SendMessage",
             (name),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit(
+        exists: crate::UnityEngine::SendMouseEvents_HitInfo,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (exists))?;
         Ok(__cordl_ret.into())
     }
 }

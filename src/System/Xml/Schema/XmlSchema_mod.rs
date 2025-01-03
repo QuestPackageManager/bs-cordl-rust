@@ -163,6 +163,20 @@ impl crate::System::Xml::Schema::XmlSchema {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
+    pub fn Read(
+        reader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
+        validationEventHandler: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::ValidationEventHandler,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchema,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Read", (reader, validationEventHandler))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn SetIsCompiled(
         &mut self,
         isCompiled: bool,

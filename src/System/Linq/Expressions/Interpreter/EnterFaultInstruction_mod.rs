@@ -27,6 +27,19 @@ for crate::System::Linq::Expressions::Interpreter::EnterFaultInstruction {
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+EnterFaultInstruction")]
 impl crate::System::Linq::Expressions::Interpreter::EnterFaultInstruction {
+    pub fn Create(
+        labelIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::EnterFaultInstruction,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::EnterFaultInstruction,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (labelIndex))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         labelIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

@@ -99,6 +99,28 @@ impl crate::System::Linq::Expressions::BlockExpression {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
+    pub fn ReturnReadOnlyExpressions(
+        provider: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BlockExpression,
+        >,
+        collection: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                *mut crate::System::Linq::Expressions::Expression,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                *mut crate::System::Linq::Expressions::Expression,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReturnReadOnlyExpressions", (provider, collection))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Rewrite(
         &mut self,
         variables: quest_hook::libil2cpp::Gc<

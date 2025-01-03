@@ -23,7 +23,16 @@ impl std::ops::DerefMut for crate::Zenject::ProviderUtil {
     }
 }
 #[cfg(feature = "Zenject+ProviderUtil")]
-impl crate::Zenject::ProviderUtil {}
+impl crate::Zenject::ProviderUtil {
+    pub fn GetTypeToInstantiate(
+        contractType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        concreteType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetTypeToInstantiate", (contractType, concreteType))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "Zenject+ProviderUtil")]
 impl quest_hook::libil2cpp::ObjectType for crate::Zenject::ProviderUtil {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

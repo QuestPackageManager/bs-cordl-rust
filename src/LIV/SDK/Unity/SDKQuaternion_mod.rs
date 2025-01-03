@@ -25,6 +25,15 @@ for crate::LIV::SDK::Unity::SDKQuaternion {
 }
 #[cfg(feature = "LIV+SDK+Unity+SDKQuaternion")]
 impl crate::LIV::SDK::Unity::SDKQuaternion {
+    pub fn Euler(
+        pitch: f32,
+        yaw: f32,
+        roll: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::LIV::SDK::Unity::SDKQuaternion> {
+        let __cordl_ret: crate::LIV::SDK::Unity::SDKQuaternion = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Euler", (pitch, yaw, roll))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ToString(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -33,6 +42,43 @@ impl crate::LIV::SDK::Unity::SDKQuaternion {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_identity() -> quest_hook::libil2cpp::Result<
+        crate::LIV::SDK::Unity::SDKQuaternion,
+    > {
+        let __cordl_ret: crate::LIV::SDK::Unity::SDKQuaternion = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_identity", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_Quaternion1(
+        v: crate::UnityEngine::Quaternion,
+    ) -> quest_hook::libil2cpp::Result<crate::LIV::SDK::Unity::SDKQuaternion> {
+        let __cordl_ret: crate::LIV::SDK::Unity::SDKQuaternion = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (v))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_SDKQuaternion0(
+        v: crate::LIV::SDK::Unity::SDKQuaternion,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
+        let __cordl_ret: crate::UnityEngine::Quaternion = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (v))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Multiply_SDKQuaternion0(
+        lhs: crate::LIV::SDK::Unity::SDKQuaternion,
+        rhs: crate::LIV::SDK::Unity::SDKQuaternion,
+    ) -> quest_hook::libil2cpp::Result<crate::LIV::SDK::Unity::SDKQuaternion> {
+        let __cordl_ret: crate::LIV::SDK::Unity::SDKQuaternion = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Multiply", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Multiply_SDKVector3_1(
+        lhs: crate::LIV::SDK::Unity::SDKQuaternion,
+        rhs: crate::LIV::SDK::Unity::SDKVector3,
+    ) -> quest_hook::libil2cpp::Result<crate::LIV::SDK::Unity::SDKVector3> {
+        let __cordl_ret: crate::LIV::SDK::Unity::SDKVector3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Multiply", (lhs, rhs))?;
         Ok(__cordl_ret.into())
     }
 }

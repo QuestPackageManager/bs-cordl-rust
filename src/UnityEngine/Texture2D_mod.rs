@@ -104,6 +104,51 @@ impl crate::UnityEngine::Texture2D {
             .invoke("Compress", (highQuality))?;
         Ok(__cordl_ret.into())
     }
+    pub fn CreateExternalTexture(
+        width: i32,
+        height: i32,
+        format: crate::UnityEngine::TextureFormat,
+        mipChain: bool,
+        linear: bool,
+        nativeTex: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CreateExternalTexture",
+                (width, height, format, mipChain, linear, nativeTex),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GenerateAtlas(
+        sizes: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
+        >,
+        padding: i32,
+        atlasSize: i32,
+        results: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Rect>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GenerateAtlas", (sizes, padding, atlasSize, results))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GenerateAtlasImpl(
+        sizes: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
+        >,
+        padding: i32,
+        atlasSize: i32,
+        rect: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Rect>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GenerateAtlasImpl", (sizes, padding, atlasSize, rect))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetPixelBilinearImpl(
         &mut self,
         image: i32,
@@ -372,6 +417,66 @@ impl crate::UnityEngine::Texture2D {
         );
         let __cordl_ret: crate::System::IntPtr = __cordl_object
             .invoke("GetWritableImageData", (frame))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Internal_Create(
+        mono: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+        w: i32,
+        h: i32,
+        mipCount: i32,
+        format: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+        colorSpace: crate::UnityEngine::TextureColorSpace,
+        flags: crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
+        nativeTex: crate::System::IntPtr,
+        mipmapLimitGroupName: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "Internal_Create",
+                (
+                    mono,
+                    w,
+                    h,
+                    mipCount,
+                    format,
+                    colorSpace,
+                    flags,
+                    nativeTex,
+                    mipmapLimitGroupName,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Internal_CreateImpl(
+        mono: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+        w: i32,
+        h: i32,
+        mipCount: i32,
+        format: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+        colorSpace: crate::UnityEngine::TextureColorSpace,
+        flags: crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
+        nativeTex: crate::System::IntPtr,
+        mipmapLimitGroupName: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "Internal_CreateImpl",
+                (
+                    mono,
+                    w,
+                    h,
+                    mipCount,
+                    format,
+                    colorSpace,
+                    flags,
+                    nativeTex,
+                    mipmapLimitGroupName,
+                ),
+            )?;
         Ok(__cordl_ret.into())
     }
     pub fn IsRequestedMipmapLevelLoaded(
@@ -1572,6 +1677,13 @@ impl crate::UnityEngine::Texture2D {
         let __cordl_ret: i32 = __cordl_object.invoke("get_activeMipmapLimit", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_blackTexture() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_blackTexture", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_calculatedMipmapLevel(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1596,6 +1708,13 @@ impl crate::UnityEngine::Texture2D {
             .invoke("get_format", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_grayTexture() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_grayTexture", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_ignoreMipmapLimit(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1615,6 +1734,13 @@ impl crate::UnityEngine::Texture2D {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_isReadable", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_linearGrayTexture() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_linearGrayTexture", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_loadAllMips(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -1658,6 +1784,20 @@ impl crate::UnityEngine::Texture2D {
         > = __cordl_object.invoke("get_mipmapLimitGroup", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_normalTexture() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_normalTexture", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_redTexture() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_redTexture", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_requestedMipmapLevel(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1687,6 +1827,13 @@ impl crate::UnityEngine::Texture2D {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_vtOnly", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_whiteTexture() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_whiteTexture", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn set_ignoreMipmapLimit(

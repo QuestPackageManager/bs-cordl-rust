@@ -82,6 +82,39 @@ impl crate::UnityEngine::ProBuilder::SharedVertex {
         > = __cordl_object.invoke("GetEnumerator", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetSharedVertexLookup(
+        sharedVertices: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                *mut crate::UnityEngine::ProBuilder::SharedVertex,
+            >,
+        >,
+        lookup: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<i32, i32>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSharedVertexLookup", (sharedVertices, lookup))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetSharedVerticesWithPositions(
+        positions: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector3>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::UnityEngine::ProBuilder::SharedVertex,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::UnityEngine::ProBuilder::SharedVertex,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSharedVerticesWithPositions", (positions))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_IEnumerable_1_0(
         indexes: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<i32>,
@@ -111,6 +144,40 @@ impl crate::UnityEngine::ProBuilder::SharedVertex {
         let __cordl_ret: bool = __cordl_object.invoke("Remove", (item))?;
         Ok(__cordl_ret.into())
     }
+    pub fn RemoveAndShift(
+        lookup: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<i32, i32>,
+        >,
+        remove: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<i32>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::UnityEngine::ProBuilder::SharedVertex,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::UnityEngine::ProBuilder::SharedVertex,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RemoveAndShift", (lookup, remove))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetCoincident(
+        lookup: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::System::Collections::Generic::Dictionary_2<i32, i32>,
+        >,
+        vertices: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<i32>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetCoincident", (lookup, vertices))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ShiftIndexes(
         &mut self,
         offset: i32,
@@ -120,6 +187,28 @@ impl crate::UnityEngine::ProBuilder::SharedVertex {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ShiftIndexes", (offset))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SortedRemoveAndShift(
+        lookup: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<i32, i32>,
+        >,
+        remove: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<i32>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::UnityEngine::ProBuilder::SharedVertex,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::UnityEngine::ProBuilder::SharedVertex,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SortedRemoveAndShift", (lookup, remove))?;
         Ok(__cordl_ret.into())
     }
     pub fn System_Collections_IEnumerable_GetEnumerator(
@@ -133,6 +222,48 @@ impl crate::UnityEngine::ProBuilder::SharedVertex {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::IEnumerator,
         > = __cordl_object.invoke("System.Collections.IEnumerable.GetEnumerator", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToSharedVertices_IEnumerable_1_0(
+        lookup: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::System::Collections::Generic::KeyValuePair_2<i32, i32>,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::UnityEngine::ProBuilder::SharedVertex,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::UnityEngine::ProBuilder::SharedVertex,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToSharedVertices", (lookup))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToSharedVertices_List_1_1(
+        list: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::System::Collections::Generic::List_1<i32>,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::UnityEngine::ProBuilder::SharedVertex,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::UnityEngine::ProBuilder::SharedVertex,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToSharedVertices", (list))?;
         Ok(__cordl_ret.into())
     }
     pub fn ToString(

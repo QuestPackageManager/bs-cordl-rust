@@ -72,6 +72,18 @@ impl crate::Org::BouncyCastle::Bcpg::Attr::ImageAttrib {
             .invoke_void(".ctor", (forceLongLength, data))?;
         Ok(__cordl_object.into())
     }
+    pub fn ToByteArray(
+        imageType: crate::Org::BouncyCastle::Bcpg::Attr::ImageAttrib_Format,
+        imageData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToByteArray", (imageType, imageData))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor_Il2CppArray0(
         &mut self,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,

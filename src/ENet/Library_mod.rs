@@ -35,6 +35,41 @@ impl crate::ENet::Library {
     pub const timeoutMaximum: u32 = 812974272u32;
     pub const timeoutMinimum: u32 = 12617875u32;
     pub const version: u32 = 117703360u32;
+    pub fn CRC64(
+        buffers: crate::System::IntPtr,
+        bufferCount: i32,
+    ) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CRC64", (buffers, bufferCount))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Deinitialize() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Deinitialize", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InitOpenSSL() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InitOpenSSL", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Initialize_0() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Initialize", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Initialize_Callbacks1(
+        callbacks: quest_hook::libil2cpp::Gc<crate::ENet::Callbacks>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Initialize", (callbacks))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Time() -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_Time", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "ENet+Library")]
 impl quest_hook::libil2cpp::ObjectType for crate::ENet::Library {

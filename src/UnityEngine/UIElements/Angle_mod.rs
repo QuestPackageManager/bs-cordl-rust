@@ -55,6 +55,13 @@ impl crate::UnityEngine::UIElements::Angle {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn None() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::Angle,
+    > {
+        let __cordl_ret: crate::UnityEngine::UIElements::Angle = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("None", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ToDegrees(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -103,6 +110,21 @@ impl crate::UnityEngine::UIElements::Angle {
             "get_value",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        lhs: crate::UnityEngine::UIElements::Angle,
+        rhs: crate::UnityEngine::UIElements::Angle,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit(
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Angle> {
+        let __cordl_ret: crate::UnityEngine::UIElements::Angle = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (value))?;
         Ok(__cordl_ret.into())
     }
 }

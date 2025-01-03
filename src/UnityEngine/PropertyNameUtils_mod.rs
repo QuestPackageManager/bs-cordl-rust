@@ -23,7 +23,23 @@ impl std::ops::DerefMut for crate::UnityEngine::PropertyNameUtils {
     }
 }
 #[cfg(feature = "UnityEngine+PropertyNameUtils")]
-impl crate::UnityEngine::PropertyNameUtils {}
+impl crate::UnityEngine::PropertyNameUtils {
+    pub fn PropertyNameFromString(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::PropertyName> {
+        let __cordl_ret: crate::UnityEngine::PropertyName = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PropertyNameFromString", (name))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn PropertyNameFromString_Injected(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::PropertyName>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PropertyNameFromString_Injected", (name, ret))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+PropertyNameUtils")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::PropertyNameUtils {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

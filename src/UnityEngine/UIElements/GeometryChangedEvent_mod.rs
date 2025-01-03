@@ -33,6 +33,18 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::GeometryChangedEvent
 impl crate::UnityEngine::UIElements::GeometryChangedEvent {
     #[cfg(feature = "UnityEngine+UIElements+GeometryChangedEvent+__c")]
     pub type __c = crate::UnityEngine::UIElements::GeometryChangedEvent___c;
+    pub fn GetPooled(
+        oldRect: crate::UnityEngine::Rect,
+        newRect: crate::UnityEngine::Rect,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::GeometryChangedEvent>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::GeometryChangedEvent,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPooled", (oldRect, newRect))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Init(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

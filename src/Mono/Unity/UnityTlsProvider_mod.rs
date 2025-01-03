@@ -162,6 +162,18 @@ impl crate::Mono::Unity::UnityTlsProvider {
         let __cordl_ret: bool = __cordl_object.invoke("get_SupportsSslStream", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn x509verify_callback(
+        userData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        cert: crate::Mono::Unity::UnityTls_unitytls_x509_ref,
+        result: crate::Mono::Unity::UnityTls_unitytls_x509verify_result,
+        errorState: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::Mono::Unity::UnityTls_unitytls_x509verify_result,
+    > {
+        let __cordl_ret: crate::Mono::Unity::UnityTls_unitytls_x509verify_result = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("x509verify_callback", (userData, cert, result, errorState))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "Mono+Unity+UnityTlsProvider")]
 impl quest_hook::libil2cpp::ObjectType for crate::Mono::Unity::UnityTlsProvider {

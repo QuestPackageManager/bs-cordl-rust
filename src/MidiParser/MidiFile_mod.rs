@@ -49,6 +49,28 @@ impl crate::MidiParser::MidiFile {
             .invoke_void(".ctor", (path))?;
         Ok(__cordl_object.into())
     }
+    pub fn ParseMetaEvent(
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        position: quest_hook::libil2cpp::ByRefMut<i32>,
+        metaEventType: u8,
+        data1: quest_hook::libil2cpp::ByRefMut<i32>,
+        data2: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ParseMetaEvent", (data, position, metaEventType, data1, data2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ParseTrack(
+        index: i32,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        position: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::MidiParser::MidiTrack>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::MidiParser::MidiTrack> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ParseTrack", (index, data, position))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor_Il2CppArray1(
         &mut self,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -106,7 +128,64 @@ impl std::ops::DerefMut for crate::MidiParser::MidiFile_Reader {
     }
 }
 #[cfg(feature = "MidiParser+MidiFile+Reader")]
-impl crate::MidiParser::MidiFile_Reader {}
+impl crate::MidiParser::MidiFile_Reader {
+    pub fn Read16(
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        i: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Read16", (data, i))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Read32(
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        i: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Read32", (data, i))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Read8(
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        i: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<u8> {
+        let __cordl_ret: u8 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Read8", (data, i))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReadAllBytesFromStream(
+        input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadAllBytesFromStream", (input))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReadString(
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        i: quest_hook::libil2cpp::ByRefMut<i32>,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadString", (data, i, length))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReadVarInt(
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        i: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadVarInt", (data, i))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "MidiParser+MidiFile+Reader")]
 impl quest_hook::libil2cpp::ObjectType for crate::MidiParser::MidiFile_Reader {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

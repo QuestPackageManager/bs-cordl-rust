@@ -145,6 +145,27 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
             .invoke("BuyPackButtonWasShown", (pack, page, customText))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetExperimentEventData(
+        itemId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        page: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        customText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<
+                *mut quest_hook::libil2cpp::Il2CppString,
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<
+                *mut quest_hook::libil2cpp::Il2CppString,
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetExperimentEventData", (itemId, page, customText))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetPackDataForMainMenuPromoBanner(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

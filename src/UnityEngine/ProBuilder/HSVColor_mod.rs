@@ -27,6 +27,16 @@ impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::HSVColor {
 }
 #[cfg(feature = "UnityEngine+ProBuilder+HSVColor")]
 impl crate::UnityEngine::ProBuilder::HSVColor {
+    pub fn FromRGB(
+        col: crate::UnityEngine::Color,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::HSVColor>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::HSVColor,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("FromRGB", (col))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_f32_1(
         h: f32,
         s: f32,

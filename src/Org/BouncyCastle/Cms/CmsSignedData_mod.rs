@@ -212,6 +212,47 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedData {
             .invoke_void(".ctor", (sigData))?;
         Ok(__cordl_object.into())
     }
+    pub fn ReplaceCertificatesAndCrls(
+        signedData: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cms::CmsSignedData,
+        >,
+        x509Certs: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::X509::Store::IX509Store,
+        >,
+        x509Crls: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::X509::Store::IX509Store,
+        >,
+        x509AttrCerts: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::X509::Store::IX509Store,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::CmsSignedData>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cms::CmsSignedData,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ReplaceCertificatesAndCrls",
+                (signedData, x509Certs, x509Crls, x509AttrCerts),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReplaceSigners(
+        signedData: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cms::CmsSignedData,
+        >,
+        signerInformationStore: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cms::SignerInformationStore,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::CmsSignedData>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cms::CmsSignedData,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReplaceSigners", (signedData, signerInformationStore))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor_CmsProcessable_ContentInfo6(
         &mut self,
         signedContent: quest_hook::libil2cpp::Gc<

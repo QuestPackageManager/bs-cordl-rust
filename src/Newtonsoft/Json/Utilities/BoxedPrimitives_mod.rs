@@ -23,7 +23,58 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Utilities::BoxedPrimitives 
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Utilities+BoxedPrimitives")]
-impl crate::Newtonsoft::Json::Utilities::BoxedPrimitives {}
+impl crate::Newtonsoft::Json::Utilities::BoxedPrimitives {
+    pub fn Get_Decimal3(
+        value: crate::System::Decimal,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Get", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Get__cordl_bool0(
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Get", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Get_f64_4(
+        value: f64,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Get", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Get_i32_1(
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Get", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Get_i64_2(
+        value: i64,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Get", (value))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "Newtonsoft+Json+Utilities+BoxedPrimitives")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::Utilities::BoxedPrimitives {

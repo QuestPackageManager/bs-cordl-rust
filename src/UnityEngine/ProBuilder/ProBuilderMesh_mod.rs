@@ -183,6 +183,85 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
             .invoke("CopyFrom", (other))?;
         Ok(__cordl_ret.into())
     }
+    pub fn CreateInstanceWithPoints(
+        positions: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::ProBuilderMesh,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateInstanceWithPoints", (positions))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Create_0() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::ProBuilderMesh,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Create", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Create_IEnumerable_1_IEnumerable_1_1(
+        positions: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::UnityEngine::Vector3,
+            >,
+        >,
+        faces: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::UnityEngine::ProBuilder::Face,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::ProBuilderMesh,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (positions, faces))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Create_IList_1_IList_1_IList_1_IList_1_IList_1_2(
+        vertices: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                *mut crate::UnityEngine::ProBuilder::Vertex,
+            >,
+        >,
+        faces: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                *mut crate::UnityEngine::ProBuilder::Face,
+            >,
+        >,
+        sharedVertices: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                *mut crate::UnityEngine::ProBuilder::SharedVertex,
+            >,
+        >,
+        sharedTextures: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                *mut crate::UnityEngine::ProBuilder::SharedVertex,
+            >,
+        >,
+        materials: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                *mut crate::UnityEngine::Material,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::ProBuilderMesh,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "Create",
+                (vertices, faces, sharedVertices, sharedTextures, materials),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn DestroyUnityMesh(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -574,6 +653,11 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InvalidateSharedVertexLookup", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsValidTextureGroup(group: i32) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsValidTextureGroup", (group))?;
         Ok(__cordl_ret.into())
     }
     pub fn MakeUnique(
@@ -975,6 +1059,51 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("<set_selectedFacesInternal>b__231_0", (x))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn add_componentHasBeenReset(
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("add_componentHasBeenReset", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn add_componentWillBeDestroyed(
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("add_componentWillBeDestroyed", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn add_elementSelectionChanged(
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("add_elementSelectionChanged", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn add_meshWasInitialized(
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("add_meshWasInitialized", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn add_meshWillBeDestroyed(
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("add_meshWillBeDestroyed", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_colors(
@@ -1601,6 +1730,51 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_vertexCount", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_componentHasBeenReset(
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("remove_componentHasBeenReset", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_componentWillBeDestroyed(
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("remove_componentWillBeDestroyed", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_elementSelectionChanged(
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("remove_elementSelectionChanged", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_meshWasInitialized(
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("remove_meshWasInitialized", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_meshWillBeDestroyed(
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("remove_meshWillBeDestroyed", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_colors(

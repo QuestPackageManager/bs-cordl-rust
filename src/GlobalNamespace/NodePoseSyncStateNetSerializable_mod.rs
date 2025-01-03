@@ -87,6 +87,20 @@ impl crate::GlobalNamespace::NodePoseSyncStateNetSerializable {
             .invoke("get_id", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_pool() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PacketPool_1<
+                *mut crate::GlobalNamespace::NodePoseSyncStateNetSerializable,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PacketPool_1<
+                *mut crate::GlobalNamespace::NodePoseSyncStateNetSerializable,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_pool", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_state(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NodePoseSyncState> {

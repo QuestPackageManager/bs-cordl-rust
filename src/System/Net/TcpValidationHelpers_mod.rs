@@ -23,7 +23,13 @@ impl std::ops::DerefMut for crate::System::Net::TcpValidationHelpers {
     }
 }
 #[cfg(feature = "System+Net+TcpValidationHelpers")]
-impl crate::System::Net::TcpValidationHelpers {}
+impl crate::System::Net::TcpValidationHelpers {
+    pub fn ValidatePortNumber(port: i32) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ValidatePortNumber", (port))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Net+TcpValidationHelpers")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Net::TcpValidationHelpers {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

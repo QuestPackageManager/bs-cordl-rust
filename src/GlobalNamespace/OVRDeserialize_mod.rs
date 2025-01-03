@@ -44,6 +44,17 @@ impl crate::GlobalNamespace::OVRDeserialize {
     pub type SpaceShareResultData = crate::GlobalNamespace::OVRDeserialize_SpaceShareResultData;
     #[cfg(feature = "OVRDeserialize+SpatialAnchorCreateCompleteData")]
     pub type SpatialAnchorCreateCompleteData = crate::GlobalNamespace::OVRDeserialize_SpatialAnchorCreateCompleteData;
+    pub fn ByteArrayToStructure<T>(
+        bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ByteArrayToStructure", (bytes))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "OVRDeserialize")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRDeserialize {

@@ -38,6 +38,28 @@ impl crate::GlobalNamespace::ConnectionFailedReasonMethods {
     pub const kConnectionFailedTimeout: &'static str = "CONNECTION_FAILED_TIMEOUT";
     pub const kConnectionFailedUnknown: &'static str = "SERVER_CONNECTION_FAILED_TRY_AGAIN";
     pub const kConnectionFailedVersionMismatch: &'static str = "CONNECTION_FAILED_VERSION_MISMATCH";
+    pub fn ErrorCode(
+        connectionFailedReason: crate::GlobalNamespace::ConnectionFailedReason,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ErrorCode", (connectionFailedReason))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LocalizedKey(
+        connectionFailedReason: crate::GlobalNamespace::ConnectionFailedReason,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LocalizedKey", (connectionFailedReason))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "ConnectionFailedReasonMethods")]
 impl quest_hook::libil2cpp::ObjectType

@@ -112,6 +112,39 @@ impl<
         > = __cordl_object.invoke("Enumerate", (head, headHead, tail, tailTail))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetCount_ConcurrentQueue_1_Segment_i32_1(
+        head: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Concurrent::ConcurrentQueue_1_Segment<T>,
+        >,
+        headHead: i32,
+        tail: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Concurrent::ConcurrentQueue_1_Segment<T>,
+        >,
+        tailTail: i32,
+    ) -> quest_hook::libil2cpp::Result<i64>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCount", (head, headHead, tail, tailTail))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCount_i32_0(
+        s: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Concurrent::ConcurrentQueue_1_Segment<T>,
+        >,
+        head: i32,
+        tail: i32,
+    ) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCount", (s, head, tail))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetEnumerator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

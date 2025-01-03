@@ -51,6 +51,25 @@ impl crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter {
         let __cordl_ret: bool = __cordl_object.invoke("CanConvert", (objectType))?;
         Ok(__cordl_ret.into())
     }
+    pub fn CreateUnion(
+        t: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_Union,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_Union,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("CreateUnion", (t))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateUnionTypeLookup(
+        t: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateUnionTypeLookup", (t))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

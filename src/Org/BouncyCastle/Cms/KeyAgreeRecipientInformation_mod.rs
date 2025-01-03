@@ -168,6 +168,19 @@ impl crate::Org::BouncyCastle::Cms::KeyAgreeRecipientInformation {
             .invoke_void(".ctor", (info, rid, encryptedKey, secureReadable))?;
         Ok(__cordl_object.into())
     }
+    pub fn ReadRecipientInfo(
+        infos: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+        info: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cms::KeyAgreeRecipientInfo,
+        >,
+        secureReadable: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cms::CmsSecureReadable,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadRecipientInfo", (infos, info, secureReadable))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn UnwrapSessionKey(
         &mut self,
         wrapAlg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

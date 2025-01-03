@@ -46,6 +46,19 @@ impl crate::Org::BouncyCastle::Crypto::Macs::Gost28147Mac {
             .invoke("BlockUpdate", (input, inOff, len))?;
         Ok(__cordl_ret.into())
     }
+    pub fn CM5func(
+        buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        bufOff: i32,
+        mac: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CM5func", (buf, bufOff, mac))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn DoFinal(
         &mut self,
         output: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -55,6 +68,17 @@ impl crate::Org::BouncyCastle::Crypto::Macs::Gost28147Mac {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("DoFinal", (output, outOff))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GenerateWorkingKey(
+        userKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<i32>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GenerateWorkingKey", (userKey))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetMacSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -115,6 +139,14 @@ impl crate::Org::BouncyCastle::Crypto::Macs::Gost28147Mac {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn bytesToint(
+        input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        inOff: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("bytesToint", (input, inOff))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_AlgorithmName(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -152,6 +184,15 @@ impl crate::Org::BouncyCastle::Crypto::Macs::Gost28147Mac {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("gost28147_mainStep", (n1, key))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn intTobytes(
+        num: i32,
+        output: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        outOff: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("intTobytes", (num, output, outOff))?;
         Ok(__cordl_ret.into())
     }
 }

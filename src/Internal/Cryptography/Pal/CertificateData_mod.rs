@@ -43,6 +43,21 @@ impl crate::Internal::Cryptography::Pal::CertificateData {
     pub type AlgorithmIdentifier = crate::Internal::Cryptography::Pal::CertificateData_AlgorithmIdentifier;
     #[cfg(feature = "Internal+Cryptography+Pal+CertificateData+_ReadReverseRdns_d__21")]
     pub type _ReadReverseRdns_d__21 = crate::Internal::Cryptography::Pal::CertificateData__ReadReverseRdns_d__21;
+    pub fn FindAltNameMatch(
+        extensionBytes: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        >,
+        matchType: crate::Internal::Cryptography::Pal::GeneralNameType,
+        otherOid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FindAltNameMatch", (extensionBytes, matchType, otherOid))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetNameInfo(
         &mut self,
         nameType: crate::System::Security::Cryptography::X509Certificates::X509NameType,
@@ -57,6 +72,44 @@ impl crate::Internal::Cryptography::Pal::CertificateData {
             "GetNameInfo",
             (nameType, forIssuer),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetSimpleNameInfo(
+        name: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X500DistinguishedName,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSimpleNameInfo", (name))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReadReverseRdns(
+        name: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X500DistinguishedName,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::System::Collections::Generic::KeyValuePair_2<
+                    *mut quest_hook::libil2cpp::Il2CppString,
+                    *mut quest_hook::libil2cpp::Il2CppString,
+                >,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::System::Collections::Generic::KeyValuePair_2<
+                    *mut quest_hook::libil2cpp::Il2CppString,
+                    *mut quest_hook::libil2cpp::Il2CppString,
+                >,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadReverseRdns", (name))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

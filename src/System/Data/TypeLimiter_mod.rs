@@ -29,6 +29,65 @@ impl crate::System::Data::TypeLimiter {
     pub type Scope = crate::System::Data::TypeLimiter_Scope;
     #[cfg(feature = "System+Data+TypeLimiter+__c")]
     pub type __c = crate::System::Data::TypeLimiter___c;
+    pub fn Capture() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Data::TypeLimiter>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Data::TypeLimiter> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Capture", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EnsureTypeIsAllowed(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        capturedLimiter: quest_hook::libil2cpp::Gc<crate::System::Data::TypeLimiter>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EnsureTypeIsAllowed", (_cordl_type, capturedLimiter))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EnterRestrictedScope_DataSet0(
+        dataSet: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IDisposable> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EnterRestrictedScope", (dataSet))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EnterRestrictedScope_DataTable1(
+        dataTable: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IDisposable> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EnterRestrictedScope", (dataTable))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPreviouslyDeclaredDataTypes_DataSet1(
+        dataSet: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<*mut crate::System::Type>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<*mut crate::System::Type>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPreviouslyDeclaredDataTypes", (dataSet))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPreviouslyDeclaredDataTypes_DataTable0(
+        dataTable: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<*mut crate::System::Type>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<*mut crate::System::Type>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPreviouslyDeclaredDataTypes", (dataTable))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         scope: quest_hook::libil2cpp::Gc<crate::System::Data::TypeLimiter_Scope>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -47,6 +106,11 @@ impl crate::System::Data::TypeLimiter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (scope))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_IsTypeLimitingDisabled() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_IsTypeLimitingDisabled", ())?;
         Ok(__cordl_ret.into())
     }
 }
@@ -109,6 +173,13 @@ impl crate::System::Data::TypeLimiter_Scope {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("IsAllowedType", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsTypeUnconditionallyAllowed(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsTypeUnconditionallyAllowed", (_cordl_type))?;
         Ok(__cordl_ret.into())
     }
     pub fn New(

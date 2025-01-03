@@ -23,6 +23,15 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorCapabilitie
 }
 #[cfg(feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidSensorCapabilities")]
 impl crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorCapabilities {
+    pub fn FromJson(
+        json: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorCapabilities,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Android::LowLevel::AndroidSensorCapabilities = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromJson", (json))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ToJson(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

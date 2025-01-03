@@ -28,6 +28,138 @@ impl crate::System::ParameterizedStrings {
     pub type FormatParam = crate::System::ParameterizedStrings_FormatParam;
     #[cfg(feature = "System+ParameterizedStrings+LowLevelStack")]
     pub type LowLevelStack = crate::System::ParameterizedStrings_LowLevelStack;
+    pub fn AsBool(i: i32) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AsBool", (i))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AsInt(b: bool) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AsInt", (b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Evaluate(
+        format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        args: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::System::ParameterizedStrings_FormatParam,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Evaluate", (format, args))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EvaluateInternal(
+        format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        pos: quest_hook::libil2cpp::ByRefMut<i32>,
+        args: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::System::ParameterizedStrings_FormatParam,
+            >,
+        >,
+        stack: quest_hook::libil2cpp::Gc<
+            crate::System::ParameterizedStrings_LowLevelStack,
+        >,
+        dynamicVars: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<
+                crate::System::ParameterizedStrings_FormatParam,
+            >,
+        >,
+        staticVars: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<
+                crate::System::ParameterizedStrings_FormatParam,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "EvaluateInternal",
+                (format, pos, args, stack, dynamicVars, staticVars),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FormatPrintF(
+        format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        arg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FormatPrintF", (format, arg))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetDynamicOrStaticVariables(
+        c: char,
+        dynamicVars: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<
+                crate::System::ParameterizedStrings_FormatParam,
+            >,
+        >,
+        staticVars: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<
+                crate::System::ParameterizedStrings_FormatParam,
+            >,
+        >,
+        index: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::System::ParameterizedStrings_FormatParam,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::System::ParameterizedStrings_FormatParam,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetDynamicOrStaticVariables", (c, dynamicVars, staticVars, index))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StringFromAsciiBytes(
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        offset: i32,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StringFromAsciiBytes", (buffer, offset, length))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn snprintf_Il2CppString0(
+        str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        _cordl_size: crate::System::IntPtr,
+        format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        arg1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("snprintf", (str, _cordl_size, format, arg1))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn snprintf_i32_1(
+        str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        _cordl_size: crate::System::IntPtr,
+        format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        arg1: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("snprintf", (str, _cordl_size, format, arg1))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "System+ParameterizedStrings")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::ParameterizedStrings {
@@ -112,6 +244,13 @@ impl crate::System::ParameterizedStrings_FormatParam {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_String", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit(
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::System::ParameterizedStrings_FormatParam> {
+        let __cordl_ret: crate::System::ParameterizedStrings_FormatParam = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (value))?;
         Ok(__cordl_ret.into())
     }
 }

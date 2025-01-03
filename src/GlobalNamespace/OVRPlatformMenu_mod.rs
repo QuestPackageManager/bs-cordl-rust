@@ -60,6 +60,11 @@ impl crate::GlobalNamespace::OVRPlatformMenu {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
+    pub fn RetreatOneLevel() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RetreatOneLevel", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ShowConfirmQuitMenu(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

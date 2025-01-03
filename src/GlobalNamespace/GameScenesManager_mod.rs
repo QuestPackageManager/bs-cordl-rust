@@ -95,6 +95,17 @@ impl crate::GlobalNamespace::GameScenesManager {
     pub type __c__DisplayClass47_0 = crate::GlobalNamespace::GameScenesManager___c__DisplayClass47_0;
     #[cfg(feature = "GameScenesManager+__c__DisplayClass55_0")]
     pub type __c__DisplayClass55_0 = crate::GlobalNamespace::GameScenesManager___c__DisplayClass55_0;
+    pub fn ActivatePresentedSceneRootObjects(
+        scenesToPresent: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ActivatePresentedSceneRootObjects", (scenesToPresent))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ActivateScenes(
         &mut self,
         scenesTransitionSetupData: quest_hook::libil2cpp::Gc<
@@ -312,6 +323,13 @@ impl crate::GlobalNamespace::GameScenesManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("LoadSingleScene", (sceneInfo))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Log(
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Log", (message))?;
         Ok(__cordl_ret.into())
     }
     pub fn MarkSceneAsPersistent(
@@ -609,6 +627,17 @@ impl crate::GlobalNamespace::GameScenesManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UnloadSingleScene", (sceneInfo))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WaitUntilTaskCompleted(
+        task: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IEnumerator,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WaitUntilTaskCompleted", (task))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

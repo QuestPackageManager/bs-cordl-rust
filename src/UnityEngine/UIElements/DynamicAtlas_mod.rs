@@ -61,6 +61,13 @@ impl crate::UnityEngine::UIElements::DynamicAtlas {
             .invoke("InitPages", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn IsTextureFormatSupported(
+        format: crate::UnityEngine::TextureFormat,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsTextureFormatSupported", (format))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn IsTextureValid(
         &mut self,
         texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
@@ -160,6 +167,13 @@ impl crate::UnityEngine::UIElements::DynamicAtlas {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_defaultFilters() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::DynamicAtlasFilters,
+    > {
+        let __cordl_ret: crate::UnityEngine::UIElements::DynamicAtlasFilters = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_defaultFilters", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_isInitialized(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -278,12 +292,31 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::DynamicAtlas_Texture
 }
 #[cfg(feature = "UnityEngine+UIElements+DynamicAtlas+TextureInfo")]
 impl crate::UnityEngine::UIElements::DynamicAtlas_TextureInfo {
+    pub fn Create() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::DynamicAtlas_TextureInfo,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::DynamicAtlas_TextureInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Create", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
+    }
+    pub fn Reset(
+        info: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::DynamicAtlas_TextureInfo,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Reset", (info))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,

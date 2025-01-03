@@ -29,6 +29,28 @@ for crate::System::Security::Cryptography::X509Certificates::X500DistinguishedNa
 }
 #[cfg(feature = "System+Security+Cryptography+X509Certificates+X500DistinguishedName")]
 impl crate::System::Security::Cryptography::X509Certificates::X500DistinguishedName {
+    pub fn AreEqual(
+        name1: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X500DistinguishedName,
+        >,
+        name2: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X500DistinguishedName,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AreEqual", (name1, name2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Canonize(
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Canonize", (s))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Decode(
         &mut self,
         flag: crate::System::Security::Cryptography::X509Certificates::X500DistinguishedNameFlags,
@@ -65,6 +87,17 @@ impl crate::System::Security::Cryptography::X509Certificates::X500DistinguishedN
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("Format", (multiLine))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetSeparator(
+        flag: crate::System::Security::Cryptography::X509Certificates::X500DistinguishedNameFlags,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSeparator", (flag))?;
         Ok(__cordl_ret.into())
     }
     pub fn New(

@@ -261,6 +261,14 @@ impl crate::System::Xml::XmlElement {
             .invoke("WriteContentTo", (w))?;
         Ok(__cordl_ret.into())
     }
+    pub fn WriteElementTo(
+        writer: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>,
+        e: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlElement>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WriteElementTo", (writer, e))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn WriteStartElement(
         &mut self,
         w: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>,

@@ -23,7 +23,16 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::RuntimeEventDispatch
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+RuntimeEventDispatcher")]
-impl crate::UnityEngine::UIElements::RuntimeEventDispatcher {}
+impl crate::UnityEngine::UIElements::RuntimeEventDispatcher {
+    pub fn Create() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventDispatcher>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::EventDispatcher,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Create", ())?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+RuntimeEventDispatcher")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::RuntimeEventDispatcher {

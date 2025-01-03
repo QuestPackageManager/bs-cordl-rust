@@ -44,6 +44,36 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventListener {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Addition(
+        _cordl__: crate::UnityEngine::InputSystem::LowLevel::InputEventListener,
+        callback: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<
+                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+                *mut crate::UnityEngine::InputSystem::InputDevice,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::LowLevel::InputEventListener,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::InputEventListener = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Addition", (_cordl__, callback))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Subtraction(
+        _cordl__: crate::UnityEngine::InputSystem::LowLevel::InputEventListener,
+        callback: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<
+                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+                *mut crate::UnityEngine::InputSystem::InputDevice,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::LowLevel::InputEventListener,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::InputEventListener = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Subtraction", (_cordl__, callback))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventListener")]
 impl AsRef<

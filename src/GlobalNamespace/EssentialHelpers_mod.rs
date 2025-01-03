@@ -23,7 +23,31 @@ impl std::ops::DerefMut for crate::GlobalNamespace::EssentialHelpers {
     }
 }
 #[cfg(feature = "EssentialHelpers")]
-impl crate::GlobalNamespace::EssentialHelpers {}
+impl crate::GlobalNamespace::EssentialHelpers {
+    pub fn GetOrAddComponent<T>(
+        go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetOrAddComponent", (go))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SafeDestroy(
+        obj: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SafeDestroy", (obj))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_CurrentTimeStamp() -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_ret: f64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_CurrentTimeStamp", ())?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "EssentialHelpers")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::EssentialHelpers {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

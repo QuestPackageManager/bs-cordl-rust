@@ -23,7 +23,41 @@ impl std::ops::DerefMut for crate::System::Xml::BinHexEncoder {
     }
 }
 #[cfg(feature = "System+Xml+BinHexEncoder")]
-impl crate::System::Xml::BinHexEncoder {}
+impl crate::System::Xml::BinHexEncoder {
+    pub fn Encode_Il2CppArray2(
+        inArray: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        offsetIn: i32,
+        count: i32,
+        outArray: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Encode", (inArray, offsetIn, count, outArray))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Encode_Il2CppArray_i32_i32_1(
+        inArray: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        offsetIn: i32,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Encode", (inArray, offsetIn, count))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Encode_XmlWriter0(
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        index: i32,
+        count: i32,
+        writer: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Encode", (buffer, index, count, writer))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Xml+BinHexEncoder")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::BinHexEncoder {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

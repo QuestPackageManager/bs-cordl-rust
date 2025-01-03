@@ -223,6 +223,13 @@ impl crate::GlobalNamespace::OVROverlay {
             .invoke("InitOVROverlay", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn IsPassthroughShape(
+        shape: crate::GlobalNamespace::OVROverlay_OverlayShape,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsPassthroughShape", (shape))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn LatchLayerTextures(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -238,6 +245,13 @@ impl crate::GlobalNamespace::OVROverlay {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("LateUpdate", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn NeedsTexturesForShape(
+        shape: crate::GlobalNamespace::OVROverlay_OverlayShape,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("NeedsTexturesForShape", (shape))?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -393,6 +407,15 @@ impl crate::GlobalNamespace::OVROverlay {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_OpenVROverlayKey() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_OpenVROverlayKey", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_layerId(&mut self) -> quest_hook::libil2cpp::Result<i32> {

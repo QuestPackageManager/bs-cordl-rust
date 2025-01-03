@@ -27,6 +27,31 @@ for crate::Org::BouncyCastle::X509::Extension::AuthorityKeyIdentifierStructure {
 }
 #[cfg(feature = "Org+BouncyCastle+X509+Extension+AuthorityKeyIdentifierStructure")]
 impl crate::Org::BouncyCastle::X509::Extension::AuthorityKeyIdentifierStructure {
+    pub fn FromCertificate(
+        certificate: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::X509::X509Certificate,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromCertificate", (certificate))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromKey(
+        pubKey: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1Sequence,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("FromKey", (pubKey))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_Asn1OctetString0(
         encodedValue: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Asn1OctetString,

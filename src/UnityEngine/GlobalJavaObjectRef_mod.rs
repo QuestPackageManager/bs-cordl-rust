@@ -66,6 +66,13 @@ impl crate::UnityEngine::GlobalJavaObjectRef {
             .invoke(".ctor", (jobject))?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Implicit(
+        obj: quest_hook::libil2cpp::Gc<crate::UnityEngine::GlobalJavaObjectRef>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (obj))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+GlobalJavaObjectRef")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::GlobalJavaObjectRef {

@@ -33,6 +33,13 @@ impl std::ops::DerefMut for crate::System::IO::FileStreamAsyncResult {
 }
 #[cfg(feature = "System+IO+FileStreamAsyncResult")]
 impl crate::System::IO::FileStreamAsyncResult {
+    pub fn CBWrapper(
+        ares: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CBWrapper", (ares))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         cb: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
         state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

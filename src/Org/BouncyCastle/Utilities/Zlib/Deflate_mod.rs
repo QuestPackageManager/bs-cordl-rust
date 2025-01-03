@@ -564,6 +564,16 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::Deflate {
             .invoke("set_data_type", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn smaller(
+        tree: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i16>>,
+        n: i32,
+        m: i32,
+        depth: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("smaller", (tree, n, m, depth))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn tr_init(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -26,6 +26,17 @@ impl std::ops::DerefMut for crate::BGLib::UnityExtension::ExternalFileReader {
 impl crate::BGLib::UnityExtension::ExternalFileReader {
     #[cfg(feature = "BGLib+UnityExtension+ExternalFileReader+_ExistsAsync_d__0")]
     pub type _ExistsAsync_d__0 = crate::BGLib::UnityExtension::ExternalFileReader__ExistsAsync_d__0;
+    pub fn ExistsAsync(
+        filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<bool>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ExistsAsync", (filePath))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "BGLib+UnityExtension+ExternalFileReader")]
 impl quest_hook::libil2cpp::ObjectType

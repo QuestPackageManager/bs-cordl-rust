@@ -49,6 +49,31 @@ impl crate::System::Threading::OSSpecificSynchronizationContext {
         > = __cordl_object.invoke("CreateCopy", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn Get() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::OSSpecificSynchronizationContext,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::OSSpecificSynchronizationContext,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Get", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetOSContext() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetOSContext", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InvocationEntry(
+        arg: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InvocationEntry", (arg))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         osContext: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -68,6 +93,17 @@ impl crate::System::Threading::OSSpecificSynchronizationContext {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Post", (d, state))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn PostInternal(
+        osSynchronizationContext: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        >,
+        callback: crate::System::IntPtr,
+        arg: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PostInternal", (osSynchronizationContext, callback, arg))?;
         Ok(__cordl_ret.into())
     }
     pub fn Send(

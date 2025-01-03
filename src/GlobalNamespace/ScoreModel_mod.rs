@@ -32,6 +32,49 @@ impl crate::GlobalNamespace::ScoreModel {
     pub type MaxScoreCounterElement = crate::GlobalNamespace::ScoreModel_MaxScoreCounterElement;
     #[cfg(feature = "ScoreModel+NoteScoreDefinition")]
     pub type NoteScoreDefinition = crate::GlobalNamespace::ScoreModel_NoteScoreDefinition;
+    pub fn ComputeMaxMultipliedScoreForBeatmap(
+        beatmapData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IReadonlyBeatmapData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ComputeMaxMultipliedScoreForBeatmap", (beatmapData))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ComputeQuickInaccurateMaxMultipliedScoreForBeatmap(
+        beatmapBasicData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapBasicData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ComputeQuickInaccurateMaxMultipliedScoreForBeatmap",
+                (beatmapBasicData),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetModifiedScoreForGameplayModifiersScoreMultiplier(
+        multipliedScore: i32,
+        gameplayModifiersScoreMultiplier: f32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetModifiedScoreForGameplayModifiersScoreMultiplier",
+                (multipliedScore, gameplayModifiersScoreMultiplier),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetNoteScoreDefinition(
+        scoringType: crate::GlobalNamespace::NoteData_ScoringType,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ScoreModel_NoteScoreDefinition>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ScoreModel_NoteScoreDefinition,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetNoteScoreDefinition", (scoringType))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

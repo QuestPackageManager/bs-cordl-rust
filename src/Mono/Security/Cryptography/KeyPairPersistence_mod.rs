@@ -28,6 +28,13 @@ impl std::ops::DerefMut for crate::Mono::Security::Cryptography::KeyPairPersiste
 }
 #[cfg(feature = "Mono+Security+Cryptography+KeyPairPersistence")]
 impl crate::Mono::Security::Cryptography::KeyPairPersistence {
+    pub fn CanSecure(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CanSecure", (path))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Copy(
         &mut self,
         p: quest_hook::libil2cpp::Gc<
@@ -53,6 +60,20 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("FromXml", (xml))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsMachineProtected(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsMachineProtected", (path))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsUserProtected(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsUserProtected", (path))?;
         Ok(__cordl_ret.into())
     }
     pub fn Load(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -85,6 +106,20 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
             .invoke_void(".ctor", (parameters, keyPair))?;
         Ok(__cordl_object.into())
     }
+    pub fn ProtectMachine(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ProtectMachine", (path))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ProtectUser(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ProtectUser", (path))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Remove(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -116,6 +151,41 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("ToXml", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _CanSecure(
+        root: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("_CanSecure", (root))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _IsMachineProtected(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("_IsMachineProtected", (path))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _IsUserProtected(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("_IsUserProtected", (path))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ProtectMachine(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("_ProtectMachine", (path))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ProtectUser(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("_ProtectUser", (path))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_CspParameters0(
@@ -191,6 +261,15 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
         > = __cordl_object.invoke("get_KeyValue", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_MachinePath() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_MachinePath", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_UseDefaultKeyContainer(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -203,6 +282,14 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_UseMachineKeyStore", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_UserPath() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_UserPath", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn set_KeyValue(

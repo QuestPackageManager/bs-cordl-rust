@@ -85,6 +85,14 @@ impl crate::System::Net::Http::HttpMethod {
             .invoke(".ctor", (method))?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_Get() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpMethod>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Http::HttpMethod,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_Get", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_Method(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -96,6 +104,22 @@ impl crate::System::Net::Http::HttpMethod {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("get_Method", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Post() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpMethod>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Http::HttpMethod,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_Post", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        left: quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpMethod>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpMethod>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (left, right))?;
         Ok(__cordl_ret.into())
     }
 }

@@ -26,6 +26,23 @@ for crate::UnityEngine::Experimental::GlobalIllumination::LinearColor {
 }
 #[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+LinearColor")]
 impl crate::UnityEngine::Experimental::GlobalIllumination::LinearColor {
+    pub fn Black() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Experimental::GlobalIllumination::LinearColor,
+    > {
+        let __cordl_ret: crate::UnityEngine::Experimental::GlobalIllumination::LinearColor = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Black", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Convert(
+        color: crate::UnityEngine::Color,
+        intensity: f32,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Experimental::GlobalIllumination::LinearColor,
+    > {
+        let __cordl_ret: crate::UnityEngine::Experimental::GlobalIllumination::LinearColor = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Convert", (color, intensity))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_blue(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

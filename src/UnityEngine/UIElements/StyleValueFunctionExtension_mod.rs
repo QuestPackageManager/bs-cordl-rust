@@ -24,7 +24,18 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::StyleValueFunctionEx
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleValueFunctionExtension")]
-impl crate::UnityEngine::UIElements::StyleValueFunctionExtension {}
+impl crate::UnityEngine::UIElements::StyleValueFunctionExtension {
+    pub fn ToUssString(
+        svf: crate::UnityEngine::UIElements::StyleValueFunction,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("ToUssString", (svf))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+StyleValueFunctionExtension")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::StyleValueFunctionExtension {

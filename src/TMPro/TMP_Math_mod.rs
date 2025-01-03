@@ -29,6 +29,16 @@ impl crate::TMPro::TMP_Math {
     pub const INT_UNSET: i32 = -32767i32;
     pub const _cordl_INT_MAX: i32 = 2147483647i32;
     pub const _cordl_INT_MIN: i32 = -2147483647i32;
+    pub fn Approximately(a: f32, b: f32) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Approximately", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _cordl_Mod(a: i32, b: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Mod", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "TMPro+TMP_Math")]
 impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_Math {

@@ -29,6 +29,21 @@ impl<T: quest_hook::libil2cpp::Type> crate::Unity::Collections::NativeArray_1<T>
     pub type Enumerator = crate::Unity::Collections::NativeArray_1_Enumerator<T>;
     #[cfg(feature = "Unity+Collections+NativeArray_1+ReadOnly")]
     pub type ReadOnly = crate::Unity::Collections::NativeArray_1_ReadOnly<T>;
+    pub fn Allocate(
+        length: i32,
+        allocator: crate::Unity::Collections::Allocator,
+        array: quest_hook::libil2cpp::ByRefMut<
+            crate::Unity::Collections::NativeArray_1<T>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Allocate", (length, allocator, array))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn AsReadOnly(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -60,6 +75,66 @@ impl<T: quest_hook::libil2cpp::Type> crate::Unity::Collections::NativeArray_1<T>
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn CopySafe_Il2CppArray_NativeArray_1_1(
+        src: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+        srcIndex: i32,
+        dst: crate::Unity::Collections::NativeArray_1<T>,
+        dstIndex: i32,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CopySafe", (src, srcIndex, dst, dstIndex, length))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CopySafe_NativeArray_1_Il2CppArray2(
+        src: crate::Unity::Collections::NativeArray_1<T>,
+        srcIndex: i32,
+        dst: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+        dstIndex: i32,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CopySafe", (src, srcIndex, dst, dstIndex, length))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CopySafe_NativeArray_1_NativeArray_1_0(
+        src: crate::Unity::Collections::NativeArray_1<T>,
+        srcIndex: i32,
+        dst: crate::Unity::Collections::NativeArray_1<T>,
+        dstIndex: i32,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CopySafe", (src, srcIndex, dst, dstIndex, length))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CopySafe_NativeArray_1_ReadOnly_Il2CppArray3(
+        src: crate::Unity::Collections::NativeArray_1_ReadOnly<T>,
+        srcIndex: i32,
+        dst: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+        dstIndex: i32,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CopySafe", (src, srcIndex, dst, dstIndex, length))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CopyTo(
         &mut self,
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
@@ -73,6 +148,96 @@ impl<T: quest_hook::libil2cpp::Type> crate::Unity::Collections::NativeArray_1<T>
             "CopyTo",
             (array),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Copy_Il2CppArray_NativeArray_1_1(
+        src: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+        dst: crate::Unity::Collections::NativeArray_1<T>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Copy", (src, dst))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Copy_NativeArray_1_Il2CppArray2(
+        src: crate::Unity::Collections::NativeArray_1<T>,
+        dst: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Copy", (src, dst))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Copy_NativeArray_1_Il2CppArray_i32_4(
+        src: crate::Unity::Collections::NativeArray_1<T>,
+        dst: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Copy", (src, dst, length))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Copy_NativeArray_1_NativeArray_1_0(
+        src: crate::Unity::Collections::NativeArray_1<T>,
+        dst: crate::Unity::Collections::NativeArray_1<T>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Copy", (src, dst))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Copy_NativeArray_1_NativeArray_1_i32_3(
+        src: crate::Unity::Collections::NativeArray_1<T>,
+        dst: crate::Unity::Collections::NativeArray_1<T>,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Copy", (src, dst, length))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Copy_NativeArray_1_ReadOnly_Il2CppArray_i32_5(
+        src: crate::Unity::Collections::NativeArray_1_ReadOnly<T>,
+        dst: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Copy", (src, dst, length))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Copy_NativeArray_1_i32_NativeArray_1_i32_i32_6(
+        src: crate::Unity::Collections::NativeArray_1<T>,
+        srcIndex: i32,
+        dst: crate::Unity::Collections::NativeArray_1<T>,
+        dstIndex: i32,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Copy", (src, srcIndex, dst, dstIndex, length))?;
         Ok(__cordl_ret.into())
     }
     pub fn Dispose_0(

@@ -823,6 +823,24 @@ impl<
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn Create() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::StylePropertyAnimationSystem_AnimationDataSet_2<
+            TTimingData,
+            TStyleData,
+        >,
+    >
+    where
+        TTimingData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TStyleData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: crate::UnityEngine::UIElements::StylePropertyAnimationSystem_AnimationDataSet_2<
+            TTimingData,
+            TStyleData,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Create", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetActivePropertiesForElement(
         &mut self,
         ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
@@ -1546,6 +1564,23 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgrou
             .invoke("ConvertUnits", (owner, prop, a, b))?;
         Ok(__cordl_ret.into())
     }
+    pub fn IsSame(
+        a: crate::UnityEngine::UIElements::BackgroundSize,
+        b: crate::UnityEngine::UIElements::BackgroundSize,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsSame", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Lerp(
+        a: crate::UnityEngine::UIElements::BackgroundSize,
+        b: crate::UnityEngine::UIElements::BackgroundSize,
+        t: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::BackgroundSize> {
+        let __cordl_ret: crate::UnityEngine::UIElements::BackgroundSize = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Lerp", (a, b, t))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -1668,6 +1703,23 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesColor {
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesColor")]
 impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesColor {
+    pub fn IsSame(
+        c: crate::UnityEngine::Color,
+        d: crate::UnityEngine::Color,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsSame", (c, d))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Lerp(
+        a: crate::UnityEngine::Color,
+        b: crate::UnityEngine::Color,
+        t: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_ret: crate::UnityEngine::Color = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Lerp", (a, b, t))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -1789,6 +1841,24 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesDiscrete_
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesDiscrete_1<T> {
+    pub fn IsSame(a: T, b: T) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsSame", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Lerp(a: T, b: T, t: f32) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Lerp", (a, b, t))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1887,6 +1957,16 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFloat {
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesFloat")]
 impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFloat {
+    pub fn IsSame(a: f32, b: f32) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsSame", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Lerp(a: f32, b: f32, t: f32) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Lerp", (a, b, t))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -2169,6 +2249,16 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesInt {
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesInt")]
 impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesInt {
+    pub fn IsSame(a: i32, b: i32) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsSame", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Lerp(a: i32, b: i32, t: f32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Lerp", (a, b, t))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -2293,6 +2383,23 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesLength {
             .invoke("ConvertUnits", (owner, prop, a, b))?;
         Ok(__cordl_ret.into())
     }
+    pub fn IsSame(
+        a: crate::UnityEngine::UIElements::Length,
+        b: crate::UnityEngine::UIElements::Length,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsSame", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Lerp(
+        a: crate::UnityEngine::UIElements::Length,
+        b: crate::UnityEngine::UIElements::Length,
+        t: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Length> {
+        let __cordl_ret: crate::UnityEngine::UIElements::Length = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Lerp", (a, b, t))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -2413,6 +2520,23 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesRotate {
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesRotate")]
 impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesRotate {
+    pub fn IsSame(
+        a: crate::UnityEngine::UIElements::Rotate,
+        b: crate::UnityEngine::UIElements::Rotate,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsSame", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Lerp(
+        a: crate::UnityEngine::UIElements::Rotate,
+        b: crate::UnityEngine::UIElements::Rotate,
+        t: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Rotate> {
+        let __cordl_ret: crate::UnityEngine::UIElements::Rotate = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Lerp", (a, b, t))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -2533,6 +2657,23 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesScale {
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesScale")]
 impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesScale {
+    pub fn IsSame(
+        a: crate::UnityEngine::UIElements::Scale,
+        b: crate::UnityEngine::UIElements::Scale,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsSame", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Lerp(
+        a: crate::UnityEngine::UIElements::Scale,
+        b: crate::UnityEngine::UIElements::Scale,
+        t: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Scale> {
+        let __cordl_ret: crate::UnityEngine::UIElements::Scale = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Lerp", (a, b, t))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -2653,6 +2794,23 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTextShado
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesTextShadow")]
 impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTextShadow {
+    pub fn IsSame(
+        a: crate::UnityEngine::UIElements::TextShadow,
+        b: crate::UnityEngine::UIElements::TextShadow,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsSame", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Lerp(
+        a: crate::UnityEngine::UIElements::TextShadow,
+        b: crate::UnityEngine::UIElements::TextShadow,
+        t: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::TextShadow> {
+        let __cordl_ret: crate::UnityEngine::UIElements::TextShadow = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Lerp", (a, b, t))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -2801,6 +2959,23 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTransfor
             .invoke("ConvertUnits", (owner, prop, a, b))?;
         Ok(__cordl_ret.into())
     }
+    pub fn IsSame(
+        a: crate::UnityEngine::UIElements::TransformOrigin,
+        b: crate::UnityEngine::UIElements::TransformOrigin,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsSame", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Lerp(
+        a: crate::UnityEngine::UIElements::TransformOrigin,
+        b: crate::UnityEngine::UIElements::TransformOrigin,
+        t: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::TransformOrigin> {
+        let __cordl_ret: crate::UnityEngine::UIElements::TransformOrigin = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Lerp", (a, b, t))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -2935,6 +3110,23 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTranslat
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("ConvertUnits", (owner, prop, a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsSame(
+        a: crate::UnityEngine::UIElements::Translate,
+        b: crate::UnityEngine::UIElements::Translate,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsSame", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Lerp(
+        a: crate::UnityEngine::UIElements::Translate,
+        b: crate::UnityEngine::UIElements::Translate,
+        t: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Translate> {
+        let __cordl_ret: crate::UnityEngine::UIElements::Translate = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Lerp", (a, b, t))?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -3727,6 +3919,24 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Clear", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPooledQueue() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Queue_1<
+                *mut crate::UnityEngine::UIElements::EventBase,
+            >,
+        >,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Queue_1<
+                *mut crate::UnityEngine::UIElements::EventBase,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetPooledQueue", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>

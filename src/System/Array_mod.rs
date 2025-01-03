@@ -39,6 +39,145 @@ impl crate::System::Array {
     pub type SorterGenericArray = crate::System::Array_SorterGenericArray;
     #[cfg(feature = "System+Array+SorterObjectArray")]
     pub type SorterObjectArray = crate::System::Array_SorterObjectArray;
+    pub fn AsReadOnly<T>(
+        array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<T>,
+        >,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<T>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AsReadOnly", (array))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn BinarySearch_Array_Il2CppObject0(
+        array: quest_hook::libil2cpp::Gc<crate::System::Array>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BinarySearch", (array, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn BinarySearch_Array_Il2CppObject_IComparer2(
+        array: quest_hook::libil2cpp::Gc<crate::System::Array>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        comparer: quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BinarySearch", (array, value, comparer))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn BinarySearch_Array_i32_i32_Il2CppObject1(
+        array: quest_hook::libil2cpp::Gc<crate::System::Array>,
+        index: i32,
+        length: i32,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BinarySearch", (array, index, length, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn BinarySearch_Array_i32_i32_Il2CppObject_IComparer3(
+        array: quest_hook::libil2cpp::Gc<crate::System::Array>,
+        index: i32,
+        length: i32,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        comparer: quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BinarySearch", (array, index, length, value, comparer))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn BinarySearch_Il2CppArray_T4<T>(
+        array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+        value: T,
+    ) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BinarySearch", (array, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn BinarySearch_Il2CppArray_T_IComparer_1_5<T>(
+        array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+        value: T,
+        comparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IComparer_1<T>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BinarySearch", (array, value, comparer))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn BinarySearch_Il2CppArray_i32_i32_T6<T>(
+        array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+        index: i32,
+        length: i32,
+        value: T,
+    ) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BinarySearch", (array, index, length, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn BinarySearch_Il2CppArray_i32_i32_T_IComparer_1_7<T>(
+        array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+        index: i32,
+        length: i32,
+        value: T,
+        comparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IComparer_1<T>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BinarySearch", (array, index, length, value, comparer))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CanAssignArrayElement(
+        source: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        target: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CanAssignArrayElement", (source, target))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Clear(
+        array: quest_hook::libil2cpp::Gc<crate::System::Array>,
+        index: i32,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Clear", (array, index, length))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ClearInternal(
+        a: quest_hook::libil2cpp::Gc<crate::System::Array>,
+        index: i32,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ClearInternal", (a, index, count))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Clone(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -50,6 +189,43 @@ impl crate::System::Array {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
         > = __cordl_object.invoke("Clone", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CombineHashCodes(h1: i32, h2: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CombineHashCodes", (h1, h2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ConstrainedCopy(
+        sourceArray: quest_hook::libil2cpp::Gc<crate::System::Array>,
+        sourceIndex: i32,
+        destinationArray: quest_hook::libil2cpp::Gc<crate::System::Array>,
+        destinationIndex: i32,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ConstrainedCopy",
+                (sourceArray, sourceIndex, destinationArray, destinationIndex, length),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ConvertAll<TInput, TOutput>(
+        array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TInput>>,
+        converter: quest_hook::libil2cpp::Gc<crate::System::Converter_2<TInput, TOutput>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TOutput>>,
+    >
+    where
+        TInput: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TOutput: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<TOutput>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ConvertAll", (array, converter))?;
         Ok(__cordl_ret.into())
     }
     pub fn CopyTo_i32_0(
@@ -74,6 +250,313 @@ impl crate::System::Array {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CopyTo", (array, index))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Copy_Array_i32_2(
+        sourceArray: quest_hook::libil2cpp::Gc<crate::System::Array>,
+        destinationArray: quest_hook::libil2cpp::Gc<crate::System::Array>,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Copy", (sourceArray, destinationArray, length))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Copy_Array_i64_0(
+        sourceArray: quest_hook::libil2cpp::Gc<crate::System::Array>,
+        destinationArray: quest_hook::libil2cpp::Gc<crate::System::Array>,
+        length: i64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Copy", (sourceArray, destinationArray, length))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Copy_i32_Array_i32_i32_3(
+        sourceArray: quest_hook::libil2cpp::Gc<crate::System::Array>,
+        sourceIndex: i32,
+        destinationArray: quest_hook::libil2cpp::Gc<crate::System::Array>,
+        destinationIndex: i32,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "Copy",
+                (sourceArray, sourceIndex, destinationArray, destinationIndex, length),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Copy_i64_Array_i64_i64_1(
+        sourceArray: quest_hook::libil2cpp::Gc<crate::System::Array>,
+        sourceIndex: i64,
+        destinationArray: quest_hook::libil2cpp::Gc<crate::System::Array>,
+        destinationIndex: i64,
+        length: i64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "Copy",
+                (sourceArray, sourceIndex, destinationArray, destinationIndex, length),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateArrayTypeMismatchException() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::ArrayTypeMismatchException>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::ArrayTypeMismatchException,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateArrayTypeMismatchException", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateInstanceImpl(
+        elementType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        lengths: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+        bounds: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Array>> {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Array> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateInstanceImpl", (elementType, lengths, bounds))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateInstance_Il2CppArray0(
+        elementType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        lengths: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i64>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Array>> {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Array> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateInstance", (elementType, lengths))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateInstance_Il2CppArray4(
+        elementType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        lengths: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Array>> {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Array> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateInstance", (elementType, lengths))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateInstance_Il2CppArray_Il2CppArray5(
+        elementType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        lengths: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+        lowerBounds: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Array>> {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Array> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateInstance", (elementType, lengths, lowerBounds))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateInstance_i32_1(
+        elementType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Array>> {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Array> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateInstance", (elementType, length))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateInstance_i32_i32_2(
+        elementType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        length1: i32,
+        length2: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Array>> {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Array> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateInstance", (elementType, length1, length2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateInstance_i32_i32_i32_3(
+        elementType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        length1: i32,
+        length2: i32,
+        length3: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Array>> {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Array> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateInstance", (elementType, length1, length2, length3))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Empty<T>() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<T>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Empty", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Exists<T>(
+        array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+        _cordl_match: quest_hook::libil2cpp::Gc<crate::System::Predicate_1<T>>,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Exists", (array, _cordl_match))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FastCopy(
+        source: quest_hook::libil2cpp::Gc<crate::System::Array>,
+        source_idx: i32,
+        dest: quest_hook::libil2cpp::Gc<crate::System::Array>,
+        dest_idx: i32,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FastCopy", (source, source_idx, dest, dest_idx, length))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Fill_Il2CppArray_T0<T>(
+        array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+        value: T,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Fill", (array, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Fill_i32_i32_1<T>(
+        array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+        value: T,
+        startIndex: i32,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Fill", (array, value, startIndex, count))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Find<T>(
+        array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+        _cordl_match: quest_hook::libil2cpp::Gc<crate::System::Predicate_1<T>>,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Find", (array, _cordl_match))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FindAll<T>(
+        array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+        _cordl_match: quest_hook::libil2cpp::Gc<crate::System::Predicate_1<T>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<T>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FindAll", (array, _cordl_match))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FindIndex_Predicate_1_0<T>(
+        array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+        _cordl_match: quest_hook::libil2cpp::Gc<crate::System::Predicate_1<T>>,
+    ) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FindIndex", (array, _cordl_match))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FindIndex_i32_Predicate_1_1<T>(
+        array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+        startIndex: i32,
+        _cordl_match: quest_hook::libil2cpp::Gc<crate::System::Predicate_1<T>>,
+    ) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FindIndex", (array, startIndex, _cordl_match))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FindIndex_i32_i32_Predicate_1_2<T>(
+        array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+        startIndex: i32,
+        count: i32,
+        _cordl_match: quest_hook::libil2cpp::Gc<crate::System::Predicate_1<T>>,
+    ) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FindIndex", (array, startIndex, count, _cordl_match))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FindLast<T>(
+        array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+        _cordl_match: quest_hook::libil2cpp::Gc<crate::System::Predicate_1<T>>,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FindLast", (array, _cordl_match))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FindLastIndex_Predicate_1_0<T>(
+        array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+        _cordl_match: quest_hook::libil2cpp::Gc<crate::System::Predicate_1<T>>,
+    ) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FindLastIndex", (array, _cordl_match))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FindLastIndex_i32_Predicate_1_1<T>(
+        array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+        startIndex: i32,
+        _cordl_match: quest_hook::libil2cpp::Gc<crate::System::Predicate_1<T>>,
+    ) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FindLastIndex", (array, startIndex, _cordl_match))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FindLastIndex_i32_i32_Predicate_1_2<T>(
+        array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+        startIndex: i32,
+        count: i32,
+        _cordl_match: quest_hook::libil2cpp::Gc<crate::System::Predicate_1<T>>,
+    ) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FindLastIndex", (array, startIndex, count, _cordl_match))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ForEach<T>(
+        array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+        action: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ForEach", (array, action))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetEnumerator(
@@ -130,6 +613,11 @@ impl crate::System::Array {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetLowerBound", (dimension))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetMedian(low: i32, hi: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetMedian", (low, hi))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetRank(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -289,6 +777,86 @@ impl crate::System::Array {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
         > = __cordl_object.invoke("GetValue", (index1, index2, index3))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IndexOfImpl<T>(
+        array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+        value: T,
+        startIndex: i32,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IndexOfImpl", (array, value, startIndex, count))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IndexOf_Array_Il2CppObject0(
+        array: quest_hook::libil2cpp::Gc<crate::System::Array>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IndexOf", (array, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IndexOf_Array_Il2CppObject_i32_1(
+        array: quest_hook::libil2cpp::Gc<crate::System::Array>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        startIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IndexOf", (array, value, startIndex))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IndexOf_Array_Il2CppObject_i32_i32_2(
+        array: quest_hook::libil2cpp::Gc<crate::System::Array>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        startIndex: i32,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IndexOf", (array, value, startIndex, count))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IndexOf_Il2CppArray_T3<T>(
+        array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+        value: T,
+    ) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IndexOf", (array, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IndexOf_Il2CppArray_T_i32_4<T>(
+        array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+        value: T,
+        startIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IndexOf", (array, value, startIndex))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IndexOf_Il2CppArray_T_i32_i32_5<T>(
+        array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+        value: T,
+        startIndex: i32,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IndexOf", (array, value, startIndex, count))?;
         Ok(__cordl_ret.into())
     }
     pub fn Initialize(
@@ -505,12 +1073,146 @@ impl crate::System::Array {
             .invoke("InternalArray__set_Item", (index, item))?;
         Ok(__cordl_ret.into())
     }
+    pub fn LastIndexOfImpl<T>(
+        array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+        value: T,
+        startIndex: i32,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LastIndexOfImpl", (array, value, startIndex, count))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LastIndexOf_Array_Il2CppObject0(
+        array: quest_hook::libil2cpp::Gc<crate::System::Array>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LastIndexOf", (array, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LastIndexOf_Array_Il2CppObject_i32_1(
+        array: quest_hook::libil2cpp::Gc<crate::System::Array>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        startIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LastIndexOf", (array, value, startIndex))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LastIndexOf_Array_Il2CppObject_i32_i32_2(
+        array: quest_hook::libil2cpp::Gc<crate::System::Array>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        startIndex: i32,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LastIndexOf", (array, value, startIndex, count))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LastIndexOf_Il2CppArray_T3<T>(
+        array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+        value: T,
+    ) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LastIndexOf", (array, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LastIndexOf_Il2CppArray_T_i32_4<T>(
+        array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+        value: T,
+        startIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LastIndexOf", (array, value, startIndex))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LastIndexOf_Il2CppArray_T_i32_i32_5<T>(
+        array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+        value: T,
+        startIndex: i32,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LastIndexOf", (array, value, startIndex, count))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
+    }
+    pub fn Resize<T>(
+        array: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<T>,
+        >,
+        newSize: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Resize", (array, newSize))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Reverse_Array0(
+        array: quest_hook::libil2cpp::Gc<crate::System::Array>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Reverse", (array))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Reverse_Array_i32_i32_1(
+        array: quest_hook::libil2cpp::Gc<crate::System::Array>,
+        index: i32,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Reverse", (array, index, length))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Reverse_Il2CppArray2<T>(
+        array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Reverse", (array))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Reverse_Il2CppArray_i32_i32_3<T>(
+        array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+        index: i32,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Reverse", (array, index, length))?;
+        Ok(__cordl_ret.into())
     }
     pub fn SetGenericValueImpl<T>(
         &mut self,
@@ -640,6 +1342,221 @@ impl crate::System::Array {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetValue", (value, index1, index2, index3))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SortImpl(
+        keys: quest_hook::libil2cpp::Gc<crate::System::Array>,
+        items: quest_hook::libil2cpp::Gc<crate::System::Array>,
+        index: i32,
+        length: i32,
+        comparer: quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SortImpl", (keys, items, index, length, comparer))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Sort_Array0(
+        array: quest_hook::libil2cpp::Gc<crate::System::Array>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Sort", (array))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Sort_Array_Array4(
+        keys: quest_hook::libil2cpp::Gc<crate::System::Array>,
+        items: quest_hook::libil2cpp::Gc<crate::System::Array>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Sort", (keys, items))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Sort_Array_Array_IComparer5(
+        keys: quest_hook::libil2cpp::Gc<crate::System::Array>,
+        items: quest_hook::libil2cpp::Gc<crate::System::Array>,
+        comparer: quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Sort", (keys, items, comparer))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Sort_Array_Array_i32_i32_6(
+        keys: quest_hook::libil2cpp::Gc<crate::System::Array>,
+        items: quest_hook::libil2cpp::Gc<crate::System::Array>,
+        index: i32,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Sort", (keys, items, index, length))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Sort_Array_Array_i32_i32_IComparer7(
+        keys: quest_hook::libil2cpp::Gc<crate::System::Array>,
+        items: quest_hook::libil2cpp::Gc<crate::System::Array>,
+        index: i32,
+        length: i32,
+        comparer: quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Sort", (keys, items, index, length, comparer))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Sort_Array_IComparer2(
+        array: quest_hook::libil2cpp::Gc<crate::System::Array>,
+        comparer: quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Sort", (array, comparer))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Sort_Array_i32_i32_1(
+        array: quest_hook::libil2cpp::Gc<crate::System::Array>,
+        index: i32,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Sort", (array, index, length))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Sort_Array_i32_i32_IComparer3(
+        array: quest_hook::libil2cpp::Gc<crate::System::Array>,
+        index: i32,
+        length: i32,
+        comparer: quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Sort", (array, index, length, comparer))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Sort_Il2CppArray8<T>(
+        array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Sort", (array))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Sort_Il2CppArray_Comparison_1_12<T>(
+        array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+        comparison: quest_hook::libil2cpp::Gc<crate::System::Comparison_1<T>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Sort", (array, comparison))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Sort_Il2CppArray_IComparer_1_10<T>(
+        array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+        comparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IComparer_1<T>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Sort", (array, comparer))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Sort_Il2CppArray_Il2CppArray13<TKey, TValue>(
+        keys: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TKey>>,
+        items: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TValue>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Sort", (keys, items))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Sort_Il2CppArray_Il2CppArray_IComparer_1_15<TKey, TValue>(
+        keys: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TKey>>,
+        items: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TValue>>,
+        comparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IComparer_1<TKey>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Sort", (keys, items, comparer))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Sort_Il2CppArray_Il2CppArray_i32_i32_14<TKey, TValue>(
+        keys: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TKey>>,
+        items: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TValue>>,
+        index: i32,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Sort", (keys, items, index, length))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Sort_Il2CppArray_Il2CppArray_i32_i32_IComparer_1_16<TKey, TValue>(
+        keys: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TKey>>,
+        items: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TValue>>,
+        index: i32,
+        length: i32,
+        comparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IComparer_1<TKey>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Sort", (keys, items, index, length, comparer))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Sort_Il2CppArray_i32_i32_9<T>(
+        array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+        index: i32,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Sort", (array, index, length))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Sort_Il2CppArray_i32_i32_IComparer_1_11<T>(
+        array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+        index: i32,
+        length: i32,
+        comparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IComparer_1<T>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Sort", (array, index, length, comparer))?;
         Ok(__cordl_ret.into())
     }
     pub fn System_Collections_ICollection_get_Count(
@@ -808,6 +1725,80 @@ impl crate::System::Array {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("System.Collections.IStructuralEquatable.GetHashCode", (comparer))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TrueForAll<T>(
+        array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+        _cordl_match: quest_hook::libil2cpp::Gc<crate::System::Predicate_1<T>>,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TrueForAll", (array, _cordl_match))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UnsafeCreateInstance_Il2CppArray2(
+        elementType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        lengths: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Array>> {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Array> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UnsafeCreateInstance", (elementType, lengths))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UnsafeCreateInstance_Il2CppArray_Il2CppArray0(
+        elementType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        lengths: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+        lowerBounds: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Array>> {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Array> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UnsafeCreateInstance", (elementType, lengths, lowerBounds))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UnsafeCreateInstance_i32_i32_1(
+        elementType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        length1: i32,
+        length2: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Array>> {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Array> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UnsafeCreateInstance", (elementType, length1, length2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UnsafeLoad<T>(
+        array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UnsafeLoad", (array, index))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UnsafeMov<S, R>(instance: S) -> quest_hook::libil2cpp::Result<R>
+    where
+        S: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        R: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: R = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UnsafeMov", (instance))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UnsafeStore<T>(
+        array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+        index: i32,
+        value: T,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UnsafeStore", (array, index, value))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

@@ -130,6 +130,14 @@ impl crate::GlobalNamespace::NoteCutInfoNetSerializable {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
+    pub fn Obtain() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteCutInfoNetSerializable>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::NoteCutInfoNetSerializable,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Obtain", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Serialize(
         &mut self,
         writer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,

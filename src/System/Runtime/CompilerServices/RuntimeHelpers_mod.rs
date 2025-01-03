@@ -24,7 +24,87 @@ impl std::ops::DerefMut for crate::System::Runtime::CompilerServices::RuntimeHel
     }
 }
 #[cfg(feature = "System+Runtime+CompilerServices+RuntimeHelpers")]
-impl crate::System::Runtime::CompilerServices::RuntimeHelpers {}
+impl crate::System::Runtime::CompilerServices::RuntimeHelpers {
+    pub fn GetHashCode(
+        o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetHashCode", (o))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetObjectValue(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetObjectValue", (obj))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InitializeArray_IntPtr0(
+        array: quest_hook::libil2cpp::Gc<crate::System::Array>,
+        fldHandle: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InitializeArray", (array, fldHandle))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InitializeArray_RuntimeFieldHandle1(
+        array: quest_hook::libil2cpp::Gc<crate::System::Array>,
+        fldHandle: crate::System::RuntimeFieldHandle,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InitializeArray", (array, fldHandle))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsReferenceOrContainsReferences<T>() -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsReferenceOrContainsReferences", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn PrepareConstrainedRegions() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PrepareConstrainedRegions", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RunClassConstructor_IntPtr0(
+        _cordl_type: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RunClassConstructor", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RunClassConstructor_RuntimeTypeHandle1(
+        _cordl_type: crate::System::RuntimeTypeHandle,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RunClassConstructor", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SufficientExecutionStack() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SufficientExecutionStack", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryEnsureSufficientExecutionStack() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryEnsureSufficientExecutionStack", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_OffsetToStringData() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_OffsetToStringData", ())?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Runtime+CompilerServices+RuntimeHelpers")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::CompilerServices::RuntimeHelpers {

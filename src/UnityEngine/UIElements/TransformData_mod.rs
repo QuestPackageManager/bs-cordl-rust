@@ -78,6 +78,14 @@ impl crate::UnityEngine::UIElements::TransformData {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Equality(
+        lhs: crate::UnityEngine::UIElements::TransformData,
+        rhs: crate::UnityEngine::UIElements::TransformData,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+UIElements+TransformData")]
 impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::TransformData>>

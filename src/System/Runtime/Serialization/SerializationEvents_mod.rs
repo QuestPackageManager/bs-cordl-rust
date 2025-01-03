@@ -37,6 +37,27 @@ impl std::ops::DerefMut for crate::System::Runtime::Serialization::Serialization
 }
 #[cfg(feature = "System+Runtime+Serialization+SerializationEvents")]
 impl crate::System::Runtime::Serialization::SerializationEvents {
+    pub fn AddOnDelegate(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        handler: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::SerializationEventHandler,
+        >,
+        methods: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::System::Reflection::MethodInfo,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::SerializationEventHandler,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::SerializationEventHandler,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddOnDelegate", (obj, handler, methods))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn AddOnDeserialized(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -94,6 +115,19 @@ impl crate::System::Runtime::Serialization::SerializationEvents {
                 *mut crate::System::Reflection::MethodInfo,
             >,
         > = __cordl_object.invoke("GetMethodsWithAttribute", (attribute, t))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InvokeOnDelegate(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        context: crate::System::Runtime::Serialization::StreamingContext,
+        methods: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::System::Reflection::MethodInfo,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InvokeOnDelegate", (obj, context, methods))?;
         Ok(__cordl_ret.into())
     }
     pub fn InvokeOnDeserialized(

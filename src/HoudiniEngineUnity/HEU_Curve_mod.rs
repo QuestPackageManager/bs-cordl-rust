@@ -49,6 +49,26 @@ impl crate::HoudiniEngineUnity::HEU_Curve {
     pub type __c__DisplayClass40_0 = crate::HoudiniEngineUnity::HEU_Curve___c__DisplayClass40_0;
     #[cfg(feature = "HoudiniEngineUnity+HEU_Curve+__c__DisplayClass48_0")]
     pub type __c__DisplayClass48_0 = crate::HoudiniEngineUnity::HEU_Curve___c__DisplayClass48_0;
+    pub fn CreateSetupCurve(
+        parentAsset: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_HoudiniAsset,
+        >,
+        isEditable: bool,
+        curveName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        geoID: i32,
+        bGeoCurve: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_Curve>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_Curve,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CreateSetupCurve",
+                (parentAsset, isEditable, curveName, geoID, bGeoCurve),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn DestroyAllData(
         &mut self,
         bIsRebuild: bool,
@@ -184,6 +204,34 @@ impl crate::HoudiniEngineUnity::HEU_Curve {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetNumPoints", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPointsString_List_1_0(
+        points: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::HoudiniEngineUnity::CurveNodeData,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPointsString", (points))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPointsString_List_1_1(
+        points: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPointsString", (points))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetTransformedPoint(

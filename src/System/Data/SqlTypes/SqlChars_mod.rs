@@ -46,6 +46,17 @@ impl crate::System::Data::SqlTypes::SqlChars {
         let __cordl_ret: bool = __cordl_object.invoke("FStream", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetXsdType(
+        schemaSet: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSet>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::XmlQualifiedName,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetXsdType", (schemaSet))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -202,6 +213,14 @@ impl crate::System::Data::SqlTypes::SqlChars {
             self,
         );
         let __cordl_ret: i64 = __cordl_object.invoke("get_Length", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Null() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Data::SqlTypes::SqlChars>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Data::SqlTypes::SqlChars,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_Null", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_Value(

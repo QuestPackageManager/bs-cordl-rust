@@ -43,6 +43,20 @@ impl crate::Org::BouncyCastle::X509::Store::X509CertPairStoreSelector {
         > = __cordl_object.invoke("Clone", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn CloneSelector(
+        s: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::X509::Store::X509CertStoreSelector,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::X509::Store::X509CertStoreSelector,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::X509::Store::X509CertStoreSelector,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("CloneSelector", (s))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Match(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

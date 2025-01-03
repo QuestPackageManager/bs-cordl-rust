@@ -47,6 +47,20 @@ impl crate::Org::BouncyCastle::Crypto::Tls::UrlAndHash {
             .invoke_void(".ctor", (url, sha1Hash))?;
         Ok(__cordl_object.into())
     }
+    pub fn Parse(
+        context: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
+        >,
+        input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::UrlAndHash>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::UrlAndHash,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Parse", (context, input))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
         url: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

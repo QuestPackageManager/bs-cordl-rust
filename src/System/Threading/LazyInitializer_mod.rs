@@ -23,7 +23,132 @@ impl std::ops::DerefMut for crate::System::Threading::LazyInitializer {
     }
 }
 #[cfg(feature = "System+Threading+LazyInitializer")]
-impl crate::System::Threading::LazyInitializer {}
+impl crate::System::Threading::LazyInitializer {
+    pub fn EnsureInitializedCore_ByRefMut0<T>(
+        target: quest_hook::libil2cpp::ByRefMut<T>,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EnsureInitializedCore", (target))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EnsureInitializedCore_ByRefMut_ByRefMut_Func_1_2<T>(
+        target: quest_hook::libil2cpp::ByRefMut<T>,
+        initialized: quest_hook::libil2cpp::ByRefMut<bool>,
+        syncLock: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
+        valueFactory: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "EnsureInitializedCore",
+                (target, initialized, syncLock, valueFactory),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EnsureInitializedCore_ByRefMut_Func_1_3<T>(
+        target: quest_hook::libil2cpp::ByRefMut<T>,
+        syncLock: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
+        valueFactory: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EnsureInitializedCore", (target, syncLock, valueFactory))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EnsureInitializedCore_Func_1_1<T>(
+        target: quest_hook::libil2cpp::ByRefMut<T>,
+        valueFactory: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EnsureInitializedCore", (target, valueFactory))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EnsureInitialized_ByRefMut0<T>(
+        target: quest_hook::libil2cpp::ByRefMut<T>,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EnsureInitialized", (target))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EnsureInitialized_ByRefMut_ByRefMut_Func_1_2<T>(
+        target: quest_hook::libil2cpp::ByRefMut<T>,
+        initialized: quest_hook::libil2cpp::ByRefMut<bool>,
+        syncLock: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
+        valueFactory: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EnsureInitialized", (target, initialized, syncLock, valueFactory))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EnsureInitialized_ByRefMut_Func_1_3<T>(
+        target: quest_hook::libil2cpp::ByRefMut<T>,
+        syncLock: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
+        valueFactory: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EnsureInitialized", (target, syncLock, valueFactory))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EnsureInitialized_Func_1_1<T>(
+        target: quest_hook::libil2cpp::ByRefMut<T>,
+        valueFactory: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EnsureInitialized", (target, valueFactory))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EnsureLockInitialized(
+        syncLock: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EnsureLockInitialized", (syncLock))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Threading+LazyInitializer")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Threading::LazyInitializer {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

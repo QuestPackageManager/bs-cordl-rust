@@ -23,7 +23,20 @@ impl std::ops::DerefMut for crate::UnityEngine::UI::Clipping {
     }
 }
 #[cfg(feature = "UnityEngine+UI+Clipping")]
-impl crate::UnityEngine::UI::Clipping {}
+impl crate::UnityEngine::UI::Clipping {
+    pub fn FindCullAndClipWorldRect(
+        rectMaskParents: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::UI::RectMask2D,
+            >,
+        >,
+        validRect: quest_hook::libil2cpp::ByRefMut<bool>,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rect> {
+        let __cordl_ret: crate::UnityEngine::Rect = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FindCullAndClipWorldRect", (rectMaskParents, validRect))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+UI+Clipping")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::Clipping {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

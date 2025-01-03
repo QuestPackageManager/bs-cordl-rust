@@ -287,6 +287,13 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
             )?;
         Ok(__cordl_ret.into())
     }
+    pub fn FlushAllPendingDeviceDisposes() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FlushAllPendingDeviceDisposes", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Free(
         &mut self,
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::MeshHandle>,
@@ -362,6 +369,20 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
             .invoke_void(".ctor", (initialVertexCapacity, initialIndexCapacity))?;
         Ok(__cordl_object.into())
     }
+    pub fn OnEngineUpdateGlobal() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("OnEngineUpdateGlobal", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn OnFlushPendingResources() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("OnFlushPendingResources", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn OnFrameRenderingBegin(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -372,6 +393,20 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
             .invoke("OnFrameRenderingBegin", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn PrepareForGfxDeviceRecreate() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PrepareForGfxDeviceRecreate", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ProcessDeviceFreeQueue() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ProcessDeviceFreeQueue", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn PruneUnusedPages(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -380,6 +415,18 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("PruneUnusedPages", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn PtrToSlice<T>(
+        p: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::NativeSlice_1<T>>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: crate::Unity::Collections::NativeSlice_1<T> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PtrToSlice", (p, count))?;
         Ok(__cordl_ret.into())
     }
     pub fn TryAllocFromPage(
@@ -514,6 +561,13 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
             .invoke("WaitOnCpuFence", (fence))?;
         Ok(__cordl_ret.into())
     }
+    pub fn WrapUpGfxDeviceRecreate() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WrapUpGfxDeviceRecreate", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor__cordl_bool1(
         &mut self,
         initialVertexCapacity: u32,
@@ -546,6 +600,20 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
         let __cordl_ret: bool = __cordl_object.invoke("get_breakBatches", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_defaultShaderInfoTexARGB8() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_defaultShaderInfoTexARGB8", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_defaultShaderInfoTexFloat() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_defaultShaderInfoTexFloat", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_disposed(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -565,6 +633,16 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
             self,
         );
         let __cordl_ret: u32 = __cordl_object.invoke("get_maxVerticesPerPage", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_shaderModelIs35() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_shaderModelIs35", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_vertexTexturingIsAvailable() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_vertexTexturingIsAvailable", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn set_breakBatches(

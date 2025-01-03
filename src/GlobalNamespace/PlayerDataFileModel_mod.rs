@@ -83,6 +83,23 @@ impl crate::GlobalNamespace::PlayerDataFileModel {
             .invoke("CreateDefaultPlayerData", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetBeatmapCharacteristicFromV_1_0_1LevelId(
+        beatmapCharacteristicCollection: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapCharacteristicCollection,
+        >,
+        levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapCharacteristicSO>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapCharacteristicSO,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetBeatmapCharacteristicFromV_1_0_1LevelId",
+                (beatmapCharacteristicCollection, levelId),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetEnvironmentInfoBySerializedName(
         &mut self,
         environmentName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -96,6 +113,23 @@ impl crate::GlobalNamespace::PlayerDataFileModel {
             crate::GlobalNamespace::EnvironmentInfoSO,
         > = __cordl_object
             .invoke("GetEnvironmentInfoBySerializedName", (environmentName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetLevelIdFromV_1_0_1LevelId(
+        oldLevelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        beatmapCharacteristic: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapCharacteristicSO,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetLevelIdFromV_1_0_1LevelId",
+                (oldLevelId, beatmapCharacteristic),
+            )?;
         Ok(__cordl_ret.into())
     }
     pub fn GetPlayerSaveData(

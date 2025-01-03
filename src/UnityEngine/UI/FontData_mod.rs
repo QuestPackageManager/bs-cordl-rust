@@ -100,6 +100,13 @@ impl crate::UnityEngine::UI::FontData {
         let __cordl_ret: bool = __cordl_object.invoke("get_bestFit", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_defaultFontData() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::FontData>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::FontData> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_defaultFontData", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_font(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

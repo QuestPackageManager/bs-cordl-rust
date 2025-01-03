@@ -157,6 +157,18 @@ impl crate::System::Reflection::RuntimePropertyInfo {
             .invoke("GetObjectData", (info, context))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetPropertyFromHandle(
+        handle: crate::Mono::RuntimePropertyHandle,
+        reflectedType: crate::System::RuntimeTypeHandle,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::PropertyInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPropertyFromHandle", (handle, reflectedType))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetRuntimeModule(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -222,6 +234,26 @@ impl crate::System::Reflection::RuntimePropertyInfo {
         > = __cordl_object.invoke("GetValue", (obj, index))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetterAdapterFrame<T, R>(
+        getter: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::RuntimePropertyInfo_Getter_2<T, R>,
+        >,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        R: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetterAdapterFrame", (getter, obj))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn IsDefined(
         &mut self,
         attributeType: quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -270,6 +302,24 @@ impl crate::System::Reflection::RuntimePropertyInfo {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetValue", (obj, value, invokeAttr, binder, index, culture))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StaticGetterAdapterFrame<R>(
+        getter: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::RuntimePropertyInfo_StaticGetter_1<R>,
+        >,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    >
+    where
+        R: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StaticGetterAdapterFrame", (getter, obj))?;
         Ok(__cordl_ret.into())
     }
     pub fn ToString(
@@ -391,6 +441,38 @@ impl crate::System::Reflection::RuntimePropertyInfo {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::RuntimeType> = __cordl_object
             .invoke("get_ReflectedTypeInternal", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_metadata_token(
+        monoProperty: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::RuntimePropertyInfo,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_metadata_token", (monoProperty))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_property_info(
+        prop: quest_hook::libil2cpp::Gc<crate::System::Reflection::RuntimePropertyInfo>,
+        info: quest_hook::libil2cpp::ByRefMut<
+            crate::System::Reflection::MonoPropertyInfo,
+        >,
+        req_info: crate::System::Reflection::PInfo,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_property_info", (prop, info, req_info))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn internal_from_handle_type(
+        event_handle: crate::System::IntPtr,
+        type_handle: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::PropertyInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("internal_from_handle_type", (event_handle, type_handle))?;
         Ok(__cordl_ret.into())
     }
 }

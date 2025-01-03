@@ -44,6 +44,33 @@ impl crate::System::Reflection::RuntimeAssembly {
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (o))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetAotId() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetAotId", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetAotIdInternal(
+        aotid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetAotIdInternal", (aotid))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCodeBase(
+        a: quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
+        escaped: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCodeBase", (a, escaped))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetCustomAttributes_Type__cordl_bool1(
         &mut self,
         attributeType: quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -196,6 +223,43 @@ impl crate::System::Reflection::RuntimeAssembly {
             .invoke("IsDefined", (attributeType, inherit))?;
         Ok(__cordl_ret.into())
     }
+    pub fn LoadWithPartialNameInternal_AssemblyName1(
+        an: quest_hook::libil2cpp::Gc<crate::System::Reflection::AssemblyName>,
+        securityEvidence: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Policy::Evidence,
+        >,
+        stackMark: quest_hook::libil2cpp::ByRefMut<
+            crate::System::Threading::StackCrawlMark,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Reflection::RuntimeAssembly>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::RuntimeAssembly,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LoadWithPartialNameInternal", (an, securityEvidence, stackMark))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LoadWithPartialNameInternal_Il2CppString0(
+        partialName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        securityEvidence: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Policy::Evidence,
+        >,
+        stackMark: quest_hook::libil2cpp::ByRefMut<
+            crate::System::Threading::StackCrawlMark,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Reflection::RuntimeAssembly>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::RuntimeAssembly,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "LoadWithPartialNameInternal",
+                (partialName, securityEvidence, stackMark),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -273,6 +337,28 @@ impl crate::System::Reflection::RuntimeAssembly {
         );
         let __cordl_ret: crate::System::IntPtr = __cordl_object
             .invoke("get_MonoAssembly", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_code_base(
+        a: quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
+        escaped: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_code_base", (a, escaped))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_fullname(
+        a: quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_fullname", (a))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_location(

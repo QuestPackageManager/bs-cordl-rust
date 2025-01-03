@@ -77,6 +77,13 @@ impl crate::System::Data::Common::TimeSpanStorage {
         > = __cordl_object.invoke("ConvertObjectToXml", (value))?;
         Ok(__cordl_ret.into())
     }
+    pub fn ConvertToTimeSpan(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
+        let __cordl_ret: crate::System::TimeSpan = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ConvertToTimeSpan", (value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ConvertValue(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

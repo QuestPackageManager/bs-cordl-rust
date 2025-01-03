@@ -256,6 +256,14 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             .invoke("CollectionsAreEqual", (coll1, coll2))?;
         Ok(__cordl_ret.into())
     }
+    pub fn CompareTo(
+        ip1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        ip2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CompareTo", (ip1, ip2))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Equals(
         &mut self,
         o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -264,6 +272,17 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (o))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ExtractHostFromURL(
+        url: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ExtractHostFromURL", (url))?;
         Ok(__cordl_ret.into())
     }
     pub fn ExtractIPsAndSubnetMasks(
@@ -701,6 +720,28 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             .invoke("IsUriConstrained", (constraint, uri))?;
         Ok(__cordl_ret.into())
     }
+    pub fn Max(
+        ip1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        ip2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Max", (ip1, ip2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Min(
+        ip1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        ip2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Min", (ip1, ip2))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn MinMaxIPs(
         &mut self,
         ip1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -730,6 +771,17 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
+    }
+    pub fn Or(
+        ip1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        ip2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Or", (ip1, ip2))?;
+        Ok(__cordl_ret.into())
     }
     pub fn SpecialEquals(
         &mut self,
@@ -935,6 +987,14 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Utilities::Collections::ISet,
         > = __cordl_object.invoke("UnionUri", (excluded, uri))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WithinDNSubtree(
+        dns: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
+        subtree: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WithinDNSubtree", (dns, subtree))?;
         Ok(__cordl_ret.into())
     }
     pub fn WithinDomain(

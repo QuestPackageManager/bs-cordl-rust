@@ -44,6 +44,20 @@ impl crate::UnityEngine::InputSystem::XR::XRLayoutBuilder {
         > = __cordl_object.invoke("Build", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn ConvertPotentialAliasToName(
+        layout: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Layouts::InputControlLayout,
+        >,
+        nameOrAlias: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ConvertPotentialAliasToName", (layout, nameOrAlias))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetParentControlName(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -56,6 +70,13 @@ impl crate::UnityEngine::InputSystem::XR::XRLayoutBuilder {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("GetParentControlName", (name))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetSizeOfFeature(
+        featureDescriptor: crate::UnityEngine::InputSystem::XR::XRFeatureDescriptor,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSizeOfFeature", (featureDescriptor))?;
         Ok(__cordl_ret.into())
     }
     pub fn IsPoseControl(
@@ -90,6 +111,38 @@ impl crate::UnityEngine::InputSystem::XR::XRLayoutBuilder {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
+    }
+    pub fn OnFindLayoutForDevice(
+        description: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription,
+        >,
+        matchedLayout: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        executeCommandDelegate: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::LowLevel::InputDeviceExecuteCommandDelegate,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "OnFindLayoutForDevice",
+                (description, matchedLayout, executeCommandDelegate),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SanitizeString(
+        original: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        allowPaths: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SanitizeString", (original, allowPaths))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,

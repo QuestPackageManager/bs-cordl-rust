@@ -28,6 +28,50 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputUpdate {
     pub type SerializedState = crate::UnityEngine::InputSystem::LowLevel::InputUpdate_SerializedState;
     #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputUpdate+UpdateStepCount")]
     pub type UpdateStepCount = crate::UnityEngine::InputSystem::LowLevel::InputUpdate_UpdateStepCount;
+    pub fn GetUpdateTypeForPlayer(
+        mask: crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::InputUpdateType = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetUpdateTypeForPlayer", (mask))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsPlayerUpdate(
+        updateType: crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsPlayerUpdate", (updateType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn OnBeforeUpdate(
+        _cordl_type: crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("OnBeforeUpdate", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn OnUpdate(
+        _cordl_type: crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("OnUpdate", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Restore(
+        state: crate::UnityEngine::InputSystem::LowLevel::InputUpdate_SerializedState,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Restore", (state))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Save() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::LowLevel::InputUpdate_SerializedState,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::InputUpdate_SerializedState = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Save", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputUpdate")]
 impl quest_hook::libil2cpp::ObjectType

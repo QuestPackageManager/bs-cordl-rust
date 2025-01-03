@@ -23,7 +23,23 @@ impl std::ops::DerefMut for crate::BeatSaber::AvatarCore::BinaryReadWriteHelper 
     }
 }
 #[cfg(feature = "BeatSaber+AvatarCore+BinaryReadWriteHelper")]
-impl crate::BeatSaber::AvatarCore::BinaryReadWriteHelper {}
+impl crate::BeatSaber::AvatarCore::BinaryReadWriteHelper {
+    pub fn ReadColor(
+        binaryReader: quest_hook::libil2cpp::Gc<crate::System::IO::BinaryReader>,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_ret: crate::UnityEngine::Color = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadColor", (binaryReader))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Write(
+        binaryWriter: quest_hook::libil2cpp::Gc<crate::System::IO::BinaryWriter>,
+        color: crate::UnityEngine::Color,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Write", (binaryWriter, color))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "BeatSaber+AvatarCore+BinaryReadWriteHelper")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatSaber::AvatarCore::BinaryReadWriteHelper {

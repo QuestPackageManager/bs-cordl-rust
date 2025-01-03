@@ -39,6 +39,14 @@ impl crate::GlobalNamespace::AudioClipAsyncLoader {
     pub type __c__DisplayClass13_0 = crate::GlobalNamespace::AudioClipAsyncLoader___c__DisplayClass13_0;
     #[cfg(feature = "AudioClipAsyncLoader+__c__DisplayClass14_0")]
     pub type __c__DisplayClass14_0 = crate::GlobalNamespace::AudioClipAsyncLoader___c__DisplayClass14_0;
+    pub fn CreateDefault() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AudioClipAsyncLoader>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::AudioClipAsyncLoader,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("CreateDefault", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetCacheKey_AudioClip0(
         &mut self,
         audioClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
@@ -181,6 +189,13 @@ impl crate::GlobalNamespace::AudioClipAsyncLoader {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<*mut crate::UnityEngine::AudioClip>,
         > = __cordl_object.invoke("Load", (cacheKey, loadMethodDelegate))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LogError(
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LogError", (message))?;
         Ok(__cordl_ret.into())
     }
     pub fn New(

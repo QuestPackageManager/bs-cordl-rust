@@ -23,7 +23,37 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::Experimental::Lerp {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Experimental+Lerp")]
-impl crate::UnityEngine::UIElements::Experimental::Lerp {}
+impl crate::UnityEngine::UIElements::Experimental::Lerp {
+    pub fn Interpolate_Color_Color1(
+        start: crate::UnityEngine::Color,
+        end: crate::UnityEngine::Color,
+        ratio: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_ret: crate::UnityEngine::Color = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Interpolate", (start, end, ratio))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Interpolate_StyleValues_StyleValues2(
+        start: crate::UnityEngine::UIElements::Experimental::StyleValues,
+        end: crate::UnityEngine::UIElements::Experimental::StyleValues,
+        ratio: f32,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::Experimental::StyleValues,
+    > {
+        let __cordl_ret: crate::UnityEngine::UIElements::Experimental::StyleValues = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Interpolate", (start, end, ratio))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Interpolate_f32_f32_0(
+        start: f32,
+        end: f32,
+        ratio: f32,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Interpolate", (start, end, ratio))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+Experimental+Lerp")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::Experimental::Lerp {

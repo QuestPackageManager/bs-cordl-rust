@@ -47,6 +47,16 @@ impl crate::Org::BouncyCastle::Asn1::Cmp::KeyRecRepContent {
         > = __cordl_object.invoke("GetCACerts", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetInstance(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cmp::KeyRecRepContent>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cmp::KeyRecRepContent,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetKeyPairHist(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

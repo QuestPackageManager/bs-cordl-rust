@@ -351,7 +351,19 @@ impl crate::GlobalNamespace::UnityXRHelper {
             .invoke("TriggerHapticPulse", (node, duration, strength, frequency))?;
         Ok(__cordl_ret.into())
     }
-    pub fn TryGetLegacyPoseOffsetForNode(
+    pub fn TryGetLegacyPoseOffsetForNode_UnityXRHelper_VRControllerManufacturerName1(
+        manufacturerName: crate::GlobalNamespace::UnityXRHelper_VRControllerManufacturerName,
+        position: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+        rotation: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "TryGetLegacyPoseOffsetForNode",
+                (manufacturerName, position, rotation),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryGetLegacyPoseOffsetForNode_XRNode0(
         &mut self,
         node: crate::UnityEngine::XR::XRNode,
         position: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,

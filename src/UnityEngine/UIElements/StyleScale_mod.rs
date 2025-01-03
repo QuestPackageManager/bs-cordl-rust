@@ -106,6 +106,21 @@ impl crate::UnityEngine::UIElements::StyleScale {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Equality(
+        lhs: crate::UnityEngine::UIElements::StyleScale,
+        rhs: crate::UnityEngine::UIElements::StyleScale,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit(
+        keyword: crate::UnityEngine::UIElements::StyleKeyword,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::StyleScale> {
+        let __cordl_ret: crate::UnityEngine::UIElements::StyleScale = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (keyword))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleScale")]
 impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleScale>>

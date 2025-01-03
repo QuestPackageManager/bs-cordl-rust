@@ -95,6 +95,14 @@ impl crate::Org::BouncyCastle::Crypto::Engines::CamelliaLightEngine {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn bytes2uint(
+        src: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        offset: i32,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("bytes2uint", (src, offset))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn camelliaF2(
         &mut self,
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
@@ -119,6 +127,28 @@ impl crate::Org::BouncyCastle::Crypto::Engines::CamelliaLightEngine {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("camelliaFLs", (s, fkey, keyoff))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn decroldq(
+        rot: i32,
+        ki: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+        ioff: i32,
+        ko: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+        ooff: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("decroldq", (rot, ki, ioff, ko, ooff))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn decroldqo32(
+        rot: i32,
+        ki: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+        ioff: i32,
+        ko: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+        ooff: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("decroldqo32", (rot, ki, ioff, ko, ooff))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_AlgorithmName(
@@ -148,6 +178,11 @@ impl crate::Org::BouncyCastle::Crypto::Engines::CamelliaLightEngine {
         let __cordl_ret: u8 = __cordl_object.invoke("lRot8", (v, rot))?;
         Ok(__cordl_ret.into())
     }
+    pub fn leftRotate(x: u32, s: i32) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("leftRotate", (x, s))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn processBlock128(
         &mut self,
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -174,6 +209,33 @@ impl crate::Org::BouncyCastle::Crypto::Engines::CamelliaLightEngine {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("processBlock192or256", (input, inOff, output, outOff))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn rightRotate(x: u32, s: i32) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("rightRotate", (x, s))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn roldq(
+        rot: i32,
+        ki: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+        ioff: i32,
+        ko: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+        ooff: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("roldq", (rot, ki, ioff, ko, ooff))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn roldqo32(
+        rot: i32,
+        ki: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+        ioff: i32,
+        ko: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+        ooff: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("roldqo32", (rot, ki, ioff, ko, ooff))?;
         Ok(__cordl_ret.into())
     }
     pub fn sbox2(&mut self, x: i32) -> quest_hook::libil2cpp::Result<u32> {
@@ -207,6 +269,15 @@ impl crate::Org::BouncyCastle::Crypto::Engines::CamelliaLightEngine {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("setKey", (forEncryption, key))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn uint2bytes(
+        word: u32,
+        dst: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        offset: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("uint2bytes", (word, dst, offset))?;
         Ok(__cordl_ret.into())
     }
 }

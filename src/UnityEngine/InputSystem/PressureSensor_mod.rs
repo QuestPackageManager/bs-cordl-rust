@@ -85,6 +85,14 @@ impl crate::UnityEngine::InputSystem::PressureSensor {
         > = __cordl_object.invoke("get_atmosphericPressure", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_current() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::PressureSensor>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::PressureSensor,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_current", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn set_atmosphericPressure(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
@@ -96,6 +104,13 @@ impl crate::UnityEngine::InputSystem::PressureSensor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_atmosphericPressure", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_current(
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::PressureSensor>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_current", (value))?;
         Ok(__cordl_ret.into())
     }
 }

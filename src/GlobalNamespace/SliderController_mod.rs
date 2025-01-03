@@ -285,6 +285,13 @@ impl crate::GlobalNamespace::SliderController {
             .invoke("FixedUpdate", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetSaberInteractionPoint(
+        saber: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Saber>,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSaberInteractionPoint", (saber))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn HandleFadeInDidStart(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

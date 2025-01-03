@@ -46,6 +46,94 @@ impl std::ops::DerefMut for crate::GlobalNamespace::SliderData {
 impl crate::GlobalNamespace::SliderData {
     #[cfg(feature = "SliderData+Type")]
     pub type Type = crate::GlobalNamespace::SliderData_Type;
+    pub fn CreateBurstSliderData(
+        colorType: crate::GlobalNamespace::ColorType,
+        headTime: f32,
+        headBeat: f32,
+        headRotation: i32,
+        headLineIndex: i32,
+        headLineLayer: crate::GlobalNamespace::NoteLineLayer,
+        headBeforeJumpLineLayer: crate::GlobalNamespace::NoteLineLayer,
+        headCutDirection: crate::GlobalNamespace::NoteCutDirection,
+        tailTime: f32,
+        tailRotation: i32,
+        tailLineIndex: i32,
+        tailLineLayer: crate::GlobalNamespace::NoteLineLayer,
+        tailBeforeJumpLineLayer: crate::GlobalNamespace::NoteLineLayer,
+        sliceCount: i32,
+        squishAmount: f32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderData>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderData> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CreateBurstSliderData",
+                (
+                    colorType,
+                    headTime,
+                    headBeat,
+                    headRotation,
+                    headLineIndex,
+                    headLineLayer,
+                    headBeforeJumpLineLayer,
+                    headCutDirection,
+                    tailTime,
+                    tailRotation,
+                    tailLineIndex,
+                    tailLineLayer,
+                    tailBeforeJumpLineLayer,
+                    sliceCount,
+                    squishAmount,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateSliderData(
+        colorType: crate::GlobalNamespace::ColorType,
+        headTime: f32,
+        headBeat: f32,
+        headRotation: i32,
+        headLineIndex: i32,
+        headLineLayer: crate::GlobalNamespace::NoteLineLayer,
+        headBeforeJumpLineLayer: crate::GlobalNamespace::NoteLineLayer,
+        headControlPointLengthMultiplier: f32,
+        headCutDirection: crate::GlobalNamespace::NoteCutDirection,
+        tailTime: f32,
+        tailRotation: i32,
+        tailLineIndex: i32,
+        tailLineLayer: crate::GlobalNamespace::NoteLineLayer,
+        tailBeforeJumpLineLayer: crate::GlobalNamespace::NoteLineLayer,
+        tailControlPointLengthMultiplier: f32,
+        tailCutDirection: crate::GlobalNamespace::NoteCutDirection,
+        midAnchorMode: crate::GlobalNamespace::SliderMidAnchorMode,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderData>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderData> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CreateSliderData",
+                (
+                    colorType,
+                    headTime,
+                    headBeat,
+                    headRotation,
+                    headLineIndex,
+                    headLineLayer,
+                    headBeforeJumpLineLayer,
+                    headControlPointLengthMultiplier,
+                    headCutDirection,
+                    tailTime,
+                    tailRotation,
+                    tailLineIndex,
+                    tailLineLayer,
+                    tailBeforeJumpLineLayer,
+                    tailControlPointLengthMultiplier,
+                    tailCutDirection,
+                    midAnchorMode,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetCopy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -187,6 +275,13 @@ impl crate::GlobalNamespace::SliderData {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetTailBeforeJumpLineLayer", (lineLayer))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SubtypeIdentifier(
+        colorType: crate::GlobalNamespace::ColorType,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SubtypeIdentifier", (colorType))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

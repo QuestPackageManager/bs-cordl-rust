@@ -116,6 +116,29 @@ impl crate::System::Threading::CancellationTokenSource {
             .invoke("CancellationCallbackCoreWork_OnSyncContext", (obj))?;
         Ok(__cordl_ret.into())
     }
+    pub fn CreateLinkedTokenSource_CancellationToken0(
+        token1: crate::System::Threading::CancellationToken,
+        token2: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::CancellationTokenSource>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::CancellationTokenSource,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateLinkedTokenSource", (token1, token2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateLinkedTokenSource_CancellationToken1(
+        token: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::CancellationTokenSource>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::CancellationTokenSource,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateLinkedTokenSource", (token))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Dispose_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -219,6 +242,20 @@ impl crate::System::Threading::CancellationTokenSource {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ThrowIfDisposed", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ThrowObjectDisposedException() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ThrowObjectDisposedException", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TimerCallbackLogic(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TimerCallbackLogic", (obj))?;
         Ok(__cordl_ret.into())
     }
     pub fn WaitForCallbackToComplete(

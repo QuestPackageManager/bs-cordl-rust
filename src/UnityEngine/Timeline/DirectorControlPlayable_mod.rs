@@ -27,6 +27,22 @@ impl std::ops::DerefMut for crate::UnityEngine::Timeline::DirectorControlPlayabl
 }
 #[cfg(feature = "UnityEngine+Timeline+DirectorControlPlayable")]
 impl crate::UnityEngine::Timeline::DirectorControlPlayable {
+    pub fn Create(
+        graph: crate::UnityEngine::Playables::PlayableGraph,
+        director: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Playables::PlayableDirector,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Playables::ScriptPlayable_1<
+            *mut crate::UnityEngine::Timeline::DirectorControlPlayable,
+        >,
+    > {
+        let __cordl_ret: crate::UnityEngine::Playables::ScriptPlayable_1<
+            *mut crate::UnityEngine::Timeline::DirectorControlPlayable,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (graph, director))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn DetectDiscontinuity(
         &mut self,
         playable: crate::UnityEngine::Playables::Playable,

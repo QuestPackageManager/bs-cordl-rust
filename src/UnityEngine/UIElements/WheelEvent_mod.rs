@@ -31,6 +31,44 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::WheelEvent {
 impl crate::UnityEngine::UIElements::WheelEvent {
     #[cfg(feature = "UnityEngine+UIElements+WheelEvent+__c")]
     pub type __c = crate::UnityEngine::UIElements::WheelEvent___c;
+    pub fn GetPooled_Event0(
+        systemEvent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Event>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::WheelEvent>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::WheelEvent,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPooled", (systemEvent))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPooled_Vector3_IPointerEvent2(
+        delta: crate::UnityEngine::Vector3,
+        pointerEvent: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::IPointerEvent,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::WheelEvent>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::WheelEvent,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPooled", (delta, pointerEvent))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPooled_Vector3_Vector3_EventModifiers1(
+        delta: crate::UnityEngine::Vector3,
+        mousePosition: crate::UnityEngine::Vector3,
+        modifiers: crate::UnityEngine::EventModifiers,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::WheelEvent>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::WheelEvent,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPooled", (delta, mousePosition, modifiers))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Init(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

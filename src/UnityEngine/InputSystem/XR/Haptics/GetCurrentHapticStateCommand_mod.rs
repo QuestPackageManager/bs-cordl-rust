@@ -24,6 +24,20 @@ for crate::UnityEngine::InputSystem::XR::Haptics::GetCurrentHapticStateCommand {
 #[cfg(feature = "UnityEngine+InputSystem+XR+Haptics+GetCurrentHapticStateCommand")]
 impl crate::UnityEngine::InputSystem::XR::Haptics::GetCurrentHapticStateCommand {
     pub const kSize: i32 = 16i32;
+    pub fn Create() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::XR::Haptics::GetCurrentHapticStateCommand,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::XR::Haptics::GetCurrentHapticStateCommand = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Type() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::FourCC,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_Type", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_currentState(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

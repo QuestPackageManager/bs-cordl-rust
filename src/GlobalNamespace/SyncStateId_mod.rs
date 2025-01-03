@@ -43,6 +43,21 @@ impl crate::GlobalNamespace::SyncStateId {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn Deserialize(
+        reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::SyncStateId> {
+        let __cordl_ret: crate::GlobalNamespace::SyncStateId = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Deserialize", (reader))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DeserializeWithFlag(
+        reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
+        flag: quest_hook::libil2cpp::ByRefMut<bool>,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::SyncStateId> {
+        let __cordl_ret: crate::GlobalNamespace::SyncStateId = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DeserializeWithFlag", (reader, flag))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Equals_Il2CppObject1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -125,6 +140,22 @@ impl crate::GlobalNamespace::SyncStateId {
             ".ctor",
             (id),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        a: crate::GlobalNamespace::SyncStateId,
+        b: crate::GlobalNamespace::SyncStateId,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        a: crate::GlobalNamespace::SyncStateId,
+        b: crate::GlobalNamespace::SyncStateId,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (a, b))?;
         Ok(__cordl_ret.into())
     }
 }

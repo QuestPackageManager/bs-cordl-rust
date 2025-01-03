@@ -26,6 +26,57 @@ impl std::ops::DerefMut for crate::HoudiniEngineUnity::Test_LODGroup_Extensions 
 impl crate::HoudiniEngineUnity::Test_LODGroup_Extensions {
     #[cfg(feature = "HoudiniEngineUnity+Test_LODGroup_Extensions+__c")]
     pub type __c = crate::HoudiniEngineUnity::Test_LODGroup_Extensions___c;
+    pub fn ToTestObject_Il2CppArray1(
+        _cordl_self: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::LODGroup>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::HoudiniEngineUnity::Test_LODGroup,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::HoudiniEngineUnity::Test_LODGroup,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToTestObject", (_cordl_self))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToTestObject_LODGroup0(
+        _cordl_self: quest_hook::libil2cpp::Gc<crate::UnityEngine::LODGroup>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_LODGroup>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::Test_LODGroup,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToTestObject", (_cordl_self))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToTestObject_List_1_2(
+        _cordl_self: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::LODGroup,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::HoudiniEngineUnity::Test_LODGroup,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::HoudiniEngineUnity::Test_LODGroup,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToTestObject", (_cordl_self))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "HoudiniEngineUnity+Test_LODGroup_Extensions")]
 impl quest_hook::libil2cpp::ObjectType

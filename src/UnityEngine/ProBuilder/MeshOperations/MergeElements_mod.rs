@@ -32,6 +32,64 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MergeElements {
         feature = "UnityEngine+ProBuilder+MeshOperations+MergeElements+__c__DisplayClass0_0"
     )]
     pub type __c__DisplayClass0_0 = crate::UnityEngine::ProBuilder::MeshOperations::MergeElements___c__DisplayClass0_0;
+    pub fn CollapseCoincidentVertices(
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+        faces: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::UnityEngine::ProBuilder::Face,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CollapseCoincidentVertices", (mesh, faces))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Merge(
+        target: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::ProBuilderMesh,
+        >,
+        faces: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::UnityEngine::ProBuilder::Face,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Face,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Merge", (target, faces))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MergePairs(
+        target: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::ProBuilderMesh,
+        >,
+        pairs: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::UnityEngine::ProBuilder::SimpleTuple_2<
+                    *mut crate::UnityEngine::ProBuilder::Face,
+                    *mut crate::UnityEngine::ProBuilder::Face,
+                >,
+            >,
+        >,
+        collapseCoincidentVertices: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::ProBuilder::Face,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::ProBuilder::Face,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MergePairs", (target, pairs, collapseCoincidentVertices))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+MergeElements")]
 impl quest_hook::libil2cpp::ObjectType

@@ -23,7 +23,23 @@ impl std::ops::DerefMut for crate::Microsoft::Win32::Win32Native {
     }
 }
 #[cfg(feature = "Microsoft+Win32+Win32Native")]
-impl crate::Microsoft::Win32::Win32Native {}
+impl crate::Microsoft::Win32::Win32Native {
+    pub fn GetMessage(
+        hr: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetMessage", (hr))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MakeHRFromErrorCode(errorCode: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MakeHRFromErrorCode", (errorCode))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "Microsoft+Win32+Win32Native")]
 impl quest_hook::libil2cpp::ObjectType for crate::Microsoft::Win32::Win32Native {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

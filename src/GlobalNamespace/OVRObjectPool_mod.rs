@@ -53,6 +53,123 @@ impl crate::GlobalNamespace::OVRObjectPool {
     pub type Storage_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::OVRObjectPool_Storage_1<
         T,
     >;
+    pub fn Dictionary<TKey, TValue>() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<TKey, TValue>,
+        >,
+    >
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<TKey, TValue>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Dictionary", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Get<T>() -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Get", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn HashSet<T>() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::HashSet_1<T>>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::HashSet_1<T>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("HashSet", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn List<T>() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<T>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("List", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Queue<T>() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::Queue_1<T>>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Queue_1<T>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Queue", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Return_HashSet_1_1<T>(
+        set: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::HashSet_1<T>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Return", (set))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Return_Queue_1_3<T>(
+        queue: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::Queue_1<T>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Return", (queue))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Return_Stack_1_2<T>(
+        stack: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::Stack_1<T>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Return", (stack))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Return_T0<T>(
+        obj: T,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Return", (obj))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Stack<T>() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::Stack_1<T>>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Stack_1<T>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Stack", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "OVRObjectPool")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRObjectPool {

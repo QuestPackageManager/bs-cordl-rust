@@ -24,6 +24,39 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::X509::PrincipalUtilities {
 }
 #[cfg(feature = "Org+BouncyCastle+X509+PrincipalUtilities")]
 impl crate::Org::BouncyCastle::X509::PrincipalUtilities {
+    pub fn GetIssuerX509Principal_X509Certificate0(
+        cert: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Certificate>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::X509Name>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::X509Name,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetIssuerX509Principal", (cert))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetIssuerX509Principal_X509Crl1(
+        crl: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Crl>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::X509Name>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::X509Name,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetIssuerX509Principal", (crl))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetSubjectX509Principal(
+        cert: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Certificate>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::X509Name>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::X509Name,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSubjectX509Principal", (cert))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

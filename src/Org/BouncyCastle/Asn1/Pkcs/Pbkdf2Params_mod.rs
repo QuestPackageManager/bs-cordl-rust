@@ -28,6 +28,16 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::Pkcs::Pbkdf2Params {
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Pkcs+Pbkdf2Params")]
 impl crate::Org::BouncyCastle::Asn1::Pkcs::Pbkdf2Params {
+    pub fn GetInstance(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Pkcs::Pbkdf2Params>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Pkcs::Pbkdf2Params,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetSalt(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

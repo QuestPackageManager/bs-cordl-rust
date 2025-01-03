@@ -32,6 +32,123 @@ impl crate::GlobalNamespace::X509CertificateUtility {
     pub type _GetCertificateList_d__9 = crate::GlobalNamespace::X509CertificateUtility__GetCertificateList_d__9;
     #[cfg(feature = "X509CertificateUtility+__c")]
     pub type __c = crate::GlobalNamespace::X509CertificateUtility___c;
+    pub fn GetCertificateEncryptionProvider(
+        privateKeyPem: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ICertificateEncryptionProvider>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ICertificateEncryptionProvider,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCertificateEncryptionProvider", (privateKeyPem, password))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCertificateList(
+        certificatePem: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        certificateChainPem: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCertificateList", (certificatePem, certificateChainPem))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetRSACertificateEncryptionProvider(
+        privateKeyPem: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        passwordFinder: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::X509CertificateUtility_PasswordFinder,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProvider,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProvider,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetRSACertificateEncryptionProvider",
+                (privateKeyPem, passwordFinder),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetRootCertificates() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetRootCertificates", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetRootCertificatesRaw() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetRootCertificatesRaw", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ValidateCertificateChain(
+        certificate: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
+        >,
+        certificateChain: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ValidateCertificateChain", (certificate, certificateChain))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ValidateCertificateChainDotNet(
+        certificate: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
+        >,
+        certificateChain: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ValidateCertificateChainDotNet", (certificate, certificateChain))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ValidateCertificateChainUnity(
+        certificate: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
+        >,
+        certificateChain: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ValidateCertificateChainUnity", (certificate, certificateChain))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "X509CertificateUtility")]
 impl quest_hook::libil2cpp::ObjectType

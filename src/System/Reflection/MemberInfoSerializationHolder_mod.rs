@@ -59,6 +59,50 @@ impl crate::System::Reflection::MemberInfoSerializationHolder {
         > = __cordl_object.invoke("GetRealObject", (context))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetSerializationInfo_Il2CppString_MemberTypes_Il2CppArray1(
+        info: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::SerializationInfo,
+        >,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        reflectedClass: quest_hook::libil2cpp::Gc<crate::System::RuntimeType>,
+        signature: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        signature2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        _cordl_type: crate::System::Reflection::MemberTypes,
+        genericArguments: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetSerializationInfo",
+                (
+                    info,
+                    name,
+                    reflectedClass,
+                    signature,
+                    signature2,
+                    _cordl_type,
+                    genericArguments,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetSerializationInfo_MemberTypes0(
+        info: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::SerializationInfo,
+        >,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        reflectedClass: quest_hook::libil2cpp::Gc<crate::System::RuntimeType>,
+        signature: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        _cordl_type: crate::System::Reflection::MemberTypes,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetSerializationInfo",
+                (info, name, reflectedClass, signature, _cordl_type),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         info: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Serialization::SerializationInfo,

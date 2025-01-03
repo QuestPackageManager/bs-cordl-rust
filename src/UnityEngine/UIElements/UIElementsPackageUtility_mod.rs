@@ -24,7 +24,41 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIElementsPackageUti
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIElementsPackageUtility")]
-impl crate::UnityEngine::UIElements::UIElementsPackageUtility {}
+impl crate::UnityEngine::UIElements::UIElementsPackageUtility {
+    pub fn Refresh() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Refresh", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_EditorResourcesBasePath() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_EditorResourcesBasePath", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_IsUIEPackageLoaded() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_IsUIEPackageLoaded", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_EditorResourcesBasePath(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_EditorResourcesBasePath", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_IsUIEPackageLoaded(
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_IsUIEPackageLoaded", (value))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+UIElementsPackageUtility")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::UIElementsPackageUtility {

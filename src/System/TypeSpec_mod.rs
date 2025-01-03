@@ -60,6 +60,14 @@ impl crate::System::TypeSpec {
             .invoke("AddName", (type_name))?;
         Ok(__cordl_ret.into())
     }
+    pub fn BoundCheck(
+        idx: i32,
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BoundCheck", (idx, s))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetDisplayFullName(
         &mut self,
         flags: crate::System::TypeSpec_DisplayNameFormat,
@@ -94,6 +102,36 @@ impl crate::System::TypeSpec {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
+    pub fn Parse_ByRefMut__cordl_bool__cordl_bool1(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        p: quest_hook::libil2cpp::ByRefMut<i32>,
+        is_recurse: bool,
+        allow_aqn: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::TypeSpec>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::TypeSpec> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Parse", (name, p, is_recurse, allow_aqn))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Parse_Il2CppString0(
+        typeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::TypeSpec>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::TypeSpec> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Parse", (typeName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ParsedTypeIdentifier(
+        displayName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::TypeIdentifier>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::TypeIdentifier> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ParsedTypeIdentifier", (displayName))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Resolve(
         &mut self,
         assemblyResolver: quest_hook::libil2cpp::Gc<
@@ -124,6 +162,25 @@ impl crate::System::TypeSpec {
                 "Resolve",
                 (assemblyResolver, typeResolver, throwOnError, ignoreCase, stackMark),
             )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SkipSpace(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        pos: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SkipSpace", (name, pos))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UnescapeInternalName(
+        displayName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UnescapeInternalName", (displayName))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

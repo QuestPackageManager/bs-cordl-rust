@@ -338,6 +338,22 @@ impl<
             .invoke("Reset", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn ShortenPath(
+        p: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        keepExtension: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    >
+    where
+        TObject: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ShortenPath", (p, keepExtension))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Start(
         &mut self,
         rm: quest_hook::libil2cpp::Gc<

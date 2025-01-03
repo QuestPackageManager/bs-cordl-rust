@@ -29,6 +29,20 @@ for crate::System::Collections::Generic::EqualityComparer_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::System::Collections::Generic::EqualityComparer_1<T> {
+    pub fn CreateComparer() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::EqualityComparer_1<T>,
+        >,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::EqualityComparer_1<T>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("CreateComparer", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Equals(&mut self, x: T, y: T) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -139,6 +153,20 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Default() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::EqualityComparer_1<T>,
+        >,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::EqualityComparer_1<T>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_Default", ())?;
         Ok(__cordl_ret.into())
     }
 }

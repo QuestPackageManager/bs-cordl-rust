@@ -23,7 +23,37 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::EventDispatchUtiliti
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+EventDispatchUtilities")]
-impl crate::UnityEngine::UIElements::EventDispatchUtilities {}
+impl crate::UnityEngine::UIElements::EventDispatchUtilities {
+    pub fn ExecuteDefaultAction(
+        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ExecuteDefaultAction", (evt))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn HandleEventAcrossPropagationPath(
+        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("HandleEventAcrossPropagationPath", (evt))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn PropagateEvent(
+        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PropagateEvent", (evt))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn PropagateToIMGUIContainer(
+        root: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PropagateToIMGUIContainer", (root, evt))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+EventDispatchUtilities")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::EventDispatchUtilities {

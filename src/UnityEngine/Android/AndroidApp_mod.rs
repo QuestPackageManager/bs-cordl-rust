@@ -23,7 +23,36 @@ impl std::ops::DerefMut for crate::UnityEngine::Android::AndroidApp {
     }
 }
 #[cfg(feature = "UnityEngine+Android+AndroidApp")]
-impl crate::UnityEngine::Android::AndroidApp {}
+impl crate::UnityEngine::Android::AndroidApp {
+    pub fn AcquireContextAndActivity() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AcquireContextAndActivity", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Activity() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AndroidJavaObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AndroidJavaObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_Activity", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Context() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AndroidJavaObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AndroidJavaObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_Context", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_UnityPlayerRaw() -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_UnityPlayerRaw", ())?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+Android+AndroidApp")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Android::AndroidApp {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

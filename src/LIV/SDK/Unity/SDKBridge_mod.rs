@@ -28,6 +28,268 @@ impl crate::LIV::SDK::Unity::SDKBridge {
     pub type SDKInjection_1<T: quest_hook::libil2cpp::Type> = crate::LIV::SDK::Unity::SDKBridge_SDKInjection_1<
         T,
     >;
+    pub fn AddObjectToChannel(
+        slot: i32,
+        obj: crate::System::IntPtr,
+        objectsize: i32,
+        tag: u64,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddObjectToChannel", (slot, obj, objectsize, tag))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddObjectToCompositorChannel(
+        slot: i32,
+        obj: crate::System::IntPtr,
+        objectsize: i32,
+        tag: u64,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddObjectToCompositorChannel", (slot, obj, objectsize, tag))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddObjectToFrame(
+        obj: crate::System::IntPtr,
+        objectsize: i32,
+        tag: u64,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddObjectToFrame", (obj, objectsize, tag))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddString(
+        tag: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        slot: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddString", (tag, value, slot))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddStringToChannel(
+        slot: i32,
+        str: crate::System::IntPtr,
+        length: i32,
+        tag: u64,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddStringToChannel", (slot, str, length, tag))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddStructToFrame<T>(
+        mystruct: quest_hook::libil2cpp::ByRefMut<T>,
+        tag: u64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddStructToFrame", (mystruct, tag))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddStructToGlobalChannel<T>(
+        mystruct: quest_hook::libil2cpp::ByRefMut<T>,
+        channel: i32,
+        tag: u64,
+    ) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddStructToGlobalChannel", (mystruct, channel, tag))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddStructToLocalChannel<T>(
+        mystruct: quest_hook::libil2cpp::ByRefMut<T>,
+        channel: i32,
+        tag: u64,
+    ) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddStructToLocalChannel", (mystruct, channel, tag))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddTexture_SDKTexture1(
+        texture: crate::LIV::SDK::Unity::SDKTexture,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddTexture", (texture))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddTexture_u64_0(
+        texture: crate::LIV::SDK::Unity::SDKTexture,
+        tag: u64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddTexture", (texture, tag))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateFrame(
+        frame: crate::LIV::SDK::Unity::SDKOutputFrame,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateFrame", (frame))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetChannelObject(
+        slot: i32,
+        tag: u64,
+        timestamp: u64,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetChannelObject", (slot, tag, timestamp))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCompositorChannelObject(
+        slot: i32,
+        tag: u64,
+        timestamp: u64,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCompositorChannelObject", (slot, tag, timestamp))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCurrentTime() -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCurrentTime", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCurrentTimeTicks() -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCurrentTimeTicks", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetIsCaptureActive() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetIsCaptureActive", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetObjectTime(
+        objectptr: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetObjectTime", (objectptr))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetObjectTimeStamp(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetObjectTimeStamp", (obj))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetRenderEventFunc() -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetRenderEventFunc", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetResolution(
+        sdkResolution: quest_hook::libil2cpp::ByRefMut<
+            crate::LIV::SDK::Unity::SDKResolution,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetResolution", (sdkResolution))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetStructFromGlobalChannel<T>(
+        mystruct: quest_hook::libil2cpp::ByRefMut<T>,
+        channel: i32,
+        tag: u64,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetStructFromGlobalChannel", (mystruct, channel, tag))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetStructFromLocalChannel<T>(
+        mystruct: quest_hook::libil2cpp::ByRefMut<T>,
+        channel: i32,
+        tag: u64,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetStructFromLocalChannel", (mystruct, channel, tag))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetViewfinderTexture() -> quest_hook::libil2cpp::Result<
+        crate::LIV::SDK::Unity::SDKTexture,
+    > {
+        let __cordl_ret: crate::LIV::SDK::Unity::SDKTexture = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetViewfinderTexture", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetViewportTexture() -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetViewportTexture", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IssuePluginEvent() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IssuePluginEvent", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetGroundPlane(
+        groundPlane: crate::LIV::SDK::Unity::SDKPlane,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetGroundPlane", (groundPlane))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SubmitApplicationOutput(
+        applicationOutput: crate::LIV::SDK::Unity::SDKApplicationOutput,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SubmitApplicationOutput", (applicationOutput))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Tag(
+        str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Tag", (str))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UpdateInputFrame(
+        setframe: quest_hook::libil2cpp::ByRefMut<crate::LIV::SDK::Unity::SDKInputFrame>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UpdateInputFrame", (setframe))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn addtexture(
+        sourcetexture: crate::System::IntPtr,
+        tag: u64,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("addtexture", (sourcetexture, tag))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_IsActive() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_IsActive", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn updatinputframe(
+        InputFrame: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("updatinputframe", (InputFrame))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "LIV+SDK+Unity+SDKBridge")]
 impl quest_hook::libil2cpp::ObjectType for crate::LIV::SDK::Unity::SDKBridge {

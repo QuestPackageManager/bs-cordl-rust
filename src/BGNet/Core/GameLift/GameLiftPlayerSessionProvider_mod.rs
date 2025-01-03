@@ -75,6 +75,17 @@ impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
         > = __cordl_object.invoke("GetAverageLatencies", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetAwsGameLiftRegionEndpoint(
+        awsRegion: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetAwsGameLiftRegionEndpoint", (awsRegion))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetGameLiftPlayerSessionInfo(
         &mut self,
         authenticationTokenProvider: quest_hook::libil2cpp::Gc<

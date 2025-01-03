@@ -79,6 +79,26 @@ impl crate::UnityEngine::UIElements::StyleVariableResolver {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
+    pub fn ParseVarFunction(
+        sheet: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheet>,
+        handles: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::UnityEngine::UIElements::StyleValueHandle,
+            >,
+        >,
+        index: quest_hook::libil2cpp::ByRefMut<i32>,
+        argCount: quest_hook::libil2cpp::ByRefMut<i32>,
+        variableName: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ParseVarFunction",
+                (sheet, handles, index, argCount, variableName),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn PopContext(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

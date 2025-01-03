@@ -23,7 +23,29 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OperationResultExtensions {
     }
 }
 #[cfg(feature = "OperationResultExtensions")]
-impl crate::GlobalNamespace::OperationResultExtensions {}
+impl crate::GlobalNamespace::OperationResultExtensions {
+    pub fn IsError(
+        res: crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsError", (res))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsSuccess(
+        res: crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsSuccess", (res))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsWarning(
+        res: crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsWarning", (res))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "OperationResultExtensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OperationResultExtensions {

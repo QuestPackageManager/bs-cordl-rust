@@ -46,6 +46,17 @@ impl crate::System::Xml::XmlAsyncCheckReader {
             .invoke("Close", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn CreateAsyncCheckWrapper(
+        reader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlAsyncCheckReader>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::XmlAsyncCheckReader,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateAsyncCheckWrapper", (reader))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Dispose(
         &mut self,
         disposing: bool,

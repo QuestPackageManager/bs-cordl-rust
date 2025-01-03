@@ -33,6 +33,62 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::SXprUtilities {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
+    pub fn ParseS2k(
+        input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::S2k>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::S2k,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("ParseS2k", (input))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReadBytes(
+        input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+        ch: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadBytes", (input, ch))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReadLength(
+        input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+        ch: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadLength", (input, ch))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReadString(
+        input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+        ch: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadString", (input, ch))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SkipCloseParenthesis(
+        input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SkipCloseParenthesis", (input))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SkipOpenParenthesis(
+        input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SkipOpenParenthesis", (input))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

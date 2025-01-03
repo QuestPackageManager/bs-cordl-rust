@@ -23,7 +23,32 @@ impl std::ops::DerefMut for crate::Mono::DependencyInjector {
     }
 }
 #[cfg(feature = "Mono+DependencyInjector")]
-impl crate::Mono::DependencyInjector {}
+impl crate::Mono::DependencyInjector {
+    pub fn ReflectionLoad() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Mono::ISystemDependencyProvider>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Mono::ISystemDependencyProvider,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("ReflectionLoad", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Register(
+        provider: quest_hook::libil2cpp::Gc<crate::Mono::ISystemDependencyProvider>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Register", (provider))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_SystemProvider() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Mono::ISystemDependencyProvider>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Mono::ISystemDependencyProvider,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_SystemProvider", ())?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "Mono+DependencyInjector")]
 impl quest_hook::libil2cpp::ObjectType for crate::Mono::DependencyInjector {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

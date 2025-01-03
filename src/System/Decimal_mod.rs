@@ -271,6 +271,39 @@ impl crate::System::Decimal {
     pub const SignMask: i32 = -2147483648i32;
     #[cfg(feature = "System+Decimal+DecCalc")]
     pub type DecCalc = crate::System::Decimal_DecCalc;
+    pub fn Abs(
+        d: quest_hook::libil2cpp::ByRefMut<crate::System::Decimal>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Decimal> {
+        let __cordl_ret: crate::System::Decimal = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Abs", (d))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Add(
+        d1: crate::System::Decimal,
+        d2: crate::System::Decimal,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Decimal> {
+        let __cordl_ret: crate::System::Decimal = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Add", (d1, d2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AsMutable(
+        d: quest_hook::libil2cpp::ByRefMut<crate::System::Decimal>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::ByRefMut<crate::System::Decimal_DecCalc>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<
+            crate::System::Decimal_DecCalc,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("AsMutable", (d))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Compare(
+        d1: crate::System::Decimal,
+        d2: crate::System::Decimal,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Compare", (d1, d2))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CompareTo_Decimal1(
         &mut self,
         value: crate::System::Decimal,
@@ -291,6 +324,21 @@ impl crate::System::Decimal {
             "CompareTo",
             (value),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DecDivMod1E9(
+        value: quest_hook::libil2cpp::ByRefMut<crate::System::Decimal>,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DecDivMod1E9", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Divide(
+        d1: crate::System::Decimal,
+        d2: crate::System::Decimal,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Decimal> {
+        let __cordl_ret: crate::System::Decimal = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Divide", (d1, d2))?;
         Ok(__cordl_ret.into())
     }
     pub fn Equals_Decimal1(
@@ -315,6 +363,16 @@ impl crate::System::Decimal {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetBits(
+        d: crate::System::Decimal,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<i32>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetBits", (d))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -331,6 +389,80 @@ impl crate::System::Decimal {
             "GetTypeCode",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsValid(flags: i32) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsValid", (flags))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Max(
+        d1: quest_hook::libil2cpp::ByRefMut<crate::System::Decimal>,
+        d2: quest_hook::libil2cpp::ByRefMut<crate::System::Decimal>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::ByRefMut<crate::System::Decimal>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<crate::System::Decimal> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Max", (d1, d2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Min(
+        d1: quest_hook::libil2cpp::ByRefMut<crate::System::Decimal>,
+        d2: quest_hook::libil2cpp::ByRefMut<crate::System::Decimal>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::ByRefMut<crate::System::Decimal>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<crate::System::Decimal> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Min", (d1, d2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Multiply(
+        d1: crate::System::Decimal,
+        d2: crate::System::Decimal,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Decimal> {
+        let __cordl_ret: crate::System::Decimal = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Multiply", (d1, d2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Negate(
+        d: crate::System::Decimal,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Decimal> {
+        let __cordl_ret: crate::System::Decimal = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Negate", (d))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Parse_IFormatProvider0(
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Decimal> {
+        let __cordl_ret: crate::System::Decimal = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Parse", (s, provider))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Parse_NumberStyles_IFormatProvider1(
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        style: crate::System::Globalization::NumberStyles,
+        provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Decimal> {
+        let __cordl_ret: crate::System::Decimal = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Parse", (s, style, provider))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Round_ByRefMut_MidpointRounding1(
+        d: quest_hook::libil2cpp::ByRefMut<crate::System::Decimal>,
+        decimals: i32,
+        mode: crate::System::MidpointRounding,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Decimal> {
+        let __cordl_ret: crate::System::Decimal = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Round", (d, decimals, mode))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Round_Decimal0(
+        d: crate::System::Decimal,
+        decimals: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Decimal> {
+        let __cordl_ret: crate::System::Decimal = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Round", (d, decimals))?;
         Ok(__cordl_ret.into())
     }
     pub fn System_IConvertible_ToBoolean(
@@ -514,6 +646,41 @@ impl crate::System::Decimal {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn ToByte(value: crate::System::Decimal) -> quest_hook::libil2cpp::Result<u8> {
+        let __cordl_ret: u8 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToByte", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToDouble(d: crate::System::Decimal) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_ret: f64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToDouble", (d))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToInt16(value: crate::System::Decimal) -> quest_hook::libil2cpp::Result<i16> {
+        let __cordl_ret: i16 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToInt16", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToInt32(d: crate::System::Decimal) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToInt32", (d))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToInt64(d: crate::System::Decimal) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToInt64", (d))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToSByte(value: crate::System::Decimal) -> quest_hook::libil2cpp::Result<i8> {
+        let __cordl_ret: i8 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToSByte", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToSingle(d: crate::System::Decimal) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToSingle", (d))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ToString_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -551,6 +718,37 @@ impl crate::System::Decimal {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn ToUInt16(
+        value: crate::System::Decimal,
+    ) -> quest_hook::libil2cpp::Result<u16> {
+        let __cordl_ret: u16 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToUInt16", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToUInt32(d: crate::System::Decimal) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToUInt32", (d))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToUInt64(d: crate::System::Decimal) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToUInt64", (d))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Truncate_ByRefMut1(
+        d: quest_hook::libil2cpp::ByRefMut<crate::System::Decimal>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Truncate", (d))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Truncate_Decimal0(
+        d: crate::System::Decimal,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Decimal> {
+        let __cordl_ret: crate::System::Decimal = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Truncate", (d))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn TryFormat(
         &mut self,
         destination: crate::System::Span_1<char>,
@@ -563,6 +761,16 @@ impl crate::System::Decimal {
             "TryFormat",
             (destination, charsWritten, format, provider),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryParse(
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        style: crate::System::Globalization::NumberStyles,
+        provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+        result: quest_hook::libil2cpp::ByRefMut<crate::System::Decimal>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryParse", (s, style, provider, result))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_ByRefMut_i32_8(
@@ -717,6 +925,212 @@ impl crate::System::Decimal {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Addition(
+        d1: crate::System::Decimal,
+        d2: crate::System::Decimal,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Decimal> {
+        let __cordl_ret: crate::System::Decimal = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Addition", (d1, d2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Division(
+        d1: crate::System::Decimal,
+        d2: crate::System::Decimal,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Decimal> {
+        let __cordl_ret: crate::System::Decimal = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Division", (d1, d2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        d1: crate::System::Decimal,
+        d2: crate::System::Decimal,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (d1, d2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Explicit_Decimal2(
+        value: crate::System::Decimal,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Explicit", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Explicit_Decimal3(
+        value: crate::System::Decimal,
+    ) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Explicit", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Explicit_Decimal4(
+        value: crate::System::Decimal,
+    ) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Explicit", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Explicit_Decimal5(
+        value: crate::System::Decimal,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Explicit", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Explicit_Decimal6(
+        value: crate::System::Decimal,
+    ) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_ret: f64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Explicit", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Explicit_f32_0(
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Decimal> {
+        let __cordl_ret: crate::System::Decimal = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Explicit", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Explicit_f64_1(
+        value: f64,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Decimal> {
+        let __cordl_ret: crate::System::Decimal = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Explicit", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_GreaterThan(
+        d1: crate::System::Decimal,
+        d2: crate::System::Decimal,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_GreaterThan", (d1, d2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_GreaterThanOrEqual(
+        d1: crate::System::Decimal,
+        d2: crate::System::Decimal,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_GreaterThanOrEqual", (d1, d2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit__cordl_char4(
+        value: char,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Decimal> {
+        let __cordl_ret: crate::System::Decimal = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_i16_2(
+        value: i16,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Decimal> {
+        let __cordl_ret: crate::System::Decimal = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_i32_5(
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Decimal> {
+        let __cordl_ret: crate::System::Decimal = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_i64_7(
+        value: i64,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Decimal> {
+        let __cordl_ret: crate::System::Decimal = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_i8_1(
+        value: i8,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Decimal> {
+        let __cordl_ret: crate::System::Decimal = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_u16_3(
+        value: u16,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Decimal> {
+        let __cordl_ret: crate::System::Decimal = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_u32_6(
+        value: u32,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Decimal> {
+        let __cordl_ret: crate::System::Decimal = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_u64_8(
+        value: u64,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Decimal> {
+        let __cordl_ret: crate::System::Decimal = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_u8_0(
+        value: u8,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Decimal> {
+        let __cordl_ret: crate::System::Decimal = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Increment(
+        d: crate::System::Decimal,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Decimal> {
+        let __cordl_ret: crate::System::Decimal = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Increment", (d))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        d1: crate::System::Decimal,
+        d2: crate::System::Decimal,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (d1, d2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_LessThan(
+        d1: crate::System::Decimal,
+        d2: crate::System::Decimal,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_LessThan", (d1, d2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_LessThanOrEqual(
+        d1: crate::System::Decimal,
+        d2: crate::System::Decimal,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_LessThanOrEqual", (d1, d2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Multiply(
+        d1: crate::System::Decimal,
+        d2: crate::System::Decimal,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Decimal> {
+        let __cordl_ret: crate::System::Decimal = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Multiply", (d1, d2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Subtraction(
+        d1: crate::System::Decimal,
+        d2: crate::System::Decimal,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Decimal> {
+        let __cordl_ret: crate::System::Decimal = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Subtraction", (d1, d2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_UnaryNegation(
+        d: crate::System::Decimal,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Decimal> {
+        let __cordl_ret: crate::System::Decimal = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_UnaryNegation", (d))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "System+Decimal")]
 impl AsRef<crate::System::IComparable> for crate::System::Decimal {
@@ -845,6 +1259,232 @@ impl crate::System::Decimal_DecCalc {
     pub type PowerOvfl = crate::System::DecCalc_Decimal_PowerOvfl;
     #[cfg(feature = "System+Decimal+DecCalc+RoundingMode")]
     pub type RoundingMode = crate::System::DecCalc_Decimal_RoundingMode;
+    pub fn Add32To96(
+        bufNum: quest_hook::libil2cpp::ByRefMut<crate::System::DecCalc_Decimal_Buf12>,
+        value: u32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Add32To96", (bufNum, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DecAddSub(
+        d1: quest_hook::libil2cpp::ByRefMut<crate::System::Decimal_DecCalc>,
+        d2: quest_hook::libil2cpp::ByRefMut<crate::System::Decimal_DecCalc>,
+        sign: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DecAddSub", (d1, d2, sign))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DecDivMod1E9(
+        value: quest_hook::libil2cpp::ByRefMut<crate::System::Decimal_DecCalc>,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DecDivMod1E9", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Div128By96(
+        bufNum: quest_hook::libil2cpp::ByRefMut<crate::System::DecCalc_Decimal_Buf16>,
+        bufDen: quest_hook::libil2cpp::ByRefMut<crate::System::DecCalc_Decimal_Buf12>,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Div128By96", (bufNum, bufDen))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Div96By32(
+        bufNum: quest_hook::libil2cpp::ByRefMut<crate::System::DecCalc_Decimal_Buf12>,
+        den: u32,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Div96By32", (bufNum, den))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Div96By64(
+        bufNum: quest_hook::libil2cpp::ByRefMut<crate::System::DecCalc_Decimal_Buf12>,
+        den: u64,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Div96By64", (bufNum, den))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Div96ByConst(
+        high64: quest_hook::libil2cpp::ByRefMut<u64>,
+        low: quest_hook::libil2cpp::ByRefMut<u32>,
+        pow: u32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Div96ByConst", (high64, low, pow))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DivByConst(
+        result: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        hiRes: u32,
+        quotient: quest_hook::libil2cpp::ByRefMut<u32>,
+        remainder: quest_hook::libil2cpp::ByRefMut<u32>,
+        power: u32,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DivByConst", (result, hiRes, quotient, remainder, power))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetExponent_f32_0(f: f32) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetExponent", (f))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetExponent_f64_1(d: f64) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetExponent", (d))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetHashCode(
+        d: quest_hook::libil2cpp::ByRefMut<crate::System::Decimal>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetHashCode", (d))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IncreaseScale(
+        bufNum: quest_hook::libil2cpp::ByRefMut<crate::System::DecCalc_Decimal_Buf12>,
+        power: u32,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IncreaseScale", (bufNum, power))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IncreaseScale64(
+        bufNum: quest_hook::libil2cpp::ByRefMut<crate::System::DecCalc_Decimal_Buf12>,
+        power: u32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IncreaseScale64", (bufNum, power))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InternalRound(
+        d: quest_hook::libil2cpp::ByRefMut<crate::System::Decimal_DecCalc>,
+        scale: u32,
+        mode: crate::System::DecCalc_Decimal_RoundingMode,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InternalRound", (d, scale, mode))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LeadingZeroCount(value: u32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LeadingZeroCount", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn OverflowUnscale(
+        bufQuo: quest_hook::libil2cpp::ByRefMut<crate::System::DecCalc_Decimal_Buf12>,
+        scale: i32,
+        sticky: bool,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("OverflowUnscale", (bufQuo, scale, sticky))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ScaleResult(
+        bufRes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        hiRes: u32,
+        scale: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ScaleResult", (bufRes, hiRes, scale))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SearchScale(
+        bufQuo: quest_hook::libil2cpp::ByRefMut<crate::System::DecCalc_Decimal_Buf12>,
+        scale: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SearchScale", (bufQuo, scale))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UInt32x32To64(a: u32, b: u32) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UInt32x32To64", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UInt64x64To128(
+        a: u64,
+        b: u64,
+        result: quest_hook::libil2cpp::ByRefMut<crate::System::Decimal_DecCalc>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UInt64x64To128", (a, b, result))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Unscale(
+        low: quest_hook::libil2cpp::ByRefMut<u32>,
+        high64: quest_hook::libil2cpp::ByRefMut<u64>,
+        scale: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Unscale", (low, high64, scale))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn VarDecCmp(
+        d1: quest_hook::libil2cpp::ByRefMut<crate::System::Decimal>,
+        d2: quest_hook::libil2cpp::ByRefMut<crate::System::Decimal>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("VarDecCmp", (d1, d2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn VarDecCmpSub(
+        d1: quest_hook::libil2cpp::ByRefMut<crate::System::Decimal>,
+        d2: quest_hook::libil2cpp::ByRefMut<crate::System::Decimal>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("VarDecCmpSub", (d1, d2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn VarDecDiv(
+        d1: quest_hook::libil2cpp::ByRefMut<crate::System::Decimal_DecCalc>,
+        d2: quest_hook::libil2cpp::ByRefMut<crate::System::Decimal_DecCalc>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("VarDecDiv", (d1, d2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn VarDecFromR4(
+        input: f32,
+        result: quest_hook::libil2cpp::ByRefMut<crate::System::Decimal_DecCalc>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("VarDecFromR4", (input, result))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn VarDecFromR8(
+        input: f64,
+        result: quest_hook::libil2cpp::ByRefMut<crate::System::Decimal_DecCalc>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("VarDecFromR8", (input, result))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn VarDecMul(
+        d1: quest_hook::libil2cpp::ByRefMut<crate::System::Decimal_DecCalc>,
+        d2: quest_hook::libil2cpp::ByRefMut<crate::System::Decimal_DecCalc>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("VarDecMul", (d1, d2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn VarR4FromDec(
+        value: quest_hook::libil2cpp::ByRefMut<crate::System::Decimal>,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("VarR4FromDec", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn VarR8FromDec(
+        value: quest_hook::libil2cpp::ByRefMut<crate::System::Decimal>,
+    ) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_ret: f64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("VarR8FromDec", (value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_High(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_ret: u32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

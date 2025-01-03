@@ -92,6 +92,16 @@ impl crate::GlobalNamespace::OVRSpaceQuery_Options {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn ValidateSingleFilter(
+        uuidFilter: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<crate::System::Guid>,
+        >,
+        componentFilter: crate::GlobalNamespace::OVRPlugin_SpaceComponentType,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ValidateSingleFilter", (uuidFilter, componentFilter))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
         other: crate::GlobalNamespace::OVRSpaceQuery_Options,

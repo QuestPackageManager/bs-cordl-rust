@@ -1033,6 +1033,13 @@ impl crate::UnityEngine::InputSystem::InputManager {
             .invoke("RemoveStateChangeMonitors", (device))?;
         Ok(__cordl_ret.into())
     }
+    pub fn ResetControlPathsRecursive(
+        control: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ResetControlPathsRecursive", (control))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ResetDevice(
         &mut self,
         device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,

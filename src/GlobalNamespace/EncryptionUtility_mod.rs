@@ -40,6 +40,110 @@ impl crate::GlobalNamespace::EncryptionUtility {
     type IEncryptionState = crate::GlobalNamespace::EncryptionUtility_IEncryptionState;
     #[cfg(feature = "EncryptionUtility+__c__DisplayClass18_0")]
     pub type __c__DisplayClass18_0 = crate::GlobalNamespace::EncryptionUtility___c__DisplayClass18_0;
+    pub fn CreateEncryptionState(
+        preMasterSecret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        >,
+        serverSeed: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        clientSeed: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        isClient: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CreateEncryptionState",
+                (preMasterSecret, serverSeed, clientSeed, isClient),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateEncryptionStateAsync(
+        taskUtility: quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITaskUtility>,
+        preMasterSecret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        >,
+        serverSeed: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        clientSeed: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        isClient: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CreateEncryptionStateAsync",
+                (taskUtility, preMasterSecret, serverSeed, clientSeed, isClient),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EncryptData(
+        state: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::EncryptionUtility_EncryptionState,
+        >,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        offset: quest_hook::libil2cpp::ByRefMut<i32>,
+        length: quest_hook::libil2cpp::ByRefMut<i32>,
+        extraPrefixedData: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EncryptData", (state, data, offset, length, extraPrefixedData))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FastCopyBlock(
+        inArr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        inOff: i32,
+        outArr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        outOff: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FastCopyBlock", (inArr, inOff, outArr, outOff))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FastCopyMac(
+        inArr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        inOff: i32,
+        outArr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        outOff: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FastCopyMac", (inArr, inOff, outArr, outOff))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsValidLength(length: i32) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsValidLength", (length))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Log(
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Log", (message))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryDecryptData(
+        state: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::EncryptionUtility_EncryptionState,
+        >,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        offset: quest_hook::libil2cpp::ByRefMut<i32>,
+        length: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryDecryptData", (state, data, offset, length))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "EncryptionUtility")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::EncryptionUtility {
@@ -167,6 +271,19 @@ impl crate::GlobalNamespace::EncryptionUtility_EncryptionState {
             .invoke("IsValidSequenceNum", (sequenceNum))?;
         Ok(__cordl_ret.into())
     }
+    pub fn MakeSeed(
+        baseSeed: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        serverSeed: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        clientSeed: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MakeSeed", (baseSeed, serverSeed, clientSeed))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         preMasterSecret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -180,6 +297,28 @@ impl crate::GlobalNamespace::EncryptionUtility_EncryptionState {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (preMasterSecret, serverSeed, clientSeed, isClient))?;
         Ok(__cordl_object.into())
+    }
+    pub fn PRF(
+        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        seed: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PRF", (key, seed, length))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn PRF_Hash(
+        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        seed: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        length: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PRF_Hash", (key, seed, length))?;
+        Ok(__cordl_ret.into())
     }
     pub fn PutSequenceNum(
         &mut self,

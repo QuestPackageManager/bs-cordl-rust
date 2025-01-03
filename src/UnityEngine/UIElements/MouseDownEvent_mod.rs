@@ -30,6 +30,32 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::MouseDownEvent {
 impl crate::UnityEngine::UIElements::MouseDownEvent {
     #[cfg(feature = "UnityEngine+UIElements+MouseDownEvent+__c")]
     pub type __c = crate::UnityEngine::UIElements::MouseDownEvent___c;
+    pub fn GetPooled_PointerDownEvent0(
+        pointerEvent: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::PointerDownEvent,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MouseDownEvent>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::MouseDownEvent,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPooled", (pointerEvent))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPooled_PointerMoveEvent1(
+        pointerEvent: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::PointerMoveEvent,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MouseDownEvent>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::MouseDownEvent,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPooled", (pointerEvent))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Init(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -48,6 +74,19 @@ impl crate::UnityEngine::UIElements::MouseDownEvent {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("LocalInit", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MakeFromPointerEvent(
+        pointerEvent: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::IPointerEvent,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MouseDownEvent>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::MouseDownEvent,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MakeFromPointerEvent", (pointerEvent))?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

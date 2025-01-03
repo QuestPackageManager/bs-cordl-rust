@@ -58,6 +58,61 @@ impl std::ops::DerefMut for crate::TMPro::TMP_Settings {
 impl crate::TMPro::TMP_Settings {
     #[cfg(feature = "TMPro+TMP_Settings+LineBreakingTable")]
     pub type LineBreakingTable = crate::TMPro::TMP_Settings_LineBreakingTable;
+    pub fn GetCharacters(
+        file: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<i32, char>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<i32, char>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCharacters", (file))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetFontAsset() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetFontAsset", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetSettings() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Settings>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Settings> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSettings", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetSpriteAsset() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSpriteAsset", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetStyleSheet() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_StyleSheet>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_StyleSheet> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetStyleSheet", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LoadDefaultSettings() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Settings>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Settings> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LoadDefaultSettings", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LoadLinebreakingRules() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LoadLinebreakingRules", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -73,6 +128,253 @@ impl crate::TMPro::TMP_Settings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_autoSizeTextContainer() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_autoSizeTextContainer", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_defaultColorGradientPresetsPath() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_defaultColorGradientPresetsPath", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_defaultFontAsset() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_defaultFontAsset", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_defaultFontAssetPath() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_defaultFontAssetPath", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_defaultFontSize() -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_defaultFontSize", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_defaultSpriteAsset() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_defaultSpriteAsset", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_defaultSpriteAssetPath() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_defaultSpriteAssetPath", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_defaultStyleSheet() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_StyleSheet>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_StyleSheet> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_defaultStyleSheet", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_defaultTextAutoSizingMaxRatio() -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_defaultTextAutoSizingMaxRatio", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_defaultTextAutoSizingMinRatio() -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_defaultTextAutoSizingMinRatio", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_defaultTextMeshProTextContainerSize() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Vector2,
+    > {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_defaultTextMeshProTextContainerSize", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_defaultTextMeshProUITextContainerSize() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Vector2,
+    > {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_defaultTextMeshProUITextContainerSize", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_enableEmojiSupport() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_enableEmojiSupport", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_enableExtraPadding() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_enableExtraPadding", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_enableKerning() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_enableKerning", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_enableParseEscapeCharacters() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_enableParseEscapeCharacters", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_enableRaycastTarget() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_enableRaycastTarget", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_enableTintAllSprites() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_enableTintAllSprites", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_enableWordWrapping() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_enableWordWrapping", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_fallbackFontAssets() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<*mut crate::TMPro::TMP_FontAsset>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<*mut crate::TMPro::TMP_FontAsset>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_fallbackFontAssets", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_followingCharacters() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_followingCharacters", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_getFontFeaturesAtRuntime() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_getFontFeaturesAtRuntime", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_instance() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Settings>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Settings> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_instance", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_isTextObjectScaleStatic() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_isTextObjectScaleStatic", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_leadingCharacters() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_leadingCharacters", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_linebreakingRules() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Settings_LineBreakingTable>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::TMPro::TMP_Settings_LineBreakingTable,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_linebreakingRules", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_matchMaterialPreset() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_matchMaterialPreset", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_missingCharacterSpriteUnicode() -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_missingCharacterSpriteUnicode", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_missingGlyphCharacter() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_missingGlyphCharacter", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_styleSheetsResourcePath() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_styleSheetsResourcePath", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_useModernHangulLineBreakingRules() -> quest_hook::libil2cpp::Result<
+        bool,
+    > {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_useModernHangulLineBreakingRules", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_version() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_version", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_warningsDisabled() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_warningsDisabled", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_enableEmojiSupport(
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_enableEmojiSupport", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_isTextObjectScaleStatic(
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_isTextObjectScaleStatic", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_missingCharacterSpriteUnicode(
+        value: u32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_missingCharacterSpriteUnicode", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_missingGlyphCharacter(
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_missingGlyphCharacter", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_useModernHangulLineBreakingRules(
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_useModernHangulLineBreakingRules", (value))?;
         Ok(__cordl_ret.into())
     }
 }

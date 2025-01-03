@@ -73,6 +73,11 @@ impl crate::UnityEngine::UIElements::UIRAtlasAllocator {
             .invoke("Dispose", (disposing))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetLog2OfNextPower(n: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetLog2OfNextPower", (n))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         initialAtlasSize: i32,
         maxAtlasSize: i32,
@@ -294,6 +299,18 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIRAtlasAllocator_Ar
 impl crate::UnityEngine::UIElements::UIRAtlasAllocator_AreaNode {
     #[cfg(feature = "UnityEngine+UIElements+UIRAtlasAllocator+AreaNode+__c")]
     pub type __c = crate::UnityEngine::UIElements::AreaNode_UIRAtlasAllocator___c;
+    pub fn Acquire(
+        rect: crate::UnityEngine::RectInt,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UIRAtlasAllocator_AreaNode,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UIRAtlasAllocator_AreaNode,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Acquire", (rect))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn AddAfter(
         &mut self,
         previous: quest_hook::libil2cpp::Gc<
@@ -388,6 +405,20 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIRAtlasAllocator_Ro
 impl crate::UnityEngine::UIElements::UIRAtlasAllocator_Row {
     #[cfg(feature = "UnityEngine+UIElements+UIRAtlasAllocator+Row+__c")]
     pub type __c = crate::UnityEngine::UIElements::Row_UIRAtlasAllocator___c;
+    pub fn Acquire(
+        offsetX: i32,
+        offsetY: i32,
+        width: i32,
+        height: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIRAtlasAllocator_Row>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UIRAtlasAllocator_Row,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Acquire", (offsetX, offsetY, width, height))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

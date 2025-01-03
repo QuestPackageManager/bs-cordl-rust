@@ -27,6 +27,19 @@ for crate::Org::BouncyCastle::X509::Extension::SubjectKeyIdentifierStructure {
 }
 #[cfg(feature = "Org+BouncyCastle+X509+Extension+SubjectKeyIdentifierStructure")]
 impl crate::Org::BouncyCastle::X509::Extension::SubjectKeyIdentifierStructure {
+    pub fn FromPublicKey(
+        pubKey: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1OctetString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1OctetString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromPublicKey", (pubKey))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_Asn1OctetString0(
         encodedValue: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Asn1OctetString,

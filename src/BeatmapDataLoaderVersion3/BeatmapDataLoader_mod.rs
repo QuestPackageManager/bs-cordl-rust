@@ -99,6 +99,222 @@ impl crate::BeatmapDataLoaderVersion3::BeatmapDataLoader {
     pub type __c__DisplayClass3_0 = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader___c__DisplayClass3_0;
     #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+__c__DisplayClass4_0")]
     pub type __c__DisplayClass4_0 = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader___c__DisplayClass4_0;
+    pub fn ConvertBasicEvents(
+        beatmapData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapData>,
+        beatmapSaveData: quest_hook::libil2cpp::Gc<
+            crate::BeatmapSaveDataVersion3::BeatmapSaveData,
+        >,
+        bpmTimeProcessor: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BpmTimeProcessor,
+        >,
+        rotationTimeProcessor: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::RotationTimeProcessor,
+        >,
+        environmentKeywords: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::EnvironmentKeywords,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ConvertBasicEvents",
+                (
+                    beatmapData,
+                    beatmapSaveData,
+                    bpmTimeProcessor,
+                    rotationTimeProcessor,
+                    environmentKeywords,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ConvertEventBoxGroups(
+        beatmapData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapData>,
+        beatmapSaveData: quest_hook::libil2cpp::Gc<
+            crate::BeatmapSaveDataVersion3::BeatmapSaveData,
+        >,
+        bpmTimeProcessor: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BpmTimeProcessor,
+        >,
+        environmentLightGroups: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IEnvironmentLightGroups,
+        >,
+        lightEventConverter: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IBeatmapLightEventConverter,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ConvertEventBoxGroups",
+                (
+                    beatmapData,
+                    beatmapSaveData,
+                    bpmTimeProcessor,
+                    environmentLightGroups,
+                    lightEventConverter,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetBeatmapDataBasicInfoFromSaveDataJson(
+        beatmapJson: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataBasicInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapDataBasicInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetBeatmapDataBasicInfoFromSaveDataJson", (beatmapJson))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetBeatmapDataBasicInfoFromSaveDataJsonAsync(
+        beatmapJson: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut crate::GlobalNamespace::BeatmapDataBasicInfo,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut crate::GlobalNamespace::BeatmapDataBasicInfo,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetBeatmapDataBasicInfoFromSaveDataJsonAsync", (beatmapJson))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetBeatmapDataFromSaveData(
+        beatmapSaveData: quest_hook::libil2cpp::Gc<
+            crate::BeatmapSaveDataVersion3::BeatmapSaveData,
+        >,
+        defaultLightshowSaveData: quest_hook::libil2cpp::Gc<
+            crate::BeatmapSaveDataVersion4::LightshowSaveData,
+        >,
+        beatmapDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
+        startBpm: f32,
+        loadingForDesignatedEnvironment: bool,
+        environmentKeywords: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::EnvironmentKeywords,
+        >,
+        environmentLightGroups: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IEnvironmentLightGroups,
+        >,
+        playerSpecificSettings: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerSpecificSettings,
+        >,
+        lightEventConverter: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IBeatmapLightEventConverter,
+        >,
+        stopwatch: quest_hook::libil2cpp::Gc<crate::System::Diagnostics::Stopwatch>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapData>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapData,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetBeatmapDataFromSaveData",
+                (
+                    beatmapSaveData,
+                    defaultLightshowSaveData,
+                    beatmapDifficulty,
+                    startBpm,
+                    loadingForDesignatedEnvironment,
+                    environmentKeywords,
+                    environmentLightGroups,
+                    playerSpecificSettings,
+                    lightEventConverter,
+                    stopwatch,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetBeatmapDataFromSaveDataJson(
+        beatmapJson: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        defaultLightshowJson: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+        beatmapDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
+        startBpm: f32,
+        loadingForDesignatedEnvironment: bool,
+        environmentInfo: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IEnvironmentInfo,
+        >,
+        beatmapLevelDataVersion: crate::GlobalNamespace::BeatmapLevelDataVersion,
+        playerSpecificSettings: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerSpecificSettings,
+        >,
+        lightEventConverter: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IBeatmapLightEventConverter,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapData>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapData,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetBeatmapDataFromSaveDataJson",
+                (
+                    beatmapJson,
+                    defaultLightshowJson,
+                    beatmapDifficulty,
+                    startBpm,
+                    loadingForDesignatedEnvironment,
+                    environmentInfo,
+                    beatmapLevelDataVersion,
+                    playerSpecificSettings,
+                    lightEventConverter,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetBeatmapDataFromSaveDataJsonAsync(
+        beatmapJson: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        defaultLightshowJson: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+        beatmapDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
+        startBpm: f32,
+        loadingForDesignatedEnvironment: bool,
+        environmentInfo: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IEnvironmentInfo,
+        >,
+        beatmapLevelDataVersion: crate::GlobalNamespace::BeatmapLevelDataVersion,
+        playerSpecificSettings: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerSpecificSettings,
+        >,
+        lightEventConverter: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IBeatmapLightEventConverter,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut crate::GlobalNamespace::BeatmapData,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut crate::GlobalNamespace::BeatmapData,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetBeatmapDataFromSaveDataJsonAsync",
+                (
+                    beatmapJson,
+                    defaultLightshowJson,
+                    beatmapDifficulty,
+                    startBpm,
+                    loadingForDesignatedEnvironment,
+                    environmentInfo,
+                    beatmapLevelDataVersion,
+                    playerSpecificSettings,
+                    lightEventConverter,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -770,7 +986,22 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_FloatVfxBaseDataConverto
     }
 }
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+FloatVfxBaseDataConvertor")]
-impl crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_FloatVfxBaseDataConvertor {}
+impl crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_FloatVfxBaseDataConvertor {
+    pub fn Convert(
+        vfxEventBaseData: i32,
+        collection: quest_hook::libil2cpp::Gc<
+            crate::BeatmapSaveDataVersion3::FxEventsCollection,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FloatFxBaseData>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::FloatFxBaseData,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Convert", (vfxEventBaseData, collection))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+FloatVfxBaseDataConvertor")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_FloatVfxBaseDataConvertor {
@@ -889,7 +1120,22 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_IndexFilterConverter {
     }
 }
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+IndexFilterConverter")]
-impl crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_IndexFilterConverter {}
+impl crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_IndexFilterConverter {
+    pub fn Convert(
+        indexFilter: quest_hook::libil2cpp::Gc<
+            crate::BeatmapSaveDataVersion3::IndexFilter,
+        >,
+        groupSize: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IndexFilter>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IndexFilter,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Convert", (indexFilter, groupSize))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+IndexFilterConverter")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_IndexFilterConverter {
@@ -928,7 +1174,22 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_IntVfxBaseDataConvertor 
     }
 }
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+IntVfxBaseDataConvertor")]
-impl crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_IntVfxBaseDataConvertor {}
+impl crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_IntVfxBaseDataConvertor {
+    pub fn Convert(
+        vfxEventBaseData: i32,
+        collection: quest_hook::libil2cpp::Gc<
+            crate::BeatmapSaveDataVersion3::FxEventsCollection,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IntFxBaseData>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IntFxBaseData,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Convert", (vfxEventBaseData, collection))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+IntVfxBaseDataConvertor")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_IntVfxBaseDataConvertor {
@@ -1057,7 +1318,21 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightColoBaseDataConvert
 #[cfg(
     feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+LightColoBaseDataConvertor"
 )]
-impl crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightColoBaseDataConvertor {}
+impl crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightColoBaseDataConvertor {
+    pub fn Convert(
+        saveData: quest_hook::libil2cpp::Gc<
+            crate::BeatmapSaveDataVersion3::LightColorBaseData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightColorBaseData>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::LightColorBaseData,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Convert", (saveData))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(
     feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+LightColoBaseDataConvertor"
 )]
@@ -1109,6 +1384,20 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightColorEventBoxConver
     feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+LightColorEventBoxConverter"
 )]
 impl crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightColorEventBoxConverter {
+    pub fn Convert(
+        saveData: quest_hook::libil2cpp::Gc<
+            crate::BeatmapSaveDataVersion3::LightColorEventBox,
+        >,
+        lightGroupData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILightGroup>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventDataBox>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapEventDataBox,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Convert", (saveData, lightGroupData))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -1177,7 +1466,21 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightRotationBaseDataCon
 #[cfg(
     feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+LightRotationBaseDataConvertor"
 )]
-impl crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightRotationBaseDataConvertor {}
+impl crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightRotationBaseDataConvertor {
+    pub fn Convert(
+        saveData: quest_hook::libil2cpp::Gc<
+            crate::BeatmapSaveDataVersion3::LightRotationBaseData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightRotationBaseData>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::LightRotationBaseData,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Convert", (saveData))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(
     feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+LightRotationBaseDataConvertor"
 )]
@@ -1229,6 +1532,20 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightRotationEventBoxCon
     feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+LightRotationEventBoxConverter"
 )]
 impl crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightRotationEventBoxConverter {
+    pub fn Convert(
+        saveData: quest_hook::libil2cpp::Gc<
+            crate::BeatmapSaveDataVersion3::LightRotationEventBox,
+        >,
+        lightGroupData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILightGroup>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventDataBox>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapEventDataBox,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Convert", (saveData, lightGroupData))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -1297,7 +1614,21 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightTranslationBaseData
 #[cfg(
     feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+LightTranslationBaseDataConvertor"
 )]
-impl crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightTranslationBaseDataConvertor {}
+impl crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightTranslationBaseDataConvertor {
+    pub fn Convert(
+        saveData: quest_hook::libil2cpp::Gc<
+            crate::BeatmapSaveDataVersion3::LightTranslationBaseData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightTranslationBaseData>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::LightTranslationBaseData,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Convert", (saveData))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(
     feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+LightTranslationBaseDataConvertor"
 )]
@@ -1349,6 +1680,20 @@ for crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightTranslationEventBox
     feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+LightTranslationEventBoxConverter"
 )]
 impl crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_LightTranslationEventBoxConverter {
+    pub fn Convert(
+        saveData: quest_hook::libil2cpp::Gc<
+            crate::BeatmapSaveDataVersion3::LightTranslationEventBox,
+        >,
+        lightGroupData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILightGroup>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventDataBox>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapEventDataBox,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Convert", (saveData, lightGroupData))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -1422,6 +1767,13 @@ impl crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_ObstacleConverter {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BeatmapObjectData,
         > = __cordl_object.invoke("Convert", (obstacleSaveData))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetNoteLineLayer(
+        lineLayer: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NoteLineLayer> {
+        let __cordl_ret: crate::GlobalNamespace::NoteLineLayer = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetNoteLineLayer", (lineLayer))?;
         Ok(__cordl_ret.into())
     }
     pub fn New(

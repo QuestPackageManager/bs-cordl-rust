@@ -27,6 +27,19 @@ impl std::ops::DerefMut for crate::System::Net::ContentDecodeStream {
 impl crate::System::Net::ContentDecodeStream {
     #[cfg(feature = "System+Net+ContentDecodeStream+Mode")]
     pub type Mode = crate::System::Net::ContentDecodeStream_Mode;
+    pub fn Create(
+        operation: quest_hook::libil2cpp::Gc<crate::System::Net::WebOperation>,
+        innerStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+        mode: crate::System::Net::ContentDecodeStream_Mode,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Net::ContentDecodeStream>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Net::ContentDecodeStream,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (operation, innerStream, mode))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn FinishReading(
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,

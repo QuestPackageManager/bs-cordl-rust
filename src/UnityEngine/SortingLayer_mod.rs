@@ -20,4 +20,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::SortingL
     }
 }
 #[cfg(feature = "UnityEngine+SortingLayer")]
-impl crate::UnityEngine::SortingLayer {}
+impl crate::UnityEngine::SortingLayer {
+    pub fn GetLayerValueFromID(id: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetLayerValueFromID", (id))?;
+        Ok(__cordl_ret.into())
+    }
+}

@@ -36,6 +36,24 @@ impl crate::UnityEngine::Playables::PlayableAsset {
             .invoke("CreatePlayable", (graph, owner))?;
         Ok(__cordl_ret.into())
     }
+    pub fn Internal_CreatePlayable(
+        asset: quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::PlayableAsset>,
+        graph: crate::UnityEngine::Playables::PlayableGraph,
+        go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        ptr: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Internal_CreatePlayable", (asset, graph, go, ptr))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Internal_GetPlayableAssetDuration(
+        asset: quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::PlayableAsset>,
+        ptrToDouble: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Internal_GetPlayableAssetDuration", (asset, ptrToDouble))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

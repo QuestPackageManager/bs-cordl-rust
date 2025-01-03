@@ -40,6 +40,45 @@ impl<
 > crate::UnityEngine::Pool::CollectionPool_2<TCollection, TItem> {
     #[cfg(feature = "UnityEngine+Pool+CollectionPool_2+__c")]
     pub type __c = crate::UnityEngine::Pool::CollectionPool_2___c<TCollection, TItem>;
+    pub fn Get_0() -> quest_hook::libil2cpp::Result<TCollection>
+    where
+        TCollection: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TItem: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: TCollection = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Get", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Get_ByRefMut1(
+        value: quest_hook::libil2cpp::ByRefMut<TCollection>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Pool::PooledObject_1<TCollection>,
+    >
+    where
+        TCollection: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TItem: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: crate::UnityEngine::Pool::PooledObject_1<TCollection> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Get", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Release(
+        toRelease: TCollection,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TCollection: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TItem: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Release", (toRelease))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+Pool+CollectionPool_2")]
 impl<

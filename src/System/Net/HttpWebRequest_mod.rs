@@ -185,6 +185,13 @@ impl crate::System::Net::HttpWebRequest {
             .invoke("CheckRequestStarted", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn CreateRequestAbortedException() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Net::WebException>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::WebException> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateRequestAbortedException", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn DoContinueDelegate(
         &mut self,
         statusCode: i32,
@@ -231,6 +238,15 @@ impl crate::System::Net::HttpWebRequest {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::WebResponse> = __cordl_object
             .invoke("EndGetResponse", (asyncResult))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FlattenException(
+        e: quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FlattenException", (e))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetHeaders(
@@ -368,7 +384,7 @@ impl crate::System::Net::HttpWebRequest {
             .invoke("GetServicePoint", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetWebException(
+    pub fn GetWebException_Exception0(
         &mut self,
         e: quest_hook::libil2cpp::Gc<crate::System::Exception>,
     ) -> quest_hook::libil2cpp::Result<
@@ -379,6 +395,16 @@ impl crate::System::Net::HttpWebRequest {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::WebException> = __cordl_object
             .invoke("GetWebException", (e))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetWebException__cordl_bool1(
+        e: quest_hook::libil2cpp::Gc<crate::System::Exception>,
+        aborted: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Net::WebException>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::WebException> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetWebException", (e, aborted))?;
         Ok(__cordl_ret.into())
     }
     pub fn HandleNtlmAuth(
@@ -513,7 +539,28 @@ impl crate::System::Net::HttpWebRequest {
             .invoke("RewriteRedirectToGet", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn RunWithTimeout<T>(
+    pub fn RunWithTimeoutWorker<T>(
+        workerTask: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<T>,
+        >,
+        timeout: i32,
+        abort: quest_hook::libil2cpp::Gc<crate::System::Action>,
+        aborted: quest_hook::libil2cpp::Gc<crate::System::Func_1<bool>>,
+        cts: quest_hook::libil2cpp::Gc<crate::System::Threading::CancellationTokenSource>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<T>>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<T>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RunWithTimeoutWorker", (workerTask, timeout, abort, aborted, cts))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RunWithTimeout_Func_2_1<T>(
         &mut self,
         func: quest_hook::libil2cpp::Gc<
             crate::System::Func_2<
@@ -534,6 +581,33 @@ impl crate::System::Net::HttpWebRequest {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task_1<T>,
         > = __cordl_object.invoke("RunWithTimeout", (func))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RunWithTimeout_i32_Action_Func_1_CancellationToken0<T>(
+        func: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<
+                crate::System::Threading::CancellationToken,
+                *mut crate::System::Threading::Tasks::Task_1<T>,
+            >,
+        >,
+        timeout: i32,
+        abort: quest_hook::libil2cpp::Gc<crate::System::Action>,
+        aborted: quest_hook::libil2cpp::Gc<crate::System::Func_1<bool>>,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<T>>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<T>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "RunWithTimeout",
+                (func, timeout, abort, aborted, cancellationToken),
+            )?;
         Ok(__cordl_ret.into())
     }
     pub fn SendRequest(
@@ -741,6 +815,20 @@ impl crate::System::Net::HttpWebRequest {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::ICredentials> = __cordl_object
             .invoke("get_Credentials", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_DefaultMaximumErrorResponseLength() -> quest_hook::libil2cpp::Result<
+        i32,
+    > {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_DefaultMaximumErrorResponseLength", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_DefaultMaximumResponseHeadersLength() -> quest_hook::libil2cpp::Result<
+        i32,
+    > {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_DefaultMaximumResponseHeadersLength", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_ExpectContinue(&mut self) -> quest_hook::libil2cpp::Result<bool> {

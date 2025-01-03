@@ -66,6 +66,15 @@ impl crate::System::Security::AccessControl::DiscretionaryAcl {
             .invoke("GetAceInsertPosition", (aceQualifier))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetAceQualifier(
+        accessType: crate::System::Security::AccessControl::AccessControlType,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Security::AccessControl::AceQualifier,
+    > {
+        let __cordl_ret: crate::System::Security::AccessControl::AceQualifier = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetAceQualifier", (accessType))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn IsAceMeaningless(
         &mut self,
         ace: quest_hook::libil2cpp::Gc<

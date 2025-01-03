@@ -308,6 +308,22 @@ impl crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo {
         let __cordl_ret: i32 = __cordl_object.invoke("GetDisplayNodeID", (objNodeID))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetLoadBufferVolumeFromTileIndex(
+        tileIndex: i32,
+        buffers: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::HoudiniEngineUnity::HEU_LoadBufferVolume,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_LoadBufferVolume>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_LoadBufferVolume,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetLoadBufferVolumeFromTileIndex", (tileIndex, buffers))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn LoadFloatFromAttribute(
         &mut self,
         session: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionBase>,

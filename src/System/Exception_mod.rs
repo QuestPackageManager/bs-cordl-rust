@@ -69,6 +69,17 @@ impl crate::System::Exception {
         > = __cordl_object.invoke("GetClassName", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetMessageFromNativeResources(
+        kind: crate::System::Exception_ExceptionMessageKind,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetMessageFromNativeResources", (kind))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetObjectData(
         &mut self,
         info: quest_hook::libil2cpp::Gc<
@@ -164,6 +175,13 @@ impl crate::System::Exception {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDeserialized", (context))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReportUnhandledException(
+        exception: quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReportUnhandledException", (exception))?;
         Ok(__cordl_ret.into())
     }
     pub fn RestoreExceptionDispatchInfo(

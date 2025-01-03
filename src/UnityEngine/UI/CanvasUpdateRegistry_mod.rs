@@ -46,6 +46,13 @@ impl crate::UnityEngine::UI::CanvasUpdateRegistry {
             .invoke("CleanInvalidItems", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn DisableCanvasElementForRebuild(
+        element: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ICanvasElement>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DisableCanvasElementForRebuild", (element))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn InternalDisableCanvasElementForGraphicRebuild(
         &mut self,
         element: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ICanvasElement>,
@@ -112,6 +119,16 @@ impl crate::UnityEngine::UI::CanvasUpdateRegistry {
             .invoke("InternalUnRegisterCanvasElementForLayoutRebuild", (element))?;
         Ok(__cordl_ret.into())
     }
+    pub fn IsRebuildingGraphics() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsRebuildingGraphics", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsRebuildingLayout() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsRebuildingLayout", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -130,6 +147,13 @@ impl crate::UnityEngine::UI::CanvasUpdateRegistry {
             .invoke("ObjectValidForUpdate", (element))?;
         Ok(__cordl_ret.into())
     }
+    pub fn ParentCount(
+        child: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ParentCount", (child))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn PerformUpdate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -140,6 +164,49 @@ impl crate::UnityEngine::UI::CanvasUpdateRegistry {
             .invoke("PerformUpdate", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn RegisterCanvasElementForGraphicRebuild(
+        element: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ICanvasElement>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RegisterCanvasElementForGraphicRebuild", (element))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RegisterCanvasElementForLayoutRebuild(
+        element: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ICanvasElement>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RegisterCanvasElementForLayoutRebuild", (element))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SortLayoutList(
+        x: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ICanvasElement>,
+        y: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ICanvasElement>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SortLayoutList", (x, y))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryRegisterCanvasElementForGraphicRebuild(
+        element: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ICanvasElement>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryRegisterCanvasElementForGraphicRebuild", (element))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryRegisterCanvasElementForLayoutRebuild(
+        element: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ICanvasElement>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryRegisterCanvasElementForLayoutRebuild", (element))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UnRegisterCanvasElementForRebuild(
+        element: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ICanvasElement>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UnRegisterCanvasElementForRebuild", (element))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -148,6 +215,14 @@ impl crate::UnityEngine::UI::CanvasUpdateRegistry {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_instance() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::CanvasUpdateRegistry>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UI::CanvasUpdateRegistry,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_instance", ())?;
         Ok(__cordl_ret.into())
     }
 }

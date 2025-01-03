@@ -24,6 +24,14 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::Vector4 
 #[cfg(feature = "UnityEngine+Vector4")]
 impl crate::UnityEngine::Vector4 {
     pub const kEpsilon: f32 = 0.00001f32;
+    pub fn Dot(
+        a: crate::UnityEngine::Vector4,
+        b: crate::UnityEngine::Vector4,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Dot", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Equals_Il2CppObject0(
         &mut self,
         other: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -52,6 +60,13 @@ impl crate::UnityEngine::Vector4 {
             "GetHashCode",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Magnitude(
+        a: crate::UnityEngine::Vector4,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Magnitude", (a))?;
         Ok(__cordl_ret.into())
     }
     pub fn Normalize(
@@ -142,12 +157,98 @@ impl crate::UnityEngine::Vector4 {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_one() -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
+        let __cordl_ret: crate::UnityEngine::Vector4 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_one", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_sqrMagnitude(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_sqrMagnitude",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_zero() -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
+        let __cordl_ret: crate::UnityEngine::Vector4 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_zero", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Addition(
+        a: crate::UnityEngine::Vector4,
+        b: crate::UnityEngine::Vector4,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
+        let __cordl_ret: crate::UnityEngine::Vector4 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Addition", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Division(
+        a: crate::UnityEngine::Vector4,
+        d: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
+        let __cordl_ret: crate::UnityEngine::Vector4 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Division", (a, d))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        lhs: crate::UnityEngine::Vector4,
+        rhs: crate::UnityEngine::Vector4,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_Vector2_2(
+        v: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
+        let __cordl_ret: crate::UnityEngine::Vector4 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (v))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_Vector3_0(
+        v: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
+        let __cordl_ret: crate::UnityEngine::Vector4 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (v))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_Vector4_1(
+        v: crate::UnityEngine::Vector4,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (v))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_Vector4_3(
+        v: crate::UnityEngine::Vector4,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (v))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        lhs: crate::UnityEngine::Vector4,
+        rhs: crate::UnityEngine::Vector4,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Multiply(
+        a: crate::UnityEngine::Vector4,
+        d: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
+        let __cordl_ret: crate::UnityEngine::Vector4 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Multiply", (a, d))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Subtraction(
+        a: crate::UnityEngine::Vector4,
+        b: crate::UnityEngine::Vector4,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
+        let __cordl_ret: crate::UnityEngine::Vector4 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Subtraction", (a, b))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_Item(

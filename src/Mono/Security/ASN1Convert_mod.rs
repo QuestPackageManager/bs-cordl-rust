@@ -23,7 +23,59 @@ impl std::ops::DerefMut for crate::Mono::Security::ASN1Convert {
     }
 }
 #[cfg(feature = "Mono+Security+ASN1Convert")]
-impl crate::Mono::Security::ASN1Convert {}
+impl crate::Mono::Security::ASN1Convert {
+    pub fn FromInt32(
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Mono::Security::ASN1>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Security::ASN1> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromInt32", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromOid(
+        oid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Mono::Security::ASN1>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Security::ASN1> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromOid", (oid))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromUnsignedBigInteger(
+        big: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Mono::Security::ASN1>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Security::ASN1> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromUnsignedBigInteger", (big))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToDateTime(
+        _cordl_time: quest_hook::libil2cpp::Gc<crate::Mono::Security::ASN1>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
+        let __cordl_ret: crate::System::DateTime = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToDateTime", (_cordl_time))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToInt32(
+        asn1: quest_hook::libil2cpp::Gc<crate::Mono::Security::ASN1>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToInt32", (asn1))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToOid(
+        asn1: quest_hook::libil2cpp::Gc<crate::Mono::Security::ASN1>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("ToOid", (asn1))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "Mono+Security+ASN1Convert")]
 impl quest_hook::libil2cpp::ObjectType for crate::Mono::Security::ASN1Convert {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

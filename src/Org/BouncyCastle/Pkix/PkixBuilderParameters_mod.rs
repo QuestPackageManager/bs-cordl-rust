@@ -52,6 +52,19 @@ impl crate::Org::BouncyCastle::Pkix::PkixBuilderParameters {
         > = __cordl_object.invoke("GetExcludedCerts", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetInstance(
+        pkixParams: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Pkix::PkixParameters,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Pkix::PkixBuilderParameters>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Pkix::PkixBuilderParameters,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetInstance", (pkixParams))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         trustAnchors: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Utilities::Collections::ISet,

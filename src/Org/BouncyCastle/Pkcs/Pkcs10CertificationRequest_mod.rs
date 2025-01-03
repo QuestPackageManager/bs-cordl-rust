@@ -25,6 +25,35 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Pkcs::Pkcs10CertificationR
 }
 #[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs10CertificationRequest")]
 impl crate::Org::BouncyCastle::Pkcs::Pkcs10CertificationRequest {
+    pub fn CreatePssParams(
+        hashAlgId: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        >,
+        saltSize: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Pkcs::RsassaPssParameters,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Pkcs::RsassaPssParameters,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreatePssParams", (hashAlgId, saltSize))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetDigestAlgName(
+        digestAlgOID: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetDigestAlgName", (digestAlgOID))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetPublicKey(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -38,6 +67,19 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs10CertificationRequest {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
         > = __cordl_object.invoke("GetPublicKey", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetSignatureName(
+        sigAlgId: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSignatureName", (sigAlgId))?;
         Ok(__cordl_ret.into())
     }
     pub fn Init(

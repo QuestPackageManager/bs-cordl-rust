@@ -23,6 +23,16 @@ impl std::ops::DerefMut for crate::System::TimeZone {
 }
 #[cfg(feature = "System+TimeZone")]
 impl crate::System::TimeZone {
+    pub fn CalculateUtcOffset(
+        _cordl_time: crate::System::DateTime,
+        daylightTimes: quest_hook::libil2cpp::Gc<
+            crate::System::Globalization::DaylightTime,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
+        let __cordl_ret: crate::System::TimeSpan = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CalculateUtcOffset", (_cordl_time, daylightTimes))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetDaylightChanges(
         &mut self,
         year: i32,
@@ -63,6 +73,22 @@ impl crate::System::TimeZone {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_CurrentTimeZone() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::TimeZone>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::TimeZone> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_CurrentTimeZone", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_InternalSyncObject() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_InternalSyncObject", ())?;
         Ok(__cordl_ret.into())
     }
 }

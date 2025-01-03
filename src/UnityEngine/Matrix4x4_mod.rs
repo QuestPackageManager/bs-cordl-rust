@@ -87,6 +87,14 @@ impl crate::UnityEngine::Matrix4x4 {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetLossyScale_Injected(
+        _unity_self: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>,
+        ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetLossyScale_Injected", (_unity_self, ret))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetRotation(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
@@ -95,6 +103,14 @@ impl crate::UnityEngine::Matrix4x4 {
             "GetRotation",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetRotation_Injected(
+        _unity_self: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>,
+        ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Quaternion>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetRotation_Injected", (_unity_self, ret))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetRow(
@@ -106,6 +122,37 @@ impl crate::UnityEngine::Matrix4x4 {
             "GetRow",
             (index),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Inverse(
+        m: crate::UnityEngine::Matrix4x4,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Matrix4x4> {
+        let __cordl_ret: crate::UnityEngine::Matrix4x4 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Inverse", (m))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Inverse3DAffine(
+        input: crate::UnityEngine::Matrix4x4,
+        result: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Inverse3DAffine", (input, result))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Inverse3DAffine_Injected(
+        input: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>,
+        result: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Inverse3DAffine_Injected", (input, result))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Inverse_Injected(
+        m: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>,
+        ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Inverse_Injected", (m, ret))?;
         Ok(__cordl_ret.into())
     }
     pub fn MultiplyPoint(
@@ -141,6 +188,66 @@ impl crate::UnityEngine::Matrix4x4 {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn Ortho(
+        left: f32,
+        right: f32,
+        bottom: f32,
+        top: f32,
+        zNear: f32,
+        zFar: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Matrix4x4> {
+        let __cordl_ret: crate::UnityEngine::Matrix4x4 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Ortho", (left, right, bottom, top, zNear, zFar))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Ortho_Injected(
+        left: f32,
+        right: f32,
+        bottom: f32,
+        top: f32,
+        zNear: f32,
+        zFar: f32,
+        ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Ortho_Injected", (left, right, bottom, top, zNear, zFar, ret))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Perspective(
+        fov: f32,
+        aspect: f32,
+        zNear: f32,
+        zFar: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Matrix4x4> {
+        let __cordl_ret: crate::UnityEngine::Matrix4x4 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Perspective", (fov, aspect, zNear, zFar))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Perspective_Injected(
+        fov: f32,
+        aspect: f32,
+        zNear: f32,
+        zFar: f32,
+        ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Perspective_Injected", (fov, aspect, zNear, zFar, ret))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Rotate(
+        q: crate::UnityEngine::Quaternion,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Matrix4x4> {
+        let __cordl_ret: crate::UnityEngine::Matrix4x4 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Rotate", (q))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Scale(
+        vector: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Matrix4x4> {
+        let __cordl_ret: crate::UnityEngine::Matrix4x4 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Scale", (vector))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn SetColumn(
         &mut self,
         index: i32,
@@ -164,6 +271,25 @@ impl crate::UnityEngine::Matrix4x4 {
             "SetTRS",
             (pos, q, s),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TRS(
+        pos: crate::UnityEngine::Vector3,
+        q: crate::UnityEngine::Quaternion,
+        s: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Matrix4x4> {
+        let __cordl_ret: crate::UnityEngine::Matrix4x4 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TRS", (pos, q, s))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TRS_Injected(
+        pos: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+        q: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Quaternion>,
+        s: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+        ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TRS_Injected", (pos, q, s, ret))?;
         Ok(__cordl_ret.into())
     }
     pub fn ToString_0(
@@ -190,6 +316,21 @@ impl crate::UnityEngine::Matrix4x4 {
             "ToString",
             (format, formatProvider),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Transpose(
+        m: crate::UnityEngine::Matrix4x4,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Matrix4x4> {
+        let __cordl_ret: crate::UnityEngine::Matrix4x4 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Transpose", (m))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Transpose_Injected(
+        m: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>,
+        ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Transpose_Injected", (m, ret))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -224,6 +365,13 @@ impl crate::UnityEngine::Matrix4x4 {
             "get_Item",
             (index),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_identity() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Matrix4x4,
+    > {
+        let __cordl_ret: crate::UnityEngine::Matrix4x4 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_identity", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_inverse(
@@ -264,6 +412,43 @@ impl crate::UnityEngine::Matrix4x4 {
             "get_transpose",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_zero() -> quest_hook::libil2cpp::Result<crate::UnityEngine::Matrix4x4> {
+        let __cordl_ret: crate::UnityEngine::Matrix4x4 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_zero", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        lhs: crate::UnityEngine::Matrix4x4,
+        rhs: crate::UnityEngine::Matrix4x4,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        lhs: crate::UnityEngine::Matrix4x4,
+        rhs: crate::UnityEngine::Matrix4x4,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Multiply_Matrix4x4_0(
+        lhs: crate::UnityEngine::Matrix4x4,
+        rhs: crate::UnityEngine::Matrix4x4,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Matrix4x4> {
+        let __cordl_ret: crate::UnityEngine::Matrix4x4 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Multiply", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Multiply_Vector4_1(
+        lhs: crate::UnityEngine::Matrix4x4,
+        vector: crate::UnityEngine::Vector4,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
+        let __cordl_ret: crate::UnityEngine::Vector4 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Multiply", (lhs, vector))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_Item_f32_1(

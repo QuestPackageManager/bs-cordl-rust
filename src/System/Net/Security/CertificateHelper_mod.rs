@@ -23,7 +23,76 @@ impl std::ops::DerefMut for crate::System::Net::Security::CertificateHelper {
     }
 }
 #[cfg(feature = "System+Net+Security+CertificateHelper")]
-impl crate::System::Net::Security::CertificateHelper {}
+impl crate::System::Net::Security::CertificateHelper {
+    pub fn GetEligibleClientCertificate_2() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetEligibleClientCertificate", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetEligibleClientCertificate_X509Certificate2Collection1(
+        candidateCerts: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509Certificate2Collection,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetEligibleClientCertificate", (candidateCerts))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetEligibleClientCertificate_X509CertificateCollection0(
+        candidateCerts: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetEligibleClientCertificate", (candidateCerts))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsValidClientCertificate(
+        cert: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsValidClientCertificate", (cert))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsValidForClientAuthenticationEKU(
+        eku: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509EnhancedKeyUsageExtension,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsValidForClientAuthenticationEKU", (eku))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsValidForDigitalSignatureUsage(
+        ku: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509KeyUsageExtension,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsValidForDigitalSignatureUsage", (ku))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Net+Security+CertificateHelper")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Net::Security::CertificateHelper {

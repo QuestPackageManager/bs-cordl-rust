@@ -23,7 +23,25 @@ impl std::ops::DerefMut for crate::UnityEngine::FrameTimingManager {
     }
 }
 #[cfg(feature = "UnityEngine+FrameTimingManager")]
-impl crate::UnityEngine::FrameTimingManager {}
+impl crate::UnityEngine::FrameTimingManager {
+    pub fn CaptureFrameTimings() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CaptureFrameTimings", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetLatestTimings(
+        numFrames: u32,
+        timings: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::FrameTiming>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetLatestTimings", (numFrames, timings))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+FrameTimingManager")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::FrameTimingManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

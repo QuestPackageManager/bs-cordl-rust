@@ -34,6 +34,22 @@ impl crate::System::Reflection::Module {
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (o))?;
         Ok(__cordl_ret.into())
     }
+    pub fn FilterTypeNameIgnoreCaseImpl(
+        cls: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        filterCriteria: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FilterTypeNameIgnoreCaseImpl", (cls, filterCriteria))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FilterTypeNameImpl(
+        cls: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        filterCriteria: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FilterTypeNameImpl", (cls, filterCriteria))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetCustomAttributes_Type__cordl_bool1(
         &mut self,
         attributeType: quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -181,6 +197,14 @@ impl crate::System::Reflection::Module {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("get_ScopeName", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        left: quest_hook::libil2cpp::Gc<crate::System::Reflection::Module>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Reflection::Module>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (left, right))?;
         Ok(__cordl_ret.into())
     }
 }

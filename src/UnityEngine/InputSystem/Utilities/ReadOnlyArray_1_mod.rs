@@ -169,6 +169,21 @@ impl<
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Implicit(
+        array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TValue>>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<TValue>,
+    >
+    where
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
+            TValue,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (array))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+ReadOnlyArray_1")]
 impl<

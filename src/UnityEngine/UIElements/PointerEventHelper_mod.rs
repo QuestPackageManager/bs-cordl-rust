@@ -23,7 +23,27 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::PointerEventHelper {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+PointerEventHelper")]
-impl crate::UnityEngine::UIElements::PointerEventHelper {}
+impl crate::UnityEngine::UIElements::PointerEventHelper {
+    pub fn GetPooled(
+        eventType: crate::UnityEngine::EventType,
+        mousePosition: crate::UnityEngine::Vector3,
+        delta: crate::UnityEngine::Vector2,
+        button: i32,
+        clickCount: i32,
+        modifiers: crate::UnityEngine::EventModifiers,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::EventBase,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetPooled",
+                (eventType, mousePosition, delta, button, clickCount, modifiers),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+PointerEventHelper")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::PointerEventHelper {

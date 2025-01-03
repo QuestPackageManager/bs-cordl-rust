@@ -43,6 +43,24 @@ impl crate::System::Globalization::GregorianCalendarHelper {
             .invoke("CheckTicksRange", (ticks))?;
         Ok(__cordl_ret.into())
     }
+    pub fn DateToTicks(
+        year: i32,
+        month: i32,
+        day: i32,
+    ) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DateToTicks", (year, month, day))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetAbsoluteDate(
+        year: i32,
+        month: i32,
+        day: i32,
+    ) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetAbsoluteDate", (year, month, day))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetDatePart(
         &mut self,
         ticks: i64,
@@ -199,6 +217,16 @@ impl crate::System::Globalization::GregorianCalendarHelper {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (cal, eraInfo))?;
         Ok(__cordl_object.into())
+    }
+    pub fn TimeToTicks(
+        hour: i32,
+        minute: i32,
+        second: i32,
+        millisecond: i32,
+    ) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TimeToTicks", (hour, minute, second, millisecond))?;
+        Ok(__cordl_ret.into())
     }
     pub fn ToDateTime(
         &mut self,

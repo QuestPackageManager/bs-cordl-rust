@@ -29,6 +29,44 @@ for crate::UnityEngine::ProBuilder::MeshOperations::InternalMeshUtility {
 impl crate::UnityEngine::ProBuilder::MeshOperations::InternalMeshUtility {
     #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+InternalMeshUtility+__c")]
     pub type __c = crate::UnityEngine::ProBuilder::MeshOperations::InternalMeshUtility___c;
+    pub fn AverageNormalWithIndexes(
+        shared: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SharedVertex>,
+        all: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+        norm: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector3>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AverageNormalWithIndexes", (shared, all, norm))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateMeshWithTransform(
+        t: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+        preserveFaces: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::ProBuilderMesh,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateMeshWithTransform", (t, preserveFaces))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FilterUnusedSubmeshIndexes(
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FilterUnusedSubmeshIndexes", (mesh))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ResetPbObjectWithMeshFilter(
+        pb: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+        preserveFaces: bool,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ResetPbObjectWithMeshFilter", (pb, preserveFaces))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+InternalMeshUtility")]
 impl quest_hook::libil2cpp::ObjectType

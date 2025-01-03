@@ -41,6 +41,11 @@ impl crate::GlobalNamespace::OpenXRRuntimeBasedActionBindingComposite {
         let __cordl_ret: f32 = __cordl_object.invoke("EvaluateMagnitude", (context))?;
         Ok(__cordl_ret.into())
     }
+    pub fn Init() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Init", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

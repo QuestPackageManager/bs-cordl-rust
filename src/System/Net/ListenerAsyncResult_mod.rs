@@ -82,6 +82,13 @@ impl crate::System::Net::ListenerAsyncResult {
         > = __cordl_object.invoke("GetContext", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn InvokeCallback(
+        o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InvokeCallback", (o))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         cb: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
         state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

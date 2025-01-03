@@ -732,6 +732,17 @@ impl crate::System::Data::DataTable {
             .invoke("FreeRecord", (record))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetDataTableSchema(
+        schemaSet: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSet>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaComplexType>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaComplexType,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetDataTableSchema", (schemaSet))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetIndex_Il2CppArray1(
         &mut self,
         indexDesc: quest_hook::libil2cpp::Gc<

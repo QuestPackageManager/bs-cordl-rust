@@ -29,6 +29,21 @@ for crate::UnityEngine::UIElements::VisualTreeHierarchyFlagsUpdater {
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeHierarchyFlagsUpdater")]
 impl crate::UnityEngine::UIElements::VisualTreeHierarchyFlagsUpdater {
+    pub fn DirtyBoundingBoxHierarchy(
+        ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DirtyBoundingBoxHierarchy", (ve))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DirtyHierarchy(
+        ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        mustDirtyFlags: crate::UnityEngine::UIElements::VisualElementFlags,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DirtyHierarchy", (ve, mustDirtyFlags))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

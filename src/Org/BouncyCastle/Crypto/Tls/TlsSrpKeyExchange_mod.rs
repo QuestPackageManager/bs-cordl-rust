@@ -37,6 +37,17 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Tls::TlsSrpKeyExch
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsSrpKeyExchange")]
 impl crate::Org::BouncyCastle::Crypto::Tls::TlsSrpKeyExchange {
+    pub fn CreateSigner(
+        keyExchange: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::TlsSigner>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::TlsSigner,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateSigner", (keyExchange))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GenerateClientKeyExchange(
         &mut self,
         output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,

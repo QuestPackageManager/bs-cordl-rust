@@ -53,6 +53,17 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKeyEncryptedData {
             .invoke("GetDataStream", (privKey))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetKeyCipher(
+        algorithm: crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IBufferedCipher>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::IBufferedCipher,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetKeyCipher", (algorithm))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetSymmetricAlgorithm(
         &mut self,
         privKey: quest_hook::libil2cpp::Gc<
@@ -81,6 +92,17 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKeyEncryptedData {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (keyData, encData))?;
         Ok(__cordl_object.into())
+    }
+    pub fn ProcessEncodedMpi(
+        cipher: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::IBufferedCipher,
+        >,
+        _cordl_size: i32,
+        mpiEnc: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ProcessEncodedMpi", (cipher, _cordl_size, mpiEnc))?;
+        Ok(__cordl_ret.into())
     }
     pub fn RecoverSessionData(
         &mut self,

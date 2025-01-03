@@ -27,6 +27,17 @@ impl std::ops::DerefMut for crate::System::MissingMemberException {
 }
 #[cfg(feature = "System+MissingMemberException")]
 impl crate::System::MissingMemberException {
+    pub fn FormatSignature(
+        signature: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FormatSignature", (signature))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetObjectData(
         &mut self,
         info: quest_hook::libil2cpp::Gc<

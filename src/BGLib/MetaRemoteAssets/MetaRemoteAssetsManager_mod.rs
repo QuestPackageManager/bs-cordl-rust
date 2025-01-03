@@ -75,6 +75,21 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
             .invoke("ApplyAddressablesOverrides", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn CreateAddResourceLocatorInput(
+        resourceLocator: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager_AddResourceLocatorInput,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager_AddResourceLocatorInput,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateAddResourceLocatorInput", (resourceLocator))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -137,6 +152,13 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("InternalIdTransformFunc", (resourceLocation))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MakeRemoteCatalogTopPriority() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MakeRemoteCatalogTopPriority", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -260,6 +282,15 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_didCatalogLoadOrUpdateEvent", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_RemoteCatalogPath() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_RemoteCatalogPath", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn remove_didCatalogLoadOrUpdateEvent(

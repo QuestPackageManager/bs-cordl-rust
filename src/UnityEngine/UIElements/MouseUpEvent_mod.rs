@@ -30,6 +30,45 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::MouseUpEvent {
 impl crate::UnityEngine::UIElements::MouseUpEvent {
     #[cfg(feature = "UnityEngine+UIElements+MouseUpEvent+__c")]
     pub type __c = crate::UnityEngine::UIElements::MouseUpEvent___c;
+    pub fn GetPooled_PointerCancelEvent2(
+        pointerEvent: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::PointerCancelEvent,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MouseUpEvent>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::MouseUpEvent,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPooled", (pointerEvent))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPooled_PointerMoveEvent1(
+        pointerEvent: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::PointerMoveEvent,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MouseUpEvent>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::MouseUpEvent,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPooled", (pointerEvent))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPooled_PointerUpEvent0(
+        pointerEvent: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::PointerUpEvent,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MouseUpEvent>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::MouseUpEvent,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPooled", (pointerEvent))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Init(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -48,6 +87,19 @@ impl crate::UnityEngine::UIElements::MouseUpEvent {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("LocalInit", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MakeFromPointerEvent(
+        pointerEvent: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::IPointerEvent,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MouseUpEvent>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::MouseUpEvent,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MakeFromPointerEvent", (pointerEvent))?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

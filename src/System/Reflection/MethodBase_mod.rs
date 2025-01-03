@@ -24,6 +24,24 @@ impl std::ops::DerefMut for crate::System::Reflection::MethodBase {
 }
 #[cfg(feature = "System+Reflection+MethodBase")]
 impl crate::System::Reflection::MethodBase {
+    pub fn ConstructParameters(
+        parameterTypes: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+        >,
+        callingConvention: crate::System::Reflection::CallingConventions,
+        serialization: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ConstructParameters",
+                (parameterTypes, callingConvention, serialization),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Equals(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -68,6 +86,17 @@ impl crate::System::Reflection::MethodBase {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetMethodFromHandle(
+        handle: crate::System::RuntimeMethodHandle,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::MethodBase,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetMethodFromHandle", (handle))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetMethodImplementationFlags(
@@ -318,6 +347,22 @@ impl crate::System::Reflection::MethodBase {
         );
         let __cordl_ret: crate::System::RuntimeMethodHandle = __cordl_object
             .invoke("get_MethodHandle", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        left: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        left: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (left, right))?;
         Ok(__cordl_ret.into())
     }
 }

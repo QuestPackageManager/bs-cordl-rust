@@ -30,6 +30,14 @@ for crate::UnityEngine::UIElements::UxmlBoolAttributeDescription {
 impl crate::UnityEngine::UIElements::UxmlBoolAttributeDescription {
     #[cfg(feature = "UnityEngine+UIElements+UxmlBoolAttributeDescription+__c")]
     pub type __c = crate::UnityEngine::UIElements::UxmlBoolAttributeDescription___c;
+    pub fn ConvertValueToBool(
+        v: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        defaultValue: bool,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ConvertValueToBool", (v, defaultValue))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetValueFromBag(
         &mut self,
         bag: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IUxmlAttributes>,

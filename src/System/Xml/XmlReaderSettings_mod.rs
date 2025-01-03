@@ -81,6 +81,13 @@ impl crate::System::Xml::XmlReaderSettings {
         > = __cordl_object.invoke("Clone", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn CreateDefaultResolver() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlResolver>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlResolver> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateDefaultResolver", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CreateDtdValidatingReader(
         &mut self,
         baseReader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
@@ -124,6 +131,11 @@ impl crate::System::Xml::XmlReaderSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader> = __cordl_object
             .invoke("CreateReader", (input, baseUriString, inputContext))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EnableLegacyXmlSettings() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EnableLegacyXmlSettings", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn GetEventHandler(

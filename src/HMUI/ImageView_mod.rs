@@ -36,6 +36,152 @@ impl std::ops::DerefMut for crate::HMUI::ImageView {
 impl crate::HMUI::ImageView {
     #[cfg(feature = "HMUI+ImageView+GradientDirection")]
     pub type GradientDirection = crate::HMUI::ImageView_GradientDirection;
+    pub fn AddQuadWithHorizontalGradient(
+        vertexHelper: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::VertexHelper>,
+        posMin: crate::UnityEngine::Vector2,
+        posMax: crate::UnityEngine::Vector2,
+        color0: crate::UnityEngine::Color32,
+        color1: crate::UnityEngine::Color32,
+        uv0Min: crate::UnityEngine::Vector2,
+        uv0Max: crate::UnityEngine::Vector2,
+        uv1Min: crate::UnityEngine::Vector2,
+        uv1Max: crate::UnityEngine::Vector2,
+        elementWidthScale: f32,
+        curvedUIRadius: f32,
+        skewFactor: f32,
+        skewOffset: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "AddQuadWithHorizontalGradient",
+                (
+                    vertexHelper,
+                    posMin,
+                    posMax,
+                    color0,
+                    color1,
+                    uv0Min,
+                    uv0Max,
+                    uv1Min,
+                    uv1Max,
+                    elementWidthScale,
+                    curvedUIRadius,
+                    skewFactor,
+                    skewOffset,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddQuadWithVerticalGradient(
+        vertexHelper: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::VertexHelper>,
+        posMin: crate::UnityEngine::Vector2,
+        posMax: crate::UnityEngine::Vector2,
+        color0: crate::UnityEngine::Color32,
+        color1: crate::UnityEngine::Color32,
+        uv0Min: crate::UnityEngine::Vector2,
+        uv0Max: crate::UnityEngine::Vector2,
+        uv1Min: crate::UnityEngine::Vector2,
+        uv1Max: crate::UnityEngine::Vector2,
+        elementWidthScale: f32,
+        curvedUIRadius: f32,
+        skewFactor: f32,
+        skewOffset: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "AddQuadWithVerticalGradient",
+                (
+                    vertexHelper,
+                    posMin,
+                    posMax,
+                    color0,
+                    color1,
+                    uv0Min,
+                    uv0Max,
+                    uv1Min,
+                    uv1Max,
+                    elementWidthScale,
+                    curvedUIRadius,
+                    skewFactor,
+                    skewOffset,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddQuad_Il2CppArray_Color32_Il2CppArray0(
+        vertexHelper: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::VertexHelper>,
+        quadPositions: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+        >,
+        color: crate::UnityEngine::Color32,
+        quadUVs: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddQuad", (vertexHelper, quadPositions, color, quadUVs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddQuad_Vector2_Vector2_Color32_Vector2_Vector2_Vector2_Vector2_f32_f32_f32_f32_2(
+        vertexHelper: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::VertexHelper>,
+        posMin: crate::UnityEngine::Vector2,
+        posMax: crate::UnityEngine::Vector2,
+        color: crate::UnityEngine::Color32,
+        uv0Min: crate::UnityEngine::Vector2,
+        uv0Max: crate::UnityEngine::Vector2,
+        uv1Min: crate::UnityEngine::Vector2,
+        uv1Max: crate::UnityEngine::Vector2,
+        elementWidthScale: f32,
+        curvedUIRadius: f32,
+        skewFactor: f32,
+        skewOffset: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "AddQuad",
+                (
+                    vertexHelper,
+                    posMin,
+                    posMax,
+                    color,
+                    uv0Min,
+                    uv0Max,
+                    uv1Min,
+                    uv1Max,
+                    elementWidthScale,
+                    curvedUIRadius,
+                    skewFactor,
+                    skewOffset,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddQuad_Vector2_Vector2_Color32_Vector2_Vector2_f32_f32_1(
+        vertexHelper: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::VertexHelper>,
+        posMin: crate::UnityEngine::Vector2,
+        posMax: crate::UnityEngine::Vector2,
+        color: crate::UnityEngine::Color32,
+        uvMin: crate::UnityEngine::Vector2,
+        uvMax: crate::UnityEngine::Vector2,
+        elementWidthScale: f32,
+        curvedUIRadius: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "AddQuad",
+                (
+                    vertexHelper,
+                    posMin,
+                    posMax,
+                    color,
+                    uvMin,
+                    uvMax,
+                    elementWidthScale,
+                    curvedUIRadius,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GenerateFilledSprite(
         &mut self,
         toFill: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::VertexHelper>,
@@ -86,6 +232,14 @@ impl crate::HMUI::ImageView {
             .invoke("GenerateTiledSprite", (toFill, curvedUIRadius))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetAdjustedBorders(
+        border: crate::UnityEngine::Vector4,
+        rect: crate::UnityEngine::Rect,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
+        let __cordl_ret: crate::UnityEngine::Vector4 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetAdjustedBorders", (border, rect))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetDrawingDimensions(
         &mut self,
         shouldPreserveAspect: bool,
@@ -95,6 +249,14 @@ impl crate::HMUI::ImageView {
         );
         let __cordl_ret: crate::UnityEngine::Vector4 = __cordl_object
             .invoke("GetDrawingDimensions", (shouldPreserveAspect))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetNumberOfElements(
+        curvedUIRadius: f32,
+        width: f32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetNumberOfElements", (curvedUIRadius, width))?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -123,6 +285,34 @@ impl crate::HMUI::ImageView {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnPopulateMesh", (toFill))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RadialCut_Il2CppArray0(
+        xy: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+        >,
+        uv: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+        >,
+        fill: f32,
+        invert: bool,
+        corner: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RadialCut", (xy, uv, fill, invert, corner))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RadialCut_f32_1(
+        xy: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+        >,
+        cos: f32,
+        sin: f32,
+        invert: bool,
+        corner: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RadialCut", (xy, cos, sin, invert, corner))?;
         Ok(__cordl_ret.into())
     }
     pub fn __Refresh(

@@ -24,7 +24,16 @@ impl std::ops::DerefMut for crate::Mono::Security::Interface::MonoTlsProviderFac
     }
 }
 #[cfg(feature = "Mono+Security+Interface+MonoTlsProviderFactory")]
-impl crate::Mono::Security::Interface::MonoTlsProviderFactory {}
+impl crate::Mono::Security::Interface::MonoTlsProviderFactory {
+    pub fn GetProvider() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Mono::Security::Interface::MonoTlsProvider>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Mono::Security::Interface::MonoTlsProvider,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetProvider", ())?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "Mono+Security+Interface+MonoTlsProviderFactory")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Security::Interface::MonoTlsProviderFactory {

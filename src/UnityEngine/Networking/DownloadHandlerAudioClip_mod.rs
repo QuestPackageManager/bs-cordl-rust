@@ -26,6 +26,17 @@ impl std::ops::DerefMut for crate::UnityEngine::Networking::DownloadHandlerAudio
 }
 #[cfg(feature = "UnityEngine+Networking+DownloadHandlerAudioClip")]
 impl crate::UnityEngine::Networking::DownloadHandlerAudioClip {
+    pub fn Create(
+        obj: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Networking::DownloadHandlerAudioClip,
+        >,
+        url: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        audioType: crate::UnityEngine::AudioType,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (obj, url, audioType))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -34,6 +45,15 @@ impl crate::UnityEngine::Networking::DownloadHandlerAudioClip {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetContent(
+        www: quest_hook::libil2cpp::Gc<crate::UnityEngine::Networking::UnityWebRequest>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetContent", (www))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetNativeData(

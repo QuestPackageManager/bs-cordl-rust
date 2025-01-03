@@ -45,6 +45,13 @@ impl crate::HMUI::CurvedCanvasSettings {
             .invoke("OnPopulateMesh", (vh))?;
         Ok(__cordl_ret.into())
     }
+    pub fn RebuildAndSetup(
+        t: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RebuildAndSetup", (t))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn SetRadius(
         &mut self,
         value: f32,

@@ -34,6 +34,29 @@ impl crate::System::Reflection::FieldInfo {
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetFieldFromHandle_RuntimeFieldHandle0(
+        handle: crate::System::RuntimeFieldHandle,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::FieldInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetFieldFromHandle", (handle))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetFieldFromHandle_RuntimeTypeHandle1(
+        handle: crate::System::RuntimeFieldHandle,
+        declaringType: crate::System::RuntimeTypeHandle,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::FieldInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetFieldFromHandle", (handle, declaringType))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetFieldOffset(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -260,6 +283,34 @@ impl crate::System::Reflection::FieldInfo {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::InteropServices::MarshalAsAttribute,
         > = __cordl_object.invoke("get_marshal_info", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn internal_from_handle_type(
+        field_handle: crate::System::IntPtr,
+        type_handle: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::FieldInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("internal_from_handle_type", (field_handle, type_handle))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        left: quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        left: quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (left, right))?;
         Ok(__cordl_ret.into())
     }
 }

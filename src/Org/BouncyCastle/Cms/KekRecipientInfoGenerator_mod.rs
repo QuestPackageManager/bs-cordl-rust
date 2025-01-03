@@ -29,6 +29,22 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Cms::KekRecipientInfoGener
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+KekRecipientInfoGenerator")]
 impl crate::Org::BouncyCastle::Cms::KekRecipientInfoGenerator {
+    pub fn DetermineKeyEncAlg(
+        algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        key: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DetermineKeyEncAlg", (algorithm, key))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Generate(
         &mut self,
         contentEncryptionKey: quest_hook::libil2cpp::Gc<

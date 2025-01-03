@@ -25,12 +25,65 @@ impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::Poly2Tri::Triangulat
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+TriangulationUtil")]
 impl crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationUtil {
+    pub fn InScanArea(
+        pa: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
+        pb: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
+        pc: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
+        pd: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InScanArea", (pa, pb, pc, pd))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
+    }
+    pub fn Orient2d(
+        pa: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
+        pb: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
+        pc: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ProBuilder::Poly2Tri::Orientation,
+    > {
+        let __cordl_ret: crate::UnityEngine::ProBuilder::Poly2Tri::Orientation = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Orient2d", (pa, pb, pc))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SmartIncircle(
+        pa: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
+        pb: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
+        pc: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
+        pd: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SmartIncircle", (pa, pb, pc, pd))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,

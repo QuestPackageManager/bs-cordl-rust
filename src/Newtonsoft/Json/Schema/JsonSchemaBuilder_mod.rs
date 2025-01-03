@@ -50,6 +50,24 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaBuilder {
         > = __cordl_object.invoke("BuildSchema", (token))?;
         Ok(__cordl_ret.into())
     }
+    pub fn MapType_Il2CppString0(
+        _cordl_type: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::Newtonsoft::Json::Schema::JsonSchemaType> {
+        let __cordl_ret: crate::Newtonsoft::Json::Schema::JsonSchemaType = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MapType", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MapType_JsonSchemaType1(
+        _cordl_type: crate::Newtonsoft::Json::Schema::JsonSchemaType,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MapType", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         resolver: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Schema::JsonSchemaResolver,

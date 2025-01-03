@@ -296,6 +296,31 @@ impl crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonString {
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Equality(
+        left: crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonString,
+        right: crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonString,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit(
+        str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonString,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonString = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (str))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        left: crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonString,
+        right: crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonString,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser+JsonString")]
 impl AsRef<
@@ -364,7 +389,7 @@ for crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue {
 impl crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue {
     #[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser+JsonValue+__c")]
     pub type __c = crate::UnityEngine::InputSystem::Utilities::JsonValue_JsonParser___c;
-    pub fn Equals_Il2CppObject1(
+    pub fn Equals_Il2CppObject2(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -373,6 +398,14 @@ impl crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue {
             "Equals",
             (obj),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Equals_Il2CppObject_JsonParser_JsonValue1(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        value: crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Equals", (obj, value))?;
         Ok(__cordl_ret.into())
     }
     pub fn Equals_JsonParser_JsonValue0(
@@ -426,6 +459,103 @@ impl crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        left: crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
+        right: crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_Dictionary_2_6(
+        obj: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<
+                *mut quest_hook::libil2cpp::Il2CppString,
+                crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (obj))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_Enum7(
+        val: quest_hook::libil2cpp::Gc<crate::System::Enum>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (val))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_Il2CppString3(
+        str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (str))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_JsonParser_JsonString4(
+        str: crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonString,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (str))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_List_1_5(
+        array: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (array))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit__cordl_bool0(
+        val: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (val))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_f64_2(
+        val: f64,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (val))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_i64_1(
+        val: i64,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (val))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        left: crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
+        right: crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (left, right))?;
         Ok(__cordl_ret.into())
     }
 }

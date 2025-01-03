@@ -34,7 +34,51 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapEventDataBox {
 impl crate::GlobalNamespace::BeatmapEventDataBox {
     #[cfg(feature = "BeatmapEventDataBox+DistributionParamType")]
     pub type DistributionParamType = crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType;
-    pub fn GetBeatStep(
+    pub fn BeatDistributionParamToStep(
+        distributionParam: f32,
+        distributionParamType: crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "BeatDistributionParamToStep",
+                (distributionParam, distributionParamType, count),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EventDistributionParamToStep(
+        index: i32,
+        distributionParam: f32,
+        distributionParamType: crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
+        count: i32,
+        easeType: crate::GlobalNamespace::EaseType,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "EventDistributionParamToStep",
+                (index, distributionParam, distributionParamType, count, easeType),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetBeatStep_IndexFilter_BeatmapEventDataBox_DistributionParamType_f32_f32_1(
+        indexFilter: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IndexFilter>,
+        distributionParamType: crate::GlobalNamespace::BeatmapEventDataBox_DistributionParamType,
+        distributionParam: f32,
+        lastBaseEventRelativeBeat: f32,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetBeatStep",
+                (
+                    indexFilter,
+                    distributionParamType,
+                    distributionParam,
+                    lastBaseEventRelativeBeat,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetBeatStep_f32_0(
         &mut self,
         lastBaseEventRelativeBeat: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {

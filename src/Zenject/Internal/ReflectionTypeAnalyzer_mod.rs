@@ -42,6 +42,134 @@ impl crate::Zenject::Internal::ReflectionTypeAnalyzer {
     pub type __c__DisplayClass7_1 = crate::Zenject::Internal::ReflectionTypeAnalyzer___c__DisplayClass7_1;
     #[cfg(feature = "Zenject+Internal+ReflectionTypeAnalyzer+__c__DisplayClass8_0")]
     pub type __c__DisplayClass8_0 = crate::Zenject::Internal::ReflectionTypeAnalyzer___c__DisplayClass8_0;
+    pub fn AddCustomInjectAttribute_0<T>() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddCustomInjectAttribute", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddCustomInjectAttribute_Type1(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddCustomInjectAttribute", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateInjectableInfoForParam(
+        parentType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        paramInfo: quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::Internal::ReflectionTypeInfo_InjectParameterInfo,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::Internal::ReflectionTypeInfo_InjectParameterInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateInjectableInfoForParam", (parentType, paramInfo))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetConstructorInfo(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::Internal::ReflectionTypeInfo_InjectConstructorInfo,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::Internal::ReflectionTypeInfo_InjectConstructorInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetConstructorInfo", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetFieldInfos(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::Zenject::Internal::ReflectionTypeInfo_InjectFieldInfo,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::Zenject::Internal::ReflectionTypeInfo_InjectFieldInfo,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetFieldInfos", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetInjectableInfoForMember(
+        parentType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        memInfo: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Zenject::InjectableInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::InjectableInfo> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetInjectableInfoForMember", (parentType, memInfo))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetMethodInfos(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::Zenject::Internal::ReflectionTypeInfo_InjectMethodInfo,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::Zenject::Internal::ReflectionTypeInfo_InjectMethodInfo,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetMethodInfos", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPropertyInfos(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::Zenject::Internal::ReflectionTypeInfo_InjectPropertyInfo,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::Zenject::Internal::ReflectionTypeInfo_InjectPropertyInfo,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPropertyInfos", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetReflectionInfo(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Zenject::Internal::ReflectionTypeInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::Internal::ReflectionTypeInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetReflectionInfo", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryGetInjectConstructor(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Reflection::ConstructorInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::ConstructorInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryGetInjectConstructor", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "Zenject+Internal+ReflectionTypeAnalyzer")]
 impl quest_hook::libil2cpp::ObjectType

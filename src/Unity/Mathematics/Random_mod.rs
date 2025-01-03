@@ -21,6 +21,13 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::Unity::Mathematics::R
 }
 #[cfg(feature = "Unity+Mathematics+Random")]
 impl crate::Unity::Mathematics::Random {
+    pub fn CheckIndexForHash(
+        index: u32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckIndexForHash", (index))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CheckInitState(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -74,6 +81,13 @@ impl crate::Unity::Mathematics::Random {
             "CheckState",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateFromIndex(
+        index: u32,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::Random> {
+        let __cordl_ret: crate::Unity::Mathematics::Random = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateFromIndex", (index))?;
         Ok(__cordl_ret.into())
     }
     pub fn InitState(
@@ -689,6 +703,11 @@ impl crate::Unity::Mathematics::Random {
             "NextUInt",
             (min, max),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WangHash(n: u32) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WangHash", (n))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

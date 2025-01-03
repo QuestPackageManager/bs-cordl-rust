@@ -43,6 +43,18 @@ impl crate::System::Net::NetworkInformation::MacOsIPInterfaceProperties {
             .invoke_void(".ctor", (iface, addresses))?;
         Ok(__cordl_object.into())
     }
+    pub fn ParseRouteInfo_icall(
+        iface: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        gw_addr_list: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ParseRouteInfo_icall", (iface, gw_addr_list))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
         iface: quest_hook::libil2cpp::Gc<

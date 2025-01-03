@@ -127,6 +127,18 @@ impl crate::System::Data::NewDiffgramGen {
             .invoke_void(".ctor", (dt, writeHierarchy))?;
         Ok(__cordl_object.into())
     }
+    pub fn QualifiedName(
+        prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("QualifiedName", (prefix, name))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Save_DataTable1(
         &mut self,
         xmlw: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>,

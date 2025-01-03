@@ -56,6 +56,17 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::RsaKeyParameters {
             .invoke_void(".ctor", (isPrivate, modulus, exponent))?;
         Ok(__cordl_object.into())
     }
+    pub fn Validate(
+        modulus: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::BigInteger,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Validate", (modulus))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
         isPrivate: bool,

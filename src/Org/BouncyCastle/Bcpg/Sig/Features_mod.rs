@@ -24,6 +24,17 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Bcpg::Sig::Features {
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+Sig+Features")]
 impl crate::Org::BouncyCastle::Bcpg::Sig::Features {
+    pub fn FeatureToByteArray(
+        feature: u8,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FeatureToByteArray", (feature))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New__cordl_bool_Il2CppArray0(
         critical: bool,
         isLongLength: bool,

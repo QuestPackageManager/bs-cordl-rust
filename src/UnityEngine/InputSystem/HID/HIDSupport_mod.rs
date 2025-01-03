@@ -26,6 +26,31 @@ impl std::ops::DerefMut for crate::UnityEngine::InputSystem::HID::HIDSupport {
 impl crate::UnityEngine::InputSystem::HID::HIDSupport {
     #[cfg(feature = "UnityEngine+InputSystem+HID+HIDSupport+HIDPageUsage")]
     pub type HIDPageUsage = crate::UnityEngine::InputSystem::HID::HIDSupport_HIDPageUsage;
+    pub fn Initialize() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Initialize", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_supportedHIDUsages() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
+            crate::UnityEngine::InputSystem::HID::HIDSupport_HIDPageUsage,
+        >,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
+            crate::UnityEngine::InputSystem::HID::HIDSupport_HIDPageUsage,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_supportedHIDUsages", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_supportedHIDUsages(
+        value: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
+            crate::UnityEngine::InputSystem::HID::HIDSupport_HIDPageUsage,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_supportedHIDUsages", (value))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+InputSystem+HID+HIDSupport")]
 impl quest_hook::libil2cpp::ObjectType

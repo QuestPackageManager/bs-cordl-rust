@@ -353,6 +353,15 @@ impl crate::System::Text::UTF8Encoding {
         > = __cordl_object.invoke("GetString", (bytes, index, count))?;
         Ok(__cordl_ret.into())
     }
+    pub fn InRange(
+        ch: i32,
+        start: i32,
+        end: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InRange", (ch, start, end))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -381,6 +390,22 @@ impl crate::System::Text::UTF8Encoding {
                 (encoderShouldEmitUTF8Identifier, throwOnInvalidBytes),
             )?;
         Ok(__cordl_object.into())
+    }
+    pub fn PtrDiff_Il2CppObject_Il2CppObject0(
+        a: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        b: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PtrDiff", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn PtrDiff_Il2CppObject_Il2CppObject1(
+        a: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        b: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PtrDiff", (a, b))?;
+        Ok(__cordl_ret.into())
     }
     pub fn SetDefaultFallbacks(
         &mut self,

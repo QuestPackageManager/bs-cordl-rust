@@ -115,6 +115,25 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::InfTree {
             .invoke("inflate_trees_dynamic", (nl, nd, c, bl, bd, tl, td, hp, z))?;
         Ok(__cordl_ret.into())
     }
+    pub fn inflate_trees_fixed(
+        bl: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+        bd: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+        tl: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+            >,
+        >,
+        td: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+            >,
+        >,
+        z: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Zlib::ZStream>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("inflate_trees_fixed", (bl, bd, tl, td, z))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn initWorkArea(
         &mut self,
         vsize: i32,

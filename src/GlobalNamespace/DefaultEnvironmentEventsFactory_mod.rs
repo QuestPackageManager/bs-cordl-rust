@@ -23,7 +23,15 @@ impl std::ops::DerefMut for crate::GlobalNamespace::DefaultEnvironmentEventsFact
     }
 }
 #[cfg(feature = "DefaultEnvironmentEventsFactory")]
-impl crate::GlobalNamespace::DefaultEnvironmentEventsFactory {}
+impl crate::GlobalNamespace::DefaultEnvironmentEventsFactory {
+    pub fn InsertDefaultEvents(
+        beatmapData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapData>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InsertDefaultEvents", (beatmapData))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "DefaultEnvironmentEventsFactory")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::DefaultEnvironmentEventsFactory {

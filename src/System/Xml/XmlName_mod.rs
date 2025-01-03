@@ -30,6 +30,24 @@ impl std::ops::DerefMut for crate::System::Xml::XmlName {
 }
 #[cfg(feature = "System+Xml+XmlName")]
 impl crate::System::Xml::XmlName {
+    pub fn Create(
+        prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        hashCode: i32,
+        ownerDoc: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlDocument>,
+        next: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlName>,
+        schemaInfo: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::IXmlSchemaInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlName>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlName> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "Create",
+                (prefix, localName, ns, hashCode, ownerDoc, next, schemaInfo),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Equals(
         &mut self,
         schemaInfo: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::IXmlSchemaInfo>,
@@ -38,6 +56,13 @@ impl crate::System::Xml::XmlName {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (schemaInfo))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetHashCode(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetHashCode", (name))?;
         Ok(__cordl_ret.into())
     }
     pub fn New(

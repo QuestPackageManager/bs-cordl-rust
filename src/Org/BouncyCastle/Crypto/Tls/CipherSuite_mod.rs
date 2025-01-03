@@ -282,6 +282,11 @@ impl crate::Org::BouncyCastle::Crypto::Tls::CipherSuite {
     pub const TLS_SRP_SHA_WITH_3DES_EDE_CBC_SHA: i32 = 49178i32;
     pub const TLS_SRP_SHA_WITH_AES_128_CBC_SHA: i32 = 49181i32;
     pub const TLS_SRP_SHA_WITH_AES_256_CBC_SHA: i32 = 49184i32;
+    pub fn IsScsv(cipherSuite: i32) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsScsv", (cipherSuite))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

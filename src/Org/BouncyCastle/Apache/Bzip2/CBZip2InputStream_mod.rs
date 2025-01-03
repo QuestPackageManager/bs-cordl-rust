@@ -76,6 +76,18 @@ impl crate::Org::BouncyCastle::Apache::Bzip2::CBZip2InputStream {
     pub const RAND_PART_B_STATE: i32 = 3i32;
     pub const RAND_PART_C_STATE: i32 = 4i32;
     pub const START_BLOCK_STATE: i32 = 1i32;
+    pub fn BadBlockHeader() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BadBlockHeader", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn BlockOverrun() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BlockOverrun", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn BsFinishedWithStream(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -132,6 +144,11 @@ impl crate::Org::BouncyCastle::Apache::Bzip2::CBZip2InputStream {
             .invoke("BsSetStream", (f))?;
         Ok(__cordl_ret.into())
     }
+    pub fn Cadvise() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Cadvise", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Complete(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -140,6 +157,18 @@ impl crate::Org::BouncyCastle::Apache::Bzip2::CBZip2InputStream {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Complete", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CompressedStreamEOF() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CompressedStreamEOF", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CrcError() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CrcError", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn EndBlock(
@@ -200,6 +229,42 @@ impl crate::Org::BouncyCastle::Apache::Bzip2::CBZip2InputStream {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InitBlock", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InitCharArray(
+        n1: i32,
+        n2: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut quest_hook::libil2cpp::Il2CppArray<char>,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut quest_hook::libil2cpp::Il2CppArray<char>,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InitCharArray", (n1, n2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InitIntArray(
+        n1: i32,
+        n2: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InitIntArray", (n1, n2))?;
         Ok(__cordl_ret.into())
     }
     pub fn Initialize(

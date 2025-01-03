@@ -52,6 +52,127 @@ impl crate::GlobalNamespace::UnityAsyncHelper {
     pub type __c__DisplayClass5_0 = crate::GlobalNamespace::UnityAsyncHelper___c__DisplayClass5_0;
     #[cfg(feature = "UnityAsyncHelper+__c__DisplayClass6_0")]
     pub type __c__DisplayClass6_0 = crate::GlobalNamespace::UnityAsyncHelper___c__DisplayClass6_0;
+    pub fn InvokeSafe_Func_1_0(
+        asyncTask: quest_hook::libil2cpp::Gc<
+            crate::System::Func_1<*mut crate::System::Threading::Tasks::Task>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InvokeSafe", (asyncTask))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InvokeSafe_Func_2_A1<A>(
+        asyncTask: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<A, *mut crate::System::Threading::Tasks::Task>,
+        >,
+        firstParameter: A,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        A: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InvokeSafe", (asyncTask, firstParameter))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InvokeSafe_Func_3_A_B2<A, B>(
+        asyncTask: quest_hook::libil2cpp::Gc<
+            crate::System::Func_3<A, B, *mut crate::System::Threading::Tasks::Task>,
+        >,
+        firstParameter: A,
+        secondParameter: B,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        A: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        B: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InvokeSafe", (asyncTask, firstParameter, secondParameter))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InvokeSafe_Func_4_A_B_C3<A, B, C>(
+        asyncTask: quest_hook::libil2cpp::Gc<
+            crate::System::Func_4<A, B, C, *mut crate::System::Threading::Tasks::Task>,
+        >,
+        firstParameter: A,
+        secondParameter: B,
+        thirdParameter: C,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        A: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        B: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        C: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "InvokeSafe",
+                (asyncTask, firstParameter, secondParameter, thirdParameter),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InvokeSafe_Func_5_A_B_C_D4<A, B, C, D>(
+        asyncTask: quest_hook::libil2cpp::Gc<
+            crate::System::Func_5<A, B, C, D, *mut crate::System::Threading::Tasks::Task>,
+        >,
+        firstParameter: A,
+        secondParameter: B,
+        thirdParameter: C,
+        fourthParameter: D,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        A: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        B: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        C: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        D: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "InvokeSafe",
+                (
+                    asyncTask,
+                    firstParameter,
+                    secondParameter,
+                    thirdParameter,
+                    fourthParameter,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WaitUntilAsync_ICoroutineStarter1(
+        coroutineStarter: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ICoroutineStarter,
+        >,
+        predicate: quest_hook::libil2cpp::Gc<crate::System::Func_1<bool>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WaitUntilAsync", (coroutineStarter, predicate))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WaitUntilAsync_MonoBehaviour0(
+        coroutineStarter: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+        predicate: quest_hook::libil2cpp::Gc<crate::System::Func_1<bool>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WaitUntilAsync", (coroutineStarter, predicate))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityAsyncHelper")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::UnityAsyncHelper {

@@ -53,6 +53,38 @@ impl crate::UnityEngine::Material {
             .invoke("CopyPropertiesFromMaterial", (mat))?;
         Ok(__cordl_ret.into())
     }
+    pub fn Create(
+        scriptContents: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (scriptContents))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateWithMaterial(
+        _cordl_self: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+        source: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateWithMaterial", (_cordl_self, source))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateWithShader(
+        _cordl_self: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+        shader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateWithShader", (_cordl_self, shader))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateWithString(
+        _cordl_self: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateWithString", (_cordl_self))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn DisableKeyword_ByRefMut1(
         &mut self,
         keyword: quest_hook::libil2cpp::ByRefMut<
@@ -468,6 +500,27 @@ impl crate::UnityEngine::Material {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GetConstantBufferImpl_Injected", (name, ret))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetDefaultLineMaterial() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetDefaultLineMaterial", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetDefaultMaterial() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetDefaultMaterial", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetDefaultParticleMaterial() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetDefaultParticleMaterial", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn GetEnabledKeywords(

@@ -26,6 +26,68 @@ impl std::ops::DerefMut for crate::Internal::Cryptography::OidLookup {
 impl crate::Internal::Cryptography::OidLookup {
     #[cfg(feature = "Internal+Cryptography+OidLookup+__c")]
     pub type __c = crate::Internal::Cryptography::OidLookup___c;
+    pub fn NativeFriendlyNameToOid(
+        friendlyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        oidGroup: crate::System::Security::Cryptography::OidGroup,
+        fallBackToAllGroups: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "NativeFriendlyNameToOid",
+                (friendlyName, oidGroup, fallBackToAllGroups),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn NativeOidToFriendlyName(
+        oid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        oidGroup: crate::System::Security::Cryptography::OidGroup,
+        fallBackToAllGroups: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("NativeOidToFriendlyName", (oid, oidGroup, fallBackToAllGroups))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ShouldUseCache(
+        oidGroup: crate::System::Security::Cryptography::OidGroup,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ShouldUseCache", (oidGroup))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToFriendlyName(
+        oid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        oidGroup: crate::System::Security::Cryptography::OidGroup,
+        fallBackToAllGroups: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToFriendlyName", (oid, oidGroup, fallBackToAllGroups))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToOid(
+        friendlyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        oidGroup: crate::System::Security::Cryptography::OidGroup,
+        fallBackToAllGroups: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToOid", (friendlyName, oidGroup, fallBackToAllGroups))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "Internal+Cryptography+OidLookup")]
 impl quest_hook::libil2cpp::ObjectType for crate::Internal::Cryptography::OidLookup {

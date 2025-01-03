@@ -26,6 +26,79 @@ impl std::ops::DerefMut for crate::System::Net::WebUtility {
 impl crate::System::Net::WebUtility {
     #[cfg(feature = "System+Net+WebUtility+UrlDecoder")]
     pub type UrlDecoder = crate::System::Net::WebUtility_UrlDecoder;
+    pub fn GetNextUnicodeScalarValueFromUtf16Surrogate(
+        pch: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppObject>,
+        charsRemaining: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetNextUnicodeScalarValueFromUtf16Surrogate",
+                (pch, charsRemaining),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn HexToInt(h: char) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("HexToInt", (h))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn HtmlEncode_Il2CppString0(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("HtmlEncode", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn HtmlEncode_TextWriter1(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        output: quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("HtmlEncode", (value, output))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IndexOfHtmlEncodingChars(
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        startPos: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IndexOfHtmlEncodingChars", (s, startPos))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UrlDecode(
+        encodedValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UrlDecode", (encodedValue))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UrlDecodeInternal(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UrlDecodeInternal", (value, encoding))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_HtmlEncodeConformance() -> quest_hook::libil2cpp::Result<
+        crate::System::Net::Configuration::UnicodeEncodingConformance,
+    > {
+        let __cordl_ret: crate::System::Net::Configuration::UnicodeEncodingConformance = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_HtmlEncodeConformance", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "System+Net+WebUtility")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Net::WebUtility {

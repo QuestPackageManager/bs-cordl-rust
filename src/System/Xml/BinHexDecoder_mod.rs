@@ -29,7 +29,19 @@ impl std::ops::DerefMut for crate::System::Xml::BinHexDecoder {
 }
 #[cfg(feature = "System+Xml+BinHexDecoder")]
 impl crate::System::Xml::BinHexDecoder {
-    pub fn Decode(
+    pub fn Decode_Il2CppArray__cordl_bool1(
+        chars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+        allowOddChars: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Decode", (chars, allowOddChars))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Decode_Il2CppArray_i32_i32_0(
         &mut self,
         chars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         startPos: i32,
@@ -39,6 +51,32 @@ impl crate::System::Xml::BinHexDecoder {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("Decode", (chars, startPos, len))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Decode_Il2CppObject_Il2CppObject_Il2CppObject_Il2CppObject_ByRefMut_ByRefMut_ByRefMut_ByRefMut2(
+        pChars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        pCharsEndPos: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        pBytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        pBytesEndPos: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        hasHalfByteCached: quest_hook::libil2cpp::ByRefMut<bool>,
+        cachedHalfByte: quest_hook::libil2cpp::ByRefMut<u8>,
+        charsDecoded: quest_hook::libil2cpp::ByRefMut<i32>,
+        bytesDecoded: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "Decode",
+                (
+                    pChars,
+                    pCharsEndPos,
+                    pBytes,
+                    pBytesEndPos,
+                    hasHalfByteCached,
+                    cachedHalfByte,
+                    charsDecoded,
+                    bytesDecoded,
+                ),
+            )?;
         Ok(__cordl_ret.into())
     }
     pub fn get_IsFull(&mut self) -> quest_hook::libil2cpp::Result<bool> {

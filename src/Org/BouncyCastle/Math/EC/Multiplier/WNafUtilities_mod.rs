@@ -42,12 +42,240 @@ impl crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities {
         feature = "Org+BouncyCastle+Math+EC+Multiplier+WNafUtilities+PrecomputeWithPointMapCallback"
     )]
     pub type PrecomputeWithPointMapCallback = crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_PrecomputeWithPointMapCallback;
+    pub fn ConfigureBasepoint(
+        p: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ConfigureBasepoint", (p))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GenerateCompactNaf(
+        k: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<i32>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GenerateCompactNaf", (k))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GenerateCompactWindowNaf(
+        width: i32,
+        k: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<i32>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GenerateCompactWindowNaf", (width, k))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GenerateJsf(
+        g: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+        h: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GenerateJsf", (g, h))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GenerateNaf(
+        k: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GenerateNaf", (k))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GenerateWindowNaf(
+        width: i32,
+        k: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GenerateWindowNaf", (width, k))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetNafWeight(
+        k: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetNafWeight", (k))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetWNafPreCompInfo_ECPoint0(
+        p: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::EC::Multiplier::WNafPreCompInfo,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::EC::Multiplier::WNafPreCompInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetWNafPreCompInfo", (p))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetWNafPreCompInfo_PreCompInfo1(
+        preCompInfo: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::EC::Multiplier::PreCompInfo,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::EC::Multiplier::WNafPreCompInfo,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::EC::Multiplier::WNafPreCompInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetWNafPreCompInfo", (preCompInfo))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetWindowSize_Il2CppArray2(
+        bits: i32,
+        windowSizeCutoffs: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<i32>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetWindowSize", (bits, windowSizeCutoffs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetWindowSize_Il2CppArray_i32_3(
+        bits: i32,
+        windowSizeCutoffs: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<i32>,
+        >,
+        maxWidth: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetWindowSize", (bits, windowSizeCutoffs, maxWidth))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetWindowSize_i32_0(bits: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetWindowSize", (bits))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetWindowSize_i32_1(
+        bits: i32,
+        maxWidth: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetWindowSize", (bits, maxWidth))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MapPointWithPrecomp(
+        p: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
+        minWidth: i32,
+        includeNegated: bool,
+        pointMap: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::EC::ECPointMap,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::EC::ECPoint,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MapPointWithPrecomp", (p, minWidth, includeNegated, pointMap))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
+    }
+    pub fn Precompute(
+        p: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
+        minWidth: i32,
+        includeNegated: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::EC::Multiplier::WNafPreCompInfo,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::EC::Multiplier::WNafPreCompInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Precompute", (p, minWidth, includeNegated))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn PrecomputeWithPointMap(
+        p: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
+        pointMap: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::EC::ECPointMap,
+        >,
+        fromWNaf: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::EC::Multiplier::WNafPreCompInfo,
+        >,
+        includeNegated: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::EC::Multiplier::WNafPreCompInfo,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::EC::Multiplier::WNafPreCompInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PrecomputeWithPointMap", (p, pointMap, fromWNaf, includeNegated))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ResizeTable(
+        a: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+            >,
+        >,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ResizeTable", (a, length))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Trim_Il2CppArray_i32_0(
+        a: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Trim", (a, length))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Trim_Il2CppArray_i32_1(
+        a: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<i32>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Trim", (a, length))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,

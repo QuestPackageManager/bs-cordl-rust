@@ -223,6 +223,14 @@ impl crate::UnityEngine::TextCore::Text::TextGenerator {
             .invoke("ClearMarkupTagAttributes", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn ClearMesh(
+        updateMesh: bool,
+        textInfo: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::TextInfo>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ClearMesh", (updateMesh, textInfo))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ComputeMarginSize(
         &mut self,
         rect: crate::UnityEngine::Rect,
@@ -308,6 +316,16 @@ impl crate::UnityEngine::TextCore::Text::TextGenerator {
             )?;
         Ok(__cordl_ret.into())
     }
+    pub fn GenerateText(
+        settings: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::TextGenerationSettings,
+        >,
+        textInfo: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::TextInfo>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GenerateText", (settings, textInfo))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GenerateTextMesh(
         &mut self,
         generationSettings: quest_hook::libil2cpp::Gc<
@@ -333,6 +351,16 @@ impl crate::UnityEngine::TextCore::Text::TextGenerator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GetEllipsisSpecialCharacter", (generationSettings))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPreferredValues(
+        settings: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::TextGenerationSettings,
+        >,
+        textInfo: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::TextInfo>,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPreferredValues", (settings, textInfo))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetPreferredValuesInternal(
@@ -394,6 +422,15 @@ impl crate::UnityEngine::TextCore::Text::TextGenerator {
                     isUsingAlternativeTypeface,
                 ),
             )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetTextGenerator() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::TextGenerator>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::TextGenerator,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetTextGenerator", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn GetUnderlineSpecialCharacter(
@@ -629,6 +666,11 @@ impl crate::UnityEngine::TextCore::Text::TextGenerator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_isTextTruncated() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_isTextTruncated", ())?;
         Ok(__cordl_ret.into())
     }
 }

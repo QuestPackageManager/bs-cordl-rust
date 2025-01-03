@@ -26,6 +26,27 @@ impl std::ops::DerefMut for crate::UnityEngine::Scripting::GarbageCollector {
 impl crate::UnityEngine::Scripting::GarbageCollector {
     #[cfg(feature = "UnityEngine+Scripting+GarbageCollector+Mode")]
     pub type Mode = crate::UnityEngine::Scripting::GarbageCollector_Mode;
+    pub fn GetMode() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Scripting::GarbageCollector_Mode,
+    > {
+        let __cordl_ret: crate::UnityEngine::Scripting::GarbageCollector_Mode = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetMode", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetMode(
+        mode: crate::UnityEngine::Scripting::GarbageCollector_Mode,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetMode", (mode))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_GCMode(
+        value: crate::UnityEngine::Scripting::GarbageCollector_Mode,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_GCMode", (value))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+Scripting+GarbageCollector")]
 impl quest_hook::libil2cpp::ObjectType

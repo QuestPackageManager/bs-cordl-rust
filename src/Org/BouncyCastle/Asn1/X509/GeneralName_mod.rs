@@ -35,6 +35,30 @@ impl crate::Org::BouncyCastle::Asn1::X509::GeneralName {
     pub const Rfc822Name: i32 = 1i32;
     pub const UniformResourceIdentifier: i32 = 6i32;
     pub const X400Address: i32 = 3i32;
+    pub fn GetInstance_Asn1TaggedObject__cordl_bool1(
+        tagObj: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1TaggedObject,
+        >,
+        explicitly: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::GeneralName>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetInstance", (tagObj, explicitly))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetInstance_Il2CppObject0(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::GeneralName>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::GeneralName,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_Asn1Object_i32_1(
         name: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Object>,
         tag: i32,

@@ -223,7 +223,75 @@ impl crate::System::Xml::Schema::SchemaCollectionCompiler {
             .invoke("CheckUnionType", (unionMember, memberTypeDefinitions, parentType))?;
         Ok(__cordl_ret.into())
     }
-    pub fn Cleanup(
+    pub fn CleanupAttribute(
+        attribute: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaAttribute,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CleanupAttribute", (attribute))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CleanupAttributeGroup(
+        attributeGroup: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaAttributeGroup,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CleanupAttributeGroup", (attributeGroup))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CleanupAttributes(
+        attributes: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaObjectCollection,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CleanupAttributes", (attributes))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CleanupComplexType(
+        complexType: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaComplexType,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CleanupComplexType", (complexType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CleanupElement(
+        element: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaElement>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CleanupElement", (element))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CleanupGroup(
+        group: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaGroup>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CleanupGroup", (group))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CleanupParticle(
+        particle: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaParticle,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CleanupParticle", (particle))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CleanupSimpleType(
+        simpleType: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaSimpleType,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CleanupSimpleType", (simpleType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Cleanup_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -231,6 +299,13 @@ impl crate::System::Xml::Schema::SchemaCollectionCompiler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Cleanup", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Cleanup_XmlSchema1(
+        schema: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Cleanup", (schema))?;
         Ok(__cordl_ret.into())
     }
     pub fn Compile(

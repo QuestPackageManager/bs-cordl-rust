@@ -23,7 +23,41 @@ impl std::ops::DerefMut for crate::BeatSaber::BeatAvatarSDK::AvatarRandomizer {
     }
 }
 #[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarRandomizer")]
-impl crate::BeatSaber::BeatAvatarSDK::AvatarRandomizer {}
+impl crate::BeatSaber::BeatAvatarSDK::AvatarRandomizer {
+    pub fn RandomizeAll(
+        avatarData: quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::BeatAvatarSDK::AvatarData,
+        >,
+        avatarPartsModel: quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RandomizeAll", (avatarData, avatarPartsModel))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RandomizeColors(
+        avatarData: quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::BeatAvatarSDK::AvatarData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RandomizeColors", (avatarData))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RandomizeModels(
+        avatarData: quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::BeatAvatarSDK::AvatarData,
+        >,
+        avatarPartsModel: quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RandomizeModels", (avatarData, avatarPartsModel))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarRandomizer")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatSaber::BeatAvatarSDK::AvatarRandomizer {

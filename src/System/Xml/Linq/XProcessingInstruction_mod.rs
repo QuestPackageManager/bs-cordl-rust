@@ -59,6 +59,13 @@ impl crate::System::Xml::Linq::XProcessingInstruction {
             .invoke_void(".ctor", (other))?;
         Ok(__cordl_object.into())
     }
+    pub fn ValidateName(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ValidateName", (name))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn WriteTo(
         &mut self,
         writer: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>,

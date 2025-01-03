@@ -23,7 +23,50 @@ impl std::ops::DerefMut for crate::System::Net::Http::Headers::CollectionParser 
     }
 }
 #[cfg(feature = "System+Net+Http+Headers+CollectionParser")]
-impl crate::System::Net::Http::Headers::CollectionParser {}
+impl crate::System::Net::Http::Headers::CollectionParser {
+    pub fn TryParseStringElement(
+        lexer: quest_hook::libil2cpp::Gc<crate::System::Net::Http::Headers::Lexer>,
+        parsedValue: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+        t: quest_hook::libil2cpp::ByRefMut<crate::System::Net::Http::Headers::Token>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryParseStringElement", (lexer, parsedValue, t))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryParse_ByRefMut1(
+        input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        minimalCount: i32,
+        result: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::System::Collections::Generic::List_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryParse", (input, minimalCount, result))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryParse_ElementTryParser_1_ByRefMut0<T>(
+        input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        minimalCount: i32,
+        parser: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Http::Headers::ElementTryParser_1<T>,
+        >,
+        result: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::System::Collections::Generic::List_1<T>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryParse", (input, minimalCount, parser, result))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Net+Http+Headers+CollectionParser")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Net::Http::Headers::CollectionParser {

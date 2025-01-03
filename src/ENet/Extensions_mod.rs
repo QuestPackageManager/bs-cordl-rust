@@ -22,7 +22,15 @@ impl std::ops::DerefMut for crate::ENet::Extensions {
     }
 }
 #[cfg(feature = "ENet+Extensions")]
-impl crate::ENet::Extensions {}
+impl crate::ENet::Extensions {
+    pub fn StringLength(
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StringLength", (data))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "ENet+Extensions")]
 impl quest_hook::libil2cpp::ObjectType for crate::ENet::Extensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

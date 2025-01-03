@@ -23,7 +23,134 @@ impl std::ops::DerefMut for crate::UnityEngine::TextCore::Text::FontAssetUtiliti
     }
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+FontAssetUtilities")]
-impl crate::UnityEngine::TextCore::Text::FontAssetUtilities {}
+impl crate::UnityEngine::TextCore::Text::FontAssetUtilities {
+    pub fn GetCharacterFromFontAsset(
+        unicode: u32,
+        sourceFontAsset: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::FontAsset,
+        >,
+        includeFallbacks: bool,
+        fontStyle: crate::UnityEngine::TextCore::Text::FontStyles,
+        fontWeight: crate::UnityEngine::TextCore::Text::TextFontWeight,
+        isAlternativeTypeface: quest_hook::libil2cpp::ByRefMut<bool>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::Character>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::Character,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetCharacterFromFontAsset",
+                (
+                    unicode,
+                    sourceFontAsset,
+                    includeFallbacks,
+                    fontStyle,
+                    fontWeight,
+                    isAlternativeTypeface,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCharacterFromFontAsset_Internal(
+        unicode: u32,
+        sourceFontAsset: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::FontAsset,
+        >,
+        includeFallbacks: bool,
+        fontStyle: crate::UnityEngine::TextCore::Text::FontStyles,
+        fontWeight: crate::UnityEngine::TextCore::Text::TextFontWeight,
+        isAlternativeTypeface: quest_hook::libil2cpp::ByRefMut<bool>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::Character>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::Character,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetCharacterFromFontAsset_Internal",
+                (
+                    unicode,
+                    sourceFontAsset,
+                    includeFallbacks,
+                    fontStyle,
+                    fontWeight,
+                    isAlternativeTypeface,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCharacterFromFontAssets(
+        unicode: u32,
+        sourceFontAsset: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::FontAsset,
+        >,
+        fontAssets: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::TextCore::Text::FontAsset,
+            >,
+        >,
+        includeFallbacks: bool,
+        fontStyle: crate::UnityEngine::TextCore::Text::FontStyles,
+        fontWeight: crate::UnityEngine::TextCore::Text::TextFontWeight,
+        isAlternativeTypeface: quest_hook::libil2cpp::ByRefMut<bool>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::Character>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::Character,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetCharacterFromFontAssets",
+                (
+                    unicode,
+                    sourceFontAsset,
+                    fontAssets,
+                    includeFallbacks,
+                    fontStyle,
+                    fontWeight,
+                    isAlternativeTypeface,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetSpriteCharacterFromSpriteAsset(
+        unicode: u32,
+        spriteAsset: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::SpriteAsset,
+        >,
+        includeFallbacks: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::SpriteCharacter>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::SpriteCharacter,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetSpriteCharacterFromSpriteAsset",
+                (unicode, spriteAsset, includeFallbacks),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetSpriteCharacterFromSpriteAsset_Internal(
+        unicode: u32,
+        spriteAsset: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::SpriteAsset,
+        >,
+        includeFallbacks: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::SpriteCharacter>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::SpriteCharacter,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetSpriteCharacterFromSpriteAsset_Internal",
+                (unicode, spriteAsset, includeFallbacks),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+TextCore+Text+FontAssetUtilities")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::TextCore::Text::FontAssetUtilities {

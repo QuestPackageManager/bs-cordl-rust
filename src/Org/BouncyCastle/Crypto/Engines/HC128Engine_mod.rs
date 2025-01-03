@@ -32,6 +32,21 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Engines::HC128Engi
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+HC128Engine")]
 impl crate::Org::BouncyCastle::Crypto::Engines::HC128Engine {
+    pub fn Dim(x: u32, y: u32) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Dim", (x, y))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn F1(x: u32) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("F1", (x))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn F2(x: u32) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("F2", (x))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn G1(&mut self, x: u32, y: u32, z: u32) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -91,6 +106,16 @@ impl crate::Org::BouncyCastle::Crypto::Engines::HC128Engine {
             .invoke("Init", (forEncryption, parameters))?;
         Ok(__cordl_ret.into())
     }
+    pub fn Mod1024(x: u32) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Mod1024", (x))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Mod512(x: u32) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Mod512", (x))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -128,6 +153,16 @@ impl crate::Org::BouncyCastle::Crypto::Engines::HC128Engine {
             self,
         );
         let __cordl_ret: u8 = __cordl_object.invoke("ReturnByte", (input))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RotateLeft(x: u32, bits: i32) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RotateLeft", (x, bits))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RotateRight(x: u32, bits: i32) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RotateRight", (x, bits))?;
         Ok(__cordl_ret.into())
     }
     pub fn Step(&mut self) -> quest_hook::libil2cpp::Result<u32> {

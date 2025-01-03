@@ -23,6 +23,257 @@ impl std::ops::DerefMut for crate::UnityEngine::Sprite {
 }
 #[cfg(feature = "UnityEngine+Sprite")]
 impl crate::UnityEngine::Sprite {
+    pub fn CreateSprite(
+        texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+        rect: crate::UnityEngine::Rect,
+        pivot: crate::UnityEngine::Vector2,
+        pixelsPerUnit: f32,
+        extrude: u32,
+        meshType: crate::UnityEngine::SpriteMeshType,
+        border: crate::UnityEngine::Vector4,
+        generateFallbackPhysicsShape: bool,
+        secondaryTexture: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::UnityEngine::SecondarySpriteTexture,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CreateSprite",
+                (
+                    texture,
+                    rect,
+                    pivot,
+                    pixelsPerUnit,
+                    extrude,
+                    meshType,
+                    border,
+                    generateFallbackPhysicsShape,
+                    secondaryTexture,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateSpriteWithoutTextureScripting(
+        rect: crate::UnityEngine::Rect,
+        pivot: crate::UnityEngine::Vector2,
+        pixelsToUnits: f32,
+        texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CreateSpriteWithoutTextureScripting",
+                (rect, pivot, pixelsToUnits, texture),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateSpriteWithoutTextureScripting_Injected(
+        rect: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Rect>,
+        pivot: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
+        pixelsToUnits: f32,
+        texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CreateSpriteWithoutTextureScripting_Injected",
+                (rect, pivot, pixelsToUnits, texture),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateSprite_Injected(
+        texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+        rect: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Rect>,
+        pivot: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
+        pixelsPerUnit: f32,
+        extrude: u32,
+        meshType: crate::UnityEngine::SpriteMeshType,
+        border: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector4>,
+        generateFallbackPhysicsShape: bool,
+        secondaryTexture: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::UnityEngine::SecondarySpriteTexture,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CreateSprite_Injected",
+                (
+                    texture,
+                    rect,
+                    pivot,
+                    pixelsPerUnit,
+                    extrude,
+                    meshType,
+                    border,
+                    generateFallbackPhysicsShape,
+                    secondaryTexture,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Create_Rect_Vector2_f32_1(
+        rect: crate::UnityEngine::Rect,
+        pivot: crate::UnityEngine::Vector2,
+        pixelsToUnits: f32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (rect, pivot, pixelsToUnits))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Create_Rect_Vector2_f32_Texture2D0(
+        rect: crate::UnityEngine::Rect,
+        pivot: crate::UnityEngine::Vector2,
+        pixelsToUnits: f32,
+        texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (rect, pivot, pixelsToUnits, texture))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Create_Texture2D_Rect_Vector2_8(
+        texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+        rect: crate::UnityEngine::Rect,
+        pivot: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (texture, rect, pivot))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Create_Texture2D_Rect_Vector2_f32_7(
+        texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+        rect: crate::UnityEngine::Rect,
+        pivot: crate::UnityEngine::Vector2,
+        pixelsPerUnit: f32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (texture, rect, pivot, pixelsPerUnit))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Create_Texture2D_Rect_Vector2_f32_u32_6(
+        texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+        rect: crate::UnityEngine::Rect,
+        pivot: crate::UnityEngine::Vector2,
+        pixelsPerUnit: f32,
+        extrude: u32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (texture, rect, pivot, pixelsPerUnit, extrude))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Create_Texture2D_Rect_Vector2_f32_u32_SpriteMeshType5(
+        texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+        rect: crate::UnityEngine::Rect,
+        pivot: crate::UnityEngine::Vector2,
+        pixelsPerUnit: f32,
+        extrude: u32,
+        meshType: crate::UnityEngine::SpriteMeshType,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (texture, rect, pivot, pixelsPerUnit, extrude, meshType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Create_Texture2D_Rect_Vector2_f32_u32_SpriteMeshType_Vector4_4(
+        texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+        rect: crate::UnityEngine::Rect,
+        pivot: crate::UnityEngine::Vector2,
+        pixelsPerUnit: f32,
+        extrude: u32,
+        meshType: crate::UnityEngine::SpriteMeshType,
+        border: crate::UnityEngine::Vector4,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "Create",
+                (texture, rect, pivot, pixelsPerUnit, extrude, meshType, border),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Create_Texture2D_Rect_Vector2_f32_u32_SpriteMeshType_Vector4__cordl_bool2(
+        texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+        rect: crate::UnityEngine::Rect,
+        pivot: crate::UnityEngine::Vector2,
+        pixelsPerUnit: f32,
+        extrude: u32,
+        meshType: crate::UnityEngine::SpriteMeshType,
+        border: crate::UnityEngine::Vector4,
+        generateFallbackPhysicsShape: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "Create",
+                (
+                    texture,
+                    rect,
+                    pivot,
+                    pixelsPerUnit,
+                    extrude,
+                    meshType,
+                    border,
+                    generateFallbackPhysicsShape,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Create_Texture2D_Rect_Vector2_f32_u32_SpriteMeshType_Vector4__cordl_bool_Il2CppArray3(
+        texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+        rect: crate::UnityEngine::Rect,
+        pivot: crate::UnityEngine::Vector2,
+        pixelsPerUnit: f32,
+        extrude: u32,
+        meshType: crate::UnityEngine::SpriteMeshType,
+        border: crate::UnityEngine::Vector4,
+        generateFallbackPhysicsShape: bool,
+        secondaryTextures: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::UnityEngine::SecondarySpriteTexture,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "Create",
+                (
+                    texture,
+                    rect,
+                    pivot,
+                    pixelsPerUnit,
+                    extrude,
+                    meshType,
+                    border,
+                    generateFallbackPhysicsShape,
+                    secondaryTextures,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetInnerUVs(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
@@ -126,6 +377,17 @@ impl crate::UnityEngine::Sprite {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetPhysicsShapeCount", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPhysicsShapeImpl(
+        sprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+        shapeIdx: i32,
+        physicsShape: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector2>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPhysicsShapeImpl", (sprite, shapeIdx, physicsShape))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetPhysicsShapePointCount(
@@ -248,7 +510,15 @@ impl crate::UnityEngine::Sprite {
             .invoke("OverrideGeometry", (vertices, triangles))?;
         Ok(__cordl_ret.into())
     }
-    pub fn OverridePhysicsShape(
+    pub fn OverridePhysicsShapeCount(
+        sprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+        physicsShapeCount: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("OverridePhysicsShapeCount", (sprite, physicsShapeCount))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn OverridePhysicsShape_IList_1_0(
         &mut self,
         physicsShapes: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IList_1<
@@ -261,6 +531,17 @@ impl crate::UnityEngine::Sprite {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OverridePhysicsShape", (physicsShapes))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn OverridePhysicsShape_Sprite_Il2CppArray_i32_1(
+        sprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+        physicsShape: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
+        >,
+        idx: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("OverridePhysicsShape", (sprite, physicsShape, idx))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

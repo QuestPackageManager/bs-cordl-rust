@@ -59,6 +59,13 @@ impl crate::Oculus::Platform::Request {
             .invoke("OnComplete", (callback))?;
         Ok(__cordl_ret.into())
     }
+    pub fn RunCallbacks(
+        limit: u32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RunCallbacks", (limit))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
         requestID: u64,

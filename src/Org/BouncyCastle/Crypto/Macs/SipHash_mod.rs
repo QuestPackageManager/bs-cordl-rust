@@ -134,6 +134,11 @@ impl crate::Org::BouncyCastle::Crypto::Macs::SipHash {
             .invoke("Reset", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn RotateLeft(x: i64, n: i32) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RotateLeft", (x, n))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Update(
         &mut self,
         input: u8,

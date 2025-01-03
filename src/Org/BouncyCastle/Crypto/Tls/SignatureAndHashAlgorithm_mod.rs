@@ -67,6 +67,18 @@ impl crate::Org::BouncyCastle::Crypto::Tls::SignatureAndHashAlgorithm {
             .invoke_void(".ctor", (hash, signature))?;
         Ok(__cordl_object.into())
     }
+    pub fn Parse(
+        input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::SignatureAndHashAlgorithm,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::SignatureAndHashAlgorithm,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Parse", (input))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
         hash: u8,

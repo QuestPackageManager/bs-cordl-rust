@@ -123,6 +123,14 @@ impl crate::HoudiniEngineUnity::HEU_CookLogs {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_Instance() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_CookLogs>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_CookLogs,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_Instance", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_CookLogs")]
 impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::HEU_CookLogs {

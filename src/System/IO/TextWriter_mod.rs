@@ -113,6 +113,15 @@ impl crate::System::IO::TextWriter {
             .invoke_void(".ctor", (formatProvider))?;
         Ok(__cordl_object.into())
     }
+    pub fn Synchronized(
+        writer: quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IO::TextWriter> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Synchronized", (writer))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn WriteAsync_Il2CppArray_i32_i32_2(
         &mut self,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,

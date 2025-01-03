@@ -28,6 +28,53 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::OpenSsl::MiscPemGenerator 
 }
 #[cfg(feature = "Org+BouncyCastle+OpenSsl+MiscPemGenerator")]
 impl crate::Org::BouncyCastle::OpenSsl::MiscPemGenerator {
+    pub fn CreatePemObject_Il2CppObject0(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::IO::Pem::PemObject,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::IO::Pem::PemObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreatePemObject", (obj))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreatePemObject_Il2CppString_Il2CppArray_SecureRandom1(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+        random: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Security::SecureRandom,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::IO::Pem::PemObject,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::IO::Pem::PemObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreatePemObject", (obj, algorithm, password, random))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EncodePrivateKey(
+        akp: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+        >,
+        keyType: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EncodePrivateKey", (akp, keyType))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Generate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

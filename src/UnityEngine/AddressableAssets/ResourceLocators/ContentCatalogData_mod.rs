@@ -113,6 +113,20 @@ impl crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData
         > = __cordl_object.invoke("CreateLocator", (providerSuffix))?;
         Ok(__cordl_ret.into())
     }
+    pub fn ExpandInternalId(
+        internalIdPrefixes: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+        v: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ExpandInternalId", (internalIdPrefixes, v))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetData(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -130,6 +144,20 @@ impl crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData
                 *mut crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogDataEntry,
             >,
         > = __cordl_object.invoke("GetData", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LoadFromFile(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        cacheSize: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LoadFromFile", (path, cacheSize))?;
         Ok(__cordl_ret.into())
     }
     pub fn New_1() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

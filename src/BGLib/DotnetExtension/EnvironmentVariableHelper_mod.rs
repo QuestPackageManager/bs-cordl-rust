@@ -24,7 +24,27 @@ impl std::ops::DerefMut for crate::BGLib::DotnetExtension::EnvironmentVariableHe
     }
 }
 #[cfg(feature = "BGLib+DotnetExtension+EnvironmentVariableHelper")]
-impl crate::BGLib::DotnetExtension::EnvironmentVariableHelper {}
+impl crate::BGLib::DotnetExtension::EnvironmentVariableHelper {
+    pub fn GetDirectoryPath(
+        variableName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetDirectoryPath", (variableName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetDirectoryPath(
+        variableName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetDirectoryPath", (variableName, path))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "BGLib+DotnetExtension+EnvironmentVariableHelper")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BGLib::DotnetExtension::EnvironmentVariableHelper {

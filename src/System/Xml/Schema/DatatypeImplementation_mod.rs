@@ -42,6 +42,13 @@ impl crate::System::Xml::Schema::DatatypeImplementation {
         let __cordl_ret: i32 = __cordl_object.invoke("Compare", (value1, value2))?;
         Ok(__cordl_ret.into())
     }
+    pub fn CreateBuiltinTypes() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateBuiltinTypes", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CreateValueConverter(
         &mut self,
         schemaType: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaType>,
@@ -102,6 +109,140 @@ impl crate::System::Xml::Schema::DatatypeImplementation {
             crate::System::Xml::Schema::XmlSchemaDatatype,
         > = __cordl_object
             .invoke("DeriveByRestriction", (facets, nameTable, schemaType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DeriveByUnion(
+        types: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Xml::Schema::XmlSchemaSimpleType,
+            >,
+        >,
+        schemaType: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaType>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::DatatypeImplementation>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::DatatypeImplementation,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DeriveByUnion", (types, schemaType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FinishBuiltinType(
+        derivedType: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaSimpleType,
+        >,
+        baseType: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaSimpleType,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FinishBuiltinType", (derivedType, baseType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromTypeName(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::DatatypeImplementation>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::DatatypeImplementation,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromTypeName", (name))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromXdrName(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::DatatypeImplementation>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::DatatypeImplementation,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromXdrName", (name))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromXmlTokenizedType(
+        token: crate::System::Xml::XmlTokenizedType,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::DatatypeImplementation>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::DatatypeImplementation,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromXmlTokenizedType", (token))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromXmlTokenizedTypeXsd(
+        token: crate::System::Xml::XmlTokenizedType,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::DatatypeImplementation>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::DatatypeImplementation,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromXmlTokenizedTypeXsd", (token))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetBuiltInTypes() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Xml::Schema::XmlSchemaSimpleType,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Xml::Schema::XmlSchemaSimpleType,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetBuiltInTypes", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetNormalizedStringTypeV1Compat() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSimpleType>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaSimpleType,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetNormalizedStringTypeV1Compat", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPrimitiveTypeCode(
+        typeCode: crate::System::Xml::Schema::XmlTypeCode,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::Schema::XmlTypeCode> {
+        let __cordl_ret: crate::System::Xml::Schema::XmlTypeCode = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPrimitiveTypeCode", (typeCode))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetSimpleTypeFromTypeCode(
+        typeCode: crate::System::Xml::Schema::XmlTypeCode,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSimpleType>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaSimpleType,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSimpleTypeFromTypeCode", (typeCode))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetSimpleTypeFromXsdType(
+        qname: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSimpleType>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaSimpleType,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSimpleTypeFromXsdType", (qname))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetTokenTypeV1Compat() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSimpleType>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaSimpleType,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetTokenTypeV1Compat", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn GetTypeName(
@@ -191,6 +332,20 @@ impl crate::System::Xml::Schema::DatatypeImplementation {
             .invoke("ParseValue", (s, nameTable, nsmgr, createAtomicValue))?;
         Ok(__cordl_ret.into())
     }
+    pub fn StartBuiltinType(
+        qname: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+        dataType: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaDatatype,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSimpleType>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaSimpleType,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StartBuiltinType", (qname, dataType))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn TryParseValue(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -233,6 +388,15 @@ impl crate::System::Xml::Schema::DatatypeImplementation {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_AnySimpleType() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSimpleType>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaSimpleType,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_AnySimpleType", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_Base(
@@ -326,6 +490,15 @@ impl crate::System::Xml::Schema::DatatypeImplementation {
         );
         let __cordl_ret: crate::System::Xml::Schema::XmlTypeCode = __cordl_object
             .invoke("get_TypeCode", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_UntypedAtomicType() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSimpleType>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaSimpleType,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_UntypedAtomicType", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_ValidRestrictionFlags(
@@ -498,6 +671,18 @@ impl crate::System::Xml::Schema::DatatypeImplementation_SchemaDatatypeMap {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_ParentIndex", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Explicit(
+        sdm: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::DatatypeImplementation_SchemaDatatypeMap,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::DatatypeImplementation>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::DatatypeImplementation,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("op_Explicit", (sdm))?;
         Ok(__cordl_ret.into())
     }
 }

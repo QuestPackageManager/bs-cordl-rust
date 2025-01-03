@@ -37,6 +37,13 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::SchemaEntity {
 }
 #[cfg(feature = "System+Xml+Schema+SchemaEntity")]
 impl crate::System::Xml::Schema::SchemaEntity {
+    pub fn IsPredefinedEntity(
+        n: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsPredefinedEntity", (n))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         qname: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
         isParameter: bool,

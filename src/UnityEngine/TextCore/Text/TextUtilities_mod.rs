@@ -23,7 +23,33 @@ impl std::ops::DerefMut for crate::UnityEngine::TextCore::Text::TextUtilities {
     }
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+TextUtilities")]
-impl crate::UnityEngine::TextCore::Text::TextUtilities {}
+impl crate::UnityEngine::TextCore::Text::TextUtilities {
+    pub fn GetHashCodeCaseInSensitive(
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetHashCodeCaseInSensitive", (s))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToUpperFast(c: char) -> quest_hook::libil2cpp::Result<char> {
+        let __cordl_ret: char = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToUpperFast", (c))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UintToString(
+        unicodes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<u32>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UintToString", (unicodes))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+TextCore+Text+TextUtilities")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::TextCore::Text::TextUtilities {

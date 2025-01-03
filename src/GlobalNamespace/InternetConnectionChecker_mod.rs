@@ -26,6 +26,17 @@ impl std::ops::DerefMut for crate::GlobalNamespace::InternetConnectionChecker {
 impl crate::GlobalNamespace::InternetConnectionChecker {
     #[cfg(feature = "InternetConnectionChecker+_IsConnectedToInternetAsync_d__0")]
     pub type _IsConnectedToInternetAsync_d__0 = crate::GlobalNamespace::InternetConnectionChecker__IsConnectedToInternetAsync_d__0;
+    pub fn IsConnectedToInternetAsync(
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<bool>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsConnectedToInternetAsync", (cancellationToken))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

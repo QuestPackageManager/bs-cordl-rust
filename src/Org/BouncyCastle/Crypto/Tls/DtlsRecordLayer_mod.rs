@@ -86,6 +86,14 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsRecordLayer {
             .invoke("Failed", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetMacSequenceNumber(
+        epoch: i32,
+        sequence_number: i64,
+    ) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetMacSequenceNumber", (epoch, sequence_number))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetReceiveLimit(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -233,6 +241,18 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsRecordLayer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Send", (buf, off, len))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SendDatagram(
+        sender: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::DatagramTransport,
+        >,
+        buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        off: i32,
+        len: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SendDatagram", (sender, buf, off, len))?;
         Ok(__cordl_ret.into())
     }
     pub fn SendRecord(

@@ -44,6 +44,20 @@ impl crate::System::Net::NetworkInformation::UnixNetworkInterfaceAPI {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn freeifaddrs(
+        ifap: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("freeifaddrs", (ifap))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn getifaddrs(
+        ifap: quest_hook::libil2cpp::ByRefMut<crate::System::IntPtr>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("getifaddrs", (ifap))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "System+Net+NetworkInformation+UnixNetworkInterfaceAPI")]
 impl quest_hook::libil2cpp::ObjectType

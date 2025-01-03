@@ -81,6 +81,11 @@ impl crate::Org::BouncyCastle::Crypto::Tls::ByteQueue {
             .invoke_void(".ctor", (capacity))?;
         Ok(__cordl_object.into())
     }
+    pub fn NextTwoPow(i: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("NextTwoPow", (i))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Read(
         &mut self,
         buf: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,

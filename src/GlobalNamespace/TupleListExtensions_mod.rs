@@ -23,7 +23,74 @@ impl std::ops::DerefMut for crate::GlobalNamespace::TupleListExtensions {
     }
 }
 #[cfg(feature = "TupleListExtensions")]
-impl crate::GlobalNamespace::TupleListExtensions {}
+impl crate::GlobalNamespace::TupleListExtensions {
+    pub fn Add_IList_1_T1_T2_0<T1, T2>(
+        list: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                *mut crate::System::Tuple_2<T1, T2>,
+            >,
+        >,
+        item1: T1,
+        item2: T2,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Add", (list, item1, item2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Add_T3_1<T1, T2, T3>(
+        list: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                *mut crate::System::Tuple_3<T1, T2, T3>,
+            >,
+        >,
+        item1: T1,
+        item2: T2,
+        item3: T3,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Add", (list, item1, item2, item3))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Add_T3_T4_2<T1, T2, T3, T4>(
+        list: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                *mut crate::System::Tuple_4<T1, T2, T3, T4>,
+            >,
+        >,
+        item1: T1,
+        item2: T2,
+        item3: T3,
+        item4: T4,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T4: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Add", (list, item1, item2, item3, item4))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "TupleListExtensions")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::TupleListExtensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -80,6 +80,17 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::ZOutputStream {
             .invoke("Flush", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetDefaultZStream(
+        nowrap: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Zlib::ZStream>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Zlib::ZStream,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetDefaultZStream", (nowrap))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_Stream0(
         output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

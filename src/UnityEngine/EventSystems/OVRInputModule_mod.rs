@@ -202,11 +202,27 @@ impl crate::UnityEngine::EventSystems::OVRInputModule {
             .invoke("GetRawMoveVector", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetRectTransformNormal(
+        rectTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetRectTransformNormal", (rectTransform))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn IsModuleSupported(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("IsModuleSupported", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsPointerMoving(
+        pointerEvent: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::PointerEventData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsPointerMoving", (pointerEvent))?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -337,6 +353,17 @@ impl crate::UnityEngine::EventSystems::OVRInputModule {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateModule", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UseMouse(
+        pressed: bool,
+        released: bool,
+        pointerData: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::PointerEventData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UseMouse", (pressed, released, pointerData))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

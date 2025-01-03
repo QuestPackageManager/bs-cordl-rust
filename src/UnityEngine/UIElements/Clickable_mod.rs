@@ -56,6 +56,11 @@ impl crate::UnityEngine::UIElements::Clickable {
             .invoke("Invoke", (evt))?;
         Ok(__cordl_ret.into())
     }
+    pub fn IsNotMouseEvent(pointerId: i32) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsNotMouseEvent", (pointerId))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn IsRepeatable(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

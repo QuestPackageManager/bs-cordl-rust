@@ -26,6 +26,18 @@ impl std::ops::DerefMut for crate::System::Reflection::Pointer {
 }
 #[cfg(feature = "System+Reflection+Pointer")]
 impl crate::System::Reflection::Pointer {
+    pub fn Box(
+        ptr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Box", (ptr, _cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         ptr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         ptrType: quest_hook::libil2cpp::Gc<crate::System::Type>,

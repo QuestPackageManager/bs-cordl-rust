@@ -22,6 +22,62 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::Unity::Jobs::JobHandl
 }
 #[cfg(feature = "Unity+Jobs+JobHandle")]
 impl crate::Unity::Jobs::JobHandle {
+    pub fn CombineDependenciesInternal2(
+        job0: quest_hook::libil2cpp::ByRefMut<crate::Unity::Jobs::JobHandle>,
+        job1: quest_hook::libil2cpp::ByRefMut<crate::Unity::Jobs::JobHandle>,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Jobs::JobHandle> {
+        let __cordl_ret: crate::Unity::Jobs::JobHandle = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CombineDependenciesInternal2", (job0, job1))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CombineDependenciesInternal2_Injected(
+        job0: quest_hook::libil2cpp::ByRefMut<crate::Unity::Jobs::JobHandle>,
+        job1: quest_hook::libil2cpp::ByRefMut<crate::Unity::Jobs::JobHandle>,
+        ret: quest_hook::libil2cpp::ByRefMut<crate::Unity::Jobs::JobHandle>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CombineDependenciesInternal2_Injected", (job0, job1, ret))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CombineDependenciesInternalPtr(
+        jobs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Jobs::JobHandle> {
+        let __cordl_ret: crate::Unity::Jobs::JobHandle = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CombineDependenciesInternalPtr", (jobs, count))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CombineDependenciesInternalPtr_Injected(
+        jobs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        count: i32,
+        ret: quest_hook::libil2cpp::ByRefMut<crate::Unity::Jobs::JobHandle>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CombineDependenciesInternalPtr_Injected", (jobs, count, ret))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CombineDependencies_JobHandle_JobHandle0(
+        job0: crate::Unity::Jobs::JobHandle,
+        job1: crate::Unity::Jobs::JobHandle,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Jobs::JobHandle> {
+        let __cordl_ret: crate::Unity::Jobs::JobHandle = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CombineDependencies", (job0, job1))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CombineDependencies_NativeArray_1_1(
+        jobs: crate::Unity::Collections::NativeArray_1<crate::Unity::Jobs::JobHandle>,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Jobs::JobHandle> {
+        let __cordl_ret: crate::Unity::Jobs::JobHandle = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CombineDependencies", (jobs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CombineDependencies_NativeSlice_1_2(
+        jobs: crate::Unity::Collections::NativeSlice_1<crate::Unity::Jobs::JobHandle>,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Jobs::JobHandle> {
+        let __cordl_ret: crate::Unity::Jobs::JobHandle = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CombineDependencies", (jobs))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Complete(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -41,6 +97,27 @@ impl crate::Unity::Jobs::JobHandle {
             "Equals",
             (other),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ScheduleBatchedJobs() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ScheduleBatchedJobs", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ScheduleBatchedJobsAndComplete(
+        job: quest_hook::libil2cpp::ByRefMut<crate::Unity::Jobs::JobHandle>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ScheduleBatchedJobsAndComplete", (job))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ScheduleBatchedJobsAndIsCompleted(
+        job: quest_hook::libil2cpp::ByRefMut<crate::Unity::Jobs::JobHandle>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ScheduleBatchedJobsAndIsCompleted", (job))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_IsCompleted(&mut self) -> quest_hook::libil2cpp::Result<bool> {

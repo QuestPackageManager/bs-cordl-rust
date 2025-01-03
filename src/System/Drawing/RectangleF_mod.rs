@@ -96,6 +96,14 @@ impl crate::System::Drawing::RectangleF {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Equality(
+        left: crate::System::Drawing::RectangleF,
+        right: crate::System::Drawing::RectangleF,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "System+Drawing+RectangleF")]
 impl AsRef<crate::System::IEquatable_1<crate::System::Drawing::RectangleF>>

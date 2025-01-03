@@ -68,6 +68,13 @@ impl crate::UnityEngine::Playables::PlayableOutput {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_Null() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Playables::PlayableOutput,
+    > {
+        let __cordl_ret: crate::UnityEngine::Playables::PlayableOutput = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_Null", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+Playables+PlayableOutput")]
 impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::Playables::PlayableOutput>>

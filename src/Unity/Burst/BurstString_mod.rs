@@ -50,6 +50,608 @@ impl crate::Unity::Burst::BurstString {
     pub type tFloatUnion32 = crate::Unity::Burst::BurstString_tFloatUnion32;
     #[cfg(feature = "Unity+Burst+BurstString+tFloatUnion64")]
     pub type tFloatUnion64 = crate::Unity::Burst::BurstString_tFloatUnion64;
+    pub fn AlignLeft(
+        dest: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        destIndex: quest_hook::libil2cpp::ByRefMut<i32>,
+        destLength: i32,
+        align: i32,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AlignLeft", (dest, destIndex, destLength, align, length))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AlignRight(
+        dest: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        destIndex: quest_hook::libil2cpp::ByRefMut<i32>,
+        destLength: i32,
+        align: i32,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AlignRight", (dest, destIndex, destLength, align, length))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn BigInt_Add(
+        pResult: quest_hook::libil2cpp::ByRefMut<
+            crate::Unity::Burst::BurstString_tBigInt,
+        >,
+        lhs: quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
+        rhs: quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BigInt_Add", (pResult, lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn BigInt_Add_internal(
+        pResult: quest_hook::libil2cpp::ByRefMut<
+            crate::Unity::Burst::BurstString_tBigInt,
+        >,
+        pLarge: quest_hook::libil2cpp::ByRefMut<
+            crate::Unity::Burst::BurstString_tBigInt,
+        >,
+        pSmall: quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BigInt_Add_internal", (pResult, pLarge, pSmall))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn BigInt_Compare(
+        lhs: quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
+        rhs: quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BigInt_Compare", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn BigInt_DivideWithRemainder_MaxQuotient9(
+        pDividend: quest_hook::libil2cpp::ByRefMut<
+            crate::Unity::Burst::BurstString_tBigInt,
+        >,
+        divisor: quest_hook::libil2cpp::ByRefMut<
+            crate::Unity::Burst::BurstString_tBigInt,
+        >,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BigInt_DivideWithRemainder_MaxQuotient9", (pDividend, divisor))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn BigInt_Multiply10(
+        pResult: quest_hook::libil2cpp::ByRefMut<
+            crate::Unity::Burst::BurstString_tBigInt,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BigInt_Multiply10", (pResult))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn BigInt_Multiply2_ByRefMut0(
+        pResult: quest_hook::libil2cpp::ByRefMut<
+            crate::Unity::Burst::BurstString_tBigInt,
+        >,
+        input: quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BigInt_Multiply2", (pResult, input))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn BigInt_Multiply2_ByRefMut1(
+        pResult: quest_hook::libil2cpp::ByRefMut<
+            crate::Unity::Burst::BurstString_tBigInt,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BigInt_Multiply2", (pResult))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn BigInt_MultiplyPow10(
+        pResult: quest_hook::libil2cpp::ByRefMut<
+            crate::Unity::Burst::BurstString_tBigInt,
+        >,
+        input: quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
+        exponent: u32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BigInt_MultiplyPow10", (pResult, input, exponent))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn BigInt_Multiply_ByRefMut0(
+        pResult: quest_hook::libil2cpp::ByRefMut<
+            crate::Unity::Burst::BurstString_tBigInt,
+        >,
+        lhs: quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
+        rhs: quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BigInt_Multiply", (pResult, lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn BigInt_Multiply_internal(
+        pResult: quest_hook::libil2cpp::ByRefMut<
+            crate::Unity::Burst::BurstString_tBigInt,
+        >,
+        pLarge: quest_hook::libil2cpp::ByRefMut<
+            crate::Unity::Burst::BurstString_tBigInt,
+        >,
+        pSmall: quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BigInt_Multiply_internal", (pResult, pLarge, pSmall))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn BigInt_Multiply_u32_1(
+        pResult: quest_hook::libil2cpp::ByRefMut<
+            crate::Unity::Burst::BurstString_tBigInt,
+        >,
+        lhs: quest_hook::libil2cpp::ByRefMut<crate::Unity::Burst::BurstString_tBigInt>,
+        rhs: u32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BigInt_Multiply", (pResult, lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn BigInt_Pow10(
+        pResult: quest_hook::libil2cpp::ByRefMut<
+            crate::Unity::Burst::BurstString_tBigInt,
+        >,
+        exponent: u32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BigInt_Pow10", (pResult, exponent))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn BigInt_Pow2(
+        pResult: quest_hook::libil2cpp::ByRefMut<
+            crate::Unity::Burst::BurstString_tBigInt,
+        >,
+        exponent: u32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BigInt_Pow2", (pResult, exponent))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn BigInt_ShiftLeft(
+        pResult: quest_hook::libil2cpp::ByRefMut<
+            crate::Unity::Burst::BurstString_tBigInt,
+        >,
+        shift: u32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BigInt_ShiftLeft", (pResult, shift))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ConvertDoubleToString(
+        dest: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        destIndex: quest_hook::libil2cpp::ByRefMut<i32>,
+        destLength: i32,
+        value: f64,
+        formatOptions: crate::Unity::Burst::BurstString_FormatOptions,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ConvertDoubleToString",
+                (dest, destIndex, destLength, value, formatOptions),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ConvertFloatToString(
+        dest: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        destIndex: quest_hook::libil2cpp::ByRefMut<i32>,
+        destLength: i32,
+        value: f32,
+        formatOptions: crate::Unity::Burst::BurstString_FormatOptions,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ConvertFloatToString",
+                (dest, destIndex, destLength, value, formatOptions),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ConvertIntegerToString(
+        dest: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        destIndex: quest_hook::libil2cpp::ByRefMut<i32>,
+        destLength: i32,
+        value: i64,
+        options: crate::Unity::Burst::BurstString_FormatOptions,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ConvertIntegerToString",
+                (dest, destIndex, destLength, value, options),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ConvertUnsignedIntegerToString(
+        dest: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        destIndex: quest_hook::libil2cpp::ByRefMut<i32>,
+        destLength: i32,
+        value: u64,
+        options: crate::Unity::Burst::BurstString_FormatOptions,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ConvertUnsignedIntegerToString",
+                (dest, destIndex, destLength, value, options),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CopyFixedString(
+        dest: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        destLength: i32,
+        src: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        srcLength: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CopyFixedString", (dest, destLength, src, srcLength))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Dragon4(
+        mantissa: u64,
+        exponent: i32,
+        mantissaHighBitIdx: u32,
+        hasUnequalMargins: bool,
+        cutoffMode: crate::Unity::Burst::BurstString_CutoffMode,
+        cutoffNumber: u32,
+        pOutBuffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        bufferSize: u32,
+        pOutExponent: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "Dragon4",
+                (
+                    mantissa,
+                    exponent,
+                    mantissaHighBitIdx,
+                    hasUnequalMargins,
+                    cutoffMode,
+                    cutoffNumber,
+                    pOutBuffer,
+                    bufferSize,
+                    pOutExponent,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FormatDecimalOrHexadecimal(
+        dest: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        destIndex: quest_hook::libil2cpp::ByRefMut<i32>,
+        destLength: i32,
+        number: quest_hook::libil2cpp::ByRefMut<
+            crate::Unity::Burst::BurstString_NumberBuffer,
+        >,
+        zeroPadding: i32,
+        outputPositiveSign: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "FormatDecimalOrHexadecimal",
+                (dest, destIndex, destLength, number, zeroPadding, outputPositiveSign),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FormatGeneral(
+        dest: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        destIndex: quest_hook::libil2cpp::ByRefMut<i32>,
+        destLength: i32,
+        number: quest_hook::libil2cpp::ByRefMut<
+            crate::Unity::Burst::BurstString_NumberBuffer,
+        >,
+        nMaxDigits: i32,
+        expChar: u8,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "FormatGeneral",
+                (dest, destIndex, destLength, number, nMaxDigits, expChar),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FormatInfinityNaN(
+        dest: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        destIndex: quest_hook::libil2cpp::ByRefMut<i32>,
+        destLength: i32,
+        mantissa: u64,
+        isNegative: bool,
+        formatOptions: crate::Unity::Burst::BurstString_FormatOptions,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "FormatInfinityNaN",
+                (dest, destIndex, destLength, mantissa, isNegative, formatOptions),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FormatNumber(
+        dest: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        destIndex: quest_hook::libil2cpp::ByRefMut<i32>,
+        destLength: i32,
+        number: quest_hook::libil2cpp::ByRefMut<
+            crate::Unity::Burst::BurstString_NumberBuffer,
+        >,
+        nMaxDigits: i32,
+        options: crate::Unity::Burst::BurstString_FormatOptions,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "FormatNumber",
+                (dest, destIndex, destLength, number, nMaxDigits, options),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FormatPositional(
+        pOutBuffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        bufferSize: u32,
+        mantissa: u64,
+        exponent: i32,
+        mantissaHighBitIdx: u32,
+        hasUnequalMargins: bool,
+        precision: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "FormatPositional",
+                (
+                    pOutBuffer,
+                    bufferSize,
+                    mantissa,
+                    exponent,
+                    mantissaHighBitIdx,
+                    hasUnequalMargins,
+                    precision,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FormatScientific(
+        pOutBuffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        bufferSize: u32,
+        mantissa: u64,
+        exponent: i32,
+        mantissaHighBitIdx: u32,
+        hasUnequalMargins: bool,
+        precision: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "FormatScientific",
+                (
+                    pOutBuffer,
+                    bufferSize,
+                    mantissa,
+                    exponent,
+                    mantissaHighBitIdx,
+                    hasUnequalMargins,
+                    precision,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Format_Il2CppObject_i32_0(
+        dest: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        destIndex: quest_hook::libil2cpp::ByRefMut<i32>,
+        destLength: i32,
+        src: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        srcLength: i32,
+        formatOptionsRaw: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "Format",
+                (dest, destIndex, destLength, src, srcLength, formatOptionsRaw),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Format__cordl_bool3(
+        dest: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        destIndex: quest_hook::libil2cpp::ByRefMut<i32>,
+        destLength: i32,
+        value: bool,
+        formatOptionsRaw: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Format", (dest, destIndex, destLength, value, formatOptionsRaw))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Format__cordl_char4(
+        dest: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        destIndex: quest_hook::libil2cpp::ByRefMut<i32>,
+        destLength: i32,
+        value: char,
+        formatOptionsRaw: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Format", (dest, destIndex, destLength, value, formatOptionsRaw))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Format_f32_1(
+        dest: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        destIndex: quest_hook::libil2cpp::ByRefMut<i32>,
+        destLength: i32,
+        value: f32,
+        formatOptionsRaw: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Format", (dest, destIndex, destLength, value, formatOptionsRaw))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Format_f64_2(
+        dest: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        destIndex: quest_hook::libil2cpp::ByRefMut<i32>,
+        destLength: i32,
+        value: f64,
+        formatOptionsRaw: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Format", (dest, destIndex, destLength, value, formatOptionsRaw))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Format_i16_10(
+        dest: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        destIndex: quest_hook::libil2cpp::ByRefMut<i32>,
+        destLength: i32,
+        value: i16,
+        formatOptionsRaw: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Format", (dest, destIndex, destLength, value, formatOptionsRaw))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Format_i32_11(
+        dest: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        destIndex: quest_hook::libil2cpp::ByRefMut<i32>,
+        destLength: i32,
+        value: i32,
+        formatOptionsRaw: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Format", (dest, destIndex, destLength, value, formatOptionsRaw))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Format_i64_12(
+        dest: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        destIndex: quest_hook::libil2cpp::ByRefMut<i32>,
+        destLength: i32,
+        value: i64,
+        formatOptionsRaw: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Format", (dest, destIndex, destLength, value, formatOptionsRaw))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Format_i8_9(
+        dest: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        destIndex: quest_hook::libil2cpp::ByRefMut<i32>,
+        destLength: i32,
+        value: i8,
+        formatOptionsRaw: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Format", (dest, destIndex, destLength, value, formatOptionsRaw))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Format_u16_6(
+        dest: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        destIndex: quest_hook::libil2cpp::ByRefMut<i32>,
+        destLength: i32,
+        value: u16,
+        formatOptionsRaw: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Format", (dest, destIndex, destLength, value, formatOptionsRaw))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Format_u32_7(
+        dest: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        destIndex: quest_hook::libil2cpp::ByRefMut<i32>,
+        destLength: i32,
+        value: u32,
+        formatOptionsRaw: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Format", (dest, destIndex, destLength, value, formatOptionsRaw))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Format_u64_8(
+        dest: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        destIndex: quest_hook::libil2cpp::ByRefMut<i32>,
+        destLength: i32,
+        value: u64,
+        formatOptionsRaw: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Format", (dest, destIndex, destLength, value, formatOptionsRaw))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Format_u8_5(
+        dest: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        destIndex: quest_hook::libil2cpp::ByRefMut<i32>,
+        destLength: i32,
+        value: u8,
+        formatOptionsRaw: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Format", (dest, destIndex, destLength, value, formatOptionsRaw))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetLengthForFormatGeneral(
+        number: quest_hook::libil2cpp::ByRefMut<
+            crate::Unity::Burst::BurstString_NumberBuffer,
+        >,
+        nMaxDigits: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetLengthForFormatGeneral", (number, nMaxDigits))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetLengthIntegerToString(
+        value: i64,
+        basis: i32,
+        zeroPadding: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetLengthIntegerToString", (value, basis, zeroPadding))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LogBase2(val: u32) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LogBase2", (val))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn OptsSplit(
+        fullFormat: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        padding: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+        format: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("OptsSplit", (fullFormat, padding, format))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ParseFormatToFormatOptions(
+        fullFormat: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::BurstString_FormatOptions> {
+        let __cordl_ret: crate::Unity::Burst::BurstString_FormatOptions = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ParseFormatToFormatOptions", (fullFormat))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RoundNumber(
+        number: quest_hook::libil2cpp::ByRefMut<
+            crate::Unity::Burst::BurstString_NumberBuffer,
+        >,
+        pos: i32,
+        isCorrectlyRounded: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RoundNumber", (number, pos, isCorrectlyRounded))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ShouldRoundUp(
+        dig: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        i: i32,
+        isCorrectlyRounded: bool,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ShouldRoundUp", (dig, i, isCorrectlyRounded))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ValueToIntegerChar(
+        value: i32,
+        uppercase: bool,
+    ) -> quest_hook::libil2cpp::Result<u8> {
+        let __cordl_ret: u8 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ValueToIntegerChar", (value, uppercase))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn g_PowerOf10_Big(
+        i: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::BurstString_tBigInt> {
+        let __cordl_ret: crate::Unity::Burst::BurstString_tBigInt = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("g_PowerOf10_Big", (i))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "Unity+Burst+BurstString")]
 impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::BurstString {

@@ -41,6 +41,37 @@ for crate::Org::BouncyCastle::Crypto::Parameters::KdfDoublePipelineIterationPara
     feature = "Org+BouncyCastle+Crypto+Parameters+KdfDoublePipelineIterationParameters"
 )]
 impl crate::Org::BouncyCastle::Crypto::Parameters::KdfDoublePipelineIterationParameters {
+    pub fn CreateWithCounter(
+        ki: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        fixedInputData: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        >,
+        r: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Parameters::KdfDoublePipelineIterationParameters,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Parameters::KdfDoublePipelineIterationParameters,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateWithCounter", (ki, fixedInputData, r))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateWithoutCounter(
+        ki: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        fixedInputData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Parameters::KdfDoublePipelineIterationParameters,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Parameters::KdfDoublePipelineIterationParameters,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateWithoutCounter", (ki, fixedInputData))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         ki: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         fixedInputData: quest_hook::libil2cpp::Gc<

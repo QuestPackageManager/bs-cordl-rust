@@ -89,6 +89,15 @@ impl crate::Org::BouncyCastle::Bcpg::ArmoredOutputStream {
             .invoke("DoWrite", (s))?;
         Ok(__cordl_ret.into())
     }
+    pub fn Encode(
+        outStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+        len: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Encode", (outStream, data, len))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn EndClearText(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -53,6 +53,16 @@ impl crate::System::Net::NetworkInformation::LinuxNetworkInterface {
             .invoke_void(".ctor", (name))?;
         Ok(__cordl_object.into())
     }
+    pub fn ReadLine(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("ReadLine", (path))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -87,6 +97,14 @@ impl crate::System::Net::NetworkInformation::LinuxNetworkInterface {
         );
         let __cordl_ret: crate::System::Net::NetworkInformation::OperationalStatus = __cordl_object
             .invoke("get_OperationalStatus", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn unitydroid_get_network_interface_up_state(
+        ifname: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        is_up: quest_hook::libil2cpp::ByRefMut<bool>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("unitydroid_get_network_interface_up_state", (ifname, is_up))?;
         Ok(__cordl_ret.into())
     }
 }

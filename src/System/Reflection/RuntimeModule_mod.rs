@@ -64,6 +64,14 @@ impl crate::System::Reflection::RuntimeModule {
         > = __cordl_object.invoke("GetCustomAttributes", (inherit))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetGuidInternal(
+        _cordl_module: crate::System::IntPtr,
+        guid: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetGuidInternal", (_cordl_module, guid))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetModuleVersionId(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::Guid> {

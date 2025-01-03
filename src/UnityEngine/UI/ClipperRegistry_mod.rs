@@ -37,12 +37,33 @@ impl crate::UnityEngine::UI::ClipperRegistry {
             .invoke("Cull", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn Disable(
+        c: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::IClipper>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Disable", (c))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
+    }
+    pub fn Register(
+        c: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::IClipper>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Register", (c))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Unregister(
+        c: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::IClipper>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Unregister", (c))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -52,6 +73,14 @@ impl crate::UnityEngine::UI::ClipperRegistry {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_instance() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ClipperRegistry>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UI::ClipperRegistry,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_instance", ())?;
         Ok(__cordl_ret.into())
     }
 }

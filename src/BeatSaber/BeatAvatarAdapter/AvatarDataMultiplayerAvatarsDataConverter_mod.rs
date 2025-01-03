@@ -26,7 +26,28 @@ for crate::BeatSaber::BeatAvatarAdapter::AvatarDataMultiplayerAvatarsDataConvert
     }
 }
 #[cfg(feature = "BeatSaber+BeatAvatarAdapter+AvatarDataMultiplayerAvatarsDataConverter")]
-impl crate::BeatSaber::BeatAvatarAdapter::AvatarDataMultiplayerAvatarsDataConverter {}
+impl crate::BeatSaber::BeatAvatarAdapter::AvatarDataMultiplayerAvatarsDataConverter {
+    pub fn CreateAvatarData(
+        multiplayerAvatarsData: crate::GlobalNamespace::MultiplayerAvatarData,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarData>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::BeatAvatarSDK::AvatarData,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateAvatarData", (multiplayerAvatarsData))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateMultiplayerAvatarsData(
+        avatarData: quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::BeatAvatarSDK::AvatarData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::MultiplayerAvatarData> {
+        let __cordl_ret: crate::GlobalNamespace::MultiplayerAvatarData = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateMultiplayerAvatarsData", (avatarData))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "BeatSaber+BeatAvatarAdapter+AvatarDataMultiplayerAvatarsDataConverter")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatSaber::BeatAvatarAdapter::AvatarDataMultiplayerAvatarsDataConverter {

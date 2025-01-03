@@ -25,6 +25,17 @@ impl std::ops::DerefMut for crate::System::ComponentModel::Win32Exception {
 }
 #[cfg(feature = "System+ComponentModel+Win32Exception")]
 impl crate::System::ComponentModel::Win32Exception {
+    pub fn GetErrorMessage(
+        error: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetErrorMessage", (error))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetObjectData(
         &mut self,
         info: quest_hook::libil2cpp::Gc<

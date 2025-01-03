@@ -25,6 +25,16 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::Ess::ContentIdentifi
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Ess+ContentIdentifier")]
 impl crate::Org::BouncyCastle::Asn1::Ess::ContentIdentifier {
+    pub fn GetInstance(
+        o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Ess::ContentIdentifier>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Ess::ContentIdentifier,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (o))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_Asn1OctetString0(
         value: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1OctetString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

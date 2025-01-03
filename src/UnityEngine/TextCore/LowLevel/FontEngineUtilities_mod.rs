@@ -20,4 +20,10 @@ for crate::UnityEngine::TextCore::LowLevel::FontEngineUtilities {
     }
 }
 #[cfg(feature = "UnityEngine+TextCore+LowLevel+FontEngineUtilities")]
-impl crate::UnityEngine::TextCore::LowLevel::FontEngineUtilities {}
+impl crate::UnityEngine::TextCore::LowLevel::FontEngineUtilities {
+    pub fn MaxValue(a: i32, b: i32, c: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MaxValue", (a, b, c))?;
+        Ok(__cordl_ret.into())
+    }
+}

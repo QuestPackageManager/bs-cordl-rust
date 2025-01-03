@@ -45,6 +45,40 @@ impl crate::UnityEngine::TerrainUtils::TerrainMap {
             .invoke("AddTerrainInternal", (x, z, terrain))?;
         Ok(__cordl_ret.into())
     }
+    pub fn CreateFromPlacement_Terrain_Predicate_1__cordl_bool0(
+        originTerrain: quest_hook::libil2cpp::Gc<crate::UnityEngine::Terrain>,
+        filter: quest_hook::libil2cpp::Gc<
+            crate::System::Predicate_1<*mut crate::UnityEngine::Terrain>,
+        >,
+        fullValidation: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::TerrainUtils::TerrainMap>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TerrainUtils::TerrainMap,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateFromPlacement", (originTerrain, filter, fullValidation))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateFromPlacement_Vector2_Vector2_Predicate_1__cordl_bool1(
+        gridOrigin: crate::UnityEngine::Vector2,
+        gridSize: crate::UnityEngine::Vector2,
+        filter: quest_hook::libil2cpp::Gc<
+            crate::System::Predicate_1<*mut crate::UnityEngine::Terrain>,
+        >,
+        fullValidation: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::TerrainUtils::TerrainMap>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TerrainUtils::TerrainMap,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CreateFromPlacement",
+                (gridOrigin, gridSize, filter, fullValidation),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetTerrain(
         &mut self,
         tileX: i32,

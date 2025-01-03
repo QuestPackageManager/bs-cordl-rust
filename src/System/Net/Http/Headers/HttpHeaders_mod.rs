@@ -145,6 +145,31 @@ impl crate::System::Net::Http::Headers::HttpHeaders {
         > = __cordl_object.invoke("GetEnumerator", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetKnownHeaderKind(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Net::Http::Headers::HttpHeaderKind,
+    > {
+        let __cordl_ret: crate::System::Net::Http::Headers::HttpHeaderKind = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetKnownHeaderKind", (name))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetSingleHeaderString(
+        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        values: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSingleHeaderString", (key, values))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetValue<T>(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

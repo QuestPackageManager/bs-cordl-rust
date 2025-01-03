@@ -54,6 +54,17 @@ impl crate::GlobalNamespace::StandardLevelInfoSaveData {
     pub type DifficultyBeatmap = crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmap;
     #[cfg(feature = "StandardLevelInfoSaveData+DifficultyBeatmapSet")]
     pub type DifficultyBeatmapSet = crate::GlobalNamespace::StandardLevelInfoSaveData_DifficultyBeatmapSet;
+    pub fn DeserializeFromJSONString(
+        stringData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::StandardLevelInfoSaveData>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::StandardLevelInfoSaveData,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DeserializeFromJSONString", (stringData))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         songName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         songSubName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

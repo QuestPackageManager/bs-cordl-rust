@@ -82,6 +82,19 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
             .invoke("BuildChainFrom", (certificate))?;
         Ok(__cordl_ret.into())
     }
+    pub fn CheckCrls(
+        subject: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        ski: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        store: quest_hook::libil2cpp::Gc<crate::Mono::Security::X509::X509Store>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Mono::Security::X509::X509Crl>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Mono::Security::X509::X509Crl,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckCrls", (subject, ski, store))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CheckRevocationOnChain(
         &mut self,
         flag: crate::System::Security::Cryptography::X509Certificates::X509ChainStatusFlags,
@@ -161,6 +174,41 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainImplMono 
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
         > = __cordl_object.invoke("FindParent", (certificate))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetAuthorityKeyIdentifier_X509Certificate2_0(
+        certificate: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetAuthorityKeyIdentifier", (certificate))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetAuthorityKeyIdentifier_X509Crl1(
+        crl: quest_hook::libil2cpp::Gc<crate::Mono::Security::X509::X509Crl>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetAuthorityKeyIdentifier", (crl))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetAuthorityKeyIdentifier_X509Extension2(
+        ext: quest_hook::libil2cpp::Gc<crate::Mono::Security::X509::X509Extension>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetAuthorityKeyIdentifier", (ext))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetSubjectKeyIdentifier(

@@ -23,7 +23,30 @@ impl std::ops::DerefMut for crate::System::Xml::XmlComplianceUtil {
     }
 }
 #[cfg(feature = "System+Xml+XmlComplianceUtil")]
-impl crate::System::Xml::XmlComplianceUtil {}
+impl crate::System::Xml::XmlComplianceUtil {
+    pub fn CDataNormalize(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CDataNormalize", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn NonCDataNormalize(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("NonCDataNormalize", (value))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Xml+XmlComplianceUtil")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlComplianceUtil {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

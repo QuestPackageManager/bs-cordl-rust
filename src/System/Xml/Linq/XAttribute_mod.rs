@@ -73,6 +73,14 @@ impl crate::System::Xml::Linq::XAttribute {
         > = __cordl_object.invoke("ToString", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn ValidateAttribute(
+        name: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XName>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ValidateAttribute", (name, value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor_XAttribute1(
         &mut self,
         other: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XAttribute>,

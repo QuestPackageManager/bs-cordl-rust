@@ -23,7 +23,25 @@ impl std::ops::DerefMut for crate::Unity::Burst::CompilerServices::Hint {
     }
 }
 #[cfg(feature = "Unity+Burst+CompilerServices+Hint")]
-impl crate::Unity::Burst::CompilerServices::Hint {}
+impl crate::Unity::Burst::CompilerServices::Hint {
+    pub fn Assume(
+        condition: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Assume", (condition))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Likely(condition: bool) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Likely", (condition))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Unlikely(condition: bool) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Unlikely", (condition))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "Unity+Burst+CompilerServices+Hint")]
 impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::CompilerServices::Hint {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

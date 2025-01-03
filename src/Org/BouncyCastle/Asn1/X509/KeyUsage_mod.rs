@@ -33,6 +33,29 @@ impl crate::Org::BouncyCastle::Asn1::X509::KeyUsage {
     pub const KeyCertSign: i32 = 4i32;
     pub const KeyEncipherment: i32 = 32i32;
     pub const NonRepudiation: i32 = 64i32;
+    pub fn FromExtensions(
+        extensions: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::KeyUsage>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::KeyUsage,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromExtensions", (extensions))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetInstance(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::KeyUsage>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::KeyUsage,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_DerBitString1(
         usage: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerBitString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

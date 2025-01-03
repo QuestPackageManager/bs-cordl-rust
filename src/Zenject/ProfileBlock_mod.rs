@@ -53,6 +53,43 @@ impl crate::Zenject::ProfileBlock {
             .invoke_void(".ctor", (sampleName, rootBlock))?;
         Ok(__cordl_object.into())
     }
+    pub fn Start_0() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Zenject::ProfileBlock>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::ProfileBlock> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Start", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Start_Il2CppString3(
+        sampleName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Zenject::ProfileBlock>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::ProfileBlock> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Start", (sampleName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Start_Il2CppString_Il2CppObject2(
+        sampleNameFormat: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Zenject::ProfileBlock>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::ProfileBlock> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Start", (sampleNameFormat, obj))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Start_Il2CppString_Il2CppObject_Il2CppObject1(
+        sampleNameFormat: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        obj1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        obj2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Zenject::ProfileBlock>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::ProfileBlock> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Start", (sampleNameFormat, obj1, obj2))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor_Il2CppString1(
         &mut self,
         sampleName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -74,6 +111,22 @@ impl crate::Zenject::ProfileBlock {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (sampleName, rootBlock))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_ProfilePattern() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Regex>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Text::RegularExpressions::Regex,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_ProfilePattern", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_ProfilePattern(
+        value: quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Regex>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_ProfilePattern", (value))?;
         Ok(__cordl_ret.into())
     }
 }

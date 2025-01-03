@@ -23,6 +23,108 @@ for crate::UnityEngine::Playables::ScriptPlayable_1<T> {
 }
 #[cfg(feature = "UnityEngine+Playables+ScriptPlayable_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Playables::ScriptPlayable_1<T> {
+    pub fn CloneScriptInstance(
+        source: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Playables::IPlayableBehaviour,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CloneScriptInstance", (source))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CloneScriptInstanceFromEngineObject(
+        source: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CloneScriptInstanceFromEngineObject", (source))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CloneScriptInstanceFromIClonable(
+        source: quest_hook::libil2cpp::Gc<crate::System::ICloneable>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CloneScriptInstanceFromIClonable", (source))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateHandle(
+        graph: crate::UnityEngine::Playables::PlayableGraph,
+        _cordl_template: T,
+        inputCount: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::PlayableHandle>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: crate::UnityEngine::Playables::PlayableHandle = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateHandle", (graph, _cordl_template, inputCount))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateScriptInstance() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateScriptInstance", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Create_T_i32_1(
+        graph: crate::UnityEngine::Playables::PlayableGraph,
+        _cordl_template: T,
+        inputCount: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Playables::ScriptPlayable_1<T>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: crate::UnityEngine::Playables::ScriptPlayable_1<T> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (graph, _cordl_template, inputCount))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Create_i32_0(
+        graph: crate::UnityEngine::Playables::PlayableGraph,
+        inputCount: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Playables::ScriptPlayable_1<T>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: crate::UnityEngine::Playables::ScriptPlayable_1<T> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (graph, inputCount))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Equals(
         &mut self,
         other: crate::UnityEngine::Playables::ScriptPlayable_1<T>,
@@ -77,6 +179,41 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Playables::ScriptPlayab
             ".ctor",
             (handle),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Null() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Playables::ScriptPlayable_1<T>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: crate::UnityEngine::Playables::ScriptPlayable_1<T> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_Null", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Explicit(
+        playable: crate::UnityEngine::Playables::Playable,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Playables::ScriptPlayable_1<T>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: crate::UnityEngine::Playables::ScriptPlayable_1<T> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Explicit", (playable))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit(
+        playable: crate::UnityEngine::Playables::ScriptPlayable_1<T>,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::Playable>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: crate::UnityEngine::Playables::Playable = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (playable))?;
         Ok(__cordl_ret.into())
     }
 }

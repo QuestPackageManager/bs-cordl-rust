@@ -26,6 +26,38 @@ for crate::System::Data::SqlTypes::SqlString {
 }
 #[cfg(feature = "System+Data+SqlTypes+SqlString")]
 impl crate::System::Data::SqlTypes::SqlString {
+    pub fn Compare(
+        x: crate::System::Data::SqlTypes::SqlString,
+        y: crate::System::Data::SqlTypes::SqlString,
+        ecExpectedResult: crate::System::Data::SqlTypes::EComparison,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlBoolean> {
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlBoolean = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Compare", (x, y, ecExpectedResult))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CompareBinary(
+        x: crate::System::Data::SqlTypes::SqlString,
+        y: crate::System::Data::SqlTypes::SqlString,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CompareBinary", (x, y))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CompareBinary2(
+        x: crate::System::Data::SqlTypes::SqlString,
+        y: crate::System::Data::SqlTypes::SqlString,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CompareBinary2", (x, y))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CompareOptionsFromSqlCompareOptions(
+        compareOptions: crate::System::Data::SqlTypes::SqlCompareOptions,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Globalization::CompareOptions> {
+        let __cordl_ret: crate::System::Globalization::CompareOptions = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CompareOptionsFromSqlCompareOptions", (compareOptions))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CompareTo_Il2CppObject0(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -75,6 +107,17 @@ impl crate::System::Data::SqlTypes::SqlString {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetXsdType(
+        schemaSet: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSet>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::XmlQualifiedName,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetXsdType", (schemaSet))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn SetCompareInfo(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -83,6 +126,14 @@ impl crate::System::Data::SqlTypes::SqlString {
             "SetCompareInfo",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StringCompare(
+        x: crate::System::Data::SqlTypes::SqlString,
+        y: crate::System::Data::SqlTypes::SqlString,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StringCompare", (x, y))?;
         Ok(__cordl_ret.into())
     }
     pub fn System_Xml_Serialization_IXmlSerializable_GetSchema(
@@ -129,6 +180,13 @@ impl crate::System::Data::SqlTypes::SqlString {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ValidateSqlCompareOptions(
+        compareOptions: crate::System::Data::SqlTypes::SqlCompareOptions,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ValidateSqlCompareOptions", (compareOptions))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_Il2CppString2(
@@ -196,6 +254,29 @@ impl crate::System::Data::SqlTypes::SqlString {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_Value", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Addition(
+        x: crate::System::Data::SqlTypes::SqlString,
+        y: crate::System::Data::SqlTypes::SqlString,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlString> {
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlString = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Addition", (x, y))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        x: crate::System::Data::SqlTypes::SqlString,
+        y: crate::System::Data::SqlTypes::SqlString,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlBoolean> {
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlBoolean = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (x, y))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit(
+        x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlString> {
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlString = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (x))?;
         Ok(__cordl_ret.into())
     }
 }

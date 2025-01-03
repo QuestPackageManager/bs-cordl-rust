@@ -198,6 +198,14 @@ impl crate::System::Text::RegularExpressions::Match {
             .invoke(".ctor", (regex, capcount, text, begpos, len, startpos))?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_Empty() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Match>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Text::RegularExpressions::Match,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_Empty", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_Groups(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

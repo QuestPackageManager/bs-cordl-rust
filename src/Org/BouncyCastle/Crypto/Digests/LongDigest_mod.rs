@@ -62,6 +62,11 @@ impl crate::Org::BouncyCastle::Crypto::Digests::LongDigest {
             .invoke("BlockUpdate", (input, inOff, length))?;
         Ok(__cordl_ret.into())
     }
+    pub fn Ch(x: u64, y: u64, z: u64) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Ch", (x, y, z))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Copy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -121,6 +126,11 @@ impl crate::Org::BouncyCastle::Crypto::Digests::LongDigest {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetDigestSize", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Maj(x: u64, y: u64, z: u64) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Maj", (x, y, z))?;
         Ok(__cordl_ret.into())
     }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -194,6 +204,26 @@ impl crate::Org::BouncyCastle::Crypto::Digests::LongDigest {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Reset", (t))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Sigma0(x: u64) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Sigma0", (x))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Sigma1(x: u64) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Sigma1", (x))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Sum0(x: u64) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Sum0", (x))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Sum1(x: u64) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Sum1", (x))?;
         Ok(__cordl_ret.into())
     }
     pub fn Update(

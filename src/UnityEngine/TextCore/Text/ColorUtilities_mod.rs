@@ -23,7 +23,24 @@ impl std::ops::DerefMut for crate::UnityEngine::TextCore::Text::ColorUtilities {
     }
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+ColorUtilities")]
-impl crate::UnityEngine::TextCore::Text::ColorUtilities {}
+impl crate::UnityEngine::TextCore::Text::ColorUtilities {
+    pub fn CompareColors(
+        a: crate::UnityEngine::Color32,
+        b: crate::UnityEngine::Color32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CompareColors", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MultiplyColors(
+        c1: crate::UnityEngine::Color32,
+        c2: crate::UnityEngine::Color32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color32> {
+        let __cordl_ret: crate::UnityEngine::Color32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MultiplyColors", (c1, c2))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+TextCore+Text+ColorUtilities")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::TextCore::Text::ColorUtilities {

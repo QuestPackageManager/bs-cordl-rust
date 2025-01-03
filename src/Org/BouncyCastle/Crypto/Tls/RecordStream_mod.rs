@@ -55,6 +55,15 @@ impl crate::Org::BouncyCastle::Crypto::Tls::RecordStream {
     pub type HandshakeHashUpdateStream = crate::Org::BouncyCastle::Crypto::Tls::RecordStream_HandshakeHashUpdateStream;
     #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+RecordStream+SequenceNumber")]
     pub type SequenceNumber = crate::Org::BouncyCastle::Crypto::Tls::RecordStream_SequenceNumber;
+    pub fn CheckLength(
+        length: i32,
+        limit: i32,
+        alertDescription: u8,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckLength", (length, limit, alertDescription))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CheckRecordHeader(
         &mut self,
         recordHeader: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -64,6 +73,14 @@ impl crate::Org::BouncyCastle::Crypto::Tls::RecordStream {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CheckRecordHeader", (recordHeader))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CheckType(
+        _cordl_type: u8,
+        alertDescription: u8,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckType", (_cordl_type, alertDescription))?;
         Ok(__cordl_ret.into())
     }
     pub fn DecodeAndVerify(

@@ -24,6 +24,23 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Cms::EnvelopedDataHelper {
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+EnvelopedDataHelper")]
 impl crate::Org::BouncyCastle::Cms::EnvelopedDataHelper {
+    pub fn CreateContentCipher(
+        forEncryption: bool,
+        encKey: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::ICipherParameters,
+        >,
+        encryptionAlgID: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateContentCipher", (forEncryption, encKey, encryptionAlgID))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CreateKeyGenerator(
         &mut self,
         algorithm: quest_hook::libil2cpp::Gc<

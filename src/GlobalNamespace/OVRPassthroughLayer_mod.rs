@@ -128,6 +128,11 @@ impl crate::GlobalNamespace::OVRPassthroughLayer {
             .invoke("Awake", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn ClampWeight(weight: f32) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ClampWeight", (weight))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CreateAndAddMesh(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -143,6 +148,13 @@ impl crate::GlobalNamespace::OVRPassthroughLayer {
                 "CreateAndAddMesh",
                 (obj, meshHandle, instanceHandle, localToWorld),
             )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateNeutralColorMapGradient() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Gradient>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Gradient> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateNeutralColorMapGradient", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn CreateOvrPluginStyleObject(
@@ -669,6 +681,19 @@ impl crate::GlobalNamespace::OVRPassthroughLayer_BaseGeneratedStyleHandler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Clear", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ComputeBrightnessContrastPosterizeMap(
+        result: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        brightness: f32,
+        contrast: f32,
+        posterize: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ComputeBrightnessContrastPosterizeMap",
+                (result, brightness, contrast, posterize),
+            )?;
         Ok(__cordl_ret.into())
     }
     pub fn DeallocateColorMapData(

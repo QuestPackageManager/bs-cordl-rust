@@ -30,6 +30,154 @@ impl crate::UnityEngine::InputSystem::Utilities::Observable {
     pub type __c__DisplayClass6_0_1<TValue: quest_hook::libil2cpp::Type> = crate::UnityEngine::InputSystem::Utilities::Observable___c__DisplayClass6_0_1<
         TValue,
     >;
+    pub fn Call<TValue>(
+        source: quest_hook::libil2cpp::Gc<crate::System::IObservable_1<TValue>>,
+        action: quest_hook::libil2cpp::Gc<crate::System::Action_1<TValue>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
+    >
+    where
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IDisposable> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Call", (source, action))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CallOnce<TValue>(
+        source: quest_hook::libil2cpp::Gc<crate::System::IObservable_1<TValue>>,
+        action: quest_hook::libil2cpp::Gc<crate::System::Action_1<TValue>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
+    >
+    where
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IDisposable> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CallOnce", (source, action))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ForDevice_IObservable_1_1<TDevice>(
+        source: quest_hook::libil2cpp::Gc<
+            crate::System::IObservable_1<
+                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::IObservable_1<
+                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            >,
+        >,
+    >
+    where
+        TDevice: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::IObservable_1<
+                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ForDevice", (source))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ForDevice_InputDevice0(
+        source: quest_hook::libil2cpp::Gc<
+            crate::System::IObservable_1<
+                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            >,
+        >,
+        device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::IObservable_1<
+                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::IObservable_1<
+                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ForDevice", (source, device))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Select<TSource, TResult>(
+        source: quest_hook::libil2cpp::Gc<crate::System::IObservable_1<TSource>>,
+        filter: quest_hook::libil2cpp::Gc<crate::System::Func_2<TSource, TResult>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IObservable_1<TResult>>,
+    >
+    where
+        TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::IObservable_1<TResult>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Select", (source, filter))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SelectMany<TSource, TResult>(
+        source: quest_hook::libil2cpp::Gc<crate::System::IObservable_1<TSource>>,
+        filter: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<
+                TSource,
+                *mut crate::System::Collections::Generic::IEnumerable_1<TResult>,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IObservable_1<TResult>>,
+    >
+    where
+        TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::IObservable_1<TResult>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SelectMany", (source, filter))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Take<TValue>(
+        source: quest_hook::libil2cpp::Gc<crate::System::IObservable_1<TValue>>,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IObservable_1<TValue>>,
+    >
+    where
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::IObservable_1<TValue>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Take", (source, count))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Where<TValue>(
+        source: quest_hook::libil2cpp::Gc<crate::System::IObservable_1<TValue>>,
+        predicate: quest_hook::libil2cpp::Gc<crate::System::Func_2<TValue, bool>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IObservable_1<TValue>>,
+    >
+    where
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::IObservable_1<TValue>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Where", (source, predicate))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+Observable")]
 impl quest_hook::libil2cpp::ObjectType

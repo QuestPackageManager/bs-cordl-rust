@@ -92,7 +92,7 @@ for crate::UnityEngine::XR::XRMeshSubsystem_MeshTransformList {
 }
 #[cfg(feature = "UnityEngine+XR+XRMeshSubsystem+MeshTransformList")]
 impl crate::UnityEngine::XR::XRMeshSubsystem_MeshTransformList {
-    pub fn Dispose(
+    pub fn Dispose_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -100,6 +100,13 @@ impl crate::UnityEngine::XR::XRMeshSubsystem_MeshTransformList {
             "Dispose",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Dispose_IntPtr1(
+        _cordl_self: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Dispose", (_cordl_self))?;
         Ok(__cordl_ret.into())
     }
 }

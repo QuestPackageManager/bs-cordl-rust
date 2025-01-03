@@ -75,6 +75,13 @@ impl crate::System::Net::Http::Headers::Token {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Implicit(
+        token: crate::System::Net::Http::Headers::Token,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Net::Http::Headers::Token_Type> {
+        let __cordl_ret: crate::System::Net::Http::Headers::Token_Type = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (token))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn set_EndPosition(
         &mut self,
         value: i32,

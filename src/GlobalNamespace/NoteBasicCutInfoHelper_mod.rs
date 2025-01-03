@@ -25,6 +25,40 @@ impl std::ops::DerefMut for crate::GlobalNamespace::NoteBasicCutInfoHelper {
 #[cfg(feature = "NoteBasicCutInfoHelper")]
 impl crate::GlobalNamespace::NoteBasicCutInfoHelper {
     pub const kMinBladeSpeedForCut: f32 = 2f32;
+    pub fn GetBasicCutInfo(
+        noteTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+        colorType: crate::GlobalNamespace::ColorType,
+        cutDirection: crate::GlobalNamespace::NoteCutDirection,
+        saberType: crate::GlobalNamespace::SaberType,
+        saberBladeSpeed: f32,
+        cutDirVec: crate::UnityEngine::Vector3,
+        cutAngleTolerance: f32,
+        directionOK: quest_hook::libil2cpp::ByRefMut<bool>,
+        speedOK: quest_hook::libil2cpp::ByRefMut<bool>,
+        saberTypeOK: quest_hook::libil2cpp::ByRefMut<bool>,
+        cutDirDeviation: quest_hook::libil2cpp::ByRefMut<f32>,
+        cutDirAngle: quest_hook::libil2cpp::ByRefMut<f32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetBasicCutInfo",
+                (
+                    noteTransform,
+                    colorType,
+                    cutDirection,
+                    saberType,
+                    saberBladeSpeed,
+                    cutDirVec,
+                    cutAngleTolerance,
+                    directionOK,
+                    speedOK,
+                    saberTypeOK,
+                    cutDirDeviation,
+                    cutDirAngle,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "NoteBasicCutInfoHelper")]
 impl quest_hook::libil2cpp::ObjectType

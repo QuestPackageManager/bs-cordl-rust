@@ -63,12 +63,26 @@ impl crate::Unity::XR::Oculus::OculusLoader {
         let __cordl_ret: bool = __cordl_object.invoke("Initialize", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn IsDeviceSupported() -> quest_hook::libil2cpp::Result<
+        crate::Unity::XR::Oculus::OculusLoader_DeviceSupportedResult,
+    > {
+        let __cordl_ret: crate::Unity::XR::Oculus::OculusLoader_DeviceSupportedResult = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsDeviceSupported", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
+    }
+    pub fn RuntimeLoadOVRPlugin() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RuntimeLoadOVRPlugin", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn Start(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

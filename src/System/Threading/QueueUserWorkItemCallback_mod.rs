@@ -62,6 +62,13 @@ impl crate::System::Threading::QueueUserWorkItemCallback {
             .invoke("System.Threading.IThreadPoolWorkItem.MarkAborted", (tae))?;
         Ok(__cordl_ret.into())
     }
+    pub fn WaitCallback_Context(
+        state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WaitCallback_Context", (state))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
         waitCallback: quest_hook::libil2cpp::Gc<crate::System::Threading::WaitCallback>,

@@ -23,7 +23,33 @@ impl std::ops::DerefMut for crate::GlobalNamespace::Vector2Extensions {
     }
 }
 #[cfg(feature = "Vector2Extensions")]
-impl crate::GlobalNamespace::Vector2Extensions {}
+impl crate::GlobalNamespace::Vector2Extensions {
+    pub fn Clamp_Rect1(
+        value: crate::UnityEngine::Vector2,
+        within: crate::UnityEngine::Rect,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Clamp", (value, within))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Clamp_Vector2_Vector2_0(
+        value: crate::UnityEngine::Vector2,
+        min: crate::UnityEngine::Vector2,
+        max: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Clamp", (value, min, max))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SignedAngleToLine(
+        vec: crate::UnityEngine::Vector2,
+        line: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SignedAngleToLine", (vec, line))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "Vector2Extensions")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::Vector2Extensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

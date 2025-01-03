@@ -100,6 +100,36 @@ impl crate::GlobalNamespace::OVRSpace {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Equality(
+        lhs: crate::GlobalNamespace::OVRSpace,
+        rhs: crate::GlobalNamespace::OVRSpace,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_OVRSpace1(
+        space: crate::GlobalNamespace::OVRSpace,
+    ) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (space))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_u64_0(
+        handle: u64,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRSpace> {
+        let __cordl_ret: crate::GlobalNamespace::OVRSpace = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (handle))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        lhs: crate::GlobalNamespace::OVRSpace,
+        rhs: crate::GlobalNamespace::OVRSpace,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "OVRSpace")]
 impl AsRef<crate::System::IEquatable_1<crate::GlobalNamespace::OVRSpace>>

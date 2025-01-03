@@ -92,6 +92,14 @@ impl crate::TMPro::TMP_GlyphValueRecord {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Addition(
+        a: crate::TMPro::TMP_GlyphValueRecord,
+        b: crate::TMPro::TMP_GlyphValueRecord,
+    ) -> quest_hook::libil2cpp::Result<crate::TMPro::TMP_GlyphValueRecord> {
+        let __cordl_ret: crate::TMPro::TMP_GlyphValueRecord = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Addition", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn set_xAdvance(
         &mut self,
         value: f32,

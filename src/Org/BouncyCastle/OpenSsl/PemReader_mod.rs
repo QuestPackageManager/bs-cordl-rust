@@ -25,6 +25,17 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::OpenSsl::PemReader {
 }
 #[cfg(feature = "Org+BouncyCastle+OpenSsl+PemReader")]
 impl crate::Org::BouncyCastle::OpenSsl::PemReader {
+    pub fn GetCurveParameters(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X9::X9ECParameters>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X9::X9ECParameters,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCurveParameters", (name))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_IPasswordFinder1(
         reader: quest_hook::libil2cpp::Gc<crate::System::IO::TextReader>,
         pFinder: quest_hook::libil2cpp::Gc<

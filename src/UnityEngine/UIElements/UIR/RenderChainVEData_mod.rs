@@ -66,6 +66,20 @@ for crate::UnityEngine::UIElements::UIR::RenderChainVEData {
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+RenderChainVEData")]
 impl crate::UnityEngine::UIElements::UIR::RenderChainVEData {
+    pub fn AllocatesID(
+        alloc: crate::UnityEngine::UIElements::UIR::BMPAlloc,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AllocatesID", (alloc))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InheritsID(
+        alloc: crate::UnityEngine::UIElements::UIR::BMPAlloc,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InheritsID", (alloc))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_isIgnoringDynamicColorHint(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {

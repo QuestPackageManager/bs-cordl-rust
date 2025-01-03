@@ -36,6 +36,17 @@ for crate::UnityEngine::TextCore::Text::UnicodeLineBreakingRules {
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+UnicodeLineBreakingRules")]
 impl crate::UnityEngine::TextCore::Text::UnicodeLineBreakingRules {
+    pub fn GetCharacters(
+        file: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::HashSet_1<u32>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::HashSet_1<u32>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCharacters", (file))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn LoadLineBreakingRules_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

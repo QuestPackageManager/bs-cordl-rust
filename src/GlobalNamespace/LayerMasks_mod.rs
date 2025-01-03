@@ -23,6 +23,27 @@ impl std::ops::DerefMut for crate::GlobalNamespace::LayerMasks {
 }
 #[cfg(feature = "LayerMasks")]
 impl crate::GlobalNamespace::LayerMasks {
+    pub fn GetLayer(
+        layerName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetLayer", (layerName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetLayerMask_Il2CppString0(
+        layerName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::LayerMask> {
+        let __cordl_ret: crate::UnityEngine::LayerMask = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetLayerMask", (layerName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetLayerMask_i32_1(
+        layerNum: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::LayerMask> {
+        let __cordl_ret: crate::UnityEngine::LayerMask = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetLayerMask", (layerNum))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

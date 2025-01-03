@@ -107,6 +107,55 @@ impl crate::System::UIntPtr {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_Size() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_Size", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        value1: crate::System::UIntPtr,
+        value2: crate::System::UIntPtr,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (value1, value2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Explicit_UIntPtr0(
+        value: crate::System::UIntPtr,
+    ) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Explicit", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Explicit_UIntPtr1(
+        value: crate::System::UIntPtr,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Explicit", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Explicit_u32_3(
+        value: u32,
+    ) -> quest_hook::libil2cpp::Result<crate::System::UIntPtr> {
+        let __cordl_ret: crate::System::UIntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Explicit", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Explicit_u64_2(
+        value: u64,
+    ) -> quest_hook::libil2cpp::Result<crate::System::UIntPtr> {
+        let __cordl_ret: crate::System::UIntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Explicit", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        value1: crate::System::UIntPtr,
+        value2: crate::System::UIntPtr,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (value1, value2))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "System+UIntPtr")]
 impl AsRef<crate::System::IEquatable_1<crate::System::UIntPtr>>

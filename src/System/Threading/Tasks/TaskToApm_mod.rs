@@ -28,6 +28,47 @@ impl crate::System::Threading::Tasks::TaskToApm {
     pub type TaskWrapperAsyncResult = crate::System::Threading::Tasks::TaskToApm_TaskWrapperAsyncResult;
     #[cfg(feature = "System+Threading+Tasks+TaskToApm+__c__DisplayClass3_0")]
     pub type __c__DisplayClass3_0 = crate::System::Threading::Tasks::TaskToApm___c__DisplayClass3_0;
+    pub fn Begin(
+        task: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+        callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+        state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Begin", (task, callback, state))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn End_IAsyncResult0(
+        asyncResult: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("End", (asyncResult))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn End_IAsyncResult1<TResult>(
+        asyncResult: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+    ) -> quest_hook::libil2cpp::Result<TResult>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: TResult = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("End", (asyncResult))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InvokeCallbackWhenTaskCompletes(
+        antecedent: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+        callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+        asyncResult: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "InvokeCallbackWhenTaskCompletes",
+                (antecedent, callback, asyncResult),
+            )?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "System+Threading+Tasks+TaskToApm")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Threading::Tasks::TaskToApm {

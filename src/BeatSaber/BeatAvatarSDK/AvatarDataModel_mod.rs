@@ -127,6 +127,36 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
         > = __cordl_object.invoke("LoadAsync", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn LoadFromCurrentVersion(
+        avatarSaveData: quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::BeatAvatarSDK::AvatarSaveData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarData>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::BeatAvatarSDK::AvatarData,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LoadFromCurrentVersion", (avatarSaveData))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LoadFromSaveDataAsync(
+        fileStorage: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IFileStorage>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut crate::BeatSaber::BeatAvatarSDK::AvatarSaveData,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut crate::BeatSaber::BeatAvatarSDK::AvatarSaveData,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LoadFromSaveDataAsync", (fileStorage))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn LoadInternalAsync(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

@@ -29,6 +29,49 @@ impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_MaterialData {
 impl crate::HoudiniEngineUnity::HEU_MaterialData {
     #[cfg(feature = "HoudiniEngineUnity+HEU_MaterialData+Source")]
     pub type Source = crate::HoudiniEngineUnity::HEU_MaterialData_Source;
+    pub fn GetMaterialAlpha(
+        session: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionBase>,
+        nodeID: i32,
+        parameters: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::HoudiniEngineUnity::HAPI_ParmInfo>,
+        >,
+        defaultValue: f32,
+        alpha: quest_hook::libil2cpp::ByRefMut<f32>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetMaterialAlpha",
+                (session, nodeID, parameters, defaultValue, alpha),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetSupportedFileFormat(
+        session: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionBase>,
+        imageInfo: quest_hook::libil2cpp::ByRefMut<
+            crate::HoudiniEngineUnity::HAPI_ImageInfo,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSupportedFileFormat", (session, imageInfo))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetTextureFileNameFromMaterialParam(
+        session: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionBase>,
+        nodeID: i32,
+        parmInfo: crate::HoudiniEngineUnity::HAPI_ParmInfo,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetTextureFileNameFromMaterialParam", (session, nodeID, parmInfo))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn IsEquivalentTo(
         &mut self,
         other: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_MaterialData>,
@@ -44,6 +87,17 @@ impl crate::HoudiniEngineUnity::HEU_MaterialData {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("IsExistingMaterial", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsTransparentMaterial(
+        session: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionBase>,
+        nodeID: i32,
+        parameters: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::HoudiniEngineUnity::HAPI_ParmInfo>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsTransparentMaterial", (session, nodeID, parameters))?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

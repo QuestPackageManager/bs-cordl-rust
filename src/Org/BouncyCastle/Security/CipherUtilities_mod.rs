@@ -30,6 +30,71 @@ impl crate::Org::BouncyCastle::Security::CipherUtilities {
     pub type CipherMode = crate::Org::BouncyCastle::Security::CipherUtilities_CipherMode;
     #[cfg(feature = "Org+BouncyCastle+Security+CipherUtilities+CipherPadding")]
     pub type CipherPadding = crate::Org::BouncyCastle::Security::CipherUtilities_CipherPadding;
+    pub fn CreateBlockCipher(
+        cipherAlgorithm: crate::Org::BouncyCastle::Security::CipherUtilities_CipherAlgorithm,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IBlockCipher>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::IBlockCipher,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateBlockCipher", (cipherAlgorithm))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetAlgorithmName(
+        oid: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetAlgorithmName", (oid))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCipher_DerObjectIdentifier0(
+        oid: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IBufferedCipher>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::IBufferedCipher,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetCipher", (oid))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCipher_Il2CppString1(
+        algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IBufferedCipher>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::IBufferedCipher,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCipher", (algorithm))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetDigitIndex(
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetDigitIndex", (s))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetObjectIdentifier(
+        mechanism: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerObjectIdentifier>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetObjectIdentifier", (mechanism))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -45,6 +110,14 @@ impl crate::Org::BouncyCastle::Security::CipherUtilities {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Algorithms() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ICollection,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_Algorithms", ())?;
         Ok(__cordl_ret.into())
     }
 }

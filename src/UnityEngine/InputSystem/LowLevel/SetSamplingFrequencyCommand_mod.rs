@@ -24,6 +24,22 @@ for crate::UnityEngine::InputSystem::LowLevel::SetSamplingFrequencyCommand {
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+SetSamplingFrequencyCommand")]
 impl crate::UnityEngine::InputSystem::LowLevel::SetSamplingFrequencyCommand {
     pub const kSize: i32 = 12i32;
+    pub fn Create(
+        frequency: f32,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::LowLevel::SetSamplingFrequencyCommand,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::SetSamplingFrequencyCommand = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (frequency))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Type() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::FourCC,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_Type", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_typeStatic(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

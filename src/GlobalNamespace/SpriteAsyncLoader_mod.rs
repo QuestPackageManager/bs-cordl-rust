@@ -52,6 +52,13 @@ impl crate::GlobalNamespace::SpriteAsyncLoader {
             .invoke("ClearCache", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn DestroySprite(
+        sprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DestroySprite", (sprite))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn DestroySpriteTask(
         &mut self,
         spriteTask: quest_hook::libil2cpp::Gc<

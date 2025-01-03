@@ -213,6 +213,28 @@ impl<
             .invoke("InternalDispose", (disposing))?;
         Ok(__cordl_ret.into())
     }
+    pub fn IsAccessError(
+        info: crate::GlobalNamespace::Interop_ErrorInfo,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsAccessError", (info))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsDirectoryNotFound(
+        info: crate::GlobalNamespace::Interop_ErrorInfo,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsDirectoryNotFound", (info))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn MoveNext(&mut self) -> quest_hook::libil2cpp::Result<bool>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type

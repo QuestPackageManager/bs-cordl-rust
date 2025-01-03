@@ -26,6 +26,18 @@ impl std::ops::DerefMut for crate::System::Security::AccessControl::GenericAce {
 }
 #[cfg(feature = "System+Security+AccessControl+GenericAce")]
 impl crate::System::Security::AccessControl::GenericAce {
+    pub fn CreateFromBinaryForm(
+        binaryForm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        offset: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Security::AccessControl::GenericAce>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Security::AccessControl::GenericAce,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateFromBinaryForm", (binaryForm, offset))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Equals(
         &mut self,
         o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -55,6 +67,13 @@ impl crate::System::Security::AccessControl::GenericAce {
         let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn IsObjectType(
+        _cordl_type: crate::System::Security::AccessControl::AceType,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsObjectType", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_AceType_AceFlags0(
         _cordl_type: crate::System::Security::AccessControl::AceType,
         flags: crate::System::Security::AccessControl::AceFlags,
@@ -74,6 +93,40 @@ impl crate::System::Security::AccessControl::GenericAce {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (binaryForm, offset))?;
         Ok(__cordl_object.into())
+    }
+    pub fn ReadInt(
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        offset: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadInt", (buffer, offset))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReadUShort(
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        offset: i32,
+    ) -> quest_hook::libil2cpp::Result<u16> {
+        let __cordl_ret: u16 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadUShort", (buffer, offset))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WriteInt(
+        val: i32,
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        offset: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WriteInt", (val, buffer, offset))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WriteUShort(
+        val: u16,
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        offset: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WriteUShort", (val, buffer, offset))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_AceType_AceFlags0(
         &mut self,
@@ -169,6 +222,30 @@ impl crate::System::Security::AccessControl::GenericAce {
         );
         let __cordl_ret: crate::System::Security::AccessControl::PropagationFlags = __cordl_object
             .invoke("get_PropagationFlags", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        left: quest_hook::libil2cpp::Gc<
+            crate::System::Security::AccessControl::GenericAce,
+        >,
+        right: quest_hook::libil2cpp::Gc<
+            crate::System::Security::AccessControl::GenericAce,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        left: quest_hook::libil2cpp::Gc<
+            crate::System::Security::AccessControl::GenericAce,
+        >,
+        right: quest_hook::libil2cpp::Gc<
+            crate::System::Security::AccessControl::GenericAce,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (left, right))?;
         Ok(__cordl_ret.into())
     }
 }

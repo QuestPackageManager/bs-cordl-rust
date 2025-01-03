@@ -104,6 +104,30 @@ impl crate::Newtonsoft::Json::Linq::JArray {
         let __cordl_ret: bool = __cordl_object.invoke("DeepEquals", (node))?;
         Ok(__cordl_ret.into())
     }
+    pub fn FromObject_Il2CppObject0(
+        o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JArray>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Linq::JArray,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("FromObject", (o))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromObject_JsonSerializer1(
+        o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        jsonSerializer: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::JsonSerializer,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JArray>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Linq::JArray,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromObject", (o, jsonSerializer))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetDeepHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -160,6 +184,69 @@ impl crate::Newtonsoft::Json::Linq::JArray {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Insert", (index, item))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LoadAsync_CancellationToken0(
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut crate::Newtonsoft::Json::Linq::JArray,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut crate::Newtonsoft::Json::Linq::JArray,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LoadAsync", (reader, cancellationToken))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LoadAsync_JsonLoadSettings_CancellationToken1(
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+        settings: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Linq::JsonLoadSettings,
+        >,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut crate::Newtonsoft::Json::Linq::JArray,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut crate::Newtonsoft::Json::Linq::JArray,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LoadAsync", (reader, settings, cancellationToken))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Load_JsonLoadSettings1(
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+        settings: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Linq::JsonLoadSettings,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JArray>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Linq::JArray,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Load", (reader, settings))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Load_JsonReader0(
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JArray>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Linq::JArray,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Load", (reader))?;
         Ok(__cordl_ret.into())
     }
     pub fn MergeItem(
@@ -223,6 +310,30 @@ impl crate::Newtonsoft::Json::Linq::JArray {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (other, settings))?;
         Ok(__cordl_object.into())
+    }
+    pub fn Parse_Il2CppString0(
+        json: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JArray>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Linq::JArray,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Parse", (json))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Parse_JsonLoadSettings1(
+        json: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        settings: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Linq::JsonLoadSettings,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JArray>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Linq::JArray,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Parse", (json, settings))?;
+        Ok(__cordl_ret.into())
     }
     pub fn Remove(
         &mut self,

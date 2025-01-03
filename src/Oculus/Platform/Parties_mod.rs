@@ -23,7 +23,33 @@ impl std::ops::DerefMut for crate::Oculus::Platform::Parties {
     }
 }
 #[cfg(feature = "Oculus+Platform+Parties")]
-impl crate::Oculus::Platform::Parties {}
+impl crate::Oculus::Platform::Parties {
+    pub fn GetCurrent() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Request_1<
+                *mut crate::Oculus::Platform::Models::Party,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Request_1<
+                *mut crate::Oculus::Platform::Models::Party,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetCurrent", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetPartyUpdateNotificationCallback(
+        callback: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Message_1_Callback<
+                *mut crate::Oculus::Platform::Models::PartyUpdateNotification,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetPartyUpdateNotificationCallback", (callback))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "Oculus+Platform+Parties")]
 impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Platform::Parties {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

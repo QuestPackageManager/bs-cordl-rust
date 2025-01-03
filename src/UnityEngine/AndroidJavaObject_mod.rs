@@ -26,6 +26,28 @@ impl std::ops::DerefMut for crate::UnityEngine::AndroidJavaObject {
 }
 #[cfg(feature = "UnityEngine+AndroidJavaObject")]
 impl crate::UnityEngine::AndroidJavaObject {
+    pub fn AndroidJavaClassDeleteLocalRef(
+        jclass: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AndroidJavaClass>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AndroidJavaClass,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AndroidJavaClassDeleteLocalRef", (jclass))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AndroidJavaObjectDeleteLocalRef(
+        jobject: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AndroidJavaObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AndroidJavaObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AndroidJavaObjectDeleteLocalRef", (jobject))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CallStatic_Il2CppString0<T>(
         &mut self,
         methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -355,6 +377,17 @@ impl crate::UnityEngine::AndroidJavaObject {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Finalize", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromJavaArrayDeleteLocalRef<ReturnType>(
+        jobject: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<ReturnType>
+    where
+        ReturnType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: ReturnType = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromJavaArrayDeleteLocalRef", (jobject))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetRawClass(

@@ -28,6 +28,17 @@ impl crate::UnityEngine::TextAsset {
     pub type CreateOptions = crate::UnityEngine::TextAsset_CreateOptions;
     #[cfg(feature = "UnityEngine+TextAsset+EncodingUtility")]
     pub type EncodingUtility = crate::UnityEngine::TextAsset_EncodingUtility;
+    pub fn DecodeString(
+        bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DecodeString", (bytes))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetData<T>(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::NativeArray_1<T>>
@@ -85,6 +96,14 @@ impl crate::UnityEngine::TextAsset {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
         > = __cordl_object.invoke("GetPreviewBytes", (maxByteCount))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Internal_CreateInstance(
+        _cordl_self: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
+        text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Internal_CreateInstance", (_cordl_self, text))?;
         Ok(__cordl_ret.into())
     }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

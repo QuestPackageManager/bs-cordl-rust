@@ -28,6 +28,50 @@ impl crate::GlobalNamespace::CoroutineHelpers {
     pub type _ExecuteAfterDelayCoroutine_d__0 = crate::GlobalNamespace::CoroutineHelpers__ExecuteAfterDelayCoroutine_d__0;
     #[cfg(feature = "CoroutineHelpers+_ExecuteAfterFrameEnd_d__1")]
     pub type _ExecuteAfterFrameEnd_d__1 = crate::GlobalNamespace::CoroutineHelpers__ExecuteAfterFrameEnd_d__1;
+    pub fn ExecuteAfterDelayCoroutine(
+        action: quest_hook::libil2cpp::Gc<crate::System::Action>,
+        timeSeconds: f32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IEnumerator,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ExecuteAfterDelayCoroutine", (action, timeSeconds))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ExecuteAfterFrameEnd(
+        action: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IEnumerator,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ExecuteAfterFrameEnd", (action))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StartSingleCoroutine(
+        coroutineStarter: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ICoroutineStarter,
+        >,
+        handle: quest_hook::libil2cpp::ByRefMut<*mut crate::UnityEngine::Coroutine>,
+        routine: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StartSingleCoroutine", (coroutineStarter, handle, routine))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StopSingleCoroutine(
+        coroutineStarter: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ICoroutineStarter,
+        >,
+        handle: quest_hook::libil2cpp::ByRefMut<*mut crate::UnityEngine::Coroutine>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StopSingleCoroutine", (coroutineStarter, handle))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "CoroutineHelpers")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CoroutineHelpers {

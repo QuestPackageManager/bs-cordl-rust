@@ -27,12 +27,65 @@ for crate::Org::BouncyCastle::Crypto::Generators::DHParametersHelper {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Generators+DHParametersHelper")]
 impl crate::Org::BouncyCastle::Crypto::Generators::DHParametersHelper {
+    pub fn ConstructBigPrimeProducts(
+        primeProducts: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::Org::BouncyCastle::Math::BigInteger,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::Org::BouncyCastle::Math::BigInteger,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ConstructBigPrimeProducts", (primeProducts))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GenerateSafePrimes(
+        _cordl_size: i32,
+        certainty: i32,
+        random: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Security::SecureRandom,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::Org::BouncyCastle::Math::BigInteger,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::Org::BouncyCastle::Math::BigInteger,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GenerateSafePrimes", (_cordl_size, certainty, random))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
+    }
+    pub fn SelectGenerator(
+        p: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+        q: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+        random: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Security::SecureRandom,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::BigInteger,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SelectGenerator", (p, q, random))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,

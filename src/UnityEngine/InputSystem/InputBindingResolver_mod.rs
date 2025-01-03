@@ -58,6 +58,50 @@ impl crate::UnityEngine::InputSystem::InputBindingResolver {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn ApplyParameters(
+        parameters: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
+            crate::UnityEngine::InputSystem::Utilities::NamedValue,
+        >,
+        instance: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        actionMap: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputActionMap,
+        >,
+        binding: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::InputSystem::InputBinding,
+        >,
+        objectRegistrationName: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+        namesAndParameters: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ApplyParameters",
+                (
+                    parameters,
+                    instance,
+                    actionMap,
+                    binding,
+                    objectRegistrationName,
+                    namesAndParameters,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AssignCompositePartIndex(
+        composite: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        currentCompositePartCount: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "AssignCompositePartIndex",
+                (composite, name, currentCompositePartCount),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -66,6 +110,22 @@ impl crate::UnityEngine::InputSystem::InputBindingResolver {
             "Dispose",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InstantiateBindingComposite(
+        binding: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::InputSystem::InputBinding,
+        >,
+        actionMap: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputActionMap,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputBindingComposite>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputBindingComposite,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InstantiateBindingComposite", (binding, actionMap))?;
         Ok(__cordl_ret.into())
     }
     pub fn InstantiateWithParameters<TType>(

@@ -95,6 +95,29 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
             .invoke("OnEnable", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn SetAction(
+        field: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::InputSystem::InputActionProperty,
+        >,
+        value: crate::UnityEngine::InputSystem::InputActionProperty,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetAction", (field, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetActionCallback(
+        field: crate::UnityEngine::InputSystem::InputActionProperty,
+        callback: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<
+                crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+            >,
+        >,
+        install: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetActionCallback", (field, callback, install))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn TryEnableHardwareCursor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

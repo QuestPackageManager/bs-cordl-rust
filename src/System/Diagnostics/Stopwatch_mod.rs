@@ -27,6 +27,11 @@ impl std::ops::DerefMut for crate::System::Diagnostics::Stopwatch {
 }
 #[cfg(feature = "System+Diagnostics+Stopwatch")]
 impl crate::System::Diagnostics::Stopwatch {
+    pub fn GetTimestamp() -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetTimestamp", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -52,6 +57,14 @@ impl crate::System::Diagnostics::Stopwatch {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Start", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StartNew() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Diagnostics::Stopwatch>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Diagnostics::Stopwatch,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("StartNew", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn Stop(

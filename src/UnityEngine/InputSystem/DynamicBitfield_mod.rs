@@ -23,6 +23,11 @@ for crate::UnityEngine::InputSystem::DynamicBitfield {
 }
 #[cfg(feature = "UnityEngine+InputSystem+DynamicBitfield")]
 impl crate::UnityEngine::InputSystem::DynamicBitfield {
+    pub fn BitCountToULongCount(bitCount: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BitCountToULongCount", (bitCount))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ClearBit(
         &mut self,
         bitIndex: i32,

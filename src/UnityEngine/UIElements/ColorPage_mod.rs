@@ -23,6 +23,16 @@ for crate::UnityEngine::UIElements::ColorPage {
 }
 #[cfg(feature = "UnityEngine+UIElements+ColorPage")]
 impl crate::UnityEngine::UIElements::ColorPage {
+    pub fn Init(
+        renderChain: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UIR::RenderChain,
+        >,
+        alloc: crate::UnityEngine::UIElements::UIR::BMPAlloc,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::ColorPage> {
+        let __cordl_ret: crate::UnityEngine::UIElements::ColorPage = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Init", (renderChain, alloc))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ToNativeColorPage(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

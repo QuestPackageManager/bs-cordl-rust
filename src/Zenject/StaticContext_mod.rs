@@ -23,7 +23,25 @@ impl std::ops::DerefMut for crate::Zenject::StaticContext {
     }
 }
 #[cfg(feature = "Zenject+StaticContext")]
-impl crate::Zenject::StaticContext {}
+impl crate::Zenject::StaticContext {
+    pub fn Clear() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Clear", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Container() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_Container", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_HasContainer() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_HasContainer", ())?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "Zenject+StaticContext")]
 impl quest_hook::libil2cpp::ObjectType for crate::Zenject::StaticContext {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

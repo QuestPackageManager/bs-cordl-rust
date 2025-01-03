@@ -43,6 +43,15 @@ impl crate::HMUI::HoverHintController {
             .invoke("Awake", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetScreenTransformForHoverHint(
+        hoverHint: quest_hook::libil2cpp::Gc<crate::HMUI::HoverHint>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetScreenTransformForHoverHint", (hoverHint))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn HideHint(
         &mut self,
         hoverHint: quest_hook::libil2cpp::Gc<crate::HMUI::HoverHint>,

@@ -199,6 +199,14 @@ impl crate::VRUIControls::VRInputModule {
             .invoke("ProcessMove", (pointerEvent))?;
         Ok(__cordl_ret.into())
     }
+    pub fn RaycastComparer(
+        lhs: crate::UnityEngine::EventSystems::RaycastResult,
+        rhs: crate::UnityEngine::EventSystems::RaycastResult,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RaycastComparer", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn SendUpdateEventToSelectedObject(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {

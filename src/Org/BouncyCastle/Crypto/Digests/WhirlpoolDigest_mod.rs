@@ -163,6 +163,23 @@ impl crate::Org::BouncyCastle::Crypto::Digests::WhirlpoolDigest {
             .invoke(".ctor", (originalDigest))?;
         Ok(__cordl_ret.into())
     }
+    pub fn bytesToLongFromBuffer(
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        startPos: i32,
+    ) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("bytesToLongFromBuffer", (buffer, startPos))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn convertLongToByteArray(
+        inputLong: i64,
+        outputArray: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        offSet: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("convertLongToByteArray", (inputLong, outputArray, offSet))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn copyBitLength(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -207,6 +224,27 @@ impl crate::Org::BouncyCastle::Crypto::Digests::WhirlpoolDigest {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("increment", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn maskWithReductionPolynomial(
+        input: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("maskWithReductionPolynomial", (input))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn packIntoLong(
+        b7: i32,
+        b6: i32,
+        b5: i32,
+        b4: i32,
+        b3: i32,
+        b2: i32,
+        b1: i32,
+        b0: i32,
+    ) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("packIntoLong", (b7, b6, b5, b4, b3, b2, b1, b0))?;
         Ok(__cordl_ret.into())
     }
     pub fn processBlock(

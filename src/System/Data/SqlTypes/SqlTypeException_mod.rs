@@ -62,6 +62,22 @@ impl crate::System::Data::SqlTypes::SqlTypeException {
             .invoke_void(".ctor", (si, sc))?;
         Ok(__cordl_object.into())
     }
+    pub fn SqlTypeExceptionSerialization(
+        si: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::SerializationInfo,
+        >,
+        sc: crate::System::Runtime::Serialization::StreamingContext,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::SerializationInfo,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::SerializationInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SqlTypeExceptionSerialization", (si, sc))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -130,6 +130,13 @@ impl crate::System::Data::DataExpression {
         let __cordl_ret: bool = __cordl_object.invoke("IsTableAggregate", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn IsUnknown(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsUnknown", (value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_DataTable_Il2CppString0(
         table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
         expression: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -150,6 +157,13 @@ impl crate::System::Data::DataExpression {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (table, expression, _cordl_type))?;
         Ok(__cordl_object.into())
+    }
+    pub fn ToBoolean(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToBoolean", (value))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_DataTable_Il2CppString0(
         &mut self,

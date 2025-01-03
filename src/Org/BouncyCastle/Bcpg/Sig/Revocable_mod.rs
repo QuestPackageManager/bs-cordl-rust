@@ -24,6 +24,17 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Bcpg::Sig::Revocable {
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+Sig+Revocable")]
 impl crate::Org::BouncyCastle::Bcpg::Sig::Revocable {
+    pub fn BooleanToByteArray(
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BooleanToByteArray", (value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn IsRevocable(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

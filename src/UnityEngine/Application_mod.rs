@@ -30,6 +30,372 @@ impl crate::UnityEngine::Application {
     pub type LowMemoryCallback = crate::UnityEngine::Application_LowMemoryCallback;
     #[cfg(feature = "UnityEngine+Application+MemoryUsageChangedCallback")]
     pub type MemoryUsageChangedCallback = crate::UnityEngine::Application_MemoryUsageChangedCallback;
+    pub fn CallLogCallback(
+        logString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        stackTrace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        _cordl_type: crate::UnityEngine::LogType,
+        invokedOnMainThread: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CallLogCallback",
+                (logString, stackTrace, _cordl_type, invokedOnMainThread),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CallLowMemory(
+        usage: crate::UnityEngine::ApplicationMemoryUsage,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CallLowMemory", (usage))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CanStreamedLevelBeLoaded_Il2CppString1(
+        levelName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CanStreamedLevelBeLoaded", (levelName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CanStreamedLevelBeLoaded_i32_0(
+        levelIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CanStreamedLevelBeLoaded", (levelIndex))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn HasLogCallback() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("HasLogCallback", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Internal_ApplicationInit() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Internal_ApplicationInit", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Internal_ApplicationQuit() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Internal_ApplicationQuit", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Internal_ApplicationUnload() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Internal_ApplicationUnload", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Internal_ApplicationWantsToQuit() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Internal_ApplicationWantsToQuit", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InvokeDeepLinkActivated(
+        url: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InvokeDeepLinkActivated", (url))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InvokeFocusChanged(
+        focus: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InvokeFocusChanged", (focus))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InvokeOnBeforeRender() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InvokeOnBeforeRender", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn OpenURL(
+        url: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("OpenURL", (url))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Quit_1() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Quit", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Quit_i32_0(
+        exitCode: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Quit", (exitCode))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetLogCallbackDefined(
+        defined: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetLogCallbackDefined", (defined))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn add_focusChanged(
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("add_focusChanged", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn add_logMessageReceived(
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::Application_LogCallback>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("add_logMessageReceived", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn add_onBeforeRender(
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityAction>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("add_onBeforeRender", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn add_quitting(
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("add_quitting", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_backgroundLoadingPriority() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ThreadPriority,
+    > {
+        let __cordl_ret: crate::UnityEngine::ThreadPriority = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_backgroundLoadingPriority", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_buildGUID() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_buildGUID", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_companyName() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_companyName", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_dataPath() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_dataPath", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_identifier() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_identifier", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_installMode() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ApplicationInstallMode,
+    > {
+        let __cordl_ret: crate::UnityEngine::ApplicationInstallMode = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_installMode", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_installerName() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_installerName", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_internetReachability() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::NetworkReachability,
+    > {
+        let __cordl_ret: crate::UnityEngine::NetworkReachability = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_internetReachability", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_isBatchMode() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_isBatchMode", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_isConsolePlatform() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_isConsolePlatform", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_isEditor() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_isEditor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_isFocused() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_isFocused", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_isMobilePlatform() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_isMobilePlatform", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_isPlaying() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_isPlaying", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_persistentDataPath() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_persistentDataPath", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_platform() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::RuntimePlatform,
+    > {
+        let __cordl_ret: crate::UnityEngine::RuntimePlatform = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_platform", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_productName() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_productName", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_runInBackground() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_runInBackground", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_sandboxType() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ApplicationSandboxType,
+    > {
+        let __cordl_ret: crate::UnityEngine::ApplicationSandboxType = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_sandboxType", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_streamingAssetsPath() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_streamingAssetsPath", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_systemLanguage() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::SystemLanguage,
+    > {
+        let __cordl_ret: crate::UnityEngine::SystemLanguage = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_systemLanguage", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_targetFrameRate() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_targetFrameRate", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_temporaryCachePath() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_temporaryCachePath", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_unityVersion() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_unityVersion", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_version() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_version", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_focusChanged(
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("remove_focusChanged", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_logMessageReceived(
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::Application_LogCallback>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("remove_logMessageReceived", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_onBeforeRender(
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityAction>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("remove_onBeforeRender", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_quitting(
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("remove_quitting", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_backgroundLoadingPriority(
+        value: crate::UnityEngine::ThreadPriority,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_backgroundLoadingPriority", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_runInBackground(
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_runInBackground", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_targetFrameRate(
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_targetFrameRate", (value))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+Application")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Application {

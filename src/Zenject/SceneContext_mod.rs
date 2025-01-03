@@ -61,6 +61,13 @@ impl crate::Zenject::SceneContext {
             .invoke("Awake", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn Create() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Zenject::SceneContext>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::SceneContext> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetInjectableMonoBehaviours(
         &mut self,
         monoBehaviours: quest_hook::libil2cpp::Gc<
@@ -206,6 +213,13 @@ impl crate::Zenject::SceneContext {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("<LookupDecoratorContexts>b__50_2", (decoratorContext))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn __zenCreateInjectTypeInfo() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Zenject::InjectTypeInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::InjectTypeInfo> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("__zenCreateInjectTypeInfo", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

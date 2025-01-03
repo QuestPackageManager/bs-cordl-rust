@@ -92,6 +92,13 @@ impl crate::UnityEngine::UI::Text {
             .invoke("GetGenerationSettings", (extents))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetTextAnchorPivot(
+        anchor: crate::UnityEngine::TextAnchor,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetTextAnchorPivot", (anchor))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

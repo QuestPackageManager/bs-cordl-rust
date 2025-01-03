@@ -58,6 +58,17 @@ impl crate::Org::BouncyCastle::Bcpg::Sig::SignerUserId {
             .invoke_void(".ctor", (critical, isLongLength, data))?;
         Ok(__cordl_object.into())
     }
+    pub fn UserIdToBytes(
+        id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UserIdToBytes", (id))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor_Il2CppString1(
         &mut self,
         critical: bool,

@@ -28,6 +28,28 @@ impl std::ops::DerefMut for crate::BGLib::Polyglot::LocalizedTextMeshPro {
 }
 #[cfg(feature = "BGLib+Polyglot+LocalizedTextMeshPro")]
 impl crate::BGLib::Polyglot::LocalizedTextMeshPro {
+    pub fn IsAlignmentLeft(
+        alignment: crate::TMPro::TextAlignmentOptions,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsAlignmentLeft", (alignment))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsAlignmentRight(
+        alignment: crate::TMPro::TextAlignmentOptions,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsAlignmentRight", (alignment))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsOppositeDirection(
+        alignment: crate::TMPro::TextAlignmentOptions,
+        direction: crate::BGLib::Polyglot::LanguageDirection,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsOppositeDirection", (alignment, direction))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

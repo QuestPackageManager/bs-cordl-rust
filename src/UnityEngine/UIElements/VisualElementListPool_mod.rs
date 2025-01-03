@@ -26,6 +26,54 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::VisualElementListPoo
 impl crate::UnityEngine::UIElements::VisualElementListPool {
     #[cfg(feature = "UnityEngine+UIElements+VisualElementListPool+__c")]
     pub type __c = crate::UnityEngine::UIElements::VisualElementListPool___c;
+    pub fn Copy(
+        elements: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::UIElements::VisualElement,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::UIElements::VisualElement,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::UIElements::VisualElement,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Copy", (elements))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Get(
+        initialCapacity: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::UIElements::VisualElement,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::UIElements::VisualElement,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Get", (initialCapacity))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Release(
+        elements: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::UIElements::VisualElement,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Release", (elements))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualElementListPool")]
 impl quest_hook::libil2cpp::ObjectType

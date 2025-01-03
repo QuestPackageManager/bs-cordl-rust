@@ -54,12 +54,24 @@ impl crate::Org::BouncyCastle::Crypto::Tls::NamedCurve {
     pub const sect409r1: i32 = 12i32;
     pub const sect571k1: i32 = 13i32;
     pub const sect571r1: i32 = 14i32;
+    pub fn IsValid(namedCurve: i32) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsValid", (namedCurve))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
+    }
+    pub fn RefersToASpecificNamedCurve(
+        namedCurve: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RefersToASpecificNamedCurve", (namedCurve))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,

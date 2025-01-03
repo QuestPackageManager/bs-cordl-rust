@@ -63,6 +63,42 @@ impl crate::Org::BouncyCastle::Crypto::Signers::PssSigner {
             .invoke("ClearBlock", (block))?;
         Ok(__cordl_ret.into())
     }
+    pub fn CreateRawSigner_IAsymmetricBlockCipher_IDigest0(
+        cipher: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::IAsymmetricBlockCipher,
+        >,
+        digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Signers::PssSigner>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Signers::PssSigner,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateRawSigner", (cipher, digest))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateRawSigner_IDigest_i32_u8_1(
+        cipher: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::IAsymmetricBlockCipher,
+        >,
+        contentDigest: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::IDigest,
+        >,
+        mgfDigest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
+        saltLen: i32,
+        trailer: u8,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Signers::PssSigner>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Signers::PssSigner,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CreateRawSigner",
+                (cipher, contentDigest, mgfDigest, saltLen, trailer),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GenerateSignature(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

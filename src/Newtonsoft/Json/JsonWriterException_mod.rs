@@ -25,6 +25,32 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::JsonWriterException {
 }
 #[cfg(feature = "Newtonsoft+Json+JsonWriterException")]
 impl crate::Newtonsoft::Json::JsonWriterException {
+    pub fn Create_Il2CppString1(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        ex: quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriterException>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::JsonWriterException,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (path, message, ex))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Create_JsonWriter0(
+        writer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        ex: quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriterException>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::JsonWriterException,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (writer, message, ex))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

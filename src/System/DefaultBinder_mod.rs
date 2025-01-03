@@ -90,6 +90,38 @@ impl crate::System::DefaultBinder {
             )?;
         Ok(__cordl_ret.into())
     }
+    pub fn CanChangePrimitive(
+        source: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        target: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CanChangePrimitive", (source, target))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CanConvertPrimitive(
+        source: quest_hook::libil2cpp::Gc<crate::System::RuntimeType>,
+        target: quest_hook::libil2cpp::Gc<crate::System::RuntimeType>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CanConvertPrimitive", (source, target))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CanConvertPrimitiveObjectToType(
+        source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::RuntimeType>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CanConvertPrimitiveObjectToType", (source, _cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CanPrimitiveWiden(
+        source: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        target: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CanPrimitiveWiden", (source, target))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ChangeType(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -104,6 +136,203 @@ impl crate::System::DefaultBinder {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
         > = __cordl_object.invoke("ChangeType", (value, _cordl_type, cultureInfo))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CompareMethodSig(
+        m1: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
+        m2: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CompareMethodSig", (m1, m2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CompareMethodSigAndName(
+        m1: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
+        m2: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CompareMethodSigAndName", (m1, m2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateParamOrder(
+        paramOrder: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+        pars: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Reflection::ParameterInfo,
+            >,
+        >,
+        names: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateParamOrder", (paramOrder, pars, names))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ExactBinding(
+        _cordl_match: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Reflection::MethodBase,
+            >,
+        >,
+        types: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+        >,
+        modifiers: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::System::Reflection::ParameterModifier,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::MethodBase,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ExactBinding", (_cordl_match, types, modifiers))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ExactPropertyBinding(
+        _cordl_match: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Reflection::PropertyInfo,
+            >,
+        >,
+        returnType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        types: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+        >,
+        modifiers: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::System::Reflection::ParameterModifier,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::PropertyInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ExactPropertyBinding",
+                (_cordl_match, returnType, types, modifiers),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FindMostDerivedNewSlotMeth(
+        _cordl_match: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Reflection::MethodBase,
+            >,
+        >,
+        cMatches: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::MethodBase,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FindMostDerivedNewSlotMeth", (_cordl_match, cMatches))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FindMostSpecific(
+        p1: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Reflection::ParameterInfo,
+            >,
+        >,
+        paramOrder1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+        paramArrayType1: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        p2: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Reflection::ParameterInfo,
+            >,
+        >,
+        paramOrder2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+        paramArrayType2: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        types: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+        >,
+        args: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "FindMostSpecific",
+                (
+                    p1,
+                    paramOrder1,
+                    paramArrayType1,
+                    p2,
+                    paramOrder2,
+                    paramArrayType2,
+                    types,
+                    args,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FindMostSpecificField(
+        cur1: quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
+        cur2: quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FindMostSpecificField", (cur1, cur2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FindMostSpecificMethod(
+        m1: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
+        paramOrder1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+        paramArrayType1: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        m2: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
+        paramOrder2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+        paramArrayType2: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        types: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+        >,
+        args: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "FindMostSpecificMethod",
+                (
+                    m1,
+                    paramOrder1,
+                    paramArrayType1,
+                    m2,
+                    paramOrder2,
+                    paramArrayType2,
+                    types,
+                    args,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FindMostSpecificProperty(
+        cur1: quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
+        cur2: quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FindMostSpecificProperty", (cur1, cur2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FindMostSpecificType(
+        c1: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        c2: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        t: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FindMostSpecificType", (c1, c2, t))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetHierarchyDepth(
+        t: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetHierarchyDepth", (t))?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -127,6 +356,16 @@ impl crate::System::DefaultBinder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReorderArgumentArray", (args, state))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReorderParams(
+        paramOrder: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+        vars: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReorderParams", (paramOrder, vars))?;
         Ok(__cordl_ret.into())
     }
     pub fn SelectMethod(

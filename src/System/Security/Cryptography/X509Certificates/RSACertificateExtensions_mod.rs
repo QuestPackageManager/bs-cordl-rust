@@ -36,7 +36,21 @@ for crate::System::Security::Cryptography::X509Certificates::RSACertificateExten
 #[cfg(
     feature = "System+Security+Cryptography+X509Certificates+RSACertificateExtensions"
 )]
-impl crate::System::Security::Cryptography::X509Certificates::RSACertificateExtensions {}
+impl crate::System::Security::Cryptography::X509Certificates::RSACertificateExtensions {
+    pub fn GetRSAPublicKey(
+        certificate: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::RSA>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::RSA,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetRSAPublicKey", (certificate))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(
     feature = "System+Security+Cryptography+X509Certificates+RSACertificateExtensions"
 )]

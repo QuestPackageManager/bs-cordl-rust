@@ -95,6 +95,16 @@ impl crate::System::Security::Cryptography::HashAlgorithm {
         > = __cordl_object.invoke("ComputeHash", (inputStream))?;
         Ok(__cordl_ret.into())
     }
+    pub fn Create(
+        hashName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::HashAlgorithm>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::HashAlgorithm,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Create", (hashName))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Dispose_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -39,6 +39,48 @@ impl<
     pub type _LoadResourcesBeforeInstallAsync_d__2 = crate::BGLib::AppFlow::Initialization::AddressablesAsyncInstaller_1__LoadResourcesBeforeInstallAsync_d__2<
         T,
     >;
+    pub fn GetLocations(
+        runtimeKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::HashSet_1<
+                *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+            >,
+        >,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::HashSet_1<
+                *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetLocations", (runtimeKey))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LoadAsync(
+        runtimeKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Nullable_1<
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+                *mut crate::System::Collections::Generic::IList_1<T>,
+            >,
+        >,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: crate::System::Nullable_1<
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+                *mut crate::System::Collections::Generic::IList_1<T>,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LoadAsync", (runtimeKey))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn LoadResourcesBeforeInstallAsync(
         &mut self,
         registry: quest_hook::libil2cpp::Gc<

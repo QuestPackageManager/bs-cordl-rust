@@ -23,7 +23,34 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::UQueryExtensions {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UQueryExtensions")]
-impl crate::UnityEngine::UIElements::UQueryExtensions {}
+impl crate::UnityEngine::UIElements::UQueryExtensions {
+    pub fn Q_VisualElement_Il2CppString_Il2CppString0<T>(
+        e: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        className: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Q", (e, name, className))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Q_VisualElement_Il2CppString_Il2CppString1(
+        e: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        className: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::VisualElement,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Q", (e, name, className))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+UQueryExtensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::UQueryExtensions {

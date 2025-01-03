@@ -23,7 +23,34 @@ impl std::ops::DerefMut for crate::Unity::Burst::SafeStringArrayHelper {
     }
 }
 #[cfg(feature = "Unity+Burst+SafeStringArrayHelper")]
-impl crate::Unity::Burst::SafeStringArrayHelper {}
+impl crate::Unity::Burst::SafeStringArrayHelper {
+    pub fn DeserialiseStringArraySafe(
+        input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DeserialiseStringArraySafe", (input))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SerialiseStringArraySafe(
+        array: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SerialiseStringArraySafe", (array))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "Unity+Burst+SafeStringArrayHelper")]
 impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::SafeStringArrayHelper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

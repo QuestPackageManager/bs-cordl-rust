@@ -308,6 +308,16 @@ impl crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule {
         let __cordl_ret: bool = __cordl_object.invoke("HasNoActions", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn HaveControlForDevice(
+        device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+        actionReference: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputActionReference,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("HaveControlForDevice", (device, actionReference))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn HookActions(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -613,6 +623,18 @@ impl crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule {
             .invoke("ProcessPointerMovement", (eventData, currentPointerTarget))?;
         Ok(__cordl_ret.into())
     }
+    pub fn ProcessPointerScroll(
+        pointer: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::InputSystem::UI::PointerModel,
+        >,
+        eventData: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::PointerEventData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ProcessPointerScroll", (pointer, eventData))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn PurgeStalePointers(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -653,6 +675,21 @@ impl crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SendPointerExitEventsAndRemovePointer", (index))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetActionCallback(
+        actionReference: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputActionReference,
+        >,
+        callback: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<
+                crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+            >,
+        >,
+        install: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetActionCallback", (actionReference, callback, install))?;
         Ok(__cordl_ret.into())
     }
     pub fn SetActionCallbacks(

@@ -26,7 +26,18 @@ for crate::System::Net::NetworkInformation::NetworkInterfaceFactoryPal {
     }
 }
 #[cfg(feature = "System+Net+NetworkInformation+NetworkInterfaceFactoryPal")]
-impl crate::System::Net::NetworkInformation::NetworkInterfaceFactoryPal {}
+impl crate::System::Net::NetworkInformation::NetworkInterfaceFactoryPal {
+    pub fn Create() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Net::NetworkInformation::NetworkInterfaceFactory,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Net::NetworkInformation::NetworkInterfaceFactory,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Create", ())?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Net+NetworkInformation+NetworkInterfaceFactoryPal")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Net::NetworkInformation::NetworkInterfaceFactoryPal {

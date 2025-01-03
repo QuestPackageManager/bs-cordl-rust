@@ -52,12 +52,35 @@ impl crate::System::Data::SqlTypes::SqlDecimal {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn BGetPrecUI4(value: u32) -> quest_hook::libil2cpp::Result<u8> {
+        let __cordl_ret: u8 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BGetPrecUI4", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn BGetPrecUI8(dwlVal: u64) -> quest_hook::libil2cpp::Result<u8> {
+        let __cordl_ret: u8 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BGetPrecUI8", (dwlVal))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CalculatePrecision(&mut self) -> quest_hook::libil2cpp::Result<u8> {
         let __cordl_ret: u8 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "CalculatePrecision",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ChFromDigit(uiDigit: u32) -> quest_hook::libil2cpp::Result<char> {
+        let __cordl_ret: char = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ChFromDigit", (uiDigit))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CheckValidPrecScale(
+        bPrec: u8,
+        bScale: u8,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckValidPrecScale", (bPrec, bScale))?;
         Ok(__cordl_ret.into())
     }
     pub fn CompareNm(
@@ -91,6 +114,11 @@ impl crate::System::Data::SqlTypes::SqlDecimal {
             "CompareTo",
             (value),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DWL(lo: u32, hi: u32) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DWL", (lo, hi))?;
         Ok(__cordl_ret.into())
     }
     pub fn DivByULong(&mut self, iDivisor: u32) -> quest_hook::libil2cpp::Result<u32> {
@@ -147,6 +175,30 @@ impl crate::System::Data::SqlTypes::SqlDecimal {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetXsdType(
+        schemaSet: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSet>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::XmlQualifiedName,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetXsdType", (schemaSet))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GreaterThan(
+        x: crate::System::Data::SqlTypes::SqlDecimal,
+        y: crate::System::Data::SqlTypes::SqlDecimal,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlBoolean> {
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlBoolean = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GreaterThan", (x, y))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn HI(x: u64) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("HI", (x))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn LAbsCmp(
         &mut self,
         snumOp: crate::System::Data::SqlTypes::SqlDecimal,
@@ -158,6 +210,79 @@ impl crate::System::Data::SqlTypes::SqlDecimal {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn LO(x: u64) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LO", (x))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LessThan(
+        x: crate::System::Data::SqlTypes::SqlDecimal,
+        y: crate::System::Data::SqlTypes::SqlDecimal,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlBoolean> {
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlBoolean = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LessThan", (x, y))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MpDiv(
+        rgulU: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+        ciulU: i32,
+        rgulD: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+        ciulD: i32,
+        rgulQ: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+        ciulQ: quest_hook::libil2cpp::ByRefMut<i32>,
+        rgulR: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+        ciulR: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MpDiv", (rgulU, ciulU, rgulD, ciulD, rgulQ, ciulQ, rgulR, ciulR))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MpDiv1(
+        rgulU: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+        ciulU: quest_hook::libil2cpp::ByRefMut<i32>,
+        iulD: u32,
+        iulR: quest_hook::libil2cpp::ByRefMut<u32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MpDiv1", (rgulU, ciulU, iulD, iulR))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MpMove(
+        rgulS: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+        ciulS: i32,
+        rgulD: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+        ciulD: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MpMove", (rgulS, ciulS, rgulD, ciulD))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MpMul1(
+        piulD: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+        ciulD: quest_hook::libil2cpp::ByRefMut<i32>,
+        iulX: u32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MpMul1", (piulD, ciulD, iulX))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MpNormalize(
+        rgulU: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+        ciulU: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MpNormalize", (rgulU, ciulU))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MpSet(
+        rgulD: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+        ciulD: quest_hook::libil2cpp::ByRefMut<i32>,
+        iulN: u32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MpSet", (rgulD, ciulD, iulN))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn MultByULong(
         &mut self,
         uiMultiplier: u32,
@@ -167,6 +292,13 @@ impl crate::System::Data::SqlTypes::SqlDecimal {
             "MultByULong",
             (uiMultiplier),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Parse(
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlDecimal> {
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlDecimal = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Parse", (s))?;
         Ok(__cordl_ret.into())
     }
     pub fn SetPositive(
@@ -316,6 +448,14 @@ impl crate::System::Data::SqlTypes::SqlDecimal {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn ZeroToMaxLen(
+        rgulData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+        cUI4sCur: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ZeroToMaxLen", (rgulData, cUI4sCur))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor_Decimal1(
         &mut self,
         value: crate::System::Decimal,
@@ -417,6 +557,118 @@ impl crate::System::Data::SqlTypes::SqlDecimal {
             "get_Value",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Addition(
+        x: crate::System::Data::SqlTypes::SqlDecimal,
+        y: crate::System::Data::SqlTypes::SqlDecimal,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlDecimal> {
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlDecimal = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Addition", (x, y))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Division(
+        x: crate::System::Data::SqlTypes::SqlDecimal,
+        y: crate::System::Data::SqlTypes::SqlDecimal,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlDecimal> {
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlDecimal = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Division", (x, y))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        x: crate::System::Data::SqlTypes::SqlDecimal,
+        y: crate::System::Data::SqlTypes::SqlDecimal,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlBoolean> {
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlBoolean = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (x, y))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_GreaterThan(
+        x: crate::System::Data::SqlTypes::SqlDecimal,
+        y: crate::System::Data::SqlTypes::SqlDecimal,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlBoolean> {
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlBoolean = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_GreaterThan", (x, y))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_Decimal0(
+        x: crate::System::Decimal,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlDecimal> {
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlDecimal = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (x))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_SqlByte2(
+        x: crate::System::Data::SqlTypes::SqlByte,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlDecimal> {
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlDecimal = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (x))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_SqlInt16_3(
+        x: crate::System::Data::SqlTypes::SqlInt16,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlDecimal> {
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlDecimal = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (x))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_SqlInt32_4(
+        x: crate::System::Data::SqlTypes::SqlInt32,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlDecimal> {
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlDecimal = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (x))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_SqlInt64_5(
+        x: crate::System::Data::SqlTypes::SqlInt64,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlDecimal> {
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlDecimal = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (x))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_SqlMoney6(
+        x: crate::System::Data::SqlTypes::SqlMoney,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlDecimal> {
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlDecimal = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (x))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_i64_1(
+        x: i64,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlDecimal> {
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlDecimal = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (x))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_LessThan(
+        x: crate::System::Data::SqlTypes::SqlDecimal,
+        y: crate::System::Data::SqlTypes::SqlDecimal,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlBoolean> {
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlBoolean = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_LessThan", (x, y))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Multiply(
+        x: crate::System::Data::SqlTypes::SqlDecimal,
+        y: crate::System::Data::SqlTypes::SqlDecimal,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlDecimal> {
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlDecimal = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Multiply", (x, y))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Subtraction(
+        x: crate::System::Data::SqlTypes::SqlDecimal,
+        y: crate::System::Data::SqlTypes::SqlDecimal,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlDecimal> {
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlDecimal = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Subtraction", (x, y))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_UnaryNegation(
+        x: crate::System::Data::SqlTypes::SqlDecimal,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlDecimal> {
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlDecimal = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_UnaryNegation", (x))?;
         Ok(__cordl_ret.into())
     }
 }

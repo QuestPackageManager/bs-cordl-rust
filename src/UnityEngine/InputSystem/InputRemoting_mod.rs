@@ -90,6 +90,26 @@ impl crate::UnityEngine::InputSystem::InputRemoting {
     pub type StopSendingMsg = crate::UnityEngine::InputSystem::InputRemoting_StopSendingMsg;
     #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+Subscriber")]
     pub type Subscriber = crate::UnityEngine::InputSystem::InputRemoting_Subscriber;
+    pub fn BuildLayoutNamespace(
+        senderId: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::InternedString,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::InternedString = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BuildLayoutNamespace", (senderId))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DeserializeData<TData>(
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<TData>
+    where
+        TData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: TData = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DeserializeData", (data))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn FindLocalDeviceId(
         &mut self,
         remoteDeviceId: i32,
@@ -233,6 +253,21 @@ impl crate::UnityEngine::InputSystem::InputRemoting {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SendLayoutChange", (layout, change))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SerializeData<TData>(
+        data: TData,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    >
+    where
+        TData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SerializeData", (data))?;
         Ok(__cordl_ret.into())
     }
     pub fn StartSending(
@@ -465,6 +500,25 @@ impl crate::UnityEngine::InputSystem::InputRemoting_ChangeUsageMsg {
     pub type Data = crate::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting_Data;
     #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+ChangeUsageMsg+__c")]
     pub type __c = crate::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting___c;
+    pub fn Create(
+        device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputRemoting_Message,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputRemoting_Message = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (device))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Process(
+        receiver: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputRemoting,
+        >,
+        msg: crate::UnityEngine::InputSystem::InputRemoting_Message,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Process", (receiver, msg))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+ChangeUsageMsg")]
 impl quest_hook::libil2cpp::ObjectType
@@ -502,7 +556,17 @@ impl std::ops::DerefMut for crate::UnityEngine::InputSystem::InputRemoting_Conne
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+ConnectMsg")]
-impl crate::UnityEngine::InputSystem::InputRemoting_ConnectMsg {}
+impl crate::UnityEngine::InputSystem::InputRemoting_ConnectMsg {
+    pub fn Process(
+        receiver: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputRemoting,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Process", (receiver))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+ConnectMsg")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::InputRemoting_ConnectMsg {
@@ -540,7 +604,18 @@ for crate::UnityEngine::InputSystem::InputRemoting_DisconnectMsg {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+DisconnectMsg")]
-impl crate::UnityEngine::InputSystem::InputRemoting_DisconnectMsg {}
+impl crate::UnityEngine::InputSystem::InputRemoting_DisconnectMsg {
+    pub fn Process(
+        receiver: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputRemoting,
+        >,
+        msg: crate::UnityEngine::InputSystem::InputRemoting_Message,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Process", (receiver, msg))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+DisconnectMsg")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::InputRemoting_DisconnectMsg {
@@ -641,6 +716,25 @@ impl crate::UnityEngine::InputSystem::InputRemoting_NewDeviceMsg {
     pub type Data = crate::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting_Data;
     #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewDeviceMsg+__c")]
     pub type __c = crate::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting___c;
+    pub fn Create(
+        device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputRemoting_Message,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputRemoting_Message = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (device))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Process(
+        receiver: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputRemoting,
+        >,
+        msg: crate::UnityEngine::InputSystem::InputRemoting_Message,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Process", (receiver, msg))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewDeviceMsg")]
 impl quest_hook::libil2cpp::ObjectType
@@ -678,7 +772,47 @@ impl std::ops::DerefMut for crate::UnityEngine::InputSystem::InputRemoting_NewEv
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewEventsMsg")]
-impl crate::UnityEngine::InputSystem::InputRemoting_NewEventsMsg {}
+impl crate::UnityEngine::InputSystem::InputRemoting_NewEventsMsg {
+    pub fn Create(
+        events: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        eventCount: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputRemoting_Message,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputRemoting_Message = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (events, eventCount))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateResetEvent(
+        device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+        isHardReset: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputRemoting_Message,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputRemoting_Message = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateResetEvent", (device, isHardReset))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateStateEvent(
+        device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputRemoting_Message,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputRemoting_Message = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateStateEvent", (device))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Process(
+        receiver: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputRemoting,
+        >,
+        msg: crate::UnityEngine::InputSystem::InputRemoting_Message,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Process", (receiver, msg))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewEventsMsg")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::InputRemoting_NewEventsMsg {
@@ -718,6 +852,30 @@ impl std::ops::DerefMut for crate::UnityEngine::InputSystem::InputRemoting_NewLa
 impl crate::UnityEngine::InputSystem::InputRemoting_NewLayoutMsg {
     #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewLayoutMsg+Data")]
     pub type Data = crate::UnityEngine::InputSystem::NewLayoutMsg_InputRemoting_Data;
+    pub fn Create(
+        sender: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputRemoting,
+        >,
+        layoutName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Nullable_1<crate::UnityEngine::InputSystem::InputRemoting_Message>,
+    > {
+        let __cordl_ret: crate::System::Nullable_1<
+            crate::UnityEngine::InputSystem::InputRemoting_Message,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (sender, layoutName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Process(
+        receiver: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputRemoting,
+        >,
+        msg: crate::UnityEngine::InputSystem::InputRemoting_Message,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Process", (receiver, msg))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewLayoutMsg")]
 impl quest_hook::libil2cpp::ObjectType
@@ -814,7 +972,27 @@ for crate::UnityEngine::InputSystem::InputRemoting_RemoveDeviceMsg {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+RemoveDeviceMsg")]
-impl crate::UnityEngine::InputSystem::InputRemoting_RemoveDeviceMsg {}
+impl crate::UnityEngine::InputSystem::InputRemoting_RemoveDeviceMsg {
+    pub fn Create(
+        device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputRemoting_Message,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputRemoting_Message = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (device))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Process(
+        receiver: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputRemoting,
+        >,
+        msg: crate::UnityEngine::InputSystem::InputRemoting_Message,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Process", (receiver, msg))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+RemoveDeviceMsg")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::InputRemoting_RemoveDeviceMsg {
@@ -852,7 +1030,17 @@ for crate::UnityEngine::InputSystem::InputRemoting_StartSendingMsg {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+StartSendingMsg")]
-impl crate::UnityEngine::InputSystem::InputRemoting_StartSendingMsg {}
+impl crate::UnityEngine::InputSystem::InputRemoting_StartSendingMsg {
+    pub fn Process(
+        receiver: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputRemoting,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Process", (receiver))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+StartSendingMsg")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::InputRemoting_StartSendingMsg {
@@ -890,7 +1078,17 @@ for crate::UnityEngine::InputSystem::InputRemoting_StopSendingMsg {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+StopSendingMsg")]
-impl crate::UnityEngine::InputSystem::InputRemoting_StopSendingMsg {}
+impl crate::UnityEngine::InputSystem::InputRemoting_StopSendingMsg {
+    pub fn Process(
+        receiver: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputRemoting,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Process", (receiver))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+StopSendingMsg")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::InputRemoting_StopSendingMsg {

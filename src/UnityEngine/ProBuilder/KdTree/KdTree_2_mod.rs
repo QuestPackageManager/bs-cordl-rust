@@ -289,6 +289,25 @@ impl<
         > = __cordl_object.invoke("GetNearestNeighbours", (point, count))?;
         Ok(__cordl_ret.into())
     }
+    pub fn LoadFromFile(
+        filename: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::KdTree::KdTree_2<TKey, TValue>,
+        >,
+    >
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::KdTree::KdTree_2<TKey, TValue>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LoadFromFile", (filename))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_AddDuplicateBehavior1(
         dimensions: i32,
         typeMath: quest_hook::libil2cpp::Gc<

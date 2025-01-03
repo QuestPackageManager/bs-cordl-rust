@@ -119,6 +119,13 @@ impl crate::GlobalNamespace::OVRVirtualKeyboard {
     pub type KeyboardPosition = crate::GlobalNamespace::OVRVirtualKeyboard_KeyboardPosition;
     #[cfg(feature = "OVRVirtualKeyboard+__c")]
     pub type __c = crate::GlobalNamespace::OVRVirtualKeyboard___c;
+    pub fn ApplyHideFlags(
+        t: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ApplyHideFlags", (t))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1089,6 +1096,13 @@ impl crate::GlobalNamespace::OVRVirtualKeyboard_InteractorRootTransformOverride 
         feature = "OVRVirtualKeyboard+InteractorRootTransformOverride+_RevertInteractorOverrides_d__6"
     )]
     pub type _RevertInteractorOverrides_d__6 = crate::GlobalNamespace::InteractorRootTransformOverride_OVRVirtualKeyboard__RevertInteractorOverrides_d__6;
+    pub fn ApplyOverride(
+        interactorOverride: crate::GlobalNamespace::InteractorRootTransformOverride_OVRVirtualKeyboard_InteractorRootOverrideData,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ApplyOverride", (interactorOverride))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Enqueue(
         &mut self,
         interactorRootTransform: quest_hook::libil2cpp::Gc<

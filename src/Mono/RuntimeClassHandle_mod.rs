@@ -40,6 +40,13 @@ impl crate::Mono::RuntimeClassHandle {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetTypeFromClass(
+        klass: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetTypeFromClass", (klass))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetTypeHandle(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::RuntimeTypeHandle> {

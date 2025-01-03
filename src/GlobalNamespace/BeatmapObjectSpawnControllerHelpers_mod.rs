@@ -24,7 +24,30 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapObjectSpawnController
     }
 }
 #[cfg(feature = "BeatmapObjectSpawnControllerHelpers")]
-impl crate::GlobalNamespace::BeatmapObjectSpawnControllerHelpers {}
+impl crate::GlobalNamespace::BeatmapObjectSpawnControllerHelpers {
+    pub fn GetNoteJumpValues(
+        playerSpecificSettings: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerSpecificSettings,
+        >,
+        defaultNoteJumpStartBeatOffset: f32,
+        noteJumpValueType: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::BeatmapObjectSpawnMovementData_NoteJumpValueType,
+        >,
+        noteJumpValue: quest_hook::libil2cpp::ByRefMut<f32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetNoteJumpValues",
+                (
+                    playerSpecificSettings,
+                    defaultNoteJumpStartBeatOffset,
+                    noteJumpValueType,
+                    noteJumpValue,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "BeatmapObjectSpawnControllerHelpers")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BeatmapObjectSpawnControllerHelpers {

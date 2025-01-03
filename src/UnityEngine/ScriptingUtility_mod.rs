@@ -26,6 +26,11 @@ impl std::ops::DerefMut for crate::UnityEngine::ScriptingUtility {
 impl crate::UnityEngine::ScriptingUtility {
     #[cfg(feature = "UnityEngine+ScriptingUtility+TestClass")]
     pub type TestClass = crate::UnityEngine::ScriptingUtility_TestClass;
+    pub fn IsManagedCodeWorking() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsManagedCodeWorking", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+ScriptingUtility")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ScriptingUtility {

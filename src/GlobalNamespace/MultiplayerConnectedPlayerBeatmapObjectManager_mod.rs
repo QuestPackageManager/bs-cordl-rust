@@ -49,6 +49,18 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager {
 impl crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager {
     #[cfg(feature = "MultiplayerConnectedPlayerBeatmapObjectManager+InitData")]
     pub type InitData = crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager_InitData;
+    pub fn AreNotesSame(
+        noteController: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::NoteController,
+        >,
+        noteCutInfo: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::NoteCutInfoNetSerializable,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AreNotesSame", (noteController, noteCutInfo))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn DespawnInternal_NoteController0(
         &mut self,
         noteController: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteController>,

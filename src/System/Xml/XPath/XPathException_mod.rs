@@ -29,6 +29,54 @@ impl std::ops::DerefMut for crate::System::Xml::XPath::XPathException {
 }
 #[cfg(feature = "System+Xml+XPath+XPathException")]
 impl crate::System::Xml::XPath::XPathException {
+    pub fn CreateMessage(
+        res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        args: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateMessage", (res, args))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Create_Il2CppString0(
+        res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::XPath::XPathException>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::XPath::XPathException,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Create", (res))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Create_Il2CppString1(
+        res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        arg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::XPath::XPathException>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::XPath::XPathException,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Create", (res, arg))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Create_Il2CppString_Il2CppString2(
+        res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        arg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        arg2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::XPath::XPathException>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::XPath::XPathException,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (res, arg, arg2))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetObjectData(
         &mut self,
         info: quest_hook::libil2cpp::Gc<

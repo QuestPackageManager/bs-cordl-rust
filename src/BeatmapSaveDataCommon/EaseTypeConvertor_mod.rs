@@ -23,7 +23,15 @@ impl std::ops::DerefMut for crate::BeatmapSaveDataCommon::EaseTypeConvertor {
     }
 }
 #[cfg(feature = "BeatmapSaveDataCommon+EaseTypeConvertor")]
-impl crate::BeatmapSaveDataCommon::EaseTypeConvertor {}
+impl crate::BeatmapSaveDataCommon::EaseTypeConvertor {
+    pub fn Convert(
+        easeType: crate::GlobalNamespace::EaseType,
+    ) -> quest_hook::libil2cpp::Result<crate::BeatmapSaveDataCommon::EaseType> {
+        let __cordl_ret: crate::BeatmapSaveDataCommon::EaseType = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Convert", (easeType))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "BeatmapSaveDataCommon+EaseTypeConvertor")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatmapSaveDataCommon::EaseTypeConvertor {

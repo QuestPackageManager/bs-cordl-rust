@@ -24,6 +24,15 @@ for crate::UnityEngine::InputSystem::Utilities::Substring {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+Substring")]
 impl crate::UnityEngine::InputSystem::Utilities::Substring {
+    pub fn Compare(
+        left: crate::UnityEngine::InputSystem::Utilities::Substring,
+        right: crate::UnityEngine::InputSystem::Utilities::Substring,
+        comparison: crate::System::StringComparison,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Compare", (left, right, comparison))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CompareTo(
         &mut self,
         other: crate::UnityEngine::InputSystem::Utilities::Substring,
@@ -190,6 +199,63 @@ impl crate::UnityEngine::InputSystem::Utilities::Substring {
             "get_length",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality_InternedString_Substring2(
+        a: crate::UnityEngine::InputSystem::Utilities::InternedString,
+        b: crate::UnityEngine::InputSystem::Utilities::Substring,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality_Substring_InternedString1(
+        a: crate::UnityEngine::InputSystem::Utilities::Substring,
+        b: crate::UnityEngine::InputSystem::Utilities::InternedString,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality_Substring_Substring0(
+        a: crate::UnityEngine::InputSystem::Utilities::Substring,
+        b: crate::UnityEngine::InputSystem::Utilities::Substring,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit(
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::Substring,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::Substring = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (s))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality_InternedString_Substring2(
+        a: crate::UnityEngine::InputSystem::Utilities::InternedString,
+        b: crate::UnityEngine::InputSystem::Utilities::Substring,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality_Substring_InternedString1(
+        a: crate::UnityEngine::InputSystem::Utilities::Substring,
+        b: crate::UnityEngine::InputSystem::Utilities::InternedString,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality_Substring_Substring0(
+        a: crate::UnityEngine::InputSystem::Utilities::Substring,
+        b: crate::UnityEngine::InputSystem::Utilities::Substring,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (a, b))?;
         Ok(__cordl_ret.into())
     }
 }

@@ -32,6 +32,42 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::PointGenerator {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
+    pub fn UniformDistribution(
+        n: i32,
+        scale: f64,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UniformDistribution", (n, scale))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UniformGrid(
+        n: i32,
+        scale: f64,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UniformGrid", (n, scale))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

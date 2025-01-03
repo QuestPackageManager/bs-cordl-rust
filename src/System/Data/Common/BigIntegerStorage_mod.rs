@@ -65,6 +65,19 @@ impl crate::System::Data::Common::BigIntegerStorage {
             .invoke("CompareValueTo", (recordNo, value))?;
         Ok(__cordl_ret.into())
     }
+    pub fn ConvertFromBigInteger(
+        value: crate::System::Numerics::BigInteger,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        formatProvider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ConvertFromBigInteger", (value, _cordl_type, formatProvider))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ConvertObjectToXml(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -77,6 +90,14 @@ impl crate::System::Data::Common::BigIntegerStorage {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("ConvertObjectToXml", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ConvertToBigInteger(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        formatProvider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Numerics::BigInteger> {
+        let __cordl_ret: crate::System::Numerics::BigInteger = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ConvertToBigInteger", (value, formatProvider))?;
         Ok(__cordl_ret.into())
     }
     pub fn ConvertValue(

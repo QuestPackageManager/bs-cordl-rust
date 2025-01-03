@@ -53,6 +53,22 @@ impl crate::UnityEngine::Vector3Int {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn Max(
+        lhs: crate::UnityEngine::Vector3Int,
+        rhs: crate::UnityEngine::Vector3Int,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3Int> {
+        let __cordl_ret: crate::UnityEngine::Vector3Int = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Max", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Min(
+        lhs: crate::UnityEngine::Vector3Int,
+        rhs: crate::UnityEngine::Vector3Int,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3Int> {
+        let __cordl_ret: crate::UnityEngine::Vector3Int = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Min", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ToString_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -100,6 +116,11 @@ impl crate::UnityEngine::Vector3Int {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_one() -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3Int> {
+        let __cordl_ret: crate::UnityEngine::Vector3Int = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_one", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_x(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -122,6 +143,29 @@ impl crate::UnityEngine::Vector3Int {
             "get_z",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Addition(
+        a: crate::UnityEngine::Vector3Int,
+        b: crate::UnityEngine::Vector3Int,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3Int> {
+        let __cordl_ret: crate::UnityEngine::Vector3Int = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Addition", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        lhs: crate::UnityEngine::Vector3Int,
+        rhs: crate::UnityEngine::Vector3Int,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit(
+        v: crate::UnityEngine::Vector3Int,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (v))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_x(

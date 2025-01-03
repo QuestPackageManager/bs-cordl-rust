@@ -99,6 +99,48 @@ impl crate::System::Net::Sockets::Socket {
             .invoke("Accept", (acceptSocket))?;
         Ok(__cordl_ret.into())
     }
+    pub fn Accept_icall(
+        sock: crate::System::IntPtr,
+        error: quest_hook::libil2cpp::ByRefMut<i32>,
+        blocking: bool,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Accept_icall", (sock, error, blocking))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Accept_internal(
+        safeHandle: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Sockets::SafeSocketHandle,
+        >,
+        error: quest_hook::libil2cpp::ByRefMut<i32>,
+        blocking: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SafeSocketHandle>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Sockets::SafeSocketHandle,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Accept_internal", (safeHandle, error, blocking))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Available_icall(
+        socket: crate::System::IntPtr,
+        error: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Available_icall", (socket, error))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Available_internal(
+        safeHandle: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Sockets::SafeSocketHandle,
+        >,
+        error: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Available_internal", (safeHandle, error))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn BeginAccept(
         &mut self,
         callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
@@ -144,6 +186,15 @@ impl crate::System::Net::Sockets::Socket {
             .invoke("BeginConnect", (host, port, callback, state))?;
         Ok(__cordl_ret.into())
     }
+    pub fn BeginMConnect(
+        sockares: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Sockets::SocketAsyncResult,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BeginMConnect", (sockares))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn BeginReceive_AsyncCallback_Il2CppObject0(
         &mut self,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -187,6 +238,25 @@ impl crate::System::Net::Sockets::Socket {
                 "BeginReceive",
                 (buffer, offset, _cordl_size, socketFlags, errorCode, callback, state),
             )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn BeginSConnect(
+        sockares: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Sockets::SocketAsyncResult,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BeginSConnect", (sockares))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn BeginSendCallback(
+        sockares: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Sockets::SocketAsyncResult,
+        >,
+        sent_so_far: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BeginSendCallback", (sockares, sent_so_far))?;
         Ok(__cordl_ret.into())
     }
     pub fn BeginSend_AsyncCallback_Il2CppObject0(
@@ -245,6 +315,46 @@ impl crate::System::Net::Sockets::Socket {
             .invoke("Bind", (localEP))?;
         Ok(__cordl_ret.into())
     }
+    pub fn Bind_icall(
+        sock: crate::System::IntPtr,
+        sa: quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress>,
+        error: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Bind_icall", (sock, sa, error))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Bind_internal(
+        safeHandle: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Sockets::SafeSocketHandle,
+        >,
+        sa: quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress>,
+        error: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Bind_internal", (safeHandle, sa, error))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Blocking_icall(
+        socket: crate::System::IntPtr,
+        block: bool,
+        error: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Blocking_icall", (socket, block, error))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Blocking_internal(
+        safeHandle: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Sockets::SafeSocketHandle,
+        >,
+        block: bool,
+        error: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Blocking_internal", (safeHandle, block, error))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CanTryAddressFamily(
         &mut self,
         family: crate::System::Net::Sockets::AddressFamily,
@@ -276,6 +386,37 @@ impl crate::System::Net::Sockets::Socket {
             .invoke("Close", (timeout))?;
         Ok(__cordl_ret.into())
     }
+    pub fn Close_icall(
+        socket: crate::System::IntPtr,
+        error: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Close_icall", (socket, error))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CompleteAccept(
+        s: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
+        saea: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Sockets::Socket_TaskSocketAsyncEventArgs_1<
+                *mut crate::System::Net::Sockets::Socket,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CompleteAccept", (s, saea))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CompleteSendReceive(
+        s: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
+        saea: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Sockets::Socket_Int32TaskSocketAsyncEventArgs,
+        >,
+        isReceive: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CompleteSendReceive", (s, saea, isReceive))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Connect_EndPoint1(
         &mut self,
         remoteEP: quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint>,
@@ -299,6 +440,28 @@ impl crate::System::Net::Sockets::Socket {
             .invoke("Connect", (address, port))?;
         Ok(__cordl_ret.into())
     }
+    pub fn Connect_icall(
+        sock: crate::System::IntPtr,
+        sa: quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress>,
+        error: quest_hook::libil2cpp::ByRefMut<i32>,
+        blocking: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Connect_icall", (sock, sa, error, blocking))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Connect_internal(
+        safeHandle: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Sockets::SafeSocketHandle,
+        >,
+        sa: quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress>,
+        error: quest_hook::libil2cpp::ByRefMut<i32>,
+        blocking: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Connect_internal", (safeHandle, sa, error, blocking))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Disconnect(
         &mut self,
         reuseSocket: bool,
@@ -308,6 +471,26 @@ impl crate::System::Net::Sockets::Socket {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Disconnect", (reuseSocket))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Disconnect_icall(
+        sock: crate::System::IntPtr,
+        reuse: bool,
+        error: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Disconnect_icall", (sock, reuse, error))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Disconnect_internal(
+        safeHandle: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Sockets::SafeSocketHandle,
+        >,
+        reuse: bool,
+        error: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Disconnect_internal", (safeHandle, reuse, error))?;
         Ok(__cordl_ret.into())
     }
     pub fn Dispose_0(
@@ -469,6 +652,16 @@ impl crate::System::Net::Sockets::Socket {
             .invoke("Finalize", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetException(
+        error: crate::System::Net::Sockets::SocketError,
+        wrapExceptionsInIOExceptions: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetException", (error, wrapExceptionsInIOExceptions))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetSocketOption(
         &mut self,
         optionLevel: crate::System::Net::Sockets::SocketOptionLevel,
@@ -482,6 +675,37 @@ impl crate::System::Net::Sockets::Socket {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
         > = __cordl_object.invoke("GetSocketOption", (optionLevel, optionName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetSocketOption_obj_icall(
+        socket: crate::System::IntPtr,
+        level: crate::System::Net::Sockets::SocketOptionLevel,
+        name: crate::System::Net::Sockets::SocketOptionName,
+        obj_val: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
+        error: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSocketOption_obj_icall", (socket, level, name, obj_val, error))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetSocketOption_obj_internal(
+        safeHandle: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Sockets::SafeSocketHandle,
+        >,
+        level: crate::System::Net::Sockets::SocketOptionLevel,
+        name: crate::System::Net::Sockets::SocketOptionName,
+        obj_val: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
+        error: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetSocketOption_obj_internal",
+                (safeHandle, level, name, obj_val, error),
+            )?;
         Ok(__cordl_ret.into())
     }
     pub fn IOControl_IOControlCode0(
@@ -510,6 +734,33 @@ impl crate::System::Net::Sockets::Socket {
             .invoke("IOControl", (ioControlCode, optionInValue, optionOutValue))?;
         Ok(__cordl_ret.into())
     }
+    pub fn IOControl_icall(
+        sock: crate::System::IntPtr,
+        ioctl_code: i32,
+        input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        output: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        error: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IOControl_icall", (sock, ioctl_code, input, output, error))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IOControl_internal(
+        safeHandle: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Sockets::SafeSocketHandle,
+        >,
+        ioctl_code: i32,
+        input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        output: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        error: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "IOControl_internal",
+                (safeHandle, ioctl_code, input, output, error),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn InitSocketAsyncEventArgs(
         &mut self,
         e: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SocketAsyncEventArgs>,
@@ -524,6 +775,13 @@ impl crate::System::Net::Sockets::Socket {
             .invoke("InitSocketAsyncEventArgs", (e, callback, state, operation))?;
         Ok(__cordl_ret.into())
     }
+    pub fn InitializeSockets() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InitializeSockets", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn InternalShutdown(
         &mut self,
         how: crate::System::Net::Sockets::SocketShutdown,
@@ -533,6 +791,20 @@ impl crate::System::Net::Sockets::Socket {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InternalShutdown", (how))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsProtocolSupported(
+        networkInterface: crate::System::Net::NetworkInformation::NetworkInterfaceComponent,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsProtocolSupported", (networkInterface))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsProtocolSupported_internal(
+        networkInterface: crate::System::Net::NetworkInformation::NetworkInterfaceComponent,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsProtocolSupported_internal", (networkInterface))?;
         Ok(__cordl_ret.into())
     }
     pub fn Linger(
@@ -555,6 +827,50 @@ impl crate::System::Net::Sockets::Socket {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Listen", (backlog))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Listen_icall(
+        sock: crate::System::IntPtr,
+        backlog: i32,
+        error: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Listen_icall", (sock, backlog, error))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Listen_internal(
+        safeHandle: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Sockets::SafeSocketHandle,
+        >,
+        backlog: i32,
+        error: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Listen_internal", (safeHandle, backlog, error))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LocalEndPoint_icall(
+        socket: crate::System::IntPtr,
+        family: i32,
+        error: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LocalEndPoint_icall", (socket, family, error))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LocalEndPoint_internal(
+        safeHandle: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Sockets::SafeSocketHandle,
+        >,
+        family: i32,
+        error: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LocalEndPoint_internal", (safeHandle, family, error))?;
         Ok(__cordl_ret.into())
     }
     pub fn New_AddressFamily_SocketType_ProtocolType0(
@@ -591,6 +907,28 @@ impl crate::System::Net::Sockets::Socket {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Poll", (microSeconds, mode))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Poll_icall(
+        socket: crate::System::IntPtr,
+        mode: crate::System::Net::Sockets::SelectMode,
+        timeout: i32,
+        error: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Poll_icall", (socket, mode, timeout, error))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Poll_internal(
+        safeHandle: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Sockets::SafeSocketHandle,
+        >,
+        mode: crate::System::Net::Sockets::SelectMode,
+        timeout: i32,
+        error: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Poll_internal", (safeHandle, mode, timeout, error))?;
         Ok(__cordl_ret.into())
     }
     pub fn QueueIOSelectorJob(
@@ -710,6 +1048,44 @@ impl crate::System::Net::Sockets::Socket {
             )?;
         Ok(__cordl_ret.into())
     }
+    pub fn ReceiveFrom_icall(
+        sock: crate::System::IntPtr,
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        count: i32,
+        flags: crate::System::Net::Sockets::SocketFlags,
+        sockaddr: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::System::Net::SocketAddress,
+        >,
+        error: quest_hook::libil2cpp::ByRefMut<i32>,
+        blocking: bool,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ReceiveFrom_icall",
+                (sock, buffer, count, flags, sockaddr, error, blocking),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReceiveFrom_internal(
+        safeHandle: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Sockets::SafeSocketHandle,
+        >,
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        count: i32,
+        flags: crate::System::Net::Sockets::SocketFlags,
+        sockaddr: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::System::Net::SocketAddress,
+        >,
+        error: quest_hook::libil2cpp::ByRefMut<i32>,
+        blocking: bool,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ReceiveFrom_internal",
+                (safeHandle, buffer, count, flags, sockaddr, error, blocking),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Receive_IList_1_SocketFlags1(
         &mut self,
         buffers: quest_hook::libil2cpp::Gc<
@@ -807,6 +1183,67 @@ impl crate::System::Net::Sockets::Socket {
             .invoke("Receive", (buffer, socketFlags, errorCode))?;
         Ok(__cordl_ret.into())
     }
+    pub fn Receive_array_icall(
+        sock: crate::System::IntPtr,
+        bufarray: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        count: i32,
+        flags: crate::System::Net::Sockets::SocketFlags,
+        error: quest_hook::libil2cpp::ByRefMut<i32>,
+        blocking: bool,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "Receive_array_icall",
+                (sock, bufarray, count, flags, error, blocking),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Receive_icall(
+        sock: crate::System::IntPtr,
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        count: i32,
+        flags: crate::System::Net::Sockets::SocketFlags,
+        error: quest_hook::libil2cpp::ByRefMut<i32>,
+        blocking: bool,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Receive_icall", (sock, buffer, count, flags, error, blocking))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Receive_internal_SafeSocketHandle_Il2CppObject_i32_SocketFlags_ByRefMut__cordl_bool0(
+        safeHandle: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Sockets::SafeSocketHandle,
+        >,
+        bufarray: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        count: i32,
+        flags: crate::System::Net::Sockets::SocketFlags,
+        error: quest_hook::libil2cpp::ByRefMut<i32>,
+        blocking: bool,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "Receive_internal",
+                (safeHandle, bufarray, count, flags, error, blocking),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Receive_internal_SafeSocketHandle_Il2CppObject_i32_SocketFlags_ByRefMut__cordl_bool1(
+        safeHandle: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Sockets::SafeSocketHandle,
+        >,
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        count: i32,
+        flags: crate::System::Net::Sockets::SocketFlags,
+        error: quest_hook::libil2cpp::ByRefMut<i32>,
+        blocking: bool,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "Receive_internal",
+                (safeHandle, buffer, count, flags, error, blocking),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn RemapIPEndPoint(
         &mut self,
         input: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
@@ -818,6 +1255,30 @@ impl crate::System::Net::Sockets::Socket {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint> = __cordl_object
             .invoke("RemapIPEndPoint", (input))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RemoteEndPoint_icall(
+        socket: crate::System::IntPtr,
+        family: i32,
+        error: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RemoteEndPoint_icall", (socket, family, error))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RemoteEndPoint_internal(
+        safeHandle: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Sockets::SafeSocketHandle,
+        >,
+        family: i32,
+        error: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RemoteEndPoint_internal", (safeHandle, family, error))?;
         Ok(__cordl_ret.into())
     }
     pub fn ReturnSocketAsyncEventArgs_Socket_Int32TaskSocketAsyncEventArgs__cordl_bool0(
@@ -905,6 +1366,37 @@ impl crate::System::Net::Sockets::Socket {
             .invoke("SendTo", (buffer, offset, _cordl_size, socketFlags, remoteEP))?;
         Ok(__cordl_ret.into())
     }
+    pub fn SendTo_icall(
+        sock: crate::System::IntPtr,
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        count: i32,
+        flags: crate::System::Net::Sockets::SocketFlags,
+        sa: quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress>,
+        error: quest_hook::libil2cpp::ByRefMut<i32>,
+        blocking: bool,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SendTo_icall", (sock, buffer, count, flags, sa, error, blocking))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SendTo_internal(
+        safeHandle: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Sockets::SafeSocketHandle,
+        >,
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        count: i32,
+        flags: crate::System::Net::Sockets::SocketFlags,
+        sa: quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress>,
+        error: quest_hook::libil2cpp::ByRefMut<i32>,
+        blocking: bool,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "SendTo_internal",
+                (safeHandle, buffer, count, flags, sa, error, blocking),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Send_IList_1_SocketFlags0(
         &mut self,
         buffers: quest_hook::libil2cpp::Gc<
@@ -985,6 +1477,67 @@ impl crate::System::Net::Sockets::Socket {
             .invoke("Send", (buffer, socketFlags, errorCode))?;
         Ok(__cordl_ret.into())
     }
+    pub fn Send_array_icall(
+        sock: crate::System::IntPtr,
+        bufarray: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        count: i32,
+        flags: crate::System::Net::Sockets::SocketFlags,
+        error: quest_hook::libil2cpp::ByRefMut<i32>,
+        blocking: bool,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "Send_array_icall",
+                (sock, bufarray, count, flags, error, blocking),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Send_icall(
+        sock: crate::System::IntPtr,
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        count: i32,
+        flags: crate::System::Net::Sockets::SocketFlags,
+        error: quest_hook::libil2cpp::ByRefMut<i32>,
+        blocking: bool,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Send_icall", (sock, buffer, count, flags, error, blocking))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Send_internal_SafeSocketHandle_Il2CppObject_i32_SocketFlags_ByRefMut__cordl_bool0(
+        safeHandle: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Sockets::SafeSocketHandle,
+        >,
+        bufarray: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        count: i32,
+        flags: crate::System::Net::Sockets::SocketFlags,
+        error: quest_hook::libil2cpp::ByRefMut<i32>,
+        blocking: bool,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "Send_internal",
+                (safeHandle, bufarray, count, flags, error, blocking),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Send_internal_SafeSocketHandle_Il2CppObject_i32_SocketFlags_ByRefMut__cordl_bool1(
+        safeHandle: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Sockets::SafeSocketHandle,
+        >,
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        count: i32,
+        flags: crate::System::Net::Sockets::SocketFlags,
+        error: quest_hook::libil2cpp::ByRefMut<i32>,
+        blocking: bool,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "Send_internal",
+                (safeHandle, buffer, count, flags, error, blocking),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn SetIPProtectionLevel(
         &mut self,
         level: crate::System::Net::Sockets::IPProtectionLevel,
@@ -1036,6 +1589,40 @@ impl crate::System::Net::Sockets::Socket {
             .invoke("SetSocketOption", (optionLevel, optionName, optionValue, silent))?;
         Ok(__cordl_ret.into())
     }
+    pub fn SetSocketOption_icall(
+        socket: crate::System::IntPtr,
+        level: crate::System::Net::Sockets::SocketOptionLevel,
+        name: crate::System::Net::Sockets::SocketOptionName,
+        obj_val: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        byte_val: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        int_val: i32,
+        error: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "SetSocketOption_icall",
+                (socket, level, name, obj_val, byte_val, int_val, error),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetSocketOption_internal(
+        safeHandle: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Sockets::SafeSocketHandle,
+        >,
+        level: crate::System::Net::Sockets::SocketOptionLevel,
+        name: crate::System::Net::Sockets::SocketOptionName,
+        obj_val: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        byte_val: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        int_val: i32,
+        error: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "SetSocketOption_internal",
+                (safeHandle, level, name, obj_val, byte_val, int_val, error),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Shutdown(
         &mut self,
         how: crate::System::Net::Sockets::SocketShutdown,
@@ -1045,6 +1632,26 @@ impl crate::System::Net::Sockets::Socket {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Shutdown", (how))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Shutdown_icall(
+        socket: crate::System::IntPtr,
+        how: crate::System::Net::Sockets::SocketShutdown,
+        error: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Shutdown_icall", (socket, how, error))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Shutdown_internal(
+        safeHandle: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Sockets::SafeSocketHandle,
+        >,
+        how: crate::System::Net::Sockets::SocketShutdown,
+        error: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Shutdown_internal", (safeHandle, how, error))?;
         Ok(__cordl_ret.into())
     }
     pub fn SocketDefaults(
@@ -1068,6 +1675,16 @@ impl crate::System::Net::Sockets::Socket {
         );
         let __cordl_ret: crate::System::Net::Sockets::SocketAsyncOperation = __cordl_object
             .invoke("SocketOperationToSocketAsyncOperation", (op))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Socket_icall(
+        family: crate::System::Net::Sockets::AddressFamily,
+        _cordl_type: crate::System::Net::Sockets::SocketType,
+        proto: crate::System::Net::Sockets::ProtocolType,
+        error: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Socket_icall", (family, _cordl_type, proto, error))?;
         Ok(__cordl_ret.into())
     }
     pub fn ThrowIfBufferNull(
@@ -1160,6 +1777,13 @@ impl crate::System::Net::Sockets::Socket {
             .invoke(".ctor", (family, _cordl_type, proto, safe_handle))?;
         Ok(__cordl_ret.into())
     }
+    pub fn cancel_blocking_socket_operation(
+        thread: quest_hook::libil2cpp::Gc<crate::System::Threading::Thread>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("cancel_blocking_socket_operation", (thread))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_AddressFamily(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::Net::Sockets::AddressFamily> {
@@ -1205,6 +1829,11 @@ impl crate::System::Net::Sockets::Socket {
         let __cordl_ret: bool = __cordl_object.invoke("get_DualMode", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_FamilyHint() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_FamilyHint", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_Handle(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
@@ -1213,6 +1842,15 @@ impl crate::System::Net::Sockets::Socket {
         );
         let __cordl_ret: crate::System::IntPtr = __cordl_object
             .invoke("get_Handle", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_InternalSyncObject() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_InternalSyncObject", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_IsBound(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -1239,6 +1877,16 @@ impl crate::System::Net::Sockets::Socket {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::EndPoint> = __cordl_object
             .invoke("get_LocalEndPoint", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_OSSupportsIPv4() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_OSSupportsIPv4", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_OSSupportsIPv6() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_OSSupportsIPv6", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_ProtocolType(

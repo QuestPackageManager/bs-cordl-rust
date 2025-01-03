@@ -23,7 +23,20 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::ProjectionUtils {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+ProjectionUtils")]
-impl crate::UnityEngine::UIElements::ProjectionUtils {}
+impl crate::UnityEngine::UIElements::ProjectionUtils {
+    pub fn Ortho(
+        left: f32,
+        right: f32,
+        bottom: f32,
+        top: f32,
+        near: f32,
+        far: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Matrix4x4> {
+        let __cordl_ret: crate::UnityEngine::Matrix4x4 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Ortho", (left, right, bottom, top, near, far))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+ProjectionUtils")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::ProjectionUtils {

@@ -218,6 +218,11 @@ impl crate::System::Text::RegularExpressions::RegexParser {
         let __cordl_ret: bool = __cordl_object.invoke("EmptyStack", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn HexDigit(ch: char) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("HexDigit", (ch))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn IsCaptureName(
         &mut self,
         capname: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -243,6 +248,26 @@ impl crate::System::Text::RegularExpressions::RegexParser {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("IsOnlyTopOption", (option))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsQuantifier(ch: char) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsQuantifier", (ch))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsSpace(ch: char) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsSpace", (ch))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsSpecial(ch: char) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsSpecial", (ch))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsStopperX(ch: char) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsStopperX", (ch))?;
         Ok(__cordl_ret.into())
     }
     pub fn IsTrueQuantifier(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -342,6 +367,26 @@ impl crate::System::Text::RegularExpressions::RegexParser {
             .invoke("NoteCaptures", (caps, capsize, capnames))?;
         Ok(__cordl_ret.into())
     }
+    pub fn OptionFromCode(
+        ch: char,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Text::RegularExpressions::RegexOptions,
+    > {
+        let __cordl_ret: crate::System::Text::RegularExpressions::RegexOptions = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("OptionFromCode", (ch))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Parse(
+        re: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        op: crate::System::Text::RegularExpressions::RegexOptions,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::RegexTree>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Text::RegularExpressions::RegexTree,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Parse", (re, op))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ParseProperty(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -353,6 +398,23 @@ impl crate::System::Text::RegularExpressions::RegexParser {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("ParseProperty", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ParseReplacement(
+        rep: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        caps: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+        capsize: i32,
+        capnames: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+        op: crate::System::Text::RegularExpressions::RegexOptions,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Text::RegularExpressions::RegexReplacement,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Text::RegularExpressions::RegexReplacement,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ParseReplacement", (rep, caps, capsize, capnames, op))?;
         Ok(__cordl_ret.into())
     }
     pub fn PopGroup(

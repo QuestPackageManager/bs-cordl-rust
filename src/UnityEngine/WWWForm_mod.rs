@@ -22,7 +22,15 @@ impl std::ops::DerefMut for crate::UnityEngine::WWWForm {
     }
 }
 #[cfg(feature = "UnityEngine+WWWForm")]
-impl crate::UnityEngine::WWWForm {}
+impl crate::UnityEngine::WWWForm {
+    pub fn get_DefaultEncoding() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_DefaultEncoding", ())?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+WWWForm")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::WWWForm {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

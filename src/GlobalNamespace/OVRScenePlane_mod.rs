@@ -355,6 +355,13 @@ impl crate::GlobalNamespace::OVRScenePlane_GetBoundaryJob {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn SetNaN(
+        array: crate::Unity::Collections::NativeArray_1<crate::UnityEngine::Vector2>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetNaN", (array))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "OVRScenePlane+GetBoundaryJob")]
 impl AsRef<crate::Unity::Jobs::IJob>

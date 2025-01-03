@@ -32,6 +32,41 @@ impl crate::BGLib::UnityExtension::UnityWebRequestExtensions {
         feature = "BGLib+UnityExtension+UnityWebRequestExtensions+__c__DisplayClass1_0"
     )]
     pub type __c__DisplayClass1_0 = crate::BGLib::UnityExtension::UnityWebRequestExtensions___c__DisplayClass1_0;
+    pub fn GetAwaiter(
+        webRequestOperation: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Networking::UnityWebRequestAsyncOperation,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Runtime::CompilerServices::TaskAwaiter_1<
+            crate::UnityEngine::Networking::UnityWebRequest_Result,
+        >,
+    > {
+        let __cordl_ret: crate::System::Runtime::CompilerServices::TaskAwaiter_1<
+            crate::UnityEngine::Networking::UnityWebRequest_Result,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetAwaiter", (webRequestOperation))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SendWebRequestAsync(
+        request: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Networking::UnityWebRequest,
+        >,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                crate::UnityEngine::Networking::UnityWebRequest_Result,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                crate::UnityEngine::Networking::UnityWebRequest_Result,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SendWebRequestAsync", (request, cancellationToken))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "BGLib+UnityExtension+UnityWebRequestExtensions")]
 impl quest_hook::libil2cpp::ObjectType

@@ -169,6 +169,21 @@ impl crate::GlobalNamespace::OVRScreenFade {
         let __cordl_ret: f32 = __cordl_object.invoke("get_currentAlpha", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_instance() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRScreenFade>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OVRScreenFade,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_instance", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_instance(
+        value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRScreenFade>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_instance", (value))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "OVRScreenFade")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRScreenFade {

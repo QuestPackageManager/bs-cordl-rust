@@ -25,6 +25,20 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Security::SecureRandom {
 }
 #[cfg(feature = "Org+BouncyCastle+Security+SecureRandom")]
 impl crate::Org::BouncyCastle::Security::SecureRandom {
+    pub fn CreatePrng(
+        digestName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        autoSeed: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Prng::DigestRandomGenerator,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Prng::DigestRandomGenerator,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreatePrng", (digestName, autoSeed))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GenerateSeed(
         &mut self,
         length: i32,
@@ -37,6 +51,53 @@ impl crate::Org::BouncyCastle::Security::SecureRandom {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
         > = __cordl_object.invoke("GenerateSeed", (length))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetInstance_Il2CppString0(
+        algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Security::SecureRandom>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Security::SecureRandom,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetInstance", (algorithm))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetInstance__cordl_bool1(
+        algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        autoSeed: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Security::SecureRandom>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Security::SecureRandom,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetInstance", (algorithm, autoSeed))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetNextBytes(
+        secureRandom: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Security::SecureRandom,
+        >,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetNextBytes", (secureRandom, length))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetSeed(
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetSeed", (length))?;
         Ok(__cordl_ret.into())
     }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -88,6 +149,11 @@ impl crate::Org::BouncyCastle::Security::SecureRandom {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("NextBytes", (buf, off, len))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn NextCounterValue() -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("NextCounterValue", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn NextDouble(&mut self) -> quest_hook::libil2cpp::Result<f64> {
@@ -190,6 +256,14 @@ impl crate::Org::BouncyCastle::Security::SecureRandom {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (seed))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Master() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Security::SecureRandom>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Security::SecureRandom,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_Master", ())?;
         Ok(__cordl_ret.into())
     }
 }

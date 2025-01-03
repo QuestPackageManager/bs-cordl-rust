@@ -114,6 +114,17 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
             .invoke("CheckPropertyName", (reader, memberName))?;
         Ok(__cordl_ret.into())
     }
+    pub fn CoerceEmptyStringToNull(
+        objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        contract: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::JsonContract,
+        >,
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CoerceEmptyStringToNull", (objectType, contract, s))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CreateDynamic(
         &mut self,
         reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,

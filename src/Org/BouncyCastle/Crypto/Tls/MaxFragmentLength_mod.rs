@@ -29,6 +29,11 @@ impl crate::Org::BouncyCastle::Crypto::Tls::MaxFragmentLength {
     pub const pow2_11: u8 = 3u8;
     pub const pow2_12: u8 = 4u8;
     pub const pow2_9: u8 = 1u8;
+    pub fn IsValid(maxFragmentLength: u8) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsValid", (maxFragmentLength))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

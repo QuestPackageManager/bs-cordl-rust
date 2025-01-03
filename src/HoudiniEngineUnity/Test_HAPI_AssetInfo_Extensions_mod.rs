@@ -24,7 +24,19 @@ impl std::ops::DerefMut for crate::HoudiniEngineUnity::Test_HAPI_AssetInfo_Exten
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+Test_HAPI_AssetInfo_Extensions")]
-impl crate::HoudiniEngineUnity::Test_HAPI_AssetInfo_Extensions {}
+impl crate::HoudiniEngineUnity::Test_HAPI_AssetInfo_Extensions {
+    pub fn ToTestObject(
+        _cordl_self: crate::HoudiniEngineUnity::HAPI_AssetInfo,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_HAPI_AssetInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::Test_HAPI_AssetInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToTestObject", (_cordl_self))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "HoudiniEngineUnity+Test_HAPI_AssetInfo_Extensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::HoudiniEngineUnity::Test_HAPI_AssetInfo_Extensions {

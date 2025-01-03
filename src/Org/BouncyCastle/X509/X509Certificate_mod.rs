@@ -236,6 +236,18 @@ impl crate::Org::BouncyCastle::X509::X509Certificate {
         > = __cordl_object.invoke("GetX509Extensions", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn IsAlgIDEqual(
+        id1: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        >,
+        id2: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsAlgIDEqual", (id1, id2))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn IsValid(
         &mut self,
         _cordl_time: crate::System::DateTime,

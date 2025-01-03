@@ -25,7 +25,7 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Bcpg::MPInteger {
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+MPInteger")]
 impl crate::Org::BouncyCastle::Bcpg::MPInteger {
-    pub fn Encode(
+    pub fn Encode_BcpgOutputStream0(
         &mut self,
         bcpgOut: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Bcpg::BcpgOutputStream,
@@ -36,6 +36,16 @@ impl crate::Org::BouncyCastle::Bcpg::MPInteger {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Encode", (bcpgOut))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Encode_BigInteger1(
+        bcpgOut: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::BcpgOutputStream,
+        >,
+        val: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Encode", (bcpgOut, val))?;
         Ok(__cordl_ret.into())
     }
     pub fn New_BcpgInputStream0(

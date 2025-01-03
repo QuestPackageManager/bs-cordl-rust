@@ -27,6 +27,30 @@ for crate::System::Net::Configuration::DefaultProxySectionInternal {
 }
 #[cfg(feature = "System+Net+Configuration+DefaultProxySectionInternal")]
 impl crate::System::Net::Configuration::DefaultProxySectionInternal {
+    pub fn GetDefaultProxy_UsingOldMonoCode() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Net::IWebProxy>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::IWebProxy> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetDefaultProxy_UsingOldMonoCode", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetSection() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Net::Configuration::DefaultProxySectionInternal,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Configuration::DefaultProxySectionInternal,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetSection", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetSystemWebProxy() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Net::IWebProxy>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::IWebProxy> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSystemWebProxy", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -42,6 +66,15 @@ impl crate::System::Net::Configuration::DefaultProxySectionInternal {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_ClassSyncObject() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_ClassSyncObject", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_WebProxy(

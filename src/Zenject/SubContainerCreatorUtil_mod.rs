@@ -23,7 +23,18 @@ impl std::ops::DerefMut for crate::Zenject::SubContainerCreatorUtil {
     }
 }
 #[cfg(feature = "Zenject+SubContainerCreatorUtil")]
-impl crate::Zenject::SubContainerCreatorUtil {}
+impl crate::Zenject::SubContainerCreatorUtil {
+    pub fn ApplyBindSettings(
+        subContainerBindInfo: quest_hook::libil2cpp::Gc<
+            crate::Zenject::SubContainerCreatorBindInfo,
+        >,
+        subContainer: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ApplyBindSettings", (subContainerBindInfo, subContainer))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "Zenject+SubContainerCreatorUtil")]
 impl quest_hook::libil2cpp::ObjectType for crate::Zenject::SubContainerCreatorUtil {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

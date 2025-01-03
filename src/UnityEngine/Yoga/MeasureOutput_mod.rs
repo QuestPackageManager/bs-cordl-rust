@@ -23,7 +23,16 @@ impl std::ops::DerefMut for crate::UnityEngine::Yoga::MeasureOutput {
     }
 }
 #[cfg(feature = "UnityEngine+Yoga+MeasureOutput")]
-impl crate::UnityEngine::Yoga::MeasureOutput {}
+impl crate::UnityEngine::Yoga::MeasureOutput {
+    pub fn Make(
+        width: f32,
+        height: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Yoga::YogaSize> {
+        let __cordl_ret: crate::UnityEngine::Yoga::YogaSize = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Make", (width, height))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+Yoga+MeasureOutput")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Yoga::MeasureOutput {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

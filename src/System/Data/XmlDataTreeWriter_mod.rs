@@ -94,6 +94,20 @@ impl crate::System::Data::XmlDataTreeWriter {
             .invoke_void(".ctor", (dt, writeHierarchy))?;
         Ok(__cordl_object.into())
     }
+    pub fn PreserveSpace(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PreserveSpace", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RowHasErrors(
+        row: quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RowHasErrors", (row))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Save(
         &mut self,
         xw: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>,

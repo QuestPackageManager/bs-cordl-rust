@@ -28,6 +28,53 @@ impl crate::GlobalNamespace::BeatmapDifficultyMethods {
     pub const kExpertDifficultyNjs: f32 = 12f32;
     pub const kExpertPlusDifficultyNjs: f32 = 16f32;
     pub const kFastNotesNjs: f32 = 20f32;
+    pub fn DefaultNoteJumpMovementSpeed(
+        difficulty: crate::GlobalNamespace::BeatmapDifficulty,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DefaultNoteJumpMovementSpeed", (difficulty))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DefaultRating(
+        difficulty: crate::GlobalNamespace::BeatmapDifficulty,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DefaultRating", (difficulty))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Name(
+        difficulty: crate::GlobalNamespace::BeatmapDifficulty,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Name", (difficulty))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn NoteJumpMovementSpeed(
+        difficulty: crate::GlobalNamespace::BeatmapDifficulty,
+        noteJumpMovementSpeed: f32,
+        fastNotes: bool,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "NoteJumpMovementSpeed",
+                (difficulty, noteJumpMovementSpeed, fastNotes),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ShortName(
+        difficulty: crate::GlobalNamespace::BeatmapDifficulty,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ShortName", (difficulty))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "BeatmapDifficultyMethods")]
 impl quest_hook::libil2cpp::ObjectType

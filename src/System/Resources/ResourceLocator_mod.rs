@@ -23,6 +23,13 @@ for crate::System::Resources::ResourceLocator {
 }
 #[cfg(feature = "System+Resources+ResourceLocator")]
 impl crate::System::Resources::ResourceLocator {
+    pub fn CanCache(
+        value: crate::System::Resources::ResourceTypeCode,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CanCache", (value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
         dataPos: i32,

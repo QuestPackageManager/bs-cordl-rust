@@ -91,6 +91,32 @@ impl crate::Zenject::InjectTypeInfo {
             )?;
         Ok(__cordl_ret.into())
     }
+    pub fn _get_AllInjectables_b__0(
+        x: quest_hook::libil2cpp::Gc<crate::Zenject::InjectTypeInfo_InjectMemberInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Zenject::InjectableInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::InjectableInfo> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("<get_AllInjectables>b__0", (x))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _get_AllInjectables_b__1(
+        x: quest_hook::libil2cpp::Gc<crate::Zenject::InjectTypeInfo_InjectMethodInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::Zenject::InjectableInfo,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::Zenject::InjectableInfo,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("<get_AllInjectables>b__1", (x))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_AllInjectables(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

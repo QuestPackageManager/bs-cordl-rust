@@ -29,6 +29,21 @@ for crate::Org::BouncyCastle::Crypto::Parameters::Gost3410KeyParameters {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+Gost3410KeyParameters")]
 impl crate::Org::BouncyCastle::Crypto::Parameters::Gost3410KeyParameters {
+    pub fn LookupParameters(
+        publicKeyParamSet: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Parameters::Gost3410Parameters,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Parameters::Gost3410Parameters,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LookupParameters", (publicKeyParamSet))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_DerObjectIdentifier1(
         isPrivate: bool,
         publicKeyParamSet: quest_hook::libil2cpp::Gc<

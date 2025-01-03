@@ -29,6 +29,13 @@ for crate::GlobalNamespace::UnitySourceGeneratedAssemblyMonoScriptTypes_v1 {
 impl crate::GlobalNamespace::UnitySourceGeneratedAssemblyMonoScriptTypes_v1 {
     #[cfg(feature = "UnitySourceGeneratedAssemblyMonoScriptTypes_v1+MonoScriptData")]
     pub type MonoScriptData = crate::GlobalNamespace::UnitySourceGeneratedAssemblyMonoScriptTypes_v1_MonoScriptData;
+    pub fn Get() -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::UnitySourceGeneratedAssemblyMonoScriptTypes_v1_MonoScriptData,
+    > {
+        let __cordl_ret: crate::GlobalNamespace::UnitySourceGeneratedAssemblyMonoScriptTypes_v1_MonoScriptData = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Get", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

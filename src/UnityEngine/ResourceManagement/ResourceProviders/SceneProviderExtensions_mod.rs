@@ -36,7 +36,33 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProviderExte
 #[cfg(
     feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneProviderExtensions"
 )]
-impl crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProviderExtensions {}
+impl crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProviderExtensions {
+    pub fn ReleaseScene(
+        provider: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::ResourceProviders::ISceneProvider,
+        >,
+        resourceManager: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::ResourceManager,
+        >,
+        sceneLoadHandle: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+            crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
+        >,
+        unloadOptions: crate::UnityEngine::SceneManagement::UnloadSceneOptions,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+            crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
+        >,
+    > {
+        let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+            crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ReleaseScene",
+                (provider, resourceManager, sceneLoadHandle, unloadOptions),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(
     feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneProviderExtensions"
 )]

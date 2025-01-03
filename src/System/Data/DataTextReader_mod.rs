@@ -35,6 +35,15 @@ impl crate::System::Data::DataTextReader {
             .invoke("Close", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn CreateReader(
+        xr: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateReader", (xr))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetAttribute_Il2CppString0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

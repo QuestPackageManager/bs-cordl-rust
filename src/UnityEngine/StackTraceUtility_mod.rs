@@ -23,7 +23,51 @@ impl std::ops::DerefMut for crate::UnityEngine::StackTraceUtility {
     }
 }
 #[cfg(feature = "UnityEngine+StackTraceUtility")]
-impl crate::UnityEngine::StackTraceUtility {}
+impl crate::UnityEngine::StackTraceUtility {
+    pub fn ExtractFormattedStackTrace(
+        stackTrace: quest_hook::libil2cpp::Gc<crate::System::Diagnostics::StackTrace>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ExtractFormattedStackTrace", (stackTrace))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ExtractStackTrace() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ExtractStackTrace", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ExtractStringFromExceptionInternal(
+        exceptiono: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        message: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+        stackTrace: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ExtractStringFromExceptionInternal",
+                (exceptiono, message, stackTrace),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetProjectFolder(
+        folder: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetProjectFolder", (folder))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+StackTraceUtility")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::StackTraceUtility {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

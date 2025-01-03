@@ -23,7 +23,40 @@ impl std::ops::DerefMut for crate::UnityEngine::Timeline::TimelineClipExtensions
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+TimelineClipExtensions")]
-impl crate::UnityEngine::Timeline::TimelineClipExtensions {}
+impl crate::UnityEngine::Timeline::TimelineClipExtensions {
+    pub fn MoveToTrack(
+        clip: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TimelineClip>,
+        destinationTrack: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Timeline::TrackAsset,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MoveToTrack", (clip, destinationTrack))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MoveToTrack_Impl(
+        clip: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TimelineClip>,
+        destinationTrack: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Timeline::TrackAsset,
+        >,
+        asset: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+        parentTrack: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MoveToTrack_Impl", (clip, destinationTrack, asset, parentTrack))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryMoveToTrack(
+        clip: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TimelineClip>,
+        destinationTrack: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Timeline::TrackAsset,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryMoveToTrack", (clip, destinationTrack))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+Timeline+TimelineClipExtensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Timeline::TimelineClipExtensions {

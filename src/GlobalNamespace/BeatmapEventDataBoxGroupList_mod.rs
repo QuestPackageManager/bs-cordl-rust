@@ -76,6 +76,13 @@ impl crate::GlobalNamespace::BeatmapEventDataBoxGroupList {
             )?;
         Ok(__cordl_object.into())
     }
+    pub fn NoDomainReloadInit() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("NoDomainReloadInit", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Remove(
         &mut self,
         nodeToDelete: quest_hook::libil2cpp::Gc<

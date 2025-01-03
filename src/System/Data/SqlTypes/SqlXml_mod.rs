@@ -40,6 +40,52 @@ impl crate::System::Data::SqlTypes::SqlXml {
             .invoke("CreateReader", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn CreateSqlReaderDelegate() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Func_4<
+                *mut crate::System::IO::Stream,
+                *mut crate::System::Xml::XmlReaderSettings,
+                *mut crate::System::Xml::XmlParserContext,
+                *mut crate::System::Xml::XmlReader,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Func_4<
+                *mut crate::System::IO::Stream,
+                *mut crate::System::Xml::XmlReaderSettings,
+                *mut crate::System::Xml::XmlParserContext,
+                *mut crate::System::Xml::XmlReader,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateSqlReaderDelegate", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateSqlXmlReader(
+        stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+        closeInput: bool,
+        throwTargetInvocationExceptions: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CreateSqlXmlReader",
+                (stream, closeInput, throwTargetInvocationExceptions),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetXsdType(
+        schemaSet: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSet>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::XmlQualifiedName,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetXsdType", (schemaSet))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -101,6 +147,15 @@ impl crate::System::Data::SqlTypes::SqlXml {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_CreateSqlReaderMethodInfo() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::MethodInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_CreateSqlReaderMethodInfo", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_IsNull(&mut self) -> quest_hook::libil2cpp::Result<bool> {

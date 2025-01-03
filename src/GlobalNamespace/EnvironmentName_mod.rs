@@ -73,4 +73,37 @@ impl crate::GlobalNamespace::EnvironmentName {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Equality(
+        a: crate::GlobalNamespace::EnvironmentName,
+        b: crate::GlobalNamespace::EnvironmentName,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_EnvironmentName0(
+        e: crate::GlobalNamespace::EnvironmentName,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("op_Implicit", (e))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_Il2CppString1(
+        environmentName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::EnvironmentName> {
+        let __cordl_ret: crate::GlobalNamespace::EnvironmentName = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (environmentName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        a: crate::GlobalNamespace::EnvironmentName,
+        b: crate::GlobalNamespace::EnvironmentName,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
 }

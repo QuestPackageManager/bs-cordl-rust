@@ -74,6 +74,18 @@ impl crate::GlobalNamespace::OVRSkeleton {
             .invoke("Awake", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn BoneLabelFromBoneId(
+        skeletonType: crate::GlobalNamespace::OVRSkeleton_SkeletonType,
+        boneId: crate::GlobalNamespace::OVRSkeleton_BoneId,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BoneLabelFromBoneId", (skeletonType, boneId))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn FixedUpdate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -191,6 +203,20 @@ impl crate::GlobalNamespace::OVRSkeleton {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("InitializeCapsules", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsBodySkeleton(
+        _cordl_type: crate::GlobalNamespace::OVRSkeleton_SkeletonType,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsBodySkeleton", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsHandSkeleton(
+        _cordl_type: crate::GlobalNamespace::OVRSkeleton_SkeletonType,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsHandSkeleton", (_cordl_type))?;
         Ok(__cordl_ret.into())
     }
     pub fn IsValidBone(

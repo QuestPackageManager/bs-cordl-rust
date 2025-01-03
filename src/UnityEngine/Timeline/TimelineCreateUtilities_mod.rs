@@ -28,6 +28,57 @@ impl crate::UnityEngine::Timeline::TimelineCreateUtilities {
     pub type __c__DisplayClass0_0 = crate::UnityEngine::Timeline::TimelineCreateUtilities___c__DisplayClass0_0;
     #[cfg(feature = "UnityEngine+Timeline+TimelineCreateUtilities+__c__DisplayClass0_1")]
     pub type __c__DisplayClass0_1 = crate::UnityEngine::Timeline::TimelineCreateUtilities___c__DisplayClass0_1;
+    pub fn CreateAnimationClipForTrack(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        track: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
+        isLegacy: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateAnimationClipForTrack", (name, track, isLegacy))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GenerateUniqueActorName(
+        tracks: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::ScriptableObject,
+            >,
+        >,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GenerateUniqueActorName", (tracks, name))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RemoveAssetFromObject(
+        childAsset: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+        masterAsset: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RemoveAssetFromObject", (childAsset, masterAsset))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SaveAssetIntoObject(
+        childAsset: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+        masterAsset: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SaveAssetIntoObject", (childAsset, masterAsset))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ValidateParentTrack(
+        parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
+        childType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ValidateParentTrack", (parent, childType))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+Timeline+TimelineCreateUtilities")]
 impl quest_hook::libil2cpp::ObjectType

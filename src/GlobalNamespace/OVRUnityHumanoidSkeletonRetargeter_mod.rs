@@ -325,6 +325,18 @@ impl crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter {
         > = __cordl_object.invoke("FindAdjustment", (boneId))?;
         Ok(__cordl_ret.into())
     }
+    pub fn IsBodySectionInArray(
+        bodySectionToCheck: crate::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_BodySection,
+        sectionArrayToCheck: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::GlobalNamespace::OVRHumanBodyBonesMappings_OVRUnityHumanoidSkeletonRetargeter_BodySection,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsBodySectionInArray", (bodySectionToCheck, sectionArrayToCheck))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -381,6 +393,13 @@ impl crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Update", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ValidateGameObjectForUnityHumanoidRetargeting(
+        go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ValidateGameObjectForUnityHumanoidRetargeting", (go))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -769,6 +788,50 @@ impl crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetad
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("BuildCoordinateAxesForAllBones", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateQuaternionForBoneData(
+        fromPosition: crate::UnityEngine::Vector3,
+        toPosition: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
+        let __cordl_ret: crate::UnityEngine::Quaternion = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateQuaternionForBoneData", (fromPosition, toPosition))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateQuaternionForBoneDataWithRightVec(
+        fromPosition: crate::UnityEngine::Vector3,
+        toPosition: crate::UnityEngine::Vector3,
+        rightVector: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
+        let __cordl_ret: crate::UnityEngine::Quaternion = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CreateQuaternionForBoneDataWithRightVec",
+                (fromPosition, toPosition, rightVector),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FindBoneWithBoneId(
+        bones: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                *mut crate::GlobalNamespace::OVRBone,
+            >,
+        >,
+        boneId: crate::GlobalNamespace::OVRSkeleton_BoneId,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBone>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBone> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FindBoneWithBoneId", (bones, boneId))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FindFirstChild(
+        startTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+        currTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FindFirstChild", (startTransform, currTransform))?;
         Ok(__cordl_ret.into())
     }
     pub fn New_Animator1(

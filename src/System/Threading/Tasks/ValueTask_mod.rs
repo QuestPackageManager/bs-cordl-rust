@@ -156,6 +156,15 @@ impl crate::System::Threading::Tasks::ValueTask {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_CompletedTask() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_CompletedTask", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_IsCompleted(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

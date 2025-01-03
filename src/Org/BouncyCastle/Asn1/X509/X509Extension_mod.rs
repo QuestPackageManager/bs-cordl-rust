@@ -26,6 +26,19 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::X509::X509Extension 
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+X509Extension")]
 impl crate::Org::BouncyCastle::Asn1::X509::X509Extension {
+    pub fn ConvertValueToObject(
+        ext: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::X509Extension,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Object>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1Object,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ConvertValueToObject", (ext))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Equals(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

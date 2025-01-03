@@ -29,6 +29,60 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils {
     pub type BorderParams = crate::UnityEngine::UIElements::MeshGenerationContextUtils_BorderParams;
     #[cfg(feature = "UnityEngine+UIElements+MeshGenerationContextUtils+RectangleParams")]
     pub type RectangleParams = crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams;
+    pub fn AdjustBackgroundSizeForBorders(
+        visualElement: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::VisualElement,
+        >,
+        rectParams: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AdjustBackgroundSizeForBorders", (visualElement, rectParams))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ConvertBorderRadiusPercentToPoints(
+        borderRectSize: crate::UnityEngine::Vector2,
+        length: crate::UnityEngine::UIElements::Length,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ConvertBorderRadiusPercentToPoints", (borderRectSize, length))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetVisualElementRadii(
+        ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        topLeft: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
+        bottomLeft: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
+        topRight: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
+        bottomRight: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetVisualElementRadii",
+                (ve, topLeft, bottomLeft, topRight, bottomRight),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Rectangle(
+        mgc: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::MeshGenerationContext,
+        >,
+        rectParams: crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Rectangle", (mgc, rectParams))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Text(
+        mgc: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::MeshGenerationContext,
+        >,
+        te: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TextElement>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Text", (mgc, te))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+UIElements+MeshGenerationContextUtils")]
 impl quest_hook::libil2cpp::ObjectType
@@ -149,6 +203,67 @@ for crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams {
 }
 #[cfg(feature = "UnityEngine+UIElements+MeshGenerationContextUtils+RectangleParams")]
 impl crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams {
+    pub fn AdjustSpriteUVsForScaleMode(
+        containerRect: crate::UnityEngine::Rect,
+        srcRect: crate::UnityEngine::Rect,
+        spriteGeomRect: crate::UnityEngine::Rect,
+        sprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+        scaleMode: crate::UnityEngine::ScaleMode,
+        rectOut: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Rect>,
+        uvOut: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Rect>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "AdjustSpriteUVsForScaleMode",
+                (
+                    containerRect,
+                    srcRect,
+                    spriteGeomRect,
+                    sprite,
+                    scaleMode,
+                    rectOut,
+                    uvOut,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AdjustUVsForScaleMode(
+        rect: crate::UnityEngine::Rect,
+        uv: crate::UnityEngine::Rect,
+        texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+        scaleMode: crate::UnityEngine::ScaleMode,
+        rectOut: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Rect>,
+        uvOut: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Rect>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "AdjustUVsForScaleMode",
+                (rect, uv, texture, scaleMode, rectOut, uvOut),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ApplyPackingRotation(
+        uv: crate::UnityEngine::Rect,
+        rotation: crate::UnityEngine::SpritePackingRotation,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rect> {
+        let __cordl_ret: crate::UnityEngine::Rect = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ApplyPackingRotation", (uv, rotation))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ComputeGeomRect(
+        sprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rect> {
+        let __cordl_ret: crate::UnityEngine::Rect = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ComputeGeomRect", (sprite))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ComputeUVRect(
+        sprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rect> {
+        let __cordl_ret: crate::UnityEngine::Rect = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ComputeUVRect", (sprite))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn HasRadius(&mut self, epsilon: f32) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -163,6 +278,73 @@ impl crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams 
             "HasSlices",
             (epsilon),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MakeSprite(
+        containerRect: crate::UnityEngine::Rect,
+        subRect: crate::UnityEngine::Rect,
+        sprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+        scaleMode: crate::UnityEngine::ScaleMode,
+        panelContext: crate::UnityEngine::UIElements::ContextType,
+        hasRadius: bool,
+        slices: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector4>,
+        useForRepeat: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams,
+    > {
+        let __cordl_ret: crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "MakeSprite",
+                (
+                    containerRect,
+                    subRect,
+                    sprite,
+                    scaleMode,
+                    panelContext,
+                    hasRadius,
+                    slices,
+                    useForRepeat,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MakeTextured(
+        rect: crate::UnityEngine::Rect,
+        uv: crate::UnityEngine::Rect,
+        texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+        scaleMode: crate::UnityEngine::ScaleMode,
+        panelContext: crate::UnityEngine::UIElements::ContextType,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams,
+    > {
+        let __cordl_ret: crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MakeTextured", (rect, uv, texture, scaleMode, panelContext))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MakeVectorTextured(
+        rect: crate::UnityEngine::Rect,
+        uv: crate::UnityEngine::Rect,
+        vectorImage: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::VectorImage,
+        >,
+        scaleMode: crate::UnityEngine::ScaleMode,
+        panelContext: crate::UnityEngine::UIElements::ContextType,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams,
+    > {
+        let __cordl_ret: crate::UnityEngine::UIElements::MeshGenerationContextUtils_RectangleParams = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "MakeVectorTextured",
+                (rect, uv, vectorImage, scaleMode, panelContext),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RectIntersection(
+        a: crate::UnityEngine::Rect,
+        b: crate::UnityEngine::Rect,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rect> {
+        let __cordl_ret: crate::UnityEngine::Rect = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RectIntersection", (a, b))?;
         Ok(__cordl_ret.into())
     }
     pub fn ToNativeParams(

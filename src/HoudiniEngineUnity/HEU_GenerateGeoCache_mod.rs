@@ -126,12 +126,368 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
     pub type HEU_ColliderInfo = crate::HoudiniEngineUnity::HEU_GenerateGeoCache_HEU_ColliderInfo;
     #[cfg(feature = "HoudiniEngineUnity+HEU_GenerateGeoCache+__c")]
     pub type __c = crate::HoudiniEngineUnity::HEU_GenerateGeoCache___c;
+    pub fn CalculateGroupMeshTopology(
+        groupFaces: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<i32>,
+        >,
+        allFaceCounts: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::MeshTopology> {
+        let __cordl_ret: crate::UnityEngine::MeshTopology = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CalculateGroupMeshTopology", (groupFaces, allFaceCounts))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CombineMeshes(
+        subMeshesMap: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<
+                i32,
+                *mut crate::HoudiniEngineUnity::HEU_MeshData,
+            >,
+        >,
+        submeshIndices: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<i32>,
+        >,
+        bGenerateUVs: bool,
+        bGenerateNormals: bool,
+        meshIndexFormat: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_MeshIndexFormat,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CombineMeshes",
+                (
+                    subMeshesMap,
+                    submeshIndices,
+                    bGenerateUVs,
+                    bGenerateNormals,
+                    meshIndexFormat,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CombineQuadMeshes(
+        subMeshesMap: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<
+                i32,
+                *mut crate::HoudiniEngineUnity::HEU_MeshData,
+            >,
+        >,
+        subMeshIndices: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<i32>,
+        >,
+        bGenerateNormals: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CombineQuadMeshes",
+                (subMeshesMap, subMeshIndices, bGenerateNormals),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateMaterialInfoEntryFromAttributeIndex(
+        geoCache: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_GenerateGeoCache,
+        >,
+        materialAttributeIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CreateMaterialInfoEntryFromAttributeIndex",
+                (geoCache, materialAttributeIndex),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateMeshFromMeshData(
+        submesh: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_MeshData>,
+        bGenerateUVs: bool,
+        bGenerateNormals: bool,
+        meshIndexFormat: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_MeshIndexFormat,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CreateMeshFromMeshData",
+                (submesh, bGenerateUVs, bGenerateNormals, meshIndexFormat),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GenerateGeoGroupUsingGeoCachePoints(
+        session: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionBase>,
+        geoCache: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_GenerateGeoCache,
+        >,
+        bGenerateUVs: bool,
+        bGenerateTangents: bool,
+        bGenerateNormals: bool,
+        bUseLODGroups: bool,
+        bPartInstanced: bool,
+        LODGroupMeshes: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::System::Collections::Generic::List_1<
+                *mut crate::HoudiniEngineUnity::HEU_GeoGroup,
+            >,
+        >,
+        defaultMaterialKey: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GenerateGeoGroupUsingGeoCachePoints",
+                (
+                    session,
+                    geoCache,
+                    bGenerateUVs,
+                    bGenerateTangents,
+                    bGenerateNormals,
+                    bUseLODGroups,
+                    bPartInstanced,
+                    LODGroupMeshes,
+                    defaultMaterialKey,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GenerateGeoGroupUsingGeoCacheVertices(
+        session: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionBase>,
+        geoCache: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_GenerateGeoCache,
+        >,
+        bGenerateUVs: bool,
+        bGenerateTangents: bool,
+        bGenerateNormals: bool,
+        bUseLODGroups: bool,
+        bPartInstanced: bool,
+        LODGroupMeshes: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::System::Collections::Generic::List_1<
+                *mut crate::HoudiniEngineUnity::HEU_GeoGroup,
+            >,
+        >,
+        defaultMaterialKey: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GenerateGeoGroupUsingGeoCacheVertices",
+                (
+                    session,
+                    geoCache,
+                    bGenerateUVs,
+                    bGenerateTangents,
+                    bGenerateNormals,
+                    bUseLODGroups,
+                    bPartInstanced,
+                    LODGroupMeshes,
+                    defaultMaterialKey,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GenerateLODMeshesFromGeoGroups(
+        session: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionBase>,
+        GeoGroupMeshes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::HoudiniEngineUnity::HEU_GeoGroup,
+            >,
+        >,
+        geoCache: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_GenerateGeoCache,
+        >,
+        generatedOutput: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_GeneratedOutput,
+        >,
+        defaultMaterialKey: i32,
+        bGenerateUVs: bool,
+        bGenerateTangents: bool,
+        bGenerateNormals: bool,
+        bPartInstanced: bool,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GenerateLODMeshesFromGeoGroups",
+                (
+                    session,
+                    GeoGroupMeshes,
+                    geoCache,
+                    generatedOutput,
+                    defaultMaterialKey,
+                    bGenerateUVs,
+                    bGenerateTangents,
+                    bGenerateNormals,
+                    bPartInstanced,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GenerateMeshFromGeoGroup(
+        session: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionBase>,
+        GeoGroup: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_GeoGroup>,
+        geoCache: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_GenerateGeoCache,
+        >,
+        defaultMaterialKey: i32,
+        bGenerateUVs: bool,
+        bGenerateTangents: bool,
+        bGenerateNormals: bool,
+        bPartInstanced: bool,
+        newMesh: quest_hook::libil2cpp::ByRefMut<*mut crate::UnityEngine::Mesh>,
+        newMaterials: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Material>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GenerateMeshFromGeoGroup",
+                (
+                    session,
+                    GeoGroup,
+                    geoCache,
+                    defaultMaterialKey,
+                    bGenerateUVs,
+                    bGenerateTangents,
+                    bGenerateNormals,
+                    bPartInstanced,
+                    newMesh,
+                    newMaterials,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GenerateMeshFromSingleGroup(
+        session: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionBase>,
+        GeoGroup: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_GeoGroup>,
+        geoCache: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_GenerateGeoCache,
+        >,
+        generatedOutput: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_GeneratedOutput,
+        >,
+        defaultMaterialKey: i32,
+        bGenerateUVs: bool,
+        bGenerateTangents: bool,
+        bGenerateNormals: bool,
+        bPartInstanced: bool,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GenerateMeshFromSingleGroup",
+                (
+                    session,
+                    GeoGroup,
+                    geoCache,
+                    generatedOutput,
+                    defaultMaterialKey,
+                    bGenerateUVs,
+                    bGenerateTangents,
+                    bGenerateNormals,
+                    bPartInstanced,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetFinalMaterialsFromComparingNewWithPrevious(
+        gameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        previousMaterials: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Material>,
+        >,
+        newMaterials: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Material>,
+        >,
+        finalMaterials: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Material>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetFinalMaterialsFromComparingNewWithPrevious",
+                (gameObject, previousMaterials, newMaterials, finalMaterials),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetMaterialKeyFromAttributeIndex(
+        geoCache: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_GenerateGeoCache,
+        >,
+        attributeIndex: i32,
+        unityMaterialName: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+        substanceName: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+        substanceIndex: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetMaterialKeyFromAttributeIndex",
+                (
+                    geoCache,
+                    attributeIndex,
+                    unityMaterialName,
+                    substanceName,
+                    substanceIndex,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPopulatedGeoCache(
+        session: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionBase>,
+        assetID: i32,
+        geoID: i32,
+        partID: i32,
+        bUseLODGroups: bool,
+        materialCache: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::HoudiniEngineUnity::HEU_MaterialData,
+            >,
+        >,
+        assetCacheFolderPath: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_GenerateGeoCache>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_GenerateGeoCache,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetPopulatedGeoCache",
+                (
+                    session,
+                    assetID,
+                    geoID,
+                    partID,
+                    bUseLODGroups,
+                    materialCache,
+                    assetCacheFolderPath,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
+    }
+    pub fn ParseLODTransitionAttribute(
+        session: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionBase>,
+        geoID: i32,
+        partID: i32,
+        LODTransitionValues: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<f32>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ParseLODTransitionAttribute",
+                (session, geoID, partID, LODTransitionValues),
+            )?;
+        Ok(__cordl_ret.into())
     }
     pub fn PopulateGeometryData(
         &mut self,
@@ -154,6 +510,69 @@ impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("PopulateUnityMaterialData", (session))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TransferRegularAttributesToVertices(
+        groupVertexList: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<i32>,
+        >,
+        allFaceCounts: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<i32>,
+        >,
+        groupFaces: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<i32>,
+        >,
+        groupVertexOffset: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<i32>,
+        >,
+        attribInfo: quest_hook::libil2cpp::ByRefMut<
+            crate::HoudiniEngineUnity::HAPI_AttributeInfo,
+        >,
+        inData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
+        outData: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<f32>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "TransferRegularAttributesToVertices",
+                (
+                    groupVertexList,
+                    allFaceCounts,
+                    groupFaces,
+                    groupVertexOffset,
+                    attribInfo,
+                    inData,
+                    outData,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UpdateCollider(
+        geoCache: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_GenerateGeoCache,
+        >,
+        outputData: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_GeneratedOutputData,
+        >,
+        colliderInfo: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_GenerateGeoCache_HEU_ColliderInfo,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UpdateCollider", (geoCache, outputData, colliderInfo))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UpdateColliders(
+        geoCache: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_GenerateGeoCache,
+        >,
+        outputData: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_GeneratedOutputData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UpdateColliders", (geoCache, outputData))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

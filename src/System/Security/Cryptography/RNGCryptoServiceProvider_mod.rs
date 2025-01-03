@@ -77,6 +77,35 @@ impl crate::System::Security::Cryptography::RNGCryptoServiceProvider {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
+    pub fn RngClose(
+        handle: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RngClose", (handle))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RngGetBytes(
+        handle: crate::System::IntPtr,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        data_length: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RngGetBytes", (handle, data, data_length))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RngInitialize(
+        seed: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        seed_length: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RngInitialize", (seed, seed_length))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RngOpen() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RngOpen", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

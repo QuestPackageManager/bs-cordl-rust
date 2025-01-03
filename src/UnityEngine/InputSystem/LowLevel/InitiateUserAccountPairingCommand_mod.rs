@@ -28,6 +28,20 @@ impl crate::UnityEngine::InputSystem::LowLevel::InitiateUserAccountPairingComman
         feature = "UnityEngine+InputSystem+LowLevel+InitiateUserAccountPairingCommand+Result"
     )]
     pub type Result = crate::UnityEngine::InputSystem::LowLevel::InitiateUserAccountPairingCommand_Result;
+    pub fn Create() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::LowLevel::InitiateUserAccountPairingCommand,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::InitiateUserAccountPairingCommand = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Type() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::FourCC,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_Type", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_typeStatic(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

@@ -70,6 +70,16 @@ impl crate::Org::BouncyCastle::Crypto::Engines::AesLightEngine {
             .invoke("EncryptBlock", (KW))?;
         Ok(__cordl_ret.into())
     }
+    pub fn FFmulX(x: u32) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FFmulX", (x))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FFmulX2(x: u32) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FFmulX2", (x))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GenerateWorkingKey(
         &mut self,
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -110,6 +120,16 @@ impl crate::Org::BouncyCastle::Crypto::Engines::AesLightEngine {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Init", (forEncryption, parameters))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Inv_Mcol(x: u32) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Inv_Mcol", (x))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Mcol(x: u32) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Mcol", (x))?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -153,6 +173,16 @@ impl crate::Org::BouncyCastle::Crypto::Engines::AesLightEngine {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Reset", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Shift(r: u32, shift: i32) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Shift", (r, shift))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SubWord(x: u32) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SubWord", (x))?;
         Ok(__cordl_ret.into())
     }
     pub fn UnPackBlock(

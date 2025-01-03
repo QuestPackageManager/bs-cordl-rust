@@ -133,6 +133,65 @@ impl crate::UnityEngine::Video::VideoPlayer {
             .invoke("GetTargetAudioSource", (trackIndex))?;
         Ok(__cordl_ret.into())
     }
+    pub fn InvokeClockResyncOccurredCallback_Internal(
+        source: quest_hook::libil2cpp::Gc<crate::UnityEngine::Video::VideoPlayer>,
+        seconds: f64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InvokeClockResyncOccurredCallback_Internal", (source, seconds))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InvokeErrorReceivedCallback_Internal(
+        source: quest_hook::libil2cpp::Gc<crate::UnityEngine::Video::VideoPlayer>,
+        errorStr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InvokeErrorReceivedCallback_Internal", (source, errorStr))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InvokeFrameDroppedCallback_Internal(
+        source: quest_hook::libil2cpp::Gc<crate::UnityEngine::Video::VideoPlayer>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InvokeFrameDroppedCallback_Internal", (source))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InvokeFrameReadyCallback_Internal(
+        source: quest_hook::libil2cpp::Gc<crate::UnityEngine::Video::VideoPlayer>,
+        frameIdx: i64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InvokeFrameReadyCallback_Internal", (source, frameIdx))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InvokeLoopPointReachedCallback_Internal(
+        source: quest_hook::libil2cpp::Gc<crate::UnityEngine::Video::VideoPlayer>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InvokeLoopPointReachedCallback_Internal", (source))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InvokePrepareCompletedCallback_Internal(
+        source: quest_hook::libil2cpp::Gc<crate::UnityEngine::Video::VideoPlayer>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InvokePrepareCompletedCallback_Internal", (source))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InvokeSeekCompletedCallback_Internal(
+        source: quest_hook::libil2cpp::Gc<crate::UnityEngine::Video::VideoPlayer>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InvokeSeekCompletedCallback_Internal", (source))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InvokeStartedCallback_Internal(
+        source: quest_hook::libil2cpp::Gc<crate::UnityEngine::Video::VideoPlayer>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InvokeStartedCallback_Internal", (source))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn IsAudioTrackEnabled(
         &mut self,
         trackIndex: u16,
@@ -469,6 +528,11 @@ impl crate::UnityEngine::Video::VideoPlayer {
         );
         let __cordl_ret: u16 = __cordl_object
             .invoke("get_controlledAudioTrackCount", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_controlledAudioTrackMaxCount() -> quest_hook::libil2cpp::Result<u16> {
+        let __cordl_ret: u16 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_controlledAudioTrackMaxCount", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_externalReferenceTime(&mut self) -> quest_hook::libil2cpp::Result<f64> {

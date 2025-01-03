@@ -29,6 +29,16 @@ impl crate::System::Random {
     pub const MBIG: i32 = 2147483647i32;
     pub const MSEED: i32 = 161803398i32;
     pub const MZ: i32 = 0i32;
+    pub fn GenerateGlobalSeed() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GenerateGlobalSeed", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GenerateSeed() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GenerateSeed", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetSampleForLargeRange(&mut self) -> quest_hook::libil2cpp::Result<f64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

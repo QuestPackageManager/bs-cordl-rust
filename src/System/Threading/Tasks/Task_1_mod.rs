@@ -444,6 +444,74 @@ impl<
             .invoke_void(".ctor", (canceled, result, creationOptions, ct))?;
         Ok(__cordl_object.into())
     }
+    pub fn StartNew_Func_1_CancellationToken_TaskCreationOptions_InternalTaskOptions_TaskScheduler0(
+        parent: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+        function: quest_hook::libil2cpp::Gc<crate::System::Func_1<TResult>>,
+        cancellationToken: crate::System::Threading::CancellationToken,
+        creationOptions: crate::System::Threading::Tasks::TaskCreationOptions,
+        internalOptions: crate::System::Threading::Tasks::InternalTaskOptions,
+        scheduler: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::TaskScheduler,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<TResult>>,
+    >
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<TResult>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "StartNew",
+                (
+                    parent,
+                    function,
+                    cancellationToken,
+                    creationOptions,
+                    internalOptions,
+                    scheduler,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StartNew_Func_2_Il2CppObject_CancellationToken_TaskCreationOptions_InternalTaskOptions_TaskScheduler1(
+        parent: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+        function: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<*mut quest_hook::libil2cpp::Il2CppObject, TResult>,
+        >,
+        state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        cancellationToken: crate::System::Threading::CancellationToken,
+        creationOptions: crate::System::Threading::Tasks::TaskCreationOptions,
+        internalOptions: crate::System::Threading::Tasks::InternalTaskOptions,
+        scheduler: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::TaskScheduler,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<TResult>>,
+    >
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<TResult>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "StartNew",
+                (
+                    parent,
+                    function,
+                    state,
+                    cancellationToken,
+                    creationOptions,
+                    internalOptions,
+                    scheduler,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn TrySetResult(
         &mut self,
         result: TResult,
@@ -621,6 +689,20 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (canceled, result, creationOptions, ct))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Factory() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::TaskFactory_1<TResult>,
+        >,
+    >
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::TaskFactory_1<TResult>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_Factory", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_Result(&mut self) -> quest_hook::libil2cpp::Result<TResult>

@@ -47,6 +47,18 @@ impl crate::Org::BouncyCastle::Crypto::Tls::NewSessionTicket {
             .invoke_void(".ctor", (ticketLifetimeHint, ticket))?;
         Ok(__cordl_object.into())
     }
+    pub fn Parse(
+        input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::NewSessionTicket,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::NewSessionTicket,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Parse", (input))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
         ticketLifetimeHint: i64,

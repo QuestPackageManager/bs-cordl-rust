@@ -25,7 +25,39 @@ for crate::UnityEngine::ProBuilder::MeshOperations::MeshTransform {
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+MeshTransform")]
-impl crate::UnityEngine::ProBuilder::MeshOperations::MeshTransform {}
+impl crate::UnityEngine::ProBuilder::MeshOperations::MeshTransform {
+    pub fn CenterPivot(
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+        indexes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CenterPivot", (mesh, indexes))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FreezeScaleTransform(
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FreezeScaleTransform", (mesh))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetPivot_PivotLocation0(
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+        pivotLocation: crate::UnityEngine::ProBuilder::PivotLocation,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetPivot", (mesh, pivotLocation))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetPivot_Vector3_1(
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+        worldPosition: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetPivot", (mesh, worldPosition))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+MeshTransform")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ProBuilder::MeshOperations::MeshTransform {

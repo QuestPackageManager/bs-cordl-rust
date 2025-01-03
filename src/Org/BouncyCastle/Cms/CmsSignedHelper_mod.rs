@@ -48,6 +48,17 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedHelper {
             .invoke("AddCrlsFromSet", (crls, crlSet))?;
         Ok(__cordl_ret.into())
     }
+    pub fn AddEntries(
+        oid: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
+        digest: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        encryption: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddEntries", (oid, digest, encryption))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CreateAttributeStore(
         &mut self,
         _cordl_type: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

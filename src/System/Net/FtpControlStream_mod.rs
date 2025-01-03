@@ -56,6 +56,13 @@ impl crate::System::Net::FtpControlStream {
             .invoke("AbortConnect", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn AcceptCallback(
+        asyncResult: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AcceptCallback", (asyncResult))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn BuildCommandsList(
         &mut self,
         req: quest_hook::libil2cpp::Gc<crate::System::Net::WebRequest>,
@@ -97,6 +104,13 @@ impl crate::System::Net::FtpControlStream {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ClearState", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ConnectCallback(
+        asyncResult: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ConnectCallback", (asyncResult))?;
         Ok(__cordl_ret.into())
     }
     pub fn CreateFtpDataSocket(
@@ -206,6 +220,21 @@ impl crate::System::Net::FtpControlStream {
         > = __cordl_object.invoke("GetLoginDirectory", (str))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetPathInfo(
+        pathOption: crate::System::Net::FtpControlStream_GetPathOption,
+        uri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
+        path: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
+        directory: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+        filename: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPathInfo", (pathOption, uri, path, directory, filename))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetPortCommandLine(
         &mut self,
         request: quest_hook::libil2cpp::Gc<crate::System::Net::FtpWebRequest>,
@@ -310,6 +339,13 @@ impl crate::System::Net::FtpControlStream {
         );
         let __cordl_ret: crate::System::Net::CommandStream_PipelineInstruction = __cordl_object
             .invoke("QueueOrCreateFtpDataStream", (stream))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SSLHandshakeCallback(
+        asyncResult: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SSLHandshakeCallback", (asyncResult))?;
         Ok(__cordl_ret.into())
     }
     pub fn TryUpdateContentLength(

@@ -24,4 +24,14 @@ for crate::Unity::Jobs::LowLevel::Unsafe::BatchQueryJobStruct_1<T> {
 #[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+BatchQueryJobStruct_1")]
 impl<
     T: quest_hook::libil2cpp::Type,
-> crate::Unity::Jobs::LowLevel::Unsafe::BatchQueryJobStruct_1<T> {}
+> crate::Unity::Jobs::LowLevel::Unsafe::BatchQueryJobStruct_1<T> {
+    pub fn Initialize() -> quest_hook::libil2cpp::Result<crate::System::IntPtr>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Initialize", ())?;
+        Ok(__cordl_ret.into())
+    }
+}

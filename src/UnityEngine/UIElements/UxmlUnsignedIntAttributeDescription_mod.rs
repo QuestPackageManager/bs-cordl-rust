@@ -29,6 +29,14 @@ for crate::UnityEngine::UIElements::UxmlUnsignedIntAttributeDescription {
 impl crate::UnityEngine::UIElements::UxmlUnsignedIntAttributeDescription {
     #[cfg(feature = "UnityEngine+UIElements+UxmlUnsignedIntAttributeDescription+__c")]
     pub type __c = crate::UnityEngine::UIElements::UxmlUnsignedIntAttributeDescription___c;
+    pub fn ConvertValueToUInt(
+        v: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        defaultValue: u32,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ConvertValueToUInt", (v, defaultValue))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetValueFromBag(
         &mut self,
         bag: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IUxmlAttributes>,

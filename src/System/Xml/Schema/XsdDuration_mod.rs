@@ -78,6 +78,42 @@ impl crate::System::Xml::Schema::XsdDuration {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn TryParseDigits(
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        offset: quest_hook::libil2cpp::ByRefMut<i32>,
+        eatDigits: bool,
+        result: quest_hook::libil2cpp::ByRefMut<i32>,
+        numDigits: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryParseDigits", (s, offset, eatDigits, result, numDigits))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryParse_ByRefMut0(
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        result: quest_hook::libil2cpp::ByRefMut<crate::System::Xml::Schema::XsdDuration>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryParse", (s, result))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryParse_XsdDuration_DurationType_ByRefMut1(
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        durationType: crate::System::Xml::Schema::XsdDuration_DurationType,
+        result: quest_hook::libil2cpp::ByRefMut<crate::System::Xml::Schema::XsdDuration>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryParse", (s, durationType, result))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn TryToTimeSpan_ByRefMut0(
         &mut self,
         result: quest_hook::libil2cpp::ByRefMut<crate::System::TimeSpan>,

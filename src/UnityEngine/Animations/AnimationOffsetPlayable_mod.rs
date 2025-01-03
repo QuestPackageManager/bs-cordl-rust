@@ -22,6 +22,57 @@ for crate::UnityEngine::Animations::AnimationOffsetPlayable {
 }
 #[cfg(feature = "UnityEngine+Animations+AnimationOffsetPlayable")]
 impl crate::UnityEngine::Animations::AnimationOffsetPlayable {
+    pub fn Create(
+        graph: crate::UnityEngine::Playables::PlayableGraph,
+        position: crate::UnityEngine::Vector3,
+        rotation: crate::UnityEngine::Quaternion,
+        inputCount: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Animations::AnimationOffsetPlayable,
+    > {
+        let __cordl_ret: crate::UnityEngine::Animations::AnimationOffsetPlayable = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (graph, position, rotation, inputCount))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateHandle(
+        graph: crate::UnityEngine::Playables::PlayableGraph,
+        position: crate::UnityEngine::Vector3,
+        rotation: crate::UnityEngine::Quaternion,
+        inputCount: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::PlayableHandle> {
+        let __cordl_ret: crate::UnityEngine::Playables::PlayableHandle = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateHandle", (graph, position, rotation, inputCount))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateHandleInternal(
+        graph: crate::UnityEngine::Playables::PlayableGraph,
+        position: crate::UnityEngine::Vector3,
+        rotation: crate::UnityEngine::Quaternion,
+        handle: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableHandle,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateHandleInternal", (graph, position, rotation, handle))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateHandleInternal_Injected(
+        graph: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableGraph,
+        >,
+        position: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+        rotation: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Quaternion>,
+        handle: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableHandle,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CreateHandleInternal_Injected",
+                (graph, position, rotation, handle),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Equals(
         &mut self,
         other: crate::UnityEngine::Animations::AnimationOffsetPlayable,
@@ -52,6 +103,13 @@ impl crate::UnityEngine::Animations::AnimationOffsetPlayable {
             ".ctor",
             (handle),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit(
+        playable: crate::UnityEngine::Animations::AnimationOffsetPlayable,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::Playable> {
+        let __cordl_ret: crate::UnityEngine::Playables::Playable = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (playable))?;
         Ok(__cordl_ret.into())
     }
 }

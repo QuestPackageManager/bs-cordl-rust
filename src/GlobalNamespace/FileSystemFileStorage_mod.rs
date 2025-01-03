@@ -69,6 +69,17 @@ impl crate::GlobalNamespace::FileSystemFileStorage {
         > = __cordl_object.invoke("FileExistsAsync", (fileName, storageLocation))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetBackupFilePath(
+        filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetBackupFilePath", (filePath))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetCommandQueue(
         &mut self,
         fileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -96,6 +107,17 @@ impl crate::GlobalNamespace::FileSystemFileStorage {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("GetFilePath", (fileName, storageLocation))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetTempFilePath(
+        filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetTempFilePath", (filePath))?;
         Ok(__cordl_ret.into())
     }
     pub fn LoadFileAsync(

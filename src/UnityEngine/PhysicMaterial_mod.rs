@@ -24,6 +24,14 @@ impl std::ops::DerefMut for crate::UnityEngine::PhysicMaterial {
 }
 #[cfg(feature = "UnityEngine+PhysicMaterial")]
 impl crate::UnityEngine::PhysicMaterial {
+    pub fn Internal_CreateDynamicsMaterial(
+        mat: quest_hook::libil2cpp::Gc<crate::UnityEngine::PhysicMaterial>,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Internal_CreateDynamicsMaterial", (mat, name))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

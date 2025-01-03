@@ -52,6 +52,19 @@ impl crate::System::Runtime::Remoting::Channels::CrossAppDomainSink {
         > = __cordl_object.invoke("AsyncProcessMessage", (reqMsg, replySink))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetSink(
+        domainID: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Channels::CrossAppDomainSink,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Channels::CrossAppDomainSink,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSink", (domainID))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         domainID: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -60,6 +73,18 @@ impl crate::System::Runtime::Remoting::Channels::CrossAppDomainSink {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (domainID))?;
         Ok(__cordl_object.into())
+    }
+    pub fn ProcessMessageInDomain(
+        arrRequest: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        cadMsg: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Messaging::CADMethodCallMessage,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Runtime::Remoting::Channels::CrossAppDomainSink_ProcessMessageRes,
+    > {
+        let __cordl_ret: crate::System::Runtime::Remoting::Channels::CrossAppDomainSink_ProcessMessageRes = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ProcessMessageInDomain", (arrRequest, cadMsg))?;
+        Ok(__cordl_ret.into())
     }
     pub fn SendAsyncMessage(
         &mut self,

@@ -29,6 +29,27 @@ impl crate::GlobalNamespace::LightConstants {
     pub const kLightmapLightBakeIdPrefix: &'static str = "_LightmapLightBakeId";
     #[cfg(feature = "LightConstants+BakeId")]
     pub type BakeId = crate::GlobalNamespace::LightConstants_BakeId;
+    pub fn GetComputeFieldPropertyId(
+        fieldName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetComputeFieldPropertyId", (fieldName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetLightProbeLightBakeIdPropertyId(
+        bakeId: crate::GlobalNamespace::LightConstants_BakeId,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetLightProbeLightBakeIdPropertyId", (bakeId))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetLightmapLightBakeIdPropertyId(
+        bakeId: crate::GlobalNamespace::LightConstants_BakeId,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetLightmapLightBakeIdPropertyId", (bakeId))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "LightConstants")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LightConstants {

@@ -23,7 +23,13 @@ impl std::ops::DerefMut for crate::UnityEngine::HumanTrait {
     }
 }
 #[cfg(feature = "UnityEngine+HumanTrait")]
-impl crate::UnityEngine::HumanTrait {}
+impl crate::UnityEngine::HumanTrait {
+    pub fn GetBoneIndexFromMono(humanId: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetBoneIndexFromMono", (humanId))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+HumanTrait")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::HumanTrait {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

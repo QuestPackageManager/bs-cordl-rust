@@ -73,6 +73,34 @@ impl crate::System::Net::WebRequest {
             .invoke("BeginGetResponse", (callback, state))?;
         Ok(__cordl_ret.into())
     }
+    pub fn Create_Il2CppString1(
+        requestUriString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Net::WebRequest>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::WebRequest> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (requestUriString))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Create_Uri2(
+        requestUri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Net::WebRequest>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::WebRequest> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (requestUri))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Create_Uri__cordl_bool0(
+        requestUri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
+        useUriBase: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Net::WebRequest>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::WebRequest> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (requestUri, useUriBase))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn EndGetRequestStream(
         &mut self,
         asyncResult: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
@@ -184,6 +212,15 @@ impl crate::System::Net::WebRequest {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (serializationInfo, streamingContext))?;
         Ok(__cordl_object.into())
+    }
+    pub fn PopulatePrefixList() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ArrayList,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PopulatePrefixList", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn SafeCaptureIdenity(
         &mut self,
@@ -301,6 +338,15 @@ impl crate::System::Net::WebRequest {
             .invoke("get_Credentials", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_DefaultCachePolicy() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Net::Cache::RequestCachePolicy>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Cache::RequestCachePolicy,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_DefaultCachePolicy", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_Headers(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -314,6 +360,22 @@ impl crate::System::Net::WebRequest {
         > = __cordl_object.invoke("get_Headers", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_InternalDefaultWebProxy() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Net::IWebProxy>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::IWebProxy> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_InternalDefaultWebProxy", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_InternalSyncObject() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_InternalSyncObject", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_Method(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -325,6 +387,14 @@ impl crate::System::Net::WebRequest {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("get_Method", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_PrefixList() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ArrayList,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_PrefixList", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_Proxy(

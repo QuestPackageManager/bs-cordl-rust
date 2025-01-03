@@ -34,6 +34,17 @@ impl crate::Newtonsoft::Json::Linq::JPropertyDescriptor {
         let __cordl_ret: bool = __cordl_object.invoke("CanResetValue", (component))?;
         Ok(__cordl_ret.into())
     }
+    pub fn CastInstance(
+        instance: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Linq::JObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CastInstance", (instance))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetValue(
         &mut self,
         component: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

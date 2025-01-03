@@ -289,6 +289,17 @@ impl crate::System::Collections::SortedList {
             .invoke("RemoveAt", (index))?;
         Ok(__cordl_ret.into())
     }
+    pub fn Synchronized(
+        list: quest_hook::libil2cpp::Gc<crate::System::Collections::SortedList>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::SortedList>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::SortedList,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Synchronized", (list))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn System_Collections_IEnumerable_GetEnumerator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

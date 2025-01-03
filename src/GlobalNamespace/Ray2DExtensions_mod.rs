@@ -23,7 +23,18 @@ impl std::ops::DerefMut for crate::GlobalNamespace::Ray2DExtensions {
     }
 }
 #[cfg(feature = "Ray2DExtensions")]
-impl crate::GlobalNamespace::Ray2DExtensions {}
+impl crate::GlobalNamespace::Ray2DExtensions {
+    pub fn CircleIntersections(
+        ray: crate::UnityEngine::Ray2D,
+        circleCenter: crate::UnityEngine::Vector2,
+        radius: f32,
+        distances: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CircleIntersections", (ray, circleCenter, radius, distances))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "Ray2DExtensions")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::Ray2DExtensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

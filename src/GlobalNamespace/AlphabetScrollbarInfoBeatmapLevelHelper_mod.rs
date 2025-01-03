@@ -33,6 +33,43 @@ impl crate::GlobalNamespace::AlphabetScrollbarInfoBeatmapLevelHelper {
     pub const kNonAlphabetChar: char = '#';
     #[cfg(feature = "AlphabetScrollbarInfoBeatmapLevelHelper+__c")]
     pub type __c = crate::GlobalNamespace::AlphabetScrollbarInfoBeatmapLevelHelper___c;
+    pub fn CreateData(
+        beatmapLevels: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                *mut crate::GlobalNamespace::BeatmapLevel,
+            >,
+        >,
+        sortBeatmapLevels: bool,
+        sortedBeatmapLevels: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::System::Collections::Generic::IReadOnlyList_1<
+                *mut crate::GlobalNamespace::BeatmapLevel,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                *mut crate::GlobalNamespace::AlphabetScrollInfo_Data,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                *mut crate::GlobalNamespace::AlphabetScrollInfo_Data,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CreateData",
+                (beatmapLevels, sortBeatmapLevels, sortedBeatmapLevels),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsNumericOrSpecial(
+        comparedChar: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsNumericOrSpecial", (comparedChar))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "AlphabetScrollbarInfoBeatmapLevelHelper")]
 impl quest_hook::libil2cpp::ObjectType

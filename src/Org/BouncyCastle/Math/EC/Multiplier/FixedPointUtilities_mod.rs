@@ -31,12 +31,46 @@ impl crate::Org::BouncyCastle::Math::EC::Multiplier::FixedPointUtilities {
         feature = "Org+BouncyCastle+Math+EC+Multiplier+FixedPointUtilities+FixedPointCallback"
     )]
     pub type FixedPointCallback = crate::Org::BouncyCastle::Math::EC::Multiplier::FixedPointUtilities_FixedPointCallback;
+    pub fn GetCombSize(
+        c: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECCurve>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCombSize", (c))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetFixedPointPreCompInfo(
+        preCompInfo: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::EC::Multiplier::PreCompInfo,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::EC::Multiplier::FixedPointPreCompInfo,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::EC::Multiplier::FixedPointPreCompInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetFixedPointPreCompInfo", (preCompInfo))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
+    }
+    pub fn Precompute(
+        p: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::EC::Multiplier::FixedPointPreCompInfo,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::EC::Multiplier::FixedPointPreCompInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Precompute", (p))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,

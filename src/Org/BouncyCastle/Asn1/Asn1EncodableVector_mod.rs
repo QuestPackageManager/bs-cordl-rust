@@ -97,6 +97,27 @@ impl crate::Org::BouncyCastle::Asn1::Asn1EncodableVector {
             .invoke("Add", (objs))?;
         Ok(__cordl_ret.into())
     }
+    pub fn CloneElements(
+        elements: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CloneElements", (elements))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CopyElements(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -114,6 +135,17 @@ impl crate::Org::BouncyCastle::Asn1::Asn1EncodableVector {
                 *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
             >,
         > = __cordl_object.invoke("CopyElements", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromEnumerable(
+        e: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1EncodableVector>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1EncodableVector,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromEnumerable", (e))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetEnumerator(

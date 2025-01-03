@@ -80,6 +80,16 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Certificate {
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (other))?;
         Ok(__cordl_ret.into())
     }
+    pub fn FormatDate(
+        date: crate::System::DateTime,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("FormatDate", (date))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetCertHash(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -396,6 +406,13 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Certificate {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("ToString", (fVerbose))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ValidateKeyStorageFlags(
+        keyStorageFlags: crate::System::Security::Cryptography::X509Certificates::X509KeyStorageFlags,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ValidateKeyStorageFlags", (keyStorageFlags))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_0(

@@ -101,6 +101,13 @@ impl crate::UnityEngine::TextCore::GlyphRect {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_zero() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::TextCore::GlyphRect,
+    > {
+        let __cordl_ret: crate::UnityEngine::TextCore::GlyphRect = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_zero", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+TextCore+GlyphRect")]
 impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::TextCore::GlyphRect>>

@@ -57,6 +57,13 @@ impl crate::System::Uri {
             .invoke("AllowIdnStatic", (syntax, flags))?;
         Ok(__cordl_ret.into())
     }
+    pub fn CalculateCaseInsensitiveHashCode(
+        text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CalculateCaseInsensitiveHashCode", (text))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CheckAuthorityHelper(
         &mut self,
         pString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -167,6 +174,13 @@ impl crate::System::Uri {
             .invoke("CheckCanonical", (str, idx, end, delim))?;
         Ok(__cordl_ret.into())
     }
+    pub fn CheckForColonInFirstPathSegment(
+        uriString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckForColonInFirstPathSegment", (uriString))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CheckForConfigLoad(
         &mut self,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -198,6 +212,68 @@ impl crate::System::Uri {
         let __cordl_ret: bool = __cordl_object.invoke("CheckForUnicode", (data))?;
         Ok(__cordl_ret.into())
     }
+    pub fn CheckKnownSchemes(
+        lptr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        nChars: u16,
+        syntax: quest_hook::libil2cpp::ByRefMut<*mut crate::System::UriParser>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckKnownSchemes", (lptr, nChars, syntax))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CheckSchemeName(
+        schemeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckSchemeName", (schemeName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CheckSchemeSyntax(
+        ptr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        length: u16,
+        syntax: quest_hook::libil2cpp::ByRefMut<*mut crate::System::UriParser>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::ParsingError> {
+        let __cordl_ret: crate::System::ParsingError = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckSchemeSyntax", (ptr, length, syntax))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CombineUri(
+        basePart: quest_hook::libil2cpp::Gc<crate::System::Uri>,
+        relativePart: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        uriFormat: crate::System::UriFormat,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CombineUri", (basePart, relativePart, uriFormat))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Compress(
+        dest: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+        start: u16,
+        destLength: quest_hook::libil2cpp::ByRefMut<i32>,
+        syntax: quest_hook::libil2cpp::Gc<crate::System::UriParser>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<char>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Compress", (dest, start, destLength, syntax))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateHelper(
+        uriString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        dontEscape: bool,
+        uriKind: crate::System::UriKind,
+        e: quest_hook::libil2cpp::ByRefMut<*mut crate::System::UriFormatException>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Uri>> {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Uri> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateHelper", (uriString, dontEscape, uriKind, e))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CreateHostString(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -206,6 +282,23 @@ impl crate::System::Uri {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("CreateHostString", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateHostStringHelper(
+        str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        idx: u16,
+        end: u16,
+        flags: quest_hook::libil2cpp::ByRefMut<crate::System::Uri_Flags>,
+        scopeId: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateHostStringHelper", (str, idx, end, flags, scopeId))?;
         Ok(__cordl_ret.into())
     }
     pub fn CreateThis(
@@ -316,6 +409,17 @@ impl crate::System::Uri {
         > = __cordl_object.invoke("EscapeUnescapeIri", (input, start, end, component))?;
         Ok(__cordl_ret.into())
     }
+    pub fn EscapeUriString(
+        stringToEscape: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EscapeUriString", (stringToEscape))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn FindEndOfComponent_Il2CppObject1(
         &mut self,
         str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -344,6 +448,11 @@ impl crate::System::Uri {
             .invoke("FindEndOfComponent", (input, idx, end, delim))?;
         Ok(__cordl_ret.into())
     }
+    pub fn FromHex(digit: char) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromHex", (digit))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetCanonicalPath(
         &mut self,
         dest: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
@@ -358,6 +467,16 @@ impl crate::System::Uri {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<char>,
         > = __cordl_object.invoke("GetCanonicalPath", (dest, pos, formatAs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCombinedString(
+        baseUri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
+        relativeStr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        dontEscape: bool,
+        result: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::ParsingError> {
+        let __cordl_ret: crate::System::ParsingError = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCombinedString", (baseUri, relativeStr, dontEscape, result))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetComponents(
@@ -402,6 +521,15 @@ impl crate::System::Uri {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("GetEscapedParts", (uriParts))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetException(
+        err: crate::System::ParsingError,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::UriFormatException>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::UriFormatException> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetException", (err))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -529,6 +657,24 @@ impl crate::System::Uri {
             .invoke("InitializeUri", (err, uriKind, e))?;
         Ok(__cordl_ret.into())
     }
+    pub fn InitializeUriConfig() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InitializeUriConfig", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InternalEscapeString(
+        rawString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InternalEscapeString", (rawString))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn InternalIsWellFormedOriginalString(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -537,6 +683,23 @@ impl crate::System::Uri {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("InternalIsWellFormedOriginalString", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IriParsingStatic(
+        syntax: quest_hook::libil2cpp::Gc<crate::System::UriParser>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IriParsingStatic", (syntax))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsAsciiLetter(character: char) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsAsciiLetter", (character))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsAsciiLetterOrDigit(character: char) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsAsciiLetterOrDigit", (character))?;
         Ok(__cordl_ret.into())
     }
     pub fn IsBaseOf(
@@ -559,6 +722,21 @@ impl crate::System::Uri {
         let __cordl_ret: bool = __cordl_object.invoke("IsBaseOfHelper", (uriLink))?;
         Ok(__cordl_ret.into())
     }
+    pub fn IsBidiControlCharacter(ch: char) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsBidiControlCharacter", (ch))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsGenDelim(ch: char) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsGenDelim", (ch))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsHexDigit(character: char) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsHexDigit", (character))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn IsIntranet(
         &mut self,
         schemeHost: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -569,11 +747,24 @@ impl crate::System::Uri {
         let __cordl_ret: bool = __cordl_object.invoke("IsIntranet", (schemeHost))?;
         Ok(__cordl_ret.into())
     }
+    pub fn IsLWS(ch: char) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsLWS", (ch))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn IsWellFormedOriginalString(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("IsWellFormedOriginalString", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsWellFormedUriString(
+        uriString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        uriKind: crate::System::UriKind,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsWellFormedUriString", (uriString, uriKind))?;
         Ok(__cordl_ret.into())
     }
     pub fn New_Il2CppString0(
@@ -670,6 +861,29 @@ impl crate::System::Uri {
             .invoke("ParseRemaining", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn ParseScheme(
+        uriString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        flags: quest_hook::libil2cpp::ByRefMut<crate::System::Uri_Flags>,
+        syntax: quest_hook::libil2cpp::ByRefMut<*mut crate::System::UriParser>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::ParsingError> {
+        let __cordl_ret: crate::System::ParsingError = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ParseScheme", (uriString, flags, syntax))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ParseSchemeCheckImplicitFile(
+        uriString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        length: u16,
+        err: quest_hook::libil2cpp::ByRefMut<crate::System::ParsingError>,
+        flags: quest_hook::libil2cpp::ByRefMut<crate::System::Uri_Flags>,
+        syntax: quest_hook::libil2cpp::ByRefMut<*mut crate::System::UriParser>,
+    ) -> quest_hook::libil2cpp::Result<u16> {
+        let __cordl_ret: u16 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ParseSchemeCheckImplicitFile",
+                (uriString, length, err, flags, syntax),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn PrivateParseMinimal(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::ParsingError> {
@@ -708,6 +922,22 @@ impl crate::System::Uri {
         > = __cordl_object.invoke("ReCreateParts", (parts, nonCanonical, formatAs))?;
         Ok(__cordl_ret.into())
     }
+    pub fn ResolveHelper(
+        baseUri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
+        relativeUri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
+        newUriString: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+        userEscaped: quest_hook::libil2cpp::ByRefMut<bool>,
+        e: quest_hook::libil2cpp::ByRefMut<*mut crate::System::UriFormatException>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Uri>> {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Uri> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ResolveHelper",
+                (baseUri, relativeUri, newUriString, userEscaped, e),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn SetUserDrivenParsing(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -716,6 +946,42 @@ impl crate::System::Uri {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetUserDrivenParsing", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StaticInFact(
+        allFlags: crate::System::Uri_Flags,
+        checkFlags: crate::System::Uri_Flags,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StaticInFact", (allFlags, checkFlags))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StaticIsFile(
+        syntax: quest_hook::libil2cpp::Gc<crate::System::UriParser>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StaticIsFile", (syntax))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StaticNotAny(
+        allFlags: crate::System::Uri_Flags,
+        checkFlags: crate::System::Uri_Flags,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StaticNotAny", (allFlags, checkFlags))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StripBidiControlCharacter(
+        strToClean: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        start: i32,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StripBidiControlCharacter", (strToClean, start, length))?;
         Ok(__cordl_ret.into())
     }
     pub fn System_Runtime_Serialization_ISerializable_GetObjectData(
@@ -746,6 +1012,56 @@ impl crate::System::Uri {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("ToString", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryCreate_Il2CppString_UriKind0(
+        uriString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        uriKind: crate::System::UriKind,
+        result: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Uri>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryCreate", (uriString, uriKind, result))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryCreate_Uri_Il2CppString1(
+        baseUri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
+        relativeUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        result: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Uri>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryCreate", (baseUri, relativeUri, result))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryCreate_Uri_Uri2(
+        baseUri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
+        relativeUri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
+        result: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Uri>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryCreate", (baseUri, relativeUri, result))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UnescapeDataString(
+        stringToUnescape: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UnescapeDataString", (stringToUnescape))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UnescapeOnly(
+        pch: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        start: i32,
+        end: quest_hook::libil2cpp::ByRefMut<i32>,
+        ch1: char,
+        ch2: char,
+        ch3: char,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UnescapeOnly", (pch, start, end, ch1, ch2, ch3))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_Il2CppString0(
@@ -932,6 +1248,15 @@ impl crate::System::Uri {
         );
         let __cordl_ret: crate::System::Uri_Flags = __cordl_object
             .invoke("get_HostType", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_InitializeLock() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_InitializeLock", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_IsAbsoluteUri(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -1155,6 +1480,22 @@ impl crate::System::Uri {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("get_UserInfo", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        uri1: quest_hook::libil2cpp::Gc<crate::System::Uri>,
+        uri2: quest_hook::libil2cpp::Gc<crate::System::Uri>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (uri1, uri2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        uri1: quest_hook::libil2cpp::Gc<crate::System::Uri>,
+        uri2: quest_hook::libil2cpp::Gc<crate::System::Uri>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (uri1, uri2))?;
         Ok(__cordl_ret.into())
     }
 }

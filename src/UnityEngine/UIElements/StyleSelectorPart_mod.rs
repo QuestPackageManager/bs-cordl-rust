@@ -24,6 +24,33 @@ for crate::UnityEngine::UIElements::StyleSelectorPart {
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleSelectorPart")]
 impl crate::UnityEngine::UIElements::StyleSelectorPart {
+    pub fn CreateClass(
+        className: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::StyleSelectorPart,
+    > {
+        let __cordl_ret: crate::UnityEngine::UIElements::StyleSelectorPart = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateClass", (className))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateId(
+        Id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::StyleSelectorPart,
+    > {
+        let __cordl_ret: crate::UnityEngine::UIElements::StyleSelectorPart = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateId", (Id))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreatePredicate(
+        predicate: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::StyleSelectorPart,
+    > {
+        let __cordl_ret: crate::UnityEngine::UIElements::StyleSelectorPart = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreatePredicate", (predicate))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ToString(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

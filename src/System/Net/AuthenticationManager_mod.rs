@@ -23,7 +23,47 @@ impl std::ops::DerefMut for crate::System::Net::AuthenticationManager {
     }
 }
 #[cfg(feature = "System+Net+AuthenticationManager")]
-impl crate::System::Net::AuthenticationManager {}
+impl crate::System::Net::AuthenticationManager {
+    pub fn Authenticate(
+        challenge: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        request: quest_hook::libil2cpp::Gc<crate::System::Net::WebRequest>,
+        credentials: quest_hook::libil2cpp::Gc<crate::System::Net::ICredentials>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Net::Authorization>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::Authorization> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Authenticate", (challenge, request, credentials))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DoAuthenticate(
+        challenge: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        request: quest_hook::libil2cpp::Gc<crate::System::Net::WebRequest>,
+        credentials: quest_hook::libil2cpp::Gc<crate::System::Net::ICredentials>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Net::Authorization>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::Authorization> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DoAuthenticate", (challenge, request, credentials))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EnsureModules() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EnsureModules", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn PreAuthenticate(
+        request: quest_hook::libil2cpp::Gc<crate::System::Net::WebRequest>,
+        credentials: quest_hook::libil2cpp::Gc<crate::System::Net::ICredentials>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Net::Authorization>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::Authorization> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PreAuthenticate", (request, credentials))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Net+AuthenticationManager")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Net::AuthenticationManager {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

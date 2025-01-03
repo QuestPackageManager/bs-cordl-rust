@@ -27,6 +27,26 @@ impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::CIELabColor {
 }
 #[cfg(feature = "UnityEngine+ProBuilder+CIELabColor")]
 impl crate::UnityEngine::ProBuilder::CIELabColor {
+    pub fn FromRGB(
+        col: crate::UnityEngine::Color,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::CIELabColor>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::CIELabColor,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("FromRGB", (col))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromXYZ(
+        xyz: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::XYZColor>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::CIELabColor>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::CIELabColor,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("FromXYZ", (xyz))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         L: f32,
         a: f32,

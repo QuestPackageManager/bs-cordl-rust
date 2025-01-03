@@ -30,6 +30,42 @@ impl std::ops::DerefMut for crate::UnityEngine::Tilemaps::ITilemap {
 }
 #[cfg(feature = "UnityEngine+Tilemaps+ITilemap")]
 impl crate::UnityEngine::Tilemaps::ITilemap {
+    pub fn CreateInstance() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Tilemaps::ITilemap>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Tilemaps::ITilemap,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("CreateInstance", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FindAllRefreshPositions(
+        tilemap: quest_hook::libil2cpp::Gc<crate::UnityEngine::Tilemaps::ITilemap>,
+        count: i32,
+        oldTilesIntPtr: crate::System::IntPtr,
+        newTilesIntPtr: crate::System::IntPtr,
+        positionsIntPtr: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "FindAllRefreshPositions",
+                (tilemap, count, oldTilesIntPtr, newTilesIntPtr, positionsIntPtr),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetAllTileData(
+        tilemap: quest_hook::libil2cpp::Gc<crate::UnityEngine::Tilemaps::ITilemap>,
+        count: i32,
+        tilesIntPtr: crate::System::IntPtr,
+        positionsIntPtr: crate::System::IntPtr,
+        outTileDataIntPtr: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetAllTileData",
+                (tilemap, count, tilesIntPtr, positionsIntPtr, outTileDataIntPtr),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

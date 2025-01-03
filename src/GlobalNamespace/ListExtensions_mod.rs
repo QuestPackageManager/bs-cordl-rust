@@ -23,7 +23,50 @@ impl std::ops::DerefMut for crate::GlobalNamespace::ListExtensions {
     }
 }
 #[cfg(feature = "ListExtensions")]
-impl crate::GlobalNamespace::ListExtensions {}
+impl crate::GlobalNamespace::ListExtensions {
+    pub fn FindIndex<T>(
+        list: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyList_1<T>,
+        >,
+        _cordl_match: quest_hook::libil2cpp::Gc<crate::System::Predicate_1<T>>,
+    ) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FindIndex", (list, _cordl_match))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IndexOf<T>(
+        _cordl_self: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyList_1<T>,
+        >,
+        item: T,
+    ) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IndexOf", (_cordl_self, item))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InsertIntoSortedListFromEnd<T>(
+        sortedList: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<T>,
+        >,
+        newItem: T,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InsertIntoSortedListFromEnd", (sortedList, newItem))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "ListExtensions")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ListExtensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

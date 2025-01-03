@@ -23,7 +23,62 @@ impl std::ops::DerefMut for crate::GlobalNamespace::ConnectedPlayerHelpers {
     }
 }
 #[cfg(feature = "ConnectedPlayerHelpers")]
-impl crate::GlobalNamespace::ConnectedPlayerHelpers {}
+impl crate::GlobalNamespace::ConnectedPlayerHelpers {
+    pub fn HasFinishedLevel(
+        connectedPlayer: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IConnectedPlayer,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("HasFinishedLevel", (connectedPlayer))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsActive(
+        connectedPlayer: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IConnectedPlayer,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsActive", (connectedPlayer))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsActiveOrFinished(
+        connectedPlayer: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IConnectedPlayer,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsActiveOrFinished", (connectedPlayer))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsFailed(
+        connectedPlayer: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IConnectedPlayer,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsFailed", (connectedPlayer))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WantsToPlayNextLevel(
+        connectedPlayer: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IConnectedPlayer,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WantsToPlayNextLevel", (connectedPlayer))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WasActiveAtLevelStart(
+        connectedPlayer: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IConnectedPlayer,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WasActiveAtLevelStart", (connectedPlayer))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "ConnectedPlayerHelpers")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ConnectedPlayerHelpers {

@@ -22,6 +22,14 @@ for crate::UnityEngine::Playables::Playable {
 }
 #[cfg(feature = "UnityEngine+Playables+Playable")]
 impl crate::UnityEngine::Playables::Playable {
+    pub fn Create(
+        graph: crate::UnityEngine::Playables::PlayableGraph,
+        inputCount: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::Playable> {
+        let __cordl_ret: crate::UnityEngine::Playables::Playable = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (graph, inputCount))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Equals(
         &mut self,
         other: crate::UnityEngine::Playables::Playable,
@@ -74,6 +82,13 @@ impl crate::UnityEngine::Playables::Playable {
             ".ctor",
             (handle),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Null() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Playables::Playable,
+    > {
+        let __cordl_ret: crate::UnityEngine::Playables::Playable = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_Null", ())?;
         Ok(__cordl_ret.into())
     }
 }

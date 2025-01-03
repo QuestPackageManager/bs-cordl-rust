@@ -55,6 +55,31 @@ impl crate::System::Linq::Expressions::Interpreter::NullableMethodCallInstructio
         feature = "System+Linq+Expressions+Interpreter+NullableMethodCallInstruction+ToStringClass"
     )]
     pub type ToStringClass = crate::GlobalNamespace::NullableMethodCallInstruction_ToStringClass;
+    pub fn Create(
+        method: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        argCount: i32,
+        mi: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::Instruction,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::Instruction,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (method, argCount, mi))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateGetValue() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::Instruction,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::Instruction,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("CreateGetValue", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

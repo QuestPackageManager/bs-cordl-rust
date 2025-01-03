@@ -32,6 +32,23 @@ impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_ParameterModifier {
 impl crate::HoudiniEngineUnity::HEU_ParameterModifier {
     #[cfg(feature = "HoudiniEngineUnity+HEU_ParameterModifier+ModifierAction")]
     pub type ModifierAction = crate::HoudiniEngineUnity::HEU_ParameterModifier_ModifierAction;
+    pub fn GetNewModifier(
+        action: crate::HoudiniEngineUnity::HEU_ParameterModifier_ModifierAction,
+        parameterIndex: i32,
+        instanceIndex: i32,
+        modifierValue: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_ParameterModifier>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_ParameterModifier,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetNewModifier",
+                (action, parameterIndex, instanceIndex, modifierValue),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn IsEquivalentTo(
         &mut self,
         other: quest_hook::libil2cpp::Gc<

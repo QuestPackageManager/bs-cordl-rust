@@ -28,6 +28,18 @@ for crate::Org::BouncyCastle::Asn1::IsisMtt::X509::AdditionalInformationSyntax {
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+X509+AdditionalInformationSyntax")]
 impl crate::Org::BouncyCastle::Asn1::IsisMtt::X509::AdditionalInformationSyntax {
+    pub fn GetInstance(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::IsisMtt::X509::AdditionalInformationSyntax,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::IsisMtt::X509::AdditionalInformationSyntax,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_DirectoryString0(
         information: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X500::DirectoryString,

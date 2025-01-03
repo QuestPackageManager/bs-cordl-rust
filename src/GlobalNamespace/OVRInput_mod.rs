@@ -500,6 +500,615 @@ impl crate::GlobalNamespace::OVRInput {
     pub type RawTouch = crate::GlobalNamespace::OVRInput_RawTouch;
     #[cfg(feature = "OVRInput+Touch")]
     pub type Touch = crate::GlobalNamespace::OVRInput_Touch;
+    pub fn AreHandPosesGeneratedByControllerData(
+        stepId: crate::GlobalNamespace::OVRPlugin_Step,
+        hand: crate::GlobalNamespace::OVRInput_Hand,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AreHandPosesGeneratedByControllerData", (stepId, hand))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CalculateAbsMax_Vector2_Vector2_0(
+        a: crate::UnityEngine::Vector2,
+        b: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CalculateAbsMax", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CalculateAbsMax_f32_f32_1(
+        a: f32,
+        b: f32,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CalculateAbsMax", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CalculateDeadzone_Vector2_0(
+        a: crate::UnityEngine::Vector2,
+        deadzone: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CalculateDeadzone", (a, deadzone))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CalculateDeadzone_f32_1(
+        a: f32,
+        deadzone: f32,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CalculateDeadzone", (a, deadzone))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DisableSimultaneousHandsAndControllers() -> quest_hook::libil2cpp::Result<
+        bool,
+    > {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DisableSimultaneousHandsAndControllers", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EnableSimultaneousHandsAndControllers() -> quest_hook::libil2cpp::Result<
+        bool,
+    > {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EnableSimultaneousHandsAndControllers", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FixedUpdate() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FixedUpdate", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetActiveController() -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::OVRInput_Controller,
+    > {
+        let __cordl_ret: crate::GlobalNamespace::OVRInput_Controller = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetActiveController", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetActiveControllerForHand(
+        handedness: crate::GlobalNamespace::OVRInput_Handedness,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRInput_Controller> {
+        let __cordl_ret: crate::GlobalNamespace::OVRInput_Controller = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetActiveControllerForHand", (handedness))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetConnectedControllers() -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::OVRInput_Controller,
+    > {
+        let __cordl_ret: crate::GlobalNamespace::OVRInput_Controller = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetConnectedControllers", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetControllerBatteryPercentRemaining(
+        controllerMask: crate::GlobalNamespace::OVRInput_Controller,
+    ) -> quest_hook::libil2cpp::Result<u8> {
+        let __cordl_ret: u8 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetControllerBatteryPercentRemaining", (controllerMask))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetControllerIsInHandState(
+        hand: crate::GlobalNamespace::OVRInput_Hand,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::OVRInput_ControllerInHandState,
+    > {
+        let __cordl_ret: crate::GlobalNamespace::OVRInput_ControllerInHandState = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetControllerIsInHandState", (hand))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetControllerOrientationTracked(
+        controllerType: crate::GlobalNamespace::OVRInput_Controller,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetControllerOrientationTracked", (controllerType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetControllerOrientationValid(
+        controllerType: crate::GlobalNamespace::OVRInput_Controller,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetControllerOrientationValid", (controllerType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetControllerPositionTracked(
+        controllerType: crate::GlobalNamespace::OVRInput_Controller,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetControllerPositionTracked", (controllerType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetControllerPositionValid(
+        controllerType: crate::GlobalNamespace::OVRInput_Controller,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetControllerPositionValid", (controllerType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetControllerSampleRateHz(
+        controllerMask: crate::GlobalNamespace::OVRInput_Controller,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetControllerSampleRateHz", (controllerMask))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCurrentInteractionProfile(
+        hand: crate::GlobalNamespace::OVRInput_Hand,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::OVRInput_InteractionProfile,
+    > {
+        let __cordl_ret: crate::GlobalNamespace::OVRInput_InteractionProfile = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCurrentInteractionProfile", (hand))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetDominantHand() -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::OVRInput_Handedness,
+    > {
+        let __cordl_ret: crate::GlobalNamespace::OVRInput_Handedness = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetDominantHand", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetDown_OVRInput_Button0(
+        virtualMask: crate::GlobalNamespace::OVRInput_Button,
+        controllerMask: crate::GlobalNamespace::OVRInput_Controller,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetDown", (virtualMask, controllerMask))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetDown_OVRInput_NearTouch4(
+        virtualMask: crate::GlobalNamespace::OVRInput_NearTouch,
+        controllerMask: crate::GlobalNamespace::OVRInput_Controller,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetDown", (virtualMask, controllerMask))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetDown_OVRInput_RawButton1(
+        rawMask: crate::GlobalNamespace::OVRInput_RawButton,
+        controllerMask: crate::GlobalNamespace::OVRInput_Controller,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetDown", (rawMask, controllerMask))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetDown_OVRInput_RawNearTouch5(
+        rawMask: crate::GlobalNamespace::OVRInput_RawNearTouch,
+        controllerMask: crate::GlobalNamespace::OVRInput_Controller,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetDown", (rawMask, controllerMask))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetDown_OVRInput_RawTouch3(
+        rawMask: crate::GlobalNamespace::OVRInput_RawTouch,
+        controllerMask: crate::GlobalNamespace::OVRInput_Controller,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetDown", (rawMask, controllerMask))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetDown_OVRInput_Touch2(
+        virtualMask: crate::GlobalNamespace::OVRInput_Touch,
+        controllerMask: crate::GlobalNamespace::OVRInput_Controller,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetDown", (virtualMask, controllerMask))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetLocalControllerAcceleration(
+        controllerType: crate::GlobalNamespace::OVRInput_Controller,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetLocalControllerAcceleration", (controllerType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetLocalControllerAngularAcceleration(
+        controllerType: crate::GlobalNamespace::OVRInput_Controller,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetLocalControllerAngularAcceleration", (controllerType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetLocalControllerAngularVelocity(
+        controllerType: crate::GlobalNamespace::OVRInput_Controller,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetLocalControllerAngularVelocity", (controllerType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetLocalControllerPosition(
+        controllerType: crate::GlobalNamespace::OVRInput_Controller,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetLocalControllerPosition", (controllerType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetLocalControllerRotation(
+        controllerType: crate::GlobalNamespace::OVRInput_Controller,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
+        let __cordl_ret: crate::UnityEngine::Quaternion = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetLocalControllerRotation", (controllerType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetLocalControllerStatesWithoutPrediction(
+        controllerType: crate::GlobalNamespace::OVRInput_Controller,
+        position: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+        rotation: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Quaternion>,
+        velocity: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+        angularVelocity: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetLocalControllerStatesWithoutPrediction",
+                (controllerType, position, rotation, velocity, angularVelocity),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetLocalControllerVelocity(
+        controllerType: crate::GlobalNamespace::OVRInput_Controller,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetLocalControllerVelocity", (controllerType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetOpenVRStringProperty(
+        prop: crate::OVR::OpenVR::ETrackedDeviceProperty,
+        deviceId: u32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetOpenVRStringProperty", (prop, deviceId))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetResolvedAxis1D(
+        virtualMask: crate::GlobalNamespace::OVRInput_Axis1D,
+        rawMask: crate::GlobalNamespace::OVRInput_RawAxis1D,
+        controllerMask: crate::GlobalNamespace::OVRInput_Controller,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetResolvedAxis1D", (virtualMask, rawMask, controllerMask))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetResolvedAxis2D(
+        virtualMask: crate::GlobalNamespace::OVRInput_Axis2D,
+        rawMask: crate::GlobalNamespace::OVRInput_RawAxis2D,
+        controllerMask: crate::GlobalNamespace::OVRInput_Controller,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetResolvedAxis2D", (virtualMask, rawMask, controllerMask))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetResolvedButton(
+        virtualMask: crate::GlobalNamespace::OVRInput_Button,
+        rawMask: crate::GlobalNamespace::OVRInput_RawButton,
+        controllerMask: crate::GlobalNamespace::OVRInput_Controller,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetResolvedButton", (virtualMask, rawMask, controllerMask))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetResolvedButtonDown(
+        virtualMask: crate::GlobalNamespace::OVRInput_Button,
+        rawMask: crate::GlobalNamespace::OVRInput_RawButton,
+        controllerMask: crate::GlobalNamespace::OVRInput_Controller,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetResolvedButtonDown", (virtualMask, rawMask, controllerMask))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetResolvedButtonUp(
+        virtualMask: crate::GlobalNamespace::OVRInput_Button,
+        rawMask: crate::GlobalNamespace::OVRInput_RawButton,
+        controllerMask: crate::GlobalNamespace::OVRInput_Controller,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetResolvedButtonUp", (virtualMask, rawMask, controllerMask))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetResolvedNearTouch(
+        virtualMask: crate::GlobalNamespace::OVRInput_NearTouch,
+        rawMask: crate::GlobalNamespace::OVRInput_RawNearTouch,
+        controllerMask: crate::GlobalNamespace::OVRInput_Controller,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetResolvedNearTouch", (virtualMask, rawMask, controllerMask))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetResolvedNearTouchDown(
+        virtualMask: crate::GlobalNamespace::OVRInput_NearTouch,
+        rawMask: crate::GlobalNamespace::OVRInput_RawNearTouch,
+        controllerMask: crate::GlobalNamespace::OVRInput_Controller,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetResolvedNearTouchDown", (virtualMask, rawMask, controllerMask))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetResolvedNearTouchUp(
+        virtualMask: crate::GlobalNamespace::OVRInput_NearTouch,
+        rawMask: crate::GlobalNamespace::OVRInput_RawNearTouch,
+        controllerMask: crate::GlobalNamespace::OVRInput_Controller,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetResolvedNearTouchUp", (virtualMask, rawMask, controllerMask))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetResolvedTouch(
+        virtualMask: crate::GlobalNamespace::OVRInput_Touch,
+        rawMask: crate::GlobalNamespace::OVRInput_RawTouch,
+        controllerMask: crate::GlobalNamespace::OVRInput_Controller,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetResolvedTouch", (virtualMask, rawMask, controllerMask))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetResolvedTouchDown(
+        virtualMask: crate::GlobalNamespace::OVRInput_Touch,
+        rawMask: crate::GlobalNamespace::OVRInput_RawTouch,
+        controllerMask: crate::GlobalNamespace::OVRInput_Controller,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetResolvedTouchDown", (virtualMask, rawMask, controllerMask))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetResolvedTouchUp(
+        virtualMask: crate::GlobalNamespace::OVRInput_Touch,
+        rawMask: crate::GlobalNamespace::OVRInput_RawTouch,
+        controllerMask: crate::GlobalNamespace::OVRInput_Controller,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetResolvedTouchUp", (virtualMask, rawMask, controllerMask))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetUp_OVRInput_Button0(
+        virtualMask: crate::GlobalNamespace::OVRInput_Button,
+        controllerMask: crate::GlobalNamespace::OVRInput_Controller,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetUp", (virtualMask, controllerMask))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetUp_OVRInput_NearTouch4(
+        virtualMask: crate::GlobalNamespace::OVRInput_NearTouch,
+        controllerMask: crate::GlobalNamespace::OVRInput_Controller,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetUp", (virtualMask, controllerMask))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetUp_OVRInput_RawButton1(
+        rawMask: crate::GlobalNamespace::OVRInput_RawButton,
+        controllerMask: crate::GlobalNamespace::OVRInput_Controller,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetUp", (rawMask, controllerMask))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetUp_OVRInput_RawNearTouch5(
+        rawMask: crate::GlobalNamespace::OVRInput_RawNearTouch,
+        controllerMask: crate::GlobalNamespace::OVRInput_Controller,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetUp", (rawMask, controllerMask))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetUp_OVRInput_RawTouch3(
+        rawMask: crate::GlobalNamespace::OVRInput_RawTouch,
+        controllerMask: crate::GlobalNamespace::OVRInput_Controller,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetUp", (rawMask, controllerMask))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetUp_OVRInput_Touch2(
+        virtualMask: crate::GlobalNamespace::OVRInput_Touch,
+        controllerMask: crate::GlobalNamespace::OVRInput_Controller,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetUp", (virtualMask, controllerMask))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Get_OVRInput_Axis1D6(
+        virtualMask: crate::GlobalNamespace::OVRInput_Axis1D,
+        controllerMask: crate::GlobalNamespace::OVRInput_Controller,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Get", (virtualMask, controllerMask))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Get_OVRInput_Axis2D8(
+        virtualMask: crate::GlobalNamespace::OVRInput_Axis2D,
+        controllerMask: crate::GlobalNamespace::OVRInput_Controller,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Get", (virtualMask, controllerMask))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Get_OVRInput_Button0(
+        virtualMask: crate::GlobalNamespace::OVRInput_Button,
+        controllerMask: crate::GlobalNamespace::OVRInput_Controller,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Get", (virtualMask, controllerMask))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Get_OVRInput_NearTouch4(
+        virtualMask: crate::GlobalNamespace::OVRInput_NearTouch,
+        controllerMask: crate::GlobalNamespace::OVRInput_Controller,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Get", (virtualMask, controllerMask))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Get_OVRInput_RawAxis1D7(
+        rawMask: crate::GlobalNamespace::OVRInput_RawAxis1D,
+        controllerMask: crate::GlobalNamespace::OVRInput_Controller,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Get", (rawMask, controllerMask))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Get_OVRInput_RawAxis2D9(
+        rawMask: crate::GlobalNamespace::OVRInput_RawAxis2D,
+        controllerMask: crate::GlobalNamespace::OVRInput_Controller,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Get", (rawMask, controllerMask))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Get_OVRInput_RawButton1(
+        rawMask: crate::GlobalNamespace::OVRInput_RawButton,
+        controllerMask: crate::GlobalNamespace::OVRInput_Controller,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Get", (rawMask, controllerMask))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Get_OVRInput_RawNearTouch5(
+        rawMask: crate::GlobalNamespace::OVRInput_RawNearTouch,
+        controllerMask: crate::GlobalNamespace::OVRInput_Controller,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Get", (rawMask, controllerMask))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Get_OVRInput_RawTouch3(
+        rawMask: crate::GlobalNamespace::OVRInput_RawTouch,
+        controllerMask: crate::GlobalNamespace::OVRInput_Controller,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Get", (rawMask, controllerMask))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Get_OVRInput_Touch2(
+        virtualMask: crate::GlobalNamespace::OVRInput_Touch,
+        controllerMask: crate::GlobalNamespace::OVRInput_Controller,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Get", (virtualMask, controllerMask))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InitHapticInfo() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InitHapticInfo", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsControllerConnected(
+        controller: crate::GlobalNamespace::OVRInput_Controller,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsControllerConnected", (controller))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsValidOpenVRDevice(deviceId: u32) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsValidOpenVRDevice", (deviceId))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn PlayHapticImpulse(
+        amplitude: f32,
+        deviceNode: crate::UnityEngine::XR::XRNode,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PlayHapticImpulse", (amplitude, deviceNode))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetControllerHapticsAmplitudeEnvelope(
+        hapticsVibration: crate::GlobalNamespace::OVRInput_HapticsAmplitudeEnvelopeVibration,
+        controllerMask: crate::GlobalNamespace::OVRInput_Controller,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "SetControllerHapticsAmplitudeEnvelope",
+                (hapticsVibration, controllerMask),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetControllerHapticsPcm(
+        hapticsVibration: crate::GlobalNamespace::OVRInput_HapticsPcmVibration,
+        controllerMask: crate::GlobalNamespace::OVRInput_Controller,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetControllerHapticsPcm", (hapticsVibration, controllerMask))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetControllerLocalizedVibration(
+        hapticsLocationMask: crate::GlobalNamespace::OVRInput_HapticsLocation,
+        frequency: f32,
+        amplitude: f32,
+        controllerMask: crate::GlobalNamespace::OVRInput_Controller,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "SetControllerLocalizedVibration",
+                (hapticsLocationMask, frequency, amplitude, controllerMask),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetControllerVibration(
+        frequency: f32,
+        amplitude: f32,
+        controllerMask: crate::GlobalNamespace::OVRInput_Controller,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetControllerVibration", (frequency, amplitude, controllerMask))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetOpenVRLocalPose(
+        leftPos: crate::UnityEngine::Vector3,
+        rightPos: crate::UnityEngine::Vector3,
+        leftRot: crate::UnityEngine::Quaternion,
+        rightRot: crate::UnityEngine::Quaternion,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetOpenVRLocalPose", (leftPos, rightPos, leftRot, rightRot))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ShouldResolveController(
+        controllerType: crate::GlobalNamespace::OVRInput_Controller,
+        controllerMask: crate::GlobalNamespace::OVRInput_Controller,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ShouldResolveController", (controllerType, controllerMask))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StartVibration(
+        amplitude: f32,
+        duration: f32,
+        controllerNode: crate::UnityEngine::XR::XRNode,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StartVibration", (amplitude, duration, controllerNode))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Update() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Update", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UpdateXRControllerHaptics() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UpdateXRControllerHaptics", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UpdateXRControllerNodeIds() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UpdateXRControllerNodeIds", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_pluginSupportsActiveController() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_pluginSupportsActiveController", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "OVRInput")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRInput {

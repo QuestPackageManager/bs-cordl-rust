@@ -221,6 +221,13 @@ impl crate::System::Xml::XmlNode {
         > = __cordl_object.invoke("GetPrefixOfNamespaceStrict", (namespaceURI))?;
         Ok(__cordl_ret.into())
     }
+    pub fn HasReadOnlyParent(
+        n: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("HasReadOnlyParent", (n))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn InsertAfter(
         &mut self,
         newChild: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode>,
@@ -258,6 +265,14 @@ impl crate::System::Xml::XmlNode {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("IsValidChildType", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn NestTextNodes(
+        prevNode: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode>,
+        nextNode: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("NestTextNodes", (prevNode, nextNode))?;
         Ok(__cordl_ret.into())
     }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -334,6 +349,19 @@ impl crate::System::Xml::XmlNode {
             .invoke("SetParentForLoad", (node))?;
         Ok(__cordl_ret.into())
     }
+    pub fn SplitName(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        prefix: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+        localName: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SplitName", (name, prefix, localName))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn System_Collections_IEnumerable_GetEnumerator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -358,6 +386,14 @@ impl crate::System::Xml::XmlNode {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
         > = __cordl_object.invoke("System.ICloneable.Clone", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UnnestTextNodes(
+        prevNode: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode>,
+        nextNode: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UnnestTextNodes", (prevNode, nextNode))?;
         Ok(__cordl_ret.into())
     }
     pub fn WriteContentTo(

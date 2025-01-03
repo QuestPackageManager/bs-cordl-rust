@@ -53,6 +53,15 @@ impl crate::UnityEngine::UIElements::StylePropertyName {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn StylePropertyIdFromString(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+    > {
+        let __cordl_ret: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StylePropertyIdFromString", (name))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ToString(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -105,6 +114,31 @@ impl crate::UnityEngine::UIElements::StylePropertyName {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_name", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        lhs: crate::UnityEngine::UIElements::StylePropertyName,
+        rhs: crate::UnityEngine::UIElements::StylePropertyName,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::StylePropertyName,
+    > {
+        let __cordl_ret: crate::UnityEngine::UIElements::StylePropertyName = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (name))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        lhs: crate::UnityEngine::UIElements::StylePropertyName,
+        rhs: crate::UnityEngine::UIElements::StylePropertyName,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (lhs, rhs))?;
         Ok(__cordl_ret.into())
     }
 }

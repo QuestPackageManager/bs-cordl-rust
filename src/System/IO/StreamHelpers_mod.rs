@@ -23,7 +23,17 @@ impl std::ops::DerefMut for crate::System::IO::StreamHelpers {
     }
 }
 #[cfg(feature = "System+IO+StreamHelpers")]
-impl crate::System::IO::StreamHelpers {}
+impl crate::System::IO::StreamHelpers {
+    pub fn ValidateCopyToArgs(
+        source: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+        destination: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+        bufferSize: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ValidateCopyToArgs", (source, destination, bufferSize))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+IO+StreamHelpers")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::IO::StreamHelpers {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -30,6 +30,21 @@ for crate::Org::BouncyCastle::Cms::KeyAgreeRecipientInfoGenerator {
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+KeyAgreeRecipientInfoGenerator")]
 impl crate::Org::BouncyCastle::Cms::KeyAgreeRecipientInfoGenerator {
+    pub fn CreateOriginatorPublicKey(
+        publicKey: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cms::OriginatorPublicKey,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cms::OriginatorPublicKey,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateOriginatorPublicKey", (publicKey))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Generate(
         &mut self,
         contentEncryptionKey: quest_hook::libil2cpp::Gc<

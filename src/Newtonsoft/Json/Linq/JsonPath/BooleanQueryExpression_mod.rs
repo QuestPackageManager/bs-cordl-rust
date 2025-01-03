@@ -29,6 +29,22 @@ for crate::Newtonsoft::Json::Linq::JsonPath::BooleanQueryExpression {
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+BooleanQueryExpression")]
 impl crate::Newtonsoft::Json::Linq::JsonPath::BooleanQueryExpression {
+    pub fn EqualsWithStrictMatch(
+        value: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
+        queryValue: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EqualsWithStrictMatch", (value, queryValue))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EqualsWithStringCoercion(
+        value: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
+        queryValue: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EqualsWithStringCoercion", (value, queryValue))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetResult(
         &mut self,
         root: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
@@ -90,6 +106,17 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::BooleanQueryExpression {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (_cordl_operator, left, right))?;
         Ok(__cordl_object.into())
+    }
+    pub fn RegexEquals(
+        input: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
+        pattern: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
+        settings: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Linq::JsonSelectSettings,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RegexEquals", (input, pattern, settings))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,

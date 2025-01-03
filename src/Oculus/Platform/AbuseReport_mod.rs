@@ -23,7 +23,28 @@ impl std::ops::DerefMut for crate::Oculus::Platform::AbuseReport {
     }
 }
 #[cfg(feature = "Oculus+Platform+AbuseReport")]
-impl crate::Oculus::Platform::AbuseReport {}
+impl crate::Oculus::Platform::AbuseReport {
+    pub fn ReportRequestHandled(
+        response: crate::Oculus::Platform::ReportRequestResponse,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReportRequestHandled", (response))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetReportButtonPressedNotificationCallback(
+        callback: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Message_1_Callback<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetReportButtonPressedNotificationCallback", (callback))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "Oculus+Platform+AbuseReport")]
 impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Platform::AbuseReport {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

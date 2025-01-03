@@ -38,6 +38,13 @@ impl crate::System::Threading::SemaphoreSlim {
         feature = "System+Threading+SemaphoreSlim+_WaitUntilCountOrTimeoutAsync_d__32"
     )]
     pub type _WaitUntilCountOrTimeoutAsync_d__32 = crate::System::Threading::SemaphoreSlim__WaitUntilCountOrTimeoutAsync_d__32;
+    pub fn CancellationTokenCanceledEventHandler(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CancellationTokenCanceledEventHandler", (obj))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CheckDispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -82,6 +89,17 @@ impl crate::System::Threading::SemaphoreSlim {
             .invoke("Dispose", (disposing))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetResourceString(
+        str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetResourceString", (str))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_i32_0(
         initialCount: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -100,6 +118,15 @@ impl crate::System::Threading::SemaphoreSlim {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (initialCount, maxCount))?;
         Ok(__cordl_object.into())
+    }
+    pub fn QueueWaiterTask(
+        waiterTask: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::SemaphoreSlim_TaskNode,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("QueueWaiterTask", (waiterTask))?;
+        Ok(__cordl_ret.into())
     }
     pub fn Release_0(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

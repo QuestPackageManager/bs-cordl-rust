@@ -30,12 +30,39 @@ impl crate::GlobalNamespace::OVRResources {
     pub type __c__DisplayClass3_0_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::OVRResources___c__DisplayClass3_0_1<
         T,
     >;
+    pub fn Load_Il2CppString0(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Load", (path))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Load_Il2CppString1<T>(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Load", (path))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
+    }
+    pub fn SetResourceBundle(
+        bundle: quest_hook::libil2cpp::Gc<crate::UnityEngine::AssetBundle>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetResourceBundle", (bundle))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,

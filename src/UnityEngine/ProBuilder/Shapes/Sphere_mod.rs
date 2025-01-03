@@ -58,6 +58,22 @@ impl crate::UnityEngine::ProBuilder::Shapes::Sphere {
             .invoke("RebuildMesh", (mesh, _cordl_size, rotation))?;
         Ok(__cordl_ret.into())
     }
+    pub fn SubdivideIcosahedron(
+        vertices: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+        >,
+        radius: f32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SubdivideIcosahedron", (vertices, radius))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn UpdateBounds(
         &mut self,
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,

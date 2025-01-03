@@ -25,6 +25,21 @@ impl std::ops::DerefMut for crate::UnityEngine::Timeline::PrefabControlPlayable 
 }
 #[cfg(feature = "UnityEngine+Timeline+PrefabControlPlayable")]
 impl crate::UnityEngine::Timeline::PrefabControlPlayable {
+    pub fn Create(
+        graph: crate::UnityEngine::Playables::PlayableGraph,
+        prefabGameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        parentTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Playables::ScriptPlayable_1<
+            *mut crate::UnityEngine::Timeline::PrefabControlPlayable,
+        >,
+    > {
+        let __cordl_ret: crate::UnityEngine::Playables::ScriptPlayable_1<
+            *mut crate::UnityEngine::Timeline::PrefabControlPlayable,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (graph, prefabGameObject, parentTransform))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Initialize(
         &mut self,
         prefabGameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -79,6 +94,13 @@ impl crate::UnityEngine::Timeline::PrefabControlPlayable {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnPlayableDestroy", (playable))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetHideFlagsRecursive(
+        gameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetHideFlagsRecursive", (gameObject))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

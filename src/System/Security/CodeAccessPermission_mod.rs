@@ -24,6 +24,16 @@ impl std::ops::DerefMut for crate::System::Security::CodeAccessPermission {
 }
 #[cfg(feature = "System+Security+CodeAccessPermission")]
 impl crate::System::Security::CodeAccessPermission {
+    pub fn CheckPermissionState(
+        state: crate::System::Security::Permissions::PermissionState,
+        allowUnrestricted: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Security::Permissions::PermissionState,
+    > {
+        let __cordl_ret: crate::System::Security::Permissions::PermissionState = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckPermissionState", (state, allowUnrestricted))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Demand(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -44,6 +44,13 @@ impl crate::HoudiniEngineUnity::HEU_PluginStorage {
     pub type StoreDataArray_1<T: quest_hook::libil2cpp::Type> = crate::HoudiniEngineUnity::HEU_PluginStorage_StoreDataArray_1<
         T,
     >;
+    pub fn ClearPluginData() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ClearPluginData", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ConvertEnvKeyedPathToReal(
         &mut self,
         inPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -70,6 +77,13 @@ impl crate::HoudiniEngineUnity::HEU_PluginStorage {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("ConvertRealPathToEnvKeyedPath", (inPath))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DeleteAllSavedSessionData() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DeleteAllSavedSessionData", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn GetEnvironmentPathMap(
@@ -192,6 +206,28 @@ impl crate::HoudiniEngineUnity::HEU_PluginStorage {
             .invoke("Get", (key, value, defaultValue))?;
         Ok(__cordl_ret.into())
     }
+    pub fn InstantiateAndLoad() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InstantiateAndLoad", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LoadAllSessionData() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::HoudiniEngineUnity::HEU_SessionData,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::HoudiniEngineUnity::HEU_SessionData,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LoadAllSessionData", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn LoadAssetEnvironmentPaths(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -200,6 +236,13 @@ impl crate::HoudiniEngineUnity::HEU_PluginStorage {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("LoadAssetEnvironmentPaths", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LoadFromSavedFile() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LoadFromSavedFile", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn LoadPluginData(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -233,11 +276,45 @@ impl crate::HoudiniEngineUnity::HEU_PluginStorage {
         let __cordl_ret: bool = __cordl_object.invoke("ReadFromEditorPrefs", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn SaveAllSessionData(
+        allSessions: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::HoudiniEngineUnity::HEU_SessionBase,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SaveAllSessionData", (allSessions))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SaveIfRequired() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SaveIfRequired", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn SavePluginData(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("SavePluginData", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SessionFilePath() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SessionFilePath", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetCurrentCulture(
+        useInvariant: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetCurrentCulture", (useInvariant))?;
         Ok(__cordl_ret.into())
     }
     pub fn Set_Il2CppString4(
@@ -317,6 +394,15 @@ impl crate::HoudiniEngineUnity::HEU_PluginStorage {
             .invoke("Set", (key, value))?;
         Ok(__cordl_ret.into())
     }
+    pub fn SettingsFilePath() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SettingsFilePath", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -325,6 +411,14 @@ impl crate::HoudiniEngineUnity::HEU_PluginStorage {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Instance() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_PluginStorage>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_PluginStorage,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_Instance", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_RequiresSave(&mut self) -> quest_hook::libil2cpp::Result<bool> {

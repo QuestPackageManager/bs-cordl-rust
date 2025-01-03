@@ -45,6 +45,47 @@ impl crate::System::Xml::Schema::XmlSchemaComplexType {
             .invoke("ClearCompiledState", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn CloneAttributes(
+        attributes: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaObjectCollection,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaObjectCollection>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaObjectCollection,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CloneAttributes", (attributes))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CloneGroupBaseParticles(
+        groupBaseParticles: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaObjectCollection,
+        >,
+        parentSchema: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaObjectCollection>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaObjectCollection,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CloneGroupBaseParticles", (groupBaseParticles, parentSchema))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CloneParticle(
+        particle: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaParticle,
+        >,
+        parentSchema: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaParticle>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaParticle,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CloneParticle", (particle, parentSchema))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Clone_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -80,6 +121,44 @@ impl crate::System::Xml::Schema::XmlSchemaComplexType {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("ContainsIdAttribute", (findAll))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateAnyType(
+        processContents: crate::System::Xml::Schema::XmlSchemaContentProcessing,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaComplexType>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaComplexType,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateAnyType", (processContents))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetResolvedElementForm(
+        parentSchema: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
+        element: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaElement>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::Schema::XmlSchemaForm> {
+        let __cordl_ret: crate::System::Xml::Schema::XmlSchemaForm = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetResolvedElementForm", (parentSchema, element))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn HasAttributeQNameRef(
+        attributes: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaObjectCollection,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("HasAttributeQNameRef", (attributes))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn HasParticleRef(
+        particle: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaParticle,
+        >,
+        parentSchema: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("HasParticleRef", (particle, parentSchema))?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -158,6 +237,23 @@ impl crate::System::Xml::Schema::XmlSchemaComplexType {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlSchemaAnyAttribute,
         > = __cordl_object.invoke("get_AnyAttribute", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_AnyType() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaComplexType>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaComplexType,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_AnyType", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_AnyTypeContentValidator() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::ContentValidator>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::ContentValidator,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_AnyTypeContentValidator", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_AttributeUses(
@@ -299,6 +395,15 @@ impl crate::System::Xml::Schema::XmlSchemaComplexType {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlSchemaParticle,
         > = __cordl_object.invoke("get_Particle", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_UntypedAnyType() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaComplexType>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaComplexType,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_UntypedAnyType", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn set_AnyAttribute(

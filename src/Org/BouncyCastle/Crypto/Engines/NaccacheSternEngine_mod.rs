@@ -135,6 +135,18 @@ impl crate::Org::BouncyCastle::Crypto::Engines::NaccacheSternEngine {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn chineseRemainder(
+        congruences: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+        primes: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::BigInteger,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("chineseRemainder", (congruences, primes))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_AlgorithmName(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

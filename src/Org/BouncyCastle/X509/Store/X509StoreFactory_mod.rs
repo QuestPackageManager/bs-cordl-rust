@@ -24,6 +24,20 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::X509::Store::X509StoreFact
 }
 #[cfg(feature = "Org+BouncyCastle+X509+Store+X509StoreFactory")]
 impl crate::Org::BouncyCastle::X509::Store::X509StoreFactory {
+    pub fn Create(
+        _cordl_type: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        parameters: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::X509::Store::IX509StoreParameters,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::Store::IX509Store>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::X509::Store::IX509Store,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (_cordl_type, parameters))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -39,6 +53,14 @@ impl crate::Org::BouncyCastle::X509::Store::X509StoreFactory {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn checkCorrectType(
+        coll: quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
+        t: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("checkCorrectType", (coll, t))?;
         Ok(__cordl_ret.into())
     }
 }

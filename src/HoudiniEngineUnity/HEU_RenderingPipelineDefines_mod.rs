@@ -24,12 +24,65 @@ impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_RenderingPipelineDefi
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_RenderingPipelineDefines")]
 impl crate::HoudiniEngineUnity::HEU_RenderingPipelineDefines {
+    pub fn AddDefine(
+        define: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddDefine", (define))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetDefines() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetDefines", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPipeline() -> quest_hook::libil2cpp::Result<
+        crate::HoudiniEngineUnity::HEU_PipelineType,
+    > {
+        let __cordl_ret: crate::HoudiniEngineUnity::HEU_PipelineType = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPipeline", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
+    }
+    pub fn RemoveDefine(
+        define: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RemoveDefine", (define))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetDefines(
+        definesList: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetDefines", (definesList))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UpdateDefines() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UpdateDefines", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,

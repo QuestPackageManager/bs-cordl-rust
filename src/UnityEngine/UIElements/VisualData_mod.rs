@@ -90,6 +90,14 @@ impl crate::UnityEngine::UIElements::VisualData {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Equality(
+        lhs: crate::UnityEngine::UIElements::VisualData,
+        rhs: crate::UnityEngine::UIElements::VisualData,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualData")]
 impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::VisualData>>

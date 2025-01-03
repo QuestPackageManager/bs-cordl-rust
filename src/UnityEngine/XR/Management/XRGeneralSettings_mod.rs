@@ -29,6 +29,20 @@ impl std::ops::DerefMut for crate::UnityEngine::XR::Management::XRGeneralSetting
 }
 #[cfg(feature = "UnityEngine+XR+Management+XRGeneralSettings")]
 impl crate::UnityEngine::XR::Management::XRGeneralSettings {
+    pub fn AttemptInitializeXRSDKOnLoad() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AttemptInitializeXRSDKOnLoad", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AttemptStartXRSDKOnBeforeSplashScreen() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AttemptStartXRSDKOnBeforeSplashScreen", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -74,6 +88,11 @@ impl crate::UnityEngine::XR::Management::XRGeneralSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDestroy", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Quit() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Quit", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn Start(
@@ -134,6 +153,14 @@ impl crate::UnityEngine::XR::Management::XRGeneralSettings {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_InitManagerOnStart", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Instance() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::Management::XRGeneralSettings>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::XR::Management::XRGeneralSettings,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_Instance", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_Manager(

@@ -24,6 +24,48 @@ impl std::ops::DerefMut for crate::UnityEngine::ScriptableObject {
 }
 #[cfg(feature = "UnityEngine+ScriptableObject")]
 impl crate::UnityEngine::ScriptableObject {
+    pub fn CreateInstance_1<T>() -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateInstance", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateInstance_Type0(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ScriptableObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateInstance", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateScriptableObject(
+        _cordl_self: quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateScriptableObject", (_cordl_self))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateScriptableObjectInstanceFromType(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        applyDefaultsAndReset: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ScriptableObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CreateScriptableObjectInstanceFromType",
+                (_cordl_type, applyDefaultsAndReset),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

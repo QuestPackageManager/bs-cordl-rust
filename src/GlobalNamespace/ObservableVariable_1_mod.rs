@@ -78,6 +78,17 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::ObservableVariable_
         let __cordl_ret: T = __cordl_object.invoke("get_value", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Implicit(
+        obj: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObservableVariable_1<T>>,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (obj))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn remove_didChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::System::Action>,

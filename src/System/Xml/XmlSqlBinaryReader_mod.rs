@@ -1843,6 +1843,14 @@ impl crate::System::Xml::XmlSqlBinaryReader_QName {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Equality(
+        a: crate::System::Xml::XmlSqlBinaryReader_QName,
+        b: crate::System::Xml::XmlSqlBinaryReader_QName,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "System+Xml+XmlSqlBinaryReader+ScanState")]
 #[repr(i32)]

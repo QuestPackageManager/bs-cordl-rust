@@ -53,6 +53,17 @@ impl crate::Org::BouncyCastle::Bcpg::Sig::SignatureCreationTime {
             .invoke_void(".ctor", (critical, isLongLength, data))?;
         Ok(__cordl_object.into())
     }
+    pub fn TimeToBytes(
+        _cordl_time: crate::System::DateTime,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TimeToBytes", (_cordl_time))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor_DateTime1(
         &mut self,
         critical: bool,

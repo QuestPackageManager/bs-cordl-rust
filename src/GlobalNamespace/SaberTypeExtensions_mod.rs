@@ -23,7 +23,44 @@ impl std::ops::DerefMut for crate::GlobalNamespace::SaberTypeExtensions {
     }
 }
 #[cfg(feature = "SaberTypeExtensions")]
-impl crate::GlobalNamespace::SaberTypeExtensions {}
+impl crate::GlobalNamespace::SaberTypeExtensions {
+    pub fn MainSaber(
+        leftHanded: bool,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::SaberType> {
+        let __cordl_ret: crate::GlobalNamespace::SaberType = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MainSaber", (leftHanded))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MatchesColorType(
+        saberType: crate::GlobalNamespace::SaberType,
+        colorType: crate::GlobalNamespace::ColorType,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MatchesColorType", (saberType, colorType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Node(
+        saberType: crate::GlobalNamespace::SaberType,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::XR::XRNode> {
+        let __cordl_ret: crate::UnityEngine::XR::XRNode = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Node", (saberType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToColorType(
+        saberType: crate::GlobalNamespace::SaberType,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::ColorType> {
+        let __cordl_ret: crate::GlobalNamespace::ColorType = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToColorType", (saberType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToSaberType(
+        colorType: crate::GlobalNamespace::ColorType,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::SaberType> {
+        let __cordl_ret: crate::GlobalNamespace::SaberType = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToSaberType", (colorType))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "SaberTypeExtensions")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SaberTypeExtensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

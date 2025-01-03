@@ -26,6 +26,27 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::X509::NoticeReferenc
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+NoticeReference")]
 impl crate::Org::BouncyCastle::Asn1::X509::NoticeReference {
+    pub fn ConvertVector(
+        numbers: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1EncodableVector>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1EncodableVector,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ConvertVector", (numbers))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetInstance(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::NoticeReference>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::NoticeReference,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetNoticeNumbers(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

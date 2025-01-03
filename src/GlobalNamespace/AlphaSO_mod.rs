@@ -41,6 +41,13 @@ impl crate::GlobalNamespace::AlphaSO {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Implicit(
+        obj: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AlphaSO>,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (obj))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "AlphaSO")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::AlphaSO {

@@ -22,7 +22,71 @@ impl std::ops::DerefMut for crate::LiteNetLib::NetDebug {
     }
 }
 #[cfg(feature = "LiteNetLib+NetDebug")]
-impl crate::LiteNetLib::NetDebug {}
+impl crate::LiteNetLib::NetDebug {
+    pub fn WriteError(
+        str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        args: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WriteError", (str, args))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WriteForce_Il2CppString_Il2CppArray0(
+        str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        args: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WriteForce", (str, args))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WriteForce_NetLogLevel_Il2CppString_Il2CppArray1(
+        level: crate::LiteNetLib::NetLogLevel,
+        str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        args: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WriteForce", (level, str, args))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WriteLogic(
+        logLevel: crate::LiteNetLib::NetLogLevel,
+        str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        args: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WriteLogic", (logLevel, str, args))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Write_Il2CppString_Il2CppArray0(
+        str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        args: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Write", (str, args))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Write_NetLogLevel_Il2CppString_Il2CppArray1(
+        level: crate::LiteNetLib::NetLogLevel,
+        str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        args: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Write", (level, str, args))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "LiteNetLib+NetDebug")]
 impl quest_hook::libil2cpp::ObjectType for crate::LiteNetLib::NetDebug {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -34,6 +34,45 @@ impl crate::Unity::Profiling::ProfilerRecorder {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn Control(
+        handle: crate::Unity::Profiling::ProfilerRecorder,
+        options: crate::Unity::Profiling::ProfilerRecorder_ControlOptions,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Control", (handle, options))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Control_Injected(
+        handle: quest_hook::libil2cpp::ByRefMut<
+            crate::Unity::Profiling::ProfilerRecorder,
+        >,
+        options: crate::Unity::Profiling::ProfilerRecorder_ControlOptions,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Control_Injected", (handle, options))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Create(
+        statHandle: crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderHandle,
+        maxSampleCount: i32,
+        options: crate::Unity::Profiling::ProfilerRecorderOptions,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Profiling::ProfilerRecorder> {
+        let __cordl_ret: crate::Unity::Profiling::ProfilerRecorder = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (statHandle, maxSampleCount, options))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Create_Injected(
+        statHandle: quest_hook::libil2cpp::ByRefMut<
+            crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderHandle,
+        >,
+        maxSampleCount: i32,
+        options: crate::Unity::Profiling::ProfilerRecorderOptions,
+        ret: quest_hook::libil2cpp::ByRefMut<crate::Unity::Profiling::ProfilerRecorder>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create_Injected", (statHandle, maxSampleCount, options, ret))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -42,6 +81,64 @@ impl crate::Unity::Profiling::ProfilerRecorder {
             "Dispose",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetLastValue(
+        handle: crate::Unity::Profiling::ProfilerRecorder,
+    ) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetLastValue", (handle))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetLastValue_Injected(
+        handle: quest_hook::libil2cpp::ByRefMut<
+            crate::Unity::Profiling::ProfilerRecorder,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetLastValue_Injected", (handle))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetValid(
+        handle: crate::Unity::Profiling::ProfilerRecorder,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetValid", (handle))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetValid_Injected(
+        handle: quest_hook::libil2cpp::ByRefMut<
+            crate::Unity::Profiling::ProfilerRecorder,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetValid_Injected", (handle))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetValueUnitType(
+        handle: crate::Unity::Profiling::ProfilerRecorder,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Profiling::ProfilerMarkerDataUnit> {
+        let __cordl_ret: crate::Unity::Profiling::ProfilerMarkerDataUnit = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetValueUnitType", (handle))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetValueUnitType_Injected(
+        handle: quest_hook::libil2cpp::ByRefMut<
+            crate::Unity::Profiling::ProfilerRecorder,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Profiling::ProfilerMarkerDataUnit> {
+        let __cordl_ret: crate::Unity::Profiling::ProfilerMarkerDataUnit = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetValueUnitType_Injected", (handle))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StartNew(
+        category: crate::Unity::Profiling::ProfilerCategory,
+        statName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        capacity: i32,
+        options: crate::Unity::Profiling::ProfilerRecorderOptions,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Profiling::ProfilerRecorder> {
+        let __cordl_ret: crate::Unity::Profiling::ProfilerRecorder = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StartNew", (category, statName, capacity, options))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

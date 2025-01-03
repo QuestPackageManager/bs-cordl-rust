@@ -26,6 +26,34 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::VisualElementUtils {
 impl crate::UnityEngine::UIElements::VisualElementUtils {
     #[cfg(feature = "UnityEngine+UIElements+VisualElementUtils+__c")]
     pub type __c = crate::UnityEngine::UIElements::VisualElementUtils___c;
+    pub fn AssignInspectorStyleIfNecessary(
+        element: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::VisualElement,
+        >,
+        classNameToEnable: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AssignInspectorStyleIfNecessary", (element, classNameToEnable))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetFoldoutDepth(
+        element: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetFoldoutDepth", (element))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetUniqueName(
+        nameBase: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetUniqueName", (nameBase))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualElementUtils")]
 impl quest_hook::libil2cpp::ObjectType

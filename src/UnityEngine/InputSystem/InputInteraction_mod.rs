@@ -23,7 +23,37 @@ impl std::ops::DerefMut for crate::UnityEngine::InputSystem::InputInteraction {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputInteraction")]
-impl crate::UnityEngine::InputSystem::InputInteraction {}
+impl crate::UnityEngine::InputSystem::InputInteraction {
+    pub fn GetDisplayName_Il2CppString0(
+        interaction: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetDisplayName", (interaction))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetDisplayName_Type1(
+        interactionType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetDisplayName", (interactionType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetValueType(
+        interactionType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetValueType", (interactionType))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+InputInteraction")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::InputInteraction {

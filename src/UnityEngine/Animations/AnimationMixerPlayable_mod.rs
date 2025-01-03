@@ -22,6 +22,46 @@ for crate::UnityEngine::Animations::AnimationMixerPlayable {
 }
 #[cfg(feature = "UnityEngine+Animations+AnimationMixerPlayable")]
 impl crate::UnityEngine::Animations::AnimationMixerPlayable {
+    pub fn Create(
+        graph: crate::UnityEngine::Playables::PlayableGraph,
+        inputCount: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Animations::AnimationMixerPlayable,
+    > {
+        let __cordl_ret: crate::UnityEngine::Animations::AnimationMixerPlayable = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (graph, inputCount))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateHandle(
+        graph: crate::UnityEngine::Playables::PlayableGraph,
+        inputCount: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::PlayableHandle> {
+        let __cordl_ret: crate::UnityEngine::Playables::PlayableHandle = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateHandle", (graph, inputCount))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateHandleInternal(
+        graph: crate::UnityEngine::Playables::PlayableGraph,
+        handle: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableHandle,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateHandleInternal", (graph, handle))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateHandleInternal_Injected(
+        graph: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableGraph,
+        >,
+        handle: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableHandle,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateHandleInternal_Injected", (graph, handle))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Equals(
         &mut self,
         other: crate::UnityEngine::Animations::AnimationMixerPlayable,
@@ -52,6 +92,13 @@ impl crate::UnityEngine::Animations::AnimationMixerPlayable {
             ".ctor",
             (handle),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit(
+        playable: crate::UnityEngine::Animations::AnimationMixerPlayable,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::Playable> {
+        let __cordl_ret: crate::UnityEngine::Playables::Playable = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (playable))?;
         Ok(__cordl_ret.into())
     }
 }

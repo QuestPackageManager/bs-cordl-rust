@@ -64,6 +64,33 @@ impl crate::System::Data::SqlTypes::SqlSingle {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetXsdType(
+        schemaSet: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSet>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::XmlQualifiedName,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetXsdType", (schemaSet))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GreaterThan(
+        x: crate::System::Data::SqlTypes::SqlSingle,
+        y: crate::System::Data::SqlTypes::SqlSingle,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlBoolean> {
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlBoolean = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GreaterThan", (x, y))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LessThan(
+        x: crate::System::Data::SqlTypes::SqlSingle,
+        y: crate::System::Data::SqlTypes::SqlSingle,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlBoolean> {
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlBoolean = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LessThan", (x, y))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn System_Xml_Serialization_IXmlSerializable_GetSchema(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -167,6 +194,125 @@ impl crate::System::Data::SqlTypes::SqlSingle {
             "get_Value",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Addition(
+        x: crate::System::Data::SqlTypes::SqlSingle,
+        y: crate::System::Data::SqlTypes::SqlSingle,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlSingle> {
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlSingle = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Addition", (x, y))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Division(
+        x: crate::System::Data::SqlTypes::SqlSingle,
+        y: crate::System::Data::SqlTypes::SqlSingle,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlSingle> {
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlSingle = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Division", (x, y))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        x: crate::System::Data::SqlTypes::SqlSingle,
+        y: crate::System::Data::SqlTypes::SqlSingle,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlBoolean> {
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlBoolean = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (x, y))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Explicit(
+        x: crate::System::Data::SqlTypes::SqlDouble,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlSingle> {
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlSingle = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Explicit", (x))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_GreaterThan(
+        x: crate::System::Data::SqlTypes::SqlSingle,
+        y: crate::System::Data::SqlTypes::SqlSingle,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlBoolean> {
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlBoolean = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_GreaterThan", (x, y))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_SqlByte1(
+        x: crate::System::Data::SqlTypes::SqlByte,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlSingle> {
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlSingle = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (x))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_SqlDecimal6(
+        x: crate::System::Data::SqlTypes::SqlDecimal,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlSingle> {
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlSingle = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (x))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_SqlInt16_2(
+        x: crate::System::Data::SqlTypes::SqlInt16,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlSingle> {
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlSingle = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (x))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_SqlInt32_3(
+        x: crate::System::Data::SqlTypes::SqlInt32,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlSingle> {
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlSingle = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (x))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_SqlInt64_4(
+        x: crate::System::Data::SqlTypes::SqlInt64,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlSingle> {
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlSingle = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (x))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_SqlMoney5(
+        x: crate::System::Data::SqlTypes::SqlMoney,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlSingle> {
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlSingle = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (x))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_f32_0(
+        x: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlSingle> {
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlSingle = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (x))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_LessThan(
+        x: crate::System::Data::SqlTypes::SqlSingle,
+        y: crate::System::Data::SqlTypes::SqlSingle,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlBoolean> {
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlBoolean = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_LessThan", (x, y))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Multiply(
+        x: crate::System::Data::SqlTypes::SqlSingle,
+        y: crate::System::Data::SqlTypes::SqlSingle,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlSingle> {
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlSingle = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Multiply", (x, y))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Subtraction(
+        x: crate::System::Data::SqlTypes::SqlSingle,
+        y: crate::System::Data::SqlTypes::SqlSingle,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlSingle> {
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlSingle = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Subtraction", (x, y))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_UnaryNegation(
+        x: crate::System::Data::SqlTypes::SqlSingle,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlSingle> {
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlSingle = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_UnaryNegation", (x))?;
         Ok(__cordl_ret.into())
     }
 }

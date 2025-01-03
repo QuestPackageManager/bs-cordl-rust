@@ -24,7 +24,24 @@ impl std::ops::DerefMut for crate::UnityEngine::Animations::AnimationPlayableBin
     }
 }
 #[cfg(feature = "UnityEngine+Animations+AnimationPlayableBinding")]
-impl crate::UnityEngine::Animations::AnimationPlayableBinding {}
+impl crate::UnityEngine::Animations::AnimationPlayableBinding {
+    pub fn Create(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        key: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::PlayableBinding> {
+        let __cordl_ret: crate::UnityEngine::Playables::PlayableBinding = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (name, key))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateAnimationOutput(
+        graph: crate::UnityEngine::Playables::PlayableGraph,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::PlayableOutput> {
+        let __cordl_ret: crate::UnityEngine::Playables::PlayableOutput = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateAnimationOutput", (graph, name))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+Animations+AnimationPlayableBinding")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Animations::AnimationPlayableBinding {

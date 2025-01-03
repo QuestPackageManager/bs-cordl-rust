@@ -76,6 +76,29 @@ impl crate::System::Xml::Schema::NamespaceList {
         > = __cordl_object.invoke("CompareSetToOther", (other))?;
         Ok(__cordl_ret.into())
     }
+    pub fn Intersection(
+        o1: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::NamespaceList>,
+        o2: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::NamespaceList>,
+        v1Compat: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::NamespaceList>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::NamespaceList,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Intersection", (o1, o2, v1Compat))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsSubset(
+        sub: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::NamespaceList>,
+        _cordl_super: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::NamespaceList,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsSubset", (sub, _cordl_super))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -115,6 +138,19 @@ impl crate::System::Xml::Schema::NamespaceList {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("ToString", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Union(
+        o1: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::NamespaceList>,
+        o2: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::NamespaceList>,
+        v1Compat: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::NamespaceList>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::NamespaceList,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Union", (o1, o2, v1Compat))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_0(

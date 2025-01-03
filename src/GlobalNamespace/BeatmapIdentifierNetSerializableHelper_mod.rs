@@ -25,7 +25,34 @@ for crate::GlobalNamespace::BeatmapIdentifierNetSerializableHelper {
     }
 }
 #[cfg(feature = "BeatmapIdentifierNetSerializableHelper")]
-impl crate::GlobalNamespace::BeatmapIdentifierNetSerializableHelper {}
+impl crate::GlobalNamespace::BeatmapIdentifierNetSerializableHelper {
+    pub fn ToBeatmapKey(
+        beatmapKeySerializable: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapKeyNetSerializable,
+        >,
+        beatmapCharacteristicCollection: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapCharacteristicCollection,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::BeatmapKey> {
+        let __cordl_ret: crate::GlobalNamespace::BeatmapKey = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ToBeatmapKey",
+                (beatmapKeySerializable, beatmapCharacteristicCollection),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToIdentifier(
+        beatmapKey: crate::GlobalNamespace::BeatmapKey,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapKeyNetSerializable>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapKeyNetSerializable,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToIdentifier", (beatmapKey))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "BeatmapIdentifierNetSerializableHelper")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BeatmapIdentifierNetSerializableHelper {

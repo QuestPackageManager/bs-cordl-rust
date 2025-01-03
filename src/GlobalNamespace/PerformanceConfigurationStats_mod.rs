@@ -45,6 +45,30 @@ impl crate::GlobalNamespace::PerformanceConfigurationStats {
     pub type FloatStats = crate::GlobalNamespace::PerformanceConfigurationStats_FloatStats;
     #[cfg(feature = "PerformanceConfigurationStats+IntStats")]
     pub type IntStats = crate::GlobalNamespace::PerformanceConfigurationStats_IntStats;
+    pub fn ConvertEnumToFlag<T>(value: T) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ConvertEnumToFlag", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ConvertFlagsToString<T>(
+        flags: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ConvertFlagsToString", (flags))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

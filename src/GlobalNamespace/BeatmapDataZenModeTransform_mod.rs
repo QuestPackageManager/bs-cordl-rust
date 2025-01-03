@@ -23,7 +23,34 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapDataZenModeTransform 
     }
 }
 #[cfg(feature = "BeatmapDataZenModeTransform")]
-impl crate::GlobalNamespace::BeatmapDataZenModeTransform {}
+impl crate::GlobalNamespace::BeatmapDataZenModeTransform {
+    pub fn CreateTransformedData(
+        beatmapData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IReadonlyBeatmapData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IReadonlyBeatmapData>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IReadonlyBeatmapData,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateTransformedData", (beatmapData))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _CreateTransformedData_g__ProcessData_0_0(
+        beatmapDataItem: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapDataItem,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapDataItem,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("<CreateTransformedData>g__ProcessData|0_0", (beatmapDataItem))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "BeatmapDataZenModeTransform")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BeatmapDataZenModeTransform {

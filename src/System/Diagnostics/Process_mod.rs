@@ -85,6 +85,33 @@ impl crate::System::Diagnostics::Process {
             .invoke("CompletionCallback", (context, wasSignaled))?;
         Ok(__cordl_ret.into())
     }
+    pub fn CreatePipe(
+        read: quest_hook::libil2cpp::ByRefMut<crate::System::IntPtr>,
+        write: quest_hook::libil2cpp::ByRefMut<crate::System::IntPtr>,
+        writeDirection: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreatePipe", (read, write, writeDirection))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateProcess_internal(
+        startInfo: quest_hook::libil2cpp::Gc<
+            crate::System::Diagnostics::ProcessStartInfo,
+        >,
+        stdin: crate::System::IntPtr,
+        stdout: crate::System::IntPtr,
+        stderr: crate::System::IntPtr,
+        procInfo: quest_hook::libil2cpp::ByRefMut<
+            crate::System::Diagnostics::Process_ProcInfo,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CreateProcess_internal",
+                (startInfo, stdin, stdout, stderr, procInfo),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Dispose(
         &mut self,
         disposing: bool,
@@ -115,6 +142,50 @@ impl crate::System::Diagnostics::Process {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("EnsureWatchingForExit", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FillUserInfo(
+        startInfo: quest_hook::libil2cpp::Gc<
+            crate::System::Diagnostics::ProcessStartInfo,
+        >,
+        procInfo: quest_hook::libil2cpp::ByRefMut<
+            crate::System::Diagnostics::Process_ProcInfo,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FillUserInfo", (startInfo, procInfo))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCurrentProcess() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Diagnostics::Process>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Diagnostics::Process,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCurrentProcess", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetProcessById_Il2CppString1(
+        processId: i32,
+        machineName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Diagnostics::Process>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Diagnostics::Process,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetProcessById", (processId, machineName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetProcessById_i32_0(
+        processId: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Diagnostics::Process>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Diagnostics::Process,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetProcessById", (processId))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetProcessHandle__cordl_bool0(
@@ -161,6 +232,20 @@ impl crate::System::Diagnostics::Process {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Diagnostics::ProcessThreadTimes,
         > = __cordl_object.invoke("GetProcessTimes", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetProcess_internal(
+        pid: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetProcess_internal", (pid))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsLocalMachine(
+        machineName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsLocalMachine", (machineName))?;
         Ok(__cordl_ret.into())
     }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -223,6 +308,30 @@ impl crate::System::Diagnostics::Process {
         > = __cordl_object.invoke("OpenProcessHandle", (access))?;
         Ok(__cordl_ret.into())
     }
+    pub fn ProcessName_icall(
+        handle: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ProcessName_icall", (handle))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ProcessName_internal(
+        handle: quest_hook::libil2cpp::Gc<
+            crate::Microsoft::Win32::SafeHandles::SafeProcessHandle,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ProcessName_internal", (handle))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn RaiseOnExited(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -278,6 +387,18 @@ impl crate::System::Diagnostics::Process {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetProcessId", (processId))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ShellExecuteEx_internal(
+        startInfo: quest_hook::libil2cpp::Gc<
+            crate::System::Diagnostics::ProcessStartInfo,
+        >,
+        procInfo: quest_hook::libil2cpp::ByRefMut<
+            crate::System::Diagnostics::Process_ProcInfo,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ShellExecuteEx_internal", (startInfo, procInfo))?;
         Ok(__cordl_ret.into())
     }
     pub fn Start(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -410,6 +531,11 @@ impl crate::System::Diagnostics::Process {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_Id", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_IsWindows() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_IsWindows", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_ProcessName(

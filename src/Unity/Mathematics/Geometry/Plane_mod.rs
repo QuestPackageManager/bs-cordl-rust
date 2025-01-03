@@ -32,6 +32,36 @@ impl crate::Unity::Mathematics::Geometry::Plane {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn CreateFromUnitNormalAndDistance(
+        unitNormal: crate::Unity::Mathematics::float3,
+        distance: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::Geometry::Plane> {
+        let __cordl_ret: crate::Unity::Mathematics::Geometry::Plane = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateFromUnitNormalAndDistance", (unitNormal, distance))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateFromUnitNormalAndPointInPlane(
+        unitNormal: crate::Unity::Mathematics::float3,
+        pointInPlane: crate::Unity::Mathematics::float3,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::Geometry::Plane> {
+        let __cordl_ret: crate::Unity::Mathematics::Geometry::Plane = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateFromUnitNormalAndPointInPlane", (unitNormal, pointInPlane))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Normalize_Plane0(
+        plane: crate::Unity::Mathematics::Geometry::Plane,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::Geometry::Plane> {
+        let __cordl_ret: crate::Unity::Mathematics::Geometry::Plane = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Normalize", (plane))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Normalize_float4_1(
+        planeCoefficients: crate::Unity::Mathematics::float4,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4> {
+        let __cordl_ret: crate::Unity::Mathematics::float4 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Normalize", (planeCoefficients))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Projection(
         &mut self,
         point: crate::Unity::Mathematics::float3,
@@ -131,6 +161,13 @@ impl crate::Unity::Mathematics::Geometry::Plane {
             "get_Normal",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit(
+        plane: crate::Unity::Mathematics::Geometry::Plane,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float4> {
+        let __cordl_ret: crate::Unity::Mathematics::float4 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (plane))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_Distance(

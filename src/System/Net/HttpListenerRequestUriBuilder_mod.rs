@@ -52,6 +52,27 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
             )?;
         Ok(__cordl_ret.into())
     }
+    pub fn AddSlashToAsteriskOnlyPath(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddSlashToAsteriskOnlyPath", (path))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AppendOctetsPercentEncoded(
+        target: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+        octets: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<u8>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AppendOctetsPercentEncoded", (target, octets))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn AppendUnicodeCodePointValuePercentEncoded(
         &mut self,
         codePoint: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -115,6 +136,53 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("EmptyDecodeAndAppendRawOctetsList", (encoding))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetEncoding(
+        _cordl_type: crate::System::Net::HttpListenerRequestUriBuilder_EncodingType,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetEncoding", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetOctetsAsString(
+        octets: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<u8>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetOctetsAsString", (octets))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPath(
+        uriString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPath", (uriString))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetRequestUri(
+        rawUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        cookedUriScheme: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        cookedUriHost: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        cookedUriPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        cookedUriQuery: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Uri>> {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Uri> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetRequestUri",
+                (rawUri, cookedUriScheme, cookedUriHost, cookedUriPath, cookedUriQuery),
+            )?;
         Ok(__cordl_ret.into())
     }
     pub fn LogWarning(

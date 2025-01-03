@@ -81,6 +81,19 @@ impl crate::GlobalNamespace::BeatmapLevelPack {
             .invoke("ClearAdditionalBeatmapLevels", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn CreateLevelPackForFiltering(
+        beatmapLevels: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::GlobalNamespace::BeatmapLevel>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapLevelPack,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateLevelPackForFiltering", (beatmapLevels))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         packID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         packName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

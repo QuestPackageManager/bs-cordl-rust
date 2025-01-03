@@ -43,6 +43,19 @@ impl crate::GlobalNamespace::LightRotationGroupEffect {
             .invoke("Cleanup", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn ComputeTargetAngle(
+        startAngle: f32,
+        targetAngle: f32,
+        loopCount: i32,
+        rotationOrientation: crate::GlobalNamespace::LightRotationDirection,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ComputeTargetAngle",
+                (startAngle, targetAngle, loopCount, rotationOrientation),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn HandleRotationChangeBeatmapEvent(
         &mut self,
         currentEventData: quest_hook::libil2cpp::Gc<

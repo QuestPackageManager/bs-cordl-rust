@@ -38,4 +38,11 @@ impl crate::UnityEngine::QueryParameters {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_Default() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::QueryParameters,
+    > {
+        let __cordl_ret: crate::UnityEngine::QueryParameters = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_Default", ())?;
+        Ok(__cordl_ret.into())
+    }
 }

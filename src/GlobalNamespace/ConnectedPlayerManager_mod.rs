@@ -1383,6 +1383,83 @@ for crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
 #[cfg(feature = "ConnectedPlayerManager+ConnectedPlayer")]
 impl crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
     pub const kFixedSyncTimeOffset: i64 = 33i64;
+    pub fn CreateDirectlyConnectedPlayer(
+        manager: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ConnectedPlayerManager,
+        >,
+        connectionId: u8,
+        connection: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CreateDirectlyConnectedPlayer",
+                (manager, connectionId, connection),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateLocalPlayer(
+        manager: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ConnectedPlayerManager,
+        >,
+        userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        userName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        isConnectionOwner: bool,
+        publicEncryptionKey: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        >,
+        random: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CreateLocalPlayer",
+                (
+                    manager,
+                    userId,
+                    userName,
+                    isConnectionOwner,
+                    publicEncryptionKey,
+                    random,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateRemoteConnectedPlayer(
+        manager: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ConnectedPlayerManager,
+        >,
+        connectionId: u8,
+        packet: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ConnectedPlayerManager_PlayerConnectedPacket,
+        >,
+        parent: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CreateRemoteConnectedPlayer",
+                (manager, connectionId, packet, parent),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Disconnect(
         &mut self,
         disconnectedReason: crate::GlobalNamespace::DisconnectedReason,
@@ -2000,6 +2077,20 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_KickPlayerPacket {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_pool() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PacketPool_1<
+                *mut crate::GlobalNamespace::ConnectedPlayerManager_KickPlayerPacket,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PacketPool_1<
+                *mut crate::GlobalNamespace::ConnectedPlayerManager_KickPlayerPacket,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_pool", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "ConnectedPlayerManager+KickPlayerPacket")]
 impl quest_hook::libil2cpp::ObjectType
@@ -2145,6 +2236,20 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PingPacket {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_pool() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PacketPool_1<
+                *mut crate::GlobalNamespace::ConnectedPlayerManager_PingPacket,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PacketPool_1<
+                *mut crate::GlobalNamespace::ConnectedPlayerManager_PingPacket,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_pool", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "ConnectedPlayerManager+PingPacket")]
 impl quest_hook::libil2cpp::ObjectType
@@ -2277,6 +2382,20 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerAvatarPacket {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_pool() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PacketPool_1<
+                *mut crate::GlobalNamespace::ConnectedPlayerManager_PlayerAvatarPacket,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PacketPool_1<
+                *mut crate::GlobalNamespace::ConnectedPlayerManager_PlayerAvatarPacket,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_pool", ())?;
         Ok(__cordl_ret.into())
     }
 }
@@ -2420,6 +2539,20 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerConnectedPacket {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_pool() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PacketPool_1<
+                *mut crate::GlobalNamespace::ConnectedPlayerManager_PlayerConnectedPacket,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PacketPool_1<
+                *mut crate::GlobalNamespace::ConnectedPlayerManager_PlayerConnectedPacket,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_pool", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "ConnectedPlayerManager+PlayerConnectedPacket")]
 impl quest_hook::libil2cpp::ObjectType
@@ -2552,6 +2685,20 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerDisconnectedPacket {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_pool() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PacketPool_1<
+                *mut crate::GlobalNamespace::ConnectedPlayerManager_PlayerDisconnectedPacket,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PacketPool_1<
+                *mut crate::GlobalNamespace::ConnectedPlayerManager_PlayerDisconnectedPacket,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_pool", ())?;
         Ok(__cordl_ret.into())
     }
 }
@@ -2697,6 +2844,20 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerIdentityPacket {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_pool() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PacketPool_1<
+                *mut crate::GlobalNamespace::ConnectedPlayerManager_PlayerIdentityPacket,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PacketPool_1<
+                *mut crate::GlobalNamespace::ConnectedPlayerManager_PlayerIdentityPacket,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_pool", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "ConnectedPlayerManager+PlayerIdentityPacket")]
 impl quest_hook::libil2cpp::ObjectType
@@ -2833,6 +2994,20 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerSortOrderPacket {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_pool() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PacketPool_1<
+                *mut crate::GlobalNamespace::ConnectedPlayerManager_PlayerSortOrderPacket,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PacketPool_1<
+                *mut crate::GlobalNamespace::ConnectedPlayerManager_PlayerSortOrderPacket,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_pool", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "ConnectedPlayerManager+PlayerSortOrderPacket")]
 impl quest_hook::libil2cpp::ObjectType
@@ -2967,6 +3142,20 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerStatePacket {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_pool() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PacketPool_1<
+                *mut crate::GlobalNamespace::ConnectedPlayerManager_PlayerStatePacket,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PacketPool_1<
+                *mut crate::GlobalNamespace::ConnectedPlayerManager_PlayerStatePacket,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_pool", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "ConnectedPlayerManager+PlayerStatePacket")]
 impl quest_hook::libil2cpp::ObjectType
@@ -3097,6 +3286,20 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PongPacket {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_pool() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PacketPool_1<
+                *mut crate::GlobalNamespace::ConnectedPlayerManager_PongPacket,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PacketPool_1<
+                *mut crate::GlobalNamespace::ConnectedPlayerManager_PongPacket,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_pool", ())?;
         Ok(__cordl_ret.into())
     }
 }
@@ -3230,6 +3433,20 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_SyncTimePacket {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_pool() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PacketPool_1<
+                *mut crate::GlobalNamespace::ConnectedPlayerManager_SyncTimePacket,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PacketPool_1<
+                *mut crate::GlobalNamespace::ConnectedPlayerManager_SyncTimePacket,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_pool", ())?;
         Ok(__cordl_ret.into())
     }
 }

@@ -106,6 +106,39 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIR::MeshBuilder {
 impl crate::UnityEngine::UIElements::UIR::MeshBuilder {
     #[cfg(feature = "UnityEngine+UIElements+UIR+MeshBuilder+AllocMeshData")]
     pub type AllocMeshData = crate::UnityEngine::UIElements::UIR::MeshBuilder_AllocMeshData;
+    pub fn ConvertTextVertexToUIRVertex(
+        info: crate::UnityEngine::TextCore::Text::MeshInfo,
+        index: i32,
+        offset: crate::UnityEngine::Vector2,
+        flags: crate::UnityEngine::UIElements::UIR::VertexFlags,
+        isDynamicColor: bool,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Vertex> {
+        let __cordl_ret: crate::UnityEngine::UIElements::Vertex = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ConvertTextVertexToUIRVertex",
+                (info, index, offset, flags, isDynamicColor),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LimitTextVertices(
+        vertexCount: i32,
+        logTruncation: bool,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LimitTextVertices", (vertexCount, logTruncation))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MakeText(
+        meshInfo: crate::UnityEngine::TextCore::Text::MeshInfo,
+        offset: crate::UnityEngine::Vector2,
+        meshAlloc: crate::UnityEngine::UIElements::UIR::MeshBuilder_AllocMeshData,
+        flags: crate::UnityEngine::UIElements::UIR::VertexFlags,
+        isDynamicColor: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MakeText", (meshInfo, offset, meshAlloc, flags, isDynamicColor))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+MeshBuilder")]
 impl quest_hook::libil2cpp::ObjectType

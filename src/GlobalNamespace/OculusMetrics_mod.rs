@@ -84,6 +84,17 @@ impl crate::GlobalNamespace::OculusMetrics {
             .invoke_void(".ctor", (initialFrameCapacity))?;
         Ok(__cordl_object.into())
     }
+    pub fn RecordMetrics(
+        initialFrameCapacity: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OculusMetrics>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OculusMetrics,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RecordMetrics", (initialFrameCapacity))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
         initialFrameCapacity: i32,

@@ -25,6 +25,21 @@ impl std::ops::DerefMut for crate::System::Net::NetworkInformation::NetworkInter
 }
 #[cfg(feature = "System+Net+NetworkInformation+NetworkInterface")]
 impl crate::System::Net::NetworkInformation::NetworkInterface {
+    pub fn GetAllNetworkInterfaces() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Net::NetworkInformation::NetworkInterface,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Net::NetworkInformation::NetworkInterface,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetAllNetworkInterfaces", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetIPProperties(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

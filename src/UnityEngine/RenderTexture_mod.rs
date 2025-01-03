@@ -53,6 +53,13 @@ impl crate::UnityEngine::RenderTexture {
             .invoke("DiscardContents", (discardColor, discardDepth))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetActive() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetActive", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetColorBuffer(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::RenderBuffer> {
@@ -87,6 +94,35 @@ impl crate::UnityEngine::RenderTexture {
             .invoke("GetColorFormat", (suppressWarnings))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetCompatibleFormat(
+        renderTextureFormat: crate::UnityEngine::RenderTextureFormat,
+        readWrite: crate::UnityEngine::RenderTextureReadWrite,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+    > {
+        let __cordl_ret: crate::UnityEngine::Experimental::Rendering::GraphicsFormat = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCompatibleFormat", (renderTextureFormat, readWrite))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetDefaultColorFormat(
+        format: crate::UnityEngine::Experimental::Rendering::DefaultFormat,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+    > {
+        let __cordl_ret: crate::UnityEngine::Experimental::Rendering::GraphicsFormat = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetDefaultColorFormat", (format))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetDefaultDepthStencilFormat(
+        format: crate::UnityEngine::Experimental::Rendering::DefaultFormat,
+        depth: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+    > {
+        let __cordl_ret: crate::UnityEngine::Experimental::Rendering::GraphicsFormat = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetDefaultDepthStencilFormat", (format, depth))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetDepthBuffer(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::RenderBuffer> {
@@ -106,6 +142,46 @@ impl crate::UnityEngine::RenderTexture {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GetDepthBuffer_Injected", (ret))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetDepthStencilFormatLegacy_DefaultFormat2(
+        depthBits: i32,
+        format: crate::UnityEngine::Experimental::Rendering::DefaultFormat,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+    > {
+        let __cordl_ret: crate::UnityEngine::Experimental::Rendering::GraphicsFormat = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetDepthStencilFormatLegacy", (depthBits, format))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetDepthStencilFormatLegacy_GraphicsFormat0(
+        depthBits: i32,
+        colorFormat: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+    > {
+        let __cordl_ret: crate::UnityEngine::Experimental::Rendering::GraphicsFormat = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetDepthStencilFormatLegacy", (depthBits, colorFormat))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetDepthStencilFormatLegacy_RenderTextureFormat1(
+        depthBits: i32,
+        format: crate::UnityEngine::RenderTextureFormat,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+    > {
+        let __cordl_ret: crate::UnityEngine::Experimental::Rendering::GraphicsFormat = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetDepthStencilFormatLegacy", (depthBits, format))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetDepthStencilFormatLegacy__cordl_bool3(
+        depthBits: i32,
+        requestedShadowMap: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+    > {
+        let __cordl_ret: crate::UnityEngine::Experimental::Rendering::GraphicsFormat = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetDepthStencilFormatLegacy", (depthBits, requestedShadowMap))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetDescriptor(
@@ -129,6 +205,210 @@ impl crate::UnityEngine::RenderTexture {
             .invoke("GetDescriptor_Injected", (ret))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetTemporaryImpl(
+        width: i32,
+        height: i32,
+        depthStencilFormat: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+        colorFormat: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+        antiAliasing: i32,
+        memorylessMode: crate::UnityEngine::RenderTextureMemoryless,
+        vrUsage: crate::UnityEngine::VRTextureUsage,
+        useDynamicScale: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetTemporaryImpl",
+                (
+                    width,
+                    height,
+                    depthStencilFormat,
+                    colorFormat,
+                    antiAliasing,
+                    memorylessMode,
+                    vrUsage,
+                    useDynamicScale,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetTemporary_Internal(
+        desc: crate::UnityEngine::RenderTextureDescriptor,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetTemporary_Internal", (desc))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetTemporary_Internal_Injected(
+        desc: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::RenderTextureDescriptor,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetTemporary_Internal_Injected", (desc))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetTemporary_RenderTextureDescriptor0(
+        desc: crate::UnityEngine::RenderTextureDescriptor,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetTemporary", (desc))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetTemporary_i32_i32_8(
+        width: i32,
+        height: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetTemporary", (width, height))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetTemporary_i32_i32_i32_7(
+        width: i32,
+        height: i32,
+        depthBuffer: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetTemporary", (width, height, depthBuffer))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetTemporary_i32_i32_i32_RenderTextureFormat6(
+        width: i32,
+        height: i32,
+        depthBuffer: i32,
+        format: crate::UnityEngine::RenderTextureFormat,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetTemporary", (width, height, depthBuffer, format))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetTemporary_i32_i32_i32_RenderTextureFormat_RenderTextureReadWrite5(
+        width: i32,
+        height: i32,
+        depthBuffer: i32,
+        format: crate::UnityEngine::RenderTextureFormat,
+        readWrite: crate::UnityEngine::RenderTextureReadWrite,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetTemporary", (width, height, depthBuffer, format, readWrite))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetTemporary_i32_i32_i32_RenderTextureFormat_RenderTextureReadWrite_i32_4(
+        width: i32,
+        height: i32,
+        depthBuffer: i32,
+        format: crate::UnityEngine::RenderTextureFormat,
+        readWrite: crate::UnityEngine::RenderTextureReadWrite,
+        antiAliasing: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetTemporary",
+                (width, height, depthBuffer, format, readWrite, antiAliasing),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetTemporary_i32_i32_i32_RenderTextureFormat_RenderTextureReadWrite_i32_RenderTextureMemoryless3(
+        width: i32,
+        height: i32,
+        depthBuffer: i32,
+        format: crate::UnityEngine::RenderTextureFormat,
+        readWrite: crate::UnityEngine::RenderTextureReadWrite,
+        antiAliasing: i32,
+        memorylessMode: crate::UnityEngine::RenderTextureMemoryless,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetTemporary",
+                (
+                    width,
+                    height,
+                    depthBuffer,
+                    format,
+                    readWrite,
+                    antiAliasing,
+                    memorylessMode,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetTemporary_i32_i32_i32_RenderTextureFormat_RenderTextureReadWrite_i32_RenderTextureMemoryless_VRTextureUsage2(
+        width: i32,
+        height: i32,
+        depthBuffer: i32,
+        format: crate::UnityEngine::RenderTextureFormat,
+        readWrite: crate::UnityEngine::RenderTextureReadWrite,
+        antiAliasing: i32,
+        memorylessMode: crate::UnityEngine::RenderTextureMemoryless,
+        vrUsage: crate::UnityEngine::VRTextureUsage,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetTemporary",
+                (
+                    width,
+                    height,
+                    depthBuffer,
+                    format,
+                    readWrite,
+                    antiAliasing,
+                    memorylessMode,
+                    vrUsage,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetTemporary_i32_i32_i32_RenderTextureFormat_RenderTextureReadWrite_i32_RenderTextureMemoryless_VRTextureUsage__cordl_bool1(
+        width: i32,
+        height: i32,
+        depthBuffer: i32,
+        format: crate::UnityEngine::RenderTextureFormat,
+        readWrite: crate::UnityEngine::RenderTextureReadWrite,
+        antiAliasing: i32,
+        memorylessMode: crate::UnityEngine::RenderTextureMemoryless,
+        vrUsage: crate::UnityEngine::VRTextureUsage,
+        useDynamicScale: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetTemporary",
+                (
+                    width,
+                    height,
+                    depthBuffer,
+                    format,
+                    readWrite,
+                    antiAliasing,
+                    memorylessMode,
+                    vrUsage,
+                    useDynamicScale,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Initialize(
         &mut self,
         width: i32,
@@ -143,6 +423,13 @@ impl crate::UnityEngine::RenderTexture {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Initialize", (width, height, depth, format, readWrite, mipCount))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Internal_Create(
+        rt: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Internal_Create", (rt))?;
         Ok(__cordl_ret.into())
     }
     pub fn IsCreated(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -301,6 +588,20 @@ impl crate::UnityEngine::RenderTexture {
             .invoke("Release", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn ReleaseTemporary(
+        temp: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReleaseTemporary", (temp))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetActive(
+        rt: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetActive", (rt))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn SetColorFormat(
         &mut self,
         format: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
@@ -356,6 +657,13 @@ impl crate::UnityEngine::RenderTexture {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetSRGBReadWrite", (srgb))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ValidateRenderTextureDesc(
+        desc: crate::UnityEngine::RenderTextureDescriptor,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ValidateRenderTextureDesc", (desc))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_0(
@@ -522,6 +830,13 @@ impl crate::UnityEngine::RenderTexture {
             .invoke(".ctor", (width, height, depth, format, mipCount))?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_active() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_active", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_antiAliasing(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -622,6 +937,13 @@ impl crate::UnityEngine::RenderTexture {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_width", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_active(
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_active", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_antiAliasing(

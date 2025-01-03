@@ -28,6 +28,411 @@ impl crate::System::Environment {
     pub type SpecialFolder = crate::System::Environment_SpecialFolder;
     #[cfg(feature = "System+Environment+SpecialFolderOption")]
     pub type SpecialFolderOption = crate::System::Environment_SpecialFolderOption;
+    pub fn CreateVersionFromString(
+        info: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Version>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Version> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateVersionFromString", (info))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Exit(
+        exitCode: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Exit", (exitCode))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FailFast_Il2CppString1(
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        exception: quest_hook::libil2cpp::Gc<crate::System::Exception>,
+        errorSource: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FailFast", (message, exception, errorSource))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FailFast_Il2CppString_Exception0(
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        exception: quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FailFast", (message, exception))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCommandLineArgs() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCommandLineArgs", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetEnvironmentVariableNames() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetEnvironmentVariableNames", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetEnvironmentVariable_EnvironmentVariableTarget1(
+        variable: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        target: crate::System::EnvironmentVariableTarget,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetEnvironmentVariable", (variable, target))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetEnvironmentVariable_Il2CppString0(
+        variable: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetEnvironmentVariable", (variable))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetEnvironmentVariables() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IDictionary,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetEnvironmentVariables", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetFolderPath_Environment_SpecialFolder0(
+        folder: crate::System::Environment_SpecialFolder,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetFolderPath", (folder))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetFolderPath_Environment_SpecialFolderOption1(
+        folder: crate::System::Environment_SpecialFolder,
+        option: crate::System::Environment_SpecialFolderOption,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetFolderPath", (folder, option))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetIs64BitOperatingSystem() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetIs64BitOperatingSystem", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetLogicalDrivesInternal() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetLogicalDrivesInternal", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetMachineConfigPath() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetMachineConfigPath", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetNewLine() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetNewLine", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetOSVersionString() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetOSVersionString", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPageSize() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPageSize", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetResourceStringEncodingName(
+        codePage: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetResourceStringEncodingName", (codePage))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetResourceString_Il2CppArray1(
+        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        values: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetResourceString", (key, values))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetResourceString_Il2CppString0(
+        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetResourceString", (key))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetStackTrace(
+        e: quest_hook::libil2cpp::Gc<crate::System::Exception>,
+        needFileInfo: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetStackTrace", (e, needFileInfo))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetWindowsFolderPath(
+        folder: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetWindowsFolderPath", (folder))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InternalSetEnvironmentVariable_Il2CppObject_i32_Il2CppObject_i32_0(
+        variable: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        variable_length: i32,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        value_length: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "InternalSetEnvironmentVariable",
+                (variable, variable_length, value, value_length),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InternalSetEnvironmentVariable_Il2CppString_Il2CppString1(
+        variable: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InternalSetEnvironmentVariable", (variable, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReadXdgUserDir(
+        config_dir: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        home_dir: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        fallback: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadXdgUserDir", (config_dir, home_dir, key, fallback))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetEnvironmentVariable(
+        variable: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetEnvironmentVariable", (variable, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UnixGetFolderPath(
+        folder: crate::System::Environment_SpecialFolder,
+        option: crate::System::Environment_SpecialFolderOption,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UnixGetFolderPath", (folder, option))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_CurrentDirectory() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_CurrentDirectory", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_CurrentManagedThreadId() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_CurrentManagedThreadId", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_HasShutdownStarted() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_HasShutdownStarted", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Is64BitOperatingSystem() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_Is64BitOperatingSystem", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Is64BitProcess() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_Is64BitProcess", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_IsRunningOnWindows() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_IsRunningOnWindows", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_IsUnix() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_IsUnix", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_MachineName() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_MachineName", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_NewLine() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_NewLine", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_OSVersion() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::OperatingSystem>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::OperatingSystem> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_OSVersion", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Platform() -> quest_hook::libil2cpp::Result<crate::System::PlatformID> {
+        let __cordl_ret: crate::System::PlatformID = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_Platform", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_ProcessorCount() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_ProcessorCount", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_StackTrace() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_StackTrace", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_TickCount() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_TickCount", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_UserDomainName() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_UserDomainName", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_UserName() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_UserName", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn internalGetEnvironmentVariable(
+        variable: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("internalGetEnvironmentVariable", (variable))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn internalGetEnvironmentVariable_native(
+        variable: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("internalGetEnvironmentVariable_native", (variable))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn internalGetHome() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("internalGetHome", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "System+Environment")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Environment {

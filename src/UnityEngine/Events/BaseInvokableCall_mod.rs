@@ -24,6 +24,13 @@ impl std::ops::DerefMut for crate::UnityEngine::Events::BaseInvokableCall {
 }
 #[cfg(feature = "UnityEngine+Events+BaseInvokableCall")]
 impl crate::UnityEngine::Events::BaseInvokableCall {
+    pub fn AllowInvoke(
+        delegate: quest_hook::libil2cpp::Gc<crate::System::Delegate>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AllowInvoke", (delegate))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Find(
         &mut self,
         targetObj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -64,6 +71,17 @@ impl crate::UnityEngine::Events::BaseInvokableCall {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (target, function))?;
         Ok(__cordl_object.into())
+    }
+    pub fn ThrowOnInvalidArg<T>(
+        arg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ThrowOnInvalidArg", (arg))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_0(
         &mut self,

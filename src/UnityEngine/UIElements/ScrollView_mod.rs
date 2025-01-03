@@ -110,6 +110,28 @@ impl crate::UnityEngine::UIElements::ScrollView {
             .invoke("ApplyTouchScrolling", (newScrollOffset))?;
         Ok(__cordl_ret.into())
     }
+    pub fn ComputeElasticOffset(
+        deltaPointer: f32,
+        initialScrollOffset: f32,
+        lowLimit: f32,
+        hardLowLimit: f32,
+        highLimit: f32,
+        hardHighLimit: f32,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ComputeElasticOffset",
+                (
+                    deltaPointer,
+                    initialScrollOffset,
+                    lowLimit,
+                    hardLowLimit,
+                    highLimit,
+                    hardHighLimit,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ComputeInitialSpringBackVelocity(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

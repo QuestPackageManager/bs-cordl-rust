@@ -29,6 +29,15 @@ for crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent {
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Diagnostics+DiagnosticEvent")]
 impl crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent {
+    pub fn Deserialize(
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent,
+    > {
+        let __cordl_ret: crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Deserialize", (data))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Serialize(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

@@ -23,7 +23,24 @@ impl std::ops::DerefMut for crate::GlobalNamespace::RandomExtensions {
     }
 }
 #[cfg(feature = "RandomExtensions")]
-impl crate::GlobalNamespace::RandomExtensions {}
+impl crate::GlobalNamespace::RandomExtensions {
+    pub fn GetBool(
+        random: quest_hook::libil2cpp::Gc<crate::System::Random>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetBool", (random))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetRange(
+        random: quest_hook::libil2cpp::Gc<crate::System::Random>,
+        min: f32,
+        max: f32,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetRange", (random, min, max))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "RandomExtensions")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::RandomExtensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

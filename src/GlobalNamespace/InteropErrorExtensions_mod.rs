@@ -23,7 +23,15 @@ impl std::ops::DerefMut for crate::GlobalNamespace::InteropErrorExtensions {
     }
 }
 #[cfg(feature = "InteropErrorExtensions")]
-impl crate::GlobalNamespace::InteropErrorExtensions {}
+impl crate::GlobalNamespace::InteropErrorExtensions {
+    pub fn Info(
+        error: crate::GlobalNamespace::Interop_Error,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::Interop_ErrorInfo> {
+        let __cordl_ret: crate::GlobalNamespace::Interop_ErrorInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Info", (error))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "InteropErrorExtensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::InteropErrorExtensions {

@@ -26,6 +26,89 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::X509::SubjectKeyIden
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+SubjectKeyIdentifier")]
 impl crate::Org::BouncyCastle::Asn1::X509::SubjectKeyIdentifier {
+    pub fn CreateSha1KeyIdentifier(
+        keyInfo: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::SubjectPublicKeyInfo,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::SubjectKeyIdentifier,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::SubjectKeyIdentifier,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateSha1KeyIdentifier", (keyInfo))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateTruncatedSha1KeyIdentifier(
+        keyInfo: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::SubjectPublicKeyInfo,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::SubjectKeyIdentifier,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::SubjectKeyIdentifier,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateTruncatedSha1KeyIdentifier", (keyInfo))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromExtensions(
+        extensions: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::SubjectKeyIdentifier,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::SubjectKeyIdentifier,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromExtensions", (extensions))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetDigest(
+        spki: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::SubjectPublicKeyInfo,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetDigest", (spki))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetInstance_Asn1TaggedObject__cordl_bool0(
+        obj: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1TaggedObject>,
+        explicitly: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::SubjectKeyIdentifier,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::SubjectKeyIdentifier,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetInstance", (obj, explicitly))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetInstance_Il2CppObject1(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::SubjectKeyIdentifier,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::SubjectKeyIdentifier,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetKeyIdentifier(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

@@ -774,6 +774,27 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         > = __cordl_object.invoke("EvaluateKey", (obj))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GatherDependenciesFromLocations(
+        locations: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GatherDependenciesFromLocations", (locations))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetDownloadSizeAsync_IEnumerable1(
         &mut self,
         keys: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>,
@@ -2110,6 +2131,17 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
                 "UpdateCatalogs",
                 (catalogIds, autoReleaseHandle, autoCleanBundleCache),
             )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WrapAsDownloadLocations(
+        locations: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WrapAsDownloadLocations", (locations))?;
         Ok(__cordl_ret.into())
     }
     pub fn _AutoReleaseHandleOnCompletion_b__115_0(

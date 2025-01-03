@@ -114,6 +114,14 @@ impl crate::GlobalNamespace::LightColorBeatmapEventData {
             )?;
         Ok(__cordl_object.into())
     }
+    pub fn SubtypeIdentifier(
+        groupId: i32,
+        elementId: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SubtypeIdentifier", (groupId, elementId))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
         _cordl_time: f32,

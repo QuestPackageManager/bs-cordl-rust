@@ -28,6 +28,26 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::Pkcs::AuthenticatedS
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Pkcs+AuthenticatedSafe")]
 impl crate::Org::BouncyCastle::Asn1::Pkcs::AuthenticatedSafe {
+    pub fn Copy(
+        info: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::Org::BouncyCastle::Asn1::Pkcs::ContentInfo,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::Org::BouncyCastle::Asn1::Pkcs::ContentInfo,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::Org::BouncyCastle::Asn1::Pkcs::ContentInfo,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Copy", (info))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetContentInfo(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -45,6 +65,18 @@ impl crate::Org::BouncyCastle::Asn1::Pkcs::AuthenticatedSafe {
                 *mut crate::Org::BouncyCastle::Asn1::Pkcs::ContentInfo,
             >,
         > = __cordl_object.invoke("GetContentInfo", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetInstance(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Pkcs::AuthenticatedSafe,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Pkcs::AuthenticatedSafe,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
         Ok(__cordl_ret.into())
     }
     pub fn New_Asn1Sequence0(

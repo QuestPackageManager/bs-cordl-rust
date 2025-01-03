@@ -26,6 +26,97 @@ impl std::ops::DerefMut for crate::UnityEngine::UI::LayoutUtility {
 impl crate::UnityEngine::UI::LayoutUtility {
     #[cfg(feature = "UnityEngine+UI+LayoutUtility+__c")]
     pub type __c = crate::UnityEngine::UI::LayoutUtility___c;
+    pub fn GetFlexibleHeight(
+        rect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetFlexibleHeight", (rect))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetFlexibleSize(
+        rect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
+        axis: i32,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetFlexibleSize", (rect, axis))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetFlexibleWidth(
+        rect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetFlexibleWidth", (rect))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetLayoutProperty_ByRefMut1(
+        rect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
+        property: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<*mut crate::UnityEngine::UI::ILayoutElement, f32>,
+        >,
+        defaultValue: f32,
+        source: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::UnityEngine::UI::ILayoutElement,
+        >,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetLayoutProperty", (rect, property, defaultValue, source))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetLayoutProperty_RectTransform_Func_2_f32_0(
+        rect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
+        property: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<*mut crate::UnityEngine::UI::ILayoutElement, f32>,
+        >,
+        defaultValue: f32,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetLayoutProperty", (rect, property, defaultValue))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetMinHeight(
+        rect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetMinHeight", (rect))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetMinSize(
+        rect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
+        axis: i32,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetMinSize", (rect, axis))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetMinWidth(
+        rect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetMinWidth", (rect))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPreferredHeight(
+        rect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPreferredHeight", (rect))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPreferredSize(
+        rect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
+        axis: i32,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPreferredSize", (rect, axis))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPreferredWidth(
+        rect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPreferredWidth", (rect))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+UI+LayoutUtility")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::LayoutUtility {

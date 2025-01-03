@@ -23,7 +23,29 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Utilities::JsonTokenUtils {
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Utilities+JsonTokenUtils")]
-impl crate::Newtonsoft::Json::Utilities::JsonTokenUtils {}
+impl crate::Newtonsoft::Json::Utilities::JsonTokenUtils {
+    pub fn IsEndToken(
+        token: crate::Newtonsoft::Json::JsonToken,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsEndToken", (token))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsPrimitiveToken(
+        token: crate::Newtonsoft::Json::JsonToken,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsPrimitiveToken", (token))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsStartToken(
+        token: crate::Newtonsoft::Json::JsonToken,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsStartToken", (token))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "Newtonsoft+Json+Utilities+JsonTokenUtils")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::Utilities::JsonTokenUtils {

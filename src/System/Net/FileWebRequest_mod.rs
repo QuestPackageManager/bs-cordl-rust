@@ -129,6 +129,13 @@ impl crate::System::Net::FileWebRequest {
             .invoke("GetObjectData", (serializationInfo, streamingContext))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetRequestStreamCallback(
+        state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetRequestStreamCallback", (state))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetResponse(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -139,6 +146,13 @@ impl crate::System::Net::FileWebRequest {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::WebResponse> = __cordl_object
             .invoke("GetResponse", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetResponseCallback(
+        state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetResponseCallback", (state))?;
         Ok(__cordl_ret.into())
     }
     pub fn New_SerializationInfo_StreamingContext1(

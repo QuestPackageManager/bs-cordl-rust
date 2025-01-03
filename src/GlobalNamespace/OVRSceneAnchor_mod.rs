@@ -39,6 +39,17 @@ impl crate::GlobalNamespace::OVRSceneAnchor {
             .invoke("ClearPoseCache", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetSceneAnchors(
+        anchors: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::GlobalNamespace::OVRSceneAnchor,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSceneAnchors", (anchors))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Initialize(
         &mut self,
         anchor: crate::GlobalNamespace::OVRAnchor,

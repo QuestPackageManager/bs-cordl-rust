@@ -24,7 +24,13 @@ impl std::ops::DerefMut for crate::System::Runtime::CompilerServices::RuntimeFea
     }
 }
 #[cfg(feature = "System+Runtime+CompilerServices+RuntimeFeature")]
-impl crate::System::Runtime::CompilerServices::RuntimeFeature {}
+impl crate::System::Runtime::CompilerServices::RuntimeFeature {
+    pub fn get_IsDynamicCodeSupported() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_IsDynamicCodeSupported", ())?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Runtime+CompilerServices+RuntimeFeature")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::CompilerServices::RuntimeFeature {

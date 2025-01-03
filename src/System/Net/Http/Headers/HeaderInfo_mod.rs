@@ -88,6 +88,55 @@ impl crate::System::Net::Http::Headers::HeaderInfo {
         > = __cordl_object.invoke("CreateCollection", (headers))?;
         Ok(__cordl_ret.into())
     }
+    pub fn CreateMulti<T>(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        elementParser: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Http::Headers::TryParseListDelegate_1<T>,
+        >,
+        headerKind: crate::System::Net::Http::Headers::HttpHeaderKind,
+        minimalCount: i32,
+        separator: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Net::Http::Headers::HeaderInfo>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Http::Headers::HeaderInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CreateMulti",
+                (name, elementParser, headerKind, minimalCount, separator),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateSingle<T>(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        parser: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Http::Headers::TryParseDelegate_1<T>,
+        >,
+        headerKind: crate::System::Net::Http::Headers::HttpHeaderKind,
+        toString: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Net::Http::Headers::HeaderInfo>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Http::Headers::HeaderInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateSingle", (name, parser, headerKind, toString))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         headerKind: crate::System::Net::Http::Headers::HttpHeaderKind,

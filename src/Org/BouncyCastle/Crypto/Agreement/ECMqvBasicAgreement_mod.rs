@@ -44,6 +44,34 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::ECMqvBasicAgreement {
         > = __cordl_object.invoke("CalculateAgreement", (pubKey))?;
         Ok(__cordl_ret.into())
     }
+    pub fn CalculateMqvAgreement(
+        parameters: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Parameters::ECDomainParameters,
+        >,
+        d1U: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Parameters::ECPrivateKeyParameters,
+        >,
+        d2U: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Parameters::ECPrivateKeyParameters,
+        >,
+        Q2U: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Parameters::ECPublicKeyParameters,
+        >,
+        Q1V: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Parameters::ECPublicKeyParameters,
+        >,
+        Q2V: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Parameters::ECPublicKeyParameters,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::EC::ECPoint,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CalculateMqvAgreement", (parameters, d1U, d2U, Q2U, Q1V, Q2V))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetFieldSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

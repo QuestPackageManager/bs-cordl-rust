@@ -38,6 +38,22 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Cms::SignerInformation {
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+SignerInformation")]
 impl crate::Org::BouncyCastle::Cms::SignerInformation {
+    pub fn AddCounterSigners(
+        signerInformation: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cms::SignerInformation,
+        >,
+        counterSigners: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cms::SignerInformationStore,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::SignerInformation>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cms::SignerInformation,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddCounterSigners", (signerInformation, counterSigners))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn DerDecode(
         &mut self,
         encoding: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -185,6 +201,25 @@ impl crate::Org::BouncyCastle::Cms::SignerInformation {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (baseInfo))?;
         Ok(__cordl_object.into())
+    }
+    pub fn ReplaceUnsignedAttributes(
+        signerInformation: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cms::SignerInformation,
+        >,
+        unsignedAttributes: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cms::AttributeTable,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Cms::SignerInformation>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Cms::SignerInformation,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ReplaceUnsignedAttributes",
+                (signerInformation, unsignedAttributes),
+            )?;
+        Ok(__cordl_ret.into())
     }
     pub fn ToSignerInfo(
         &mut self,

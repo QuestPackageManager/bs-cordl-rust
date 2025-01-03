@@ -24,6 +24,11 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Digests::Sha3Diges
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+Sha3Digest")]
 impl crate::Org::BouncyCastle::Crypto::Digests::Sha3Digest {
+    pub fn CheckBitLength(bitLength: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckBitLength", (bitLength))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Copy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

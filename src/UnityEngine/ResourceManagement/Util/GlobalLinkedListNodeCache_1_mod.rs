@@ -29,7 +29,57 @@ for crate::UnityEngine::ResourceManagement::Util::GlobalLinkedListNodeCache_1<T>
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+GlobalLinkedListNodeCache_1")]
 impl<
     T: quest_hook::libil2cpp::Type,
-> crate::UnityEngine::ResourceManagement::Util::GlobalLinkedListNodeCache_1<T> {}
+> crate::UnityEngine::ResourceManagement::Util::GlobalLinkedListNodeCache_1<T> {
+    pub fn Acquire(
+        val: T,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::LinkedListNode_1<T>,
+        >,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::LinkedListNode_1<T>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Acquire", (val))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Release(
+        node: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::LinkedListNode_1<T>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Release", (node))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetCacheSize(
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetCacheSize", (length))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_CacheExists() -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_CacheExists", ())?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+GlobalLinkedListNodeCache_1")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ResourceManagement::Util::GlobalLinkedListNodeCache_1<T> {

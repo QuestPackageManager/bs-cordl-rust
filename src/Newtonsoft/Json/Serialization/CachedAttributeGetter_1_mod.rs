@@ -29,7 +29,19 @@ for crate::Newtonsoft::Json::Serialization::CachedAttributeGetter_1<T> {
 #[cfg(feature = "Newtonsoft+Json+Serialization+CachedAttributeGetter_1")]
 impl<
     T: quest_hook::libil2cpp::Type,
-> crate::Newtonsoft::Json::Serialization::CachedAttributeGetter_1<T> {}
+> crate::Newtonsoft::Json::Serialization::CachedAttributeGetter_1<T> {
+    pub fn GetAttribute(
+        _cordl_type: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetAttribute", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "Newtonsoft+Json+Serialization+CachedAttributeGetter_1")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::Newtonsoft::Json::Serialization::CachedAttributeGetter_1<T> {

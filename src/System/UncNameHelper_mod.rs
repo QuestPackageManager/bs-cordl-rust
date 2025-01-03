@@ -23,7 +23,32 @@ impl std::ops::DerefMut for crate::System::UncNameHelper {
     }
 }
 #[cfg(feature = "System+UncNameHelper")]
-impl crate::System::UncNameHelper {}
+impl crate::System::UncNameHelper {
+    pub fn IsValid(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        start: u16,
+        returnedEnd: quest_hook::libil2cpp::ByRefMut<i32>,
+        notImplicitFile: bool,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsValid", (name, start, returnedEnd, notImplicitFile))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ParseCanonicalName(
+        str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        start: i32,
+        end: i32,
+        loopback: quest_hook::libil2cpp::ByRefMut<bool>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ParseCanonicalName", (str, start, end, loopback))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+UncNameHelper")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::UncNameHelper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

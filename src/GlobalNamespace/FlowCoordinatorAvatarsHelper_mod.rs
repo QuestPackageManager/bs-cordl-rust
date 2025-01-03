@@ -30,6 +30,25 @@ impl crate::GlobalNamespace::FlowCoordinatorAvatarsHelper {
     pub type _HasUserSelectedAvatarSystemWithCreatedAvatar_d__0 = crate::GlobalNamespace::FlowCoordinatorAvatarsHelper__HasUserSelectedAvatarSystemWithCreatedAvatar_d__0;
     #[cfg(feature = "FlowCoordinatorAvatarsHelper+__c__DisplayClass0_0")]
     pub type __c__DisplayClass0_0 = crate::GlobalNamespace::FlowCoordinatorAvatarsHelper___c__DisplayClass0_0;
+    pub fn HasUserSelectedAvatarSystemWithCreatedAvatar(
+        avatarSystemCollection: quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::AvatarCore::AvatarSystemCollection,
+        >,
+        playerDataModel: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerDataModel,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<bool>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "HasUserSelectedAvatarSystemWithCreatedAvatar",
+                (avatarSystemCollection, playerDataModel),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

@@ -168,6 +168,35 @@ impl crate::TMPro::TMP_TextInfo {
             .invoke("ResetVertexLayout", (isVolumetric))?;
         Ok(__cordl_ret.into())
     }
+    pub fn Resize_ByRefMut_i32_0<T>(
+        array: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<T>,
+        >,
+        _cordl_size: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Resize", (array, _cordl_size))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Resize__cordl_bool1<T>(
+        array: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<T>,
+        >,
+        _cordl_size: i32,
+        isBlockAllocated: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Resize", (array, _cordl_size, isBlockAllocated))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

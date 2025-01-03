@@ -24,6 +24,17 @@ for crate::System::Security::Cryptography::X509Certificates::X509ChainStatus {
 }
 #[cfg(feature = "System+Security+Cryptography+X509Certificates+X509ChainStatus")]
 impl crate::System::Security::Cryptography::X509Certificates::X509ChainStatus {
+    pub fn GetInformation(
+        flags: crate::System::Security::Cryptography::X509Certificates::X509ChainStatusFlags,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetInformation", (flags))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
         flag: crate::System::Security::Cryptography::X509Certificates::X509ChainStatusFlags,

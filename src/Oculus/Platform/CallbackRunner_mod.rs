@@ -82,6 +82,13 @@ impl crate::Oculus::Platform::CallbackRunner {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn ovr_UnityResetTestPlatform() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ovr_UnityResetTestPlatform", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "Oculus+Platform+CallbackRunner")]
 impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Platform::CallbackRunner {

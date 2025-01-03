@@ -23,7 +23,17 @@ impl std::ops::DerefMut for crate::Oculus::Platform::Notifications {
     }
 }
 #[cfg(feature = "Oculus+Platform+Notifications")]
-impl crate::Oculus::Platform::Notifications {}
+impl crate::Oculus::Platform::Notifications {
+    pub fn MarkAsRead(
+        notificationID: u64,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MarkAsRead", (notificationID))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "Oculus+Platform+Notifications")]
 impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Platform::Notifications {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

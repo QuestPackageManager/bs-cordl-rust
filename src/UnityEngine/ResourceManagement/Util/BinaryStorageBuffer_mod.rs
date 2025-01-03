@@ -60,6 +60,50 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer {
     pub type TypeSerializer = crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_TypeSerializer;
     #[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer")]
     pub type Writer = crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer;
+    pub fn AddSerializationAdapter(
+        serializationAdapters: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<
+                *mut crate::System::Type,
+                *mut crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+            >,
+        >,
+        adapter: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+        >,
+        forceOverride: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "AddSerializationAdapter",
+                (serializationAdapters, adapter, forceOverride),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ComputeHash(
+        pData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        _cordl_size: u64,
+        hash: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ComputeHash", (pData, _cordl_size, hash))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetSerializationAdapter(
+        serializationAdapters: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<
+                *mut crate::System::Type,
+                *mut crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+            >,
+        >,
+        t: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        adapter: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSerializationAdapter", (serializationAdapters, t, adapter))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -1292,6 +1336,14 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
         feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Writer+StringParts"
     )]
     pub type StringParts = crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_StringParts;
+    pub fn ComputeStringSize(
+        str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        isUnicode: quest_hook::libil2cpp::ByRefMut<bool>,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ComputeStringSize", (str, isUnicode))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn FindChunkWithSpace(
         &mut self,
         length: u32,
@@ -1306,6 +1358,13 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Chunk,
         > = __cordl_object.invoke("FindChunkWithSpace", (length))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsUnicode(
+        str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsUnicode", (str))?;
         Ok(__cordl_ret.into())
     }
     pub fn New(

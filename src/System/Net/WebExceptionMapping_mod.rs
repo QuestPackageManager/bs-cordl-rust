@@ -23,7 +23,19 @@ impl std::ops::DerefMut for crate::System::Net::WebExceptionMapping {
     }
 }
 #[cfg(feature = "System+Net+WebExceptionMapping")]
-impl crate::System::Net::WebExceptionMapping {}
+impl crate::System::Net::WebExceptionMapping {
+    pub fn GetWebStatusString(
+        status: crate::System::Net::WebExceptionStatus,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetWebStatusString", (status))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Net+WebExceptionMapping")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Net::WebExceptionMapping {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

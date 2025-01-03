@@ -43,6 +43,13 @@ impl crate::System::Runtime::CompilerServices::AsyncValueTaskMethodBuilder {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn Create() -> quest_hook::libil2cpp::Result<
+        crate::System::Runtime::CompilerServices::AsyncValueTaskMethodBuilder,
+    > {
+        let __cordl_ret: crate::System::Runtime::CompilerServices::AsyncValueTaskMethodBuilder = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn SetException(
         &mut self,
         exception: quest_hook::libil2cpp::Gc<crate::System::Exception>,

@@ -26,6 +26,11 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Tls::CertChainType
 impl crate::Org::BouncyCastle::Crypto::Tls::CertChainType {
     pub const individual_certs: u8 = 0u8;
     pub const pkipath: u8 = 1u8;
+    pub fn IsValid(certChainType: u8) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsValid", (certChainType))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

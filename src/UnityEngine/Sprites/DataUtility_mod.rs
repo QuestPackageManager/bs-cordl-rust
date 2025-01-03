@@ -23,7 +23,36 @@ impl std::ops::DerefMut for crate::UnityEngine::Sprites::DataUtility {
     }
 }
 #[cfg(feature = "UnityEngine+Sprites+DataUtility")]
-impl crate::UnityEngine::Sprites::DataUtility {}
+impl crate::UnityEngine::Sprites::DataUtility {
+    pub fn GetInnerUV(
+        sprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
+        let __cordl_ret: crate::UnityEngine::Vector4 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetInnerUV", (sprite))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetMinSize(
+        sprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetMinSize", (sprite))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetOuterUV(
+        sprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
+        let __cordl_ret: crate::UnityEngine::Vector4 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetOuterUV", (sprite))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPadding(
+        sprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
+        let __cordl_ret: crate::UnityEngine::Vector4 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPadding", (sprite))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+Sprites+DataUtility")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Sprites::DataUtility {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

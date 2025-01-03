@@ -35,6 +35,15 @@ impl crate::System::Data::DataTextWriter {
             .invoke("Close", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn CreateWriter(
+        xw: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateWriter", (xw))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Flush(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

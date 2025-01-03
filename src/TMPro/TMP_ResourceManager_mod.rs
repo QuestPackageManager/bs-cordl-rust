@@ -24,12 +24,41 @@ impl std::ops::DerefMut for crate::TMPro::TMP_ResourceManager {
 }
 #[cfg(feature = "TMPro+TMP_ResourceManager")]
 impl crate::TMPro::TMP_ResourceManager {
+    pub fn AddFontAsset(
+        fontAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddFontAsset", (fontAsset))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetTextSettings() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Settings>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Settings> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetTextSettings", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
+    }
+    pub fn RebuildFontAssetCache(
+        instanceID: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RebuildFontAssetCache", (instanceID))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryGetFontAsset(
+        hashcode: i32,
+        fontAsset: quest_hook::libil2cpp::ByRefMut<*mut crate::TMPro::TMP_FontAsset>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryGetFontAsset", (hashcode, fontAsset))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,

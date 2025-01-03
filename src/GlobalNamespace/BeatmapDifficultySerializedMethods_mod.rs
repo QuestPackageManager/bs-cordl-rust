@@ -32,6 +32,27 @@ impl crate::GlobalNamespace::BeatmapDifficultySerializedMethods {
     pub const kDifficultyHardSerializedName: &'static str = "Hard";
     pub const kDifficultyNormalSerializedName: &'static str = "Normal";
     pub const kDifficultyUnknownSerializedName: &'static str = "Unknown";
+    pub fn BeatmapDifficultyFromSerializedName(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        difficulty: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::BeatmapDifficulty,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BeatmapDifficultyFromSerializedName", (name, difficulty))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SerializedName(
+        difficulty: crate::GlobalNamespace::BeatmapDifficulty,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SerializedName", (difficulty))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "BeatmapDifficultySerializedMethods")]
 impl quest_hook::libil2cpp::ObjectType

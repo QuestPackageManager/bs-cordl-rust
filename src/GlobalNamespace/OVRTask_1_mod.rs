@@ -354,6 +354,30 @@ impl<TResult: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OVRTask_1<TRe
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Equality(
+        lhs: crate::GlobalNamespace::OVRTask_1<TResult>,
+        rhs: crate::GlobalNamespace::OVRTask_1<TResult>,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        lhs: crate::GlobalNamespace::OVRTask_1<TResult>,
+        rhs: crate::GlobalNamespace::OVRTask_1<TResult>,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "OVRTask_1")]
 impl<TResult: quest_hook::libil2cpp::Type> AsRef<crate::System::IDisposable>
@@ -520,7 +544,40 @@ for crate::GlobalNamespace::OVRTask_1_Callback<TResult> {
 impl<
     TResult: quest_hook::libil2cpp::Type,
 > crate::GlobalNamespace::OVRTask_1_Callback<TResult> {
-    pub fn Invoke(
+    pub fn Add(
+        taskId: crate::System::Guid,
+        delegate: quest_hook::libil2cpp::Gc<crate::System::Action_1<TResult>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Add", (taskId, delegate))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Clear() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Clear", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Invoke_Guid_TResult0(
+        taskId: crate::System::Guid,
+        result: TResult,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Invoke", (taskId, result))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Invoke_TResult1(
         &mut self,
         result: TResult,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -533,6 +590,15 @@ impl<
             "Invoke",
             (result),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Remove(taskId: crate::System::Guid) -> quest_hook::libil2cpp::Result<bool>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Remove", (taskId))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -829,7 +895,47 @@ impl<
     TResult: quest_hook::libil2cpp::Type,
     T: quest_hook::libil2cpp::Type,
 > crate::GlobalNamespace::OVRTask_1_CallbackWithState_1<TResult, T> {
-    pub fn Invoke(
+    pub fn Add(
+        taskId: crate::System::Guid,
+        data: T,
+        callback: quest_hook::libil2cpp::Gc<crate::System::Action_2<TResult, T>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Add", (taskId, data, callback))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Clear() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Clear", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Invoke_Guid_TResult0(
+        taskId: crate::System::Guid,
+        result: TResult,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Invoke", (taskId, result))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Invoke_TResult1(
         &mut self,
         result: TResult,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -844,6 +950,17 @@ impl<
             "Invoke",
             (result),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Remove(taskId: crate::System::Guid) -> quest_hook::libil2cpp::Result<bool>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Remove", (taskId))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -907,7 +1024,60 @@ for crate::GlobalNamespace::OVRTask_1_IncrementalResultSubscriber_1<TResult, T> 
 impl<
     TResult: quest_hook::libil2cpp::Type,
     T: quest_hook::libil2cpp::Type,
-> crate::GlobalNamespace::OVRTask_1_IncrementalResultSubscriber_1<TResult, T> {}
+> crate::GlobalNamespace::OVRTask_1_IncrementalResultSubscriber_1<TResult, T> {
+    pub fn Clear() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Clear", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Notify(
+        taskId: crate::System::Guid,
+        result: T,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Notify", (taskId, result))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Remove(
+        id: crate::System::Guid,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Remove", (id))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Set(
+        taskId: crate::System::Guid,
+        subscriber: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Set", (taskId, subscriber))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "OVRTask_1+IncrementalResultSubscriber_1")]
 impl<
     TResult: quest_hook::libil2cpp::Type,
@@ -1079,7 +1249,58 @@ impl<
 impl<
     TResult: quest_hook::libil2cpp::Type,
     T: quest_hook::libil2cpp::Type,
-> crate::GlobalNamespace::OVRTask_1_InternalData_1<TResult, T> {}
+> crate::GlobalNamespace::OVRTask_1_InternalData_1<TResult, T> {
+    pub fn Clear() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Clear", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Remove(taskId: crate::System::Guid) -> quest_hook::libil2cpp::Result<bool>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Remove", (taskId))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Set(
+        taskId: crate::System::Guid,
+        data: T,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Set", (taskId, data))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryGet(
+        taskId: crate::System::Guid,
+        data: quest_hook::libil2cpp::ByRefMut<T>,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryGet", (taskId, data))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "OVRTask_1+InternalData_1")]
 impl<
     TResult: quest_hook::libil2cpp::Type,

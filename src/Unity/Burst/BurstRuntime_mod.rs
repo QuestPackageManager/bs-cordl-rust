@@ -34,6 +34,114 @@ impl crate::Unity::Burst::BurstRuntime {
     >;
     #[cfg(feature = "Unity+Burst+BurstRuntime+PreserveAttribute")]
     pub type PreserveAttribute = crate::Unity::Burst::BurstRuntime_PreserveAttribute;
+    pub fn GetHashCode32_0<T>() -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetHashCode32", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetHashCode32_Type1(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetHashCode32", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetHashCode64_0<T>() -> quest_hook::libil2cpp::Result<i64>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetHashCode64", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetHashCode64_Type1(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetHashCode64", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetUTF8LiteralPointer(
+        str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        byteCount: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetUTF8LiteralPointer", (str, byteCount))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn HashStringWithFNV1A32(
+        text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("HashStringWithFNV1A32", (text))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn HashStringWithFNV1A64(
+        text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("HashStringWithFNV1A64", (text))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Initialize() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Initialize", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LoadAdditionalLibrary(
+        pathToLibBurstGenerated: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LoadAdditionalLibrary", (pathToLibBurstGenerated))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LoadAdditionalLibraryInternal(
+        pathToLibBurstGenerated: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LoadAdditionalLibraryInternal", (pathToLibBurstGenerated))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Log(
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        logType: i32,
+        fileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        lineNumber: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Log", (message, logType, fileName, lineNumber))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn PreventRequiredAttributeStrip() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PreventRequiredAttributeStrip", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RuntimeLog(
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        logType: i32,
+        fileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        lineNumber: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RuntimeLog", (message, logType, fileName, lineNumber))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "Unity+Burst+BurstRuntime")]
 impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::BurstRuntime {

@@ -2022,6 +2022,19 @@ impl crate::TMPro::TMP_Text {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn add_OnFontAssetRequest(
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Func_3<
+                i32,
+                *mut quest_hook::libil2cpp::Il2CppString,
+                *mut crate::TMPro::TMP_FontAsset,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("add_OnFontAssetRequest", (value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn add_OnPreRenderText(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
@@ -2033,6 +2046,19 @@ impl crate::TMPro::TMP_Text {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("add_OnPreRenderText", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn add_OnSpriteAssetRequest(
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Func_3<
+                i32,
+                *mut quest_hook::libil2cpp::Il2CppString,
+                *mut crate::TMPro::TMP_SpriteAsset,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("add_OnSpriteAssetRequest", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_alignment(
@@ -2829,6 +2855,19 @@ impl crate::TMPro::TMP_Text {
         let __cordl_ret: f32 = __cordl_object.invoke("get_wordWrappingRatios", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn remove_OnFontAssetRequest(
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Func_3<
+                i32,
+                *mut quest_hook::libil2cpp::Il2CppString,
+                *mut crate::TMPro::TMP_FontAsset,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("remove_OnFontAssetRequest", (value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn remove_OnPreRenderText(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
@@ -2840,6 +2879,19 @@ impl crate::TMPro::TMP_Text {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_OnPreRenderText", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_OnSpriteAssetRequest(
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Func_3<
+                i32,
+                *mut quest_hook::libil2cpp::Il2CppString,
+                *mut crate::TMPro::TMP_SpriteAsset,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("remove_OnSpriteAssetRequest", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_alignment(

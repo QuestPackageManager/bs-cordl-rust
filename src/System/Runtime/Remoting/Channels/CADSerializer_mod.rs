@@ -24,7 +24,64 @@ impl std::ops::DerefMut for crate::System::Runtime::Remoting::Channels::CADSeria
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Channels+CADSerializer")]
-impl crate::System::Runtime::Remoting::Channels::CADSerializer {}
+impl crate::System::Runtime::Remoting::Channels::CADSerializer {
+    pub fn DeserializeMessage(
+        mem: quest_hook::libil2cpp::Gc<crate::System::IO::MemoryStream>,
+        msg: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Messaging::IMethodCallMessage,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Messaging::IMessage>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Messaging::IMessage,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DeserializeMessage", (mem, msg))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DeserializeObject(
+        mem: quest_hook::libil2cpp::Gc<crate::System::IO::MemoryStream>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DeserializeObject", (mem))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DeserializeObjectSafe(
+        mem: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DeserializeObjectSafe", (mem))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SerializeMessage(
+        msg: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Messaging::IMessage,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IO::MemoryStream>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IO::MemoryStream> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SerializeMessage", (msg))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SerializeObject(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IO::MemoryStream>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IO::MemoryStream> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SerializeObject", (obj))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Runtime+Remoting+Channels+CADSerializer")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::Remoting::Channels::CADSerializer {

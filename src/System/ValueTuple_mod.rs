@@ -18,6 +18,83 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::ValueTuple {
 }
 #[cfg(feature = "System+ValueTuple")]
 impl crate::System::ValueTuple {
+    pub fn CombineHashCodes_i32_1(
+        h1: i32,
+        h2: i32,
+        h3: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CombineHashCodes", (h1, h2, h3))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CombineHashCodes_i32_i32_0(
+        h1: i32,
+        h2: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CombineHashCodes", (h1, h2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CombineHashCodes_i32_i32_2(
+        h1: i32,
+        h2: i32,
+        h3: i32,
+        h4: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CombineHashCodes", (h1, h2, h3, h4))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CombineHashCodes_i32_i32_i32_3(
+        h1: i32,
+        h2: i32,
+        h3: i32,
+        h4: i32,
+        h5: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CombineHashCodes", (h1, h2, h3, h4, h5))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CombineHashCodes_i32_i32_i32_i32_4(
+        h1: i32,
+        h2: i32,
+        h3: i32,
+        h4: i32,
+        h5: i32,
+        h6: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CombineHashCodes", (h1, h2, h3, h4, h5, h6))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CombineHashCodes_i32_i32_i32_i32_i32_5(
+        h1: i32,
+        h2: i32,
+        h3: i32,
+        h4: i32,
+        h5: i32,
+        h6: i32,
+        h7: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CombineHashCodes", (h1, h2, h3, h4, h5, h6, h7))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CombineHashCodes_i32_i32_i32_i32_i32_i32_6(
+        h1: i32,
+        h2: i32,
+        h3: i32,
+        h4: i32,
+        h5: i32,
+        h6: i32,
+        h7: i32,
+        h8: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CombineHashCodes", (h1, h2, h3, h4, h5, h6, h7, h8))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CompareTo(
         &mut self,
         other: crate::System::ValueTuple,

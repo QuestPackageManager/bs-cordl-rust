@@ -30,12 +30,32 @@ for crate::UnityEngine::InputSystem::Processors::NormalizeProcessor {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Processors+NormalizeProcessor")]
 impl crate::UnityEngine::InputSystem::Processors::NormalizeProcessor {
+    pub fn Denormalize(
+        value: f32,
+        min: f32,
+        max: f32,
+        zero: f32,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Denormalize", (value, min, max, zero))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
+    }
+    pub fn Normalize(
+        value: f32,
+        min: f32,
+        max: f32,
+        zero: f32,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Normalize", (value, min, max, zero))?;
+        Ok(__cordl_ret.into())
     }
     pub fn Process(
         &mut self,

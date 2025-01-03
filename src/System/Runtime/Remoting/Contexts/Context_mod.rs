@@ -36,6 +36,22 @@ impl std::ops::DerefMut for crate::System::Runtime::Remoting::Contexts::Context 
 }
 #[cfg(feature = "System+Runtime+Remoting+Contexts+Context")]
 impl crate::System::Runtime::Remoting::Contexts::Context {
+    pub fn AllocateDataSlot() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::LocalDataStoreSlot>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::LocalDataStoreSlot> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AllocateDataSlot", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AllocateNamedDataSlot(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::LocalDataStoreSlot>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::LocalDataStoreSlot> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AllocateNamedDataSlot", (name))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CreateEnvoySink(
         &mut self,
         serverObject: quest_hook::libil2cpp::Gc<crate::System::MarshalByRefObject>,
@@ -50,6 +66,19 @@ impl crate::System::Runtime::Remoting::Contexts::Context {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::Messaging::IMessageSink,
         > = __cordl_object.invoke("CreateEnvoySink", (serverObject))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateNewContext(
+        msg: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Activation::IConstructionCallMessage,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Contexts::Context>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Contexts::Context,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateNewContext", (msg))?;
         Ok(__cordl_ret.into())
     }
     pub fn CreateServerObjectSinkChain(
@@ -93,6 +122,13 @@ impl crate::System::Runtime::Remoting::Contexts::Context {
             .invoke("Finalize", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn FreeNamedDataSlot(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FreeNamedDataSlot", (name))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Freeze(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -116,6 +152,41 @@ impl crate::System::Runtime::Remoting::Contexts::Context {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::Remoting::Messaging::IMessageSink,
         > = __cordl_object.invoke("GetClientContextSinkChain", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetData(
+        slot: quest_hook::libil2cpp::Gc<crate::System::LocalDataStoreSlot>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetData", (slot))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetDynamicPropertyCollection(
+        obj: quest_hook::libil2cpp::Gc<crate::System::ContextBoundObject>,
+        ctx: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Contexts::Context,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Contexts::DynamicPropertyCollection,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Contexts::DynamicPropertyCollection,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetDynamicPropertyCollection", (obj, ctx))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetNamedDataSlot(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::LocalDataStoreSlot>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::LocalDataStoreSlot> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetNamedDataSlot", (name))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetProperty(
@@ -172,6 +243,60 @@ impl crate::System::Runtime::Remoting::Contexts::Context {
             .invoke("NotifyDynamicSinks", (start, req_msg, client_site, _cordl_async))?;
         Ok(__cordl_ret.into())
     }
+    pub fn NotifyGlobalDynamicSinks(
+        start: bool,
+        req_msg: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Messaging::IMessage,
+        >,
+        client_site: bool,
+        _cordl_async: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "NotifyGlobalDynamicSinks",
+                (start, req_msg, client_site, _cordl_async),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RegisterContext(
+        ctx: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Contexts::Context,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RegisterContext", (ctx))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RegisterDynamicProperty(
+        prop: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Contexts::IDynamicProperty,
+        >,
+        obj: quest_hook::libil2cpp::Gc<crate::System::ContextBoundObject>,
+        ctx: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Contexts::Context,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RegisterDynamicProperty", (prop, obj, ctx))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReleaseContext(
+        ctx: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Contexts::Context,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReleaseContext", (ctx))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetData(
+        slot: quest_hook::libil2cpp::Gc<crate::System::LocalDataStoreSlot>,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetData", (slot, data))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn SetProperty(
         &mut self,
         prop: quest_hook::libil2cpp::Gc<
@@ -185,6 +310,19 @@ impl crate::System::Runtime::Remoting::Contexts::Context {
             .invoke("SetProperty", (prop))?;
         Ok(__cordl_ret.into())
     }
+    pub fn SwitchToContext(
+        newContext: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Contexts::Context,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Contexts::Context>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Contexts::Context,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SwitchToContext", (newContext))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ToString(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -196,6 +334,17 @@ impl crate::System::Runtime::Remoting::Contexts::Context {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("ToString", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UnregisterDynamicProperty(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        obj: quest_hook::libil2cpp::Gc<crate::System::ContextBoundObject>,
+        ctx: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Contexts::Context,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UnregisterDynamicProperty", (name, obj, ctx))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -234,6 +383,15 @@ impl crate::System::Runtime::Remoting::Contexts::Context {
         > = __cordl_object.invoke("get_ContextProperties", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_DefaultContext() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Runtime::Remoting::Contexts::Context>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Remoting::Contexts::Context,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_DefaultContext", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_HasDynamicSinks(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -246,6 +404,11 @@ impl crate::System::Runtime::Remoting::Contexts::Context {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_HasExitSinks", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_HasGlobalDynamicSinks() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_HasGlobalDynamicSinks", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_IsDefaultContext(&mut self) -> quest_hook::libil2cpp::Result<bool> {

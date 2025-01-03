@@ -23,7 +23,24 @@ impl std::ops::DerefMut for crate::System::Net::CredentialCache {
     }
 }
 #[cfg(feature = "System+Net+CredentialCache")]
-impl crate::System::Net::CredentialCache {}
+impl crate::System::Net::CredentialCache {
+    pub fn get_DefaultCredentials() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Net::ICredentials>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::ICredentials> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_DefaultCredentials", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_DefaultNetworkCredentials() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Net::NetworkCredential>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Net::NetworkCredential,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_DefaultNetworkCredentials", ())?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Net+CredentialCache")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Net::CredentialCache {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

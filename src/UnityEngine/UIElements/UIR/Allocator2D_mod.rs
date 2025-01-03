@@ -40,6 +40,49 @@ impl crate::UnityEngine::UIElements::UIR::Allocator2D {
     pub type Area = crate::UnityEngine::UIElements::UIR::Allocator2D_Area;
     #[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D+Row")]
     pub type Row = crate::UnityEngine::UIElements::UIR::Allocator2D_Row;
+    pub fn BuildAreas(
+        areas: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::UIElements::UIR::Allocator2D_Area,
+            >,
+        >,
+        minSize: crate::UnityEngine::Vector2Int,
+        maxSize: crate::UnityEngine::Vector2Int,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BuildAreas", (areas, minSize, maxSize))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn BuildRowArray(
+        maxRowHeight: i32,
+        rowHeightBias: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::UnityEngine::UIElements::UIR::Allocator2D_Row,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::UnityEngine::UIElements::UIR::Allocator2D_Row,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BuildRowArray", (maxRowHeight, rowHeightBias))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ComputeMaxAllocSize(
+        areas: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::UIElements::UIR::Allocator2D_Area,
+            >,
+        >,
+        rowHeightBias: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2Int> {
+        let __cordl_ret: crate::UnityEngine::Vector2Int = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ComputeMaxAllocSize", (areas, rowHeightBias))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Free(
         &mut self,
         alloc2D: crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D,
@@ -239,12 +282,29 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIR::Allocator2D_Row
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D+Row")]
 impl crate::UnityEngine::UIElements::UIR::Allocator2D_Row {
+    pub fn Create() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::Allocator2D_Row>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UIR::Allocator2D_Row,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Create", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
+    }
+    pub fn Reset(
+        row: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UIR::Allocator2D_Row,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Reset", (row))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,

@@ -26,6 +26,107 @@ impl std::ops::DerefMut for crate::UnityEngine::XR::XRSettings {
 impl crate::UnityEngine::XR::XRSettings {
     #[cfg(feature = "UnityEngine+XR+XRSettings+StereoRenderingMode")]
     pub type StereoRenderingMode = crate::UnityEngine::XR::XRSettings_StereoRenderingMode;
+    pub fn get_deviceEyeTextureDimension() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Rendering::TextureDimension,
+    > {
+        let __cordl_ret: crate::UnityEngine::Rendering::TextureDimension = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_deviceEyeTextureDimension", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_enabled() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_enabled", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_eyeTextureHeight() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_eyeTextureHeight", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_eyeTextureResolutionScale() -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_eyeTextureResolutionScale", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_eyeTextureWidth() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_eyeTextureWidth", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_isDeviceActive() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_isDeviceActive", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_loadedDeviceName() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_loadedDeviceName", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_occlusionMaskScale() -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_occlusionMaskScale", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_renderViewportScale() -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_renderViewportScale", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_renderViewportScaleInternal() -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_renderViewportScaleInternal", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_showDeviceView() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_showDeviceView", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_stereoRenderingMode() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::XR::XRSettings_StereoRenderingMode,
+    > {
+        let __cordl_ret: crate::UnityEngine::XR::XRSettings_StereoRenderingMode = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_stereoRenderingMode", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_useOcclusionMesh() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_useOcclusionMesh", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_eyeTextureResolutionScale(
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_eyeTextureResolutionScale", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_renderViewportScale(
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_renderViewportScale", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_renderViewportScaleInternal(
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_renderViewportScaleInternal", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_showDeviceView(
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_showDeviceView", (value))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+XR+XRSettings")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::XR::XRSettings {

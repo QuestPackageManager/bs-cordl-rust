@@ -138,6 +138,17 @@ impl crate::System::Xml::Schema::XmlNumeric10Converter {
         > = __cordl_object.invoke("ChangeType", (value, destinationType))?;
         Ok(__cordl_ret.into())
     }
+    pub fn Create(
+        schemaType: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaType>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlValueConverter>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlValueConverter,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (schemaType))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         schemaType: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaType>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

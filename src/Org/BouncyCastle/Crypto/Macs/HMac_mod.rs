@@ -120,6 +120,15 @@ impl crate::Org::BouncyCastle::Crypto::Macs::HMac {
             .invoke("Update", (input))?;
         Ok(__cordl_ret.into())
     }
+    pub fn XorPad(
+        pad: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        len: i32,
+        n: u8,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("XorPad", (pad, len, n))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
         digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,

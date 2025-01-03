@@ -430,6 +430,20 @@ impl crate::System::Reflection::RuntimeConstructorInfo {
             .invoke("get_ReflectedTypeInternal", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_core_clr_security_level() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_core_clr_security_level", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_metadata_token(
+        method: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::RuntimeConstructorInfo,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_metadata_token", (method))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "System+Reflection+RuntimeConstructorInfo")]
 impl quest_hook::libil2cpp::ObjectType

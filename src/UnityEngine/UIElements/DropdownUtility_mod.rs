@@ -23,7 +23,16 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::DropdownUtility {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+DropdownUtility")]
-impl crate::UnityEngine::UIElements::DropdownUtility {}
+impl crate::UnityEngine::UIElements::DropdownUtility {
+    pub fn CreateDropdown() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IGenericMenu>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::IGenericMenu,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("CreateDropdown", ())?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+DropdownUtility")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::DropdownUtility {

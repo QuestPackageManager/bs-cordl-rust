@@ -32,6 +32,24 @@ impl std::ops::DerefMut for crate::System::Linq::Expressions::Interpreter::Debug
 impl crate::System::Linq::Expressions::Interpreter::DebugInfo {
     #[cfg(feature = "System+Linq+Expressions+Interpreter+DebugInfo+DebugInfoComparer")]
     pub type DebugInfoComparer = crate::System::Linq::Expressions::Interpreter::DebugInfo_DebugInfoComparer;
+    pub fn GetMatchingDebugInfo(
+        debugInfos: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Linq::Expressions::Interpreter::DebugInfo,
+            >,
+        >,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::DebugInfo,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::DebugInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetMatchingDebugInfo", (debugInfos, index))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

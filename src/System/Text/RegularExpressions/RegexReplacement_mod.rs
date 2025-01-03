@@ -35,6 +35,31 @@ impl crate::System::Text::RegularExpressions::RegexReplacement {
     pub const RightPortion: i32 = -2i32;
     pub const Specials: i32 = 4i32;
     pub const WholeString: i32 = -4i32;
+    pub fn GetOrCreate(
+        replRef: quest_hook::libil2cpp::Gc<
+            crate::System::WeakReference_1<
+                *mut crate::System::Text::RegularExpressions::RegexReplacement,
+            >,
+        >,
+        replacement: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        caps: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+        capsize: i32,
+        capnames: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
+        roptions: crate::System::Text::RegularExpressions::RegexOptions,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Text::RegularExpressions::RegexReplacement,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Text::RegularExpressions::RegexReplacement,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetOrCreate",
+                (replRef, replacement, caps, capsize, capnames, roptions),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         rep: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         concat: quest_hook::libil2cpp::Gc<

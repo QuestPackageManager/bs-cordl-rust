@@ -53,6 +53,19 @@ impl crate::UnityEngine::UIElements::VisualElementFocusChangeTarget {
             .invoke("Dispose", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetPooled(
+        target: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Focusable>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::VisualElementFocusChangeTarget,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::VisualElementFocusChangeTarget,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPooled", (target))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

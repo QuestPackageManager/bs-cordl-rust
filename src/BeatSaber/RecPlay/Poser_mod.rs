@@ -23,7 +23,31 @@ impl std::ops::DerefMut for crate::BeatSaber::RecPlay::Poser {
     }
 }
 #[cfg(feature = "BeatSaber+RecPlay+Poser")]
-impl crate::BeatSaber::RecPlay::Poser {}
+impl crate::BeatSaber::RecPlay::Poser {
+    pub fn InterpolatePose(
+        a: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Pose>,
+        b: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Pose>,
+        t: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Pose> {
+        let __cordl_ret: crate::UnityEngine::Pose = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InterpolatePose", (a, b, t))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InvertPose(
+        pose: crate::UnityEngine::Pose,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Pose> {
+        let __cordl_ret: crate::UnityEngine::Pose = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InvertPose", (pose))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MirrorPoseYZ(
+        pose: crate::UnityEngine::Pose,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Pose> {
+        let __cordl_ret: crate::UnityEngine::Pose = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MirrorPoseYZ", (pose))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "BeatSaber+RecPlay+Poser")]
 impl quest_hook::libil2cpp::ObjectType for crate::BeatSaber::RecPlay::Poser {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

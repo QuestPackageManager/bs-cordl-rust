@@ -23,7 +23,25 @@ impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::MaterialUtility {
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+MaterialUtility")]
-impl crate::UnityEngine::ProBuilder::MaterialUtility {}
+impl crate::UnityEngine::ProBuilder::MaterialUtility {
+    pub fn GetMaterialCount(
+        renderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetMaterialCount", (renderer))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetSharedMaterial(
+        renderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSharedMaterial", (renderer, index))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+ProBuilder+MaterialUtility")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::ProBuilder::MaterialUtility {

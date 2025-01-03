@@ -45,6 +45,21 @@ impl crate::BGLib::Polyglot::LocalizationAsyncInstaller {
             .invoke("InstallBindings", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn LoadLocalizationAssetsSync() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BGLib::Polyglot::LocalizationAsset,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BGLib::Polyglot::LocalizationAsset,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LoadLocalizationAssetsSync", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn LoadResourcesBeforeInstall(
         &mut self,
         assets: quest_hook::libil2cpp::Gc<
@@ -61,6 +76,27 @@ impl crate::BGLib::Polyglot::LocalizationAsyncInstaller {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("LoadResourcesBeforeInstall", (assets, registry))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LocalizationContentToAsset(
+        content: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::UnityEngine::TextAsset,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BGLib::Polyglot::LocalizationAsset,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BGLib::Polyglot::LocalizationAsset,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LocalizationContentToAsset", (content))?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

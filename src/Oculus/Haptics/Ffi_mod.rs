@@ -37,12 +37,26 @@ impl crate::Oculus::Haptics::Ffi {
     pub type Result = crate::Oculus::Haptics::Ffi_Result;
     #[cfg(feature = "Oculus+Haptics+Ffi+SdkVersion")]
     pub type SdkVersion = crate::Oculus::Haptics::Ffi_SdkVersion;
+    pub fn Failed(
+        result: crate::Oculus::Haptics::Ffi_Result,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Failed", (result))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
+    }
+    pub fn Succeeded(
+        result: crate::Oculus::Haptics::Ffi_Result,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Succeeded", (result))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -52,6 +66,247 @@ impl crate::Oculus::Haptics::Ffi {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn clip_duration(
+        clipId: i32,
+        clip_duration: quest_hook::libil2cpp::ByRefMut<f32>,
+    ) -> quest_hook::libil2cpp::Result<crate::Oculus::Haptics::Ffi_Result> {
+        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("clip_duration", (clipId, clip_duration))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn create_player(
+        player_id: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<crate::Oculus::Haptics::Ffi_Result> {
+        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("create_player", (player_id))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn error_message() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("error_message", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_null_backend_statistics() -> quest_hook::libil2cpp::Result<
+        crate::Oculus::Haptics::Ffi_NullBackendStatistics,
+    > {
+        let __cordl_ret: crate::Oculus::Haptics::Ffi_NullBackendStatistics = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_null_backend_statistics", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn haptics_sdk_error_message() -> quest_hook::libil2cpp::Result<
+        crate::System::IntPtr,
+    > {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("haptics_sdk_error_message", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn haptics_sdk_error_message_length() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("haptics_sdk_error_message_length", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn initialize_with_null_backend(
+        logCallback: quest_hook::libil2cpp::Gc<crate::Oculus::Haptics::Ffi_LogCallback>,
+    ) -> quest_hook::libil2cpp::Result<crate::Oculus::Haptics::Ffi_Result> {
+        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("initialize_with_null_backend", (logCallback))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn initialize_with_ovr_plugin(
+        game_engine_name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        game_engine_version: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+        game_engine_haptics_sdk_version: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+        logCallback: quest_hook::libil2cpp::Gc<crate::Oculus::Haptics::Ffi_LogCallback>,
+    ) -> quest_hook::libil2cpp::Result<crate::Oculus::Haptics::Ffi_Result> {
+        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "initialize_with_ovr_plugin",
+                (
+                    game_engine_name,
+                    game_engine_version,
+                    game_engine_haptics_sdk_version,
+                    logCallback,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn initialize_with_ovr_plugin_bytes(
+        game_engine_name: quest_hook::libil2cpp::ByRef<
+            *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        >,
+        game_engine_version: quest_hook::libil2cpp::ByRef<
+            *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        >,
+        game_engine_haptics_sdk_version: quest_hook::libil2cpp::ByRef<
+            *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        >,
+        logCallback: quest_hook::libil2cpp::Gc<crate::Oculus::Haptics::Ffi_LogCallback>,
+    ) -> quest_hook::libil2cpp::Result<crate::Oculus::Haptics::Ffi_Result> {
+        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "initialize_with_ovr_plugin_bytes",
+                (
+                    game_engine_name,
+                    game_engine_version,
+                    game_engine_haptics_sdk_version,
+                    logCallback,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn initialized(
+        initialized: quest_hook::libil2cpp::ByRefMut<bool>,
+    ) -> quest_hook::libil2cpp::Result<crate::Oculus::Haptics::Ffi_Result> {
+        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("initialized", (initialized))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn load_clip(
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        clip_id_out: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<crate::Oculus::Haptics::Ffi_Result> {
+        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("load_clip", (data, clip_id_out))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn load_clip_bytes(
+        data: quest_hook::libil2cpp::ByRef<*mut quest_hook::libil2cpp::Il2CppArray<u8>>,
+        data_length: u32,
+        clip_id_out: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<crate::Oculus::Haptics::Ffi_Result> {
+        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("load_clip_bytes", (data, data_length, clip_id_out))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn player_amplitude(
+        playerId: i32,
+        amplitude: quest_hook::libil2cpp::ByRefMut<f32>,
+    ) -> quest_hook::libil2cpp::Result<crate::Oculus::Haptics::Ffi_Result> {
+        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("player_amplitude", (playerId, amplitude))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn player_frequency_shift(
+        playerId: i32,
+        frequency_shift: quest_hook::libil2cpp::ByRefMut<f32>,
+    ) -> quest_hook::libil2cpp::Result<crate::Oculus::Haptics::Ffi_Result> {
+        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("player_frequency_shift", (playerId, frequency_shift))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn player_looping_enabled(
+        playerId: i32,
+        looping_enabled: quest_hook::libil2cpp::ByRefMut<bool>,
+    ) -> quest_hook::libil2cpp::Result<crate::Oculus::Haptics::Ffi_Result> {
+        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("player_looping_enabled", (playerId, looping_enabled))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn player_play(
+        playerId: i32,
+        controller: crate::Oculus::Haptics::Ffi_Controller,
+    ) -> quest_hook::libil2cpp::Result<crate::Oculus::Haptics::Ffi_Result> {
+        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("player_play", (playerId, controller))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn player_priority(
+        playerId: i32,
+        priority: quest_hook::libil2cpp::ByRefMut<u32>,
+    ) -> quest_hook::libil2cpp::Result<crate::Oculus::Haptics::Ffi_Result> {
+        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("player_priority", (playerId, priority))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn player_set_amplitude(
+        playerId: i32,
+        amplitude: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::Oculus::Haptics::Ffi_Result> {
+        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("player_set_amplitude", (playerId, amplitude))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn player_set_clip(
+        playerId: i32,
+        clipId: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::Oculus::Haptics::Ffi_Result> {
+        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("player_set_clip", (playerId, clipId))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn player_set_frequency_shift(
+        playerId: i32,
+        amount: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::Oculus::Haptics::Ffi_Result> {
+        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("player_set_frequency_shift", (playerId, amount))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn player_set_looping_enabled(
+        playerId: i32,
+        enabled: bool,
+    ) -> quest_hook::libil2cpp::Result<crate::Oculus::Haptics::Ffi_Result> {
+        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("player_set_looping_enabled", (playerId, enabled))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn player_set_priority(
+        playerId: i32,
+        priority: u32,
+    ) -> quest_hook::libil2cpp::Result<crate::Oculus::Haptics::Ffi_Result> {
+        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("player_set_priority", (playerId, priority))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn player_stop(
+        playerId: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::Oculus::Haptics::Ffi_Result> {
+        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("player_stop", (playerId))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn release_clip(
+        clipId: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::Oculus::Haptics::Ffi_Result> {
+        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("release_clip", (clipId))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn release_player(
+        playerId: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::Oculus::Haptics::Ffi_Result> {
+        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("release_player", (playerId))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_suspended(
+        suspended: bool,
+    ) -> quest_hook::libil2cpp::Result<crate::Oculus::Haptics::Ffi_Result> {
+        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_suspended", (suspended))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn uninitialize() -> quest_hook::libil2cpp::Result<
+        crate::Oculus::Haptics::Ffi_Result,
+    > {
+        let __cordl_ret: crate::Oculus::Haptics::Ffi_Result = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("uninitialize", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn version() -> quest_hook::libil2cpp::Result<
+        crate::Oculus::Haptics::Ffi_SdkVersion,
+    > {
+        let __cordl_ret: crate::Oculus::Haptics::Ffi_SdkVersion = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("version", ())?;
         Ok(__cordl_ret.into())
     }
 }

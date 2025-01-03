@@ -27,6 +27,28 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::XmlBaseConverter {
 }
 #[cfg(feature = "System+Xml+Schema+XmlBaseConverter")]
 impl crate::System::Xml::Schema::XmlBaseConverter {
+    pub fn AnyUriToString(
+        value: quest_hook::libil2cpp::Gc<crate::System::Uri>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AnyUriToString", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Base64BinaryToString(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Base64BinaryToString", (value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ChangeListType(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -179,6 +201,248 @@ impl crate::System::Xml::Schema::XmlBaseConverter {
             .invoke("CreateInvalidClrMappingException", (sourceType, destinationType))?;
         Ok(__cordl_ret.into())
     }
+    pub fn DateOffsetToString(
+        value: crate::System::DateTimeOffset,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DateOffsetToString", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DateTimeOffsetToDateTime(
+        value: crate::System::DateTimeOffset,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
+        let __cordl_ret: crate::System::DateTime = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DateTimeOffsetToDateTime", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DateTimeOffsetToString(
+        value: crate::System::DateTimeOffset,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DateTimeOffsetToString", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DateTimeToString(
+        value: crate::System::DateTime,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DateTimeToString", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DateToString(
+        value: crate::System::DateTime,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DateToString", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DayTimeDurationToString(
+        value: crate::System::TimeSpan,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DayTimeDurationToString", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DecimalToInt32(
+        value: crate::System::Decimal,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DecimalToInt32", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DecimalToInt64(
+        value: crate::System::Decimal,
+    ) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DecimalToInt64", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DecimalToUInt64(
+        value: crate::System::Decimal,
+    ) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DecimalToUInt64", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DurationToString(
+        value: crate::System::TimeSpan,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DurationToString", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GDayOffsetToString(
+        value: crate::System::DateTimeOffset,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GDayOffsetToString", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GDayToString(
+        value: crate::System::DateTime,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GDayToString", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GMonthDayOffsetToString(
+        value: crate::System::DateTimeOffset,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GMonthDayOffsetToString", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GMonthDayToString(
+        value: crate::System::DateTime,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GMonthDayToString", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GMonthOffsetToString(
+        value: crate::System::DateTimeOffset,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GMonthOffsetToString", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GMonthToString(
+        value: crate::System::DateTime,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GMonthToString", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GYearMonthOffsetToString(
+        value: crate::System::DateTimeOffset,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GYearMonthOffsetToString", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GYearMonthToString(
+        value: crate::System::DateTime,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GYearMonthToString", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GYearOffsetToString(
+        value: crate::System::DateTimeOffset,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GYearOffsetToString", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GYearToString(
+        value: crate::System::DateTime,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GYearToString", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Int32ToByte(value: i32) -> quest_hook::libil2cpp::Result<u8> {
+        let __cordl_ret: u8 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Int32ToByte", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Int32ToInt16(value: i32) -> quest_hook::libil2cpp::Result<i16> {
+        let __cordl_ret: i16 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Int32ToInt16", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Int32ToSByte(value: i32) -> quest_hook::libil2cpp::Result<i8> {
+        let __cordl_ret: i8 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Int32ToSByte", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Int32ToUInt16(value: i32) -> quest_hook::libil2cpp::Result<u16> {
+        let __cordl_ret: u16 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Int32ToUInt16", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Int64ToInt32(value: i64) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Int64ToInt32", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Int64ToUInt32(value: i64) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Int64ToUInt32", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsDerivedFrom(
+        derivedType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        baseType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsDerivedFrom", (derivedType, baseType))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_XmlBaseConverter2(
         converterAtomic: quest_hook::libil2cpp::Gc<
             crate::System::Xml::Schema::XmlBaseConverter,
@@ -219,6 +483,218 @@ impl crate::System::Xml::Schema::XmlBaseConverter {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (typeCode))?;
         Ok(__cordl_object.into())
+    }
+    pub fn QNameToString_IXmlNamespaceResolver1(
+        qname: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+        nsResolver: quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlNamespaceResolver>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("QNameToString", (qname, nsResolver))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn QNameToString_XmlQualifiedName0(
+        name: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("QNameToString", (name))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StringToBase64Binary(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StringToBase64Binary", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StringToDate(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
+        let __cordl_ret: crate::System::DateTime = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StringToDate", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StringToDateOffset(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTimeOffset> {
+        let __cordl_ret: crate::System::DateTimeOffset = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StringToDateOffset", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StringToDateTime(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
+        let __cordl_ret: crate::System::DateTime = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StringToDateTime", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StringToDateTimeOffset(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTimeOffset> {
+        let __cordl_ret: crate::System::DateTimeOffset = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StringToDateTimeOffset", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StringToDayTimeDuration(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
+        let __cordl_ret: crate::System::TimeSpan = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StringToDayTimeDuration", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StringToDuration(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
+        let __cordl_ret: crate::System::TimeSpan = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StringToDuration", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StringToGDay(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
+        let __cordl_ret: crate::System::DateTime = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StringToGDay", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StringToGDayOffset(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTimeOffset> {
+        let __cordl_ret: crate::System::DateTimeOffset = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StringToGDayOffset", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StringToGMonth(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
+        let __cordl_ret: crate::System::DateTime = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StringToGMonth", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StringToGMonthDay(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
+        let __cordl_ret: crate::System::DateTime = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StringToGMonthDay", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StringToGMonthDayOffset(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTimeOffset> {
+        let __cordl_ret: crate::System::DateTimeOffset = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StringToGMonthDayOffset", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StringToGMonthOffset(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTimeOffset> {
+        let __cordl_ret: crate::System::DateTimeOffset = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StringToGMonthOffset", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StringToGYear(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
+        let __cordl_ret: crate::System::DateTime = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StringToGYear", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StringToGYearMonth(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
+        let __cordl_ret: crate::System::DateTime = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StringToGYearMonth", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StringToGYearMonthOffset(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTimeOffset> {
+        let __cordl_ret: crate::System::DateTimeOffset = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StringToGYearMonthOffset", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StringToGYearOffset(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTimeOffset> {
+        let __cordl_ret: crate::System::DateTimeOffset = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StringToGYearOffset", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StringToHexBinary(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StringToHexBinary", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StringToQName(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        nsResolver: quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlNamespaceResolver>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::XmlQualifiedName,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StringToQName", (value, nsResolver))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StringToTime(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
+        let __cordl_ret: crate::System::DateTime = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StringToTime", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StringToTimeOffset(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTimeOffset> {
+        let __cordl_ret: crate::System::DateTimeOffset = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StringToTimeOffset", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StringToYearMonthDuration(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
+        let __cordl_ret: crate::System::TimeSpan = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StringToYearMonthDuration", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TimeOffsetToString(
+        value: crate::System::DateTimeOffset,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TimeOffsetToString", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TimeToString(
+        value: crate::System::DateTime,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TimeToString", (value))?;
+        Ok(__cordl_ret.into())
     }
     pub fn ToBoolean_DateTime0(
         &mut self,
@@ -740,6 +1216,31 @@ impl crate::System::Xml::Schema::XmlBaseConverter {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("ToString", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UntypedAtomicToDateTime(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
+        let __cordl_ret: crate::System::DateTime = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UntypedAtomicToDateTime", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UntypedAtomicToDateTimeOffset(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTimeOffset> {
+        let __cordl_ret: crate::System::DateTimeOffset = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UntypedAtomicToDateTimeOffset", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn YearMonthDurationToString(
+        value: crate::System::TimeSpan,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("YearMonthDurationToString", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_XmlBaseConverter2(

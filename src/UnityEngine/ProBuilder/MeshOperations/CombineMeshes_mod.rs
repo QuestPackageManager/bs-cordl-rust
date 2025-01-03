@@ -28,6 +28,209 @@ for crate::UnityEngine::ProBuilder::MeshOperations::CombineMeshes {
 impl crate::UnityEngine::ProBuilder::MeshOperations::CombineMeshes {
     #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+CombineMeshes+__c")]
     pub type __c = crate::UnityEngine::ProBuilder::MeshOperations::CombineMeshes___c;
+    pub fn AccumulateMeshesInfo(
+        meshes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::UnityEngine::ProBuilder::ProBuilderMesh,
+            >,
+        >,
+        offset: i32,
+        vertices: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::ProBuilder::Vertex,
+            >,
+        >,
+        faces: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::ProBuilder::Face,
+            >,
+        >,
+        autoUvFaces: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::ProBuilder::Face,
+            >,
+        >,
+        sharedVertices: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::ProBuilder::SharedVertex,
+            >,
+        >,
+        sharedTextures: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::ProBuilder::SharedVertex,
+            >,
+        >,
+        materialMap: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::Material,
+            >,
+        >,
+        targetTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "AccumulateMeshesInfo",
+                (
+                    meshes,
+                    offset,
+                    vertices,
+                    faces,
+                    autoUvFaces,
+                    sharedVertices,
+                    sharedTextures,
+                    materialMap,
+                    targetTransform,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CombineToNewMeshes(
+        meshes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::UnityEngine::ProBuilder::ProBuilderMesh,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::ProBuilder::ProBuilderMesh,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::ProBuilder::ProBuilderMesh,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CombineToNewMeshes", (meshes))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Combine_IEnumerable_1_0(
+        meshes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::UnityEngine::ProBuilder::ProBuilderMesh,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::ProBuilder::ProBuilderMesh,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::ProBuilder::ProBuilderMesh,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Combine", (meshes))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Combine_ProBuilderMesh1(
+        meshes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::UnityEngine::ProBuilder::ProBuilderMesh,
+            >,
+        >,
+        meshTarget: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::ProBuilderMesh,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::ProBuilder::ProBuilderMesh,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::ProBuilder::ProBuilderMesh,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Combine", (meshes, meshTarget))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateMeshFromSplit(
+        vertices: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::ProBuilder::Vertex,
+            >,
+        >,
+        faces: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::ProBuilder::Face,
+            >,
+        >,
+        sharedVertexLookup: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<i32, i32>,
+        >,
+        sharedTextureLookup: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<i32, i32>,
+        >,
+        remap: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<i32, i32>,
+        >,
+        materials: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Material>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::ProBuilderMesh,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CreateMeshFromSplit",
+                (
+                    vertices,
+                    faces,
+                    sharedVertexLookup,
+                    sharedTextureLookup,
+                    remap,
+                    materials,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SplitByMaxVertexCount(
+        vertices: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                *mut crate::UnityEngine::ProBuilder::Vertex,
+            >,
+        >,
+        faces: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                *mut crate::UnityEngine::ProBuilder::Face,
+            >,
+        >,
+        sharedVertices: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                *mut crate::UnityEngine::ProBuilder::SharedVertex,
+            >,
+        >,
+        sharedTextures: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                *mut crate::UnityEngine::ProBuilder::SharedVertex,
+            >,
+        >,
+        maxVertexCount: u32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::ProBuilder::ProBuilderMesh,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::ProBuilder::ProBuilderMesh,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "SplitByMaxVertexCount",
+                (vertices, faces, sharedVertices, sharedTextures, maxVertexCount),
+            )?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+CombineMeshes")]
 impl quest_hook::libil2cpp::ObjectType

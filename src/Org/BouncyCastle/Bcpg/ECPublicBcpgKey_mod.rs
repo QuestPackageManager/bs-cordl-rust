@@ -89,6 +89,19 @@ impl crate::Org::BouncyCastle::Bcpg::ECPublicBcpgKey {
             .invoke_void(".ctor", (oid, point))?;
         Ok(__cordl_object.into())
     }
+    pub fn ReadBytesOfEncodedLength(
+        bcpgIn: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::BcpgInputStream,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadBytesOfEncodedLength", (bcpgIn))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor_BcpgInputStream0(
         &mut self,
         bcpgIn: quest_hook::libil2cpp::Gc<

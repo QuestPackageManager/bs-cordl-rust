@@ -26,6 +26,31 @@ impl std::ops::DerefMut for crate::Unity::XR::Oculus::Boundary {
 impl crate::Unity::XR::Oculus::Boundary {
     #[cfg(feature = "Unity+XR+Oculus+Boundary+BoundaryType")]
     pub type BoundaryType = crate::Unity::XR::Oculus::Boundary_BoundaryType;
+    pub fn GetBoundaryConfigured() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetBoundaryConfigured", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetBoundaryDimensions(
+        boundaryType: crate::Unity::XR::Oculus::Boundary_BoundaryType,
+        dimensions: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetBoundaryDimensions", (boundaryType, dimensions))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetBoundaryVisible() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetBoundaryVisible", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetBoundaryVisible(
+        boundaryVisible: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetBoundaryVisible", (boundaryVisible))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "Unity+XR+Oculus+Boundary")]
 impl quest_hook::libil2cpp::ObjectType for crate::Unity::XR::Oculus::Boundary {

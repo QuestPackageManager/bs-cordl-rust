@@ -26,6 +26,15 @@ impl std::ops::DerefMut for crate::UnityEngine::TextCore::Text::TextResourceMana
 impl crate::UnityEngine::TextCore::Text::TextResourceManager {
     #[cfg(feature = "UnityEngine+TextCore+Text+TextResourceManager+FontAssetRef")]
     pub type FontAssetRef = crate::UnityEngine::TextCore::Text::TextResourceManager_FontAssetRef;
+    pub fn AddFontAsset(
+        fontAsset: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::FontAsset,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddFontAsset", (fontAsset))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+TextResourceManager")]
 impl quest_hook::libil2cpp::ObjectType

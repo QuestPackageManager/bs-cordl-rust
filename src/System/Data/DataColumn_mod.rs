@@ -413,6 +413,13 @@ impl crate::System::Data::DataColumn {
             .invoke("InternalUnique", (value))?;
         Ok(__cordl_ret.into())
     }
+    pub fn IsAutoIncrementType(
+        dataType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsAutoIncrementType", (dataType))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn IsInRelation(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

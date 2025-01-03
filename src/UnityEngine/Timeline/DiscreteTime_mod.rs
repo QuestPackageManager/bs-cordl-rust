@@ -34,6 +34,11 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn DoubleToDiscreteTime(_cordl_time: f64) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DoubleToDiscreteTime", (_cordl_time))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Equals_DiscreteTime0(
         &mut self,
         other: crate::UnityEngine::Timeline::DiscreteTime,
@@ -56,6 +61,18 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn FloatToDiscreteTime(_cordl_time: f32) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FloatToDiscreteTime", (_cordl_time))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromTicks(
+        ticks: i64,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Timeline::DiscreteTime> {
+        let __cordl_ret: crate::UnityEngine::Timeline::DiscreteTime = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromTicks", (ticks))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -64,12 +81,38 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetNearestTick(_cordl_time: f64) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetNearestTick", (_cordl_time))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetTick(&mut self) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_ret: i64 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "GetTick",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IntToDiscreteTime(_cordl_time: i32) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IntToDiscreteTime", (_cordl_time))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Max(
+        lhs: crate::UnityEngine::Timeline::DiscreteTime,
+        rhs: crate::UnityEngine::Timeline::DiscreteTime,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Timeline::DiscreteTime> {
+        let __cordl_ret: crate::UnityEngine::Timeline::DiscreteTime = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Max", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Min(
+        lhs: crate::UnityEngine::Timeline::DiscreteTime,
+        rhs: crate::UnityEngine::Timeline::DiscreteTime,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Timeline::DiscreteTime> {
+        let __cordl_ret: crate::UnityEngine::Timeline::DiscreteTime = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Min", (lhs, rhs))?;
         Ok(__cordl_ret.into())
     }
     pub fn OneTickAfter(
@@ -90,6 +133,30 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
             "OneTickBefore",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SnapToNearestTick_f32_1(
+        _cordl_time: f32,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SnapToNearestTick", (_cordl_time))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SnapToNearestTick_f64_0(
+        _cordl_time: f64,
+    ) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_ret: f64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SnapToNearestTick", (_cordl_time))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToDouble(_cordl_time: i64) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_ret: f64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToDouble", (_cordl_time))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToFloat(_cordl_time: i64) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToFloat", (_cordl_time))?;
         Ok(__cordl_ret.into())
     }
     pub fn ToString(
@@ -167,6 +234,124 @@ impl crate::UnityEngine::Timeline::DiscreteTime {
             ".ctor",
             (_cordl_time),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_tickValue() -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_ret: f64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_tickValue", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Addition(
+        lhs: crate::UnityEngine::Timeline::DiscreteTime,
+        rhs: crate::UnityEngine::Timeline::DiscreteTime,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Timeline::DiscreteTime> {
+        let __cordl_ret: crate::UnityEngine::Timeline::DiscreteTime = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Addition", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        lhs: crate::UnityEngine::Timeline::DiscreteTime,
+        rhs: crate::UnityEngine::Timeline::DiscreteTime,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Explicit_DiscreteTime0(
+        b: crate::UnityEngine::Timeline::DiscreteTime,
+    ) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_ret: f64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Explicit", (b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Explicit_DiscreteTime1(
+        b: crate::UnityEngine::Timeline::DiscreteTime,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Explicit", (b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Explicit_DiscreteTime2(
+        b: crate::UnityEngine::Timeline::DiscreteTime,
+    ) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Explicit", (b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Explicit_f32_4(
+        _cordl_time: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Timeline::DiscreteTime> {
+        let __cordl_ret: crate::UnityEngine::Timeline::DiscreteTime = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Explicit", (_cordl_time))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Explicit_f64_3(
+        _cordl_time: f64,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Timeline::DiscreteTime> {
+        let __cordl_ret: crate::UnityEngine::Timeline::DiscreteTime = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Explicit", (_cordl_time))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Explicit_i64_5(
+        _cordl_time: i64,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Timeline::DiscreteTime> {
+        let __cordl_ret: crate::UnityEngine::Timeline::DiscreteTime = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Explicit", (_cordl_time))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_GreaterThan(
+        lhs: crate::UnityEngine::Timeline::DiscreteTime,
+        rhs: crate::UnityEngine::Timeline::DiscreteTime,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_GreaterThan", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_GreaterThanOrEqual(
+        lhs: crate::UnityEngine::Timeline::DiscreteTime,
+        rhs: crate::UnityEngine::Timeline::DiscreteTime,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_GreaterThanOrEqual", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit(
+        _cordl_time: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Timeline::DiscreteTime> {
+        let __cordl_ret: crate::UnityEngine::Timeline::DiscreteTime = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (_cordl_time))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        lhs: crate::UnityEngine::Timeline::DiscreteTime,
+        rhs: crate::UnityEngine::Timeline::DiscreteTime,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_LessThan(
+        lhs: crate::UnityEngine::Timeline::DiscreteTime,
+        rhs: crate::UnityEngine::Timeline::DiscreteTime,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_LessThan", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_LessThanOrEqual(
+        lhs: crate::UnityEngine::Timeline::DiscreteTime,
+        rhs: crate::UnityEngine::Timeline::DiscreteTime,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_LessThanOrEqual", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Subtraction(
+        lhs: crate::UnityEngine::Timeline::DiscreteTime,
+        rhs: crate::UnityEngine::Timeline::DiscreteTime,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Timeline::DiscreteTime> {
+        let __cordl_ret: crate::UnityEngine::Timeline::DiscreteTime = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Subtraction", (lhs, rhs))?;
         Ok(__cordl_ret.into())
     }
 }

@@ -43,6 +43,14 @@ impl crate::System::Security::Cryptography::TripleDESTransform {
             .invoke("ECB", (input, output))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetStrongKey() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetStrongKey", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         algo: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::TripleDES,

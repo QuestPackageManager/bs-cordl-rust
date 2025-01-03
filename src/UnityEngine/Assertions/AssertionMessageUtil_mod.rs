@@ -23,7 +23,67 @@ impl std::ops::DerefMut for crate::UnityEngine::Assertions::AssertionMessageUtil
     }
 }
 #[cfg(feature = "UnityEngine+Assertions+AssertionMessageUtil")]
-impl crate::UnityEngine::Assertions::AssertionMessageUtil {}
+impl crate::UnityEngine::Assertions::AssertionMessageUtil {
+    pub fn BooleanFailureMessage(
+        expected: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BooleanFailureMessage", (expected))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetEqualityMessage(
+        actual: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        expected: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        expectEqual: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetEqualityMessage", (actual, expected, expectEqual))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetMessage_Il2CppString0(
+        failureMessage: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetMessage", (failureMessage))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetMessage_Il2CppString1(
+        failureMessage: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        expected: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetMessage", (failureMessage, expected))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn NullFailureMessage(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        expectNull: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("NullFailureMessage", (value, expectNull))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+Assertions+AssertionMessageUtil")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Assertions::AssertionMessageUtil {

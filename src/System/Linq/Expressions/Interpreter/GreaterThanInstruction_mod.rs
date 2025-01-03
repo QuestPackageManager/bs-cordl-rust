@@ -72,6 +72,20 @@ impl crate::System::Linq::Expressions::Interpreter::GreaterThanInstruction {
         feature = "System+Linq+Expressions+Interpreter+GreaterThanInstruction+GreaterThanUInt64"
     )]
     pub type GreaterThanUInt64 = crate::GlobalNamespace::GreaterThanInstruction_GreaterThanUInt64;
+    pub fn Create(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        liftedToNull: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::Instruction,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::Instruction,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (_cordl_type, liftedToNull))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         nullValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

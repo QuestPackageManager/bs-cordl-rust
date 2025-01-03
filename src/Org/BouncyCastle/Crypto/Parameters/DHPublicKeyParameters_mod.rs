@@ -57,6 +57,14 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::DHPublicKeyParameters {
         let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn Legendre(
+        a: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+        b: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Legendre", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_BigInteger_DHParameters0(
         y: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
         parameters: quest_hook::libil2cpp::Gc<
@@ -83,6 +91,20 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::DHPublicKeyParameters {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (y, parameters, algorithmOid))?;
         Ok(__cordl_object.into())
+    }
+    pub fn Validate(
+        y: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+        dhParams: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Parameters::DHParameters,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::BigInteger,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Validate", (y, dhParams))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_BigInteger_DHParameters0(
         &mut self,

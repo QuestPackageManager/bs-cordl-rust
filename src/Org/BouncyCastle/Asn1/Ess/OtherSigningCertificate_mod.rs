@@ -47,6 +47,18 @@ impl crate::Org::BouncyCastle::Asn1::Ess::OtherSigningCertificate {
         > = __cordl_object.invoke("GetCerts", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetInstance(
+        o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Ess::OtherSigningCertificate,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Ess::OtherSigningCertificate,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (o))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetPolicies(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

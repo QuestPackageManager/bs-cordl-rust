@@ -255,6 +255,17 @@ impl crate::UnityEngine::UI::Dropdown {
             .invoke("DestroyItem", (item))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetOrAddComponent<T>(
+        go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetOrAddComponent", (go))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Hide(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

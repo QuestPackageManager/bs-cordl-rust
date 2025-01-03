@@ -134,6 +134,16 @@ impl crate::Org::BouncyCastle::Crypto::Engines::DesEdeWrapEngine {
         > = __cordl_object.invoke("get_AlgorithmName", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn reverse(
+        bs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("reverse", (bs))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+DesEdeWrapEngine")]
 impl quest_hook::libil2cpp::ObjectType

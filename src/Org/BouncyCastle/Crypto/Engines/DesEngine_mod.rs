@@ -26,6 +26,29 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Engines::DesEngine
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+DesEngine")]
 impl crate::Org::BouncyCastle::Crypto::Engines::DesEngine {
     pub const BLOCK_SIZE: i32 = 8i32;
+    pub fn DesFunc(
+        wKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+        input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        inOff: i32,
+        outBytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        outOff: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DesFunc", (wKey, input, inOff, outBytes, outOff))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GenerateWorkingKey(
+        encrypting: bool,
+        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<i32>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GenerateWorkingKey", (encrypting, key))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetBlockSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

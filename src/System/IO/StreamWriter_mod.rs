@@ -120,7 +120,43 @@ impl crate::System::IO::StreamWriter {
         > = __cordl_object.invoke("FlushAsync", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn FlushAsyncInternal(
+    pub fn FlushAsyncInternal_StreamWriter__cordl_bool_Il2CppArray_i32__cordl_bool_Encoding_Encoder_Il2CppArray_Stream_CancellationToken1(
+        _this: quest_hook::libil2cpp::Gc<crate::System::IO::StreamWriter>,
+        flushStream: bool,
+        flushEncoder: bool,
+        charBuffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+        charPos: i32,
+        haveWrittenPreamble: bool,
+        encoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
+        encoder: quest_hook::libil2cpp::Gc<crate::System::Text::Encoder>,
+        byteBuffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "FlushAsyncInternal",
+                (
+                    _this,
+                    flushStream,
+                    flushEncoder,
+                    charBuffer,
+                    charPos,
+                    haveWrittenPreamble,
+                    encoding,
+                    encoder,
+                    byteBuffer,
+                    stream,
+                    cancellationToken,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FlushAsyncInternal__cordl_bool_Il2CppArray_i32_CancellationToken0(
         &mut self,
         flushStream: bool,
         flushEncoder: bool,
@@ -268,6 +304,105 @@ impl crate::System::IO::StreamWriter {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (stream, encoding, bufferSize, leaveOpen))?;
         Ok(__cordl_object.into())
+    }
+    pub fn ThrowAsyncIOInProgress() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ThrowAsyncIOInProgress", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WriteAsyncInternal_Il2CppString1(
+        _this: quest_hook::libil2cpp::Gc<crate::System::IO::StreamWriter>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        charBuffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+        charPos: i32,
+        charLen: i32,
+        coreNewLine: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+        autoFlush: bool,
+        appendNewLine: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "WriteAsyncInternal",
+                (
+                    _this,
+                    value,
+                    charBuffer,
+                    charPos,
+                    charLen,
+                    coreNewLine,
+                    autoFlush,
+                    appendNewLine,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WriteAsyncInternal_ReadOnlyMemory_1_CancellationToken2(
+        _this: quest_hook::libil2cpp::Gc<crate::System::IO::StreamWriter>,
+        source: crate::System::ReadOnlyMemory_1<char>,
+        charBuffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+        charPos: i32,
+        charLen: i32,
+        coreNewLine: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+        autoFlush: bool,
+        appendNewLine: bool,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "WriteAsyncInternal",
+                (
+                    _this,
+                    source,
+                    charBuffer,
+                    charPos,
+                    charLen,
+                    coreNewLine,
+                    autoFlush,
+                    appendNewLine,
+                    cancellationToken,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WriteAsyncInternal__cordl_char0(
+        _this: quest_hook::libil2cpp::Gc<crate::System::IO::StreamWriter>,
+        value: char,
+        charBuffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+        charPos: i32,
+        charLen: i32,
+        coreNewLine: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+        autoFlush: bool,
+        appendNewLine: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "WriteAsyncInternal",
+                (
+                    _this,
+                    value,
+                    charBuffer,
+                    charPos,
+                    charLen,
+                    coreNewLine,
+                    autoFlush,
+                    appendNewLine,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
     }
     pub fn WriteAsync_Il2CppArray_i32_i32_2(
         &mut self,
@@ -521,6 +656,13 @@ impl crate::System::IO::StreamWriter {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_LeaveOpen", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_UTF8NoBOM() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_UTF8NoBOM", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn set_AutoFlush(

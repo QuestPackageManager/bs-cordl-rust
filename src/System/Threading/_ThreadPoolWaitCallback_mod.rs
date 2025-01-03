@@ -23,7 +23,13 @@ impl std::ops::DerefMut for crate::System::Threading::_ThreadPoolWaitCallback {
     }
 }
 #[cfg(feature = "System+Threading+_ThreadPoolWaitCallback")]
-impl crate::System::Threading::_ThreadPoolWaitCallback {}
+impl crate::System::Threading::_ThreadPoolWaitCallback {
+    pub fn PerformWaitCallback() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PerformWaitCallback", ())?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Threading+_ThreadPoolWaitCallback")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Threading::_ThreadPoolWaitCallback {

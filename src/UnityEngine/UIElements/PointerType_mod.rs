@@ -23,7 +23,26 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::PointerType {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+PointerType")]
-impl crate::UnityEngine::UIElements::PointerType {}
+impl crate::UnityEngine::UIElements::PointerType {
+    pub fn GetPointerType(
+        pointerId: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPointerType", (pointerId))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsDirectManipulationDevice(
+        pointerType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsDirectManipulationDevice", (pointerType))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+PointerType")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::PointerType {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

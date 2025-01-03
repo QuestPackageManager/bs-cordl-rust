@@ -23,7 +23,38 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapDataLoaderUtils {
     }
 }
 #[cfg(feature = "BeatmapDataLoaderUtils")]
-impl crate::GlobalNamespace::BeatmapDataLoaderUtils {}
+impl crate::GlobalNamespace::BeatmapDataLoaderUtils {
+    pub fn GetEnvironmentKeywords(
+        environmentInfo: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IEnvironmentInfo,
+        >,
+        beatmapLevelDataVersion: crate::GlobalNamespace::BeatmapLevelDataVersion,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentKeywords>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::EnvironmentKeywords,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetEnvironmentKeywords",
+                (environmentInfo, beatmapLevelDataVersion),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetEnvironmentLightGroups(
+        environmentInfo: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IEnvironmentInfo,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IEnvironmentLightGroups>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IEnvironmentLightGroups,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetEnvironmentLightGroups", (environmentInfo))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "BeatmapDataLoaderUtils")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::BeatmapDataLoaderUtils {

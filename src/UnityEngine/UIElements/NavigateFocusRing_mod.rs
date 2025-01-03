@@ -87,6 +87,20 @@ impl crate::UnityEngine::UIElements::NavigateFocusRing {
         > = __cordl_object.invoke("GetNextFocusable2D", (currentFocusable, direction))?;
         Ok(__cordl_ret.into())
     }
+    pub fn IsActive(
+        v: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsActive", (v))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsNavigable(
+        focusable: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Focusable>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsNavigable", (focusable))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         root: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

@@ -23,7 +23,13 @@ impl std::ops::DerefMut for crate::Unity::XR::Oculus::OculusSession {
     }
 }
 #[cfg(feature = "Unity+XR+Oculus+OculusSession")]
-impl crate::Unity::XR::Oculus::OculusSession {}
+impl crate::Unity::XR::Oculus::OculusSession {
+    pub fn Update() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Update", ())?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "Unity+XR+Oculus+OculusSession")]
 impl quest_hook::libil2cpp::ObjectType for crate::Unity::XR::Oculus::OculusSession {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

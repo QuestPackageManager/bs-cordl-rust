@@ -64,6 +64,17 @@ impl crate::UnityEngine::Terrain {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_activeTerrains() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Terrain>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Terrain>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_activeTerrains", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_allowAutoConnect(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

@@ -27,6 +27,13 @@ for crate::System::Net::NetworkInformation::LinuxNetworkInterfaceAPI {
 }
 #[cfg(feature = "System+Net+NetworkInformation+LinuxNetworkInterfaceAPI")]
 impl crate::System::Net::NetworkInformation::LinuxNetworkInterfaceAPI {
+    pub fn FreeInterfaceAddresses(
+        ifap: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FreeInterfaceAddresses", (ifap))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetAllNetworkInterfaces(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -44,6 +51,13 @@ impl crate::System::Net::NetworkInformation::LinuxNetworkInterfaceAPI {
                 *mut crate::System::Net::NetworkInformation::NetworkInterface,
             >,
         > = __cordl_object.invoke("GetAllNetworkInterfaces", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetInterfaceAddresses(
+        ifap: quest_hook::libil2cpp::ByRefMut<crate::System::IntPtr>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetInterfaceAddresses", (ifap))?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

@@ -42,6 +42,13 @@ impl crate::UnityEngine::Coroutine {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
+    pub fn ReleaseCoroutine(
+        ptr: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReleaseCoroutine", (ptr))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

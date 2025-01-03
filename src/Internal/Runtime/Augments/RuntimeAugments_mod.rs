@@ -23,7 +23,25 @@ impl std::ops::DerefMut for crate::Internal::Runtime::Augments::RuntimeAugments 
     }
 }
 #[cfg(feature = "Internal+Runtime+Augments+RuntimeAugments")]
-impl crate::Internal::Runtime::Augments::RuntimeAugments {}
+impl crate::Internal::Runtime::Augments::RuntimeAugments {
+    pub fn ReportUnhandledException(
+        exception: quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReportUnhandledException", (exception))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Callbacks() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Internal::Runtime::Augments::ReflectionExecutionDomainCallbacks,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Internal::Runtime::Augments::ReflectionExecutionDomainCallbacks,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_Callbacks", ())?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "Internal+Runtime+Augments+RuntimeAugments")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Internal::Runtime::Augments::RuntimeAugments {

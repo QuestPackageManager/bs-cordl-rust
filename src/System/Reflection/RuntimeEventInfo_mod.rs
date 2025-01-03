@@ -95,6 +95,13 @@ impl crate::System::Reflection::RuntimeEventInfo {
             .invoke("GetDeclaringTypeInternal", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetEventInfo(
+        ev: quest_hook::libil2cpp::Gc<crate::System::Reflection::RuntimeEventInfo>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Reflection::MonoEventInfo> {
+        let __cordl_ret: crate::System::Reflection::MonoEventInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetEventInfo", (ev))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetObjectData(
         &mut self,
         info: quest_hook::libil2cpp::Gc<
@@ -264,6 +271,21 @@ impl crate::System::Reflection::RuntimeEventInfo {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::RuntimeType> = __cordl_object
             .invoke("get_ReflectedTypeInternal", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_event_info(
+        ev: quest_hook::libil2cpp::Gc<crate::System::Reflection::RuntimeEventInfo>,
+        info: quest_hook::libil2cpp::ByRefMut<crate::System::Reflection::MonoEventInfo>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_event_info", (ev, info))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_metadata_token(
+        monoEvent: quest_hook::libil2cpp::Gc<crate::System::Reflection::RuntimeEventInfo>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_metadata_token", (monoEvent))?;
         Ok(__cordl_ret.into())
     }
 }

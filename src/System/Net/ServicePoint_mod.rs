@@ -104,6 +104,15 @@ impl crate::System::Net::ServicePoint {
             .invoke_void(".ctor", (key, uri, connectionLimit, maxIdleTime))?;
         Ok(__cordl_object.into())
     }
+    pub fn PutBytes(
+        bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        v: u32,
+        offset: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PutBytes", (bytes, v, offset))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn SendRequest(
         &mut self,
         operation: quest_hook::libil2cpp::Gc<crate::System::Net::WebOperation>,

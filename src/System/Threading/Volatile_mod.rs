@@ -30,6 +30,59 @@ impl crate::System::Threading::Volatile {
     pub type VolatileInt32 = crate::System::Threading::Volatile_VolatileInt32;
     #[cfg(feature = "System+Threading+Volatile+VolatileObject")]
     pub type VolatileObject = crate::System::Threading::Volatile_VolatileObject;
+    pub fn Read_ByRefMut0(
+        location: quest_hook::libil2cpp::ByRefMut<bool>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Read", (location))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Read_ByRefMut1(
+        location: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Read", (location))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Read_ByRefMut2<T>(
+        location: quest_hook::libil2cpp::ByRefMut<T>,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Read", (location))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Write_T2<T>(
+        location: quest_hook::libil2cpp::ByRefMut<T>,
+        value: T,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Write", (location, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Write__cordl_bool0(
+        location: quest_hook::libil2cpp::ByRefMut<bool>,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Write", (location, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Write_i32_1(
+        location: quest_hook::libil2cpp::ByRefMut<i32>,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Write", (location, value))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "System+Threading+Volatile")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Threading::Volatile {

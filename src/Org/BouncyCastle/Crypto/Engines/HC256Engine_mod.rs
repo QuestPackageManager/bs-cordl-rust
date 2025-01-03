@@ -102,6 +102,11 @@ impl crate::Org::BouncyCastle::Crypto::Engines::HC256Engine {
         let __cordl_ret: u8 = __cordl_object.invoke("ReturnByte", (input))?;
         Ok(__cordl_ret.into())
     }
+    pub fn RotateRight(x: u32, bits: i32) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RotateRight", (x, bits))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Step(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

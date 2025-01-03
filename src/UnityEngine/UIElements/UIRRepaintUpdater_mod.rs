@@ -100,6 +100,13 @@ impl crate::UnityEngine::UIElements::UIRRepaintUpdater {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
+    pub fn OnGraphicsResourcesRecreate(
+        recreate: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("OnGraphicsResourcesRecreate", (recreate))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn OnPanelAtlasChanged(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

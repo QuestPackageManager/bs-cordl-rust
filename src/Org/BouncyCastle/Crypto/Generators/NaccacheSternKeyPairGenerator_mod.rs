@@ -73,6 +73,42 @@ impl crate::Org::BouncyCastle::Crypto::Generators::NaccacheSternKeyPairGenerator
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn findFirstPrimes(
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Collections::IList> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("findFirstPrimes", (count))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn generatePrime(
+        bitLength: i32,
+        certainty: i32,
+        _cordl_rand: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Security::SecureRandom,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::BigInteger,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("generatePrime", (bitLength, certainty, _cordl_rand))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn permuteList(
+        arr: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+        _cordl_rand: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Security::SecureRandom,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Collections::IList> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("permuteList", (arr, _cordl_rand))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Generators+NaccacheSternKeyPairGenerator")]
 impl quest_hook::libil2cpp::ObjectType

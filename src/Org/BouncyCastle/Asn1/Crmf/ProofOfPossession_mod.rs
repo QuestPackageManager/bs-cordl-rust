@@ -30,6 +30,18 @@ impl crate::Org::BouncyCastle::Asn1::Crmf::ProofOfPossession {
     pub const TYPE_KEY_ENCIPHERMENT: i32 = 2i32;
     pub const TYPE_RA_VERIFIED: i32 = 0i32;
     pub const TYPE_SIGNING_KEY: i32 = 1i32;
+    pub fn GetInstance(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Crmf::ProofOfPossession,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Crmf::ProofOfPossession,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_1() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

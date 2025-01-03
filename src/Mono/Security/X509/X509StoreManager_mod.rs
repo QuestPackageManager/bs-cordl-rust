@@ -23,7 +23,53 @@ impl std::ops::DerefMut for crate::Mono::Security::X509::X509StoreManager {
     }
 }
 #[cfg(feature = "Mono+Security+X509+X509StoreManager")]
-impl crate::Mono::Security::X509::X509StoreManager {}
+impl crate::Mono::Security::X509::X509StoreManager {
+    pub fn get_CurrentUser() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Mono::Security::X509::X509Stores>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Mono::Security::X509::X509Stores,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_CurrentUser", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_CurrentUserPath() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_CurrentUserPath", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_LocalMachine() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Mono::Security::X509::X509Stores>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Mono::Security::X509::X509Stores,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_LocalMachine", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_LocalMachinePath() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_LocalMachinePath", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_TrustedRootCertificates() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Mono::Security::X509::X509CertificateCollection>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Mono::Security::X509::X509CertificateCollection,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_TrustedRootCertificates", ())?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "Mono+Security+X509+X509StoreManager")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Security::X509::X509StoreManager {

@@ -23,7 +23,43 @@ impl std::ops::DerefMut for crate::UnityEngine::InputSystem::InputExtensions {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputExtensions")]
-impl crate::UnityEngine::InputSystem::InputExtensions {}
+impl crate::UnityEngine::InputSystem::InputExtensions {
+    pub fn IsActive(
+        phase: crate::UnityEngine::InputSystem::TouchPhase,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsActive", (phase))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsEndedOrCanceled(
+        phase: crate::UnityEngine::InputSystem::TouchPhase,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsEndedOrCanceled", (phase))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsInProgress(
+        phase: crate::UnityEngine::InputSystem::InputActionPhase,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsInProgress", (phase))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsModifierKey(
+        key: crate::UnityEngine::InputSystem::Key,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsModifierKey", (key))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsTextInputKey(
+        key: crate::UnityEngine::InputSystem::Key,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsTextInputKey", (key))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+InputExtensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::InputExtensions {

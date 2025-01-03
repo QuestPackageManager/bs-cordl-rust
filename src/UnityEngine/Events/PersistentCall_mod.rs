@@ -30,6 +30,19 @@ impl std::ops::DerefMut for crate::UnityEngine::Events::PersistentCall {
 }
 #[cfg(feature = "UnityEngine+Events+PersistentCall")]
 impl crate::UnityEngine::Events::PersistentCall {
+    pub fn GetObjectCall(
+        target: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+        arguments: quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::ArgumentCache>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::BaseInvokableCall>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Events::BaseInvokableCall,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetObjectCall", (target, method, arguments))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetRuntimeCall(
         &mut self,
         theEvent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityEventBase>,

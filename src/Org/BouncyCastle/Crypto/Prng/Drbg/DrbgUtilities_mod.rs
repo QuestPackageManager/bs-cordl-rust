@@ -25,6 +25,41 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Prng::Drbg::DrbgUt
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Prng+Drbg+DrbgUtilities")]
 impl crate::Org::BouncyCastle::Crypto::Prng::Drbg::DrbgUtilities {
+    pub fn GetMaxSecurityStrength_IDigest0(
+        d: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetMaxSecurityStrength", (d))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetMaxSecurityStrength_IMac1(
+        m: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IMac>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetMaxSecurityStrength", (m))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn HashDF(
+        digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
+        seedMaterial: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        seedLength: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("HashDF", (digest, seedMaterial, seedLength))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsTooLarge(
+        bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        maxBytes: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsTooLarge", (bytes, maxBytes))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

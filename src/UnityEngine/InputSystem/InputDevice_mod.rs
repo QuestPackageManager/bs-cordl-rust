@@ -69,6 +69,23 @@ impl crate::UnityEngine::InputSystem::InputDevice {
             .invoke("AddDeviceUsage", (usage))?;
         Ok(__cordl_ret.into())
     }
+    pub fn Build<TDevice>(
+        layoutName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        layoutVariants: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        deviceDescription: crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription,
+        noPrecompiledLayouts: bool,
+    ) -> quest_hook::libil2cpp::Result<TDevice>
+    where
+        TDevice: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: TDevice = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "Build",
+                (layoutName, layoutVariants, deviceDescription, noPrecompiledLayouts),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ClearDeviceUsages(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -89,6 +106,19 @@ impl crate::UnityEngine::InputSystem::InputDevice {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("CompareValue", (firstStatePtr, secondStatePtr))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DecodeStateOffsetToControlMapEntry(
+        entry: u32,
+        controlIndex: quest_hook::libil2cpp::ByRefMut<u32>,
+        stateOffset: quest_hook::libil2cpp::ByRefMut<u32>,
+        stateSize: quest_hook::libil2cpp::ByRefMut<u32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "DecodeStateOffsetToControlMapEntry",
+                (entry, controlIndex, stateOffset, stateSize),
+            )?;
         Ok(__cordl_ret.into())
     }
     pub fn DumpControlBitRangeNode(
@@ -143,6 +173,18 @@ impl crate::UnityEngine::InputSystem::InputDevice {
             .invoke("DumpControlTree", (parentNode, startOffset, output))?;
         Ok(__cordl_ret.into())
     }
+    pub fn EncodeStateOffsetToControlMapEntry(
+        controlIndex: u32,
+        stateOffsetInBits: u32,
+        stateSizeInBits: u32,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "EncodeStateOffsetToControlMapEntry",
+                (controlIndex, stateOffsetInBits, stateSizeInBits),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ExecuteCommand_ByRefMut0<TCommand>(
         &mut self,
         command: quest_hook::libil2cpp::ByRefMut<TCommand>,
@@ -179,6 +221,19 @@ impl crate::UnityEngine::InputSystem::InputDevice {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("ExecuteEnableCommand", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn HasDataChangedInRange(
+        deviceStatePtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        statePtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        startOffset: u32,
+        sizeInBits: u32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "HasDataChangedInRange",
+                (deviceStatePtr, statePtr, startOffset, sizeInBits),
+            )?;
         Ok(__cordl_ret.into())
     }
     pub fn MakeCurrent(
@@ -413,6 +468,16 @@ impl crate::UnityEngine::InputSystem::InputDevice {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_added", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_all() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
+            *mut crate::UnityEngine::InputSystem::InputDevice,
+        >,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
+            *mut crate::UnityEngine::InputSystem::InputDevice,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_all", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_allControls(

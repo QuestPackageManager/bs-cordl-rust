@@ -134,6 +134,13 @@ impl crate::System::Net::HttpConnection {
             .invoke_void(".ctor", (sock, epl, secure, cert))?;
         Ok(__cordl_object.into())
     }
+    pub fn OnRead(
+        ares: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("OnRead", (ares))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn OnReadInternal(
         &mut self,
         ares: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,

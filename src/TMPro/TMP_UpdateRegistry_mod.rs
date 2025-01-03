@@ -103,6 +103,27 @@ impl crate::TMPro::TMP_UpdateRegistry {
             .invoke("PerformUpdateForMeshRendererObjects", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn RegisterCanvasElementForGraphicRebuild(
+        element: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ICanvasElement>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RegisterCanvasElementForGraphicRebuild", (element))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RegisterCanvasElementForLayoutRebuild(
+        element: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ICanvasElement>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RegisterCanvasElementForLayoutRebuild", (element))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UnRegisterCanvasElementForRebuild(
+        element: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ICanvasElement>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UnRegisterCanvasElementForRebuild", (element))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -111,6 +132,13 @@ impl crate::TMPro::TMP_UpdateRegistry {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_instance() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_UpdateRegistry>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_UpdateRegistry> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_instance", ())?;
         Ok(__cordl_ret.into())
     }
 }

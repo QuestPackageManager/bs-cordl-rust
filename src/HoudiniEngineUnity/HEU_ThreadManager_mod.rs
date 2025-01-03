@@ -44,6 +44,13 @@ impl crate::HoudiniEngineUnity::HEU_ThreadManager {
             .invoke("AddTask", (task))?;
         Ok(__cordl_ret.into())
     }
+    pub fn CreateInstance() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateInstance", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Finalize(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -110,6 +117,14 @@ impl crate::HoudiniEngineUnity::HEU_ThreadManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Instance() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_ThreadManager>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_ThreadManager,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_Instance", ())?;
         Ok(__cordl_ret.into())
     }
 }

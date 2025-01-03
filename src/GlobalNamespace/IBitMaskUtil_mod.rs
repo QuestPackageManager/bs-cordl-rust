@@ -23,7 +23,103 @@ impl std::ops::DerefMut for crate::GlobalNamespace::IBitMaskUtil {
     }
 }
 #[cfg(feature = "IBitMaskUtil")]
-impl crate::GlobalNamespace::IBitMaskUtil {}
+impl crate::GlobalNamespace::IBitMaskUtil {
+    pub fn FromBytes<T>(
+        bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        offset: i32,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromBytes", (bytes, offset))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetBase64Char(digit: u64) -> quest_hook::libil2cpp::Result<char> {
+        let __cordl_ret: char = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetBase64Char", (digit))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetBase64Digit(c: char) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetBase64Digit", (c))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetHexDigit(c: char) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetHexDigit", (c))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn NumberOfSetBits<T>(bitMask: T) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("NumberOfSetBits", (bitMask))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToBytes<T>(
+        bitMask: T,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("ToBytes", (bitMask))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToShortString<T>(
+        bitMask: T,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToShortString", (bitMask))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryParse_ByRefMut0<T>(
+        stringSerializedMask: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+        bitMask: quest_hook::libil2cpp::ByRefMut<T>,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryParse", (stringSerializedMask, bitMask))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryParse_i32_i32_ByRefMut1<T>(
+        stringSerializedMask: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+        offset: i32,
+        length: i32,
+        bitMask: quest_hook::libil2cpp::ByRefMut<T>,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryParse", (stringSerializedMask, offset, length, bitMask))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "IBitMaskUtil")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::IBitMaskUtil {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

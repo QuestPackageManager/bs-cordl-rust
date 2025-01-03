@@ -58,6 +58,13 @@ impl crate::GlobalNamespace::PlayerHeightToJumpOffsetYProvider {
             .invoke("Initialize", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn JumpOffsetYForPlayerHeight(
+        playerHeight: f32,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("JumpOffsetYForPlayerHeight", (playerHeight))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

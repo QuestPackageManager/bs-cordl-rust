@@ -138,6 +138,14 @@ for crate::GlobalNamespace::OVRScenePlaneMeshFilter_TriangulateBoundaryJob {
 impl crate::GlobalNamespace::OVRScenePlaneMeshFilter_TriangulateBoundaryJob {
     #[cfg(feature = "OVRScenePlaneMeshFilter+TriangulateBoundaryJob+NList")]
     pub type NList = crate::GlobalNamespace::TriangulateBoundaryJob_OVRScenePlaneMeshFilter_NList;
+    pub fn Cross(
+        a: crate::UnityEngine::Vector2,
+        b: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Cross", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Execute(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -146,6 +154,16 @@ impl crate::GlobalNamespace::OVRScenePlaneMeshFilter_TriangulateBoundaryJob {
             "Execute",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn PointInTriangle(
+        p: crate::UnityEngine::Vector2,
+        a: crate::UnityEngine::Vector2,
+        b: crate::UnityEngine::Vector2,
+        c: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PointInTriangle", (p, a, b, c))?;
         Ok(__cordl_ret.into())
     }
 }

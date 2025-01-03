@@ -24,7 +24,18 @@ impl std::ops::DerefMut for crate::UnityEngine::InputSystem::Utilities::SpriteUt
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+SpriteUtilities")]
-impl crate::UnityEngine::InputSystem::Utilities::SpriteUtilities {}
+impl crate::UnityEngine::InputSystem::Utilities::SpriteUtilities {
+    pub fn CreateCircleSprite(
+        radius: i32,
+        colour: crate::UnityEngine::Color32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateCircleSprite", (radius, colour))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+SpriteUtilities")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::Utilities::SpriteUtilities {

@@ -47,6 +47,26 @@ impl crate::UnityEngine::TouchScreenKeyboard {
             .invoke("Finalize", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetSelection(
+        start: quest_hook::libil2cpp::ByRefMut<i32>,
+        length: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSelection", (start, length))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Internal_Destroy(
+        ptr: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Internal_Destroy", (ptr))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsInPlaceEditingAllowed() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsInPlaceEditingAllowed", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         keyboardType: crate::UnityEngine::TouchScreenKeyboardType,
@@ -74,6 +94,73 @@ impl crate::UnityEngine::TouchScreenKeyboard {
                 ),
             )?;
         Ok(__cordl_object.into())
+    }
+    pub fn Open_Il2CppString_TouchScreenKeyboardType__cordl_bool__cordl_bool__cordl_bool1(
+        text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        keyboardType: crate::UnityEngine::TouchScreenKeyboardType,
+        autocorrection: bool,
+        multiline: bool,
+        secure: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::TouchScreenKeyboard>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TouchScreenKeyboard,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Open", (text, keyboardType, autocorrection, multiline, secure))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Open__cordl_bool_Il2CppString_i32_0(
+        text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        keyboardType: crate::UnityEngine::TouchScreenKeyboardType,
+        autocorrection: bool,
+        multiline: bool,
+        secure: bool,
+        alert: bool,
+        textPlaceholder: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        characterLimit: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::TouchScreenKeyboard>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TouchScreenKeyboard,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "Open",
+                (
+                    text,
+                    keyboardType,
+                    autocorrection,
+                    multiline,
+                    secure,
+                    alert,
+                    textPlaceholder,
+                    characterLimit,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetSelection(
+        start: i32,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetSelection", (start, length))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TouchScreenKeyboard_InternalConstructorHelper(
+        arguments: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::TouchScreenKeyboard_InternalConstructorHelperArguments,
+        >,
+        text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        textPlaceholder: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "TouchScreenKeyboard_InternalConstructorHelper",
+                (arguments, text, textPlaceholder),
+            )?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -124,6 +211,21 @@ impl crate::UnityEngine::TouchScreenKeyboard {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_canSetSelection", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_disableInPlaceEditing() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_disableInPlaceEditing", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_isInPlaceEditingAllowed() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_isInPlaceEditingAllowed", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_isSupported() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_isSupported", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_selection(
@@ -179,6 +281,13 @@ impl crate::UnityEngine::TouchScreenKeyboard {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_characterLimit", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_hideInput(
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_hideInput", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_selection(

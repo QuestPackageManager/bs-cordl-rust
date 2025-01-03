@@ -28,6 +28,186 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputState {
         feature = "UnityEngine+InputSystem+LowLevel+InputState+StateChangeMonitorDelegate"
     )]
     pub type StateChangeMonitorDelegate = crate::UnityEngine::InputSystem::LowLevel::InputState_StateChangeMonitorDelegate;
+    pub fn AddChangeMonitorTimeout(
+        control: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl,
+        >,
+        monitor: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor,
+        >,
+        _cordl_time: f64,
+        monitorIndex: i64,
+        timerIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "AddChangeMonitorTimeout",
+                (control, monitor, _cordl_time, monitorIndex, timerIndex),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddChangeMonitor_Action_4_i32_Action_4_1(
+        control: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl,
+        >,
+        valueChangeCallback: quest_hook::libil2cpp::Gc<
+            crate::System::Action_4<
+                *mut crate::UnityEngine::InputSystem::InputControl,
+                f64,
+                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+                i64,
+            >,
+        >,
+        monitorIndex: i32,
+        timerExpiredCallback: quest_hook::libil2cpp::Gc<
+            crate::System::Action_4<
+                *mut crate::UnityEngine::InputSystem::InputControl,
+                f64,
+                i64,
+                i32,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "AddChangeMonitor",
+                (control, valueChangeCallback, monitorIndex, timerExpiredCallback),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddChangeMonitor_IInputStateChangeMonitor_i64_u32_0(
+        control: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl,
+        >,
+        monitor: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor,
+        >,
+        monitorIndex: i64,
+        groupIndex: u32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddChangeMonitor", (control, monitor, monitorIndex, groupIndex))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Change_InputControl_ByRefMut_InputEventPtr2<TState>(
+        control: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl,
+        >,
+        state: quest_hook::libil2cpp::ByRefMut<TState>,
+        updateType: crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
+        eventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Change", (control, state, updateType, eventPtr))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Change_InputControl_TState_InputEventPtr1<TState>(
+        control: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl,
+        >,
+        state: TState,
+        updateType: crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
+        eventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Change", (control, state, updateType, eventPtr))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Change_InputDevice_InputEventPtr0(
+        device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+        eventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+        updateType: crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Change", (device, eventPtr, updateType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsIntegerFormat(
+        format: crate::UnityEngine::InputSystem::Utilities::FourCC,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsIntegerFormat", (format))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RemoveChangeMonitor(
+        control: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl,
+        >,
+        monitor: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor,
+        >,
+        monitorIndex: i64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RemoveChangeMonitor", (control, monitor, monitorIndex))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RemoveChangeMonitorTimeout(
+        monitor: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::LowLevel::IInputStateChangeMonitor,
+        >,
+        monitorIndex: i64,
+        timerIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RemoveChangeMonitorTimeout", (monitor, monitorIndex, timerIndex))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn add_onChange(
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<
+                *mut crate::UnityEngine::InputSystem::InputDevice,
+                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("add_onChange", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_currentTime() -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_ret: f64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_currentTime", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_currentUpdateType() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::InputUpdateType = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_currentUpdateType", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_updateCount() -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_updateCount", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_onChange(
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<
+                *mut crate::UnityEngine::InputSystem::InputDevice,
+                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("remove_onChange", (value))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputState")]
 impl quest_hook::libil2cpp::ObjectType

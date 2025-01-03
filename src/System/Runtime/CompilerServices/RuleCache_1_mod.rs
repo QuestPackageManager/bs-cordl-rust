@@ -31,6 +31,22 @@ for crate::System::Runtime::CompilerServices::RuleCache_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::System::Runtime::CompilerServices::RuleCache_1<T> {
+    pub fn AddOrInsert(
+        rules: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+        item: T,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<T>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddOrInsert", (rules, item))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn AddRule(
         &mut self,
         newRule: T,

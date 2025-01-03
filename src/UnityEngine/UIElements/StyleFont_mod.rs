@@ -108,6 +108,21 @@ impl crate::UnityEngine::UIElements::StyleFont {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Equality(
+        lhs: crate::UnityEngine::UIElements::StyleFont,
+        rhs: crate::UnityEngine::UIElements::StyleFont,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit(
+        v: quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::StyleFont> {
+        let __cordl_ret: crate::UnityEngine::UIElements::StyleFont = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (v))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleFont")]
 impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleFont>>

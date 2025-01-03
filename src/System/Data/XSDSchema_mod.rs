@@ -150,6 +150,17 @@ impl crate::System::Data::XSDSchema {
             .invoke("FindField", (table, field))?;
         Ok(__cordl_ret.into())
     }
+    pub fn FindNameType(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Data::XSDSchema_NameType>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Data::XSDSchema_NameType,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FindNameType", (name))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn FindTypeNode(
         &mut self,
         node: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaAnnotated>,
@@ -191,6 +202,18 @@ impl crate::System::Data::XSDSchema {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("GetInstanceName", (node))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetMsdataAttribute(
+        node: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaAnnotated>,
+        ln: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetMsdataAttribute", (node, ln))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetNamespaceFromPrefix(
@@ -589,6 +612,13 @@ impl crate::System::Data::XSDSchema {
         let __cordl_ret: bool = __cordl_object.invoke("IsTable", (node))?;
         Ok(__cordl_ret.into())
     }
+    pub fn IsXsdType(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsXsdType", (name))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn LoadSchema_DataSet1(
         &mut self,
         schemaSet: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSet>,
@@ -629,6 +659,66 @@ impl crate::System::Data::XSDSchema {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = __cordl_object
             .invoke("ParseDataType", (dt))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn QualifiedName(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("QualifiedName", (name))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetExtProperties_Il2CppArray0(
+        instance: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        attrs: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::XmlAttribute>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetExtProperties", (instance, attrs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetExtProperties_XmlAttributeCollection1(
+        instance: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        attrs: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlAttributeCollection>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetExtProperties", (instance, attrs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetProperties(
+        instance: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        attrs: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Xml::XmlAttribute>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetProperties", (instance, attrs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TranslateAcceptRejectRule(
+        strRule: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Data::AcceptRejectRule> {
+        let __cordl_ret: crate::System::Data::AcceptRejectRule = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TranslateAcceptRejectRule", (strRule))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TranslateRule(
+        strRule: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Data::Rule> {
+        let __cordl_ret: crate::System::Data::Rule = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TranslateRule", (strRule))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn XsdtoClr(
+        xsdTypeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("XsdtoClr", (xsdTypeName))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

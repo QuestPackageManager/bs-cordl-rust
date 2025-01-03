@@ -36,6 +36,14 @@ impl std::ops::DerefMut for crate::GlobalNamespace::VRController {
 }
 #[cfg(feature = "VRController")]
 impl crate::GlobalNamespace::VRController {
+    pub fn AdjustPose(
+        originalPose: crate::UnityEngine::Pose,
+        adjustment: crate::UnityEngine::Pose,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Pose> {
+        let __cordl_ret: crate::UnityEngine::Pose = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AdjustPose", (originalPose, adjustment))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Init(
         &mut self,
         vrPlatformHelper: quest_hook::libil2cpp::Gc<
@@ -47,6 +55,13 @@ impl crate::GlobalNamespace::VRController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Init", (vrPlatformHelper))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InvertControllerPose(
+        finalPose: crate::UnityEngine::Pose,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Pose> {
+        let __cordl_ret: crate::UnityEngine::Pose = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InvertControllerPose", (finalPose))?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -86,7 +101,7 @@ impl crate::GlobalNamespace::VRController {
             .invoke("SetupVRPlatformHelper", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn TryGetControllerOffset(
+    pub fn TryGetControllerOffset_ByRefMut0(
         &mut self,
         poseOffset: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Pose>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -95,6 +110,23 @@ impl crate::GlobalNamespace::VRController {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("TryGetControllerOffset", (poseOffset))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryGetControllerOffset_IVRPlatformHelper_VRControllerTransformOffset_ByRefMut_ByRefMut1(
+        vrPlatformHelper: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IVRPlatformHelper,
+        >,
+        transformOffset: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::VRControllerTransformOffset,
+        >,
+        node: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::XR::XRNode>,
+        poseOffset: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Pose>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "TryGetControllerOffset",
+                (vrPlatformHelper, transformOffset, node, poseOffset),
+            )?;
         Ok(__cordl_ret.into())
     }
     pub fn Update(
@@ -126,6 +158,23 @@ impl crate::GlobalNamespace::VRController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateAnchorOffsetPose", (poseOffset))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UpdatePoseOffset(
+        node: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::XR::XRNode>,
+        customPositionOffset: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Vector3,
+        >,
+        customRotationOffset: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Vector3,
+        >,
+        poseOffset: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Pose>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "UpdatePoseOffset",
+                (node, customPositionOffset, customRotationOffset, poseOffset),
+            )?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

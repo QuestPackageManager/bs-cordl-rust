@@ -25,7 +25,19 @@ for crate::HoudiniEngineUnity::Test_HAPI_AttributeInfo_Extensions {
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+Test_HAPI_AttributeInfo_Extensions")]
-impl crate::HoudiniEngineUnity::Test_HAPI_AttributeInfo_Extensions {}
+impl crate::HoudiniEngineUnity::Test_HAPI_AttributeInfo_Extensions {
+    pub fn ToTestObject(
+        _cordl_self: crate::HoudiniEngineUnity::HAPI_AttributeInfo,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_HAPI_AttributeInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::Test_HAPI_AttributeInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToTestObject", (_cordl_self))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "HoudiniEngineUnity+Test_HAPI_AttributeInfo_Extensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::HoudiniEngineUnity::Test_HAPI_AttributeInfo_Extensions {

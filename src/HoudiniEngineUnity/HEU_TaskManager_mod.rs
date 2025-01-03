@@ -24,12 +24,80 @@ impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_TaskManager {
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_TaskManager")]
 impl crate::HoudiniEngineUnity::HEU_TaskManager {
+    pub fn AddTask(
+        task: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_Task>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddTask", (task))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CompleteTask(
+        task: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_Task>,
+        result: crate::HoudiniEngineUnity::HEU_Task_TaskResult,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CompleteTask", (task, result))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ExecuteTask(
+        task: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_Task>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ExecuteTask", (task))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetTask(
+        taskGuid: crate::System::Guid,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_Task>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_Task,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetTask", (taskGuid))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InternalCompleteTask(
+        task: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_Task>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InternalCompleteTask", (task))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn KillTask_Guid1(
+        taskGuid: crate::System::Guid,
+        bRemove: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("KillTask", (taskGuid, bRemove))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn KillTask_HEU_Task0(
+        task: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_Task>,
+        bRemove: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("KillTask", (task, bRemove))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
+    }
+    pub fn RemoveTask(
+        task: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_Task>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RemoveTask", (task))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Update() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Update", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,

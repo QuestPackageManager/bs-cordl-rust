@@ -27,6 +27,43 @@ impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::Submesh {
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Submesh")]
 impl crate::UnityEngine::ProBuilder::Submesh {
+    pub fn GetSubmeshCount(
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSubmeshCount", (mesh))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetSubmeshes(
+        faces: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::UnityEngine::ProBuilder::Face,
+            >,
+        >,
+        submeshCount: i32,
+        preferredTopology: crate::UnityEngine::MeshTopology,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::UnityEngine::ProBuilder::Submesh,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::UnityEngine::ProBuilder::Submesh,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSubmeshes", (faces, submeshCount, preferredTopology))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MapFaceMaterialsToSubmeshIndex(
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MapFaceMaterialsToSubmeshIndex", (mesh))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_Mesh_i32_1(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
         subMeshIndex: i32,

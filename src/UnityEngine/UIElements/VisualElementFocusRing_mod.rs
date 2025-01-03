@@ -136,6 +136,32 @@ impl crate::UnityEngine::UIElements::VisualElementFocusRing {
         > = __cordl_object.invoke("GetNextFocusable", (currentFocusable, direction))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetNextFocusableInTree(
+        currentFocusable: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::VisualElement,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Focusable>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::Focusable,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetNextFocusableInTree", (currentFocusable))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPreviousFocusableInTree(
+        currentFocusable: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::VisualElement,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Focusable>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::Focusable,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPreviousFocusableInTree", (currentFocusable))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         root: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         dfo: crate::UnityEngine::UIElements::VisualElementFocusRing_DefaultFocusOrder,

@@ -25,6 +25,13 @@ impl std::ops::DerefMut for crate::GlobalNamespace::PlatformUserModelUtils {
 #[cfg(feature = "PlatformUserModelUtils")]
 impl crate::GlobalNamespace::PlatformUserModelUtils {
     pub const kMinimalTokenLength: i32 = 64i32;
+    pub fn ValidateXPlatformAccessToken(
+        token: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ValidateXPlatformAccessToken", (token))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "PlatformUserModelUtils")]
 impl quest_hook::libil2cpp::ObjectType

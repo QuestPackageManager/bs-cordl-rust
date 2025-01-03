@@ -55,6 +55,14 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRGLTFLoader {
 impl crate::GlobalNamespace::OVRGLTFLoader {
     #[cfg(feature = "OVRGLTFLoader+__c__DisplayClass30_0")]
     pub type __c__DisplayClass30_0 = crate::GlobalNamespace::OVRGLTFLoader___c__DisplayClass30_0;
+    pub fn ApplyTextureQuality(
+        qualityLevel: crate::GlobalNamespace::OVRTextureQualityFiltering,
+        destTexture: quest_hook::libil2cpp::ByRefMut<*mut crate::UnityEngine::Texture2D>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ApplyTextureQuality", (qualityLevel, destTexture))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CreateUnityMaterial(
         &mut self,
         matData: crate::GlobalNamespace::OVRMaterialData,
@@ -67,6 +75,24 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = __cordl_object
             .invoke("CreateUnityMaterial", (matData, loadMips))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DetectTextureQuality(
+        srcTexture: quest_hook::libil2cpp::ByRefMut<*mut crate::UnityEngine::Texture2D>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::OVRTextureQualityFiltering,
+    > {
+        let __cordl_ret: crate::GlobalNamespace::OVRTextureQualityFiltering = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DetectTextureQuality", (srcTexture))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FlipTraingleIndices(
+        indices: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<i32>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FlipTraingleIndices", (indices))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetInputNodeType(

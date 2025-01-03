@@ -36,6 +36,160 @@ impl crate::TMPro::TMP_MaterialManager {
     pub type __c__DisplayClass13_0 = crate::TMPro::TMP_MaterialManager___c__DisplayClass13_0;
     #[cfg(feature = "TMPro+TMP_MaterialManager+__c__DisplayClass9_0")]
     pub type __c__DisplayClass9_0 = crate::TMPro::TMP_MaterialManager___c__DisplayClass9_0;
+    pub fn AddFallbackMaterialReference(
+        targetMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddFallbackMaterialReference", (targetMaterial))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddMaskingMaterial(
+        baseMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+        stencilMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+        stencilID: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddMaskingMaterial", (baseMaterial, stencilMaterial, stencilID))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CleanupFallbackMaterials() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CleanupFallbackMaterials", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ClearMaterials() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ClearMaterials", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CopyMaterialPresetProperties(
+        source: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+        destination: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CopyMaterialPresetProperties", (source, destination))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FindRootSortOverrideCanvas(
+        start: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FindRootSortOverrideCanvas", (start))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetBaseMaterial(
+        stencilMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetBaseMaterial", (stencilMaterial))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetFallbackMaterial_Material1(
+        sourceMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+        targetMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetFallbackMaterial", (sourceMaterial, targetMaterial))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetFallbackMaterial_TMP_FontAsset_i32_0(
+        fontAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+        sourceMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+        atlasIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetFallbackMaterial", (fontAsset, sourceMaterial, atlasIndex))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetMaterialForRendering(
+        graphic: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::MaskableGraphic>,
+        baseMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetMaterialForRendering", (graphic, baseMaterial))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetStencilID(
+        obj: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetStencilID", (obj))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetStencilMaterial(
+        baseMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+        stencilID: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetStencilMaterial", (baseMaterial, stencilID))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn OnPreRender() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("OnPreRender", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReleaseBaseMaterial(
+        baseMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReleaseBaseMaterial", (baseMaterial))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReleaseFallbackMaterial(
+        fallbackMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReleaseFallbackMaterial", (fallbackMaterial))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReleaseStencilMaterial(
+        stencilMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReleaseStencilMaterial", (stencilMaterial))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RemoveFallbackMaterialReference(
+        targetMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RemoveFallbackMaterialReference", (targetMaterial))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RemoveStencilMaterial(
+        stencilMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RemoveStencilMaterial", (stencilMaterial))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetStencil(
+        material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+        stencilID: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetStencil", (material, stencilID))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "TMPro+TMP_MaterialManager")]
 impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_MaterialManager {

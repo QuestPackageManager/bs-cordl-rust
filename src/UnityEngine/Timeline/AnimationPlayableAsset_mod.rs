@@ -45,7 +45,33 @@ impl crate::UnityEngine::Timeline::AnimationPlayableAsset {
     pub type Versions = crate::UnityEngine::Timeline::AnimationPlayableAsset_Versions;
     #[cfg(feature = "UnityEngine+Timeline+AnimationPlayableAsset+_get_outputs_d__45")]
     pub type _get_outputs_d__45 = crate::UnityEngine::Timeline::AnimationPlayableAsset__get_outputs_d__45;
-    pub fn CreatePlayable(
+    pub fn CreatePlayable_AnimationClip_Vector3_Vector3__cordl_bool_AppliedOffsetMode__cordl_bool_AnimationPlayableAsset_LoopMode1(
+        graph: crate::UnityEngine::Playables::PlayableGraph,
+        clip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
+        positionOffset: crate::UnityEngine::Vector3,
+        eulerOffset: crate::UnityEngine::Vector3,
+        removeStartOffset: bool,
+        mode: crate::UnityEngine::Timeline::AppliedOffsetMode,
+        applyFootIK: bool,
+        _cordl_loop: crate::UnityEngine::Timeline::AnimationPlayableAsset_LoopMode,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::Playable> {
+        let __cordl_ret: crate::UnityEngine::Playables::Playable = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CreatePlayable",
+                (
+                    graph,
+                    clip,
+                    positionOffset,
+                    eulerOffset,
+                    removeStartOffset,
+                    mode,
+                    applyFootIK,
+                    _cordl_loop,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreatePlayable_GameObject0(
         &mut self,
         graph: crate::UnityEngine::Playables::PlayableGraph,
         go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -71,6 +97,13 @@ impl crate::UnityEngine::Timeline::AnimationPlayableAsset {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GatherProperties", (director, driver))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn HasRootTransforms(
+        clip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("HasRootTransforms", (clip))?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -99,6 +132,21 @@ impl crate::UnityEngine::Timeline::AnimationPlayableAsset {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ResetOffsets", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ShouldApplyOffset(
+        mode: crate::UnityEngine::Timeline::AppliedOffsetMode,
+        clip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ShouldApplyOffset", (mode, clip))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ShouldApplyScaleRemove(
+        mode: crate::UnityEngine::Timeline::AppliedOffsetMode,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ShouldApplyScaleRemove", (mode))?;
         Ok(__cordl_ret.into())
     }
     pub fn UnityEngine_ISerializationCallbackReceiver_OnAfterDeserialize(
@@ -473,7 +521,17 @@ for crate::UnityEngine::Timeline::AnimationPlayableAsset_AnimationPlayableAssetU
 #[cfg(
     feature = "UnityEngine+Timeline+AnimationPlayableAsset+AnimationPlayableAssetUpgrade"
 )]
-impl crate::UnityEngine::Timeline::AnimationPlayableAsset_AnimationPlayableAssetUpgrade {}
+impl crate::UnityEngine::Timeline::AnimationPlayableAsset_AnimationPlayableAssetUpgrade {
+    pub fn ConvertRotationToEuler(
+        asset: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Timeline::AnimationPlayableAsset,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ConvertRotationToEuler", (asset))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(
     feature = "UnityEngine+Timeline+AnimationPlayableAsset+AnimationPlayableAssetUpgrade"
 )]

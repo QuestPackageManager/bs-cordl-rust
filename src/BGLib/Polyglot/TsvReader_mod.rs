@@ -31,6 +31,26 @@ impl crate::BGLib::Polyglot::TsvReader {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
+    pub fn Parse(
+        src: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::System::Collections::Generic::List_1<
+                    *mut quest_hook::libil2cpp::Il2CppString,
+                >,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::System::Collections::Generic::List_1<
+                    *mut quest_hook::libil2cpp::Il2CppString,
+                >,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Parse", (src))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

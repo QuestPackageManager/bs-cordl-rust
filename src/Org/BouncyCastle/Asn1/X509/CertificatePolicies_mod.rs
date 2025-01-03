@@ -28,6 +28,67 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::X509::CertificatePol
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+CertificatePolicies")]
 impl crate::Org::BouncyCastle::Asn1::X509::CertificatePolicies {
+    pub fn Copy(
+        policyInfo: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::Org::BouncyCastle::Asn1::X509::PolicyInformation,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::Org::BouncyCastle::Asn1::X509::PolicyInformation,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::Org::BouncyCastle::Asn1::X509::PolicyInformation,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Copy", (policyInfo))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromExtensions(
+        extensions: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::CertificatePolicies,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::CertificatePolicies,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromExtensions", (extensions))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetInstance_Asn1TaggedObject__cordl_bool1(
+        obj: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1TaggedObject>,
+        isExplicit: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::CertificatePolicies,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::CertificatePolicies,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetInstance", (obj, isExplicit))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetInstance_Il2CppObject0(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::CertificatePolicies,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::CertificatePolicies,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetPolicyInformation_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

@@ -48,6 +48,18 @@ impl crate::System::Security::Cryptography::SymmetricAlgorithm {
             .invoke("Clear", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn Create(
+        algName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::SymmetricAlgorithm,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::SymmetricAlgorithm,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Create", (algName))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CreateDecryptor_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

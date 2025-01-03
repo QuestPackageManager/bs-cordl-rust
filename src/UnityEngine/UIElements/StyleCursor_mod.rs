@@ -106,6 +106,21 @@ impl crate::UnityEngine::UIElements::StyleCursor {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Equality(
+        lhs: crate::UnityEngine::UIElements::StyleCursor,
+        rhs: crate::UnityEngine::UIElements::StyleCursor,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit(
+        keyword: crate::UnityEngine::UIElements::StyleKeyword,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::StyleCursor> {
+        let __cordl_ret: crate::UnityEngine::UIElements::StyleCursor = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (keyword))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleCursor")]
 impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleCursor>>

@@ -152,6 +152,16 @@ impl crate::System::Net::WebConnection {
             .invoke("Dispose", (disposing))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetException(
+        status: crate::System::Net::WebExceptionStatus,
+        error: quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Net::WebException>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Net::WebException> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetException", (status, error))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn InitConnection(
         &mut self,
         operation: quest_hook::libil2cpp::Gc<crate::System::Net::WebOperation>,
@@ -191,6 +201,16 @@ impl crate::System::Net::WebConnection {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("PrepareSharingNtlm", (operation))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReadLine(
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        start: quest_hook::libil2cpp::ByRefMut<i32>,
+        max: i32,
+        output: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadLine", (buffer, start, max, output))?;
         Ok(__cordl_ret.into())
     }
     pub fn Reset(

@@ -23,7 +23,56 @@ impl std::ops::DerefMut for crate::GlobalNamespace::ColorSchemeExtensions {
     }
 }
 #[cfg(feature = "ColorSchemeExtensions")]
-impl crate::GlobalNamespace::ColorSchemeExtensions {}
+impl crate::GlobalNamespace::ColorSchemeExtensions {
+    pub fn ResolveColor(
+        playerOverrideColor: crate::System::Nullable_1<crate::UnityEngine::Color>,
+        usePlayerOverride: bool,
+        useBeatmapOverride: crate::System::Nullable_1<bool>,
+        beatmapOverrideColor: crate::System::Nullable_1<crate::UnityEngine::Color>,
+        environmentColor: crate::UnityEngine::Color,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_ret: crate::UnityEngine::Color = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ResolveColor",
+                (
+                    playerOverrideColor,
+                    usePlayerOverride,
+                    useBeatmapOverride,
+                    beatmapOverrideColor,
+                    environmentColor,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ResolveColorScheme(
+        playerOverrideColorScheme: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ColorScheme,
+        >,
+        playerOverrideLightshowColors: bool,
+        beatmapOverrideColorScheme: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ColorScheme,
+        >,
+        environmentColorScheme: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ColorScheme,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ColorScheme,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ResolveColorScheme",
+                (
+                    playerOverrideColorScheme,
+                    playerOverrideLightshowColors,
+                    beatmapOverrideColorScheme,
+                    environmentColorScheme,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "ColorSchemeExtensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::ColorSchemeExtensions {

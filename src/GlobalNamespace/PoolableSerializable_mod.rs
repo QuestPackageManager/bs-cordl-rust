@@ -37,6 +37,22 @@ impl crate::GlobalNamespace::PoolableSerializable {
             .invoke("Deserialize", (reader))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetPool(
+        t: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Concurrent::ConcurrentBag_1<
+                *mut crate::GlobalNamespace::IPoolableSerializable,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Concurrent::ConcurrentBag_1<
+                *mut crate::GlobalNamespace::IPoolableSerializable,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetPool", (t))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -44,7 +60,23 @@ impl crate::GlobalNamespace::PoolableSerializable {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn Release(
+    pub fn NoDomainReloadInit() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("NoDomainReloadInit", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Obtain<T>() -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Obtain", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Release_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -52,6 +84,13 @@ impl crate::GlobalNamespace::PoolableSerializable {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Release", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Release_IPoolableSerializable1(
+        t: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IPoolableSerializable>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Release", (t))?;
         Ok(__cordl_ret.into())
     }
     pub fn Retain(

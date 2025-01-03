@@ -23,7 +23,15 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::DisposeHelper {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+DisposeHelper")]
-impl crate::UnityEngine::UIElements::DisposeHelper {}
+impl crate::UnityEngine::UIElements::DisposeHelper {
+    pub fn NotifyDisposedUsed(
+        disposable: quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("NotifyDisposedUsed", (disposable))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+DisposeHelper")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::DisposeHelper {

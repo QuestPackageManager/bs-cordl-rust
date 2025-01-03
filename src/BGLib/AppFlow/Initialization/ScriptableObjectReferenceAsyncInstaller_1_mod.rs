@@ -63,6 +63,23 @@ impl<
             .invoke("InstallBindings", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn LoadAsync(
+        runtimeKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+            T,
+        >,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+            T,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LoadAsync", (runtimeKey))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn LoadResourcesBeforeInstall(
         &mut self,
         registry: quest_hook::libil2cpp::Gc<

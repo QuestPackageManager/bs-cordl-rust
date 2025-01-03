@@ -25,6 +25,129 @@ impl std::ops::DerefMut for crate::UnityEngine::GUIClip {
 impl crate::UnityEngine::GUIClip {
     #[cfg(feature = "UnityEngine+GUIClip+ParentClipScope")]
     pub type ParentClipScope = crate::UnityEngine::GUIClip_ParentClipScope;
+    pub fn GetMatrix() -> quest_hook::libil2cpp::Result<crate::UnityEngine::Matrix4x4> {
+        let __cordl_ret: crate::UnityEngine::Matrix4x4 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetMatrix", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetMatrix_Injected(
+        ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetMatrix_Injected", (ret))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Internal_GetCount() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Internal_GetCount", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Internal_Pop() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Internal_Pop", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Internal_PopParentClip() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Internal_PopParentClip", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Internal_Push(
+        screenRect: crate::UnityEngine::Rect,
+        scrollOffset: crate::UnityEngine::Vector2,
+        renderOffset: crate::UnityEngine::Vector2,
+        resetOffset: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "Internal_Push",
+                (screenRect, scrollOffset, renderOffset, resetOffset),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Internal_PushParentClip_Injected(
+        renderTransform: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>,
+        inputTransform: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>,
+        clipRect: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Rect>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "Internal_PushParentClip_Injected",
+                (renderTransform, inputTransform, clipRect),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Internal_PushParentClip_Matrix4x4_Rect1(
+        renderTransform: crate::UnityEngine::Matrix4x4,
+        inputTransform: crate::UnityEngine::Matrix4x4,
+        clipRect: crate::UnityEngine::Rect,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "Internal_PushParentClip",
+                (renderTransform, inputTransform, clipRect),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Internal_PushParentClip_Rect0(
+        objectTransform: crate::UnityEngine::Matrix4x4,
+        clipRect: crate::UnityEngine::Rect,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Internal_PushParentClip", (objectTransform, clipRect))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Internal_Push_Injected(
+        screenRect: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Rect>,
+        scrollOffset: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
+        renderOffset: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
+        resetOffset: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "Internal_Push_Injected",
+                (screenRect, scrollOffset, renderOffset, resetOffset),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Push(
+        screenRect: crate::UnityEngine::Rect,
+        scrollOffset: crate::UnityEngine::Vector2,
+        renderOffset: crate::UnityEngine::Vector2,
+        resetOffset: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Push", (screenRect, scrollOffset, renderOffset, resetOffset))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetMatrix(
+        m: crate::UnityEngine::Matrix4x4,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetMatrix", (m))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetMatrix_Injected(
+        m: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Matrix4x4>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetMatrix_Injected", (m))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_visibleRect() -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rect> {
+        let __cordl_ret: crate::UnityEngine::Rect = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_visibleRect", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_visibleRect_Injected(
+        ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Rect>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_visibleRect_Injected", (ret))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+GUIClip")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::GUIClip {

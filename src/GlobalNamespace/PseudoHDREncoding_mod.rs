@@ -25,6 +25,15 @@ impl std::ops::DerefMut for crate::GlobalNamespace::PseudoHDREncoding {
 #[cfg(feature = "PseudoHDREncoding")]
 impl crate::GlobalNamespace::PseudoHDREncoding {
     pub const kPseudoHDREncodingShaderName: &'static str = "Hidden/PseudoHDREncoding";
+    pub fn CreatePseudoHDREncodedTexture(
+        src: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreatePseudoHDREncodedTexture", (src))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "PseudoHDREncoding")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PseudoHDREncoding {

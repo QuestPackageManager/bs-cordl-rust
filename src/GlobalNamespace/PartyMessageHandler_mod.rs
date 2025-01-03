@@ -338,6 +338,20 @@ impl crate::GlobalNamespace::PartyMessageHandler_ConnectToMasterServerMessage {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_pool() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PacketPool_1<
+                *mut crate::GlobalNamespace::PartyMessageHandler_ConnectToMasterServerMessage,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PacketPool_1<
+                *mut crate::GlobalNamespace::PartyMessageHandler_ConnectToMasterServerMessage,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_pool", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "PartyMessageHandler+ConnectToMasterServerMessage")]
 impl quest_hook::libil2cpp::ObjectType

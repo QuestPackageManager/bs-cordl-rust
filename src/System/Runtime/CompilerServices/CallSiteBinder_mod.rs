@@ -136,6 +136,24 @@ impl crate::System::Runtime::CompilerServices::CallSiteBinder {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
+    pub fn Stitch<T>(
+        binding: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        signature: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::CompilerServices::CallSiteBinder_LambdaSignature_1<T>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression_1<T>>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression_1<T>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Stitch", (binding, signature))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -144,6 +162,15 @@ impl crate::System::Runtime::CompilerServices::CallSiteBinder {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_UpdateLabel() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::LabelTarget>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::LabelTarget,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_UpdateLabel", ())?;
         Ok(__cordl_ret.into())
     }
 }
@@ -214,6 +241,20 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Instance() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::CompilerServices::CallSiteBinder_LambdaSignature_1<T>,
+        >,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::CompilerServices::CallSiteBinder_LambdaSignature_1<T>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_Instance", ())?;
         Ok(__cordl_ret.into())
     }
 }

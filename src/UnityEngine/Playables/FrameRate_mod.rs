@@ -22,6 +22,13 @@ for crate::UnityEngine::Playables::FrameRate {
 }
 #[cfg(feature = "UnityEngine+Playables+FrameRate")]
 impl crate::UnityEngine::Playables::FrameRate {
+    pub fn DoubleToFrameRate(
+        framerate: f64,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::FrameRate> {
+        let __cordl_ret: crate::UnityEngine::Playables::FrameRate = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DoubleToFrameRate", (framerate))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Equals_FrameRate0(
         &mut self,
         other: crate::UnityEngine::Playables::FrameRate,
@@ -112,6 +119,14 @@ impl crate::UnityEngine::Playables::FrameRate {
             "get_rate",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        a: crate::UnityEngine::Playables::FrameRate,
+        b: crate::UnityEngine::Playables::FrameRate,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (a, b))?;
         Ok(__cordl_ret.into())
     }
 }

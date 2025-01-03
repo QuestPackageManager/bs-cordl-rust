@@ -83,6 +83,28 @@ impl crate::GlobalNamespace::TubeBloomPrePassLight {
             .invoke("Awake", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn ClipPoints(
+        fromPointClipPos: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector4>,
+        toPointClipPos: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector4>,
+        fromPointViewPos: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+        toPointViewPos: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+        fromPointInside: bool,
+        t: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ClipPoints",
+                (
+                    fromPointClipPos,
+                    toPointClipPos,
+                    fromPointViewPos,
+                    toPointViewPos,
+                    fromPointInside,
+                    t,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn DidRegisterLight(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -177,6 +199,15 @@ impl crate::GlobalNamespace::TubeBloomPrePassLight {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Refresh", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ZeroQuad(
+        quad: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::BloomPrePassLight_QuadData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ZeroQuad", (quad))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

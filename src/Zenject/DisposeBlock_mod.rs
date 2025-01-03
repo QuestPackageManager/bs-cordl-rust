@@ -87,6 +87,20 @@ impl crate::Zenject::DisposeBlock {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
+    pub fn OnDespawned(
+        that: quest_hook::libil2cpp::Gc<crate::Zenject::DisposeBlock>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("OnDespawned", (that))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn OnSpawned(
+        that: quest_hook::libil2cpp::Gc<crate::Zenject::DisposeBlock>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("OnSpawned", (that))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Remove(
         &mut self,
         disposable: quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
@@ -133,6 +147,13 @@ impl crate::Zenject::DisposeBlock {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<T>,
         > = __cordl_object.invoke("SpawnList", (elements))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Spawn_8() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Zenject::DisposeBlock>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::DisposeBlock> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Spawn", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn Spawn_IMemoryPool_1_0<T>(

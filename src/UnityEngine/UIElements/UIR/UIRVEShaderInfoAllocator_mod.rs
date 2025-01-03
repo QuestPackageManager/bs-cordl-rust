@@ -77,6 +77,23 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn AllocToConstantBufferIndex(
+        alloc: crate::UnityEngine::UIElements::UIR::BMPAlloc,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AllocToConstantBufferIndex", (alloc))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AllocToTexelCoord(
+        allocator: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::UIElements::UIR::BitmapAllocator32,
+        >,
+        alloc: crate::UnityEngine::UIElements::UIR::BMPAlloc,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2Int> {
+        let __cordl_ret: crate::UnityEngine::Vector2Int = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AllocToTexelCoord", (allocator, alloc))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn AllocTransform(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::UIR::BMPAlloc> {
@@ -85,6 +102,17 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
             "AllocTransform",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AtlasRectMatchesPage(
+        allocator: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::UIElements::UIR::BitmapAllocator32,
+        >,
+        defAlloc: crate::UnityEngine::UIElements::UIR::BMPAlloc,
+        atlasRect: crate::UnityEngine::RectInt,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AtlasRectMatchesPage", (allocator, defAlloc, atlasRect))?;
         Ok(__cordl_ret.into())
     }
     pub fn ClipRectAllocToVertexData(
@@ -323,6 +351,16 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
             "get_clipRectConstants",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_pageHeight() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_pageHeight", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_pageWidth() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_pageWidth", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_transformConstants(

@@ -23,6 +23,14 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::Unity::Mathematics::f
 }
 #[cfg(feature = "Unity+Mathematics+float3x3")]
 impl crate::Unity::Mathematics::float3x3 {
+    pub fn AxisAngle(
+        axis: crate::Unity::Mathematics::float3,
+        angle: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::float3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AxisAngle", (axis, angle))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Equals_Il2CppObject1(
         &mut self,
         o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -45,12 +53,186 @@ impl crate::Unity::Mathematics::float3x3 {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn EulerXYZ_f32_f32_f32_1(
+        x: f32,
+        y: f32,
+        z: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::float3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EulerXYZ", (x, y, z))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EulerXYZ_float3_0(
+        xyz: crate::Unity::Mathematics::float3,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::float3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EulerXYZ", (xyz))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EulerXZY_f32_f32_f32_1(
+        x: f32,
+        y: f32,
+        z: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::float3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EulerXZY", (x, y, z))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EulerXZY_float3_0(
+        xyz: crate::Unity::Mathematics::float3,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::float3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EulerXZY", (xyz))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EulerYXZ_f32_f32_f32_1(
+        x: f32,
+        y: f32,
+        z: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::float3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EulerYXZ", (x, y, z))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EulerYXZ_float3_0(
+        xyz: crate::Unity::Mathematics::float3,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::float3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EulerYXZ", (xyz))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EulerYZX_f32_f32_f32_1(
+        x: f32,
+        y: f32,
+        z: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::float3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EulerYZX", (x, y, z))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EulerYZX_float3_0(
+        xyz: crate::Unity::Mathematics::float3,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::float3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EulerYZX", (xyz))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EulerZXY_f32_f32_f32_1(
+        x: f32,
+        y: f32,
+        z: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::float3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EulerZXY", (x, y, z))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EulerZXY_float3_0(
+        xyz: crate::Unity::Mathematics::float3,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::float3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EulerZXY", (xyz))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EulerZYX_f32_f32_f32_1(
+        x: f32,
+        y: f32,
+        z: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::float3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EulerZYX", (x, y, z))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EulerZYX_float3_0(
+        xyz: crate::Unity::Mathematics::float3,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::float3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EulerZYX", (xyz))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Euler_f32_f32_f32_math_RotationOrder1(
+        x: f32,
+        y: f32,
+        z: f32,
+        order: crate::Unity::Mathematics::math_RotationOrder,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::float3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Euler", (x, y, z, order))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Euler_float3_math_RotationOrder0(
+        xyz: crate::Unity::Mathematics::float3,
+        order: crate::Unity::Mathematics::math_RotationOrder,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::float3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Euler", (xyz, order))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "GetHashCode",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LookRotation(
+        forward: crate::Unity::Mathematics::float3,
+        up: crate::Unity::Mathematics::float3,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::float3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LookRotation", (forward, up))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LookRotationSafe(
+        forward: crate::Unity::Mathematics::float3,
+        up: crate::Unity::Mathematics::float3,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::float3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LookRotationSafe", (forward, up))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RotateX(
+        angle: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::float3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RotateX", (angle))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RotateY(
+        angle: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::float3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RotateY", (angle))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RotateZ(
+        angle: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::float3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RotateZ", (angle))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Scale_f32_0(
+        s: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::float3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Scale", (s))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Scale_f32_f32_f32_1(
+        x: f32,
+        y: f32,
+        z: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::float3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Scale", (x, y, z))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Scale_float3_2(
+        v: crate::Unity::Mathematics::float3,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::float3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Scale", (v))?;
         Ok(__cordl_ret.into())
     }
     pub fn ToString_0(
@@ -241,6 +423,368 @@ impl crate::Unity::Mathematics::float3x3 {
         let __cordl_ret: quest_hook::libil2cpp::ByRefMut<
             crate::Unity::Mathematics::float3,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_Item", (index))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Addition_f32_float3x3_2(
+        lhs: f32,
+        rhs: crate::Unity::Mathematics::float3x3,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::float3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Addition", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Addition_float3x3_f32_1(
+        lhs: crate::Unity::Mathematics::float3x3,
+        rhs: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::float3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Addition", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Addition_float3x3_float3x3_0(
+        lhs: crate::Unity::Mathematics::float3x3,
+        rhs: crate::Unity::Mathematics::float3x3,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::float3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Addition", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Decrement(
+        val: crate::Unity::Mathematics::float3x3,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::float3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Decrement", (val))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Division_f32_float3x3_2(
+        lhs: f32,
+        rhs: crate::Unity::Mathematics::float3x3,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::float3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Division", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Division_float3x3_f32_1(
+        lhs: crate::Unity::Mathematics::float3x3,
+        rhs: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::float3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Division", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Division_float3x3_float3x3_0(
+        lhs: crate::Unity::Mathematics::float3x3,
+        rhs: crate::Unity::Mathematics::float3x3,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::float3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Division", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality_f32_float3x3_2(
+        lhs: f32,
+        rhs: crate::Unity::Mathematics::float3x3,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::bool3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality_float3x3_f32_1(
+        lhs: crate::Unity::Mathematics::float3x3,
+        rhs: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::bool3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality_float3x3_float3x3_0(
+        lhs: crate::Unity::Mathematics::float3x3,
+        rhs: crate::Unity::Mathematics::float3x3,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::bool3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Explicit__cordl_bool0(
+        v: bool,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::float3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Explicit", (v))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Explicit_bool3x3_1(
+        v: crate::Unity::Mathematics::bool3x3,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::float3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Explicit", (v))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Explicit_double3x3_3(
+        v: crate::Unity::Mathematics::double3x3,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::float3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Explicit", (v))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Explicit_f64_2(
+        v: f64,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::float3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Explicit", (v))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Explicit_float4x4_4(
+        f4x4: crate::Unity::Mathematics::float4x4,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::float3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Explicit", (f4x4))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_GreaterThanOrEqual_f32_float3x3_2(
+        lhs: f32,
+        rhs: crate::Unity::Mathematics::float3x3,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::bool3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_GreaterThanOrEqual", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_GreaterThanOrEqual_float3x3_f32_1(
+        lhs: crate::Unity::Mathematics::float3x3,
+        rhs: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::bool3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_GreaterThanOrEqual", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_GreaterThanOrEqual_float3x3_float3x3_0(
+        lhs: crate::Unity::Mathematics::float3x3,
+        rhs: crate::Unity::Mathematics::float3x3,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::bool3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_GreaterThanOrEqual", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_GreaterThan_f32_float3x3_2(
+        lhs: f32,
+        rhs: crate::Unity::Mathematics::float3x3,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::bool3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_GreaterThan", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_GreaterThan_float3x3_f32_1(
+        lhs: crate::Unity::Mathematics::float3x3,
+        rhs: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::bool3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_GreaterThan", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_GreaterThan_float3x3_float3x3_0(
+        lhs: crate::Unity::Mathematics::float3x3,
+        rhs: crate::Unity::Mathematics::float3x3,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::bool3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_GreaterThan", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_f32_0(
+        v: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::float3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (v))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_i32_1(
+        v: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::float3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (v))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_int3x3_2(
+        v: crate::Unity::Mathematics::int3x3,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::float3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (v))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_u32_3(
+        v: u32,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::float3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (v))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_uint3x3_4(
+        v: crate::Unity::Mathematics::uint3x3,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::float3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (v))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Increment(
+        val: crate::Unity::Mathematics::float3x3,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::float3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Increment", (val))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality_f32_float3x3_2(
+        lhs: f32,
+        rhs: crate::Unity::Mathematics::float3x3,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::bool3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality_float3x3_f32_1(
+        lhs: crate::Unity::Mathematics::float3x3,
+        rhs: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::bool3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality_float3x3_float3x3_0(
+        lhs: crate::Unity::Mathematics::float3x3,
+        rhs: crate::Unity::Mathematics::float3x3,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::bool3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_LessThanOrEqual_f32_float3x3_2(
+        lhs: f32,
+        rhs: crate::Unity::Mathematics::float3x3,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::bool3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_LessThanOrEqual", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_LessThanOrEqual_float3x3_f32_1(
+        lhs: crate::Unity::Mathematics::float3x3,
+        rhs: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::bool3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_LessThanOrEqual", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_LessThanOrEqual_float3x3_float3x3_0(
+        lhs: crate::Unity::Mathematics::float3x3,
+        rhs: crate::Unity::Mathematics::float3x3,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::bool3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_LessThanOrEqual", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_LessThan_f32_float3x3_2(
+        lhs: f32,
+        rhs: crate::Unity::Mathematics::float3x3,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::bool3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_LessThan", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_LessThan_float3x3_f32_1(
+        lhs: crate::Unity::Mathematics::float3x3,
+        rhs: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::bool3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_LessThan", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_LessThan_float3x3_float3x3_0(
+        lhs: crate::Unity::Mathematics::float3x3,
+        rhs: crate::Unity::Mathematics::float3x3,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::bool3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::bool3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_LessThan", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Modulus_f32_float3x3_2(
+        lhs: f32,
+        rhs: crate::Unity::Mathematics::float3x3,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::float3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Modulus", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Modulus_float3x3_f32_1(
+        lhs: crate::Unity::Mathematics::float3x3,
+        rhs: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::float3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Modulus", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Modulus_float3x3_float3x3_0(
+        lhs: crate::Unity::Mathematics::float3x3,
+        rhs: crate::Unity::Mathematics::float3x3,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::float3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Modulus", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Multiply_f32_float3x3_2(
+        lhs: f32,
+        rhs: crate::Unity::Mathematics::float3x3,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::float3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Multiply", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Multiply_float3x3_f32_1(
+        lhs: crate::Unity::Mathematics::float3x3,
+        rhs: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::float3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Multiply", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Multiply_float3x3_float3x3_0(
+        lhs: crate::Unity::Mathematics::float3x3,
+        rhs: crate::Unity::Mathematics::float3x3,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::float3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Multiply", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Subtraction_f32_float3x3_2(
+        lhs: f32,
+        rhs: crate::Unity::Mathematics::float3x3,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::float3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Subtraction", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Subtraction_float3x3_f32_1(
+        lhs: crate::Unity::Mathematics::float3x3,
+        rhs: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::float3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Subtraction", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Subtraction_float3x3_float3x3_0(
+        lhs: crate::Unity::Mathematics::float3x3,
+        rhs: crate::Unity::Mathematics::float3x3,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::float3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Subtraction", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_UnaryNegation(
+        val: crate::Unity::Mathematics::float3x3,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::float3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_UnaryNegation", (val))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_UnaryPlus(
+        val: crate::Unity::Mathematics::float3x3,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::float3x3> {
+        let __cordl_ret: crate::Unity::Mathematics::float3x3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_UnaryPlus", (val))?;
         Ok(__cordl_ret.into())
     }
 }

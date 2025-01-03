@@ -32,6 +32,18 @@ impl std::ops::DerefMut for crate::UnityEngine::InputSystem::XR::XRDeviceDescrip
 }
 #[cfg(feature = "UnityEngine+InputSystem+XR+XRDeviceDescriptor")]
 impl crate::UnityEngine::InputSystem::XR::XRDeviceDescriptor {
+    pub fn FromJson(
+        json: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::XR::XRDeviceDescriptor,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::XR::XRDeviceDescriptor,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("FromJson", (json))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

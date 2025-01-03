@@ -32,7 +32,7 @@ impl crate::System::Data::DataKey {
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn ColumnsEqual(
+    pub fn ColumnsEqual_DataKey0(
         &mut self,
         key: crate::System::Data::DataKey,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -41,6 +41,18 @@ impl crate::System::Data::DataKey {
             "ColumnsEqual",
             (key),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ColumnsEqual_Il2CppArray_Il2CppArray1(
+        column1: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataColumn>,
+        >,
+        column2: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataColumn>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ColumnsEqual", (column1, column2))?;
         Ok(__cordl_ret.into())
     }
     pub fn ContainsColumn(

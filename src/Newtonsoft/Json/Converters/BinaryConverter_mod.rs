@@ -36,6 +36,13 @@ impl crate::Newtonsoft::Json::Converters::BinaryConverter {
         let __cordl_ret: bool = __cordl_object.invoke("CanConvert", (objectType))?;
         Ok(__cordl_ret.into())
     }
+    pub fn EnsureReflectionObject(
+        t: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EnsureReflectionObject", (t))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetByteArray(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

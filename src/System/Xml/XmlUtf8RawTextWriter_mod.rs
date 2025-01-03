@@ -47,6 +47,48 @@ impl std::ops::DerefMut for crate::System::Xml::XmlUtf8RawTextWriter {
 }
 #[cfg(feature = "System+Xml+XmlUtf8RawTextWriter")]
 impl crate::System::Xml::XmlUtf8RawTextWriter {
+    pub fn AmpEntity(
+        pDst: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("AmpEntity", (pDst))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CarriageReturnEntity(
+        pDst: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CarriageReturnEntity", (pDst))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CharEntity(
+        pDst: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        ch: char,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CharEntity", (pDst, ch))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CharToUTF8(
+        pSrc: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppObject>,
+        pSrcEnd: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        pDst: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CharToUTF8", (pSrc, pSrcEnd, pDst))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Close(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -68,6 +110,31 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("EncodeChar", (pSrc, pSrcEnd, pDst))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EncodeMultibyteUTF8(
+        ch: i32,
+        pDst: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EncodeMultibyteUTF8", (ch, pDst))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EncodeSurrogate(
+        pSrc: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        pSrcEnd: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        pDst: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EncodeSurrogate", (pSrc, pSrcEnd, pDst))?;
         Ok(__cordl_ret.into())
     }
     pub fn Flush(
@@ -100,6 +167,16 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
             .invoke("FlushEncoder", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn GtEntity(
+        pDst: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GtEntity", (pDst))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn InvalidXmlChar(
         &mut self,
         ch: i32,
@@ -114,6 +191,32 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
         > = __cordl_object.invoke("InvalidXmlChar", (ch, pDst, entitize))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsSurrogateByte(b: u8) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsSurrogateByte", (b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LineFeedEntity(
+        pDst: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LineFeedEntity", (pDst))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LtEntity(
+        pDst: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("LtEntity", (pDst))?;
         Ok(__cordl_ret.into())
     }
     pub fn New_Stream_XmlWriterSettings1(
@@ -134,6 +237,39 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (settings))?;
         Ok(__cordl_object.into())
+    }
+    pub fn QuoteEntity(
+        pDst: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("QuoteEntity", (pDst))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RawEndCData(
+        pDst: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RawEndCData", (pDst))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RawStartCData(
+        pDst: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RawStartCData", (pDst))?;
+        Ok(__cordl_ret.into())
     }
     pub fn RawText_Il2CppObject_Il2CppObject1(
         &mut self,
@@ -166,6 +302,16 @@ impl crate::System::Xml::XmlUtf8RawTextWriter {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("StartElementContent", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TabEntity(
+        pDst: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("TabEntity", (pDst))?;
         Ok(__cordl_ret.into())
     }
     pub fn ValidateContentChars(

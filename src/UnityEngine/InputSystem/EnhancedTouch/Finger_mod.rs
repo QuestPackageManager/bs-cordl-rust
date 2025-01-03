@@ -77,6 +77,17 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Finger {
             .invoke("OnTouchRecorded", (record))?;
         Ok(__cordl_ret.into())
     }
+    pub fn ShouldRecordTouch(
+        control: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl,
+        >,
+        _cordl_time: f64,
+        eventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ShouldRecordTouch", (control, _cordl_time, eventPtr))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
         screen: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Touchscreen>,

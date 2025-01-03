@@ -135,6 +135,15 @@ impl crate::System::Xml::Schema::StringFacetsChecker {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_LanguagePattern() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Regex>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Text::RegularExpressions::Regex,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_LanguagePattern", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "System+Xml+Schema+StringFacetsChecker")]
 impl quest_hook::libil2cpp::ObjectType

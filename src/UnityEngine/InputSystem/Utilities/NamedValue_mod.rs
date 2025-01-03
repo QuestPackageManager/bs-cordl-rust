@@ -24,6 +24,18 @@ for crate::UnityEngine::InputSystem::Utilities::NamedValue {
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+NamedValue")]
 impl crate::UnityEngine::InputSystem::Utilities::NamedValue {
     pub const Separator: &'static str = ",";
+    pub fn ApplyAllToObject<TParameterList>(
+        instance: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        parameters: TParameterList,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TParameterList: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ApplyAllToObject", (instance, parameters))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ApplyToObject(
         &mut self,
         instance: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -70,12 +82,62 @@ impl crate::UnityEngine::InputSystem::Utilities::NamedValue {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn From<TValue>(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        value: TValue,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::NamedValue,
+    >
+    where
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::NamedValue = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("From", (name, value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "GetHashCode",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Parse(
+        str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::NamedValue,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::NamedValue = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Parse", (str))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ParseMultiple(
+        parameterString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::UnityEngine::InputSystem::Utilities::NamedValue,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::UnityEngine::InputSystem::Utilities::NamedValue,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ParseMultiple", (parameterString))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ParseParameter(
+        parameterString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        index: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::NamedValue,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::NamedValue = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ParseParameter", (parameterString, index))?;
         Ok(__cordl_ret.into())
     }
     pub fn ToString(
@@ -118,6 +180,22 @@ impl crate::UnityEngine::InputSystem::Utilities::NamedValue {
             "get_value",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        left: crate::UnityEngine::InputSystem::Utilities::NamedValue,
+        right: crate::UnityEngine::InputSystem::Utilities::NamedValue,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        left: crate::UnityEngine::InputSystem::Utilities::NamedValue,
+        right: crate::UnityEngine::InputSystem::Utilities::NamedValue,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (left, right))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_name(

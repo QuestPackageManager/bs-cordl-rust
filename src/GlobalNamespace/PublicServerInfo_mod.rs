@@ -23,6 +23,13 @@ for crate::GlobalNamespace::PublicServerInfo {
 }
 #[cfg(feature = "PublicServerInfo")]
 impl crate::GlobalNamespace::PublicServerInfo {
+    pub fn Deserialize(
+        reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::PublicServerInfo> {
+        let __cordl_ret: crate::GlobalNamespace::PublicServerInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Deserialize", (reader))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Serialize(
         &mut self,
         writer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,

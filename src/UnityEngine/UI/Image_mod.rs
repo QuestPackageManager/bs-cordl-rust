@@ -52,6 +52,32 @@ impl crate::UnityEngine::UI::Image {
     pub type OriginVertical = crate::UnityEngine::UI::Image_OriginVertical;
     #[cfg(feature = "UnityEngine+UI+Image+Type")]
     pub type Type = crate::UnityEngine::UI::Image_Type;
+    pub fn AddQuad_Il2CppArray_Color32_Il2CppArray0(
+        vertexHelper: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::VertexHelper>,
+        quadPositions: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+        >,
+        color: crate::UnityEngine::Color32,
+        quadUVs: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddQuad", (vertexHelper, quadPositions, color, quadUVs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddQuad_Vector2_Vector2_Color32_Vector2_Vector2_1(
+        vertexHelper: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::VertexHelper>,
+        posMin: crate::UnityEngine::Vector2,
+        posMax: crate::UnityEngine::Vector2,
+        color: crate::UnityEngine::Color32,
+        uvMin: crate::UnityEngine::Vector2,
+        uvMax: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddQuad", (vertexHelper, posMin, posMax, color, uvMin, uvMax))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CalculateLayoutInputHorizontal(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -277,6 +303,41 @@ impl crate::UnityEngine::UI::Image {
             .invoke("PreserveSpriteAspectRatio", (rect, spriteSize))?;
         Ok(__cordl_ret.into())
     }
+    pub fn RadialCut_Il2CppArray0(
+        xy: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+        >,
+        uv: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+        >,
+        fill: f32,
+        invert: bool,
+        corner: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RadialCut", (xy, uv, fill, invert, corner))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RadialCut_f32_1(
+        xy: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+        >,
+        cos: f32,
+        sin: f32,
+        invert: bool,
+        corner: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RadialCut", (xy, cos, sin, invert, corner))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RebuildImage(
+        spriteAtlas: quest_hook::libil2cpp::Gc<crate::UnityEngine::U2D::SpriteAtlas>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RebuildImage", (spriteAtlas))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn SetNativeSize(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -287,6 +348,13 @@ impl crate::UnityEngine::UI::Image {
             .invoke("SetNativeSize", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn TrackImage(
+        g: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TrackImage", (g))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn TrackSprite(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -295,6 +363,13 @@ impl crate::UnityEngine::UI::Image {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("TrackSprite", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UnTrackImage(
+        g: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UnTrackImage", (g))?;
         Ok(__cordl_ret.into())
     }
     pub fn UpdateMaterial(
@@ -357,6 +432,13 @@ impl crate::UnityEngine::UI::Image {
         );
         let __cordl_ret: f32 = __cordl_object
             .invoke("get_alphaHitTestMinimumThreshold", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_defaultETC1GraphicMaterial() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_defaultETC1GraphicMaterial", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_eventAlphaThreshold(&mut self) -> quest_hook::libil2cpp::Result<f32> {

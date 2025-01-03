@@ -31,6 +31,11 @@ impl crate::UnityEngine::LightmapSettings {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
+    pub fn Reset() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Reset", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -39,6 +44,81 @@ impl crate::UnityEngine::LightmapSettings {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_bakedColorSpace() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ColorSpace,
+    > {
+        let __cordl_ret: crate::UnityEngine::ColorSpace = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_bakedColorSpace", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_lightProbes() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::LightProbes>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::LightProbes> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_lightProbes", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_lightmaps() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::LightmapData>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::LightmapData>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_lightmaps", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_lightmapsMode() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::LightmapsMode,
+    > {
+        let __cordl_ret: crate::UnityEngine::LightmapsMode = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_lightmapsMode", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_lightmapsModeLegacy() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::LightmapsModeLegacy,
+    > {
+        let __cordl_ret: crate::UnityEngine::LightmapsModeLegacy = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_lightmapsModeLegacy", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_bakedColorSpace(
+        value: crate::UnityEngine::ColorSpace,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_bakedColorSpace", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_lightProbes(
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::LightProbes>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_lightProbes", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_lightmaps(
+        value: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::LightmapData>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_lightmaps", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_lightmapsMode(
+        value: crate::UnityEngine::LightmapsMode,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_lightmapsMode", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_lightmapsModeLegacy(
+        value: crate::UnityEngine::LightmapsModeLegacy,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_lightmapsModeLegacy", (value))?;
         Ok(__cordl_ret.into())
     }
 }

@@ -69,6 +69,37 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::JsonSerializer {
 }
 #[cfg(feature = "Newtonsoft+Json+JsonSerializer")]
 impl crate::Newtonsoft::Json::JsonSerializer {
+    pub fn ApplySerializerSettings(
+        serializer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonSerializer>,
+        settings: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::JsonSerializerSettings,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ApplySerializerSettings", (serializer, settings))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateDefault_0() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonSerializer>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::JsonSerializer,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("CreateDefault", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateDefault_JsonSerializerSettings1(
+        settings: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::JsonSerializerSettings,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonSerializer>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::JsonSerializer,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateDefault", (settings))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CreateTraceJsonReader(
         &mut self,
         reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
@@ -83,6 +114,26 @@ impl crate::Newtonsoft::Json::JsonSerializer {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Serialization::TraceJsonReader,
         > = __cordl_object.invoke("CreateTraceJsonReader", (reader))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Create_0() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonSerializer>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::JsonSerializer,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Create", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Create_JsonSerializerSettings1(
+        settings: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::JsonSerializerSettings,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonSerializer>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::JsonSerializer,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Create", (settings))?;
         Ok(__cordl_ret.into())
     }
     pub fn DeserializeInternal(
@@ -158,7 +209,23 @@ impl crate::Newtonsoft::Json::JsonSerializer {
         > = __cordl_object.invoke("Deserialize", (reader, objectType))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetMatchingConverter(
+    pub fn GetMatchingConverter_IList_1_Type1(
+        converters: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                *mut crate::Newtonsoft::Json::JsonConverter,
+            >,
+        >,
+        objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonConverter>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::JsonConverter,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetMatchingConverter", (converters, objectType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetMatchingConverter_Type0(
         &mut self,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<

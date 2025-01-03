@@ -86,6 +86,18 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader {
             .invoke("CheckSerializable", (t))?;
         Ok(__cordl_ret.into())
     }
+    pub fn CheckTypeForwardedTo(
+        sourceAssembly: quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
+        destAssembly: quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
+        resolvedType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CheckTypeForwardedTo",
+                (sourceAssembly, destAssembly, resolvedType),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CreateReadObjectInfo_Il2CppArray_Il2CppArray1(
         &mut self,
         objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -176,6 +188,15 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader {
             self,
         );
         let __cordl_ret: i64 = __cordl_object.invoke("GetId", (objectId))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetSimplyNamedTypeFromAssembly(
+        assm: quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
+        typeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        _cordl_type: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSimplyNamedTypeFromAssembly", (assm, typeName, _cordl_type))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetType(
@@ -439,6 +460,17 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RegisterObject", (obj, pr, objectPr, bIsString))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ResolveSimpleAssemblyName(
+        assemblyName: quest_hook::libil2cpp::Gc<crate::System::Reflection::AssemblyName>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::Assembly,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ResolveSimpleAssemblyName", (assemblyName))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

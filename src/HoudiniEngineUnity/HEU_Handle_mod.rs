@@ -168,6 +168,13 @@ impl crate::HoudiniEngineUnity::HEU_Handle {
         let __cordl_ret: bool = __cordl_object.invoke("IsScaleHandleDisabled", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn IsSpecialRSTOrder(
+        rstOrder: crate::HoudiniEngineUnity::HAPI_RSTOrder,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsSpecialRSTOrder", (rstOrder))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn IsTranslateHandleDisabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

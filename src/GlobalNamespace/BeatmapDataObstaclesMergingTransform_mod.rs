@@ -28,6 +28,27 @@ for crate::GlobalNamespace::BeatmapDataObstaclesMergingTransform {
 impl crate::GlobalNamespace::BeatmapDataObstaclesMergingTransform {
     #[cfg(feature = "BeatmapDataObstaclesMergingTransform+__c__DisplayClass0_0")]
     pub type __c__DisplayClass0_0 = crate::GlobalNamespace::BeatmapDataObstaclesMergingTransform___c__DisplayClass0_0;
+    pub fn CanBeMerged(
+        firstObstacle: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleData>,
+        secondObstacle: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleData>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CanBeMerged", (firstObstacle, secondObstacle))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateTransformedData(
+        beatmapData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IReadonlyBeatmapData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IReadonlyBeatmapData>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IReadonlyBeatmapData,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateTransformedData", (beatmapData))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "BeatmapDataObstaclesMergingTransform")]
 impl quest_hook::libil2cpp::ObjectType

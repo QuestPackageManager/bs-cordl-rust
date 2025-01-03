@@ -28,6 +28,17 @@ impl std::ops::DerefMut for crate::System::CurrentSystemTimeZone {
 }
 #[cfg(feature = "System+CurrentSystemTimeZone")]
 impl crate::System::CurrentSystemTimeZone {
+    pub fn CreateDaylightChanges(
+        year: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Globalization::DaylightTime>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Globalization::DaylightTime,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateDaylightChanges", (year))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetCachedDaylightChanges(
         &mut self,
         year: i32,
@@ -54,6 +65,22 @@ impl crate::System::CurrentSystemTimeZone {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Globalization::DaylightTime,
         > = __cordl_object.invoke("GetDaylightChanges", (year))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetTimeZoneData(
+        year: i32,
+        data: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<i64>,
+        >,
+        names: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
+        >,
+        daylight_inverted: quest_hook::libil2cpp::ByRefMut<bool>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetTimeZoneData", (year, data, names, daylight_inverted))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetUtcOffset(

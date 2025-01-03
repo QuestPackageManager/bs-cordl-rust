@@ -54,6 +54,100 @@ for crate::UnityEngine::UIElements::PointerEventBase_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::UnityEngine::UIElements::PointerEventBase_1<T> {
+    pub fn AzimuthAndAlitutudeToTilt(
+        altitude: f32,
+        azimuth: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AzimuthAndAlitutudeToTilt", (altitude, azimuth))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPooled_Event0(
+        systemEvent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Event>,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPooled", (systemEvent))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPooled_EventType_Vector3_Vector2_i32_i32_EventModifiers1(
+        eventType: crate::UnityEngine::EventType,
+        mousePosition: crate::UnityEngine::Vector3,
+        delta: crate::UnityEngine::Vector2,
+        button: i32,
+        clickCount: i32,
+        modifiers: crate::UnityEngine::EventModifiers,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetPooled",
+                (eventType, mousePosition, delta, button, clickCount, modifiers),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPooled_IPointerEvent5(
+        triggerEvent: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::IPointerEvent,
+        >,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPooled", (triggerEvent))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPooled_IPointerEvent_Vector2_i32_4(
+        triggerEvent: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::IPointerEvent,
+        >,
+        position: crate::UnityEngine::Vector2,
+        pointerId: i32,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPooled", (triggerEvent, position, pointerId))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPooled_PenData_EventModifiers3(
+        pen: crate::UnityEngine::PenData,
+        modifiers: crate::UnityEngine::EventModifiers,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPooled", (pen, modifiers))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPooled_Touch_EventModifiers2(
+        touch: crate::UnityEngine::Touch,
+        modifiers: crate::UnityEngine::EventModifiers,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPooled", (touch, modifiers))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Init(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -64,6 +158,28 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Init", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsMouse(
+        systemEvent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Event>,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsMouse", (systemEvent))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsTouch(
+        systemEvent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Event>,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsTouch", (systemEvent))?;
         Ok(__cordl_ret.into())
     }
     pub fn LocalInit(
@@ -119,6 +235,28 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("PreDispatch", (panel))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TiltToAltitude(
+        tilt: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<f32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TiltToAltitude", (tilt))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TiltToAzimuth(
+        tilt: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<f32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TiltToAzimuth", (tilt))?;
         Ok(__cordl_ret.into())
     }
     pub fn UnityEngine_UIElements_IPointerEventInternal_get_recomputeTopElementUnderPointer(

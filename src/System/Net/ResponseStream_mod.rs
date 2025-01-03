@@ -104,6 +104,18 @@ impl crate::System::Net::ResponseStream {
             .invoke("Flush", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetChunkSizeBytes(
+        _cordl_size: i32,
+        _cordl_final: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetChunkSizeBytes", (_cordl_size, _cordl_final))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetHeaders(
         &mut self,
         closing: bool,

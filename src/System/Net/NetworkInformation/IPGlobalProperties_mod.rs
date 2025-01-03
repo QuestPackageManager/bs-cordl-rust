@@ -25,6 +25,28 @@ impl std::ops::DerefMut for crate::System::Net::NetworkInformation::IPGlobalProp
 }
 #[cfg(feature = "System+Net+NetworkInformation+IPGlobalProperties")]
 impl crate::System::Net::NetworkInformation::IPGlobalProperties {
+    pub fn GetIPGlobalProperties() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Net::NetworkInformation::IPGlobalProperties,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Net::NetworkInformation::IPGlobalProperties,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetIPGlobalProperties", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InternalGetIPGlobalProperties() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Net::NetworkInformation::IPGlobalProperties,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Net::NetworkInformation::IPGlobalProperties,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InternalGetIPGlobalProperties", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

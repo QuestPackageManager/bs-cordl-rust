@@ -345,6 +345,28 @@ impl crate::System::Xml::XmlTextReaderImpl {
             .invoke("AttributeNamespaceLookup", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn BlockCopy(
+        src: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        srcOffset: i32,
+        dst: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        dstOffset: i32,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BlockCopy", (src, srcOffset, dst, dstOffset, count))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn BlockCopyChars(
+        src: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+        srcOffset: i32,
+        dst: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+        dstOffset: i32,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BlockCopyChars", (src, srcOffset, dst, dstOffset, count))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ChangeCurrentNodeType(
         &mut self,
         newNodeType: crate::System::Xml::XmlNodeType,
@@ -2148,6 +2170,26 @@ impl crate::System::Xml::XmlTextReaderImpl {
             .invoke("SkipUntil", (stopChar, recognizeLiterals))?;
         Ok(__cordl_ret.into())
     }
+    pub fn StripSpaces_Il2CppArray_i32_ByRefMut1(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+        index: i32,
+        len: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StripSpaces", (value, index, len))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StripSpaces_Il2CppString0(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StripSpaces", (value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn SwitchEncoding(
         &mut self,
         newEncoding: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
@@ -3448,6 +3490,20 @@ impl crate::System::Xml::XmlTextReaderImpl_DtdDefaultAttributeInfoToNodeDataComp
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_Instance() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IComparer_1<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IComparer_1<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_Instance", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(
     feature = "System+Xml+XmlTextReaderImpl+DtdDefaultAttributeInfoToNodeDataComparer"
@@ -4556,6 +4612,14 @@ impl crate::System::Xml::XmlTextReaderImpl_NodeData {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_LinePos", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_None() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlTextReaderImpl_NodeData>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::XmlTextReaderImpl_NodeData,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_None", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_StringValue(

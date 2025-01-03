@@ -60,6 +60,21 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::TouchSimulation {
             .invoke("AddPointer", (pointer))?;
         Ok(__cordl_ret.into())
     }
+    pub fn Destroy() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Destroy", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Disable() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Disable", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Enable() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Enable", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn InstallStateChangeMonitors(
         &mut self,
         startIndex: i32,
@@ -223,6 +238,16 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::TouchSimulation {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_instance() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::EnhancedTouch::TouchSimulation,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::EnhancedTouch::TouchSimulation,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_instance", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_simulatedTouchscreen(

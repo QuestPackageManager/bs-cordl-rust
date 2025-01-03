@@ -245,12 +245,97 @@ impl crate::OVR::OpenVR::OpenVR {
     pub const k_unWildcardPropertyTag: u32 = 673456930u32;
     #[cfg(feature = "OVR+OpenVR+OpenVR+COpenVRContext")]
     pub type COpenVRContext = crate::OVR::OpenVR::OpenVR_COpenVRContext;
+    pub fn GetGenericInterface(
+        pchInterfaceVersion: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+        peError: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVRInitError>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetGenericInterface", (pchInterfaceVersion, peError))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetInitToken() -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetInitToken", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetStringForHmdError(
+        error: crate::OVR::OpenVR::EVRInitError,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetStringForHmdError", (error))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Init(
+        peError: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVRInitError>,
+        eApplicationType: crate::OVR::OpenVR::EVRApplicationType,
+        pchStartupInfo: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::OVR::OpenVR::CVRSystem>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::OVR::OpenVR::CVRSystem> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Init", (peError, eApplicationType, pchStartupInfo))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InitInternal(
+        peError: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVRInitError>,
+        eApplicationType: crate::OVR::OpenVR::EVRApplicationType,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InitInternal", (peError, eApplicationType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InitInternal2(
+        peError: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVRInitError>,
+        eApplicationType: crate::OVR::OpenVR::EVRApplicationType,
+        pchStartupInfo: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InitInternal2", (peError, eApplicationType, pchStartupInfo))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsHmdPresent() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsHmdPresent", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsInterfaceVersionValid(
+        pchInterfaceVersion: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsInterfaceVersionValid", (pchInterfaceVersion))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsRuntimeInstalled() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsRuntimeInstalled", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
+    }
+    pub fn Shutdown() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Shutdown", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ShutdownInternal() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ShutdownInternal", ())?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -260,6 +345,130 @@ impl crate::OVR::OpenVR::OpenVR {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Applications() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::OVR::OpenVR::CVRApplications>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::OVR::OpenVR::CVRApplications,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_Applications", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Chaperone() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::OVR::OpenVR::CVRChaperone>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::OVR::OpenVR::CVRChaperone> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_Chaperone", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_ChaperoneSetup() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::OVR::OpenVR::CVRChaperoneSetup>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::OVR::OpenVR::CVRChaperoneSetup,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_ChaperoneSetup", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Compositor() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::OVR::OpenVR::CVRCompositor>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::OVR::OpenVR::CVRCompositor> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_Compositor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_ExtendedDisplay() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::OVR::OpenVR::CVRExtendedDisplay>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::OVR::OpenVR::CVRExtendedDisplay,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_ExtendedDisplay", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Input() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::OVR::OpenVR::CVRInput>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::OVR::OpenVR::CVRInput> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_Input", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_OpenVRInternal_ModuleContext() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::OVR::OpenVR::OpenVR_COpenVRContext>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::OVR::OpenVR::OpenVR_COpenVRContext,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_OpenVRInternal_ModuleContext", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Overlay() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::OVR::OpenVR::CVROverlay>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::OVR::OpenVR::CVROverlay> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_Overlay", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_RenderModels() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::OVR::OpenVR::CVRRenderModels>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::OVR::OpenVR::CVRRenderModels,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_RenderModels", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Screenshots() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::OVR::OpenVR::CVRScreenshots>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::OVR::OpenVR::CVRScreenshots> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_Screenshots", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Settings() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::OVR::OpenVR::CVRSettings>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::OVR::OpenVR::CVRSettings> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_Settings", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_SpatialAnchors() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::OVR::OpenVR::CVRSpatialAnchors>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::OVR::OpenVR::CVRSpatialAnchors,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_SpatialAnchors", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_System() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::OVR::OpenVR::CVRSystem>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::OVR::OpenVR::CVRSystem> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_System", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_TrackedCamera() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::OVR::OpenVR::CVRTrackedCamera>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::OVR::OpenVR::CVRTrackedCamera,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_TrackedCamera", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_VRToken() -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_VRToken", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_VRToken(
+        value: u32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_VRToken", (value))?;
         Ok(__cordl_ret.into())
     }
 }

@@ -104,6 +104,29 @@ impl crate::UnityEngine::UIElements::TimeValue {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Equality(
+        lhs: crate::UnityEngine::UIElements::TimeValue,
+        rhs: crate::UnityEngine::UIElements::TimeValue,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit(
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::TimeValue> {
+        let __cordl_ret: crate::UnityEngine::UIElements::TimeValue = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        lhs: crate::UnityEngine::UIElements::TimeValue,
+        rhs: crate::UnityEngine::UIElements::TimeValue,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+UIElements+TimeValue")]
 impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::TimeValue>>

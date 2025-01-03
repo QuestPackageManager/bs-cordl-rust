@@ -141,6 +141,14 @@ impl crate::UnityEngine::EventSystems::EventSystem {
             .invoke("RaycastAll", (eventData, raycastResults))?;
         Ok(__cordl_ret.into())
     }
+    pub fn RaycastComparer(
+        lhs: crate::UnityEngine::EventSystems::RaycastResult,
+        rhs: crate::UnityEngine::EventSystems::RaycastResult,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RaycastComparer", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn SetSelectedGameObject_BaseEventData0(
         &mut self,
         selected: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -164,6 +172,20 @@ impl crate::UnityEngine::EventSystems::EventSystem {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetSelectedGameObject", (selected))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetUITookitEventSystemOverride(
+        activeEventSystem: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::EventSystem,
+        >,
+        sendEvents: bool,
+        createPanelGameObjectsOnStart: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "SetUITookitEventSystemOverride",
+                (activeEventSystem, sendEvents, createPanelGameObjectsOnStart),
+            )?;
         Ok(__cordl_ret.into())
     }
     pub fn Start(
@@ -279,6 +301,14 @@ impl crate::UnityEngine::EventSystems::EventSystem {
             .invoke("get_createUIToolkitPanelGameObjectsOnStart", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_current() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::EventSystem>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::EventSystem,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_current", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_currentInputModule(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -364,6 +394,13 @@ impl crate::UnityEngine::EventSystems::EventSystem {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_sendUIToolkitEvents", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_current(
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::EventSystem>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_current", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_firstSelectedGameObject(

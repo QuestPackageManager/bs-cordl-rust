@@ -87,6 +87,20 @@ impl crate::BeatSaber::GameSettings::ControllerProfile {
             .invoke("Deactivate", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn FromSaveData(
+        controllerProfileSaveData: quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::GameSettings::ControllerProfileSaveData,
+        >,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::BeatSaber::GameSettings::ControllerProfile>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::GameSettings::ControllerProfile,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromSaveData", (controllerProfileSaveData, index))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn HasDefaultValues(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

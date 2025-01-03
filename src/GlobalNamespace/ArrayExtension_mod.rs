@@ -23,7 +23,16 @@ impl std::ops::DerefMut for crate::GlobalNamespace::ArrayExtension {
     }
 }
 #[cfg(feature = "ArrayExtension")]
-impl crate::GlobalNamespace::ArrayExtension {}
+impl crate::GlobalNamespace::ArrayExtension {
+    pub fn IsValidIndex(
+        array: quest_hook::libil2cpp::Gc<crate::System::Array>,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsValidIndex", (array, index))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "ArrayExtension")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ArrayExtension {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

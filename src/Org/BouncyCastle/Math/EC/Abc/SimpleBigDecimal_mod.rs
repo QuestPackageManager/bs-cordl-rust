@@ -176,6 +176,20 @@ impl crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal {
         let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetInstance(
+        val: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+        scale: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::EC::Abc::SimpleBigDecimal,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetInstance", (val, scale))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Multiply_BigInteger1(
         &mut self,
         b: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,

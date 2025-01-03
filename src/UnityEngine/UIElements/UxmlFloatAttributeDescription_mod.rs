@@ -28,6 +28,14 @@ for crate::UnityEngine::UIElements::UxmlFloatAttributeDescription {
 impl crate::UnityEngine::UIElements::UxmlFloatAttributeDescription {
     #[cfg(feature = "UnityEngine+UIElements+UxmlFloatAttributeDescription+__c")]
     pub type __c = crate::UnityEngine::UIElements::UxmlFloatAttributeDescription___c;
+    pub fn ConvertValueToFloat(
+        v: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        defaultValue: f32,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ConvertValueToFloat", (v, defaultValue))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetValueFromBag(
         &mut self,
         bag: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IUxmlAttributes>,

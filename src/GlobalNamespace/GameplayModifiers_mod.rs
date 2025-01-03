@@ -109,6 +109,28 @@ impl crate::GlobalNamespace::GameplayModifiers {
             )?;
         Ok(__cordl_ret.into())
     }
+    pub fn CreateFromSerializedData(
+        reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::GameplayModifiers,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateFromSerializedData", (reader))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromGameplayModifierMask(
+        mask: crate::GlobalNamespace::GameplayModifierMask,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::GameplayModifiers,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromGameplayModifierMask", (mask))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn IsWithoutModifiers(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

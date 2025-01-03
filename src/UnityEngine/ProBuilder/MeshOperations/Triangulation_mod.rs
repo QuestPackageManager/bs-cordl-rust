@@ -34,6 +34,109 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
         feature = "UnityEngine+ProBuilder+MeshOperations+Triangulation+__c__DisplayClass8_0"
     )]
     pub type __c__DisplayClass8_0 = crate::UnityEngine::ProBuilder::MeshOperations::Triangulation___c__DisplayClass8_0;
+    pub fn SortAndTriangulate(
+        points: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector2>,
+        >,
+        indexes: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::System::Collections::Generic::List_1<i32>,
+        >,
+        convex: bool,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SortAndTriangulate", (points, indexes, convex))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TriangulateVertices_IList_1__cordl_bool__cordl_bool0(
+        vertices: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                *mut crate::UnityEngine::ProBuilder::Vertex,
+            >,
+        >,
+        triangles: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::System::Collections::Generic::List_1<i32>,
+        >,
+        unordered: bool,
+        convex: bool,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TriangulateVertices", (vertices, triangles, unordered, convex))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TriangulateVertices_Il2CppArray_Il2CppArray1(
+        vertices: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+        >,
+        triangles: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::System::Collections::Generic::List_1<i32>,
+        >,
+        holes: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TriangulateVertices", (vertices, triangles, holes))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TriangulateVertices_Il2CppArray__cordl_bool__cordl_bool2(
+        vertices: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+        >,
+        triangles: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::System::Collections::Generic::List_1<i32>,
+        >,
+        unordered: bool,
+        convex: bool,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TriangulateVertices", (vertices, triangles, unordered, convex))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Triangulate_ByRefMut__cordl_bool0(
+        points: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector2>,
+        >,
+        indexes: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::System::Collections::Generic::List_1<i32>,
+        >,
+        convex: bool,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Triangulate", (points, indexes, convex))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Triangulate_IList_1_ByRefMut1(
+        points: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector2>,
+        >,
+        holes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                *mut crate::System::Collections::Generic::IList_1<
+                    crate::UnityEngine::Vector2,
+                >,
+            >,
+        >,
+        indexes: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::System::Collections::Generic::List_1<i32>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Triangulate", (points, holes, indexes))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_triangulationContext() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationContext,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationContext,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_triangulationContext", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+Triangulation")]
 impl quest_hook::libil2cpp::ObjectType

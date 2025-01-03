@@ -27,6 +27,39 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEvent {
     pub const kBaseEventSize: i32 = 20i32;
     pub const kHandledMask: u32 = 240u32;
     pub const kIdMask: u32 = 4294967280u32;
+    pub fn Equals(
+        first: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        second: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Equals", (first, second))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetNextInMemory(
+        currentPtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetNextInMemory", (currentPtr))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetNextInMemoryChecked(
+        currentPtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        buffer: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetNextInMemoryChecked", (currentPtr, buffer))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ToString(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

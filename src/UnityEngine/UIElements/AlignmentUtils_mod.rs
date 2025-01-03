@@ -23,7 +23,26 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::AlignmentUtils {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+AlignmentUtils")]
-impl crate::UnityEngine::UIElements::AlignmentUtils {}
+impl crate::UnityEngine::UIElements::AlignmentUtils {
+    pub fn CeilToPixelGrid(
+        v: f32,
+        pixelsPerPoint: f32,
+        offset: f32,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CeilToPixelGrid", (v, pixelsPerPoint, offset))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RoundToPixelGrid(
+        v: f32,
+        pixelsPerPoint: f32,
+        offset: f32,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RoundToPixelGrid", (v, pixelsPerPoint, offset))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+AlignmentUtils")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::AlignmentUtils {

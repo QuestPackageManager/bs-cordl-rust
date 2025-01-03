@@ -43,7 +43,29 @@ impl crate::UnityEngine::UI::GraphicRaycaster {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn Raycast(
+    pub fn Raycast_Canvas_Camera_Vector2_IList_1_List_1_1(
+        canvas: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
+        eventCamera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+        pointerPosition: crate::UnityEngine::Vector2,
+        foundGraphics: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                *mut crate::UnityEngine::UI::Graphic,
+            >,
+        >,
+        results: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::UI::Graphic,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "Raycast",
+                (canvas, eventCamera, pointerPosition, foundGraphics, results),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Raycast_PointerEventData_List_1_0(
         &mut self,
         eventData: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::EventSystems::PointerEventData,

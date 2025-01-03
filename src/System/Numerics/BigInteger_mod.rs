@@ -24,6 +24,16 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::Numerics::Big
 impl crate::System::Numerics::BigInteger {
     #[cfg(feature = "System+Numerics+BigInteger+GetBytesMode")]
     pub type GetBytesMode = crate::System::Numerics::BigInteger_GetBytesMode;
+    pub fn Add(
+        leftBits: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+        leftSign: i32,
+        rightBits: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+        rightSign: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Numerics::BigInteger> {
+        let __cordl_ret: crate::System::Numerics::BigInteger = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Add", (leftBits, leftSign, rightBits, rightSign))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CompareTo_BigInteger1(
         &mut self,
         other: crate::System::Numerics::BigInteger,
@@ -84,12 +94,59 @@ impl crate::System::Numerics::BigInteger {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetDiffLength(
+        rgu1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+        rgu2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+        cu: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetDiffLength", (rgu1, rgu2, cu))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "GetHashCode",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPartsForBitManipulation(
+        x: quest_hook::libil2cpp::ByRefMut<crate::System::Numerics::BigInteger>,
+        xd: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<u32>,
+        >,
+        xl: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPartsForBitManipulation", (x, xd, xl))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Parse_IFormatProvider0(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Numerics::BigInteger> {
+        let __cordl_ret: crate::System::Numerics::BigInteger = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Parse", (value, provider))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Parse_NumberStyles_IFormatProvider1(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        style: crate::System::Globalization::NumberStyles,
+        provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Numerics::BigInteger> {
+        let __cordl_ret: crate::System::Numerics::BigInteger = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Parse", (value, style, provider))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Subtract(
+        leftBits: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+        leftSign: i32,
+        rightBits: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+        rightSign: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Numerics::BigInteger> {
+        let __cordl_ret: crate::System::Numerics::BigInteger = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Subtract", (leftBits, leftSign, rightBits, rightSign))?;
         Ok(__cordl_ret.into())
     }
     pub fn ToByteArray_0(
@@ -333,6 +390,280 @@ impl crate::System::Numerics::BigInteger {
             "get_IsZero",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_MinusOne() -> quest_hook::libil2cpp::Result<
+        crate::System::Numerics::BigInteger,
+    > {
+        let __cordl_ret: crate::System::Numerics::BigInteger = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_MinusOne", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Zero() -> quest_hook::libil2cpp::Result<
+        crate::System::Numerics::BigInteger,
+    > {
+        let __cordl_ret: crate::System::Numerics::BigInteger = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_Zero", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Addition(
+        left: crate::System::Numerics::BigInteger,
+        right: crate::System::Numerics::BigInteger,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Numerics::BigInteger> {
+        let __cordl_ret: crate::System::Numerics::BigInteger = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Addition", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Division(
+        dividend: crate::System::Numerics::BigInteger,
+        divisor: crate::System::Numerics::BigInteger,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Numerics::BigInteger> {
+        let __cordl_ret: crate::System::Numerics::BigInteger = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Division", (dividend, divisor))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        left: crate::System::Numerics::BigInteger,
+        right: i64,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Explicit_BigInteger0(
+        value: crate::System::Numerics::BigInteger,
+    ) -> quest_hook::libil2cpp::Result<u8> {
+        let __cordl_ret: u8 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Explicit", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Explicit_BigInteger1(
+        value: crate::System::Numerics::BigInteger,
+    ) -> quest_hook::libil2cpp::Result<i8> {
+        let __cordl_ret: i8 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Explicit", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Explicit_BigInteger10(
+        value: crate::System::Numerics::BigInteger,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Decimal> {
+        let __cordl_ret: crate::System::Decimal = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Explicit", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Explicit_BigInteger2(
+        value: crate::System::Numerics::BigInteger,
+    ) -> quest_hook::libil2cpp::Result<i16> {
+        let __cordl_ret: i16 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Explicit", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Explicit_BigInteger3(
+        value: crate::System::Numerics::BigInteger,
+    ) -> quest_hook::libil2cpp::Result<u16> {
+        let __cordl_ret: u16 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Explicit", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Explicit_BigInteger4(
+        value: crate::System::Numerics::BigInteger,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Explicit", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Explicit_BigInteger5(
+        value: crate::System::Numerics::BigInteger,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Explicit", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Explicit_BigInteger6(
+        value: crate::System::Numerics::BigInteger,
+    ) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Explicit", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Explicit_BigInteger7(
+        value: crate::System::Numerics::BigInteger,
+    ) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Explicit", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Explicit_BigInteger8(
+        value: crate::System::Numerics::BigInteger,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Explicit", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Explicit_BigInteger9(
+        value: crate::System::Numerics::BigInteger,
+    ) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_ret: f64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Explicit", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_i16_2(
+        value: i16,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Numerics::BigInteger> {
+        let __cordl_ret: crate::System::Numerics::BigInteger = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_i32_4(
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Numerics::BigInteger> {
+        let __cordl_ret: crate::System::Numerics::BigInteger = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_i64_6(
+        value: i64,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Numerics::BigInteger> {
+        let __cordl_ret: crate::System::Numerics::BigInteger = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_i8_1(
+        value: i8,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Numerics::BigInteger> {
+        let __cordl_ret: crate::System::Numerics::BigInteger = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_u16_3(
+        value: u16,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Numerics::BigInteger> {
+        let __cordl_ret: crate::System::Numerics::BigInteger = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_u32_5(
+        value: u32,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Numerics::BigInteger> {
+        let __cordl_ret: crate::System::Numerics::BigInteger = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_u64_7(
+        value: u64,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Numerics::BigInteger> {
+        let __cordl_ret: crate::System::Numerics::BigInteger = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_u8_0(
+        value: u8,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Numerics::BigInteger> {
+        let __cordl_ret: crate::System::Numerics::BigInteger = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality_BigInteger0(
+        left: crate::System::Numerics::BigInteger,
+        right: crate::System::Numerics::BigInteger,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality_i64_1(
+        left: crate::System::Numerics::BigInteger,
+        right: i64,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_LeftShift(
+        value: crate::System::Numerics::BigInteger,
+        shift: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Numerics::BigInteger> {
+        let __cordl_ret: crate::System::Numerics::BigInteger = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_LeftShift", (value, shift))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_LessThanOrEqual_BigInteger_BigInteger0(
+        left: crate::System::Numerics::BigInteger,
+        right: crate::System::Numerics::BigInteger,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_LessThanOrEqual", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_LessThanOrEqual_BigInteger_i64_1(
+        left: crate::System::Numerics::BigInteger,
+        right: i64,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_LessThanOrEqual", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_LessThanOrEqual_i64_BigInteger2(
+        left: i64,
+        right: crate::System::Numerics::BigInteger,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_LessThanOrEqual", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_LessThan_BigInteger_i64_0(
+        left: crate::System::Numerics::BigInteger,
+        right: i64,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_LessThan", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_LessThan_i64_BigInteger1(
+        left: i64,
+        right: crate::System::Numerics::BigInteger,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_LessThan", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Modulus(
+        dividend: crate::System::Numerics::BigInteger,
+        divisor: crate::System::Numerics::BigInteger,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Numerics::BigInteger> {
+        let __cordl_ret: crate::System::Numerics::BigInteger = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Modulus", (dividend, divisor))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Multiply(
+        left: crate::System::Numerics::BigInteger,
+        right: crate::System::Numerics::BigInteger,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Numerics::BigInteger> {
+        let __cordl_ret: crate::System::Numerics::BigInteger = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Multiply", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_RightShift(
+        value: crate::System::Numerics::BigInteger,
+        shift: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Numerics::BigInteger> {
+        let __cordl_ret: crate::System::Numerics::BigInteger = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_RightShift", (value, shift))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Subtraction(
+        left: crate::System::Numerics::BigInteger,
+        right: crate::System::Numerics::BigInteger,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Numerics::BigInteger> {
+        let __cordl_ret: crate::System::Numerics::BigInteger = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Subtraction", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_UnaryNegation(
+        value: crate::System::Numerics::BigInteger,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Numerics::BigInteger> {
+        let __cordl_ret: crate::System::Numerics::BigInteger = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_UnaryNegation", (value))?;
         Ok(__cordl_ret.into())
     }
 }

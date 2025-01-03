@@ -43,6 +43,21 @@ impl crate::UnityEngine::Hash128 {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn Compute(
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Hash128> {
+        let __cordl_ret: crate::UnityEngine::Hash128 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Compute", (data))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ComputeFromString(
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        hash: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Hash128>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ComputeFromString", (data, hash))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Equals_Hash128_1(
         &mut self,
         obj: crate::UnityEngine::Hash128,
@@ -73,6 +88,43 @@ impl crate::UnityEngine::Hash128 {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn Hash128ToStringImpl(
+        hash: crate::UnityEngine::Hash128,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Hash128ToStringImpl", (hash))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Hash128ToStringImpl_Injected(
+        hash: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Hash128>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Hash128ToStringImpl_Injected", (hash))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Parse(
+        hashString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Hash128> {
+        let __cordl_ret: crate::UnityEngine::Hash128 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Parse", (hashString))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Parse_Injected(
+        hashString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Hash128>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Parse_Injected", (hashString, ret))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ToString(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -101,6 +153,38 @@ impl crate::UnityEngine::Hash128 {
             "get_isValid",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        hash1: crate::UnityEngine::Hash128,
+        hash2: crate::UnityEngine::Hash128,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (hash1, hash2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_GreaterThan(
+        x: crate::UnityEngine::Hash128,
+        y: crate::UnityEngine::Hash128,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_GreaterThan", (x, y))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        hash1: crate::UnityEngine::Hash128,
+        hash2: crate::UnityEngine::Hash128,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (hash1, hash2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_LessThan(
+        x: crate::UnityEngine::Hash128,
+        y: crate::UnityEngine::Hash128,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_LessThan", (x, y))?;
         Ok(__cordl_ret.into())
     }
 }

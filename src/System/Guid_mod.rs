@@ -60,6 +60,13 @@ impl crate::System::Guid {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn EatAllWhitespace(
+        str: crate::System::ReadOnlySpan_1<char>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::ReadOnlySpan_1<char>> {
+        let __cordl_ret: crate::System::ReadOnlySpan_1<char> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EatAllWhitespace", (str))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Equals_Guid1(
         &mut self,
         g: crate::System::Guid,
@@ -100,6 +107,119 @@ impl crate::System::Guid {
             "GetResult",
             (me, them),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn HexToChar(a: i32) -> quest_hook::libil2cpp::Result<char> {
+        let __cordl_ret: char = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("HexToChar", (a))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn HexsToChars(
+        guidChars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        a: i32,
+        b: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("HexsToChars", (guidChars, a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn HexsToCharsHexOutput(
+        guidChars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        a: i32,
+        b: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("HexsToCharsHexOutput", (guidChars, a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsHexPrefix(
+        str: crate::System::ReadOnlySpan_1<char>,
+        i: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsHexPrefix", (str, i))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn NewGuid() -> quest_hook::libil2cpp::Result<crate::System::Guid> {
+        let __cordl_ret: crate::System::Guid = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("NewGuid", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Parse_Il2CppString0(
+        input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Guid> {
+        let __cordl_ret: crate::System::Guid = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Parse", (input))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Parse_ReadOnlySpan_1_1(
+        input: crate::System::ReadOnlySpan_1<char>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Guid> {
+        let __cordl_ret: crate::System::Guid = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Parse", (input))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StringToInt_ByRefMut_i32_ByRefMut1(
+        str: crate::System::ReadOnlySpan_1<char>,
+        parsePos: quest_hook::libil2cpp::ByRefMut<i32>,
+        requiredLength: i32,
+        flags: i32,
+        result: quest_hook::libil2cpp::ByRefMut<i32>,
+        parseResult: quest_hook::libil2cpp::ByRefMut<crate::System::Guid_GuidResult>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "StringToInt",
+                (str, parsePos, requiredLength, flags, result, parseResult),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StringToInt_i32_ByRefMut0(
+        str: crate::System::ReadOnlySpan_1<char>,
+        requiredLength: i32,
+        flags: i32,
+        result: quest_hook::libil2cpp::ByRefMut<i32>,
+        parseResult: quest_hook::libil2cpp::ByRefMut<crate::System::Guid_GuidResult>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StringToInt", (str, requiredLength, flags, result, parseResult))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StringToLong(
+        str: crate::System::ReadOnlySpan_1<char>,
+        parsePos: quest_hook::libil2cpp::ByRefMut<i32>,
+        flags: i32,
+        result: quest_hook::libil2cpp::ByRefMut<i64>,
+        parseResult: quest_hook::libil2cpp::ByRefMut<crate::System::Guid_GuidResult>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StringToLong", (str, parsePos, flags, result, parseResult))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StringToShort_ByRefMut_i32_ByRefMut1(
+        str: crate::System::ReadOnlySpan_1<char>,
+        parsePos: quest_hook::libil2cpp::ByRefMut<i32>,
+        requiredLength: i32,
+        flags: i32,
+        result: quest_hook::libil2cpp::ByRefMut<i16>,
+        parseResult: quest_hook::libil2cpp::ByRefMut<crate::System::Guid_GuidResult>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "StringToShort",
+                (str, parsePos, requiredLength, flags, result, parseResult),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StringToShort_i32_ByRefMut0(
+        str: crate::System::ReadOnlySpan_1<char>,
+        requiredLength: i32,
+        flags: i32,
+        result: quest_hook::libil2cpp::ByRefMut<i16>,
+        parseResult: quest_hook::libil2cpp::ByRefMut<crate::System::Guid_GuidResult>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StringToShort", (str, requiredLength, flags, result, parseResult))?;
         Ok(__cordl_ret.into())
     }
     pub fn System_ISpanFormattable_TryFormat(
@@ -174,6 +294,73 @@ impl crate::System::Guid {
             "TryFormat",
             (destination, charsWritten, format),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryParseExact_Il2CppString_Il2CppString0(
+        input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        result: quest_hook::libil2cpp::ByRefMut<crate::System::Guid>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryParseExact", (input, format, result))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryParseExact_ReadOnlySpan_1_ReadOnlySpan_1_1(
+        input: crate::System::ReadOnlySpan_1<char>,
+        format: crate::System::ReadOnlySpan_1<char>,
+        result: quest_hook::libil2cpp::ByRefMut<crate::System::Guid>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryParseExact", (input, format, result))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryParseGuid(
+        guidString: crate::System::ReadOnlySpan_1<char>,
+        flags: crate::System::Guid_GuidStyles,
+        result: quest_hook::libil2cpp::ByRefMut<crate::System::Guid_GuidResult>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryParseGuid", (guidString, flags, result))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryParseGuidWithDashes(
+        guidString: crate::System::ReadOnlySpan_1<char>,
+        result: quest_hook::libil2cpp::ByRefMut<crate::System::Guid_GuidResult>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryParseGuidWithDashes", (guidString, result))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryParseGuidWithHexPrefix(
+        guidString: crate::System::ReadOnlySpan_1<char>,
+        result: quest_hook::libil2cpp::ByRefMut<crate::System::Guid_GuidResult>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryParseGuidWithHexPrefix", (guidString, result))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryParseGuidWithNoStyle(
+        guidString: crate::System::ReadOnlySpan_1<char>,
+        result: quest_hook::libil2cpp::ByRefMut<crate::System::Guid_GuidResult>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryParseGuidWithNoStyle", (guidString, result))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryParse_Il2CppString0(
+        input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        result: quest_hook::libil2cpp::ByRefMut<crate::System::Guid>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryParse", (input, result))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryParse_ReadOnlySpan_1_1(
+        input: crate::System::ReadOnlySpan_1<char>,
+        result: quest_hook::libil2cpp::ByRefMut<crate::System::Guid>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryParse", (input, result))?;
         Ok(__cordl_ret.into())
     }
     pub fn WriteByteHelper(
@@ -253,6 +440,22 @@ impl crate::System::Guid {
             ".ctor",
             (a, b, c, d, e, f, g, h, i, j, k),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        a: crate::System::Guid,
+        b: crate::System::Guid,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        a: crate::System::Guid,
+        b: crate::System::Guid,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (a, b))?;
         Ok(__cordl_ret.into())
     }
 }

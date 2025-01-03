@@ -25,7 +25,53 @@ for crate::UnityEngine::InputSystem::Utilities::CSharpCodeHelpers {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+CSharpCodeHelpers")]
-impl crate::UnityEngine::InputSystem::Utilities::CSharpCodeHelpers {}
+impl crate::UnityEngine::InputSystem::Utilities::CSharpCodeHelpers {
+    pub fn IsEmptyOrProperIdentifier(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsEmptyOrProperIdentifier", (name))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsEmptyOrProperNamespaceName(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsEmptyOrProperNamespaceName", (name))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsProperIdentifier(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsProperIdentifier", (name))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MakeIdentifier(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        suffix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MakeIdentifier", (name, suffix))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MakeTypeName(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        suffix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MakeTypeName", (name, suffix))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+CSharpCodeHelpers")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::Utilities::CSharpCodeHelpers {

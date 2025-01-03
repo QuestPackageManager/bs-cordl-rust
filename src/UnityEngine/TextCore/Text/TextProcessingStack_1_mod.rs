@@ -121,7 +121,23 @@ impl<
         )?;
         Ok(__cordl_ret.into())
     }
-    pub fn SetDefault(
+    pub fn SetDefault_Il2CppArray_T0(
+        stack: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::UnityEngine::TextCore::Text::TextProcessingStack_1<T>,
+            >,
+        >,
+        item: T,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetDefault", (stack, item))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetDefault_T1(
         &mut self,
         item: T,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>

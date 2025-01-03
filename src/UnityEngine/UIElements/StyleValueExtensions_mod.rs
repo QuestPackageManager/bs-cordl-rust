@@ -23,7 +23,79 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::StyleValueExtensions
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleValueExtensions")]
-impl crate::UnityEngine::UIElements::StyleValueExtensions {}
+impl crate::UnityEngine::UIElements::StyleValueExtensions {
+    pub fn CopyFrom<T>(
+        list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
+        other: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CopyFrom", (list, other))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DebugString<T>(
+        styleValue: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::IStyleValue_1<T>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DebugString", (styleValue))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToLength_StyleKeyword0(
+        keyword: crate::UnityEngine::UIElements::StyleKeyword,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Length> {
+        let __cordl_ret: crate::UnityEngine::UIElements::Length = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToLength", (keyword))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToLength_StyleLength1(
+        styleLength: crate::UnityEngine::UIElements::StyleLength,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Length> {
+        let __cordl_ret: crate::UnityEngine::UIElements::Length = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToLength", (styleLength))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToRotate(
+        keyword: crate::UnityEngine::UIElements::StyleKeyword,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Rotate> {
+        let __cordl_ret: crate::UnityEngine::UIElements::Rotate = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToRotate", (keyword))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToScale(
+        keyword: crate::UnityEngine::UIElements::StyleKeyword,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Scale> {
+        let __cordl_ret: crate::UnityEngine::UIElements::Scale = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToScale", (keyword))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToTranslate(
+        keyword: crate::UnityEngine::UIElements::StyleKeyword,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Translate> {
+        let __cordl_ret: crate::UnityEngine::UIElements::Translate = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToTranslate", (keyword))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToYogaValue(
+        length: crate::UnityEngine::UIElements::Length,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Yoga::YogaValue> {
+        let __cordl_ret: crate::UnityEngine::Yoga::YogaValue = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToYogaValue", (length))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+StyleValueExtensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::StyleValueExtensions {

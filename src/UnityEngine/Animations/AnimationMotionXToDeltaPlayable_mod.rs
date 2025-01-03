@@ -23,6 +23,44 @@ for crate::UnityEngine::Animations::AnimationMotionXToDeltaPlayable {
 }
 #[cfg(feature = "UnityEngine+Animations+AnimationMotionXToDeltaPlayable")]
 impl crate::UnityEngine::Animations::AnimationMotionXToDeltaPlayable {
+    pub fn Create(
+        graph: crate::UnityEngine::Playables::PlayableGraph,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Animations::AnimationMotionXToDeltaPlayable,
+    > {
+        let __cordl_ret: crate::UnityEngine::Animations::AnimationMotionXToDeltaPlayable = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (graph))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateHandle(
+        graph: crate::UnityEngine::Playables::PlayableGraph,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::PlayableHandle> {
+        let __cordl_ret: crate::UnityEngine::Playables::PlayableHandle = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateHandle", (graph))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateHandleInternal(
+        graph: crate::UnityEngine::Playables::PlayableGraph,
+        handle: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableHandle,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateHandleInternal", (graph, handle))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateHandleInternal_Injected(
+        graph: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableGraph,
+        >,
+        handle: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableHandle,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateHandleInternal_Injected", (graph, handle))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Equals(
         &mut self,
         other: crate::UnityEngine::Animations::AnimationMotionXToDeltaPlayable,
@@ -55,6 +93,16 @@ impl crate::UnityEngine::Animations::AnimationMotionXToDeltaPlayable {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn SetAbsoluteMotionInternal(
+        handle: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Playables::PlayableHandle,
+        >,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetAbsoluteMotionInternal", (handle, value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
         handle: crate::UnityEngine::Playables::PlayableHandle,
@@ -64,6 +112,13 @@ impl crate::UnityEngine::Animations::AnimationMotionXToDeltaPlayable {
             ".ctor",
             (handle),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit(
+        playable: crate::UnityEngine::Animations::AnimationMotionXToDeltaPlayable,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::Playable> {
+        let __cordl_ret: crate::UnityEngine::Playables::Playable = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (playable))?;
         Ok(__cordl_ret.into())
     }
 }

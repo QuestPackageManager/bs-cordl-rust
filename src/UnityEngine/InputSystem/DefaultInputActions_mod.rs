@@ -813,6 +813,16 @@ impl crate::UnityEngine::InputSystem::DefaultInputActions_PlayerActions {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Implicit(
+        set: crate::UnityEngine::InputSystem::DefaultInputActions_PlayerActions,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputActionMap>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputActionMap,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("op_Implicit", (set))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions+UIActions")]
 #[repr(C)]
@@ -1009,6 +1019,16 @@ impl crate::UnityEngine::InputSystem::DefaultInputActions_UIActions {
             "get_enabled",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit(
+        set: crate::UnityEngine::InputSystem::DefaultInputActions_UIActions,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputActionMap>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputActionMap,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("op_Implicit", (set))?;
         Ok(__cordl_ret.into())
     }
 }

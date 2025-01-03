@@ -25,7 +25,15 @@ for crate::UnityEngine::InputSystem::Utilities::ExceptionHelpers {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+ExceptionHelpers")]
-impl crate::UnityEngine::InputSystem::Utilities::ExceptionHelpers {}
+impl crate::UnityEngine::InputSystem::Utilities::ExceptionHelpers {
+    pub fn IsExceptionIndicatingBugInCode(
+        exception: quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsExceptionIndicatingBugInCode", (exception))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+ExceptionHelpers")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::InputSystem::Utilities::ExceptionHelpers {

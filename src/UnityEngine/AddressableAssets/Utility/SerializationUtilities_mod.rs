@@ -31,6 +31,45 @@ impl crate::UnityEngine::AddressableAssets::Utility::SerializationUtilities {
         feature = "UnityEngine+AddressableAssets+Utility+SerializationUtilities+ObjectType"
     )]
     pub type ObjectType = crate::UnityEngine::AddressableAssets::Utility::SerializationUtilities_ObjectType;
+    pub fn ReadInt32FromByteArray(
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        offset: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadInt32FromByteArray", (data, offset))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReadObjectFromByteArray(
+        keyData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        dataIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadObjectFromByteArray", (keyData, dataIndex))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WriteInt32ToByteArray(
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        val: i32,
+        offset: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WriteInt32ToByteArray", (data, val, offset))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WriteObjectToByteList(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        buffer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<u8>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WriteObjectToByteList", (obj, buffer))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+AddressableAssets+Utility+SerializationUtilities")]
 impl quest_hook::libil2cpp::ObjectType

@@ -24,12 +24,59 @@ impl std::ops::DerefMut for crate::UnityEngine::PlayerConnectionInternal {
 }
 #[cfg(feature = "UnityEngine+PlayerConnectionInternal")]
 impl crate::UnityEngine::PlayerConnectionInternal {
+    pub fn DisconnectAll() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DisconnectAll", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Initialize() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Initialize", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsConnected() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsConnected", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
+    }
+    pub fn PollInternal() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PollInternal", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RegisterInternal(
+        messageId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RegisterInternal", (messageId))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SendMessage(
+        messageId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        playerId: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SendMessage", (messageId, data, playerId))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TrySendMessage(
+        messageId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        playerId: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TrySendMessage", (messageId, data, playerId))?;
+        Ok(__cordl_ret.into())
     }
     pub fn UnityEngine_IPlayerEditorConnectionNative_DisconnectAll(
         &mut self,
@@ -129,6 +176,13 @@ impl crate::UnityEngine::PlayerConnectionInternal {
                 "UnityEngine.IPlayerEditorConnectionNative.UnregisterInternal",
                 (messageId),
             )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UnregisterInternal(
+        messageId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UnregisterInternal", (messageId))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

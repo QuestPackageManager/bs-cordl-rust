@@ -119,6 +119,22 @@ impl crate::GlobalNamespace::PosesSerializer {
         let __cordl_ret: bool = __cordl_object.invoke("RecordingExists", (path))?;
         Ok(__cordl_ret.into())
     }
+    pub fn SaveDataFile(
+        filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        data: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PosesRecordingData>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SaveDataFile", (filePath, data))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SaveInfoFile(
+        filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        data: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PosesRecordingData>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SaveInfoFile", (filePath, data))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn SaveRecording(
         &mut self,
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

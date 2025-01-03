@@ -37,6 +37,33 @@ impl crate::Org::BouncyCastle::Asn1::DerSet {
             .invoke("Encode", (derOut))?;
         Ok(__cordl_ret.into())
     }
+    pub fn FromVector_Asn1EncodableVector0(
+        elementVector: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1EncodableVector,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerSet>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerSet,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromVector", (elementVector))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromVector__cordl_bool1(
+        elementVector: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1EncodableVector,
+        >,
+        needsSorting: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerSet>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerSet,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromVector", (elementVector, needsSorting))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

@@ -28,6 +28,15 @@ for crate::System::Linq::Expressions::Interpreter::DelegateHelpers {
 impl crate::System::Linq::Expressions::Interpreter::DelegateHelpers {
     #[cfg(feature = "System+Linq+Expressions+Interpreter+DelegateHelpers+__c")]
     pub type __c = crate::System::Linq::Expressions::Interpreter::DelegateHelpers___c;
+    pub fn MakeDelegate(
+        types: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MakeDelegate", (types))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+DelegateHelpers")]
 impl quest_hook::libil2cpp::ObjectType

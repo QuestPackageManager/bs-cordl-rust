@@ -25,7 +25,24 @@ for crate::GlobalNamespace::AuthenticationTokenPlatformExtensions {
     }
 }
 #[cfg(feature = "AuthenticationTokenPlatformExtensions")]
-impl crate::GlobalNamespace::AuthenticationTokenPlatformExtensions {}
+impl crate::GlobalNamespace::AuthenticationTokenPlatformExtensions {
+    pub fn ToAuthenticationTokenPlatform(
+        platform: crate::GlobalNamespace::UserInfo_Platform,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::AuthenticationToken_Platform,
+    > {
+        let __cordl_ret: crate::GlobalNamespace::AuthenticationToken_Platform = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToAuthenticationTokenPlatform", (platform))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToUserInfoPlatform(
+        platform: crate::GlobalNamespace::AuthenticationToken_Platform,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::UserInfo_Platform> {
+        let __cordl_ret: crate::GlobalNamespace::UserInfo_Platform = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToUserInfoPlatform", (platform))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "AuthenticationTokenPlatformExtensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::AuthenticationTokenPlatformExtensions {

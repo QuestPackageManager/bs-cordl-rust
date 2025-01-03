@@ -31,6 +31,58 @@ impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::FaceRebuildData {
 }
 #[cfg(feature = "UnityEngine+ProBuilder+FaceRebuildData")]
 impl crate::UnityEngine::ProBuilder::FaceRebuildData {
+    pub fn Apply_List_1_Dictionary_2_Dictionary_2_1(
+        newFaces: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::UnityEngine::ProBuilder::FaceRebuildData,
+            >,
+        >,
+        vertices: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::ProBuilder::Vertex,
+            >,
+        >,
+        faces: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::ProBuilder::Face,
+            >,
+        >,
+        sharedVertexLookup: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<i32, i32>,
+        >,
+        sharedTextureLookup: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<i32, i32>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "Apply",
+                (newFaces, vertices, faces, sharedVertexLookup, sharedTextureLookup),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Apply_ProBuilderMesh_List_1_0(
+        newFaces: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::UnityEngine::ProBuilder::FaceRebuildData,
+            >,
+        >,
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+        vertices: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::ProBuilder::Vertex,
+            >,
+        >,
+        faces: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::ProBuilder::Face,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Apply", (newFaces, mesh, vertices, faces))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

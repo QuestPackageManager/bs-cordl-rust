@@ -32,6 +32,20 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::MultiColumnControlle
 }
 #[cfg(feature = "UnityEngine+UIElements+MultiColumnController")]
 impl crate::UnityEngine::UIElements::MultiColumnController {
+    pub fn BindCellItem<T>(
+        ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        rowIndex: i32,
+        column: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
+        item: T,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BindCellItem", (ve, rowIndex, column, item))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn BindItem<T>(
         &mut self,
         element: quest_hook::libil2cpp::Gc<
@@ -49,6 +63,28 @@ impl crate::UnityEngine::UIElements::MultiColumnController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("BindItem", (element, index, item))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DefaultBindCellItem<T>(
+        ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        column: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
+        item: T,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DefaultBindCellItem", (ve, column, item))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DefaultMakeCellItem() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::VisualElement,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DefaultMakeCellItem", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn DestroyItem(
@@ -255,6 +291,15 @@ impl crate::UnityEngine::UIElements::MultiColumnController {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("PrepareView", (collectionView))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UnbindCellItem(
+        ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        rowIndex: i32,
+        column: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UnbindCellItem", (ve, rowIndex, column))?;
         Ok(__cordl_ret.into())
     }
     pub fn UnbindItem(

@@ -46,6 +46,16 @@ impl crate::System::Threading::Tasks::TaskScheduler {
             .invoke("NotifyWorkItemProgress", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn PublishUnobservedTaskException(
+        sender: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        ueea: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::UnobservedTaskExceptionEventArgs,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PublishUnobservedTaskException", (sender, ueea))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn QueueTask(
         &mut self,
         task: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -101,11 +111,36 @@ impl crate::System::Threading::Tasks::TaskScheduler {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_Current() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::TaskScheduler>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::TaskScheduler,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_Current", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Default() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::TaskScheduler>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::TaskScheduler,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_Default", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_Id(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_Id", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_InternalCurrent() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::TaskScheduler>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::TaskScheduler,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_InternalCurrent", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_RequiresAtomicStartTransition(

@@ -30,6 +30,41 @@ impl crate::Oculus::Platform::PlatformInternal {
     pub type MessageTypeInternal = crate::Oculus::Platform::PlatformInternal_MessageTypeInternal;
     #[cfg(feature = "Oculus+Platform+PlatformInternal+Users")]
     pub type Users = crate::Oculus::Platform::PlatformInternal_Users;
+    pub fn CrashApplication() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CrashApplication", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InitializeStandaloneAsync(
+        appID: u64,
+        accessToken: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Request_1<
+                *mut crate::Oculus::Platform::Models::PlatformInitialize,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Request_1<
+                *mut crate::Oculus::Platform::Models::PlatformInitialize,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InitializeStandaloneAsync", (appID, accessToken))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ParseMessageHandle(
+        messageHandle: crate::System::IntPtr,
+        messageType: crate::Oculus::Platform::Message_MessageType,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Message>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Message> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ParseMessageHandle", (messageHandle, messageType))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "Oculus+Platform+PlatformInternal")]
 impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Platform::PlatformInternal {
@@ -65,7 +100,19 @@ impl std::ops::DerefMut for crate::Oculus::Platform::PlatformInternal_HTTP {
     }
 }
 #[cfg(feature = "Oculus+Platform+PlatformInternal+HTTP")]
-impl crate::Oculus::Platform::PlatformInternal_HTTP {}
+impl crate::Oculus::Platform::PlatformInternal_HTTP {
+    pub fn SetHttpTransferUpdateCallback(
+        callback: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Message_1_Callback<
+                *mut crate::Oculus::Platform::Models::HttpTransferUpdate,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetHttpTransferUpdateCallback", (callback))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "Oculus+Platform+PlatformInternal+HTTP")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Oculus::Platform::PlatformInternal_HTTP {
@@ -176,7 +223,27 @@ impl std::ops::DerefMut for crate::Oculus::Platform::PlatformInternal_Users {
     }
 }
 #[cfg(feature = "Oculus+Platform+PlatformInternal+Users")]
-impl crate::Oculus::Platform::PlatformInternal_Users {}
+impl crate::Oculus::Platform::PlatformInternal_Users {
+    pub fn GetLinkedAccounts(
+        providers: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::Oculus::Platform::ServiceProvider>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Request_1<
+                *mut crate::Oculus::Platform::Models::LinkedAccountList,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Request_1<
+                *mut crate::Oculus::Platform::Models::LinkedAccountList,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetLinkedAccounts", (providers))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "Oculus+Platform+PlatformInternal+Users")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Oculus::Platform::PlatformInternal_Users {

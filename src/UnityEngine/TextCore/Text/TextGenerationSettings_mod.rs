@@ -135,6 +135,18 @@ impl crate::UnityEngine::TextCore::Text::TextGenerationSettings {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Equality(
+        left: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::TextGenerationSettings,
+        >,
+        right: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::TextGenerationSettings,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+TextGenerationSettings")]
 impl quest_hook::libil2cpp::ObjectType

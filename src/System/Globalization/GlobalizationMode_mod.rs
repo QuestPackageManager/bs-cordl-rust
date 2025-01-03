@@ -23,7 +23,18 @@ impl std::ops::DerefMut for crate::System::Globalization::GlobalizationMode {
     }
 }
 #[cfg(feature = "System+Globalization+GlobalizationMode")]
-impl crate::System::Globalization::GlobalizationMode {}
+impl crate::System::Globalization::GlobalizationMode {
+    pub fn GetGlobalizationInvariantMode() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetGlobalizationInvariantMode", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Invariant() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_Invariant", ())?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Globalization+GlobalizationMode")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Globalization::GlobalizationMode {

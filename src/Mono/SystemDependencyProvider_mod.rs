@@ -25,6 +25,11 @@ impl std::ops::DerefMut for crate::Mono::SystemDependencyProvider {
 }
 #[cfg(feature = "Mono+SystemDependencyProvider")]
 impl crate::Mono::SystemDependencyProvider {
+    pub fn Initialize() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Initialize", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Mono_ISystemDependencyProvider_get_CertificateProvider(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -67,6 +72,14 @@ impl crate::Mono::SystemDependencyProvider {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Mono::SystemCertificateProvider,
         > = __cordl_object.invoke("get_CertificateProvider", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Instance() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Mono::SystemDependencyProvider>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Mono::SystemDependencyProvider,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_Instance", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_X509Pal(

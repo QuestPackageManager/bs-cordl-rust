@@ -190,6 +190,13 @@ impl crate::System::Xml::XmlDocument {
             .invoke("CanInsertBefore", (newChild, refChild))?;
         Ok(__cordl_ret.into())
     }
+    pub fn CheckName(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckName", (name))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CloneNode(
         &mut self,
         deep: bool,

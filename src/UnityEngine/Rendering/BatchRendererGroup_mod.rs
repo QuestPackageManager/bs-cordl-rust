@@ -28,6 +28,25 @@ impl std::ops::DerefMut for crate::UnityEngine::Rendering::BatchRendererGroup {
 impl crate::UnityEngine::Rendering::BatchRendererGroup {
     #[cfg(feature = "UnityEngine+Rendering+BatchRendererGroup+OnPerformCulling")]
     pub type OnPerformCulling = crate::UnityEngine::Rendering::BatchRendererGroup_OnPerformCulling;
+    pub fn InvokeOnPerformCulling(
+        group: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Rendering::BatchRendererGroup,
+        >,
+        context: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Rendering::BatchRendererCullingOutput,
+        >,
+        lodParameters: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Rendering::LODParameters,
+        >,
+        userContext: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "InvokeOnPerformCulling",
+                (group, context, lodParameters, userContext),
+            )?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+Rendering+BatchRendererGroup")]
 impl quest_hook::libil2cpp::ObjectType

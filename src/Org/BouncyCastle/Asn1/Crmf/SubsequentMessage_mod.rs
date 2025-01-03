@@ -33,6 +33,18 @@ impl crate::Org::BouncyCastle::Asn1::Crmf::SubsequentMessage {
             .invoke_void(".ctor", (value))?;
         Ok(__cordl_object.into())
     }
+    pub fn ValueOf(
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Crmf::SubsequentMessage,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Crmf::SubsequentMessage,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("ValueOf", (value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
         value: i32,

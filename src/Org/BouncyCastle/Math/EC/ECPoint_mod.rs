@@ -155,6 +155,23 @@ impl crate::Org::BouncyCastle::Math::EC::ECPoint {
         let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetInitialZCoords(
+        curve: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECCurve>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetInitialZCoords", (curve))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetZCoord(
         &mut self,
         index: i32,

@@ -54,6 +54,17 @@ impl crate::GlobalNamespace::SonyContentVersion {
         > = __cordl_object.invoke("Get", (versionFormat))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetFromString(
+        versionString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SonyContentVersion>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::SonyContentVersion,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetFromString", (versionString))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn IncreaseMinorVersion(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -62,6 +73,13 @@ impl crate::GlobalNamespace::SonyContentVersion {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("IncreaseMinorVersion", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsVersionFormatValid(
+        versionString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsVersionFormatValid", (versionString))?;
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -120,6 +138,17 @@ impl crate::GlobalNamespace::SonyContentVersion {
             self,
         );
         let __cordl_ret: u32 = __cordl_object.invoke("get_revision", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit(
+        version: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SonyContentVersion>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (version))?;
         Ok(__cordl_ret.into())
     }
 }

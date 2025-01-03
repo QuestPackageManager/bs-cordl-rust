@@ -22,7 +22,15 @@ impl std::ops::DerefMut for crate::GlobalNamespace::MurmurHash {
     }
 }
 #[cfg(feature = "MurmurHash")]
-impl crate::GlobalNamespace::MurmurHash {}
+impl crate::GlobalNamespace::MurmurHash {
+    pub fn MurmurHash2(
+        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MurmurHash2", (key))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "MurmurHash")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MurmurHash {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

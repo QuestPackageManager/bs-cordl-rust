@@ -70,6 +70,16 @@ impl crate::BeatSaber::Init::GameVersion {
             .invoke_void(".ctor", (content, metadata))?;
         Ok(__cordl_object.into())
     }
+    pub fn Parse(
+        version: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::Init::GameVersion,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Parse", (version))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ToString(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -215,6 +225,39 @@ impl crate::BeatSaber::Init::GameVersion_BuildInfo {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn ExtractNumberFromPlatformId(
+        platform: crate::BeatSaber::Init::RuntimePlatformType,
+        inputPlatformId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ExtractNumberFromPlatformId", (platform, inputPlatformId))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FormatPlatformId(
+        platform: crate::BeatSaber::Init::RuntimePlatformType,
+        inputPlatformId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FormatPlatformId", (platform, inputPlatformId))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Parse(
+        buildMetadataValue: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::BeatSaber::Init::GameVersion_BuildInfo> {
+        let __cordl_ret: crate::BeatSaber::Init::GameVersion_BuildInfo = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Parse", (buildMetadataValue))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ToString(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -330,6 +373,35 @@ impl crate::BeatSaber::Init::GameVersion_Content {
             "Equals",
             (other),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ParseOnStartOf(
+        versionCode: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::BeatSaber::Init::GameVersion_Content> {
+        let __cordl_ret: crate::BeatSaber::Init::GameVersion_Content = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ParseOnStartOf", (versionCode))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Parse_Il2CppString0(
+        versionCode: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::BeatSaber::Init::GameVersion_Content> {
+        let __cordl_ret: crate::BeatSaber::Init::GameVersion_Content = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Parse", (versionCode))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Parse_Il2CppString1(
+        versionCore: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        pattern: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::BeatSaber::Init::GameVersion_Content> {
+        let __cordl_ret: crate::BeatSaber::Init::GameVersion_Content = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Parse", (versionCore, pattern))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReadFromApplicationVersion() -> quest_hook::libil2cpp::Result<
+        crate::BeatSaber::Init::GameVersion_Content,
+    > {
+        let __cordl_ret: crate::BeatSaber::Init::GameVersion_Content = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadFromApplicationVersion", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn ToString(
@@ -449,6 +521,29 @@ impl crate::BeatSaber::Init::GameVersion_Metadata {
             "Equals",
             (other),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ExtractSubStrings(
+        versionMetadata: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        preReleaseLabelString: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+        buildInfoString: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ExtractSubStrings",
+                (versionMetadata, preReleaseLabelString, buildInfoString),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Parse(
+        versionMetadata: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::BeatSaber::Init::GameVersion_Metadata> {
+        let __cordl_ret: crate::BeatSaber::Init::GameVersion_Metadata = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Parse", (versionMetadata))?;
         Ok(__cordl_ret.into())
     }
     pub fn ToString(
@@ -582,6 +677,17 @@ impl crate::BeatSaber::Init::GameVersion_PreReleaseLabel {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn FirstLetterToUpper(
+        value: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FirstLetterToUpper", (value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetPrefixText(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -590,6 +696,15 @@ impl crate::BeatSaber::Init::GameVersion_PreReleaseLabel {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "GetPrefixText", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Parse(
+        releaseLabel: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::BeatSaber::Init::GameVersion_PreReleaseLabel,
+    > {
+        let __cordl_ret: crate::BeatSaber::Init::GameVersion_PreReleaseLabel = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Parse", (releaseLabel))?;
         Ok(__cordl_ret.into())
     }
     pub fn ToString(

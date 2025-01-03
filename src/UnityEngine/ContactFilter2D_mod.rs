@@ -41,6 +41,22 @@ impl crate::UnityEngine::ContactFilter2D {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn CheckConsistency_Injected(
+        _unity_self: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::ContactFilter2D>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckConsistency_Injected", (_unity_self))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateLegacyFilter(
+        layerMask: i32,
+        minDepth: f32,
+        maxDepth: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ContactFilter2D> {
+        let __cordl_ret: crate::UnityEngine::ContactFilter2D = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateLegacyFilter", (layerMask, minDepth, maxDepth))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn SetDepth(
         &mut self,
         minDepth: f32,

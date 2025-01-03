@@ -23,7 +23,15 @@ impl std::ops::DerefMut for crate::GlobalNamespace::SliderMidAnchorModeExtension
     }
 }
 #[cfg(feature = "SliderMidAnchorModeExtensions")]
-impl crate::GlobalNamespace::SliderMidAnchorModeExtensions {}
+impl crate::GlobalNamespace::SliderMidAnchorModeExtensions {
+    pub fn OppositeDirection(
+        sliderMidAnchorMode: crate::GlobalNamespace::SliderMidAnchorMode,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::SliderMidAnchorMode> {
+        let __cordl_ret: crate::GlobalNamespace::SliderMidAnchorMode = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("OppositeDirection", (sliderMidAnchorMode))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "SliderMidAnchorModeExtensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::SliderMidAnchorModeExtensions {

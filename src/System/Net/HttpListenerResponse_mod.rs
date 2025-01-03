@@ -77,6 +77,35 @@ impl crate::System::Net::HttpListenerResponse {
             .invoke("Close", (force))?;
         Ok(__cordl_ret.into())
     }
+    pub fn CookieToClientString(
+        cookie: quest_hook::libil2cpp::Gc<crate::System::Net::Cookie>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CookieToClientString", (cookie))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FormatHeaders(
+        headers: quest_hook::libil2cpp::Gc<crate::System::Net::WebHeaderCollection>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FormatHeaders", (headers))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsToken(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsToken", (value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         context: quest_hook::libil2cpp::Gc<crate::System::Net::HttpListenerContext>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -85,6 +114,18 @@ impl crate::System::Net::HttpListenerResponse {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (context))?;
         Ok(__cordl_object.into())
+    }
+    pub fn QuotedString(
+        cookie: quest_hook::libil2cpp::Gc<crate::System::Net::Cookie>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("QuotedString", (cookie, value))?;
+        Ok(__cordl_ret.into())
     }
     pub fn SendHeaders(
         &mut self,

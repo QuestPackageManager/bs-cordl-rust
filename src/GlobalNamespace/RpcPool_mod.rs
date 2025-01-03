@@ -22,7 +22,33 @@ impl std::ops::DerefMut for crate::GlobalNamespace::RpcPool {
     }
 }
 #[cfg(feature = "RpcPool")]
-impl crate::GlobalNamespace::RpcPool {}
+impl crate::GlobalNamespace::RpcPool {
+    pub fn Fill<T>() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Fill", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Obtain<T>() -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Obtain", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Release(
+        t: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRemoteProcedureCall>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Release", (t))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "RpcPool")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::RpcPool {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

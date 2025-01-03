@@ -211,6 +211,19 @@ impl crate::UnityEngine::EventSystems::PointerInputModule {
             .invoke("RemovePointerData", (data))?;
         Ok(__cordl_ret.into())
     }
+    pub fn ShouldStartDrag(
+        pressPos: crate::UnityEngine::Vector2,
+        currentPos: crate::UnityEngine::Vector2,
+        threshold: f32,
+        useDragThreshold: bool,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ShouldStartDrag",
+                (pressPos, currentPos, threshold, useDragThreshold),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn StateForMouseButton(
         &mut self,
         buttonId: i32,

@@ -33,6 +33,14 @@ impl crate::System::DateTimeOffset {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn Compare(
+        first: crate::System::DateTimeOffset,
+        second: crate::System::DateTimeOffset,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Compare", (first, second))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CompareTo(
         &mut self,
         other: crate::System::DateTimeOffset,
@@ -66,12 +74,53 @@ impl crate::System::DateTimeOffset {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn FromFileTime(
+        fileTime: i64,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTimeOffset> {
+        let __cordl_ret: crate::System::DateTimeOffset = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromFileTime", (fileTime))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromUnixTimeSeconds(
+        seconds: i64,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTimeOffset> {
+        let __cordl_ret: crate::System::DateTimeOffset = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromUnixTimeSeconds", (seconds))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "GetHashCode",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ParseExact(
+        input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        formatProvider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+        styles: crate::System::Globalization::DateTimeStyles,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTimeOffset> {
+        let __cordl_ret: crate::System::DateTimeOffset = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ParseExact", (input, format, formatProvider, styles))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Parse_DateTimeStyles1(
+        input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        formatProvider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+        styles: crate::System::Globalization::DateTimeStyles,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTimeOffset> {
+        let __cordl_ret: crate::System::DateTimeOffset = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Parse", (input, formatProvider, styles))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Parse_Il2CppString_IFormatProvider0(
+        input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        formatProvider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTimeOffset> {
+        let __cordl_ret: crate::System::DateTimeOffset = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Parse", (input, formatProvider))?;
         Ok(__cordl_ret.into())
     }
     pub fn System_IComparable_CompareTo(
@@ -194,6 +243,63 @@ impl crate::System::DateTimeOffset {
             "TryFormat",
             (destination, charsWritten, format, formatProvider),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryParse(
+        input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        formatProvider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+        styles: crate::System::Globalization::DateTimeStyles,
+        result: quest_hook::libil2cpp::ByRefMut<crate::System::DateTimeOffset>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryParse", (input, formatProvider, styles, result))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryParseExact_Il2CppArray1(
+        input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        formats: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+        formatProvider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+        styles: crate::System::Globalization::DateTimeStyles,
+        result: quest_hook::libil2cpp::ByRefMut<crate::System::DateTimeOffset>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryParseExact", (input, formats, formatProvider, styles, result))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryParseExact_Il2CppString0(
+        input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        formatProvider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+        styles: crate::System::Globalization::DateTimeStyles,
+        result: quest_hook::libil2cpp::ByRefMut<crate::System::DateTimeOffset>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryParseExact", (input, format, formatProvider, styles, result))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ValidateDate(
+        dateTime: crate::System::DateTime,
+        offset: crate::System::TimeSpan,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
+        let __cordl_ret: crate::System::DateTime = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ValidateDate", (dateTime, offset))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ValidateOffset(
+        offset: crate::System::TimeSpan,
+    ) -> quest_hook::libil2cpp::Result<i16> {
+        let __cordl_ret: i16 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ValidateOffset", (offset))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ValidateStyles(
+        style: crate::System::Globalization::DateTimeStyles,
+        parameterName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Globalization::DateTimeStyles> {
+        let __cordl_ret: crate::System::Globalization::DateTimeStyles = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ValidateStyles", (style, parameterName))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_DateTime1(
@@ -369,6 +475,11 @@ impl crate::System::DateTimeOffset {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_Now() -> quest_hook::libil2cpp::Result<crate::System::DateTimeOffset> {
+        let __cordl_ret: crate::System::DateTimeOffset = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_Now", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_Offset(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
@@ -421,6 +532,37 @@ impl crate::System::DateTimeOffset {
             "get_Year",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        left: crate::System::DateTimeOffset,
+        right: crate::System::DateTimeOffset,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit(
+        dateTime: crate::System::DateTime,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTimeOffset> {
+        let __cordl_ret: crate::System::DateTimeOffset = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (dateTime))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        left: crate::System::DateTimeOffset,
+        right: crate::System::DateTimeOffset,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Subtraction(
+        left: crate::System::DateTimeOffset,
+        right: crate::System::DateTimeOffset,
+    ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
+        let __cordl_ret: crate::System::TimeSpan = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Subtraction", (left, right))?;
         Ok(__cordl_ret.into())
     }
 }

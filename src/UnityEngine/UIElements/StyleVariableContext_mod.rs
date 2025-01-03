@@ -102,6 +102,19 @@ impl crate::UnityEngine::UIElements::StyleVariableContext {
         let __cordl_ret: bool = __cordl_object.invoke("TryFindVariable", (name, v))?;
         Ok(__cordl_ret.into())
     }
+    pub fn _Add_g__ComputeOrderSensitiveHash_7_0(
+        index: i32,
+        _cordl_fixed_empty_name_whitespace: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::UIElements::StyleVariableContext___c__DisplayClass7_0,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "<Add>g__ComputeOrderSensitiveHash|7_0",
+                (index, _cordl_fixed_empty_name_whitespace),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

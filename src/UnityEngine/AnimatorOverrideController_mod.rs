@@ -47,6 +47,18 @@ impl crate::UnityEngine::AnimatorOverrideController {
             .invoke("ApplyOverrides", (overrides))?;
         Ok(__cordl_ret.into())
     }
+    pub fn Internal_Create(
+        _cordl_self: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AnimatorOverrideController,
+        >,
+        controller: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::RuntimeAnimatorController,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Internal_Create", (_cordl_self, controller))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         controller: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::RuntimeAnimatorController,
@@ -57,6 +69,15 @@ impl crate::UnityEngine::AnimatorOverrideController {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (controller))?;
         Ok(__cordl_object.into())
+    }
+    pub fn OnInvalidateOverrideController(
+        controller: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AnimatorOverrideController,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("OnInvalidateOverrideController", (controller))?;
+        Ok(__cordl_ret.into())
     }
     pub fn SendNotification(
         &mut self,

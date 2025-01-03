@@ -27,6 +27,17 @@ impl std::ops::DerefMut for crate::System::DelegateSerializationHolder {
 impl crate::System::DelegateSerializationHolder {
     #[cfg(feature = "System+DelegateSerializationHolder+DelegateEntry")]
     pub type DelegateEntry = crate::System::DelegateSerializationHolder_DelegateEntry;
+    pub fn GetDelegateData(
+        instance: quest_hook::libil2cpp::Gc<crate::System::Delegate>,
+        info: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::SerializationInfo,
+        >,
+        ctx: crate::System::Runtime::Serialization::StreamingContext,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetDelegateData", (instance, info, ctx))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetObjectData(
         &mut self,
         info: quest_hook::libil2cpp::Gc<

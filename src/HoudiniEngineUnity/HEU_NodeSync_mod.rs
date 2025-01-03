@@ -25,6 +25,15 @@ impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_NodeSync {
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_NodeSync")]
 impl crate::HoudiniEngineUnity::HEU_NodeSync {
+    pub fn CreateNodeSync(
+        session: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionBase>,
+        opName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        nodeNabel: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateNodeSync", (session, opName, nodeNabel))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn InitializeFromHoudini(
         &mut self,
         session: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionBase>,

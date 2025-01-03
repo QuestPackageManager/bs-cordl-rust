@@ -23,7 +23,26 @@ impl std::ops::DerefMut for crate::UnityEngine::XR::Provider::XRStats {
     }
 }
 #[cfg(feature = "UnityEngine+XR+Provider+XRStats")]
-impl crate::UnityEngine::XR::Provider::XRStats {}
+impl crate::UnityEngine::XR::Provider::XRStats {
+    pub fn TryGetStat(
+        xrSubsystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::IntegratedSubsystem>,
+        tag: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::ByRefMut<f32>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryGetStat", (xrSubsystem, tag, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryGetStat_Internal(
+        ptr: crate::System::IntPtr,
+        tag: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::ByRefMut<f32>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryGetStat_Internal", (ptr, tag, value))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+XR+Provider+XRStats")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::XR::Provider::XRStats {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

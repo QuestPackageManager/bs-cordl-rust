@@ -72,6 +72,15 @@ impl crate::GlobalNamespace::QuaternionSerializable {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn FromSmallest(
+        sa: i32,
+        sb: i32,
+        sc: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
+        let __cordl_ret: crate::UnityEngine::Quaternion = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromSmallest", (sa, sb, sc))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -97,6 +106,16 @@ impl crate::GlobalNamespace::QuaternionSerializable {
             "Serialize",
             (writer),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToSmallest(
+        q: crate::UnityEngine::Quaternion,
+        sa: quest_hook::libil2cpp::ByRefMut<i32>,
+        sb: quest_hook::libil2cpp::ByRefMut<i32>,
+        sc: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToSmallest", (q, sa, sb, sc))?;
         Ok(__cordl_ret.into())
     }
     pub fn ToString(
@@ -129,6 +148,43 @@ impl crate::GlobalNamespace::QuaternionSerializable {
             ".ctor",
             (q),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_identity() -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::QuaternionSerializable,
+    > {
+        let __cordl_ret: crate::GlobalNamespace::QuaternionSerializable = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_identity", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Addition(
+        a: crate::GlobalNamespace::QuaternionSerializable,
+        b: crate::GlobalNamespace::QuaternionSerializable,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::QuaternionSerializable> {
+        let __cordl_ret: crate::GlobalNamespace::QuaternionSerializable = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Addition", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_Quaternion1(
+        q: crate::UnityEngine::Quaternion,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::QuaternionSerializable> {
+        let __cordl_ret: crate::GlobalNamespace::QuaternionSerializable = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (q))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_QuaternionSerializable0(
+        q: crate::GlobalNamespace::QuaternionSerializable,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
+        let __cordl_ret: crate::UnityEngine::Quaternion = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (q))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Subtraction(
+        a: crate::GlobalNamespace::QuaternionSerializable,
+        b: crate::GlobalNamespace::QuaternionSerializable,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::QuaternionSerializable> {
+        let __cordl_ret: crate::GlobalNamespace::QuaternionSerializable = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Subtraction", (a, b))?;
         Ok(__cordl_ret.into())
     }
 }

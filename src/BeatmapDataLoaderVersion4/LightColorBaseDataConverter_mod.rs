@@ -25,7 +25,20 @@ for crate::BeatmapDataLoaderVersion4::LightColorBaseDataConverter {
     }
 }
 #[cfg(feature = "BeatmapDataLoaderVersion4+LightColorBaseDataConverter")]
-impl crate::BeatmapDataLoaderVersion4::LightColorBaseDataConverter {}
+impl crate::BeatmapDataLoaderVersion4::LightColorBaseDataConverter {
+    pub fn Convert(
+        beat: f32,
+        lightColorEvent: crate::BeatmapSaveDataVersion4::LightColorEvent,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightColorBaseData>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::LightColorBaseData,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Convert", (beat, lightColorEvent))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "BeatmapDataLoaderVersion4+LightColorBaseDataConverter")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatmapDataLoaderVersion4::LightColorBaseDataConverter {

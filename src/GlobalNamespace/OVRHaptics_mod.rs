@@ -29,6 +29,11 @@ impl crate::GlobalNamespace::OVRHaptics {
     pub type OVRHapticsChannel = crate::GlobalNamespace::OVRHaptics_OVRHapticsChannel;
     #[cfg(feature = "OVRHaptics+OVRHapticsOutput")]
     pub type OVRHapticsOutput = crate::GlobalNamespace::OVRHaptics_OVRHapticsOutput;
+    pub fn Process() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Process", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "OVRHaptics")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRHaptics {
@@ -168,7 +173,85 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRHaptics_Config {
     }
 }
 #[cfg(feature = "OVRHaptics+Config")]
-impl crate::GlobalNamespace::OVRHaptics_Config {}
+impl crate::GlobalNamespace::OVRHaptics_Config {
+    pub fn Load() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Load", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_MaximumBufferSamplesCount() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_MaximumBufferSamplesCount", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_MinimumBufferSamplesCount() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_MinimumBufferSamplesCount", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_MinimumSafeSamplesQueued() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_MinimumSafeSamplesQueued", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_OptimalBufferSamplesCount() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_OptimalBufferSamplesCount", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_SampleRateHz() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_SampleRateHz", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_SampleSizeInBytes() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_SampleSizeInBytes", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_MaximumBufferSamplesCount(
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_MaximumBufferSamplesCount", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_MinimumBufferSamplesCount(
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_MinimumBufferSamplesCount", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_MinimumSafeSamplesQueued(
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_MinimumSafeSamplesQueued", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_OptimalBufferSamplesCount(
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_OptimalBufferSamplesCount", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_SampleRateHz(
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_SampleRateHz", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_SampleSizeInBytes(
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_SampleSizeInBytes", (value))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "OVRHaptics+Config")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRHaptics_Config {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

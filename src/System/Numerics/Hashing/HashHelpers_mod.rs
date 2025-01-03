@@ -23,7 +23,13 @@ impl std::ops::DerefMut for crate::System::Numerics::Hashing::HashHelpers {
     }
 }
 #[cfg(feature = "System+Numerics+Hashing+HashHelpers")]
-impl crate::System::Numerics::Hashing::HashHelpers {}
+impl crate::System::Numerics::Hashing::HashHelpers {
+    pub fn Combine(h1: i32, h2: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Combine", (h1, h2))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Numerics+Hashing+HashHelpers")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Numerics::Hashing::HashHelpers {

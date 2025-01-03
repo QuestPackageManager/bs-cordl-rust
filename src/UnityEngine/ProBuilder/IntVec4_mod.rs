@@ -116,6 +116,41 @@ impl crate::UnityEngine::ProBuilder::IntVec4 {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Equality(
+        a: crate::UnityEngine::ProBuilder::IntVec4,
+        b: crate::UnityEngine::ProBuilder::IntVec4,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_IntVec4_0(
+        p: crate::UnityEngine::ProBuilder::IntVec4,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
+        let __cordl_ret: crate::UnityEngine::Vector4 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (p))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_Vector4_1(
+        p: crate::UnityEngine::Vector4,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ProBuilder::IntVec4> {
+        let __cordl_ret: crate::UnityEngine::ProBuilder::IntVec4 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (p))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        a: crate::UnityEngine::ProBuilder::IntVec4,
+        b: crate::UnityEngine::ProBuilder::IntVec4,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn round(v: f32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("round", (v))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+IntVec4")]
 impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::ProBuilder::IntVec4>>

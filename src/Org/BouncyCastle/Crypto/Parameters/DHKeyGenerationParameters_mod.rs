@@ -28,6 +28,15 @@ for crate::Org::BouncyCastle::Crypto::Parameters::DHKeyGenerationParameters {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+DHKeyGenerationParameters")]
 impl crate::Org::BouncyCastle::Crypto::Parameters::DHKeyGenerationParameters {
+    pub fn GetStrength(
+        parameters: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Parameters::DHParameters,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetStrength", (parameters))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         random: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Security::SecureRandom,

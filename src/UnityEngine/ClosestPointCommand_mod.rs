@@ -26,6 +26,61 @@ for crate::UnityEngine::ClosestPointCommand {
 }
 #[cfg(feature = "UnityEngine+ClosestPointCommand")]
 impl crate::UnityEngine::ClosestPointCommand {
+    pub fn ScheduleBatch(
+        commands: crate::Unity::Collections::NativeArray_1<
+            crate::UnityEngine::ClosestPointCommand,
+        >,
+        results: crate::Unity::Collections::NativeArray_1<crate::UnityEngine::Vector3>,
+        minCommandsPerJob: i32,
+        dependsOn: crate::Unity::Jobs::JobHandle,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Jobs::JobHandle> {
+        let __cordl_ret: crate::Unity::Jobs::JobHandle = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ScheduleBatch", (commands, results, minCommandsPerJob, dependsOn))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ScheduleClosestPointCommandBatch(
+        parameters: quest_hook::libil2cpp::ByRefMut<
+            crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_JobScheduleParameters,
+        >,
+        commands: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        commandLen: i32,
+        result: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        resultLen: i32,
+        minCommandsPerJob: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Jobs::JobHandle> {
+        let __cordl_ret: crate::Unity::Jobs::JobHandle = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ScheduleClosestPointCommandBatch",
+                (parameters, commands, commandLen, result, resultLen, minCommandsPerJob),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ScheduleClosestPointCommandBatch_Injected(
+        parameters: quest_hook::libil2cpp::ByRefMut<
+            crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_JobScheduleParameters,
+        >,
+        commands: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        commandLen: i32,
+        result: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        resultLen: i32,
+        minCommandsPerJob: i32,
+        ret: quest_hook::libil2cpp::ByRefMut<crate::Unity::Jobs::JobHandle>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ScheduleClosestPointCommandBatch_Injected",
+                (
+                    parameters,
+                    commands,
+                    commandLen,
+                    result,
+                    resultLen,
+                    minCommandsPerJob,
+                    ret,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor_Collider1(
         &mut self,
         point: crate::UnityEngine::Vector3,

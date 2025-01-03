@@ -35,6 +35,78 @@ impl std::ops::DerefMut for crate::Mono::Net::Security::ChainValidationHelper {
 impl crate::Mono::Net::Security::ChainValidationHelper {
     #[cfg(feature = "Mono+Net+Security+ChainValidationHelper+__c__DisplayClass11_0")]
     pub type __c__DisplayClass11_0 = crate::Mono::Net::Security::ChainValidationHelper___c__DisplayClass11_0;
+    pub fn Create(
+        provider: quest_hook::libil2cpp::Gc<
+            crate::Mono::Net::Security::MobileTlsProvider,
+        >,
+        settings: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::Mono::Security::Interface::MonoTlsSettings,
+        >,
+        stream: quest_hook::libil2cpp::Gc<crate::Mono::Net::Security::MonoTlsStream>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Mono::Net::Security::ChainValidationHelper>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Mono::Net::Security::ChainValidationHelper,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (provider, settings, stream))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DefaultSelectionCallback(
+        targetHost: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        localCertificates: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
+        >,
+        remoteCertificate: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509Certificate,
+        >,
+        acceptableIssuers: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509Certificate,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509Certificate,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "DefaultSelectionCallback",
+                (targetHost, localCertificates, remoteCertificate, acceptableIssuers),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetInternalValidator(
+        owner: quest_hook::libil2cpp::Gc<crate::System::Net::Security::SslStream>,
+        provider: quest_hook::libil2cpp::Gc<
+            crate::Mono::Net::Security::MobileTlsProvider,
+        >,
+        settings: quest_hook::libil2cpp::Gc<
+            crate::Mono::Security::Interface::MonoTlsSettings,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Mono::Net::Security::ChainValidationHelper>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Mono::Net::Security::ChainValidationHelper,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetInternalValidator", (owner, provider, settings))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetValidationCallback(
+        settings: quest_hook::libil2cpp::Gc<
+            crate::Mono::Security::Interface::MonoTlsSettings,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Net::ServerCertValidationCallback>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Net::ServerCertValidationCallback,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetValidationCallback", (settings))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn InvokeCallback(
         &mut self,
         leaf: quest_hook::libil2cpp::Gc<

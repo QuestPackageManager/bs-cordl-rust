@@ -30,6 +30,15 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Engines::Cast5Engi
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+Cast5Engine")]
 impl crate::Org::BouncyCastle::Crypto::Engines::Cast5Engine {
     pub const BLOCK_SIZE: i32 = 8i32;
+    pub fn Bits32ToInts(
+        inData: u32,
+        b: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+        offset: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Bits32ToInts", (inData, b, offset))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CAST_Decipher(
         &mut self,
         L16: u32,
@@ -84,6 +93,21 @@ impl crate::Org::BouncyCastle::Crypto::Engines::Cast5Engine {
             .invoke("EncryptBlock", (src, srcIndex, dst, dstIndex))?;
         Ok(__cordl_ret.into())
     }
+    pub fn F1(D: u32, Kmi: u32, Kri: i32) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("F1", (D, Kmi, Kri))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn F2(D: u32, Kmi: u32, Kri: i32) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("F2", (D, Kmi, Kri))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn F3(D: u32, Kmi: u32, Kri: i32) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("F3", (D, Kmi, Kri))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetBlockSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -103,6 +127,14 @@ impl crate::Org::BouncyCastle::Crypto::Engines::Cast5Engine {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Init", (forEncryption, parameters))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IntsTo32bits(
+        b: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+        i: i32,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IntsTo32bits", (b, i))?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

@@ -25,6 +25,25 @@ impl std::ops::DerefMut for crate::Internal::Runtime::Augments::RuntimeThread {
 }
 #[cfg(feature = "Internal+Runtime+Augments+RuntimeThread")]
 impl crate::Internal::Runtime::Augments::RuntimeThread {
+    pub fn Create(
+        start: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::ParameterizedThreadStart,
+        >,
+        maxStackSize: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Internal::Runtime::Augments::RuntimeThread>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Internal::Runtime::Augments::RuntimeThread,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (start, maxStackSize))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCurrentProcessorId() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCurrentProcessorId", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         t: quest_hook::libil2cpp::Gc<crate::System::Threading::Thread>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -33,6 +52,18 @@ impl crate::Internal::Runtime::Augments::RuntimeThread {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (t))?;
         Ok(__cordl_object.into())
+    }
+    pub fn Sleep(
+        millisecondsTimeout: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Sleep", (millisecondsTimeout))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SpinWait(iterations: i32) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SpinWait", (iterations))?;
+        Ok(__cordl_ret.into())
     }
     pub fn Start(
         &mut self,
@@ -43,6 +74,11 @@ impl crate::Internal::Runtime::Augments::RuntimeThread {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Start", (state))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Yield() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Yield", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

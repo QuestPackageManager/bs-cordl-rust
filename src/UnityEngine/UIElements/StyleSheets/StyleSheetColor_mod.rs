@@ -25,7 +25,23 @@ for crate::UnityEngine::UIElements::StyleSheets::StyleSheetColor {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleSheetColor")]
-impl crate::UnityEngine::UIElements::StyleSheets::StyleSheetColor {}
+impl crate::UnityEngine::UIElements::StyleSheets::StyleSheetColor {
+    pub fn HexToColor32(
+        color: u32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color32> {
+        let __cordl_ret: crate::UnityEngine::Color32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("HexToColor32", (color))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryGetColor(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        color: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Color>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryGetColor", (name, color))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleSheetColor")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::StyleSheets::StyleSheetColor {

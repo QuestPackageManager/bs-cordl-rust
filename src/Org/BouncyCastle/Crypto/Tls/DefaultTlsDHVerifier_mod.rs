@@ -39,6 +39,15 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DefaultTlsDHVerifier {
         let __cordl_ret: bool = __cordl_object.invoke("Accept", (dhParameters))?;
         Ok(__cordl_ret.into())
     }
+    pub fn AddDefaultGroup(
+        dhParameters: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Parameters::DHParameters,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddDefaultGroup", (dhParameters))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn AreGroupsEqual(
         &mut self,
         a: quest_hook::libil2cpp::Gc<

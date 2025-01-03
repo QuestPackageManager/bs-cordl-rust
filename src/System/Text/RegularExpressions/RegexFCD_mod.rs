@@ -28,6 +28,20 @@ for crate::System::Text::RegularExpressions::RegexFCD {
 }
 #[cfg(feature = "System+Text+RegularExpressions+RegexFCD")]
 impl crate::System::Text::RegularExpressions::RegexFCD {
+    pub fn AnchorFromType(_cordl_type: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AnchorFromType", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Anchors(
+        tree: quest_hook::libil2cpp::Gc<
+            crate::System::Text::RegularExpressions::RegexTree,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Anchors", (tree))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CalculateFC(
         &mut self,
         NodeType: i32,
@@ -61,6 +75,16 @@ impl crate::System::Text::RegularExpressions::RegexFCD {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn FirstChars(
+        t: quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::RegexTree>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Nullable_1<crate::System::Text::RegularExpressions::RegexPrefix>,
+    > {
+        let __cordl_ret: crate::System::Nullable_1<
+            crate::System::Text::RegularExpressions::RegexPrefix,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("FirstChars", (t))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn IntIsEmpty(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -85,6 +109,17 @@ impl crate::System::Text::RegularExpressions::RegexFCD {
             "PopInt",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Prefix(
+        tree: quest_hook::libil2cpp::Gc<
+            crate::System::Text::RegularExpressions::RegexTree,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Text::RegularExpressions::RegexPrefix,
+    > {
+        let __cordl_ret: crate::System::Text::RegularExpressions::RegexPrefix = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Prefix", (tree))?;
         Ok(__cordl_ret.into())
     }
     pub fn PushFC(

@@ -23,7 +23,16 @@ impl std::ops::DerefMut for crate::Mono::Net::Security::NoReflectionHelper {
     }
 }
 #[cfg(feature = "Mono+Net+Security+NoReflectionHelper")]
-impl crate::Mono::Net::Security::NoReflectionHelper {}
+impl crate::Mono::Net::Security::NoReflectionHelper {
+    pub fn GetProvider() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetProvider", ())?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "Mono+Net+Security+NoReflectionHelper")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Net::Security::NoReflectionHelper {

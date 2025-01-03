@@ -124,6 +124,16 @@ impl crate::Org::BouncyCastle::Bcpg::BcpgOutputStream {
             .invoke("PartialFlush", (isLast))?;
         Ok(__cordl_ret.into())
     }
+    pub fn Wrap(
+        outStr: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::BcpgOutputStream>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::BcpgOutputStream,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Wrap", (outStr))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Write(
         &mut self,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,

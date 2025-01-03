@@ -23,7 +23,18 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::EventDebugger {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+EventDebugger")]
-impl crate::UnityEngine::UIElements::EventDebugger {}
+impl crate::UnityEngine::UIElements::EventDebugger {
+    pub fn LogPropagationPaths(
+        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
+        paths: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::PropagationPaths,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LogPropagationPaths", (evt, paths))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+EventDebugger")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::EventDebugger {

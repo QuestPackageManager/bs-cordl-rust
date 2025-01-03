@@ -69,6 +69,34 @@ impl crate::UnityEngine::ContactPair {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn ExtractContactsArray_Injected(
+        _unity_self: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::ContactPair>,
+        managedContainer: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::ContactPoint>,
+        >,
+        flipped: bool,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ExtractContactsArray_Injected",
+                (_unity_self, managedContainer, flipped),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ExtractContacts_Injected(
+        _unity_self: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::ContactPair>,
+        managedContainer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::ContactPoint>,
+        >,
+        flipped: bool,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ExtractContacts_Injected",
+                (_unity_self, managedContainer, flipped),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetContactPoint(
         &mut self,
         index: i32,

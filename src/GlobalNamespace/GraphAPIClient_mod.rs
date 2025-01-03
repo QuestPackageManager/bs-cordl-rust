@@ -37,6 +37,14 @@ impl crate::GlobalNamespace::GraphAPIClient {
     pub type _Post_d__5_1<TResponse: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::GraphAPIClient__Post_d__5_1<
         TResponse,
     >;
+    pub fn CalculateDelayMsBeforeRetry(
+        numAttempts: i32,
+        postOptions: crate::GlobalNamespace::GraphAPIClient_PostOptions,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CalculateDelayMsBeforeRetry", (numAttempts, postOptions))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         networkConfig: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkConfig>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

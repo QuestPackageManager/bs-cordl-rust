@@ -55,6 +55,43 @@ impl crate::System::Data::SimpleType {
             .invoke("ConvertToAnnonymousSimpleType", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn CreateByteArrayType(
+        encoding: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Data::SimpleType>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Data::SimpleType> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateByteArrayType", (encoding))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateEnumeratedType(
+        values: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Data::SimpleType>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Data::SimpleType> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateEnumeratedType", (values))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateLimitedStringType(
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Data::SimpleType>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Data::SimpleType> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateLimitedStringType", (length))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateSimpleType(
+        typeCode: crate::System::Data::Common::StorageType,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Data::SimpleType>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Data::SimpleType> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateSimpleType", (typeCode, _cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn HasConflictingDefinition(
         &mut self,
         otherSimpleType: quest_hook::libil2cpp::Gc<crate::System::Data::SimpleType>,

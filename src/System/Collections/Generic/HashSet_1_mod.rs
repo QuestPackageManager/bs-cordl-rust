@@ -91,6 +91,22 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::HashSe
             .invoke("AddValue", (index, hashCode, value))?;
         Ok(__cordl_ret.into())
     }
+    pub fn AreEqualityComparersEqual(
+        set1: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::HashSet_1<T>,
+        >,
+        set2: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::HashSet_1<T>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AreEqualityComparersEqual", (set1, set2))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CheckUniqueAndUnfoundElements(
         &mut self,
         other: quest_hook::libil2cpp::Gc<

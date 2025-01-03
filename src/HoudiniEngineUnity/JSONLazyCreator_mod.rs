@@ -242,6 +242,22 @@ impl crate::HoudiniEngineUnity::JSONLazyCreator {
             .invoke("get_Tag", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Equality(
+        a: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::JSONLazyCreator>,
+        b: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        a: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::JSONLazyCreator>,
+        b: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn set_AsBool(
         &mut self,
         value: bool,

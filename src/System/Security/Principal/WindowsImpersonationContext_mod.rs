@@ -29,6 +29,13 @@ for crate::System::Security::Principal::WindowsImpersonationContext {
 }
 #[cfg(feature = "System+Security+Principal+WindowsImpersonationContext")]
 impl crate::System::Security::Principal::WindowsImpersonationContext {
+    pub fn CloseToken(
+        token: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CloseToken", (token))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -39,6 +46,13 @@ impl crate::System::Security::Principal::WindowsImpersonationContext {
             .invoke("Dispose", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn DuplicateToken(
+        token: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DuplicateToken", (token))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         token: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -47,6 +61,18 @@ impl crate::System::Security::Principal::WindowsImpersonationContext {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (token))?;
         Ok(__cordl_object.into())
+    }
+    pub fn RevertToSelf() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RevertToSelf", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetCurrentToken(
+        token: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetCurrentToken", (token))?;
+        Ok(__cordl_ret.into())
     }
     pub fn Undo(
         &mut self,

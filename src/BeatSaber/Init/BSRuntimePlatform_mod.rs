@@ -23,7 +23,20 @@ impl std::ops::DerefMut for crate::BeatSaber::Init::BSRuntimePlatform {
     }
 }
 #[cfg(feature = "BeatSaber+Init+BSRuntimePlatform")]
-impl crate::BeatSaber::Init::BSRuntimePlatform {}
+impl crate::BeatSaber::Init::BSRuntimePlatform {
+    pub fn GetPlatformType() -> quest_hook::libil2cpp::Result<
+        crate::BeatSaber::Init::RuntimePlatformType,
+    > {
+        let __cordl_ret: crate::BeatSaber::Init::RuntimePlatformType = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPlatformType", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_IsSteam() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_IsSteam", ())?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "BeatSaber+Init+BSRuntimePlatform")]
 impl quest_hook::libil2cpp::ObjectType for crate::BeatSaber::Init::BSRuntimePlatform {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

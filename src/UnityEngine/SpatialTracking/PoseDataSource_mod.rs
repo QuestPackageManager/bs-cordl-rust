@@ -23,7 +23,36 @@ impl std::ops::DerefMut for crate::UnityEngine::SpatialTracking::PoseDataSource 
     }
 }
 #[cfg(feature = "UnityEngine+SpatialTracking+PoseDataSource")]
-impl crate::UnityEngine::SpatialTracking::PoseDataSource {}
+impl crate::UnityEngine::SpatialTracking::PoseDataSource {
+    pub fn GetDataFromSource(
+        poseSource: crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackedPose,
+        resultPose: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Pose>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::SpatialTracking::PoseDataFlags,
+    > {
+        let __cordl_ret: crate::UnityEngine::SpatialTracking::PoseDataFlags = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetDataFromSource", (poseSource, resultPose))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetNodePoseData(
+        node: crate::UnityEngine::XR::XRNode,
+        resultPose: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Pose>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::SpatialTracking::PoseDataFlags,
+    > {
+        let __cordl_ret: crate::UnityEngine::SpatialTracking::PoseDataFlags = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetNodePoseData", (node, resultPose))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryGetDataFromSource(
+        poseSource: crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackedPose,
+        resultPose: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Pose>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryGetDataFromSource", (poseSource, resultPose))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+SpatialTracking+PoseDataSource")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::SpatialTracking::PoseDataSource {

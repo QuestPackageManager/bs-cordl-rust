@@ -24,6 +24,14 @@ impl std::ops::DerefMut for crate::System::Threading::Tasks::TaskContinuation {
 }
 #[cfg(feature = "System+Threading+Tasks+TaskContinuation")]
 impl crate::System::Threading::Tasks::TaskContinuation {
+    pub fn InlineIfPossibleOrElseQueue(
+        task: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+        needsProtection: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InlineIfPossibleOrElseQueue", (task, needsProtection))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

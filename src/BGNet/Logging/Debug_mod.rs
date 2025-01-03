@@ -27,6 +27,56 @@ impl crate::BGNet::Logging::Debug {
     type ILogger = crate::BGNet::Logging::Debug_ILogger;
     #[cfg(feature = "BGNet+Logging+Debug+LoggerLinkedList")]
     pub type LoggerLinkedList = crate::BGNet::Logging::Debug_LoggerLinkedList;
+    pub fn AddLogger(
+        logger: quest_hook::libil2cpp::Gc<crate::BGNet::Logging::Debug_ILogger>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddLogger", (logger))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Log(
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Log", (message))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LogError(
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LogError", (message))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LogException(
+        exception: quest_hook::libil2cpp::Gc<crate::System::Exception>,
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LogException", (exception, message))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LogWarning(
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LogWarning", (message))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn NoDomainReloadInit() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("NoDomainReloadInit", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RemoveLogger(
+        logger: quest_hook::libil2cpp::Gc<crate::BGNet::Logging::Debug_ILogger>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RemoveLogger", (logger))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "BGNet+Logging+Debug")]
 impl quest_hook::libil2cpp::ObjectType for crate::BGNet::Logging::Debug {

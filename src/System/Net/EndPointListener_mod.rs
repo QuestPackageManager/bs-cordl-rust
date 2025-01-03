@@ -36,6 +36,17 @@ impl std::ops::DerefMut for crate::System::Net::EndPointListener {
 }
 #[cfg(feature = "System+Net+EndPointListener")]
 impl crate::System::Net::EndPointListener {
+    pub fn Accept(
+        socket: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,
+        e: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SocketAsyncEventArgs>,
+        accepted: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::System::Net::Sockets::Socket,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Accept", (socket, e, accepted))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn AddPrefix(
         &mut self,
         prefix: quest_hook::libil2cpp::Gc<crate::System::Net::ListenerPrefix>,
@@ -117,6 +128,23 @@ impl crate::System::Net::EndPointListener {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (listener, addr, port, secure))?;
         Ok(__cordl_object.into())
+    }
+    pub fn OnAccept(
+        sender: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        e: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SocketAsyncEventArgs>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("OnAccept", (sender, e))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ProcessAccept(
+        args: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Sockets::SocketAsyncEventArgs,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ProcessAccept", (args))?;
+        Ok(__cordl_ret.into())
     }
     pub fn RemoveConnection(
         &mut self,

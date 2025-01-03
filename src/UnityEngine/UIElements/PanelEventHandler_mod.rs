@@ -773,6 +773,15 @@ impl crate::UnityEngine::UIElements::PanelEventHandler_PointerEvent {
             .invoke("SetPosition", (positionOverride, deltaOverride))?;
         Ok(__cordl_ret.into())
     }
+    pub fn _Read_g__InRange_90_0(
+        i: i32,
+        start: i32,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("<Read>g__InRange|90_0", (i, start, count))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

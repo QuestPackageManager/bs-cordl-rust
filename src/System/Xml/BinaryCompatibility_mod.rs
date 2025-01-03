@@ -23,7 +23,13 @@ impl std::ops::DerefMut for crate::System::Xml::BinaryCompatibility {
     }
 }
 #[cfg(feature = "System+Xml+BinaryCompatibility")]
-impl crate::System::Xml::BinaryCompatibility {}
+impl crate::System::Xml::BinaryCompatibility {
+    pub fn get_TargetsAtLeast_Desktop_V4_5_2() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_TargetsAtLeast_Desktop_V4_5_2", ())?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Xml+BinaryCompatibility")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::BinaryCompatibility {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

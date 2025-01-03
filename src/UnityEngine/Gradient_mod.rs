@@ -95,6 +95,11 @@ impl crate::UnityEngine::Gradient {
         let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn Init() -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Init", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Internal_Equals(
         &mut self,
         other: crate::System::IntPtr,

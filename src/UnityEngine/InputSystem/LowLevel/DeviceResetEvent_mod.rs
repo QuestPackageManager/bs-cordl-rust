@@ -24,6 +24,17 @@ for crate::UnityEngine::InputSystem::LowLevel::DeviceResetEvent {
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+DeviceResetEvent")]
 impl crate::UnityEngine::InputSystem::LowLevel::DeviceResetEvent {
     pub const Type: i32 = 1146245972i32;
+    pub fn Create(
+        deviceId: i32,
+        hardReset: bool,
+        _cordl_time: f64,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::LowLevel::DeviceResetEvent,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::DeviceResetEvent = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (deviceId, hardReset, _cordl_time))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_typeStatic(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

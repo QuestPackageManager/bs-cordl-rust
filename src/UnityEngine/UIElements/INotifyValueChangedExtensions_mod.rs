@@ -25,7 +25,44 @@ for crate::UnityEngine::UIElements::INotifyValueChangedExtensions {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+INotifyValueChangedExtensions")]
-impl crate::UnityEngine::UIElements::INotifyValueChangedExtensions {}
+impl crate::UnityEngine::UIElements::INotifyValueChangedExtensions {
+    pub fn RegisterValueChangedCallback<T>(
+        control: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::INotifyValueChanged_1<T>,
+        >,
+        callback: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::EventCallback_1<
+                *mut crate::UnityEngine::UIElements::ChangeEvent_1<T>,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RegisterValueChangedCallback", (control, callback))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UnregisterValueChangedCallback<T>(
+        control: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::INotifyValueChanged_1<T>,
+        >,
+        callback: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::EventCallback_1<
+                *mut crate::UnityEngine::UIElements::ChangeEvent_1<T>,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UnregisterValueChangedCallback", (control, callback))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+INotifyValueChangedExtensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::INotifyValueChangedExtensions {

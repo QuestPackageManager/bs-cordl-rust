@@ -23,7 +23,58 @@ impl std::ops::DerefMut for crate::Oculus::Platform::RichPresence {
     }
 }
 #[cfg(feature = "Oculus+Platform+RichPresence")]
-impl crate::Oculus::Platform::RichPresence {}
+impl crate::Oculus::Platform::RichPresence {
+    pub fn Clear() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Clear", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetDestinations() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Request_1<
+                *mut crate::Oculus::Platform::Models::DestinationList,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Request_1<
+                *mut crate::Oculus::Platform::Models::DestinationList,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetDestinations", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetNextDestinationListPage(
+        list: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::DestinationList>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Request_1<
+                *mut crate::Oculus::Platform::Models::DestinationList,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Request_1<
+                *mut crate::Oculus::Platform::Models::DestinationList,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetNextDestinationListPage", (list))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Set(
+        richPresenceOptions: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::RichPresenceOptions,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Set", (richPresenceOptions))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "Oculus+Platform+RichPresence")]
 impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Platform::RichPresence {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

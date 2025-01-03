@@ -27,6 +27,18 @@ impl std::ops::DerefMut for crate::System::Security::Cryptography::Oid {
 }
 #[cfg(feature = "System+Security+Cryptography+Oid")]
 impl crate::System::Security::Cryptography::Oid {
+    pub fn FromOidValue(
+        oidValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        group: crate::System::Security::Cryptography::OidGroup,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::Oid>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::Oid,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromOidValue", (oidValue, group))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

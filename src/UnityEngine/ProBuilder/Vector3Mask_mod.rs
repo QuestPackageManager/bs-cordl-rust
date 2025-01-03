@@ -128,6 +128,84 @@ impl crate::UnityEngine::ProBuilder::Vector3Mask {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_BitwiseAnd(
+        left: crate::UnityEngine::ProBuilder::Vector3Mask,
+        right: crate::UnityEngine::ProBuilder::Vector3Mask,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ProBuilder::Vector3Mask> {
+        let __cordl_ret: crate::UnityEngine::ProBuilder::Vector3Mask = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_BitwiseAnd", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_BitwiseOr(
+        left: crate::UnityEngine::ProBuilder::Vector3Mask,
+        right: crate::UnityEngine::ProBuilder::Vector3Mask,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ProBuilder::Vector3Mask> {
+        let __cordl_ret: crate::UnityEngine::ProBuilder::Vector3Mask = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_BitwiseOr", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        left: crate::UnityEngine::ProBuilder::Vector3Mask,
+        right: crate::UnityEngine::ProBuilder::Vector3Mask,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_ExclusiveOr(
+        left: crate::UnityEngine::ProBuilder::Vector3Mask,
+        right: crate::UnityEngine::ProBuilder::Vector3Mask,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ProBuilder::Vector3Mask> {
+        let __cordl_ret: crate::UnityEngine::ProBuilder::Vector3Mask = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_ExclusiveOr", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Explicit(
+        v: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ProBuilder::Vector3Mask> {
+        let __cordl_ret: crate::UnityEngine::ProBuilder::Vector3Mask = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Explicit", (v))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit(
+        mask: crate::UnityEngine::ProBuilder::Vector3Mask,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (mask))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        left: crate::UnityEngine::ProBuilder::Vector3Mask,
+        right: crate::UnityEngine::ProBuilder::Vector3Mask,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Multiply_Quaternion_Vector3Mask2(
+        rotation: crate::UnityEngine::Quaternion,
+        mask: crate::UnityEngine::ProBuilder::Vector3Mask,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Multiply", (rotation, mask))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Multiply_Vector3Mask_Vector3_1(
+        mask: crate::UnityEngine::ProBuilder::Vector3Mask,
+        value: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Multiply", (mask, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Multiply_Vector3Mask_f32_0(
+        mask: crate::UnityEngine::ProBuilder::Vector3Mask,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Multiply", (mask, value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn set_Item(
         &mut self,
         i: i32,

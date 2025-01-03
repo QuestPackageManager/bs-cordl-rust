@@ -67,6 +67,30 @@ impl crate::System::Dynamic::DynamicMetaObjectBinder {
         > = __cordl_object.invoke("Bind", (args, parameters, returnLabel))?;
         Ok(__cordl_ret.into())
     }
+    pub fn CreateArgumentMetaObjects(
+        args: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        >,
+        parameters: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                *mut crate::System::Linq::Expressions::ParameterExpression,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Dynamic::DynamicMetaObject,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Dynamic::DynamicMetaObject,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateArgumentMetaObjects", (args, parameters))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetUpdateExpression(
         &mut self,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,

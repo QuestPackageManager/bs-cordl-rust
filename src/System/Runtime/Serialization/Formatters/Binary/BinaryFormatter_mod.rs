@@ -86,6 +86,19 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::BinaryFormatter 
         > = __cordl_object.invoke("Deserialize", (serializationStream))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetTypeInformation(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::Formatters::Binary::TypeInformation,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::Formatters::Binary::TypeInformation,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetTypeInformation", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

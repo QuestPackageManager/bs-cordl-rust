@@ -25,6 +25,27 @@ impl std::ops::DerefMut for crate::System::Globalization::JapaneseCalendar {
 }
 #[cfg(feature = "System+Globalization+JapaneseCalendar")]
 impl crate::System::Globalization::JapaneseCalendar {
+    pub fn EnglishEraNames() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EnglishEraNames", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EraNames() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("EraNames", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetDayOfMonth(
         &mut self,
         _cordl_time: crate::System::DateTime,
@@ -70,6 +91,15 @@ impl crate::System::Globalization::JapaneseCalendar {
         let __cordl_ret: i32 = __cordl_object.invoke("GetDaysInYear", (year, era))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetDefaultInstance() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Globalization::Calendar>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Globalization::Calendar,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetDefaultInstance", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetEra(
         &mut self,
         _cordl_time: crate::System::DateTime,
@@ -78,6 +108,35 @@ impl crate::System::Globalization::JapaneseCalendar {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetEra", (_cordl_time))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetEraInfo() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Globalization::EraInfo,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Globalization::EraInfo,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetEraInfo", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetErasFromRegistry() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Globalization::EraInfo,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Globalization::EraInfo,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetErasFromRegistry", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn GetMonth(

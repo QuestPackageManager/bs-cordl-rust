@@ -155,6 +155,17 @@ impl crate::UnityEngine::Timeline::AnimationTrack {
         > = __cordl_object.invoke("CreateClip", (clip))?;
         Ok(__cordl_ret.into())
     }
+    pub fn CreateGroupMixer(
+        graph: crate::UnityEngine::Playables::PlayableGraph,
+        go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        inputCount: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Animations::AnimationLayerMixerPlayable,
+    > {
+        let __cordl_ret: crate::UnityEngine::Animations::AnimationLayerMixerPlayable = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateGroupMixer", (graph, go, inputCount))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CreateInfiniteClip(
         &mut self,
         infiniteClipName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -213,6 +224,16 @@ impl crate::UnityEngine::Timeline::AnimationTrack {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::Timeline::TimelineClip,
         > = __cordl_object.invoke("CreateRecordableClip", (animClipName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FindInHierarchyBreadthFirst(
+        t: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FindInHierarchyBreadthFirst", (t, name))?;
         Ok(__cordl_ret.into())
     }
     pub fn GatherProperties(
@@ -414,6 +435,13 @@ impl crate::UnityEngine::Timeline::AnimationTrack {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateClipOffsets", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UsesAbsoluteMotion(
+        mode: crate::UnityEngine::Timeline::AppliedOffsetMode,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UsesAbsoluteMotion", (mode))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -992,7 +1020,29 @@ for crate::UnityEngine::Timeline::AnimationTrack_AnimationTrackUpgrade {
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+AnimationTrack+AnimationTrackUpgrade")]
-impl crate::UnityEngine::Timeline::AnimationTrack_AnimationTrackUpgrade {}
+impl crate::UnityEngine::Timeline::AnimationTrack_AnimationTrackUpgrade {
+    pub fn ConvertInfiniteTrack(
+        track: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::AnimationTrack>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ConvertInfiniteTrack", (track))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ConvertRootMotion(
+        track: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::AnimationTrack>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ConvertRootMotion", (track))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ConvertRotationsToEuler(
+        track: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::AnimationTrack>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ConvertRotationsToEuler", (track))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+Timeline+AnimationTrack+AnimationTrackUpgrade")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Timeline::AnimationTrack_AnimationTrackUpgrade {

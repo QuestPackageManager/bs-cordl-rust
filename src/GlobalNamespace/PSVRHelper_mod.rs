@@ -237,6 +237,13 @@ impl crate::GlobalNamespace::PSVRHelper {
             .invoke("Update", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn XRNodeToPSDeviceIndex(
+        node: crate::UnityEngine::XR::XRNode,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("XRNodeToPSDeviceIndex", (node))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

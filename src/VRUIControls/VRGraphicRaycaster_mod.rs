@@ -71,6 +71,24 @@ impl crate::VRUIControls::VRGraphicRaycaster {
             .invoke("Raycast", (eventData, resultAppendList))?;
         Ok(__cordl_ret.into())
     }
+    pub fn RaycastCanvas(
+        canvas: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
+        ray: crate::UnityEngine::Ray,
+        hitDistance: f32,
+        curvedUIRadius: f32,
+        results: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "RaycastCanvas",
+                (canvas, ray, hitDistance, curvedUIRadius, results),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

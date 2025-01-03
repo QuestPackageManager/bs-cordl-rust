@@ -308,6 +308,14 @@ impl crate::UnityEngine::InputSystem::PlayerInputManager {
             .invoke("get_fixedNumberOfSplitScreens", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_instance() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::PlayerInputManager>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::PlayerInputManager,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_instance", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_joinAction(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -354,6 +362,16 @@ impl crate::UnityEngine::InputSystem::PlayerInputManager {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_maxPlayerCount", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_messages() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_messages", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_notificationBehavior(
@@ -458,6 +476,15 @@ impl crate::UnityEngine::InputSystem::PlayerInputManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("remove_onPlayerLeft", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_instance(
+        value: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::PlayerInputManager,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_instance", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_joinAction(

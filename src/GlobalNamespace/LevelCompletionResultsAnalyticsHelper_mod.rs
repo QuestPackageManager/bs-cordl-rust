@@ -25,7 +25,23 @@ for crate::GlobalNamespace::LevelCompletionResultsAnalyticsHelper {
     }
 }
 #[cfg(feature = "LevelCompletionResultsAnalyticsHelper")]
-impl crate::GlobalNamespace::LevelCompletionResultsAnalyticsHelper {}
+impl crate::GlobalNamespace::LevelCompletionResultsAnalyticsHelper {
+    pub fn FillEventData(
+        levelCompletionResults: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::LevelCompletionResults,
+        >,
+        eventData: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<
+                *mut quest_hook::libil2cpp::Il2CppString,
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FillEventData", (levelCompletionResults, eventData))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "LevelCompletionResultsAnalyticsHelper")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::LevelCompletionResultsAnalyticsHelper {

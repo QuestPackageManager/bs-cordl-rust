@@ -97,6 +97,25 @@ impl crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionM
         > = __cordl_object.invoke("GetSpawnableEventBoxGroupTracks", (pageId))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetSpawnableEventBoxGroupTypeTracksForTrackInfo(
+        trackInfo: quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGroupTrackInfo,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionModel_SpawnableEventBoxGroupTypeTrack,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionModel_SpawnableEventBoxGroupTypeTrack,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSpawnableEventBoxGroupTypeTracksForTrackInfo", (trackInfo))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetToolbarTypesOnPage(
         &mut self,
         page: crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEventTrackPage,

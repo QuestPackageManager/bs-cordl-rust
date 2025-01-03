@@ -196,6 +196,19 @@ impl crate::System::Xml::XmlEventCache {
             .invoke("StartElementContent", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn ToBytes(
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        index: i32,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToBytes", (buffer, index, count))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn WriteBase64(
         &mut self,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,

@@ -23,7 +23,41 @@ impl std::ops::DerefMut for crate::Mono::Security::X509::X501 {
     }
 }
 #[cfg(feature = "Mono+Security+X509+X501")]
-impl crate::Mono::Security::X509::X501 {}
+impl crate::Mono::Security::X509::X501 {
+    pub fn AppendEntry(
+        sb: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+        entry: quest_hook::libil2cpp::Gc<crate::Mono::Security::ASN1>,
+        quotes: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AppendEntry", (sb, entry, quotes))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToString_ASN1_0(
+        seq: quest_hook::libil2cpp::Gc<crate::Mono::Security::ASN1>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("ToString", (seq))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToString__cordl_bool_Il2CppString__cordl_bool1(
+        seq: quest_hook::libil2cpp::Gc<crate::Mono::Security::ASN1>,
+        reversed: bool,
+        separator: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        quotes: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToString", (seq, reversed, separator, quotes))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "Mono+Security+X509+X501")]
 impl quest_hook::libil2cpp::ObjectType for crate::Mono::Security::X509::X501 {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

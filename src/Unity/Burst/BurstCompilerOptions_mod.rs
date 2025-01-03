@@ -136,6 +136,19 @@ impl crate::Unity::Burst::BurstCompilerOptions {
     pub const OptionTempDirectory: &'static str = "temp-folder=";
     pub const OptionValidateExternalToolChain: &'static str = "validate-external-tool-chain";
     pub const OptionVerbose: &'static str = "verbose";
+    pub fn AddOption(
+        builder: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+        option: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddOption", (builder, option))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CheckIsSecondaryUnityProcess() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckIsSecondaryUnityProcess", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Clone(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -147,6 +160,54 @@ impl crate::Unity::Burst::BurstCompilerOptions {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Unity::Burst::BurstCompilerOptions,
         > = __cordl_object.invoke("Clone", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DeserialiseCompilationOptionsSafe(
+        from: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::ValueTuple_3<
+            *mut quest_hook::libil2cpp::Il2CppArray<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
+            *mut quest_hook::libil2cpp::Il2CppArray<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+    > {
+        let __cordl_ret: crate::System::ValueTuple_3<
+            *mut quest_hook::libil2cpp::Il2CppArray<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
+            *mut quest_hook::libil2cpp::Il2CppArray<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
+            *mut quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DeserialiseCompilationOptionsSafe", (from))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetBurstCompileAttribute(
+        memberInfo: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Unity::Burst::BurstCompileAttribute>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Unity::Burst::BurstCompileAttribute,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetBurstCompileAttribute", (memberInfo))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetOption(
+        optionName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetOption", (optionName, value))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetOptions(
@@ -166,6 +227,13 @@ impl crate::Unity::Burst::BurstCompilerOptions {
             .invoke("GetOptions", (attr, isForILPostProcessing, isForCompilerClient))?;
         Ok(__cordl_ret.into())
     }
+    pub fn HasBurstCompileAttribute(
+        member: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("HasBurstCompileAttribute", (member))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn MaybeTriggerRecompilation(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -174,6 +242,18 @@ impl crate::Unity::Burst::BurstCompilerOptions {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MaybeTriggerRecompilation", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MergeAttributes(
+        memberAttribute: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::Unity::Burst::BurstCompileAttribute,
+        >,
+        assemblyAttribute: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::Unity::Burst::BurstCompileAttribute,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MergeAttributes", (memberAttribute, assemblyAttribute))?;
         Ok(__cordl_ret.into())
     }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -200,6 +280,43 @@ impl crate::Unity::Burst::BurstCompilerOptions {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnOptionsChanged", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SerialiseCompilationOptionsSafe(
+        roots: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+        folders: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+        options: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SerialiseCompilationOptionsSafe", (roots, folders, options))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryGetAttribute_Assembly1(
+        assembly: quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
+        attribute: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::Unity::Burst::BurstCompileAttribute,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryGetAttribute", (assembly, attribute))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryGetAttribute_MemberInfo0(
+        member: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+        attribute: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::Unity::Burst::BurstCompileAttribute,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryGetAttribute", (member, attribute))?;
         Ok(__cordl_ret.into())
     }
     pub fn TryGetOptions(

@@ -72,6 +72,13 @@ impl crate::UnityEngine::ProBuilder::SemVer {
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (version))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetBuildNumber(
+        input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetBuildNumber", (input))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -146,6 +153,21 @@ impl crate::UnityEngine::ProBuilder::SemVer {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("ToString", (format))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryGetVersionInfo(
+        input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        version: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::UnityEngine::ProBuilder::SemVer,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryGetVersionInfo", (input, version))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WrapNoValue(value: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WrapNoValue", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_0(
@@ -265,6 +287,54 @@ impl crate::UnityEngine::ProBuilder::SemVer {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("get_type", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        left: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SemVer>,
+        right: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SemVer>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_GreaterThan(
+        left: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SemVer>,
+        right: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SemVer>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_GreaterThan", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_GreaterThanOrEqual(
+        left: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SemVer>,
+        right: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SemVer>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_GreaterThanOrEqual", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        left: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SemVer>,
+        right: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SemVer>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_LessThan(
+        left: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SemVer>,
+        right: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SemVer>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_LessThan", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_LessThanOrEqual(
+        left: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SemVer>,
+        right: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SemVer>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_LessThanOrEqual", (left, right))?;
         Ok(__cordl_ret.into())
     }
 }

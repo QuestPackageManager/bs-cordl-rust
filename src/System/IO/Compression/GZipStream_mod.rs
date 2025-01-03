@@ -279,6 +279,13 @@ impl crate::System::IO::Compression::GZipStream {
             .invoke("SetLength", (value))?;
         Ok(__cordl_ret.into())
     }
+    pub fn ThrowStreamClosedException() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ThrowStreamClosedException", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn WriteAsync_Il2CppArray_i32_i32_CancellationToken0(
         &mut self,
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,

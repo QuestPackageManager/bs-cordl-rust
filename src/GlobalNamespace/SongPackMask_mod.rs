@@ -48,6 +48,13 @@ impl crate::GlobalNamespace::SongPackMask {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn Deserialize(
+        reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::SongPackMask> {
+        let __cordl_ret: crate::GlobalNamespace::SongPackMask = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Deserialize", (reader))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn DifferenceFrom(
         &mut self,
         other: crate::GlobalNamespace::SongPackMask,
@@ -81,12 +88,29 @@ impl crate::GlobalNamespace::SongPackMask {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn FromBytes(
+        bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        offset: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::SongPackMask> {
+        let __cordl_ret: crate::GlobalNamespace::SongPackMask = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromBytes", (bytes, offset))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "GetHashCode",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Parse(
+        stringSerializedMask: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::SongPackMask> {
+        let __cordl_ret: crate::GlobalNamespace::SongPackMask = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Parse", (stringSerializedMask))?;
         Ok(__cordl_ret.into())
     }
     pub fn Serialize(
@@ -130,6 +154,18 @@ impl crate::GlobalNamespace::SongPackMask {
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn TryParse(
+        stringSerializedMask: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+        songPackMask: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::SongPackMask,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryParse", (stringSerializedMask, songPackMask))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor_BitMask256_1(
         &mut self,
         bloomFilter: crate::GlobalNamespace::BitMask256,
@@ -165,6 +201,52 @@ impl crate::GlobalNamespace::SongPackMask {
             ".ctor",
             (packId),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_all() -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::SongPackMask,
+    > {
+        let __cordl_ret: crate::GlobalNamespace::SongPackMask = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_all", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_BitwiseAnd(
+        a: crate::GlobalNamespace::SongPackMask,
+        b: crate::GlobalNamespace::SongPackMask,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::SongPackMask> {
+        let __cordl_ret: crate::GlobalNamespace::SongPackMask = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_BitwiseAnd", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_BitwiseOr(
+        a: crate::GlobalNamespace::SongPackMask,
+        b: crate::GlobalNamespace::SongPackMask,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::SongPackMask> {
+        let __cordl_ret: crate::GlobalNamespace::SongPackMask = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_BitwiseOr", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        a: crate::GlobalNamespace::SongPackMask,
+        b: crate::GlobalNamespace::SongPackMask,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit(
+        id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::SongPackMask> {
+        let __cordl_ret: crate::GlobalNamespace::SongPackMask = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (id))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        a: crate::GlobalNamespace::SongPackMask,
+        b: crate::GlobalNamespace::SongPackMask,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (a, b))?;
         Ok(__cordl_ret.into())
     }
 }

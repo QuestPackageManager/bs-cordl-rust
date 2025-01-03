@@ -45,6 +45,17 @@ impl crate::Org::BouncyCastle::Cmp::GeneralPkiMessage {
             .invoke_void(".ctor", (pkiMessage))?;
         Ok(__cordl_object.into())
     }
+    pub fn ParseBytes(
+        encoding: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cmp::PkiMessage>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cmp::PkiMessage,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ParseBytes", (encoding))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ToAsn1Structure(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

@@ -54,6 +54,49 @@ impl crate::Org::BouncyCastle::X509::Store::X509CertStoreSelector {
         > = __cordl_object.invoke("Clone", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn CopyBoolArray(
+        b: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<bool>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<bool>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<bool>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("CopyBoolArray", (b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CopySet(
+        s: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Utilities::Collections::ISet>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Utilities::Collections::ISet,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("CopySet", (s))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetSubjectPublicKey(
+        c: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Certificate>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::SubjectPublicKeyInfo,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::SubjectPublicKeyInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSubjectPublicKey", (c))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IssuersMatch(
+        a: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::X509Name>,
+        b: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::X509Name>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IssuersMatch", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Match(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -62,6 +105,17 @@ impl crate::Org::BouncyCastle::X509::Store::X509CertStoreSelector {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Match", (obj))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MatchExtension(
+        b: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        c: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Certificate>,
+        oid: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MatchExtension", (b, c, oid))?;
         Ok(__cordl_ret.into())
     }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

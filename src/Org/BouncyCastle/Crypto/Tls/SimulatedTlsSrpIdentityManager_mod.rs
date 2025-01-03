@@ -46,6 +46,22 @@ impl crate::Org::BouncyCastle::Crypto::Tls::SimulatedTlsSrpIdentityManager {
         > = __cordl_object.invoke("GetLoginParameters", (identity))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetRfc5054Default(
+        group: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Parameters::Srp6GroupParameters,
+        >,
+        seedKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::SimulatedTlsSrpIdentityManager,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::SimulatedTlsSrpIdentityManager,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetRfc5054Default", (group, seedKey))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         group: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::Parameters::Srp6GroupParameters,

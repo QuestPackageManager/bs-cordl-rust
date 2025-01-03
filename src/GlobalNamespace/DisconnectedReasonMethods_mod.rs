@@ -32,6 +32,28 @@ impl crate::GlobalNamespace::DisconnectedReasonMethods {
     pub const kDisconnectedTimeout: &'static str = "DISCONNECTED_TIMEOUT";
     pub const kDisconnectedUnknown: &'static str = "DISCONNECTED_UNKNOWN";
     pub const kDisconnectedUserInitiated: &'static str = "DISCONNECTED_USER_INITIATED";
+    pub fn ErrorCode(
+        disconnectedReason: crate::GlobalNamespace::DisconnectedReason,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ErrorCode", (disconnectedReason))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LocalizedKey(
+        connectionFailedReason: crate::GlobalNamespace::DisconnectedReason,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LocalizedKey", (connectionFailedReason))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "DisconnectedReasonMethods")]
 impl quest_hook::libil2cpp::ObjectType

@@ -28,6 +28,14 @@ impl std::ops::DerefMut for crate::System::Globalization::SortKey {
 }
 #[cfg(feature = "System+Globalization+SortKey")]
 impl crate::System::Globalization::SortKey {
+    pub fn Compare(
+        sortkey1: quest_hook::libil2cpp::Gc<crate::System::Globalization::SortKey>,
+        sortkey2: quest_hook::libil2cpp::Gc<crate::System::Globalization::SortKey>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Compare", (sortkey1, sortkey2))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Equals(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

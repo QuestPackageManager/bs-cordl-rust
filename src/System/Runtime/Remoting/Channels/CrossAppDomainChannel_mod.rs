@@ -52,6 +52,13 @@ impl crate::System::Runtime::Remoting::Channels::CrossAppDomainChannel {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
+    pub fn RegisterCrossAppDomainChannel() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RegisterCrossAppDomainChannel", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn StartListening(
         &mut self,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

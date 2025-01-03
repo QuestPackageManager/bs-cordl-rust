@@ -313,6 +313,25 @@ impl crate::System::Xml::XmlLoader {
             .invoke("ParsePartialContent", (parentNode, innerxmltext, nt))?;
         Ok(__cordl_ret.into())
     }
+    pub fn ParseXmlDeclarationValue(
+        strValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        version: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+        encoding: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+        standalone: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ParseXmlDeclarationValue",
+                (strValue, version, encoding, standalone),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ReadCurrentNode(
         &mut self,
         doc: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlDocument>,
@@ -338,6 +357,15 @@ impl crate::System::Xml::XmlLoader {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RemoveDuplicateNamespace", (elem, mgr, fCheckElemAttrs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UnexpectedNodeType(
+        nodetype: crate::System::Xml::XmlNodeType,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UnexpectedNodeType", (nodetype))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

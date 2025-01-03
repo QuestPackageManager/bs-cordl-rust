@@ -158,6 +158,19 @@ impl crate::System::Data::NameNode {
         > = __cordl_object.invoke("Optimize", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn ParseName(
+        text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+        start: i32,
+        pos: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ParseName", (text, start, pos))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor_Il2CppArray_i32_i32_0(
         &mut self,
         table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,

@@ -602,6 +602,11 @@ impl crate::System::ComponentModel::TypeConverter {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_UseCompatibleTypeConversion() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_UseCompatibleTypeConversion", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "System+ComponentModel+TypeConverter")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::ComponentModel::TypeConverter {

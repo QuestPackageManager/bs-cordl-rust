@@ -23,7 +23,19 @@ impl std::ops::DerefMut for crate::GlobalNamespace::ComponentExtensions {
     }
 }
 #[cfg(feature = "ComponentExtensions")]
-impl crate::GlobalNamespace::ComponentExtensions {}
+impl crate::GlobalNamespace::ComponentExtensions {
+    pub fn GetComponentInParentOnly<T>(
+        c: quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetComponentInParentOnly", (c))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "ComponentExtensions")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ComponentExtensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -55,6 +55,13 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsReliableHandshake {
         let __cordl_ret: i32 = __cordl_object.invoke("BackOff", (timeoutMillis))?;
         Ok(__cordl_ret.into())
     }
+    pub fn CheckAll(
+        inboundFlight: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckAll", (inboundFlight))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CheckInboundFlight(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -193,6 +200,13 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsReliableHandshake {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ResendOutboundFlight", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ResetAll(
+        inboundFlight: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ResetAll", (inboundFlight))?;
         Ok(__cordl_ret.into())
     }
     pub fn ResetHandshakeMessagesDigest(

@@ -46,6 +46,18 @@ impl crate::UnityEngine::MaterialPropertyBlock {
             .invoke("Clear", (keepMemory))?;
         Ok(__cordl_ret.into())
     }
+    pub fn CreateImpl() -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateImpl", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DestroyImpl(
+        mpb: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DestroyImpl", (mpb))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

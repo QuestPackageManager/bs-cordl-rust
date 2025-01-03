@@ -36,4 +36,12 @@ impl crate::TMPro::GlyphValueRecord_Legacy {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Addition(
+        a: crate::TMPro::GlyphValueRecord_Legacy,
+        b: crate::TMPro::GlyphValueRecord_Legacy,
+    ) -> quest_hook::libil2cpp::Result<crate::TMPro::GlyphValueRecord_Legacy> {
+        let __cordl_ret: crate::TMPro::GlyphValueRecord_Legacy = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Addition", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
 }

@@ -199,6 +199,17 @@ impl crate::System::Data::DataSet {
             .invoke("FindTable", (baseTable, props, propStart))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetDataSetSchema(
+        schemaSet: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSet>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaComplexType>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaComplexType,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetDataSetSchema", (schemaSet))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetObjectData(
         &mut self,
         info: quest_hook::libil2cpp::Gc<
@@ -297,7 +308,14 @@ impl crate::System::Data::DataSet {
             .invoke("Merge", (dataSet, preserveChanges, missingSchemaAction))?;
         Ok(__cordl_ret.into())
     }
-    pub fn MoveToElement(
+    pub fn MoveToElement_XmlReader1(
+        reader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MoveToElement", (reader))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MoveToElement_i32_0(
         &mut self,
         reader: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
         depth: i32,

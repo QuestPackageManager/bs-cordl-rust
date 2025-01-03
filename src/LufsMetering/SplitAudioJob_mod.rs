@@ -24,6 +24,16 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::LufsMetering::SplitAu
 }
 #[cfg(feature = "LufsMetering+SplitAudioJob")]
 impl crate::LufsMetering::SplitAudioJob {
+    pub fn Create(
+        interleavedData: crate::Unity::Collections::NativeArray_1<f32>,
+        channelData: crate::Unity::Collections::NativeArray_1<f32>,
+        numChannels: i32,
+        channel: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::LufsMetering::SplitAudioJob> {
+        let __cordl_ret: crate::LufsMetering::SplitAudioJob = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (interleavedData, channelData, numChannels, channel))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Execute(
         &mut self,
         i: i32,

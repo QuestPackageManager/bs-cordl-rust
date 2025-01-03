@@ -46,6 +46,14 @@ impl crate::UnityEngine::MonoBehaviour {
             .invoke("CancelInvoke", (methodName))?;
         Ok(__cordl_ret.into())
     }
+    pub fn CancelInvoke_MonoBehaviour_Il2CppString2(
+        _cordl_self: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+        methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CancelInvoke", (_cordl_self, methodName))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetScriptClassName(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -59,6 +67,20 @@ impl crate::UnityEngine::MonoBehaviour {
         > = __cordl_object.invoke("GetScriptClassName", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn Internal_CancelInvokeAll(
+        _cordl_self: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Internal_CancelInvokeAll", (_cordl_self))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Internal_IsInvokingAll(
+        _cordl_self: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Internal_IsInvokingAll", (_cordl_self))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Invoke(
         &mut self,
         methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -69,6 +91,19 @@ impl crate::UnityEngine::MonoBehaviour {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Invoke", (methodName, _cordl_time))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InvokeDelayed(
+        _cordl_self: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+        methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        _cordl_time: f32,
+        repeatRate: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "InvokeDelayed",
+                (_cordl_self, methodName, _cordl_time, repeatRate),
+            )?;
         Ok(__cordl_ret.into())
     }
     pub fn InvokeRepeating(
@@ -99,6 +134,21 @@ impl crate::UnityEngine::MonoBehaviour {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("IsInvoking", (methodName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsInvoking_MonoBehaviour_Il2CppString2(
+        _cordl_self: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+        methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsInvoking", (_cordl_self, methodName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsObjectMonoBehaviour(
+        obj: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsObjectMonoBehaviour", (obj))?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -298,6 +348,13 @@ impl crate::UnityEngine::MonoBehaviour {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_useGUILayout", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn print(
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("print", (message))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_useGUILayout(

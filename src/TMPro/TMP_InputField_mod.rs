@@ -1411,6 +1411,14 @@ impl crate::TMPro::TMP_InputField {
             .invoke("get_characterValidation", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_clipboard() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_clipboard", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_compositionLength(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -2037,6 +2045,13 @@ impl crate::TMPro::TMP_InputField {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_characterValidation", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_clipboard(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_clipboard", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_contentType(

@@ -103,6 +103,13 @@ impl crate::GlobalNamespace::NetworkPlayersTableView {
             .invoke("HandleCellWasPressed", (tableView, tableCell))?;
         Ok(__cordl_ret.into())
     }
+    pub fn HasVisibleOptions(
+        player: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("HasVisibleOptions", (player))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

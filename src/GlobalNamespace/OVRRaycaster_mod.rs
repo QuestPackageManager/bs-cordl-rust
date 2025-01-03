@@ -87,6 +87,15 @@ impl crate::GlobalNamespace::OVRRaycaster {
             .invoke("OnPointerEnter", (e))?;
         Ok(__cordl_ret.into())
     }
+    pub fn RayIntersectsRectTransform(
+        rectTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
+        ray: crate::UnityEngine::Ray,
+        worldPos: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RayIntersectsRectTransform", (rectTransform, ray, worldPos))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn RaycastPointer(
         &mut self,
         eventData: quest_hook::libil2cpp::Gc<

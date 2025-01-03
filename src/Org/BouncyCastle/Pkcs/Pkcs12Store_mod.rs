@@ -42,6 +42,27 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs12Store {
     pub type CertId = crate::Org::BouncyCastle::Pkcs::Pkcs12Store_CertId;
     #[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs12Store+IgnoresCaseHashtable")]
     pub type IgnoresCaseHashtable = crate::Org::BouncyCastle::Pkcs::Pkcs12Store_IgnoresCaseHashtable;
+    pub fn CalculatePbeMac(
+        oid: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
+        salt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        itCount: i32,
+        password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+        wrongPkcs12Zero: bool,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CalculatePbeMac",
+                (oid, salt, itCount, password, wrongPkcs12Zero, data),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ContainsAlias(
         &mut self,
         alias: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -50,6 +71,41 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs12Store {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("ContainsAlias", (alias))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateSubjectKeyID(
+        pubKey: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::SubjectKeyIdentifier,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::SubjectKeyIdentifier,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateSubjectKeyID", (pubKey))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CryptPbeData(
+        forEncryption: bool,
+        algId: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        >,
+        password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+        wrongPkcs12Zero: bool,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CryptPbeData",
+                (forEncryption, algId, password, wrongPkcs12Zero, data),
+            )?;
         Ok(__cordl_ret.into())
     }
     pub fn DeleteEntry(

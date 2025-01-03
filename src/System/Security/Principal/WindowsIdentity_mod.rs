@@ -53,6 +53,19 @@ impl crate::System::Security::Principal::WindowsIdentity {
             .invoke("Dispose", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetCurrent() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Security::Principal::WindowsIdentity>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Principal::WindowsIdentity,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetCurrent", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCurrentToken() -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCurrentToken", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetTokenInternal(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
@@ -61,6 +74,17 @@ impl crate::System::Security::Principal::WindowsIdentity {
         );
         let __cordl_ret: crate::System::IntPtr = __cordl_object
             .invoke("GetTokenInternal", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetTokenName(
+        token: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetTokenName", (token))?;
         Ok(__cordl_ret.into())
     }
     pub fn Impersonate(

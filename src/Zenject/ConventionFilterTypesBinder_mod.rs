@@ -156,6 +156,14 @@ impl crate::Zenject::ConventionFilterTypesBinder {
         > = __cordl_object.invoke("InNamespaces", (namespaces))?;
         Ok(__cordl_ret.into())
     }
+    pub fn IsInNamespace(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        requiredNs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsInNamespace", (_cordl_type, requiredNs))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn MatchingRegex_Il2CppString0(
         &mut self,
         pattern: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

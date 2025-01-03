@@ -22,6 +22,14 @@ for crate::Unity::Mathematics::quaternion {
 }
 #[cfg(feature = "Unity+Mathematics+quaternion")]
 impl crate::Unity::Mathematics::quaternion {
+    pub fn AxisAngle(
+        axis: crate::Unity::Mathematics::float3,
+        angle: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::quaternion> {
+        let __cordl_ret: crate::Unity::Mathematics::quaternion = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AxisAngle", (axis, angle))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Equals_Il2CppObject1(
         &mut self,
         x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -44,12 +52,163 @@ impl crate::Unity::Mathematics::quaternion {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn EulerXYZ_f32_f32_f32_1(
+        x: f32,
+        y: f32,
+        z: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::quaternion> {
+        let __cordl_ret: crate::Unity::Mathematics::quaternion = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EulerXYZ", (x, y, z))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EulerXYZ_float3_0(
+        xyz: crate::Unity::Mathematics::float3,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::quaternion> {
+        let __cordl_ret: crate::Unity::Mathematics::quaternion = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EulerXYZ", (xyz))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EulerXZY_f32_f32_f32_1(
+        x: f32,
+        y: f32,
+        z: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::quaternion> {
+        let __cordl_ret: crate::Unity::Mathematics::quaternion = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EulerXZY", (x, y, z))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EulerXZY_float3_0(
+        xyz: crate::Unity::Mathematics::float3,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::quaternion> {
+        let __cordl_ret: crate::Unity::Mathematics::quaternion = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EulerXZY", (xyz))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EulerYXZ_f32_f32_f32_1(
+        x: f32,
+        y: f32,
+        z: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::quaternion> {
+        let __cordl_ret: crate::Unity::Mathematics::quaternion = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EulerYXZ", (x, y, z))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EulerYXZ_float3_0(
+        xyz: crate::Unity::Mathematics::float3,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::quaternion> {
+        let __cordl_ret: crate::Unity::Mathematics::quaternion = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EulerYXZ", (xyz))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EulerYZX_f32_f32_f32_1(
+        x: f32,
+        y: f32,
+        z: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::quaternion> {
+        let __cordl_ret: crate::Unity::Mathematics::quaternion = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EulerYZX", (x, y, z))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EulerYZX_float3_0(
+        xyz: crate::Unity::Mathematics::float3,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::quaternion> {
+        let __cordl_ret: crate::Unity::Mathematics::quaternion = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EulerYZX", (xyz))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EulerZXY_f32_f32_f32_1(
+        x: f32,
+        y: f32,
+        z: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::quaternion> {
+        let __cordl_ret: crate::Unity::Mathematics::quaternion = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EulerZXY", (x, y, z))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EulerZXY_float3_0(
+        xyz: crate::Unity::Mathematics::float3,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::quaternion> {
+        let __cordl_ret: crate::Unity::Mathematics::quaternion = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EulerZXY", (xyz))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EulerZYX_f32_f32_f32_1(
+        x: f32,
+        y: f32,
+        z: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::quaternion> {
+        let __cordl_ret: crate::Unity::Mathematics::quaternion = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EulerZYX", (x, y, z))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EulerZYX_float3_0(
+        xyz: crate::Unity::Mathematics::float3,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::quaternion> {
+        let __cordl_ret: crate::Unity::Mathematics::quaternion = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EulerZYX", (xyz))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Euler_f32_f32_f32_math_RotationOrder1(
+        x: f32,
+        y: f32,
+        z: f32,
+        order: crate::Unity::Mathematics::math_RotationOrder,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::quaternion> {
+        let __cordl_ret: crate::Unity::Mathematics::quaternion = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Euler", (x, y, z, order))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Euler_float3_math_RotationOrder0(
+        xyz: crate::Unity::Mathematics::float3,
+        order: crate::Unity::Mathematics::math_RotationOrder,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::quaternion> {
+        let __cordl_ret: crate::Unity::Mathematics::quaternion = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Euler", (xyz, order))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "GetHashCode",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LookRotation(
+        forward: crate::Unity::Mathematics::float3,
+        up: crate::Unity::Mathematics::float3,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::quaternion> {
+        let __cordl_ret: crate::Unity::Mathematics::quaternion = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LookRotation", (forward, up))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LookRotationSafe(
+        forward: crate::Unity::Mathematics::float3,
+        up: crate::Unity::Mathematics::float3,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::quaternion> {
+        let __cordl_ret: crate::Unity::Mathematics::quaternion = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LookRotationSafe", (forward, up))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RotateX(
+        angle: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::quaternion> {
+        let __cordl_ret: crate::Unity::Mathematics::quaternion = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RotateX", (angle))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RotateY(
+        angle: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::quaternion> {
+        let __cordl_ret: crate::Unity::Mathematics::quaternion = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RotateY", (angle))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RotateZ(
+        angle: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::quaternion> {
+        let __cordl_ret: crate::Unity::Mathematics::quaternion = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RotateZ", (angle))?;
         Ok(__cordl_ret.into())
     }
     pub fn ToString_0(
@@ -123,6 +282,27 @@ impl crate::Unity::Mathematics::quaternion {
             ".ctor",
             (m),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_Quaternion1(
+        q: crate::UnityEngine::Quaternion,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::quaternion> {
+        let __cordl_ret: crate::Unity::Mathematics::quaternion = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (q))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_float4_2(
+        v: crate::Unity::Mathematics::float4,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Mathematics::quaternion> {
+        let __cordl_ret: crate::Unity::Mathematics::quaternion = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (v))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_quaternion0(
+        q: crate::Unity::Mathematics::quaternion,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
+        let __cordl_ret: crate::UnityEngine::Quaternion = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (q))?;
         Ok(__cordl_ret.into())
     }
 }

@@ -25,6 +25,17 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::DoubleLinkAxis {
 }
 #[cfg(feature = "System+Xml+Schema+DoubleLinkAxis")]
 impl crate::System::Xml::Schema::DoubleLinkAxis {
+    pub fn ConvertTree(
+        axis: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::Axis>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::DoubleLinkAxis>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::DoubleLinkAxis,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ConvertTree", (axis))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         axis: quest_hook::libil2cpp::Gc<crate::MS::Internal::Xml::XPath::Axis>,
         inputaxis: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::DoubleLinkAxis>,

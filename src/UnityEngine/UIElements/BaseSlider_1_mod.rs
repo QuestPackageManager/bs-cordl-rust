@@ -202,6 +202,17 @@ impl<
             .invoke("GetClampedValue", (newValue))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetClosestPowerOfTen(
+        positiveNumber: f32,
+    ) -> quest_hook::libil2cpp::Result<f32>
+    where
+        TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetClosestPowerOfTen", (positiveNumber))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         label: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         start: TValueType,
@@ -359,6 +370,18 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RegisterEditingCallbacks", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RoundToMultipleOf(
+        value: f32,
+        roundingValue: f32,
+    ) -> quest_hook::libil2cpp::Result<f32>
+    where
+        TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RoundToMultipleOf", (value, roundingValue))?;
         Ok(__cordl_ret.into())
     }
     pub fn SameValues(

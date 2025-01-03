@@ -22,6 +22,14 @@ for crate::System::Data::SqlTypes::SqlGuid {
 }
 #[cfg(feature = "System+Data+SqlTypes+SqlGuid")]
 impl crate::System::Data::SqlTypes::SqlGuid {
+    pub fn Compare(
+        x: crate::System::Data::SqlTypes::SqlGuid,
+        y: crate::System::Data::SqlTypes::SqlGuid,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::EComparison> {
+        let __cordl_ret: crate::System::Data::SqlTypes::EComparison = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Compare", (x, y))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CompareTo_Il2CppObject0(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -61,6 +69,17 @@ impl crate::System::Data::SqlTypes::SqlGuid {
             "GetHashCode",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetXsdType(
+        schemaSet: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSet>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::XmlQualifiedName,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetXsdType", (schemaSet))?;
         Ok(__cordl_ret.into())
     }
     pub fn System_Xml_Serialization_IXmlSerializable_GetSchema(
@@ -145,6 +164,37 @@ impl crate::System::Data::SqlTypes::SqlGuid {
             "get_Value",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        x: crate::System::Data::SqlTypes::SqlGuid,
+        y: crate::System::Data::SqlTypes::SqlGuid,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlBoolean> {
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlBoolean = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (x, y))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_GreaterThan(
+        x: crate::System::Data::SqlTypes::SqlGuid,
+        y: crate::System::Data::SqlTypes::SqlGuid,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlBoolean> {
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlBoolean = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_GreaterThan", (x, y))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit(
+        x: crate::System::Guid,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlGuid> {
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlGuid = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (x))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_LessThan(
+        x: crate::System::Data::SqlTypes::SqlGuid,
+        y: crate::System::Data::SqlTypes::SqlGuid,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Data::SqlTypes::SqlBoolean> {
+        let __cordl_ret: crate::System::Data::SqlTypes::SqlBoolean = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_LessThan", (x, y))?;
         Ok(__cordl_ret.into())
     }
 }

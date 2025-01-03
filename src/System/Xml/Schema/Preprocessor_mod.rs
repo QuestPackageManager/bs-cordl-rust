@@ -174,6 +174,15 @@ impl crate::System::Xml::Schema::Preprocessor {
             .invoke("Execute", (schema, targetNamespace, loadExternals))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetBuildInSchema() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchema,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetBuildInSchema", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetChameleonSchema(
         &mut self,
         targetNamespace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -199,6 +208,19 @@ impl crate::System::Xml::Schema::Preprocessor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("GetIncludedSet", (schema, includesList))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetParentSchema(
+        currentSchemaObject: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaObject,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchema>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchema,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetParentSchema", (currentSchemaObject))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetSchemaEntity(

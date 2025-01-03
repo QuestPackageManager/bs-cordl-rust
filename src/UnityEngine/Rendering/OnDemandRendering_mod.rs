@@ -23,7 +23,20 @@ impl std::ops::DerefMut for crate::UnityEngine::Rendering::OnDemandRendering {
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+OnDemandRendering")]
-impl crate::UnityEngine::Rendering::OnDemandRendering {}
+impl crate::UnityEngine::Rendering::OnDemandRendering {
+    pub fn GetRenderFrameInterval(
+        frameInterval: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetRenderFrameInterval", (frameInterval))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_renderFrameInterval() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_renderFrameInterval", ())?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+Rendering+OnDemandRendering")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Rendering::OnDemandRendering {

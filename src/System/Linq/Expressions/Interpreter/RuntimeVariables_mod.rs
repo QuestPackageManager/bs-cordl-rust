@@ -30,6 +30,22 @@ for crate::System::Linq::Expressions::Interpreter::RuntimeVariables {
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+RuntimeVariables")]
 impl crate::System::Linq::Expressions::Interpreter::RuntimeVariables {
+    pub fn Create(
+        boxes: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Runtime::CompilerServices::IStrongBox,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::CompilerServices::IRuntimeVariables,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::CompilerServices::IRuntimeVariables,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Create", (boxes))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         boxes: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<

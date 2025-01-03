@@ -29,6 +29,11 @@ impl crate::Org::BouncyCastle::Asn1::DerInteger {
     pub const AllowUnsafeProperty: &'static str = "Org.BouncyCastle.Asn1.AllowUnsafeInteger";
     pub const SignExtSigned: i32 = -1i32;
     pub const SignExtUnsigned: i32 = 255i32;
+    pub fn AllowUnsafe() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AllowUnsafe", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Asn1Equals(
         &mut self,
         asn1Object: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Object>,
@@ -59,6 +64,28 @@ impl crate::Org::BouncyCastle::Asn1::DerInteger {
             .invoke("Encode", (derOut))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetInstance_Asn1TaggedObject__cordl_bool1(
+        obj: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1TaggedObject>,
+        isExplicit: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerInteger,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetInstance", (obj, isExplicit))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetInstance_Il2CppObject0(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerInteger>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerInteger,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn HasValue(
         &mut self,
         x: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
@@ -67,6 +94,31 @@ impl crate::Org::BouncyCastle::Asn1::DerInteger {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("HasValue", (x))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IntValue(
+        bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        start: i32,
+        signExt: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IntValue", (bytes, start, signExt))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsMalformed(
+        bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsMalformed", (bytes))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LongValue(
+        bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        start: i32,
+        signExt: i32,
+    ) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LongValue", (bytes, start, signExt))?;
         Ok(__cordl_ret.into())
     }
     pub fn New_BigInteger2(
@@ -114,6 +166,13 @@ impl crate::Org::BouncyCastle::Asn1::DerInteger {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (value))?;
         Ok(__cordl_object.into())
+    }
+    pub fn SignBytesToSkip(
+        bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SignBytesToSkip", (bytes))?;
+        Ok(__cordl_ret.into())
     }
     pub fn ToString(
         &mut self,

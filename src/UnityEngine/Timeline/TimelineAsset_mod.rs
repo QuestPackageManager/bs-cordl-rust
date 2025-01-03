@@ -54,6 +54,18 @@ impl crate::UnityEngine::Timeline::TimelineAsset {
     pub type Versions = crate::UnityEngine::Timeline::TimelineAsset_Versions;
     #[cfg(feature = "UnityEngine+Timeline+TimelineAsset+_get_outputs_d__27")]
     pub type _get_outputs_d__27 = crate::UnityEngine::Timeline::TimelineAsset__get_outputs_d__27;
+    pub fn AddSubTracksRecursive(
+        track: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
+        allTracks: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::Timeline::TrackAsset,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddSubTracksRecursive", (track, allTracks))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn AddTrackInternal(
         &mut self,
         track: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
@@ -294,6 +306,11 @@ impl crate::UnityEngine::Timeline::TimelineAsset {
                 *mut crate::UnityEngine::Timeline::TrackAsset,
             >,
         > = __cordl_object.invoke("GetRootTracks", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetValidFrameRate(frameRate: f64) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_ret: f64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetValidFrameRate", (frameRate))?;
         Ok(__cordl_ret.into())
     }
     pub fn Invalidate(

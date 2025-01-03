@@ -130,6 +130,20 @@ impl crate::UnityEngine::UIElements::KeyboardNavigationManipulator {
             .invoke("UnregisterCallbacksFromTarget", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn _OnKeyDown_g__GetOperation_4_0(
+        _cordl_fixed_empty_name_whitespace: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::UIElements::KeyboardNavigationManipulator___c__DisplayClass4_0,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::KeyboardNavigationOperation,
+    > {
+        let __cordl_ret: crate::UnityEngine::UIElements::KeyboardNavigationOperation = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "<OnKeyDown>g__GetOperation|4_0",
+                (_cordl_fixed_empty_name_whitespace),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
         action: quest_hook::libil2cpp::Gc<

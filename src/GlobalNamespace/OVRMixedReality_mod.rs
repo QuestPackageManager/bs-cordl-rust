@@ -23,7 +23,33 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRMixedReality {
     }
 }
 #[cfg(feature = "OVRMixedReality")]
-impl crate::GlobalNamespace::OVRMixedReality {}
+impl crate::GlobalNamespace::OVRMixedReality {
+    pub fn Cleanup() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Cleanup", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RecenterPose() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RecenterPose", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Update(
+        parentObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        mainCamera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+        configuration: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OVRMixedRealityCaptureConfiguration,
+        >,
+        trackingOrigin: crate::GlobalNamespace::OVRManager_TrackingOrigin,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "Update",
+                (parentObject, mainCamera, configuration, trackingOrigin),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "OVRMixedReality")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRMixedReality {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

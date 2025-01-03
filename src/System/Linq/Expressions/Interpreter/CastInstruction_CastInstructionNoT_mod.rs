@@ -57,6 +57,18 @@ impl crate::GlobalNamespace::CastInstruction_CastInstructionNoT {
             .invoke("ConvertNull", (frame))?;
         Ok(__cordl_ret.into())
     }
+    pub fn Create(
+        t: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::CastInstruction,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::CastInstruction,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Create", (t))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         t: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

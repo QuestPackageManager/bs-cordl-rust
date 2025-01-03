@@ -165,6 +165,16 @@ impl crate::UnityEngine::UIElements::BaseRuntimePanel {
             .invoke("add_destroyed", (value))?;
         Ok(__cordl_ret.into())
     }
+    pub fn getScreenRenderingHeight(display: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("getScreenRenderingHeight", (display))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn getScreenRenderingWidth(display: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("getScreenRenderingWidth", (display))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_drawToCameras(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

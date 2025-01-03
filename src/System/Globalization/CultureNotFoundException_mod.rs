@@ -105,6 +105,15 @@ impl crate::System::Globalization::CultureNotFoundException {
             .invoke(".ctor", (info, context))?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_DefaultMessage() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_DefaultMessage", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_FormatedInvalidCultureId(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

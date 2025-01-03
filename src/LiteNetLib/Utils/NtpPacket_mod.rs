@@ -38,6 +38,18 @@ impl crate::LiteNetLib::Utils::NtpPacket {
             .invoke("CheckTimestamps", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn FromServerResponse(
+        bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        destinationTimestamp: crate::System::DateTime,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NtpPacket>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::LiteNetLib::Utils::NtpPacket,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromServerResponse", (bytes, destinationTimestamp))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetDateTime64(
         &mut self,
         offset: i32,
@@ -121,6 +133,16 @@ impl crate::LiteNetLib::Utils::NtpPacket {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetUInt64BE", (offset, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SwapEndianness_u32_0(x: u32) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SwapEndianness", (x))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SwapEndianness_u64_1(x: u64) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SwapEndianness", (x))?;
         Ok(__cordl_ret.into())
     }
     pub fn ValidateReply(

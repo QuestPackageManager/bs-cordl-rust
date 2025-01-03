@@ -99,7 +99,7 @@ impl crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollect
             .invoke("PostEvent", (diagnosticEvent))?;
         Ok(__cordl_ret.into())
     }
-    pub fn RegisterEventHandler(
+    pub fn RegisterEventHandler_Action_1_1(
         &mut self,
         handler: quest_hook::libil2cpp::Gc<
             crate::System::Action_1<
@@ -112,6 +112,19 @@ impl crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollect
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("RegisterEventHandler", (handler))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RegisterEventHandler__cordl_bool__cordl_bool0(
+        handler: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<
+                crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent,
+            >,
+        >,
+        _cordl_register: bool,
+        create: bool,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RegisterEventHandler", (handler, _cordl_register, create))?;
         Ok(__cordl_ret.into())
     }
     pub fn UnregisterEventHandler(
@@ -147,6 +160,13 @@ impl crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollect
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_PlayerConnectionGuid() -> quest_hook::libil2cpp::Result<
+        crate::System::Guid,
+    > {
+        let __cordl_ret: crate::System::Guid = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_PlayerConnectionGuid", ())?;
         Ok(__cordl_ret.into())
     }
 }

@@ -28,6 +28,17 @@ impl crate::GlobalNamespace::CannotStartGameReasonMethods {
     pub const kAllPlayersSpectating: &'static str = "LABEL_CANT_START_GAME_ALL_PLAYERS_SPECTATING";
     pub const kDoNotOwnSong: &'static str = "LABEL_CANT_START_GAME_DO_NOT_OWN_SONG";
     pub const kNoSongSelected: &'static str = "LABEL_CANT_START_GAME_NO_SONG_SELECTED";
+    pub fn LocalizedKey(
+        cannotStartGameReason: crate::GlobalNamespace::CannotStartGameReason,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LocalizedKey", (cannotStartGameReason))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "CannotStartGameReasonMethods")]
 impl quest_hook::libil2cpp::ObjectType

@@ -25,6 +25,18 @@ impl std::ops::DerefMut for crate::System::Diagnostics::DefaultTraceListener {
 }
 #[cfg(feature = "System+Diagnostics+DefaultTraceListener")]
 impl crate::System::Diagnostics::DefaultTraceListener {
+    pub fn GetPrefix(
+        var: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPrefix", (var, target))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -107,6 +119,13 @@ impl crate::System::Diagnostics::DefaultTraceListener {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("WritePrefix", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WriteWindowsDebugString(
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WriteWindowsDebugString", (message))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

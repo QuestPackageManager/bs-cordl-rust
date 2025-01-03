@@ -27,6 +27,23 @@ impl std::ops::DerefMut for crate::System::Diagnostics::TraceEventCache {
 }
 #[cfg(feature = "System+Diagnostics+TraceEventCache")]
 impl crate::System::Diagnostics::TraceEventCache {
+    pub fn GetProcessId() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetProcessId", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetThreadId() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetThreadId", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InitProcessInfo() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InitProcessInfo", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

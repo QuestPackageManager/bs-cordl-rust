@@ -212,7 +212,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
         > = __cordl_object.invoke("GetTypeId", (_cordl_type, explicitOnly))?;
         Ok(__cordl_ret.into())
     }
-    pub fn HasFlag(
+    pub fn HasFlag_DefaultValueHandling_DefaultValueHandling0(
         &mut self,
         value: crate::Newtonsoft::Json::DefaultValueHandling,
         flag: crate::Newtonsoft::Json::DefaultValueHandling,
@@ -221,6 +221,16 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("HasFlag", (value, flag))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn HasFlag_Nullable_1_JsonSchemaType1(
+        value: crate::System::Nullable_1<
+            crate::Newtonsoft::Json::Schema::JsonSchemaType,
+        >,
+        flag: crate::Newtonsoft::Json::Schema::JsonSchemaType,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("HasFlag", (value, flag))?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

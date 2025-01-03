@@ -1209,6 +1209,23 @@ impl crate::UnityEngine::ResourceManagement::ResourceManager {
         > = __cordl_object.invoke("get_CertificateHandlerInstance", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_ExceptionHandler() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<
+                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+                *mut crate::System::Exception,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<
+                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+                *mut crate::System::Exception,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_ExceptionHandler", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_InstanceOperationCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1302,6 +1319,18 @@ impl crate::UnityEngine::ResourceManagement::ResourceManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_CertificateHandlerInstance", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_ExceptionHandler(
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<
+                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+                *mut crate::System::Exception,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_ExceptionHandler", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_InternalIdTransformFunc(

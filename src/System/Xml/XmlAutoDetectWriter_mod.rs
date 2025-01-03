@@ -72,6 +72,13 @@ impl crate::System::Xml::XmlAutoDetectWriter {
             .invoke("Flush", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn IsHtmlTag(
+        tagName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsHtmlTag", (tagName))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_Stream_XmlWriterSettings2(
         strm: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         writerSettings: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriterSettings>,

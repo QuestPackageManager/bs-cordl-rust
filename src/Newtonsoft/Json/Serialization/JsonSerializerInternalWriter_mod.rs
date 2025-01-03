@@ -717,6 +717,15 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter {
             )?;
         Ok(__cordl_ret.into())
     }
+    pub fn TryConvertToString(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        s: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryConvertToString", (value, _cordl_type, s))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn WriteObjectStart(
         &mut self,
         writer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,

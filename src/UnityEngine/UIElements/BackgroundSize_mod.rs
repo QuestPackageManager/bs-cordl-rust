@@ -54,6 +54,13 @@ impl crate::UnityEngine::UIElements::BackgroundSize {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn Initial() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::BackgroundSize,
+    > {
+        let __cordl_ret: crate::UnityEngine::UIElements::BackgroundSize = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Initial", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ToString(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -117,6 +124,22 @@ impl crate::UnityEngine::UIElements::BackgroundSize {
             "get_y",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        style1: crate::UnityEngine::UIElements::BackgroundSize,
+        style2: crate::UnityEngine::UIElements::BackgroundSize,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (style1, style2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        style1: crate::UnityEngine::UIElements::BackgroundSize,
+        style2: crate::UnityEngine::UIElements::BackgroundSize,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (style1, style2))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_sizeType(

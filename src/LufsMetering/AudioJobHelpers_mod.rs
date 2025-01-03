@@ -23,7 +23,27 @@ impl std::ops::DerefMut for crate::LufsMetering::AudioJobHelpers {
     }
 }
 #[cfg(feature = "LufsMetering+AudioJobHelpers")]
-impl crate::LufsMetering::AudioJobHelpers {}
+impl crate::LufsMetering::AudioJobHelpers {
+    pub fn GetHighPassDeManCoefficients(
+        quality: f32,
+        frequency: f32,
+        rate: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::LufsMetering::FilterCoefficients> {
+        let __cordl_ret: crate::LufsMetering::FilterCoefficients = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetHighPassDeManCoefficients", (quality, frequency, rate))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetHighShelfDeManCoefficients(
+        gain: f32,
+        quality: f32,
+        frequency: f32,
+        rate: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::LufsMetering::FilterCoefficients> {
+        let __cordl_ret: crate::LufsMetering::FilterCoefficients = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetHighShelfDeManCoefficients", (gain, quality, frequency, rate))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "LufsMetering+AudioJobHelpers")]
 impl quest_hook::libil2cpp::ObjectType for crate::LufsMetering::AudioJobHelpers {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

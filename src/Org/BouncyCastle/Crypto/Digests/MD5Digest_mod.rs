@@ -68,11 +68,31 @@ impl crate::Org::BouncyCastle::Crypto::Digests::MD5Digest {
         let __cordl_ret: i32 = __cordl_object.invoke("DoFinal", (output, outOff))?;
         Ok(__cordl_ret.into())
     }
+    pub fn F(u: u32, v: u32, w: u32) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("F", (u, v, w))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn G(u: u32, v: u32, w: u32) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("G", (u, v, w))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetDigestSize(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetDigestSize", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn H(u: u32, v: u32, w: u32) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("H", (u, v, w))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn K(u: u32, v: u32, w: u32) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("K", (u, v, w))?;
         Ok(__cordl_ret.into())
     }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -145,6 +165,11 @@ impl crate::Org::BouncyCastle::Crypto::Digests::MD5Digest {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Reset", (other))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RotateLeft(x: u32, n: i32) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RotateLeft", (x, n))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_0(

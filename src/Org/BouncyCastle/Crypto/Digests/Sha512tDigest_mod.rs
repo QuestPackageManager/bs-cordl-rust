@@ -107,6 +107,26 @@ impl crate::Org::BouncyCastle::Crypto::Digests::Sha512tDigest {
             .invoke("Reset", (other))?;
         Ok(__cordl_ret.into())
     }
+    pub fn UInt32_To_BE(
+        n: u32,
+        bs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        off: i32,
+        max: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UInt32_To_BE", (n, bs, off, max))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UInt64_To_BE(
+        n: u64,
+        bs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        off: i32,
+        max: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UInt64_To_BE", (n, bs, off, max))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor_Sha512tDigest1(
         &mut self,
         t: quest_hook::libil2cpp::Gc<

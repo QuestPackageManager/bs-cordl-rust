@@ -23,7 +23,23 @@ impl std::ops::DerefMut for crate::System::TupleExtensions {
     }
 }
 #[cfg(feature = "System+TupleExtensions")]
-impl crate::System::TupleExtensions {}
+impl crate::System::TupleExtensions {
+    pub fn Deconstruct<T1, T2>(
+        value: quest_hook::libil2cpp::Gc<crate::System::Tuple_2<T1, T2>>,
+        item1: quest_hook::libil2cpp::ByRefMut<T1>,
+        item2: quest_hook::libil2cpp::ByRefMut<T2>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Deconstruct", (value, item1, item2))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+TupleExtensions")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::TupleExtensions {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

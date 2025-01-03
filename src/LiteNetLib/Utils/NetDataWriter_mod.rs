@@ -41,6 +41,42 @@ impl crate::LiteNetLib::Utils::NetDataWriter {
         > = __cordl_object.invoke("CopyData", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn FromBytes__cordl_bool0(
+        bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        copy: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::LiteNetLib::Utils::NetDataWriter,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromBytes", (bytes, copy))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromBytes_i32_i32_1(
+        bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        offset: i32,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::LiteNetLib::Utils::NetDataWriter,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromBytes", (bytes, offset, length))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromString(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::LiteNetLib::Utils::NetDataWriter,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromString", (value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

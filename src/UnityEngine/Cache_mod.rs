@@ -20,6 +20,38 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::Cache {
 }
 #[cfg(feature = "UnityEngine+Cache")]
 impl crate::UnityEngine::Cache {
+    pub fn Cache_GetPath(
+        handle: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Cache_GetPath", (handle))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Cache_IsValid(handle: i32) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Cache_IsValid", (handle))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Cache_SetExpirationDelay(
+        handle: i32,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Cache_SetExpirationDelay", (handle, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Cache_SetMaximumDiskSpaceAvailable(
+        handle: i32,
+        value: i64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Cache_SetMaximumDiskSpaceAvailable", (handle, value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Equals_Cache1(
         &mut self,
         other: crate::UnityEngine::Cache,

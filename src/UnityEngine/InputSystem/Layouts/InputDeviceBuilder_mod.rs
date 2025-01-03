@@ -135,6 +135,46 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn AddParentDisplayNameRecursive(
+        control: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl,
+        >,
+        stringBuilder: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+        shortName: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "AddParentDisplayNameRecursive",
+                (control, stringBuilder, shortName),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddProcessors(
+        control: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl,
+        >,
+        controlItem: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem,
+        >,
+        layoutName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddProcessors", (control, controlItem, layoutName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ApplyUseStateFrom(
+        parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
+        controlItem: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem,
+        >,
+        layout: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Layouts::InputControlLayout,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ApplyUseStateFrom", (parent, controlItem, layout))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ChildControlOverridePath(
         &mut self,
         parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
@@ -149,6 +189,13 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
             "ChildControlOverridePath",
             (parent, controlName),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ComputeStateLayout(
+        control: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ComputeStateLayout", (control))?;
         Ok(__cordl_ret.into())
     }
     pub fn Dispose(
@@ -198,6 +245,19 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
                 controlIndiciesNextFreeIndex,
             ),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FindOrLoadLayout(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Layouts::InputControlLayout,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Layouts::InputControlLayout,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FindOrLoadLayout", (name))?;
         Ok(__cordl_ret.into())
     }
     pub fn Finish(
@@ -332,6 +392,13 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn Ref() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder_RefInstance,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder_RefInstance = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Ref", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Reset(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -362,6 +429,16 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn SetFormat(
+        control: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl,
+        >,
+        controlItem: crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetFormat", (control, controlItem))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Setup(
         &mut self,
         layout: crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -373,6 +450,30 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
             "Setup",
             (layout, variants, deviceDescription),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ShiftChildIndicesInHierarchyOneUp(
+        device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+        startIndex: i32,
+        exceptControl: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ShiftChildIndicesInHierarchyOneUp",
+                (device, startIndex, exceptControl),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_instance() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_instance", ())?;
         Ok(__cordl_ret.into())
     }
 }

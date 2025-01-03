@@ -33,4 +33,85 @@ impl crate::LIV::SDK::Unity::SDKVector3 {
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_forward() -> quest_hook::libil2cpp::Result<
+        crate::LIV::SDK::Unity::SDKVector3,
+    > {
+        let __cordl_ret: crate::LIV::SDK::Unity::SDKVector3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_forward", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_one() -> quest_hook::libil2cpp::Result<
+        crate::LIV::SDK::Unity::SDKVector3,
+    > {
+        let __cordl_ret: crate::LIV::SDK::Unity::SDKVector3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_one", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_right() -> quest_hook::libil2cpp::Result<
+        crate::LIV::SDK::Unity::SDKVector3,
+    > {
+        let __cordl_ret: crate::LIV::SDK::Unity::SDKVector3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_right", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_up() -> quest_hook::libil2cpp::Result<
+        crate::LIV::SDK::Unity::SDKVector3,
+    > {
+        let __cordl_ret: crate::LIV::SDK::Unity::SDKVector3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_up", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_zero() -> quest_hook::libil2cpp::Result<
+        crate::LIV::SDK::Unity::SDKVector3,
+    > {
+        let __cordl_ret: crate::LIV::SDK::Unity::SDKVector3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_zero", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Addition(
+        lhs: crate::LIV::SDK::Unity::SDKVector3,
+        rhs: crate::LIV::SDK::Unity::SDKVector3,
+    ) -> quest_hook::libil2cpp::Result<crate::LIV::SDK::Unity::SDKVector3> {
+        let __cordl_ret: crate::LIV::SDK::Unity::SDKVector3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Addition", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_SDKVector3_0(
+        v: crate::LIV::SDK::Unity::SDKVector3,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (v))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_Vector3_1(
+        v: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<crate::LIV::SDK::Unity::SDKVector3> {
+        let __cordl_ret: crate::LIV::SDK::Unity::SDKVector3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (v))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Multiply_SDKVector3_0(
+        lhs: crate::LIV::SDK::Unity::SDKVector3,
+        rhs: crate::LIV::SDK::Unity::SDKVector3,
+    ) -> quest_hook::libil2cpp::Result<crate::LIV::SDK::Unity::SDKVector3> {
+        let __cordl_ret: crate::LIV::SDK::Unity::SDKVector3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Multiply", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Multiply_f32_1(
+        lhs: crate::LIV::SDK::Unity::SDKVector3,
+        rhs: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::LIV::SDK::Unity::SDKVector3> {
+        let __cordl_ret: crate::LIV::SDK::Unity::SDKVector3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Multiply", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Subtraction(
+        lhs: crate::LIV::SDK::Unity::SDKVector3,
+        rhs: crate::LIV::SDK::Unity::SDKVector3,
+    ) -> quest_hook::libil2cpp::Result<crate::LIV::SDK::Unity::SDKVector3> {
+        let __cordl_ret: crate::LIV::SDK::Unity::SDKVector3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Subtraction", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
 }

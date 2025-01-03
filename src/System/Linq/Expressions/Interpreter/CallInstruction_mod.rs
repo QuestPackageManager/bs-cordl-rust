@@ -26,6 +26,80 @@ for crate::System::Linq::Expressions::Interpreter::CallInstruction {
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+CallInstruction")]
 impl crate::System::Linq::Expressions::Interpreter::CallInstruction {
+    pub fn ArrayItemSetter1(
+        array: quest_hook::libil2cpp::Gc<crate::System::Array>,
+        index0: i32,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ArrayItemSetter1", (array, index0, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ArrayItemSetter2(
+        array: quest_hook::libil2cpp::Gc<crate::System::Array>,
+        index0: i32,
+        index1: i32,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ArrayItemSetter2", (array, index0, index1, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ArrayItemSetter3(
+        array: quest_hook::libil2cpp::Gc<crate::System::Array>,
+        index0: i32,
+        index1: i32,
+        index2: i32,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ArrayItemSetter3", (array, index0, index1, index2, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Create_Il2CppArray1(
+        info: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+        parameters: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Reflection::ParameterInfo,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::CallInstruction,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::CallInstruction,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (info, parameters))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Create_MethodInfo0(
+        info: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::CallInstruction,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::CallInstruction,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Create", (info))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetArrayAccessor(
+        info: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+        argumentCount: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::CallInstruction,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::CallInstruction,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetArrayAccessor", (info, argumentCount))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn InterpretLambdaInvoke(
         &mut self,
         targetLambda: quest_hook::libil2cpp::Gc<
@@ -51,6 +125,16 @@ impl crate::System::Linq::Expressions::Interpreter::CallInstruction {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
+    }
+    pub fn TryGetLightLambdaTarget(
+        instance: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        lightLambda: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::System::Linq::Expressions::Interpreter::LightLambda,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryGetLightLambdaTarget", (instance, lightLambda))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,

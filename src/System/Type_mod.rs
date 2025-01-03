@@ -25,6 +25,14 @@ impl std::ops::DerefMut for crate::System::Type {
 #[cfg(feature = "System+Type")]
 impl crate::System::Type {
     pub const DefaultTypeNameWhenMissingMetadata: &'static str = "UnknownType";
+    pub fn BinarySearch(
+        array: quest_hook::libil2cpp::Gc<crate::System::Array>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BinarySearch", (array, value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Equals_Il2CppObject0(
         &mut self,
         o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -43,6 +51,30 @@ impl crate::System::Type {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (o))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FilterAttributeImpl(
+        m: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+        filterCriteria: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FilterAttributeImpl", (m, filterCriteria))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FilterNameIgnoreCaseImpl(
+        m: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+        filterCriteria: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FilterNameIgnoreCaseImpl", (m, filterCriteria))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FilterNameImpl(
+        m: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+        filterCriteria: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FilterNameImpl", (m, filterCriteria))?;
         Ok(__cordl_ret.into())
     }
     pub fn FormatTypeName_0(
@@ -934,14 +966,11 @@ impl crate::System::Type {
             .invoke("GetRootElementType", ())?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetType(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = __cordl_object
-            .invoke("GetType", ())?;
+    pub fn GetTypeCode(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::TypeCode> {
+        let __cordl_ret: crate::System::TypeCode = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetTypeCode", (_cordl_type))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetTypeCodeImpl(
@@ -952,6 +981,95 @@ impl crate::System::Type {
         );
         let __cordl_ret: crate::System::TypeCode = __cordl_object
             .invoke("GetTypeCodeImpl", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetTypeFromCLSID_Guid0(
+        clsid: crate::System::Guid,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetTypeFromCLSID", (clsid))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetTypeFromCLSID_Il2CppString__cordl_bool1(
+        clsid: crate::System::Guid,
+        server: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        throwOnError: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetTypeFromCLSID", (clsid, server, throwOnError))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetTypeFromHandle(
+        handle: crate::System::RuntimeTypeHandle,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetTypeFromHandle", (handle))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetTypeHandle(
+        o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::RuntimeTypeHandle> {
+        let __cordl_ret: crate::System::RuntimeTypeHandle = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetTypeHandle", (o))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetType_0(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = __cordl_object
+            .invoke("GetType", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetType_Il2CppString3(
+        typeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetType", (typeName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetType_Il2CppString_Func_2_Func_4__cordl_bool4(
+        typeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        assemblyResolver: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<
+                *mut crate::System::Reflection::AssemblyName,
+                *mut crate::System::Reflection::Assembly,
+            >,
+        >,
+        typeResolver: quest_hook::libil2cpp::Gc<
+            crate::System::Func_4<
+                *mut crate::System::Reflection::Assembly,
+                *mut quest_hook::libil2cpp::Il2CppString,
+                bool,
+                *mut crate::System::Type,
+            >,
+        >,
+        throwOnError: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetType",
+                (typeName, assemblyResolver, typeResolver, throwOnError),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetType_Il2CppString__cordl_bool2(
+        typeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        throwOnError: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetType", (typeName, throwOnError))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetType_Il2CppString__cordl_bool__cordl_bool1(
+        typeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        throwOnError: bool,
+        ignoreCase: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetType", (typeName, throwOnError, ignoreCase))?;
         Ok(__cordl_ret.into())
     }
     pub fn HasElementTypeImpl(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -1096,6 +1214,13 @@ impl crate::System::Type {
         let __cordl_ret: bool = __cordl_object.invoke("IsInstanceOfType", (o))?;
         Ok(__cordl_ret.into())
     }
+    pub fn IsIntegerType(
+        t: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsIntegerType", (t))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn IsMarshalByRefImpl(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1170,6 +1295,16 @@ impl crate::System::Type {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = __cordl_object
             .invoke("MakeByRefType", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MakeGenericSignatureType(
+        genericTypeDefinition: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        typeArguments: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MakeGenericSignatureType", (genericTypeDefinition, typeArguments))?;
         Ok(__cordl_ret.into())
     }
     pub fn MakeGenericType(
@@ -1302,6 +1437,13 @@ impl crate::System::Type {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = __cordl_object
             .invoke("get_DeclaringType", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_DefaultBinder() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Reflection::Binder>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Reflection::Binder> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_DefaultBinder", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_FullName(
@@ -1696,6 +1838,29 @@ impl crate::System::Type {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = __cordl_object
             .invoke("get_UnderlyingSystemType", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn internal_from_handle(
+        handle: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("internal_from_handle", (handle))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        left: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        left: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (left, right))?;
         Ok(__cordl_ret.into())
     }
 }

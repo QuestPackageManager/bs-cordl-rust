@@ -26,6 +26,31 @@ impl std::ops::DerefMut for crate::UnityEngine::Display {
 impl crate::UnityEngine::Display {
     #[cfg(feature = "UnityEngine+Display+DisplaysUpdatedDelegate")]
     pub type DisplaysUpdatedDelegate = crate::UnityEngine::Display_DisplaysUpdatedDelegate;
+    pub fn FireDisplaysUpdated() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FireDisplaysUpdated", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetRenderingExtImpl(
+        nativeDisplay: crate::System::IntPtr,
+        w: quest_hook::libil2cpp::ByRefMut<i32>,
+        h: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetRenderingExtImpl", (nativeDisplay, w, h))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetSystemExtImpl(
+        nativeDisplay: crate::System::IntPtr,
+        w: quest_hook::libil2cpp::ByRefMut<i32>,
+        h: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSystemExtImpl", (nativeDisplay, w, h))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -41,6 +66,32 @@ impl crate::UnityEngine::Display {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (nativeDisplay))?;
         Ok(__cordl_object.into())
+    }
+    pub fn RecreateDisplayList(
+        nativeDisplay: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::System::IntPtr>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RecreateDisplayList", (nativeDisplay))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RelativeMouseAt(
+        inputMouseCoordinates: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RelativeMouseAt", (inputMouseCoordinates))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RelativeMouseAtImpl(
+        x: i32,
+        y: i32,
+        rx: quest_hook::libil2cpp::ByRefMut<i32>,
+        ry: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RelativeMouseAtImpl", (x, y, rx, ry))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_0(
         &mut self,
@@ -61,6 +112,13 @@ impl crate::UnityEngine::Display {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (nativeDisplay))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_main() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Display>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Display> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_main", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_renderingHeight(&mut self) -> quest_hook::libil2cpp::Result<i32> {

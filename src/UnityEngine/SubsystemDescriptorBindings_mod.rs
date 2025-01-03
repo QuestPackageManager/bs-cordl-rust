@@ -23,7 +23,26 @@ impl std::ops::DerefMut for crate::UnityEngine::SubsystemDescriptorBindings {
     }
 }
 #[cfg(feature = "UnityEngine+SubsystemDescriptorBindings")]
-impl crate::UnityEngine::SubsystemDescriptorBindings {}
+impl crate::UnityEngine::SubsystemDescriptorBindings {
+    pub fn Create(
+        descriptorPtr: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (descriptorPtr))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetId(
+        descriptorPtr: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetId", (descriptorPtr))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+SubsystemDescriptorBindings")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::SubsystemDescriptorBindings {

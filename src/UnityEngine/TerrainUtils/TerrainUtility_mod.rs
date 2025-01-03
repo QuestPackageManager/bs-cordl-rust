@@ -28,6 +28,42 @@ impl crate::UnityEngine::TerrainUtils::TerrainUtility {
     pub type __c__DisplayClass2_0 = crate::UnityEngine::TerrainUtils::TerrainUtility___c__DisplayClass2_0;
     #[cfg(feature = "UnityEngine+TerrainUtils+TerrainUtility+__c__DisplayClass2_1")]
     pub type __c__DisplayClass2_1 = crate::UnityEngine::TerrainUtils::TerrainUtility___c__DisplayClass2_1;
+    pub fn AutoConnect() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AutoConnect", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ClearConnectivity() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ClearConnectivity", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CollectTerrains(
+        onlyAutoConnectedTerrains: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<
+                i32,
+                *mut crate::UnityEngine::TerrainUtils::TerrainMap,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<
+                i32,
+                *mut crate::UnityEngine::TerrainUtils::TerrainMap,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CollectTerrains", (onlyAutoConnectedTerrains))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ValidTerrainsExist() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ValidTerrainsExist", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+TerrainUtils+TerrainUtility")]
 impl quest_hook::libil2cpp::ObjectType

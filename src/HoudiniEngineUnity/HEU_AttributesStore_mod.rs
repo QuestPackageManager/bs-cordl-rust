@@ -50,6 +50,38 @@ impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_AttributesStore {
 impl crate::HoudiniEngineUnity::HEU_AttributesStore {
     #[cfg(feature = "HoudiniEngineUnity+HEU_AttributesStore+SetAttributeValueFunc")]
     pub type SetAttributeValueFunc = crate::HoudiniEngineUnity::HEU_AttributesStore_SetAttributeValueFunc;
+    pub fn AddAttributeValueFloat(
+        attributeData: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_AttributeData,
+        >,
+        targetIndex: i32,
+        sourceTools: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_ToolsInfo>,
+        sourceIndex: i32,
+        factor: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "AddAttributeValueFloat",
+                (attributeData, targetIndex, sourceTools, sourceIndex, factor),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddAttributeValueInt(
+        attributeData: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_AttributeData,
+        >,
+        targetIndex: i32,
+        sourceTools: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_ToolsInfo>,
+        sourceIndex: i32,
+        factor: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "AddAttributeValueInt",
+                (attributeData, targetIndex, sourceTools, sourceIndex, factor),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn AreAttributesDirty(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -179,6 +211,20 @@ impl crate::HoudiniEngineUnity::HEU_AttributesStore {
         > = __cordl_object.invoke("GetAttributeNames", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetAttributeSetValueFunction(
+        attrType: crate::HoudiniEngineUnity::HEU_AttributeData_AttributeType,
+        paintMergeMode: crate::HoudiniEngineUnity::HEU_ToolsInfo_PaintMergeMode,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_AttributesStore_SetAttributeValueFunc,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_AttributesStore_SetAttributeValueFunc,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetAttributeSetValueFunction", (attrType, paintMergeMode))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetAttributesList(
         &mut self,
         session: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionBase>,
@@ -291,6 +337,38 @@ impl crate::HoudiniEngineUnity::HEU_AttributesStore {
         let __cordl_ret: bool = __cordl_object.invoke("IsValidStore", (session))?;
         Ok(__cordl_ret.into())
     }
+    pub fn MultiplyAttributeValueFloat(
+        attributeData: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_AttributeData,
+        >,
+        targetIndex: i32,
+        sourceTools: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_ToolsInfo>,
+        sourceIndex: i32,
+        factor: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "MultiplyAttributeValueFloat",
+                (attributeData, targetIndex, sourceTools, sourceIndex, factor),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MultiplyAttributeValueInt(
+        attributeData: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_AttributeData,
+        >,
+        targetIndex: i32,
+        sourceTools: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_ToolsInfo>,
+        sourceIndex: i32,
+        factor: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "MultiplyAttributeValueInt",
+                (attributeData, targetIndex, sourceTools, sourceIndex, factor),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -353,6 +431,107 @@ impl crate::HoudiniEngineUnity::HEU_AttributesStore {
             .invoke("RefreshUpstreamInputs", (session))?;
         Ok(__cordl_ret.into())
     }
+    pub fn ReplaceAttributeValueFloat(
+        attributeData: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_AttributeData,
+        >,
+        targetIndex: i32,
+        sourceTools: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_ToolsInfo>,
+        sourceIndex: i32,
+        factor: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ReplaceAttributeValueFloat",
+                (attributeData, targetIndex, sourceTools, sourceIndex, factor),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReplaceAttributeValueInt(
+        attributeData: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_AttributeData,
+        >,
+        targetIndex: i32,
+        sourceTools: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_ToolsInfo>,
+        sourceIndex: i32,
+        factor: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ReplaceAttributeValueInt",
+                (attributeData, targetIndex, sourceTools, sourceIndex, factor),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetAttributeDataDirty(
+        attributeData: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_AttributeData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetAttributeDataDirty", (attributeData))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetAttributeDataSyncd(
+        attributeData: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_AttributeData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetAttributeDataSyncd", (attributeData))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetAttributeEditValueFloat(
+        attributeData: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_AttributeData,
+        >,
+        startIndex: i32,
+        values: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetAttributeEditValueFloat", (attributeData, startIndex, values))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetAttributeEditValueInt(
+        attributeData: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_AttributeData,
+        >,
+        startIndex: i32,
+        values: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetAttributeEditValueInt", (attributeData, startIndex, values))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetAttributeEditValueString(
+        attributeData: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_AttributeData,
+        >,
+        startIndex: i32,
+        values: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetAttributeEditValueString", (attributeData, startIndex, values))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetAttributeValueString(
+        attributeData: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_AttributeData,
+        >,
+        targetIndex: i32,
+        sourceTools: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_ToolsInfo>,
+        sourceIndex: i32,
+        factor: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "SetAttributeValueString",
+                (attributeData, targetIndex, sourceTools, sourceIndex, factor),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn SetupMeshAndMaterials(
         &mut self,
         asset: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAsset>,
@@ -374,6 +553,38 @@ impl crate::HoudiniEngineUnity::HEU_AttributesStore {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ShowPaintMesh", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SubtractAttributeValueFloat(
+        attributeData: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_AttributeData,
+        >,
+        targetIndex: i32,
+        sourceTools: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_ToolsInfo>,
+        sourceIndex: i32,
+        factor: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "SubtractAttributeValueFloat",
+                (attributeData, targetIndex, sourceTools, sourceIndex, factor),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SubtractAttributeValueInt(
+        attributeData: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_AttributeData,
+        >,
+        targetIndex: i32,
+        sourceTools: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_ToolsInfo>,
+        sourceIndex: i32,
+        factor: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "SubtractAttributeValueInt",
+                (attributeData, targetIndex, sourceTools, sourceIndex, factor),
+            )?;
         Ok(__cordl_ret.into())
     }
     pub fn SyncAllAttributesFrom(

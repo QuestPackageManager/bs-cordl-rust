@@ -69,6 +69,13 @@ impl crate::System::Xml::XPath::XPathNavigator {
         let __cordl_ret: bool = __cordl_object.invoke("IsSamePosition", (other))?;
         Ok(__cordl_ret.into())
     }
+    pub fn IsText(
+        _cordl_type: crate::System::Xml::XPath::XPathNodeType,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsText", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn LookupNamespace(
         &mut self,
         prefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

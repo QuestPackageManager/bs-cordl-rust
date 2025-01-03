@@ -76,6 +76,15 @@ impl<T: quest_hook::libil2cpp::Type> crate::Tayx::Graphy::Utils::G_Singleton_1<T
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_Instance() -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_Instance", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "Tayx+Graphy+Utils+G_Singleton_1")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType

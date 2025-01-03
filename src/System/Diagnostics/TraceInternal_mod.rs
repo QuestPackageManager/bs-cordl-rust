@@ -23,7 +23,38 @@ impl std::ops::DerefMut for crate::System::Diagnostics::TraceInternal {
     }
 }
 #[cfg(feature = "System+Diagnostics+TraceInternal")]
-impl crate::System::Diagnostics::TraceInternal {}
+impl crate::System::Diagnostics::TraceInternal {
+    pub fn InitializeSettings() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InitializeSettings", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_AutoFlush() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_AutoFlush", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_IndentLevel() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_IndentLevel", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_IndentSize() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_IndentSize", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Listeners() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Diagnostics::TraceListenerCollection>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Diagnostics::TraceListenerCollection,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_Listeners", ())?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Diagnostics+TraceInternal")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Diagnostics::TraceInternal {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

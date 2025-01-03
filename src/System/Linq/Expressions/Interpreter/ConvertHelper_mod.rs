@@ -25,7 +25,15 @@ for crate::System::Linq::Expressions::Interpreter::ConvertHelper {
     }
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+ConvertHelper")]
-impl crate::System::Linq::Expressions::Interpreter::ConvertHelper {}
+impl crate::System::Linq::Expressions::Interpreter::ConvertHelper {
+    pub fn ToInt32NoNull(
+        val: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToInt32NoNull", (val))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Linq+Expressions+Interpreter+ConvertHelper")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Interpreter::ConvertHelper {

@@ -41,6 +41,23 @@ impl crate::System::Security::AccessControl::NativeObjectSecurity {
             .invoke("ClearAccessControlSectionsModified", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn DefaultExceptionFromErrorCode(
+        errorCode: i32,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        handle: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::InteropServices::SafeHandle,
+        >,
+        context: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "DefaultExceptionFromErrorCode",
+                (errorCode, name, handle, context),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn InternalGet(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

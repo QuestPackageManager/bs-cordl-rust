@@ -25,6 +25,20 @@ impl std::ops::DerefMut for crate::System::Reflection::RuntimeParameterInfo {
 }
 #[cfg(feature = "System+Reflection+RuntimeParameterInfo")]
 impl crate::System::Reflection::RuntimeParameterInfo {
+    pub fn FormatParameters(
+        sb: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+        p: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Reflection::ParameterInfo,
+            >,
+        >,
+        callingConvention: crate::System::Reflection::CallingConventions,
+        serialization: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FormatParameters", (sb, p, callingConvention, serialization))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetCustomAttributes_Type__cordl_bool1(
         &mut self,
         attributeType: quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -138,6 +152,18 @@ impl crate::System::Reflection::RuntimeParameterInfo {
             )?;
         Ok(__cordl_object.into())
     }
+    pub fn New_ParameterInfo0(
+        pinfo: quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
+        member: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::ParameterInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("New", (pinfo, member))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_ParameterInfo_MemberInfo1(
         pinfo: quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
         member: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
@@ -147,6 +173,21 @@ impl crate::System::Reflection::RuntimeParameterInfo {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (pinfo, member))?;
         Ok(__cordl_object.into())
+    }
+    pub fn New_Type_MarshalAsAttribute1(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        member: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+        marshalAs: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::InteropServices::MarshalAsAttribute,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::ParameterInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("New", (_cordl_type, member, marshalAs))?;
+        Ok(__cordl_ret.into())
     }
     pub fn New_Type_MemberInfo_MarshalAsAttribute2(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,

@@ -23,7 +23,27 @@ impl std::ops::DerefMut for crate::System::Xml::XmlConfiguration::XmlReaderSecti
     }
 }
 #[cfg(feature = "System+Xml+XmlConfiguration+XmlReaderSection")]
-impl crate::System::Xml::XmlConfiguration::XmlReaderSection {}
+impl crate::System::Xml::XmlConfiguration::XmlReaderSection {
+    pub fn CreateDefaultResolver() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlResolver>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlResolver> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateDefaultResolver", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_CollapseWhiteSpaceIntoEmptyString() -> quest_hook::libil2cpp::Result<
+        bool,
+    > {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_CollapseWhiteSpaceIntoEmptyString", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_ProhibitDefaultUrlResolver() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_ProhibitDefaultUrlResolver", ())?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Xml+XmlConfiguration+XmlReaderSection")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Xml::XmlConfiguration::XmlReaderSection {

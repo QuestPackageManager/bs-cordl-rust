@@ -47,6 +47,31 @@ impl crate::UnityEngine::Timeline::TimeNotificationBehaviour {
             .invoke("AddNotification", (_cordl_time, payload, flags))?;
         Ok(__cordl_ret.into())
     }
+    pub fn CanRestoreNotification(
+        e: crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry,
+        info: crate::UnityEngine::Playables::FrameData,
+        currentTime: f64,
+        previousTime: f64,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CanRestoreNotification", (e, info, currentTime, previousTime))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Create(
+        graph: crate::UnityEngine::Playables::PlayableGraph,
+        duration: f64,
+        loopMode: crate::UnityEngine::Playables::DirectorWrapMode,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Playables::ScriptPlayable_1<
+            *mut crate::UnityEngine::Timeline::TimeNotificationBehaviour,
+        >,
+    > {
+        let __cordl_ret: crate::UnityEngine::Playables::ScriptPlayable_1<
+            *mut crate::UnityEngine::Timeline::TimeNotificationBehaviour,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (graph, duration, loopMode))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -89,6 +114,15 @@ impl crate::UnityEngine::Timeline::TimeNotificationBehaviour {
             .invoke("PrepareFrame", (playable, info))?;
         Ok(__cordl_ret.into())
     }
+    pub fn Restore_internal(
+        e: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Restore_internal", (e))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn SortNotifications(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -126,6 +160,17 @@ impl crate::UnityEngine::Timeline::TimeNotificationBehaviour {
                 "TriggerNotificationsInRange",
                 (start, end, info, playable, checkState),
             )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Trigger_internal(
+        playable: crate::UnityEngine::Playables::Playable,
+        output: crate::UnityEngine::Playables::PlayableOutput,
+        e: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Trigger_internal", (playable, output, e))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

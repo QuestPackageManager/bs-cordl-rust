@@ -237,6 +237,15 @@ impl crate::System::Reflection::RuntimeFieldInfo {
             .invoke("SetValueDirect", (obj, value))?;
         Ok(__cordl_ret.into())
     }
+    pub fn SetValueInternal(
+        fi: quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetValueInternal", (fi, obj, value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ToString(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -391,6 +400,13 @@ impl crate::System::Reflection::RuntimeFieldInfo {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::RuntimeType> = __cordl_object
             .invoke("get_ReflectedTypeInternal", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_metadata_token(
+        monoField: quest_hook::libil2cpp::Gc<crate::System::Reflection::RuntimeFieldInfo>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_metadata_token", (monoField))?;
         Ok(__cordl_ret.into())
     }
 }

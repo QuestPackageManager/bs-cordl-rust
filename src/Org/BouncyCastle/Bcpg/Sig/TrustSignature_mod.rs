@@ -24,6 +24,18 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Bcpg::Sig::TrustSignature 
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+Sig+TrustSignature")]
 impl crate::Org::BouncyCastle::Bcpg::Sig::TrustSignature {
+    pub fn IntToByteArray(
+        v1: i32,
+        v2: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IntToByteArray", (v1, v2))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New__cordl_bool_Il2CppArray0(
         critical: bool,
         isLongLength: bool,

@@ -172,6 +172,14 @@ impl crate::GlobalNamespace::OVRGazePointer {
         let __cordl_ret: bool = __cordl_object.invoke("get_hidden", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_instance() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRGazePointer>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OVRGazePointer,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_instance", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_visibilityStrength(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

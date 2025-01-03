@@ -173,6 +173,25 @@ impl crate::System::Diagnostics::StackFrame {
             .invoke(".ctor", (skipFrames, fNeedFileInfo))?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_frame_info(
+        skip: i32,
+        needFileInfo: bool,
+        method: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::System::Reflection::MethodBase,
+        >,
+        iloffset: quest_hook::libil2cpp::ByRefMut<i32>,
+        native_offset: quest_hook::libil2cpp::ByRefMut<i32>,
+        file: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
+        line: quest_hook::libil2cpp::ByRefMut<i32>,
+        column: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "get_frame_info",
+                (skip, needFileInfo, method, iloffset, native_offset, file, line, column),
+            )?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "System+Diagnostics+StackFrame")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Diagnostics::StackFrame {

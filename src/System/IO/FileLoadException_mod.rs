@@ -26,6 +26,18 @@ impl std::ops::DerefMut for crate::System::IO::FileLoadException {
 }
 #[cfg(feature = "System+IO+FileLoadException")]
 impl crate::System::IO::FileLoadException {
+    pub fn FormatFileLoadExceptionMessage(
+        fileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        hResult: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FormatFileLoadExceptionMessage", (fileName, hResult))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetObjectData(
         &mut self,
         info: quest_hook::libil2cpp::Gc<

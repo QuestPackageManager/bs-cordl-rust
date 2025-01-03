@@ -105,6 +105,43 @@ impl crate::GlobalNamespace::PoseSerializable {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_identity() -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::PoseSerializable,
+    > {
+        let __cordl_ret: crate::GlobalNamespace::PoseSerializable = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_identity", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Addition(
+        a: crate::GlobalNamespace::PoseSerializable,
+        b: crate::GlobalNamespace::PoseSerializable,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::PoseSerializable> {
+        let __cordl_ret: crate::GlobalNamespace::PoseSerializable = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Addition", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_Pose1(
+        p: crate::UnityEngine::Pose,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::PoseSerializable> {
+        let __cordl_ret: crate::GlobalNamespace::PoseSerializable = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (p))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_PoseSerializable0(
+        p: crate::GlobalNamespace::PoseSerializable,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Pose> {
+        let __cordl_ret: crate::UnityEngine::Pose = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (p))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Subtraction(
+        a: crate::GlobalNamespace::PoseSerializable,
+        b: crate::GlobalNamespace::PoseSerializable,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::PoseSerializable> {
+        let __cordl_ret: crate::GlobalNamespace::PoseSerializable = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Subtraction", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "PoseSerializable")]
 impl AsRef<crate::LiteNetLib::Utils::INetSerializable>

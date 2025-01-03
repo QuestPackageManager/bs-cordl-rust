@@ -44,6 +44,18 @@ impl crate::System::Xml::Schema::DtdValidator {
             .invoke("AddID", (name, node))?;
         Ok(__cordl_ret.into())
     }
+    pub fn CheckDefaultValue(
+        attdef: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaAttDef>,
+        sinfo: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaInfo>,
+        eventHandling: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::IValidationEventHandling,
+        >,
+        baseUriStr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckDefaultValue", (attdef, sinfo, eventHandling, baseUriStr))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CheckForwardRefs(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -183,6 +195,14 @@ impl crate::System::Xml::Schema::DtdValidator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Push", (elementName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetDefaultTypedValue(
+        attdef: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaAttDef>,
+        readerAdapter: quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdParserAdapter>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetDefaultTypedValue", (attdef, readerAdapter))?;
         Ok(__cordl_ret.into())
     }
     pub fn Validate(

@@ -57,6 +57,14 @@ impl crate::System::Net::NetworkInformation::CommonUnixIPGlobalProperties {
         > = __cordl_object.invoke("get_DomainName", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn getdomainname(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        len: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("getdomainname", (name, len))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "System+Net+NetworkInformation+CommonUnixIPGlobalProperties")]
 impl quest_hook::libil2cpp::ObjectType

@@ -77,6 +77,34 @@ impl crate::Oculus::Platform::Samples::EntitlementCheck::EntitlementCheck {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn add_UserFailedEntitlementCheck(
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("add_UserFailedEntitlementCheck", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn add_UserPassedEntitlementCheck(
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("add_UserPassedEntitlementCheck", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_UserFailedEntitlementCheck(
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("remove_UserFailedEntitlementCheck", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_UserPassedEntitlementCheck(
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("remove_UserPassedEntitlementCheck", (value))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "Oculus+Platform+Samples+EntitlementCheck+EntitlementCheck")]
 impl quest_hook::libil2cpp::ObjectType

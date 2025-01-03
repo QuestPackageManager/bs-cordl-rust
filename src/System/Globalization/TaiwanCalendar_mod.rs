@@ -70,6 +70,15 @@ impl crate::System::Globalization::TaiwanCalendar {
         let __cordl_ret: i32 = __cordl_object.invoke("GetDaysInYear", (year, era))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetDefaultInstance() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Globalization::Calendar>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Globalization::Calendar,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetDefaultInstance", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetEra(
         &mut self,
         _cordl_time: crate::System::DateTime,

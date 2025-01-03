@@ -28,12 +28,53 @@ impl crate::Org::BouncyCastle::OpenSsl::PemUtilities {
     pub type PemBaseAlg = crate::Org::BouncyCastle::OpenSsl::PemUtilities_PemBaseAlg;
     #[cfg(feature = "Org+BouncyCastle+OpenSsl+PemUtilities+PemMode")]
     pub type PemMode = crate::Org::BouncyCastle::OpenSsl::PemUtilities_PemMode;
+    pub fn Crypt(
+        encrypt: bool,
+        bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+        dekAlgName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        iv: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Crypt", (encrypt, bytes, password, dekAlgName, iv))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCipherParameters(
+        password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+        baseAlg: crate::Org::BouncyCastle::OpenSsl::PemUtilities_PemBaseAlg,
+        salt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ICipherParameters>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::ICipherParameters,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCipherParameters", (password, baseAlg, salt))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
+    }
+    pub fn ParseDekAlgName(
+        dekAlgName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        baseAlg: quest_hook::libil2cpp::ByRefMut<
+            crate::Org::BouncyCastle::OpenSsl::PemUtilities_PemBaseAlg,
+        >,
+        mode: quest_hook::libil2cpp::ByRefMut<
+            crate::Org::BouncyCastle::OpenSsl::PemUtilities_PemMode,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ParseDekAlgName", (dekAlgName, baseAlg, mode))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,

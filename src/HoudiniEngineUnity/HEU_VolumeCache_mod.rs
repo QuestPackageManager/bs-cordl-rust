@@ -52,6 +52,38 @@ impl crate::HoudiniEngineUnity::HEU_VolumeCache {
             .invoke("ApplyPreset", (volumeCachePreset))?;
         Ok(__cordl_ret.into())
     }
+    pub fn CopyDetailProperties(
+        srcProp: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_DetailProperties,
+        >,
+        destProp: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_DetailProperties,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CopyDetailProperties", (srcProp, destProp))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CopyLayer(
+        srcLayer: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_VolumeLayer>,
+        destLayer: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_VolumeLayer>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CopyLayer", (srcLayer, destLayer))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CopyPrototype(
+        srcProto: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_DetailPrototype,
+        >,
+        destProto: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_DetailPrototype,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CopyPrototype", (srcProto, destProto))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CopyValuesTo(
         &mut self,
         destCache: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_VolumeCache>,
@@ -136,6 +168,22 @@ impl crate::HoudiniEngineUnity::HEU_VolumeCache {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("IsEquivalentTo", (other))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LoadAssetTexture(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LoadAssetTexture", (path))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LoadDefaultSplatTexture() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LoadDefaultSplatTexture", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn LoadLayerColorFromAttribute(
@@ -311,6 +359,37 @@ impl crate::HoudiniEngineUnity::HEU_VolumeCache {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("UpdateLayerFromPart", (session, part))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UpdateVolumeCachesFromParts(
+        session: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionBase>,
+        ownerNode: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_GeoNode>,
+        volumeParts: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::HoudiniEngineUnity::HEU_PartData,
+            >,
+        >,
+        volumeCaches: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::HoudiniEngineUnity::HEU_VolumeCache,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::HoudiniEngineUnity::HEU_VolumeCache,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::HoudiniEngineUnity::HEU_VolumeCache,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "UpdateVolumeCachesFromParts",
+                (session, ownerNode, volumeParts, volumeCaches),
+            )?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

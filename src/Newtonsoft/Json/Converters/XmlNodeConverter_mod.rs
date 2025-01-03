@@ -35,6 +35,34 @@ impl crate::Newtonsoft::Json::Converters::XmlNodeConverter {
     pub const SignificantWhitespaceName: &'static str = "#significant-whitespace";
     pub const TextName: &'static str = "#text";
     pub const WhitespaceName: &'static str = "#whitespace";
+    pub fn AddAttribute(
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+        document: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Converters::IXmlDocument,
+        >,
+        currentNode: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Converters::IXmlNode,
+        >,
+        propertyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        attributeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        manager: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNamespaceManager>,
+        attributePrefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "AddAttribute",
+                (
+                    reader,
+                    document,
+                    currentNode,
+                    propertyName,
+                    attributeName,
+                    manager,
+                    attributePrefix,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn AddJsonArrayAttribute(
         &mut self,
         element: quest_hook::libil2cpp::Gc<
@@ -51,6 +79,13 @@ impl crate::Newtonsoft::Json::Converters::XmlNodeConverter {
             .invoke("AddJsonArrayAttribute", (element, document))?;
         Ok(__cordl_ret.into())
     }
+    pub fn AllSameName(
+        node: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Converters::IXmlNode>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AllSameName", (node))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CanConvert(
         &mut self,
         valueType: quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -59,6 +94,17 @@ impl crate::Newtonsoft::Json::Converters::XmlNodeConverter {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("CanConvert", (valueType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ConvertTokenToXmlValue(
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ConvertTokenToXmlValue", (reader))?;
         Ok(__cordl_ret.into())
     }
     pub fn CreateDocumentType(

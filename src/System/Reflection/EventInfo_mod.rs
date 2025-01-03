@@ -64,6 +64,18 @@ impl crate::System::Reflection::EventInfo {
         > = __cordl_object.invoke("GetAddMethod", (nonPublic))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetEventFromHandle(
+        handle: crate::Mono::RuntimeEventHandle,
+        reflectedType: crate::System::RuntimeTypeHandle,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Reflection::EventInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::EventInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetEventFromHandle", (handle, reflectedType))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -147,6 +159,34 @@ impl crate::System::Reflection::EventInfo {
         );
         let __cordl_ret: crate::System::Reflection::MemberTypes = __cordl_object
             .invoke("get_MemberType", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn internal_from_handle_type(
+        event_handle: crate::System::IntPtr,
+        type_handle: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Reflection::EventInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::EventInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("internal_from_handle_type", (event_handle, type_handle))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        left: quest_hook::libil2cpp::Gc<crate::System::Reflection::EventInfo>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Reflection::EventInfo>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        left: quest_hook::libil2cpp::Gc<crate::System::Reflection::EventInfo>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Reflection::EventInfo>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (left, right))?;
         Ok(__cordl_ret.into())
     }
 }

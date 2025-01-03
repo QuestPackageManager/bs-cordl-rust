@@ -84,6 +84,54 @@ impl crate::Newtonsoft::Json::Schema::JsonSchema {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
+    pub fn Parse_Il2CppString0(
+        json: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchema>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Schema::JsonSchema,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Parse", (json))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Parse_JsonSchemaResolver1(
+        json: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        resolver: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Schema::JsonSchemaResolver,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchema>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Schema::JsonSchema,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Parse", (json, resolver))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Read_JsonReader0(
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchema>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Schema::JsonSchema,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Read", (reader))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Read_JsonSchemaResolver1(
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+        resolver: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Schema::JsonSchemaResolver,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchema>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Schema::JsonSchema,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Read", (reader, resolver))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ToString(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

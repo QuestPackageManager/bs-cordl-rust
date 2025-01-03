@@ -26,7 +26,51 @@ for crate::Unity::Collections::LowLevel::Unsafe::NativeSliceUnsafeUtility {
     }
 }
 #[cfg(feature = "Unity+Collections+LowLevel+Unsafe+NativeSliceUnsafeUtility")]
-impl crate::Unity::Collections::LowLevel::Unsafe::NativeSliceUnsafeUtility {}
+impl crate::Unity::Collections::LowLevel::Unsafe::NativeSliceUnsafeUtility {
+    pub fn ConvertExistingDataToNativeSlice<T>(
+        dataPointer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        stride: i32,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::NativeSlice_1<T>>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: crate::Unity::Collections::NativeSlice_1<T> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ConvertExistingDataToNativeSlice", (dataPointer, stride, length))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetUnsafePtr<T>(
+        nativeSlice: crate::Unity::Collections::NativeSlice_1<T>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetUnsafePtr", (nativeSlice))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetUnsafeReadOnlyPtr<T>(
+        nativeSlice: crate::Unity::Collections::NativeSlice_1<T>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetUnsafeReadOnlyPtr", (nativeSlice))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "Unity+Collections+LowLevel+Unsafe+NativeSliceUnsafeUtility")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::Collections::LowLevel::Unsafe::NativeSliceUnsafeUtility {

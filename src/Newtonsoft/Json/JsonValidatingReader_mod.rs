@@ -46,6 +46,14 @@ impl crate::Newtonsoft::Json::JsonValidatingReader {
             .invoke("Close", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn FloatingPointRemainder(
+        dividend: f64,
+        divisor: f64,
+    ) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_ret: f64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FloatingPointRemainder", (dividend, divisor))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetCurrentNodeSchemaType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -71,6 +79,11 @@ impl crate::Newtonsoft::Json::JsonValidatingReader {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("IsPropertyDefinied", (schema, propertyName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsZero(value: f64) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsZero", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn New(

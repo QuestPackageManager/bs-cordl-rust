@@ -133,4 +133,20 @@ impl crate::System::Reflection::CustomAttributeNamedArgument {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Equality(
+        left: crate::System::Reflection::CustomAttributeNamedArgument,
+        right: crate::System::Reflection::CustomAttributeNamedArgument,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        left: crate::System::Reflection::CustomAttributeNamedArgument,
+        right: crate::System::Reflection::CustomAttributeNamedArgument,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
 }

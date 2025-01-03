@@ -61,6 +61,13 @@ impl crate::System::Runtime::CompilerServices::AsyncVoidMethodBuilder {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn Create() -> quest_hook::libil2cpp::Result<
+        crate::System::Runtime::CompilerServices::AsyncVoidMethodBuilder,
+    > {
+        let __cordl_ret: crate::System::Runtime::CompilerServices::AsyncVoidMethodBuilder = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn NotifySynchronizationContextOfCompletion(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

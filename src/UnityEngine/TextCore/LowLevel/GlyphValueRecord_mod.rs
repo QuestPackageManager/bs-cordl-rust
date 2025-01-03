@@ -88,6 +88,16 @@ impl crate::UnityEngine::TextCore::LowLevel::GlyphValueRecord {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Addition(
+        a: crate::UnityEngine::TextCore::LowLevel::GlyphValueRecord,
+        b: crate::UnityEngine::TextCore::LowLevel::GlyphValueRecord,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::TextCore::LowLevel::GlyphValueRecord,
+    > {
+        let __cordl_ret: crate::UnityEngine::TextCore::LowLevel::GlyphValueRecord = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Addition", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn set_xPlacement(
         &mut self,
         value: f32,

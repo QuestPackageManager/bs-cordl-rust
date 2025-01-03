@@ -242,6 +242,18 @@ impl crate::System::Net::ServicePointScheduler {
             .invoke("SendRequest", (operation, groupName))?;
         Ok(__cordl_ret.into())
     }
+    pub fn WaitAsync(
+        workerTask: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+        millisecondTimeout: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<bool>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WaitAsync", (workerTask, millisecondTimeout))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _Run_b__31_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

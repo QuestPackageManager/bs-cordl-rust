@@ -37,6 +37,16 @@ impl std::ops::DerefMut for crate::TMPro::TMP_SubMeshUI {
 }
 #[cfg(feature = "TMPro+TMP_SubMeshUI")]
 impl crate::TMPro::TMP_SubMeshUI {
+    pub fn AddSubTextObject(
+        textComponent: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+        materialReference: crate::TMPro::MaterialReference,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SubMeshUI>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SubMeshUI> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddSubTextObject", (textComponent, materialReference))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CreateMaterialInstance(
         &mut self,
         source: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,

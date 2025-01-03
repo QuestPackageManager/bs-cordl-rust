@@ -28,6 +28,16 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::Cmp::PbmParameter {
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cmp+PbmParameter")]
 impl crate::Org::BouncyCastle::Asn1::Cmp::PbmParameter {
+    pub fn GetInstance(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cmp::PbmParameter>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cmp::PbmParameter,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_Asn1OctetString_AlgorithmIdentifier_DerInteger_AlgorithmIdentifier2(
         salt: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1OctetString>,
         owf: quest_hook::libil2cpp::Gc<

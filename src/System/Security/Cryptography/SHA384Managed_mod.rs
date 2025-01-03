@@ -28,6 +28,11 @@ impl std::ops::DerefMut for crate::System::Security::Cryptography::SHA384Managed
 }
 #[cfg(feature = "System+Security+Cryptography+SHA384Managed")]
 impl crate::System::Security::Cryptography::SHA384Managed {
+    pub fn Ch(x: u64, y: u64, z: u64) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Ch", (x, y, z))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn HashCore(
         &mut self,
         rgb: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -74,12 +79,48 @@ impl crate::System::Security::Cryptography::SHA384Managed {
             .invoke("InitializeState", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn Maj(x: u64, y: u64, z: u64) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Maj", (x, y, z))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
+    }
+    pub fn RotateRight(x: u64, n: i32) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RotateRight", (x, n))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SHA384Expand(
+        x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SHA384Expand", (x))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SHATransform(
+        expandedBuffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        block: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SHATransform", (expandedBuffer, state, block))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Sigma_0(x: u64) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Sigma_0", (x))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Sigma_1(x: u64) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Sigma_1", (x))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _EndHash(
         &mut self,
@@ -115,6 +156,16 @@ impl crate::System::Security::Cryptography::SHA384Managed {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn sigma_0(x: u64) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("sigma_0", (x))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn sigma_1(x: u64) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("sigma_1", (x))?;
         Ok(__cordl_ret.into())
     }
 }

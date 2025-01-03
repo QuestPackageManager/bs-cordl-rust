@@ -51,6 +51,14 @@ impl crate::UnityEngine::UIElements::UIR::RenderChainCommand {
             .invoke("Blit", (source, destination, depth))?;
         Ok(__cordl_ret.into())
     }
+    pub fn CombineScissorRects(
+        r0: crate::UnityEngine::Rect,
+        r1: crate::UnityEngine::Rect,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rect> {
+        let __cordl_ret: crate::UnityEngine::Rect = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CombineScissorRects", (r0, r1))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ExecuteNonDrawMesh(
         &mut self,
         drawParams: quest_hook::libil2cpp::Gc<
@@ -77,6 +85,14 @@ impl crate::UnityEngine::UIElements::UIR::RenderChainCommand {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
+    }
+    pub fn RectPointsToPixelsAndFlipYAxis(
+        rect: crate::UnityEngine::Rect,
+        pixelsPerPoint: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::RectInt> {
+        let __cordl_ret: crate::UnityEngine::RectInt = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RectPointsToPixelsAndFlipYAxis", (rect, pixelsPerPoint))?;
+        Ok(__cordl_ret.into())
     }
     pub fn Reset(
         &mut self,

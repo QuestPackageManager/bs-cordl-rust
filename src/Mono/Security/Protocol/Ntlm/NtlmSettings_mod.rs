@@ -23,7 +23,15 @@ impl std::ops::DerefMut for crate::Mono::Security::Protocol::Ntlm::NtlmSettings 
     }
 }
 #[cfg(feature = "Mono+Security+Protocol+Ntlm+NtlmSettings")]
-impl crate::Mono::Security::Protocol::Ntlm::NtlmSettings {}
+impl crate::Mono::Security::Protocol::Ntlm::NtlmSettings {
+    pub fn get_DefaultAuthLevel() -> quest_hook::libil2cpp::Result<
+        crate::Mono::Security::Protocol::Ntlm::NtlmAuthLevel,
+    > {
+        let __cordl_ret: crate::Mono::Security::Protocol::Ntlm::NtlmAuthLevel = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_DefaultAuthLevel", ())?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "Mono+Security+Protocol+Ntlm+NtlmSettings")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Security::Protocol::Ntlm::NtlmSettings {

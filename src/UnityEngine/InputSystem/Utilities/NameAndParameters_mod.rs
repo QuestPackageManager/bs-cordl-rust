@@ -28,6 +28,65 @@ for crate::UnityEngine::InputSystem::Utilities::NameAndParameters {
 impl crate::UnityEngine::InputSystem::Utilities::NameAndParameters {
     #[cfg(feature = "UnityEngine+InputSystem+Utilities+NameAndParameters+__c")]
     pub type __c = crate::UnityEngine::InputSystem::Utilities::NameAndParameters___c;
+    pub fn Parse(
+        text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::NameAndParameters,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::NameAndParameters = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Parse", (text))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ParseMultiple_ByRefMut1(
+        text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        list: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::InputSystem::Utilities::NameAndParameters,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ParseMultiple", (text, list))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ParseMultiple_Il2CppString0(
+        text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::UnityEngine::InputSystem::Utilities::NameAndParameters,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::UnityEngine::InputSystem::Utilities::NameAndParameters,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ParseMultiple", (text))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ParseName(
+        text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("ParseName", (text))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ParseNameAndParameters(
+        text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        index: quest_hook::libil2cpp::ByRefMut<i32>,
+        nameOnly: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::NameAndParameters,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::NameAndParameters = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ParseNameAndParameters", (text, index, nameOnly))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ToString(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

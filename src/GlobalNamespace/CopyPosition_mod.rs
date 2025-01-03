@@ -104,6 +104,13 @@ impl std::ops::DerefMut for crate::GlobalNamespace::CopyPosition_CopyPositionUpd
 }
 #[cfg(feature = "CopyPosition+CopyPositionUpdater")]
 impl crate::GlobalNamespace::CopyPosition_CopyPositionUpdater {
+    pub fn Add(
+        copyPosition: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::CopyPosition>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Add", (copyPosition))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn LateUpdate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

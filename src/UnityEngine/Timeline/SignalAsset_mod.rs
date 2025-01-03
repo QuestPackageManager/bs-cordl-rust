@@ -51,6 +51,24 @@ impl crate::UnityEngine::Timeline::SignalAsset {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn add_OnEnableCallback(
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::UnityEngine::Timeline::SignalAsset>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("add_OnEnableCallback", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_OnEnableCallback(
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<*mut crate::UnityEngine::Timeline::SignalAsset>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("remove_OnEnableCallback", (value))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+Timeline+SignalAsset")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Timeline::SignalAsset {

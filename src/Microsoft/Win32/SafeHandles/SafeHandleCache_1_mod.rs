@@ -28,7 +28,21 @@ for crate::Microsoft::Win32::SafeHandles::SafeHandleCache_1<T> {
 #[cfg(feature = "Microsoft+Win32+SafeHandles+SafeHandleCache_1")]
 impl<
     T: quest_hook::libil2cpp::Type,
-> crate::Microsoft::Win32::SafeHandles::SafeHandleCache_1<T> {}
+> crate::Microsoft::Win32::SafeHandles::SafeHandleCache_1<T> {
+    pub fn IsCachedInvalidHandle(
+        handle: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::InteropServices::SafeHandle,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsCachedInvalidHandle", (handle))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "Microsoft+Win32+SafeHandles+SafeHandleCache_1")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::Microsoft::Win32::SafeHandles::SafeHandleCache_1<T> {

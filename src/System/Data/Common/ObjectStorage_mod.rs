@@ -220,6 +220,31 @@ impl crate::System::Data::Common::ObjectStorage {
             .invoke("GetFamily", (dataType))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetXmlSerializer_Type0(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Serialization::XmlSerializer>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Serialization::XmlSerializer,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetXmlSerializer", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetXmlSerializer_XmlRootAttribute1(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        attribute: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Serialization::XmlRootAttribute,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Serialization::XmlSerializer>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Serialization::XmlSerializer,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetXmlSerializer", (_cordl_type, attribute))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn IsNull(&mut self, record: i32) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -270,6 +295,13 @@ impl crate::System::Data::Common::ObjectStorage {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetStorage", (store, nullbits))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn VerifyIDynamicMetaObjectProvider(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("VerifyIDynamicMetaObjectProvider", (_cordl_type))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

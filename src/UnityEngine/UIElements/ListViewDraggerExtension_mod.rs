@@ -24,7 +24,36 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::ListViewDraggerExten
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+ListViewDraggerExtension")]
-impl crate::UnityEngine::UIElements::ListViewDraggerExtension {}
+impl crate::UnityEngine::UIElements::ListViewDraggerExtension {
+    pub fn GetRecycledItemFromId(
+        listView: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::BaseVerticalCollectionView,
+        >,
+        id: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ReusableCollectionItem>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::ReusableCollectionItem,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetRecycledItemFromId", (listView, id))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetRecycledItemFromIndex(
+        listView: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::BaseVerticalCollectionView,
+        >,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ReusableCollectionItem>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::ReusableCollectionItem,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetRecycledItemFromIndex", (listView, index))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+ListViewDraggerExtension")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::ListViewDraggerExtension {

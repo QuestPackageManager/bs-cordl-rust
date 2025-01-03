@@ -27,6 +27,27 @@ impl std::ops::DerefMut for crate::UnityEngine::InputSystem::InputActionReferenc
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionReference")]
 impl crate::UnityEngine::InputSystem::InputActionReference {
+    pub fn Create(
+        action: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputActionReference>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputActionReference,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Create", (action))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetDisplayName(
+        action: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetDisplayName", (action))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -147,6 +168,19 @@ impl crate::UnityEngine::InputSystem::InputActionReference {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputActionAsset,
         > = __cordl_object.invoke("get_asset", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit(
+        reference: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputActionReference,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputAction,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (reference))?;
         Ok(__cordl_ret.into())
     }
 }

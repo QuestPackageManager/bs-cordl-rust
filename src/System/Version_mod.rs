@@ -145,6 +145,25 @@ impl crate::System::Version {
             .invoke_void(".ctor", (major, minor, build, revision))?;
         Ok(__cordl_object.into())
     }
+    pub fn Parse(
+        input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Version>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Version> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Parse", (input))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ParseVersion(
+        input: crate::System::ReadOnlySpan_1<char>,
+        throwOnFailure: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Version>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Version> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ParseVersion", (input, throwOnFailure))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn System_ISpanFormattable_TryFormat(
         &mut self,
         destination: crate::System::Span_1<char>,
@@ -225,6 +244,27 @@ impl crate::System::Version {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("TryFormat", (destination, fieldCount, charsWritten))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryParse(
+        input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        result: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Version>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryParse", (input, result))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryParseComponent(
+        component: crate::System::ReadOnlySpan_1<char>,
+        componentName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        throwOnFailure: bool,
+        parsedComponent: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "TryParseComponent",
+                (component, componentName, throwOnFailure, parsedComponent),
+            )?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_4(
@@ -331,6 +371,54 @@ impl crate::System::Version {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("get_Revision", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        v1: quest_hook::libil2cpp::Gc<crate::System::Version>,
+        v2: quest_hook::libil2cpp::Gc<crate::System::Version>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (v1, v2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_GreaterThan(
+        v1: quest_hook::libil2cpp::Gc<crate::System::Version>,
+        v2: quest_hook::libil2cpp::Gc<crate::System::Version>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_GreaterThan", (v1, v2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_GreaterThanOrEqual(
+        v1: quest_hook::libil2cpp::Gc<crate::System::Version>,
+        v2: quest_hook::libil2cpp::Gc<crate::System::Version>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_GreaterThanOrEqual", (v1, v2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        v1: quest_hook::libil2cpp::Gc<crate::System::Version>,
+        v2: quest_hook::libil2cpp::Gc<crate::System::Version>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (v1, v2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_LessThan(
+        v1: quest_hook::libil2cpp::Gc<crate::System::Version>,
+        v2: quest_hook::libil2cpp::Gc<crate::System::Version>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_LessThan", (v1, v2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_LessThanOrEqual(
+        v1: quest_hook::libil2cpp::Gc<crate::System::Version>,
+        v2: quest_hook::libil2cpp::Gc<crate::System::Version>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_LessThanOrEqual", (v1, v2))?;
         Ok(__cordl_ret.into())
     }
 }

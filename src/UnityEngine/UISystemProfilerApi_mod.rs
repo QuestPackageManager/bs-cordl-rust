@@ -26,6 +26,28 @@ impl std::ops::DerefMut for crate::UnityEngine::UISystemProfilerApi {
 impl crate::UnityEngine::UISystemProfilerApi {
     #[cfg(feature = "UnityEngine+UISystemProfilerApi+SampleType")]
     pub type SampleType = crate::UnityEngine::UISystemProfilerApi_SampleType;
+    pub fn AddMarker(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        obj: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddMarker", (name, obj))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn BeginSample(
+        _cordl_type: crate::UnityEngine::UISystemProfilerApi_SampleType,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BeginSample", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EndSample(
+        _cordl_type: crate::UnityEngine::UISystemProfilerApi_SampleType,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EndSample", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+UISystemProfilerApi")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UISystemProfilerApi {

@@ -28,6 +28,31 @@ impl crate::UnityEngine::TerrainCallbacks {
     pub type HeightmapChangedCallback = crate::UnityEngine::TerrainCallbacks_HeightmapChangedCallback;
     #[cfg(feature = "UnityEngine+TerrainCallbacks+TextureChangedCallback")]
     pub type TextureChangedCallback = crate::UnityEngine::TerrainCallbacks_TextureChangedCallback;
+    pub fn InvokeHeightmapChangedCallback(
+        terrainData: quest_hook::libil2cpp::Gc<crate::UnityEngine::TerrainData>,
+        heightRegion: crate::UnityEngine::RectInt,
+        synched: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "InvokeHeightmapChangedCallback",
+                (terrainData, heightRegion, synched),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InvokeTextureChangedCallback(
+        terrainData: quest_hook::libil2cpp::Gc<crate::UnityEngine::TerrainData>,
+        textureName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        texelRegion: crate::UnityEngine::RectInt,
+        synched: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "InvokeTextureChangedCallback",
+                (terrainData, textureName, texelRegion, synched),
+            )?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+TerrainCallbacks")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::TerrainCallbacks {

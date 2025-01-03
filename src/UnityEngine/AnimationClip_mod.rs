@@ -76,6 +76,13 @@ impl crate::UnityEngine::AnimationClip {
             .invoke("GetEventsInternal", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn Internal_CreateAnimationClip(
+        _cordl_self: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Internal_CreateAnimationClip", (_cordl_self))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -83,7 +90,17 @@ impl crate::UnityEngine::AnimationClip {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn SampleAnimation(
+    pub fn SampleAnimation_AnimationClip_f32_WrapMode1(
+        go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        clip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
+        inTime: f32,
+        wrapMode: crate::UnityEngine::WrapMode,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SampleAnimation", (go, clip, inTime, wrapMode))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SampleAnimation_f32_0(
         &mut self,
         go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         _cordl_time: f32,

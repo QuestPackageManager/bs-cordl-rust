@@ -100,6 +100,13 @@ for crate::GlobalNamespace::OVRNetwork_FrameHeader {
 #[cfg(feature = "OVRNetwork+FrameHeader")]
 impl crate::GlobalNamespace::OVRNetwork_FrameHeader {
     pub const StructSize: i32 = 12i32;
+    pub fn FromBytes(
+        arr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRNetwork_FrameHeader> {
+        let __cordl_ret: crate::GlobalNamespace::OVRNetwork_FrameHeader = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromBytes", (arr))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ToBytes(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

@@ -27,6 +27,67 @@ for crate::Org::BouncyCastle::Crypto::Parameters::DesEdeParameters {
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+DesEdeParameters")]
 impl crate::Org::BouncyCastle::Crypto::Parameters::DesEdeParameters {
     pub const DesEdeKeyLength: i32 = 24i32;
+    pub fn FixKey(
+        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        keyOff: i32,
+        keyLen: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FixKey", (key, keyOff, keyLen))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsReal2Key(
+        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        offset: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsReal2Key", (key, offset))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsReal3Key(
+        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        offset: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsReal3Key", (key, offset))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsRealEdeKey(
+        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        offset: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsRealEdeKey", (key, offset))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsWeakKey_Il2CppArray2(
+        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsWeakKey", (key))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsWeakKey_i32_1(
+        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        offset: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsWeakKey", (key, offset))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsWeakKey_i32_i32_0(
+        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        offset: i32,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsWeakKey", (key, offset, length))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_Il2CppArray0(
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

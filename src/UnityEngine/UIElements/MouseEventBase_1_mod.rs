@@ -39,6 +39,61 @@ for crate::UnityEngine::UIElements::MouseEventBase_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::UnityEngine::UIElements::MouseEventBase_1<T> {
+    pub fn GetPooled_Event0(
+        systemEvent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Event>,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPooled", (systemEvent))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPooled_IMouseEvent2(
+        triggerEvent: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::IMouseEvent,
+        >,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPooled", (triggerEvent))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPooled_IMouseEvent_Vector2__cordl_bool1(
+        triggerEvent: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::IMouseEvent,
+        >,
+        mousePosition: crate::UnityEngine::Vector2,
+        recomputeTopElementUnderMouse: bool,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetPooled",
+                (triggerEvent, mousePosition, recomputeTopElementUnderMouse),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPooled_IPointerEvent3(
+        pointerEvent: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::IPointerEvent,
+        >,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPooled", (pointerEvent))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Init(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type

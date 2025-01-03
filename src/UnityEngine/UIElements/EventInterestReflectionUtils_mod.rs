@@ -30,6 +30,33 @@ impl crate::UnityEngine::UIElements::EventInterestReflectionUtils {
         feature = "UnityEngine+UIElements+EventInterestReflectionUtils+DefaultEventInterests"
     )]
     pub type DefaultEventInterests = crate::UnityEngine::UIElements::EventInterestReflectionUtils_DefaultEventInterests;
+    pub fn ComputeDefaultEventInterests(
+        elementType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ComputeDefaultEventInterests", (elementType, methodName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetDefaultEventInterests(
+        elementType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        defaultActionCategories: quest_hook::libil2cpp::ByRefMut<i32>,
+        defaultActionAtTargetCategories: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetDefaultEventInterests",
+                (elementType, defaultActionCategories, defaultActionAtTargetCategories),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetEventCategory(
+        eventType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::EventCategory> {
+        let __cordl_ret: crate::UnityEngine::UIElements::EventCategory = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetEventCategory", (eventType))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+UIElements+EventInterestReflectionUtils")]
 impl quest_hook::libil2cpp::ObjectType

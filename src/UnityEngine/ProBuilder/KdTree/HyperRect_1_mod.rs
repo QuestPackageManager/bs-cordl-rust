@@ -64,6 +64,22 @@ impl<
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn Infinite(
+        dimensions: i32,
+        math: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::KdTree::ITypeMath_1<T>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ProBuilder::KdTree::HyperRect_1<T>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: crate::UnityEngine::ProBuilder::KdTree::HyperRect_1<T> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Infinite", (dimensions, math))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_MaxPoint(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

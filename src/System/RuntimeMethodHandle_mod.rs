@@ -21,6 +21,18 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::RuntimeMethod
 }
 #[cfg(feature = "System+RuntimeMethodHandle")]
 impl crate::System::RuntimeMethodHandle {
+    pub fn ConstructInstantiation(
+        method: quest_hook::libil2cpp::Gc<crate::System::Reflection::RuntimeMethodInfo>,
+        format: crate::System::TypeNameFormatFlags,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ConstructInstantiation", (method, format))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Equals(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

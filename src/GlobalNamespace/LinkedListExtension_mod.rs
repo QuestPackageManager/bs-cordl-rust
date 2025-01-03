@@ -23,7 +23,21 @@ impl std::ops::DerefMut for crate::GlobalNamespace::LinkedListExtension {
     }
 }
 #[cfg(feature = "LinkedListExtension")]
-impl crate::GlobalNamespace::LinkedListExtension {}
+impl crate::GlobalNamespace::LinkedListExtension {
+    pub fn Index<T>(
+        searchNode: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::LinkedListNode_1<T>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Index", (searchNode))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "LinkedListExtension")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LinkedListExtension {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

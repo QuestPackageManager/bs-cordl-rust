@@ -28,6 +28,29 @@ impl std::ops::DerefMut for crate::Mono::Security::Authenticode::PrivateKey {
 }
 #[cfg(feature = "Mono+Security+Authenticode+PrivateKey")]
 impl crate::Mono::Security::Authenticode::PrivateKey {
+    pub fn CreateFromFile_Il2CppString0(
+        filename: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Mono::Security::Authenticode::PrivateKey>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Mono::Security::Authenticode::PrivateKey,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateFromFile", (filename))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateFromFile_Il2CppString1(
+        filename: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Mono::Security::Authenticode::PrivateKey>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Mono::Security::Authenticode::PrivateKey,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateFromFile", (filename, password))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Decode(
         &mut self,
         pvk: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,

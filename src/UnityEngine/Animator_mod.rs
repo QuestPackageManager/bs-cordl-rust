@@ -54,6 +54,23 @@ impl crate::UnityEngine::Animator {
             .invoke("ClearInternalControllerPlayable", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn ConvertStateMachineBehaviour<T>(
+        rawObjects: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::ScriptableObject>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<T>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ConvertStateMachineBehaviour", (rawObjects))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CrossFadeInFixedTime_Il2CppString0(
         &mut self,
         stateName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2300,6 +2317,13 @@ impl crate::UnityEngine::Animator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("StopRecording", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StringToHash(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StringToHash", (name))?;
         Ok(__cordl_ret.into())
     }
     pub fn Update(

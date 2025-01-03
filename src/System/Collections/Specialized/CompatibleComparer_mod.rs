@@ -87,6 +87,24 @@ impl crate::System::Collections::Specialized::CompatibleComparer {
         > = __cordl_object.invoke("get_Comparer", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_DefaultComparer() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IComparer,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_DefaultComparer", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_DefaultHashCodeProvider() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IHashCodeProvider>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IHashCodeProvider,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_DefaultHashCodeProvider", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_HashCodeProvider(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

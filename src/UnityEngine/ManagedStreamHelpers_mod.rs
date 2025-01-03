@@ -23,7 +23,47 @@ impl std::ops::DerefMut for crate::UnityEngine::ManagedStreamHelpers {
     }
 }
 #[cfg(feature = "UnityEngine+ManagedStreamHelpers")]
-impl crate::UnityEngine::ManagedStreamHelpers {}
+impl crate::UnityEngine::ManagedStreamHelpers {
+    pub fn ManagedStreamLength(
+        stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+        returnValueAddress: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ManagedStreamLength", (stream, returnValueAddress))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ManagedStreamRead(
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        offset: i32,
+        count: i32,
+        stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+        returnValueAddress: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ManagedStreamRead",
+                (buffer, offset, count, stream, returnValueAddress),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ManagedStreamSeek(
+        offset: i64,
+        origin: u32,
+        stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+        returnValueAddress: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ManagedStreamSeek", (offset, origin, stream, returnValueAddress))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ValidateLoadFromStream(
+        stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ValidateLoadFromStream", (stream))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+ManagedStreamHelpers")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ManagedStreamHelpers {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

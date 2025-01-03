@@ -57,11 +57,30 @@ impl crate::UnityEngine::UnitySynchronizationContext {
             .invoke("Exec", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn ExecutePendingTasks(
+        millisecondsTimeout: i64,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ExecutePendingTasks", (millisecondsTimeout))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ExecuteTasks() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ExecuteTasks", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn HasPendingTasks(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("HasPendingTasks", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InitializeSynchronizationContext() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InitializeSynchronizationContext", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn New_List_1_i32_1(

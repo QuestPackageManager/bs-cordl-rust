@@ -41,6 +41,42 @@ impl crate::System::Globalization::CompareInfo {
             .invoke("CompareOptionIgnoreCase", (string1, string2))?;
         Ok(__cordl_ret.into())
     }
+    pub fn CompareOrdinalIgnoreCase_Il2CppString_i32_i32_Il2CppString_i32_i32_0(
+        strA: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        indexA: i32,
+        lengthA: i32,
+        strB: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        indexB: i32,
+        lengthB: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CompareOrdinalIgnoreCase",
+                (strA, indexA, lengthA, strB, indexB, lengthB),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CompareOrdinalIgnoreCase_ReadOnlySpan_1_ReadOnlySpan_1_1(
+        strA: crate::System::ReadOnlySpan_1<char>,
+        strB: crate::System::ReadOnlySpan_1<char>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CompareOrdinalIgnoreCase", (strA, strB))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CompareStringOrdinalIgnoreCase(
+        pString1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        length1: i32,
+        pString2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        length2: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CompareStringOrdinalIgnoreCase",
+                (pString1, length1, pString2, length2),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CompareString_Il2CppString0(
         &mut self,
         string1: crate::System::ReadOnlySpan_1<char>,
@@ -203,6 +239,17 @@ impl crate::System::Globalization::CompareInfo {
         > = __cordl_object.invoke("GetCollator", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetCompareInfo(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Globalization::CompareInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Globalization::CompareInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCompareInfo", (name))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetHashCodeOfString(
         &mut self,
         source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -243,6 +290,13 @@ impl crate::System::Globalization::CompareInfo {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", (source, options))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetIgnoreCaseHash(
+        source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetIgnoreCaseHash", (source))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetSortKey(
@@ -292,6 +346,20 @@ impl crate::System::Globalization::CompareInfo {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("IndexOfOrdinal", (source, value, startIndex, count, ignoreCase))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IndexOfOrdinalCore(
+        source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        startIndex: i32,
+        count: i32,
+        ignoreCase: bool,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "IndexOfOrdinalCore",
+                (source, value, startIndex, count, ignoreCase),
+            )?;
         Ok(__cordl_ret.into())
     }
     pub fn IndexOf_CompareOptions0(
@@ -346,6 +414,51 @@ impl crate::System::Globalization::CompareInfo {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Globalization::SortKey,
         > = __cordl_object.invoke("InvariantCreateSortKey", (source, options))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InvariantFindString(
+        source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        sourceCount: i32,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        valueCount: i32,
+        ignoreCase: bool,
+        start: bool,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "InvariantFindString",
+                (source, sourceCount, value, valueCount, ignoreCase, start),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InvariantIndexOf(
+        source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        startIndex: i32,
+        count: i32,
+        ignoreCase: bool,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InvariantIndexOf", (source, value, startIndex, count, ignoreCase))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InvariantLastIndexOf(
+        source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        startIndex: i32,
+        count: i32,
+        ignoreCase: bool,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "InvariantLastIndexOf",
+                (source, value, startIndex, count, ignoreCase),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InvariantToUpper(c: char) -> quest_hook::libil2cpp::Result<char> {
+        let __cordl_ret: char = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InvariantToUpper", (c))?;
         Ok(__cordl_ret.into())
     }
     pub fn IsPrefix(
@@ -416,6 +529,20 @@ impl crate::System::Globalization::CompareInfo {
         let __cordl_ret: i32 = __cordl_object
             .invoke(
                 "LastIndexOfOrdinal",
+                (source, value, startIndex, count, ignoreCase),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LastIndexOfOrdinalCore(
+        source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        startIndex: i32,
+        count: i32,
+        ignoreCase: bool,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "LastIndexOfOrdinalCore",
                 (source, value, startIndex, count, ignoreCase),
             )?;
         Ok(__cordl_ret.into())
@@ -581,6 +708,38 @@ impl crate::System::Globalization::CompareInfo {
         > = __cordl_object.invoke("get_Name", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_UseManagedCollation() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_UseManagedCollation", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn internal_compare(
+        str1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        offset1: i32,
+        length1: i32,
+        str2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        offset2: i32,
+        length2: i32,
+        options: crate::System::Globalization::CompareOptions,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "internal_compare",
+                (str1, offset1, length1, str2, offset2, length2, options),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn internal_compare_icall(
+        str1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        length1: i32,
+        str2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        length2: i32,
+        options: crate::System::Globalization::CompareOptions,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("internal_compare_icall", (str1, length1, str2, length2, options))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn internal_compare_managed(
         &mut self,
         str1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -618,6 +777,32 @@ impl crate::System::Globalization::CompareInfo {
             .invoke(
                 "internal_compare_switch",
                 (str1, offset1, length1, str2, offset2, length2, options),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn internal_index(
+        source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        sindex: i32,
+        count: i32,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        first: bool,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("internal_index", (source, sindex, count, value, first))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn internal_index_icall(
+        source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        sindex: i32,
+        count: i32,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        value_length: i32,
+        first: bool,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "internal_index_icall",
+                (source, sindex, count, value, value_length, first),
             )?;
         Ok(__cordl_ret.into())
     }

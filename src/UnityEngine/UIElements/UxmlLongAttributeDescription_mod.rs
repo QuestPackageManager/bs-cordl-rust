@@ -28,6 +28,14 @@ for crate::UnityEngine::UIElements::UxmlLongAttributeDescription {
 impl crate::UnityEngine::UIElements::UxmlLongAttributeDescription {
     #[cfg(feature = "UnityEngine+UIElements+UxmlLongAttributeDescription+__c")]
     pub type __c = crate::UnityEngine::UIElements::UxmlLongAttributeDescription___c;
+    pub fn ConvertValueToLong(
+        v: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        defaultValue: i64,
+    ) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ConvertValueToLong", (v, defaultValue))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetValueFromBag(
         &mut self,
         bag: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IUxmlAttributes>,

@@ -233,6 +233,20 @@ impl crate::GlobalNamespace::IgnoranceConnectionManager {
         let __cordl_ret: bool = __cordl_object.invoke("Init", (initParams))?;
         Ok(__cordl_ret.into())
     }
+    pub fn Log(
+        msg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Log", (msg))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LogError(
+        msg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LogError", (msg))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -310,6 +324,20 @@ impl crate::GlobalNamespace::IgnoranceConnectionManager {
             .invoke("StartBackgroundSentry", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn ToChannel(
+        deliveryMethod: crate::BGNet::Core::DeliveryMethod,
+    ) -> quest_hook::libil2cpp::Result<u8> {
+        let __cordl_ret: u8 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToChannel", (deliveryMethod))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToDeliveryMethod(
+        channel: u8,
+    ) -> quest_hook::libil2cpp::Result<crate::BGNet::Core::DeliveryMethod> {
+        let __cordl_ret: crate::BGNet::Core::DeliveryMethod = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToDeliveryMethod", (channel))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn TryGetConnection(
         &mut self,
         peerId: u32,
@@ -343,6 +371,20 @@ impl crate::GlobalNamespace::IgnoranceConnectionManager {
                 "TryParseConnectionMessage",
                 (reader, userId, userName, isConnectionOwner),
             )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WaitForClientShutdown(
+        client: quest_hook::libil2cpp::Gc<crate::IgnoranceCore::IgnoranceClient>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WaitForClientShutdown", (client))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WaitForServerShutdown(
+        server: quest_hook::libil2cpp::Gc<crate::IgnoranceCore::IgnoranceServer>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WaitForServerShutdown", (server))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_0(

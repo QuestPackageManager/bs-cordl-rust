@@ -71,6 +71,28 @@ impl crate::Org::BouncyCastle::Asn1::Asn1Object {
             .invoke("Encode", (derOut))?;
         Ok(__cordl_ret.into())
     }
+    pub fn FromByteArray(
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Object>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1Object,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromByteArray", (data))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromStream(
+        inStr: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Object>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1Object,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromStream", (inStr))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

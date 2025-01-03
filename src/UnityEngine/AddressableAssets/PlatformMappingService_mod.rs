@@ -26,6 +26,42 @@ for crate::UnityEngine::AddressableAssets::PlatformMappingService {
 }
 #[cfg(feature = "UnityEngine+AddressableAssets+PlatformMappingService")]
 impl crate::UnityEngine::AddressableAssets::PlatformMappingService {
+    pub fn GetAddressablesPlatformInternal(
+        platform: crate::UnityEngine::RuntimePlatform,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::AddressableAssets::AddressablesPlatform,
+    > {
+        let __cordl_ret: crate::UnityEngine::AddressableAssets::AddressablesPlatform = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetAddressablesPlatformInternal", (platform))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetAddressablesPlatformPathInternal(
+        platform: crate::UnityEngine::RuntimePlatform,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetAddressablesPlatformPathInternal", (platform))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPlatform() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::AddressableAssets::AddressablesPlatform,
+    > {
+        let __cordl_ret: crate::UnityEngine::AddressableAssets::AddressablesPlatform = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPlatform", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPlatformPathSubFolder() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPlatformPathSubFolder", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

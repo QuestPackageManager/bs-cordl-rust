@@ -26,6 +26,22 @@ for crate::GlobalNamespace::LastUsedBeatmapDataCache {
 }
 #[cfg(feature = "LastUsedBeatmapDataCache")]
 impl crate::GlobalNamespace::LastUsedBeatmapDataCache {
+    pub fn AreRequiredGameplayModifiersSame(
+        first: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
+        second: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AreRequiredGameplayModifiersSame", (first, second))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AreRequiredPlayerSettingsSame(
+        first: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerSpecificSettings>,
+        second: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerSpecificSettings>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AreRequiredPlayerSettingsSame", (first, second))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn AreSameBeatmapDataCached(
         &mut self,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,

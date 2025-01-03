@@ -27,6 +27,39 @@ impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::Bounds2D {
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Bounds2D")]
 impl crate::UnityEngine::ProBuilder::Bounds2D {
+    pub fn Center_IEnumerable_1_2(
+        points: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector4>,
+        >,
+        indexes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<i32>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Center", (points, indexes))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Center_IList_1_0(
+        points: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector2>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Center", (points))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Center_IList_1_1(
+        points: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector2>,
+        >,
+        indexes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<i32>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Center", (points, indexes))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ContainsPoint(
         &mut self,
         point: crate::UnityEngine::Vector2,
@@ -164,6 +197,18 @@ impl crate::UnityEngine::ProBuilder::Bounds2D {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetWithPoints", (points, indexes))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Size(
+        points: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector2>,
+        >,
+        indexes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<i32>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Size", (points, indexes))?;
         Ok(__cordl_ret.into())
     }
     pub fn ToString(

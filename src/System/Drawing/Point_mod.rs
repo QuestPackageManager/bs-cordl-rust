@@ -78,6 +78,14 @@ impl crate::System::Drawing::Point {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Equality(
+        left: crate::System::Drawing::Point,
+        right: crate::System::Drawing::Point,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "System+Drawing+Point")]
 impl AsRef<crate::System::IEquatable_1<crate::System::Drawing::Point>>

@@ -30,6 +30,17 @@ impl std::ops::DerefMut for crate::System::IO::EnumerationOptions {
 }
 #[cfg(feature = "System+IO+EnumerationOptions")]
 impl crate::System::IO::EnumerationOptions {
+    pub fn FromSearchOption(
+        searchOption: crate::System::IO::SearchOption,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IO::EnumerationOptions>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::IO::EnumerationOptions,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromSearchOption", (searchOption))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -55,6 +66,31 @@ impl crate::System::IO::EnumerationOptions {
         );
         let __cordl_ret: crate::System::IO::FileAttributes = __cordl_object
             .invoke("get_AttributesToSkip", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Compatible() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IO::EnumerationOptions>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::IO::EnumerationOptions,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_Compatible", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_CompatibleRecursive() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IO::EnumerationOptions>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::IO::EnumerationOptions,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_CompatibleRecursive", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Default() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IO::EnumerationOptions>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::IO::EnumerationOptions,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_Default", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_IgnoreInaccessible(&mut self) -> quest_hook::libil2cpp::Result<bool> {

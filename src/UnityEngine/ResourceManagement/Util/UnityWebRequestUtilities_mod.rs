@@ -27,12 +27,33 @@ for crate::UnityEngine::ResourceManagement::Util::UnityWebRequestUtilities {
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+UnityWebRequestUtilities")]
 impl crate::UnityEngine::ResourceManagement::Util::UnityWebRequestUtilities {
+    pub fn IsAssetBundleDownloaded(
+        op: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Networking::UnityWebRequestAsyncOperation,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsAssetBundleDownloaded", (op))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
+    }
+    pub fn RequestHasErrors(
+        webReq: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Networking::UnityWebRequest,
+        >,
+        result: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::UnityEngine::ResourceManagement::Util::UnityWebRequestResult,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RequestHasErrors", (webReq, result))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,

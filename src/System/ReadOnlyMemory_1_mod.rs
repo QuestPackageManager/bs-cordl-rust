@@ -25,6 +25,31 @@ for crate::System::ReadOnlyMemory_1<T> {
 }
 #[cfg(feature = "System+ReadOnlyMemory_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::System::ReadOnlyMemory_1<T> {
+    pub fn CombineHashCodes_i32_1(
+        h1: i32,
+        h2: i32,
+        h3: i32,
+    ) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CombineHashCodes", (h1, h2, h3))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CombineHashCodes_i32_i32_0(
+        left: i32,
+        right: i32,
+    ) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CombineHashCodes", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Equals_Il2CppObject0(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

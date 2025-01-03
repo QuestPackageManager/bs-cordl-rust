@@ -23,7 +23,42 @@ impl std::ops::DerefMut for crate::Tayx::Graphy::Utils::NumString::G_IntString {
     }
 }
 #[cfg(feature = "Tayx+Graphy+Utils+NumString+G_IntString")]
-impl crate::Tayx::Graphy::Utils::NumString::G_IntString {}
+impl crate::Tayx::Graphy::Utils::NumString::G_IntString {
+    pub fn Dispose() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Dispose", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Init(
+        minNegativeValue: i32,
+        maxPositiveValue: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Init", (minNegativeValue, maxPositiveValue))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToStringNonAlloc(
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToStringNonAlloc", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_MaxValue() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_MaxValue", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_MinValue() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_MinValue", ())?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "Tayx+Graphy+Utils+NumString+G_IntString")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Tayx::Graphy::Utils::NumString::G_IntString {

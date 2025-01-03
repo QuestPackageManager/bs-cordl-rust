@@ -26,12 +26,68 @@ impl std::ops::DerefMut for crate::TMPro::TMP_TextParsingUtilities {
 impl crate::TMPro::TMP_TextParsingUtilities {
     pub const k_LookupStringL: &'static str = "-------------------------------- !-#$%&-()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[-]^_`abcdefghijklmnopqrstuvwxyz{|}~-";
     pub const k_LookupStringU: &'static str = "-------------------------------- !-#$%&-()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[-]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~-";
+    pub fn ConvertToUTF32(
+        highSurrogate: u32,
+        lowSurrogate: u32,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ConvertToUTF32", (highSurrogate, lowSurrogate))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetHashCode(
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetHashCode", (s))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetHashCodeCaseSensitive(
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetHashCodeCaseSensitive", (s))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsHighSurrogate(c: u32) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsHighSurrogate", (c))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsLowSurrogate(c: u32) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsLowSurrogate", (c))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
+    }
+    pub fn ToLowerASCIIFast__cordl_char0(
+        c: char,
+    ) -> quest_hook::libil2cpp::Result<char> {
+        let __cordl_ret: char = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToLowerASCIIFast", (c))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToLowerASCIIFast_u32_1(c: u32) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToLowerASCIIFast", (c))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToUpperASCIIFast__cordl_char0(
+        c: char,
+    ) -> quest_hook::libil2cpp::Result<char> {
+        let __cordl_ret: char = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToUpperASCIIFast", (c))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToUpperASCIIFast_u32_1(c: u32) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToUpperASCIIFast", (c))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -41,6 +97,14 @@ impl crate::TMPro::TMP_TextParsingUtilities {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_instance() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_TextParsingUtilities>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::TMPro::TMP_TextParsingUtilities,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_instance", ())?;
         Ok(__cordl_ret.into())
     }
 }

@@ -26,12 +26,63 @@ for crate::Org::BouncyCastle::Crypto::Agreement::DHStandardGroups {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+DHStandardGroups")]
 impl crate::Org::BouncyCastle::Crypto::Agreement::DHStandardGroups {
+    pub fn FromHex(
+        hex: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::BigInteger,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("FromHex", (hex))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromPG(
+        hexP: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        hexG: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Parameters::DHParameters,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Parameters::DHParameters,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromPG", (hexP, hexG))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
+    }
+    pub fn SafePrimeGen2_Il2CppString0(
+        hexP: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Parameters::DHParameters,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Parameters::DHParameters,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SafePrimeGen2", (hexP))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SafePrimeGen2_i32_1(
+        hexP: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        l: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Parameters::DHParameters,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Parameters::DHParameters,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SafePrimeGen2", (hexP, l))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,

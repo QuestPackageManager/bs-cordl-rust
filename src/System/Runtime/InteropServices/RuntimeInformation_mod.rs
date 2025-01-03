@@ -24,7 +24,32 @@ impl std::ops::DerefMut for crate::System::Runtime::InteropServices::RuntimeInfo
     }
 }
 #[cfg(feature = "System+Runtime+InteropServices+RuntimeInformation")]
-impl crate::System::Runtime::InteropServices::RuntimeInformation {}
+impl crate::System::Runtime::InteropServices::RuntimeInformation {
+    pub fn GetOSName() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetOSName", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetRuntimeArchitecture() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetRuntimeArchitecture", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsOSPlatform(
+        osPlatform: crate::System::Runtime::InteropServices::OSPlatform,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsOSPlatform", (osPlatform))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Runtime+InteropServices+RuntimeInformation")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::InteropServices::RuntimeInformation {

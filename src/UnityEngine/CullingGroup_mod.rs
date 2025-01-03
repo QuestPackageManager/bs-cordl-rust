@@ -28,6 +28,15 @@ impl std::ops::DerefMut for crate::UnityEngine::CullingGroup {
 impl crate::UnityEngine::CullingGroup {
     #[cfg(feature = "UnityEngine+CullingGroup+StateChanged")]
     pub type StateChanged = crate::UnityEngine::CullingGroup_StateChanged;
+    pub fn SendEvents(
+        cullingGroup: quest_hook::libil2cpp::Gc<crate::UnityEngine::CullingGroup>,
+        eventsPtr: crate::System::IntPtr,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SendEvents", (cullingGroup, eventsPtr, count))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+CullingGroup")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::CullingGroup {

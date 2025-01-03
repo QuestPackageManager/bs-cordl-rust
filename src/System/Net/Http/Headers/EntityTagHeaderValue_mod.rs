@@ -76,6 +76,40 @@ impl crate::System::Net::Http::Headers::EntityTagHeaderValue {
         > = __cordl_object.invoke("ToString", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn TryParseElement(
+        lexer: quest_hook::libil2cpp::Gc<crate::System::Net::Http::Headers::Lexer>,
+        parsedValue: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::System::Net::Http::Headers::EntityTagHeaderValue,
+        >,
+        t: quest_hook::libil2cpp::ByRefMut<crate::System::Net::Http::Headers::Token>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryParseElement", (lexer, parsedValue, t))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryParse_ByRefMut0(
+        input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        parsedValue: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::System::Net::Http::Headers::EntityTagHeaderValue,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryParse", (input, parsedValue))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryParse_i32_ByRefMut1(
+        input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        minimalCount: i32,
+        result: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::System::Collections::Generic::List_1<
+                *mut crate::System::Net::Http::Headers::EntityTagHeaderValue,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryParse", (input, minimalCount, result))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

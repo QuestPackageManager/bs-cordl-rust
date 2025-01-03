@@ -25,6 +25,34 @@ impl std::ops::DerefMut for crate::System::Resources::ManifestBasedResourceGrove
 }
 #[cfg(feature = "System+Resources+ManifestBasedResourceGroveler")]
 impl crate::System::Resources::ManifestBasedResourceGroveler {
+    pub fn GetNeutralResourcesLanguage(
+        a: quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
+        fallbackLocation: quest_hook::libil2cpp::ByRefMut<
+            crate::System::Resources::UltimateResourceFallbackLocation,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Globalization::CultureInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetNeutralResourcesLanguage", (a, fallbackLocation))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetNeutralResourcesLanguageAttribute(
+        assembly: quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
+        cultureName: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+        fallbackLocation: quest_hook::libil2cpp::ByRefMut<i16>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetNeutralResourcesLanguageAttribute",
+                (assembly, cultureName, fallbackLocation),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         mediator: quest_hook::libil2cpp::Gc<
             crate::System::Resources::ResourceManager_ResourceManagerMediator,

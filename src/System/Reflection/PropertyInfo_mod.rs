@@ -275,6 +275,22 @@ impl crate::System::Reflection::PropertyInfo {
             .invoke("get_PropertyType", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Equality(
+        left: quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        left: quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
+        right: quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "System+Reflection+PropertyInfo")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Reflection::PropertyInfo {

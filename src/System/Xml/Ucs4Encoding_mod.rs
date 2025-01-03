@@ -163,6 +163,34 @@ impl crate::System::Xml::Ucs4Encoding {
         let __cordl_ret: i32 = __cordl_object.invoke("get_CodePage", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_UCS4_2143() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_UCS4_2143", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_UCS4_3412() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_UCS4_3412", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_UCS4_Bigendian() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_UCS4_Bigendian", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_UCS4_Littleendian() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_UCS4_Littleendian", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_WebName(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

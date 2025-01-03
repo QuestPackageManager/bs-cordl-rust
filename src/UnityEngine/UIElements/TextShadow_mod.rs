@@ -54,6 +54,15 @@ impl crate::UnityEngine::UIElements::TextShadow {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn LerpUnclamped(
+        a: crate::UnityEngine::UIElements::TextShadow,
+        b: crate::UnityEngine::UIElements::TextShadow,
+        t: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::TextShadow> {
+        let __cordl_ret: crate::UnityEngine::UIElements::TextShadow = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LerpUnclamped", (a, b, t))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ToString(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -62,6 +71,22 @@ impl crate::UnityEngine::UIElements::TextShadow {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        style1: crate::UnityEngine::UIElements::TextShadow,
+        style2: crate::UnityEngine::UIElements::TextShadow,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (style1, style2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        style1: crate::UnityEngine::UIElements::TextShadow,
+        style2: crate::UnityEngine::UIElements::TextShadow,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (style1, style2))?;
         Ok(__cordl_ret.into())
     }
 }

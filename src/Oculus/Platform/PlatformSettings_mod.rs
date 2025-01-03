@@ -44,6 +44,64 @@ impl crate::Oculus::Platform::PlatformSettings {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_AppID() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_AppID", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Instance() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::PlatformSettings>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::PlatformSettings,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_Instance", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_MobileAppID() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_MobileAppID", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_UseStandalonePlatform() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_UseStandalonePlatform", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_AppID(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_AppID", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_Instance(
+        value: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::PlatformSettings>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_Instance", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_MobileAppID(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_MobileAppID", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_UseStandalonePlatform(
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_UseStandalonePlatform", (value))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "Oculus+Platform+PlatformSettings")]
 impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Platform::PlatformSettings {

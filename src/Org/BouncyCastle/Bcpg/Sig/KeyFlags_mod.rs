@@ -31,6 +31,17 @@ impl crate::Org::BouncyCastle::Bcpg::Sig::KeyFlags {
     pub const Shared: i32 = 128i32;
     pub const SignData: i32 = 2i32;
     pub const Split: i32 = 16i32;
+    pub fn IntToByteArray(
+        v: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IntToByteArray", (v))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New__cordl_bool_Il2CppArray0(
         critical: bool,
         isLongLength: bool,

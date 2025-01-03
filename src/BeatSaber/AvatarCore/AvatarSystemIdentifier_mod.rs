@@ -53,6 +53,15 @@ impl crate::BeatSaber::AvatarCore::AvatarSystemIdentifier {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn HashAvatarSystemTypeMultiplier(
+        avatarSystemTypeIdentifier: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("HashAvatarSystemTypeMultiplier", (avatarSystemTypeIdentifier))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
         avatarSystemTypeIdentifier: quest_hook::libil2cpp::Gc<
@@ -64,6 +73,22 @@ impl crate::BeatSaber::AvatarCore::AvatarSystemIdentifier {
             ".ctor",
             (avatarSystemTypeIdentifier),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        obj1: crate::BeatSaber::AvatarCore::AvatarSystemIdentifier,
+        obj2: crate::BeatSaber::AvatarCore::AvatarSystemIdentifier,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (obj1, obj2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        obj1: crate::BeatSaber::AvatarCore::AvatarSystemIdentifier,
+        obj2: crate::BeatSaber::AvatarCore::AvatarSystemIdentifier,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (obj1, obj2))?;
         Ok(__cordl_ret.into())
     }
 }

@@ -26,6 +26,16 @@ impl std::ops::DerefMut for crate::UnityEngine::Networking::DownloadHandlerTextu
 }
 #[cfg(feature = "UnityEngine+Networking+DownloadHandlerTexture")]
 impl crate::UnityEngine::Networking::DownloadHandlerTexture {
+    pub fn Create(
+        obj: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Networking::DownloadHandlerTexture,
+        >,
+        readable: bool,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (obj, readable))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -34,6 +44,15 @@ impl crate::UnityEngine::Networking::DownloadHandlerTexture {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetContent(
+        www: quest_hook::libil2cpp::Gc<crate::UnityEngine::Networking::UnityWebRequest>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetContent", (www))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetNativeData(

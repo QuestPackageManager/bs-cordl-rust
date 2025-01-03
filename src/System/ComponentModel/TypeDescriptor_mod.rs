@@ -545,6 +545,502 @@ impl crate::System::ComponentModel::TypeDescriptor {
     pub type TypeDescriptorComObject = crate::System::ComponentModel::TypeDescriptor_TypeDescriptorComObject;
     #[cfg(feature = "System+ComponentModel+TypeDescriptor+TypeDescriptorInterface")]
     pub type TypeDescriptorInterface = crate::System::ComponentModel::TypeDescriptor_TypeDescriptorInterface;
+    pub fn AddProvider(
+        provider: quest_hook::libil2cpp::Gc<
+            crate::System::ComponentModel::TypeDescriptionProvider,
+        >,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddProvider", (provider, _cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CheckDefaultProvider(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckDefaultProvider", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateInstance(
+        provider: quest_hook::libil2cpp::Gc<crate::System::IServiceProvider>,
+        objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        argTypes: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+        >,
+        args: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateInstance", (provider, objectType, argTypes, args))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FilterMembers(
+        members: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+        attributes: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Attribute>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ArrayList,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FilterMembers", (members, attributes))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetAssociation(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        primary: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetAssociation", (_cordl_type, primary))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetAttributes_Il2CppObject1(
+        component: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::ComponentModel::AttributeCollection>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::ComponentModel::AttributeCollection,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetAttributes", (component))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetAttributes_Il2CppObject__cordl_bool2(
+        component: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        noCustomTypeDesc: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::ComponentModel::AttributeCollection>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::ComponentModel::AttributeCollection,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetAttributes", (component, noCustomTypeDesc))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetAttributes_Type0(
+        componentType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::ComponentModel::AttributeCollection>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::ComponentModel::AttributeCollection,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetAttributes", (componentType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCache(
+        instance: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IDictionary,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCache", (instance))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetConverter(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::ComponentModel::TypeConverter>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::ComponentModel::TypeConverter,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetConverter", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetDescriptor_Il2CppObject__cordl_bool1(
+        component: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        noCustomTypeDesc: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::ComponentModel::ICustomTypeDescriptor>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::ComponentModel::ICustomTypeDescriptor,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetDescriptor", (component, noCustomTypeDesc))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetDescriptor_Type_Il2CppString0(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        typeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::ComponentModel::ICustomTypeDescriptor>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::ComponentModel::ICustomTypeDescriptor,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetDescriptor", (_cordl_type, typeName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetEvents_Il2CppObject1(
+        component: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::ComponentModel::EventDescriptorCollection,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::ComponentModel::EventDescriptorCollection,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetEvents", (component))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetEvents_Il2CppObject_Il2CppArray__cordl_bool2(
+        component: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        attributes: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Attribute>,
+        >,
+        noCustomTypeDesc: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::ComponentModel::EventDescriptorCollection,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::ComponentModel::EventDescriptorCollection,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetEvents", (component, attributes, noCustomTypeDesc))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetEvents_Type0(
+        componentType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::ComponentModel::EventDescriptorCollection,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::ComponentModel::EventDescriptorCollection,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetEvents", (componentType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetExtendedDescriptor(
+        component: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::ComponentModel::ICustomTypeDescriptor>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::ComponentModel::ICustomTypeDescriptor,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetExtendedDescriptor", (component))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetExtenderCollisionSuffix(
+        member: quest_hook::libil2cpp::Gc<
+            crate::System::ComponentModel::MemberDescriptor,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetExtenderCollisionSuffix", (member))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetNodeForBaseType(
+        searchType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetNodeForBaseType", (searchType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPropertiesImpl(
+        component: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        attributes: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Attribute>,
+        >,
+        noCustomTypeDesc: bool,
+        noAttributes: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::ComponentModel::PropertyDescriptorCollection,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::ComponentModel::PropertyDescriptorCollection,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetPropertiesImpl",
+                (component, attributes, noCustomTypeDesc, noAttributes),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetProperties_Il2CppObject1(
+        component: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::ComponentModel::PropertyDescriptorCollection,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::ComponentModel::PropertyDescriptorCollection,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetProperties", (component))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetProperties_Il2CppObject_Il2CppArray3(
+        component: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        attributes: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Attribute>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::ComponentModel::PropertyDescriptorCollection,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::ComponentModel::PropertyDescriptorCollection,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetProperties", (component, attributes))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetProperties_Il2CppObject_Il2CppArray__cordl_bool4(
+        component: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        attributes: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Attribute>,
+        >,
+        noCustomTypeDesc: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::ComponentModel::PropertyDescriptorCollection,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::ComponentModel::PropertyDescriptorCollection,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetProperties", (component, attributes, noCustomTypeDesc))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetProperties_Il2CppObject__cordl_bool2(
+        component: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        noCustomTypeDesc: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::ComponentModel::PropertyDescriptorCollection,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::ComponentModel::PropertyDescriptorCollection,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetProperties", (component, noCustomTypeDesc))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetProperties_Type0(
+        componentType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::ComponentModel::PropertyDescriptorCollection,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::ComponentModel::PropertyDescriptorCollection,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetProperties", (componentType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetProviderRecursive(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::ComponentModel::TypeDescriptionProvider>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::ComponentModel::TypeDescriptionProvider,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetProviderRecursive", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetReflectionType(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetReflectionType", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn NodeFor_Il2CppObject2(
+        instance: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::ComponentModel::TypeDescriptor_TypeDescriptionNode,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::ComponentModel::TypeDescriptor_TypeDescriptionNode,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("NodeFor", (instance))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn NodeFor_Il2CppObject__cordl_bool3(
+        instance: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        createDelegator: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::ComponentModel::TypeDescriptor_TypeDescriptionNode,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::ComponentModel::TypeDescriptor_TypeDescriptionNode,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("NodeFor", (instance, createDelegator))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn NodeFor_Type0(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::ComponentModel::TypeDescriptor_TypeDescriptionNode,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::ComponentModel::TypeDescriptor_TypeDescriptionNode,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("NodeFor", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn NodeFor_Type__cordl_bool1(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        createDelegator: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::ComponentModel::TypeDescriptor_TypeDescriptionNode,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::ComponentModel::TypeDescriptor_TypeDescriptionNode,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("NodeFor", (_cordl_type, createDelegator))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn PipelineAttributeFilter(
+        pipelineType: i32,
+        members: quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
+        filter: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Attribute>,
+        >,
+        instance: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        cache: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ICollection,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "PipelineAttributeFilter",
+                (pipelineType, members, filter, instance, cache),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn PipelineFilter(
+        pipelineType: i32,
+        members: quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
+        instance: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        cache: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ICollection,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PipelineFilter", (pipelineType, members, instance, cache))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn PipelineInitialize(
+        pipelineType: i32,
+        members: quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
+        cache: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ICollection,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PipelineInitialize", (pipelineType, members, cache))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn PipelineMerge(
+        pipelineType: i32,
+        primary: quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
+        secondary: quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
+        instance: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        cache: quest_hook::libil2cpp::Gc<crate::System::Collections::IDictionary>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ICollection,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "PipelineMerge",
+                (pipelineType, primary, secondary, instance, cache),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RaiseRefresh(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RaiseRefresh", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Refresh(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Refresh", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ShouldHideMember(
+        member: quest_hook::libil2cpp::Gc<
+            crate::System::ComponentModel::MemberDescriptor,
+        >,
+        attribute: quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ShouldHideMember", (member, attribute))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SortDescriptorArray(
+        infos: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SortDescriptorArray", (infos))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_ComObjectType() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Type>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_ComObjectType", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_InterfaceType() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Type>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_InterfaceType", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_MetadataVersion() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_MetadataVersion", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "System+ComponentModel+TypeDescriptor")]
 impl quest_hook::libil2cpp::ObjectType

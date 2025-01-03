@@ -52,6 +52,13 @@ impl crate::Oculus::Platform::RichPresenceOptions {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Explicit(
+        options: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::RichPresenceOptions>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Explicit", (options))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "Oculus+Platform+RichPresenceOptions")]
 impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Platform::RichPresenceOptions {

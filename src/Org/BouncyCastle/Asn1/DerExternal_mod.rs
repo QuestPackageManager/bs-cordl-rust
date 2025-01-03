@@ -59,6 +59,20 @@ impl crate::Org::BouncyCastle::Asn1::DerExternal {
             .invoke("Encode", (derOut))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetObjFromVector(
+        v: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1EncodableVector,
+        >,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Object>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1Object,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetObjFromVector", (v, index))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_Asn1EncodableVector0(
         vector: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::Asn1EncodableVector,
@@ -122,6 +136,14 @@ impl crate::Org::BouncyCastle::Asn1::DerExternal {
                 ),
             )?;
         Ok(__cordl_object.into())
+    }
+    pub fn WriteEncodable(
+        ms: quest_hook::libil2cpp::Gc<crate::System::IO::MemoryStream>,
+        e: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WriteEncodable", (ms, e))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_Asn1EncodableVector0(
         &mut self,

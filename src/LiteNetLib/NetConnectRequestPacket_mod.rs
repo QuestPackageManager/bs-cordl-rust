@@ -29,6 +29,34 @@ impl std::ops::DerefMut for crate::LiteNetLib::NetConnectRequestPacket {
 #[cfg(feature = "LiteNetLib+NetConnectRequestPacket")]
 impl crate::LiteNetLib::NetConnectRequestPacket {
     pub const HeaderSize: i32 = 14i32;
+    pub fn FromData(
+        packet: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacket>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetConnectRequestPacket>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::LiteNetLib::NetConnectRequestPacket,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("FromData", (packet))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetProtocolId(
+        packet: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacket>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetProtocolId", (packet))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Make(
+        connectData: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
+        addressBytes: quest_hook::libil2cpp::Gc<crate::System::Net::SocketAddress>,
+        connectId: i64,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacket>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacket> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Make", (connectData, addressBytes, connectId))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         connectionTime: i64,
         connectionNumber: u8,

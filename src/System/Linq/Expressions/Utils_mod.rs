@@ -23,7 +23,28 @@ impl std::ops::DerefMut for crate::System::Linq::Expressions::Utils {
     }
 }
 #[cfg(feature = "System+Linq+Expressions+Utils")]
-impl crate::System::Linq::Expressions::Utils {}
+impl crate::System::Linq::Expressions::Utils {
+    pub fn Constant__cordl_bool0(
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::ConstantExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::ConstantExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Constant", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Constant_i32_1(
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::ConstantExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::ConstantExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Constant", (value))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Linq+Expressions+Utils")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Linq::Expressions::Utils {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

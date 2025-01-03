@@ -23,7 +23,16 @@ impl std::ops::DerefMut for crate::System::Net::Mail::DomainLiteralReader {
     }
 }
 #[cfg(feature = "System+Net+Mail+DomainLiteralReader")]
-impl crate::System::Net::Mail::DomainLiteralReader {}
+impl crate::System::Net::Mail::DomainLiteralReader {
+    pub fn ReadReverse(
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadReverse", (data, index))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Net+Mail+DomainLiteralReader")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Net::Mail::DomainLiteralReader {

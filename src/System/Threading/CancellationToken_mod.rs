@@ -179,4 +179,27 @@ impl crate::System::Threading::CancellationToken {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_None() -> quest_hook::libil2cpp::Result<
+        crate::System::Threading::CancellationToken,
+    > {
+        let __cordl_ret: crate::System::Threading::CancellationToken = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_None", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        left: crate::System::Threading::CancellationToken,
+        right: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        left: crate::System::Threading::CancellationToken,
+        right: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (left, right))?;
+        Ok(__cordl_ret.into())
+    }
 }

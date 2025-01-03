@@ -37,6 +37,24 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::DropdownMenuAction {
 impl crate::UnityEngine::UIElements::DropdownMenuAction {
     #[cfg(feature = "UnityEngine+UIElements+DropdownMenuAction+Status")]
     pub type Status = crate::UnityEngine::UIElements::DropdownMenuAction_Status;
+    pub fn AlwaysDisabled(
+        a: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DropdownMenuAction>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::DropdownMenuAction_Status,
+    > {
+        let __cordl_ret: crate::UnityEngine::UIElements::DropdownMenuAction_Status = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AlwaysDisabled", (a))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AlwaysEnabled(
+        a: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DropdownMenuAction>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::DropdownMenuAction_Status,
+    > {
+        let __cordl_ret: crate::UnityEngine::UIElements::DropdownMenuAction_Status = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AlwaysEnabled", (a))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         actionName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         actionCallback: quest_hook::libil2cpp::Gc<

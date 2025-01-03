@@ -54,6 +54,31 @@ impl crate::Org::BouncyCastle::Bcpg::SignaturePacket {
             .invoke("Encode", (bcpgOut))?;
         Ok(__cordl_ret.into())
     }
+    pub fn EncodeLengthAndData(
+        pOut: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::BcpgOutputStream,
+        >,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EncodeLengthAndData", (pOut, data))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetEncodedSubpackets(
+        ps: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::Org::BouncyCastle::Bcpg::SignatureSubpacket,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetEncodedSubpackets", (ps))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetHashedSubPackets(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

@@ -27,6 +27,14 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputDeviceCommand {
     pub const GenericFailure: i64 = -1i64;
     pub const GenericSuccess: i64 = 1i64;
     pub const kBaseCommandSize: i32 = 8i32;
+    pub fn AllocateNative(
+        _cordl_type: crate::UnityEngine::InputSystem::Utilities::FourCC,
+        payloadSize: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::NativeArray_1<u8>> {
+        let __cordl_ret: crate::Unity::Collections::NativeArray_1<u8> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AllocateNative", (_cordl_type, payloadSize))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
         _cordl_type: crate::UnityEngine::InputSystem::Utilities::FourCC,

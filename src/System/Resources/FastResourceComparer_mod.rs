@@ -24,6 +24,33 @@ impl std::ops::DerefMut for crate::System::Resources::FastResourceComparer {
 }
 #[cfg(feature = "System+Resources+FastResourceComparer")]
 impl crate::System::Resources::FastResourceComparer {
+    pub fn CompareOrdinal_Il2CppArray_i32_Il2CppString1(
+        bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        aCharLength: i32,
+        b: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CompareOrdinal", (bytes, aCharLength, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CompareOrdinal_Il2CppObject_i32_Il2CppString2(
+        a: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        byteLen: i32,
+        b: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CompareOrdinal", (a, byteLen, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CompareOrdinal_Il2CppString_Il2CppArray_i32_0(
+        a: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        bytes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        bCharLength: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CompareOrdinal", (a, bytes, bCharLength))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Compare_Il2CppObject_Il2CppObject0(
         &mut self,
         a: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -86,6 +113,13 @@ impl crate::System::Resources::FastResourceComparer {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", (key))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn HashFunction(
+        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("HashFunction", (key))?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

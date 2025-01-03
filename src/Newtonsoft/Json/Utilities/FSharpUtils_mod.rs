@@ -106,6 +106,26 @@ impl crate::Newtonsoft::Json::Utilities::FSharpUtils {
         > = __cordl_object.invoke("BuildMapCreator", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn CreateFSharpFuncCall(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Utilities::MethodCall_2<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Utilities::MethodCall_2<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateFSharpFuncCall", (_cordl_type, methodName))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CreateMap(
         &mut self,
         keyType: quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -145,6 +165,31 @@ impl crate::Newtonsoft::Json::Utilities::FSharpUtils {
                 *mut quest_hook::libil2cpp::Il2CppObject,
             >,
         > = __cordl_object.invoke("CreateSeq", (t))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EnsureInitialized(
+        fsharpCoreAssembly: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::Assembly,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EnsureInitialized", (fsharpCoreAssembly))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetMethodWithNonPublicFallback(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        bindingFlags: crate::System::Reflection::BindingFlags,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::MethodInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetMethodWithNonPublicFallback",
+                (_cordl_type, methodName, bindingFlags),
+            )?;
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -287,6 +332,14 @@ impl crate::Newtonsoft::Json::Utilities::FSharpUtils {
                 *mut quest_hook::libil2cpp::Il2CppObject,
             >,
         > = __cordl_object.invoke("get_GetUnionCases", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Instance() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Utilities::FSharpUtils>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Utilities::FSharpUtils,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_Instance", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_IsUnion(

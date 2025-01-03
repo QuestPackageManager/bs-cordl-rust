@@ -35,6 +35,28 @@ impl crate::GlobalNamespace::HEU_ExampleInstanceCustomAttribute {
             .invoke("InstancerCallback", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn LogArray<T>(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        arr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+        tupleSize: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LogArray", (name, arr, tupleSize))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LogAttr(
+        outAttr: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_OutputAttribute,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LogAttr", (outAttr))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

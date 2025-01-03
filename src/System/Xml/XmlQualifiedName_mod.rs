@@ -70,6 +70,26 @@ impl crate::System::Xml::XmlQualifiedName {
         let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetHashCodeDelegate() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Xml::XmlQualifiedName_HashCodeOfStringDelegate,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::XmlQualifiedName_HashCodeOfStringDelegate,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetHashCodeDelegate", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetHashCodeOfString(
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        length: i32,
+        additionalEntropy: i64,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetHashCodeOfString", (s, length, additionalEntropy))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Init(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -80,6 +100,11 @@ impl crate::System::Xml::XmlQualifiedName {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Init", (name, ns))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsRandomizedHashingDisabled() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsRandomizedHashingDisabled", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -108,6 +133,19 @@ impl crate::System::Xml::XmlQualifiedName {
             .invoke_void(".ctor", (name, ns))?;
         Ok(__cordl_object.into())
     }
+    pub fn Parse(
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        nsmgr: quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlNamespaceResolver>,
+        prefix: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::XmlQualifiedName,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Parse", (s, nsmgr, prefix))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn SetNamespace(
         &mut self,
         ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -119,7 +157,7 @@ impl crate::System::Xml::XmlQualifiedName {
             .invoke("SetNamespace", (ns))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ToString(
+    pub fn ToString_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -130,6 +168,18 @@ impl crate::System::Xml::XmlQualifiedName {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("ToString", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToString_Il2CppString_Il2CppString1(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToString", (name, ns))?;
         Ok(__cordl_ret.into())
     }
     pub fn Verify(
@@ -206,6 +256,22 @@ impl crate::System::Xml::XmlQualifiedName {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("get_Namespace", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        a: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+        b: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        a: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+        b: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (a, b))?;
         Ok(__cordl_ret.into())
     }
 }

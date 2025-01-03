@@ -27,6 +27,29 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Math::EC::SimpleLookupTabl
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+SimpleLookupTable")]
 impl crate::Org::BouncyCastle::Math::EC::SimpleLookupTable {
+    pub fn Copy(
+        points: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+            >,
+        >,
+        off: i32,
+        len: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Copy", (points, off, len))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Lookup(
         &mut self,
         index: i32,

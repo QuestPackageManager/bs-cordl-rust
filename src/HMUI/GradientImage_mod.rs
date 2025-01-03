@@ -26,6 +26,60 @@ impl std::ops::DerefMut for crate::HMUI::GradientImage {
 }
 #[cfg(feature = "HMUI+GradientImage")]
 impl crate::HMUI::GradientImage {
+    pub fn AddQuad_Il2CppArray_Color32_Il2CppArray0(
+        vertexHelper: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::VertexHelper>,
+        quadPositions: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+        >,
+        color: crate::UnityEngine::Color32,
+        quadUVs: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddQuad", (vertexHelper, quadPositions, color, quadUVs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddQuad_Vector2_Vector2_Color32_Color32_Vector2_Vector2_f32_f32_2(
+        vertexHelper: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::VertexHelper>,
+        posMin: crate::UnityEngine::Vector2,
+        posMax: crate::UnityEngine::Vector2,
+        color0: crate::UnityEngine::Color32,
+        color1: crate::UnityEngine::Color32,
+        uv0Min: crate::UnityEngine::Vector2,
+        uv0Max: crate::UnityEngine::Vector2,
+        elementWidthScale: f32,
+        curvedUIRadius: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "AddQuad",
+                (
+                    vertexHelper,
+                    posMin,
+                    posMax,
+                    color0,
+                    color1,
+                    uv0Min,
+                    uv0Max,
+                    elementWidthScale,
+                    curvedUIRadius,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddQuad_Vector2_Vector2_Color32_Vector2_Vector2_1(
+        vertexHelper: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::VertexHelper>,
+        posMin: crate::UnityEngine::Vector2,
+        posMax: crate::UnityEngine::Vector2,
+        color: crate::UnityEngine::Color32,
+        uvMin: crate::UnityEngine::Vector2,
+        uvMax: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddQuad", (vertexHelper, posMin, posMax, color, uvMin, uvMax))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GenerateFilledSprite(
         &mut self,
         toFill: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::VertexHelper>,
@@ -113,6 +167,34 @@ impl crate::HMUI::GradientImage {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnPopulateMesh", (toFill))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RadialCut_Il2CppArray0(
+        xy: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+        >,
+        uv: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+        >,
+        fill: f32,
+        invert: bool,
+        corner: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RadialCut", (xy, uv, fill, invert, corner))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RadialCut_f32_1(
+        xy: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+        >,
+        cos: f32,
+        sin: f32,
+        invert: bool,
+        corner: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RadialCut", (xy, cos, sin, invert, corner))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

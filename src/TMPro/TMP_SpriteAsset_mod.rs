@@ -116,6 +116,104 @@ impl crate::TMPro::TMP_SpriteAsset {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
+    pub fn SearchForSpriteByHashCode(
+        spriteAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
+        hashCode: i32,
+        includeFallbacks: bool,
+        spriteIndex: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "SearchForSpriteByHashCode",
+                (spriteAsset, hashCode, includeFallbacks, spriteIndex),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SearchForSpriteByHashCodeInternal_List_1_0(
+        spriteAssets: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::TMPro::TMP_SpriteAsset,
+            >,
+        >,
+        hashCode: i32,
+        searchFallbacks: bool,
+        spriteIndex: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "SearchForSpriteByHashCodeInternal",
+                (spriteAssets, hashCode, searchFallbacks, spriteIndex),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SearchForSpriteByHashCodeInternal_TMP_SpriteAsset1(
+        spriteAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
+        hashCode: i32,
+        searchFallbacks: bool,
+        spriteIndex: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "SearchForSpriteByHashCodeInternal",
+                (spriteAsset, hashCode, searchFallbacks, spriteIndex),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SearchForSpriteByUnicode(
+        spriteAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
+        unicode: u32,
+        includeFallbacks: bool,
+        spriteIndex: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "SearchForSpriteByUnicode",
+                (spriteAsset, unicode, includeFallbacks, spriteIndex),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SearchForSpriteByUnicodeInternal_List_1_0(
+        spriteAssets: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::TMPro::TMP_SpriteAsset,
+            >,
+        >,
+        unicode: u32,
+        includeFallbacks: bool,
+        spriteIndex: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "SearchForSpriteByUnicodeInternal",
+                (spriteAssets, unicode, includeFallbacks, spriteIndex),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SearchForSpriteByUnicodeInternal_TMP_SpriteAsset1(
+        spriteAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
+        unicode: u32,
+        includeFallbacks: bool,
+        spriteIndex: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "SearchForSpriteByUnicodeInternal",
+                (spriteAsset, unicode, includeFallbacks, spriteIndex),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn SortCharacterTable(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

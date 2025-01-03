@@ -351,6 +351,22 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
         > = __cordl_object.invoke("UpdateEntitlementsAsync", (cancellationToken))?;
         Ok(__cordl_ret.into())
     }
+    pub fn _GetRedirectedLevelPackProductData_g__GetProductLabel_17_0(
+        levelPackProductData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "<GetRedirectedLevelPackProductData>g__GetProductLabel|17_0",
+                (levelPackProductData),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _HasLevelPackEntitlement_b__19_0(
         &mut self,
         levelProductData: quest_hook::libil2cpp::Gc<
@@ -362,6 +378,22 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("<HasLevelPackEntitlement>b__19_0", (levelProductData))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _OpenLevelProductStoreAsync_g__GetProductLabelForProductBrowseDialog_13_0(
+        levelProductData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "<OpenLevelProductStoreAsync>g__GetProductLabelForProductBrowseDialog|13_0",
+                (levelProductData),
+            )?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

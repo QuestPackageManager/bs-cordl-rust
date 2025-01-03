@@ -28,6 +28,130 @@ impl crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility {
     pub type JobScheduleParameters = crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_JobScheduleParameters;
     #[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+JobsUtility+PanicFunction_")]
     pub type PanicFunction_ = crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_PanicFunction_;
+    pub fn CreateJobReflectionData_Il2CppObject1(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        managedJobFunction0: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        >,
+        managedJobFunction1: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        >,
+        managedJobFunction2: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CreateJobReflectionData",
+                (
+                    _cordl_type,
+                    managedJobFunction0,
+                    managedJobFunction1,
+                    managedJobFunction2,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateJobReflectionData_Type_Il2CppObject0(
+        wrapperJobType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        userJobType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        managedJobFunction0: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        >,
+        managedJobFunction1: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        >,
+        managedJobFunction2: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CreateJobReflectionData",
+                (
+                    wrapperJobType,
+                    userJobType,
+                    managedJobFunction0,
+                    managedJobFunction1,
+                    managedJobFunction2,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetWorkStealingRange(
+        ranges: quest_hook::libil2cpp::ByRefMut<
+            crate::Unity::Jobs::LowLevel::Unsafe::JobRanges,
+        >,
+        jobIndex: i32,
+        beginIndex: quest_hook::libil2cpp::ByRefMut<i32>,
+        endIndex: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetWorkStealingRange", (ranges, jobIndex, beginIndex, endIndex))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InvokePanicFunction() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InvokePanicFunction", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Schedule(
+        parameters: quest_hook::libil2cpp::ByRefMut<
+            crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_JobScheduleParameters,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Jobs::JobHandle> {
+        let __cordl_ret: crate::Unity::Jobs::JobHandle = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Schedule", (parameters))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ScheduleParallelFor(
+        parameters: quest_hook::libil2cpp::ByRefMut<
+            crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_JobScheduleParameters,
+        >,
+        arrayLength: i32,
+        innerloopBatchCount: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Jobs::JobHandle> {
+        let __cordl_ret: crate::Unity::Jobs::JobHandle = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ScheduleParallelFor",
+                (parameters, arrayLength, innerloopBatchCount),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ScheduleParallelFor_Injected(
+        parameters: quest_hook::libil2cpp::ByRefMut<
+            crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_JobScheduleParameters,
+        >,
+        arrayLength: i32,
+        innerloopBatchCount: i32,
+        ret: quest_hook::libil2cpp::ByRefMut<crate::Unity::Jobs::JobHandle>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ScheduleParallelFor_Injected",
+                (parameters, arrayLength, innerloopBatchCount, ret),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Schedule_Injected(
+        parameters: quest_hook::libil2cpp::ByRefMut<
+            crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_JobScheduleParameters,
+        >,
+        ret: quest_hook::libil2cpp::ByRefMut<crate::Unity::Jobs::JobHandle>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Schedule_Injected", (parameters, ret))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_JobCompilerEnabled(
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_JobCompilerEnabled", (value))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+JobsUtility")]
 impl quest_hook::libil2cpp::ObjectType

@@ -94,6 +94,24 @@ impl crate::System::Globalization::CultureInfo {
             .invoke("Construct", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn ConstructCurrentCulture() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Globalization::CultureInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ConstructCurrentCulture", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ConstructCurrentUICulture() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Globalization::CultureInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ConstructCurrentUICulture", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ConstructInvariant(
         &mut self,
         read_only: bool,
@@ -114,6 +132,60 @@ impl crate::System::Globalization::CultureInfo {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("ConstructLocaleFromName", (name))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateCalendar(
+        calendarType: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Globalization::Calendar>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Globalization::Calendar,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateCalendar", (calendarType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateCulture(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        reference: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Globalization::CultureInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateCulture", (name, reference))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateNotFoundException(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Exception>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Exception> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateNotFoundException", (name))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateSpecificCulture(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Globalization::CultureInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateSpecificCulture", (name))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateSpecificCultureFromNeutral(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Globalization::CultureInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateSpecificCultureFromNeutral", (name))?;
         Ok(__cordl_ret.into())
     }
     pub fn CreateTextInfo(
@@ -138,6 +210,54 @@ impl crate::System::Globalization::CultureInfo {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCultureInfoForUserPreferredLanguageInAppX() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Globalization::CultureInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCultureInfoForUserPreferredLanguageInAppX", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCultureInfo_Il2CppString1(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Globalization::CultureInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCultureInfo", (name))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCultureInfo_i32_0(
+        culture: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Globalization::CultureInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCultureInfo", (culture))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCultures(
+        types: crate::System::Globalization::CultureTypes,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Globalization::CultureInfo,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Globalization::CultureInfo,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCultures", (types))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetFormat(
@@ -169,6 +289,18 @@ impl crate::System::Globalization::CultureInfo {
         );
         let __cordl_ret: crate::System::Globalization::CultureInfo_Data = __cordl_object
             .invoke("GetTextInfoData", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InitializeUserPreferredCultureInfoInAppX(
+        onCultureInfoChangedInAppX: quest_hook::libil2cpp::Gc<
+            crate::System::Globalization::CultureInfo_OnCultureInfoChangedDelegate,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "InitializeUserPreferredCultureInfoInAppX",
+                (onCultureInfoChangedInAppX),
+            )?;
         Ok(__cordl_ret.into())
     }
     pub fn New_6() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -238,6 +370,27 @@ impl crate::System::Globalization::CultureInfo {
             .invoke_void(".ctor", (culture, useUserOverride, read_only))?;
         Ok(__cordl_object.into())
     }
+    pub fn OnCultureInfoChangedInAppX(
+        language: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("OnCultureInfoChangedInAppX", (language))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetCultureInfoForUserPreferredLanguageInAppX(
+        cultureInfo: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetCultureInfoForUserPreferredLanguageInAppX", (cultureInfo))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetUserPreferredCultureInfoInAppX(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetUserPreferredCultureInfoInAppX", (name))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ToString(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -249,6 +402,22 @@ impl crate::System::Globalization::CultureInfo {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("ToString", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn VerifyCultureName_CultureInfo1(
+        culture: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
+        throwException: bool,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("VerifyCultureName", (culture, throwException))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn VerifyCultureName_Il2CppString0(
+        cultureName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        throwException: bool,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("VerifyCultureName", (cultureName, throwException))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_6(
@@ -388,6 +557,24 @@ impl crate::System::Globalization::CultureInfo {
         > = __cordl_object.invoke("get_CompareInfo", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_CurrentCulture() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Globalization::CultureInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_CurrentCulture", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_CurrentUICulture() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Globalization::CultureInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_CurrentUICulture", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_DateTimeFormat(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -401,6 +588,24 @@ impl crate::System::Globalization::CultureInfo {
         > = __cordl_object.invoke("get_DateTimeFormat", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_DefaultThreadCurrentCulture() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Globalization::CultureInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_DefaultThreadCurrentCulture", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_DefaultThreadCurrentUICulture() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Globalization::CultureInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_DefaultThreadCurrentUICulture", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_EnglishName(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -412,6 +617,15 @@ impl crate::System::Globalization::CultureInfo {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("get_EnglishName", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_InvariantCulture() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Globalization::CultureInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_InvariantCulture", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_IsNeutralCulture(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -506,6 +720,24 @@ impl crate::System::Globalization::CultureInfo {
         > = __cordl_object.invoke("get_TextInfo", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_UserDefaultCulture() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Globalization::CultureInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_UserDefaultCulture", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_UserDefaultUICulture() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Globalization::CultureInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_UserDefaultUICulture", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get__cultureData(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -539,6 +771,55 @@ impl crate::System::Globalization::CultureInfo {
         > = __cordl_object.invoke("get__name", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_current_locale_name() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_current_locale_name", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn insert_into_shared_tables(
+        c: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("insert_into_shared_tables", (c))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn internal_get_cultures(
+        neutral: bool,
+        specific: bool,
+        installed: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Globalization::CultureInfo,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Globalization::CultureInfo,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("internal_get_cultures", (neutral, specific, installed))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_CurrentCulture(
+        value: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_CurrentCulture", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_CurrentUICulture(
+        value: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_CurrentUICulture", (value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn set_DateTimeFormat(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
@@ -550,6 +831,20 @@ impl crate::System::Globalization::CultureInfo {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_DateTimeFormat", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_DefaultThreadCurrentCulture(
+        value: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_DefaultThreadCurrentCulture", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_DefaultThreadCurrentUICulture(
+        value: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_DefaultThreadCurrentUICulture", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_NumberFormat(

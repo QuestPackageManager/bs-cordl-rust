@@ -23,7 +23,56 @@ impl std::ops::DerefMut for crate::TMPro::TMP_FontUtilities {
     }
 }
 #[cfg(feature = "TMPro+TMP_FontUtilities")]
-impl crate::TMPro::TMP_FontUtilities {}
+impl crate::TMPro::TMP_FontUtilities {
+    pub fn SearchForCharacterInternal_List_1_1(
+        fonts: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<*mut crate::TMPro::TMP_FontAsset>,
+        >,
+        unicode: u32,
+        character: quest_hook::libil2cpp::ByRefMut<*mut crate::TMPro::TMP_Character>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SearchForCharacterInternal", (fonts, unicode, character))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SearchForCharacterInternal_TMP_FontAsset0(
+        font: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+        unicode: u32,
+        character: quest_hook::libil2cpp::ByRefMut<*mut crate::TMPro::TMP_Character>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SearchForCharacterInternal", (font, unicode, character))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SearchForCharacter_List_1_1(
+        fonts: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<*mut crate::TMPro::TMP_FontAsset>,
+        >,
+        unicode: u32,
+        character: quest_hook::libil2cpp::ByRefMut<*mut crate::TMPro::TMP_Character>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SearchForCharacter", (fonts, unicode, character))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SearchForCharacter_TMP_FontAsset0(
+        font: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+        unicode: u32,
+        character: quest_hook::libil2cpp::ByRefMut<*mut crate::TMPro::TMP_Character>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SearchForCharacter", (font, unicode, character))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "TMPro+TMP_FontUtilities")]
 impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_FontUtilities {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

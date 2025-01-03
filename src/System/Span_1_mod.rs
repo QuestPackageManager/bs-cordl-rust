@@ -272,4 +272,26 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Span_1<T> {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Implicit_Il2CppArray1(
+        array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Span_1<T>>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: crate::System::Span_1<T> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (array))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_Span_1_0(
+        span: crate::System::Span_1<T>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::ReadOnlySpan_1<T>>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: crate::System::ReadOnlySpan_1<T> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (span))?;
+        Ok(__cordl_ret.into())
+    }
 }

@@ -54,6 +54,34 @@ impl crate::System::Linq::Expressions::MemberExpression {
         > = __cordl_object.invoke("GetMember", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn Make_FieldInfo1(
+        expression: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+        field: quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::FieldExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::FieldExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Make", (expression, field))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Make_PropertyInfo0(
+        expression: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+        property: quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::PropertyExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::PropertyExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Make", (expression, property))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         expression: quest_hook::libil2cpp::Gc<
             crate::System::Linq::Expressions::Expression,

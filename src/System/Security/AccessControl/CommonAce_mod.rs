@@ -24,6 +24,14 @@ impl std::ops::DerefMut for crate::System::Security::AccessControl::CommonAce {
 }
 #[cfg(feature = "System+Security+AccessControl+CommonAce")]
 impl crate::System::Security::AccessControl::CommonAce {
+    pub fn ConvertType(
+        qualifier: crate::System::Security::AccessControl::AceQualifier,
+        isCallback: bool,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Security::AccessControl::AceType> {
+        let __cordl_ret: crate::System::Security::AccessControl::AceType = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ConvertType", (qualifier, isCallback))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetBinaryForm(
         &mut self,
         binaryForm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,

@@ -141,6 +141,18 @@ impl crate::System::Text::RegularExpressions::RegexWriter {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn Write(
+        tree: quest_hook::libil2cpp::Gc<
+            crate::System::Text::RegularExpressions::RegexTree,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::RegexCode>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Text::RegularExpressions::RegexCode,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Write", (tree))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
         emittedSpan: crate::System::Span_1<i32>,

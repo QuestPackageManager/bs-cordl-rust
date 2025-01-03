@@ -53,6 +53,13 @@ impl crate::UnityEngine::UIElements::BackgroundRepeat {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn Initial() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::BackgroundRepeat,
+    > {
+        let __cordl_ret: crate::UnityEngine::UIElements::BackgroundRepeat = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Initial", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ToString(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -73,6 +80,22 @@ impl crate::UnityEngine::UIElements::BackgroundRepeat {
             ".ctor",
             (repeatX, repeatY),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        style1: crate::UnityEngine::UIElements::BackgroundRepeat,
+        style2: crate::UnityEngine::UIElements::BackgroundRepeat,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (style1, style2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        style1: crate::UnityEngine::UIElements::BackgroundRepeat,
+        style2: crate::UnityEngine::UIElements::BackgroundRepeat,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (style1, style2))?;
         Ok(__cordl_ret.into())
     }
 }

@@ -257,6 +257,16 @@ impl crate::Org::BouncyCastle::Crypto::Engines::SerpentEngineBase {
             .invoke("Reset", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn RotateLeft(x: i32, bits: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RotateLeft", (x, bits))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RotateRight(x: i32, bits: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RotateRight", (x, bits))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Sb0(
         &mut self,
         a: i32,

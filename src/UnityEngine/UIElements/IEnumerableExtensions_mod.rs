@@ -23,7 +23,19 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::IEnumerableExtension
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+IEnumerableExtensions")]
-impl crate::UnityEngine::UIElements::IEnumerableExtensions {}
+impl crate::UnityEngine::UIElements::IEnumerableExtensions {
+    pub fn HasValues(
+        collection: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("HasValues", (collection))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+IEnumerableExtensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::IEnumerableExtensions {

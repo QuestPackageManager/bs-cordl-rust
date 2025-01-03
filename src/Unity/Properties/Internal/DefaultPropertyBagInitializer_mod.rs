@@ -26,7 +26,13 @@ for crate::Unity::Properties::Internal::DefaultPropertyBagInitializer {
     }
 }
 #[cfg(feature = "Unity+Properties+Internal+DefaultPropertyBagInitializer")]
-impl crate::Unity::Properties::Internal::DefaultPropertyBagInitializer {}
+impl crate::Unity::Properties::Internal::DefaultPropertyBagInitializer {
+    pub fn Initialize() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Initialize", ())?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "Unity+Properties+Internal+DefaultPropertyBagInitializer")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::Properties::Internal::DefaultPropertyBagInitializer {

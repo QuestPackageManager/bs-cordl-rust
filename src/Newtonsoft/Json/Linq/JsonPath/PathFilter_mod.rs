@@ -52,6 +52,34 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::PathFilter {
         > = __cordl_object.invoke("ExecuteFilter", (root, current, settings))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetNextScanValue(
+        originalParent: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+        container: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+        value: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Linq::JToken,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetNextScanValue", (originalParent, container, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetTokenIndex(
+        t: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+        settings: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Linq::JsonSelectSettings,
+        >,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Linq::JToken,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetTokenIndex", (t, settings, index))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

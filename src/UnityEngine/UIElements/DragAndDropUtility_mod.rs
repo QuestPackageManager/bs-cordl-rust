@@ -23,7 +23,19 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::DragAndDropUtility {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+DragAndDropUtility")]
-impl crate::UnityEngine::UIElements::DragAndDropUtility {}
+impl crate::UnityEngine::UIElements::DragAndDropUtility {
+    pub fn GetDragAndDrop(
+        panel: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IDragAndDrop>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::IDragAndDrop,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetDragAndDrop", (panel))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+DragAndDropUtility")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::DragAndDropUtility {

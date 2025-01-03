@@ -160,6 +160,15 @@ impl crate::System::IO::TextReader {
         let __cordl_ret: i32 = __cordl_object.invoke("Read", (buffer))?;
         Ok(__cordl_ret.into())
     }
+    pub fn Synchronized(
+        reader: quest_hook::libil2cpp::Gc<crate::System::IO::TextReader>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IO::TextReader>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IO::TextReader> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Synchronized", (reader))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

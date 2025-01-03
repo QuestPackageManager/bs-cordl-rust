@@ -499,6 +499,11 @@ impl crate::System::Text::StringBuilder {
             .invoke("FindChunkForIndex", (index))?;
         Ok(__cordl_ret.into())
     }
+    pub fn FormatError() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FormatError", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Insert_Il2CppObject_i32_2(
         &mut self,
         index: i32,
@@ -778,6 +783,33 @@ impl crate::System::Text::StringBuilder {
             .invoke(
                 "System.Runtime.Serialization.ISerializable.GetObjectData",
                 (info, context),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ThreadSafeCopy_Il2CppArray_i32_Span_1_i32_1(
+        source: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+        sourceIndex: i32,
+        destination: crate::System::Span_1<char>,
+        destinationIndex: i32,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ThreadSafeCopy",
+                (source, sourceIndex, destination, destinationIndex, count),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ThreadSafeCopy_Il2CppObject_Il2CppArray_i32_0(
+        sourcePtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        destination: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+        destinationIndex: i32,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ThreadSafeCopy",
+                (sourcePtr, destination, destinationIndex, count),
             )?;
         Ok(__cordl_ret.into())
     }

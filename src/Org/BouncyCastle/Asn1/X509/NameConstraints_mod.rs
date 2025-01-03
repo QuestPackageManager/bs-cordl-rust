@@ -40,6 +40,16 @@ impl crate::Org::BouncyCastle::Asn1::X509::NameConstraints {
         > = __cordl_object.invoke("CreateSequence", (subtrees))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetInstance(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X509::NameConstraints>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::NameConstraints,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_ArrayList_ArrayList1(
         permitted: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
         excluded: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,

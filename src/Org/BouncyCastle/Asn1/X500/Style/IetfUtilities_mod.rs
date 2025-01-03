@@ -25,12 +25,86 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::X500::Style::IetfUti
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X500+Style+IetfUtilities")]
 impl crate::Org::BouncyCastle::Asn1::X500::Style::IetfUtilities {
+    pub fn AtvAreEqual(
+        atv1: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X500::AttributeTypeAndValue,
+        >,
+        atv2: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X500::AttributeTypeAndValue,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AtvAreEqual", (atv1, atv2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CanonicalString(
+        value: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CanonicalString", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Canonicalize(
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Canonicalize", (s))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DecodeObject(
+        oValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Object>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1Object,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DecodeObject", (oValue))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
+    }
+    pub fn RdnAreEqual(
+        rdn1: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X500::Rdn>,
+        rdn2: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X500::Rdn>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RdnAreEqual", (rdn1, rdn2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StripInternalSpaces(
+        str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StripInternalSpaces", (str))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ValueToString(
+        value: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ValueToString", (value))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,

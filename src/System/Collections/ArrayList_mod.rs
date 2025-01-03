@@ -38,6 +38,16 @@ impl crate::System::Collections::ArrayList {
     pub type IListWrapper = crate::GlobalNamespace::ArrayList_IListWrapper;
     #[cfg(feature = "System+Collections+ArrayList+ReadOnlyArrayList")]
     pub type ReadOnlyArrayList = crate::GlobalNamespace::ArrayList_ReadOnlyArrayList;
+    pub fn Adapter(
+        list: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ArrayList,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Adapter", (list))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Add(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -211,6 +221,16 @@ impl crate::System::Collections::ArrayList {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (capacity))?;
         Ok(__cordl_object.into())
+    }
+    pub fn ReadOnly(
+        list: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ArrayList,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("ReadOnly", (list))?;
+        Ok(__cordl_ret.into())
     }
     pub fn Remove(
         &mut self,

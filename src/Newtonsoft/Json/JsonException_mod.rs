@@ -24,6 +24,19 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::JsonException {
 }
 #[cfg(feature = "Newtonsoft+Json+JsonException")]
 impl crate::Newtonsoft::Json::JsonException {
+    pub fn Create(
+        lineInfo: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::IJsonLineInfo>,
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonException>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::JsonException,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (lineInfo, path, message))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

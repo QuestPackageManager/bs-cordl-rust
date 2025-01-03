@@ -36,12 +36,94 @@ impl std::ops::DerefMut for crate::UnityEngine::UI::GraphicRegistry {
 }
 #[cfg(feature = "UnityEngine+UI+GraphicRegistry")]
 impl crate::UnityEngine::UI::GraphicRegistry {
+    pub fn DisableGraphicForCanvas(
+        c: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
+        graphic: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DisableGraphicForCanvas", (c, graphic))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DisableRaycastGraphicForCanvas(
+        c: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
+        graphic: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DisableRaycastGraphicForCanvas", (c, graphic))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetGraphicsForCanvas(
+        canvas: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                *mut crate::UnityEngine::UI::Graphic,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                *mut crate::UnityEngine::UI::Graphic,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetGraphicsForCanvas", (canvas))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetRaycastableGraphicsForCanvas(
+        canvas: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                *mut crate::UnityEngine::UI::Graphic,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                *mut crate::UnityEngine::UI::Graphic,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetRaycastableGraphicsForCanvas", (canvas))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
+    }
+    pub fn RegisterGraphicForCanvas(
+        c: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
+        graphic: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RegisterGraphicForCanvas", (c, graphic))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RegisterRaycastGraphicForCanvas(
+        c: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
+        graphic: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RegisterRaycastGraphicForCanvas", (c, graphic))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UnregisterGraphicForCanvas(
+        c: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
+        graphic: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UnregisterGraphicForCanvas", (c, graphic))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UnregisterRaycastGraphicForCanvas(
+        c: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
+        graphic: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UnregisterRaycastGraphicForCanvas", (c, graphic))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -51,6 +133,14 @@ impl crate::UnityEngine::UI::GraphicRegistry {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_instance() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::GraphicRegistry>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UI::GraphicRegistry,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_instance", ())?;
         Ok(__cordl_ret.into())
     }
 }

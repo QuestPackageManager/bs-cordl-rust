@@ -45,6 +45,11 @@ impl crate::System::Net::Http::Headers::WarningHeaderValue {
         let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn IsCodeValid(code: i32) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsCodeValid", (code))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -76,6 +81,30 @@ impl crate::System::Net::Http::Headers::WarningHeaderValue {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("ToString", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryParse(
+        input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        minimalCount: i32,
+        result: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::System::Collections::Generic::List_1<
+                *mut crate::System::Net::Http::Headers::WarningHeaderValue,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryParse", (input, minimalCount, result))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryParseElement(
+        lexer: quest_hook::libil2cpp::Gc<crate::System::Net::Http::Headers::Lexer>,
+        parsedValue: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::System::Net::Http::Headers::WarningHeaderValue,
+        >,
+        t: quest_hook::libil2cpp::ByRefMut<crate::System::Net::Http::Headers::Token>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryParseElement", (lexer, parsedValue, t))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

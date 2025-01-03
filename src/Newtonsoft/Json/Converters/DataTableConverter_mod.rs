@@ -34,6 +34,22 @@ impl crate::Newtonsoft::Json::Converters::DataTableConverter {
         let __cordl_ret: bool = __cordl_object.invoke("CanConvert", (valueType))?;
         Ok(__cordl_ret.into())
     }
+    pub fn CreateRow(
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+        dt: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+        serializer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonSerializer>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateRow", (reader, dt, serializer))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetColumnDataType(
+        reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetColumnDataType", (reader))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

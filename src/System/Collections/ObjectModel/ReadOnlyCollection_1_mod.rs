@@ -87,6 +87,17 @@ impl<
         let __cordl_ret: i32 = __cordl_object.invoke("IndexOf", (value))?;
         Ok(__cordl_ret.into())
     }
+    pub fn IsCompatibleObject(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsCompatibleObject", (value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IList_1<T>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>

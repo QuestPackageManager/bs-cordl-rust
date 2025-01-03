@@ -26,6 +26,13 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BakedLightUtils {
 impl crate::GlobalNamespace::BakedLightUtils {
     pub const kDepthOnlyShaderName: &'static str = "Custom/SetDepthOnly";
     pub const kMirrorParentNameToIgnore: &'static str = "PlayersPlace";
+    pub fn ValidateLoadedEnvironmentScene(
+        validateBakedGIEnabled: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ValidateLoadedEnvironmentScene", (validateBakedGIEnabled))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "BakedLightUtils")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BakedLightUtils {

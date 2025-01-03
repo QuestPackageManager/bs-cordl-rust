@@ -26,7 +26,21 @@ for crate::GlobalNamespace::GameplayServerFiniteStateMachineFactory {
     }
 }
 #[cfg(feature = "GameplayServerFiniteStateMachineFactory")]
-impl crate::GlobalNamespace::GameplayServerFiniteStateMachineFactory {}
+impl crate::GlobalNamespace::GameplayServerFiniteStateMachineFactory {
+    pub fn Create(
+        initParams: crate::GlobalNamespace::GameplayServerFiniteStateMachine_InitParams,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::GameplayServerFiniteStateMachine,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::GameplayServerFiniteStateMachine,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (initParams))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "GameplayServerFiniteStateMachineFactory")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::GameplayServerFiniteStateMachineFactory {

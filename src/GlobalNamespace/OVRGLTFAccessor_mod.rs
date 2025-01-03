@@ -234,6 +234,13 @@ impl crate::GlobalNamespace::OVRGLTFAccessor {
             .invoke("ReadElementAsUint", (data, index, _cordl_type))?;
         Ok(__cordl_ret.into())
     }
+    pub fn ToOVRType(
+        _cordl_type: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRGLTFType> {
+        let __cordl_ret: crate::GlobalNamespace::OVRGLTFType = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToOVRType", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
         node: quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,

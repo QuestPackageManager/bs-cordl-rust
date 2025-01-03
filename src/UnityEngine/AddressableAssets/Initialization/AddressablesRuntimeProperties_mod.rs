@@ -36,7 +36,82 @@ for crate::UnityEngine::AddressableAssets::Initialization::AddressablesRuntimePr
 #[cfg(
     feature = "UnityEngine+AddressableAssets+Initialization+AddressablesRuntimeProperties"
 )]
-impl crate::UnityEngine::AddressableAssets::Initialization::AddressablesRuntimeProperties {}
+impl crate::UnityEngine::AddressableAssets::Initialization::AddressablesRuntimeProperties {
+    pub fn ClearCachedPropertyValues() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ClearCachedPropertyValues", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EvaluateProperty(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EvaluateProperty", (name))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EvaluateString_Il2CppString0(
+        input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EvaluateString", (input))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EvaluateString__cordl_char__cordl_char_Func_2_1(
+        inputString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        startDelimiter: char,
+        endDelimiter: char,
+        varFunc: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<
+                *mut quest_hook::libil2cpp::Il2CppString,
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "EvaluateString",
+                (inputString, startDelimiter, endDelimiter, varFunc),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetAssemblies() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Reflection::Assembly>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Reflection::Assembly>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetAssemblies", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCachedValueCount() -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCachedValueCount", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetPropertyValue(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        val: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetPropertyValue", (name, val))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(
     feature = "UnityEngine+AddressableAssets+Initialization+AddressablesRuntimeProperties"
 )]

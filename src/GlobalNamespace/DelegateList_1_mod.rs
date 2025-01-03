@@ -69,6 +69,19 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::DelegateList_1<T> {
             .invoke("Clear", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn CreateWithGlobalCache() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::DelegateList_1<T>>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::DelegateList_1<T>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateWithGlobalCache", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Invoke(
         &mut self,
         res: T,

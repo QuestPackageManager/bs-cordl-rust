@@ -45,6 +45,15 @@ impl crate::Org::BouncyCastle::Operators::CmsContentEncryptorBuilder {
         > = __cordl_object.invoke("Build", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetKeySize(
+        oid: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetKeySize", (oid))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_DerObjectIdentifier0(
         encryptionOID: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,

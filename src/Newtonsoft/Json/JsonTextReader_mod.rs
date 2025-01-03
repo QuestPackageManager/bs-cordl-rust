@@ -123,6 +123,29 @@ impl crate::Newtonsoft::Json::JsonTextReader {
     pub type _ReadStringIntoBufferAsync_d__9 = crate::Newtonsoft::Json::JsonTextReader__ReadStringIntoBufferAsync_d__9;
     #[cfg(feature = "Newtonsoft+Json+JsonTextReader+_ReadStringValueAsync_d__37")]
     pub type _ReadStringValueAsync_d__37 = crate::Newtonsoft::Json::JsonTextReader__ReadStringValueAsync_d__37;
+    pub fn BigIntegerParse(
+        number: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        culture: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BigIntegerParse", (number, culture))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn BlockCopyChars(
+        src: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+        srcOffset: i32,
+        dst: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+        dstOffset: i32,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BlockCopyChars", (src, srcOffset, dst, dstOffset, count))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ClearRecentString(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

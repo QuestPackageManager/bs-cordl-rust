@@ -24,6 +24,35 @@ impl std::ops::DerefMut for crate::System::Text::EncodingProvider {
 }
 #[cfg(feature = "System+Text+EncodingProvider")]
 impl crate::System::Text::EncodingProvider {
+    pub fn GetEncodingFromProvider_Il2CppString1(
+        encodingName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetEncodingFromProvider", (encodingName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetEncodingFromProvider_i32_0(
+        codepage: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetEncodingFromProvider", (codepage))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetEncodingFromProvider_i32_EncoderFallback_DecoderFallback2(
+        codepage: i32,
+        enc: quest_hook::libil2cpp::Gc<crate::System::Text::EncoderFallback>,
+        dec: quest_hook::libil2cpp::Gc<crate::System::Text::DecoderFallback>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetEncodingFromProvider", (codepage, enc, dec))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetEncoding_Il2CppString0(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

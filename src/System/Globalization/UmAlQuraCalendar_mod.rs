@@ -26,6 +26,74 @@ impl std::ops::DerefMut for crate::System::Globalization::UmAlQuraCalendar {
 impl crate::System::Globalization::UmAlQuraCalendar {
     #[cfg(feature = "System+Globalization+UmAlQuraCalendar+DateMapping")]
     pub type DateMapping = crate::System::Globalization::UmAlQuraCalendar_DateMapping;
+    pub fn CheckEraRange(
+        era: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckEraRange", (era))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CheckTicksRange(
+        ticks: i64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckTicksRange", (ticks))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CheckYearMonthRange(
+        year: i32,
+        month: i32,
+        era: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckYearMonthRange", (year, month, era))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CheckYearRange(
+        year: i32,
+        era: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckYearRange", (year, era))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ConvertGregorianToHijri(
+        _cordl_time: crate::System::DateTime,
+        HijriYear: quest_hook::libil2cpp::ByRefMut<i32>,
+        HijriMonth: quest_hook::libil2cpp::ByRefMut<i32>,
+        HijriDay: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ConvertGregorianToHijri",
+                (_cordl_time, HijriYear, HijriMonth, HijriDay),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ConvertHijriToGregorian(
+        HijriYear: i32,
+        HijriMonth: i32,
+        HijriDay: i32,
+        yg: quest_hook::libil2cpp::ByRefMut<i32>,
+        mg: quest_hook::libil2cpp::ByRefMut<i32>,
+        dg: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ConvertHijriToGregorian",
+                (HijriYear, HijriMonth, HijriDay, yg, mg, dg),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetAbsoluteDateUmAlQura(
+        year: i32,
+        month: i32,
+        day: i32,
+    ) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetAbsoluteDateUmAlQura", (year, month, day))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetDatePart(
         &mut self,
         _cordl_time: crate::System::DateTime,
@@ -124,6 +192,21 @@ impl crate::System::Globalization::UmAlQuraCalendar {
         let __cordl_ret: i32 = __cordl_object.invoke("GetYear", (_cordl_time))?;
         Ok(__cordl_ret.into())
     }
+    pub fn InitDateMapping() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::System::Globalization::UmAlQuraCalendar_DateMapping,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::System::Globalization::UmAlQuraCalendar_DateMapping,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InitDateMapping", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn IsLeapYear(
         &mut self,
         year: i32,
@@ -141,6 +224,11 @@ impl crate::System::Globalization::UmAlQuraCalendar {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
+    }
+    pub fn RealGetDaysInYear(year: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RealGetDaysInYear", (year))?;
+        Ok(__cordl_ret.into())
     }
     pub fn ToDateTime(
         &mut self,

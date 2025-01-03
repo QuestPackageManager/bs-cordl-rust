@@ -123,6 +123,22 @@ impl crate::UnityEngine::UI::ColorBlock {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Equality(
+        point1: crate::UnityEngine::UI::ColorBlock,
+        point2: crate::UnityEngine::UI::ColorBlock,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (point1, point2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        point1: crate::UnityEngine::UI::ColorBlock,
+        point2: crate::UnityEngine::UI::ColorBlock,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (point1, point2))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn set_colorMultiplier(
         &mut self,
         value: f32,

@@ -34,6 +34,90 @@ impl crate::GlobalNamespace::DiffieHellmanUtility {
     pub type KeyType = crate::GlobalNamespace::DiffieHellmanUtility_KeyType;
     #[cfg(feature = "DiffieHellmanUtility+OperationTimer")]
     pub type OperationTimer = crate::GlobalNamespace::DiffieHellmanUtility_OperationTimer;
+    pub fn GenerateDiffieHellmanKeys() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::DiffieHellmanUtility_DiffieHellmanKeyPair,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::DiffieHellmanUtility_DiffieHellmanKeyPair,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GenerateDiffieHellmanKeys", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GenerateElipticalCurveKeys() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::DiffieHellmanUtility_ElipticalCurveKeyPair,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::DiffieHellmanUtility_ElipticalCurveKeyPair,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GenerateElipticalCurveKeys", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GenerateKeys(
+        keyType: crate::GlobalNamespace::DiffieHellmanUtility_KeyType,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IDiffieHellmanKeyPair>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IDiffieHellmanKeyPair,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GenerateKeys", (keyType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GenerateKeysAsync(
+        taskUtility: quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITaskUtility>,
+        cancellationToken: crate::System::Threading::CancellationToken,
+        keyType: crate::GlobalNamespace::DiffieHellmanUtility_KeyType,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut crate::GlobalNamespace::IDiffieHellmanKeyPair,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut crate::GlobalNamespace::IDiffieHellmanKeyPair,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GenerateKeysAsync", (taskUtility, cancellationToken, keyType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPreMasterSecret_DHBasicAgreement0(
+        dhBasicAgreement: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Agreement::DHBasicAgreement,
+        >,
+        clientPublicKey: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPreMasterSecret", (dhBasicAgreement, clientPublicKey))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPreMasterSecret_ECDHBasicAgreement1(
+        ecdhBasicAgreement: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Agreement::ECDHBasicAgreement,
+        >,
+        clientPublicKey: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPreMasterSecret", (ecdhBasicAgreement, clientPublicKey))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "DiffieHellmanUtility")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::DiffieHellmanUtility {
@@ -377,6 +461,18 @@ impl crate::GlobalNamespace::DiffieHellmanUtility_OperationTimer {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (operationName))?;
         Ok(__cordl_object.into())
+    }
+    pub fn Time(
+        operation: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::DiffieHellmanUtility_OperationTimer,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::DiffieHellmanUtility_OperationTimer,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Time", (operation))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,

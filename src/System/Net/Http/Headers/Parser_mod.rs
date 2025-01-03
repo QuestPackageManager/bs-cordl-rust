@@ -80,6 +80,14 @@ impl std::ops::DerefMut for crate::System::Net::Http::Headers::Parser_DateTime {
 impl crate::System::Net::Http::Headers::Parser_DateTime {
     #[cfg(feature = "System+Net+Http+Headers+Parser+DateTime+__c")]
     pub type __c = crate::System::Net::Http::Headers::DateTime_Parser___c;
+    pub fn TryParse(
+        input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        result: quest_hook::libil2cpp::ByRefMut<crate::System::DateTimeOffset>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryParse", (input, result))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "System+Net+Http+Headers+Parser+DateTime")]
 impl quest_hook::libil2cpp::ObjectType
@@ -116,7 +124,16 @@ impl std::ops::DerefMut for crate::System::Net::Http::Headers::Parser_EmailAddre
     }
 }
 #[cfg(feature = "System+Net+Http+Headers+Parser+EmailAddress")]
-impl crate::System::Net::Http::Headers::Parser_EmailAddress {}
+impl crate::System::Net::Http::Headers::Parser_EmailAddress {
+    pub fn TryParse(
+        input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        result: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryParse", (input, result))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Net+Http+Headers+Parser+EmailAddress")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Net::Http::Headers::Parser_EmailAddress {
@@ -152,7 +169,16 @@ impl std::ops::DerefMut for crate::System::Net::Http::Headers::Parser_Host {
     }
 }
 #[cfg(feature = "System+Net+Http+Headers+Parser+Host")]
-impl crate::System::Net::Http::Headers::Parser_Host {}
+impl crate::System::Net::Http::Headers::Parser_Host {
+    pub fn TryParse(
+        input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        result: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryParse", (input, result))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Net+Http+Headers+Parser+Host")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Net::Http::Headers::Parser_Host {
@@ -188,7 +214,16 @@ impl std::ops::DerefMut for crate::System::Net::Http::Headers::Parser_Int {
     }
 }
 #[cfg(feature = "System+Net+Http+Headers+Parser+Int")]
-impl crate::System::Net::Http::Headers::Parser_Int {}
+impl crate::System::Net::Http::Headers::Parser_Int {
+    pub fn TryParse(
+        input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        result: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryParse", (input, result))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Net+Http+Headers+Parser+Int")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Net::Http::Headers::Parser_Int {
@@ -224,7 +259,16 @@ impl std::ops::DerefMut for crate::System::Net::Http::Headers::Parser_Long {
     }
 }
 #[cfg(feature = "System+Net+Http+Headers+Parser+Long")]
-impl crate::System::Net::Http::Headers::Parser_Long {}
+impl crate::System::Net::Http::Headers::Parser_Long {
+    pub fn TryParse(
+        input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        result: quest_hook::libil2cpp::ByRefMut<i64>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryParse", (input, result))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Net+Http+Headers+Parser+Long")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Net::Http::Headers::Parser_Long {
@@ -263,6 +307,16 @@ impl std::ops::DerefMut for crate::System::Net::Http::Headers::Parser_MD5 {
 impl crate::System::Net::Http::Headers::Parser_MD5 {
     #[cfg(feature = "System+Net+Http+Headers+Parser+MD5+__c")]
     pub type __c = crate::System::Net::Http::Headers::MD5_Parser___c;
+    pub fn TryParse(
+        input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        result: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryParse", (input, result))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "System+Net+Http+Headers+Parser+MD5")]
 impl quest_hook::libil2cpp::ObjectType
@@ -300,7 +354,16 @@ impl std::ops::DerefMut for crate::System::Net::Http::Headers::Parser_TimeSpanSe
     }
 }
 #[cfg(feature = "System+Net+Http+Headers+Parser+TimeSpanSeconds")]
-impl crate::System::Net::Http::Headers::Parser_TimeSpanSeconds {}
+impl crate::System::Net::Http::Headers::Parser_TimeSpanSeconds {
+    pub fn TryParse(
+        input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        result: quest_hook::libil2cpp::ByRefMut<crate::System::TimeSpan>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryParse", (input, result))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Net+Http+Headers+Parser+TimeSpanSeconds")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Net::Http::Headers::Parser_TimeSpanSeconds {
@@ -336,7 +399,22 @@ impl std::ops::DerefMut for crate::System::Net::Http::Headers::Parser_Token {
     }
 }
 #[cfg(feature = "System+Net+Http+Headers+Parser+Token")]
-impl crate::System::Net::Http::Headers::Parser_Token {}
+impl crate::System::Net::Http::Headers::Parser_Token {
+    pub fn Check(
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Check", (s))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryCheck(
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryCheck", (s))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Net+Http+Headers+Parser+Token")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Net::Http::Headers::Parser_Token {
@@ -372,7 +450,16 @@ impl std::ops::DerefMut for crate::System::Net::Http::Headers::Parser_Uri {
     }
 }
 #[cfg(feature = "System+Net+Http+Headers+Parser+Uri")]
-impl crate::System::Net::Http::Headers::Parser_Uri {}
+impl crate::System::Net::Http::Headers::Parser_Uri {
+    pub fn TryParse(
+        input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        result: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Uri>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryParse", (input, result))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Net+Http+Headers+Parser+Uri")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Net::Http::Headers::Parser_Uri {

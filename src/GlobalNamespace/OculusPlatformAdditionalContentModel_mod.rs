@@ -271,6 +271,27 @@ impl crate::GlobalNamespace::OculusPlatformAdditionalContentModel {
             .invoke("IsPackBetterBuyThanLevelAsync", (levelPackId, token))?;
         Ok(__cordl_ret.into())
     }
+    pub fn LaunchCheckoutFlow(
+        sku: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut crate::Oculus::Platform::Message_1<
+                    *mut crate::Oculus::Platform::Models::Purchase,
+                >,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut crate::Oculus::Platform::Message_1<
+                    *mut crate::Oculus::Platform::Models::Purchase,
+                >,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LaunchCheckoutFlow", (sku))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -333,6 +354,22 @@ impl crate::GlobalNamespace::OculusPlatformAdditionalContentModel {
             .invoke("OpenStore", (uri))?;
         Ok(__cordl_ret.into())
     }
+    pub fn _GetRedirectedLevelPackProductData_g__GetSku_5_0(
+        levelPackProductData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelPackProductData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "<GetRedirectedLevelPackProductData>g__GetSku|5_0",
+                (levelPackProductData),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _HasLevelPackEntitlement_b__19_0(
         &mut self,
         levelProductData: quest_hook::libil2cpp::Gc<
@@ -344,6 +381,22 @@ impl crate::GlobalNamespace::OculusPlatformAdditionalContentModel {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("<HasLevelPackEntitlement>b__19_0", (levelProductData))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _OpenLevelProductStoreAsync_g__GetSkuForProductFlow_11_0(
+        levelProductData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelProductData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "<OpenLevelProductStoreAsync>g__GetSkuForProductFlow|11_0",
+                (levelProductData),
+            )?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

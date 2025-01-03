@@ -222,6 +222,13 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         > = __cordl_object.invoke("Clone", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn CompactGlobalList() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CompactGlobalList", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ComputeControlGroupingIfNecessary(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -230,6 +237,13 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ComputeControlGroupingIfNecessary", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DeferredResolutionOfBindings() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DeferredResolutionOfBindings", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn Destroy(
@@ -243,7 +257,21 @@ impl crate::UnityEngine::InputSystem::InputActionState {
             .invoke("Destroy", (isFinalizing))?;
         Ok(__cordl_ret.into())
     }
-    pub fn DisableAllActions(
+    pub fn DestroyAllActionMapStates() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DestroyAllActionMapStates", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DisableAllActions_1() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DisableAllActions", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DisableAllActions_InputActionMap0(
         &mut self,
         map: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputActionMap>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -418,6 +446,17 @@ impl crate::UnityEngine::InputSystem::InputActionState {
             .invoke("Finalize", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn FindAllEnabledActions(
+        result: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::InputSystem::InputAction,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FindAllEnabledActions", (result))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn FindControlIndexOnBinding(
         &mut self,
         bindingIndex: i32,
@@ -584,6 +623,13 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         > = __cordl_object.invoke("GetBindingState", (bindingIndex))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetComplexityFromMonitorIndex(
+        mapControlAndBindingIndex: i64,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetComplexityFromMonitorIndex", (mapControlAndBindingIndex))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetCompositePartPressTime(
         &mut self,
         bindingIndex: i32,
@@ -701,6 +747,16 @@ impl crate::UnityEngine::InputSystem::InputActionState {
             .invoke("IsActiveControl", (bindingIndex, controlIndex))?;
         Ok(__cordl_ret.into())
     }
+    pub fn IsActuated(
+        trigger: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::InputSystem::InputActionState_TriggerState,
+        >,
+        threshold: f32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsActuated", (trigger, threshold))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn IsConflictingInput(
         &mut self,
         trigger: quest_hook::libil2cpp::ByRefMut<
@@ -743,7 +799,17 @@ impl crate::UnityEngine::InputSystem::InputActionState {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn NotifyListenersOfActionChange(
+    pub fn NotifyListenersOfActionChange_Il2CppObject1(
+        change: crate::UnityEngine::InputSystem::InputActionChange,
+        actionOrMapOrAsset: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("NotifyListenersOfActionChange", (change, actionOrMapOrAsset))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn NotifyListenersOfActionChange_InputActionChange0(
         &mut self,
         change: crate::UnityEngine::InputSystem::InputActionChange,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -762,6 +828,14 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnBeforeInitialUpdate", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn OnDeviceChange(
+        device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+        change: crate::UnityEngine::InputSystem::InputDeviceChange,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("OnDeviceChange", (device, change))?;
         Ok(__cordl_ret.into())
     }
     pub fn PrepareForBindingReResolution(
@@ -1025,6 +1099,11 @@ impl crate::UnityEngine::InputSystem::InputActionState {
             .invoke("ResetActionStatesDrivenBy", (device))?;
         Ok(__cordl_ret.into())
     }
+    pub fn ResetGlobals() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ResetGlobals", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ResetInteractionState(
         &mut self,
         interactionIndex: i32,
@@ -1068,6 +1147,17 @@ impl crate::UnityEngine::InputSystem::InputActionState {
                 "RestoreActionStatesAfterReResolvingBindings",
                 (oldState, activeControls, isFullResolve),
             )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SaveAndResetState() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Utilities::ISavedState,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Utilities::ISavedState,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SaveAndResetState", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn SetControlEnabled(
@@ -1118,6 +1208,14 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetTotalTimeoutCompletionTime", (seconds, trigger))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ShouldIgnoreInputOnCompositeBinding(
+        binding: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        eventPtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ShouldIgnoreInputOnCompositeBinding", (binding, eventPtr))?;
         Ok(__cordl_ret.into())
     }
     pub fn SplitUpMapAndControlAndBindingIndex(

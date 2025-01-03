@@ -32,6 +32,15 @@ impl crate::UnityEngine::Bounds {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn ClosestPoint_Injected(
+        _unity_self: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Bounds>,
+        point: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+        ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ClosestPoint_Injected", (_unity_self, point, ret))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Contains(
         &mut self,
         point: crate::UnityEngine::Vector3,
@@ -41,6 +50,14 @@ impl crate::UnityEngine::Bounds {
             "Contains",
             (point),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Contains_Injected(
+        _unity_self: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Bounds>,
+        point: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Contains_Injected", (_unity_self, point))?;
         Ok(__cordl_ret.into())
     }
     pub fn Encapsulate(
@@ -105,6 +122,24 @@ impl crate::UnityEngine::Bounds {
             "IntersectRay",
             (ray, distance),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IntersectRayAABB(
+        ray: crate::UnityEngine::Ray,
+        bounds: crate::UnityEngine::Bounds,
+        dist: quest_hook::libil2cpp::ByRefMut<f32>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IntersectRayAABB", (ray, bounds, dist))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IntersectRayAABB_Injected(
+        ray: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Ray>,
+        bounds: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Bounds>,
+        dist: quest_hook::libil2cpp::ByRefMut<f32>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IntersectRayAABB_Injected", (ray, bounds, dist))?;
         Ok(__cordl_ret.into())
     }
     pub fn Intersects(
@@ -216,6 +251,22 @@ impl crate::UnityEngine::Bounds {
             "get_size",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        lhs: crate::UnityEngine::Bounds,
+        rhs: crate::UnityEngine::Bounds,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        lhs: crate::UnityEngine::Bounds,
+        rhs: crate::UnityEngine::Bounds,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (lhs, rhs))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_center(

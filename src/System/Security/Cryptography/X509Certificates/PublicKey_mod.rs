@@ -30,6 +30,40 @@ for crate::System::Security::Cryptography::X509Certificates::PublicKey {
 }
 #[cfg(feature = "System+Security+Cryptography+X509Certificates+PublicKey")]
 impl crate::System::Security::Cryptography::X509Certificates::PublicKey {
+    pub fn DecodeDSA(
+        rawPublicKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        rawParameters: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::DSA>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::DSA,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DecodeDSA", (rawPublicKey, rawParameters))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DecodeRSA(
+        rawPublicKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::RSA>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::RSA,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DecodeRSA", (rawPublicKey))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetUnsignedBigInteger(
+        integer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetUnsignedBigInteger", (integer))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         oid: quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::Oid>,
         parameters: quest_hook::libil2cpp::Gc<

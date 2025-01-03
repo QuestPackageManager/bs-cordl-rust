@@ -22,7 +22,20 @@ impl std::ops::DerefMut for crate::GlobalNamespace::SR {
     }
 }
 #[cfg(feature = "SR")]
-impl crate::GlobalNamespace::SR {}
+impl crate::GlobalNamespace::SR {
+    pub fn Format(
+        resourceFormat: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        p1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Format", (resourceFormat, p1))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "SR")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SR {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

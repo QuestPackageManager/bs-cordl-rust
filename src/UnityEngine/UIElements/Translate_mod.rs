@@ -55,6 +55,13 @@ impl crate::UnityEngine::UIElements::Translate {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn None() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::Translate,
+    > {
+        let __cordl_ret: crate::UnityEngine::UIElements::Translate = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("None", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ToString(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -104,6 +111,22 @@ impl crate::UnityEngine::UIElements::Translate {
             "get_z",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        lhs: crate::UnityEngine::UIElements::Translate,
+        rhs: crate::UnityEngine::UIElements::Translate,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        lhs: crate::UnityEngine::UIElements::Translate,
+        rhs: crate::UnityEngine::UIElements::Translate,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (lhs, rhs))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_x(

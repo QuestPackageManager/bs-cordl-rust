@@ -141,6 +141,31 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace {
         let __cordl_ret: bool = __cordl_object.invoke("GetNextEvent", (current))?;
         Ok(__cordl_ret.into())
     }
+    pub fn LoadFrom_Il2CppString0(
+        filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::LowLevel::InputEventTrace,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::LowLevel::InputEventTrace,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LoadFrom", (filePath))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LoadFrom_Stream1(
+        stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::LowLevel::InputEventTrace,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::LowLevel::InputEventTrace,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("LoadFrom", (stream))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_InputDevice_i64__cordl_bool_i64_0(
         device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
         bufferSizeInBytes: i64,
@@ -360,6 +385,13 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace {
             .invoke("add_onEvent", (value))?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_FrameMarkerEvent() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::FourCC,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_FrameMarkerEvent", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_allocatedSizeInBytes(&mut self) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -401,6 +433,13 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace {
             self,
         );
         let __cordl_ret: i64 = __cordl_object.invoke("get_eventCount", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_kFileFormat() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::FourCC,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_kFileFormat", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_m_EventBuffer(

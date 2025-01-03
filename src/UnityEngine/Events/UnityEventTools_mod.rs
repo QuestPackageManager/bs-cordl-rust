@@ -23,7 +23,19 @@ impl std::ops::DerefMut for crate::UnityEngine::Events::UnityEventTools {
     }
 }
 #[cfg(feature = "UnityEngine+Events+UnityEventTools")]
-impl crate::UnityEngine::Events::UnityEventTools {}
+impl crate::UnityEngine::Events::UnityEventTools {
+    pub fn TidyAssemblyTypeName(
+        assemblyTypeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TidyAssemblyTypeName", (assemblyTypeName))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+Events+UnityEventTools")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Events::UnityEventTools {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

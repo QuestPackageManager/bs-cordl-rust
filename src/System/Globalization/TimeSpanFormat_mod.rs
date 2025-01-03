@@ -28,6 +28,79 @@ impl crate::System::Globalization::TimeSpanFormat {
     pub type FormatLiterals = crate::System::Globalization::TimeSpanFormat_FormatLiterals;
     #[cfg(feature = "System+Globalization+TimeSpanFormat+Pattern")]
     pub type Pattern = crate::System::Globalization::TimeSpanFormat_Pattern;
+    pub fn AppendNonNegativeInt32(
+        sb: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+        n: i32,
+        digits: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AppendNonNegativeInt32", (sb, n, digits))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Format(
+        value: crate::System::TimeSpan,
+        format: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        formatProvider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Format", (value, format, formatProvider))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FormatCustomized(
+        value: crate::System::TimeSpan,
+        format: crate::System::ReadOnlySpan_1<char>,
+        dtfi: quest_hook::libil2cpp::Gc<
+            crate::System::Globalization::DateTimeFormatInfo,
+        >,
+        result: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FormatCustomized", (value, format, dtfi, result))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FormatStandard(
+        value: crate::System::TimeSpan,
+        isInvariant: bool,
+        format: crate::System::ReadOnlySpan_1<char>,
+        pattern: crate::System::Globalization::TimeSpanFormat_Pattern,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FormatStandard", (value, isInvariant, format, pattern))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FormatToBuilder(
+        value: crate::System::TimeSpan,
+        format: crate::System::ReadOnlySpan_1<char>,
+        formatProvider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FormatToBuilder", (value, format, formatProvider))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryFormat(
+        value: crate::System::TimeSpan,
+        destination: crate::System::Span_1<char>,
+        charsWritten: quest_hook::libil2cpp::ByRefMut<i32>,
+        format: crate::System::ReadOnlySpan_1<char>,
+        formatProvider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "TryFormat",
+                (value, destination, charsWritten, format, formatProvider),
+            )?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "System+Globalization+TimeSpanFormat")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Globalization::TimeSpanFormat {
@@ -81,6 +154,15 @@ impl crate::System::Globalization::TimeSpanFormat_FormatLiterals {
             "Init",
             (format, useInvariantFieldLengths),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InitInvariant(
+        isNegative: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Globalization::TimeSpanFormat_FormatLiterals,
+    > {
+        let __cordl_ret: crate::System::Globalization::TimeSpanFormat_FormatLiterals = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InitInvariant", (isNegative))?;
         Ok(__cordl_ret.into())
     }
     pub fn get_DayHourSep(

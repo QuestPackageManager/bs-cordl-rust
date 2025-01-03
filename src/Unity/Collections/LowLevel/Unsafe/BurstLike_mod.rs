@@ -69,7 +69,25 @@ for crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic {
     }
 }
 #[cfg(feature = "Unity+Collections+LowLevel+Unsafe+BurstLike+SharedStatic")]
-impl crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic {}
+impl crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic {
+    pub fn GetOrCreateSharedStaticInternal(
+        getHashCode64: i64,
+        getSubHashCode64: i64,
+        sizeOf: u32,
+        alignment: u32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetOrCreateSharedStaticInternal",
+                (getHashCode64, getSubHashCode64, sizeOf, alignment),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "Unity+Collections+LowLevel+Unsafe+BurstLike+SharedStatic")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic {
@@ -108,6 +126,23 @@ for crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic_1<T> {
+    pub fn GetOrCreate<TContext>(
+        alignment: u32,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic_1<T>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TContext: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic_1<
+            T,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetOrCreate", (alignment))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

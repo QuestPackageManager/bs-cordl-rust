@@ -140,6 +140,13 @@ impl crate::UnityEngine::UIElements::VisualElementAnimationSystem {
             .invoke("get_profilerMarker", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_stylePropertyAnimationProfilerMarker() -> quest_hook::libil2cpp::Result<
+        crate::Unity::Profiling::ProfilerMarker,
+    > {
+        let __cordl_ret: crate::Unity::Profiling::ProfilerMarker = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_stylePropertyAnimationProfilerMarker", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualElementAnimationSystem")]
 impl quest_hook::libil2cpp::ObjectType

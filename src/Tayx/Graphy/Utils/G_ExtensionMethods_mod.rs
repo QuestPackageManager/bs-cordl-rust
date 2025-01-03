@@ -23,7 +23,74 @@ impl std::ops::DerefMut for crate::Tayx::Graphy::Utils::G_ExtensionMethods {
     }
 }
 #[cfg(feature = "Tayx+Graphy+Utils+G_ExtensionMethods")]
-impl crate::Tayx::Graphy::Utils::G_ExtensionMethods {}
+impl crate::Tayx::Graphy::Utils::G_ExtensionMethods {
+    pub fn SetAllActive_List_1__cordl_bool0(
+        gameObjects: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::GameObject,
+            >,
+        >,
+        active: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::GameObject,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::GameObject,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetAllActive", (gameObjects, active))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetAllActive_List_1__cordl_bool1(
+        images: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::UI::Image,
+            >,
+        >,
+        active: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::UI::Image,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::UI::Image,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetAllActive", (images, active))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetOneActive(
+        images: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::UI::Image,
+            >,
+        >,
+        active: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::UI::Image,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::UI::Image,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetOneActive", (images, active))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "Tayx+Graphy+Utils+G_ExtensionMethods")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Tayx::Graphy::Utils::G_ExtensionMethods {

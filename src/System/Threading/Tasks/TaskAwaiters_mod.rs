@@ -23,7 +23,17 @@ impl std::ops::DerefMut for crate::System::Threading::Tasks::TaskAwaiters {
     }
 }
 #[cfg(feature = "System+Threading+Tasks+TaskAwaiters")]
-impl crate::System::Threading::Tasks::TaskAwaiters {}
+impl crate::System::Threading::Tasks::TaskAwaiters {
+    pub fn ForceAsync(
+        task: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Threading::Tasks::ForceAsyncAwaiter,
+    > {
+        let __cordl_ret: crate::System::Threading::Tasks::ForceAsyncAwaiter = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ForceAsync", (task))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Threading+Tasks+TaskAwaiters")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Threading::Tasks::TaskAwaiters {

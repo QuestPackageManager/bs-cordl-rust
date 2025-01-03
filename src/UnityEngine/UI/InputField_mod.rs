@@ -370,6 +370,22 @@ impl crate::UnityEngine::UI::InputField {
             .invoke("GetInternalSelection", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetLineEndPosition(
+        _cordl_gen: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextGenerator>,
+        line: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetLineEndPosition", (_cordl_gen, line))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetLineStartPosition(
+        _cordl_gen: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextGenerator>,
+        line: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetLineStartPosition", (_cordl_gen, line))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetSelectedString(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -1156,6 +1172,14 @@ impl crate::UnityEngine::UI::InputField {
             .invoke("get_characterValidation", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_clipboard() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_clipboard", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_compositionString(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -1575,6 +1599,13 @@ impl crate::UnityEngine::UI::InputField {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_characterValidation", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_clipboard(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_clipboard", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_contentType(

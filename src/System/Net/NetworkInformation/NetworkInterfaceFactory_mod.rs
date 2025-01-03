@@ -27,6 +27,16 @@ for crate::System::Net::NetworkInformation::NetworkInterfaceFactory {
 }
 #[cfg(feature = "System+Net+NetworkInformation+NetworkInterfaceFactory")]
 impl crate::System::Net::NetworkInformation::NetworkInterfaceFactory {
+    pub fn Create() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Net::NetworkInformation::NetworkInterfaceFactory,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Net::NetworkInformation::NetworkInterfaceFactory,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Create", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetAllNetworkInterfaces(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

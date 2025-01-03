@@ -789,6 +789,18 @@ impl<
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
+    pub fn ParseLength(
+        str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        defaultValue: crate::UnityEngine::UIElements::Length,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Length>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: crate::UnityEngine::UIElements::Length = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ParseLength", (str, defaultValue))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type

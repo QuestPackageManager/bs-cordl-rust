@@ -39,6 +39,13 @@ impl crate::UnityEngine::UI::Navigation {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_defaultNavigation() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UI::Navigation,
+    > {
+        let __cordl_ret: crate::UnityEngine::UI::Navigation = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_defaultNavigation", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_mode(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UI::Navigation_Mode> {

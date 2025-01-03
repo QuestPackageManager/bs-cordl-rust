@@ -129,6 +129,13 @@ impl crate::GlobalNamespace::PacketEncryptionLayer {
             )?;
         Ok(__cordl_ret.into())
     }
+    pub fn Log(
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Log", (message))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn MatchesFilter(
         &mut self,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,

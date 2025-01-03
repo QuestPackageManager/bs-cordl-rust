@@ -59,6 +59,30 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Schema::JsonSchemaModel {
 }
 #[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaModel")]
 impl crate::Newtonsoft::Json::Schema::JsonSchemaModel {
+    pub fn Combine(
+        model: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Schema::JsonSchemaModel,
+        >,
+        schema: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchema>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Combine", (model, schema))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Create(
+        schemata: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                *mut crate::Newtonsoft::Json::Schema::JsonSchema,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchemaModel>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Schema::JsonSchemaModel,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Create", (schemata))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

@@ -63,6 +63,11 @@ impl crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsContext {
             .invoke_void(".ctor", (secureRandom, securityParameters))?;
         Ok(__cordl_object.into())
     }
+    pub fn NextCounterValue() -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("NextCounterValue", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn SetClientVersion(
         &mut self,
         clientVersion: quest_hook::libil2cpp::Gc<

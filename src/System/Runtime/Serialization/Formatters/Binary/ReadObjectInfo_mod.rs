@@ -70,6 +70,90 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ReadObjectInfo {
             .invoke("AddValue", (name, value, si, memberData))?;
         Ok(__cordl_ret.into())
     }
+    pub fn Create_ISurrogateSelector_StreamingContext_ObjectManager_SerObjectInfoInit_IFormatterConverter__cordl_bool0(
+        objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        surrogateSelector: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::ISurrogateSelector,
+        >,
+        context: crate::System::Runtime::Serialization::StreamingContext,
+        objectManager: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::ObjectManager,
+        >,
+        serObjectInfoInit: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::Formatters::Binary::SerObjectInfoInit,
+        >,
+        converter: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::IFormatterConverter,
+        >,
+        bSimpleAssembly: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::Formatters::Binary::ReadObjectInfo,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::Formatters::Binary::ReadObjectInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "Create",
+                (
+                    objectType,
+                    surrogateSelector,
+                    context,
+                    objectManager,
+                    serObjectInfoInit,
+                    converter,
+                    bSimpleAssembly,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Create_Il2CppArray_Il2CppArray_ISurrogateSelector_StreamingContext_ObjectManager_SerObjectInfoInit_IFormatterConverter__cordl_bool1(
+        objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        memberNames: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+        memberTypes: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+        >,
+        surrogateSelector: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::ISurrogateSelector,
+        >,
+        context: crate::System::Runtime::Serialization::StreamingContext,
+        objectManager: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::ObjectManager,
+        >,
+        serObjectInfoInit: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::Formatters::Binary::SerObjectInfoInit,
+        >,
+        converter: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::IFormatterConverter,
+        >,
+        bSimpleAssembly: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::Formatters::Binary::ReadObjectInfo,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::Formatters::Binary::ReadObjectInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "Create",
+                (
+                    objectType,
+                    memberNames,
+                    memberTypes,
+                    surrogateSelector,
+                    context,
+                    objectManager,
+                    serObjectInfoInit,
+                    converter,
+                    bSimpleAssembly,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetMemberInfo(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -112,6 +196,21 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ReadObjectInfo {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
         > = __cordl_object.invoke("GetMemberTypes", (inMemberNames, objectType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetObjectInfo(
+        serObjectInfoInit: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::Formatters::Binary::SerObjectInfoInit,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::Formatters::Binary::ReadObjectInfo,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::Formatters::Binary::ReadObjectInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetObjectInfo", (serObjectInfoInit))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetType(

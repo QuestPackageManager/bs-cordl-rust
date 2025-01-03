@@ -97,6 +97,11 @@ impl crate::Org::BouncyCastle::Utilities::Encoders::HexEncoder {
             .invoke("Encode", (buf, off, len, outStream))?;
         Ok(__cordl_ret.into())
     }
+    pub fn Ignore(c: char) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Ignore", (c))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn InitialiseDecodingTable(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

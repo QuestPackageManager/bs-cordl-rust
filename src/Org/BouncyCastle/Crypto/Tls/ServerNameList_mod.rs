@@ -25,6 +25,18 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Tls::ServerNameLis
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+ServerNameList")]
 impl crate::Org::BouncyCastle::Crypto::Tls::ServerNameList {
+    pub fn CheckNameType(
+        nameTypesSeen: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        nameType: u8,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckNameType", (nameTypesSeen, nameType))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Encode(
         &mut self,
         output: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
@@ -44,6 +56,16 @@ impl crate::Org::BouncyCastle::Crypto::Tls::ServerNameList {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (serverNameList))?;
         Ok(__cordl_object.into())
+    }
+    pub fn Parse(
+        input: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Tls::ServerNameList>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Tls::ServerNameList,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Parse", (input))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,

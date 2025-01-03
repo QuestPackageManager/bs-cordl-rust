@@ -34,6 +34,13 @@ impl crate::System::Runtime::CompilerServices::TaskAwaiter {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn HandleNonSuccessAndDebuggerNotification(
+        task: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("HandleNonSuccessAndDebuggerNotification", (task))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn OnCompleted(
         &mut self,
         continuation: quest_hook::libil2cpp::Gc<crate::System::Action>,
@@ -45,6 +52,36 @@ impl crate::System::Runtime::CompilerServices::TaskAwaiter {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn OnCompletedInternal(
+        task: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+        continuation: quest_hook::libil2cpp::Gc<crate::System::Action>,
+        continueOnCapturedContext: bool,
+        flowExecutionContext: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "OnCompletedInternal",
+                (task, continuation, continueOnCapturedContext, flowExecutionContext),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn OutputWaitEtwEvents(
+        task: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+        continuation: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Action>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Action> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("OutputWaitEtwEvents", (task, continuation))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ThrowForNonSuccess(
+        task: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ThrowForNonSuccess", (task))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn UnsafeOnCompleted(
         &mut self,
         continuation: quest_hook::libil2cpp::Gc<crate::System::Action>,
@@ -54,6 +91,13 @@ impl crate::System::Runtime::CompilerServices::TaskAwaiter {
             "UnsafeOnCompleted",
             (continuation),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ValidateEnd(
+        task: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ValidateEnd", (task))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

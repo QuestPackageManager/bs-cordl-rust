@@ -279,6 +279,15 @@ impl crate::Org::BouncyCastle::Math::EC::ECCurve {
         > = __cordl_object.invoke("FromBigInteger", (x))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetAllCoordinateSystems() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<i32>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetAllCoordinateSystems", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetEndomorphism(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

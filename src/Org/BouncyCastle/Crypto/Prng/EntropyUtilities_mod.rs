@@ -25,6 +25,20 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Prng::EntropyUtili
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Prng+EntropyUtilities")]
 impl crate::Org::BouncyCastle::Crypto::Prng::EntropyUtilities {
+    pub fn GenerateSeed(
+        entropySource: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::IEntropySource,
+        >,
+        numBytes: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GenerateSeed", (entropySource, numBytes))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

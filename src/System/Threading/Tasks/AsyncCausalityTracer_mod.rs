@@ -23,7 +23,52 @@ impl std::ops::DerefMut for crate::System::Threading::Tasks::AsyncCausalityTrace
     }
 }
 #[cfg(feature = "System+Threading+Tasks+AsyncCausalityTracer")]
-impl crate::System::Threading::Tasks::AsyncCausalityTracer {}
+impl crate::System::Threading::Tasks::AsyncCausalityTracer {
+    pub fn TraceOperationCompletion(
+        traceLevel: crate::System::Threading::Tasks::CausalityTraceLevel,
+        taskId: i32,
+        status: crate::System::Threading::Tasks::AsyncCausalityStatus,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TraceOperationCompletion", (traceLevel, taskId, status))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TraceOperationCreation(
+        traceLevel: crate::System::Threading::Tasks::CausalityTraceLevel,
+        taskId: i32,
+        operationName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        relatedContext: u64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "TraceOperationCreation",
+                (traceLevel, taskId, operationName, relatedContext),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TraceSynchronousWorkCompletion(
+        traceLevel: crate::System::Threading::Tasks::CausalityTraceLevel,
+        work: crate::System::Threading::Tasks::CausalitySynchronousWork,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TraceSynchronousWorkCompletion", (traceLevel, work))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TraceSynchronousWorkStart(
+        traceLevel: crate::System::Threading::Tasks::CausalityTraceLevel,
+        taskId: i32,
+        work: crate::System::Threading::Tasks::CausalitySynchronousWork,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TraceSynchronousWorkStart", (traceLevel, taskId, work))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_LoggingOn() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_LoggingOn", ())?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Threading+Tasks+AsyncCausalityTracer")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Threading::Tasks::AsyncCausalityTracer {

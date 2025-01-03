@@ -68,6 +68,17 @@ impl<T: quest_hook::libil2cpp::Type> crate::Zenject::ListPool_1<T> {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_Instance() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Zenject::ListPool_1<T>>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::ListPool_1<T>> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_Instance", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "Zenject+ListPool_1")]
 impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType

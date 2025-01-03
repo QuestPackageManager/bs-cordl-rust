@@ -32,6 +32,11 @@ impl crate::GlobalNamespace::BezierSplineEvaluator {
     pub const kSlightBelowZero: f32 = -0.0005f32;
     #[cfg(feature = "BezierSplineEvaluator+CubicSolveResult")]
     pub type CubicSolveResult = crate::GlobalNamespace::BezierSplineEvaluator_CubicSolveResult;
+    pub fn CubeRoot(x: f32) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CubeRoot", (x))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Evaluate(
         &mut self,
         t: f32,
@@ -130,6 +135,18 @@ impl crate::GlobalNamespace::BezierSplineEvaluator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OffsetStartIndexToDistance", (_cordl_time))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SolveCubic(
+        a: f32,
+        b: f32,
+        c: f32,
+        d: f32,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::BezierSplineEvaluator_CubicSolveResult,
+    > {
+        let __cordl_ret: crate::GlobalNamespace::BezierSplineEvaluator_CubicSolveResult = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SolveCubic", (a, b, c, d))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

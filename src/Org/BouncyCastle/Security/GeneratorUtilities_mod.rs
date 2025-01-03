@@ -24,6 +24,143 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Security::GeneratorUtiliti
 }
 #[cfg(feature = "Org+BouncyCastle+Security+GeneratorUtilities")]
 impl crate::Org::BouncyCastle::Security::GeneratorUtilities {
+    pub fn AddDefaultKeySizeEntries(
+        _cordl_size: i32,
+        algorithms: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddDefaultKeySizeEntries", (_cordl_size, algorithms))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddHMacKeyGenerator(
+        algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        aliases: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddHMacKeyGenerator", (algorithm, aliases))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddKgAlgorithm(
+        canonicalName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        aliases: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddKgAlgorithm", (canonicalName, aliases))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddKpgAlgorithm(
+        canonicalName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        aliases: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddKpgAlgorithm", (canonicalName, aliases))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FindDefaultKeySize(
+        canonicalName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FindDefaultKeySize", (canonicalName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCanonicalKeyGeneratorAlgorithm(
+        algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCanonicalKeyGeneratorAlgorithm", (algorithm))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCanonicalKeyPairGeneratorAlgorithm(
+        algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCanonicalKeyPairGeneratorAlgorithm", (algorithm))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetDefaultKeySize_DerObjectIdentifier0(
+        oid: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetDefaultKeySize", (oid))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetDefaultKeySize_Il2CppString1(
+        algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetDefaultKeySize", (algorithm))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetKeyGenerator_DerObjectIdentifier0(
+        oid: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::CipherKeyGenerator>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::CipherKeyGenerator,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetKeyGenerator", (oid))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetKeyGenerator_Il2CppString1(
+        algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::CipherKeyGenerator>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::CipherKeyGenerator,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetKeyGenerator", (algorithm))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetKeyPairGenerator_DerObjectIdentifier0(
+        oid: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::IAsymmetricCipherKeyPairGenerator,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::IAsymmetricCipherKeyPairGenerator,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetKeyPairGenerator", (oid))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetKeyPairGenerator_Il2CppString1(
+        algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::IAsymmetricCipherKeyPairGenerator,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::IAsymmetricCipherKeyPairGenerator,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetKeyPairGenerator", (algorithm))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

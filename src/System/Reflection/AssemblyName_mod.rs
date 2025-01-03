@@ -66,6 +66,18 @@ impl crate::System::Reflection::AssemblyName {
         > = __cordl_object.invoke("ComputePublicKeyToken", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn Create(
+        assembly: quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
+        fillCodebase: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Reflection::AssemblyName>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::AssemblyName,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (assembly, fillCodebase))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn FillName(
         &mut self,
         native: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -83,6 +95,17 @@ impl crate::System::Reflection::AssemblyName {
                 "FillName",
                 (native, codeBase, addVersion, addPublickey, defaultToken, assemblyRef),
             )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetNativeName(
+        assembly_ptr: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetNativeName", (assembly_ptr))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetObjectData(
@@ -162,6 +185,19 @@ impl crate::System::Reflection::AssemblyName {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("OnDeserialization", (sender))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ParseAssemblyName(
+        name: crate::System::IntPtr,
+        aname: quest_hook::libil2cpp::ByRefMut<crate::Mono::MonoAssemblyName>,
+        is_version_definited: quest_hook::libil2cpp::ByRefMut<bool>,
+        is_token_defined: quest_hook::libil2cpp::ByRefMut<bool>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ParseAssemblyName",
+                (name, aname, is_version_definited, is_token_defined),
+            )?;
         Ok(__cordl_ret.into())
     }
     pub fn ToString(
@@ -278,6 +314,15 @@ impl crate::System::Reflection::AssemblyName {
         );
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Version> = __cordl_object
             .invoke("get_Version", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_public_token(
+        token: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        pubkey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        len: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_public_token", (token, pubkey, len))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_Version(

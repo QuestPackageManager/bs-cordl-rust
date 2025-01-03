@@ -53,6 +53,43 @@ impl crate::UnityEngine::Color {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn HSVToRGB__cordl_bool1(
+        H: f32,
+        S: f32,
+        V: f32,
+        hdr: bool,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_ret: crate::UnityEngine::Color = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("HSVToRGB", (H, S, V, hdr))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn HSVToRGB_f32_f32_f32_0(
+        H: f32,
+        S: f32,
+        V: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_ret: crate::UnityEngine::Color = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("HSVToRGB", (H, S, V))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Lerp(
+        a: crate::UnityEngine::Color,
+        b: crate::UnityEngine::Color,
+        t: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_ret: crate::UnityEngine::Color = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Lerp", (a, b, t))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LerpUnclamped(
+        a: crate::UnityEngine::Color,
+        b: crate::UnityEngine::Color,
+        t: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_ret: crate::UnityEngine::Color = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LerpUnclamped", (a, b, t))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn RGBMultiplied(
         &mut self,
         multiplier: f32,
@@ -62,6 +99,32 @@ impl crate::UnityEngine::Color {
             "RGBMultiplied",
             (multiplier),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RGBToHSV(
+        rgbColor: crate::UnityEngine::Color,
+        H: quest_hook::libil2cpp::ByRefMut<f32>,
+        S: quest_hook::libil2cpp::ByRefMut<f32>,
+        V: quest_hook::libil2cpp::ByRefMut<f32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RGBToHSV", (rgbColor, H, S, V))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RGBToHSVHelper(
+        offset: f32,
+        dominantcolor: f32,
+        colorone: f32,
+        colortwo: f32,
+        H: quest_hook::libil2cpp::ByRefMut<f32>,
+        S: quest_hook::libil2cpp::ByRefMut<f32>,
+        V: quest_hook::libil2cpp::ByRefMut<f32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "RGBToHSVHelper",
+                (offset, dominantcolor, colorone, colortwo, H, S, V),
+            )?;
         Ok(__cordl_ret.into())
     }
     pub fn ToString_0(
@@ -136,12 +199,42 @@ impl crate::UnityEngine::Color {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_black() -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_ret: crate::UnityEngine::Color = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_black", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_blue() -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_ret: crate::UnityEngine::Color = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_blue", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_clear() -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_ret: crate::UnityEngine::Color = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_clear", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_cyan() -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_ret: crate::UnityEngine::Color = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_cyan", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_gray() -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_ret: crate::UnityEngine::Color = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_gray", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_grayscale(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_grayscale",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_green() -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_ret: crate::UnityEngine::Color = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_green", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_linear(
@@ -154,12 +247,110 @@ impl crate::UnityEngine::Color {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_magenta() -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_ret: crate::UnityEngine::Color = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_magenta", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_maxColorComponent(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_ret: f32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_maxColorComponent",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_red() -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_ret: crate::UnityEngine::Color = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_red", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_white() -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_ret: crate::UnityEngine::Color = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_white", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_yellow() -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_ret: crate::UnityEngine::Color = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_yellow", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Addition(
+        a: crate::UnityEngine::Color,
+        b: crate::UnityEngine::Color,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_ret: crate::UnityEngine::Color = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Addition", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Division(
+        a: crate::UnityEngine::Color,
+        b: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_ret: crate::UnityEngine::Color = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Division", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        lhs: crate::UnityEngine::Color,
+        rhs: crate::UnityEngine::Color,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_Color0(
+        c: crate::UnityEngine::Color,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
+        let __cordl_ret: crate::UnityEngine::Vector4 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (c))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_Vector4_1(
+        v: crate::UnityEngine::Vector4,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_ret: crate::UnityEngine::Color = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (v))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        lhs: crate::UnityEngine::Color,
+        rhs: crate::UnityEngine::Color,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Multiply_Color_Color0(
+        a: crate::UnityEngine::Color,
+        b: crate::UnityEngine::Color,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_ret: crate::UnityEngine::Color = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Multiply", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Multiply_Color_f32_1(
+        a: crate::UnityEngine::Color,
+        b: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_ret: crate::UnityEngine::Color = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Multiply", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Multiply_f32_Color2(
+        b: f32,
+        a: crate::UnityEngine::Color,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_ret: crate::UnityEngine::Color = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Multiply", (b, a))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Subtraction(
+        a: crate::UnityEngine::Color,
+        b: crate::UnityEngine::Color,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_ret: crate::UnityEngine::Color = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Subtraction", (a, b))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_Item(

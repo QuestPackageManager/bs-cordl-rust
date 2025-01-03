@@ -196,6 +196,58 @@ impl crate::System::Text::RegularExpressions::RegexCharClass {
             .invoke("Canonicalize", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn CharInCategory(
+        ch: char,
+        set: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        start: i32,
+        mySetLength: i32,
+        myCategoryLength: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CharInCategory", (ch, set, start, mySetLength, myCategoryLength))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CharInCategoryGroup(
+        ch: char,
+        chcategory: crate::System::Globalization::UnicodeCategory,
+        category: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        i: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CharInCategoryGroup", (ch, chcategory, category, i))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CharInClass(
+        ch: char,
+        set: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CharInClass", (ch, set))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CharInClassInternal(
+        ch: char,
+        set: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        start: i32,
+        mySetLength: i32,
+        myCategoryLength: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CharInClassInternal",
+                (ch, set, start, mySetLength, myCategoryLength),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CharInClassRecursive(
+        ch: char,
+        set: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        start: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CharInClassRecursive", (ch, set, start))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetRangeAt(
         &mut self,
         i: i32,
@@ -207,6 +259,69 @@ impl crate::System::Text::RegularExpressions::RegexCharClass {
         );
         let __cordl_ret: crate::System::Text::RegularExpressions::RegexCharClass_SingleRange = __cordl_object
             .invoke("GetRangeAt", (i))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsECMAWordChar(ch: char) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsECMAWordChar", (ch))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsEmpty(
+        charClass: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsEmpty", (charClass))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsMergeable(
+        charClass: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsMergeable", (charClass))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsNegated(
+        set: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsNegated", (set))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsSingleton(
+        set: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsSingleton", (set))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsSingletonInverse(
+        set: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsSingletonInverse", (set))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsSubtraction(
+        charClass: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsSubtraction", (charClass))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsWordChar(ch: char) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsWordChar", (ch))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn NegateCategory(
+        category: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("NegateCategory", (category))?;
         Ok(__cordl_ret.into())
     }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -234,11 +349,57 @@ impl crate::System::Text::RegularExpressions::RegexCharClass {
             .invoke_void(".ctor", (negate, ranges, categories, subtraction))?;
         Ok(__cordl_object.into())
     }
+    pub fn Parse(
+        charClass: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Text::RegularExpressions::RegexCharClass,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Text::RegularExpressions::RegexCharClass,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Parse", (charClass))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ParseRecursive(
+        charClass: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        start: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Text::RegularExpressions::RegexCharClass,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Text::RegularExpressions::RegexCharClass,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ParseRecursive", (charClass, start))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn RangeCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("RangeCount", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetFromProperty(
+        capname: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        invert: bool,
+        pattern: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetFromProperty", (capname, invert, pattern))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SingletonChar(
+        set: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<char> {
+        let __cordl_ret: char = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SingletonChar", (set))?;
         Ok(__cordl_ret.into())
     }
     pub fn ToStringClass(

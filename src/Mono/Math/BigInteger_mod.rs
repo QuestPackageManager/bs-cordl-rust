@@ -59,6 +59,36 @@ impl crate::Mono::Math::BigInteger {
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (o))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GeneratePseudoPrime(
+        bits: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GeneratePseudoPrime", (bits))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GenerateRandom_RandomNumberGenerator0(
+        bits: i32,
+        rng: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::RandomNumberGenerator,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GenerateRandom", (bits, rng))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GenerateRandom_i32_1(
+        bits: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GenerateRandom", (bits))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetBytes(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -309,6 +339,166 @@ impl crate::Mono::Math::BigInteger {
             .invoke(".ctor", (ui))?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_Rng() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::RandomNumberGenerator,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::RandomNumberGenerator,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_Rng", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Division(
+        bi1: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+        bi2: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Division", (bi1, bi2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality_BigInteger1(
+        bi1: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+        bi2: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (bi1, bi2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality_u32_0(
+        bi1: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+        ui: u32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (bi1, ui))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_GreaterThan(
+        bi1: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+        bi2: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_GreaterThan", (bi1, bi2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_GreaterThanOrEqual(
+        bi1: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+        bi2: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_GreaterThanOrEqual", (bi1, bi2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_i32_1(
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_u32_0(
+        value: u32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality_BigInteger1(
+        bi1: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+        bi2: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (bi1, bi2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality_u32_0(
+        bi1: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+        ui: u32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (bi1, ui))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_LeftShift(
+        bi1: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+        shiftVal: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_LeftShift", (bi1, shiftVal))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_LessThan(
+        bi1: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+        bi2: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_LessThan", (bi1, bi2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_LessThanOrEqual(
+        bi1: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+        bi2: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_LessThanOrEqual", (bi1, bi2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Modulus_BigInteger1(
+        bi1: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+        bi2: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Modulus", (bi1, bi2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Modulus_u32_0(
+        bi: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+        ui: u32,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Modulus", (bi, ui))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Multiply(
+        bi1: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+        bi2: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Multiply", (bi1, bi2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_RightShift(
+        bi1: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+        shiftVal: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_RightShift", (bi1, shiftVal))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Subtraction(
+        bi1: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+        bi2: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Subtraction", (bi1, bi2))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "Mono+Math+BigInteger")]
 impl quest_hook::libil2cpp::ObjectType for crate::Mono::Math::BigInteger {
@@ -344,7 +534,156 @@ impl std::ops::DerefMut for crate::Mono::Math::BigInteger_Kernel {
     }
 }
 #[cfg(feature = "Mono+Math+BigInteger+Kernel")]
-impl crate::Mono::Math::BigInteger_Kernel {}
+impl crate::Mono::Math::BigInteger_Kernel {
+    pub fn Compare(
+        bi1: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+        bi2: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+    ) -> quest_hook::libil2cpp::Result<crate::Mono::Math::BigInteger_Sign> {
+        let __cordl_ret: crate::Mono::Math::BigInteger_Sign = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Compare", (bi1, bi2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DwordDivMod(
+        n: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+        d: u32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::Mono::Math::BigInteger>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::Mono::Math::BigInteger>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DwordDivMod", (n, d))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DwordMod(
+        n: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+        d: u32,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DwordMod", (n, d))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LeftShift(
+        bi: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+        n: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LeftShift", (bi, n))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MinusEq(
+        big: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+        small: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MinusEq", (big, small))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Multiply(
+        x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+        xOffset: u32,
+        xLen: u32,
+        y: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+        yOffset: u32,
+        yLen: u32,
+        d: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+        dOffset: u32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Multiply", (x, xOffset, xLen, y, yOffset, yLen, d, dOffset))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MultiplyMod2p32pmod(
+        x: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+        xOffset: i32,
+        xLen: i32,
+        y: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+        yOffest: i32,
+        yLen: i32,
+        d: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+        dOffset: i32,
+        _cordl_mod: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "MultiplyMod2p32pmod",
+                (x, xOffset, xLen, y, yOffest, yLen, d, dOffset, _cordl_mod),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn PlusEq(
+        bi1: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+        bi2: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PlusEq", (bi1, bi2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RightShift(
+        bi: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+        n: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RightShift", (bi, n))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SingleByteDivideInPlace(
+        n: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+        d: u32,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SingleByteDivideInPlace", (n, d))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Subtract(
+        big: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+        small: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Subtract", (big, small))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn modInverse_BigInteger1(
+        bi: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+        modulus: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("modInverse", (bi, modulus))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn modInverse_u32_0(
+        bi: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+        modulus: u32,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("modInverse", (bi, modulus))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn multiByteDivide(
+        bi1: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+        bi2: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::Mono::Math::BigInteger>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::Mono::Math::BigInteger>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("multiByteDivide", (bi1, bi2))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "Mono+Math+BigInteger+Kernel")]
 impl quest_hook::libil2cpp::ObjectType for crate::Mono::Math::BigInteger_Kernel {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

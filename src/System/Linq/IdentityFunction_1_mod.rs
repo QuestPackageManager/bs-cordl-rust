@@ -31,6 +31,18 @@ impl<
 > crate::System::Linq::IdentityFunction_1<TElement> {
     #[cfg(feature = "System+Linq+IdentityFunction_1+__c")]
     pub type __c = crate::System::Linq::IdentityFunction_1___c<TElement>;
+    pub fn get_Instance() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Func_2<TElement, TElement>>,
+    >
+    where
+        TElement: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<TElement, TElement>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_Instance", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "System+Linq+IdentityFunction_1")]
 impl<TElement: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType

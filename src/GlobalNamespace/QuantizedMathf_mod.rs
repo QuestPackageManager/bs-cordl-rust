@@ -29,6 +29,59 @@ impl crate::GlobalNamespace::QuantizedMathf {
     pub const kVectorSerializableEpsilon: f32 = 0.001f32;
     pub const kVectorSerializableScale: f32 = 1000f32;
     pub const kVectorSerializableScaleInt: i32 = 1000i32;
+    pub fn Approximately_Pose_Pose4(
+        a: crate::UnityEngine::Pose,
+        b: crate::UnityEngine::Pose,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Approximately", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Approximately_Quaternion_Quaternion0(
+        a: crate::UnityEngine::Quaternion,
+        b: crate::UnityEngine::Quaternion,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Approximately", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Approximately_Vector3_Vector3_3(
+        a: crate::UnityEngine::Vector3,
+        b: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Approximately", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Approximately_f32_f32_f32_1(
+        a: f32,
+        b: f32,
+        epsilon: f32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Approximately", (a, b, epsilon))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Approximately_i32_i32_i32_2(
+        a: i32,
+        b: i32,
+        epsilon: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Approximately", (a, b, epsilon))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn QuantizedVectorComponentToString(
+        v: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("QuantizedVectorComponentToString", (v))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "QuantizedMathf")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::QuantizedMathf {

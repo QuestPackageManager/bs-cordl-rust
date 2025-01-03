@@ -123,6 +123,14 @@ impl crate::UnityEngine::UIElements::TextureRegistry {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_instance() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TextureRegistry>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::TextureRegistry,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_instance", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+UIElements+TextureRegistry")]
 impl quest_hook::libil2cpp::ObjectType

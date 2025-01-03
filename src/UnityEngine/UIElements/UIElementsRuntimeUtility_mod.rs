@@ -31,6 +31,250 @@ impl crate::UnityEngine::UIElements::UIElementsRuntimeUtility {
     pub type CreateRuntimePanelDelegate = crate::UnityEngine::UIElements::UIElementsRuntimeUtility_CreateRuntimePanelDelegate;
     #[cfg(feature = "UnityEngine+UIElements+UIElementsRuntimeUtility+__c")]
     pub type __c = crate::UnityEngine::UIElements::UIElementsRuntimeUtility___c;
+    pub fn BeginRenderOverlays(
+        displayIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BeginRenderOverlays", (displayIndex))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateEvent(
+        systemEvent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Event>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::EventBase,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateEvent", (systemEvent))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DisposeRuntimePanel(
+        ownerObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DisposeRuntimePanel", (ownerObject))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EndRenderOverlays(
+        displayIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EndRenderOverlays", (displayIndex))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FindOrCreateRuntimePanel(
+        ownerObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
+        createDelegate: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UIElementsRuntimeUtility_CreateRuntimePanelDelegate,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::BaseRuntimePanel>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::BaseRuntimePanel,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FindOrCreateRuntimePanel", (ownerObject, createDelegate))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetSortedPlayerPanels() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::UIElements::Panel,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::UIElements::Panel,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSortedPlayerPanels", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MarkPotentiallyEmpty(
+        settings: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::PanelSettings,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MarkPotentiallyEmpty", (settings))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MultiDisplayBottomLeftToPanelPosition(
+        position: crate::UnityEngine::Vector2,
+        targetDisplay: quest_hook::libil2cpp::ByRefMut<crate::System::Nullable_1<i32>>,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MultiDisplayBottomLeftToPanelPosition", (position, targetDisplay))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MultiDisplayToLocalScreenPosition(
+        position: crate::UnityEngine::Vector2,
+        targetDisplay: quest_hook::libil2cpp::ByRefMut<crate::System::Nullable_1<i32>>,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MultiDisplayToLocalScreenPosition", (position, targetDisplay))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RegisterCachedPanelInternal(
+        instanceID: i32,
+        panel: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RegisterCachedPanelInternal", (instanceID, panel))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RegisterEventSystem(
+        eventSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RegisterEventSystem", (eventSystem))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RegisterPlayerloopCallback() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RegisterPlayerloopCallback", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RemoveCachedPanelInternal(
+        instanceID: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RemoveCachedPanelInternal", (instanceID))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RemoveUnusedPanels() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RemoveUnusedPanels", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RenderOverlaysBeforePriority(
+        displayIndex: i32,
+        maxPriority: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RenderOverlaysBeforePriority", (displayIndex, maxPriority))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RepaintOffscreenPanels() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RepaintOffscreenPanels", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RepaintOverlayPanel(
+        panel: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::BaseRuntimePanel,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RepaintOverlayPanel", (panel))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ScreenBottomLeftToPanelDelta(
+        delta: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ScreenBottomLeftToPanelDelta", (delta))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ScreenBottomLeftToPanelPosition(
+        position: crate::UnityEngine::Vector2,
+        targetDisplay: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ScreenBottomLeftToPanelPosition", (position, targetDisplay))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetPanelOrderingDirty() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetPanelOrderingDirty", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SortPanels() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SortPanels", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UnregisterEventSystem(
+        eventSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UnregisterEventSystem", (eventSystem))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UnregisterPlayerloopCallback() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UnregisterPlayerloopCallback", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UpdateRuntimePanels() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UpdateRuntimePanels", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn add_onCreatePanel(
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<
+                *mut crate::UnityEngine::UIElements::BaseRuntimePanel,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("add_onCreatePanel", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_activeEventSystem() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_activeEventSystem", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_defaultEventSystem() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DefaultEventSystem>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::DefaultEventSystem,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_defaultEventSystem", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_useDefaultEventSystem() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_useDefaultEventSystem", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_onCreatePanel(
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<
+                *mut crate::UnityEngine::UIElements::BaseRuntimePanel,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("remove_onCreatePanel", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_activeEventSystem(
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_activeEventSystem", (value))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIElementsRuntimeUtility")]
 impl quest_hook::libil2cpp::ObjectType

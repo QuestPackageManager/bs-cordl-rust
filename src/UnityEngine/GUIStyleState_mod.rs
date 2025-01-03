@@ -46,6 +46,21 @@ impl crate::UnityEngine::GUIStyleState {
             .invoke("Finalize", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetGUIStyleState(
+        sourceStyle: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle>,
+        source: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyleState>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyleState> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetGUIStyleState", (sourceStyle, source))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Init() -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Init", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

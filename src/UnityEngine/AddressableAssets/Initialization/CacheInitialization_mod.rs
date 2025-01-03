@@ -83,6 +83,14 @@ impl crate::UnityEngine::AddressableAssets::Initialization::CacheInitialization 
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_RootPath() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_RootPath", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+AddressableAssets+Initialization+CacheInitialization")]
 impl quest_hook::libil2cpp::ObjectType

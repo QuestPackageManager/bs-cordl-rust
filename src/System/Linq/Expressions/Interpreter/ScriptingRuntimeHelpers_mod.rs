@@ -26,7 +26,29 @@ for crate::System::Linq::Expressions::Interpreter::ScriptingRuntimeHelpers {
     }
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+ScriptingRuntimeHelpers")]
-impl crate::System::Linq::Expressions::Interpreter::ScriptingRuntimeHelpers {}
+impl crate::System::Linq::Expressions::Interpreter::ScriptingRuntimeHelpers {
+    pub fn GetPrimitiveDefaultValue(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPrimitiveDefaultValue", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Int32ToObject(
+        i: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Int32ToObject", (i))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Linq+Expressions+Interpreter+ScriptingRuntimeHelpers")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::Interpreter::ScriptingRuntimeHelpers {

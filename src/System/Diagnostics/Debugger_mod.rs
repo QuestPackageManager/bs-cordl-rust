@@ -23,7 +23,42 @@ impl std::ops::DerefMut for crate::System::Diagnostics::Debugger {
     }
 }
 #[cfg(feature = "System+Diagnostics+Debugger")]
-impl crate::System::Diagnostics::Debugger {}
+impl crate::System::Diagnostics::Debugger {
+    pub fn IsLogging() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsLogging", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Log(
+        level: i32,
+        category: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Log", (level, category, message))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Log_icall(
+        level: i32,
+        category: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+        message: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Log_icall", (level, category, message))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn NotifyOfCrossThreadDependency() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("NotifyOfCrossThreadDependency", ())?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Diagnostics+Debugger")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Diagnostics::Debugger {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

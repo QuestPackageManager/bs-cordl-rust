@@ -23,6 +23,38 @@ for crate::UnityEngine::InputSystem::LowLevel::TextEvent {
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+TextEvent")]
 impl crate::UnityEngine::InputSystem::LowLevel::TextEvent {
     pub const Type: i32 = 1413830740i32;
+    pub fn Create__cordl_char0(
+        deviceId: i32,
+        character: char,
+        _cordl_time: f64,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::LowLevel::TextEvent,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::TextEvent = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (deviceId, character, _cordl_time))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Create_i32_1(
+        deviceId: i32,
+        character: i32,
+        _cordl_time: f64,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::LowLevel::TextEvent,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::LowLevel::TextEvent = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (deviceId, character, _cordl_time))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn From(
+        eventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("From", (eventPtr))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_typeStatic(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

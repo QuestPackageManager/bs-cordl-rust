@@ -139,6 +139,16 @@ impl crate::Org::BouncyCastle::Crypto::Engines::Dstu7624Engine {
             .invoke("InvSubBytes", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn MixColumn(c: u64) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MixColumn", (c))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MixColumnInv(c: u64) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MixColumnInv", (c))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn MixColumns(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -157,6 +167,16 @@ impl crate::Org::BouncyCastle::Crypto::Engines::Dstu7624Engine {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MixColumnsInv", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MulX(n: u64) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MulX", (n))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MulX2(n: u64) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MulX2", (n))?;
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -190,6 +210,11 @@ impl crate::Org::BouncyCastle::Crypto::Engines::Dstu7624Engine {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Reset", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Rotate(n: i32, x: u64) -> quest_hook::libil2cpp::Result<u64> {
+        let __cordl_ret: u64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Rotate", (n, x))?;
         Ok(__cordl_ret.into())
     }
     pub fn RotateLeft(

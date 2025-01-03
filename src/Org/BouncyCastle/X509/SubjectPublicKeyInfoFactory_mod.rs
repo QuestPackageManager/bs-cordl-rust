@@ -25,6 +25,40 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::X509::SubjectPublicKeyInfo
 }
 #[cfg(feature = "Org+BouncyCastle+X509+SubjectPublicKeyInfoFactory")]
 impl crate::Org::BouncyCastle::X509::SubjectPublicKeyInfoFactory {
+    pub fn CreateSubjectPublicKeyInfo(
+        publicKey: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::SubjectPublicKeyInfo,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::SubjectPublicKeyInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateSubjectPublicKeyInfo", (publicKey))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ExtractBytes_BigInteger0(
+        encKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        offset: i32,
+        bI: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ExtractBytes", (encKey, offset, bI))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ExtractBytes_i32_BigInteger1(
+        encKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        _cordl_size: i32,
+        offSet: i32,
+        bI: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ExtractBytes", (encKey, _cordl_size, offSet, bI))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

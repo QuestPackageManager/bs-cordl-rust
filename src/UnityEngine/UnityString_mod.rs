@@ -23,7 +23,22 @@ impl std::ops::DerefMut for crate::UnityEngine::UnityString {
     }
 }
 #[cfg(feature = "UnityEngine+UnityString")]
-impl crate::UnityEngine::UnityString {}
+impl crate::UnityEngine::UnityString {
+    pub fn Format(
+        fmt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        args: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Format", (fmt, args))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+UnityString")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UnityString {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

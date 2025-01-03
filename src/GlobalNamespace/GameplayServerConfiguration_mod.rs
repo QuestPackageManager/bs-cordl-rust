@@ -40,6 +40,15 @@ impl crate::GlobalNamespace::GameplayServerConfiguration {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn Deserialize(
+        reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::GameplayServerConfiguration,
+    > {
+        let __cordl_ret: crate::GlobalNamespace::GameplayServerConfiguration = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Deserialize", (reader))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Equals_ByRefMut0(
         &mut self,
         other: quest_hook::libil2cpp::ByRefMut<
@@ -128,6 +137,30 @@ impl crate::GlobalNamespace::GameplayServerConfiguration {
                 gameplayServerControlSettings,
             ),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        a: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::GameplayServerConfiguration,
+        >,
+        b: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::GameplayServerConfiguration,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        a: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::GameplayServerConfiguration,
+        >,
+        b: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::GameplayServerConfiguration,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Inequality", (a, b))?;
         Ok(__cordl_ret.into())
     }
 }

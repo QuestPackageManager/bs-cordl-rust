@@ -23,7 +23,24 @@ impl std::ops::DerefMut for crate::UnityEngine::Audio::AudioPlayableBinding {
     }
 }
 #[cfg(feature = "UnityEngine+Audio+AudioPlayableBinding")]
-impl crate::UnityEngine::Audio::AudioPlayableBinding {}
+impl crate::UnityEngine::Audio::AudioPlayableBinding {
+    pub fn Create(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        key: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::PlayableBinding> {
+        let __cordl_ret: crate::UnityEngine::Playables::PlayableBinding = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (name, key))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateAudioOutput(
+        graph: crate::UnityEngine::Playables::PlayableGraph,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::PlayableOutput> {
+        let __cordl_ret: crate::UnityEngine::Playables::PlayableOutput = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateAudioOutput", (graph, name))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+Audio+AudioPlayableBinding")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Audio::AudioPlayableBinding {

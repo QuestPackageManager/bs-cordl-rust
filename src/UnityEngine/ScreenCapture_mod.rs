@@ -26,6 +26,22 @@ impl std::ops::DerefMut for crate::UnityEngine::ScreenCapture {
 impl crate::UnityEngine::ScreenCapture {
     #[cfg(feature = "UnityEngine+ScreenCapture+StereoScreenCaptureMode")]
     pub type StereoScreenCaptureMode = crate::UnityEngine::ScreenCapture_StereoScreenCaptureMode;
+    pub fn CaptureScreenshot_Il2CppString0(
+        filename: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CaptureScreenshot", (filename))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CaptureScreenshot_i32_ScreenCapture_StereoScreenCaptureMode1(
+        filename: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        superSize: i32,
+        CaptureMode: crate::UnityEngine::ScreenCapture_StereoScreenCaptureMode,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CaptureScreenshot", (filename, superSize, CaptureMode))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+ScreenCapture")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ScreenCapture {

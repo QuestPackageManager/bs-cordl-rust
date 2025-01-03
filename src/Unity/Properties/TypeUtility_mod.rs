@@ -44,6 +44,229 @@ impl crate::Unity::Properties::TypeUtility {
     >;
     #[cfg(feature = "Unity+Properties+TypeUtility+__c")]
     pub type __c = crate::Unity::Properties::TypeUtility___c;
+    pub fn CanBeInstantiated_1<T>() -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CanBeInstantiated", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CanBeInstantiated_Type0(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CanBeInstantiated", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CheckCanBeInstantiated_TypeUtility_ITypeConstructor_1_0<T>(
+        constructor: quest_hook::libil2cpp::Gc<
+            crate::Unity::Properties::TypeUtility_ITypeConstructor_1<T>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckCanBeInstantiated", (constructor))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CheckCanBeInstantiated_TypeUtility_ITypeConstructor_Type1(
+        constructor: quest_hook::libil2cpp::Gc<
+            crate::Unity::Properties::TypeUtility_ITypeConstructor,
+        >,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckCanBeInstantiated", (constructor, _cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CheckIsAssignableFrom(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        derivedType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckIsAssignableFrom", (_cordl_type, derivedType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateTypeConstructor_1<T>() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Unity::Properties::TypeUtility_ITypeConstructor_1<T>,
+        >,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Unity::Properties::TypeUtility_ITypeConstructor_1<T>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateTypeConstructor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateTypeConstructor_Type0(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Unity::Properties::TypeUtility_ITypeConstructor>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Unity::Properties::TypeUtility_ITypeConstructor,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateTypeConstructor", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetRootType(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Type> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetRootType", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetTypeConstructor_1<T>() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Unity::Properties::TypeUtility_ITypeConstructor_1<T>,
+        >,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Unity::Properties::TypeUtility_ITypeConstructor_1<T>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetTypeConstructor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetTypeConstructor_Type0(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Unity::Properties::TypeUtility_ITypeConstructor>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Unity::Properties::TypeUtility_ITypeConstructor,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetTypeConstructor", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetTypeDisplayName_IReadOnlyList_1_ByRefMut1(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        args: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                *mut crate::System::Type,
+            >,
+        >,
+        argIndex: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetTypeDisplayName", (_cordl_type, args, argIndex))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetTypeDisplayName_Type0(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetTypeDisplayName", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InstantiateArray_Type_i32_1<TArray>(
+        derivedType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<TArray>
+    where
+        TArray: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: TArray = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InstantiateArray", (derivedType, count))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InstantiateArray_i32_0<TArray>(
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<TArray>
+    where
+        TArray: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: TArray = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InstantiateArray", (count))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Instantiate_0<T>() -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Instantiate", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Instantiate_Type1<T>(
+        derivedType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Instantiate", (derivedType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetExplicitInstantiationMethod<T>(
+        constructor: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetExplicitInstantiationMethod", (constructor))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryInstantiateArray<TArray>(
+        count: i32,
+        instance: quest_hook::libil2cpp::ByRefMut<TArray>,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        TArray: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryInstantiateArray", (count, instance))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryInstantiate_ByRefMut0<T>(
+        instance: quest_hook::libil2cpp::ByRefMut<T>,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryInstantiate", (instance))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryInstantiate_Type_ByRefMut1<T>(
+        derivedType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        value: quest_hook::libil2cpp::ByRefMut<T>,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryInstantiate", (derivedType, value))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "Unity+Properties+TypeUtility")]
 impl quest_hook::libil2cpp::ObjectType for crate::Unity::Properties::TypeUtility {
@@ -445,6 +668,33 @@ for crate::Unity::Properties::TypeUtility_TypeConstructor_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::Unity::Properties::TypeUtility_TypeConstructor_1<T> {
+    pub fn CreateClassInstance() -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateClassInstance", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateScriptableObjectInstance() -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateScriptableObjectInstance", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateValueTypeInstance() -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateValueTypeInstance", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type

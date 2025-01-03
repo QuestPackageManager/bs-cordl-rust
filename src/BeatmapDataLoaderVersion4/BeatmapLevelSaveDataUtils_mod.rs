@@ -24,7 +24,17 @@ impl std::ops::DerefMut for crate::BeatmapDataLoaderVersion4::BeatmapLevelSaveDa
     }
 }
 #[cfg(feature = "BeatmapDataLoaderVersion4+BeatmapLevelSaveDataUtils")]
-impl crate::BeatmapDataLoaderVersion4::BeatmapLevelSaveDataUtils {}
+impl crate::BeatmapDataLoaderVersion4::BeatmapLevelSaveDataUtils {
+    pub fn MigrateBeatmapLevelSaveData(
+        beatmapLevelSaveData: quest_hook::libil2cpp::Gc<
+            crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MigrateBeatmapLevelSaveData", (beatmapLevelSaveData))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "BeatmapDataLoaderVersion4+BeatmapLevelSaveDataUtils")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::BeatmapDataLoaderVersion4::BeatmapLevelSaveDataUtils {

@@ -46,6 +46,19 @@ impl crate::Org::BouncyCastle::Crypto::Generators::ECKeyPairGenerator {
         > = __cordl_object.invoke("CreateBasePointMultiplier", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn FindECCurveByOid(
+        oid: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::X9::X9ECParameters>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X9::X9ECParameters,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FindECCurveByOid", (oid))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GenerateKeyPair(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -59,6 +72,21 @@ impl crate::Org::BouncyCastle::Crypto::Generators::ECKeyPairGenerator {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Crypto::AsymmetricCipherKeyPair,
         > = __cordl_object.invoke("GenerateKeyPair", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCorrespondingPublicKey(
+        privKey: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Parameters::ECPrivateKeyParameters,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Parameters::ECPublicKeyParameters,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Parameters::ECPublicKeyParameters,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCorrespondingPublicKey", (privKey))?;
         Ok(__cordl_ret.into())
     }
     pub fn Init(

@@ -28,6 +28,34 @@ impl crate::BGLib::UnityExtension::AssetBundleExtensions {
     pub type __c__DisplayClass0_0 = crate::BGLib::UnityExtension::AssetBundleExtensions___c__DisplayClass0_0;
     #[cfg(feature = "BGLib+UnityExtension+AssetBundleExtensions+__c__DisplayClass1_0")]
     pub type __c__DisplayClass1_0 = crate::BGLib::UnityExtension::AssetBundleExtensions___c__DisplayClass1_0;
+    pub fn GetAwaiter_AssetBundleCreateRequest0(
+        assetBundleCreateRequest: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AssetBundleCreateRequest,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Runtime::CompilerServices::TaskAwaiter_1<
+            *mut crate::UnityEngine::AssetBundle,
+        >,
+    > {
+        let __cordl_ret: crate::System::Runtime::CompilerServices::TaskAwaiter_1<
+            *mut crate::UnityEngine::AssetBundle,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetAwaiter", (assetBundleCreateRequest))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetAwaiter_ResourceRequest1(
+        resourceRequest: quest_hook::libil2cpp::Gc<crate::UnityEngine::ResourceRequest>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Runtime::CompilerServices::TaskAwaiter_1<
+            *mut crate::UnityEngine::Object,
+        >,
+    > {
+        let __cordl_ret: crate::System::Runtime::CompilerServices::TaskAwaiter_1<
+            *mut crate::UnityEngine::Object,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetAwaiter", (resourceRequest))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "BGLib+UnityExtension+AssetBundleExtensions")]
 impl quest_hook::libil2cpp::ObjectType

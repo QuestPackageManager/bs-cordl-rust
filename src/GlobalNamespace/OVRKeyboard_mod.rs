@@ -27,6 +27,30 @@ impl crate::GlobalNamespace::OVRKeyboard {
     pub type TrackedKeyboardInfo = crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardInfo;
     #[cfg(feature = "OVRKeyboard+TrackedKeyboardState")]
     pub type TrackedKeyboardState = crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardState;
+    pub fn GetKeyboardState() -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardState,
+    > {
+        let __cordl_ret: crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardState = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetKeyboardState", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetSystemKeyboardInfo(
+        keyboardQueryFlags: crate::GlobalNamespace::OVRPlugin_TrackedKeyboardQueryFlags,
+        keyboardInfo: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardInfo,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSystemKeyboardInfo", (keyboardQueryFlags, keyboardInfo))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn StopKeyboardTracking(
+        keyboardInfo: crate::GlobalNamespace::OVRKeyboard_TrackedKeyboardInfo,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StopKeyboardTracking", (keyboardInfo))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "OVRKeyboard")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRKeyboard {

@@ -25,6 +25,43 @@ impl std::ops::DerefMut for crate::UnityEngine::Networking::DownloadHandlerAsset
 }
 #[cfg(feature = "UnityEngine+Networking+DownloadHandlerAssetBundle")]
 impl crate::UnityEngine::Networking::DownloadHandlerAssetBundle {
+    pub fn Create(
+        obj: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Networking::DownloadHandlerAssetBundle,
+        >,
+        url: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crc: u32,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (obj, url, crc))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateCached(
+        obj: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Networking::DownloadHandlerAssetBundle,
+        >,
+        url: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        hash: crate::UnityEngine::Hash128,
+        crc: u32,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateCached", (obj, url, name, hash, crc))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateCached_Injected(
+        obj: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Networking::DownloadHandlerAssetBundle,
+        >,
+        url: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        hash: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Hash128>,
+        crc: u32,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateCached_Injected", (obj, url, name, hash, crc))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetData(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

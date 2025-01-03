@@ -83,6 +83,13 @@ impl crate::UnityEngine::UIElements::Painter2D {
             .invoke(".ctor", (ctx))?;
         Ok(__cordl_ret.into())
     }
+    pub fn set_isPainterActive(
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_isPainterActive", (value))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+UIElements+Painter2D")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Painter2D {

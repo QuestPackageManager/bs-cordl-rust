@@ -23,7 +23,22 @@ impl std::ops::DerefMut for crate::GlobalNamespace::HardwareCategories {
     }
 }
 #[cfg(feature = "HardwareCategories")]
-impl crate::GlobalNamespace::HardwareCategories {}
+impl crate::GlobalNamespace::HardwareCategories {
+    pub fn GetHardwareCategory() -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::HardwareCategory,
+    > {
+        let __cordl_ret: crate::GlobalNamespace::HardwareCategory = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetHardwareCategory", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetHardwareCategoryWithEditorOverride() -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::HardwareCategory,
+    > {
+        let __cordl_ret: crate::GlobalNamespace::HardwareCategory = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetHardwareCategoryWithEditorOverride", ())?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "HardwareCategories")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::HardwareCategories {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

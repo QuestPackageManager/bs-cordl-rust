@@ -23,7 +23,15 @@ impl std::ops::DerefMut for crate::System::Net::HttpValidationHelpers {
     }
 }
 #[cfg(feature = "System+Net+HttpValidationHelpers")]
-impl crate::System::Net::HttpValidationHelpers {}
+impl crate::System::Net::HttpValidationHelpers {
+    pub fn IsInvalidMethodOrHeaderString(
+        stringValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsInvalidMethodOrHeaderString", (stringValue))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Net+HttpValidationHelpers")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Net::HttpValidationHelpers {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

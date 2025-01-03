@@ -58,6 +58,42 @@ impl crate::UnityEngine::Texture3D {
             .invoke("Apply", (updateMipmaps, makeNoLongerReadable))?;
         Ok(__cordl_ret.into())
     }
+    pub fn Internal_Create(
+        mono: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture3D>,
+        w: i32,
+        h: i32,
+        d: i32,
+        mipCount: i32,
+        format: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+        colorSpace: crate::UnityEngine::TextureColorSpace,
+        flags: crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
+        nativeTex: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "Internal_Create",
+                (mono, w, h, d, mipCount, format, colorSpace, flags, nativeTex),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Internal_CreateImpl(
+        mono: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture3D>,
+        w: i32,
+        h: i32,
+        d: i32,
+        mipCount: i32,
+        format: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
+        colorSpace: crate::UnityEngine::TextureColorSpace,
+        flags: crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
+        nativeTex: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "Internal_CreateImpl",
+                (mono, w, h, d, mipCount, format, colorSpace, flags, nativeTex),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_DefaultFormat_TextureCreationFlags0(
         width: i32,
         height: i32,
@@ -240,6 +276,13 @@ impl crate::UnityEngine::Texture3D {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetPixels32", (colors, miplevel))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ValidateIsNotCrunched(
+        flags: crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ValidateIsNotCrunched", (flags))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_DefaultFormat_TextureCreationFlags0(

@@ -44,6 +44,30 @@ impl crate::System::Collections::Specialized::NameValueCollection {
             .invoke("Add", (name, value))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetAsOneString(
+        list: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetAsOneString", (list))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetAsStringArray(
+        list: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetAsStringArray", (list))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetKey(
         &mut self,
         index: i32,

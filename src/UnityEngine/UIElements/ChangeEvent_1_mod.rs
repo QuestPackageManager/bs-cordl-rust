@@ -35,6 +35,22 @@ for crate::UnityEngine::UIElements::ChangeEvent_1<T> {
 impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::ChangeEvent_1<T> {
     #[cfg(feature = "UnityEngine+UIElements+ChangeEvent_1+__c")]
     pub type __c = crate::UnityEngine::UIElements::ChangeEvent_1___c<T>;
+    pub fn GetPooled(
+        previousValue: T,
+        newValue: T,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ChangeEvent_1<T>>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::ChangeEvent_1<T>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPooled", (previousValue, newValue))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Init(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type

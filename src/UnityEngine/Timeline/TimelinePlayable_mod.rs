@@ -100,6 +100,27 @@ impl crate::UnityEngine::Timeline::TimelinePlayable {
             )?;
         Ok(__cordl_ret.into())
     }
+    pub fn Create(
+        graph: crate::UnityEngine::Playables::PlayableGraph,
+        tracks: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::UnityEngine::Timeline::TrackAsset,
+            >,
+        >,
+        go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        autoRebalance: bool,
+        createOutputs: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Playables::ScriptPlayable_1<
+            *mut crate::UnityEngine::Timeline::TimelinePlayable,
+        >,
+    > {
+        let __cordl_ret: crate::UnityEngine::Playables::ScriptPlayable_1<
+            *mut crate::UnityEngine::Timeline::TimelinePlayable,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (graph, tracks, go, autoRebalance, createOutputs))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CreateTrackOutput(
         &mut self,
         graph: crate::UnityEngine::Playables::PlayableGraph,
@@ -167,6 +188,13 @@ impl crate::UnityEngine::Timeline::TimelinePlayable {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("EvaluateWeightsForAnimationPlayableOutput", (track, animOutput))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ForAOTCompilationOnly() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ForAOTCompilationOnly", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

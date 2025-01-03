@@ -181,6 +181,27 @@ impl crate::System::Runtime::Serialization::SerializationInfo {
             .invoke("AddValue", (name, value))?;
         Ok(__cordl_ret.into())
     }
+    pub fn Compare(
+        a: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        b: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Compare", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DemandForUnsafeAssemblyNameAssignments(
+        originalAssemblyName: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+        newAssemblyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "DemandForUnsafeAssemblyNameAssignments",
+                (originalAssemblyName, newAssemblyName),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ExpandArrays(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -328,6 +349,19 @@ impl crate::System::Runtime::Serialization::SerializationInfo {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
         > = __cordl_object.invoke("GetValueNoThrow", (name, _cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsAssemblyNameAssignmentSafe(
+        originalAssemblyName: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+        newAssemblyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "IsAssemblyNameAssignmentSafe",
+                (originalAssemblyName, newAssemblyName),
+            )?;
         Ok(__cordl_ret.into())
     }
     pub fn New_Type_IFormatterConverter0(

@@ -23,7 +23,37 @@ impl std::ops::DerefMut for crate::System::Runtime::CompilerServices::JitHelpers
     }
 }
 #[cfg(feature = "System+Runtime+CompilerServices+JitHelpers")]
-impl crate::System::Runtime::CompilerServices::JitHelpers {}
+impl crate::System::Runtime::CompilerServices::JitHelpers {
+    pub fn UnsafeCast<T>(
+        o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UnsafeCast", (o))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UnsafeEnumCast<T>(val: T) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UnsafeEnumCast", (val))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UnsafeEnumCastLong<T>(val: T) -> quest_hook::libil2cpp::Result<i64>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UnsafeEnumCastLong", (val))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Runtime+CompilerServices+JitHelpers")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Runtime::CompilerServices::JitHelpers {

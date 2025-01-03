@@ -24,6 +24,69 @@ impl std::ops::DerefMut for crate::UnityEngine::AudioListener {
 }
 #[cfg(feature = "UnityEngine+AudioListener")]
 impl crate::UnityEngine::AudioListener {
+    pub fn GetOutputDataHelper(
+        samples: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<f32>,
+        >,
+        channel: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetOutputDataHelper", (samples, channel))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetOutputData_Il2CppArray1(
+        samples: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
+        channel: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetOutputData", (samples, channel))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetOutputData_i32_0(
+        numSamples: i32,
+        channel: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<f32>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetOutputData", (numSamples, channel))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetSpectrumDataHelper(
+        samples: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<f32>,
+        >,
+        channel: i32,
+        window: crate::UnityEngine::FFTWindow,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSpectrumDataHelper", (samples, channel, window))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetSpectrumData_Il2CppArray1(
+        samples: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
+        channel: i32,
+        window: crate::UnityEngine::FFTWindow,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSpectrumData", (samples, channel, window))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetSpectrumData_i32_0(
+        numSamples: i32,
+        channel: i32,
+        window: crate::UnityEngine::FFTWindow,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<f32>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSpectrumData", (numSamples, channel, window))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -41,6 +104,11 @@ impl crate::UnityEngine::AudioListener {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_pause() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_pause", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_velocityUpdateMode(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::AudioVelocityUpdateMode> {
@@ -49,6 +117,18 @@ impl crate::UnityEngine::AudioListener {
         );
         let __cordl_ret: crate::UnityEngine::AudioVelocityUpdateMode = __cordl_object
             .invoke("get_velocityUpdateMode", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_volume() -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_volume", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_pause(
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_pause", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_velocityUpdateMode(
@@ -60,6 +140,13 @@ impl crate::UnityEngine::AudioListener {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("set_velocityUpdateMode", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_volume(
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_volume", (value))?;
         Ok(__cordl_ret.into())
     }
 }

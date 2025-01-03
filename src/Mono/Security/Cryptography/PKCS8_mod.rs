@@ -218,6 +218,61 @@ impl crate::Mono::Security::Cryptography::PKCS8_PrivateKeyInfo {
             .invoke("Decode", (data))?;
         Ok(__cordl_ret.into())
     }
+    pub fn DecodeDSA(
+        privateKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        dsaParameters: crate::System::Security::Cryptography::DSAParameters,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::DSA>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::DSA,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DecodeDSA", (privateKey, dsaParameters))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DecodeRSA(
+        keypair: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::RSA>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::RSA,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DecodeRSA", (keypair))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Encode_AsymmetricAlgorithm2(
+        aa: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::AsymmetricAlgorithm,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Encode", (aa))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Encode_DSA1(
+        dsa: quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::DSA>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Encode", (dsa))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Encode_RSA0(
+        rsa: quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::RSA>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Encode", (rsa))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -233,6 +288,29 @@ impl crate::Mono::Security::Cryptography::PKCS8_PrivateKeyInfo {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (data))?;
         Ok(__cordl_object.into())
+    }
+    pub fn Normalize(
+        bigInt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Normalize", (bigInt, length))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RemoveLeadingZero(
+        bigInt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RemoveLeadingZero", (bigInt))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_0(
         &mut self,

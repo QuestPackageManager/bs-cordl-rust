@@ -82,6 +82,26 @@ impl crate::System::Security::Cryptography::X509Certificates::X509SubjectKeyIden
         > = __cordl_object.invoke("Encode", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn FromHex(
+        hex: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("FromHex", (hex))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromHexChar(c: char) -> quest_hook::libil2cpp::Result<u8> {
+        let __cordl_ret: u8 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromHexChar", (c))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FromHexChars(c1: char, c2: char) -> quest_hook::libil2cpp::Result<u8> {
+        let __cordl_ret: u8 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromHexChars", (c1, c2))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

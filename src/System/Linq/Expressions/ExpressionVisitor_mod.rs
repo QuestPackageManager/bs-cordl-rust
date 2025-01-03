@@ -31,6 +31,47 @@ impl crate::System::Linq::Expressions::ExpressionVisitor {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
+    pub fn ValidateBinary(
+        before: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BinaryExpression,
+        >,
+        after: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BinaryExpression,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::BinaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::BinaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ValidateBinary", (before, after))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ValidateChildType(
+        before: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        after: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        methodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ValidateChildType", (before, after, methodName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ValidateUnary(
+        before: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::UnaryExpression,
+        >,
+        after: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::UnaryExpression,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::UnaryExpression>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::UnaryExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ValidateUnary", (before, after))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn VisitAndConvert_ReadOnlyCollection_1_1<T>(
         &mut self,
         nodes: quest_hook::libil2cpp::Gc<
@@ -479,6 +520,26 @@ impl crate::System::Linq::Expressions::ExpressionVisitor {
                 *mut crate::System::Linq::Expressions::Expression,
             >,
         > = __cordl_object.invoke("Visit", (nodes))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Visit_ReadOnlyCollection_1_Func_2_2<T>(
+        nodes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<T>,
+        >,
+        elementVisitor: quest_hook::libil2cpp::Gc<crate::System::Func_2<T, T>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<T>,
+        >,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<T>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Visit", (nodes, elementVisitor))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

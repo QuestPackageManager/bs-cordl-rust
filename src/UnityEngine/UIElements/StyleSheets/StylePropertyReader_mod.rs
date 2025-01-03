@@ -125,6 +125,13 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
+    pub fn ReadAngle(
+        value: crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Angle> {
+        let __cordl_ret: crate::UnityEngine::UIElements::Angle = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadAngle", (value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ReadAsString(
         &mut self,
         index: i32,
@@ -148,20 +155,6 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
         );
         let __cordl_ret: crate::UnityEngine::UIElements::Background = __cordl_object
             .invoke("ReadBackground", (index))?;
-        Ok(__cordl_ret.into())
-    }
-    pub fn ReadBackgroundPosition(
-        &mut self,
-        index: i32,
-        keyword: crate::UnityEngine::UIElements::BackgroundPositionKeyword,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::UIElements::BackgroundPosition,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: crate::UnityEngine::UIElements::BackgroundPosition = __cordl_object
-            .invoke("ReadBackgroundPosition", (index, keyword))?;
         Ok(__cordl_ret.into())
     }
     pub fn ReadBackgroundPositionX(
@@ -190,7 +183,44 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
             .invoke("ReadBackgroundPositionY", (index))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ReadBackgroundRepeat(
+    pub fn ReadBackgroundPosition_BackgroundPositionKeyword0(
+        &mut self,
+        index: i32,
+        keyword: crate::UnityEngine::UIElements::BackgroundPositionKeyword,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::BackgroundPosition,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::UnityEngine::UIElements::BackgroundPosition = __cordl_object
+            .invoke("ReadBackgroundPosition", (index, keyword))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReadBackgroundPosition_StylePropertyValue_StylePropertyValue_BackgroundPositionKeyword1(
+        valCount: i32,
+        val1: crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+        val2: crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+        keyword: crate::UnityEngine::UIElements::BackgroundPositionKeyword,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::BackgroundPosition,
+    > {
+        let __cordl_ret: crate::UnityEngine::UIElements::BackgroundPosition = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadBackgroundPosition", (valCount, val1, val2, keyword))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReadBackgroundRepeat_StylePropertyValue_StylePropertyValue1(
+        valCount: i32,
+        val1: crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+        val2: crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::BackgroundRepeat,
+    > {
+        let __cordl_ret: crate::UnityEngine::UIElements::BackgroundRepeat = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadBackgroundRepeat", (valCount, val1, val2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReadBackgroundRepeat_i32_0(
         &mut self,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<
@@ -203,7 +233,16 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
             .invoke("ReadBackgroundRepeat", (index))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ReadBackgroundSize(
+    pub fn ReadBackgroundSize_StylePropertyValue_StylePropertyValue1(
+        valCount: i32,
+        val1: crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+        val2: crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::BackgroundSize> {
+        let __cordl_ret: crate::UnityEngine::UIElements::BackgroundSize = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadBackgroundSize", (valCount, val1, val2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReadBackgroundSize_i32_0(
         &mut self,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::BackgroundSize> {
@@ -236,7 +275,15 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
             .invoke("ReadCursor", (index))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ReadEnum(
+    pub fn ReadEnum_StylePropertyValue1(
+        enumType: crate::UnityEngine::UIElements::StyleSheets::StyleEnumType,
+        value: crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadEnum", (enumType, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReadEnum_i32_0(
         &mut self,
         enumType: crate::UnityEngine::UIElements::StyleSheets::StyleEnumType,
         index: i32,
@@ -344,7 +391,18 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
             .invoke("ReadListTimeValue", (list, index))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ReadRotate(
+    pub fn ReadRotate_StylePropertyValue_StylePropertyValue_StylePropertyValue_StylePropertyValue1(
+        valCount: i32,
+        val1: crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+        val2: crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+        val3: crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+        val4: crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Rotate> {
+        let __cordl_ret: crate::UnityEngine::UIElements::Rotate = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadRotate", (valCount, val1, val2, val3, val4))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReadRotate_i32_0(
         &mut self,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Rotate> {
@@ -355,7 +413,17 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
             .invoke("ReadRotate", (index))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ReadScale(
+    pub fn ReadScale_StylePropertyValue_StylePropertyValue_StylePropertyValue1(
+        valCount: i32,
+        val1: crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+        val2: crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+        val3: crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Scale> {
+        let __cordl_ret: crate::UnityEngine::UIElements::Scale = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadScale", (valCount, val1, val2, val3))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReadScale_i32_0(
         &mut self,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Scale> {
@@ -388,7 +456,26 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
             .invoke("ReadTimeValue", (index))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ReadTransformOrigin(
+    pub fn ReadTransformOriginEnum(
+        value: crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+        isVertical: quest_hook::libil2cpp::ByRefMut<bool>,
+        isHorizontal: quest_hook::libil2cpp::ByRefMut<bool>,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Length> {
+        let __cordl_ret: crate::UnityEngine::UIElements::Length = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadTransformOriginEnum", (value, isVertical, isHorizontal))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReadTransformOrigin_StylePropertyValue_StylePropertyValue_StylePropertyValue1(
+        valCount: i32,
+        val1: crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+        val2: crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+        zVvalue: crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::TransformOrigin> {
+        let __cordl_ret: crate::UnityEngine::UIElements::TransformOrigin = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadTransformOrigin", (valCount, val1, val2, zVvalue))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReadTransformOrigin_i32_0(
         &mut self,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::TransformOrigin> {
@@ -399,7 +486,17 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
             .invoke("ReadTransformOrigin", (index))?;
         Ok(__cordl_ret.into())
     }
-    pub fn ReadTranslate(
+    pub fn ReadTranslate_StylePropertyValue_StylePropertyValue_StylePropertyValue1(
+        valCount: i32,
+        val1: crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+        val2: crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+        val3: crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Translate> {
+        let __cordl_ret: crate::UnityEngine::UIElements::Translate = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadTranslate", (valCount, val1, val2, val3))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReadTranslate_i32_0(
         &mut self,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Translate> {
@@ -458,6 +555,26 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetInlineContext", (sheet, properties, propertyIds, dpiScaling))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryGetImageSourceFromValue(
+        propertyValue: crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+        dpiScaling: f32,
+        source: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::UIElements::StyleSheets::ImageSource,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryGetImageSourceFromValue", (propertyValue, dpiScaling, source))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryReadEnum(
+        enumType: crate::UnityEngine::UIElements::StyleSheets::StyleEnumType,
+        value: crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
+        intValue: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryReadEnum", (enumType, value, intValue))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

@@ -23,7 +23,31 @@ impl std::ops::DerefMut for crate::GlobalNamespace::XRSubsystemHelper {
     }
 }
 #[cfg(feature = "XRSubsystemHelper")]
-impl crate::GlobalNamespace::XRSubsystemHelper {}
+impl crate::GlobalNamespace::XRSubsystemHelper {
+    pub fn GetCurrentDisplaySubsystem() -> quest_hook::libil2cpp::Result<Blacklisted> {
+        let __cordl_ret: Blacklisted = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCurrentDisplaySubsystem", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCurrentDisplaySubsystemDescriptor() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::XRDisplaySubsystemDescriptor>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::XR::XRDisplaySubsystemDescriptor,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCurrentDisplaySubsystemDescriptor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCurrentInputSubsystem() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::XRInputSubsystem>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::XR::XRInputSubsystem,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCurrentInputSubsystem", ())?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "XRSubsystemHelper")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::XRSubsystemHelper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

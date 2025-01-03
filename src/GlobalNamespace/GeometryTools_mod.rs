@@ -31,6 +31,18 @@ impl crate::GlobalNamespace::GeometryTools {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
+    pub fn ThreePointsToBox(
+        p0: crate::UnityEngine::Vector3,
+        p1: crate::UnityEngine::Vector3,
+        p2: crate::UnityEngine::Vector3,
+        center: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+        halfSize: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+        orientation: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Quaternion>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ThreePointsToBox", (p0, p1, p2, center, halfSize, orientation))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

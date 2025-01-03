@@ -231,6 +231,24 @@ impl crate::GlobalNamespace::BloomPrePassRendererSO {
             .invoke("SetCustomStereoCameraEyeOffset", (stereoCameraEyeOffset))?;
         Ok(__cordl_ret.into())
     }
+    pub fn SetDataToShaders(
+        stereoCameraEyeOffset: f32,
+        textureToScreenRatio: crate::UnityEngine::Vector2,
+        bloomFogTexture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+        toneMapping: crate::GlobalNamespace::ToneMapping,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "SetDataToShaders",
+                (
+                    stereoCameraEyeOffset,
+                    textureToScreenRatio,
+                    bloomFogTexture,
+                    toneMapping,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn UpdateBloomFogParams(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

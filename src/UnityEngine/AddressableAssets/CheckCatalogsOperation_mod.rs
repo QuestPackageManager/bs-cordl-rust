@@ -101,6 +101,44 @@ impl crate::UnityEngine::AddressableAssets::CheckCatalogsOperation {
             .invoke_void(".ctor", (aa))?;
         Ok(__cordl_object.into())
     }
+    pub fn ProcessDependentOpResults(
+        results: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+            >,
+        >,
+        locatorInfos: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::UnityEngine::AddressableAssets::ResourceLocatorInfo,
+            >,
+        >,
+        localHashes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
+        >,
+        errorString: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+        success: quest_hook::libil2cpp::ByRefMut<bool>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ProcessDependentOpResults",
+                (results, locatorInfos, localHashes, errorString, success),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Start(
         &mut self,
         locatorInfos: quest_hook::libil2cpp::Gc<

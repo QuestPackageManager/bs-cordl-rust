@@ -35,6 +35,21 @@ for crate::UnityEngine::UIElements::Experimental::PointerDownLinkTagEvent {
 impl crate::UnityEngine::UIElements::Experimental::PointerDownLinkTagEvent {
     #[cfg(feature = "UnityEngine+UIElements+Experimental+PointerDownLinkTagEvent+__c")]
     pub type __c = crate::UnityEngine::UIElements::Experimental::PointerDownLinkTagEvent___c;
+    pub fn GetPooled(
+        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPointerEvent>,
+        linkID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        linkText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::Experimental::PointerDownLinkTagEvent,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::Experimental::PointerDownLinkTagEvent,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPooled", (evt, linkID, linkText))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Init(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -23,4 +23,10 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::TMPro::TMP_Vertex {
     }
 }
 #[cfg(feature = "TMPro+TMP_Vertex")]
-impl crate::TMPro::TMP_Vertex {}
+impl crate::TMPro::TMP_Vertex {
+    pub fn get_zero() -> quest_hook::libil2cpp::Result<crate::TMPro::TMP_Vertex> {
+        let __cordl_ret: crate::TMPro::TMP_Vertex = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_zero", ())?;
+        Ok(__cordl_ret.into())
+    }
+}

@@ -228,6 +228,20 @@ impl crate::System::Dynamic::DynamicMetaObject {
         > = __cordl_object.invoke("BindUnaryOperation", (binder))?;
         Ok(__cordl_ret.into())
     }
+    pub fn Create(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        expression: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Dynamic::DynamicMetaObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (value, expression))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetDynamicMemberNames(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

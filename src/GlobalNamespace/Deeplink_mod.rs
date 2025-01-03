@@ -30,6 +30,15 @@ impl std::ops::DerefMut for crate::GlobalNamespace::Deeplink {
 }
 #[cfg(feature = "Deeplink")]
 impl crate::GlobalNamespace::Deeplink {
+    pub fn FromJson(
+        jsonDeeplink: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Deeplink>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Deeplink> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromJson", (jsonDeeplink))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

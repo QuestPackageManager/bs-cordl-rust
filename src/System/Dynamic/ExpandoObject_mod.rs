@@ -727,6 +727,11 @@ impl std::ops::DerefMut for crate::System::Dynamic::ExpandoObject_ExpandoData {
 }
 #[cfg(feature = "System+Dynamic+ExpandoObject+ExpandoData")]
 impl crate::System::Dynamic::ExpandoObject_ExpandoData {
+    pub fn GetAlignedSize(len: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetAlignedSize", (len))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

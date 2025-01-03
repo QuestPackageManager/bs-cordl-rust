@@ -45,6 +45,19 @@ impl crate::HoudiniEngineUnity::HEU_InputInterfaceMesh {
             )?;
         Ok(__cordl_ret.into())
     }
+    pub fn CreateSingleMeshData(
+        meshGameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_InputInterfaceMesh_HEU_InputDataMesh,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_InputInterfaceMesh_HEU_InputDataMesh,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateSingleMeshData", (meshGameObject))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GenerateMeshDatasFromGameObject(
         &mut self,
         inputObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -59,6 +72,29 @@ impl crate::HoudiniEngineUnity::HEU_InputInterfaceMesh {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::HoudiniEngineUnity::HEU_InputInterfaceMesh_HEU_InputDataMeshes,
         > = __cordl_object.invoke("GenerateMeshDatasFromGameObject", (inputObject))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetMeshFromObject(
+        meshGameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetMeshFromObject", (meshGameObject))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetUVsFromMesh(
+        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+        srcUVs: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
+        >,
+        destUVs: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
+        >,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetUVsFromMesh", (mesh, srcUVs, destUVs, index))?;
         Ok(__cordl_ret.into())
     }
     pub fn IsThisInputObjectSupported(

@@ -51,6 +51,13 @@ impl crate::UnityEngine::PropertyName {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn IsNullOrEmpty(
+        prop: crate::UnityEngine::PropertyName,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsNullOrEmpty", (prop))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ToString(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -81,6 +88,21 @@ impl crate::UnityEngine::PropertyName {
             ".ctor",
             (other),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        lhs: crate::UnityEngine::PropertyName,
+        rhs: crate::UnityEngine::PropertyName,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (lhs, rhs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::PropertyName> {
+        let __cordl_ret: crate::UnityEngine::PropertyName = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (name))?;
         Ok(__cordl_ret.into())
     }
 }

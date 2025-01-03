@@ -24,6 +24,14 @@ impl std::ops::DerefMut for crate::System::Security::Cryptography::RSA {
 }
 #[cfg(feature = "System+Security+Cryptography+RSA")]
 impl crate::System::Security::Cryptography::RSA {
+    pub fn Create() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::RSA>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::RSA,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Create", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn EncryptValue(
         &mut self,
         rgb: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,

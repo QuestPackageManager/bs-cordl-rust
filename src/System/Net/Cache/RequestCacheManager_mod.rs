@@ -23,7 +23,26 @@ impl std::ops::DerefMut for crate::System::Net::Cache::RequestCacheManager {
     }
 }
 #[cfg(feature = "System+Net+Cache+RequestCacheManager")]
-impl crate::System::Net::Cache::RequestCacheManager {}
+impl crate::System::Net::Cache::RequestCacheManager {
+    pub fn GetBinding(
+        internedScheme: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Net::Cache::RequestCacheBinding>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Cache::RequestCacheBinding,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetBinding", (internedScheme))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LoadConfigSettings() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LoadConfigSettings", ())?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Net+Cache+RequestCacheManager")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Net::Cache::RequestCacheManager {

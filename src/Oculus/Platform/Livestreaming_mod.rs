@@ -23,7 +23,19 @@ impl std::ops::DerefMut for crate::Oculus::Platform::Livestreaming {
     }
 }
 #[cfg(feature = "Oculus+Platform+Livestreaming")]
-impl crate::Oculus::Platform::Livestreaming {}
+impl crate::Oculus::Platform::Livestreaming {
+    pub fn SetStatusUpdateNotificationCallback(
+        callback: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Message_1_Callback<
+                *mut crate::Oculus::Platform::Models::LivestreamingStatus,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetStatusUpdateNotificationCallback", (callback))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "Oculus+Platform+Livestreaming")]
 impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Platform::Livestreaming {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

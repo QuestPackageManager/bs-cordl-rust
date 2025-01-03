@@ -31,6 +31,48 @@ impl crate::Org::BouncyCastle::Utilities::Integers {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
+    pub fn NumberOfLeadingZeros(i: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("NumberOfLeadingZeros", (i))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn NumberOfTrailingZeros(i: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("NumberOfTrailingZeros", (i))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RotateLeft_i32_0(
+        i: i32,
+        distance: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RotateLeft", (i, distance))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RotateLeft_u32_1(
+        i: u32,
+        distance: i32,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RotateLeft", (i, distance))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RotateRight_i32_0(
+        i: i32,
+        distance: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RotateRight", (i, distance))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RotateRight_u32_1(
+        i: u32,
+        distance: i32,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RotateRight", (i, distance))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

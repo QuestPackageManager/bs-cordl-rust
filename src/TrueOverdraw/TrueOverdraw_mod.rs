@@ -78,6 +78,39 @@ impl crate::TrueOverdraw::TrueOverdraw {
             .invoke_void(".ctor", (renderers))?;
         Ok(__cordl_object.into())
     }
+    pub fn ResolveRendererColor(
+        renderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,
+        material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_ret: crate::UnityEngine::Color = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ResolveRendererColor", (renderer, material))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetGlobalFloats(
+        trueOverdraw: f32,
+        opaque: f32,
+        transparent: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetGlobalFloats", (trueOverdraw, opaque, transparent))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetMaterialValues(
+        material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+        color: crate::UnityEngine::Color,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetMaterialValues", (material, color))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetOverdrawValues(
+        opaque: f32,
+        transparent: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetOverdrawValues", (opaque, transparent))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ShowEverything(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

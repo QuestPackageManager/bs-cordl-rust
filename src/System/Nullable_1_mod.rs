@@ -24,6 +24,20 @@ for crate::System::Nullable_1<T> {
 }
 #[cfg(feature = "System+Nullable_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::System::Nullable_1<T> {
+    pub fn Box(
+        o: crate::System::Nullable_1<T>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Box", (o))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Equals(
         &mut self,
         other: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -90,6 +104,28 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Nullable_1<T> {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "ToString", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Unbox(
+        o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Nullable_1<T>>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: crate::System::Nullable_1<T> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Unbox", (o))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UnboxExact(
+        o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Nullable_1<T>>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: crate::System::Nullable_1<T> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UnboxExact", (o))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

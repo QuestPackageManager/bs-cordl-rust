@@ -162,6 +162,17 @@ impl crate::Org::BouncyCastle::Tsp::TimeStampResponse {
         > = __cordl_object.invoke("get_TimeStampToken", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn readTimeStampResp(
+        input: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1InputStream>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Tsp::TimeStampResp>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Tsp::TimeStampResp,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("readTimeStampResp", (input))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "Org+BouncyCastle+Tsp+TimeStampResponse")]
 impl quest_hook::libil2cpp::ObjectType

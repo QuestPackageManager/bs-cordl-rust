@@ -32,6 +32,13 @@ impl crate::System::Threading::LockHolder {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn Hold(
+        l: quest_hook::libil2cpp::Gc<crate::System::Threading::Lock>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Threading::LockHolder> {
+        let __cordl_ret: crate::System::Threading::LockHolder = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Hold", (l))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "System+Threading+LockHolder")]
 impl AsRef<crate::System::IDisposable> for crate::System::Threading::LockHolder {

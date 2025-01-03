@@ -62,6 +62,17 @@ impl std::ops::DerefMut for crate::GlobalNamespace::MockPlayerGamePoseGeneratorA
 }
 #[cfg(feature = "MockPlayerGamePoseGeneratorAI")]
 impl crate::GlobalNamespace::MockPlayerGamePoseGeneratorAI {
+    pub fn Blerp(
+        prevStart: crate::UnityEngine::Vector3,
+        prevEnd: crate::UnityEngine::Vector3,
+        currStart: crate::UnityEngine::Vector3,
+        currEnd: crate::UnityEngine::Vector3,
+        t: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Blerp", (prevStart, prevEnd, currStart, currEnd, t))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -70,6 +81,21 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGeneratorAI {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Dispose", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCutDirection(
+        cutDirection: crate::GlobalNamespace::NoteCutDirection,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCutDirection", (cutDirection))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetNotePosition(
+        lineCount: i32,
+        noteData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockNoteData>,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        let __cordl_ret: crate::UnityEngine::Vector3 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetNotePosition", (lineCount, noteData))?;
         Ok(__cordl_ret.into())
     }
     pub fn HandleNoteWasSpawned(

@@ -138,6 +138,18 @@ impl crate::System::Security::AccessControl::CommonAcl {
             .invoke("CanonicalizeAndClearAefa", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn CopyAce(
+        ace: quest_hook::libil2cpp::Gc<
+            crate::System::Security::AccessControl::GenericAce,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Security::AccessControl::GenericAce>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Security::AccessControl::GenericAce,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("CopyAce", (ace))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetAceFlags(
         &mut self,
         inheritanceFlags: crate::System::Security::AccessControl::InheritanceFlags,
@@ -182,6 +194,17 @@ impl crate::System::Security::AccessControl::CommonAcl {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("GetCanonicalExplicitDenyAceCount", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetObjectAceTypeGuids(
+        ace: quest_hook::libil2cpp::Gc<
+            crate::System::Security::AccessControl::ObjectAce,
+        >,
+        _cordl_type: quest_hook::libil2cpp::ByRefMut<crate::System::Guid>,
+        inheritedType: quest_hook::libil2cpp::ByRefMut<crate::System::Guid>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetObjectAceTypeGuids", (ace, _cordl_type, inheritedType))?;
         Ok(__cordl_ret.into())
     }
     pub fn Init(

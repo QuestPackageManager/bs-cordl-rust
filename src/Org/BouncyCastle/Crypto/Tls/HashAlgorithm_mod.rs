@@ -31,6 +31,38 @@ impl crate::Org::BouncyCastle::Crypto::Tls::HashAlgorithm {
     pub const sha256: u8 = 4u8;
     pub const sha384: u8 = 5u8;
     pub const sha512: u8 = 6u8;
+    pub fn GetName(
+        hashAlgorithm: u8,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetName", (hashAlgorithm))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetText(
+        hashAlgorithm: u8,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetText", (hashAlgorithm))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsPrivate(hashAlgorithm: u8) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsPrivate", (hashAlgorithm))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsRecognized(hashAlgorithm: u8) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsRecognized", (hashAlgorithm))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

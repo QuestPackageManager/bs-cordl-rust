@@ -26,6 +26,39 @@ impl std::ops::DerefMut for crate::ModestTree::TypeStringFormatter {
 impl crate::ModestTree::TypeStringFormatter {
     #[cfg(feature = "ModestTree+TypeStringFormatter+__c")]
     pub type __c = crate::ModestTree::TypeStringFormatter___c;
+    pub fn GetCSharpTypeName(
+        typeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCSharpTypeName", (typeName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn PrettyName(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PrettyName", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn PrettyNameInternal(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PrettyNameInternal", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "ModestTree+TypeStringFormatter")]
 impl quest_hook::libil2cpp::ObjectType for crate::ModestTree::TypeStringFormatter {

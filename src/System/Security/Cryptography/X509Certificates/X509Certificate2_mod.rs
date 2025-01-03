@@ -35,6 +35,28 @@ for crate::System::Security::Cryptography::X509Certificates::X509Certificate2 {
 }
 #[cfg(feature = "System+Security+Cryptography+X509Certificates+X509Certificate2")]
 impl crate::System::Security::Cryptography::X509Certificates::X509Certificate2 {
+    pub fn CreateCustomExtensionIfAny(
+        oid: quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::Oid>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509Extension,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509Extension,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateCustomExtensionIfAny", (oid))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCertContentType(
+        rawData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Security::Cryptography::X509Certificates::X509ContentType,
+    > {
+        let __cordl_ret: crate::System::Security::Cryptography::X509Certificates::X509ContentType = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetCertContentType", (rawData))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetNameInfo(
         &mut self,
         nameType: crate::System::Security::Cryptography::X509Certificates::X509NameType,

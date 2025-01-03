@@ -85,6 +85,14 @@ impl crate::UnityEngine::UIElements::StyleComplexSelector {
             .invoke("OnBeforeSerialize", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn StyleSelectorPartCompare(
+        x: crate::UnityEngine::UIElements::StyleSelectorPart,
+        y: crate::UnityEngine::UIElements::StyleSelectorPart,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("StyleSelectorPartCompare", (x, y))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ToString(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

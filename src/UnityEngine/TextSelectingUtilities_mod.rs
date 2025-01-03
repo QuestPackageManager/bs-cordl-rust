@@ -232,6 +232,14 @@ impl crate::UnityEngine::TextSelectingUtilities {
         let __cordl_ret: bool = __cordl_object.invoke("IsValidCodePointIndex", (index))?;
         Ok(__cordl_ret.into())
     }
+    pub fn MapKey(
+        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        action: crate::UnityEngine::TextSelectOp,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MapKey", (key, action))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn MouseDragSelectsWholeWords(
         &mut self,
         on: bool,

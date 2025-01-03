@@ -50,6 +50,17 @@ impl crate::UnityEngine::ResourceManagement::Util::DelayedActionManager {
         feature = "UnityEngine+ResourceManagement+Util+DelayedActionManager+DelegateInfo"
     )]
     pub type DelegateInfo = crate::UnityEngine::ResourceManagement::Util::DelayedActionManager_DelegateInfo;
+    pub fn AddAction(
+        action: quest_hook::libil2cpp::Gc<crate::System::Delegate>,
+        delay: f32,
+        parameters: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AddAction", (action, delay, parameters))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn AddActionInternal(
         &mut self,
         action: quest_hook::libil2cpp::Gc<crate::System::Delegate>,
@@ -63,6 +74,11 @@ impl crate::UnityEngine::ResourceManagement::Util::DelayedActionManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("AddActionInternal", (action, delay, parameters))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Clear() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Clear", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn DestroyWhenComplete(
@@ -135,6 +151,14 @@ impl crate::UnityEngine::ResourceManagement::Util::DelayedActionManager {
             .invoke("OnApplicationQuit", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn Wait(
+        timeout: f32,
+        timeAdvanceAmount: f32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Wait", (timeout, timeAdvanceAmount))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -143,6 +167,11 @@ impl crate::UnityEngine::ResourceManagement::Util::DelayedActionManager {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_IsActive() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_IsActive", ())?;
         Ok(__cordl_ret.into())
     }
 }

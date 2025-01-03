@@ -70,6 +70,15 @@ impl<T: quest_hook::libil2cpp::Type> crate::IgnoranceThirdparty::RingBuffer_1<T>
             .invoke_void(".ctor", (capacity))?;
         Ok(__cordl_object.into())
     }
+    pub fn NextPowerOfTwo(x: i32) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("NextPowerOfTwo", (x))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn TryDequeue(
         &mut self,
         obj: quest_hook::libil2cpp::ByRefMut<T>,

@@ -26,7 +26,20 @@ for crate::System::Collections::Generic::IntrospectiveSortUtilities {
     }
 }
 #[cfg(feature = "System+Collections+Generic+IntrospectiveSortUtilities")]
-impl crate::System::Collections::Generic::IntrospectiveSortUtilities {}
+impl crate::System::Collections::Generic::IntrospectiveSortUtilities {
+    pub fn FloorLog2PlusOne(n: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FloorLog2PlusOne", (n))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ThrowOrIgnoreBadComparer(
+        comparer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ThrowOrIgnoreBadComparer", (comparer))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Collections+Generic+IntrospectiveSortUtilities")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Collections::Generic::IntrospectiveSortUtilities {

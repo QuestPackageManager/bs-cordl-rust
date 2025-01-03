@@ -235,6 +235,17 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
             .invoke("GetExtenderType", (i))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetNeutralCulture(
+        info: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Globalization::CultureInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetNeutralCulture", (info))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetSortKey_CompareOptions0(
         &mut self,
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -403,6 +414,22 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
         );
         let __cordl_ret: i32 = __cordl_object
             .invoke("IndexOf", (s, target, start, length, targetSortKey, ctx))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsHalfKana(
+        cp: i32,
+        opt: crate::System::Globalization::CompareOptions,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsHalfKana", (cp, opt))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsIgnorable(
+        i: i32,
+        opt: crate::System::Globalization::CompareOptions,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsIgnorable", (i, opt))?;
         Ok(__cordl_ret.into())
     }
     pub fn IsPrefix_CompareOptions0(
@@ -755,6 +782,14 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
                 "System.Globalization.ISimpleCollator.Compare",
                 (s1, idx1, len1, s2, idx2, len2, options),
             )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToDashTypeValue(
+        ext: crate::Mono::Globalization::Unicode::SimpleCollator_ExtenderType,
+        opt: crate::System::Globalization::CompareOptions,
+    ) -> quest_hook::libil2cpp::Result<u8> {
+        let __cordl_ret: u8 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToDashTypeValue", (ext, opt))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

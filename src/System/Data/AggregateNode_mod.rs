@@ -32,7 +32,19 @@ impl std::ops::DerefMut for crate::System::Data::AggregateNode {
 }
 #[cfg(feature = "System+Data+AggregateNode")]
 impl crate::System::Data::AggregateNode {
-    pub fn Bind(
+    pub fn Bind_DataRelation1(
+        relation: quest_hook::libil2cpp::Gc<crate::System::Data::DataRelation>,
+        list: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::System::Data::DataColumn,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Bind", (relation, list))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Bind_DataTable0(
         &mut self,
         table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
         list: quest_hook::libil2cpp::Gc<

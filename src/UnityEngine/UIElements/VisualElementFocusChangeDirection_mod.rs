@@ -47,6 +47,22 @@ impl crate::UnityEngine::UIElements::VisualElementFocusChangeDirection {
             .invoke(".ctor", (value))?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_left() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::FocusChangeDirection>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::FocusChangeDirection,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_left", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_right() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::FocusChangeDirection>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::FocusChangeDirection,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_right", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualElementFocusChangeDirection")]
 impl quest_hook::libil2cpp::ObjectType

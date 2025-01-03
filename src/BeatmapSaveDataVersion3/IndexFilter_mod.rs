@@ -33,6 +33,44 @@ impl std::ops::DerefMut for crate::BeatmapSaveDataVersion3::IndexFilter {
 }
 #[cfg(feature = "BeatmapSaveDataVersion3+IndexFilter")]
 impl crate::BeatmapSaveDataVersion3::IndexFilter {
+    pub fn CreateDivisionIndexFilter(
+        numberOfSections: i32,
+        divisionIdx: i32,
+        reversed: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::IndexFilter>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::BeatmapSaveDataVersion3::IndexFilter,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CreateDivisionIndexFilter",
+                (numberOfSections, divisionIdx, reversed),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateForExtension() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::IndexFilter>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::BeatmapSaveDataVersion3::IndexFilter,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateForExtension", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateStepFilter(
+        offset: i32,
+        step: i32,
+        reversed: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::IndexFilter>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::BeatmapSaveDataVersion3::IndexFilter,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateStepFilter", (offset, step, reversed))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_IndexFilter1(
         other: quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::IndexFilter>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

@@ -23,7 +23,15 @@ impl std::ops::DerefMut for crate::HMUI::RoundedCornersDirectionExtensions {
     }
 }
 #[cfg(feature = "HMUI+RoundedCornersDirectionExtensions")]
-impl crate::HMUI::RoundedCornersDirectionExtensions {}
+impl crate::HMUI::RoundedCornersDirectionExtensions {
+    pub fn GetFlipAndSymmetry(
+        direction: crate::HMUI::RoundedCornersDirection,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
+        let __cordl_ret: crate::UnityEngine::Vector4 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetFlipAndSymmetry", (direction))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "HMUI+RoundedCornersDirectionExtensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::HMUI::RoundedCornersDirectionExtensions {

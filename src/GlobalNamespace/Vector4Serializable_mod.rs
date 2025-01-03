@@ -128,6 +128,36 @@ impl crate::GlobalNamespace::Vector4Serializable {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Addition(
+        a: crate::GlobalNamespace::Vector4Serializable,
+        b: crate::GlobalNamespace::Vector4Serializable,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::Vector4Serializable> {
+        let __cordl_ret: crate::GlobalNamespace::Vector4Serializable = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Addition", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_Vector4Serializable0(
+        v: crate::GlobalNamespace::Vector4Serializable,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
+        let __cordl_ret: crate::UnityEngine::Vector4 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (v))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_Vector4_1(
+        v: crate::UnityEngine::Vector4,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::Vector4Serializable> {
+        let __cordl_ret: crate::GlobalNamespace::Vector4Serializable = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (v))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Subtraction(
+        a: crate::GlobalNamespace::Vector4Serializable,
+        b: crate::GlobalNamespace::Vector4Serializable,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::Vector4Serializable> {
+        let __cordl_ret: crate::GlobalNamespace::Vector4Serializable = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Subtraction", (a, b))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "Vector4Serializable")]
 impl AsRef<crate::LiteNetLib::Utils::INetSerializable>

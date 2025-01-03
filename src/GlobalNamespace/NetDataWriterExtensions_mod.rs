@@ -23,7 +23,38 @@ impl std::ops::DerefMut for crate::GlobalNamespace::NetDataWriterExtensions {
     }
 }
 #[cfg(feature = "NetDataWriterExtensions")]
-impl crate::GlobalNamespace::NetDataWriterExtensions {}
+impl crate::GlobalNamespace::NetDataWriterExtensions {
+    pub fn SetUpPacket_PacketOption0(
+        netDataWriter: quest_hook::libil2cpp::Gc<
+            crate::LiteNetLib::Utils::NetDataWriter,
+        >,
+        senderId: u8,
+        receiverId: u8,
+        packetOptions: crate::GlobalNamespace::PacketOption,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "SetUpPacket",
+                (netDataWriter, senderId, receiverId, packetOptions),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetUpPacket_u8_1(
+        netDataWriter: quest_hook::libil2cpp::Gc<
+            crate::LiteNetLib::Utils::NetDataWriter,
+        >,
+        senderId: u8,
+        receiverId: u8,
+        packetOptions: u8,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "SetUpPacket",
+                (netDataWriter, senderId, receiverId, packetOptions),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "NetDataWriterExtensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::NetDataWriterExtensions {

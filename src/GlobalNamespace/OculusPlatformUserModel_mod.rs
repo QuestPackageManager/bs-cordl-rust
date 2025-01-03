@@ -202,6 +202,27 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
         > = __cordl_object.invoke("RequestXPlatformAccessToken", (cancellationToken))?;
         Ok(__cordl_ret.into())
     }
+    pub fn _GetUserNamesForUserIds_g__Fetch_16_0(
+        userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut crate::Oculus::Platform::Message_1<
+                    *mut crate::Oculus::Platform::Models::User,
+                >,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut crate::Oculus::Platform::Message_1<
+                    *mut crate::Oculus::Platform::Models::User,
+                >,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("<GetUserNamesForUserIds>g__Fetch|16_0", (userId))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
         platformInit: quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::IPlatformInit>,

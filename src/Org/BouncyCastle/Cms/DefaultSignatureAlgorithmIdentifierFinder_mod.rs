@@ -27,6 +27,22 @@ for crate::Org::BouncyCastle::Cms::DefaultSignatureAlgorithmIdentifierFinder {
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+DefaultSignatureAlgorithmIdentifierFinder")]
 impl crate::Org::BouncyCastle::Cms::DefaultSignatureAlgorithmIdentifierFinder {
+    pub fn CreatePssParams(
+        hashAlgId: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        >,
+        saltSize: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Pkcs::RsassaPssParameters,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Pkcs::RsassaPssParameters,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreatePssParams", (hashAlgId, saltSize))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Find(
         &mut self,
         sigAlgName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -41,6 +57,21 @@ impl crate::Org::BouncyCastle::Cms::DefaultSignatureAlgorithmIdentifierFinder {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
         > = __cordl_object.invoke("Find", (sigAlgName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Generate(
+        signatureAlgorithm: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Generate", (signatureAlgorithm))?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

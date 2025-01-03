@@ -21,12 +21,42 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::LayerMas
 }
 #[cfg(feature = "UnityEngine+LayerMask")]
 impl crate::UnityEngine::LayerMask {
+    pub fn GetMask(
+        layerNames: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetMask", (layerNames))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn NameToLayer(
+        layerName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("NameToLayer", (layerName))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_value(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_value",
             (),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_LayerMask0(
+        mask: crate::UnityEngine::LayerMask,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (mask))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_i32_1(
+        intVal: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::LayerMask> {
+        let __cordl_ret: crate::UnityEngine::LayerMask = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (intVal))?;
         Ok(__cordl_ret.into())
     }
     pub fn set_value(

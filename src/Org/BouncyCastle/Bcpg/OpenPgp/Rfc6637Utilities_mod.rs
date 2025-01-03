@@ -25,6 +25,78 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Bcpg::OpenPgp::Rfc6637Util
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+Rfc6637Utilities")]
 impl crate::Org::BouncyCastle::Bcpg::OpenPgp::Rfc6637Utilities {
+    pub fn CreateKey(
+        pubKeyData: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::PublicKeyPacket,
+        >,
+        s: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateKey", (pubKeyData, s))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateUserKeyingMaterial(
+        pubKeyData: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::PublicKeyPacket,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateUserKeyingMaterial", (pubKeyData))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetAgreementAlgorithm(
+        pubKeyData: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::PublicKeyPacket,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetAgreementAlgorithm", (pubKeyData))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetKeyEncryptionOID(
+        algID: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerObjectIdentifier>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetKeyEncryptionOID", (algID))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetKeyLength(
+        algID: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetKeyLength", (algID))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Kdf(
+        digestAlg: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
+        s: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::EC::ECPoint>,
+        keyLen: i32,
+        parameters: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Kdf", (digestAlg, s, keyLen, parameters))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

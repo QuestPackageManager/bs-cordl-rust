@@ -245,6 +245,13 @@ impl crate::System::Threading::ReaderWriterLockSlim {
             .invoke("InitializeThreadCounts", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn IsRWEntryEmpty(
+        rwc: quest_hook::libil2cpp::Gc<crate::System::Threading::ReaderWriterCount>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsRWEntryEmpty", (rwc))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn IsRwHashEntryChanged(
         &mut self,
         lrwc: quest_hook::libil2cpp::Gc<crate::System::Threading::ReaderWriterCount>,
@@ -320,6 +327,13 @@ impl crate::System::Threading::ReaderWriterLockSlim {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetWritersWaiting", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SpinWait(
+        SpinCount: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SpinWait", (SpinCount))?;
         Ok(__cordl_ret.into())
     }
     pub fn TryEnterReadLockCore(

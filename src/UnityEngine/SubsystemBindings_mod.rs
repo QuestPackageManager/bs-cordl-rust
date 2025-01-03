@@ -23,7 +23,15 @@ impl std::ops::DerefMut for crate::UnityEngine::SubsystemBindings {
     }
 }
 #[cfg(feature = "UnityEngine+SubsystemBindings")]
-impl crate::UnityEngine::SubsystemBindings {}
+impl crate::UnityEngine::SubsystemBindings {
+    pub fn DestroySubsystem(
+        nativePtr: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DestroySubsystem", (nativePtr))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+SubsystemBindings")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::SubsystemBindings {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

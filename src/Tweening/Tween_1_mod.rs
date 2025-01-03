@@ -105,6 +105,37 @@ impl<T: quest_hook::libil2cpp::Type> crate::Tweening::Tween_1<T> {
             )?;
         Ok(__cordl_object.into())
     }
+    pub fn OnDespawned(
+        t: quest_hook::libil2cpp::Gc<crate::Tweening::Tween_1<T>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("OnDespawned", (t))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn OnSpawned(
+        fromValue: T,
+        toValue: T,
+        onUpdate: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
+        duration: f32,
+        easeType: crate::GlobalNamespace::EaseType,
+        delay: f32,
+        t: quest_hook::libil2cpp::Gc<crate::Tweening::Tween_1<T>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "OnSpawned",
+                (fromValue, toValue, onUpdate, duration, easeType, delay, t),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Sample(
         &mut self,
         t: f32,

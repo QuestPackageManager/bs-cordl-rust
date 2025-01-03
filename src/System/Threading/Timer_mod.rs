@@ -92,6 +92,11 @@ impl crate::System::Threading::Timer {
             .invoke("DisposeAsync", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetTimeMonotonic() -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetTimeMonotonic", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Init(
         &mut self,
         callback: quest_hook::libil2cpp::Gc<crate::System::Threading::TimerCallback>,
@@ -166,6 +171,14 @@ impl crate::System::Threading::Timer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (callback, state, dueTime, period))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_scheduler() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Timer_Scheduler>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Timer_Scheduler,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_scheduler", ())?;
         Ok(__cordl_ret.into())
     }
 }
@@ -324,6 +337,13 @@ impl crate::System::Threading::Timer_Scheduler {
             .invoke("SchedulerThread", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn TimerCB(
+        o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TimerCB", (o))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn WakeupScheduler(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -342,6 +362,14 @@ impl crate::System::Threading::Timer_Scheduler {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Instance() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Timer_Scheduler>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Timer_Scheduler,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_Instance", ())?;
         Ok(__cordl_ret.into())
     }
 }

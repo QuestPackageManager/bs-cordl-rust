@@ -95,6 +95,22 @@ impl crate::GlobalNamespace::ColorNoAlphaSerializable {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Implicit_Color1(
+        c: crate::UnityEngine::Color,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::ColorNoAlphaSerializable,
+    > {
+        let __cordl_ret: crate::GlobalNamespace::ColorNoAlphaSerializable = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (c))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_ColorNoAlphaSerializable0(
+        c: crate::GlobalNamespace::ColorNoAlphaSerializable,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_ret: crate::UnityEngine::Color = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (c))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "ColorNoAlphaSerializable")]
 impl AsRef<crate::LiteNetLib::Utils::INetSerializable>

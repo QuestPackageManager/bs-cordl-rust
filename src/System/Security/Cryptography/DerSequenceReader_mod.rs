@@ -33,6 +33,15 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
     pub type DerTag = crate::System::Security::Cryptography::DerSequenceReader_DerTag;
     #[cfg(feature = "System+Security+Cryptography+DerSequenceReader+__c")]
     pub type __c = crate::System::Security::Cryptography::DerSequenceReader___c;
+    pub fn CheckTag(
+        expected: crate::System::Security::Cryptography::DerSequenceReader_DerTag,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        position: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckTag", (expected, data, position))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn EatLength(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -335,6 +344,16 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
             .invoke("ReadX509Date", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn ScanContentLength(
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        offset: i32,
+        end: i32,
+        bytesConsumed: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ScanContentLength", (data, offset, end, bytesConsumed))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn SkipValue(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -343,6 +362,17 @@ impl crate::System::Security::Cryptography::DerSequenceReader {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SkipValue", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TrimTrailingNulls(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TrimTrailingNulls", (value))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_DerSequenceReader_DerTag_Il2CppArray_i32_i32_2(

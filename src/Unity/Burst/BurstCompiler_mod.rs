@@ -34,6 +34,344 @@ impl crate::Unity::Burst::BurstCompiler {
     pub type StaticTypeReinitAttribute = crate::Unity::Burst::BurstCompiler_StaticTypeReinitAttribute;
     #[cfg(feature = "Unity+Burst+BurstCompiler+__c")]
     pub type __c = crate::Unity::Burst::BurstCompiler___c;
+    pub fn AotCompilation(
+        assemblyFolders: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+        assemblyRoots: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+        options: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AotCompilation", (assemblyFolders, assemblyRoots, options))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn BeginCompilerCommand(
+        cmd: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Unity::Burst::BurstCompiler_CommandBuilder>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Unity::Burst::BurstCompiler_CommandBuilder,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BeginCompilerCommand", (cmd))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Cancel() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Cancel", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CompileDelegate<T>(delegateMethod: T) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CompileDelegate", (delegateMethod))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CompileFunctionPointer<T>(
+        delegateMethod: T,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Burst::FunctionPointer_1<T>>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: crate::Unity::Burst::FunctionPointer_1<T> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CompileFunctionPointer", (delegateMethod))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CompileILPPMethod(
+        burstMethodHandle: crate::System::RuntimeMethodHandle,
+        managedMethodHandle: crate::System::RuntimeMethodHandle,
+        delegateTypeHandle: crate::System::RuntimeTypeHandle,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CompileILPPMethod",
+                (burstMethodHandle, managedMethodHandle, delegateTypeHandle),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CompileILPPMethod2(
+        burstMethodHandle: crate::System::RuntimeMethodHandle,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CompileILPPMethod2", (burstMethodHandle))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CompileUnsafeStaticMethod(
+        handle: crate::System::RuntimeMethodHandle,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CompileUnsafeStaticMethod", (handle))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Compile_MethodInfo__cordl_bool__cordl_bool1(
+        delegateObj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        methodInfo: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+        isFunctionPointer: bool,
+        isILPostProcessing: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "Compile",
+                (delegateObj, methodInfo, isFunctionPointer, isILPostProcessing),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Compile__cordl_bool0(
+        delegateObj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        isFunctionPointer: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Compile", (delegateObj, isFunctionPointer))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Disable() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Disable", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DummyMethod() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DummyMethod", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Enable() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Enable", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetExecutionMode() -> quest_hook::libil2cpp::Result<
+        crate::Unity::Burst::BurstExecutionEnvironment,
+    > {
+        let __cordl_ret: crate::Unity::Burst::BurstExecutionEnvironment = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetExecutionMode", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetILPPMethodFunctionPointer(
+        ilppMethod: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetILPPMethodFunctionPointer", (ilppMethod))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetILPPMethodFunctionPointer2(
+        ilppMethod: crate::System::IntPtr,
+        managedMethodHandle: crate::System::RuntimeMethodHandle,
+        delegateTypeHandle: crate::System::RuntimeTypeHandle,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetILPPMethodFunctionPointer2",
+                (ilppMethod, managedMethodHandle, delegateTypeHandle),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InitialiseDebuggerHooks() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InitialiseDebuggerHooks", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Initialize(
+        assemblyFolders: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+        ignoreAssemblies: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Initialize", (assemblyFolders, ignoreAssemblies))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsApiAvailable(
+        apiName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsApiAvailable", (apiName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsCurrentCompilationDone() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsCurrentCompilationDone", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsHostEditorArm() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsHostEditorArm", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsLoadAdditionalLibrarySupported() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsLoadAdditionalLibrarySupported", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn NotifyAssemblyCompilationFinished(
+        assemblyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        defines: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("NotifyAssemblyCompilationFinished", (assemblyName, defines))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn NotifyAssemblyCompilationNotRequired(
+        assemblyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("NotifyAssemblyCompilationNotRequired", (assemblyName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn NotifyCompilationFinished() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("NotifyCompilationFinished", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn NotifyCompilationStarted(
+        assemblyFolders: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+        ignoreAssemblies: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("NotifyCompilationStarted", (assemblyFolders, ignoreAssemblies))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RequestSetProtocolVersion(
+        version: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RequestSetProtocolVersion", (version))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SendCommandToCompiler(
+        commandName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        commandArgs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SendCommandToCompiler", (commandName, commandArgs))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SendRawCommandToCompiler(
+        command: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SendRawCommandToCompiler", (command))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetExecutionMode(
+        mode: crate::Unity::Burst::BurstExecutionEnvironment,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetExecutionMode", (mode))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetProfilerCallbacks() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetProfilerCallbacks", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Shutdown() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Shutdown", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TriggerRecompilation() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TriggerRecompilation", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TriggerUnsafeStaticMethodRecompilation() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TriggerUnsafeStaticMethodRecompilation", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UnloadAdditionalLibraries() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UnloadAdditionalLibraries", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn VerifyDelegateHasCorrectUnmanagedFunctionPointerAttribute<T>(
+        delegateMethod: T,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "VerifyDelegateHasCorrectUnmanagedFunctionPointerAttribute",
+                (delegateMethod),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn VerifyDelegateIsNotMulticast<T>(
+        delegateMethod: T,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("VerifyDelegateIsNotMulticast", (delegateMethod))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_IsEnabled() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_IsEnabled", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "Unity+Burst+BurstCompiler")]
 impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::BurstCompiler {
@@ -167,6 +505,25 @@ impl crate::Unity::Burst::BurstCompiler_BurstCompilerHelper {
         feature = "Unity+Burst+BurstCompiler+BurstCompilerHelper+IsBurstEnabledDelegate"
     )]
     pub type IsBurstEnabledDelegate = crate::Unity::Burst::BurstCompilerHelper_BurstCompiler_IsBurstEnabledDelegate;
+    pub fn DiscardedMethod(
+        value: quest_hook::libil2cpp::ByRefMut<bool>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DiscardedMethod", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsBurstEnabled() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsBurstEnabled", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsCompiledByBurst(
+        del: quest_hook::libil2cpp::Gc<crate::System::Delegate>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsCompiledByBurst", (del))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "Unity+Burst+BurstCompiler+BurstCompilerHelper")]
 impl quest_hook::libil2cpp::ObjectType

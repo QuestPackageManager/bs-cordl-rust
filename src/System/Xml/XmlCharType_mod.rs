@@ -21,6 +21,28 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::Xml::XmlCharT
 }
 #[cfg(feature = "System+Xml+XmlCharType")]
 impl crate::System::Xml::XmlCharType {
+    pub fn CombineSurrogateChar(
+        lowChar: i32,
+        highChar: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CombineSurrogateChar", (lowChar, highChar))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InRange(
+        value: i32,
+        start: i32,
+        end: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InRange", (value, start, end))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InitInstance() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InitInstance", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn IsCharData(&mut self, ch: char) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -29,12 +51,27 @@ impl crate::System::Xml::XmlCharType {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn IsDigit(ch: char) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsDigit", (ch))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsHighSurrogate(ch: i32) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsHighSurrogate", (ch))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn IsLetter(&mut self, ch: char) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "IsLetter",
             (ch),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsLowSurrogate(ch: i32) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsLowSurrogate", (ch))?;
         Ok(__cordl_ret.into())
     }
     pub fn IsNCNameCharXml4e(
@@ -84,6 +121,15 @@ impl crate::System::Xml::XmlCharType {
             "IsOnlyCharData",
             (str),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsOnlyDigits(
+        str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        startPos: i32,
+        len: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsOnlyDigits", (str, startPos, len))?;
         Ok(__cordl_ret.into())
     }
     pub fn IsOnlyWhitespace(
@@ -149,6 +195,11 @@ impl crate::System::Xml::XmlCharType {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn IsSurrogate(ch: i32) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsSurrogate", (ch))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn IsTextChar(&mut self, ch: char) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -165,6 +216,24 @@ impl crate::System::Xml::XmlCharType {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn SetProperties(
+        chProps: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        ranges: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        value: u8,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetProperties", (chProps, ranges, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SplitSurrogateChar(
+        combinedChar: i32,
+        lowChar: quest_hook::libil2cpp::ByRefMut<char>,
+        highChar: quest_hook::libil2cpp::ByRefMut<char>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SplitSurrogateChar", (combinedChar, lowChar, highChar))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
         charProperties: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -174,6 +243,21 @@ impl crate::System::Xml::XmlCharType {
             ".ctor",
             (charProperties),
         )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Instance() -> quest_hook::libil2cpp::Result<
+        crate::System::Xml::XmlCharType,
+    > {
+        let __cordl_ret: crate::System::Xml::XmlCharType = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_Instance", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_StaticLock() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_StaticLock", ())?;
         Ok(__cordl_ret.into())
     }
 }

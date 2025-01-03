@@ -23,7 +23,61 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OculusXRPlugin {
     }
 }
 #[cfg(feature = "OculusXRPlugin")]
-impl crate::GlobalNamespace::OculusXRPlugin {}
+impl crate::GlobalNamespace::OculusXRPlugin {
+    pub fn SetAppSpacePosition(
+        x: f32,
+        y: f32,
+        z: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetAppSpacePosition", (x, y, z))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetAppSpaceRotation(
+        x: f32,
+        y: f32,
+        z: f32,
+        w: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetAppSpaceRotation", (x, y, z, w))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetColorOffset(
+        x: f32,
+        y: f32,
+        z: f32,
+        w: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetColorOffset", (x, y, z, w))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetColorScale(
+        x: f32,
+        y: f32,
+        z: f32,
+        w: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetColorScale", (x, y, z, w))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetDepthSubmission(
+        enable: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetDepthSubmission", (enable))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetSpaceWarp(
+        on: crate::GlobalNamespace::OVRPlugin_Bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetSpaceWarp", (on))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "OculusXRPlugin")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OculusXRPlugin {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

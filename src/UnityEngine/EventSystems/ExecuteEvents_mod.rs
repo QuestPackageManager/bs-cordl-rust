@@ -28,6 +28,602 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
     pub type EventFunction_1<T1: quest_hook::libil2cpp::Type> = crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
         T1,
     >;
+    pub fn CanHandleEvent<T>(
+        go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CanHandleEvent", (go))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ExecuteHierarchy<T>(
+        root: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        eventData: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::BaseEventData,
+        >,
+        callbackFunction: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<T>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ExecuteHierarchy", (root, eventData, callbackFunction))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Execute_GameObject_ExecuteEvents_EventFunction_1_18<T>(
+        target: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        eventData: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::BaseEventData,
+        >,
+        functor: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<T>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Execute", (target, eventData, functor))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Execute_IBeginDragHandler7(
+        handler: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::IBeginDragHandler,
+        >,
+        eventData: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::BaseEventData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Execute", (handler, eventData))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Execute_ICancelHandler17(
+        handler: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::ICancelHandler,
+        >,
+        eventData: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::BaseEventData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Execute", (handler, eventData))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Execute_IDeselectHandler14(
+        handler: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::IDeselectHandler,
+        >,
+        eventData: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::BaseEventData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Execute", (handler, eventData))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Execute_IDragHandler8(
+        handler: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::IDragHandler,
+        >,
+        eventData: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::BaseEventData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Execute", (handler, eventData))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Execute_IDropHandler10(
+        handler: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::IDropHandler,
+        >,
+        eventData: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::BaseEventData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Execute", (handler, eventData))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Execute_IEndDragHandler9(
+        handler: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::IEndDragHandler,
+        >,
+        eventData: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::BaseEventData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Execute", (handler, eventData))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Execute_IInitializePotentialDragHandler6(
+        handler: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::IInitializePotentialDragHandler,
+        >,
+        eventData: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::BaseEventData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Execute", (handler, eventData))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Execute_IMoveHandler15(
+        handler: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::IMoveHandler,
+        >,
+        eventData: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::BaseEventData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Execute", (handler, eventData))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Execute_IPointerClickHandler5(
+        handler: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::IPointerClickHandler,
+        >,
+        eventData: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::BaseEventData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Execute", (handler, eventData))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Execute_IPointerDownHandler3(
+        handler: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::IPointerDownHandler,
+        >,
+        eventData: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::BaseEventData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Execute", (handler, eventData))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Execute_IPointerEnterHandler1(
+        handler: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::IPointerEnterHandler,
+        >,
+        eventData: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::BaseEventData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Execute", (handler, eventData))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Execute_IPointerExitHandler2(
+        handler: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::IPointerExitHandler,
+        >,
+        eventData: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::BaseEventData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Execute", (handler, eventData))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Execute_IPointerMoveHandler0(
+        handler: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::IPointerMoveHandler,
+        >,
+        eventData: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::BaseEventData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Execute", (handler, eventData))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Execute_IPointerUpHandler4(
+        handler: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::IPointerUpHandler,
+        >,
+        eventData: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::BaseEventData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Execute", (handler, eventData))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Execute_IScrollHandler11(
+        handler: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::IScrollHandler,
+        >,
+        eventData: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::BaseEventData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Execute", (handler, eventData))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Execute_ISelectHandler13(
+        handler: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::ISelectHandler,
+        >,
+        eventData: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::BaseEventData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Execute", (handler, eventData))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Execute_ISubmitHandler16(
+        handler: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::ISubmitHandler,
+        >,
+        eventData: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::BaseEventData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Execute", (handler, eventData))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Execute_IUpdateSelectedHandler12(
+        handler: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::IUpdateSelectedHandler,
+        >,
+        eventData: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::BaseEventData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Execute", (handler, eventData))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetEventChain(
+        root: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        eventChain: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                *mut crate::UnityEngine::Transform,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetEventChain", (root, eventChain))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetEventHandler<T>(
+        root: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetEventHandler", (root))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetEventList<T>(
+        go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        results: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                *mut crate::UnityEngine::EventSystems::IEventSystemHandler,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetEventList", (go, results))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ShouldSendToComponent<T>(
+        component: quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ShouldSendToComponent", (component))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ValidateEventData<T>(
+        data: quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::BaseEventData>,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: T = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ValidateEventData", (data))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_beginDragHandler() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
+                *mut crate::UnityEngine::EventSystems::IBeginDragHandler,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
+                *mut crate::UnityEngine::EventSystems::IBeginDragHandler,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_beginDragHandler", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_cancelHandler() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
+                *mut crate::UnityEngine::EventSystems::ICancelHandler,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
+                *mut crate::UnityEngine::EventSystems::ICancelHandler,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_cancelHandler", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_deselectHandler() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
+                *mut crate::UnityEngine::EventSystems::IDeselectHandler,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
+                *mut crate::UnityEngine::EventSystems::IDeselectHandler,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_deselectHandler", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_dragHandler() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
+                *mut crate::UnityEngine::EventSystems::IDragHandler,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
+                *mut crate::UnityEngine::EventSystems::IDragHandler,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_dragHandler", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_dropHandler() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
+                *mut crate::UnityEngine::EventSystems::IDropHandler,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
+                *mut crate::UnityEngine::EventSystems::IDropHandler,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_dropHandler", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_endDragHandler() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
+                *mut crate::UnityEngine::EventSystems::IEndDragHandler,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
+                *mut crate::UnityEngine::EventSystems::IEndDragHandler,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_endDragHandler", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_initializePotentialDrag() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
+                *mut crate::UnityEngine::EventSystems::IInitializePotentialDragHandler,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
+                *mut crate::UnityEngine::EventSystems::IInitializePotentialDragHandler,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_initializePotentialDrag", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_moveHandler() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
+                *mut crate::UnityEngine::EventSystems::IMoveHandler,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
+                *mut crate::UnityEngine::EventSystems::IMoveHandler,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_moveHandler", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_pointerClickHandler() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
+                *mut crate::UnityEngine::EventSystems::IPointerClickHandler,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
+                *mut crate::UnityEngine::EventSystems::IPointerClickHandler,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_pointerClickHandler", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_pointerDownHandler() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
+                *mut crate::UnityEngine::EventSystems::IPointerDownHandler,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
+                *mut crate::UnityEngine::EventSystems::IPointerDownHandler,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_pointerDownHandler", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_pointerEnterHandler() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
+                *mut crate::UnityEngine::EventSystems::IPointerEnterHandler,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
+                *mut crate::UnityEngine::EventSystems::IPointerEnterHandler,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_pointerEnterHandler", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_pointerExitHandler() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
+                *mut crate::UnityEngine::EventSystems::IPointerExitHandler,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
+                *mut crate::UnityEngine::EventSystems::IPointerExitHandler,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_pointerExitHandler", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_pointerMoveHandler() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
+                *mut crate::UnityEngine::EventSystems::IPointerMoveHandler,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
+                *mut crate::UnityEngine::EventSystems::IPointerMoveHandler,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_pointerMoveHandler", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_pointerUpHandler() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
+                *mut crate::UnityEngine::EventSystems::IPointerUpHandler,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
+                *mut crate::UnityEngine::EventSystems::IPointerUpHandler,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_pointerUpHandler", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_scrollHandler() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
+                *mut crate::UnityEngine::EventSystems::IScrollHandler,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
+                *mut crate::UnityEngine::EventSystems::IScrollHandler,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_scrollHandler", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_selectHandler() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
+                *mut crate::UnityEngine::EventSystems::ISelectHandler,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
+                *mut crate::UnityEngine::EventSystems::ISelectHandler,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_selectHandler", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_submitHandler() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
+                *mut crate::UnityEngine::EventSystems::ISubmitHandler,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
+                *mut crate::UnityEngine::EventSystems::ISubmitHandler,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_submitHandler", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_updateSelectedHandler() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
+                *mut crate::UnityEngine::EventSystems::IUpdateSelectedHandler,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
+                *mut crate::UnityEngine::EventSystems::IUpdateSelectedHandler,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_updateSelectedHandler", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+EventSystems+ExecuteEvents")]
 impl quest_hook::libil2cpp::ObjectType

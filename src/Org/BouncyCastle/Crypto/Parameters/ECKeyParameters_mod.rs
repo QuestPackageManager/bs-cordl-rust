@@ -76,6 +76,21 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::ECKeyParameters {
         let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn LookupParameters(
+        publicKeyParamSet: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Parameters::ECDomainParameters,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::Parameters::ECDomainParameters,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LookupParameters", (publicKeyParamSet))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_DerObjectIdentifier1(
         algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         isPrivate: bool,
@@ -101,6 +116,17 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::ECKeyParameters {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (algorithm, isPrivate, parameters))?;
         Ok(__cordl_object.into())
+    }
+    pub fn VerifyAlgorithmName(
+        algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("VerifyAlgorithmName", (algorithm))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_DerObjectIdentifier1(
         &mut self,

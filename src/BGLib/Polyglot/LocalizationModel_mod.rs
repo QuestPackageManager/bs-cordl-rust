@@ -114,7 +114,14 @@ impl crate::BGLib::Polyglot::LocalizationModel {
         let __cordl_ret: bool = __cordl_object.invoke("InputFilesContains", (doc))?;
         Ok(__cordl_ret.into())
     }
-    pub fn KeyExist(
+    pub fn IsValueValid(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsValueValid", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn KeyExist_Il2CppString0(
         &mut self,
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -122,6 +129,14 @@ impl crate::BGLib::Polyglot::LocalizationModel {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("KeyExist", (key))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn KeyExist_Language1(
+        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        language: crate::BGLib::Polyglot::Language,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("KeyExist", (key, language))?;
         Ok(__cordl_ret.into())
     }
     pub fn New(

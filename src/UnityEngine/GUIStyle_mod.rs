@@ -236,6 +236,20 @@ impl crate::UnityEngine::GUIStyle {
             )?;
         Ok(__cordl_ret.into())
     }
+    pub fn Internal_Create(
+        _cordl_self: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Internal_Create", (_cordl_self))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Internal_Destroy(
+        _cordl_self: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Internal_Destroy", (_cordl_self))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Internal_Draw(
         &mut self,
         screenRect: crate::UnityEngine::Rect,
@@ -302,12 +316,42 @@ impl crate::UnityEngine::GUIStyle {
             )?;
         Ok(__cordl_ret.into())
     }
+    pub fn IsTooltipActive(
+        tooltip: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsTooltipActive", (tooltip))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
+    }
+    pub fn SetDefaultFont(
+        font: quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetDefaultFont", (font))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetMouseTooltip(
+        tooltip: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        screenRect: crate::UnityEngine::Rect,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetMouseTooltip", (tooltip, screenRect))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetMouseTooltip_Injected(
+        tooltip: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        screenRect: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Rect>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetMouseTooltip_Injected", (tooltip, screenRect))?;
+        Ok(__cordl_ret.into())
     }
     pub fn ToString(
         &mut self,
@@ -389,6 +433,13 @@ impl crate::UnityEngine::GUIStyle {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("get_name", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_none() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_none", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_normal(

@@ -66,6 +66,24 @@ impl<
             .invoke("CheckNotRecycled", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn Create(
+        e: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        interpolator: quest_hook::libil2cpp::Gc<crate::System::Func_4<T, T, f32, T>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::Experimental::ValueAnimation_1<T>,
+        >,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::Experimental::ValueAnimation_1<T>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (e, interpolator))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn KeepAlive(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

@@ -90,6 +90,24 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKeyRing {
         > = __cordl_object.invoke("GetPublicKeys", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn InsertPublicKey(
+        pubRing: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKeyRing,
+        >,
+        pubKey: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKeyRing,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKeyRing,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InsertPublicKey", (pubRing, pubKey))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_IList1(
         pubKeys: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -116,6 +134,50 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKeyRing {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (inputStream))?;
         Ok(__cordl_object.into())
+    }
+    pub fn ReadPublicKeyPacket(
+        bcpgInput: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::BcpgInputStream,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::PublicKeyPacket>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::PublicKeyPacket,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadPublicKeyPacket", (bcpgInput))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReadSubkey(
+        bcpgInput: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::BcpgInputStream,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadSubkey", (bcpgInput))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RemovePublicKey(
+        pubRing: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKeyRing,
+        >,
+        pubKey: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKeyRing,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKeyRing,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RemovePublicKey", (pubRing, pubKey))?;
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_IList1(
         &mut self,

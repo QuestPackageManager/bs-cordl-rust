@@ -79,6 +79,13 @@ impl crate::TMPro::TMP_Style {
             )?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_NormalStyle() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Style>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Style> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_NormalStyle", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn get_hashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

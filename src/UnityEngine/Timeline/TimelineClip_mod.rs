@@ -58,6 +58,14 @@ impl crate::UnityEngine::Timeline::TimelineClip {
     pub type TimelineClipUpgrade = crate::UnityEngine::Timeline::TimelineClip_TimelineClipUpgrade;
     #[cfg(feature = "UnityEngine+Timeline+TimelineClip+Versions")]
     pub type Versions = crate::UnityEngine::Timeline::TimelineClip_Versions;
+    pub fn CalculateEasingRatio(
+        easeIn: f64,
+        easeOut: f64,
+    ) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_ret: f64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CalculateEasingRatio", (easeIn, easeOut))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ConformEaseValues(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -108,6 +116,29 @@ impl crate::UnityEngine::Timeline::TimelineClip {
         );
         let __cordl_ret: f64 = __cordl_object
             .invoke("FromLocalTimeUnbound", (_cordl_time))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetDefaultMixInCurve() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetDefaultMixInCurve", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetDefaultMixOutCurve() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetDefaultMixOutCurve", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetExtrapolatedTime(
+        _cordl_time: f64,
+        mode: crate::UnityEngine::Timeline::TimelineClip_ClipExtrapolation,
+        duration: f64,
+    ) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_ret: f64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetExtrapolatedTime", (_cordl_time, mode, duration))?;
         Ok(__cordl_ret.into())
     }
     pub fn GetParentTrack(
@@ -171,6 +202,14 @@ impl crate::UnityEngine::Timeline::TimelineClip {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (parent))?;
         Ok(__cordl_object.into())
+    }
+    pub fn SanitizeTimeValue(
+        value: f64,
+        defaultValue: f64,
+    ) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_ret: f64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SanitizeTimeValue", (value, defaultValue))?;
+        Ok(__cordl_ret.into())
     }
     pub fn SetParentTrack_Internal(
         &mut self,
@@ -1001,7 +1040,15 @@ for crate::UnityEngine::Timeline::TimelineClip_TimelineClipUpgrade {
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+TimelineClip+TimelineClipUpgrade")]
-impl crate::UnityEngine::Timeline::TimelineClip_TimelineClipUpgrade {}
+impl crate::UnityEngine::Timeline::TimelineClip_TimelineClipUpgrade {
+    pub fn UpgradeClipInFromGlobalToLocal(
+        clip: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TimelineClip>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UpgradeClipInFromGlobalToLocal", (clip))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+Timeline+TimelineClip+TimelineClipUpgrade")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::Timeline::TimelineClip_TimelineClipUpgrade {

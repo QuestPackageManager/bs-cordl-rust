@@ -99,6 +99,18 @@ impl crate::System::Xml::Serialization::XmlSerializationWriterInterpreter {
         > = __cordl_object.invoke("GetStringValue", (typeMap, _cordl_type, value))?;
         Ok(__cordl_ret.into())
     }
+    pub fn ImplicitConvert(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ImplicitConvert", (obj, _cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn InitCallbacks(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -22,7 +22,18 @@ impl std::ops::DerefMut for crate::System::Xml::Bits {
     }
 }
 #[cfg(feature = "System+Xml+Bits")]
-impl crate::System::Xml::Bits {}
+impl crate::System::Xml::Bits {
+    pub fn Count(num: u32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Count", (num))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LeastPosition(num: u32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LeastPosition", (num))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Xml+Bits")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Bits {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

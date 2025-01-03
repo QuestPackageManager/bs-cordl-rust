@@ -24,6 +24,13 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Pkix::PkixCertPathValidato
 }
 #[cfg(feature = "Org+BouncyCastle+Pkix+PkixCertPathValidator")]
 impl crate::Org::BouncyCastle::Pkix::PkixCertPathValidator {
+    pub fn CheckCertificate(
+        cert: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Certificate>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckCertificate", (cert))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

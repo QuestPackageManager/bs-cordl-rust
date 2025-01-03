@@ -41,4 +41,11 @@ impl crate::UnityEngine::UIElements::SafeHandleAccess {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Implicit(
+        a: crate::UnityEngine::UIElements::SafeHandleAccess,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (a))?;
+        Ok(__cordl_ret.into())
+    }
 }

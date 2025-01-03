@@ -76,6 +76,13 @@ impl crate::System::Net::MonoChunkStream {
             )?;
         Ok(__cordl_ret.into())
     }
+    pub fn ThrowExpectingChunkTrailer() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ThrowExpectingChunkTrailer", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn __n__0(
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,

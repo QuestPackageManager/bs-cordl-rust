@@ -42,6 +42,560 @@ impl crate::UnityEngine::InputSystem::InputControlExtensions {
         feature = "UnityEngine+InputSystem+InputControlExtensions+_GetAllButtonPresses_d__43"
     )]
     pub type _GetAllButtonPresses_d__43 = crate::UnityEngine::InputSystem::InputControlExtensions__GetAllButtonPresses_d__43;
+    pub fn AccumulateValueInEvent_InputControl_1_Il2CppObject_InputEventPtr0(
+        control: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl_1<f32>,
+        >,
+        currentStatePtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        newState: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AccumulateValueInEvent", (control, currentStatePtr, newState))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn AccumulateValueInEvent_InputControl_1_Il2CppObject_InputEventPtr1(
+        control: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl_1<crate::UnityEngine::Vector2>,
+        >,
+        currentStatePtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        newState: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AccumulateValueInEvent", (control, currentStatePtr, newState))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn BuildPath(
+        control: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl,
+        >,
+        deviceLayout: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        builder: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BuildPath", (control, deviceLayout, builder))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CheckStateIsAtDefaultIgnoringNoise_Il2CppObject1(
+        control: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl,
+        >,
+        statePtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckStateIsAtDefaultIgnoringNoise", (control, statePtr))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CheckStateIsAtDefaultIgnoringNoise_InputControl0(
+        control: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckStateIsAtDefaultIgnoringNoise", (control))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CheckStateIsAtDefault_Il2CppObject_Il2CppObject1(
+        control: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl,
+        >,
+        statePtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        maskPtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckStateIsAtDefault", (control, statePtr, maskPtr))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CheckStateIsAtDefault_InputControl0(
+        control: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CheckStateIsAtDefault", (control))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CompareStateIgnoringNoise(
+        control: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl,
+        >,
+        statePtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CompareStateIgnoringNoise", (control, statePtr))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CompareState_Il2CppObject0(
+        control: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl,
+        >,
+        firstStatePtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        secondStatePtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        maskPtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CompareState", (control, firstStatePtr, secondStatePtr, maskPtr))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CompareState_InputControl_Il2CppObject_Il2CppObject1(
+        control: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl,
+        >,
+        statePtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        maskPtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CompareState", (control, statePtr, maskPtr))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CopyState_ByRefMut1<TState>(
+        device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+        state: quest_hook::libil2cpp::ByRefMut<TState>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CopyState", (device, state))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CopyState_Il2CppObject_i32_0(
+        device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        bufferSizeInBytes: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CopyState", (device, buffer, bufferSizeInBytes))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EnumerateChangedControls(
+        eventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+        device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+        magnitudeThreshold: f32,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlCollection,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlCollection = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EnumerateChangedControls", (eventPtr, device, magnitudeThreshold))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EnumerateControls(
+        eventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+        flags: crate::UnityEngine::InputSystem::InputControlExtensions_Enumerate,
+        device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+        magnitudeThreshold: f32,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlCollection,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlCollection = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EnumerateControls", (eventPtr, flags, device, magnitudeThreshold))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FindControlsRecursive<TControl>(
+        parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
+        controls: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<TControl>,
+        >,
+        predicate: quest_hook::libil2cpp::Gc<crate::System::Func_2<TControl, bool>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TControl: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FindControlsRecursive", (parent, controls, predicate))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FindInParentChain<TControl>(
+        control: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
+    ) -> quest_hook::libil2cpp::Result<TControl>
+    where
+        TControl: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: TControl = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FindInParentChain", (control))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetAllButtonPresses(
+        eventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+        magnitude: f32,
+        buttonControlsOnly: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::UnityEngine::InputSystem::InputControl,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::UnityEngine::InputSystem::InputControl,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetAllButtonPresses", (eventPtr, magnitude, buttonControlsOnly))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetFirstButtonPressOrNull(
+        eventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+        magnitude: f32,
+        buttonControlsOnly: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetFirstButtonPressOrNull",
+                (eventPtr, magnitude, buttonControlsOnly),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetStatePtrFromStateEvent(
+        control: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl,
+        >,
+        eventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetStatePtrFromStateEvent", (control, eventPtr))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetStatePtrFromStateEventUnchecked(
+        control: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl,
+        >,
+        eventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+        eventType: crate::UnityEngine::InputSystem::Utilities::FourCC,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetStatePtrFromStateEventUnchecked",
+                (control, eventPtr, eventType),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn HasButtonPress(
+        eventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+        magnitude: f32,
+        buttonControlsOnly: bool,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("HasButtonPress", (eventPtr, magnitude, buttonControlsOnly))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn HasValueChangeInEvent(
+        control: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl,
+        >,
+        eventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("HasValueChangeInEvent", (control, eventPtr))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn HasValueChangeInState(
+        control: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl,
+        >,
+        statePtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("HasValueChangeInState", (control, statePtr))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsActuated(
+        control: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl,
+        >,
+        threshold: f32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsActuated", (control, threshold))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsPressed(
+        control: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl,
+        >,
+        buttonPressPoint: f32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsPressed", (control, buttonPressPoint))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn QueueValueChange<TValue>(
+        control: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl_1<TValue>,
+        >,
+        value: TValue,
+        _cordl_time: f64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("QueueValueChange", (control, value, _cordl_time))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReadDefaultValueAsObject(
+        control: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadDefaultValueAsObject", (control))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReadUnprocessedValueFromEvent_ByRefMut1<TValue>(
+        control: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl_1<TValue>,
+        >,
+        inputEvent: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+        value: quest_hook::libil2cpp::ByRefMut<TValue>,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadUnprocessedValueFromEvent", (control, inputEvent, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReadUnprocessedValueFromEvent_InputControl_1_InputEventPtr0<TValue>(
+        control: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl_1<TValue>,
+        >,
+        eventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    ) -> quest_hook::libil2cpp::Result<TValue>
+    where
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: TValue = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadUnprocessedValueFromEvent", (control, eventPtr))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReadValueAsObject(
+        control: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadValueAsObject", (control))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReadValueFromEventAsObject(
+        control: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl,
+        >,
+        inputEvent: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadValueFromEventAsObject", (control, inputEvent))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReadValueFromEvent_ByRefMut1<TValue>(
+        control: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl_1<TValue>,
+        >,
+        inputEvent: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+        value: quest_hook::libil2cpp::ByRefMut<TValue>,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadValueFromEvent", (control, inputEvent, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReadValueFromEvent_InputControl_1_InputEventPtr0<TValue>(
+        control: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl_1<TValue>,
+        >,
+        inputEvent: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    ) -> quest_hook::libil2cpp::Result<TValue>
+    where
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: TValue = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadValueFromEvent", (control, inputEvent))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReadValueIntoBuffer(
+        control: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl,
+        >,
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        bufferSize: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReadValueIntoBuffer", (control, buffer, bufferSize))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ResetToDefaultStateInEvent(
+        control: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl,
+        >,
+        eventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ResetToDefaultStateInEvent", (control, eventPtr))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Setup_InputControl0(
+        control: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Setup", (control))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Setup_InputDevice_i32_i32_i32_1(
+        device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+        controlCount: i32,
+        usageCount: i32,
+        aliasCount: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Setup", (device, controlCount, usageCount, aliasCount))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WriteValueFromObjectIntoEvent(
+        control: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl,
+        >,
+        eventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WriteValueFromObjectIntoEvent", (control, eventPtr, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WriteValueIntoEvent_InputControl0<TValue>(
+        control: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl,
+        >,
+        value: TValue,
+        eventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WriteValueIntoEvent", (control, value, eventPtr))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WriteValueIntoEvent_InputControl_1_1<TValue>(
+        control: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl_1<TValue>,
+        >,
+        value: TValue,
+        eventPtr: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WriteValueIntoEvent", (control, value, eventPtr))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WriteValueIntoState_InputControl_1_Il2CppObject3<TValue>(
+        control: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl_1<TValue>,
+        >,
+        statePtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WriteValueIntoState", (control, statePtr))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WriteValueIntoState_InputControl_1_TValue_ByRefMut4<TValue, TState>(
+        control: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl_1<TValue>,
+        >,
+        value: TValue,
+        state: quest_hook::libil2cpp::ByRefMut<TState>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WriteValueIntoState", (control, value, state))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WriteValueIntoState_InputControl_1_TValue_Il2CppObject2<TValue>(
+        control: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl_1<TValue>,
+        >,
+        value: TValue,
+        statePtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WriteValueIntoState", (control, value, statePtr))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WriteValueIntoState_InputControl_Il2CppObject0(
+        control: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl,
+        >,
+        statePtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WriteValueIntoState", (control, statePtr))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn WriteValueIntoState_InputControl_TValue_Il2CppObject1<TValue>(
+        control: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl,
+        >,
+        value: TValue,
+        statePtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("WriteValueIntoState", (control, value, statePtr))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions")]
 impl quest_hook::libil2cpp::ObjectType

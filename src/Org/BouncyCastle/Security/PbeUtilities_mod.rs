@@ -28,6 +28,295 @@ impl crate::Org::BouncyCastle::Security::PbeUtilities {
     pub const Pkcs12: &'static str = "Pkcs12";
     pub const Pkcs5S1: &'static str = "Pkcs5S1";
     pub const Pkcs5S2: &'static str = "Pkcs5S2";
+    pub fn CreateEngine_AlgorithmIdentifier1(
+        algID: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateEngine", (algID))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateEngine_DerObjectIdentifier0(
+        algorithmOid: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateEngine", (algorithmOid))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateEngine_Il2CppString2(
+        algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateEngine", (algorithm))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FixDesParity(
+        mechanism: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        parameters: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::ICipherParameters,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ICipherParameters>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::ICipherParameters,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FixDesParity", (mechanism, parameters))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GenerateAlgorithmParameters_DerObjectIdentifier_DerObjectIdentifier_Il2CppArray_i32_SecureRandom2(
+        cipherAlgorithm: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
+        hashAlgorithm: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
+        salt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        iterationCount: i32,
+        secureRandom: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Security::SecureRandom,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GenerateAlgorithmParameters",
+                (cipherAlgorithm, hashAlgorithm, salt, iterationCount, secureRandom),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GenerateAlgorithmParameters_DerObjectIdentifier_Il2CppArray_i32_0(
+        algorithmOid: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
+        salt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        iterationCount: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GenerateAlgorithmParameters",
+                (algorithmOid, salt, iterationCount),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GenerateAlgorithmParameters_Il2CppString_Il2CppArray_i32_1(
+        algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        salt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        iterationCount: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Encodable>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GenerateAlgorithmParameters", (algorithm, salt, iterationCount))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GenerateCipherParameters_AlgorithmIdentifier2(
+        algID: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        >,
+        password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ICipherParameters>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::ICipherParameters,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GenerateCipherParameters", (algID, password))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GenerateCipherParameters_AlgorithmIdentifier__cordl_bool3(
+        algID: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
+        >,
+        password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+        wrongPkcs12Zero: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ICipherParameters>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::ICipherParameters,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GenerateCipherParameters", (algID, password, wrongPkcs12Zero))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GenerateCipherParameters_DerObjectIdentifier_Asn1Encodable0(
+        algorithmOid: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
+        password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+        pbeParameters: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ICipherParameters>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::ICipherParameters,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GenerateCipherParameters",
+                (algorithmOid, password, pbeParameters),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GenerateCipherParameters_DerObjectIdentifier__cordl_bool_Asn1Encodable1(
+        algorithmOid: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
+        password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+        wrongPkcs12Zero: bool,
+        pbeParameters: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ICipherParameters>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::ICipherParameters,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GenerateCipherParameters",
+                (algorithmOid, password, wrongPkcs12Zero, pbeParameters),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GenerateCipherParameters_Il2CppString_Asn1Encodable4(
+        algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+        pbeParameters: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ICipherParameters>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::ICipherParameters,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GenerateCipherParameters", (algorithm, password, pbeParameters))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GenerateCipherParameters_Il2CppString__cordl_bool_Asn1Encodable5(
+        algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+        wrongPkcs12Zero: bool,
+        pbeParameters: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::ICipherParameters>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::ICipherParameters,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GenerateCipherParameters",
+                (algorithm, password, wrongPkcs12Zero, pbeParameters),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetEncodingName(
+        oid: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetEncodingName", (oid))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetObjectIdentifier(
+        mechanism: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::DerObjectIdentifier>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetObjectIdentifier", (mechanism))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsOpenSsl(
+        algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsOpenSsl", (algorithm))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsPbeAlgorithm(
+        algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsPbeAlgorithm", (algorithm))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsPkcs12(
+        algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsPkcs12", (algorithm))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsPkcs5Scheme1(
+        algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsPkcs5Scheme1", (algorithm))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsPkcs5Scheme2(
+        algorithm: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsPkcs5Scheme2", (algorithm))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MakePbeGenerator(
+        _cordl_type: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        digest: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::IDigest>,
+        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        salt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        iterationCount: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::PbeParametersGenerator,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Crypto::PbeParametersGenerator,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "MakePbeGenerator",
+                (_cordl_type, digest, key, salt, iterationCount),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -43,6 +332,14 @@ impl crate::Org::BouncyCastle::Security::PbeUtilities {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Algorithms() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::ICollection>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ICollection,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_Algorithms", ())?;
         Ok(__cordl_ret.into())
     }
 }

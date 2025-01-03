@@ -38,6 +38,14 @@ impl crate::System::Runtime::InteropServices::SafeBuffer {
             .invoke("AcquirePointer", (pointer))?;
         Ok(__cordl_ret.into())
     }
+    pub fn NotInitialized() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::InvalidOperationException>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::InvalidOperationException,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("NotInitialized", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ReleasePointer(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -23,7 +23,29 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::MouseCaptureControll
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+MouseCaptureController")]
-impl crate::UnityEngine::UIElements::MouseCaptureController {}
+impl crate::UnityEngine::UIElements::MouseCaptureController {
+    pub fn CaptureMouse(
+        handler: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IEventHandler>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CaptureMouse", (handler))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn HasMouseCapture(
+        handler: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IEventHandler>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("HasMouseCapture", (handler))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReleaseMouse(
+        handler: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IEventHandler>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ReleaseMouse", (handler))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+MouseCaptureController")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::MouseCaptureController {

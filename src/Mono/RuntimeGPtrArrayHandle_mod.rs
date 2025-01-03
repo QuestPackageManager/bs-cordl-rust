@@ -21,6 +21,20 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::Mono::RuntimeGPtrArra
 }
 #[cfg(feature = "Mono+RuntimeGPtrArrayHandle")]
 impl crate::Mono::RuntimeGPtrArrayHandle {
+    pub fn DestroyAndFree(
+        h: quest_hook::libil2cpp::ByRefMut<crate::Mono::RuntimeGPtrArrayHandle>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DestroyAndFree", (h))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GPtrArrayFree(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GPtrArrayFree", (value))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Lookup(
         &mut self,
         i: i32,

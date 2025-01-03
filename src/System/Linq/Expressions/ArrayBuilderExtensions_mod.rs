@@ -24,7 +24,25 @@ impl std::ops::DerefMut for crate::System::Linq::Expressions::ArrayBuilderExtens
     }
 }
 #[cfg(feature = "System+Linq+Expressions+ArrayBuilderExtensions")]
-impl crate::System::Linq::Expressions::ArrayBuilderExtensions {}
+impl crate::System::Linq::Expressions::ArrayBuilderExtensions {
+    pub fn ToReadOnly<T>(
+        builder: crate::System::Collections::Generic::ArrayBuilder_1<T>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<T>,
+        >,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<T>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ToReadOnly", (builder))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Linq+Expressions+ArrayBuilderExtensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::System::Linq::Expressions::ArrayBuilderExtensions {

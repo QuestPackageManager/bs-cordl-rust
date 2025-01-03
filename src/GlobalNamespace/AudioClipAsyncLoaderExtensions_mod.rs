@@ -23,7 +23,64 @@ impl std::ops::DerefMut for crate::GlobalNamespace::AudioClipAsyncLoaderExtensio
     }
 }
 #[cfg(feature = "AudioClipAsyncLoaderExtensions")]
-impl crate::GlobalNamespace::AudioClipAsyncLoaderExtensions {}
+impl crate::GlobalNamespace::AudioClipAsyncLoaderExtensions {
+    pub fn LoadPreview(
+        asyncLoader: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::AudioClipAsyncLoader,
+        >,
+        beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<*mut crate::UnityEngine::AudioClip>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<*mut crate::UnityEngine::AudioClip>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LoadPreview", (asyncLoader, beatmapLevel))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LoadSong(
+        asyncLoader: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::AudioClipAsyncLoader,
+        >,
+        beatmapLevelData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IBeatmapLevelData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<*mut crate::UnityEngine::AudioClip>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<*mut crate::UnityEngine::AudioClip>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LoadSong", (asyncLoader, beatmapLevelData))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UnloadPreview(
+        _cordl__: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::AudioClipAsyncLoader,
+        >,
+        beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UnloadPreview", (_cordl__, beatmapLevel))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn UnloadSong(
+        asyncLoader: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::AudioClipAsyncLoader,
+        >,
+        beatmapLevelData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IBeatmapLevelData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("UnloadSong", (asyncLoader, beatmapLevelData))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "AudioClipAsyncLoaderExtensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::AudioClipAsyncLoaderExtensions {

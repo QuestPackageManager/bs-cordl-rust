@@ -32,6 +32,15 @@ impl crate::System::Threading::Tasks::SynchronizationContextAwaitTaskContinuatio
         feature = "System+Threading+Tasks+SynchronizationContextAwaitTaskContinuation+__c"
     )]
     pub type __c = crate::System::Threading::Tasks::SynchronizationContextAwaitTaskContinuation___c;
+    pub fn GetPostActionCallback() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::ContextCallback>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::ContextCallback,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetPostActionCallback", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         context: quest_hook::libil2cpp::Gc<
             crate::System::Threading::SynchronizationContext,
@@ -44,6 +53,13 @@ impl crate::System::Threading::Tasks::SynchronizationContextAwaitTaskContinuatio
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (context, action, flowExecutionContext))?;
         Ok(__cordl_object.into())
+    }
+    pub fn PostAction(
+        state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PostAction", (state))?;
+        Ok(__cordl_ret.into())
     }
     pub fn Run(
         &mut self,

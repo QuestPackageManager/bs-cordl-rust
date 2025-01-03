@@ -33,6 +33,171 @@ impl crate::UnityEngine::UI::DefaultControls {
     type IFactoryControls = crate::UnityEngine::UI::DefaultControls_IFactoryControls;
     #[cfg(feature = "UnityEngine+UI+DefaultControls+Resources")]
     pub type Resources = crate::UnityEngine::UI::DefaultControls_Resources;
+    pub fn CreateButton(
+        resources: crate::UnityEngine::UI::DefaultControls_Resources,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateButton", (resources))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateDropdown(
+        resources: crate::UnityEngine::UI::DefaultControls_Resources,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateDropdown", (resources))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateImage(
+        resources: crate::UnityEngine::UI::DefaultControls_Resources,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateImage", (resources))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateInputField(
+        resources: crate::UnityEngine::UI::DefaultControls_Resources,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateInputField", (resources))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreatePanel(
+        resources: crate::UnityEngine::UI::DefaultControls_Resources,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreatePanel", (resources))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateRawImage(
+        resources: crate::UnityEngine::UI::DefaultControls_Resources,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateRawImage", (resources))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateScrollView(
+        resources: crate::UnityEngine::UI::DefaultControls_Resources,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateScrollView", (resources))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateScrollbar(
+        resources: crate::UnityEngine::UI::DefaultControls_Resources,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateScrollbar", (resources))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateSlider(
+        resources: crate::UnityEngine::UI::DefaultControls_Resources,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateSlider", (resources))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateText(
+        resources: crate::UnityEngine::UI::DefaultControls_Resources,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateText", (resources))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateToggle(
+        resources: crate::UnityEngine::UI::DefaultControls_Resources,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateToggle", (resources))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateUIElementRoot(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        _cordl_size: crate::UnityEngine::Vector2,
+        components: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateUIElementRoot", (name, _cordl_size, components))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateUIObject(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        components: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateUIObject", (name, parent, components))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetDefaultColorTransitionValues(
+        slider: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Selectable>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetDefaultColorTransitionValues", (slider))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetDefaultTextValues(
+        lbl: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Text>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetDefaultTextValues", (lbl))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetLayerRecursively(
+        go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        layer: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetLayerRecursively", (go, layer))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetParentAndAlign(
+        child: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetParentAndAlign", (child, parent))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_factory() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UI::DefaultControls_IFactoryControls,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UI::DefaultControls_IFactoryControls,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_factory", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+UI+DefaultControls")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::DefaultControls {

@@ -30,6 +30,27 @@ impl crate::GlobalNamespace::SaberSwingRating {
     pub const kMaxBeforeCutSwingDuration: f32 = 0.4f32;
     pub const kMaxNormalAngleDiff: f32 = 90f32;
     pub const kToleranceNormalAngleDiff: f32 = 75f32;
+    pub fn AfterCutStepRating(
+        angleDiff: f32,
+        normalDiff: f32,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("AfterCutStepRating", (angleDiff, normalDiff))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn BeforeCutStepRating(
+        angleDiff: f32,
+        normalDiff: f32,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BeforeCutStepRating", (angleDiff, normalDiff))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn NormalRating(normalDiff: f32) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("NormalRating", (normalDiff))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "SaberSwingRating")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SaberSwingRating {

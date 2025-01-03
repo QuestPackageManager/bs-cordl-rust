@@ -28,6 +28,15 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRRuntimeSettings {
 }
 #[cfg(feature = "OVRRuntimeSettings")]
 impl crate::GlobalNamespace::OVRRuntimeSettings {
+    pub fn GetRuntimeSettings() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRRuntimeSettings>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OVRRuntimeSettings,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetRuntimeSettings", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -60,6 +69,14 @@ impl crate::GlobalNamespace::OVRRuntimeSettings {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("get_HasSetTelemetryEnabled", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Instance() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRRuntimeSettings>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OVRRuntimeSettings,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_Instance", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_TelemetryEnabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {

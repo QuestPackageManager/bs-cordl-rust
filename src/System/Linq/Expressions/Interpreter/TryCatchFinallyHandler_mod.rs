@@ -35,6 +35,21 @@ for crate::System::Linq::Expressions::Interpreter::TryCatchFinallyHandler {
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+TryCatchFinallyHandler")]
 impl crate::System::Linq::Expressions::Interpreter::TryCatchFinallyHandler {
+    pub fn FilterPasses(
+        frame: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::InterpretedFrame,
+        >,
+        exception: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
+        filter: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::ExceptionFilter,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FilterPasses", (frame, exception, filter))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn HasHandler(
         &mut self,
         frame: quest_hook::libil2cpp::Gc<

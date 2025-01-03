@@ -47,6 +47,374 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
         feature = "UnityEngine+ProBuilder+SelectionPickerRenderer+__c__DisplayClass19_0"
     )]
     pub type __c__DisplayClass19_0 = crate::UnityEngine::ProBuilder::SelectionPickerRenderer___c__DisplayClass19_0;
+    pub fn BuildEdgeMesh(
+        pb: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+        map: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<
+                u32,
+                crate::UnityEngine::ProBuilder::SimpleTuple_2<
+                    *mut crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    crate::UnityEngine::ProBuilder::Edge,
+                >,
+            >,
+        >,
+        index: quest_hook::libil2cpp::ByRefMut<u32>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BuildEdgeMesh", (pb, map, index))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn BuildVertexMesh(
+        pb: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+        map: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<
+                u32,
+                crate::UnityEngine::ProBuilder::SimpleTuple_2<
+                    *mut crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    i32,
+                >,
+            >,
+        >,
+        index: quest_hook::libil2cpp::ByRefMut<u32>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BuildVertexMesh", (pb, map, index))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn DecodeRGBA(
+        color: crate::UnityEngine::Color32,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        let __cordl_ret: u32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DecodeRGBA", (color))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EncodeRGBA(
+        hash: u32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color32> {
+        let __cordl_ret: crate::UnityEngine::Color32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EncodeRGBA", (hash))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GenerateEdgePickingObjects(
+        selection: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                *mut crate::UnityEngine::ProBuilder::ProBuilderMesh,
+            >,
+        >,
+        doDepthTest: bool,
+        map: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::System::Collections::Generic::Dictionary_2<
+                u32,
+                crate::UnityEngine::ProBuilder::SimpleTuple_2<
+                    *mut crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    crate::UnityEngine::ProBuilder::Edge,
+                >,
+            >,
+        >,
+        depthObjects: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
+        >,
+        pickerObjects: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GenerateEdgePickingObjects",
+                (selection, doDepthTest, map, depthObjects, pickerObjects),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GenerateFacePickingObjects(
+        selection: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                *mut crate::UnityEngine::ProBuilder::ProBuilderMesh,
+            >,
+        >,
+        map: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::System::Collections::Generic::Dictionary_2<
+                u32,
+                crate::UnityEngine::ProBuilder::SimpleTuple_2<
+                    *mut crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    *mut crate::UnityEngine::ProBuilder::Face,
+                >,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GenerateFacePickingObjects", (selection, map))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GenerateVertexPickingObjects(
+        selection: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                *mut crate::UnityEngine::ProBuilder::ProBuilderMesh,
+            >,
+        >,
+        doDepthTest: bool,
+        map: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::System::Collections::Generic::Dictionary_2<
+                u32,
+                crate::UnityEngine::ProBuilder::SimpleTuple_2<
+                    *mut crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    i32,
+                >,
+            >,
+        >,
+        depthObjects: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
+        >,
+        pickerObjects: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::GameObject>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GenerateVertexPickingObjects",
+                (selection, doDepthTest, map, depthObjects, pickerObjects),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn PickEdgesInRect(
+        camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+        pickerRect: crate::UnityEngine::Rect,
+        selection: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                *mut crate::UnityEngine::ProBuilder::ProBuilderMesh,
+            >,
+        >,
+        doDepthTest: bool,
+        renderTextureWidth: i32,
+        renderTextureHeight: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<
+                *mut crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                *mut crate::System::Collections::Generic::HashSet_1<
+                    crate::UnityEngine::ProBuilder::Edge,
+                >,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<
+                *mut crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                *mut crate::System::Collections::Generic::HashSet_1<
+                    crate::UnityEngine::ProBuilder::Edge,
+                >,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "PickEdgesInRect",
+                (
+                    camera,
+                    pickerRect,
+                    selection,
+                    doDepthTest,
+                    renderTextureWidth,
+                    renderTextureHeight,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn PickFacesInRect(
+        camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+        pickerRect: crate::UnityEngine::Rect,
+        selection: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                *mut crate::UnityEngine::ProBuilder::ProBuilderMesh,
+            >,
+        >,
+        renderTextureWidth: i32,
+        renderTextureHeight: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<
+                *mut crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                *mut crate::System::Collections::Generic::HashSet_1<
+                    *mut crate::UnityEngine::ProBuilder::Face,
+                >,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<
+                *mut crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                *mut crate::System::Collections::Generic::HashSet_1<
+                    *mut crate::UnityEngine::ProBuilder::Face,
+                >,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "PickFacesInRect",
+                (camera, pickerRect, selection, renderTextureWidth, renderTextureHeight),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn PickVerticesInRect(
+        camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+        pickerRect: crate::UnityEngine::Rect,
+        selection: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                *mut crate::UnityEngine::ProBuilder::ProBuilderMesh,
+            >,
+        >,
+        doDepthTest: bool,
+        renderTextureWidth: i32,
+        renderTextureHeight: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<
+                *mut crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                *mut crate::System::Collections::Generic::HashSet_1<i32>,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<
+                *mut crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                *mut crate::System::Collections::Generic::HashSet_1<i32>,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "PickVerticesInRect",
+                (
+                    camera,
+                    pickerRect,
+                    selection,
+                    doDepthTest,
+                    renderTextureWidth,
+                    renderTextureHeight,
+                ),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RenderSelectionPickerTexture_ByRefMut_i32_0(
+        camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+        selection: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                *mut crate::UnityEngine::ProBuilder::ProBuilderMesh,
+            >,
+        >,
+        map: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::System::Collections::Generic::Dictionary_2<
+                u32,
+                crate::UnityEngine::ProBuilder::SimpleTuple_2<
+                    *mut crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    *mut crate::UnityEngine::ProBuilder::Face,
+                >,
+            >,
+        >,
+        width: i32,
+        height: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "RenderSelectionPickerTexture",
+                (camera, selection, map, width, height),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RenderSelectionPickerTexture__cordl_bool_ByRefMut_i32_1(
+        camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+        selection: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                *mut crate::UnityEngine::ProBuilder::ProBuilderMesh,
+            >,
+        >,
+        doDepthTest: bool,
+        map: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::System::Collections::Generic::Dictionary_2<
+                u32,
+                crate::UnityEngine::ProBuilder::SimpleTuple_2<
+                    *mut crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    i32,
+                >,
+            >,
+        >,
+        width: i32,
+        height: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "RenderSelectionPickerTexture",
+                (camera, selection, doDepthTest, map, width, height),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RenderSelectionPickerTexture__cordl_bool_ByRefMut_i32_2(
+        camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+        selection: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                *mut crate::UnityEngine::ProBuilder::ProBuilderMesh,
+            >,
+        >,
+        doDepthTest: bool,
+        map: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::System::Collections::Generic::Dictionary_2<
+                u32,
+                crate::UnityEngine::ProBuilder::SimpleTuple_2<
+                    *mut crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                    crate::UnityEngine::ProBuilder::Edge,
+                >,
+            >,
+        >,
+        width: i32,
+        height: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "RenderSelectionPickerTexture",
+                (camera, selection, doDepthTest, map, width, height),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ShouldUseHDRP() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ShouldUseHDRP", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_pickerRenderer() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::SelectionPickerRenderer_ISelectionPickerRenderer,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::SelectionPickerRenderer_ISelectionPickerRenderer,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_pickerRenderer", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_renderTextureFormat() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::RenderTextureFormat,
+    > {
+        let __cordl_ret: crate::UnityEngine::RenderTextureFormat = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_renderTextureFormat", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_textureFormat() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::TextureFormat,
+    > {
+        let __cordl_ret: crate::UnityEngine::TextureFormat = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_textureFormat", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+SelectionPickerRenderer")]
 impl quest_hook::libil2cpp::ObjectType

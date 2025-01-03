@@ -31,6 +31,20 @@ impl crate::Org::BouncyCastle::Asn1::Crmf::PopoPrivKey {
     pub const encryptedKey: i32 = 4i32;
     pub const subsequentMessage: i32 = 1i32;
     pub const thisMessage: i32 = 0i32;
+    pub fn GetInstance(
+        tagged: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Asn1TaggedObject,
+        >,
+        isExplicit: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Crmf::PopoPrivKey>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Crmf::PopoPrivKey,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetInstance", (tagged, isExplicit))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_Asn1TaggedObject0(
         obj: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1TaggedObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

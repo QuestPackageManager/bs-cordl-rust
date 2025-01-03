@@ -48,6 +48,40 @@ impl<
             .invoke("AddRule", (newRule))?;
         Ok(__cordl_ret.into())
     }
+    pub fn Convert(
+        arg: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Convert", (arg, _cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Create(
+        binder: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::CompilerServices::CallSiteBinder,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::CompilerServices::CallSite_1<T>,
+        >,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::CompilerServices::CallSite_1<T>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Create", (binder))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CreateCustomNoMatchDelegate(
         &mut self,
         invoke: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,

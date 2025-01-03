@@ -101,6 +101,16 @@ impl crate::UnityEngine::UIElements::VisualTreeStyleUpdaterTraversal {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
+    pub fn OnProcessMatchResult(
+        current: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::VisualElement,
+        >,
+        info: crate::UnityEngine::UIElements::StyleSheets::MatchResultInfo,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("OnProcessMatchResult", (current, info))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn PrepareTraversal(
         &mut self,
         pixelsPerPoint: f32,

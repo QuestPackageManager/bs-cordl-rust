@@ -44,6 +44,13 @@ impl std::ops::DerefMut for crate::System::Net::Cookie {
 }
 #[cfg(feature = "System+Net+Cookie")]
 impl crate::System::Net::Cookie {
+    pub fn DomainCharsTest(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DomainCharsTest", (name))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Equals(
         &mut self,
         comparand: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -52,6 +59,14 @@ impl crate::System::Net::Cookie {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (comparand))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetComparer() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IComparer>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IComparer,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetComparer", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -69,6 +84,14 @@ impl crate::System::Net::Cookie {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("InternalSetName", (value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsDomainEqualToHost(
+        domain: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        host: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsDomainEqualToHost", (domain, host))?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

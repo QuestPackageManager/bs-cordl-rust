@@ -45,6 +45,60 @@ impl std::ops::DerefMut for crate::GlobalNamespace::ObstacleSaberSparkleEffectMa
 impl crate::GlobalNamespace::ObstacleSaberSparkleEffectManager {
     #[cfg(feature = "ObstacleSaberSparkleEffectManager+BoxSideRotations")]
     pub type BoxSideRotations = crate::GlobalNamespace::ObstacleSaberSparkleEffectManager_BoxSideRotations;
+    pub fn FindBoxSurfaceRotation(
+        bounds: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Bounds>,
+        position: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
+        let __cordl_ret: crate::UnityEngine::Quaternion = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FindBoxSurfaceRotation", (bounds, position))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IntersectBounds(
+        bounds: crate::UnityEngine::Bounds,
+        start: crate::UnityEngine::Vector3,
+        end: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IntersectBounds", (bounds, start, end))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IntersectBoxSurfacePose(
+        bounds: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Bounds>,
+        start: crate::UnityEngine::Vector3,
+        end: crate::UnityEngine::Vector3,
+        hit: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Pose>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IntersectBoxSurfacePose", (bounds, start, end, hit))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IntersectBoxSurfacePosition(
+        bounds: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Bounds>,
+        start: crate::UnityEngine::Vector3,
+        end: crate::UnityEngine::Vector3,
+        hit: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IntersectBoxSurfacePosition", (bounds, start, end, hit))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IntersectSaberWithObstacles(
+        saber: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Saber>,
+        obstacles: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::GlobalNamespace::ObstacleController,
+            >,
+        >,
+        intersectObstacleSurface: quest_hook::libil2cpp::ByRefMut<bool>,
+        hit: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Pose>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "IntersectSaberWithObstacles",
+                (saber, obstacles, intersectObstacleSurface, hit),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

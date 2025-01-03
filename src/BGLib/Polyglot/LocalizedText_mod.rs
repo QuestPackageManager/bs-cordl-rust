@@ -28,6 +28,20 @@ impl std::ops::DerefMut for crate::BGLib::Polyglot::LocalizedText {
 }
 #[cfg(feature = "BGLib+Polyglot+LocalizedText")]
 impl crate::BGLib::Polyglot::LocalizedText {
+    pub fn IsAlignmentLeft(
+        alignment: crate::UnityEngine::TextAnchor,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsAlignmentLeft", (alignment))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsAlignmentRight(
+        alignment: crate::UnityEngine::TextAnchor,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsAlignmentRight", (alignment))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn IsOppositeDirection(
         &mut self,
         alignment: crate::UnityEngine::TextAnchor,

@@ -450,6 +450,11 @@ impl crate::UnityEngine::Rendering::CommandBuffer {
             )?;
         Ok(__cordl_ret.into())
     }
+    pub fn InitBuffer() -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        let __cordl_ret: crate::System::IntPtr = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InitBuffer", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Internal_DrawMesh(
         &mut self,
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,

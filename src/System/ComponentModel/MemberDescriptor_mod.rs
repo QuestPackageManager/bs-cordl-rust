@@ -94,6 +94,39 @@ impl crate::System::ComponentModel::MemberDescriptor {
             .invoke("FilterAttributesIfNeeded", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn FindMethod_Type_Il2CppString_Il2CppArray_Type0(
+        componentClass: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        args: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+        >,
+        returnType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::MethodInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FindMethod", (componentClass, name, args, returnType))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn FindMethod__cordl_bool1(
+        componentClass: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        args: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
+        >,
+        returnType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        publicOnly: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Reflection::MethodInfo,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FindMethod", (componentClass, name, args, returnType, publicOnly))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -114,6 +147,17 @@ impl crate::System::ComponentModel::MemberDescriptor {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
         > = __cordl_object.invoke("GetInvocationTarget", (_cordl_type, instance))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetSite(
+        component: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::ComponentModel::ISite>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::ComponentModel::ISite,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSite", (component))?;
         Ok(__cordl_ret.into())
     }
     pub fn New_Il2CppString0(

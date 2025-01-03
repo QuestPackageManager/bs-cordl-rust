@@ -111,6 +111,29 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             .invoke("AttributeIdentityConstraints", (name, ns, obj, sobj, datatype))?;
         Ok(__cordl_ret.into())
     }
+    pub fn BuildElementName_Il2CppString_Il2CppString1(
+        localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BuildElementName", (localName, ns))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn BuildElementName_XmlQualifiedName0(
+        qname: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BuildElementName", (qname))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CheckAttributeValue(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -256,6 +279,24 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             .invoke("ClearPSVI", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn CompleteValidationError(
+        context: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::ValidationState>,
+        eventHandler: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::ValidationEventHandler,
+        >,
+        sender: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        sourceUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        lineNo: i32,
+        linePos: i32,
+        schemaSet: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSet>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CompleteValidationError",
+                (context, eventHandler, sender, sourceUri, lineNo, linePos, schemaSet),
+            )?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ElementIdentityConstraints(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -264,6 +305,34 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ElementIdentityConstraints", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ElementValidationError(
+        name: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+        context: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::ValidationState>,
+        eventHandler: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::ValidationEventHandler,
+        >,
+        sender: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        sourceUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        lineNo: i32,
+        linePos: i32,
+        schemaSet: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaSet>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ElementValidationError",
+                (
+                    name,
+                    context,
+                    eventHandler,
+                    sender,
+                    sourceUri,
+                    lineNo,
+                    linePos,
+                    schemaSet,
+                ),
+            )?;
         Ok(__cordl_ret.into())
     }
     pub fn EndElementIdentityConstraints(
@@ -292,6 +361,14 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("EndValidation", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EnumerateAny(
+        builder: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+        namespaces: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("EnumerateAny", (builder, namespaces))?;
         Ok(__cordl_ret.into())
     }
     pub fn FastGetElementDecl(
@@ -493,6 +570,37 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object.invoke("Pop", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn PrintExpectedElements(
+        expected: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+        getParticles: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PrintExpectedElements", (expected, getParticles))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn PrintNames(
+        expected: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PrintNames", (expected))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn PrintNamesWithNS(
+        expected: quest_hook::libil2cpp::Gc<crate::System::Collections::ArrayList>,
+        builder: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PrintNamesWithNS", (expected, builder))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn ProcessEntity(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -545,6 +653,18 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Push", (elementName))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn QNameString(
+        localName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("QNameString", (localName, ns))?;
         Ok(__cordl_ret.into())
     }
     pub fn RecompileSchemaSet(
@@ -670,6 +790,20 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SendValidationEvent", (code, msg, severity))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SendValidationEvent_ValidationEventHandler_Il2CppObject_XmlSchemaValidationException_XmlSeverityType10(
+        eventHandler: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::ValidationEventHandler,
+        >,
+        sender: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        e: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Schema::XmlSchemaValidationException,
+        >,
+        severity: crate::System::Xml::Schema::XmlSeverityType,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SendValidationEvent", (eventHandler, sender, e, severity))?;
         Ok(__cordl_ret.into())
     }
     pub fn SendValidationEvent_XmlSchemaException7(

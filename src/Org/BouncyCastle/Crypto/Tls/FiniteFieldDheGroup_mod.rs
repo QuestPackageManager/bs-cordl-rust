@@ -30,6 +30,11 @@ impl crate::Org::BouncyCastle::Crypto::Tls::FiniteFieldDheGroup {
     pub const ffdhe4096: u8 = 2u8;
     pub const ffdhe6144: u8 = 3u8;
     pub const ffdhe8192: u8 = 4u8;
+    pub fn IsValid(group: u8) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsValid", (group))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

@@ -46,6 +46,16 @@ impl crate::System::Gen2GcCallback {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
+    pub fn Register(
+        callback: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<*mut quest_hook::libil2cpp::Il2CppObject, bool>,
+        >,
+        targetObj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Register", (callback, targetObj))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Setup(
         &mut self,
         callback: quest_hook::libil2cpp::Gc<

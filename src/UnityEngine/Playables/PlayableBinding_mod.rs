@@ -27,6 +27,18 @@ for crate::UnityEngine::Playables::PlayableBinding {
 impl crate::UnityEngine::Playables::PlayableBinding {
     #[cfg(feature = "UnityEngine+Playables+PlayableBinding+CreateOutputMethod")]
     pub type CreateOutputMethod = crate::UnityEngine::Playables::PlayableBinding_CreateOutputMethod;
+    pub fn CreateInternal(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        sourceObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+        sourceType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        createFunction: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Playables::PlayableBinding_CreateOutputMethod,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::PlayableBinding> {
+        let __cordl_ret: crate::UnityEngine::Playables::PlayableBinding = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateInternal", (name, sourceObject, sourceType, createFunction))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CreateOutput(
         &mut self,
         graph: crate::UnityEngine::Playables::PlayableGraph,

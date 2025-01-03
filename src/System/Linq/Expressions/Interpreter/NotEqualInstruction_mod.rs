@@ -123,6 +123,20 @@ impl crate::System::Linq::Expressions::Interpreter::NotEqualInstruction {
         feature = "System+Linq+Expressions+Interpreter+NotEqualInstruction+NotEqualUInt64LiftedToNull"
     )]
     pub type NotEqualUInt64LiftedToNull = crate::GlobalNamespace::NotEqualInstruction_NotEqualUInt64LiftedToNull;
+    pub fn Create(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        liftedToNull: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::Instruction,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::Instruction,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Create", (_cordl_type, liftedToNull))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

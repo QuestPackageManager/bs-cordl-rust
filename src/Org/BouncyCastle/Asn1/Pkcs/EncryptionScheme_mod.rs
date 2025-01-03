@@ -24,6 +24,16 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::Pkcs::EncryptionSche
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+Pkcs+EncryptionScheme")]
 impl crate::Org::BouncyCastle::Asn1::Pkcs::EncryptionScheme {
+    pub fn GetInstance(
+        obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Pkcs::EncryptionScheme>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Pkcs::EncryptionScheme,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetInstance", (obj))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_Asn1Sequence2(
         seq: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Asn1Sequence>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

@@ -28,6 +28,28 @@ impl crate::GlobalNamespace::BeatmapSaveDataHelpers {
     pub type VersionSerializedData = crate::GlobalNamespace::BeatmapSaveDataHelpers_VersionSerializedData;
     #[cfg(feature = "BeatmapSaveDataHelpers+__c__DisplayClass6_0")]
     pub type __c__DisplayClass6_0 = crate::GlobalNamespace::BeatmapSaveDataHelpers___c__DisplayClass6_0;
+    pub fn GetVersion(
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Version>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Version> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetVersion", (data))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetVersionAsync(
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<*mut crate::System::Version>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<*mut crate::System::Version>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetVersionAsync", (data))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "BeatmapSaveDataHelpers")]
 impl quest_hook::libil2cpp::ObjectType

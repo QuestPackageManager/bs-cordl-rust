@@ -984,6 +984,22 @@ impl crate::Oculus::Platform::Message {
             .invoke_void(".ctor", (c_message))?;
         Ok(__cordl_object.into())
     }
+    pub fn ParseMessageHandle(
+        messageHandle: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Message>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Message> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ParseMessageHandle", (messageHandle))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn PopMessage() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Message>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Message> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PopMessage", ())?;
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
         c_message: crate::System::IntPtr,
@@ -993,6 +1009,17 @@ impl crate::Oculus::Platform::Message {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (c_message))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_HandleExtraMessageTypes() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Message_ExtraMessageTypesHandler,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Message_ExtraMessageTypesHandler,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_HandleExtraMessageTypes", ())?;
         Ok(__cordl_ret.into())
     }
     pub fn get_IsError(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -1017,6 +1044,15 @@ impl crate::Oculus::Platform::Message {
         );
         let __cordl_ret: crate::Oculus::Platform::Message_MessageType = __cordl_object
             .invoke("get_Type", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_HandleExtraMessageTypes(
+        value: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Message_ExtraMessageTypesHandler,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("set_HandleExtraMessageTypes", (value))?;
         Ok(__cordl_ret.into())
     }
 }

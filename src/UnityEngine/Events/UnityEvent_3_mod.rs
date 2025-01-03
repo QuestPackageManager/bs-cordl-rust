@@ -90,7 +90,7 @@ impl<
         > = __cordl_object.invoke("FindMethod_Impl", (name, targetObjType))?;
         Ok(__cordl_ret.into())
     }
-    pub fn GetDelegate(
+    pub fn GetDelegate_Il2CppObject_MethodInfo0(
         &mut self,
         target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         theFunction: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
@@ -111,6 +111,27 @@ impl<
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::Events::BaseInvokableCall,
         > = __cordl_object.invoke("GetDelegate", (target, theFunction))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetDelegate_UnityAction_3_1(
+        action: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Events::UnityAction_3<T0, T1, T2>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::BaseInvokableCall>,
+    >
+    where
+        T0: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Events::BaseInvokableCall,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetDelegate", (action))?;
         Ok(__cordl_ret.into())
     }
     pub fn Invoke(

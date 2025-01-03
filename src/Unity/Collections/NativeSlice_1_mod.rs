@@ -236,6 +236,17 @@ impl<T: quest_hook::libil2cpp::Type> crate::Unity::Collections::NativeSlice_1<T>
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Implicit(
+        array: crate::Unity::Collections::NativeArray_1<T>,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::NativeSlice_1<T>>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: crate::Unity::Collections::NativeSlice_1<T> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (array))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn set_Item(
         &mut self,
         index: i32,

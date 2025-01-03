@@ -50,6 +50,13 @@ impl crate::GlobalNamespace::ColorSO {
             .invoke("get_color", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Implicit(
+        c: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSO>,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        let __cordl_ret: crate::UnityEngine::Color = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Implicit", (c))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "ColorSO")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ColorSO {

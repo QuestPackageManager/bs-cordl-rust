@@ -53,4 +53,12 @@ impl crate::System::Data::IndexField {
         )?;
         Ok(__cordl_ret.into())
     }
+    pub fn op_Equality(
+        if1: crate::System::Data::IndexField,
+        if2: crate::System::Data::IndexField,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("op_Equality", (if1, if2))?;
+        Ok(__cordl_ret.into())
+    }
 }

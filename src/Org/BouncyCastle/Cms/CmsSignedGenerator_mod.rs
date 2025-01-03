@@ -143,6 +143,30 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedGenerator {
         > = __cordl_object.invoke("GetGeneratedDigests", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetSignerIdentifier_Il2CppArray1(
+        subjectKeyIdentifier: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u8>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cms::SignerIdentifier>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cms::SignerIdentifier,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSignerIdentifier", (subjectKeyIdentifier))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetSignerIdentifier_X509Certificate0(
+        cert: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::X509::X509Certificate>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Asn1::Cms::SignerIdentifier>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Asn1::Cms::SignerIdentifier,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSignerIdentifier", (cert))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

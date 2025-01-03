@@ -23,7 +23,73 @@ impl std::ops::DerefMut for crate::GlobalNamespace::NoteCutDirectionExtensions {
     }
 }
 #[cfg(feature = "NoteCutDirectionExtensions")]
-impl crate::GlobalNamespace::NoteCutDirectionExtensions {}
+impl crate::GlobalNamespace::NoteCutDirectionExtensions {
+    pub fn Direction(
+        cutDirection: crate::GlobalNamespace::NoteCutDirection,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        let __cordl_ret: crate::UnityEngine::Vector2 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Direction", (cutDirection))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsMainDirection(
+        cutDirection: crate::GlobalNamespace::NoteCutDirection,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsMainDirection", (cutDirection))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsOnSamePlane(
+        noteCutDirection1: crate::GlobalNamespace::NoteCutDirection,
+        noteCutDirection2: crate::GlobalNamespace::NoteCutDirection,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsOnSamePlane", (noteCutDirection1, noteCutDirection2))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn MainNoteCutDirectionFromCutDirAngle(
+        angle: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NoteCutDirection> {
+        let __cordl_ret: crate::GlobalNamespace::NoteCutDirection = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("MainNoteCutDirectionFromCutDirAngle", (angle))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Mirrored(
+        cutDirection: crate::GlobalNamespace::NoteCutDirection,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NoteCutDirection> {
+        let __cordl_ret: crate::GlobalNamespace::NoteCutDirection = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Mirrored", (cutDirection))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn NoteCutDirectionFromDirection(
+        direction: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NoteCutDirection> {
+        let __cordl_ret: crate::GlobalNamespace::NoteCutDirection = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("NoteCutDirectionFromDirection", (direction))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Opposite(
+        cutDirection: crate::GlobalNamespace::NoteCutDirection,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NoteCutDirection> {
+        let __cordl_ret: crate::GlobalNamespace::NoteCutDirection = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Opposite", (cutDirection))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Rotation(
+        cutDirection: crate::GlobalNamespace::NoteCutDirection,
+        offset: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
+        let __cordl_ret: crate::UnityEngine::Quaternion = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Rotation", (cutDirection, offset))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RotationAngle(
+        cutDirection: crate::GlobalNamespace::NoteCutDirection,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_ret: f32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RotationAngle", (cutDirection))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "NoteCutDirectionExtensions")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::NoteCutDirectionExtensions {

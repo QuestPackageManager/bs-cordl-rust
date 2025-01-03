@@ -1187,6 +1187,28 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
             .invoke("GetOutputGeoNodes", (outputGeoNodes))?;
         Ok(__cordl_ret.into())
     }
+    pub fn GetSceneHDAAssetFromGameObject(
+        outputGameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAsset>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_HoudiniAsset,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSceneHDAAssetFromGameObject", (outputGameObject))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetSceneHDAPartWithGameObject(
+        outputGameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_PartData>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_PartData,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetSceneHDAPartWithGameObject", (outputGameObject))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetValidAssetCacheFolderPath(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -1419,6 +1441,20 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("IsEquivalentTo", (asset))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsHoudiniAssetOutput(
+        go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsHoudiniAssetOutput", (go))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsHoudiniAssetRoot(
+        go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsHoudiniAssetRoot", (go))?;
         Ok(__cordl_ret.into())
     }
     pub fn IsValidForInteraction(
@@ -1886,6 +1922,13 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetCurveDrawLayerMask", (mask))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetCurvesVisibilityInScene(
+        bShow: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetCurvesVisibilityInScene", (bShow))?;
         Ok(__cordl_ret.into())
     }
     pub fn SetSoftDeleted(

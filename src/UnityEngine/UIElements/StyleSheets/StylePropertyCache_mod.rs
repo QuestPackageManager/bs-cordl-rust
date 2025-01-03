@@ -26,7 +26,24 @@ for crate::UnityEngine::UIElements::StyleSheets::StylePropertyCache {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+StylePropertyCache")]
-impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyCache {}
+impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyCache {
+    pub fn TryGetNonTerminalValue(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        syntax: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryGetNonTerminalValue", (name, syntax))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryGetSyntax(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        syntax: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryGetSyntax", (name, syntax))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+StylePropertyCache")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::UnityEngine::UIElements::StyleSheets::StylePropertyCache {

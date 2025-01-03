@@ -23,7 +23,24 @@ impl std::ops::DerefMut for crate::System::IO::MonoLinqHelper {
     }
 }
 #[cfg(feature = "System+IO+MonoLinqHelper")]
-impl crate::System::IO::MonoLinqHelper {}
+impl crate::System::IO::MonoLinqHelper {
+    pub fn ToArray<T>(
+        source: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<T>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<T>,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("ToArray", (source))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+IO+MonoLinqHelper")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::IO::MonoLinqHelper {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

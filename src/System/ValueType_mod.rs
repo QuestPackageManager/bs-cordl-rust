@@ -23,6 +23,14 @@ impl std::ops::DerefMut for crate::System::ValueType {
 }
 #[cfg(feature = "System+ValueType")]
 impl crate::System::ValueType {
+    pub fn DefaultEquals(
+        o1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        o2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("DefaultEquals", (o1, o2))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Equals(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -38,6 +46,31 @@ impl crate::System::ValueType {
             self,
         );
         let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InternalEquals(
+        o1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        o2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        fields: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InternalEquals", (o1, o2, fields))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn InternalGetHashCode(
+        o: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        fields: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppArray<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("InternalGetHashCode", (o, fields))?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

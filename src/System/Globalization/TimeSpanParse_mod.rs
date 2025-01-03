@@ -40,6 +40,211 @@ impl crate::System::Globalization::TimeSpanParse {
     pub type TimeSpanToken = crate::System::Globalization::TimeSpanParse_TimeSpanToken;
     #[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanTokenizer")]
     pub type TimeSpanTokenizer = crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer;
+    pub fn Parse(
+        input: crate::System::ReadOnlySpan_1<char>,
+        formatProvider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
+        let __cordl_ret: crate::System::TimeSpan = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Parse", (input, formatProvider))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ParseExactDigits_ByRefMut0(
+        tokenizer: quest_hook::libil2cpp::ByRefMut<
+            crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer,
+        >,
+        minDigitLength: i32,
+        result: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ParseExactDigits", (tokenizer, minDigitLength, result))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ParseExactDigits_i32_ByRefMut_ByRefMut1(
+        tokenizer: quest_hook::libil2cpp::ByRefMut<
+            crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer,
+        >,
+        minDigitLength: i32,
+        maxDigitLength: i32,
+        zeroes: quest_hook::libil2cpp::ByRefMut<i32>,
+        result: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "ParseExactDigits",
+                (tokenizer, minDigitLength, maxDigitLength, zeroes, result),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ParseExactLiteral(
+        tokenizer: quest_hook::libil2cpp::ByRefMut<
+            crate::System::Globalization::TimeSpanParse_TimeSpanTokenizer,
+        >,
+        enquotedString: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ParseExactLiteral", (tokenizer, enquotedString))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Pow10(pow: i32) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Pow10", (pow))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ProcessTerminalState(
+        raw: quest_hook::libil2cpp::ByRefMut<
+            crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo,
+        >,
+        style: crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles,
+        result: quest_hook::libil2cpp::ByRefMut<
+            crate::System::Globalization::TimeSpanParse_TimeSpanResult,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ProcessTerminalState", (raw, style, result))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ProcessTerminal_D(
+        raw: quest_hook::libil2cpp::ByRefMut<
+            crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo,
+        >,
+        style: crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles,
+        result: quest_hook::libil2cpp::ByRefMut<
+            crate::System::Globalization::TimeSpanParse_TimeSpanResult,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ProcessTerminal_D", (raw, style, result))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ProcessTerminal_DHMSF(
+        raw: quest_hook::libil2cpp::ByRefMut<
+            crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo,
+        >,
+        style: crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles,
+        result: quest_hook::libil2cpp::ByRefMut<
+            crate::System::Globalization::TimeSpanParse_TimeSpanResult,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ProcessTerminal_DHMSF", (raw, style, result))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ProcessTerminal_HM(
+        raw: quest_hook::libil2cpp::ByRefMut<
+            crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo,
+        >,
+        style: crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles,
+        result: quest_hook::libil2cpp::ByRefMut<
+            crate::System::Globalization::TimeSpanParse_TimeSpanResult,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ProcessTerminal_HM", (raw, style, result))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ProcessTerminal_HMS_F_D(
+        raw: quest_hook::libil2cpp::ByRefMut<
+            crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo,
+        >,
+        style: crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles,
+        result: quest_hook::libil2cpp::ByRefMut<
+            crate::System::Globalization::TimeSpanParse_TimeSpanResult,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ProcessTerminal_HMS_F_D", (raw, style, result))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ProcessTerminal_HM_S_D(
+        raw: quest_hook::libil2cpp::ByRefMut<
+            crate::System::Globalization::TimeSpanParse_TimeSpanRawInfo,
+        >,
+        style: crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles,
+        result: quest_hook::libil2cpp::ByRefMut<
+            crate::System::Globalization::TimeSpanParse_TimeSpanResult,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ProcessTerminal_HM_S_D", (raw, style, result))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryParseByFormat(
+        input: crate::System::ReadOnlySpan_1<char>,
+        format: crate::System::ReadOnlySpan_1<char>,
+        styles: crate::System::Globalization::TimeSpanStyles,
+        result: quest_hook::libil2cpp::ByRefMut<
+            crate::System::Globalization::TimeSpanParse_TimeSpanResult,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryParseByFormat", (input, format, styles, result))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryParseExact(
+        input: crate::System::ReadOnlySpan_1<char>,
+        format: crate::System::ReadOnlySpan_1<char>,
+        formatProvider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+        styles: crate::System::Globalization::TimeSpanStyles,
+        result: quest_hook::libil2cpp::ByRefMut<crate::System::TimeSpan>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryParseExact", (input, format, formatProvider, styles, result))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryParseExactTimeSpan(
+        input: crate::System::ReadOnlySpan_1<char>,
+        format: crate::System::ReadOnlySpan_1<char>,
+        formatProvider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+        styles: crate::System::Globalization::TimeSpanStyles,
+        result: quest_hook::libil2cpp::ByRefMut<
+            crate::System::Globalization::TimeSpanParse_TimeSpanResult,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "TryParseExactTimeSpan",
+                (input, format, formatProvider, styles, result),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryParseTimeSpan(
+        input: crate::System::ReadOnlySpan_1<char>,
+        style: crate::System::Globalization::TimeSpanParse_TimeSpanStandardStyles,
+        formatProvider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
+        result: quest_hook::libil2cpp::ByRefMut<
+            crate::System::Globalization::TimeSpanParse_TimeSpanResult,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryParseTimeSpan", (input, style, formatProvider, result))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryParseTimeSpanConstant(
+        input: crate::System::ReadOnlySpan_1<char>,
+        result: quest_hook::libil2cpp::ByRefMut<
+            crate::System::Globalization::TimeSpanParse_TimeSpanResult,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("TryParseTimeSpanConstant", (input, result))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryTimeToTicks(
+        positive: bool,
+        days: crate::System::Globalization::TimeSpanParse_TimeSpanToken,
+        hours: crate::System::Globalization::TimeSpanParse_TimeSpanToken,
+        minutes: crate::System::Globalization::TimeSpanParse_TimeSpanToken,
+        seconds: crate::System::Globalization::TimeSpanParse_TimeSpanToken,
+        fraction: crate::System::Globalization::TimeSpanParse_TimeSpanToken,
+        result: quest_hook::libil2cpp::ByRefMut<i64>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "TryTimeToTicks",
+                (positive, days, hours, minutes, seconds, fraction, result),
+            )?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "System+Globalization+TimeSpanParse")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Globalization::TimeSpanParse {

@@ -23,7 +23,13 @@ impl std::ops::DerefMut for crate::System::EnvironmentHelpers {
     }
 }
 #[cfg(feature = "System+EnvironmentHelpers")]
-impl crate::System::EnvironmentHelpers {}
+impl crate::System::EnvironmentHelpers {
+    pub fn IsWindowsVistaOrAbove() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("IsWindowsVistaOrAbove", ())?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+EnvironmentHelpers")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::EnvironmentHelpers {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -58,6 +58,29 @@ impl crate::GlobalNamespace::RecPlayBehaviour {
             .invoke("Configure", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn CreateAutoLevelRecording(
+        sceneSetup: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::GameplayCoreSceneSetupData,
+        >,
+        beatmapSpawnerController: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapObjectSpawnController,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::BeatSaber::RecPlay::PlayerPoseFrames> {
+        let __cordl_ret: crate::BeatSaber::RecPlay::PlayerPoseFrames = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateAutoLevelRecording", (sceneSetup, beatmapSpawnerController))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateRecordingPath(
+        key: crate::GlobalNamespace::BeatmapKey,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateRecordingPath", (key))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn Init(
         &mut self,
         sceneSetup: quest_hook::libil2cpp::Gc<
@@ -82,6 +105,13 @@ impl crate::GlobalNamespace::RecPlayBehaviour {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("LateUpdate", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LoadLevelRecording(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::BeatSaber::RecPlay::PlayerPoseFrames> {
+        let __cordl_ret: crate::BeatSaber::RecPlay::PlayerPoseFrames = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LoadLevelRecording", (path))?;
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -131,6 +161,16 @@ impl crate::GlobalNamespace::RecPlayBehaviour {
             .invoke("Record", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn SavePlayerPoseFrames(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        frames: quest_hook::libil2cpp::ByRefMut<
+            crate::BeatSaber::RecPlay::PlayerPoseFrames,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SavePlayerPoseFrames", (path, frames))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn SaveRecording(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -149,6 +189,28 @@ impl crate::GlobalNamespace::RecPlayBehaviour {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Update", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _Play_g__ExtractLocalPose_14_0(
+        transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Pose> {
+        let __cordl_ret: crate::UnityEngine::Pose = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("<Play>g__ExtractLocalPose|14_0", (transform))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _Record_g__ExtractGlobalPose_15_0(
+        transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Pose> {
+        let __cordl_ret: crate::UnityEngine::Pose = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("<Record>g__ExtractGlobalPose|15_0", (transform))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn _SavePlayerPoseFrames_g__FileWriteAllText_26_0(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        contents: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("<SavePlayerPoseFrames>g__FileWriteAllText|26_0", (path, contents))?;
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

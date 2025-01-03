@@ -23,7 +23,18 @@ impl std::ops::DerefMut for crate::System::Buffers::Utilities {
     }
 }
 #[cfg(feature = "System+Buffers+Utilities")]
-impl crate::System::Buffers::Utilities {}
+impl crate::System::Buffers::Utilities {
+    pub fn GetMaxSizeForBucket(binIndex: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetMaxSizeForBucket", (binIndex))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SelectBucketIndex(bufferSize: i32) -> quest_hook::libil2cpp::Result<i32> {
+        let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SelectBucketIndex", (bufferSize))?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+Buffers+Utilities")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Buffers::Utilities {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

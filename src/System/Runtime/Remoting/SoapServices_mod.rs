@@ -26,6 +26,170 @@ impl std::ops::DerefMut for crate::System::Runtime::Remoting::SoapServices {
 impl crate::System::Runtime::Remoting::SoapServices {
     #[cfg(feature = "System+Runtime+Remoting+SoapServices+TypeInfo")]
     pub type TypeInfo = crate::System::Runtime::Remoting::SoapServices_TypeInfo;
+    pub fn CodeXmlNamespaceForClrTypeNamespace(
+        typeNamespace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        assemblyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "CodeXmlNamespaceForClrTypeNamespace",
+                (typeNamespace, assemblyName),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn EncodeNs(
+        ns: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("EncodeNs", (ns))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetAssemblyName(
+        mb: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetAssemblyName", (mb))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetNameKey(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        namspace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetNameKey", (name, namspace))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetXmlElementForInteropType(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        xmlElement: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+        xmlNamespace: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetXmlElementForInteropType",
+                (_cordl_type, xmlElement, xmlNamespace),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetXmlNamespaceForMethodCall(
+        mb: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetXmlNamespaceForMethodCall", (mb))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetXmlNamespaceForMethodResponse(
+        mb: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodBase>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetXmlNamespaceForMethodResponse", (mb))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetXmlTypeForInteropType(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        xmlType: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+        xmlTypeNamespace: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "GetXmlTypeForInteropType",
+                (_cordl_type, xmlType, xmlTypeNamespace),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn PreLoad_Assembly0(
+        assembly: quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PreLoad", (assembly))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn PreLoad_Type1(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("PreLoad", (_cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RegisterInteropXmlElement(
+        xmlElement: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        xmlNamespace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke(
+                "RegisterInteropXmlElement",
+                (xmlElement, xmlNamespace, _cordl_type),
+            )?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn RegisterInteropXmlType(
+        xmlType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        xmlTypeNamespace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("RegisterInteropXmlType", (xmlType, xmlTypeNamespace, _cordl_type))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_XmlNsForClrTypeWithAssembly() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_XmlNsForClrTypeWithAssembly", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_XmlNsForClrTypeWithNs() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_XmlNsForClrTypeWithNs", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_XmlNsForClrTypeWithNsAndAssembly() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_XmlNsForClrTypeWithNsAndAssembly", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "System+Runtime+Remoting+SoapServices")]
 impl quest_hook::libil2cpp::ObjectType

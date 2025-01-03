@@ -65,6 +65,20 @@ impl crate::GlobalNamespace::DirectionalLight {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret.into())
     }
+    pub fn get_lights() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::GlobalNamespace::DirectionalLight,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                *mut crate::GlobalNamespace::DirectionalLight,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_lights", ())?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "DirectionalLight")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::DirectionalLight {

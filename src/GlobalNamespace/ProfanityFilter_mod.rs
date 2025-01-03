@@ -29,6 +29,24 @@ impl crate::GlobalNamespace::ProfanityFilter {
     pub type TrieNode = crate::GlobalNamespace::ProfanityFilter_TrieNode;
     #[cfg(feature = "ProfanityFilter+_GetLookalikeLetters_d__4")]
     pub type _GetLookalikeLetters_d__4 = crate::GlobalNamespace::ProfanityFilter__GetLookalikeLetters_d__4;
+    pub fn GetLeetEquivalent(c: char) -> quest_hook::libil2cpp::Result<char> {
+        let __cordl_ret: char = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetLeetEquivalent", (c))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetLookalikeLetters(
+        c: char,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<char>,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<char>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetLookalikeLetters", (c))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn IsProfane(
         &mut self,
         word: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

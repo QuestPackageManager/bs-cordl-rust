@@ -27,6 +27,20 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Math::EC::AbstractF2mCurve
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+AbstractF2mCurve")]
 impl crate::Org::BouncyCastle::Math::EC::AbstractF2mCurve {
+    pub fn BuildField(
+        m: i32,
+        k1: i32,
+        k2: i32,
+        k3: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::Field::IFiniteField>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::Field::IFiniteField,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("BuildField", (m, k1, k2, k3))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn CreatePoint(
         &mut self,
         x: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
@@ -75,6 +89,31 @@ impl crate::Org::BouncyCastle::Math::EC::AbstractF2mCurve {
                 *mut crate::Org::BouncyCastle::Math::BigInteger,
             >,
         > = __cordl_object.invoke("GetSi", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn ImplRandomFieldElementMult(
+        r: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Security::SecureRandom>,
+        m: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::BigInteger,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ImplRandomFieldElementMult", (r, m))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Inverse(
+        m: i32,
+        ks: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+        x: quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Math::BigInteger>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Org::BouncyCastle::Math::BigInteger,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Inverse", (m, ks, x))?;
         Ok(__cordl_ret.into())
     }
     pub fn IsValidFieldElement(

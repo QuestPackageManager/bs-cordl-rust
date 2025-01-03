@@ -496,6 +496,97 @@ impl<
             )?;
         Ok(__cordl_ret.into())
     }
+    pub fn Constant(
+        binder: quest_hook::libil2cpp::Gc<
+            crate::System::Dynamic::DynamicMetaObjectBinder,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::ConstantExpression>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::ConstantExpression,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("Constant", (binder))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetArgArray_DynamicMetaObject1(
+        args: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Dynamic::DynamicMetaObject,
+            >,
+        >,
+        value: quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Linq::Expressions::Expression,
+            >,
+        >,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Linq::Expressions::Expression,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetArgArray", (args, value))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetArgArray_Il2CppArray0(
+        args: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Dynamic::DynamicMetaObject,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Linq::Expressions::Expression,
+            >,
+        >,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Linq::Expressions::Expression,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetArgArray", (args))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetArgs(
+        args: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Dynamic::DynamicMetaObject,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::System::Linq::Expressions::Expression,
+            >,
+        >,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut crate::System::Linq::Expressions::Expression,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("GetArgs", (args))?;
+        Ok(__cordl_ret.into())
+    }
     pub fn GetDynamicMemberNames(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -588,6 +679,24 @@ impl<
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (expression, value, proxy))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_NoArgs() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Linq::Expressions::Expression,
+            >,
+        >,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                *mut crate::System::Linq::Expressions::Expression,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class().invoke("get_NoArgs", ())?;
         Ok(__cordl_ret.into())
     }
 }

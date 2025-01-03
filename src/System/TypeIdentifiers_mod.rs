@@ -26,6 +26,15 @@ impl std::ops::DerefMut for crate::System::TypeIdentifiers {
 impl crate::System::TypeIdentifiers {
     #[cfg(feature = "System+TypeIdentifiers+Display")]
     pub type Display = crate::System::TypeIdentifiers_Display;
+    pub fn FromDisplay(
+        displayName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::TypeIdentifier>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::TypeIdentifier> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("FromDisplay", (displayName))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "System+TypeIdentifiers")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::TypeIdentifiers {

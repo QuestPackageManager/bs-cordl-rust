@@ -30,6 +30,76 @@ impl crate::BGLib::UnityExtension::AddressablesExtensions {
     pub type __c__DisplayClass3_0_1<T: quest_hook::libil2cpp::Type> = crate::BGLib::UnityExtension::AddressablesExtensions___c__DisplayClass3_0_1<
         T,
     >;
+    pub fn GetAwaiter<T>(
+        asyncOperationHandle: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+            T,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Runtime::CompilerServices::TaskAwaiter_1<T>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: crate::System::Runtime::CompilerServices::TaskAwaiter_1<T> = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetAwaiter", (asyncOperationHandle))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LoadContent<T>(
+        label: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IList_1<T>>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<T>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LoadContent", (label))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LoadContentAsync<T>(
+        label: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AddressableAssets::IKeyEvaluator,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut crate::System::Collections::Generic::IList_1<T>,
+            >,
+        >,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                *mut crate::System::Collections::Generic::IList_1<T>,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LoadContentAsync", (label))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn LoadContentOperation<T>(
+        label: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+            *mut crate::System::Collections::Generic::IList_1<T>,
+        >,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+            *mut crate::System::Collections::Generic::IList_1<T>,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("LoadContentOperation", (label))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "BGLib+UnityExtension+AddressablesExtensions")]
 impl quest_hook::libil2cpp::ObjectType

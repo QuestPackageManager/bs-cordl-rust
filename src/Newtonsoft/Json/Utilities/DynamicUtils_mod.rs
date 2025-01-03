@@ -26,6 +26,25 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Utilities::DynamicUtils {
 impl crate::Newtonsoft::Json::Utilities::DynamicUtils {
     #[cfg(feature = "Newtonsoft+Json+Utilities+DynamicUtils+BinderWrapper")]
     pub type BinderWrapper = crate::Newtonsoft::Json::Utilities::DynamicUtils_BinderWrapper;
+    pub fn GetDynamicMemberNames(
+        dynamicProvider: quest_hook::libil2cpp::Gc<
+            crate::System::Dynamic::IDynamicMetaObjectProvider,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetDynamicMemberNames", (dynamicProvider))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "Newtonsoft+Json+Utilities+DynamicUtils")]
 impl quest_hook::libil2cpp::ObjectType
@@ -70,6 +89,57 @@ impl crate::Newtonsoft::Json::Utilities::DynamicUtils_BinderWrapper {
     pub const CSharpArgumentInfoTypeName: &'static str = "Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo, Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a";
     pub const CSharpAssemblyName: &'static str = "Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a";
     pub const CSharpBinderFlagsTypeName: &'static str = "Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags, Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a";
+    pub fn CreateMemberCalls() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateMemberCalls", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateSharpArgumentInfoArray(
+        values: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("CreateSharpArgumentInfoArray", (values))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetMember(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        context: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::CompilerServices::CallSiteBinder,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::CompilerServices::CallSiteBinder,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("GetMember", (name, context))?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn Init() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("Init", ())?;
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetMember(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        context: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::CompilerServices::CallSiteBinder,
+        >,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::CompilerServices::CallSiteBinder,
+        > = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("SetMember", (name, context))?;
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "Newtonsoft+Json+Utilities+DynamicUtils+BinderWrapper")]
 impl quest_hook::libil2cpp::ObjectType

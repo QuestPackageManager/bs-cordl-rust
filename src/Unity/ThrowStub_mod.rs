@@ -22,7 +22,15 @@ impl std::ops::DerefMut for crate::Unity::ThrowStub {
     }
 }
 #[cfg(feature = "Unity+ThrowStub")]
-impl crate::Unity::ThrowStub {}
+impl crate::Unity::ThrowStub {
+    pub fn ThrowNotSupportedException() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("ThrowNotSupportedException", ())?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "Unity+ThrowStub")]
 impl quest_hook::libil2cpp::ObjectType for crate::Unity::ThrowStub {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
