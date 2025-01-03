@@ -35,8 +35,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::StandardLevelFailedControlle
 impl crate::GlobalNamespace::StandardLevelFailedController {
     #[cfg(feature = "StandardLevelFailedController+InitData")]
     pub type InitData = crate::GlobalNamespace::StandardLevelFailedController_InitData;
-    #[cfg(feature = "StandardLevelFailedController+_LevelFailedCoroutine_d__13")]
-    pub type _LevelFailedCoroutine_d__13 = crate::GlobalNamespace::StandardLevelFailedController__LevelFailedCoroutine_d__13;
     pub fn HandleLevelFailed(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

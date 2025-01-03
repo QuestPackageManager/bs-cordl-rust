@@ -31,8 +31,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::ScreenCaptureAfterDelay {
 impl crate::GlobalNamespace::ScreenCaptureAfterDelay {
     #[cfg(feature = "ScreenCaptureAfterDelay+InitData")]
     pub type InitData = crate::GlobalNamespace::ScreenCaptureAfterDelay_InitData;
-    #[cfg(feature = "ScreenCaptureAfterDelay+_Start_d__6")]
-    pub type _Start_d__6 = crate::GlobalNamespace::ScreenCaptureAfterDelay__Start_d__6;
     pub fn HandleMainEffectControllerAfterImageEffectEvent(
         &mut self,
         renderTexture: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,

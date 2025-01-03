@@ -24,34 +24,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::UnityAsyncHelper {
 }
 #[cfg(feature = "UnityAsyncHelper")]
 impl crate::GlobalNamespace::UnityAsyncHelper {
-    #[cfg(feature = "UnityAsyncHelper+_InvokeSafe_d__0")]
-    pub type _InvokeSafe_d__0 = crate::GlobalNamespace::UnityAsyncHelper__InvokeSafe_d__0;
-    #[cfg(feature = "UnityAsyncHelper+_InvokeSafe_d__1_1")]
-    pub type _InvokeSafe_d__1_1<A: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::UnityAsyncHelper__InvokeSafe_d__1_1<
-        A,
-    >;
-    #[cfg(feature = "UnityAsyncHelper+_InvokeSafe_d__2_2")]
-    pub type _InvokeSafe_d__2_2<
-        A: quest_hook::libil2cpp::Type,
-        B: quest_hook::libil2cpp::Type,
-    > = crate::GlobalNamespace::UnityAsyncHelper__InvokeSafe_d__2_2<A, B>;
-    #[cfg(feature = "UnityAsyncHelper+_InvokeSafe_d__3_3")]
-    pub type _InvokeSafe_d__3_3<
-        A: quest_hook::libil2cpp::Type,
-        B: quest_hook::libil2cpp::Type,
-        C: quest_hook::libil2cpp::Type,
-    > = crate::GlobalNamespace::UnityAsyncHelper__InvokeSafe_d__3_3<A, B, C>;
-    #[cfg(feature = "UnityAsyncHelper+_InvokeSafe_d__4_4")]
-    pub type _InvokeSafe_d__4_4<
-        A: quest_hook::libil2cpp::Type,
-        B: quest_hook::libil2cpp::Type,
-        C: quest_hook::libil2cpp::Type,
-        D: quest_hook::libil2cpp::Type,
-    > = crate::GlobalNamespace::UnityAsyncHelper__InvokeSafe_d__4_4<A, B, C, D>;
-    #[cfg(feature = "UnityAsyncHelper+__c__DisplayClass5_0")]
-    pub type __c__DisplayClass5_0 = crate::GlobalNamespace::UnityAsyncHelper___c__DisplayClass5_0;
-    #[cfg(feature = "UnityAsyncHelper+__c__DisplayClass6_0")]
-    pub type __c__DisplayClass6_0 = crate::GlobalNamespace::UnityAsyncHelper___c__DisplayClass6_0;
     pub fn InvokeSafe_Func_1_0(
         asyncTask: quest_hook::libil2cpp::Gc<
             crate::System::Func_1<*mut crate::System::Threading::Tasks::Task>,

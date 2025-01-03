@@ -41,18 +41,6 @@ for crate::UnityEngine::AddressableAssets::Initialization::InitializationOperati
 }
 #[cfg(feature = "UnityEngine+AddressableAssets+Initialization+InitializationOperation")]
 impl crate::UnityEngine::AddressableAssets::Initialization::InitializationOperation {
-    #[cfg(
-        feature = "UnityEngine+AddressableAssets+Initialization+InitializationOperation+__c"
-    )]
-    pub type __c = crate::UnityEngine::AddressableAssets::Initialization::InitializationOperation___c;
-    #[cfg(
-        feature = "UnityEngine+AddressableAssets+Initialization+InitializationOperation+__c__DisplayClass16_0"
-    )]
-    pub type __c__DisplayClass16_0 = crate::UnityEngine::AddressableAssets::Initialization::InitializationOperation___c__DisplayClass16_0;
-    #[cfg(
-        feature = "UnityEngine+AddressableAssets+Initialization+InitializationOperation+__c__DisplayClass18_0"
-    )]
-    pub type __c__DisplayClass18_0 = crate::UnityEngine::AddressableAssets::Initialization::InitializationOperation___c__DisplayClass18_0;
     pub fn CreateInitializationOperation(
         aa: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::AddressableAssets::AddressablesImpl,

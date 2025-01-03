@@ -39,10 +39,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::AnnotatedBeatmapLevelCollect
 }
 #[cfg(feature = "AnnotatedBeatmapLevelCollectionCell")]
 impl crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionCell {
-    #[cfg(
-        feature = "AnnotatedBeatmapLevelCollectionCell+_RefreshAvailabilityAsync_d__23"
-    )]
-    pub type _RefreshAvailabilityAsync_d__23 = crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionCell__RefreshAvailabilityAsync_d__23;
     pub fn CancelAsyncOperations(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

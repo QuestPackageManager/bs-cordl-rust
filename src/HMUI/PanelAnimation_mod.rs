@@ -23,8 +23,6 @@ impl std::ops::DerefMut for crate::HMUI::PanelAnimation {
 }
 #[cfg(feature = "HMUI+PanelAnimation")]
 impl crate::HMUI::PanelAnimation {
-    #[cfg(feature = "HMUI+PanelAnimation+_AnimationCoroutine_d__1")]
-    pub type _AnimationCoroutine_d__1 = crate::HMUI::PanelAnimation__AnimationCoroutine_d__1;
     pub fn AnimationCoroutine(
         &mut self,
         duration: f32,

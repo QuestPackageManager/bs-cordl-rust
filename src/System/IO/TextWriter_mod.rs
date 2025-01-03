@@ -31,8 +31,6 @@ impl crate::System::IO::TextWriter {
     pub type NullTextWriter = crate::GlobalNamespace::TextWriter_NullTextWriter;
     #[cfg(feature = "System+IO+TextWriter+SyncTextWriter")]
     pub type SyncTextWriter = crate::GlobalNamespace::TextWriter_SyncTextWriter;
-    #[cfg(feature = "System+IO+TextWriter+__c")]
-    pub type __c = crate::System::IO::TextWriter___c;
     pub fn Close(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

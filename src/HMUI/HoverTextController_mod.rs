@@ -30,10 +30,6 @@ impl std::ops::DerefMut for crate::HMUI::HoverTextController {
 }
 #[cfg(feature = "HMUI+HoverTextController")]
 impl crate::HMUI::HoverTextController {
-    #[cfg(feature = "HMUI+HoverTextController+_HideTextCoroutine_d__12")]
-    pub type _HideTextCoroutine_d__12 = crate::HMUI::HoverTextController__HideTextCoroutine_d__12;
-    #[cfg(feature = "HMUI+HoverTextController+_ShowTextCoroutine_d__10")]
-    pub type _ShowTextCoroutine_d__10 = crate::HMUI::HoverTextController__ShowTextCoroutine_d__10;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

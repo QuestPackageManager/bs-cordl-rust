@@ -37,8 +37,6 @@ impl crate::GlobalNamespace::FileSystemFileStorage {
     pub type LoadFileCommand = crate::GlobalNamespace::FileSystemFileStorage_LoadFileCommand;
     #[cfg(feature = "FileSystemFileStorage+SaveFileCommand")]
     pub type SaveFileCommand = crate::GlobalNamespace::FileSystemFileStorage_SaveFileCommand;
-    #[cfg(feature = "FileSystemFileStorage+__c")]
-    pub type __c = crate::GlobalNamespace::FileSystemFileStorage___c;
     pub fn DeleteFileAsync(
         &mut self,
         fileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

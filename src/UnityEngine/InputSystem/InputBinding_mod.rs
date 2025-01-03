@@ -40,8 +40,6 @@ impl crate::UnityEngine::InputSystem::InputBinding {
     pub type Flags = crate::UnityEngine::InputSystem::InputBinding_Flags;
     #[cfg(feature = "UnityEngine+InputSystem+InputBinding+MatchOptions")]
     pub type MatchOptions = crate::UnityEngine::InputSystem::InputBinding_MatchOptions;
-    #[cfg(feature = "UnityEngine+InputSystem+InputBinding+__c")]
-    pub type __c = crate::UnityEngine::InputSystem::InputBinding___c;
     pub fn Equals_Il2CppObject1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

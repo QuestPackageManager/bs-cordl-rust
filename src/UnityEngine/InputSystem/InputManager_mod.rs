@@ -114,14 +114,6 @@ impl crate::UnityEngine::InputSystem::InputManager {
     pub type StateChangeMonitorTimeout = crate::UnityEngine::InputSystem::InputManager_StateChangeMonitorTimeout;
     #[cfg(feature = "UnityEngine+InputSystem+InputManager+StateChangeMonitorsForDevice")]
     pub type StateChangeMonitorsForDevice = crate::UnityEngine::InputSystem::InputManager_StateChangeMonitorsForDevice;
-    #[cfg(feature = "UnityEngine+InputSystem+InputManager+_ListControlLayouts_d__75")]
-    pub type _ListControlLayouts_d__75 = crate::UnityEngine::InputSystem::InputManager__ListControlLayouts_d__75;
-    #[cfg(feature = "UnityEngine+InputSystem+InputManager+__c")]
-    pub type __c = crate::UnityEngine::InputSystem::InputManager___c;
-    #[cfg(feature = "UnityEngine+InputSystem+InputManager+__c__60_1")]
-    pub type __c__60_1<TDevice: quest_hook::libil2cpp::Type> = crate::UnityEngine::InputSystem::InputManager___c__60_1<
-        TDevice,
-    >;
     pub fn AddAvailableDevicesMatchingDescription(
         &mut self,
         matcher: crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher,

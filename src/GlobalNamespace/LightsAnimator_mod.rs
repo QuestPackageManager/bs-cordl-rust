@@ -32,8 +32,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::LightsAnimator {
 }
 #[cfg(feature = "LightsAnimator")]
 impl crate::GlobalNamespace::LightsAnimator {
-    #[cfg(feature = "LightsAnimator+_DisableDirectionalLightsCoroutine_d__11")]
-    pub type _DisableDirectionalLightsCoroutine_d__11 = crate::GlobalNamespace::LightsAnimator__DisableDirectionalLightsCoroutine_d__11;
     pub fn AnimateToColor(
         &mut self,
         color: crate::UnityEngine::Color,

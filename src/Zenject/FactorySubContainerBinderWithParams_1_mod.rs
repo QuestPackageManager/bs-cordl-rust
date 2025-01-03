@@ -31,18 +31,6 @@ for crate::Zenject::FactorySubContainerBinderWithParams_1<TContract> {
 impl<
     TContract: quest_hook::libil2cpp::Type,
 > crate::Zenject::FactorySubContainerBinderWithParams_1<TContract> {
-    #[cfg(
-        feature = "Zenject+FactorySubContainerBinderWithParams_1+__c__DisplayClass4_0"
-    )]
-    pub type __c__DisplayClass4_0 = crate::Zenject::FactorySubContainerBinderWithParams_1___c__DisplayClass4_0<
-        TContract,
-    >;
-    #[cfg(
-        feature = "Zenject+FactorySubContainerBinderWithParams_1+__c__DisplayClass8_0"
-    )]
-    pub type __c__DisplayClass8_0 = crate::Zenject::FactorySubContainerBinderWithParams_1___c__DisplayClass8_0<
-        TContract,
-    >;
     pub fn ByNewContextPrefabResource_Il2CppString0<TInstaller>(
         &mut self,
         resourcePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

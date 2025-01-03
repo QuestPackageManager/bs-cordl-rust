@@ -31,8 +31,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::AudioPitchGainEffect {
 }
 #[cfg(feature = "AudioPitchGainEffect")]
 impl crate::GlobalNamespace::AudioPitchGainEffect {
-    #[cfg(feature = "AudioPitchGainEffect+_StartEffectCoroutine_d__8")]
-    pub type _StartEffectCoroutine_d__8 = crate::GlobalNamespace::AudioPitchGainEffect__StartEffectCoroutine_d__8;
     pub fn InterruptEffect(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

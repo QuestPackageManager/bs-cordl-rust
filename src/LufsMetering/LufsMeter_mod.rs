@@ -31,8 +31,6 @@ impl std::ops::DerefMut for crate::LufsMetering::LufsMeter {
 #[cfg(feature = "LufsMetering+LufsMeter")]
 impl crate::LufsMetering::LufsMeter {
     pub const kBlockSize: f32 = 0.4f32;
-    #[cfg(feature = "LufsMetering+LufsMeter+__c")]
-    pub type __c = crate::LufsMetering::LufsMeter___c;
     pub fn AnalyzeClipLoudness(
         &mut self,
         clip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,

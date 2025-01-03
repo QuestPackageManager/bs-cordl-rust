@@ -40,20 +40,6 @@ impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
     pub const kMatchmakingTimeoutMs: i32 = 120000i32;
     pub const kMaxPingCount: i32 = 10i32;
     pub const kPingFrequencyMs: i32 = 3000i32;
-    #[cfg(
-        feature = "BGNet+Core+GameLift+GameLiftPlayerSessionProvider+_GetGameLiftPlayerSessionInfo_d__15"
-    )]
-    pub type _GetGameLiftPlayerSessionInfo_d__15 = crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider__GetGameLiftPlayerSessionInfo_d__15;
-    #[cfg(
-        feature = "BGNet+Core+GameLift+GameLiftPlayerSessionProvider+_PingAllAwsGameLiftRegions_d__16"
-    )]
-    pub type _PingAllAwsGameLiftRegions_d__16 = crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider__PingAllAwsGameLiftRegions_d__16;
-    #[cfg(
-        feature = "BGNet+Core+GameLift+GameLiftPlayerSessionProvider+_PingRegionAsync_d__18"
-    )]
-    pub type _PingRegionAsync_d__18 = crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider__PingRegionAsync_d__18;
-    #[cfg(feature = "BGNet+Core+GameLift+GameLiftPlayerSessionProvider+__c")]
-    pub type __c = crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider___c;
     pub fn GetAverageLatencies(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

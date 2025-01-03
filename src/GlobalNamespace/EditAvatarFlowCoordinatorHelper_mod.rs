@@ -36,10 +36,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::EditAvatarFlowCoordinatorHel
 impl crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper {
     #[cfg(feature = "EditAvatarFlowCoordinatorHelper+FinishAction")]
     pub type FinishAction = crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction;
-    #[cfg(feature = "EditAvatarFlowCoordinatorHelper+_Initialize_d__13")]
-    pub type _Initialize_d__13 = crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper__Initialize_d__13;
-    #[cfg(feature = "EditAvatarFlowCoordinatorHelper+_Show_d__12")]
-    pub type _Show_d__12 = crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper__Show_d__12;
     pub fn HandleAvatarEditorFlowCoordinatorDidFinish(
         &mut self,
         flowCoordinator: quest_hook::libil2cpp::Gc<

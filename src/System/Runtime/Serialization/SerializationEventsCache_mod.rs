@@ -27,8 +27,6 @@ for crate::System::Runtime::Serialization::SerializationEventsCache {
 }
 #[cfg(feature = "System+Runtime+Serialization+SerializationEventsCache")]
 impl crate::System::Runtime::Serialization::SerializationEventsCache {
-    #[cfg(feature = "System+Runtime+Serialization+SerializationEventsCache+__c")]
-    pub type __c = crate::System::Runtime::Serialization::SerializationEventsCache___c;
     pub fn GetSerializationEventsForType(
         t: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<

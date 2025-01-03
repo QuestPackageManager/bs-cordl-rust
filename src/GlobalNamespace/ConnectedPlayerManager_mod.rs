@@ -110,8 +110,6 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
     pub type PongPacket = crate::GlobalNamespace::ConnectedPlayerManager_PongPacket;
     #[cfg(feature = "ConnectedPlayerManager+SyncTimePacket")]
     pub type SyncTimePacket = crate::GlobalNamespace::ConnectedPlayerManager_SyncTimePacket;
-    #[cfg(feature = "ConnectedPlayerManager+_InitializePlayerEncryption_d__132")]
-    pub type _InitializePlayerEncryption_d__132 = crate::GlobalNamespace::ConnectedPlayerManager__InitializePlayerEncryption_d__132;
     pub fn AddPlayer(
         &mut self,
         player: quest_hook::libil2cpp::Gc<

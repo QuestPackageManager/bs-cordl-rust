@@ -30,8 +30,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::KnucklesUnityXRHapticsHandle
 #[cfg(feature = "KnucklesUnityXRHapticsHandler")]
 impl crate::GlobalNamespace::KnucklesUnityXRHapticsHandler {
     pub const kRate: f32 = 0.0125f32;
-    #[cfg(feature = "KnucklesUnityXRHapticsHandler+_HapticsCoroutine_d__9")]
-    pub type _HapticsCoroutine_d__9 = crate::GlobalNamespace::KnucklesUnityXRHapticsHandler__HapticsCoroutine_d__9;
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

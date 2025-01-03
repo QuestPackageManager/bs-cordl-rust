@@ -24,8 +24,6 @@ impl std::ops::DerefMut for crate::HMUI::StackedController {
 }
 #[cfg(feature = "HMUI+StackedController")]
 impl crate::HMUI::StackedController {
-    #[cfg(feature = "HMUI+StackedController+__c__DisplayClass5_0")]
-    pub type __c__DisplayClass5_0 = crate::HMUI::StackedController___c__DisplayClass5_0;
     pub fn LayoutViewControllers(
         &mut self,
         viewControllers: quest_hook::libil2cpp::Gc<

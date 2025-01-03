@@ -52,16 +52,6 @@ impl crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader {
         feature = "BeatmapDataLoaderVersion2_6_0AndEarlier+BeatmapDataLoader+WaypointConverter"
     )]
     pub type WaypointConverter = crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_WaypointConverter;
-    #[cfg(feature = "BeatmapDataLoaderVersion2_6_0AndEarlier+BeatmapDataLoader+__c")]
-    pub type __c = crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader___c;
-    #[cfg(
-        feature = "BeatmapDataLoaderVersion2_6_0AndEarlier+BeatmapDataLoader+__c__DisplayClass1_0"
-    )]
-    pub type __c__DisplayClass1_0 = crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader___c__DisplayClass1_0;
-    #[cfg(
-        feature = "BeatmapDataLoaderVersion2_6_0AndEarlier+BeatmapDataLoader+__c__DisplayClass2_0"
-    )]
-    pub type __c__DisplayClass2_0 = crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader___c__DisplayClass2_0;
     pub fn BeatmapSaveDataAreSorted(
         beatmapSaveData: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IReadOnlyList_1<

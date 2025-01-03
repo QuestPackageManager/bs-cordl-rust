@@ -30,16 +30,6 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
         feature = "UnityEngine+ProBuilder+MeshOperations+MeshValidation+AttributeValidationStrategy"
     )]
     pub type AttributeValidationStrategy = crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation_AttributeValidationStrategy;
-    #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+MeshValidation+__c")]
-    pub type __c = crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation___c;
-    #[cfg(
-        feature = "UnityEngine+ProBuilder+MeshOperations+MeshValidation+__c__DisplayClass10_0"
-    )]
-    pub type __c__DisplayClass10_0 = crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation___c__DisplayClass10_0;
-    #[cfg(
-        feature = "UnityEngine+ProBuilder+MeshOperations+MeshValidation+__c__DisplayClass5_0"
-    )]
-    pub type __c__DisplayClass5_0 = crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation___c__DisplayClass5_0;
     pub fn CollectFaceGroups(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         face: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,

@@ -29,8 +29,6 @@ impl crate::GlobalNamespace::PerformanceToolLauncher {
     pub type Assets = crate::GlobalNamespace::PerformanceToolLauncher_Assets;
     #[cfg(feature = "PerformanceToolLauncher+OverrideConfig")]
     pub type OverrideConfig = crate::GlobalNamespace::PerformanceToolLauncher_OverrideConfig;
-    #[cfg(feature = "PerformanceToolLauncher+__c__DisplayClass4_0")]
-    pub type __c__DisplayClass4_0 = crate::GlobalNamespace::PerformanceToolLauncher___c__DisplayClass4_0;
     pub fn Initialize(
         &mut self,
         settingsManager: quest_hook::libil2cpp::Gc<

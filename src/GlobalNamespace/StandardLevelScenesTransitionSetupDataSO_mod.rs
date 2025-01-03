@@ -43,8 +43,6 @@ for crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
 }
 #[cfg(feature = "StandardLevelScenesTransitionSetupDataSO")]
 impl crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO {
-    #[cfg(feature = "StandardLevelScenesTransitionSetupDataSO+__c__DisplayClass48_0")]
-    pub type __c__DisplayClass48_0 = crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO___c__DisplayClass48_0;
     pub fn Finish(
         &mut self,
         levelCompletionResults: quest_hook::libil2cpp::Gc<

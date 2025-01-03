@@ -67,8 +67,6 @@ impl crate::GlobalNamespace::GameLiftConnectionManager {
     pub type GameLiftConnectionManagerParamsBase = crate::GlobalNamespace::GameLiftConnectionManager_GameLiftConnectionManagerParamsBase;
     #[cfg(feature = "GameLiftConnectionManager+StartClientParams")]
     pub type StartClientParams = crate::GlobalNamespace::GameLiftConnectionManager_StartClientParams;
-    #[cfg(feature = "GameLiftConnectionManager+_GameLiftConnectToServer_d__81")]
-    pub type _GameLiftConnectToServer_d__81 = crate::GlobalNamespace::GameLiftConnectionManager__GameLiftConnectToServer_d__81;
     pub fn Disconnect(
         &mut self,
         disconnectedReason: crate::GlobalNamespace::DisconnectedReason,

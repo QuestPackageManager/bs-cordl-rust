@@ -46,8 +46,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::MainMenuViewController {
 impl crate::GlobalNamespace::MainMenuViewController {
     #[cfg(feature = "MainMenuViewController+MenuButton")]
     pub type MenuButton = crate::GlobalNamespace::MainMenuViewController_MenuButton;
-    #[cfg(feature = "MainMenuViewController+_LoadMusicPackPromoDataAsync_d__21")]
-    pub type _LoadMusicPackPromoDataAsync_d__21 = crate::GlobalNamespace::MainMenuViewController__LoadMusicPackPromoDataAsync_d__21;
     pub fn DidActivate(
         &mut self,
         firstActivation: bool,

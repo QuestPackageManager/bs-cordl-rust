@@ -46,14 +46,6 @@ impl crate::Tayx::Graphy::GraphyDebugger {
     pub type DebugVariable = crate::Tayx::Graphy::GraphyDebugger_DebugVariable;
     #[cfg(feature = "Tayx+Graphy+GraphyDebugger+MessageType")]
     pub type MessageType = crate::Tayx::Graphy::GraphyDebugger_MessageType;
-    #[cfg(feature = "Tayx+Graphy+GraphyDebugger+__c")]
-    pub type __c = crate::Tayx::Graphy::GraphyDebugger___c;
-    #[cfg(feature = "Tayx+Graphy+GraphyDebugger+__c__DisplayClass18_0")]
-    pub type __c__DisplayClass18_0 = crate::Tayx::Graphy::GraphyDebugger___c__DisplayClass18_0;
-    #[cfg(feature = "Tayx+Graphy+GraphyDebugger+__c__DisplayClass19_0")]
-    pub type __c__DisplayClass19_0 = crate::Tayx::Graphy::GraphyDebugger___c__DisplayClass19_0;
-    #[cfg(feature = "Tayx+Graphy+GraphyDebugger+__c__DisplayClass21_0")]
-    pub type __c__DisplayClass21_0 = crate::Tayx::Graphy::GraphyDebugger___c__DisplayClass21_0;
     pub fn AddCallbackToAllDebugPacketWithId(
         &mut self,
         callback: quest_hook::libil2cpp::Gc<crate::System::Action>,

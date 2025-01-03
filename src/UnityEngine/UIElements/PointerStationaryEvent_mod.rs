@@ -28,8 +28,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::PointerStationaryEve
 }
 #[cfg(feature = "UnityEngine+UIElements+PointerStationaryEvent")]
 impl crate::UnityEngine::UIElements::PointerStationaryEvent {
-    #[cfg(feature = "UnityEngine+UIElements+PointerStationaryEvent+__c")]
-    pub type __c = crate::UnityEngine::UIElements::PointerStationaryEvent___c;
     pub fn Init(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

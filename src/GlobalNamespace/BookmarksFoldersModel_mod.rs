@@ -30,8 +30,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BookmarksFoldersModel {
 }
 #[cfg(feature = "BookmarksFoldersModel")]
 impl crate::GlobalNamespace::BookmarksFoldersModel {
-    #[cfg(feature = "BookmarksFoldersModel+__c")]
-    pub type __c = crate::GlobalNamespace::BookmarksFoldersModel___c;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

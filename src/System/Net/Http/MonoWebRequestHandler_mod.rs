@@ -48,10 +48,6 @@ impl std::ops::DerefMut for crate::System::Net::Http::MonoWebRequestHandler {
 }
 #[cfg(feature = "System+Net+Http+MonoWebRequestHandler")]
 impl crate::System::Net::Http::MonoWebRequestHandler {
-    #[cfg(feature = "System+Net+Http+MonoWebRequestHandler+_SendAsync_d__99")]
-    pub type _SendAsync_d__99 = crate::System::Net::Http::MonoWebRequestHandler__SendAsync_d__99;
-    #[cfg(feature = "System+Net+Http+MonoWebRequestHandler+__c")]
-    pub type __c = crate::System::Net::Http::MonoWebRequestHandler___c;
     pub fn CreateResponseMessage(
         &mut self,
         wr: quest_hook::libil2cpp::Gc<crate::System::Net::HttpWebResponse>,

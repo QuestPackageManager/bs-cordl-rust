@@ -768,10 +768,7 @@ for crate::System::Threading::Tasks::Task_1_TaskWhenAnyCast<TResult> {
 #[cfg(feature = "System+Threading+Tasks+Task_1+TaskWhenAnyCast")]
 impl<
     TResult: quest_hook::libil2cpp::Type,
-> crate::System::Threading::Tasks::Task_1_TaskWhenAnyCast<TResult> {
-    #[cfg(feature = "System+Threading+Tasks+Task_1+TaskWhenAnyCast+__c")]
-    pub type __c = crate::System::Threading::Tasks::TaskWhenAnyCast_Task_1___c<TResult>;
-}
+> crate::System::Threading::Tasks::Task_1_TaskWhenAnyCast<TResult> {}
 #[cfg(feature = "System+Threading+Tasks+Task_1+TaskWhenAnyCast")]
 impl<TResult: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
 for crate::System::Threading::Tasks::Task_1_TaskWhenAnyCast<TResult> {

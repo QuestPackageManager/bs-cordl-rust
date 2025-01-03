@@ -24,8 +24,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::ComputedTransitionUt
 }
 #[cfg(feature = "UnityEngine+UIElements+ComputedTransitionUtils")]
 impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
-    #[cfg(feature = "UnityEngine+UIElements+ComputedTransitionUtils+__c")]
-    pub type __c = crate::UnityEngine::UIElements::ComputedTransitionUtils___c;
     pub fn ComputeTransitionPropertyData(
         computedStyle: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::UIElements::ComputedStyle,

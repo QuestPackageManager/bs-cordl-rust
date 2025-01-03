@@ -24,8 +24,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::VisualElementUtils {
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualElementUtils")]
 impl crate::UnityEngine::UIElements::VisualElementUtils {
-    #[cfg(feature = "UnityEngine+UIElements+VisualElementUtils+__c")]
-    pub type __c = crate::UnityEngine::UIElements::VisualElementUtils___c;
     pub fn AssignInspectorStyleIfNecessary(
         element: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::VisualElement,

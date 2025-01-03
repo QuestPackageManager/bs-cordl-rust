@@ -24,10 +24,6 @@ impl std::ops::DerefMut for crate::System::Threading::ThreadPool {
 }
 #[cfg(feature = "System+Threading+ThreadPool")]
 impl crate::System::Threading::ThreadPool {
-    #[cfg(feature = "System+Threading+ThreadPool+__c__DisplayClass17_0_1")]
-    pub type __c__DisplayClass17_0_1<TState: quest_hook::libil2cpp::Type> = crate::System::Threading::ThreadPool___c__DisplayClass17_0_1<
-        TState,
-    >;
     pub fn EnsureVMInitialized() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     > {

@@ -27,8 +27,6 @@ for crate::UnityEngine::ProBuilder::MeshOperations::InternalMeshUtility {
 }
 #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+InternalMeshUtility")]
 impl crate::UnityEngine::ProBuilder::MeshOperations::InternalMeshUtility {
-    #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+InternalMeshUtility+__c")]
-    pub type __c = crate::UnityEngine::ProBuilder::MeshOperations::InternalMeshUtility___c;
     pub fn AverageNormalWithIndexes(
         shared: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SharedVertex>,
         all: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,

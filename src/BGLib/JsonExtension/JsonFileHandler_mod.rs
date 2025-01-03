@@ -24,10 +24,6 @@ impl std::ops::DerefMut for crate::BGLib::JsonExtension::JsonFileHandler {
 }
 #[cfg(feature = "BGLib+JsonExtension+JsonFileHandler")]
 impl crate::BGLib::JsonExtension::JsonFileHandler {
-    #[cfg(feature = "BGLib+JsonExtension+JsonFileHandler+__c__DisplayClass0_0_1")]
-    pub type __c__DisplayClass0_0_1<T: quest_hook::libil2cpp::Type> = crate::BGLib::JsonExtension::JsonFileHandler___c__DisplayClass0_0_1<
-        T,
-    >;
     pub fn ReadFromFile_Il2CppString0<T>(
         filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<T>

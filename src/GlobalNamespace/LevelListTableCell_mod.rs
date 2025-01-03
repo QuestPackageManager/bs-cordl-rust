@@ -45,10 +45,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::LevelListTableCell {
 }
 #[cfg(feature = "LevelListTableCell")]
 impl crate::GlobalNamespace::LevelListTableCell {
-    #[cfg(feature = "LevelListTableCell+_RefreshAvailabilityAsync_d__26")]
-    pub type _RefreshAvailabilityAsync_d__26 = crate::GlobalNamespace::LevelListTableCell__RefreshAvailabilityAsync_d__26;
-    #[cfg(feature = "LevelListTableCell+_SetDataFromLevelAsync_d__21")]
-    pub type _SetDataFromLevelAsync_d__21 = crate::GlobalNamespace::LevelListTableCell__SetDataFromLevelAsync_d__21;
     pub fn CancelAsyncOperations(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

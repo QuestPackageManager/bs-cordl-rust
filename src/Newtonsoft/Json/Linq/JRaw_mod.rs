@@ -24,8 +24,6 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Linq::JRaw {
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JRaw")]
 impl crate::Newtonsoft::Json::Linq::JRaw {
-    #[cfg(feature = "Newtonsoft+Json+Linq+JRaw+_CreateAsync_d__0")]
-    pub type _CreateAsync_d__0 = crate::Newtonsoft::Json::Linq::JRaw__CreateAsync_d__0;
     pub fn CloneToken(
         &mut self,
         settings: quest_hook::libil2cpp::Gc<

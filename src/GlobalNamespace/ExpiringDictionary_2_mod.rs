@@ -53,11 +53,6 @@ impl<
     pub const kMaxReusableEntries: i32 = 1024i32;
     #[cfg(feature = "ExpiringDictionary_2+Entry")]
     pub type Entry = crate::GlobalNamespace::ExpiringDictionary_2_Entry<TKey, TValue>;
-    #[cfg(feature = "ExpiringDictionary_2+_Enumerate_d__14")]
-    pub type _Enumerate_d__14 = crate::GlobalNamespace::ExpiringDictionary_2__Enumerate_d__14<
-        TKey,
-        TValue,
-    >;
     pub fn Add(
         &mut self,
         key: TKey,

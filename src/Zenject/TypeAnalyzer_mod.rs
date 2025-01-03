@@ -29,8 +29,6 @@ impl crate::Zenject::TypeAnalyzer {
     pub const ReflectionBakingGetInjectInfoMethodName: &'static str = "__zenCreateInjectTypeInfo";
     pub const ReflectionBakingInjectMethodPrefix: &'static str = "__zenInjectMethod";
     pub const ReflectionBakingPropertySetterPrefix: &'static str = "__zenPropertySetter";
-    #[cfg(feature = "Zenject+TypeAnalyzer+__c__DisplayClass23_0")]
-    pub type __c__DisplayClass23_0 = crate::Zenject::TypeAnalyzer___c__DisplayClass23_0;
     pub fn CreateTypeInfoFromReflection(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<

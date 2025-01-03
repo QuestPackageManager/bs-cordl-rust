@@ -24,12 +24,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::FlowCoordinatorAvatarsHelper
 }
 #[cfg(feature = "FlowCoordinatorAvatarsHelper")]
 impl crate::GlobalNamespace::FlowCoordinatorAvatarsHelper {
-    #[cfg(
-        feature = "FlowCoordinatorAvatarsHelper+_HasUserSelectedAvatarSystemWithCreatedAvatar_d__0"
-    )]
-    pub type _HasUserSelectedAvatarSystemWithCreatedAvatar_d__0 = crate::GlobalNamespace::FlowCoordinatorAvatarsHelper__HasUserSelectedAvatarSystemWithCreatedAvatar_d__0;
-    #[cfg(feature = "FlowCoordinatorAvatarsHelper+__c__DisplayClass0_0")]
-    pub type __c__DisplayClass0_0 = crate::GlobalNamespace::FlowCoordinatorAvatarsHelper___c__DisplayClass0_0;
     pub fn HasUserSelectedAvatarSystemWithCreatedAvatar(
         avatarSystemCollection: quest_hook::libil2cpp::Gc<
             crate::BeatSaber::AvatarCore::AvatarSystemCollection,

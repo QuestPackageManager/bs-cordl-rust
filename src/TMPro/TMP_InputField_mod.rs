@@ -142,10 +142,6 @@ impl crate::TMPro::TMP_InputField {
     pub type TextSelectionEvent = crate::TMPro::TMP_InputField_TextSelectionEvent;
     #[cfg(feature = "TMPro+TMP_InputField+TouchScreenKeyboardEvent")]
     pub type TouchScreenKeyboardEvent = crate::TMPro::TMP_InputField_TouchScreenKeyboardEvent;
-    #[cfg(feature = "TMPro+TMP_InputField+_CaretBlink_d__276")]
-    pub type _CaretBlink_d__276 = crate::TMPro::TMP_InputField__CaretBlink_d__276;
-    #[cfg(feature = "TMPro+TMP_InputField+_MouseDragOutsideRect_d__294")]
-    pub type _MouseDragOutsideRect_d__294 = crate::TMPro::TMP_InputField__MouseDragOutsideRect_d__294;
     pub fn ActivateInputField(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

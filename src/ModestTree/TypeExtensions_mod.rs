@@ -24,16 +24,6 @@ impl std::ops::DerefMut for crate::ModestTree::TypeExtensions {
 }
 #[cfg(feature = "ModestTree+TypeExtensions")]
 impl crate::ModestTree::TypeExtensions {
-    #[cfg(feature = "ModestTree+TypeExtensions+_GetParentTypes_d__28")]
-    pub type _GetParentTypes_d__28 = crate::ModestTree::TypeExtensions__GetParentTypes_d__28;
-    #[cfg(feature = "ModestTree+TypeExtensions+__c__DisplayClass35_0")]
-    pub type __c__DisplayClass35_0 = crate::ModestTree::TypeExtensions___c__DisplayClass35_0;
-    #[cfg(feature = "ModestTree+TypeExtensions+__c__DisplayClass35_1")]
-    pub type __c__DisplayClass35_1 = crate::ModestTree::TypeExtensions___c__DisplayClass35_1;
-    #[cfg(feature = "ModestTree+TypeExtensions+__c__DisplayClass39_0")]
-    pub type __c__DisplayClass39_0 = crate::ModestTree::TypeExtensions___c__DisplayClass39_0;
-    #[cfg(feature = "ModestTree+TypeExtensions+__c__DisplayClass39_1")]
-    pub type __c__DisplayClass39_1 = crate::ModestTree::TypeExtensions___c__DisplayClass39_1;
     pub fn AllAttributes_MemberInfo0<T>(
         provider: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
     ) -> quest_hook::libil2cpp::Result<

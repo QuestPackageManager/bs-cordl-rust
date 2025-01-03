@@ -28,8 +28,6 @@ impl std::ops::DerefMut for crate::HoudiniEngineUnity::JSONArray {
 }
 #[cfg(feature = "HoudiniEngineUnity+JSONArray")]
 impl crate::HoudiniEngineUnity::JSONArray {
-    #[cfg(feature = "HoudiniEngineUnity+JSONArray+_get_Children_d__22")]
-    pub type _get_Children_d__22 = crate::HoudiniEngineUnity::JSONArray__get_Children_d__22;
     pub fn Add(
         &mut self,
         aKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

@@ -34,10 +34,6 @@ impl crate::System::Threading::SemaphoreSlim {
     pub const NO_MAXIMUM: i32 = 2147483647i32;
     #[cfg(feature = "System+Threading+SemaphoreSlim+TaskNode")]
     pub type TaskNode = crate::System::Threading::SemaphoreSlim_TaskNode;
-    #[cfg(
-        feature = "System+Threading+SemaphoreSlim+_WaitUntilCountOrTimeoutAsync_d__32"
-    )]
-    pub type _WaitUntilCountOrTimeoutAsync_d__32 = crate::System::Threading::SemaphoreSlim__WaitUntilCountOrTimeoutAsync_d__32;
     pub fn CancellationTokenCanceledEventHandler(
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

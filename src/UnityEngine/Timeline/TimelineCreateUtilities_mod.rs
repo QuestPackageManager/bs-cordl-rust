@@ -24,10 +24,6 @@ impl std::ops::DerefMut for crate::UnityEngine::Timeline::TimelineCreateUtilitie
 }
 #[cfg(feature = "UnityEngine+Timeline+TimelineCreateUtilities")]
 impl crate::UnityEngine::Timeline::TimelineCreateUtilities {
-    #[cfg(feature = "UnityEngine+Timeline+TimelineCreateUtilities+__c__DisplayClass0_0")]
-    pub type __c__DisplayClass0_0 = crate::UnityEngine::Timeline::TimelineCreateUtilities___c__DisplayClass0_0;
-    #[cfg(feature = "UnityEngine+Timeline+TimelineCreateUtilities+__c__DisplayClass0_1")]
-    pub type __c__DisplayClass0_1 = crate::UnityEngine::Timeline::TimelineCreateUtilities___c__DisplayClass0_1;
     pub fn CreateAnimationClipForTrack(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         track: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,

@@ -32,8 +32,6 @@ impl crate::GlobalNamespace::MultiplayerStatusModel {
     pub const kRequestTimeoutSeconds: i32 = 60i32;
     #[cfg(feature = "MultiplayerStatusModel+MultiplayerStatusDataFB")]
     pub type MultiplayerStatusDataFB = crate::GlobalNamespace::MultiplayerStatusModel_MultiplayerStatusDataFB;
-    #[cfg(feature = "MultiplayerStatusModel+_GetMultiplayerStatusAsyncInternal_d__9")]
-    pub type _GetMultiplayerStatusAsyncInternal_d__9 = crate::GlobalNamespace::MultiplayerStatusModel__GetMultiplayerStatusAsyncInternal_d__9;
     pub fn GetMultiplayerStatusAsync(
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,

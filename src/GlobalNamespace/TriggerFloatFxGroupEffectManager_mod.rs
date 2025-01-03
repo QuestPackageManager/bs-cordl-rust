@@ -32,8 +32,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::TriggerFloatFxGroupEffectMan
 }
 #[cfg(feature = "TriggerFloatFxGroupEffectManager")]
 impl crate::GlobalNamespace::TriggerFloatFxGroupEffectManager {
-    #[cfg(feature = "TriggerFloatFxGroupEffectManager+__c")]
-    pub type __c = crate::GlobalNamespace::TriggerFloatFxGroupEffectManager___c;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

@@ -57,14 +57,6 @@ impl crate::GlobalNamespace::OVRSceneManager {
     pub type LogForwarder = crate::GlobalNamespace::OVRSceneManager_LogForwarder;
     #[cfg(feature = "OVRSceneManager+RoomLayoutInformation")]
     pub type RoomLayoutInformation = crate::GlobalNamespace::OVRSceneManager_RoomLayoutInformation;
-    #[cfg(feature = "OVRSceneManager+_OnApplicationPause_d__28")]
-    pub type _OnApplicationPause_d__28 = crate::GlobalNamespace::OVRSceneManager__OnApplicationPause_d__28;
-    #[cfg(feature = "OVRSceneManager+_QueryForExistingAnchorsTransform_d__29")]
-    pub type _QueryForExistingAnchorsTransform_d__29 = crate::GlobalNamespace::OVRSceneManager__QueryForExistingAnchorsTransform_d__29;
-    #[cfg(feature = "OVRSceneManager+__c__DisplayClass37_0")]
-    pub type __c__DisplayClass37_0 = crate::GlobalNamespace::OVRSceneManager___c__DisplayClass37_0;
-    #[cfg(feature = "OVRSceneManager+__c__DisplayClass40_0")]
-    pub type __c__DisplayClass40_0 = crate::GlobalNamespace::OVRSceneManager___c__DisplayClass40_0;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

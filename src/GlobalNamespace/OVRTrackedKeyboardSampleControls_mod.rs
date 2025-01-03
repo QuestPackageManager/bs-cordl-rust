@@ -40,8 +40,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRTrackedKeyboardSampleCont
 }
 #[cfg(feature = "OVRTrackedKeyboardSampleControls")]
 impl crate::GlobalNamespace::OVRTrackedKeyboardSampleControls {
-    #[cfg(feature = "OVRTrackedKeyboardSampleControls+_SetShaderCoroutine_d__19")]
-    pub type _SetShaderCoroutine_d__19 = crate::GlobalNamespace::OVRTrackedKeyboardSampleControls__SetShaderCoroutine_d__19;
     pub fn LaunchKeyboardSelection(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

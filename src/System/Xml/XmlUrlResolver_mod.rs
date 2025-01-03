@@ -27,8 +27,6 @@ impl std::ops::DerefMut for crate::System::Xml::XmlUrlResolver {
 }
 #[cfg(feature = "System+Xml+XmlUrlResolver")]
 impl crate::System::Xml::XmlUrlResolver {
-    #[cfg(feature = "System+Xml+XmlUrlResolver+_GetEntityAsync_d__15")]
-    pub type _GetEntityAsync_d__15 = crate::System::Xml::XmlUrlResolver__GetEntityAsync_d__15;
     pub fn GetEntity(
         &mut self,
         absoluteUri: quest_hook::libil2cpp::Gc<crate::System::Uri>,

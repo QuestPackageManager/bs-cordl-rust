@@ -36,10 +36,6 @@ impl crate::GlobalNamespace::IndexFilter {
     pub type IndexFilterLimitAlsoAffectType = crate::GlobalNamespace::IndexFilter_IndexFilterLimitAlsoAffectType;
     #[cfg(feature = "IndexFilter+IndexFilterRandomType")]
     pub type IndexFilterRandomType = crate::GlobalNamespace::IndexFilter_IndexFilterRandomType;
-    #[cfg(feature = "IndexFilter+_GetEnumerator_d__23")]
-    pub type _GetEnumerator_d__23 = crate::GlobalNamespace::IndexFilter__GetEnumerator_d__23;
-    #[cfg(feature = "IndexFilter+_GetValues_d__24")]
-    pub type _GetValues_d__24 = crate::GlobalNamespace::IndexFilter__GetValues_d__24;
     pub fn GetEnumerator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

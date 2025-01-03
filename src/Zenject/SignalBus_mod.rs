@@ -36,16 +36,6 @@ impl std::ops::DerefMut for crate::Zenject::SignalBus {
 }
 #[cfg(feature = "Zenject+SignalBus")]
 impl crate::Zenject::SignalBus {
-    #[cfg(feature = "Zenject+SignalBus+__c")]
-    pub type __c = crate::Zenject::SignalBus___c;
-    #[cfg(feature = "Zenject+SignalBus+__c__DisplayClass25_0_1")]
-    pub type __c__DisplayClass25_0_1<TSignal: quest_hook::libil2cpp::Type> = crate::Zenject::SignalBus___c__DisplayClass25_0_1<
-        TSignal,
-    >;
-    #[cfg(feature = "Zenject+SignalBus+__c__DisplayClass27_0_1")]
-    pub type __c__DisplayClass27_0_1<TSignal: quest_hook::libil2cpp::Type> = crate::Zenject::SignalBus___c__DisplayClass27_0_1<
-        TSignal,
-    >;
     pub fn DeclareSignal_Il2CppObject_Nullable_1_0<T>(
         &mut self,
         identifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

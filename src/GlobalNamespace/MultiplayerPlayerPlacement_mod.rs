@@ -24,8 +24,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerPlayerPlacement {
 }
 #[cfg(feature = "MultiplayerPlayerPlacement")]
 impl crate::GlobalNamespace::MultiplayerPlayerPlacement {
-    #[cfg(feature = "MultiplayerPlayerPlacement+__c")]
-    pub type __c = crate::GlobalNamespace::MultiplayerPlayerPlacement___c;
     pub fn GetAngleBetweenPlayersWithEvenAdjustment(
         numberOfPlayers: i32,
         layout: crate::GlobalNamespace::MultiplayerPlayerLayout,

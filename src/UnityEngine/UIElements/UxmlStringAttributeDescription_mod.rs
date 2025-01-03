@@ -30,8 +30,6 @@ for crate::UnityEngine::UIElements::UxmlStringAttributeDescription {
 }
 #[cfg(feature = "UnityEngine+UIElements+UxmlStringAttributeDescription")]
 impl crate::UnityEngine::UIElements::UxmlStringAttributeDescription {
-    #[cfg(feature = "UnityEngine+UIElements+UxmlStringAttributeDescription+__c")]
-    pub type __c = crate::UnityEngine::UIElements::UxmlStringAttributeDescription___c;
     pub fn GetValueFromBag(
         &mut self,
         bag: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IUxmlAttributes>,

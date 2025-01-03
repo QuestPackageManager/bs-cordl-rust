@@ -44,8 +44,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerLevelFinishedCont
 #[cfg(feature = "MultiplayerLevelFinishedController")]
 impl crate::GlobalNamespace::MultiplayerLevelFinishedController {
     pub const kMinSceneDuration: f32 = 2f32;
-    #[cfg(feature = "MultiplayerLevelFinishedController+_StartLevelFinished_d__20")]
-    pub type _StartLevelFinished_d__20 = crate::GlobalNamespace::MultiplayerLevelFinishedController__StartLevelFinished_d__20;
     pub fn HandlePlayerDidFinish(
         &mut self,
         levelCompletionResults: quest_hook::libil2cpp::Gc<

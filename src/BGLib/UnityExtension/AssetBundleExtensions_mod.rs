@@ -24,10 +24,6 @@ impl std::ops::DerefMut for crate::BGLib::UnityExtension::AssetBundleExtensions 
 }
 #[cfg(feature = "BGLib+UnityExtension+AssetBundleExtensions")]
 impl crate::BGLib::UnityExtension::AssetBundleExtensions {
-    #[cfg(feature = "BGLib+UnityExtension+AssetBundleExtensions+__c__DisplayClass0_0")]
-    pub type __c__DisplayClass0_0 = crate::BGLib::UnityExtension::AssetBundleExtensions___c__DisplayClass0_0;
-    #[cfg(feature = "BGLib+UnityExtension+AssetBundleExtensions+__c__DisplayClass1_0")]
-    pub type __c__DisplayClass1_0 = crate::BGLib::UnityExtension::AssetBundleExtensions___c__DisplayClass1_0;
     pub fn GetAwaiter_AssetBundleCreateRequest0(
         assetBundleCreateRequest: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::AssetBundleCreateRequest,

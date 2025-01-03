@@ -41,10 +41,6 @@ for crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionsL
     feature = "BeatSaber+TrackDefinitions+DataModels+EnvironmentTrackDefinitionsListModel"
 )]
 impl crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionsListModel {
-    #[cfg(
-        feature = "BeatSaber+TrackDefinitions+DataModels+EnvironmentTrackDefinitionsListModel+__c"
-    )]
-    pub type __c = crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionsListModel___c;
     pub fn New(
         environmentTrackDefinitions: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<

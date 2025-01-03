@@ -41,30 +41,6 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
         feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsManager+AddResourceLocatorInput"
     )]
     pub type AddResourceLocatorInput = crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager_AddResourceLocatorInput;
-    #[cfg(
-        feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsManager+_FetchTokenAsync_d__23"
-    )]
-    pub type _FetchTokenAsync_d__23 = crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager__FetchTokenAsync_d__23;
-    #[cfg(
-        feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsManager+_InitializeInternalAsync_d__21"
-    )]
-    pub type _InitializeInternalAsync_d__21 = crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager__InitializeInternalAsync_d__21;
-    #[cfg(feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsManager+_Initialize_d__19")]
-    pub type _Initialize_d__19 = crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager__Initialize_d__19;
-    #[cfg(
-        feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsManager+_UpdateCatalogsAsync_d__24"
-    )]
-    pub type _UpdateCatalogsAsync_d__24 = crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager__UpdateCatalogsAsync_d__24;
-    #[cfg(
-        feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsManager+_UpdateCatalogsInternalAsync_d__25"
-    )]
-    pub type _UpdateCatalogsInternalAsync_d__25 = crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager__UpdateCatalogsInternalAsync_d__25;
-    #[cfg(
-        feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsManager+_WaitInitAsync_d__20"
-    )]
-    pub type _WaitInitAsync_d__20 = crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager__WaitInitAsync_d__20;
-    #[cfg(feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsManager+__c")]
-    pub type __c = crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager___c;
     pub fn ApplyAddressablesOverrides(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

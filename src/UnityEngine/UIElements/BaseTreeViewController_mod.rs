@@ -38,10 +38,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::BaseTreeViewControll
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseTreeViewController")]
 impl crate::UnityEngine::UIElements::BaseTreeViewController {
-    #[cfg(
-        feature = "UnityEngine+UIElements+BaseTreeViewController+__c__DisplayClass20_0"
-    )]
-    pub type __c__DisplayClass20_0 = crate::UnityEngine::UIElements::BaseTreeViewController___c__DisplayClass20_0;
     pub fn CanChangeExpandedState(
         &mut self,
         id: i32,

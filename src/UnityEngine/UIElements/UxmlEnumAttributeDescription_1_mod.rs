@@ -30,8 +30,6 @@ for crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<T> {
-    #[cfg(feature = "UnityEngine+UIElements+UxmlEnumAttributeDescription_1+__c")]
-    pub type __c = crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1___c<T>;
     pub fn ConvertValueToEnum<U>(
         v: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         defaultValue: U,

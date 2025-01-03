@@ -44,8 +44,6 @@ impl crate::GlobalNamespace::EulaViewController {
     pub type ButtonType = crate::GlobalNamespace::EulaViewController_ButtonType;
     #[cfg(feature = "EulaViewController+InitData")]
     pub type InitData = crate::GlobalNamespace::EulaViewController_InitData;
-    #[cfg(feature = "EulaViewController+_EnableButtonsCoroutine_d__22")]
-    pub type _EnableButtonsCoroutine_d__22 = crate::GlobalNamespace::EulaViewController__EnableButtonsCoroutine_d__22;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

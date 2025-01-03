@@ -27,12 +27,6 @@ impl crate::GlobalNamespace::SettingsIO {
     pub const kLegacySettingsPath: &'static str = "settings.cfg";
     pub const kMainSettingsPath: &'static str = "MainSettings.json";
     pub const kSettingsPath: &'static str = "settings.ini";
-    #[cfg(feature = "SettingsIO+_LoadAsync_d__8")]
-    pub type _LoadAsync_d__8 = crate::GlobalNamespace::SettingsIO__LoadAsync_d__8;
-    #[cfg(feature = "SettingsIO+_SaveAsync_d__7")]
-    pub type _SaveAsync_d__7 = crate::GlobalNamespace::SettingsIO__SaveAsync_d__7;
-    #[cfg(feature = "SettingsIO+_WipeAsync_d__6")]
-    pub type _WipeAsync_d__6 = crate::GlobalNamespace::SettingsIO__WipeAsync_d__6;
     pub fn Decode(
         settings: quest_hook::libil2cpp::ByRefMut<crate::BeatSaber::Settings::Settings>,
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

@@ -30,8 +30,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BpmTimeProcessor {
 impl crate::GlobalNamespace::BpmTimeProcessor {
     #[cfg(feature = "BpmTimeProcessor+BpmChangeData")]
     pub type BpmChangeData = crate::GlobalNamespace::BpmTimeProcessor_BpmChangeData;
-    #[cfg(feature = "BpmTimeProcessor+__c")]
-    pub type __c = crate::GlobalNamespace::BpmTimeProcessor___c;
     pub fn CalculateTime(
         prevBpmChangeData: crate::GlobalNamespace::BpmTimeProcessor_BpmChangeData,
         beat: f32,

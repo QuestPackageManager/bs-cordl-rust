@@ -38,8 +38,6 @@ impl std::ops::DerefMut for crate::Zenject::PrefabInstantiator {
 }
 #[cfg(feature = "Zenject+PrefabInstantiator")]
 impl crate::Zenject::PrefabInstantiator {
-    #[cfg(feature = "Zenject+PrefabInstantiator+__c__DisplayClass15_0")]
-    pub type __c__DisplayClass15_0 = crate::Zenject::PrefabInstantiator___c__DisplayClass15_0;
     pub fn GetPrefab(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

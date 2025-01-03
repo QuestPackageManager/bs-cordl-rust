@@ -28,8 +28,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::PointerDownEvent {
 }
 #[cfg(feature = "UnityEngine+UIElements+PointerDownEvent")]
 impl crate::UnityEngine::UIElements::PointerDownEvent {
-    #[cfg(feature = "UnityEngine+UIElements+PointerDownEvent+__c")]
-    pub type __c = crate::UnityEngine::UIElements::PointerDownEvent___c;
     pub fn Init(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

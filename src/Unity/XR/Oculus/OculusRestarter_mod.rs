@@ -30,10 +30,6 @@ impl std::ops::DerefMut for crate::Unity::XR::Oculus::OculusRestarter {
 }
 #[cfg(feature = "Unity+XR+Oculus+OculusRestarter")]
 impl crate::Unity::XR::Oculus::OculusRestarter {
-    #[cfg(feature = "Unity+XR+Oculus+OculusRestarter+_PauseAndRestartCoroutine_d__22")]
-    pub type _PauseAndRestartCoroutine_d__22 = crate::Unity::XR::Oculus::OculusRestarter__PauseAndRestartCoroutine_d__22;
-    #[cfg(feature = "Unity+XR+Oculus+OculusRestarter+_RestartCoroutine_d__23")]
-    pub type _RestartCoroutine_d__23 = crate::Unity::XR::Oculus::OculusRestarter__RestartCoroutine_d__23;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

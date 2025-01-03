@@ -26,10 +26,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BasePlatformInit {
 }
 #[cfg(feature = "BasePlatformInit")]
 impl crate::GlobalNamespace::BasePlatformInit {
-    #[cfg(feature = "BasePlatformInit+_InitializeAsync_d__7")]
-    pub type _InitializeAsync_d__7 = crate::GlobalNamespace::BasePlatformInit__InitializeAsync_d__7;
-    #[cfg(feature = "BasePlatformInit+_Initialize_d__5")]
-    pub type _Initialize_d__5 = crate::GlobalNamespace::BasePlatformInit__Initialize_d__5;
     pub fn GetAppVersionAsync(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

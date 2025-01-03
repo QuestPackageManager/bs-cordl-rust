@@ -33,16 +33,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::MockPlayerInstance {
 }
 #[cfg(feature = "MockPlayerInstance")]
 impl crate::GlobalNamespace::MockPlayerInstance {
-    #[cfg(feature = "MockPlayerInstance+_DisposeAsync_d__22")]
-    pub type _DisposeAsync_d__22 = crate::GlobalNamespace::MockPlayerInstance__DisposeAsync_d__22;
-    #[cfg(feature = "MockPlayerInstance+_RunAsync_d__18")]
-    pub type _RunAsync_d__18 = crate::GlobalNamespace::MockPlayerInstance__RunAsync_d__18;
-    #[cfg(feature = "MockPlayerInstance+_Stop_d__21")]
-    pub type _Stop_d__21 = crate::GlobalNamespace::MockPlayerInstance__Stop_d__21;
-    #[cfg(feature = "MockPlayerInstance+__c__DisplayClass17_0_1")]
-    pub type __c__DisplayClass17_0_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::MockPlayerInstance___c__DisplayClass17_0_1<
-        T,
-    >;
     pub fn ConnectToServer<T>(
         &mut self,
         connectionInitParams: quest_hook::libil2cpp::Gc<

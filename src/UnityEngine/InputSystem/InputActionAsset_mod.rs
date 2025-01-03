@@ -44,10 +44,6 @@ impl crate::UnityEngine::InputSystem::InputActionAsset {
     pub type ReadFileJson = crate::UnityEngine::InputSystem::InputActionAsset_ReadFileJson;
     #[cfg(feature = "UnityEngine+InputSystem+InputActionAsset+WriteFileJson")]
     pub type WriteFileJson = crate::UnityEngine::InputSystem::InputActionAsset_WriteFileJson;
-    #[cfg(feature = "UnityEngine+InputSystem+InputActionAsset+_GetEnumerator_d__31")]
-    pub type _GetEnumerator_d__31 = crate::UnityEngine::InputSystem::InputActionAsset__GetEnumerator_d__31;
-    #[cfg(feature = "UnityEngine+InputSystem+InputActionAsset+_get_bindings_d__8")]
-    pub type _get_bindings_d__8 = crate::UnityEngine::InputSystem::InputActionAsset__get_bindings_d__8;
     pub fn Contains(
         &mut self,
         action: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,

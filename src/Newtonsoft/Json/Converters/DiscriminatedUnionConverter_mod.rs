@@ -33,14 +33,6 @@ impl crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter {
     pub type Union = crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_Union;
     #[cfg(feature = "Newtonsoft+Json+Converters+DiscriminatedUnionConverter+UnionCase")]
     pub type UnionCase = crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_UnionCase;
-    #[cfg(
-        feature = "Newtonsoft+Json+Converters+DiscriminatedUnionConverter+__c__DisplayClass8_0"
-    )]
-    pub type __c__DisplayClass8_0 = crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter___c__DisplayClass8_0;
-    #[cfg(
-        feature = "Newtonsoft+Json+Converters+DiscriminatedUnionConverter+__c__DisplayClass9_0"
-    )]
-    pub type __c__DisplayClass9_0 = crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter___c__DisplayClass9_0;
     pub fn CanConvert(
         &mut self,
         objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,

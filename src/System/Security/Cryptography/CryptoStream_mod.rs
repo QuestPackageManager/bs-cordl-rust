@@ -38,20 +38,6 @@ impl std::ops::DerefMut for crate::System::Security::Cryptography::CryptoStream 
 }
 #[cfg(feature = "System+Security+Cryptography+CryptoStream")]
 impl crate::System::Security::Cryptography::CryptoStream {
-    #[cfg(feature = "System+Security+Cryptography+CryptoStream+_ReadAsyncCore_d__42")]
-    pub type _ReadAsyncCore_d__42 = crate::System::Security::Cryptography::CryptoStream__ReadAsyncCore_d__42;
-    #[cfg(
-        feature = "System+Security+Cryptography+CryptoStream+_ReadAsyncInternal_d__37"
-    )]
-    pub type _ReadAsyncInternal_d__37 = crate::System::Security::Cryptography::CryptoStream__ReadAsyncInternal_d__37;
-    #[cfg(feature = "System+Security+Cryptography+CryptoStream+_WriteAsyncCore_d__49")]
-    pub type _WriteAsyncCore_d__49 = crate::System::Security::Cryptography::CryptoStream__WriteAsyncCore_d__49;
-    #[cfg(
-        feature = "System+Security+Cryptography+CryptoStream+_WriteAsyncInternal_d__46"
-    )]
-    pub type _WriteAsyncInternal_d__46 = crate::System::Security::Cryptography::CryptoStream__WriteAsyncInternal_d__46;
-    #[cfg(feature = "System+Security+Cryptography+CryptoStream+__c")]
-    pub type __c = crate::System::Security::Cryptography::CryptoStream___c;
     pub fn BeginRead(
         &mut self,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,

@@ -29,8 +29,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapCharacteristicsDropdo
 }
 #[cfg(feature = "BeatmapCharacteristicsDropdown")]
 impl crate::GlobalNamespace::BeatmapCharacteristicsDropdown {
-    #[cfg(feature = "BeatmapCharacteristicsDropdown+__c")]
-    pub type __c = crate::GlobalNamespace::BeatmapCharacteristicsDropdown___c;
     pub fn GetSelectedBeatmapCharacteristic(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

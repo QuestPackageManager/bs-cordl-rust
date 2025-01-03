@@ -27,20 +27,6 @@ impl crate::HMUI::ViewControllerTransitionHelpers {
     pub const kHorizontalTransitionMoveOffset: f32 = 2f32;
     pub const kTransitionDuration: f32 = 0.4f32;
     pub const kVerticalTransitionMoveOffset: f32 = 0.5f32;
-    #[cfg(feature = "HMUI+ViewControllerTransitionHelpers+_AnimationCoroutine_d__8")]
-    pub type _AnimationCoroutine_d__8 = crate::HMUI::ViewControllerTransitionHelpers__AnimationCoroutine_d__8;
-    #[cfg(feature = "HMUI+ViewControllerTransitionHelpers+_DoDismissTransition_d__4")]
-    pub type _DoDismissTransition_d__4 = crate::HMUI::ViewControllerTransitionHelpers__DoDismissTransition_d__4;
-    #[cfg(feature = "HMUI+ViewControllerTransitionHelpers+_DoHorizontalTransition_d__5")]
-    pub type _DoHorizontalTransition_d__5 = crate::HMUI::ViewControllerTransitionHelpers__DoHorizontalTransition_d__5;
-    #[cfg(feature = "HMUI+ViewControllerTransitionHelpers+_DoPresentTransition_d__3")]
-    pub type _DoPresentTransition_d__3 = crate::HMUI::ViewControllerTransitionHelpers__DoPresentTransition_d__3;
-    #[cfg(feature = "HMUI+ViewControllerTransitionHelpers+_DoVerticalTransition_d__6")]
-    pub type _DoVerticalTransition_d__6 = crate::HMUI::ViewControllerTransitionHelpers__DoVerticalTransition_d__6;
-    #[cfg(feature = "HMUI+ViewControllerTransitionHelpers+__c__DisplayClass5_0")]
-    pub type __c__DisplayClass5_0 = crate::HMUI::ViewControllerTransitionHelpers___c__DisplayClass5_0;
-    #[cfg(feature = "HMUI+ViewControllerTransitionHelpers+__c__DisplayClass6_0")]
-    pub type __c__DisplayClass6_0 = crate::HMUI::ViewControllerTransitionHelpers___c__DisplayClass6_0;
     pub fn AnimationCoroutine(
         transitionAnimation: quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>,
     ) -> quest_hook::libil2cpp::Result<

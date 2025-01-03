@@ -22,8 +22,6 @@ for crate::System::Runtime::CompilerServices::TaskAwaiter {
 }
 #[cfg(feature = "System+Runtime+CompilerServices+TaskAwaiter")]
 impl crate::System::Runtime::CompilerServices::TaskAwaiter {
-    #[cfg(feature = "System+Runtime+CompilerServices+TaskAwaiter+__c__DisplayClass11_0")]
-    pub type __c__DisplayClass11_0 = crate::System::Runtime::CompilerServices::TaskAwaiter___c__DisplayClass11_0;
     pub fn GetResult(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

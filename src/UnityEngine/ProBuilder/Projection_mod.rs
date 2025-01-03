@@ -24,8 +24,6 @@ impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::Projection {
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Projection")]
 impl crate::UnityEngine::ProBuilder::Projection {
-    #[cfg(feature = "UnityEngine+ProBuilder+Projection+__c")]
-    pub type __c = crate::UnityEngine::ProBuilder::Projection___c;
     pub fn FindBestPlane_IList_1_IList_1_0(
         points: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector3>,

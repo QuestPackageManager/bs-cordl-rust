@@ -53,8 +53,6 @@ impl std::ops::DerefMut for crate::TMPro::TMP_SpriteAsset {
 }
 #[cfg(feature = "TMPro+TMP_SpriteAsset")]
 impl crate::TMPro::TMP_SpriteAsset {
-    #[cfg(feature = "TMPro+TMP_SpriteAsset+__c")]
-    pub type __c = crate::TMPro::TMP_SpriteAsset___c;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

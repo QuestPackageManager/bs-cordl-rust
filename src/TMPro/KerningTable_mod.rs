@@ -26,14 +26,6 @@ impl std::ops::DerefMut for crate::TMPro::KerningTable {
 }
 #[cfg(feature = "TMPro+KerningTable")]
 impl crate::TMPro::KerningTable {
-    #[cfg(feature = "TMPro+KerningTable+__c")]
-    pub type __c = crate::TMPro::KerningTable___c;
-    #[cfg(feature = "TMPro+KerningTable+__c__DisplayClass3_0")]
-    pub type __c__DisplayClass3_0 = crate::TMPro::KerningTable___c__DisplayClass3_0;
-    #[cfg(feature = "TMPro+KerningTable+__c__DisplayClass4_0")]
-    pub type __c__DisplayClass4_0 = crate::TMPro::KerningTable___c__DisplayClass4_0;
-    #[cfg(feature = "TMPro+KerningTable+__c__DisplayClass5_0")]
-    pub type __c__DisplayClass5_0 = crate::TMPro::KerningTable___c__DisplayClass5_0;
     pub fn AddGlyphPairAdjustmentRecord(
         &mut self,
         first: u32,

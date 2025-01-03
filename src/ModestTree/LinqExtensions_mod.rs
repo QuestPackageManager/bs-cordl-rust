@@ -24,18 +24,6 @@ impl std::ops::DerefMut for crate::ModestTree::LinqExtensions {
 }
 #[cfg(feature = "ModestTree+LinqExtensions")]
 impl crate::ModestTree::LinqExtensions {
-    #[cfg(feature = "ModestTree+LinqExtensions+_Yield_d__0_1")]
-    pub type _Yield_d__0_1<T: quest_hook::libil2cpp::Type> = crate::ModestTree::LinqExtensions__Yield_d__0_1<
-        T,
-    >;
-    #[cfg(feature = "ModestTree+LinqExtensions+__c__8_1")]
-    pub type __c__8_1<T: quest_hook::libil2cpp::Type> = crate::ModestTree::LinqExtensions___c__8_1<
-        T,
-    >;
-    #[cfg(feature = "ModestTree+LinqExtensions+__c__DisplayClass10_0_1")]
-    pub type __c__DisplayClass10_0_1<T: quest_hook::libil2cpp::Type> = crate::ModestTree::LinqExtensions___c__DisplayClass10_0_1<
-        T,
-    >;
     pub fn ContainsItem<T>(
         list: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<T>,

@@ -38,10 +38,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::SelectAvatarSystemCell {
 }
 #[cfg(feature = "SelectAvatarSystemCell")]
 impl crate::GlobalNamespace::SelectAvatarSystemCell {
-    #[cfg(feature = "SelectAvatarSystemCell+_Load_d__14")]
-    pub type _Load_d__14 = crate::GlobalNamespace::SelectAvatarSystemCell__Load_d__14;
-    #[cfg(feature = "SelectAvatarSystemCell+_ReloadIsCreated_d__17")]
-    pub type _ReloadIsCreated_d__17 = crate::GlobalNamespace::SelectAvatarSystemCell__ReloadIsCreated_d__17;
     pub fn Activate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

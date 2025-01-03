@@ -26,8 +26,6 @@ impl std::ops::DerefMut for crate::System::Linq::Expressions::BlockExpressionLis
 }
 #[cfg(feature = "System+Linq+Expressions+BlockExpressionList")]
 impl crate::System::Linq::Expressions::BlockExpressionList {
-    #[cfg(feature = "System+Linq+Expressions+BlockExpressionList+_GetEnumerator_d__18")]
-    pub type _GetEnumerator_d__18 = crate::System::Linq::Expressions::BlockExpressionList__GetEnumerator_d__18;
     pub fn Add(
         &mut self,
         item: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,

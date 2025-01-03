@@ -31,8 +31,6 @@ for crate::System::Runtime::CompilerServices::CallSite_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::System::Runtime::CompilerServices::CallSite_1<T> {
-    #[cfg(feature = "System+Runtime+CompilerServices+CallSite_1+__c")]
-    pub type __c = crate::System::Runtime::CompilerServices::CallSite_1___c<T>;
     pub fn AddRule(
         &mut self,
         newRule: T,

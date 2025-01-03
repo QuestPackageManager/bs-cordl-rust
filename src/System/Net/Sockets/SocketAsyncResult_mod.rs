@@ -46,8 +46,6 @@ impl std::ops::DerefMut for crate::System::Net::Sockets::SocketAsyncResult {
 }
 #[cfg(feature = "System+Net+Sockets+SocketAsyncResult")]
 impl crate::System::Net::Sockets::SocketAsyncResult {
-    #[cfg(feature = "System+Net+Sockets+SocketAsyncResult+__c")]
-    pub type __c = crate::System::Net::Sockets::SocketAsyncResult___c;
     pub fn CheckIfThrowDelayedException(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

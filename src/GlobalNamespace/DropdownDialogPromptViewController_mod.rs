@@ -40,10 +40,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::DropdownDialogPromptViewCont
 impl crate::GlobalNamespace::DropdownDialogPromptViewController {
     #[cfg(feature = "DropdownDialogPromptViewController+ButtonAndLabel")]
     pub type ButtonAndLabel = crate::GlobalNamespace::DropdownDialogPromptViewController_ButtonAndLabel;
-    #[cfg(feature = "DropdownDialogPromptViewController+__c")]
-    pub type __c = crate::GlobalNamespace::DropdownDialogPromptViewController___c;
-    #[cfg(feature = "DropdownDialogPromptViewController+__c__DisplayClass13_0")]
-    pub type __c__DisplayClass13_0 = crate::GlobalNamespace::DropdownDialogPromptViewController___c__DisplayClass13_0;
     pub fn DidActivate(
         &mut self,
         firstActivation: bool,

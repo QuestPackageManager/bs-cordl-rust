@@ -43,8 +43,6 @@ for crate::UnityEngine::UIElements::VisualTreeStyleUpdaterTraversal {
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeStyleUpdaterTraversal")]
 impl crate::UnityEngine::UIElements::VisualTreeStyleUpdaterTraversal {
-    #[cfg(feature = "UnityEngine+UIElements+VisualTreeStyleUpdaterTraversal+__c")]
-    pub type __c = crate::UnityEngine::UIElements::VisualTreeStyleUpdaterTraversal___c;
     pub fn AddChangedElement(
         &mut self,
         ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,

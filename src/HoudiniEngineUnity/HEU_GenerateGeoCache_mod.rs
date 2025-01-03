@@ -124,8 +124,6 @@ impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
 impl crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
     #[cfg(feature = "HoudiniEngineUnity+HEU_GenerateGeoCache+HEU_ColliderInfo")]
     pub type HEU_ColliderInfo = crate::HoudiniEngineUnity::HEU_GenerateGeoCache_HEU_ColliderInfo;
-    #[cfg(feature = "HoudiniEngineUnity+HEU_GenerateGeoCache+__c")]
-    pub type __c = crate::HoudiniEngineUnity::HEU_GenerateGeoCache___c;
     pub fn CalculateGroupMeshTopology(
         groupFaces: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<i32>,

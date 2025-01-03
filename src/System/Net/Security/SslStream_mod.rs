@@ -30,8 +30,6 @@ impl std::ops::DerefMut for crate::System::Net::Security::SslStream {
 }
 #[cfg(feature = "System+Net+Security+SslStream")]
 impl crate::System::Net::Security::SslStream {
-    #[cfg(feature = "System+Net+Security+SslStream+__c__DisplayClass21_0")]
-    pub type __c__DisplayClass21_0 = crate::System::Net::Security::SslStream___c__DisplayClass21_0;
     pub fn AuthenticateAsClient(
         &mut self,
         targetHost: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

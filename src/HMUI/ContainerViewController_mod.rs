@@ -28,14 +28,6 @@ impl std::ops::DerefMut for crate::HMUI::ContainerViewController {
 }
 #[cfg(feature = "HMUI+ContainerViewController")]
 impl crate::HMUI::ContainerViewController {
-    #[cfg(feature = "HMUI+ContainerViewController+_AddViewControllerCoroutine_d__16")]
-    pub type _AddViewControllerCoroutine_d__16 = crate::HMUI::ContainerViewController__AddViewControllerCoroutine_d__16;
-    #[cfg(
-        feature = "HMUI+ContainerViewController+_RemoveViewControllersCoroutine_d__18"
-    )]
-    pub type _RemoveViewControllersCoroutine_d__18 = crate::HMUI::ContainerViewController__RemoveViewControllersCoroutine_d__18;
-    #[cfg(feature = "HMUI+ContainerViewController+__c")]
-    pub type __c = crate::HMUI::ContainerViewController___c;
     pub fn AddViewController(
         &mut self,
         viewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,

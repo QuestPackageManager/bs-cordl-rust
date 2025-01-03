@@ -32,10 +32,6 @@ for crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_Control
     feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Builder+ControlBuilder"
 )]
 impl crate::UnityEngine::InputSystem::Layouts::Builder_InputControlLayout_ControlBuilder {
-    #[cfg(
-        feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Builder+ControlBuilder+__c"
-    )]
-    pub type __c = crate::UnityEngine::InputSystem::Layouts::ControlBuilder_Builder_InputControlLayout___c;
     pub fn AsArrayOfControlsWithSize(
         &mut self,
         arraySize: i32,
@@ -460,8 +456,6 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout {
         feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+LayoutNotFoundException"
     )]
     pub type LayoutNotFoundException = crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutNotFoundException;
-    #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+__c")]
-    pub type __c = crate::UnityEngine::InputSystem::Layouts::InputControlLayout___c;
     pub fn AddControlItems(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         controlLayouts: quest_hook::libil2cpp::Gc<
@@ -1612,10 +1606,6 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Collection {
         feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Collection+PrecompiledLayout"
     )]
     pub type PrecompiledLayout = crate::UnityEngine::InputSystem::Layouts::Collection_InputControlLayout_PrecompiledLayout;
-    #[cfg(
-        feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Collection+_GetBaseLayouts_d__24"
-    )]
-    pub type _GetBaseLayouts_d__24 = crate::UnityEngine::InputSystem::Layouts::Collection_InputControlLayout__GetBaseLayouts_d__24;
     pub fn AddMatcher(
         &mut self,
         layout: crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -2498,10 +2488,6 @@ for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItemJson
 }
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+ControlItemJson")]
 impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItemJson {
-    #[cfg(
-        feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+ControlItemJson+__c"
-    )]
-    pub type __c = crate::UnityEngine::InputSystem::Layouts::ControlItemJson_InputControlLayout___c;
     pub fn FromControlItems(
         items: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
@@ -2624,8 +2610,6 @@ for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutJson {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+LayoutJson")]
 impl crate::UnityEngine::InputSystem::Layouts::InputControlLayout_LayoutJson {
-    #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+LayoutJson+__c")]
-    pub type __c = crate::UnityEngine::InputSystem::Layouts::LayoutJson_InputControlLayout___c;
     pub fn FromLayout(
         layout: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::Layouts::InputControlLayout,

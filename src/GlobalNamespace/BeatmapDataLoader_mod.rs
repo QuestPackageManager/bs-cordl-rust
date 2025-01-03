@@ -25,10 +25,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapDataLoader {
 }
 #[cfg(feature = "BeatmapDataLoader")]
 impl crate::GlobalNamespace::BeatmapDataLoader {
-    #[cfg(feature = "BeatmapDataLoader+_LoadBasicBeatmapDataAsync_d__1")]
-    pub type _LoadBasicBeatmapDataAsync_d__1 = crate::GlobalNamespace::BeatmapDataLoader__LoadBasicBeatmapDataAsync_d__1;
-    #[cfg(feature = "BeatmapDataLoader+_LoadBeatmapDataAsync_d__4")]
-    pub type _LoadBeatmapDataAsync_d__4 = crate::GlobalNamespace::BeatmapDataLoader__LoadBeatmapDataAsync_d__4;
     pub fn LoadBasicBeatmapDataAsync(
         &mut self,
         beatmapLevelData: quest_hook::libil2cpp::Gc<

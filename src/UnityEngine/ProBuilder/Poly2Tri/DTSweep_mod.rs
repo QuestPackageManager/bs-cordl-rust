@@ -26,8 +26,6 @@ impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
 impl crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep {
     pub const PI_3div4: f64 = 2.356194490192345f64;
     pub const PI_div2: f64 = 1.5707963267948966f64;
-    #[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+DTSweep+__c__DisplayClass21_0")]
-    pub type __c__DisplayClass21_0 = crate::UnityEngine::ProBuilder::Poly2Tri::DTSweep___c__DisplayClass21_0;
     pub fn BasinAngle(
         node: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::Poly2Tri::AdvancingFrontNode,

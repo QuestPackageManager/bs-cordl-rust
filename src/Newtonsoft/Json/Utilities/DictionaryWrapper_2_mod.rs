@@ -63,11 +63,6 @@ impl<
         TEnumeratorKey,
         TEnumeratorValue,
     >;
-    #[cfg(feature = "Newtonsoft+Json+Utilities+DictionaryWrapper_2+__c")]
-    pub type __c = crate::Newtonsoft::Json::Utilities::DictionaryWrapper_2___c<
-        TKey,
-        TValue,
-    >;
     pub fn Add_KeyValuePair_2_1(
         &mut self,
         item: crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,

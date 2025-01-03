@@ -46,8 +46,6 @@ for crate::UnityEngine::AddressableAssets::CheckCatalogsOperation {
 }
 #[cfg(feature = "UnityEngine+AddressableAssets+CheckCatalogsOperation")]
 impl crate::UnityEngine::AddressableAssets::CheckCatalogsOperation {
-    #[cfg(feature = "UnityEngine+AddressableAssets+CheckCatalogsOperation+__c")]
-    pub type __c = crate::UnityEngine::AddressableAssets::CheckCatalogsOperation___c;
     pub fn Destroy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

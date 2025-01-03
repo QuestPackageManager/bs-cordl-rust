@@ -23,8 +23,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::AsyncHelper {
 }
 #[cfg(feature = "AsyncHelper")]
 impl crate::GlobalNamespace::AsyncHelper {
-    #[cfg(feature = "AsyncHelper+_AnyTaskTrueNonAlloc_d__2")]
-    pub type _AnyTaskTrueNonAlloc_d__2 = crate::GlobalNamespace::AsyncHelper__AnyTaskTrueNonAlloc_d__2;
     pub fn AnyTaskTrueNonAlloc(
         tasks: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<

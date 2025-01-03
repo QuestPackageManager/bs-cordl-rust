@@ -38,10 +38,6 @@ impl crate::UnityEngine::InputSystem::InputControlPath {
     pub type PathComponentType = crate::UnityEngine::InputSystem::InputControlPath_PathComponentType;
     #[cfg(feature = "UnityEngine+InputSystem+InputControlPath+PathParser")]
     pub type PathParser = crate::UnityEngine::InputSystem::InputControlPath_PathParser;
-    #[cfg(feature = "UnityEngine+InputSystem+InputControlPath+_Parse_d__34")]
-    pub type _Parse_d__34 = crate::UnityEngine::InputSystem::InputControlPath__Parse_d__34;
-    #[cfg(feature = "UnityEngine+InputSystem+InputControlPath+__c")]
-    pub type __c = crate::UnityEngine::InputSystem::InputControlPath___c;
     pub fn CleanSlashes(
         pathComponent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -502,8 +498,6 @@ for crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputControlPath+ParsedPathComponent")]
 impl crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent {
-    #[cfg(feature = "UnityEngine+InputSystem+InputControlPath+ParsedPathComponent+__c")]
-    pub type __c = crate::UnityEngine::InputSystem::ParsedPathComponent_InputControlPath___c;
     pub fn ComparePathElementToString(
         pathElement: crate::UnityEngine::InputSystem::Utilities::Substring,
         element: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

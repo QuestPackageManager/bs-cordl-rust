@@ -31,8 +31,6 @@ impl crate::UnityEngine::Experimental::GlobalIllumination::Lightmapping {
         feature = "UnityEngine+Experimental+GlobalIllumination+Lightmapping+RequestLightsDelegate"
     )]
     pub type RequestLightsDelegate = crate::UnityEngine::Experimental::GlobalIllumination::Lightmapping_RequestLightsDelegate;
-    #[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+Lightmapping+__c")]
-    pub type __c = crate::UnityEngine::Experimental::GlobalIllumination::Lightmapping___c;
     pub fn GetDelegate() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::Experimental::GlobalIllumination::Lightmapping_RequestLightsDelegate,

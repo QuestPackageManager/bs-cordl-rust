@@ -238,8 +238,6 @@ impl crate::GlobalNamespace::SliderController {
     pub type LengthType = crate::GlobalNamespace::SliderController_LengthType;
     #[cfg(feature = "SliderController+Pool")]
     pub type Pool = crate::GlobalNamespace::SliderController_Pool;
-    #[cfg(feature = "SliderController+_DissolveCoroutine_d__71")]
-    pub type _DissolveCoroutine_d__71 = crate::GlobalNamespace::SliderController__DissolveCoroutine_d__71;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -52,8 +52,6 @@ impl crate::UnityEngine::Timeline::TimelineAsset {
     pub type TimelineAssetUpgrade = crate::UnityEngine::Timeline::TimelineAsset_TimelineAssetUpgrade;
     #[cfg(feature = "UnityEngine+Timeline+TimelineAsset+Versions")]
     pub type Versions = crate::UnityEngine::Timeline::TimelineAsset_Versions;
-    #[cfg(feature = "UnityEngine+Timeline+TimelineAsset+_get_outputs_d__27")]
-    pub type _get_outputs_d__27 = crate::UnityEngine::Timeline::TimelineAsset__get_outputs_d__27;
     pub fn AddSubTracksRecursive(
         track: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
         allTracks: quest_hook::libil2cpp::ByRefMut<

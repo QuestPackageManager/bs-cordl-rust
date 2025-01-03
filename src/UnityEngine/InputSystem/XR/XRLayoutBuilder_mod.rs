@@ -27,8 +27,6 @@ impl std::ops::DerefMut for crate::UnityEngine::InputSystem::XR::XRLayoutBuilder
 }
 #[cfg(feature = "UnityEngine+InputSystem+XR+XRLayoutBuilder")]
 impl crate::UnityEngine::InputSystem::XR::XRLayoutBuilder {
-    #[cfg(feature = "UnityEngine+InputSystem+XR+XRLayoutBuilder+__c__DisplayClass5_0")]
-    pub type __c__DisplayClass5_0 = crate::UnityEngine::InputSystem::XR::XRLayoutBuilder___c__DisplayClass5_0;
     pub fn Build(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

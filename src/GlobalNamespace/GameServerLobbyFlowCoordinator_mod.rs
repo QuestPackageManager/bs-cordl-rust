@@ -65,10 +65,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::GameServerLobbyFlowCoordinat
 impl crate::GlobalNamespace::GameServerLobbyFlowCoordinator {
     pub const kMaxPredictedStartTimeDifferenceMs: i64 = 1500i64;
     pub const kPlayersMissingEntitlementKey: &'static str = "LABEL_PLAYERS_MISSING_ENTITLEMENT";
-    #[cfg(feature = "GameServerLobbyFlowCoordinator+__c__DisplayClass71_0")]
-    pub type __c__DisplayClass71_0 = crate::GlobalNamespace::GameServerLobbyFlowCoordinator___c__DisplayClass71_0;
-    #[cfg(feature = "GameServerLobbyFlowCoordinator+__c__DisplayClass87_0")]
-    pub type __c__DisplayClass87_0 = crate::GlobalNamespace::GameServerLobbyFlowCoordinator___c__DisplayClass87_0;
     pub fn BackButtonWasPressed(
         &mut self,
         topViewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,

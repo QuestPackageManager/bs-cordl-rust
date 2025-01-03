@@ -41,10 +41,6 @@ impl std::ops::DerefMut for crate::UnityEngine::Timeline::ControlPlayableAsset {
 #[cfg(feature = "UnityEngine+Timeline+ControlPlayableAsset")]
 impl crate::UnityEngine::Timeline::ControlPlayableAsset {
     pub const k_MaxRandInt: i32 = 10000i32;
-    #[cfg(
-        feature = "UnityEngine+Timeline+ControlPlayableAsset+_GetControlableScripts_d__39"
-    )]
-    pub type _GetControlableScripts_d__39 = crate::UnityEngine::Timeline::ControlPlayableAsset__GetControlableScripts_d__39;
     pub fn CacheSubEmitters(
         ps: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
         subEmitters: quest_hook::libil2cpp::Gc<

@@ -29,8 +29,6 @@ impl crate::GlobalNamespace::SongProfilingController {
     pub const kLowFPSCountLimit: i32 = 110i32;
     pub const kProfileFramesPerLog: i32 = 2000i32;
     pub const kProfilerMaxUsedMemory: i32 = 268435456i32;
-    #[cfg(feature = "SongProfilingController+_ProfileCoroutine_d__8")]
-    pub type _ProfileCoroutine_d__8 = crate::GlobalNamespace::SongProfilingController__ProfileCoroutine_d__8;
     pub fn CreateCaptureFolder(
         &mut self,
         folderName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

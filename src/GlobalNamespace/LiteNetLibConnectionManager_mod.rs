@@ -95,12 +95,6 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
     pub type StartClientParams = crate::GlobalNamespace::LiteNetLibConnectionManager_StartClientParams;
     #[cfg(feature = "LiteNetLibConnectionManager+StartServerParams")]
     pub type StartServerParams = crate::GlobalNamespace::LiteNetLibConnectionManager_StartServerParams;
-    #[cfg(feature = "LiteNetLibConnectionManager+_BackgroundDisconnectSentry_d__126")]
-    pub type _BackgroundDisconnectSentry_d__126 = crate::GlobalNamespace::LiteNetLibConnectionManager__BackgroundDisconnectSentry_d__126;
-    #[cfg(feature = "LiteNetLibConnectionManager+_BackgroundShutdownSentry_d__127")]
-    pub type _BackgroundShutdownSentry_d__127 = crate::GlobalNamespace::LiteNetLibConnectionManager__BackgroundShutdownSentry_d__127;
-    #[cfg(feature = "LiteNetLibConnectionManager+__c")]
-    pub type __c = crate::GlobalNamespace::LiteNetLibConnectionManager___c;
     pub fn AcceptAllPendingRequests(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

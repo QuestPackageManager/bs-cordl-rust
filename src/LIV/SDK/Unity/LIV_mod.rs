@@ -65,8 +65,6 @@ impl std::ops::DerefMut for crate::LIV::SDK::Unity::LIV {
 }
 #[cfg(feature = "LIV+SDK+Unity+LIV")]
 impl crate::LIV::SDK::Unity::LIV {
-    #[cfg(feature = "LIV+SDK+Unity+LIV+_WaitForUnityEndOfFrame_d__68")]
-    pub type _WaitForUnityEndOfFrame_d__68 = crate::LIV::SDK::Unity::LIV__WaitForUnityEndOfFrame_d__68;
     pub fn Activate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

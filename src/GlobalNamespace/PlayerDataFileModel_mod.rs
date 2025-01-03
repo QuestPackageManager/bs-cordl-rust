@@ -30,8 +30,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::PlayerDataFileModel {
 #[cfg(feature = "PlayerDataFileModel")]
 impl crate::GlobalNamespace::PlayerDataFileModel {
     pub const kPlayerDataFileName: &'static str = "PlayerData.dat";
-    #[cfg(feature = "PlayerDataFileModel+_LoadAsync_d__13")]
-    pub type _LoadAsync_d__13 = crate::GlobalNamespace::PlayerDataFileModel__LoadAsync_d__13;
     pub fn ColorOverrideTypeFromSaveData(
         &mut self,
         c: crate::GlobalNamespace::PlayerSaveData_ColorOverrideType,

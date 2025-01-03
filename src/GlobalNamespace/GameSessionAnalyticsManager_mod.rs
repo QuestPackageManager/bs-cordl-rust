@@ -29,10 +29,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::GameSessionAnalyticsManager 
 }
 #[cfg(feature = "GameSessionAnalyticsManager")]
 impl crate::GlobalNamespace::GameSessionAnalyticsManager {
-    #[cfg(
-        feature = "GameSessionAnalyticsManager+_LogSessionEventAfterPlatformInit_d__6"
-    )]
-    pub type _LogSessionEventAfterPlatformInit_d__6 = crate::GlobalNamespace::GameSessionAnalyticsManager__LogSessionEventAfterPlatformInit_d__6;
     pub fn LogSessionEventAfterPlatformInit(
         &mut self,
         hasFocus: bool,

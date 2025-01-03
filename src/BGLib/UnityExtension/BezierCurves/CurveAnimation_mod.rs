@@ -43,8 +43,6 @@ impl crate::BGLib::UnityExtension::BezierCurves::CurveAnimation {
     pub type CurveEvent_1<T: quest_hook::libil2cpp::Type> = crate::BGLib::UnityExtension::BezierCurves::CurveAnimation_CurveEvent_1<
         T,
     >;
-    #[cfg(feature = "BGLib+UnityExtension+BezierCurves+CurveAnimation+_Animate_d__17")]
-    pub type _Animate_d__17 = crate::BGLib::UnityExtension::BezierCurves::CurveAnimation__Animate_d__17;
     pub fn Animate__cordl_bool0(
         &mut self,
         withDelay: bool,

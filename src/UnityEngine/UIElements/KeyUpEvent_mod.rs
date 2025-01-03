@@ -28,8 +28,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::KeyUpEvent {
 }
 #[cfg(feature = "UnityEngine+UIElements+KeyUpEvent")]
 impl crate::UnityEngine::UIElements::KeyUpEvent {
-    #[cfg(feature = "UnityEngine+UIElements+KeyUpEvent+__c")]
-    pub type __c = crate::UnityEngine::UIElements::KeyUpEvent___c;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

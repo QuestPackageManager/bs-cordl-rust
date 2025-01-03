@@ -49,10 +49,6 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
         feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+RebindingOperation"
     )]
     pub type RebindingOperation = crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation;
-    #[cfg(
-        feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+__c__DisplayClass25_0"
-    )]
-    pub type __c__DisplayClass25_0 = crate::UnityEngine::InputSystem::InputActionRebindingExtensions___c__DisplayClass25_0;
     pub fn AddBindingOverrideJsonTo(
         actions: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::IInputActionCollection2,
@@ -1405,10 +1401,6 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
         feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+RebindingOperation+Flags"
     )]
     pub type Flags = crate::UnityEngine::InputSystem::RebindingOperation_InputActionRebindingExtensions_Flags;
-    #[cfg(
-        feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+RebindingOperation+__c__DisplayClass32_0"
-    )]
-    pub type __c__DisplayClass32_0 = crate::UnityEngine::InputSystem::RebindingOperation_InputActionRebindingExtensions___c__DisplayClass32_0;
     pub fn AddCandidate(
         &mut self,
         control: quest_hook::libil2cpp::Gc<

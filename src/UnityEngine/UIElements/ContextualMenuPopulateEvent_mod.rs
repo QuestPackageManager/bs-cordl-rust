@@ -32,8 +32,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::ContextualMenuPopula
 }
 #[cfg(feature = "UnityEngine+UIElements+ContextualMenuPopulateEvent")]
 impl crate::UnityEngine::UIElements::ContextualMenuPopulateEvent {
-    #[cfg(feature = "UnityEngine+UIElements+ContextualMenuPopulateEvent+__c")]
-    pub type __c = crate::UnityEngine::UIElements::ContextualMenuPopulateEvent___c;
     pub fn GetPooled(
         triggerEvent: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::EventBase,

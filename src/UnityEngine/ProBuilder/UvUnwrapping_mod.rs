@@ -26,8 +26,6 @@ impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::UvUnwrapping {
 impl crate::UnityEngine::ProBuilder::UvUnwrapping {
     #[cfg(feature = "UnityEngine+ProBuilder+UvUnwrapping+UVTransform")]
     pub type UVTransform = crate::UnityEngine::ProBuilder::UvUnwrapping_UVTransform;
-    #[cfg(feature = "UnityEngine+ProBuilder+UvUnwrapping+__c")]
-    pub type __c = crate::UnityEngine::ProBuilder::UvUnwrapping___c;
     pub fn ApplyUVAnchor(
         uvs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,

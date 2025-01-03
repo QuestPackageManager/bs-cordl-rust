@@ -40,12 +40,6 @@ impl crate::HMUI::ViewController {
     pub type AnimationDirection = crate::HMUI::ViewController_AnimationDirection;
     #[cfg(feature = "HMUI+ViewController+AnimationType")]
     pub type AnimationType = crate::HMUI::ViewController_AnimationType;
-    #[cfg(feature = "HMUI+ViewController+_DismissViewControllerCoroutine_d__54")]
-    pub type _DismissViewControllerCoroutine_d__54 = crate::HMUI::ViewController__DismissViewControllerCoroutine_d__54;
-    #[cfg(feature = "HMUI+ViewController+_PresentViewControllerCoroutine_d__50")]
-    pub type _PresentViewControllerCoroutine_d__50 = crate::HMUI::ViewController__PresentViewControllerCoroutine_d__50;
-    #[cfg(feature = "HMUI+ViewController+_ReplaceViewControllerCoroutine_d__52")]
-    pub type _ReplaceViewControllerCoroutine_d__52 = crate::HMUI::ViewController__ReplaceViewControllerCoroutine_d__52;
     pub fn DeactivateGameObject(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

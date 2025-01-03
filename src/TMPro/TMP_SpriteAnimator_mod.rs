@@ -26,8 +26,6 @@ impl std::ops::DerefMut for crate::TMPro::TMP_SpriteAnimator {
 }
 #[cfg(feature = "TMPro+TMP_SpriteAnimator")]
 impl crate::TMPro::TMP_SpriteAnimator {
-    #[cfg(feature = "TMPro+TMP_SpriteAnimator+_DoSpriteAnimationInternal_d__7")]
-    pub type _DoSpriteAnimationInternal_d__7 = crate::TMPro::TMP_SpriteAnimator__DoSpriteAnimationInternal_d__7;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

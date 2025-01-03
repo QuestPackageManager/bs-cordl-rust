@@ -123,49 +123,6 @@ impl<
     TParam10,
     TContract,
 > {
-    #[cfg(feature = "Zenject+FactoryFromBinder_11+__c__2_1")]
-    pub type __c__2_1<TSubFactory: quest_hook::libil2cpp::Type> = crate::Zenject::FactoryFromBinder_11___c__2_1<
-        TParam1,
-        TParam2,
-        TParam3,
-        TParam4,
-        TParam5,
-        TParam6,
-        TParam7,
-        TParam8,
-        TParam9,
-        TParam10,
-        TContract,
-        TSubFactory,
-    >;
-    #[cfg(feature = "Zenject+FactoryFromBinder_11+__c__DisplayClass1_0")]
-    pub type __c__DisplayClass1_0 = crate::Zenject::FactoryFromBinder_11___c__DisplayClass1_0<
-        TParam1,
-        TParam2,
-        TParam3,
-        TParam4,
-        TParam5,
-        TParam6,
-        TParam7,
-        TParam8,
-        TParam9,
-        TParam10,
-        TContract,
-    >;
-    #[cfg(feature = "Zenject+FactoryFromBinder_11+__c__DisplayClass3_0")]
-    pub type __c__DisplayClass3_0 = crate::Zenject::FactoryFromBinder_11___c__DisplayClass3_0<
-        TParam1,
-        TParam2,
-        TParam3,
-        TParam4,
-        TParam5,
-        TParam6,
-        TParam7,
-        TParam8,
-        TParam9,
-        TParam10,
-        TContract,
-    >;
     pub fn FromFactory<TSubFactory>(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

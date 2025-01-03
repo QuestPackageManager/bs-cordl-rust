@@ -34,8 +34,6 @@ impl crate::UnityEngine::ExpressionEvaluator {
     pub type Operator = crate::UnityEngine::ExpressionEvaluator_Operator;
     #[cfg(feature = "UnityEngine+ExpressionEvaluator+PcgRandom")]
     pub type PcgRandom = crate::UnityEngine::ExpressionEvaluator_PcgRandom;
-    #[cfg(feature = "UnityEngine+ExpressionEvaluator+__c")]
-    pub type __c = crate::UnityEngine::ExpressionEvaluator___c;
     pub fn Evaluate<T>(
         expression: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: quest_hook::libil2cpp::ByRefMut<T>,

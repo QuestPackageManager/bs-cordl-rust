@@ -34,8 +34,6 @@ impl crate::GlobalNamespace::QuickPlaySetupModel {
     pub const kRequestTimeoutSeconds: i32 = 60i32;
     #[cfg(feature = "QuickPlaySetupModel+QuickPlaySetupDataFB")]
     pub type QuickPlaySetupDataFB = crate::GlobalNamespace::QuickPlaySetupModel_QuickPlaySetupDataFB;
-    #[cfg(feature = "QuickPlaySetupModel+_GetQuickPlaySetupInternal_d__10")]
-    pub type _GetQuickPlaySetupInternal_d__10 = crate::GlobalNamespace::QuickPlaySetupModel__GetQuickPlaySetupInternal_d__10;
     pub fn GetQuickPlaySetupAsync(
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,

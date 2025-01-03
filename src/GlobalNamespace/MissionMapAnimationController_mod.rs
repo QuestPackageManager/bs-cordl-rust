@@ -32,20 +32,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::MissionMapAnimationControlle
 }
 #[cfg(feature = "MissionMapAnimationController")]
 impl crate::GlobalNamespace::MissionMapAnimationController {
-    #[cfg(
-        feature = "MissionMapAnimationController+_UpdateClearedNodeStateCoroutine_d__13"
-    )]
-    pub type _UpdateClearedNodeStateCoroutine_d__13 = crate::GlobalNamespace::MissionMapAnimationController__UpdateClearedNodeStateCoroutine_d__13;
-    #[cfg(feature = "MissionMapAnimationController+_UpdateMissionMapCoroutine_d__12")]
-    pub type _UpdateMissionMapCoroutine_d__12 = crate::GlobalNamespace::MissionMapAnimationController__UpdateMissionMapCoroutine_d__12;
-    #[cfg(
-        feature = "MissionMapAnimationController+_UpdateNodesAndConnectionCoroutine_d__15"
-    )]
-    pub type _UpdateNodesAndConnectionCoroutine_d__15 = crate::GlobalNamespace::MissionMapAnimationController__UpdateNodesAndConnectionCoroutine_d__15;
-    #[cfg(feature = "MissionMapAnimationController+_UpdateStageCoroutine_d__14")]
-    pub type _UpdateStageCoroutine_d__14 = crate::GlobalNamespace::MissionMapAnimationController__UpdateStageCoroutine_d__14;
-    #[cfg(feature = "MissionMapAnimationController+__c")]
-    pub type __c = crate::GlobalNamespace::MissionMapAnimationController___c;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

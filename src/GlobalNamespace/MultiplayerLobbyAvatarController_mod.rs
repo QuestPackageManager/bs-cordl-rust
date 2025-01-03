@@ -35,14 +35,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerLobbyAvatarContro
 impl crate::GlobalNamespace::MultiplayerLobbyAvatarController {
     #[cfg(feature = "MultiplayerLobbyAvatarController+Factory")]
     pub type Factory = crate::GlobalNamespace::MultiplayerLobbyAvatarController_Factory;
-    #[cfg(feature = "MultiplayerLobbyAvatarController+_DespawnAnimationCoroutine_d__12")]
-    pub type _DespawnAnimationCoroutine_d__12 = crate::GlobalNamespace::MultiplayerLobbyAvatarController__DespawnAnimationCoroutine_d__12;
-    #[cfg(
-        feature = "MultiplayerLobbyAvatarController+_ShowDespawnAnimationAndDestroy_d__10"
-    )]
-    pub type _ShowDespawnAnimationAndDestroy_d__10 = crate::GlobalNamespace::MultiplayerLobbyAvatarController__ShowDespawnAnimationAndDestroy_d__10;
-    #[cfg(feature = "MultiplayerLobbyAvatarController+_SpawnAnimationCoroutine_d__8")]
-    pub type _SpawnAnimationCoroutine_d__8 = crate::GlobalNamespace::MultiplayerLobbyAvatarController__SpawnAnimationCoroutine_d__8;
     pub fn ActivateVisualObjects(
         &mut self,
         on: bool,

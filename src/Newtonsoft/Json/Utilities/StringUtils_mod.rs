@@ -31,10 +31,6 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
     pub const Tab: char = '\t';
     #[cfg(feature = "Newtonsoft+Json+Utilities+StringUtils+SeparatedCaseState")]
     pub type SeparatedCaseState = crate::Newtonsoft::Json::Utilities::StringUtils_SeparatedCaseState;
-    #[cfg(feature = "Newtonsoft+Json+Utilities+StringUtils+__c__DisplayClass14_0_1")]
-    pub type __c__DisplayClass14_0_1<TSource: quest_hook::libil2cpp::Type> = crate::Newtonsoft::Json::Utilities::StringUtils___c__DisplayClass14_0_1<
-        TSource,
-    >;
     pub fn CreateStringWriter(
         capacity: i32,
     ) -> quest_hook::libil2cpp::Result<

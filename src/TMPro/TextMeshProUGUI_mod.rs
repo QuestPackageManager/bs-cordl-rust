@@ -48,10 +48,6 @@ impl std::ops::DerefMut for crate::TMPro::TextMeshProUGUI {
 }
 #[cfg(feature = "TMPro+TextMeshProUGUI")]
 impl crate::TMPro::TextMeshProUGUI {
-    #[cfg(feature = "TMPro+TextMeshProUGUI+_DelayedGraphicRebuild_d__18")]
-    pub type _DelayedGraphicRebuild_d__18 = crate::TMPro::TextMeshProUGUI__DelayedGraphicRebuild_d__18;
-    #[cfg(feature = "TMPro+TextMeshProUGUI+_DelayedMaterialRebuild_d__19")]
-    pub type _DelayedMaterialRebuild_d__19 = crate::TMPro::TextMeshProUGUI__DelayedMaterialRebuild_d__19;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

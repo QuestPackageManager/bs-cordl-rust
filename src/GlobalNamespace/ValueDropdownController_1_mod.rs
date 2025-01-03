@@ -34,8 +34,6 @@ for crate::GlobalNamespace::ValueDropdownController_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::GlobalNamespace::ValueDropdownController_1<T> {
-    #[cfg(feature = "ValueDropdownController_1+__c")]
-    pub type __c = crate::GlobalNamespace::ValueDropdownController_1___c<T>;
     pub fn GetIdxForValue(&mut self, value: T) -> quest_hook::libil2cpp::Result<i32>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type

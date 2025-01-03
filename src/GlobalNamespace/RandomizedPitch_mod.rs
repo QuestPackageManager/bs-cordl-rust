@@ -30,10 +30,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::RandomizedPitch {
 }
 #[cfg(feature = "RandomizedPitch")]
 impl crate::GlobalNamespace::RandomizedPitch {
-    #[cfg(feature = "RandomizedPitch+_PlayDelayedCoroutine_d__9")]
-    pub type _PlayDelayedCoroutine_d__9 = crate::GlobalNamespace::RandomizedPitch__PlayDelayedCoroutine_d__9;
-    #[cfg(feature = "RandomizedPitch+_RestorePitchWithDelay_d__10")]
-    pub type _RestorePitchWithDelay_d__10 = crate::GlobalNamespace::RandomizedPitch__RestorePitchWithDelay_d__10;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

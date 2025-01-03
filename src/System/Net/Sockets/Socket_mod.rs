@@ -57,14 +57,6 @@ impl crate::System::Net::Sockets::Socket {
     >;
     #[cfg(feature = "System+Net+Sockets+Socket+WSABUF")]
     pub type WSABUF = crate::System::Net::Sockets::Socket_WSABUF;
-    #[cfg(feature = "System+Net+Sockets+Socket+__c")]
-    pub type __c = crate::System::Net::Sockets::Socket___c;
-    #[cfg(feature = "System+Net+Sockets+Socket+__c__DisplayClass240_0")]
-    pub type __c__DisplayClass240_0 = crate::System::Net::Sockets::Socket___c__DisplayClass240_0;
-    #[cfg(feature = "System+Net+Sockets+Socket+__c__DisplayClass298_0")]
-    pub type __c__DisplayClass298_0 = crate::System::Net::Sockets::Socket___c__DisplayClass298_0;
-    #[cfg(feature = "System+Net+Sockets+Socket+__c__DisplayClass355_0")]
-    pub type __c__DisplayClass355_0 = crate::System::Net::Sockets::Socket___c__DisplayClass355_0;
     pub fn AcceptAsync(
         &mut self,
         e: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::SocketAsyncEventArgs>,
@@ -2107,8 +2099,6 @@ for crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
 }
 #[cfg(feature = "System+Net+Sockets+Socket+AwaitableSocketAsyncEventArgs")]
 impl crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
-    #[cfg(feature = "System+Net+Sockets+Socket+AwaitableSocketAsyncEventArgs+__c")]
-    pub type __c = crate::System::Net::Sockets::AwaitableSocketAsyncEventArgs_Socket___c;
     pub fn CreateException(
         &mut self,
         error: crate::System::Net::Sockets::SocketError,

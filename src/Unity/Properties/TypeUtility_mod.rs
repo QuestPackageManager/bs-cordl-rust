@@ -42,8 +42,6 @@ impl crate::Unity::Properties::TypeUtility {
     pub type TypeConstructor_1<T: quest_hook::libil2cpp::Type> = crate::Unity::Properties::TypeUtility_TypeConstructor_1<
         T,
     >;
-    #[cfg(feature = "Unity+Properties+TypeUtility+__c")]
-    pub type __c = crate::Unity::Properties::TypeUtility___c;
     pub fn CanBeInstantiated_1<T>() -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument

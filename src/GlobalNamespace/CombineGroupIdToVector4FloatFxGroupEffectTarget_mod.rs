@@ -45,8 +45,6 @@ impl crate::GlobalNamespace::CombineGroupIdToVector4FloatFxGroupEffectTarget {
         feature = "CombineGroupIdToVector4FloatFxGroupEffectTarget+LightGroupSOToIndex"
     )]
     pub type LightGroupSOToIndex = crate::GlobalNamespace::CombineGroupIdToVector4FloatFxGroupEffectTarget_LightGroupSOToIndex;
-    #[cfg(feature = "CombineGroupIdToVector4FloatFxGroupEffectTarget+__c")]
-    pub type __c = crate::GlobalNamespace::CombineGroupIdToVector4FloatFxGroupEffectTarget___c;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

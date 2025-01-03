@@ -52,8 +52,6 @@ impl crate::UnityEngine::InputSystem::HID::HID {
     pub type Simulation = crate::UnityEngine::InputSystem::HID::HID_Simulation;
     #[cfg(feature = "UnityEngine+InputSystem+HID+HID+UsagePage")]
     pub type UsagePage = crate::UnityEngine::InputSystem::HID::HID_UsagePage;
-    #[cfg(feature = "UnityEngine+InputSystem+HID+HID+__c__DisplayClass12_0")]
-    pub type __c__DisplayClass12_0 = crate::UnityEngine::InputSystem::HID::HID___c__DisplayClass12_0;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -845,8 +843,6 @@ impl std::ops::DerefMut for crate::UnityEngine::InputSystem::HID::HID_HIDLayoutB
 }
 #[cfg(feature = "UnityEngine+InputSystem+HID+HID+HIDLayoutBuilder")]
 impl crate::UnityEngine::InputSystem::HID::HID_HIDLayoutBuilder {
-    #[cfg(feature = "UnityEngine+InputSystem+HID+HID+HIDLayoutBuilder+__c")]
-    pub type __c = crate::UnityEngine::InputSystem::HID::HIDLayoutBuilder_HID___c;
     pub fn Build(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

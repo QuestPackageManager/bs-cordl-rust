@@ -33,10 +33,6 @@ impl crate::HMUI::NavigationController {
     pub type Alignment = crate::HMUI::NavigationController_Alignment;
     #[cfg(feature = "HMUI+NavigationController+Orientation")]
     pub type Orientation = crate::HMUI::NavigationController_Orientation;
-    #[cfg(feature = "HMUI+NavigationController+__c__DisplayClass10_0")]
-    pub type __c__DisplayClass10_0 = crate::HMUI::NavigationController___c__DisplayClass10_0;
-    #[cfg(feature = "HMUI+NavigationController+__c__DisplayClass8_0")]
-    pub type __c__DisplayClass8_0 = crate::HMUI::NavigationController___c__DisplayClass8_0;
     pub fn GetNewPositionsForViewControllers(
         &mut self,
         viewControllers: quest_hook::libil2cpp::Gc<

@@ -428,8 +428,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::UQuery_UQueryMatcher
 }
 #[cfg(feature = "UnityEngine+UIElements+UQuery+UQueryMatcher")]
 impl crate::UnityEngine::UIElements::UQuery_UQueryMatcher {
-    #[cfg(feature = "UnityEngine+UIElements+UQuery+UQueryMatcher+__c")]
-    pub type __c = crate::UnityEngine::UIElements::UQueryMatcher_UQuery___c;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

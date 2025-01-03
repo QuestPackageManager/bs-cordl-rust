@@ -28,8 +28,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::GameLoader {
 #[cfg(feature = "GameLoader")]
 impl crate::GlobalNamespace::GameLoader {
     pub const kInitSceneAssetLabel: &'static str = "AppInit";
-    #[cfg(feature = "GameLoader+_Start_d__3")]
-    pub type _Start_d__3 = crate::GlobalNamespace::GameLoader__Start_d__3;
     pub fn HandleSceneContextPostInstall(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -25,8 +25,6 @@ impl std::ops::DerefMut for crate::UnityEngine::Timeline::AudioTrack {
 }
 #[cfg(feature = "UnityEngine+Timeline+AudioTrack")]
 impl crate::UnityEngine::Timeline::AudioTrack {
-    #[cfg(feature = "UnityEngine+Timeline+AudioTrack+_get_outputs_d__4")]
-    pub type _get_outputs_d__4 = crate::UnityEngine::Timeline::AudioTrack__get_outputs_d__4;
     pub fn CompileClips(
         &mut self,
         graph: crate::UnityEngine::Playables::PlayableGraph,

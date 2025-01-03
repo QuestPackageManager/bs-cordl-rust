@@ -30,8 +30,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BlurredCoverImageView {
 }
 #[cfg(feature = "BlurredCoverImageView")]
 impl crate::GlobalNamespace::BlurredCoverImageView {
-    #[cfg(feature = "BlurredCoverImageView+_SetTextureAsync_d__7")]
-    pub type _SetTextureAsync_d__7 = crate::GlobalNamespace::BlurredCoverImageView__SetTextureAsync_d__7;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

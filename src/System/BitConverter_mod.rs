@@ -23,8 +23,6 @@ impl std::ops::DerefMut for crate::System::BitConverter {
 }
 #[cfg(feature = "System+BitConverter")]
 impl crate::System::BitConverter {
-    #[cfg(feature = "System+BitConverter+__c")]
-    pub type __c = crate::System::BitConverter___c;
     pub fn DoubleToInt64Bits(value: f64) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_ret: i64 = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("DoubleToInt64Bits", (value))?;

@@ -35,10 +35,6 @@ impl crate::GlobalNamespace::OculusXPlatformAccessTokenRequestOperation {
         feature = "OculusXPlatformAccessTokenRequestOperation+OculusTokenRequestOperationState"
     )]
     pub type OculusTokenRequestOperationState = crate::GlobalNamespace::OculusXPlatformAccessTokenRequestOperation_OculusTokenRequestOperationState;
-    #[cfg(
-        feature = "OculusXPlatformAccessTokenRequestOperation+_RequestXPlatformAccessToken_d__7"
-    )]
-    pub type _RequestXPlatformAccessToken_d__7 = crate::GlobalNamespace::OculusXPlatformAccessTokenRequestOperation__RequestXPlatformAccessToken_d__7;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

@@ -36,8 +36,6 @@ for crate::GlobalNamespace::BeatmapCharacteristicSegmentedControlController {
 }
 #[cfg(feature = "BeatmapCharacteristicSegmentedControlController")]
 impl crate::GlobalNamespace::BeatmapCharacteristicSegmentedControlController {
-    #[cfg(feature = "BeatmapCharacteristicSegmentedControlController+__c")]
-    pub type __c = crate::GlobalNamespace::BeatmapCharacteristicSegmentedControlController___c;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

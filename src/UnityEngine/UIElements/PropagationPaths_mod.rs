@@ -35,8 +35,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::PropagationPaths {
 impl crate::UnityEngine::UIElements::PropagationPaths {
     pub const k_DefaultPropagationDepth: i32 = 16i32;
     pub const k_DefaultTargetCount: i32 = 4i32;
-    #[cfg(feature = "UnityEngine+UIElements+PropagationPaths+__c")]
-    pub type __c = crate::UnityEngine::UIElements::PropagationPaths___c;
     pub fn Build(
         elem: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,

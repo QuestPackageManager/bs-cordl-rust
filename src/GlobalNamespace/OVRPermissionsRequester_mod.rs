@@ -30,8 +30,6 @@ impl crate::GlobalNamespace::OVRPermissionsRequester {
     pub const ScenePermission: &'static str = "com.oculus.permission.USE_SCENE";
     #[cfg(feature = "OVRPermissionsRequester+Permission")]
     pub type Permission = crate::GlobalNamespace::OVRPermissionsRequester_Permission;
-    #[cfg(feature = "OVRPermissionsRequester+__c")]
-    pub type __c = crate::GlobalNamespace::OVRPermissionsRequester___c;
     pub fn BuildPermissionCallbacks() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Android::PermissionCallbacks>,
     > {

@@ -49,8 +49,6 @@ impl crate::GlobalNamespace::SliderIntensityEffect {
     pub type InitData = crate::GlobalNamespace::SliderIntensityEffect_InitData;
     #[cfg(feature = "SliderIntensityEffect+IntensityCalculationDelegate")]
     pub type IntensityCalculationDelegate = crate::GlobalNamespace::SliderIntensityEffect_IntensityCalculationDelegate;
-    #[cfg(feature = "SliderIntensityEffect+_ProcessEffectCoroutine_d__27")]
-    pub type _ProcessEffectCoroutine_d__27 = crate::GlobalNamespace::SliderIntensityEffect__ProcessEffectCoroutine_d__27;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

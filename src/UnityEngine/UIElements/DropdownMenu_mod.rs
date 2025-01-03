@@ -28,8 +28,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::DropdownMenu {
 }
 #[cfg(feature = "UnityEngine+UIElements+DropdownMenu")]
 impl crate::UnityEngine::UIElements::DropdownMenu {
-    #[cfg(feature = "UnityEngine+UIElements+DropdownMenu+__c__DisplayClass4_0")]
-    pub type __c__DisplayClass4_0 = crate::UnityEngine::UIElements::DropdownMenu___c__DisplayClass4_0;
     pub fn AppendAction_DropdownMenuAction_Status1(
         &mut self,
         actionName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

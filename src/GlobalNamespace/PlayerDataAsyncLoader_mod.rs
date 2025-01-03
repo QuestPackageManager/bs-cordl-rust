@@ -25,8 +25,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::PlayerDataAsyncLoader {
 }
 #[cfg(feature = "PlayerDataAsyncLoader")]
 impl crate::GlobalNamespace::PlayerDataAsyncLoader {
-    #[cfg(feature = "PlayerDataAsyncLoader+_LoadResourcesBeforeInstallAsync_d__2")]
-    pub type _LoadResourcesBeforeInstallAsync_d__2 = crate::GlobalNamespace::PlayerDataAsyncLoader__LoadResourcesBeforeInstallAsync_d__2;
     pub fn InstallBindings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

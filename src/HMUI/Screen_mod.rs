@@ -25,8 +25,6 @@ impl std::ops::DerefMut for crate::HMUI::Screen {
 }
 #[cfg(feature = "HMUI+Screen")]
 impl crate::HMUI::Screen {
-    #[cfg(feature = "HMUI+Screen+_TransitionCoroutine_d__5")]
-    pub type _TransitionCoroutine_d__5 = crate::HMUI::Screen__TransitionCoroutine_d__5;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

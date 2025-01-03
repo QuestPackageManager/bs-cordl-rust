@@ -26,8 +26,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::ShaderWarmupSceneStart {
 }
 #[cfg(feature = "ShaderWarmupSceneStart")]
 impl crate::GlobalNamespace::ShaderWarmupSceneStart {
-    #[cfg(feature = "ShaderWarmupSceneStart+_Start_d__2")]
-    pub type _Start_d__2 = crate::GlobalNamespace::ShaderWarmupSceneStart__Start_d__2;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

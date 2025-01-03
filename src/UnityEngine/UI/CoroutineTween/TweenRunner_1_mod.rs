@@ -31,10 +31,6 @@ for crate::UnityEngine::UI::CoroutineTween::TweenRunner_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::UnityEngine::UI::CoroutineTween::TweenRunner_1<T> {
-    #[cfg(feature = "UnityEngine+UI+CoroutineTween+TweenRunner_1+_Start_d__2")]
-    pub type _Start_d__2 = crate::UnityEngine::UI::CoroutineTween::TweenRunner_1__Start_d__2<
-        T,
-    >;
     pub fn Init(
         &mut self,
         coroutineContainer: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,

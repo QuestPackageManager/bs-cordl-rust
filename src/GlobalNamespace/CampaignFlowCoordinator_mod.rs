@@ -42,10 +42,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::CampaignFlowCoordinator {
 }
 #[cfg(feature = "CampaignFlowCoordinator")]
 impl crate::GlobalNamespace::CampaignFlowCoordinator {
-    #[cfg(feature = "CampaignFlowCoordinator+__c__DisplayClass22_0")]
-    pub type __c__DisplayClass22_0 = crate::GlobalNamespace::CampaignFlowCoordinator___c__DisplayClass22_0;
-    #[cfg(feature = "CampaignFlowCoordinator+__c__DisplayClass24_0")]
-    pub type __c__DisplayClass24_0 = crate::GlobalNamespace::CampaignFlowCoordinator___c__DisplayClass24_0;
     pub fn BackButtonWasPressed(
         &mut self,
         topViewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,

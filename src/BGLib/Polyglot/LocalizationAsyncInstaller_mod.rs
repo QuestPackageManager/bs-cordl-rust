@@ -33,8 +33,6 @@ impl std::ops::DerefMut for crate::BGLib::Polyglot::LocalizationAsyncInstaller {
 #[cfg(feature = "BGLib+Polyglot+LocalizationAsyncInstaller")]
 impl crate::BGLib::Polyglot::LocalizationAsyncInstaller {
     pub const kLocalizationContentLabel: &'static str = "LocalizationContent";
-    #[cfg(feature = "BGLib+Polyglot+LocalizationAsyncInstaller+__c")]
-    pub type __c = crate::BGLib::Polyglot::LocalizationAsyncInstaller___c;
     pub fn InstallBindings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -39,12 +39,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::LobbyPlayersDataModel {
 }
 #[cfg(feature = "LobbyPlayersDataModel")]
 impl crate::GlobalNamespace::LobbyPlayersDataModel {
-    #[cfg(feature = "LobbyPlayersDataModel+_GetEnumerator_d__59")]
-    pub type _GetEnumerator_d__59 = crate::GlobalNamespace::LobbyPlayersDataModel__GetEnumerator_d__59;
-    #[cfg(feature = "LobbyPlayersDataModel+_SetOwnedSongPacks_d__42")]
-    pub type _SetOwnedSongPacks_d__42 = crate::GlobalNamespace::LobbyPlayersDataModel__SetOwnedSongPacks_d__42;
-    #[cfg(feature = "LobbyPlayersDataModel+__c")]
-    pub type __c = crate::GlobalNamespace::LobbyPlayersDataModel___c;
     pub fn Activate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

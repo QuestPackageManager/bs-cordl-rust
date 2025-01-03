@@ -56,12 +56,6 @@ impl crate::GlobalNamespace::MultiplayerController {
     pub const kSongTimeToSongStartSyncTimeOffsetMs: i64 = -600i64;
     #[cfg(feature = "MultiplayerController+State")]
     pub type State = crate::GlobalNamespace::MultiplayerController_State;
-    #[cfg(feature = "MultiplayerController+_PerformSongStartSync_d__39")]
-    pub type _PerformSongStartSync_d__39 = crate::GlobalNamespace::MultiplayerController__PerformSongStartSync_d__39;
-    #[cfg(feature = "MultiplayerController+__c")]
-    pub type __c = crate::GlobalNamespace::MultiplayerController___c;
-    #[cfg(feature = "MultiplayerController+__c__DisplayClass45_0")]
-    pub type __c__DisplayClass45_0 = crate::GlobalNamespace::MultiplayerController___c__DisplayClass45_0;
     pub fn ChangeState(
         &mut self,
         newState: crate::GlobalNamespace::MultiplayerController_State,

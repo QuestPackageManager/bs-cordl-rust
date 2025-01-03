@@ -30,10 +30,6 @@ for crate::System::Linq::OrderedEnumerable_1<TElement> {
 impl<
     TElement: quest_hook::libil2cpp::Type,
 > crate::System::Linq::OrderedEnumerable_1<TElement> {
-    #[cfg(feature = "System+Linq+OrderedEnumerable_1+_GetEnumerator_d__1")]
-    pub type _GetEnumerator_d__1 = crate::System::Linq::OrderedEnumerable_1__GetEnumerator_d__1<
-        TElement,
-    >;
     pub fn GetEnumerableSorter(
         &mut self,
         next: quest_hook::libil2cpp::Gc<

@@ -24,8 +24,6 @@ impl std::ops::DerefMut for crate::UnityEngine::Timeline::Extrapolation {
 }
 #[cfg(feature = "UnityEngine+Timeline+Extrapolation")]
 impl crate::UnityEngine::Timeline::Extrapolation {
-    #[cfg(feature = "UnityEngine+Timeline+Extrapolation+__c")]
-    pub type __c = crate::UnityEngine::Timeline::Extrapolation___c;
     pub fn CalculateExtrapolationTimes(
         asset: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -26,8 +26,6 @@ for crate::UnityEngine::ProBuilder::MeshOperations::CombineMeshes {
 }
 #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+CombineMeshes")]
 impl crate::UnityEngine::ProBuilder::MeshOperations::CombineMeshes {
-    #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+CombineMeshes+__c")]
-    pub type __c = crate::UnityEngine::ProBuilder::MeshOperations::CombineMeshes___c;
     pub fn AccumulateMeshesInfo(
         meshes: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<

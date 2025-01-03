@@ -57,10 +57,6 @@ impl crate::UnityEngine::Timeline::TrackAsset {
     pub type TransientBuildData = crate::UnityEngine::Timeline::TrackAsset_TransientBuildData;
     #[cfg(feature = "UnityEngine+Timeline+TrackAsset+Versions")]
     pub type Versions = crate::UnityEngine::Timeline::TrackAsset_Versions;
-    #[cfg(feature = "UnityEngine+Timeline+TrackAsset+__c")]
-    pub type __c = crate::UnityEngine::Timeline::TrackAsset___c;
-    #[cfg(feature = "UnityEngine+Timeline+TrackAsset+_get_outputs_d__65")]
-    pub type _get_outputs_d__65 = crate::UnityEngine::Timeline::TrackAsset__get_outputs_d__65;
     pub fn AddChild(
         &mut self,
         child: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,

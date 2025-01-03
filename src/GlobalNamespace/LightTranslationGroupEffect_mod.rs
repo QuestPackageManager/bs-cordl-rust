@@ -40,8 +40,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::LightTranslationGroupEffect 
 impl crate::GlobalNamespace::LightTranslationGroupEffect {
     #[cfg(feature = "LightTranslationGroupEffect+InitData")]
     pub type InitData = crate::GlobalNamespace::LightTranslationGroupEffect_InitData;
-    #[cfg(feature = "LightTranslationGroupEffect+__c__DisplayClass12_0")]
-    pub type __c__DisplayClass12_0 = crate::GlobalNamespace::LightTranslationGroupEffect___c__DisplayClass12_0;
     pub fn Cleanup(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

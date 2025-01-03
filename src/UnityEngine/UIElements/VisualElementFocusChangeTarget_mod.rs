@@ -27,8 +27,6 @@ for crate::UnityEngine::UIElements::VisualElementFocusChangeTarget {
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualElementFocusChangeTarget")]
 impl crate::UnityEngine::UIElements::VisualElementFocusChangeTarget {
-    #[cfg(feature = "UnityEngine+UIElements+VisualElementFocusChangeTarget+__c")]
-    pub type __c = crate::UnityEngine::UIElements::VisualElementFocusChangeTarget___c;
     pub fn ApplyTo(
         &mut self,
         focusController: quest_hook::libil2cpp::Gc<

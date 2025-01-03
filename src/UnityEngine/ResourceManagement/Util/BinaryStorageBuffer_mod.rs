@@ -175,10 +175,6 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTy
         feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer+ObjectToStringRemap"
     )]
     pub type ObjectToStringRemap = crate::UnityEngine::ResourceManagement::Util::BuiltinTypesSerializer_BinaryStorageBuffer_ObjectToStringRemap;
-    #[cfg(
-        feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer+__c__DisplayClass4_0"
-    )]
-    pub type __c__DisplayClass4_0 = crate::UnityEngine::ResourceManagement::Util::BuiltinTypesSerializer_BinaryStorageBuffer___c__DisplayClass4_0;
     pub fn Deserialize(
         &mut self,
         reader: quest_hook::libil2cpp::Gc<

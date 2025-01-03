@@ -28,10 +28,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::ConsoleCommandBase {
 }
 #[cfg(feature = "ConsoleCommandBase")]
 impl crate::GlobalNamespace::ConsoleCommandBase {
-    #[cfg(feature = "ConsoleCommandBase+__c")]
-    pub type __c = crate::GlobalNamespace::ConsoleCommandBase___c;
-    #[cfg(feature = "ConsoleCommandBase+__c__DisplayClass11_0")]
-    pub type __c__DisplayClass11_0 = crate::GlobalNamespace::ConsoleCommandBase___c__DisplayClass11_0;
     pub fn AreArgumentsValid(
         &mut self,
         args: quest_hook::libil2cpp::Gc<

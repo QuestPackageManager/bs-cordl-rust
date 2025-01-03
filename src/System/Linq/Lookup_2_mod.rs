@@ -46,11 +46,6 @@ impl<
 > crate::System::Linq::Lookup_2<TKey, TElement> {
     #[cfg(feature = "System+Linq+Lookup_2+Grouping")]
     pub type Grouping = crate::System::Linq::Lookup_2_Grouping<TKey, TElement>;
-    #[cfg(feature = "System+Linq+Lookup_2+_GetEnumerator_d__12")]
-    pub type _GetEnumerator_d__12 = crate::System::Linq::Lookup_2__GetEnumerator_d__12<
-        TKey,
-        TElement,
-    >;
     pub fn Create<TSource>(
         source: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<TSource>,
@@ -325,11 +320,6 @@ impl<
     TKey: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
 > crate::System::Linq::Lookup_2_Grouping<TKey, TElement> {
-    #[cfg(feature = "System+Linq+Lookup_2+Grouping+_GetEnumerator_d__7")]
-    pub type _GetEnumerator_d__7 = crate::System::Linq::Grouping_Lookup_2__GetEnumerator_d__7<
-        TKey,
-        TElement,
-    >;
     pub fn Add(
         &mut self,
         element: TElement,

@@ -27,8 +27,6 @@ impl std::ops::DerefMut for crate::UnityEngine::EventSystems::OVRPhysicsRaycaste
 #[cfg(feature = "UnityEngine+EventSystems+OVRPhysicsRaycaster")]
 impl crate::UnityEngine::EventSystems::OVRPhysicsRaycaster {
     pub const kNoEventMaskSet: i32 = -1i32;
-    #[cfg(feature = "UnityEngine+EventSystems+OVRPhysicsRaycaster+__c")]
-    pub type __c = crate::UnityEngine::EventSystems::OVRPhysicsRaycaster___c;
     pub fn GetScreenPos(
         &mut self,
         worldPosition: crate::UnityEngine::Vector3,

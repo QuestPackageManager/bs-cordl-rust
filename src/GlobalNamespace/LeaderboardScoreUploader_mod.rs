@@ -42,14 +42,6 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader {
     pub type ScoresToUploadData = crate::GlobalNamespace::LeaderboardScoreUploader_ScoresToUploadData;
     #[cfg(feature = "LeaderboardScoreUploader+UploadScoreCallback")]
     pub type UploadScoreCallback = crate::GlobalNamespace::LeaderboardScoreUploader_UploadScoreCallback;
-    #[cfg(feature = "LeaderboardScoreUploader+_LoadScoresToUploadFromFile_d__17")]
-    pub type _LoadScoresToUploadFromFile_d__17 = crate::GlobalNamespace::LeaderboardScoreUploader__LoadScoresToUploadFromFile_d__17;
-    #[cfg(feature = "LeaderboardScoreUploader+_SaveScoresToUploadToFile_d__18")]
-    pub type _SaveScoresToUploadToFile_d__18 = crate::GlobalNamespace::LeaderboardScoreUploader__SaveScoresToUploadToFile_d__18;
-    #[cfg(feature = "LeaderboardScoreUploader+_UploadScoresCoroutine_d__16")]
-    pub type _UploadScoresCoroutine_d__16 = crate::GlobalNamespace::LeaderboardScoreUploader__UploadScoresCoroutine_d__16;
-    #[cfg(feature = "LeaderboardScoreUploader+__c__DisplayClass16_0")]
-    pub type __c__DisplayClass16_0 = crate::GlobalNamespace::LeaderboardScoreUploader___c__DisplayClass16_0;
     pub fn AddScore(
         &mut self,
         scoreData: quest_hook::libil2cpp::Gc<

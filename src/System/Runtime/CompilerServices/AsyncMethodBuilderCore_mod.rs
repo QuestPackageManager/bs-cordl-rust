@@ -32,12 +32,6 @@ impl crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore {
         feature = "System+Runtime+CompilerServices+AsyncMethodBuilderCore+MoveNextRunner"
     )]
     pub type MoveNextRunner = crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore_MoveNextRunner;
-    #[cfg(feature = "System+Runtime+CompilerServices+AsyncMethodBuilderCore+__c")]
-    pub type __c = crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore___c;
-    #[cfg(
-        feature = "System+Runtime+CompilerServices+AsyncMethodBuilderCore+__c__DisplayClass5_0"
-    )]
-    pub type __c__DisplayClass5_0 = crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore___c__DisplayClass5_0;
     pub fn CreateContinuationWrapper(
         continuation: quest_hook::libil2cpp::Gc<crate::System::Action>,
         invokeAction: quest_hook::libil2cpp::Gc<crate::System::Action>,

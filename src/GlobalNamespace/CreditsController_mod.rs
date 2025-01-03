@@ -43,12 +43,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::CreditsController {
 }
 #[cfg(feature = "CreditsController")]
 impl crate::GlobalNamespace::CreditsController {
-    #[cfg(feature = "CreditsController+_ScrollCoroutine_d__18")]
-    pub type _ScrollCoroutine_d__18 = crate::GlobalNamespace::CreditsController__ScrollCoroutine_d__18;
-    #[cfg(feature = "CreditsController+_StartAsync_d__15")]
-    pub type _StartAsync_d__15 = crate::GlobalNamespace::CreditsController__StartAsync_d__15;
-    #[cfg(feature = "CreditsController+__c")]
-    pub type __c = crate::GlobalNamespace::CreditsController___c;
     pub fn Finish(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

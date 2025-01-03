@@ -29,8 +29,6 @@ impl std::ops::DerefMut for crate::System::Data::Common::SqlUdtStorage {
 }
 #[cfg(feature = "System+Data+Common+SqlUdtStorage")]
 impl crate::System::Data::Common::SqlUdtStorage {
-    #[cfg(feature = "System+Data+Common+SqlUdtStorage+__c__DisplayClass6_0")]
-    pub type __c__DisplayClass6_0 = crate::System::Data::Common::SqlUdtStorage___c__DisplayClass6_0;
     pub fn Aggregate(
         &mut self,
         records: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,

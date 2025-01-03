@@ -34,8 +34,6 @@ impl crate::System::Threading::OSSpecificSynchronizationContext {
         feature = "System+Threading+OSSpecificSynchronizationContext+InvocationEntryDelegate"
     )]
     pub type InvocationEntryDelegate = crate::System::Threading::OSSpecificSynchronizationContext_InvocationEntryDelegate;
-    #[cfg(feature = "System+Threading+OSSpecificSynchronizationContext+__c")]
-    pub type __c = crate::System::Threading::OSSpecificSynchronizationContext___c;
     pub fn CreateCopy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

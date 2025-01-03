@@ -54,10 +54,6 @@ for crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollecto
     feature = "UnityEngine+ResourceManagement+Diagnostics+DiagnosticEventCollectorSingleton"
 )]
 impl crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollectorSingleton {
-    #[cfg(
-        feature = "UnityEngine+ResourceManagement+Diagnostics+DiagnosticEventCollectorSingleton+__c"
-    )]
-    pub type __c = crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollectorSingleton___c;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

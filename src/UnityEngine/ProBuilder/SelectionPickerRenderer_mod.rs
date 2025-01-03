@@ -41,12 +41,6 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
         feature = "UnityEngine+ProBuilder+SelectionPickerRenderer+SelectionPickerRendererStandard"
     )]
     pub type SelectionPickerRendererStandard = crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRendererStandard;
-    #[cfg(feature = "UnityEngine+ProBuilder+SelectionPickerRenderer+__c")]
-    pub type __c = crate::UnityEngine::ProBuilder::SelectionPickerRenderer___c;
-    #[cfg(
-        feature = "UnityEngine+ProBuilder+SelectionPickerRenderer+__c__DisplayClass19_0"
-    )]
-    pub type __c__DisplayClass19_0 = crate::UnityEngine::ProBuilder::SelectionPickerRenderer___c__DisplayClass19_0;
     pub fn BuildEdgeMesh(
         pb: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         map: quest_hook::libil2cpp::Gc<

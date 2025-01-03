@@ -28,14 +28,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OculusPlatformLeaderboardsHa
 }
 #[cfg(feature = "OculusPlatformLeaderboardsHandler")]
 impl crate::GlobalNamespace::OculusPlatformLeaderboardsHandler {
-    #[cfg(feature = "OculusPlatformLeaderboardsHandler+__c")]
-    pub type __c = crate::GlobalNamespace::OculusPlatformLeaderboardsHandler___c;
-    #[cfg(feature = "OculusPlatformLeaderboardsHandler+__c__DisplayClass4_0")]
-    pub type __c__DisplayClass4_0 = crate::GlobalNamespace::OculusPlatformLeaderboardsHandler___c__DisplayClass4_0;
-    #[cfg(feature = "OculusPlatformLeaderboardsHandler+__c__DisplayClass6_0")]
-    pub type __c__DisplayClass6_0 = crate::GlobalNamespace::OculusPlatformLeaderboardsHandler___c__DisplayClass6_0;
-    #[cfg(feature = "OculusPlatformLeaderboardsHandler+__c__DisplayClass7_0")]
-    pub type __c__DisplayClass7_0 = crate::GlobalNamespace::OculusPlatformLeaderboardsHandler___c__DisplayClass7_0;
     pub fn AddOculusRequest(
         &mut self,
         oculusRequest: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>,

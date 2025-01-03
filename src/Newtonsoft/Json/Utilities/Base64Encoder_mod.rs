@@ -30,8 +30,6 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Utilities::Base64Encoder {
 impl crate::Newtonsoft::Json::Utilities::Base64Encoder {
     pub const Base64LineSize: i32 = 76i32;
     pub const LineSizeInBytes: i32 = 57i32;
-    #[cfg(feature = "Newtonsoft+Json+Utilities+Base64Encoder+_EncodeAsync_d__13")]
-    pub type _EncodeAsync_d__13 = crate::Newtonsoft::Json::Utilities::Base64Encoder__EncodeAsync_d__13;
     pub fn Encode(
         &mut self,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,

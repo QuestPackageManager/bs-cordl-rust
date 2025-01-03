@@ -47,8 +47,6 @@ impl crate::HMUI::InputFieldView {
     pub type InputFieldChanged = crate::HMUI::InputFieldView_InputFieldChanged;
     #[cfg(feature = "HMUI+InputFieldView+SelectionState")]
     pub type SelectionState = crate::HMUI::InputFieldView_SelectionState;
-    #[cfg(feature = "HMUI+InputFieldView+_BlinkingCaretCoroutine_d__43")]
-    pub type _BlinkingCaretCoroutine_d__43 = crate::HMUI::InputFieldView__BlinkingCaretCoroutine_d__43;
     pub fn ActivateKeyboard(
         &mut self,
         keyboard: quest_hook::libil2cpp::Gc<crate::HMUI::UIKeyboard>,

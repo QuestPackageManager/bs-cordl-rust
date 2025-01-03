@@ -24,8 +24,6 @@ impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::InternalUtility {
 }
 #[cfg(feature = "UnityEngine+ProBuilder+InternalUtility")]
 impl crate::UnityEngine::ProBuilder::InternalUtility {
-    #[cfg(feature = "UnityEngine+ProBuilder+InternalUtility+__c__DisplayClass6_0")]
-    pub type __c__DisplayClass6_0 = crate::UnityEngine::ProBuilder::InternalUtility___c__DisplayClass6_0;
     pub fn ControlKeyString(
         character: char,
     ) -> quest_hook::libil2cpp::Result<

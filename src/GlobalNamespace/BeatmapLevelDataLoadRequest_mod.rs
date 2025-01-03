@@ -34,8 +34,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapLevelDataLoadRequest 
 }
 #[cfg(feature = "BeatmapLevelDataLoadRequest")]
 impl crate::GlobalNamespace::BeatmapLevelDataLoadRequest {
-    #[cfg(feature = "BeatmapLevelDataLoadRequest+_LoadDataAsyncInternal_d__8")]
-    pub type _LoadDataAsyncInternal_d__8 = crate::GlobalNamespace::BeatmapLevelDataLoadRequest__LoadDataAsyncInternal_d__8;
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

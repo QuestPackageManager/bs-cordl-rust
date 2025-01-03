@@ -31,10 +31,6 @@ impl std::ops::DerefMut for crate::System::Net::WebRequest {
 impl crate::System::Net::WebRequest {
     #[cfg(feature = "System+Net+WebRequest+DesignerWebRequestCreate")]
     pub type DesignerWebRequestCreate = crate::System::Net::WebRequest_DesignerWebRequestCreate;
-    #[cfg(feature = "System+Net+WebRequest+__c__DisplayClass78_0")]
-    pub type __c__DisplayClass78_0 = crate::System::Net::WebRequest___c__DisplayClass78_0;
-    #[cfg(feature = "System+Net+WebRequest+__c__DisplayClass79_0")]
-    pub type __c__DisplayClass79_0 = crate::System::Net::WebRequest___c__DisplayClass79_0;
     pub fn Abort(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

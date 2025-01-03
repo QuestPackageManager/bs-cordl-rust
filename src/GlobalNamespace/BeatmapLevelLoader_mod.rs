@@ -38,16 +38,6 @@ impl crate::GlobalNamespace::BeatmapLevelLoader {
     pub type InitData = crate::GlobalNamespace::BeatmapLevelLoader_InitData;
     #[cfg(feature = "BeatmapLevelLoader+LevelDownloadingUpdate")]
     pub type LevelDownloadingUpdate = crate::GlobalNamespace::BeatmapLevelLoader_LevelDownloadingUpdate;
-    #[cfg(feature = "BeatmapLevelLoader+_CheckBeatmapLevelDataExistsAsync_d__14")]
-    pub type _CheckBeatmapLevelDataExistsAsync_d__14 = crate::GlobalNamespace::BeatmapLevelLoader__CheckBeatmapLevelDataExistsAsync_d__14;
-    #[cfg(
-        feature = "BeatmapLevelLoader+_CheckBeatmapLevelDataFromAssetBundleExistsAsync_d__16"
-    )]
-    pub type _CheckBeatmapLevelDataFromAssetBundleExistsAsync_d__16 = crate::GlobalNamespace::BeatmapLevelLoader__CheckBeatmapLevelDataFromAssetBundleExistsAsync_d__16;
-    #[cfg(feature = "BeatmapLevelLoader+_LoadBeatmapLevelDataAsync_d__13")]
-    pub type _LoadBeatmapLevelDataAsync_d__13 = crate::GlobalNamespace::BeatmapLevelLoader__LoadBeatmapLevelDataAsync_d__13;
-    #[cfg(feature = "BeatmapLevelLoader+_LoadBeatmapLevelDataFromAssetBundle_d__18")]
-    pub type _LoadBeatmapLevelDataFromAssetBundle_d__18 = crate::GlobalNamespace::BeatmapLevelLoader__LoadBeatmapLevelDataFromAssetBundle_d__18;
     pub fn CheckBeatmapLevelDataExistsAsync(
         &mut self,
         beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,

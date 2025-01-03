@@ -30,10 +30,6 @@ for crate::GlobalNamespace::MainMenuDestinationRequestController {
 }
 #[cfg(feature = "MainMenuDestinationRequestController")]
 impl crate::GlobalNamespace::MainMenuDestinationRequestController {
-    #[cfg(
-        feature = "MainMenuDestinationRequestController+_ProcessDestinationRequest_d__9"
-    )]
-    pub type _ProcessDestinationRequest_d__9 = crate::GlobalNamespace::MainMenuDestinationRequestController__ProcessDestinationRequest_d__9;
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -39,10 +39,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::GenericDropdownMenu 
 impl crate::UnityEngine::UIElements::GenericDropdownMenu {
     #[cfg(feature = "UnityEngine+UIElements+GenericDropdownMenu+MenuItem")]
     pub type MenuItem = crate::UnityEngine::UIElements::GenericDropdownMenu_MenuItem;
-    #[cfg(feature = "UnityEngine+UIElements+GenericDropdownMenu+__c__DisplayClass39_0")]
-    pub type __c__DisplayClass39_0 = crate::UnityEngine::UIElements::GenericDropdownMenu___c__DisplayClass39_0;
-    #[cfg(feature = "UnityEngine+UIElements+GenericDropdownMenu+__c__DisplayClass54_0")]
-    pub type __c__DisplayClass54_0 = crate::UnityEngine::UIElements::GenericDropdownMenu___c__DisplayClass54_0;
     pub fn AddDisabledItem(
         &mut self,
         itemName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

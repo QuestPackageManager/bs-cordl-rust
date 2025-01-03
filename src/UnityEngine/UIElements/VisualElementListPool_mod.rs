@@ -24,8 +24,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::VisualElementListPoo
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualElementListPool")]
 impl crate::UnityEngine::UIElements::VisualElementListPool {
-    #[cfg(feature = "UnityEngine+UIElements+VisualElementListPool+__c")]
-    pub type __c = crate::UnityEngine::UIElements::VisualElementListPool___c;
     pub fn Copy(
         elements: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<

@@ -27,12 +27,6 @@ for crate::BGLib::AppFlow::Initialization::FeatureAsyncPreloader {
 #[cfg(feature = "BGLib+AppFlow+Initialization+FeatureAsyncPreloader")]
 impl crate::BGLib::AppFlow::Initialization::FeatureAsyncPreloader {
     pub const kFeatureAsyncPreloader: &'static str = "FeatureAsyncPreloader";
-    #[cfg(
-        feature = "BGLib+AppFlow+Initialization+FeatureAsyncPreloader+_PreloadAsync_d__1"
-    )]
-    pub type _PreloadAsync_d__1 = crate::BGLib::AppFlow::Initialization::FeatureAsyncPreloader__PreloadAsync_d__1;
-    #[cfg(feature = "BGLib+AppFlow+Initialization+FeatureAsyncPreloader+__c")]
-    pub type __c = crate::BGLib::AppFlow::Initialization::FeatureAsyncPreloader___c;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

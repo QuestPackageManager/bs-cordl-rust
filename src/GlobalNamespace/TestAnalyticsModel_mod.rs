@@ -24,8 +24,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::TestAnalyticsModel {
 }
 #[cfg(feature = "TestAnalyticsModel")]
 impl crate::GlobalNamespace::TestAnalyticsModel {
-    #[cfg(feature = "TestAnalyticsModel+__c")]
-    pub type __c = crate::GlobalNamespace::TestAnalyticsModel___c;
     pub fn LogClick(
         &mut self,
         clickType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

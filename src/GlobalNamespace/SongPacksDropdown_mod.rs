@@ -31,8 +31,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::SongPacksDropdown {
 }
 #[cfg(feature = "SongPacksDropdown")]
 impl crate::GlobalNamespace::SongPacksDropdown {
-    #[cfg(feature = "SongPacksDropdown+__c")]
-    pub type __c = crate::GlobalNamespace::SongPacksDropdown___c;
     pub fn GetIdxForSongPackMask(
         &mut self,
         songPackMask: crate::GlobalNamespace::SongPackMask,

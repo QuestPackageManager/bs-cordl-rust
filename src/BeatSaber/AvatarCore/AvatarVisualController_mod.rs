@@ -25,10 +25,6 @@ impl std::ops::DerefMut for crate::BeatSaber::AvatarCore::AvatarVisualController
 }
 #[cfg(feature = "BeatSaber+AvatarCore+AvatarVisualController")]
 impl crate::BeatSaber::AvatarCore::AvatarVisualController {
-    #[cfg(
-        feature = "BeatSaber+AvatarCore+AvatarVisualController+_WaitForAvatarLoadAndSetLightColor_d__2"
-    )]
-    pub type _WaitForAvatarLoadAndSetLightColor_d__2 = crate::BeatSaber::AvatarCore::AvatarVisualController__WaitForAvatarLoadAndSetLightColor_d__2;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

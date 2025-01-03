@@ -31,8 +31,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::PackDefinitionAsyncInstaller
 }
 #[cfg(feature = "PackDefinitionAsyncInstaller")]
 impl crate::GlobalNamespace::PackDefinitionAsyncInstaller {
-    #[cfg(feature = "PackDefinitionAsyncInstaller+__c")]
-    pub type __c = crate::GlobalNamespace::PackDefinitionAsyncInstaller___c;
     pub fn InstallBindings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

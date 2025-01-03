@@ -26,8 +26,6 @@ impl std::ops::DerefMut for crate::Zenject::ProjectKernel {
 }
 #[cfg(feature = "Zenject+ProjectKernel")]
 impl crate::Zenject::ProjectKernel {
-    #[cfg(feature = "Zenject+ProjectKernel+__c__DisplayClass4_0")]
-    pub type __c__DisplayClass4_0 = crate::Zenject::ProjectKernel___c__DisplayClass4_0;
     pub fn DestroyEverythingInOrder(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

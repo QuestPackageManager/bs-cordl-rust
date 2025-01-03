@@ -59,8 +59,6 @@ impl crate::UnityEngine::UIElements::DefaultEventSystem {
     pub type NoInput = crate::UnityEngine::UIElements::DefaultEventSystem_NoInput;
     #[cfg(feature = "UnityEngine+UIElements+DefaultEventSystem+UpdateMode")]
     pub type UpdateMode = crate::UnityEngine::UIElements::DefaultEventSystem_UpdateMode;
-    #[cfg(feature = "UnityEngine+UIElements+DefaultEventSystem+__c")]
-    pub type __c = crate::UnityEngine::UIElements::DefaultEventSystem___c;
     pub fn FocusBasedEventSequence(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

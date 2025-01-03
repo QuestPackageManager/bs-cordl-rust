@@ -24,8 +24,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::InternetConnectionChecker {
 }
 #[cfg(feature = "InternetConnectionChecker")]
 impl crate::GlobalNamespace::InternetConnectionChecker {
-    #[cfg(feature = "InternetConnectionChecker+_IsConnectedToInternetAsync_d__0")]
-    pub type _IsConnectedToInternetAsync_d__0 = crate::GlobalNamespace::InternetConnectionChecker__IsConnectedToInternetAsync_d__0;
     pub fn IsConnectedToInternetAsync(
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<

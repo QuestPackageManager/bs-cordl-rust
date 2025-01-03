@@ -42,14 +42,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerIntroCountdown {
 }
 #[cfg(feature = "MultiplayerIntroCountdown")]
 impl crate::GlobalNamespace::MultiplayerIntroCountdown {
-    #[cfg(feature = "MultiplayerIntroCountdown+_CountdownRoutine_d__23")]
-    pub type _CountdownRoutine_d__23 = crate::GlobalNamespace::MultiplayerIntroCountdown__CountdownRoutine_d__23;
-    #[cfg(feature = "MultiplayerIntroCountdown+_PhaseRoutine_d__25")]
-    pub type _PhaseRoutine_d__25 = crate::GlobalNamespace::MultiplayerIntroCountdown__PhaseRoutine_d__25;
-    #[cfg(feature = "MultiplayerIntroCountdown+_PlayDelayed_d__24")]
-    pub type _PlayDelayed_d__24 = crate::GlobalNamespace::MultiplayerIntroCountdown__PlayDelayed_d__24;
-    #[cfg(feature = "MultiplayerIntroCountdown+__c__DisplayClass25_0")]
-    pub type __c__DisplayClass25_0 = crate::GlobalNamespace::MultiplayerIntroCountdown___c__DisplayClass25_0;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

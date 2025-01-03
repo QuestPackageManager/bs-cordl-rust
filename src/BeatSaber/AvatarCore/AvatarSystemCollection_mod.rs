@@ -38,16 +38,6 @@ impl std::ops::DerefMut for crate::BeatSaber::AvatarCore::AvatarSystemCollection
 }
 #[cfg(feature = "BeatSaber+AvatarCore+AvatarSystemCollection")]
 impl crate::BeatSaber::AvatarCore::AvatarSystemCollection {
-    #[cfg(
-        feature = "BeatSaber+AvatarCore+AvatarSystemCollection+_CreateDefaultAvatarsForAvatarSystemsWithoutUserCreatedAvatarAsync_d__18"
-    )]
-    pub type _CreateDefaultAvatarsForAvatarSystemsWithoutUserCreatedAvatarAsync_d__18 = crate::BeatSaber::AvatarCore::AvatarSystemCollection__CreateDefaultAvatarsForAvatarSystemsWithoutUserCreatedAvatarAsync_d__18;
-    #[cfg(
-        feature = "BeatSaber+AvatarCore+AvatarSystemCollection+_GetMultiplayerAvatarsData_d__16"
-    )]
-    pub type _GetMultiplayerAvatarsData_d__16 = crate::BeatSaber::AvatarCore::AvatarSystemCollection__GetMultiplayerAvatarsData_d__16;
-    #[cfg(feature = "BeatSaber+AvatarCore+AvatarSystemCollection+__c")]
-    pub type __c = crate::BeatSaber::AvatarCore::AvatarSystemCollection___c;
     pub fn AvatarSystemBySelectionSortOrder(
         system1: quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::IAvatarSystem>,
         system2: quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::IAvatarSystem>,

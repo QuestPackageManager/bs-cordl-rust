@@ -31,8 +31,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::FadeInOutController {
 }
 #[cfg(feature = "FadeInOutController")]
 impl crate::GlobalNamespace::FadeInOutController {
-    #[cfg(feature = "FadeInOutController+_Fade_d__19")]
-    pub type _Fade_d__19 = crate::GlobalNamespace::FadeInOutController__Fade_d__19;
     pub fn Fade(
         &mut self,
         fromValue: f32,

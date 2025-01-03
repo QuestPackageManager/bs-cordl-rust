@@ -38,8 +38,6 @@ impl crate::UnityEngine::UIElements::EnumField {
     pub type UxmlFactory = crate::UnityEngine::UIElements::EnumField_UxmlFactory;
     #[cfg(feature = "UnityEngine+UIElements+EnumField+UxmlTraits")]
     pub type UxmlTraits = crate::UnityEngine::UIElements::EnumField_UxmlTraits;
-    #[cfg(feature = "UnityEngine+UIElements+EnumField+__c")]
-    pub type __c = crate::UnityEngine::UIElements::EnumField___c;
     pub fn ChangeValueFromMenu(
         &mut self,
         menuItem: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

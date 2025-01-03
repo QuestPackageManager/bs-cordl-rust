@@ -38,10 +38,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::SpriteAsyncLoader {
 }
 #[cfg(feature = "SpriteAsyncLoader")]
 impl crate::GlobalNamespace::SpriteAsyncLoader {
-    #[cfg(feature = "SpriteAsyncLoader+_DestroySpriteTask_d__10")]
-    pub type _DestroySpriteTask_d__10 = crate::GlobalNamespace::SpriteAsyncLoader__DestroySpriteTask_d__10;
-    #[cfg(feature = "SpriteAsyncLoader+_UnloadSprite_d__9")]
-    pub type _UnloadSprite_d__9 = crate::GlobalNamespace::SpriteAsyncLoader__UnloadSprite_d__9;
     pub fn ClearCache(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

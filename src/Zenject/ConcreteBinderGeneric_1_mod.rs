@@ -29,10 +29,6 @@ for crate::Zenject::ConcreteBinderGeneric_1<TContract> {
 impl<
     TContract: quest_hook::libil2cpp::Type,
 > crate::Zenject::ConcreteBinderGeneric_1<TContract> {
-    #[cfg(feature = "Zenject+ConcreteBinderGeneric_1+__c__DisplayClass5_0")]
-    pub type __c__DisplayClass5_0 = crate::Zenject::ConcreteBinderGeneric_1___c__DisplayClass5_0<
-        TContract,
-    >;
     pub fn New(
         bindContainer: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         bindInfo: quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>,

@@ -33,8 +33,6 @@ for crate::Environments::Definitions::ColorSchemesAsyncInstaller {
 }
 #[cfg(feature = "Environments+Definitions+ColorSchemesAsyncInstaller")]
 impl crate::Environments::Definitions::ColorSchemesAsyncInstaller {
-    #[cfg(feature = "Environments+Definitions+ColorSchemesAsyncInstaller+__c")]
-    pub type __c = crate::Environments::Definitions::ColorSchemesAsyncInstaller___c;
     pub fn InstallBindings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

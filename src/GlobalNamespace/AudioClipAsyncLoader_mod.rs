@@ -31,14 +31,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::AudioClipAsyncLoader {
 impl crate::GlobalNamespace::AudioClipAsyncLoader {
     #[cfg(feature = "AudioClipAsyncLoader+LoadMethodDelegate")]
     pub type LoadMethodDelegate = crate::GlobalNamespace::AudioClipAsyncLoader_LoadMethodDelegate;
-    #[cfg(feature = "AudioClipAsyncLoader+_Unload_d__18")]
-    pub type _Unload_d__18 = crate::GlobalNamespace::AudioClipAsyncLoader__Unload_d__18;
-    #[cfg(feature = "AudioClipAsyncLoader+__c")]
-    pub type __c = crate::GlobalNamespace::AudioClipAsyncLoader___c;
-    #[cfg(feature = "AudioClipAsyncLoader+__c__DisplayClass13_0")]
-    pub type __c__DisplayClass13_0 = crate::GlobalNamespace::AudioClipAsyncLoader___c__DisplayClass13_0;
-    #[cfg(feature = "AudioClipAsyncLoader+__c__DisplayClass14_0")]
-    pub type __c__DisplayClass14_0 = crate::GlobalNamespace::AudioClipAsyncLoader___c__DisplayClass14_0;
     pub fn CreateDefault() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AudioClipAsyncLoader>,
     > {

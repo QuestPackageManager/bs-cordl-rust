@@ -34,14 +34,8 @@ impl crate::System::IO::Stream {
     pub type ReadWriteTask = crate::System::IO::Stream_ReadWriteTask;
     #[cfg(feature = "System+IO+Stream+SynchronousAsyncResult")]
     pub type SynchronousAsyncResult = crate::System::IO::Stream_SynchronousAsyncResult;
-    #[cfg(feature = "System+IO+Stream+_CopyToAsyncInternal_d__28")]
-    pub type _CopyToAsyncInternal_d__28 = crate::System::IO::Stream__CopyToAsyncInternal_d__28;
-    #[cfg(feature = "System+IO+Stream+_FinishWriteAsync_d__57")]
-    pub type _FinishWriteAsync_d__57 = crate::System::IO::Stream__FinishWriteAsync_d__57;
     #[cfg(feature = "System+IO+Stream+__ReadAsync_g__FinishReadAsync_44_0_d")]
     pub type __ReadAsync_g__FinishReadAsync_44_0_d = crate::System::IO::Stream___ReadAsync_g__FinishReadAsync_44_0_d;
-    #[cfg(feature = "System+IO+Stream+__c")]
-    pub type __c = crate::System::IO::Stream___c;
     pub fn BeginEndReadAsync(
         &mut self,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -1012,8 +1006,6 @@ impl std::ops::DerefMut for crate::System::IO::Stream_SynchronousAsyncResult {
 }
 #[cfg(feature = "System+IO+Stream+SynchronousAsyncResult")]
 impl crate::System::IO::Stream_SynchronousAsyncResult {
-    #[cfg(feature = "System+IO+Stream+SynchronousAsyncResult+__c")]
-    pub type __c = crate::System::IO::SynchronousAsyncResult_Stream___c;
     pub fn EndRead(
         asyncResult: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
     ) -> quest_hook::libil2cpp::Result<i32> {

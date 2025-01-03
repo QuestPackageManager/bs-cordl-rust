@@ -26,14 +26,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapLevelDataUtils {
 impl crate::GlobalNamespace::BeatmapLevelDataUtils {
     pub const gzipByte0: u8 = 31u8;
     pub const gzipByte1: u8 = 139u8;
-    #[cfg(feature = "BeatmapLevelDataUtils+_ReadAllTextFromUrlAsync_d__8")]
-    pub type _ReadAllTextFromUrlAsync_d__8 = crate::GlobalNamespace::BeatmapLevelDataUtils__ReadAllTextFromUrlAsync_d__8;
-    #[cfg(feature = "BeatmapLevelDataUtils+__c__DisplayClass7_0")]
-    pub type __c__DisplayClass7_0 = crate::GlobalNamespace::BeatmapLevelDataUtils___c__DisplayClass7_0;
-    #[cfg(feature = "BeatmapLevelDataUtils+__c__DisplayClass8_0")]
-    pub type __c__DisplayClass8_0 = crate::GlobalNamespace::BeatmapLevelDataUtils___c__DisplayClass8_0;
-    #[cfg(feature = "BeatmapLevelDataUtils+__c__DisplayClass9_0")]
-    pub type __c__DisplayClass9_0 = crate::GlobalNamespace::BeatmapLevelDataUtils___c__DisplayClass9_0;
     pub fn CalculateAudioContentHash(
         audioClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
     ) -> quest_hook::libil2cpp::Result<

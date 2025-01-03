@@ -29,8 +29,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::CutoutAnimateEffect {
 }
 #[cfg(feature = "CutoutAnimateEffect")]
 impl crate::GlobalNamespace::CutoutAnimateEffect {
-    #[cfg(feature = "CutoutAnimateEffect+_AnimateToCutoutCoroutine_d__7")]
-    pub type _AnimateToCutoutCoroutine_d__7 = crate::GlobalNamespace::CutoutAnimateEffect__AnimateToCutoutCoroutine_d__7;
     pub fn AnimateCutout(
         &mut self,
         cutoutStart: f32,

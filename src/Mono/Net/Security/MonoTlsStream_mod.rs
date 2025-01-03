@@ -32,8 +32,6 @@ impl std::ops::DerefMut for crate::Mono::Net::Security::MonoTlsStream {
 }
 #[cfg(feature = "Mono+Net+Security+MonoTlsStream")]
 impl crate::Mono::Net::Security::MonoTlsStream {
-    #[cfg(feature = "Mono+Net+Security+MonoTlsStream+_CreateStream_d__18")]
-    pub type _CreateStream_d__18 = crate::Mono::Net::Security::MonoTlsStream__CreateStream_d__18;
     pub fn CloseSslStream(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

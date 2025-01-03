@@ -33,14 +33,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerSpectatorControll
 }
 #[cfg(feature = "MultiplayerSpectatorController")]
 impl crate::GlobalNamespace::MultiplayerSpectatorController {
-    #[cfg(
-        feature = "MultiplayerSpectatorController+_SwitchToDefaultSpotCoroutine_d__18"
-    )]
-    pub type _SwitchToDefaultSpotCoroutine_d__18 = crate::GlobalNamespace::MultiplayerSpectatorController__SwitchToDefaultSpotCoroutine_d__18;
-    #[cfg(
-        feature = "MultiplayerSpectatorController+_SwitchToDefaultSpotWithFadeCoroutine_d__17"
-    )]
-    pub type _SwitchToDefaultSpotWithFadeCoroutine_d__17 = crate::GlobalNamespace::MultiplayerSpectatorController__SwitchToDefaultSpotWithFadeCoroutine_d__17;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

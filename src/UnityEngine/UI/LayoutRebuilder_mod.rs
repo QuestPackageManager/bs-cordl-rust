@@ -26,8 +26,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UI::LayoutRebuilder {
 }
 #[cfg(feature = "UnityEngine+UI+LayoutRebuilder")]
 impl crate::UnityEngine::UI::LayoutRebuilder {
-    #[cfg(feature = "UnityEngine+UI+LayoutRebuilder+__c")]
-    pub type __c = crate::UnityEngine::UI::LayoutRebuilder___c;
     pub fn Clear(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

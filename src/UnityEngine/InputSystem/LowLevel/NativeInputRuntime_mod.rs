@@ -39,18 +39,6 @@ for crate::UnityEngine::InputSystem::LowLevel::NativeInputRuntime {
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+NativeInputRuntime")]
 impl crate::UnityEngine::InputSystem::LowLevel::NativeInputRuntime {
-    #[cfg(
-        feature = "UnityEngine+InputSystem+LowLevel+NativeInputRuntime+__c__DisplayClass10_0"
-    )]
-    pub type __c__DisplayClass10_0 = crate::UnityEngine::InputSystem::LowLevel::NativeInputRuntime___c__DisplayClass10_0;
-    #[cfg(
-        feature = "UnityEngine+InputSystem+LowLevel+NativeInputRuntime+__c__DisplayClass13_0"
-    )]
-    pub type __c__DisplayClass13_0 = crate::UnityEngine::InputSystem::LowLevel::NativeInputRuntime___c__DisplayClass13_0;
-    #[cfg(
-        feature = "UnityEngine+InputSystem+LowLevel+NativeInputRuntime+__c__DisplayClass7_0"
-    )]
-    pub type __c__DisplayClass7_0 = crate::UnityEngine::InputSystem::LowLevel::NativeInputRuntime___c__DisplayClass7_0;
     pub fn AllocateDeviceId(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

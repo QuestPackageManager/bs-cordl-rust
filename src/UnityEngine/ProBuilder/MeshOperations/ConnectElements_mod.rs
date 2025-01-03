@@ -27,16 +27,6 @@ for crate::UnityEngine::ProBuilder::MeshOperations::ConnectElements {
 }
 #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+ConnectElements")]
 impl crate::UnityEngine::ProBuilder::MeshOperations::ConnectElements {
-    #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+ConnectElements+__c")]
-    pub type __c = crate::UnityEngine::ProBuilder::MeshOperations::ConnectElements___c;
-    #[cfg(
-        feature = "UnityEngine+ProBuilder+MeshOperations+ConnectElements+__c__DisplayClass2_0"
-    )]
-    pub type __c__DisplayClass2_0 = crate::UnityEngine::ProBuilder::MeshOperations::ConnectElements___c__DisplayClass2_0;
-    #[cfg(
-        feature = "UnityEngine+ProBuilder+MeshOperations+ConnectElements+__c__DisplayClass3_0"
-    )]
-    pub type __c__DisplayClass3_0 = crate::UnityEngine::ProBuilder::MeshOperations::ConnectElements___c__DisplayClass3_0;
     pub fn ConnectEdgesInFace_List_1_List_1_1(
         face: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
         edges: quest_hook::libil2cpp::Gc<

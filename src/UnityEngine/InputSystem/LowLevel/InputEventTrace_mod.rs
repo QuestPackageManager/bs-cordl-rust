@@ -1029,14 +1029,6 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController 
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+ReplayController")]
 impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController {
-    #[cfg(
-        feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+ReplayController+__c"
-    )]
-    pub type __c = crate::UnityEngine::InputSystem::LowLevel::ReplayController_InputEventTrace___c;
-    #[cfg(
-        feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+ReplayController+__c__DisplayClass43_0"
-    )]
-    pub type __c__DisplayClass43_0 = crate::UnityEngine::InputSystem::LowLevel::ReplayController_InputEventTrace___c__DisplayClass43_0;
     pub fn ApplyDeviceMapping(
         &mut self,
         originalDeviceId: i32,

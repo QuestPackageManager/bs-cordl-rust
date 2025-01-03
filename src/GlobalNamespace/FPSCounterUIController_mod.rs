@@ -32,8 +32,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::FPSCounterUIController {
 }
 #[cfg(feature = "FPSCounterUIController")]
 impl crate::GlobalNamespace::FPSCounterUIController {
-    #[cfg(feature = "FPSCounterUIController+_Start_d__9")]
-    pub type _Start_d__9 = crate::GlobalNamespace::FPSCounterUIController__Start_d__9;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

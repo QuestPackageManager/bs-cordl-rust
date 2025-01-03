@@ -31,8 +31,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::DisconnectPromptView {
 }
 #[cfg(feature = "DisconnectPromptView")]
 impl crate::GlobalNamespace::DisconnectPromptView {
-    #[cfg(feature = "DisconnectPromptView+__c__DisplayClass12_0")]
-    pub type __c__DisplayClass12_0 = crate::GlobalNamespace::DisconnectPromptView___c__DisplayClass12_0;
     pub fn Hide(
         &mut self,
         finishedCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,

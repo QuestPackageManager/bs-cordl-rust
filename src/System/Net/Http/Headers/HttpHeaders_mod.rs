@@ -33,8 +33,6 @@ impl std::ops::DerefMut for crate::System::Net::Http::Headers::HttpHeaders {
 impl crate::System::Net::Http::Headers::HttpHeaders {
     #[cfg(feature = "System+Net+Http+Headers+HttpHeaders+HeaderBucket")]
     pub type HeaderBucket = crate::System::Net::Http::Headers::HttpHeaders_HeaderBucket;
-    #[cfg(feature = "System+Net+Http+Headers+HttpHeaders+_GetEnumerator_d__19")]
-    pub type _GetEnumerator_d__19 = crate::System::Net::Http::Headers::HttpHeaders__GetEnumerator_d__19;
     pub fn AddInternal(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

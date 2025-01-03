@@ -35,10 +35,6 @@ impl crate::GlobalNamespace::EnterPlayerGuestNameViewController {
     pub const kMaxShowPlayer: i32 = 5i32;
     #[cfg(feature = "EnterPlayerGuestNameViewController+FinishDelegate")]
     pub type FinishDelegate = crate::GlobalNamespace::EnterPlayerGuestNameViewController_FinishDelegate;
-    #[cfg(feature = "EnterPlayerGuestNameViewController+__c__DisplayClass10_0")]
-    pub type __c__DisplayClass10_0 = crate::GlobalNamespace::EnterPlayerGuestNameViewController___c__DisplayClass10_0;
-    #[cfg(feature = "EnterPlayerGuestNameViewController+__c__DisplayClass10_1")]
-    pub type __c__DisplayClass10_1 = crate::GlobalNamespace::EnterPlayerGuestNameViewController___c__DisplayClass10_1;
     pub fn DidActivate(
         &mut self,
         firstActivation: bool,

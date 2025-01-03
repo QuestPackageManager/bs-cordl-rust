@@ -47,12 +47,6 @@ for crate::UnityEngine::AddressableAssets::UpdateCatalogsOperation {
 }
 #[cfg(feature = "UnityEngine+AddressableAssets+UpdateCatalogsOperation")]
 impl crate::UnityEngine::AddressableAssets::UpdateCatalogsOperation {
-    #[cfg(feature = "UnityEngine+AddressableAssets+UpdateCatalogsOperation+__c")]
-    pub type __c = crate::UnityEngine::AddressableAssets::UpdateCatalogsOperation___c;
-    #[cfg(
-        feature = "UnityEngine+AddressableAssets+UpdateCatalogsOperation+__c__DisplayClass11_0"
-    )]
-    pub type __c__DisplayClass11_0 = crate::UnityEngine::AddressableAssets::UpdateCatalogsOperation___c__DisplayClass11_0;
     pub fn Destroy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

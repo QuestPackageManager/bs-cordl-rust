@@ -24,8 +24,6 @@ impl std::ops::DerefMut for crate::System::LocalAppContext {
 }
 #[cfg(feature = "System+LocalAppContext")]
 impl crate::System::LocalAppContext {
-    #[cfg(feature = "System+LocalAppContext+__c")]
-    pub type __c = crate::System::LocalAppContext___c;
     pub fn GetCachedSwitchValue(
         switchName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         switchValue: quest_hook::libil2cpp::ByRefMut<i32>,

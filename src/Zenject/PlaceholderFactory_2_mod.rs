@@ -38,11 +38,6 @@ impl<
     TParam1: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > crate::Zenject::PlaceholderFactory_2<TParam1, TValue> {
-    #[cfg(feature = "Zenject+PlaceholderFactory_2+_get_ParamTypes_d__2")]
-    pub type _get_ParamTypes_d__2 = crate::Zenject::PlaceholderFactory_2__get_ParamTypes_d__2<
-        TParam1,
-        TValue,
-    >;
     pub fn Create(&mut self, param: TParam1) -> quest_hook::libil2cpp::Result<TValue>
     where
         TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type

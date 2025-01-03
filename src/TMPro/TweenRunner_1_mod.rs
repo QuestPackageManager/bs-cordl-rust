@@ -28,8 +28,6 @@ for crate::TMPro::TweenRunner_1<T> {
 }
 #[cfg(feature = "TMPro+TweenRunner_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::TMPro::TweenRunner_1<T> {
-    #[cfg(feature = "TMPro+TweenRunner_1+_Start_d__2")]
-    pub type _Start_d__2 = crate::TMPro::TweenRunner_1__Start_d__2<T>;
     pub fn Init(
         &mut self,
         coroutineContainer: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,

@@ -42,10 +42,6 @@ impl crate::GlobalNamespace::SelectLevelCategoryViewController {
     pub type LevelCategory = crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory;
     #[cfg(feature = "SelectLevelCategoryViewController+LevelCategoryInfo")]
     pub type LevelCategoryInfo = crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategoryInfo;
-    #[cfg(feature = "SelectLevelCategoryViewController+__c")]
-    pub type __c = crate::GlobalNamespace::SelectLevelCategoryViewController___c;
-    #[cfg(feature = "SelectLevelCategoryViewController+__c__DisplayClass12_0")]
-    pub type __c__DisplayClass12_0 = crate::GlobalNamespace::SelectLevelCategoryViewController___c__DisplayClass12_0;
     pub fn DidActivate(
         &mut self,
         firstActivation: bool,

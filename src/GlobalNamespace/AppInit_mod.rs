@@ -30,14 +30,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::AppInit {
 impl crate::GlobalNamespace::AppInit {
     #[cfg(feature = "AppInit+AppStartType")]
     pub type AppStartType = crate::GlobalNamespace::AppInit_AppStartType;
-    #[cfg(feature = "AppInit+_Awake_d__10")]
-    pub type _Awake_d__10 = crate::GlobalNamespace::AppInit__Awake_d__10;
-    #[cfg(feature = "AppInit+_InitializeAsync_d__13")]
-    pub type _InitializeAsync_d__13 = crate::GlobalNamespace::AppInit__InitializeAsync_d__13;
-    #[cfg(feature = "AppInit+_StartGameAsync_d__11")]
-    pub type _StartGameAsync_d__11 = crate::GlobalNamespace::AppInit__StartGameAsync_d__11;
-    #[cfg(feature = "AppInit+__c")]
-    pub type __c = crate::GlobalNamespace::AppInit___c;
     pub fn AppStartAndMultiSceneEditorSetup(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

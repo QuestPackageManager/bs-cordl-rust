@@ -24,8 +24,6 @@ impl std::ops::DerefMut for crate::HoudiniEngineUnity::Test_Gradient_Extensions 
 }
 #[cfg(feature = "HoudiniEngineUnity+Test_Gradient_Extensions")]
 impl crate::HoudiniEngineUnity::Test_Gradient_Extensions {
-    #[cfg(feature = "HoudiniEngineUnity+Test_Gradient_Extensions+__c")]
-    pub type __c = crate::HoudiniEngineUnity::Test_Gradient_Extensions___c;
     pub fn ToTestObject_Gradient0(
         _cordl_self: quest_hook::libil2cpp::Gc<crate::UnityEngine::Gradient>,
     ) -> quest_hook::libil2cpp::Result<

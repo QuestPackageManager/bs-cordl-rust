@@ -55,12 +55,6 @@ impl crate::GlobalNamespace::EventsTestGameplayManager {
     pub const kNumberOfLightGroups: i32 = 20i32;
     #[cfg(feature = "EventsTestGameplayManager+MockBeatToTimeConverter")]
     pub type MockBeatToTimeConverter = crate::GlobalNamespace::EventsTestGameplayManager_MockBeatToTimeConverter;
-    #[cfg(feature = "EventsTestGameplayManager+__c__DisplayClass18_0")]
-    pub type __c__DisplayClass18_0 = crate::GlobalNamespace::EventsTestGameplayManager___c__DisplayClass18_0;
-    #[cfg(feature = "EventsTestGameplayManager+__c__DisplayClass19_0")]
-    pub type __c__DisplayClass19_0 = crate::GlobalNamespace::EventsTestGameplayManager___c__DisplayClass19_0;
-    #[cfg(feature = "EventsTestGameplayManager+__c__DisplayClass20_0")]
-    pub type __c__DisplayClass20_0 = crate::GlobalNamespace::EventsTestGameplayManager___c__DisplayClass20_0;
     pub fn AddEventsForLightGroup(
         &mut self,
         lightGroupId: i32,

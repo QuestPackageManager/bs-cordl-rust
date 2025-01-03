@@ -52,8 +52,6 @@ impl crate::GlobalNamespace::UnifiedNetworkPlayerModel {
     pub type JoinMatchmakingPartyConfig = crate::GlobalNamespace::UnifiedNetworkPlayerModel_JoinMatchmakingPartyConfig;
     #[cfg(feature = "UnifiedNetworkPlayerModel+StartClientPartyConfig")]
     pub type StartClientPartyConfig = crate::GlobalNamespace::UnifiedNetworkPlayerModel_StartClientPartyConfig;
-    #[cfg(feature = "UnifiedNetworkPlayerModel+_get_otherPlayers_d__64")]
-    pub type _get_otherPlayers_d__64 = crate::GlobalNamespace::UnifiedNetworkPlayerModel__get_otherPlayers_d__64;
     pub fn CreatePartyConnection<T>(
         &mut self,
         partyConfig: quest_hook::libil2cpp::Gc<

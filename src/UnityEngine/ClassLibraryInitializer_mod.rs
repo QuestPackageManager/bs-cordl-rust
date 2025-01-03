@@ -24,8 +24,6 @@ impl std::ops::DerefMut for crate::UnityEngine::ClassLibraryInitializer {
 }
 #[cfg(feature = "UnityEngine+ClassLibraryInitializer")]
 impl crate::UnityEngine::ClassLibraryInitializer {
-    #[cfg(feature = "UnityEngine+ClassLibraryInitializer+__c")]
-    pub type __c = crate::UnityEngine::ClassLibraryInitializer___c;
     pub fn Init() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("Init", ())?;

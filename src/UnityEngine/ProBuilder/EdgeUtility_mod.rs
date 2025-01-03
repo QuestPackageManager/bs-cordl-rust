@@ -24,8 +24,6 @@ impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::EdgeUtility {
 }
 #[cfg(feature = "UnityEngine+ProBuilder+EdgeUtility")]
 impl crate::UnityEngine::ProBuilder::EdgeUtility {
-    #[cfg(feature = "UnityEngine+ProBuilder+EdgeUtility+__c__DisplayClass0_0")]
-    pub type __c__DisplayClass0_0 = crate::UnityEngine::ProBuilder::EdgeUtility___c__DisplayClass0_0;
     pub fn AllTriangles(
         edges: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::ProBuilder::Edge>,

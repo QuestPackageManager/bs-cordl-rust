@@ -33,8 +33,6 @@ impl std::ops::DerefMut for crate::Mono::Net::Security::ChainValidationHelper {
 }
 #[cfg(feature = "Mono+Net+Security+ChainValidationHelper")]
 impl crate::Mono::Net::Security::ChainValidationHelper {
-    #[cfg(feature = "Mono+Net+Security+ChainValidationHelper+__c__DisplayClass11_0")]
-    pub type __c__DisplayClass11_0 = crate::Mono::Net::Security::ChainValidationHelper___c__DisplayClass11_0;
     pub fn Create(
         provider: quest_hook::libil2cpp::Gc<
             crate::Mono::Net::Security::MobileTlsProvider,

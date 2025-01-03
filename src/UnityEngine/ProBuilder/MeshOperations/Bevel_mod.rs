@@ -24,14 +24,6 @@ impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::MeshOperations::Beve
 }
 #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+Bevel")]
 impl crate::UnityEngine::ProBuilder::MeshOperations::Bevel {
-    #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+Bevel+__c")]
-    pub type __c = crate::UnityEngine::ProBuilder::MeshOperations::Bevel___c;
-    #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+Bevel+__c__DisplayClass0_0")]
-    pub type __c__DisplayClass0_0 = crate::UnityEngine::ProBuilder::MeshOperations::Bevel___c__DisplayClass0_0;
-    #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+Bevel+__c__DisplayClass0_1")]
-    pub type __c__DisplayClass0_1 = crate::UnityEngine::ProBuilder::MeshOperations::Bevel___c__DisplayClass0_1;
-    #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+Bevel+__c__DisplayClass0_2")]
-    pub type __c__DisplayClass0_2 = crate::UnityEngine::ProBuilder::MeshOperations::Bevel___c__DisplayClass0_2;
     pub fn BevelEdges(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         edges: quest_hook::libil2cpp::Gc<

@@ -24,8 +24,6 @@ impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::MeshHandles {
 }
 #[cfg(feature = "UnityEngine+ProBuilder+MeshHandles")]
 impl crate::UnityEngine::ProBuilder::MeshHandles {
-    #[cfg(feature = "UnityEngine+ProBuilder+MeshHandles+__c")]
-    pub type __c = crate::UnityEngine::ProBuilder::MeshHandles___c;
     pub fn CreateEdgeBillboardMesh_ICollection_1_1(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         target: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,

@@ -26,18 +26,6 @@ impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::ArrayUtility {
 impl crate::UnityEngine::ProBuilder::ArrayUtility {
     #[cfg(feature = "UnityEngine+ProBuilder+ArrayUtility+SearchRange")]
     pub type SearchRange = crate::UnityEngine::ProBuilder::ArrayUtility_SearchRange;
-    #[cfg(feature = "UnityEngine+ProBuilder+ArrayUtility+__c__23_1")]
-    pub type __c__23_1<T: quest_hook::libil2cpp::Type> = crate::UnityEngine::ProBuilder::ArrayUtility___c__23_1<
-        T,
-    >;
-    #[cfg(feature = "UnityEngine+ProBuilder+ArrayUtility+__c__DisplayClass21_0_2")]
-    pub type __c__DisplayClass21_0_2<
-        TSource: quest_hook::libil2cpp::Type,
-        TKey: quest_hook::libil2cpp::Type,
-    > = crate::UnityEngine::ProBuilder::ArrayUtility___c__DisplayClass21_0_2<
-        TSource,
-        TKey,
-    >;
     pub fn Add<T>(
         arr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
         val: T,

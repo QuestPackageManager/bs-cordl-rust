@@ -24,11 +24,6 @@ impl std::ops::DerefMut for crate::Zenject::FromBinderNonGeneric {
 }
 #[cfg(feature = "Zenject+FromBinderNonGeneric")]
 impl crate::Zenject::FromBinderNonGeneric {
-    #[cfg(feature = "Zenject+FromBinderNonGeneric+__c__1_2")]
-    pub type __c__1_2<
-        TConcrete: quest_hook::libil2cpp::Type,
-        TFactory: quest_hook::libil2cpp::Type,
-    > = crate::Zenject::FromBinderNonGeneric___c__1_2<TConcrete, TFactory>;
     pub fn FromComponentsInChildren_Func_2__cordl_bool0(
         &mut self,
         predicate: quest_hook::libil2cpp::Gc<

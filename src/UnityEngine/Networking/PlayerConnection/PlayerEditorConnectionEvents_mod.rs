@@ -44,18 +44,6 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEve
         feature = "UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents+MessageTypeSubscribers"
     )]
     pub type MessageTypeSubscribers = crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents_MessageTypeSubscribers;
-    #[cfg(
-        feature = "UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents+__c__DisplayClass6_0"
-    )]
-    pub type __c__DisplayClass6_0 = crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents___c__DisplayClass6_0;
-    #[cfg(
-        feature = "UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents+__c__DisplayClass7_0"
-    )]
-    pub type __c__DisplayClass7_0 = crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents___c__DisplayClass7_0;
-    #[cfg(
-        feature = "UnityEngine+Networking+PlayerConnection+PlayerEditorConnectionEvents+__c__DisplayClass8_0"
-    )]
-    pub type __c__DisplayClass8_0 = crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents___c__DisplayClass8_0;
     pub fn AddAndCreate(
         &mut self,
         messageId: crate::System::Guid,

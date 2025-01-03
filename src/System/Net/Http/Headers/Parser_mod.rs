@@ -78,8 +78,6 @@ impl std::ops::DerefMut for crate::System::Net::Http::Headers::Parser_DateTime {
 }
 #[cfg(feature = "System+Net+Http+Headers+Parser+DateTime")]
 impl crate::System::Net::Http::Headers::Parser_DateTime {
-    #[cfg(feature = "System+Net+Http+Headers+Parser+DateTime+__c")]
-    pub type __c = crate::System::Net::Http::Headers::DateTime_Parser___c;
     pub fn TryParse(
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         result: quest_hook::libil2cpp::ByRefMut<crate::System::DateTimeOffset>,
@@ -305,8 +303,6 @@ impl std::ops::DerefMut for crate::System::Net::Http::Headers::Parser_MD5 {
 }
 #[cfg(feature = "System+Net+Http+Headers+Parser+MD5")]
 impl crate::System::Net::Http::Headers::Parser_MD5 {
-    #[cfg(feature = "System+Net+Http+Headers+Parser+MD5+__c")]
-    pub type __c = crate::System::Net::Http::Headers::MD5_Parser___c;
     pub fn TryParse(
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         result: quest_hook::libil2cpp::ByRefMut<

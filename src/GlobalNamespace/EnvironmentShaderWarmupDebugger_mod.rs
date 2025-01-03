@@ -31,8 +31,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::EnvironmentShaderWarmupDebug
 }
 #[cfg(feature = "EnvironmentShaderWarmupDebugger")]
 impl crate::GlobalNamespace::EnvironmentShaderWarmupDebugger {
-    #[cfg(feature = "EnvironmentShaderWarmupDebugger+__c")]
-    pub type __c = crate::GlobalNamespace::EnvironmentShaderWarmupDebugger___c;
     pub fn GetGameObjectPath(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,

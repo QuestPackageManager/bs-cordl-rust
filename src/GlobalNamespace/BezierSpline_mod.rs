@@ -32,8 +32,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BezierSpline {
 impl crate::GlobalNamespace::BezierSpline {
     #[cfg(feature = "BezierSpline+ComputeControlPointsResults")]
     pub type ComputeControlPointsResults = crate::GlobalNamespace::BezierSpline_ComputeControlPointsResults;
-    #[cfg(feature = "BezierSpline+__c")]
-    pub type __c = crate::GlobalNamespace::BezierSpline___c;
     pub fn AddArtificialStartAndFinishPoint(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

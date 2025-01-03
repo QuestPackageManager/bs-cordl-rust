@@ -29,8 +29,6 @@ impl std::ops::DerefMut for crate::Zenject::CachedOpenTypeProvider {
 }
 #[cfg(feature = "Zenject+CachedOpenTypeProvider")]
 impl crate::Zenject::CachedOpenTypeProvider {
-    #[cfg(feature = "Zenject+CachedOpenTypeProvider+__c")]
-    pub type __c = crate::Zenject::CachedOpenTypeProvider___c;
     pub fn ClearCache(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

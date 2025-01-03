@@ -24,8 +24,6 @@ impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::MeshUtility {
 }
 #[cfg(feature = "UnityEngine+ProBuilder+MeshUtility")]
 impl crate::UnityEngine::ProBuilder::MeshUtility {
-    #[cfg(feature = "UnityEngine+ProBuilder+MeshUtility+__c")]
-    pub type __c = crate::UnityEngine::ProBuilder::MeshUtility___c;
     pub fn CollapseSharedVertices(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
         vertices: quest_hook::libil2cpp::Gc<

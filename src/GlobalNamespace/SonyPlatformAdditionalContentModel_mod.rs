@@ -33,38 +33,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::SonyPlatformAdditionalConten
 }
 #[cfg(feature = "SonyPlatformAdditionalContentModel")]
 impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
-    #[cfg(feature = "SonyPlatformAdditionalContentModel+_EnsureDataValidity_d__21")]
-    pub type _EnsureDataValidity_d__21 = crate::GlobalNamespace::SonyPlatformAdditionalContentModel__EnsureDataValidity_d__21;
-    #[cfg(
-        feature = "SonyPlatformAdditionalContentModel+_GetLevelDataVersionInternalAsync_d__12"
-    )]
-    pub type _GetLevelDataVersionInternalAsync_d__12 = crate::GlobalNamespace::SonyPlatformAdditionalContentModel__GetLevelDataVersionInternalAsync_d__12;
-    #[cfg(
-        feature = "SonyPlatformAdditionalContentModel+_GetLevelEntitlementStatusInternalAsync_d__10"
-    )]
-    pub type _GetLevelEntitlementStatusInternalAsync_d__10 = crate::GlobalNamespace::SonyPlatformAdditionalContentModel__GetLevelEntitlementStatusInternalAsync_d__10;
-    #[cfg(
-        feature = "SonyPlatformAdditionalContentModel+_GetPackEntitlementStatusInternalAsync_d__11"
-    )]
-    pub type _GetPackEntitlementStatusInternalAsync_d__11 = crate::GlobalNamespace::SonyPlatformAdditionalContentModel__GetPackEntitlementStatusInternalAsync_d__11;
-    #[cfg(
-        feature = "SonyPlatformAdditionalContentModel+_GetRedirectedLevelPackProductData_d__17"
-    )]
-    pub type _GetRedirectedLevelPackProductData_d__17 = crate::GlobalNamespace::SonyPlatformAdditionalContentModel__GetRedirectedLevelPackProductData_d__17;
-    #[cfg(
-        feature = "SonyPlatformAdditionalContentModel+_IsPackBetterBuyThanLevelAsync_d__15"
-    )]
-    pub type _IsPackBetterBuyThanLevelAsync_d__15 = crate::GlobalNamespace::SonyPlatformAdditionalContentModel__IsPackBetterBuyThanLevelAsync_d__15;
-    #[cfg(
-        feature = "SonyPlatformAdditionalContentModel+_OpenLevelPackProductStoreAsync_d__14"
-    )]
-    pub type _OpenLevelPackProductStoreAsync_d__14 = crate::GlobalNamespace::SonyPlatformAdditionalContentModel__OpenLevelPackProductStoreAsync_d__14;
-    #[cfg(
-        feature = "SonyPlatformAdditionalContentModel+_OpenLevelProductStoreAsync_d__13"
-    )]
-    pub type _OpenLevelProductStoreAsync_d__13 = crate::GlobalNamespace::SonyPlatformAdditionalContentModel__OpenLevelProductStoreAsync_d__13;
-    #[cfg(feature = "SonyPlatformAdditionalContentModel+_UpdateEntitlementsAsync_d__22")]
-    pub type _UpdateEntitlementsAsync_d__22 = crate::GlobalNamespace::SonyPlatformAdditionalContentModel__UpdateEntitlementsAsync_d__22;
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

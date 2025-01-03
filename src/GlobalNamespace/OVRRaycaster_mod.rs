@@ -32,8 +32,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRRaycaster {
 impl crate::GlobalNamespace::OVRRaycaster {
     #[cfg(feature = "OVRRaycaster+RaycastHit")]
     pub type RaycastHit = crate::GlobalNamespace::OVRRaycaster_RaycastHit;
-    #[cfg(feature = "OVRRaycaster+__c")]
-    pub type __c = crate::GlobalNamespace::OVRRaycaster___c;
     pub fn GetScreenPosition(
         &mut self,
         raycastResult: crate::UnityEngine::EventSystems::RaycastResult,

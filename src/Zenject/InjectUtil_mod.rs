@@ -23,8 +23,6 @@ impl std::ops::DerefMut for crate::Zenject::InjectUtil {
 }
 #[cfg(feature = "Zenject+InjectUtil")]
 impl crate::Zenject::InjectUtil {
-    #[cfg(feature = "Zenject+InjectUtil+__c")]
-    pub type __c = crate::Zenject::InjectUtil___c;
     pub fn CreateArgList(
         args: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<

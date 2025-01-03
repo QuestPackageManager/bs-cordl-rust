@@ -28,10 +28,6 @@ for crate::System::Threading::Tasks::SynchronizationContextAwaitTaskContinuation
 }
 #[cfg(feature = "System+Threading+Tasks+SynchronizationContextAwaitTaskContinuation")]
 impl crate::System::Threading::Tasks::SynchronizationContextAwaitTaskContinuation {
-    #[cfg(
-        feature = "System+Threading+Tasks+SynchronizationContextAwaitTaskContinuation+__c"
-    )]
-    pub type __c = crate::System::Threading::Tasks::SynchronizationContextAwaitTaskContinuation___c;
     pub fn GetPostActionCallback() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::ContextCallback>,
     > {

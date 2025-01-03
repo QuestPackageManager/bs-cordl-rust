@@ -60,11 +60,6 @@ impl<
         TValueType,
         TValueChoice,
     >;
-    #[cfg(feature = "UnityEngine+UIElements+BasePopupField_2+__c")]
-    pub type __c = crate::UnityEngine::UIElements::BasePopupField_2___c<
-        TValueType,
-        TValueChoice,
-    >;
     pub fn AddMenuItems(
         &mut self,
         menu: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IGenericMenu>,

@@ -24,8 +24,6 @@ impl std::ops::DerefMut for crate::ModestTree::TypeStringFormatter {
 }
 #[cfg(feature = "ModestTree+TypeStringFormatter")]
 impl crate::ModestTree::TypeStringFormatter {
-    #[cfg(feature = "ModestTree+TypeStringFormatter+__c")]
-    pub type __c = crate::ModestTree::TypeStringFormatter___c;
     pub fn GetCSharpTypeName(
         typeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<

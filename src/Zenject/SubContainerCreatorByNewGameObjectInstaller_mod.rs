@@ -29,10 +29,6 @@ impl std::ops::DerefMut for crate::Zenject::SubContainerCreatorByNewGameObjectIn
 }
 #[cfg(feature = "Zenject+SubContainerCreatorByNewGameObjectInstaller")]
 impl crate::Zenject::SubContainerCreatorByNewGameObjectInstaller {
-    #[cfg(
-        feature = "Zenject+SubContainerCreatorByNewGameObjectInstaller+__c__DisplayClass3_0"
-    )]
-    pub type __c__DisplayClass3_0 = crate::Zenject::SubContainerCreatorByNewGameObjectInstaller___c__DisplayClass3_0;
     pub fn AddInstallers(
         &mut self,
         args: quest_hook::libil2cpp::Gc<

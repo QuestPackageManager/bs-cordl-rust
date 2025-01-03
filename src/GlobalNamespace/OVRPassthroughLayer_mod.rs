@@ -92,10 +92,6 @@ impl crate::GlobalNamespace::OVRPassthroughLayer {
     pub type Settings = crate::GlobalNamespace::OVRPassthroughLayer_Settings;
     #[cfg(feature = "OVRPassthroughLayer+StylesHandler")]
     pub type StylesHandler = crate::GlobalNamespace::OVRPassthroughLayer_StylesHandler;
-    #[cfg(feature = "OVRPassthroughLayer+__c__DisplayClass10_0")]
-    pub type __c__DisplayClass10_0 = crate::GlobalNamespace::OVRPassthroughLayer___c__DisplayClass10_0;
-    #[cfg(feature = "OVRPassthroughLayer+__c__DisplayClass9_0")]
-    pub type __c__DisplayClass9_0 = crate::GlobalNamespace::OVRPassthroughLayer___c__DisplayClass9_0;
     pub fn AddDeferredSurfaceGeometries(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

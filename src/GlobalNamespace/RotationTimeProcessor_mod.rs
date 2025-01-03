@@ -30,8 +30,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::RotationTimeProcessor {
 impl crate::GlobalNamespace::RotationTimeProcessor {
     #[cfg(feature = "RotationTimeProcessor+RotationChangeData")]
     pub type RotationChangeData = crate::GlobalNamespace::RotationTimeProcessor_RotationChangeData;
-    #[cfg(feature = "RotationTimeProcessor+__c")]
-    pub type __c = crate::GlobalNamespace::RotationTimeProcessor___c;
     pub fn ConvertBeatToRotation(
         &mut self,
         beat: f32,

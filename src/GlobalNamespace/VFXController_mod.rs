@@ -29,8 +29,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::VFXController {
 }
 #[cfg(feature = "VFXController")]
 impl crate::GlobalNamespace::VFXController {
-    #[cfg(feature = "VFXController+_MainCoroutine_d__9")]
-    pub type _MainCoroutine_d__9 = crate::GlobalNamespace::VFXController__MainCoroutine_d__9;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

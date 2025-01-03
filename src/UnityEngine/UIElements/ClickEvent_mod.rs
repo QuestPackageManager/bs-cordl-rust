@@ -28,8 +28,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::ClickEvent {
 }
 #[cfg(feature = "UnityEngine+UIElements+ClickEvent")]
 impl crate::UnityEngine::UIElements::ClickEvent {
-    #[cfg(feature = "UnityEngine+UIElements+ClickEvent+__c")]
-    pub type __c = crate::UnityEngine::UIElements::ClickEvent___c;
     pub fn GetPooled(
         pointerEvent: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::PointerUpEvent,

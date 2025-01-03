@@ -28,8 +28,6 @@ impl crate::System::DefaultBinder {
     pub type BinderState = crate::System::DefaultBinder_BinderState;
     #[cfg(feature = "System+DefaultBinder+Primitives")]
     pub type Primitives = crate::System::DefaultBinder_Primitives;
-    #[cfg(feature = "System+DefaultBinder+__c")]
-    pub type __c = crate::System::DefaultBinder___c;
     pub fn BindToField(
         &mut self,
         bindingAttr: crate::System::Reflection::BindingFlags,

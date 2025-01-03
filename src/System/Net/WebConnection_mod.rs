@@ -35,14 +35,6 @@ impl std::ops::DerefMut for crate::System::Net::WebConnection {
 }
 #[cfg(feature = "System+Net+WebConnection")]
 impl crate::System::Net::WebConnection {
-    #[cfg(feature = "System+Net+WebConnection+_Connect_d__16")]
-    pub type _Connect_d__16 = crate::System::Net::WebConnection__Connect_d__16;
-    #[cfg(feature = "System+Net+WebConnection+_CreateStream_d__18")]
-    pub type _CreateStream_d__18 = crate::System::Net::WebConnection__CreateStream_d__18;
-    #[cfg(feature = "System+Net+WebConnection+_InitConnection_d__19")]
-    pub type _InitConnection_d__19 = crate::System::Net::WebConnection__InitConnection_d__19;
-    #[cfg(feature = "System+Net+WebConnection+__c")]
-    pub type __c = crate::System::Net::WebConnection___c;
     pub fn CanReuse(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

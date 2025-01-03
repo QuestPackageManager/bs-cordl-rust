@@ -45,10 +45,6 @@ impl crate::HoudiniEngineUnity::JSONNode {
     pub type LinqEnumerator = crate::HoudiniEngineUnity::JSONNode_LinqEnumerator;
     #[cfg(feature = "HoudiniEngineUnity+JSONNode+ValueEnumerator")]
     pub type ValueEnumerator = crate::HoudiniEngineUnity::JSONNode_ValueEnumerator;
-    #[cfg(feature = "HoudiniEngineUnity+JSONNode+_get_Children_d__40")]
-    pub type _get_Children_d__40 = crate::HoudiniEngineUnity::JSONNode__get_Children_d__40;
-    #[cfg(feature = "HoudiniEngineUnity+JSONNode+_get_DeepChildren_d__42")]
-    pub type _get_DeepChildren_d__42 = crate::HoudiniEngineUnity::JSONNode__get_DeepChildren_d__42;
     pub fn Add_Il2CppString_JSONNode0(
         &mut self,
         aKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

@@ -100,8 +100,6 @@ impl std::ops::DerefMut for crate::UnityEngine::TextCore::Text::FontAsset {
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+FontAsset")]
 impl crate::UnityEngine::TextCore::Text::FontAsset {
-    #[cfg(feature = "UnityEngine+TextCore+Text+FontAsset+__c")]
-    pub type __c = crate::UnityEngine::TextCore::Text::FontAsset___c;
     pub fn AddCharacterToLookupCache(
         &mut self,
         unicode: u32,

@@ -41,8 +41,6 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Schema::JsonSchemaNode {
 }
 #[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaNode")]
 impl crate::Newtonsoft::Json::Schema::JsonSchemaNode {
-    #[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaNode+__c")]
-    pub type __c = crate::Newtonsoft::Json::Schema::JsonSchemaNode___c;
     pub fn Combine(
         &mut self,
         schema: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchema>,

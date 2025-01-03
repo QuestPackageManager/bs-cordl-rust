@@ -52,8 +52,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::ResultsViewController {
 }
 #[cfg(feature = "ResultsViewController")]
 impl crate::GlobalNamespace::ResultsViewController {
-    #[cfg(feature = "ResultsViewController+_StartFireworksAfterDelay_d__33")]
-    pub type _StartFireworksAfterDelay_d__33 = crate::GlobalNamespace::ResultsViewController__StartFireworksAfterDelay_d__33;
     pub fn ContinueButtonPressed(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

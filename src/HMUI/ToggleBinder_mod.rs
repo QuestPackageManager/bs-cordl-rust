@@ -30,8 +30,6 @@ impl std::ops::DerefMut for crate::HMUI::ToggleBinder {
 }
 #[cfg(feature = "HMUI+ToggleBinder")]
 impl crate::HMUI::ToggleBinder {
-    #[cfg(feature = "HMUI+ToggleBinder+__c__DisplayClass7_0")]
-    pub type __c__DisplayClass7_0 = crate::HMUI::ToggleBinder___c__DisplayClass7_0;
     pub fn AddBinding_Action_1_0(
         &mut self,
         toggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,

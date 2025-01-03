@@ -81,16 +81,6 @@ impl crate::GlobalNamespace::IgnoranceConnectionManager {
     pub type IgnoranceConnectionParamsBase = crate::GlobalNamespace::IgnoranceConnectionManager_IgnoranceConnectionParamsBase;
     #[cfg(feature = "IgnoranceConnectionManager+StartServerParams")]
     pub type StartServerParams = crate::GlobalNamespace::IgnoranceConnectionManager_StartServerParams;
-    #[cfg(feature = "IgnoranceConnectionManager+_BackgroundDisconnectSentry_d__99")]
-    pub type _BackgroundDisconnectSentry_d__99 = crate::GlobalNamespace::IgnoranceConnectionManager__BackgroundDisconnectSentry_d__99;
-    #[cfg(feature = "IgnoranceConnectionManager+_DisposeAsync_d__77")]
-    pub type _DisposeAsync_d__77 = crate::GlobalNamespace::IgnoranceConnectionManager__DisposeAsync_d__77;
-    #[cfg(feature = "IgnoranceConnectionManager+__c__DisplayClass77_0")]
-    pub type __c__DisplayClass77_0 = crate::GlobalNamespace::IgnoranceConnectionManager___c__DisplayClass77_0;
-    #[cfg(feature = "IgnoranceConnectionManager+__c__DisplayClass77_1")]
-    pub type __c__DisplayClass77_1 = crate::GlobalNamespace::IgnoranceConnectionManager___c__DisplayClass77_1;
-    #[cfg(feature = "IgnoranceConnectionManager+__c__DisplayClass80_0")]
-    pub type __c__DisplayClass80_0 = crate::GlobalNamespace::IgnoranceConnectionManager___c__DisplayClass80_0;
     pub fn BackgroundDisconnectSentry(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

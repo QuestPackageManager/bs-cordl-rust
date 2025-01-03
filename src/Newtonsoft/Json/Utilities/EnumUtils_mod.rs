@@ -26,12 +26,6 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Utilities::EnumUtils {
 impl crate::Newtonsoft::Json::Utilities::EnumUtils {
     pub const EnumSeparatorChar: char = ',';
     pub const EnumSeparatorString: &'static str = ", ";
-    #[cfg(feature = "Newtonsoft+Json+Utilities+EnumUtils+__c")]
-    pub type __c = crate::Newtonsoft::Json::Utilities::EnumUtils___c;
-    #[cfg(feature = "Newtonsoft+Json+Utilities+EnumUtils+__c__4_1")]
-    pub type __c__4_1<T: quest_hook::libil2cpp::Type> = crate::Newtonsoft::Json::Utilities::EnumUtils___c__4_1<
-        T,
-    >;
     pub fn FindIndexByName(
         enumNames: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,

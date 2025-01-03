@@ -37,8 +37,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::IntroTutorialController {
 }
 #[cfg(feature = "IntroTutorialController")]
 impl crate::GlobalNamespace::IntroTutorialController {
-    #[cfg(feature = "IntroTutorialController+_ShowFinishAnimationCoroutine_d__22")]
-    pub type _ShowFinishAnimationCoroutine_d__22 = crate::GlobalNamespace::IntroTutorialController__ShowFinishAnimationCoroutine_d__22;
     pub fn CleanUp(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

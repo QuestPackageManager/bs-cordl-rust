@@ -37,12 +37,6 @@ for crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
 }
 #[cfg(feature = "Unity+Properties+Internal+ReflectedPropertyBagProvider")]
 impl crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
-    #[cfg(
-        feature = "Unity+Properties+Internal+ReflectedPropertyBagProvider+_GetPropertyMembers_d__22"
-    )]
-    pub type _GetPropertyMembers_d__22 = crate::Unity::Properties::Internal::ReflectedPropertyBagProvider__GetPropertyMembers_d__22;
-    #[cfg(feature = "Unity+Properties+Internal+ReflectedPropertyBagProvider+__c")]
-    pub type __c = crate::Unity::Properties::Internal::ReflectedPropertyBagProvider___c;
     pub fn CreateArrayPropertyBag<TElement>(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

@@ -29,10 +29,6 @@ impl std::ops::DerefMut for crate::Zenject::SubContainerCreatorByNewPrefabWithPa
 }
 #[cfg(feature = "Zenject+SubContainerCreatorByNewPrefabWithParams")]
 impl crate::Zenject::SubContainerCreatorByNewPrefabWithParams {
-    #[cfg(
-        feature = "Zenject+SubContainerCreatorByNewPrefabWithParams+__c__DisplayClass7_0"
-    )]
-    pub type __c__DisplayClass7_0 = crate::Zenject::SubContainerCreatorByNewPrefabWithParams___c__DisplayClass7_0;
     pub fn CreateSubContainer(
         &mut self,
         args: quest_hook::libil2cpp::Gc<

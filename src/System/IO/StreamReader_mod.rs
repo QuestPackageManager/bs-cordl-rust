@@ -41,10 +41,6 @@ impl std::ops::DerefMut for crate::System::IO::StreamReader {
 impl crate::System::IO::StreamReader {
     #[cfg(feature = "System+IO+StreamReader+NullStreamReader")]
     pub type NullStreamReader = crate::GlobalNamespace::StreamReader_NullStreamReader;
-    #[cfg(feature = "System+IO+StreamReader+_ReadAsyncInternal_d__66")]
-    pub type _ReadAsyncInternal_d__66 = crate::System::IO::StreamReader__ReadAsyncInternal_d__66;
-    #[cfg(feature = "System+IO+StreamReader+_ReadBufferAsync_d__69")]
-    pub type _ReadBufferAsync_d__69 = crate::System::IO::StreamReader__ReadBufferAsync_d__69;
     pub fn CheckAsyncTaskInProgress(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -27,8 +27,6 @@ for crate::UnityEngine::ProBuilder::MeshOperations::SurfaceTopology {
 }
 #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+SurfaceTopology")]
 impl crate::UnityEngine::ProBuilder::MeshOperations::SurfaceTopology {
-    #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+SurfaceTopology+__c")]
-    pub type __c = crate::UnityEngine::ProBuilder::MeshOperations::SurfaceTopology___c;
     pub fn BreakFaceIntoTris(
         face: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
         vertices: quest_hook::libil2cpp::Gc<

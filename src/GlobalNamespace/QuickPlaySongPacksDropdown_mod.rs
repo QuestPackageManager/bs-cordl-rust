@@ -34,10 +34,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::QuickPlaySongPacksDropdown {
 impl crate::GlobalNamespace::QuickPlaySongPacksDropdown {
     #[cfg(feature = "QuickPlaySongPacksDropdown+SongPackMaskItem")]
     pub type SongPackMaskItem = crate::GlobalNamespace::QuickPlaySongPacksDropdown_SongPackMaskItem;
-    #[cfg(feature = "QuickPlaySongPacksDropdown+__c")]
-    pub type __c = crate::GlobalNamespace::QuickPlaySongPacksDropdown___c;
-    #[cfg(feature = "QuickPlaySongPacksDropdown+__c__DisplayClass13_0")]
-    pub type __c__DisplayClass13_0 = crate::GlobalNamespace::QuickPlaySongPacksDropdown___c__DisplayClass13_0;
     pub fn GetSelectedSerializedName(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

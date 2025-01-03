@@ -28,8 +28,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::KeyDownEvent {
 }
 #[cfg(feature = "UnityEngine+UIElements+KeyDownEvent")]
 impl crate::UnityEngine::UIElements::KeyDownEvent {
-    #[cfg(feature = "UnityEngine+UIElements+KeyDownEvent+__c")]
-    pub type __c = crate::UnityEngine::UIElements::KeyDownEvent___c;
     pub fn GetEquivalentImguiEvent(
         &mut self,
         outImguiEvent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Event>,

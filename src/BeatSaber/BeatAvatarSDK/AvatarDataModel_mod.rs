@@ -32,14 +32,6 @@ impl std::ops::DerefMut for crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
 #[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarDataModel")]
 impl crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
     pub const kAvatarDataFileName: &'static str = "AvatarData.dat";
-    #[cfg(
-        feature = "BeatSaber+BeatAvatarSDK+AvatarDataModel+_DeleteAsyncInternal_d__20"
-    )]
-    pub type _DeleteAsyncInternal_d__20 = crate::BeatSaber::BeatAvatarSDK::AvatarDataModel__DeleteAsyncInternal_d__20;
-    #[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarDataModel+_LoadInternalAsync_d__16")]
-    pub type _LoadInternalAsync_d__16 = crate::BeatSaber::BeatAvatarSDK::AvatarDataModel__LoadInternalAsync_d__16;
-    #[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarDataModel+_SaveInternalAsync_d__14")]
-    pub type _SaveInternalAsync_d__14 = crate::BeatSaber::BeatAvatarSDK::AvatarDataModel__SaveInternalAsync_d__14;
     pub fn CreateDefaultAvatarData(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

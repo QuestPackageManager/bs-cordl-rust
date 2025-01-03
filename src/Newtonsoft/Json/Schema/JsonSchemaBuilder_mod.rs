@@ -34,8 +34,6 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Schema::JsonSchemaBuilder {
 }
 #[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaBuilder")]
 impl crate::Newtonsoft::Json::Schema::JsonSchemaBuilder {
-    #[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaBuilder+__c__DisplayClass23_0")]
-    pub type __c__DisplayClass23_0 = crate::Newtonsoft::Json::Schema::JsonSchemaBuilder___c__DisplayClass23_0;
     pub fn BuildSchema(
         &mut self,
         token: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,

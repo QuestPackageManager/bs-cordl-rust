@@ -41,10 +41,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::LevelFailedTextOverride {
 impl crate::GlobalNamespace::LevelFailedTextOverride {
     #[cfg(feature = "LevelFailedTextOverride+LanguageOverride")]
     pub type LanguageOverride = crate::GlobalNamespace::LevelFailedTextOverride_LanguageOverride;
-    #[cfg(feature = "LevelFailedTextOverride+_Start_d__6")]
-    pub type _Start_d__6 = crate::GlobalNamespace::LevelFailedTextOverride__Start_d__6;
-    #[cfg(feature = "LevelFailedTextOverride+__c__DisplayClass6_0")]
-    pub type __c__DisplayClass6_0 = crate::GlobalNamespace::LevelFailedTextOverride___c__DisplayClass6_0;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

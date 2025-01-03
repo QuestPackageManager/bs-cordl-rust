@@ -40,14 +40,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapLevelsModel {
 #[cfg(feature = "BeatmapLevelsModel")]
 impl crate::GlobalNamespace::BeatmapLevelsModel {
     pub const kExplicitSongLocalizationKey: &'static str = "EXPLICIT_SONG";
-    #[cfg(feature = "BeatmapLevelsModel+_CheckBeatmapLevelDataExistsAsync_d__27")]
-    pub type _CheckBeatmapLevelDataExistsAsync_d__27 = crate::GlobalNamespace::BeatmapLevelsModel__CheckBeatmapLevelDataExistsAsync_d__27;
-    #[cfg(feature = "BeatmapLevelsModel+_LoadBeatmapLevelDataAsync_d__26")]
-    pub type _LoadBeatmapLevelDataAsync_d__26 = crate::GlobalNamespace::BeatmapLevelsModel__LoadBeatmapLevelDataAsync_d__26;
-    #[cfg(feature = "BeatmapLevelsModel+_SelectPacks_d__28")]
-    pub type _SelectPacks_d__28 = crate::GlobalNamespace::BeatmapLevelsModel__SelectPacks_d__28;
-    #[cfg(feature = "BeatmapLevelsModel+__c__DisplayClass31_0")]
-    pub type __c__DisplayClass31_0 = crate::GlobalNamespace::BeatmapLevelsModel___c__DisplayClass31_0;
     pub fn CheckBeatmapLevelDataExistsAsync(
         &mut self,
         levelID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

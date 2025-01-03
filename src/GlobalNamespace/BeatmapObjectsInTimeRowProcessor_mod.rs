@@ -54,10 +54,6 @@ impl crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor {
     pub type TimeSliceContainer_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<
         T,
     >;
-    #[cfg(feature = "BeatmapObjectsInTimeRowProcessor+__c")]
-    pub type __c = crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor___c;
-    #[cfg(feature = "BeatmapObjectsInTimeRowProcessor+__c__DisplayClass17_0")]
-    pub type __c__DisplayClass17_0 = crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor___c__DisplayClass17_0;
     pub fn HandleCurrentNewTimeSliceAllNotesAndSlidersDidStartNewTimeSlice(
         &mut self,
         allObjectsTimeSlice: quest_hook::libil2cpp::Gc<

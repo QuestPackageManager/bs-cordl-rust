@@ -26,8 +26,6 @@ for crate::UnityEngine::InputSystem::Utilities::NameAndParameters {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+NameAndParameters")]
 impl crate::UnityEngine::InputSystem::Utilities::NameAndParameters {
-    #[cfg(feature = "UnityEngine+InputSystem+Utilities+NameAndParameters+__c")]
-    pub type __c = crate::UnityEngine::InputSystem::Utilities::NameAndParameters___c;
     pub fn Parse(
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<

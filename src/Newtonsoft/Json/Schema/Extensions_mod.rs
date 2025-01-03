@@ -24,10 +24,6 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Schema::Extensions {
 }
 #[cfg(feature = "Newtonsoft+Json+Schema+Extensions")]
 impl crate::Newtonsoft::Json::Schema::Extensions {
-    #[cfg(feature = "Newtonsoft+Json+Schema+Extensions+__c__DisplayClass0_0")]
-    pub type __c__DisplayClass0_0 = crate::Newtonsoft::Json::Schema::Extensions___c__DisplayClass0_0;
-    #[cfg(feature = "Newtonsoft+Json+Schema+Extensions+__c__DisplayClass1_0")]
-    pub type __c__DisplayClass1_0 = crate::Newtonsoft::Json::Schema::Extensions___c__DisplayClass1_0;
     pub fn IsValid_ByRefMut1(
         source: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
         schema: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchema>,

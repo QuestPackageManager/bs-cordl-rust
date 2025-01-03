@@ -47,8 +47,6 @@ impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_Parameters {
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_Parameters")]
 impl crate::HoudiniEngineUnity::HEU_Parameters {
-    #[cfg(feature = "HoudiniEngineUnity+HEU_Parameters+__c__DisplayClass35_0")]
-    pub type __c__DisplayClass35_0 = crate::HoudiniEngineUnity::HEU_Parameters___c__DisplayClass35_0;
     pub fn AreParametersValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

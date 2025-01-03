@@ -30,8 +30,6 @@ impl crate::GlobalNamespace::FlyingScoreSpawner {
     pub type InitData = crate::GlobalNamespace::FlyingScoreSpawner_InitData;
     #[cfg(feature = "FlyingScoreSpawner+SpawnPosition")]
     pub type SpawnPosition = crate::GlobalNamespace::FlyingScoreSpawner_SpawnPosition;
-    #[cfg(feature = "FlyingScoreSpawner+_SpawnFlyingScoreNextFrameCoroutine_d__5")]
-    pub type _SpawnFlyingScoreNextFrameCoroutine_d__5 = crate::GlobalNamespace::FlyingScoreSpawner__SpawnFlyingScoreNextFrameCoroutine_d__5;
     pub fn HandleFlyingObjectEffectDidFinish(
         &mut self,
         flyingObjectEffect: quest_hook::libil2cpp::Gc<

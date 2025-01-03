@@ -36,8 +36,6 @@ impl crate::UnityEngine::UIElements::RectIntField {
     pub type UxmlFactory = crate::UnityEngine::UIElements::RectIntField_UxmlFactory;
     #[cfg(feature = "UnityEngine+UIElements+RectIntField+UxmlTraits")]
     pub type UxmlTraits = crate::UnityEngine::UIElements::RectIntField_UxmlTraits;
-    #[cfg(feature = "UnityEngine+UIElements+RectIntField+__c")]
-    pub type __c = crate::UnityEngine::UIElements::RectIntField___c;
     pub fn DescribeFields(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

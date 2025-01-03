@@ -35,8 +35,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerLobbyAvatarManage
 }
 #[cfg(feature = "MultiplayerLobbyAvatarManager")]
 impl crate::GlobalNamespace::MultiplayerLobbyAvatarManager {
-    #[cfg(feature = "MultiplayerLobbyAvatarManager+_RemovePlayerAndDestroy_d__13")]
-    pub type _RemovePlayerAndDestroy_d__13 = crate::GlobalNamespace::MultiplayerLobbyAvatarManager__RemovePlayerAndDestroy_d__13;
     pub fn ActivateMultiplayerLobbyAvatarManager(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

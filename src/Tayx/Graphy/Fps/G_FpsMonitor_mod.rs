@@ -36,8 +36,6 @@ impl std::ops::DerefMut for crate::Tayx::Graphy::Fps::G_FpsMonitor {
 }
 #[cfg(feature = "Tayx+Graphy+Fps+G_FpsMonitor")]
 impl crate::Tayx::Graphy::Fps::G_FpsMonitor {
-    #[cfg(feature = "Tayx+Graphy+Fps+G_FpsMonitor+__c")]
-    pub type __c = crate::Tayx::Graphy::Fps::G_FpsMonitor___c;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

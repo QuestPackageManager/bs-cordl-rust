@@ -56,8 +56,6 @@ impl crate::GlobalNamespace::FireworkItemController {
     pub type FireworkItemParticleSystem = crate::GlobalNamespace::FireworkItemController_FireworkItemParticleSystem;
     #[cfg(feature = "FireworkItemController+Pool")]
     pub type Pool = crate::GlobalNamespace::FireworkItemController_Pool;
-    #[cfg(feature = "FireworkItemController+_FireCoroutine_d__29")]
-    pub type _FireCoroutine_d__29 = crate::GlobalNamespace::FireworkItemController__FireCoroutine_d__29;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

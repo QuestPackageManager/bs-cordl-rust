@@ -29,10 +29,6 @@ impl std::ops::DerefMut for crate::HoudiniEngineUnity::JSONObject {
 }
 #[cfg(feature = "HoudiniEngineUnity+JSONObject")]
 impl crate::HoudiniEngineUnity::JSONObject {
-    #[cfg(feature = "HoudiniEngineUnity+JSONObject+__c__DisplayClass21_0")]
-    pub type __c__DisplayClass21_0 = crate::HoudiniEngineUnity::JSONObject___c__DisplayClass21_0;
-    #[cfg(feature = "HoudiniEngineUnity+JSONObject+_get_Children_d__23")]
-    pub type _get_Children_d__23 = crate::HoudiniEngineUnity::JSONObject__get_Children_d__23;
     pub fn Add(
         &mut self,
         aKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

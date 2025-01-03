@@ -33,8 +33,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapDifficultyDropdown {
 }
 #[cfg(feature = "BeatmapDifficultyDropdown")]
 impl crate::GlobalNamespace::BeatmapDifficultyDropdown {
-    #[cfg(feature = "BeatmapDifficultyDropdown+__c")]
-    pub type __c = crate::GlobalNamespace::BeatmapDifficultyDropdown___c;
     pub fn GetIdxForBeatmapDifficultyMask(
         &mut self,
         beatmapDifficultyMask: crate::GlobalNamespace::BeatmapDifficultyMask,

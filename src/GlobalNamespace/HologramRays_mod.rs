@@ -41,8 +41,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::HologramRays {
 }
 #[cfg(feature = "HologramRays")]
 impl crate::GlobalNamespace::HologramRays {
-    #[cfg(feature = "HologramRays+_FadingCoroutine_d__28")]
-    pub type _FadingCoroutine_d__28 = crate::GlobalNamespace::HologramRays__FadingCoroutine_d__28;
     pub fn Animate(
         &mut self,
         turningOn: bool,

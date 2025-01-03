@@ -25,10 +25,6 @@ impl std::ops::DerefMut for crate::System::Xml::XmlDownloadManager {
 }
 #[cfg(feature = "System+Xml+XmlDownloadManager")]
 impl crate::System::Xml::XmlDownloadManager {
-    #[cfg(feature = "System+Xml+XmlDownloadManager+_GetNonFileStreamAsync_d__5")]
-    pub type _GetNonFileStreamAsync_d__5 = crate::System::Xml::XmlDownloadManager__GetNonFileStreamAsync_d__5;
-    #[cfg(feature = "System+Xml+XmlDownloadManager+__c__DisplayClass4_0")]
-    pub type __c__DisplayClass4_0 = crate::System::Xml::XmlDownloadManager___c__DisplayClass4_0;
     pub fn GetNonFileStream(
         &mut self,
         uri: quest_hook::libil2cpp::Gc<crate::System::Uri>,

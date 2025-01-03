@@ -49,40 +49,6 @@ impl crate::Newtonsoft::Json::Serialization::DefaultContractResolver {
         TEnumeratorKey,
         TEnumeratorValue,
     >;
-    #[cfg(feature = "Newtonsoft+Json+Serialization+DefaultContractResolver+__c")]
-    pub type __c = crate::Newtonsoft::Json::Serialization::DefaultContractResolver___c;
-    #[cfg(
-        feature = "Newtonsoft+Json+Serialization+DefaultContractResolver+__c__DisplayClass42_0"
-    )]
-    pub type __c__DisplayClass42_0 = crate::Newtonsoft::Json::Serialization::DefaultContractResolver___c__DisplayClass42_0;
-    #[cfg(
-        feature = "Newtonsoft+Json+Serialization+DefaultContractResolver+__c__DisplayClass45_0"
-    )]
-    pub type __c__DisplayClass45_0 = crate::Newtonsoft::Json::Serialization::DefaultContractResolver___c__DisplayClass45_0;
-    #[cfg(
-        feature = "Newtonsoft+Json+Serialization+DefaultContractResolver+__c__DisplayClass45_1"
-    )]
-    pub type __c__DisplayClass45_1 = crate::Newtonsoft::Json::Serialization::DefaultContractResolver___c__DisplayClass45_1;
-    #[cfg(
-        feature = "Newtonsoft+Json+Serialization+DefaultContractResolver+__c__DisplayClass45_2"
-    )]
-    pub type __c__DisplayClass45_2 = crate::Newtonsoft::Json::Serialization::DefaultContractResolver___c__DisplayClass45_2;
-    #[cfg(
-        feature = "Newtonsoft+Json+Serialization+DefaultContractResolver+__c__DisplayClass62_0"
-    )]
-    pub type __c__DisplayClass62_0 = crate::Newtonsoft::Json::Serialization::DefaultContractResolver___c__DisplayClass62_0;
-    #[cfg(
-        feature = "Newtonsoft+Json+Serialization+DefaultContractResolver+__c__DisplayClass67_0"
-    )]
-    pub type __c__DisplayClass67_0 = crate::Newtonsoft::Json::Serialization::DefaultContractResolver___c__DisplayClass67_0;
-    #[cfg(
-        feature = "Newtonsoft+Json+Serialization+DefaultContractResolver+__c__DisplayClass80_0"
-    )]
-    pub type __c__DisplayClass80_0 = crate::Newtonsoft::Json::Serialization::DefaultContractResolver___c__DisplayClass80_0;
-    #[cfg(
-        feature = "Newtonsoft+Json+Serialization+DefaultContractResolver+__c__DisplayClass81_0"
-    )]
-    pub type __c__DisplayClass81_0 = crate::Newtonsoft::Json::Serialization::DefaultContractResolver___c__DisplayClass81_0;
     pub fn CanConvertToString(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -1078,13 +1044,6 @@ impl<
     TEnumeratorKey,
     TEnumeratorValue,
 > {
-    #[cfg(
-        feature = "Newtonsoft+Json+Serialization+DefaultContractResolver+EnumerableDictionaryWrapper_2+_GetEnumerator_d__2"
-    )]
-    pub type _GetEnumerator_d__2 = crate::Newtonsoft::Json::Serialization::EnumerableDictionaryWrapper_2_DefaultContractResolver__GetEnumerator_d__2<
-        TEnumeratorKey,
-        TEnumeratorValue,
-    >;
     pub fn GetEnumerator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

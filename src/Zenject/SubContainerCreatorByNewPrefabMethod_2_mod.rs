@@ -46,13 +46,6 @@ impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,
 > crate::Zenject::SubContainerCreatorByNewPrefabMethod_2<TParam1, TParam2> {
-    #[cfg(
-        feature = "Zenject+SubContainerCreatorByNewPrefabMethod_2+__c__DisplayClass2_0"
-    )]
-    pub type __c__DisplayClass2_0 = crate::Zenject::SubContainerCreatorByNewPrefabMethod_2___c__DisplayClass2_0<
-        TParam1,
-        TParam2,
-    >;
     pub fn AddInstallers(
         &mut self,
         args: quest_hook::libil2cpp::Gc<

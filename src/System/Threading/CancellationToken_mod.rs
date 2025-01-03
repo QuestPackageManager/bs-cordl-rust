@@ -22,8 +22,6 @@ for crate::System::Threading::CancellationToken {
 }
 #[cfg(feature = "System+Threading+CancellationToken")]
 impl crate::System::Threading::CancellationToken {
-    #[cfg(feature = "System+Threading+CancellationToken+__c")]
-    pub type __c = crate::System::Threading::CancellationToken___c;
     pub fn Equals_CancellationToken0(
         &mut self,
         other: crate::System::Threading::CancellationToken,

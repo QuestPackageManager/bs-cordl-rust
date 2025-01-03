@@ -29,8 +29,6 @@ for crate::UnityEngine::UIElements::ObjectListPool_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::UnityEngine::UIElements::ObjectListPool_1<T> {
-    #[cfg(feature = "UnityEngine+UIElements+ObjectListPool_1+__c")]
-    pub type __c = crate::UnityEngine::UIElements::ObjectListPool_1___c<T>;
     pub fn Get() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
     >

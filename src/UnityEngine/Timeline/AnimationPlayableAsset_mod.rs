@@ -43,8 +43,6 @@ impl crate::UnityEngine::Timeline::AnimationPlayableAsset {
     pub type LoopMode = crate::UnityEngine::Timeline::AnimationPlayableAsset_LoopMode;
     #[cfg(feature = "UnityEngine+Timeline+AnimationPlayableAsset+Versions")]
     pub type Versions = crate::UnityEngine::Timeline::AnimationPlayableAsset_Versions;
-    #[cfg(feature = "UnityEngine+Timeline+AnimationPlayableAsset+_get_outputs_d__45")]
-    pub type _get_outputs_d__45 = crate::UnityEngine::Timeline::AnimationPlayableAsset__get_outputs_d__45;
     pub fn CreatePlayable_AnimationClip_Vector3_Vector3__cordl_bool_AppliedOffsetMode__cordl_bool_AnimationPlayableAsset_LoopMode1(
         graph: crate::UnityEngine::Playables::PlayableGraph,
         clip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,

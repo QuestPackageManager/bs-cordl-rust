@@ -42,8 +42,6 @@ impl crate::UnityEngine::UI::Scrollbar {
     pub type Direction = crate::UnityEngine::UI::Scrollbar_Direction;
     #[cfg(feature = "UnityEngine+UI+Scrollbar+ScrollEvent")]
     pub type ScrollEvent = crate::UnityEngine::UI::Scrollbar_ScrollEvent;
-    #[cfg(feature = "UnityEngine+UI+Scrollbar+_ClickRepeat_d__58")]
-    pub type _ClickRepeat_d__58 = crate::UnityEngine::UI::Scrollbar__ClickRepeat_d__58;
     pub fn ClickRepeat_PointerEventData0(
         &mut self,
         eventData: quest_hook::libil2cpp::Gc<

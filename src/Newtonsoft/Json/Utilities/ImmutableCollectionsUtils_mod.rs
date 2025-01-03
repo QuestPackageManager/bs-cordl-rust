@@ -51,16 +51,6 @@ impl crate::Newtonsoft::Json::Utilities::ImmutableCollectionsUtils {
         feature = "Newtonsoft+Json+Utilities+ImmutableCollectionsUtils+ImmutableCollectionTypeInfo"
     )]
     pub type ImmutableCollectionTypeInfo = crate::Newtonsoft::Json::Utilities::ImmutableCollectionsUtils_ImmutableCollectionTypeInfo;
-    #[cfg(feature = "Newtonsoft+Json+Utilities+ImmutableCollectionsUtils+__c")]
-    pub type __c = crate::Newtonsoft::Json::Utilities::ImmutableCollectionsUtils___c;
-    #[cfg(
-        feature = "Newtonsoft+Json+Utilities+ImmutableCollectionsUtils+__c__DisplayClass24_0"
-    )]
-    pub type __c__DisplayClass24_0 = crate::Newtonsoft::Json::Utilities::ImmutableCollectionsUtils___c__DisplayClass24_0;
-    #[cfg(
-        feature = "Newtonsoft+Json+Utilities+ImmutableCollectionsUtils+__c__DisplayClass25_0"
-    )]
-    pub type __c__DisplayClass25_0 = crate::Newtonsoft::Json::Utilities::ImmutableCollectionsUtils___c__DisplayClass25_0;
     pub fn TryBuildImmutableForArrayContract(
         underlyingType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         collectionItemType: quest_hook::libil2cpp::Gc<crate::System::Type>,

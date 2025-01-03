@@ -43,16 +43,6 @@ impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > crate::UnityEngine::ProBuilder::KdTree::KdTree_2<TKey, TValue> {
-    #[cfg(feature = "UnityEngine+ProBuilder+KdTree+KdTree_2+_GetEnumerator_d__33")]
-    pub type _GetEnumerator_d__33 = crate::UnityEngine::ProBuilder::KdTree::KdTree_2__GetEnumerator_d__33<
-        TKey,
-        TValue,
-    >;
-    #[cfg(feature = "UnityEngine+ProBuilder+KdTree+KdTree_2+__c__DisplayClass33_0")]
-    pub type __c__DisplayClass33_0 = crate::UnityEngine::ProBuilder::KdTree::KdTree_2___c__DisplayClass33_0<
-        TKey,
-        TValue,
-    >;
     pub fn Add(
         &mut self,
         point: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TKey>>,

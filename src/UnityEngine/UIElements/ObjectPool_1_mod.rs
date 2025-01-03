@@ -30,8 +30,6 @@ for crate::UnityEngine::UIElements::ObjectPool_1<T> {
 }
 #[cfg(feature = "UnityEngine+UIElements+ObjectPool_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::ObjectPool_1<T> {
-    #[cfg(feature = "UnityEngine+UIElements+ObjectPool_1+__c")]
-    pub type __c = crate::UnityEngine::UIElements::ObjectPool_1___c<T>;
     pub fn Get(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type

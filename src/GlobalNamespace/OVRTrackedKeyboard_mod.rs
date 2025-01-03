@@ -86,18 +86,6 @@ impl crate::GlobalNamespace::OVRTrackedKeyboard {
     pub type TrackedKeyboardState = crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardState;
     #[cfg(feature = "OVRTrackedKeyboard+TrackedKeyboardVisibilityChangedEvent")]
     pub type TrackedKeyboardVisibilityChangedEvent = crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardVisibilityChangedEvent;
-    #[cfg(feature = "OVRTrackedKeyboard+_InitializeHandPresenceData_d__89")]
-    pub type _InitializeHandPresenceData_d__89 = crate::GlobalNamespace::OVRTrackedKeyboard__InitializeHandPresenceData_d__89;
-    #[cfg(feature = "OVRTrackedKeyboard+_StartKeyboardTrackingCoroutine_d__96")]
-    pub type _StartKeyboardTrackingCoroutine_d__96 = crate::GlobalNamespace::OVRTrackedKeyboard__StartKeyboardTrackingCoroutine_d__96;
-    #[cfg(feature = "OVRTrackedKeyboard+_Start_d__88")]
-    pub type _Start_d__88 = crate::GlobalNamespace::OVRTrackedKeyboard__Start_d__88;
-    #[cfg(feature = "OVRTrackedKeyboard+_UpdateKeyboardPose_d__98")]
-    pub type _UpdateKeyboardPose_d__98 = crate::GlobalNamespace::OVRTrackedKeyboard__UpdateKeyboardPose_d__98;
-    #[cfg(feature = "OVRTrackedKeyboard+_UpdateTrackingStateCoroutine_d__95")]
-    pub type _UpdateTrackingStateCoroutine_d__95 = crate::GlobalNamespace::OVRTrackedKeyboard__UpdateTrackingStateCoroutine_d__95;
-    #[cfg(feature = "OVRTrackedKeyboard+__c")]
-    pub type __c = crate::GlobalNamespace::OVRTrackedKeyboard___c;
     pub fn DispatchVisibilityEvent(
         &mut self,
         timeOut: bool,

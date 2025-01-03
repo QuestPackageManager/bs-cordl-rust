@@ -398,14 +398,6 @@ for crate::GlobalNamespace::VideoProjectionEffect_VideoProjectionBehavior {
 }
 #[cfg(feature = "VideoProjectionEffect+VideoProjectionBehavior")]
 impl crate::GlobalNamespace::VideoProjectionEffect_VideoProjectionBehavior {
-    #[cfg(
-        feature = "VideoProjectionEffect+VideoProjectionBehavior+_LoadPreviewCoverAsset_d__9"
-    )]
-    pub type _LoadPreviewCoverAsset_d__9 = crate::GlobalNamespace::VideoProjectionBehavior_VideoProjectionEffect__LoadPreviewCoverAsset_d__9;
-    #[cfg(
-        feature = "VideoProjectionEffect+VideoProjectionBehavior+__c__DisplayClass8_0"
-    )]
-    pub type __c__DisplayClass8_0 = crate::GlobalNamespace::VideoProjectionBehavior_VideoProjectionEffect___c__DisplayClass8_0;
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -39,8 +39,6 @@ impl std::ops::DerefMut for crate::UnityEngine::EventSystems::EventSystem {
 impl crate::UnityEngine::EventSystems::EventSystem {
     #[cfg(feature = "UnityEngine+EventSystems+EventSystem+UIToolkitOverrideConfig")]
     pub type UIToolkitOverrideConfig = crate::UnityEngine::EventSystems::EventSystem_UIToolkitOverrideConfig;
-    #[cfg(feature = "UnityEngine+EventSystems+EventSystem+__c__DisplayClass56_0")]
-    pub type __c__DisplayClass56_0 = crate::UnityEngine::EventSystems::EventSystem___c__DisplayClass56_0;
     pub fn ChangeEventModule(
         &mut self,
         _cordl_module: quest_hook::libil2cpp::Gc<

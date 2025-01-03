@@ -30,8 +30,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::LocalizedAudioClipSO {
 impl crate::GlobalNamespace::LocalizedAudioClipSO {
     #[cfg(feature = "LocalizedAudioClipSO+LocalizedAudioClipInfo")]
     pub type LocalizedAudioClipInfo = crate::GlobalNamespace::LocalizedAudioClipSO_LocalizedAudioClipInfo;
-    #[cfg(feature = "LocalizedAudioClipSO+__c__DisplayClass4_0")]
-    pub type __c__DisplayClass4_0 = crate::GlobalNamespace::LocalizedAudioClipSO___c__DisplayClass4_0;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

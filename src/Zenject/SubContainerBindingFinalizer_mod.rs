@@ -30,14 +30,6 @@ impl std::ops::DerefMut for crate::Zenject::SubContainerBindingFinalizer {
 }
 #[cfg(feature = "Zenject+SubContainerBindingFinalizer")]
 impl crate::Zenject::SubContainerBindingFinalizer {
-    #[cfg(feature = "Zenject+SubContainerBindingFinalizer+__c__DisplayClass5_0")]
-    pub type __c__DisplayClass5_0 = crate::Zenject::SubContainerBindingFinalizer___c__DisplayClass5_0;
-    #[cfg(feature = "Zenject+SubContainerBindingFinalizer+__c__DisplayClass5_1")]
-    pub type __c__DisplayClass5_1 = crate::Zenject::SubContainerBindingFinalizer___c__DisplayClass5_1;
-    #[cfg(feature = "Zenject+SubContainerBindingFinalizer+__c__DisplayClass6_0")]
-    pub type __c__DisplayClass6_0 = crate::Zenject::SubContainerBindingFinalizer___c__DisplayClass6_0;
-    #[cfg(feature = "Zenject+SubContainerBindingFinalizer+__c__DisplayClass6_1")]
-    pub type __c__DisplayClass6_1 = crate::Zenject::SubContainerBindingFinalizer___c__DisplayClass6_1;
     pub fn FinalizeBindingConcrete(
         &mut self,
         container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,

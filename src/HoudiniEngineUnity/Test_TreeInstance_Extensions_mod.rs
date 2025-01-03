@@ -24,8 +24,6 @@ impl std::ops::DerefMut for crate::HoudiniEngineUnity::Test_TreeInstance_Extensi
 }
 #[cfg(feature = "HoudiniEngineUnity+Test_TreeInstance_Extensions")]
 impl crate::HoudiniEngineUnity::Test_TreeInstance_Extensions {
-    #[cfg(feature = "HoudiniEngineUnity+Test_TreeInstance_Extensions+__c")]
-    pub type __c = crate::HoudiniEngineUnity::Test_TreeInstance_Extensions___c;
     pub fn ToTestObject_Il2CppArray1(
         _cordl_self: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::TreeInstance>,

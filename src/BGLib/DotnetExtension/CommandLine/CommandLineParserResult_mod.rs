@@ -30,14 +30,6 @@ for crate::BGLib::DotnetExtension::CommandLine::CommandLineParserResult {
 }
 #[cfg(feature = "BGLib+DotnetExtension+CommandLine+CommandLineParserResult")]
 impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParserResult {
-    #[cfg(
-        feature = "BGLib+DotnetExtension+CommandLine+CommandLineParserResult+__c__DisplayClass10_0"
-    )]
-    pub type __c__DisplayClass10_0 = crate::BGLib::DotnetExtension::CommandLine::CommandLineParserResult___c__DisplayClass10_0;
-    #[cfg(
-        feature = "BGLib+DotnetExtension+CommandLine+CommandLineParserResult+__c__DisplayClass7_0"
-    )]
-    pub type __c__DisplayClass7_0 = crate::BGLib::DotnetExtension::CommandLine::CommandLineParserResult___c__DisplayClass7_0;
     pub fn Contains_ArgumentOption0(
         &mut self,
         option: crate::BGLib::DotnetExtension::CommandLine::ArgumentOption,

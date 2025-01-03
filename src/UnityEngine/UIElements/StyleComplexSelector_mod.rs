@@ -36,8 +36,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::StyleComplexSelector
 impl crate::UnityEngine::UIElements::StyleComplexSelector {
     #[cfg(feature = "UnityEngine+UIElements+StyleComplexSelector+PseudoStateData")]
     pub type PseudoStateData = crate::UnityEngine::UIElements::StyleComplexSelector_PseudoStateData;
-    #[cfg(feature = "UnityEngine+UIElements+StyleComplexSelector+__c")]
-    pub type __c = crate::UnityEngine::UIElements::StyleComplexSelector___c;
     pub fn CachePseudoStateMasks(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

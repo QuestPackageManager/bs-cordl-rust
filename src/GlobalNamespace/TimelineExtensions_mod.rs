@@ -24,8 +24,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::TimelineExtensions {
 }
 #[cfg(feature = "TimelineExtensions")]
 impl crate::GlobalNamespace::TimelineExtensions {
-    #[cfg(feature = "TimelineExtensions+__c__DisplayClass0_0")]
-    pub type __c__DisplayClass0_0 = crate::GlobalNamespace::TimelineExtensions___c__DisplayClass0_0;
     pub fn JumpToTimelineMarker(
         playableDirector: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::Playables::PlayableDirector,

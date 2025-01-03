@@ -45,12 +45,6 @@ impl std::ops::DerefMut for crate::Zenject::SceneContext {
 }
 #[cfg(feature = "Zenject+SceneContext")]
 impl crate::Zenject::SceneContext {
-    #[cfg(feature = "Zenject+SceneContext+__c")]
-    pub type __c = crate::Zenject::SceneContext___c;
-    #[cfg(feature = "Zenject+SceneContext+__c__DisplayClass49_0")]
-    pub type __c__DisplayClass49_0 = crate::Zenject::SceneContext___c__DisplayClass49_0;
-    #[cfg(feature = "Zenject+SceneContext+__c__DisplayClass51_0")]
-    pub type __c__DisplayClass51_0 = crate::Zenject::SceneContext___c__DisplayClass51_0;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

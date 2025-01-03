@@ -30,8 +30,6 @@ for crate::UnityEngine::UIElements::UIR::ShaderInfoStorageRGBA32 {
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+ShaderInfoStorageRGBA32")]
 impl crate::UnityEngine::UIElements::UIR::ShaderInfoStorageRGBA32 {
-    #[cfg(feature = "UnityEngine+UIElements+UIR+ShaderInfoStorageRGBA32+__c")]
-    pub type __c = crate::UnityEngine::UIElements::UIR::ShaderInfoStorageRGBA32___c;
     pub fn New(
         initialSize: i32,
         maxSize: i32,

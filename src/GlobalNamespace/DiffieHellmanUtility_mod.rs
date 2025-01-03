@@ -159,8 +159,6 @@ for crate::GlobalNamespace::DiffieHellmanUtility_DiffieHellmanKeyPair {
 }
 #[cfg(feature = "DiffieHellmanUtility+DiffieHellmanKeyPair")]
 impl crate::GlobalNamespace::DiffieHellmanUtility_DiffieHellmanKeyPair {
-    #[cfg(feature = "DiffieHellmanUtility+DiffieHellmanKeyPair+__c__DisplayClass5_0")]
-    pub type __c__DisplayClass5_0 = crate::GlobalNamespace::DiffieHellmanKeyPair_DiffieHellmanUtility___c__DisplayClass5_0;
     pub fn GetPreMasterSecret(
         &mut self,
         clientPublicKey: quest_hook::libil2cpp::Gc<
@@ -296,8 +294,6 @@ for crate::GlobalNamespace::DiffieHellmanUtility_ElipticalCurveKeyPair {
 }
 #[cfg(feature = "DiffieHellmanUtility+ElipticalCurveKeyPair")]
 impl crate::GlobalNamespace::DiffieHellmanUtility_ElipticalCurveKeyPair {
-    #[cfg(feature = "DiffieHellmanUtility+ElipticalCurveKeyPair+__c__DisplayClass5_0")]
-    pub type __c__DisplayClass5_0 = crate::GlobalNamespace::ElipticalCurveKeyPair_DiffieHellmanUtility___c__DisplayClass5_0;
     pub fn GetPreMasterSecret(
         &mut self,
         clientPublicKey: quest_hook::libil2cpp::Gc<

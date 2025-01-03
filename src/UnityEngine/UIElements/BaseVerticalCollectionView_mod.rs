@@ -81,18 +81,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::BaseVerticalCollecti
 impl crate::UnityEngine::UIElements::BaseVerticalCollectionView {
     #[cfg(feature = "UnityEngine+UIElements+BaseVerticalCollectionView+UxmlTraits")]
     pub type UxmlTraits = crate::UnityEngine::UIElements::BaseVerticalCollectionView_UxmlTraits;
-    #[cfg(
-        feature = "UnityEngine+UIElements+BaseVerticalCollectionView+__c__DisplayClass161_0"
-    )]
-    pub type __c__DisplayClass161_0 = crate::UnityEngine::UIElements::BaseVerticalCollectionView___c__DisplayClass161_0;
-    #[cfg(
-        feature = "UnityEngine+UIElements+BaseVerticalCollectionView+__c__DisplayClass170_0"
-    )]
-    pub type __c__DisplayClass170_0 = crate::UnityEngine::UIElements::BaseVerticalCollectionView___c__DisplayClass170_0;
-    #[cfg(
-        feature = "UnityEngine+UIElements+BaseVerticalCollectionView+__c__DisplayClass181_0"
-    )]
-    pub type __c__DisplayClass181_0 = crate::UnityEngine::UIElements::BaseVerticalCollectionView___c__DisplayClass181_0;
     pub fn AddToSelectionWithoutValidation(
         &mut self,
         index: i32,

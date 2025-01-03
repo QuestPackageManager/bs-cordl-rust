@@ -27,8 +27,6 @@ impl std::ops::DerefMut for crate::System::Xml::Linq::XContainer {
 impl crate::System::Xml::Linq::XContainer {
     #[cfg(feature = "System+Xml+Linq+XContainer+ContentReader")]
     pub type ContentReader = crate::System::Xml::Linq::XContainer_ContentReader;
-    #[cfg(feature = "System+Xml+Linq+XContainer+_Nodes_d__18")]
-    pub type _Nodes_d__18 = crate::System::Xml::Linq::XContainer__Nodes_d__18;
     pub fn Add(
         &mut self,
         content: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

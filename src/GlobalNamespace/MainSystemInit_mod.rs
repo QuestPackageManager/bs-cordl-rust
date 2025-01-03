@@ -66,8 +66,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::MainSystemInit {
 }
 #[cfg(feature = "MainSystemInit")]
 impl crate::GlobalNamespace::MainSystemInit {
-    #[cfg(feature = "MainSystemInit+__c")]
-    pub type __c = crate::GlobalNamespace::MainSystemInit___c;
     pub fn Init(
         &mut self,
         settingsApplicator: quest_hook::libil2cpp::Gc<

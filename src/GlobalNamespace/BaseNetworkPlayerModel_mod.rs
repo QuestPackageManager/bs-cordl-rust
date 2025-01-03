@@ -37,10 +37,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BaseNetworkPlayerModel {
 impl crate::GlobalNamespace::BaseNetworkPlayerModel {
     #[cfg(feature = "BaseNetworkPlayerModel+PartyConfig")]
     pub type PartyConfig = crate::GlobalNamespace::BaseNetworkPlayerModel_PartyConfig;
-    #[cfg(feature = "BaseNetworkPlayerModel+_GetOtherPlayers_d__56")]
-    pub type _GetOtherPlayers_d__56 = crate::GlobalNamespace::BaseNetworkPlayerModel__GetOtherPlayers_d__56;
-    #[cfg(feature = "BaseNetworkPlayerModel+_GetPartyPlayers_d__55")]
-    pub type _GetPartyPlayers_d__55 = crate::GlobalNamespace::BaseNetworkPlayerModel__GetPartyPlayers_d__55;
     pub fn Connected(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

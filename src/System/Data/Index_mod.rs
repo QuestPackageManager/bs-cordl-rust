@@ -42,10 +42,6 @@ impl std::ops::DerefMut for crate::System::Data::Index {
 impl crate::System::Data::Index {
     #[cfg(feature = "System+Data+Index+IndexTree")]
     pub type IndexTree = crate::System::Data::Index_IndexTree;
-    #[cfg(feature = "System+Data+Index+__c")]
-    pub type __c = crate::System::Data::Index___c;
-    #[cfg(feature = "System+Data+Index+__c__DisplayClass86_0")]
-    pub type __c__DisplayClass86_0 = crate::System::Data::Index___c__DisplayClass86_0;
     pub fn AcceptRecord_IFilter1(
         &mut self,
         record: i32,

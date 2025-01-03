@@ -40,8 +40,6 @@ impl crate::System::Dynamic::ExpandoObject {
     pub type ValueCollection = crate::System::Dynamic::ExpandoObject_ValueCollection;
     #[cfg(feature = "System+Dynamic+ExpandoObject+ValueCollectionDebugView")]
     pub type ValueCollectionDebugView = crate::System::Dynamic::ExpandoObject_ValueCollectionDebugView;
-    #[cfg(feature = "System+Dynamic+ExpandoObject+_GetExpandoEnumerator_d__51")]
-    pub type _GetExpandoEnumerator_d__51 = crate::System::Dynamic::ExpandoObject__GetExpandoEnumerator_d__51;
     pub fn ExpandoContainsKey(
         &mut self,
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -872,8 +870,6 @@ impl std::ops::DerefMut for crate::System::Dynamic::ExpandoObject_KeyCollection 
 }
 #[cfg(feature = "System+Dynamic+ExpandoObject+KeyCollection")]
 impl crate::System::Dynamic::ExpandoObject_KeyCollection {
-    #[cfg(feature = "System+Dynamic+ExpandoObject+KeyCollection+_GetEnumerator_d__15")]
-    pub type _GetEnumerator_d__15 = crate::System::Dynamic::KeyCollection_ExpandoObject__GetEnumerator_d__15;
     pub fn Add(
         &mut self,
         item: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1150,12 +1146,6 @@ impl std::ops::DerefMut for crate::System::Dynamic::ExpandoObject_MetaExpando {
 }
 #[cfg(feature = "System+Dynamic+ExpandoObject+MetaExpando")]
 impl crate::System::Dynamic::ExpandoObject_MetaExpando {
-    #[cfg(
-        feature = "System+Dynamic+ExpandoObject+MetaExpando+_GetDynamicMemberNames_d__6"
-    )]
-    pub type _GetDynamicMemberNames_d__6 = crate::System::Dynamic::MetaExpando_ExpandoObject__GetDynamicMemberNames_d__6;
-    #[cfg(feature = "System+Dynamic+ExpandoObject+MetaExpando+__c__DisplayClass3_0")]
-    pub type __c__DisplayClass3_0 = crate::System::Dynamic::MetaExpando_ExpandoObject___c__DisplayClass3_0;
     pub fn AddDynamicTestAndDefer(
         &mut self,
         binder: quest_hook::libil2cpp::Gc<
@@ -1413,8 +1403,6 @@ impl std::ops::DerefMut for crate::System::Dynamic::ExpandoObject_ValueCollectio
 }
 #[cfg(feature = "System+Dynamic+ExpandoObject+ValueCollection")]
 impl crate::System::Dynamic::ExpandoObject_ValueCollection {
-    #[cfg(feature = "System+Dynamic+ExpandoObject+ValueCollection+_GetEnumerator_d__15")]
-    pub type _GetEnumerator_d__15 = crate::System::Dynamic::ValueCollection_ExpandoObject__GetEnumerator_d__15;
     pub fn Add(
         &mut self,
         item: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

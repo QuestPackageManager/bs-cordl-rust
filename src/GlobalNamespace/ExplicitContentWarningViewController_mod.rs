@@ -31,8 +31,6 @@ for crate::GlobalNamespace::ExplicitContentWarningViewController {
 }
 #[cfg(feature = "ExplicitContentWarningViewController")]
 impl crate::GlobalNamespace::ExplicitContentWarningViewController {
-    #[cfg(feature = "ExplicitContentWarningViewController+_HandleClickedEvent_d__9")]
-    pub type _HandleClickedEvent_d__9 = crate::GlobalNamespace::ExplicitContentWarningViewController__HandleClickedEvent_d__9;
     pub fn DidActivate(
         &mut self,
         firstActivation: bool,

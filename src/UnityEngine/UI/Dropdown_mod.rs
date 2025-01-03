@@ -51,10 +51,6 @@ impl crate::UnityEngine::UI::Dropdown {
     pub type OptionData = crate::UnityEngine::UI::Dropdown_OptionData;
     #[cfg(feature = "UnityEngine+UI+Dropdown+OptionDataList")]
     pub type OptionDataList = crate::UnityEngine::UI::Dropdown_OptionDataList;
-    #[cfg(feature = "UnityEngine+UI+Dropdown+_DelayedDestroyDropdownList_d__75")]
-    pub type _DelayedDestroyDropdownList_d__75 = crate::UnityEngine::UI::Dropdown__DelayedDestroyDropdownList_d__75;
-    #[cfg(feature = "UnityEngine+UI+Dropdown+__c__DisplayClass63_0")]
-    pub type __c__DisplayClass63_0 = crate::UnityEngine::UI::Dropdown___c__DisplayClass63_0;
     pub fn AddItem(
         &mut self,
         data: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Dropdown_OptionData>,

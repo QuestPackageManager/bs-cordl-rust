@@ -25,11 +25,6 @@ impl std::ops::DerefMut for crate::System::Linq::Expressions::StackGuard {
 }
 #[cfg(feature = "System+Linq+Expressions+StackGuard")]
 impl crate::System::Linq::Expressions::StackGuard {
-    #[cfg(feature = "System+Linq+Expressions+StackGuard+__c__3_2")]
-    pub type __c__3_2<
-        T1: quest_hook::libil2cpp::Type,
-        T2: quest_hook::libil2cpp::Type,
-    > = crate::System::Linq::Expressions::StackGuard___c__3_2<T1, T2>;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

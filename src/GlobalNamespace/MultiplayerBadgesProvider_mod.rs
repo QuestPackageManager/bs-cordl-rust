@@ -31,8 +31,6 @@ impl crate::GlobalNamespace::MultiplayerBadgesProvider {
     pub const kMinRandomMultiplierAmount: f32 = 0.8f32;
     pub const kTargetNegativeBadgesCount: i32 = 1i32;
     pub const kTargetPositiveBadgesCount: i32 = 2i32;
-    #[cfg(feature = "MultiplayerBadgesProvider+__c")]
-    pub type __c = crate::GlobalNamespace::MultiplayerBadgesProvider___c;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

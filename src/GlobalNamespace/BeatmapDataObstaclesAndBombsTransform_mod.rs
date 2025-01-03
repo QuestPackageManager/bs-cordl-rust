@@ -26,8 +26,6 @@ for crate::GlobalNamespace::BeatmapDataObstaclesAndBombsTransform {
 }
 #[cfg(feature = "BeatmapDataObstaclesAndBombsTransform")]
 impl crate::GlobalNamespace::BeatmapDataObstaclesAndBombsTransform {
-    #[cfg(feature = "BeatmapDataObstaclesAndBombsTransform+__c__DisplayClass0_0")]
-    pub type __c__DisplayClass0_0 = crate::GlobalNamespace::BeatmapDataObstaclesAndBombsTransform___c__DisplayClass0_0;
     pub fn CreateTransformedData(
         beatmapData: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IReadonlyBeatmapData,

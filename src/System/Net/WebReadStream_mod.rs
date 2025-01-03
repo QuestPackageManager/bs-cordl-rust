@@ -27,8 +27,6 @@ impl std::ops::DerefMut for crate::System::Net::WebReadStream {
 }
 #[cfg(feature = "System+Net+WebReadStream")]
 impl crate::System::Net::WebReadStream {
-    #[cfg(feature = "System+Net+WebReadStream+_ReadAsync_d__28")]
-    pub type _ReadAsync_d__28 = crate::System::Net::WebReadStream__ReadAsync_d__28;
     pub fn BeginRead(
         &mut self,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,

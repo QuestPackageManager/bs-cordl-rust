@@ -35,8 +35,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::MenuLightsManager {
 #[cfg(feature = "MenuLightsManager")]
 impl crate::GlobalNamespace::MenuLightsManager {
     pub const kDefaultAnimationDuration: f32 = 0.5f32;
-    #[cfg(feature = "MenuLightsManager+_Start_d__8")]
-    pub type _Start_d__8 = crate::GlobalNamespace::MenuLightsManager__Start_d__8;
     pub fn CurrentColorForID(
         &mut self,
         lightId: i32,

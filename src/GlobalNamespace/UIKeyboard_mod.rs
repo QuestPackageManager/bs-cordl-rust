@@ -32,8 +32,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::UIKeyboard {
 }
 #[cfg(feature = "UIKeyboard")]
 impl crate::GlobalNamespace::UIKeyboard {
-    #[cfg(feature = "UIKeyboard+__c__DisplayClass21_0")]
-    pub type __c__DisplayClass21_0 = crate::GlobalNamespace::UIKeyboard___c__DisplayClass21_0;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -32,8 +32,6 @@ impl std::ops::DerefMut for crate::System::Xml::Serialization::XmlReflectionImpo
 }
 #[cfg(feature = "System+Xml+Serialization+XmlReflectionImporter")]
 impl crate::System::Xml::Serialization::XmlReflectionImporter {
-    #[cfg(feature = "System+Xml+Serialization+XmlReflectionImporter+__c")]
-    pub type __c = crate::System::Xml::Serialization::XmlReflectionImporter___c;
     pub fn CanBeNull(
         &mut self,
         _cordl_type: quest_hook::libil2cpp::Gc<

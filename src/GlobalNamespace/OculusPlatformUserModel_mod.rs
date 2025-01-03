@@ -36,22 +36,8 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OculusPlatformUserModel {
 }
 #[cfg(feature = "OculusPlatformUserModel")]
 impl crate::GlobalNamespace::OculusPlatformUserModel {
-    #[cfg(feature = "OculusPlatformUserModel+_GetUserAuthToken_d__15")]
-    pub type _GetUserAuthToken_d__15 = crate::GlobalNamespace::OculusPlatformUserModel__GetUserAuthToken_d__15;
-    #[cfg(feature = "OculusPlatformUserModel+_GetUserFriendsUserIds_d__14")]
-    pub type _GetUserFriendsUserIds_d__14 = crate::GlobalNamespace::OculusPlatformUserModel__GetUserFriendsUserIds_d__14;
-    #[cfg(feature = "OculusPlatformUserModel+_GetUserInfoInternalAsync_d__13")]
-    pub type _GetUserInfoInternalAsync_d__13 = crate::GlobalNamespace::OculusPlatformUserModel__GetUserInfoInternalAsync_d__13;
-    #[cfg(feature = "OculusPlatformUserModel+_GetUserInfo_d__12")]
-    pub type _GetUserInfo_d__12 = crate::GlobalNamespace::OculusPlatformUserModel__GetUserInfo_d__12;
-    #[cfg(feature = "OculusPlatformUserModel+_GetUserNamesForUserIds_d__16")]
-    pub type _GetUserNamesForUserIds_d__16 = crate::GlobalNamespace::OculusPlatformUserModel__GetUserNamesForUserIds_d__16;
-    #[cfg(feature = "OculusPlatformUserModel+_RequestXPlatformAccessToken_d__17")]
-    pub type _RequestXPlatformAccessToken_d__17 = crate::GlobalNamespace::OculusPlatformUserModel__RequestXPlatformAccessToken_d__17;
     #[cfg(feature = "OculusPlatformUserModel+__GetUserNamesForUserIds_g__Fetch_16_0_d")]
     pub type __GetUserNamesForUserIds_g__Fetch_16_0_d = crate::GlobalNamespace::OculusPlatformUserModel___GetUserNamesForUserIds_g__Fetch_16_0_d;
-    #[cfg(feature = "OculusPlatformUserModel+__c")]
-    pub type __c = crate::GlobalNamespace::OculusPlatformUserModel___c;
     pub fn GetUserAuthToken(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

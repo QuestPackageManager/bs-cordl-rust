@@ -30,8 +30,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::TooltipEvent {
 }
 #[cfg(feature = "UnityEngine+UIElements+TooltipEvent")]
 impl crate::UnityEngine::UIElements::TooltipEvent {
-    #[cfg(feature = "UnityEngine+UIElements+TooltipEvent+__c")]
-    pub type __c = crate::UnityEngine::UIElements::TooltipEvent___c;
     pub fn Init(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

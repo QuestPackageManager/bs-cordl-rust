@@ -35,12 +35,6 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
         feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalReader+PropertyPresence"
     )]
     pub type PropertyPresence = crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_PropertyPresence;
-    #[cfg(feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalReader+__c")]
-    pub type __c = crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader___c;
-    #[cfg(
-        feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalReader+__c__DisplayClass38_0"
-    )]
-    pub type __c__DisplayClass38_0 = crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader___c__DisplayClass38_0;
     pub fn AddReference(
         &mut self,
         reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,

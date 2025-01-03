@@ -29,8 +29,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::WheelEvent {
 }
 #[cfg(feature = "UnityEngine+UIElements+WheelEvent")]
 impl crate::UnityEngine::UIElements::WheelEvent {
-    #[cfg(feature = "UnityEngine+UIElements+WheelEvent+__c")]
-    pub type __c = crate::UnityEngine::UIElements::WheelEvent___c;
     pub fn GetPooled_Event0(
         systemEvent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Event>,
     ) -> quest_hook::libil2cpp::Result<

@@ -30,8 +30,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::InputEvent {
 }
 #[cfg(feature = "UnityEngine+UIElements+InputEvent")]
 impl crate::UnityEngine::UIElements::InputEvent {
-    #[cfg(feature = "UnityEngine+UIElements+InputEvent+__c")]
-    pub type __c = crate::UnityEngine::UIElements::InputEvent___c;
     pub fn GetPooled(
         previousData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         newData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

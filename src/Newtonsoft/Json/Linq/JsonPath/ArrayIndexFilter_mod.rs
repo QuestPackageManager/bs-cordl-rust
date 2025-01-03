@@ -26,10 +26,6 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Linq::JsonPath::ArrayIndexF
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+ArrayIndexFilter")]
 impl crate::Newtonsoft::Json::Linq::JsonPath::ArrayIndexFilter {
-    #[cfg(
-        feature = "Newtonsoft+Json+Linq+JsonPath+ArrayIndexFilter+_ExecuteFilter_d__4"
-    )]
-    pub type _ExecuteFilter_d__4 = crate::Newtonsoft::Json::Linq::JsonPath::ArrayIndexFilter__ExecuteFilter_d__4;
     pub fn ExecuteFilter(
         &mut self,
         root: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,

@@ -124,8 +124,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRControllerTest {
 impl crate::GlobalNamespace::OVRControllerTest {
     #[cfg(feature = "OVRControllerTest+BoolMonitor")]
     pub type BoolMonitor = crate::GlobalNamespace::OVRControllerTest_BoolMonitor;
-    #[cfg(feature = "OVRControllerTest+__c")]
-    pub type __c = crate::GlobalNamespace::OVRControllerTest___c;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

@@ -27,8 +27,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::ProfanityFilter {
 impl crate::GlobalNamespace::ProfanityFilter {
     #[cfg(feature = "ProfanityFilter+TrieNode")]
     pub type TrieNode = crate::GlobalNamespace::ProfanityFilter_TrieNode;
-    #[cfg(feature = "ProfanityFilter+_GetLookalikeLetters_d__4")]
-    pub type _GetLookalikeLetters_d__4 = crate::GlobalNamespace::ProfanityFilter__GetLookalikeLetters_d__4;
     pub fn GetLeetEquivalent(c: char) -> quest_hook::libil2cpp::Result<char> {
         let __cordl_ret: char = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetLeetEquivalent", (c))?;

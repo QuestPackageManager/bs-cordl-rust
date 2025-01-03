@@ -27,8 +27,6 @@ impl std::ops::DerefMut for crate::System::Data::TypeLimiter {
 impl crate::System::Data::TypeLimiter {
     #[cfg(feature = "System+Data+TypeLimiter+Scope")]
     pub type Scope = crate::System::Data::TypeLimiter_Scope;
-    #[cfg(feature = "System+Data+TypeLimiter+__c")]
-    pub type __c = crate::System::Data::TypeLimiter___c;
     pub fn Capture() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Data::TypeLimiter>,
     > {
@@ -153,8 +151,6 @@ impl std::ops::DerefMut for crate::System::Data::TypeLimiter_Scope {
 }
 #[cfg(feature = "System+Data+TypeLimiter+Scope")]
 impl crate::System::Data::TypeLimiter_Scope {
-    #[cfg(feature = "System+Data+TypeLimiter+Scope+__c")]
-    pub type __c = crate::System::Data::Scope_TypeLimiter___c;
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

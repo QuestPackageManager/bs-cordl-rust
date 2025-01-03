@@ -55,13 +55,6 @@ impl<
     TKey,
     TValue,
 > {
-    #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+HybridReferenceDictionary_2+_GetEnumeratorWorker_d__7"
-    )]
-    pub type _GetEnumeratorWorker_d__7 = crate::System::Linq::Expressions::Interpreter::HybridReferenceDictionary_2__GetEnumeratorWorker_d__7<
-        TKey,
-        TValue,
-    >;
     pub fn ContainsKey(&mut self, key: TKey) -> quest_hook::libil2cpp::Result<bool>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type

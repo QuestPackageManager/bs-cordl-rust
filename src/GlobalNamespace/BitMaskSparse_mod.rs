@@ -26,8 +26,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BitMaskSparse {
 }
 #[cfg(feature = "BitMaskSparse")]
 impl crate::GlobalNamespace::BitMaskSparse {
-    #[cfg(feature = "BitMaskSparse+__c")]
-    pub type __c = crate::GlobalNamespace::BitMaskSparse___c;
     pub fn Deserialize(
         &mut self,
         reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,

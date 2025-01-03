@@ -43,8 +43,6 @@ impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > crate::Unity::Properties::KeyValuePairPropertyBag_2<TKey, TValue> {
-    #[cfg(feature = "Unity+Properties+KeyValuePairPropertyBag_2+__c")]
-    pub type __c = crate::Unity::Properties::KeyValuePairPropertyBag_2___c<TKey, TValue>;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type

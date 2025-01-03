@@ -3903,12 +3903,6 @@ impl<
 > crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_TransitionEventsFrameState<
     T,
 > {
-    #[cfg(
-        feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1+TransitionEventsFrameState+__c"
-    )]
-    pub type __c = crate::UnityEngine::UIElements::TransitionEventsFrameState_Values_1_StylePropertyAnimationSystem___c<
-        T,
-    >;
     pub fn Clear(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type

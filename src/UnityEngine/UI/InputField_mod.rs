@@ -97,10 +97,6 @@ impl crate::UnityEngine::UI::InputField {
     pub type OnValidateInput = crate::UnityEngine::UI::InputField_OnValidateInput;
     #[cfg(feature = "UnityEngine+UI+InputField+SubmitEvent")]
     pub type SubmitEvent = crate::UnityEngine::UI::InputField_SubmitEvent;
-    #[cfg(feature = "UnityEngine+UI+InputField+_CaretBlink_d__172")]
-    pub type _CaretBlink_d__172 = crate::UnityEngine::UI::InputField__CaretBlink_d__172;
-    #[cfg(feature = "UnityEngine+UI+InputField+_MouseDragOutsideRect_d__196")]
-    pub type _MouseDragOutsideRect_d__196 = crate::UnityEngine::UI::InputField__MouseDragOutsideRect_d__196;
     pub fn ActivateInputField(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

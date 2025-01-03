@@ -28,10 +28,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::MockBeatmapDataAssetFileMode
 #[cfg(feature = "MockBeatmapDataAssetFileModel")]
 impl crate::GlobalNamespace::MockBeatmapDataAssetFileModel {
     pub const kAssetsDir: &'static str = "BeatmapDataAssets";
-    #[cfg(
-        feature = "MockBeatmapDataAssetFileModel+_GetAssetBundleFileForBeatmapLevelAsync_d__4"
-    )]
-    pub type _GetAssetBundleFileForBeatmapLevelAsync_d__4 = crate::GlobalNamespace::MockBeatmapDataAssetFileModel__GetAssetBundleFileForBeatmapLevelAsync_d__4;
     pub fn GetAssetBundleFileForBeatmapLevelAsync(
         &mut self,
         beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,

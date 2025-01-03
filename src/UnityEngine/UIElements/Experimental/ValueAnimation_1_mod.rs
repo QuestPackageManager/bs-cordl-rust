@@ -50,8 +50,6 @@ for crate::UnityEngine::UIElements::Experimental::ValueAnimation_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::UnityEngine::UIElements::Experimental::ValueAnimation_1<T> {
-    #[cfg(feature = "UnityEngine+UIElements+Experimental+ValueAnimation_1+__c")]
-    pub type __c = crate::UnityEngine::UIElements::Experimental::ValueAnimation_1___c<T>;
     pub fn CheckNotRecycled(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>

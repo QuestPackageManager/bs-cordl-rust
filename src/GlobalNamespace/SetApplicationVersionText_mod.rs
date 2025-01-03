@@ -32,8 +32,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::SetApplicationVersionText {
 }
 #[cfg(feature = "SetApplicationVersionText")]
 impl crate::GlobalNamespace::SetApplicationVersionText {
-    #[cfg(feature = "SetApplicationVersionText+_Start_d__8")]
-    pub type _Start_d__8 = crate::GlobalNamespace::SetApplicationVersionText__Start_d__8;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

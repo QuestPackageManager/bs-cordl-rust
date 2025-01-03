@@ -24,16 +24,6 @@ impl std::ops::DerefMut for crate::BGLib::AsyncInitialization::AddressablesLoade
 }
 #[cfg(feature = "BGLib+AsyncInitialization+AddressablesLoader")]
 impl crate::BGLib::AsyncInitialization::AddressablesLoader {
-    #[cfg(
-        feature = "BGLib+AsyncInitialization+AddressablesLoader+_InstantiateFromAddressableToContainer_d__0_2"
-    )]
-    pub type _InstantiateFromAddressableToContainer_d__0_2<
-        TInstantiate: quest_hook::libil2cpp::Type,
-        TReturn: quest_hook::libil2cpp::Type,
-    > = crate::BGLib::AsyncInitialization::AddressablesLoader__InstantiateFromAddressableToContainer_d__0_2<
-        TInstantiate,
-        TReturn,
-    >;
     pub fn InstantiateFromAddressableToContainer<TInstantiate, TReturn>(
         prefab: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::AddressableAssets::AssetReferenceGameObject,

@@ -25,8 +25,6 @@ impl std::ops::DerefMut for crate::System::Net::BufferedReadStream {
 }
 #[cfg(feature = "System+Net+BufferedReadStream")]
 impl crate::System::Net::BufferedReadStream {
-    #[cfg(feature = "System+Net+BufferedReadStream+_ProcessReadAsync_d__2")]
-    pub type _ProcessReadAsync_d__2 = crate::System::Net::BufferedReadStream__ProcessReadAsync_d__2;
     pub fn New(
         operation: quest_hook::libil2cpp::Gc<crate::System::Net::WebOperation>,
         innerStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,

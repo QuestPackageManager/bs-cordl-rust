@@ -24,12 +24,6 @@ impl std::ops::DerefMut for crate::UnityEngine::InputSystem::Utilities::Observab
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+Observable")]
 impl crate::UnityEngine::InputSystem::Utilities::Observable {
-    #[cfg(
-        feature = "UnityEngine+InputSystem+Utilities+Observable+__c__DisplayClass6_0_1"
-    )]
-    pub type __c__DisplayClass6_0_1<TValue: quest_hook::libil2cpp::Type> = crate::UnityEngine::InputSystem::Utilities::Observable___c__DisplayClass6_0_1<
-        TValue,
-    >;
     pub fn Call<TValue>(
         source: quest_hook::libil2cpp::Gc<crate::System::IObservable_1<TValue>>,
         action: quest_hook::libil2cpp::Gc<crate::System::Action_1<TValue>>,

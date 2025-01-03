@@ -87,18 +87,6 @@ for crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarTweenController {
 }
 #[cfg(feature = "BeatSaber+BeatAvatarAdapter+AvatarEditor+AvatarTweenController")]
 impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarTweenController {
-    #[cfg(
-        feature = "BeatSaber+BeatAvatarAdapter+AvatarEditor+AvatarTweenController+_AppearAnimation_d__55"
-    )]
-    pub type _AppearAnimation_d__55 = crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarTweenController__AppearAnimation_d__55;
-    #[cfg(
-        feature = "BeatSaber+BeatAvatarAdapter+AvatarEditor+AvatarTweenController+_DisappearAnimation_d__60"
-    )]
-    pub type _DisappearAnimation_d__60 = crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarTweenController__DisappearAnimation_d__60;
-    #[cfg(
-        feature = "BeatSaber+BeatAvatarAdapter+AvatarEditor+AvatarTweenController+__c__DisplayClass54_0"
-    )]
-    pub type __c__DisplayClass54_0 = crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarTweenController___c__DisplayClass54_0;
     pub fn AppearAnimation(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

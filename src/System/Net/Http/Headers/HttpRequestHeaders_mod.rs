@@ -25,8 +25,6 @@ impl std::ops::DerefMut for crate::System::Net::Http::Headers::HttpRequestHeader
 }
 #[cfg(feature = "System+Net+Http+Headers+HttpRequestHeaders")]
 impl crate::System::Net::Http::Headers::HttpRequestHeaders {
-    #[cfg(feature = "System+Net+Http+Headers+HttpRequestHeaders+__c")]
-    pub type __c = crate::System::Net::Http::Headers::HttpRequestHeaders___c;
     pub fn AddHeaders(
         &mut self,
         headers: quest_hook::libil2cpp::Gc<

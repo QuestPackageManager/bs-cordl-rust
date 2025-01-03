@@ -26,12 +26,6 @@ for crate::UnityEngine::ProBuilder::MeshOperations::MergeElements {
 }
 #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+MergeElements")]
 impl crate::UnityEngine::ProBuilder::MeshOperations::MergeElements {
-    #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+MergeElements+__c")]
-    pub type __c = crate::UnityEngine::ProBuilder::MeshOperations::MergeElements___c;
-    #[cfg(
-        feature = "UnityEngine+ProBuilder+MeshOperations+MergeElements+__c__DisplayClass0_0"
-    )]
-    pub type __c__DisplayClass0_0 = crate::UnityEngine::ProBuilder::MeshOperations::MergeElements___c__DisplayClass0_0;
     pub fn CollapseCoincidentVertices(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         faces: quest_hook::libil2cpp::Gc<

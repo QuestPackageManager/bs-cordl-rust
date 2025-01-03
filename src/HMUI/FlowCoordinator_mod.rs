@@ -48,32 +48,6 @@ impl std::ops::DerefMut for crate::HMUI::FlowCoordinator {
 }
 #[cfg(feature = "HMUI+FlowCoordinator")]
 impl crate::HMUI::FlowCoordinator {
-    #[cfg(
-        feature = "HMUI+FlowCoordinator+_DismissChildFlowCoordinatorsRecursively_d__41"
-    )]
-    pub type _DismissChildFlowCoordinatorsRecursively_d__41 = crate::HMUI::FlowCoordinator__DismissChildFlowCoordinatorsRecursively_d__41;
-    #[cfg(
-        feature = "HMUI+FlowCoordinator+_DismissChildViewControllersRecursively_d__42"
-    )]
-    pub type _DismissChildViewControllersRecursively_d__42 = crate::HMUI::FlowCoordinator__DismissChildViewControllersRecursively_d__42;
-    #[cfg(feature = "HMUI+FlowCoordinator+__c__DisplayClass39_0")]
-    pub type __c__DisplayClass39_0 = crate::HMUI::FlowCoordinator___c__DisplayClass39_0;
-    #[cfg(feature = "HMUI+FlowCoordinator+__c__DisplayClass40_0")]
-    pub type __c__DisplayClass40_0 = crate::HMUI::FlowCoordinator___c__DisplayClass40_0;
-    #[cfg(feature = "HMUI+FlowCoordinator+__c__DisplayClass43_0")]
-    pub type __c__DisplayClass43_0 = crate::HMUI::FlowCoordinator___c__DisplayClass43_0;
-    #[cfg(feature = "HMUI+FlowCoordinator+__c__DisplayClass44_0")]
-    pub type __c__DisplayClass44_0 = crate::HMUI::FlowCoordinator___c__DisplayClass44_0;
-    #[cfg(feature = "HMUI+FlowCoordinator+__c__DisplayClass45_0")]
-    pub type __c__DisplayClass45_0 = crate::HMUI::FlowCoordinator___c__DisplayClass45_0;
-    #[cfg(feature = "HMUI+FlowCoordinator+__c__DisplayClass47_0")]
-    pub type __c__DisplayClass47_0 = crate::HMUI::FlowCoordinator___c__DisplayClass47_0;
-    #[cfg(feature = "HMUI+FlowCoordinator+__c__DisplayClass48_0")]
-    pub type __c__DisplayClass48_0 = crate::HMUI::FlowCoordinator___c__DisplayClass48_0;
-    #[cfg(feature = "HMUI+FlowCoordinator+__c__DisplayClass51_0")]
-    pub type __c__DisplayClass51_0 = crate::HMUI::FlowCoordinator___c__DisplayClass51_0;
-    #[cfg(feature = "HMUI+FlowCoordinator+__c__DisplayClass52_0")]
-    pub type __c__DisplayClass52_0 = crate::HMUI::FlowCoordinator___c__DisplayClass52_0;
     pub fn Activate(
         &mut self,
         firstActivation: bool,

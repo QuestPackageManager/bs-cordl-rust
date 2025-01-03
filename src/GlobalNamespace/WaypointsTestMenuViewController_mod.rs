@@ -44,8 +44,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::WaypointsTestMenuViewControl
 }
 #[cfg(feature = "WaypointsTestMenuViewController")]
 impl crate::GlobalNamespace::WaypointsTestMenuViewController {
-    #[cfg(feature = "WaypointsTestMenuViewController+_CheckBeatmaps_d__18")]
-    pub type _CheckBeatmaps_d__18 = crate::GlobalNamespace::WaypointsTestMenuViewController__CheckBeatmaps_d__18;
     pub fn CheckBeatmaps(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

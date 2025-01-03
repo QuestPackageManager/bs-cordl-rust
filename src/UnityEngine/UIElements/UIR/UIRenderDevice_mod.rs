@@ -64,8 +64,6 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
     pub type DrawStatistics = crate::UnityEngine::UIElements::UIR::UIRenderDevice_DrawStatistics;
     #[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+EvaluationState")]
     pub type EvaluationState = crate::UnityEngine::UIElements::UIR::UIRenderDevice_EvaluationState;
-    #[cfg(feature = "UnityEngine+UIElements+UIR+UIRenderDevice+__c")]
-    pub type __c = crate::UnityEngine::UIElements::UIR::UIRenderDevice___c;
     pub fn ActiveUpdatesForMeshHandle(
         &mut self,
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::MeshHandle>,

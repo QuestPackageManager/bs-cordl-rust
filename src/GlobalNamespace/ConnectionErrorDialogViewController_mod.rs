@@ -25,8 +25,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::ConnectionErrorDialogViewCon
 }
 #[cfg(feature = "ConnectionErrorDialogViewController")]
 impl crate::GlobalNamespace::ConnectionErrorDialogViewController {
-    #[cfg(feature = "ConnectionErrorDialogViewController+__c__DisplayClass0_0")]
-    pub type __c__DisplayClass0_0 = crate::GlobalNamespace::ConnectionErrorDialogViewController___c__DisplayClass0_0;
     pub fn Init(
         &mut self,
         reason: crate::GlobalNamespace::DisconnectedReason,

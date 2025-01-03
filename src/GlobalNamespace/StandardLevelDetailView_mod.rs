@@ -57,16 +57,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::StandardLevelDetailView {
 }
 #[cfg(feature = "StandardLevelDetailView")]
 impl crate::GlobalNamespace::StandardLevelDetailView {
-    #[cfg(feature = "StandardLevelDetailView+_CalculateAndSetContentAsync_d__61")]
-    pub type _CalculateAndSetContentAsync_d__61 = crate::GlobalNamespace::StandardLevelDetailView__CalculateAndSetContentAsync_d__61;
-    #[cfg(feature = "StandardLevelDetailView+_CheckIfBeatmapLevelDataExists_d__56")]
-    pub type _CheckIfBeatmapLevelDataExists_d__56 = crate::GlobalNamespace::StandardLevelDetailView__CheckIfBeatmapLevelDataExists_d__56;
-    #[cfg(feature = "StandardLevelDetailView+_SetBeatmapLevelVersions_d__62")]
-    pub type _SetBeatmapLevelVersions_d__62 = crate::GlobalNamespace::StandardLevelDetailView__SetBeatmapLevelVersions_d__62;
-    #[cfg(feature = "StandardLevelDetailView+__c")]
-    pub type __c = crate::GlobalNamespace::StandardLevelDetailView___c;
-    #[cfg(feature = "StandardLevelDetailView+__c__DisplayClass44_0")]
-    pub type __c__DisplayClass44_0 = crate::GlobalNamespace::StandardLevelDetailView___c__DisplayClass44_0;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

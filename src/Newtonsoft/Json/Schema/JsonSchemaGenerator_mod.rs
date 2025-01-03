@@ -33,8 +33,6 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Schema::JsonSchemaGenerator
 impl crate::Newtonsoft::Json::Schema::JsonSchemaGenerator {
     #[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaGenerator+TypeSchema")]
     pub type TypeSchema = crate::Newtonsoft::Json::Schema::JsonSchemaGenerator_TypeSchema;
-    #[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaGenerator+__c__DisplayClass23_0")]
-    pub type __c__DisplayClass23_0 = crate::Newtonsoft::Json::Schema::JsonSchemaGenerator___c__DisplayClass23_0;
     pub fn AddNullType(
         &mut self,
         _cordl_type: crate::Newtonsoft::Json::Schema::JsonSchemaType,

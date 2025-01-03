@@ -41,8 +41,6 @@ impl crate::GlobalNamespace::MissionLevelGameplayManager {
     pub type GameState = crate::GlobalNamespace::MissionLevelGameplayManager_GameState;
     #[cfg(feature = "MissionLevelGameplayManager+InitData")]
     pub type InitData = crate::GlobalNamespace::MissionLevelGameplayManager_InitData;
-    #[cfg(feature = "MissionLevelGameplayManager+_Start_d__26")]
-    pub type _Start_d__26 = crate::GlobalNamespace::MissionLevelGameplayManager__Start_d__26;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

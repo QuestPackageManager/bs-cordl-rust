@@ -33,8 +33,6 @@ impl std::ops::DerefMut for crate::HMUI::UIKeyboard {
 }
 #[cfg(feature = "HMUI+UIKeyboard")]
 impl crate::HMUI::UIKeyboard {
-    #[cfg(feature = "HMUI+UIKeyboard+__c__DisplayClass14_0")]
-    pub type __c__DisplayClass14_0 = crate::HMUI::UIKeyboard___c__DisplayClass14_0;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

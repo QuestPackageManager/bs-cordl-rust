@@ -32,12 +32,6 @@ for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsCatalogUpdater {
 impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsCatalogUpdater {
     pub const kGameplaySceneName: &'static str = "GameCore";
     pub const kWaitIntervalInSeconds: i32 = 20i32;
-    #[cfg(
-        feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsCatalogUpdater+_CheckForCatalogUpdateWithInterval_d__10"
-    )]
-    pub type _CheckForCatalogUpdateWithInterval_d__10 = crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsCatalogUpdater__CheckForCatalogUpdateWithInterval_d__10;
-    #[cfg(feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsCatalogUpdater+__c")]
-    pub type __c = crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsCatalogUpdater___c;
     pub fn CheckForCatalogUpdateWithInterval(
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,

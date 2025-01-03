@@ -33,8 +33,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::GameplayModifiersDropdown {
 }
 #[cfg(feature = "GameplayModifiersDropdown")]
 impl crate::GlobalNamespace::GameplayModifiersDropdown {
-    #[cfg(feature = "GameplayModifiersDropdown+__c")]
-    pub type __c = crate::GlobalNamespace::GameplayModifiersDropdown___c;
     pub fn GetIdxForGameplayModifierMask(
         &mut self,
         gameplayModifierMask: crate::GlobalNamespace::GameplayModifierMask,

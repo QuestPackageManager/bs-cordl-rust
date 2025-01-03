@@ -28,8 +28,6 @@ impl std::ops::DerefMut for crate::System::Net::Http::Headers::MediaTypeHeaderVa
 }
 #[cfg(feature = "System+Net+Http+Headers+MediaTypeHeaderValue")]
 impl crate::System::Net::Http::Headers::MediaTypeHeaderValue {
-    #[cfg(feature = "System+Net+Http+Headers+MediaTypeHeaderValue+__c")]
-    pub type __c = crate::System::Net::Http::Headers::MediaTypeHeaderValue___c;
     pub fn Equals(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

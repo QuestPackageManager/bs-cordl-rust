@@ -44,8 +44,6 @@ impl std::ops::DerefMut for crate::System::Net::FtpControlStream {
 impl crate::System::Net::FtpControlStream {
     #[cfg(feature = "System+Net+FtpControlStream+GetPathOption")]
     pub type GetPathOption = crate::System::Net::FtpControlStream_GetPathOption;
-    #[cfg(feature = "System+Net+FtpControlStream+__c__DisplayClass31_0")]
-    pub type __c__DisplayClass31_0 = crate::System::Net::FtpControlStream___c__DisplayClass31_0;
     pub fn AbortConnect(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

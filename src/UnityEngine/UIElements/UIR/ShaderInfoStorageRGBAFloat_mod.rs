@@ -31,8 +31,6 @@ for crate::UnityEngine::UIElements::UIR::ShaderInfoStorageRGBAFloat {
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+ShaderInfoStorageRGBAFloat")]
 impl crate::UnityEngine::UIElements::UIR::ShaderInfoStorageRGBAFloat {
-    #[cfg(feature = "UnityEngine+UIElements+UIR+ShaderInfoStorageRGBAFloat+__c")]
-    pub type __c = crate::UnityEngine::UIElements::UIR::ShaderInfoStorageRGBAFloat___c;
     pub fn New(
         initialSize: i32,
         maxSize: i32,

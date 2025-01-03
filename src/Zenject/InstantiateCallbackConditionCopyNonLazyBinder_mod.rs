@@ -26,12 +26,6 @@ for crate::Zenject::InstantiateCallbackConditionCopyNonLazyBinder {
 }
 #[cfg(feature = "Zenject+InstantiateCallbackConditionCopyNonLazyBinder")]
 impl crate::Zenject::InstantiateCallbackConditionCopyNonLazyBinder {
-    #[cfg(
-        feature = "Zenject+InstantiateCallbackConditionCopyNonLazyBinder+__c__DisplayClass2_0_1"
-    )]
-    pub type __c__DisplayClass2_0_1<T: quest_hook::libil2cpp::Type> = crate::Zenject::InstantiateCallbackConditionCopyNonLazyBinder___c__DisplayClass2_0_1<
-        T,
-    >;
     pub fn New(
         bindInfo: quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

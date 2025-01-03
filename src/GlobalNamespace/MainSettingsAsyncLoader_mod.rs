@@ -30,8 +30,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::MainSettingsAsyncLoader {
 }
 #[cfg(feature = "MainSettingsAsyncLoader")]
 impl crate::GlobalNamespace::MainSettingsAsyncLoader {
-    #[cfg(feature = "MainSettingsAsyncLoader+_LoadResourcesBeforeInstallAsync_d__9")]
-    pub type _LoadResourcesBeforeInstallAsync_d__9 = crate::GlobalNamespace::MainSettingsAsyncLoader__LoadResourcesBeforeInstallAsync_d__9;
     pub fn InstallBindings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

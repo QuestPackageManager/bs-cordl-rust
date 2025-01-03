@@ -32,8 +32,6 @@ impl std::ops::DerefMut for crate::System::Linq::Expressions::Interpreter::Label
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+LabelInfo")]
 impl crate::System::Linq::Expressions::Interpreter::LabelInfo {
-    #[cfg(feature = "System+Linq+Expressions+Interpreter+LabelInfo+__c")]
-    pub type __c = crate::System::Linq::Expressions::Interpreter::LabelInfo___c;
     pub fn AddDefinition(
         &mut self,
         scope: quest_hook::libil2cpp::Gc<

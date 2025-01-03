@@ -28,10 +28,6 @@ for crate::UnityEngine::UIElements::PopupField_1<T> {
 }
 #[cfg(feature = "UnityEngine+UIElements+PopupField_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::PopupField_1<T> {
-    #[cfg(feature = "UnityEngine+UIElements+PopupField_1+__c__DisplayClass26_0")]
-    pub type __c__DisplayClass26_0 = crate::UnityEngine::UIElements::PopupField_1___c__DisplayClass26_0<
-        T,
-    >;
     pub fn AddMenuItems(
         &mut self,
         menu: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IGenericMenu>,

@@ -28,14 +28,6 @@ impl crate::TMPro::TMP_MaterialManager {
     pub type FallbackMaterial = crate::TMPro::TMP_MaterialManager_FallbackMaterial;
     #[cfg(feature = "TMPro+TMP_MaterialManager+MaskingMaterial")]
     pub type MaskingMaterial = crate::TMPro::TMP_MaterialManager_MaskingMaterial;
-    #[cfg(feature = "TMPro+TMP_MaterialManager+__c__DisplayClass11_0")]
-    pub type __c__DisplayClass11_0 = crate::TMPro::TMP_MaterialManager___c__DisplayClass11_0;
-    #[cfg(feature = "TMPro+TMP_MaterialManager+__c__DisplayClass12_0")]
-    pub type __c__DisplayClass12_0 = crate::TMPro::TMP_MaterialManager___c__DisplayClass12_0;
-    #[cfg(feature = "TMPro+TMP_MaterialManager+__c__DisplayClass13_0")]
-    pub type __c__DisplayClass13_0 = crate::TMPro::TMP_MaterialManager___c__DisplayClass13_0;
-    #[cfg(feature = "TMPro+TMP_MaterialManager+__c__DisplayClass9_0")]
-    pub type __c__DisplayClass9_0 = crate::TMPro::TMP_MaterialManager___c__DisplayClass9_0;
     pub fn AddFallbackMaterialReference(
         targetMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -58,10 +58,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapLevel {
 #[cfg(feature = "BeatmapLevel")]
 impl crate::GlobalNamespace::BeatmapLevel {
     pub const kInvalidVersion: i32 = -1i32;
-    #[cfg(feature = "BeatmapLevel+__c")]
-    pub type __c = crate::GlobalNamespace::BeatmapLevel___c;
-    #[cfg(feature = "BeatmapLevel+__c__DisplayClass23_0")]
-    pub type __c__DisplayClass23_0 = crate::GlobalNamespace::BeatmapLevel___c__DisplayClass23_0;
     pub fn AddBeatmapBasicData(
         &mut self,
         characteristic: quest_hook::libil2cpp::Gc<

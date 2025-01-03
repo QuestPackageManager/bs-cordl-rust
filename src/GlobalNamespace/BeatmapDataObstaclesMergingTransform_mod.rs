@@ -26,8 +26,6 @@ for crate::GlobalNamespace::BeatmapDataObstaclesMergingTransform {
 }
 #[cfg(feature = "BeatmapDataObstaclesMergingTransform")]
 impl crate::GlobalNamespace::BeatmapDataObstaclesMergingTransform {
-    #[cfg(feature = "BeatmapDataObstaclesMergingTransform+__c__DisplayClass0_0")]
-    pub type __c__DisplayClass0_0 = crate::GlobalNamespace::BeatmapDataObstaclesMergingTransform___c__DisplayClass0_0;
     pub fn CanBeMerged(
         firstObstacle: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleData>,
         secondObstacle: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleData>,

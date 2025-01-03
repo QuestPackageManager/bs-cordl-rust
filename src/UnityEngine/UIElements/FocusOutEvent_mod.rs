@@ -28,8 +28,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::FocusOutEvent {
 }
 #[cfg(feature = "UnityEngine+UIElements+FocusOutEvent")]
 impl crate::UnityEngine::UIElements::FocusOutEvent {
-    #[cfg(feature = "UnityEngine+UIElements+FocusOutEvent+__c")]
-    pub type __c = crate::UnityEngine::UIElements::FocusOutEvent___c;
     pub fn Init(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

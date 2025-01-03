@@ -24,12 +24,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRResources {
 }
 #[cfg(feature = "OVRResources")]
 impl crate::GlobalNamespace::OVRResources {
-    #[cfg(feature = "OVRResources+__c__DisplayClass2_0")]
-    pub type __c__DisplayClass2_0 = crate::GlobalNamespace::OVRResources___c__DisplayClass2_0;
-    #[cfg(feature = "OVRResources+__c__DisplayClass3_0_1")]
-    pub type __c__DisplayClass3_0_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::OVRResources___c__DisplayClass3_0_1<
-        T,
-    >;
     pub fn Load_Il2CppString0(
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<

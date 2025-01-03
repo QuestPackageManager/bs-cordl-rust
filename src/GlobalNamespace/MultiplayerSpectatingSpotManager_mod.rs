@@ -32,8 +32,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerSpectatingSpotMan
 }
 #[cfg(feature = "MultiplayerSpectatingSpotManager")]
 impl crate::GlobalNamespace::MultiplayerSpectatingSpotManager {
-    #[cfg(feature = "MultiplayerSpectatingSpotManager+__c")]
-    pub type __c = crate::GlobalNamespace::MultiplayerSpectatingSpotManager___c;
     pub fn GetAdjacentSpot(
         &mut self,
         spectatingSpot: quest_hook::libil2cpp::Gc<

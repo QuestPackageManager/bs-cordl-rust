@@ -33,10 +33,6 @@ for crate::GlobalNamespace::MultiplayerLocalActiveLevelFailController {
 }
 #[cfg(feature = "MultiplayerLocalActiveLevelFailController")]
 impl crate::GlobalNamespace::MultiplayerLocalActiveLevelFailController {
-    #[cfg(
-        feature = "MultiplayerLocalActiveLevelFailController+_PlayerFailedCoroutine_d__8"
-    )]
-    pub type _PlayerFailedCoroutine_d__8 = crate::GlobalNamespace::MultiplayerLocalActiveLevelFailController__PlayerFailedCoroutine_d__8;
     pub fn HandlePlayerDidFinish(
         &mut self,
         levelCompletionResults: quest_hook::libil2cpp::Gc<

@@ -73,10 +73,6 @@ impl crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionM
         feature = "BeatSaber+TrackDefinitions+DataModels+EnvironmentTrackDefinitionModel+SpawnableEventBoxGroupTypeTrack"
     )]
     pub type SpawnableEventBoxGroupTypeTrack = crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionModel_SpawnableEventBoxGroupTypeTrack;
-    #[cfg(
-        feature = "BeatSaber+TrackDefinitions+DataModels+EnvironmentTrackDefinitionModel+__c"
-    )]
-    pub type __c = crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionModel___c;
     pub fn GetSpawnableEventBoxGroupTracks(
         &mut self,
         pageId: i32,

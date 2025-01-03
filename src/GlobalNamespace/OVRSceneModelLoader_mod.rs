@@ -27,8 +27,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRSceneModelLoader {
 #[cfg(feature = "OVRSceneModelLoader")]
 impl crate::GlobalNamespace::OVRSceneModelLoader {
     pub const RetryingReminderDelay: f32 = 10f32;
-    #[cfg(feature = "OVRSceneModelLoader+_AttemptToLoadSceneModel_d__7")]
-    pub type _AttemptToLoadSceneModel_d__7 = crate::GlobalNamespace::OVRSceneModelLoader__AttemptToLoadSceneModel_d__7;
     pub fn AttemptToLoadSceneModel(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

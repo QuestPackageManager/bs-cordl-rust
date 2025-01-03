@@ -35,8 +35,6 @@ impl crate::GlobalNamespace::OVRSceneVolumeMeshFilter {
     pub type GetTriangleMeshJob = crate::GlobalNamespace::OVRSceneVolumeMeshFilter_GetTriangleMeshJob;
     #[cfg(feature = "OVRSceneVolumeMeshFilter+PopulateMeshDataJob")]
     pub type PopulateMeshDataJob = crate::GlobalNamespace::OVRSceneVolumeMeshFilter_PopulateMeshDataJob;
-    #[cfg(feature = "OVRSceneVolumeMeshFilter+_CreateVolumeMesh_d__7")]
-    pub type _CreateVolumeMesh_d__7 = crate::GlobalNamespace::OVRSceneVolumeMeshFilter__CreateVolumeMesh_d__7;
     pub fn CreateVolumeMesh(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

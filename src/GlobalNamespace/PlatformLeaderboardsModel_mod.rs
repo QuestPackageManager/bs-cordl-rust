@@ -47,12 +47,6 @@ impl crate::GlobalNamespace::PlatformLeaderboardsModel {
     pub type UploadScoreCompletionHandler = crate::GlobalNamespace::PlatformLeaderboardsModel_UploadScoreCompletionHandler;
     #[cfg(feature = "PlatformLeaderboardsModel+UploadScoreResult")]
     pub type UploadScoreResult = crate::GlobalNamespace::PlatformLeaderboardsModel_UploadScoreResult;
-    #[cfg(feature = "PlatformLeaderboardsModel+_Initialize_d__23")]
-    pub type _Initialize_d__23 = crate::GlobalNamespace::PlatformLeaderboardsModel__Initialize_d__23;
-    #[cfg(feature = "PlatformLeaderboardsModel+__c")]
-    pub type __c = crate::GlobalNamespace::PlatformLeaderboardsModel___c;
-    #[cfg(feature = "PlatformLeaderboardsModel+__c__DisplayClass27_0")]
-    pub type __c__DisplayClass27_0 = crate::GlobalNamespace::PlatformLeaderboardsModel___c__DisplayClass27_0;
     pub fn GetFriendsScores(
         &mut self,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,

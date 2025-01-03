@@ -28,8 +28,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::MouseMoveEvent {
 }
 #[cfg(feature = "UnityEngine+UIElements+MouseMoveEvent")]
 impl crate::UnityEngine::UIElements::MouseMoveEvent {
-    #[cfg(feature = "UnityEngine+UIElements+MouseMoveEvent+__c")]
-    pub type __c = crate::UnityEngine::UIElements::MouseMoveEvent___c;
     pub fn GetPooled(
         pointerEvent: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::PointerMoveEvent,

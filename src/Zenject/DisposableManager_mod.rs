@@ -36,14 +36,6 @@ impl crate::Zenject::DisposableManager {
     pub type DisposableInfo = crate::Zenject::DisposableManager_DisposableInfo;
     #[cfg(feature = "Zenject+DisposableManager+LateDisposableInfo")]
     pub type LateDisposableInfo = crate::Zenject::DisposableManager_LateDisposableInfo;
-    #[cfg(feature = "Zenject+DisposableManager+__c")]
-    pub type __c = crate::Zenject::DisposableManager___c;
-    #[cfg(feature = "Zenject+DisposableManager+__c__DisplayClass4_0")]
-    pub type __c__DisplayClass4_0 = crate::Zenject::DisposableManager___c__DisplayClass4_0;
-    #[cfg(feature = "Zenject+DisposableManager+__c__DisplayClass4_1")]
-    pub type __c__DisplayClass4_1 = crate::Zenject::DisposableManager___c__DisplayClass4_1;
-    #[cfg(feature = "Zenject+DisposableManager+__c__DisplayClass9_0")]
-    pub type __c__DisplayClass9_0 = crate::Zenject::DisposableManager___c__DisplayClass9_0;
     pub fn AddLate_ILateDisposable0(
         &mut self,
         disposable: quest_hook::libil2cpp::Gc<crate::Zenject::ILateDisposable>,

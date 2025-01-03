@@ -49,10 +49,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::GameServerPlayerTableCell {
 }
 #[cfg(feature = "GameServerPlayerTableCell")]
 impl crate::GlobalNamespace::GameServerPlayerTableCell {
-    #[cfg(feature = "GameServerPlayerTableCell+_SetBeatmapUseButtonEnabledAsync_d__36")]
-    pub type _SetBeatmapUseButtonEnabledAsync_d__36 = crate::GlobalNamespace::GameServerPlayerTableCell__SetBeatmapUseButtonEnabledAsync_d__36;
-    #[cfg(feature = "GameServerPlayerTableCell+__c__DisplayClass30_0")]
-    pub type __c__DisplayClass30_0 = crate::GlobalNamespace::GameServerPlayerTableCell___c__DisplayClass30_0;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

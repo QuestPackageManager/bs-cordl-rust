@@ -32,36 +32,6 @@ for crate::GlobalNamespace::OculusPlatformAdditionalContentModel {
 }
 #[cfg(feature = "OculusPlatformAdditionalContentModel")]
 impl crate::GlobalNamespace::OculusPlatformAdditionalContentModel {
-    #[cfg(
-        feature = "OculusPlatformAdditionalContentModel+_GetLevelDataVersionInternalAsync_d__9"
-    )]
-    pub type _GetLevelDataVersionInternalAsync_d__9 = crate::GlobalNamespace::OculusPlatformAdditionalContentModel__GetLevelDataVersionInternalAsync_d__9;
-    #[cfg(
-        feature = "OculusPlatformAdditionalContentModel+_GetLevelEntitlementStatusInternalAsync_d__7"
-    )]
-    pub type _GetLevelEntitlementStatusInternalAsync_d__7 = crate::GlobalNamespace::OculusPlatformAdditionalContentModel__GetLevelEntitlementStatusInternalAsync_d__7;
-    #[cfg(
-        feature = "OculusPlatformAdditionalContentModel+_GetPackEntitlementStatusInternalAsync_d__8"
-    )]
-    pub type _GetPackEntitlementStatusInternalAsync_d__8 = crate::GlobalNamespace::OculusPlatformAdditionalContentModel__GetPackEntitlementStatusInternalAsync_d__8;
-    #[cfg(
-        feature = "OculusPlatformAdditionalContentModel+_GetRedirectedLevelPackProductData_d__5"
-    )]
-    pub type _GetRedirectedLevelPackProductData_d__5 = crate::GlobalNamespace::OculusPlatformAdditionalContentModel__GetRedirectedLevelPackProductData_d__5;
-    #[cfg(feature = "OculusPlatformAdditionalContentModel+_IsDataValidAsync_d__10")]
-    pub type _IsDataValidAsync_d__10 = crate::GlobalNamespace::OculusPlatformAdditionalContentModel__IsDataValidAsync_d__10;
-    #[cfg(
-        feature = "OculusPlatformAdditionalContentModel+_OpenLevelPackProductStoreAsync_d__12"
-    )]
-    pub type _OpenLevelPackProductStoreAsync_d__12 = crate::GlobalNamespace::OculusPlatformAdditionalContentModel__OpenLevelPackProductStoreAsync_d__12;
-    #[cfg(
-        feature = "OculusPlatformAdditionalContentModel+_OpenLevelProductStoreAsync_d__11"
-    )]
-    pub type _OpenLevelProductStoreAsync_d__11 = crate::GlobalNamespace::OculusPlatformAdditionalContentModel__OpenLevelProductStoreAsync_d__11;
-    #[cfg(feature = "OculusPlatformAdditionalContentModel+__c__DisplayClass13_0")]
-    pub type __c__DisplayClass13_0 = crate::GlobalNamespace::OculusPlatformAdditionalContentModel___c__DisplayClass13_0;
-    #[cfg(feature = "OculusPlatformAdditionalContentModel+__c__DisplayClass16_0")]
-    pub type __c__DisplayClass16_0 = crate::GlobalNamespace::OculusPlatformAdditionalContentModel___c__DisplayClass16_0;
     pub fn CheckForNewEntitlementsAsync(
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,

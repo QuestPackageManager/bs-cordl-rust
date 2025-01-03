@@ -29,8 +29,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::AchievementsModelSO {
 }
 #[cfg(feature = "AchievementsModelSO")]
 impl crate::GlobalNamespace::AchievementsModelSO {
-    #[cfg(feature = "AchievementsModelSO+__c__DisplayClass4_0")]
-    pub type __c__DisplayClass4_0 = crate::GlobalNamespace::AchievementsModelSO___c__DisplayClass4_0;
     pub fn Initialize(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

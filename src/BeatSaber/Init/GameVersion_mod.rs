@@ -649,12 +649,6 @@ for crate::BeatSaber::Init::GameVersion_PreReleaseLabel {
 impl crate::BeatSaber::Init::GameVersion_PreReleaseLabel {
     pub const kPrereleaseLabelGroupName: &'static str = "prereleaselabel";
     pub const kPrereleasePrefixGroupName: &'static str = "prereleaseprefix";
-    #[cfg(feature = "BeatSaber+Init+GameVersion+PreReleaseLabel+__c")]
-    pub type __c = crate::BeatSaber::Init::PreReleaseLabel_GameVersion___c;
-    #[cfg(feature = "BeatSaber+Init+GameVersion+PreReleaseLabel+__c__DisplayClass10_0")]
-    pub type __c__DisplayClass10_0 = crate::BeatSaber::Init::PreReleaseLabel_GameVersion___c__DisplayClass10_0;
-    #[cfg(feature = "BeatSaber+Init+GameVersion+PreReleaseLabel+__c__DisplayClass11_0")]
-    pub type __c__DisplayClass11_0 = crate::BeatSaber::Init::PreReleaseLabel_GameVersion___c__DisplayClass11_0;
     pub fn CompareTo(
         &mut self,
         other: crate::BeatSaber::Init::GameVersion_PreReleaseLabel,

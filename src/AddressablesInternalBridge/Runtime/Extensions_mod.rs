@@ -24,8 +24,6 @@ impl std::ops::DerefMut for crate::AddressablesInternalBridge::Runtime::Extensio
 }
 #[cfg(feature = "AddressablesInternalBridge+Runtime+Extensions")]
 impl crate::AddressablesInternalBridge::Runtime::Extensions {
-    #[cfg(feature = "AddressablesInternalBridge+Runtime+Extensions+__c")]
-    pub type __c = crate::AddressablesInternalBridge::Runtime::Extensions___c;
     pub fn GetCatalogLocationData(
         locatorId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<

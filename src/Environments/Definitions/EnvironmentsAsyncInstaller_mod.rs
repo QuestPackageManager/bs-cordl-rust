@@ -33,8 +33,6 @@ for crate::Environments::Definitions::EnvironmentsAsyncInstaller {
 }
 #[cfg(feature = "Environments+Definitions+EnvironmentsAsyncInstaller")]
 impl crate::Environments::Definitions::EnvironmentsAsyncInstaller {
-    #[cfg(feature = "Environments+Definitions+EnvironmentsAsyncInstaller+__c")]
-    pub type __c = crate::Environments::Definitions::EnvironmentsAsyncInstaller___c;
     pub fn InstallBindings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

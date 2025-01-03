@@ -33,14 +33,6 @@ for crate::UnityEngine::UIElements::TreeDataController_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::UnityEngine::UIElements::TreeDataController_1<T> {
-    #[cfg(feature = "UnityEngine+UIElements+TreeDataController_1+_GetAllItemIds_d__13")]
-    pub type _GetAllItemIds_d__13 = crate::UnityEngine::UIElements::TreeDataController_1__GetAllItemIds_d__13<
-        T,
-    >;
-    #[cfg(feature = "UnityEngine+UIElements+TreeDataController_1+_GetItemIds_d__9")]
-    pub type _GetItemIds_d__9 = crate::UnityEngine::UIElements::TreeDataController_1__GetItemIds_d__9<
-        T,
-    >;
     pub fn GetAllItemIds(
         &mut self,
         rootIds: quest_hook::libil2cpp::Gc<

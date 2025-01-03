@@ -24,10 +24,6 @@ impl std::ops::DerefMut for crate::Mono::Net::Security::Private::CallbackHelpers
 }
 #[cfg(feature = "Mono+Net+Security+Private+CallbackHelpers")]
 impl crate::Mono::Net::Security::Private::CallbackHelpers {
-    #[cfg(feature = "Mono+Net+Security+Private+CallbackHelpers+__c__DisplayClass0_0")]
-    pub type __c__DisplayClass0_0 = crate::Mono::Net::Security::Private::CallbackHelpers___c__DisplayClass0_0;
-    #[cfg(feature = "Mono+Net+Security+Private+CallbackHelpers+__c__DisplayClass6_0")]
-    pub type __c__DisplayClass6_0 = crate::Mono::Net::Security::Private::CallbackHelpers___c__DisplayClass6_0;
     pub fn MonoToInternal(
         callback: quest_hook::libil2cpp::Gc<
             crate::Mono::Security::Interface::MonoLocalCertificateSelectionCallback,

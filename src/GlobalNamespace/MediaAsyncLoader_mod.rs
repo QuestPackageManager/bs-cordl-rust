@@ -24,14 +24,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::MediaAsyncLoader {
 }
 #[cfg(feature = "MediaAsyncLoader")]
 impl crate::GlobalNamespace::MediaAsyncLoader {
-    #[cfg(feature = "MediaAsyncLoader+_LoadAudioClipAsync_d__2")]
-    pub type _LoadAudioClipAsync_d__2 = crate::GlobalNamespace::MediaAsyncLoader__LoadAudioClipAsync_d__2;
-    #[cfg(feature = "MediaAsyncLoader+_LoadSpriteAsync_d__4")]
-    pub type _LoadSpriteAsync_d__4 = crate::GlobalNamespace::MediaAsyncLoader__LoadSpriteAsync_d__4;
-    #[cfg(feature = "MediaAsyncLoader+_LoadTextureAsync_d__3")]
-    pub type _LoadTextureAsync_d__3 = crate::GlobalNamespace::MediaAsyncLoader__LoadTextureAsync_d__3;
-    #[cfg(feature = "MediaAsyncLoader+_LoadWebpage_d__0")]
-    pub type _LoadWebpage_d__0 = crate::GlobalNamespace::MediaAsyncLoader__LoadWebpage_d__0;
     pub fn LoadAudioClipAsync(
         filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         streamAudio: bool,

@@ -28,10 +28,6 @@ impl std::ops::DerefMut for crate::BeatSaber::Init::GameVersionProvider {
 }
 #[cfg(feature = "BeatSaber+Init+GameVersionProvider")]
 impl crate::BeatSaber::Init::GameVersionProvider {
-    #[cfg(feature = "BeatSaber+Init+GameVersionProvider+_GetVersionInternalAsync_d__9")]
-    pub type _GetVersionInternalAsync_d__9 = crate::BeatSaber::Init::GameVersionProvider__GetVersionInternalAsync_d__9;
-    #[cfg(feature = "BeatSaber+Init+GameVersionProvider+_Initialize_d__5")]
-    pub type _Initialize_d__5 = crate::BeatSaber::Init::GameVersionProvider__Initialize_d__5;
     pub fn GetBuildId() -> quest_hook::libil2cpp::Result<u64> {
         let __cordl_ret: u64 = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("GetBuildId", ())?;

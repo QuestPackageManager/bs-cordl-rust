@@ -24,14 +24,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BloomFilterUtil {
 }
 #[cfg(feature = "BloomFilterUtil")]
 impl crate::GlobalNamespace::BloomFilterUtil {
-    #[cfg(feature = "BloomFilterUtil+__c__DisplayClass1_0_1")]
-    pub type __c__DisplayClass1_0_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::BloomFilterUtil___c__DisplayClass1_0_1<
-        T,
-    >;
-    #[cfg(feature = "BloomFilterUtil+__c__DisplayClass2_0_1")]
-    pub type __c__DisplayClass2_0_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::BloomFilterUtil___c__DisplayClass2_0_1<
-        T,
-    >;
     pub fn AddBloomFilterEntry<T>(
         bitMask: T,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

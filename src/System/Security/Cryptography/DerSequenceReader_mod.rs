@@ -31,8 +31,6 @@ impl std::ops::DerefMut for crate::System::Security::Cryptography::DerSequenceRe
 impl crate::System::Security::Cryptography::DerSequenceReader {
     #[cfg(feature = "System+Security+Cryptography+DerSequenceReader+DerTag")]
     pub type DerTag = crate::System::Security::Cryptography::DerSequenceReader_DerTag;
-    #[cfg(feature = "System+Security+Cryptography+DerSequenceReader+__c")]
-    pub type __c = crate::System::Security::Cryptography::DerSequenceReader___c;
     pub fn CheckTag(
         expected: crate::System::Security::Cryptography::DerSequenceReader_DerTag,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,

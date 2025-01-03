@@ -65,8 +65,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::LevelCollectionNavigationCon
 impl crate::GlobalNamespace::LevelCollectionNavigationController {
     #[cfg(feature = "LevelCollectionNavigationController+AlphaAnimationType")]
     pub type AlphaAnimationType = crate::GlobalNamespace::LevelCollectionNavigationController_AlphaAnimationType;
-    #[cfg(feature = "LevelCollectionNavigationController+__c__DisplayClass53_0")]
-    pub type __c__DisplayClass53_0 = crate::GlobalNamespace::LevelCollectionNavigationController___c__DisplayClass53_0;
     pub fn AnimateCanvasGroupAlpha(
         &mut self,
         animationType: crate::GlobalNamespace::LevelCollectionNavigationController_AlphaAnimationType,

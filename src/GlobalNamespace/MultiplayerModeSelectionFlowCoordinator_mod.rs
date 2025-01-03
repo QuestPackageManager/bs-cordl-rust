@@ -63,18 +63,6 @@ for crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator {
 }
 #[cfg(feature = "MultiplayerModeSelectionFlowCoordinator")]
 impl crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator {
-    #[cfg(
-        feature = "MultiplayerModeSelectionFlowCoordinator+_HandleConnectedPlayerManagerCreated_d__50"
-    )]
-    pub type _HandleConnectedPlayerManagerCreated_d__50 = crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator__HandleConnectedPlayerManagerCreated_d__50;
-    #[cfg(
-        feature = "MultiplayerModeSelectionFlowCoordinator+_ResolveAndPresentNextFlowCoordinator_d__52"
-    )]
-    pub type _ResolveAndPresentNextFlowCoordinator_d__52 = crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator__ResolveAndPresentNextFlowCoordinator_d__52;
-    #[cfg(
-        feature = "MultiplayerModeSelectionFlowCoordinator+_TryShowModeSelection_d__51"
-    )]
-    pub type _TryShowModeSelection_d__51 = crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator__TryShowModeSelection_d__51;
     pub fn BackButtonWasPressed(
         &mut self,
         topViewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,

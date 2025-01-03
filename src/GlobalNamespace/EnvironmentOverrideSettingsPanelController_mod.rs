@@ -40,8 +40,6 @@ for crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController {
 impl crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController {
     #[cfg(feature = "EnvironmentOverrideSettingsPanelController+Elements")]
     pub type Elements = crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController_Elements;
-    #[cfg(feature = "EnvironmentOverrideSettingsPanelController+__c")]
-    pub type __c = crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController___c;
     pub fn HandleDropDownDidSelectCellWithIdx(
         &mut self,
         dropDownWithTableView: quest_hook::libil2cpp::Gc<

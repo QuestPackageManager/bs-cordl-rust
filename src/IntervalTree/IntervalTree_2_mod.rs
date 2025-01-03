@@ -44,28 +44,6 @@ impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > crate::IntervalTree::IntervalTree_2<TKey, TValue> {
-    #[cfg(feature = "IntervalTree+IntervalTree_2+__c")]
-    pub type __c = crate::IntervalTree::IntervalTree_2___c<TKey, TValue>;
-    #[cfg(feature = "IntervalTree+IntervalTree_2+__c__DisplayClass19_0")]
-    pub type __c__DisplayClass19_0 = crate::IntervalTree::IntervalTree_2___c__DisplayClass19_0<
-        TKey,
-        TValue,
-    >;
-    #[cfg(feature = "IntervalTree+IntervalTree_2+__c__DisplayClass20_0")]
-    pub type __c__DisplayClass20_0 = crate::IntervalTree::IntervalTree_2___c__DisplayClass20_0<
-        TKey,
-        TValue,
-    >;
-    #[cfg(feature = "IntervalTree+IntervalTree_2+__c__DisplayClass23_0")]
-    pub type __c__DisplayClass23_0 = crate::IntervalTree::IntervalTree_2___c__DisplayClass23_0<
-        TKey,
-        TValue,
-    >;
-    #[cfg(feature = "IntervalTree+IntervalTree_2+__c__DisplayClass24_0")]
-    pub type __c__DisplayClass24_0 = crate::IntervalTree::IntervalTree_2___c__DisplayClass24_0<
-        TKey,
-        TValue,
-    >;
     pub fn Add(
         &mut self,
         from: TKey,

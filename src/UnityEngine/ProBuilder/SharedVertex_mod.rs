@@ -25,8 +25,6 @@ impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::SharedVertex {
 }
 #[cfg(feature = "UnityEngine+ProBuilder+SharedVertex")]
 impl crate::UnityEngine::ProBuilder::SharedVertex {
-    #[cfg(feature = "UnityEngine+ProBuilder+SharedVertex+__c")]
-    pub type __c = crate::UnityEngine::ProBuilder::SharedVertex___c;
     pub fn Add(
         &mut self,
         item: i32,

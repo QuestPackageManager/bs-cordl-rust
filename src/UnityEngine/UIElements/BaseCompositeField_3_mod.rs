@@ -64,12 +64,6 @@ impl<
         TField,
         TFieldValue,
     >;
-    #[cfg(feature = "UnityEngine+UIElements+BaseCompositeField_3+__c__DisplayClass24_0")]
-    pub type __c__DisplayClass24_0 = crate::UnityEngine::UIElements::BaseCompositeField_3___c__DisplayClass24_0<
-        TValueType,
-        TField,
-        TFieldValue,
-    >;
     pub fn DescribeFields(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

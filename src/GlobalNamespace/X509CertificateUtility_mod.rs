@@ -28,10 +28,6 @@ impl crate::GlobalNamespace::X509CertificateUtility {
     pub type PasswordFinder = crate::GlobalNamespace::X509CertificateUtility_PasswordFinder;
     #[cfg(feature = "X509CertificateUtility+RSACertificateEncryptionProvider")]
     pub type RSACertificateEncryptionProvider = crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProvider;
-    #[cfg(feature = "X509CertificateUtility+_GetCertificateList_d__9")]
-    pub type _GetCertificateList_d__9 = crate::GlobalNamespace::X509CertificateUtility__GetCertificateList_d__9;
-    #[cfg(feature = "X509CertificateUtility+__c")]
-    pub type __c = crate::GlobalNamespace::X509CertificateUtility___c;
     pub fn GetCertificateEncryptionProvider(
         privateKeyPem: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         password: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

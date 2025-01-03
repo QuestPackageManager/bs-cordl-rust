@@ -29,10 +29,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::NetworkPlayerEntitlementChec
 }
 #[cfg(feature = "NetworkPlayerEntitlementChecker")]
 impl crate::GlobalNamespace::NetworkPlayerEntitlementChecker {
-    #[cfg(feature = "NetworkPlayerEntitlementChecker+_GetEntitlementStatus_d__10")]
-    pub type _GetEntitlementStatus_d__10 = crate::GlobalNamespace::NetworkPlayerEntitlementChecker__GetEntitlementStatus_d__10;
-    #[cfg(feature = "NetworkPlayerEntitlementChecker+_HandleGetIsEntitledToLevel_d__8")]
-    pub type _HandleGetIsEntitledToLevel_d__8 = crate::GlobalNamespace::NetworkPlayerEntitlementChecker__HandleGetIsEntitledToLevel_d__8;
     pub fn GetEntitlementStatus(
         &mut self,
         levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

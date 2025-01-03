@@ -49,8 +49,6 @@ impl std::ops::DerefMut for crate::HMUI::ScrollViewItemsVisibilityController {
 }
 #[cfg(feature = "HMUI+ScrollViewItemsVisibilityController")]
 impl crate::HMUI::ScrollViewItemsVisibilityController {
-    #[cfg(feature = "HMUI+ScrollViewItemsVisibilityController+__c")]
-    pub type __c = crate::HMUI::ScrollViewItemsVisibilityController___c;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

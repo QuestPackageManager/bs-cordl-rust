@@ -57,10 +57,6 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Serialization::JsonContract
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+JsonContract")]
 impl crate::Newtonsoft::Json::Serialization::JsonContract {
-    #[cfg(feature = "Newtonsoft+Json+Serialization+JsonContract+__c__DisplayClass57_0")]
-    pub type __c__DisplayClass57_0 = crate::Newtonsoft::Json::Serialization::JsonContract___c__DisplayClass57_0;
-    #[cfg(feature = "Newtonsoft+Json+Serialization+JsonContract+__c__DisplayClass58_0")]
-    pub type __c__DisplayClass58_0 = crate::Newtonsoft::Json::Serialization::JsonContract___c__DisplayClass58_0;
     pub fn CreateSerializationCallback(
         callbackMethodInfo: quest_hook::libil2cpp::Gc<
             crate::System::Reflection::MethodInfo,

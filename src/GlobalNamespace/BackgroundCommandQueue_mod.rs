@@ -29,8 +29,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BackgroundCommandQueue {
 }
 #[cfg(feature = "BackgroundCommandQueue")]
 impl crate::GlobalNamespace::BackgroundCommandQueue {
-    #[cfg(feature = "BackgroundCommandQueue+_RunInternal_d__4")]
-    pub type _RunInternal_d__4 = crate::GlobalNamespace::BackgroundCommandQueue__RunInternal_d__4;
     pub fn Enqueue(
         &mut self,
         command: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBackgroundCommand>,

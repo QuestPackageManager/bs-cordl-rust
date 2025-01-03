@@ -123,20 +123,6 @@ impl<
     TParam10,
     TValue,
 > {
-    #[cfg(feature = "Zenject+PlaceholderFactory_11+_get_ParamTypes_d__2")]
-    pub type _get_ParamTypes_d__2 = crate::Zenject::PlaceholderFactory_11__get_ParamTypes_d__2<
-        TParam1,
-        TParam2,
-        TParam3,
-        TParam4,
-        TParam5,
-        TParam6,
-        TParam7,
-        TParam8,
-        TParam9,
-        TParam10,
-        TValue,
-    >;
     pub fn Create(
         &mut self,
         param1: TParam1,

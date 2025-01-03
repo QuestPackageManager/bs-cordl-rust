@@ -23,10 +23,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::PingUtility {
 }
 #[cfg(feature = "PingUtility")]
 impl crate::GlobalNamespace::PingUtility {
-    #[cfg(feature = "PingUtility+_PingAsync_d__0")]
-    pub type _PingAsync_d__0 = crate::GlobalNamespace::PingUtility__PingAsync_d__0;
-    #[cfg(feature = "PingUtility+__c")]
-    pub type __c = crate::GlobalNamespace::PingUtility___c;
     pub fn PingAsync(
         url: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<

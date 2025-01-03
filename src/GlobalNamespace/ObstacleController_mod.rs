@@ -70,8 +70,6 @@ impl crate::GlobalNamespace::ObstacleController {
     pub const kAvoidMarkTimeOffset: f32 = 0.15f32;
     #[cfg(feature = "ObstacleController+Pool")]
     pub type Pool = crate::GlobalNamespace::ObstacleController_Pool;
-    #[cfg(feature = "ObstacleController+_DissolveCoroutine_d__64")]
-    pub type _DissolveCoroutine_d__64 = crate::GlobalNamespace::ObstacleController__DissolveCoroutine_d__64;
     pub fn Dissolve(
         &mut self,
         duration: f32,

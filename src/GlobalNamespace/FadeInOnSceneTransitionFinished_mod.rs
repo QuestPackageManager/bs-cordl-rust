@@ -26,8 +26,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::FadeInOnSceneTransitionFinis
 }
 #[cfg(feature = "FadeInOnSceneTransitionFinished")]
 impl crate::GlobalNamespace::FadeInOnSceneTransitionFinished {
-    #[cfg(feature = "FadeInOnSceneTransitionFinished+_FadeCoroutine_d__4")]
-    pub type _FadeCoroutine_d__4 = crate::GlobalNamespace::FadeInOnSceneTransitionFinished__FadeCoroutine_d__4;
     pub fn FadeCoroutine(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

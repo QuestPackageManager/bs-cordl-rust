@@ -63,8 +63,6 @@ impl crate::UnityEngine::InputSystem::InputSystem {
     pub type DeltaStateEventBuffer = crate::UnityEngine::InputSystem::InputSystem_DeltaStateEventBuffer;
     #[cfg(feature = "UnityEngine+InputSystem+InputSystem+StateEventBuffer")]
     pub type StateEventBuffer = crate::UnityEngine::InputSystem::InputSystem_StateEventBuffer;
-    #[cfg(feature = "UnityEngine+InputSystem+InputSystem+__c")]
-    pub type __c = crate::UnityEngine::InputSystem::InputSystem___c;
     pub fn AddDeviceUsage_Il2CppString0(
         device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
         usage: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

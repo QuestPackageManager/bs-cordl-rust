@@ -39,8 +39,6 @@ for crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
 }
 #[cfg(feature = "SinglePlayerLevelSelectionFlowCoordinator")]
 impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
-    #[cfg(feature = "SinglePlayerLevelSelectionFlowCoordinator+__c__DisplayClass39_0")]
-    pub type __c__DisplayClass39_0 = crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator___c__DisplayClass39_0;
     pub fn ActionButtonWasPressed(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

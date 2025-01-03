@@ -31,12 +31,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::StandaloneMonobehavior {
 }
 #[cfg(feature = "StandaloneMonobehavior")]
 impl crate::GlobalNamespace::StandaloneMonobehavior {
-    #[cfg(feature = "StandaloneMonobehavior+_RunAsyncCoroutine_d__25")]
-    pub type _RunAsyncCoroutine_d__25 = crate::GlobalNamespace::StandaloneMonobehavior__RunAsyncCoroutine_d__25;
-    #[cfg(feature = "StandaloneMonobehavior+_WhenReadyAsync_d__21")]
-    pub type _WhenReadyAsync_d__21 = crate::GlobalNamespace::StandaloneMonobehavior__WhenReadyAsync_d__21;
-    #[cfg(feature = "StandaloneMonobehavior+_WhenReady_d__20")]
-    pub type _WhenReady_d__20 = crate::GlobalNamespace::StandaloneMonobehavior__WhenReady_d__20;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

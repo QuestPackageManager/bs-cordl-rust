@@ -28,8 +28,6 @@ for crate::System::Threading::Tasks::TaskSchedulerAwaitTaskContinuation {
 }
 #[cfg(feature = "System+Threading+Tasks+TaskSchedulerAwaitTaskContinuation")]
 impl crate::System::Threading::Tasks::TaskSchedulerAwaitTaskContinuation {
-    #[cfg(feature = "System+Threading+Tasks+TaskSchedulerAwaitTaskContinuation+__c")]
-    pub type __c = crate::System::Threading::Tasks::TaskSchedulerAwaitTaskContinuation___c;
     pub fn New(
         scheduler: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::TaskScheduler,

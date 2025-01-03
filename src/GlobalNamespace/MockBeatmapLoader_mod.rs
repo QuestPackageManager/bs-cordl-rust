@@ -28,8 +28,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::MockBeatmapLoader {
 }
 #[cfg(feature = "MockBeatmapLoader")]
 impl crate::GlobalNamespace::MockBeatmapLoader {
-    #[cfg(feature = "MockBeatmapLoader+_GetBeatmapData_d__5")]
-    pub type _GetBeatmapData_d__5 = crate::GlobalNamespace::MockBeatmapLoader__GetBeatmapData_d__5;
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

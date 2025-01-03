@@ -43,11 +43,6 @@ impl<
     TItem: quest_hook::libil2cpp::Type,
     TPriority: quest_hook::libil2cpp::Type,
 > crate::Priority_Queue::GenericPriorityQueue_2<TItem, TPriority> {
-    #[cfg(feature = "Priority_Queue+GenericPriorityQueue_2+_GetEnumerator_d__25")]
-    pub type _GetEnumerator_d__25 = crate::Priority_Queue::GenericPriorityQueue_2__GetEnumerator_d__25<
-        TItem,
-        TPriority,
-    >;
     pub fn CascadeDown(
         &mut self,
         node: TItem,

@@ -27,10 +27,6 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleProvid
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+AssetBundleProvider")]
 impl crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleProvider {
-    #[cfg(
-        feature = "UnityEngine+ResourceManagement+ResourceProviders+AssetBundleProvider+__c__DisplayClass12_0"
-    )]
-    pub type __c__DisplayClass12_0 = crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleProvider___c__DisplayClass12_0;
     pub fn CreateCacheKeyForLocation(
         &mut self,
         rm: quest_hook::libil2cpp::Gc<

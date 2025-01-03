@@ -25,8 +25,6 @@ impl std::ops::DerefMut for crate::System::Threading::Tasks::ThreadPoolTaskSched
 }
 #[cfg(feature = "System+Threading+Tasks+ThreadPoolTaskScheduler")]
 impl crate::System::Threading::Tasks::ThreadPoolTaskScheduler {
-    #[cfg(feature = "System+Threading+Tasks+ThreadPoolTaskScheduler+__c")]
-    pub type __c = crate::System::Threading::Tasks::ThreadPoolTaskScheduler___c;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

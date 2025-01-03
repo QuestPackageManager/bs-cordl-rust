@@ -64,10 +64,6 @@ impl crate::GlobalNamespace::BeatmapData {
     pub const kDefaultNumberOfLines: i32 = 4i32;
     #[cfg(feature = "BeatmapData+BeatmapDataBinaryHeapItem")]
     pub type BeatmapDataBinaryHeapItem = crate::GlobalNamespace::BeatmapData_BeatmapDataBinaryHeapItem;
-    #[cfg(feature = "BeatmapData+__c__DisplayClass46_0_1")]
-    pub type __c__DisplayClass46_0_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::BeatmapData___c__DisplayClass46_0_1<
-        T,
-    >;
     pub fn AddBeatmapObjectData(
         &mut self,
         beatmapObjectData: quest_hook::libil2cpp::Gc<

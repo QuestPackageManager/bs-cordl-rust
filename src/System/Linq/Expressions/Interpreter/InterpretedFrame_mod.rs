@@ -41,10 +41,6 @@ for crate::System::Linq::Expressions::Interpreter::InterpretedFrame {
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+InterpretedFrame")]
 impl crate::System::Linq::Expressions::Interpreter::InterpretedFrame {
-    #[cfg(
-        feature = "System+Linq+Expressions+Interpreter+InterpretedFrame+_GetStackTraceDebugInfo_d__29"
-    )]
-    pub type _GetStackTraceDebugInfo_d__29 = crate::System::Linq::Expressions::Interpreter::InterpretedFrame__GetStackTraceDebugInfo_d__29;
     pub fn Dup(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

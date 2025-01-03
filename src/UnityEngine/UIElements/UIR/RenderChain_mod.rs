@@ -72,8 +72,6 @@ impl crate::UnityEngine::UIElements::UIR::RenderChain {
     pub type RenderChainStaticIndexAllocator = crate::UnityEngine::UIElements::UIR::RenderChain_RenderChainStaticIndexAllocator;
     #[cfg(feature = "UnityEngine+UIElements+UIR+RenderChain+RenderNodeData")]
     pub type RenderNodeData = crate::UnityEngine::UIElements::UIR::RenderChain_RenderNodeData;
-    #[cfg(feature = "UnityEngine+UIElements+UIR+RenderChain+__c")]
-    pub type __c = crate::UnityEngine::UIElements::UIR::RenderChain___c;
     pub fn AccessRenderNodeData(
         obj: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<

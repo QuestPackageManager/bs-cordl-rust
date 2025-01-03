@@ -40,12 +40,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::LevelBar {
 }
 #[cfg(feature = "LevelBar")]
 impl crate::GlobalNamespace::LevelBar {
-    #[cfg(feature = "LevelBar+_SetupData_d__21")]
-    pub type _SetupData_d__21 = crate::GlobalNamespace::LevelBar__SetupData_d__21;
-    #[cfg(feature = "LevelBar+_Setup_d__19")]
-    pub type _Setup_d__19 = crate::GlobalNamespace::LevelBar__Setup_d__19;
-    #[cfg(feature = "LevelBar+_Setup_d__20")]
-    pub type _Setup_d__20 = crate::GlobalNamespace::LevelBar__Setup_d__20;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

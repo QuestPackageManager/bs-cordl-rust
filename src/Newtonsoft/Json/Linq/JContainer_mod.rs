@@ -29,12 +29,6 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Linq::JContainer {
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JContainer")]
 impl crate::Newtonsoft::Json::Linq::JContainer {
-    #[cfg(feature = "Newtonsoft+Json+Linq+JContainer+_GetDescendants_d__36")]
-    pub type _GetDescendants_d__36 = crate::Newtonsoft::Json::Linq::JContainer__GetDescendants_d__36;
-    #[cfg(feature = "Newtonsoft+Json+Linq+JContainer+_ReadContentFromAsync_d__1")]
-    pub type _ReadContentFromAsync_d__1 = crate::Newtonsoft::Json::Linq::JContainer__ReadContentFromAsync_d__1;
-    #[cfg(feature = "Newtonsoft+Json+Linq+JContainer+_ReadTokenFromAsync_d__0")]
-    pub type _ReadTokenFromAsync_d__0 = crate::Newtonsoft::Json::Linq::JContainer__ReadTokenFromAsync_d__0;
     pub fn Add(
         &mut self,
         content: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

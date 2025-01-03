@@ -297,8 +297,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIRAtlasAllocator_Ar
 }
 #[cfg(feature = "UnityEngine+UIElements+UIRAtlasAllocator+AreaNode")]
 impl crate::UnityEngine::UIElements::UIRAtlasAllocator_AreaNode {
-    #[cfg(feature = "UnityEngine+UIElements+UIRAtlasAllocator+AreaNode+__c")]
-    pub type __c = crate::UnityEngine::UIElements::AreaNode_UIRAtlasAllocator___c;
     pub fn Acquire(
         rect: crate::UnityEngine::RectInt,
     ) -> quest_hook::libil2cpp::Result<
@@ -403,8 +401,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIRAtlasAllocator_Ro
 }
 #[cfg(feature = "UnityEngine+UIElements+UIRAtlasAllocator+Row")]
 impl crate::UnityEngine::UIElements::UIRAtlasAllocator_Row {
-    #[cfg(feature = "UnityEngine+UIElements+UIRAtlasAllocator+Row+__c")]
-    pub type __c = crate::UnityEngine::UIElements::Row_UIRAtlasAllocator___c;
     pub fn Acquire(
         offsetX: i32,
         offsetY: i32,

@@ -26,8 +26,6 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Utilities::ConvertUtils {
 impl crate::Newtonsoft::Json::Utilities::ConvertUtils {
     #[cfg(feature = "Newtonsoft+Json+Utilities+ConvertUtils+ConvertResult")]
     pub type ConvertResult = crate::Newtonsoft::Json::Utilities::ConvertUtils_ConvertResult;
-    #[cfg(feature = "Newtonsoft+Json+Utilities+ConvertUtils+__c__DisplayClass8_0")]
-    pub type __c__DisplayClass8_0 = crate::Newtonsoft::Json::Utilities::ConvertUtils___c__DisplayClass8_0;
     pub fn Convert(
         initialValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         culture: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,

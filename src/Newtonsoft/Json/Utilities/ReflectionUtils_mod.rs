@@ -24,16 +24,6 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Utilities::ReflectionUtils 
 }
 #[cfg(feature = "Newtonsoft+Json+Utilities+ReflectionUtils")]
 impl crate::Newtonsoft::Json::Utilities::ReflectionUtils {
-    #[cfg(feature = "Newtonsoft+Json+Utilities+ReflectionUtils+__c")]
-    pub type __c = crate::Newtonsoft::Json::Utilities::ReflectionUtils___c;
-    #[cfg(feature = "Newtonsoft+Json+Utilities+ReflectionUtils+__c__DisplayClass31_0")]
-    pub type __c__DisplayClass31_0 = crate::Newtonsoft::Json::Utilities::ReflectionUtils___c__DisplayClass31_0;
-    #[cfg(feature = "Newtonsoft+Json+Utilities+ReflectionUtils+__c__DisplayClass44_0")]
-    pub type __c__DisplayClass44_0 = crate::Newtonsoft::Json::Utilities::ReflectionUtils___c__DisplayClass44_0;
-    #[cfg(feature = "Newtonsoft+Json+Utilities+ReflectionUtils+__c__DisplayClass44_1")]
-    pub type __c__DisplayClass44_1 = crate::Newtonsoft::Json::Utilities::ReflectionUtils___c__DisplayClass44_1;
-    #[cfg(feature = "Newtonsoft+Json+Utilities+ReflectionUtils+__c__DisplayClass45_0")]
-    pub type __c__DisplayClass45_0 = crate::Newtonsoft::Json::Utilities::ReflectionUtils___c__DisplayClass45_0;
     pub fn CanReadMemberValue(
         member: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
         nonPublic: bool,

@@ -27,10 +27,6 @@ impl std::ops::DerefMut for crate::BeatSaber::BeatAvatarAdapter::BeatAvatarSyste
 }
 #[cfg(feature = "BeatSaber+BeatAvatarAdapter+BeatAvatarSystem")]
 impl crate::BeatSaber::BeatAvatarAdapter::BeatAvatarSystem {
-    #[cfg(
-        feature = "BeatSaber+BeatAvatarAdapter+BeatAvatarSystem+_CreateDefaultAvatarIfUserCreatedAvatarDoesNotExist_d__12"
-    )]
-    pub type _CreateDefaultAvatarIfUserCreatedAvatarDoesNotExist_d__12 = crate::BeatSaber::BeatAvatarAdapter::BeatAvatarSystem__CreateDefaultAvatarIfUserCreatedAvatarDoesNotExist_d__12;
     pub fn CreateDefaultAvatarIfUserCreatedAvatarDoesNotExist(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

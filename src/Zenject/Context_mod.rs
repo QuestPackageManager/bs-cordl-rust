@@ -38,8 +38,6 @@ impl std::ops::DerefMut for crate::Zenject::Context {
 }
 #[cfg(feature = "Zenject+Context")]
 impl crate::Zenject::Context {
-    #[cfg(feature = "Zenject+Context+__c")]
-    pub type __c = crate::Zenject::Context___c;
     pub fn AddNormalInstaller(
         &mut self,
         installer: quest_hook::libil2cpp::Gc<crate::Zenject::InstallerBase>,

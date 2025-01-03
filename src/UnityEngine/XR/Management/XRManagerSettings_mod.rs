@@ -35,10 +35,6 @@ impl std::ops::DerefMut for crate::UnityEngine::XR::Management::XRManagerSetting
 }
 #[cfg(feature = "UnityEngine+XR+Management+XRManagerSettings")]
 impl crate::UnityEngine::XR::Management::XRManagerSettings {
-    #[cfg(
-        feature = "UnityEngine+XR+Management+XRManagerSettings+_InitializeLoader_d__24"
-    )]
-    pub type _InitializeLoader_d__24 = crate::UnityEngine::XR::Management::XRManagerSettings__InitializeLoader_d__24;
     pub fn ActiveLoaderAs<T>(&mut self) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument

@@ -40,8 +40,6 @@ impl std::ops::DerefMut for crate::HMUI::AlphabetScrollbar {
 }
 #[cfg(feature = "HMUI+AlphabetScrollbar")]
 impl crate::HMUI::AlphabetScrollbar {
-    #[cfg(feature = "HMUI+AlphabetScrollbar+_PointerMoveInsideCoroutine_d__18")]
-    pub type _PointerMoveInsideCoroutine_d__18 = crate::HMUI::AlphabetScrollbar__PointerMoveInsideCoroutine_d__18;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

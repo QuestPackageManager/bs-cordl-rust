@@ -117,8 +117,6 @@ impl crate::GlobalNamespace::OVRVirtualKeyboard {
     pub type InteractorRootTransformOverride = crate::GlobalNamespace::OVRVirtualKeyboard_InteractorRootTransformOverride;
     #[cfg(feature = "OVRVirtualKeyboard+KeyboardPosition")]
     pub type KeyboardPosition = crate::GlobalNamespace::OVRVirtualKeyboard_KeyboardPosition;
-    #[cfg(feature = "OVRVirtualKeyboard+__c")]
-    pub type __c = crate::GlobalNamespace::OVRVirtualKeyboard___c;
     pub fn ApplyHideFlags(
         t: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -940,8 +938,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRVirtualKeyboard_HandInput
 }
 #[cfg(feature = "OVRVirtualKeyboard+HandInputSource")]
 impl crate::GlobalNamespace::OVRVirtualKeyboard_HandInputSource {
-    #[cfg(feature = "OVRVirtualKeyboard+HandInputSource+__c")]
-    pub type __c = crate::GlobalNamespace::HandInputSource_OVRVirtualKeyboard___c;
     pub fn New(
         keyboard: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRVirtualKeyboard>,
         inputSource: crate::GlobalNamespace::OVRVirtualKeyboard_InputSource,
@@ -1092,10 +1088,6 @@ impl crate::GlobalNamespace::OVRVirtualKeyboard_InteractorRootTransformOverride 
         feature = "OVRVirtualKeyboard+InteractorRootTransformOverride+InteractorRootOverrideData"
     )]
     pub type InteractorRootOverrideData = crate::GlobalNamespace::InteractorRootTransformOverride_OVRVirtualKeyboard_InteractorRootOverrideData;
-    #[cfg(
-        feature = "OVRVirtualKeyboard+InteractorRootTransformOverride+_RevertInteractorOverrides_d__6"
-    )]
-    pub type _RevertInteractorOverrides_d__6 = crate::GlobalNamespace::InteractorRootTransformOverride_OVRVirtualKeyboard__RevertInteractorOverrides_d__6;
     pub fn ApplyOverride(
         interactorOverride: crate::GlobalNamespace::InteractorRootTransformOverride_OVRVirtualKeyboard_InteractorRootOverrideData,
     ) -> quest_hook::libil2cpp::Result<bool> {

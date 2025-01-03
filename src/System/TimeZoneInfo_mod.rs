@@ -44,10 +44,6 @@ impl crate::System::TimeZoneInfo {
     pub type TZifType = crate::System::TimeZoneInfo_TZifType;
     #[cfg(feature = "System+TimeZoneInfo+TransitionTime")]
     pub type TransitionTime = crate::System::TimeZoneInfo_TransitionTime;
-    #[cfg(feature = "System+TimeZoneInfo+__c")]
-    pub type __c = crate::System::TimeZoneInfo___c;
-    #[cfg(feature = "System+TimeZoneInfo+__c__DisplayClass16_0")]
-    pub type __c__DisplayClass16_0 = crate::System::TimeZoneInfo___c__DisplayClass16_0;
     pub fn CheckIsDst(
         startTime: crate::System::DateTime,
         _cordl_time: crate::System::DateTime,

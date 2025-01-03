@@ -30,8 +30,6 @@ for crate::UnityEngine::UIElements::UIR::VectorImageRenderInfoPool {
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+VectorImageRenderInfoPool")]
 impl crate::UnityEngine::UIElements::UIR::VectorImageRenderInfoPool {
-    #[cfg(feature = "UnityEngine+UIElements+UIR+VectorImageRenderInfoPool+__c")]
-    pub type __c = crate::UnityEngine::UIElements::UIR::VectorImageRenderInfoPool___c;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

@@ -38,8 +38,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::BaseRuntimePanel {
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseRuntimePanel")]
 impl crate::UnityEngine::UIElements::BaseRuntimePanel {
-    #[cfg(feature = "UnityEngine+UIElements+BaseRuntimePanel+__c")]
-    pub type __c = crate::UnityEngine::UIElements::BaseRuntimePanel___c;
     pub fn AssignPanelToComponents(
         &mut self,
         panel: quest_hook::libil2cpp::Gc<

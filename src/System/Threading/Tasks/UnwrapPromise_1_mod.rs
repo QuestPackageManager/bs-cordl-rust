@@ -31,8 +31,6 @@ for crate::System::Threading::Tasks::UnwrapPromise_1<TResult> {
 impl<
     TResult: quest_hook::libil2cpp::Type,
 > crate::System::Threading::Tasks::UnwrapPromise_1<TResult> {
-    #[cfg(feature = "System+Threading+Tasks+UnwrapPromise_1+__c")]
-    pub type __c = crate::System::Threading::Tasks::UnwrapPromise_1___c<TResult>;
     pub fn Invoke(
         &mut self,
         completingTask: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,

@@ -25,10 +25,6 @@ impl std::ops::DerefMut for crate::UnityEngine::InputSystem::Utilities::StringHe
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+StringHelpers")]
 impl crate::UnityEngine::InputSystem::Utilities::StringHelpers {
-    #[cfg(feature = "UnityEngine+InputSystem+Utilities+StringHelpers+_Split_d__9")]
-    pub type _Split_d__9 = crate::UnityEngine::InputSystem::Utilities::StringHelpers__Split_d__9;
-    #[cfg(feature = "UnityEngine+InputSystem+Utilities+StringHelpers+_Tokenize_d__8")]
-    pub type _Tokenize_d__8 = crate::UnityEngine::InputSystem::Utilities::StringHelpers__Tokenize_d__8;
     pub fn CharacterSeparatedListsHaveAtLeastOneCommonElement(
         firstList: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         secondList: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

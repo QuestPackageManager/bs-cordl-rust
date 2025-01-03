@@ -56,41 +56,6 @@ impl<
     TType: quest_hook::libil2cpp::Type,
     TData: quest_hook::libil2cpp::Type,
 > crate::GlobalNamespace::NetworkPacketSerializer_2<TType, TData> {
-    #[cfg(feature = "NetworkPacketSerializer_2+__c__6_1")]
-    pub type __c__6_1<TPacket: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::NetworkPacketSerializer_2___c__6_1<
-        TType,
-        TData,
-        TPacket,
-    >;
-    #[cfg(feature = "NetworkPacketSerializer_2+__c__DisplayClass10_0")]
-    pub type __c__DisplayClass10_0 = crate::GlobalNamespace::NetworkPacketSerializer_2___c__DisplayClass10_0<
-        TType,
-        TData,
-    >;
-    #[cfg(feature = "NetworkPacketSerializer_2+__c__DisplayClass4_0_1")]
-    pub type __c__DisplayClass4_0_1<TPacket: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::NetworkPacketSerializer_2___c__DisplayClass4_0_1<
-        TType,
-        TData,
-        TPacket,
-    >;
-    #[cfg(feature = "NetworkPacketSerializer_2+__c__DisplayClass5_0_1")]
-    pub type __c__DisplayClass5_0_1<TPacket: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::NetworkPacketSerializer_2___c__DisplayClass5_0_1<
-        TType,
-        TData,
-        TPacket,
-    >;
-    #[cfg(feature = "NetworkPacketSerializer_2+__c__DisplayClass7_0_1")]
-    pub type __c__DisplayClass7_0_1<TPacket: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::NetworkPacketSerializer_2___c__DisplayClass7_0_1<
-        TType,
-        TData,
-        TPacket,
-    >;
-    #[cfg(feature = "NetworkPacketSerializer_2+__c__DisplayClass8_0_1")]
-    pub type __c__DisplayClass8_0_1<TPacket: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::NetworkPacketSerializer_2___c__DisplayClass8_0_1<
-        TType,
-        TData,
-        TPacket,
-    >;
     pub fn CopyFrom(
         &mut self,
         other: quest_hook::libil2cpp::Gc<

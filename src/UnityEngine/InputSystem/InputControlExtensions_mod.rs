@@ -38,10 +38,6 @@ impl crate::UnityEngine::InputSystem::InputControlExtensions {
         feature = "UnityEngine+InputSystem+InputControlExtensions+InputEventControlEnumerator"
     )]
     pub type InputEventControlEnumerator = crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlEnumerator;
-    #[cfg(
-        feature = "UnityEngine+InputSystem+InputControlExtensions+_GetAllButtonPresses_d__43"
-    )]
-    pub type _GetAllButtonPresses_d__43 = crate::UnityEngine::InputSystem::InputControlExtensions__GetAllButtonPresses_d__43;
     pub fn AccumulateValueInEvent_InputControl_1_Il2CppObject_InputEventPtr0(
         control: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputControl_1<f32>,

@@ -141,12 +141,6 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
     pub type HEU_AssetType = crate::HoudiniEngineUnity::HEU_HoudiniAsset_HEU_AssetType;
     #[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+UpdateUIDelegate")]
     pub type UpdateUIDelegate = crate::HoudiniEngineUnity::HEU_HoudiniAsset_UpdateUIDelegate;
-    #[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+__c")]
-    pub type __c = crate::HoudiniEngineUnity::HEU_HoudiniAsset___c;
-    #[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+__c__DisplayClass281_0")]
-    pub type __c__DisplayClass281_0 = crate::HoudiniEngineUnity::HEU_HoudiniAsset___c__DisplayClass281_0;
-    #[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+__c__DisplayClass365_0")]
-    pub type __c__DisplayClass365_0 = crate::HoudiniEngineUnity::HEU_HoudiniAsset___c__DisplayClass365_0;
     pub fn AddAttributeStore(
         &mut self,
         attributeStore: quest_hook::libil2cpp::Gc<

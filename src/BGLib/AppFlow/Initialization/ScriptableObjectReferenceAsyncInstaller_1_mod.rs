@@ -43,12 +43,6 @@ for crate::BGLib::AppFlow::Initialization::ScriptableObjectReferenceAsyncInstall
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::BGLib::AppFlow::Initialization::ScriptableObjectReferenceAsyncInstaller_1<T> {
-    #[cfg(
-        feature = "BGLib+AppFlow+Initialization+ScriptableObjectReferenceAsyncInstaller_1+_LoadResourcesBeforeInstallAsync_d__4"
-    )]
-    pub type _LoadResourcesBeforeInstallAsync_d__4 = crate::BGLib::AppFlow::Initialization::ScriptableObjectReferenceAsyncInstaller_1__LoadResourcesBeforeInstallAsync_d__4<
-        T,
-    >;
     pub fn InstallBindings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>

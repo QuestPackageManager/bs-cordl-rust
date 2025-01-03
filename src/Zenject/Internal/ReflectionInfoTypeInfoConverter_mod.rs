@@ -25,28 +25,6 @@ impl std::ops::DerefMut for crate::Zenject::Internal::ReflectionInfoTypeInfoConv
 }
 #[cfg(feature = "Zenject+Internal+ReflectionInfoTypeInfoConverter")]
 impl crate::Zenject::Internal::ReflectionInfoTypeInfoConverter {
-    #[cfg(feature = "Zenject+Internal+ReflectionInfoTypeInfoConverter+__c")]
-    pub type __c = crate::Zenject::Internal::ReflectionInfoTypeInfoConverter___c;
-    #[cfg(
-        feature = "Zenject+Internal+ReflectionInfoTypeInfoConverter+__c__DisplayClass0_0"
-    )]
-    pub type __c__DisplayClass0_0 = crate::Zenject::Internal::ReflectionInfoTypeInfoConverter___c__DisplayClass0_0;
-    #[cfg(
-        feature = "Zenject+Internal+ReflectionInfoTypeInfoConverter+__c__DisplayClass4_0"
-    )]
-    pub type __c__DisplayClass4_0 = crate::Zenject::Internal::ReflectionInfoTypeInfoConverter___c__DisplayClass4_0;
-    #[cfg(
-        feature = "Zenject+Internal+ReflectionInfoTypeInfoConverter+__c__DisplayClass8_0"
-    )]
-    pub type __c__DisplayClass8_0 = crate::Zenject::Internal::ReflectionInfoTypeInfoConverter___c__DisplayClass8_0;
-    #[cfg(
-        feature = "Zenject+Internal+ReflectionInfoTypeInfoConverter+__c__DisplayClass8_1"
-    )]
-    pub type __c__DisplayClass8_1 = crate::Zenject::Internal::ReflectionInfoTypeInfoConverter___c__DisplayClass8_1;
-    #[cfg(
-        feature = "Zenject+Internal+ReflectionInfoTypeInfoConverter+__c__DisplayClass9_0"
-    )]
-    pub type __c__DisplayClass9_0 = crate::Zenject::Internal::ReflectionInfoTypeInfoConverter___c__DisplayClass9_0;
     pub fn ConvertConstructor(
         injectConstructor: quest_hook::libil2cpp::Gc<
             crate::Zenject::Internal::ReflectionTypeInfo_InjectConstructorInfo,

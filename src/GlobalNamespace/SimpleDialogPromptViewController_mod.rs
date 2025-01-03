@@ -34,8 +34,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::SimpleDialogPromptViewContro
 }
 #[cfg(feature = "SimpleDialogPromptViewController")]
 impl crate::GlobalNamespace::SimpleDialogPromptViewController {
-    #[cfg(feature = "SimpleDialogPromptViewController+__c__DisplayClass5_0")]
-    pub type __c__DisplayClass5_0 = crate::GlobalNamespace::SimpleDialogPromptViewController___c__DisplayClass5_0;
     pub fn DidActivate(
         &mut self,
         firstActivation: bool,

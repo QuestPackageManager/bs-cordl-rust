@@ -33,8 +33,6 @@ for crate::UnityEngine::UIElements::ChangeEvent_1<T> {
 }
 #[cfg(feature = "UnityEngine+UIElements+ChangeEvent_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::ChangeEvent_1<T> {
-    #[cfg(feature = "UnityEngine+UIElements+ChangeEvent_1+__c")]
-    pub type __c = crate::UnityEngine::UIElements::ChangeEvent_1___c<T>;
     pub fn GetPooled(
         previousValue: T,
         newValue: T,

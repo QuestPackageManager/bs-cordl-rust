@@ -30,10 +30,6 @@ for crate::UnityEngine::UIElements::KeyboardNavigationManipulator {
 }
 #[cfg(feature = "UnityEngine+UIElements+KeyboardNavigationManipulator")]
 impl crate::UnityEngine::UIElements::KeyboardNavigationManipulator {
-    #[cfg(
-        feature = "UnityEngine+UIElements+KeyboardNavigationManipulator+__c__DisplayClass4_0"
-    )]
-    pub type __c__DisplayClass4_0 = crate::UnityEngine::UIElements::KeyboardNavigationManipulator___c__DisplayClass4_0;
     pub fn Invoke(
         &mut self,
         operation: crate::UnityEngine::UIElements::KeyboardNavigationOperation,

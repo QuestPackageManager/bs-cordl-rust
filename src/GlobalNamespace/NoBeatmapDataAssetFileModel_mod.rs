@@ -27,10 +27,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::NoBeatmapDataAssetFileModel 
 }
 #[cfg(feature = "NoBeatmapDataAssetFileModel")]
 impl crate::GlobalNamespace::NoBeatmapDataAssetFileModel {
-    #[cfg(
-        feature = "NoBeatmapDataAssetFileModel+_GetAssetBundleFileForBeatmapLevelAsync_d__3"
-    )]
-    pub type _GetAssetBundleFileForBeatmapLevelAsync_d__3 = crate::GlobalNamespace::NoBeatmapDataAssetFileModel__GetAssetBundleFileForBeatmapLevelAsync_d__3;
     pub fn GetAssetBundleFileForBeatmapLevelAsync(
         &mut self,
         beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,

@@ -26,8 +26,6 @@ for crate::UnityEngine::UIElements::UxmlLongAttributeDescription {
 }
 #[cfg(feature = "UnityEngine+UIElements+UxmlLongAttributeDescription")]
 impl crate::UnityEngine::UIElements::UxmlLongAttributeDescription {
-    #[cfg(feature = "UnityEngine+UIElements+UxmlLongAttributeDescription+__c")]
-    pub type __c = crate::UnityEngine::UIElements::UxmlLongAttributeDescription___c;
     pub fn ConvertValueToLong(
         v: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         defaultValue: i64,

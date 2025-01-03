@@ -24,8 +24,6 @@ impl std::ops::DerefMut for crate::System::Dynamic::Utils::TypeUtils {
 }
 #[cfg(feature = "System+Dynamic+Utils+TypeUtils")]
 impl crate::System::Dynamic::Utils::TypeUtils {
-    #[cfg(feature = "System+Dynamic+Utils+TypeUtils+__c")]
-    pub type __c = crate::System::Dynamic::Utils::TypeUtils___c;
     pub fn AreEquivalent(
         t1: quest_hook::libil2cpp::Gc<crate::System::Type>,
         t2: quest_hook::libil2cpp::Gc<crate::System::Type>,

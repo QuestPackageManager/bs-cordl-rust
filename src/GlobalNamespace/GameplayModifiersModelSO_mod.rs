@@ -47,8 +47,6 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO {
     pub const kMaxPossibleMultiplier: f32 = 1.21f32;
     #[cfg(feature = "GameplayModifiersModelSO+GameplayModifierBoolGetter")]
     pub type GameplayModifierBoolGetter = crate::GlobalNamespace::GameplayModifiersModelSO_GameplayModifierBoolGetter;
-    #[cfg(feature = "GameplayModifiersModelSO+__c")]
-    pub type __c = crate::GlobalNamespace::GameplayModifiersModelSO___c;
     pub fn CreateGameplayModifiers(
         &mut self,
         valueGetter: quest_hook::libil2cpp::Gc<

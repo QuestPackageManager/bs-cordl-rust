@@ -95,14 +95,6 @@ impl<
     TSerializable,
     TDeltaSerializable,
 > {
-    #[cfg(feature = "MultiplayerSyncStateManager_5+__c")]
-    pub type __c = crate::GlobalNamespace::MultiplayerSyncStateManager_5___c<
-        TStateTable,
-        TType,
-        TState,
-        TSerializable,
-        TDeltaSerializable,
-    >;
     pub fn ClearBufferedStates(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>

@@ -32,8 +32,6 @@ impl crate::System::DateTimeParse {
     pub type MatchNumberDelegate = crate::System::DateTimeParse_MatchNumberDelegate;
     #[cfg(feature = "System+DateTimeParse+TM")]
     pub type TM = crate::System::DateTimeParse_TM;
-    #[cfg(feature = "System+DateTimeParse+__c")]
-    pub type __c = crate::System::DateTimeParse___c;
     pub fn AdjustHour(
         hour: quest_hook::libil2cpp::ByRefMut<i32>,
         timeMark: crate::System::DateTimeParse_TM,

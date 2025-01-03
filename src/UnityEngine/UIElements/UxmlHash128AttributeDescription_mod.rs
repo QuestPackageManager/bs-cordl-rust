@@ -31,8 +31,6 @@ for crate::UnityEngine::UIElements::UxmlHash128AttributeDescription {
 }
 #[cfg(feature = "UnityEngine+UIElements+UxmlHash128AttributeDescription")]
 impl crate::UnityEngine::UIElements::UxmlHash128AttributeDescription {
-    #[cfg(feature = "UnityEngine+UIElements+UxmlHash128AttributeDescription+__c")]
-    pub type __c = crate::UnityEngine::UIElements::UxmlHash128AttributeDescription___c;
     pub fn GetValueFromBag(
         &mut self,
         bag: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IUxmlAttributes>,

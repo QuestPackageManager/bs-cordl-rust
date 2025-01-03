@@ -30,10 +30,6 @@ impl std::ops::DerefMut for crate::Zenject::ConventionBindInfo {
 }
 #[cfg(feature = "Zenject+ConventionBindInfo")]
 impl crate::Zenject::ConventionBindInfo {
-    #[cfg(feature = "Zenject+ConventionBindInfo+__c__DisplayClass6_0")]
-    pub type __c__DisplayClass6_0 = crate::Zenject::ConventionBindInfo___c__DisplayClass6_0;
-    #[cfg(feature = "Zenject+ConventionBindInfo+__c__DisplayClass7_0")]
-    pub type __c__DisplayClass7_0 = crate::Zenject::ConventionBindInfo___c__DisplayClass7_0;
     pub fn AddAssemblyFilter(
         &mut self,
         predicate: quest_hook::libil2cpp::Gc<

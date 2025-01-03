@@ -31,8 +31,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::SongTimeSyncedVideoPlayer {
 }
 #[cfg(feature = "SongTimeSyncedVideoPlayer")]
 impl crate::GlobalNamespace::SongTimeSyncedVideoPlayer {
-    #[cfg(feature = "SongTimeSyncedVideoPlayer+_WaitForDependenciesAndPlay_d__20")]
-    pub type _WaitForDependenciesAndPlay_d__20 = crate::GlobalNamespace::SongTimeSyncedVideoPlayer__WaitForDependenciesAndPlay_d__20;
     pub fn ColorWasSet(
         &mut self,
         color: crate::UnityEngine::Color,

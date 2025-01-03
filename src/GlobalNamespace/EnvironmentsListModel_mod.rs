@@ -37,8 +37,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::EnvironmentsListModel {
 }
 #[cfg(feature = "EnvironmentsListModel")]
 impl crate::GlobalNamespace::EnvironmentsListModel {
-    #[cfg(feature = "EnvironmentsListModel+__c")]
-    pub type __c = crate::GlobalNamespace::EnvironmentsListModel___c;
     pub fn CreateFromAddressables() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentsListModel>,
     > {

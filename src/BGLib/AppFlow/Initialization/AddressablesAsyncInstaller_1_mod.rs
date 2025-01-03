@@ -33,12 +33,6 @@ for crate::BGLib::AppFlow::Initialization::AddressablesAsyncInstaller_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::BGLib::AppFlow::Initialization::AddressablesAsyncInstaller_1<T> {
-    #[cfg(
-        feature = "BGLib+AppFlow+Initialization+AddressablesAsyncInstaller_1+_LoadResourcesBeforeInstallAsync_d__2"
-    )]
-    pub type _LoadResourcesBeforeInstallAsync_d__2 = crate::BGLib::AppFlow::Initialization::AddressablesAsyncInstaller_1__LoadResourcesBeforeInstallAsync_d__2<
-        T,
-    >;
     pub fn GetLocations(
         runtimeKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<

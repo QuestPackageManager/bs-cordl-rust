@@ -66,10 +66,6 @@ impl crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData
         feature = "UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogData+CompactLocation"
     )]
     pub type CompactLocation = crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData_CompactLocation;
-    #[cfg(
-        feature = "UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogData+__c"
-    )]
-    pub type __c = crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData___c;
     pub fn CleanData(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

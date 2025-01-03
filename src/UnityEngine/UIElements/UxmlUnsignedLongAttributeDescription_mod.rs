@@ -27,8 +27,6 @@ for crate::UnityEngine::UIElements::UxmlUnsignedLongAttributeDescription {
 }
 #[cfg(feature = "UnityEngine+UIElements+UxmlUnsignedLongAttributeDescription")]
 impl crate::UnityEngine::UIElements::UxmlUnsignedLongAttributeDescription {
-    #[cfg(feature = "UnityEngine+UIElements+UxmlUnsignedLongAttributeDescription+__c")]
-    pub type __c = crate::UnityEngine::UIElements::UxmlUnsignedLongAttributeDescription___c;
     pub fn ConvertValueToUlong(
         v: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         defaultValue: u64,

@@ -35,8 +35,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::PS5AppInit {
 }
 #[cfg(feature = "PS5AppInit")]
 impl crate::GlobalNamespace::PS5AppInit {
-    #[cfg(feature = "PS5AppInit+_PreloadAsync_d__10")]
-    pub type _PreloadAsync_d__10 = crate::GlobalNamespace::PS5AppInit__PreloadAsync_d__10;
     pub fn AppStartAndMultiSceneEditorSetup(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

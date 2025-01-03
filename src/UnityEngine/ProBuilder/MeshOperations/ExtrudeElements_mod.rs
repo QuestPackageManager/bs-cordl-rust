@@ -27,8 +27,6 @@ for crate::UnityEngine::ProBuilder::MeshOperations::ExtrudeElements {
 }
 #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+ExtrudeElements")]
 impl crate::UnityEngine::ProBuilder::MeshOperations::ExtrudeElements {
-    #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+ExtrudeElements+__c")]
-    pub type __c = crate::UnityEngine::ProBuilder::MeshOperations::ExtrudeElements___c;
     pub fn DetachFaces_ProBuilderMesh_IEnumerable_1_0(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         faces: quest_hook::libil2cpp::Gc<

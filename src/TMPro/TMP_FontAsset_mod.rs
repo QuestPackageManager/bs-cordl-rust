@@ -111,8 +111,6 @@ impl std::ops::DerefMut for crate::TMPro::TMP_FontAsset {
 }
 #[cfg(feature = "TMPro+TMP_FontAsset")]
 impl crate::TMPro::TMP_FontAsset {
-    #[cfg(feature = "TMPro+TMP_FontAsset+__c")]
-    pub type __c = crate::TMPro::TMP_FontAsset___c;
     pub fn AddCharacterToLookupCache(
         &mut self,
         unicode: u32,

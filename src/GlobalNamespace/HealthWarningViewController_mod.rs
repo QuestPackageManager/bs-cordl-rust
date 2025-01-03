@@ -34,8 +34,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::HealthWarningViewController 
 }
 #[cfg(feature = "HealthWarningViewController")]
 impl crate::GlobalNamespace::HealthWarningViewController {
-    #[cfg(feature = "HealthWarningViewController+_DismissHealthAndSafety_d__15")]
-    pub type _DismissHealthAndSafety_d__15 = crate::GlobalNamespace::HealthWarningViewController__DismissHealthAndSafety_d__15;
     pub fn DidActivate(
         &mut self,
         firstActivation: bool,

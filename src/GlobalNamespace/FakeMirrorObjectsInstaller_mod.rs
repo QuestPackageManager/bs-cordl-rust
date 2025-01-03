@@ -32,8 +32,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::FakeMirrorObjectsInstaller {
 }
 #[cfg(feature = "FakeMirrorObjectsInstaller")]
 impl crate::GlobalNamespace::FakeMirrorObjectsInstaller {
-    #[cfg(feature = "FakeMirrorObjectsInstaller+__c")]
-    pub type __c = crate::GlobalNamespace::FakeMirrorObjectsInstaller___c;
     pub fn InstallBindings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

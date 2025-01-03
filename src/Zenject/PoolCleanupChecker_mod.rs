@@ -30,8 +30,6 @@ impl std::ops::DerefMut for crate::Zenject::PoolCleanupChecker {
 }
 #[cfg(feature = "Zenject+PoolCleanupChecker")]
 impl crate::Zenject::PoolCleanupChecker {
-    #[cfg(feature = "Zenject+PoolCleanupChecker+__c")]
-    pub type __c = crate::Zenject::PoolCleanupChecker___c;
     pub fn LateDispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

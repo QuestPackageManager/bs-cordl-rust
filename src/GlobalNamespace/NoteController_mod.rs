@@ -54,8 +54,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::NoteController {
 }
 #[cfg(feature = "NoteController")]
 impl crate::GlobalNamespace::NoteController {
-    #[cfg(feature = "NoteController+_DissolveCoroutine_d__69")]
-    pub type _DissolveCoroutine_d__69 = crate::GlobalNamespace::NoteController__DissolveCoroutine_d__69;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

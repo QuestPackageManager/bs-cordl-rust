@@ -31,8 +31,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::EndOfLifeNoticeViewControlle
 }
 #[cfg(feature = "EndOfLifeNoticeViewController")]
 impl crate::GlobalNamespace::EndOfLifeNoticeViewController {
-    #[cfg(feature = "EndOfLifeNoticeViewController+_EnableOkButton_d__10")]
-    pub type _EnableOkButton_d__10 = crate::GlobalNamespace::EndOfLifeNoticeViewController__EnableOkButton_d__10;
     pub fn DidActivate(
         &mut self,
         firstActivation: bool,

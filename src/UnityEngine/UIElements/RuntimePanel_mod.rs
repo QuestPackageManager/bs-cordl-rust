@@ -25,8 +25,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::RuntimePanel {
 }
 #[cfg(feature = "UnityEngine+UIElements+RuntimePanel")]
 impl crate::UnityEngine::UIElements::RuntimePanel {
-    #[cfg(feature = "UnityEngine+UIElements+RuntimePanel+__c")]
-    pub type __c = crate::UnityEngine::UIElements::RuntimePanel___c;
     pub fn Create(
         ownerObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
     ) -> quest_hook::libil2cpp::Result<

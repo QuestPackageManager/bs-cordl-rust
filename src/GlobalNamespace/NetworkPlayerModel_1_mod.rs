@@ -73,24 +73,6 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::NetworkPlayerModel_
     pub type StartClientPartyConfig = crate::GlobalNamespace::NetworkPlayerModel_1_StartClientPartyConfig<
         T,
     >;
-    #[cfg(feature = "NetworkPlayerModel_1+_GetOtherPlayers_d__58")]
-    pub type _GetOtherPlayers_d__58 = crate::GlobalNamespace::NetworkPlayerModel_1__GetOtherPlayers_d__58<
-        T,
-    >;
-    #[cfg(feature = "NetworkPlayerModel_1+_GetPartyPlayers_d__57")]
-    pub type _GetPartyPlayers_d__57 = crate::GlobalNamespace::NetworkPlayerModel_1__GetPartyPlayers_d__57<
-        T,
-    >;
-    #[cfg(feature = "NetworkPlayerModel_1+_InitAuthenticationTokenProvider_d__56")]
-    pub type _InitAuthenticationTokenProvider_d__56 = crate::GlobalNamespace::NetworkPlayerModel_1__InitAuthenticationTokenProvider_d__56<
-        T,
-    >;
-    #[cfg(feature = "NetworkPlayerModel_1+__c")]
-    pub type __c = crate::GlobalNamespace::NetworkPlayerModel_1___c<T>;
-    #[cfg(feature = "NetworkPlayerModel_1+__c__DisplayClass59_0")]
-    pub type __c__DisplayClass59_0 = crate::GlobalNamespace::NetworkPlayerModel_1___c__DisplayClass59_0<
-        T,
-    >;
     pub fn Connected(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>

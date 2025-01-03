@@ -41,12 +41,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::DebugConsoleController {
 impl crate::GlobalNamespace::DebugConsoleController {
     #[cfg(feature = "DebugConsoleController+ConsoleMessage")]
     pub type ConsoleMessage = crate::GlobalNamespace::DebugConsoleController_ConsoleMessage;
-    #[cfg(feature = "DebugConsoleController+_ExecuteCommandsAsync_d__11")]
-    pub type _ExecuteCommandsAsync_d__11 = crate::GlobalNamespace::DebugConsoleController__ExecuteCommandsAsync_d__11;
-    #[cfg(feature = "DebugConsoleController+_ExecuteCommands_d__10")]
-    pub type _ExecuteCommands_d__10 = crate::GlobalNamespace::DebugConsoleController__ExecuteCommands_d__10;
-    #[cfg(feature = "DebugConsoleController+_TryExecuteCommand_d__13")]
-    pub type _TryExecuteCommand_d__13 = crate::GlobalNamespace::DebugConsoleController__TryExecuteCommand_d__13;
     pub fn CheckCommand(
         &mut self,
         command: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ConsoleCommandBase>,

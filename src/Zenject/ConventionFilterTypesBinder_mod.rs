@@ -24,28 +24,6 @@ impl std::ops::DerefMut for crate::Zenject::ConventionFilterTypesBinder {
 }
 #[cfg(feature = "Zenject+ConventionFilterTypesBinder")]
 impl crate::Zenject::ConventionFilterTypesBinder {
-    #[cfg(feature = "Zenject+ConventionFilterTypesBinder+__c__DisplayClass13_0")]
-    pub type __c__DisplayClass13_0 = crate::Zenject::ConventionFilterTypesBinder___c__DisplayClass13_0;
-    #[cfg(feature = "Zenject+ConventionFilterTypesBinder+__c__DisplayClass13_1")]
-    pub type __c__DisplayClass13_1 = crate::Zenject::ConventionFilterTypesBinder___c__DisplayClass13_1;
-    #[cfg(feature = "Zenject+ConventionFilterTypesBinder+__c__DisplayClass14_0")]
-    pub type __c__DisplayClass14_0 = crate::Zenject::ConventionFilterTypesBinder___c__DisplayClass14_0;
-    #[cfg(feature = "Zenject+ConventionFilterTypesBinder+__c__DisplayClass15_0")]
-    pub type __c__DisplayClass15_0 = crate::Zenject::ConventionFilterTypesBinder___c__DisplayClass15_0;
-    #[cfg(feature = "Zenject+ConventionFilterTypesBinder+__c__DisplayClass18_0")]
-    pub type __c__DisplayClass18_0 = crate::Zenject::ConventionFilterTypesBinder___c__DisplayClass18_0;
-    #[cfg(feature = "Zenject+ConventionFilterTypesBinder+__c__DisplayClass2_0")]
-    pub type __c__DisplayClass2_0 = crate::Zenject::ConventionFilterTypesBinder___c__DisplayClass2_0;
-    #[cfg(feature = "Zenject+ConventionFilterTypesBinder+__c__DisplayClass4_0")]
-    pub type __c__DisplayClass4_0 = crate::Zenject::ConventionFilterTypesBinder___c__DisplayClass4_0;
-    #[cfg(feature = "Zenject+ConventionFilterTypesBinder+__c__DisplayClass6_0")]
-    pub type __c__DisplayClass6_0 = crate::Zenject::ConventionFilterTypesBinder___c__DisplayClass6_0;
-    #[cfg(feature = "Zenject+ConventionFilterTypesBinder+__c__DisplayClass8_0")]
-    pub type __c__DisplayClass8_0 = crate::Zenject::ConventionFilterTypesBinder___c__DisplayClass8_0;
-    #[cfg(feature = "Zenject+ConventionFilterTypesBinder+__c__DisplayClass9_0_1")]
-    pub type __c__DisplayClass9_0_1<T: quest_hook::libil2cpp::Type> = crate::Zenject::ConventionFilterTypesBinder___c__DisplayClass9_0_1<
-        T,
-    >;
     pub fn DerivingFromOrEqual_0<T>(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

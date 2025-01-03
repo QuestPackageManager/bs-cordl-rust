@@ -31,8 +31,6 @@ impl crate::GlobalNamespace::AlphabetScrollbarInfoBeatmapLevelHelper {
     pub const kLastAlphabet: &'static str = "Z";
     pub const kMaxCharactersCount: i32 = 28i32;
     pub const kNonAlphabetChar: char = '#';
-    #[cfg(feature = "AlphabetScrollbarInfoBeatmapLevelHelper+__c")]
-    pub type __c = crate::GlobalNamespace::AlphabetScrollbarInfoBeatmapLevelHelper___c;
     pub fn CreateData(
         beatmapLevels: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IReadOnlyList_1<

@@ -24,10 +24,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::SortExtensions {
 }
 #[cfg(feature = "SortExtensions")]
 impl crate::GlobalNamespace::SortExtensions {
-    #[cfg(feature = "SortExtensions+__c__DisplayClass1_0_1")]
-    pub type __c__DisplayClass1_0_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::SortExtensions___c__DisplayClass1_0_1<
-        T,
-    >;
     pub fn InsertSorted<T>(
         list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
         item: T,

@@ -48,14 +48,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::HealthWarningFlowCoordinator
 impl crate::GlobalNamespace::HealthWarningFlowCoordinator {
     #[cfg(feature = "HealthWarningFlowCoordinator+InitData")]
     pub type InitData = crate::GlobalNamespace::HealthWarningFlowCoordinator_InitData;
-    #[cfg(feature = "HealthWarningFlowCoordinator+_GoToNextScene_d__38")]
-    pub type _GoToNextScene_d__38 = crate::GlobalNamespace::HealthWarningFlowCoordinator__GoToNextScene_d__38;
-    #[cfg(
-        feature = "HealthWarningFlowCoordinator+_HandleSelectLanguageViewControllerDidPressContinueButtonAsync_d__24"
-    )]
-    pub type _HandleSelectLanguageViewControllerDidPressContinueButtonAsync_d__24 = crate::GlobalNamespace::HealthWarningFlowCoordinator__HandleSelectLanguageViewControllerDidPressContinueButtonAsync_d__24;
-    #[cfg(feature = "HealthWarningFlowCoordinator+_WaitForUserAgeCategory_d__31")]
-    pub type _WaitForUserAgeCategory_d__31 = crate::GlobalNamespace::HealthWarningFlowCoordinator__WaitForUserAgeCategory_d__31;
     pub fn CheckPlayerSensitivityFlagAndContinueFlow(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

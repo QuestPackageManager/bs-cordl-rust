@@ -32,8 +32,6 @@ impl std::ops::DerefMut for crate::UnityEngine::Timeline::TimeNotificationBehavi
 impl crate::UnityEngine::Timeline::TimeNotificationBehaviour {
     #[cfg(feature = "UnityEngine+Timeline+TimeNotificationBehaviour+NotificationEntry")]
     pub type NotificationEntry = crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry;
-    #[cfg(feature = "UnityEngine+Timeline+TimeNotificationBehaviour+__c")]
-    pub type __c = crate::UnityEngine::Timeline::TimeNotificationBehaviour___c;
     pub fn AddNotification(
         &mut self,
         _cordl_time: f64,

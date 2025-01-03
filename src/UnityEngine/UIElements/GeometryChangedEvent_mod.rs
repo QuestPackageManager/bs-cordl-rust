@@ -31,8 +31,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::GeometryChangedEvent
 }
 #[cfg(feature = "UnityEngine+UIElements+GeometryChangedEvent")]
 impl crate::UnityEngine::UIElements::GeometryChangedEvent {
-    #[cfg(feature = "UnityEngine+UIElements+GeometryChangedEvent+__c")]
-    pub type __c = crate::UnityEngine::UIElements::GeometryChangedEvent___c;
     pub fn GetPooled(
         oldRect: crate::UnityEngine::Rect,
         newRect: crate::UnityEngine::Rect,

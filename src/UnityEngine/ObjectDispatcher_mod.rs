@@ -24,10 +24,7 @@ impl std::ops::DerefMut for crate::UnityEngine::ObjectDispatcher {
     }
 }
 #[cfg(feature = "UnityEngine+ObjectDispatcher")]
-impl crate::UnityEngine::ObjectDispatcher {
-    #[cfg(feature = "UnityEngine+ObjectDispatcher+__c")]
-    pub type __c = crate::UnityEngine::ObjectDispatcher___c;
-}
+impl crate::UnityEngine::ObjectDispatcher {}
 #[cfg(feature = "UnityEngine+ObjectDispatcher")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ObjectDispatcher {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

@@ -26,8 +26,6 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Linq::JsonPath::QueryScanFi
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+QueryScanFilter")]
 impl crate::Newtonsoft::Json::Linq::JsonPath::QueryScanFilter {
-    #[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+QueryScanFilter+_ExecuteFilter_d__2")]
-    pub type _ExecuteFilter_d__2 = crate::Newtonsoft::Json::Linq::JsonPath::QueryScanFilter__ExecuteFilter_d__2;
     pub fn ExecuteFilter(
         &mut self,
         root: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,

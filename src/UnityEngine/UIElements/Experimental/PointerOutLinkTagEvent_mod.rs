@@ -31,8 +31,6 @@ for crate::UnityEngine::UIElements::Experimental::PointerOutLinkTagEvent {
 }
 #[cfg(feature = "UnityEngine+UIElements+Experimental+PointerOutLinkTagEvent")]
 impl crate::UnityEngine::UIElements::Experimental::PointerOutLinkTagEvent {
-    #[cfg(feature = "UnityEngine+UIElements+Experimental+PointerOutLinkTagEvent+__c")]
-    pub type __c = crate::UnityEngine::UIElements::Experimental::PointerOutLinkTagEvent___c;
     pub fn GetPooled(
         evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPointerEvent>,
         linkID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

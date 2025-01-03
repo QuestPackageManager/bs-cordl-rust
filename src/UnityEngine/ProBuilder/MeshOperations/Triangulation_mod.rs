@@ -26,14 +26,6 @@ for crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
 }
 #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+Triangulation")]
 impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
-    #[cfg(
-        feature = "UnityEngine+ProBuilder+MeshOperations+Triangulation+__c__DisplayClass7_0"
-    )]
-    pub type __c__DisplayClass7_0 = crate::UnityEngine::ProBuilder::MeshOperations::Triangulation___c__DisplayClass7_0;
-    #[cfg(
-        feature = "UnityEngine+ProBuilder+MeshOperations+Triangulation+__c__DisplayClass8_0"
-    )]
-    pub type __c__DisplayClass8_0 = crate::UnityEngine::ProBuilder::MeshOperations::Triangulation___c__DisplayClass8_0;
     pub fn SortAndTriangulate(
         points: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector2>,

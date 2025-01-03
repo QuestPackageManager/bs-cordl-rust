@@ -41,8 +41,6 @@ for crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator {
 impl crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator {
     #[cfg(feature = "AvatarSystemSelectionFlowCoordinator+FinishAction")]
     pub type FinishAction = crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator_FinishAction;
-    #[cfg(feature = "AvatarSystemSelectionFlowCoordinator+_Initialize_d__10")]
-    pub type _Initialize_d__10 = crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator__Initialize_d__10;
     pub fn BackButtonWasPressed(
         &mut self,
         topViewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,

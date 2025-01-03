@@ -69,18 +69,6 @@ impl<
 > crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
     TObject,
 > {
-    #[cfg(
-        feature = "UnityEngine+ResourceManagement+AsyncOperations+AsyncOperationBase_1+__c__DisplayClass60_0"
-    )]
-    pub type __c__DisplayClass60_0 = crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1___c__DisplayClass60_0<
-        TObject,
-    >;
-    #[cfg(
-        feature = "UnityEngine+ResourceManagement+AsyncOperations+AsyncOperationBase_1+__c__DisplayClass61_0"
-    )]
-    pub type __c__DisplayClass61_0 = crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1___c__DisplayClass61_0<
-        TObject,
-    >;
     pub fn Complete_Exception__cordl_bool2(
         &mut self,
         result: TObject,

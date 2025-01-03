@@ -28,8 +28,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::NavigationSubmitEven
 }
 #[cfg(feature = "UnityEngine+UIElements+NavigationSubmitEvent")]
 impl crate::UnityEngine::UIElements::NavigationSubmitEvent {
-    #[cfg(feature = "UnityEngine+UIElements+NavigationSubmitEvent+__c")]
-    pub type __c = crate::UnityEngine::UIElements::NavigationSubmitEvent___c;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

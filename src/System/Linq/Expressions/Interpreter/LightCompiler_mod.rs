@@ -43,8 +43,6 @@ for crate::System::Linq::Expressions::Interpreter::LightCompiler {
 impl crate::System::Linq::Expressions::Interpreter::LightCompiler {
     #[cfg(feature = "System+Linq+Expressions+Interpreter+LightCompiler+QuoteVisitor")]
     pub type QuoteVisitor = crate::System::Linq::Expressions::Interpreter::LightCompiler_QuoteVisitor;
-    #[cfg(feature = "System+Linq+Expressions+Interpreter+LightCompiler+__c")]
-    pub type __c = crate::System::Linq::Expressions::Interpreter::LightCompiler___c;
     pub fn CheckRethrow(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -24,10 +24,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::CoroutineHelpers {
 }
 #[cfg(feature = "CoroutineHelpers")]
 impl crate::GlobalNamespace::CoroutineHelpers {
-    #[cfg(feature = "CoroutineHelpers+_ExecuteAfterDelayCoroutine_d__0")]
-    pub type _ExecuteAfterDelayCoroutine_d__0 = crate::GlobalNamespace::CoroutineHelpers__ExecuteAfterDelayCoroutine_d__0;
-    #[cfg(feature = "CoroutineHelpers+_ExecuteAfterFrameEnd_d__1")]
-    pub type _ExecuteAfterFrameEnd_d__1 = crate::GlobalNamespace::CoroutineHelpers__ExecuteAfterFrameEnd_d__1;
     pub fn ExecuteAfterDelayCoroutine(
         action: quest_hook::libil2cpp::Gc<crate::System::Action>,
         timeSeconds: f32,

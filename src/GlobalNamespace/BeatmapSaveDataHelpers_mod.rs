@@ -26,8 +26,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapSaveDataHelpers {
 impl crate::GlobalNamespace::BeatmapSaveDataHelpers {
     #[cfg(feature = "BeatmapSaveDataHelpers+VersionSerializedData")]
     pub type VersionSerializedData = crate::GlobalNamespace::BeatmapSaveDataHelpers_VersionSerializedData;
-    #[cfg(feature = "BeatmapSaveDataHelpers+__c__DisplayClass6_0")]
-    pub type __c__DisplayClass6_0 = crate::GlobalNamespace::BeatmapSaveDataHelpers___c__DisplayClass6_0;
     pub fn GetVersion(
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<

@@ -43,8 +43,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::SimpleLevelStarter {
 }
 #[cfg(feature = "SimpleLevelStarter")]
 impl crate::GlobalNamespace::SimpleLevelStarter {
-    #[cfg(feature = "SimpleLevelStarter+_StartLevel_d__17")]
-    pub type _StartLevel_d__17 = crate::GlobalNamespace::SimpleLevelStarter__StartLevel_d__17;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -34,8 +34,6 @@ for crate::UnityEngine::ProBuilder::MeshOperations::MeshImporter {
 }
 #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+MeshImporter")]
 impl crate::UnityEngine::ProBuilder::MeshOperations::MeshImporter {
-    #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+MeshImporter+__c")]
-    pub type __c = crate::UnityEngine::ProBuilder::MeshOperations::MeshImporter___c;
     pub fn Import_GameObject_MeshImportSettings0(
         &mut self,
         go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,

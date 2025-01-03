@@ -23,8 +23,6 @@ impl std::ops::DerefMut for crate::System::IO::Path {
 }
 #[cfg(feature = "System+IO+Path")]
 impl crate::System::IO::Path {
-    #[cfg(feature = "System+IO+Path+__c")]
-    pub type __c = crate::System::IO::Path___c;
     pub fn CanonicalizePath(
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<

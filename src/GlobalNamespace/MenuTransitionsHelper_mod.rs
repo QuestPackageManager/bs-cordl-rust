@@ -64,18 +64,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::MenuTransitionsHelper {
 }
 #[cfg(feature = "MenuTransitionsHelper")]
 impl crate::GlobalNamespace::MenuTransitionsHelper {
-    #[cfg(feature = "MenuTransitionsHelper+__c")]
-    pub type __c = crate::GlobalNamespace::MenuTransitionsHelper___c;
-    #[cfg(feature = "MenuTransitionsHelper+__c__DisplayClass32_0")]
-    pub type __c__DisplayClass32_0 = crate::GlobalNamespace::MenuTransitionsHelper___c__DisplayClass32_0;
-    #[cfg(feature = "MenuTransitionsHelper+__c__DisplayClass33_0")]
-    pub type __c__DisplayClass33_0 = crate::GlobalNamespace::MenuTransitionsHelper___c__DisplayClass33_0;
-    #[cfg(feature = "MenuTransitionsHelper+__c__DisplayClass34_0")]
-    pub type __c__DisplayClass34_0 = crate::GlobalNamespace::MenuTransitionsHelper___c__DisplayClass34_0;
-    #[cfg(feature = "MenuTransitionsHelper+__c__DisplayClass35_0")]
-    pub type __c__DisplayClass35_0 = crate::GlobalNamespace::MenuTransitionsHelper___c__DisplayClass35_0;
-    #[cfg(feature = "MenuTransitionsHelper+__c__DisplayClass39_0")]
-    pub type __c__DisplayClass39_0 = crate::GlobalNamespace::MenuTransitionsHelper___c__DisplayClass39_0;
     pub fn HandleBeatmapEditorGameSceneDidFinish(
         &mut self,
         beatmapEditorStandardLevelScenesTransitionSetupData: quest_hook::libil2cpp::Gc<

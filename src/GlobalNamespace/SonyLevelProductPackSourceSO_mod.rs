@@ -143,8 +143,6 @@ for crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductPackSource 
 }
 #[cfg(feature = "SonyLevelProductPackSourceSO+LevelProductPackSource")]
 impl crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductPackSource {
-    #[cfg(feature = "SonyLevelProductPackSourceSO+LevelProductPackSource+__c")]
-    pub type __c = crate::GlobalNamespace::LevelProductPackSource_SonyLevelProductPackSourceSO___c;
     pub fn New(
         levelPack: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPackSO>,
         packIndex: i32,

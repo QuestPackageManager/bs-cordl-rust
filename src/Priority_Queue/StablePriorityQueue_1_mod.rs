@@ -30,10 +30,6 @@ for crate::Priority_Queue::StablePriorityQueue_1<T> {
 }
 #[cfg(feature = "Priority_Queue+StablePriorityQueue_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::Priority_Queue::StablePriorityQueue_1<T> {
-    #[cfg(feature = "Priority_Queue+StablePriorityQueue_1+_GetEnumerator_d__22")]
-    pub type _GetEnumerator_d__22 = crate::Priority_Queue::StablePriorityQueue_1__GetEnumerator_d__22<
-        T,
-    >;
     pub fn CascadeDown(
         &mut self,
         node: T,

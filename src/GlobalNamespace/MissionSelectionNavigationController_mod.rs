@@ -31,8 +31,6 @@ for crate::GlobalNamespace::MissionSelectionNavigationController {
 }
 #[cfg(feature = "MissionSelectionNavigationController")]
 impl crate::GlobalNamespace::MissionSelectionNavigationController {
-    #[cfg(feature = "MissionSelectionNavigationController+__c__DisplayClass11_0")]
-    pub type __c__DisplayClass11_0 = crate::GlobalNamespace::MissionSelectionNavigationController___c__DisplayClass11_0;
     pub fn DidActivate(
         &mut self,
         firstActivation: bool,

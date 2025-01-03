@@ -41,8 +41,6 @@ for crate::Internal::Cryptography::Pal::CertificateData {
 impl crate::Internal::Cryptography::Pal::CertificateData {
     #[cfg(feature = "Internal+Cryptography+Pal+CertificateData+AlgorithmIdentifier")]
     pub type AlgorithmIdentifier = crate::Internal::Cryptography::Pal::CertificateData_AlgorithmIdentifier;
-    #[cfg(feature = "Internal+Cryptography+Pal+CertificateData+_ReadReverseRdns_d__21")]
-    pub type _ReadReverseRdns_d__21 = crate::Internal::Cryptography::Pal::CertificateData__ReadReverseRdns_d__21;
     pub fn FindAltNameMatch(
         extensionBytes: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,

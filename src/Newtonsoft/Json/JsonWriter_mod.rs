@@ -40,16 +40,6 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::JsonWriter {
 impl crate::Newtonsoft::Json::JsonWriter {
     #[cfg(feature = "Newtonsoft+Json+JsonWriter+State")]
     pub type State = crate::Newtonsoft::Json::JsonWriter_State;
-    #[cfg(feature = "Newtonsoft+Json+JsonWriter+_AutoCompleteAsync_d__1")]
-    pub type _AutoCompleteAsync_d__1 = crate::Newtonsoft::Json::JsonWriter__AutoCompleteAsync_d__1;
-    #[cfg(feature = "Newtonsoft+Json+JsonWriter+_InternalWriteStartAsync_d__20")]
-    pub type _InternalWriteStartAsync_d__20 = crate::Newtonsoft::Json::JsonWriter__InternalWriteStartAsync_d__20;
-    #[cfg(feature = "Newtonsoft+Json+JsonWriter+_WriteConstructorDateAsync_d__32")]
-    pub type _WriteConstructorDateAsync_d__32 = crate::Newtonsoft::Json::JsonWriter__WriteConstructorDateAsync_d__32;
-    #[cfg(feature = "Newtonsoft+Json+JsonWriter+_WriteTokenAsync_d__30")]
-    pub type _WriteTokenAsync_d__30 = crate::Newtonsoft::Json::JsonWriter__WriteTokenAsync_d__30;
-    #[cfg(feature = "Newtonsoft+Json+JsonWriter+_WriteTokenSyncReadingAsync_d__31")]
-    pub type _WriteTokenSyncReadingAsync_d__31 = crate::Newtonsoft::Json::JsonWriter__WriteTokenSyncReadingAsync_d__31;
     #[cfg(
         feature = "Newtonsoft+Json+JsonWriter+__InternalWriteEndAsync_g__AwaitEnd_11_2_d"
     )]

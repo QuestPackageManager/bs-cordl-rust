@@ -28,8 +28,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::TrailerGameplayManager {
 }
 #[cfg(feature = "TrailerGameplayManager")]
 impl crate::GlobalNamespace::TrailerGameplayManager {
-    #[cfg(feature = "TrailerGameplayManager+_Start_d__4")]
-    pub type _Start_d__4 = crate::GlobalNamespace::TrailerGameplayManager__Start_d__4;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

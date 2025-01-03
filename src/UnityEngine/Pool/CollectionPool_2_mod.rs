@@ -38,8 +38,6 @@ impl<
     TCollection: quest_hook::libil2cpp::Type,
     TItem: quest_hook::libil2cpp::Type,
 > crate::UnityEngine::Pool::CollectionPool_2<TCollection, TItem> {
-    #[cfg(feature = "UnityEngine+Pool+CollectionPool_2+__c")]
-    pub type __c = crate::UnityEngine::Pool::CollectionPool_2___c<TCollection, TItem>;
     pub fn Get_0() -> quest_hook::libil2cpp::Result<TCollection>
     where
         TCollection: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type

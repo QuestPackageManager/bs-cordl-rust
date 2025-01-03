@@ -39,10 +39,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerScoreProvider {
 impl crate::GlobalNamespace::MultiplayerScoreProvider {
     #[cfg(feature = "MultiplayerScoreProvider+RankedPlayer")]
     pub type RankedPlayer = crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer;
-    #[cfg(feature = "MultiplayerScoreProvider+__c")]
-    pub type __c = crate::GlobalNamespace::MultiplayerScoreProvider___c;
-    #[cfg(feature = "MultiplayerScoreProvider+__c__DisplayClass18_0")]
-    pub type __c__DisplayClass18_0 = crate::GlobalNamespace::MultiplayerScoreProvider___c__DisplayClass18_0;
     pub fn GetPositionOfPlayer(
         &mut self,
         userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

@@ -29,8 +29,6 @@ impl crate::UnityEngine::ProBuilder::Smoothing {
     pub const smoothRangeMax: i32 = 24i32;
     pub const smoothRangeMin: i32 = 1i32;
     pub const smoothingGroupNone: i32 = 0i32;
-    #[cfg(feature = "UnityEngine+ProBuilder+Smoothing+__c")]
-    pub type __c = crate::UnityEngine::ProBuilder::Smoothing___c;
     pub fn ApplySmoothingGroups_Il2CppArray1(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         faces: quest_hook::libil2cpp::Gc<

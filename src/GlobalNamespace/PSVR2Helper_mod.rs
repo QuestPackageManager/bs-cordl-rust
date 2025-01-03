@@ -60,10 +60,6 @@ impl crate::GlobalNamespace::PSVR2Helper {
     pub const kRumbleMinimalDuration: f32 = 0.05f32;
     #[cfg(feature = "PSVR2Helper+HeadsetHapticFrequencyLimit")]
     pub type HeadsetHapticFrequencyLimit = crate::GlobalNamespace::PSVR2Helper_HeadsetHapticFrequencyLimit;
-    #[cfg(feature = "PSVR2Helper+_CheckControllerConnectionOnStartup_d__75")]
-    pub type _CheckControllerConnectionOnStartup_d__75 = crate::GlobalNamespace::PSVR2Helper__CheckControllerConnectionOnStartup_d__75;
-    #[cfg(feature = "PSVR2Helper+__c")]
-    pub type __c = crate::GlobalNamespace::PSVR2Helper___c;
     pub fn AddControllerToMap(
         &mut self,
         forNode: crate::UnityEngine::XR::XRNode,

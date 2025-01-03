@@ -36,8 +36,6 @@ impl crate::GlobalNamespace::SelectRegionViewController {
     pub type Region = crate::GlobalNamespace::SelectRegionViewController_Region;
     #[cfg(feature = "SelectRegionViewController+RegionToLocalizationKeyPair")]
     pub type RegionToLocalizationKeyPair = crate::GlobalNamespace::SelectRegionViewController_RegionToLocalizationKeyPair;
-    #[cfg(feature = "SelectRegionViewController+__c")]
-    pub type __c = crate::GlobalNamespace::SelectRegionViewController___c;
     pub fn DidActivate(
         &mut self,
         firstActivation: bool,

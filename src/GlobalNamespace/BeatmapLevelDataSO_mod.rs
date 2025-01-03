@@ -34,10 +34,6 @@ impl crate::GlobalNamespace::BeatmapLevelDataSO {
     pub type DifficultyBeatmap = crate::GlobalNamespace::BeatmapLevelDataSO_DifficultyBeatmap;
     #[cfg(feature = "BeatmapLevelDataSO+DifficultyBeatmapSet")]
     pub type DifficultyBeatmapSet = crate::GlobalNamespace::BeatmapLevelDataSO_DifficultyBeatmapSet;
-    #[cfg(feature = "BeatmapLevelDataSO+__c__DisplayClass22_0")]
-    pub type __c__DisplayClass22_0 = crate::GlobalNamespace::BeatmapLevelDataSO___c__DisplayClass22_0;
-    #[cfg(feature = "BeatmapLevelDataSO+__c__DisplayClass23_0")]
-    pub type __c__DisplayClass23_0 = crate::GlobalNamespace::BeatmapLevelDataSO___c__DisplayClass23_0;
     pub fn ContainsBeatmapData(
         &mut self,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
@@ -677,8 +673,6 @@ for crate::GlobalNamespace::BeatmapLevelDataSO_DifficultyBeatmapSet {
 }
 #[cfg(feature = "BeatmapLevelDataSO+DifficultyBeatmapSet")]
 impl crate::GlobalNamespace::BeatmapLevelDataSO_DifficultyBeatmapSet {
-    #[cfg(feature = "BeatmapLevelDataSO+DifficultyBeatmapSet+__c")]
-    pub type __c = crate::GlobalNamespace::DifficultyBeatmapSet_BeatmapLevelDataSO___c;
     pub fn Add(
         &mut self,
         difficultyBeatmap: quest_hook::libil2cpp::Gc<

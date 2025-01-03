@@ -24,12 +24,6 @@ impl std::ops::DerefMut for crate::BGLib::UnityExtension::AddressablesExtensions
 }
 #[cfg(feature = "BGLib+UnityExtension+AddressablesExtensions")]
 impl crate::BGLib::UnityExtension::AddressablesExtensions {
-    #[cfg(
-        feature = "BGLib+UnityExtension+AddressablesExtensions+__c__DisplayClass3_0_1"
-    )]
-    pub type __c__DisplayClass3_0_1<T: quest_hook::libil2cpp::Type> = crate::BGLib::UnityExtension::AddressablesExtensions___c__DisplayClass3_0_1<
-        T,
-    >;
     pub fn GetAwaiter<T>(
         asyncOperationHandle: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             T,

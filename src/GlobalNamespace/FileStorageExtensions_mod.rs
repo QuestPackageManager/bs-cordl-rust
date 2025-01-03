@@ -25,18 +25,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::FileStorageExtensions {
 #[cfg(feature = "FileStorageExtensions")]
 impl crate::GlobalNamespace::FileStorageExtensions {
     pub const kSizeInBytesUntilDeserializeWarning: i32 = 10000i32;
-    #[cfg(feature = "FileStorageExtensions+_LoadFromJSONFileAsync_d__8_1")]
-    pub type _LoadFromJSONFileAsync_d__8_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::FileStorageExtensions__LoadFromJSONFileAsync_d__8_1<
-        T,
-    >;
-    #[cfg(feature = "FileStorageExtensions+__c__DisplayClass1_0")]
-    pub type __c__DisplayClass1_0 = crate::GlobalNamespace::FileStorageExtensions___c__DisplayClass1_0;
-    #[cfg(feature = "FileStorageExtensions+__c__DisplayClass2_0")]
-    pub type __c__DisplayClass2_0 = crate::GlobalNamespace::FileStorageExtensions___c__DisplayClass2_0;
-    #[cfg(feature = "FileStorageExtensions+__c__DisplayClass3_0")]
-    pub type __c__DisplayClass3_0 = crate::GlobalNamespace::FileStorageExtensions___c__DisplayClass3_0;
-    #[cfg(feature = "FileStorageExtensions+__c__DisplayClass4_0")]
-    pub type __c__DisplayClass4_0 = crate::GlobalNamespace::FileStorageExtensions___c__DisplayClass4_0;
     pub fn DeleteFile(
         fileStorage: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IFileStorage>,
         fileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

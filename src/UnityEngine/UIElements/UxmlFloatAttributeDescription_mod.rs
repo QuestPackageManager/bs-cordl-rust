@@ -26,8 +26,6 @@ for crate::UnityEngine::UIElements::UxmlFloatAttributeDescription {
 }
 #[cfg(feature = "UnityEngine+UIElements+UxmlFloatAttributeDescription")]
 impl crate::UnityEngine::UIElements::UxmlFloatAttributeDescription {
-    #[cfg(feature = "UnityEngine+UIElements+UxmlFloatAttributeDescription+__c")]
-    pub type __c = crate::UnityEngine::UIElements::UxmlFloatAttributeDescription___c;
     pub fn ConvertValueToFloat(
         v: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         defaultValue: f32,

@@ -26,8 +26,6 @@ impl std::ops::DerefMut for crate::System::Threading::Tasks::TaskToApm {
 impl crate::System::Threading::Tasks::TaskToApm {
     #[cfg(feature = "System+Threading+Tasks+TaskToApm+TaskWrapperAsyncResult")]
     pub type TaskWrapperAsyncResult = crate::System::Threading::Tasks::TaskToApm_TaskWrapperAsyncResult;
-    #[cfg(feature = "System+Threading+Tasks+TaskToApm+__c__DisplayClass3_0")]
-    pub type __c__DisplayClass3_0 = crate::System::Threading::Tasks::TaskToApm___c__DisplayClass3_0;
     pub fn Begin(
         task: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
         callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,

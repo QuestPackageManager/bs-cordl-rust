@@ -34,16 +34,6 @@ impl crate::BeatSaber::GameSettings::ControllerProfilesModel {
     pub const kCustomLocalizationKey: &'static str = "CONTROLLER_PROFILES_LABEL_CUSTOM";
     pub const kCustomProfilesCount: i32 = 5i32;
     pub const kDefaultLocalizationKey: &'static str = "CONTROLLER_PROFILES_LABEL_DEFAULT";
-    #[cfg(
-        feature = "BeatSaber+GameSettings+ControllerProfilesModel+_GetBuiltInProfiles_d__21"
-    )]
-    pub type _GetBuiltInProfiles_d__21 = crate::BeatSaber::GameSettings::ControllerProfilesModel__GetBuiltInProfiles_d__21;
-    #[cfg(feature = "BeatSaber+GameSettings+ControllerProfilesModel+_Initialize_d__16")]
-    pub type _Initialize_d__16 = crate::BeatSaber::GameSettings::ControllerProfilesModel__Initialize_d__16;
-    #[cfg(feature = "BeatSaber+GameSettings+ControllerProfilesModel+_LoadAsync_d__17")]
-    pub type _LoadAsync_d__17 = crate::BeatSaber::GameSettings::ControllerProfilesModel__LoadAsync_d__17;
-    #[cfg(feature = "BeatSaber+GameSettings+ControllerProfilesModel+__c")]
-    pub type __c = crate::BeatSaber::GameSettings::ControllerProfilesModel___c;
     pub fn GetBuiltInProfiles(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

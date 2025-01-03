@@ -33,8 +33,6 @@ for crate::UnityEngine::UIElements::Experimental::PointerOverLinkTagEvent {
 }
 #[cfg(feature = "UnityEngine+UIElements+Experimental+PointerOverLinkTagEvent")]
 impl crate::UnityEngine::UIElements::Experimental::PointerOverLinkTagEvent {
-    #[cfg(feature = "UnityEngine+UIElements+Experimental+PointerOverLinkTagEvent+__c")]
-    pub type __c = crate::UnityEngine::UIElements::Experimental::PointerOverLinkTagEvent___c;
     pub fn GetPooled(
         evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPointerEvent>,
         linkID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

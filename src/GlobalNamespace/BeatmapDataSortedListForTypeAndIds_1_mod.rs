@@ -42,10 +42,6 @@ for crate::GlobalNamespace::BeatmapDataSortedListForTypeAndIds_1<TBase> {
 impl<
     TBase: quest_hook::libil2cpp::Type,
 > crate::GlobalNamespace::BeatmapDataSortedListForTypeAndIds_1<TBase> {
-    #[cfg(feature = "BeatmapDataSortedListForTypeAndIds_1+__c")]
-    pub type __c = crate::GlobalNamespace::BeatmapDataSortedListForTypeAndIds_1___c<
-        TBase,
-    >;
     pub fn GetCount<T>(
         &mut self,
         typeIdentifier: i32,

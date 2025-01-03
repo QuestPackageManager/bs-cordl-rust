@@ -498,8 +498,6 @@ for crate::UnityEngine::InputSystem::InputRemoting_ChangeUsageMsg {
 impl crate::UnityEngine::InputSystem::InputRemoting_ChangeUsageMsg {
     #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+ChangeUsageMsg+Data")]
     pub type Data = crate::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting_Data;
-    #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+ChangeUsageMsg+__c")]
-    pub type __c = crate::UnityEngine::InputSystem::ChangeUsageMsg_InputRemoting___c;
     pub fn Create(
         device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
     ) -> quest_hook::libil2cpp::Result<
@@ -714,8 +712,6 @@ impl std::ops::DerefMut for crate::UnityEngine::InputSystem::InputRemoting_NewDe
 impl crate::UnityEngine::InputSystem::InputRemoting_NewDeviceMsg {
     #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewDeviceMsg+Data")]
     pub type Data = crate::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting_Data;
-    #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+NewDeviceMsg+__c")]
-    pub type __c = crate::UnityEngine::InputSystem::NewDeviceMsg_InputRemoting___c;
     pub fn Create(
         device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
     ) -> quest_hook::libil2cpp::Result<

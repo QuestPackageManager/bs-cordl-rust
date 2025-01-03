@@ -32,8 +32,6 @@ impl std::ops::DerefMut for crate::BeatSaber::AvatarCore::AvatarController {
 }
 #[cfg(feature = "BeatSaber+AvatarCore+AvatarController")]
 impl crate::BeatSaber::AvatarCore::AvatarController {
-    #[cfg(feature = "BeatSaber+AvatarCore+AvatarController+_LoadAndDisplayAvatar_d__11")]
-    pub type _LoadAndDisplayAvatar_d__11 = crate::BeatSaber::AvatarCore::AvatarController__LoadAndDisplayAvatar_d__11;
     pub fn LoadAndDisplayAvatar(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

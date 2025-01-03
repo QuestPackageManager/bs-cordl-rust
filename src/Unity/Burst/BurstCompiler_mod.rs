@@ -32,8 +32,6 @@ impl crate::Unity::Burst::BurstCompiler {
     pub type FakeDelegate = crate::Unity::Burst::BurstCompiler_FakeDelegate;
     #[cfg(feature = "Unity+Burst+BurstCompiler+StaticTypeReinitAttribute")]
     pub type StaticTypeReinitAttribute = crate::Unity::Burst::BurstCompiler_StaticTypeReinitAttribute;
-    #[cfg(feature = "Unity+Burst+BurstCompiler+__c")]
-    pub type __c = crate::Unity::Burst::BurstCompiler___c;
     pub fn AotCompilation(
         assemblyFolders: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,

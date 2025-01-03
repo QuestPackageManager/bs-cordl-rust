@@ -34,8 +34,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UI::LayoutGroup {
 }
 #[cfg(feature = "UnityEngine+UI+LayoutGroup")]
 impl crate::UnityEngine::UI::LayoutGroup {
-    #[cfg(feature = "UnityEngine+UI+LayoutGroup+_DelayedSetDirty_d__56")]
-    pub type _DelayedSetDirty_d__56 = crate::UnityEngine::UI::LayoutGroup__DelayedSetDirty_d__56;
     pub fn CalculateLayoutInputHorizontal(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

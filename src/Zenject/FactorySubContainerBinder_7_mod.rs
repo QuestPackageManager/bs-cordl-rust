@@ -91,46 +91,6 @@ impl<
     TParam6,
     TContract,
 > {
-    #[cfg(feature = "Zenject+FactorySubContainerBinder_7+__c__DisplayClass1_0")]
-    pub type __c__DisplayClass1_0 = crate::Zenject::FactorySubContainerBinder_7___c__DisplayClass1_0<
-        TParam1,
-        TParam2,
-        TParam3,
-        TParam4,
-        TParam5,
-        TParam6,
-        TContract,
-    >;
-    #[cfg(feature = "Zenject+FactorySubContainerBinder_7+__c__DisplayClass2_0")]
-    pub type __c__DisplayClass2_0 = crate::Zenject::FactorySubContainerBinder_7___c__DisplayClass2_0<
-        TParam1,
-        TParam2,
-        TParam3,
-        TParam4,
-        TParam5,
-        TParam6,
-        TContract,
-    >;
-    #[cfg(feature = "Zenject+FactorySubContainerBinder_7+__c__DisplayClass3_0")]
-    pub type __c__DisplayClass3_0 = crate::Zenject::FactorySubContainerBinder_7___c__DisplayClass3_0<
-        TParam1,
-        TParam2,
-        TParam3,
-        TParam4,
-        TParam5,
-        TParam6,
-        TContract,
-    >;
-    #[cfg(feature = "Zenject+FactorySubContainerBinder_7+__c__DisplayClass4_0")]
-    pub type __c__DisplayClass4_0 = crate::Zenject::FactorySubContainerBinder_7___c__DisplayClass4_0<
-        TParam1,
-        TParam2,
-        TParam3,
-        TParam4,
-        TParam5,
-        TParam6,
-        TContract,
-    >;
     pub fn ByMethod(
         &mut self,
         installerMethod: quest_hook::libil2cpp::Gc<

@@ -35,8 +35,6 @@ for crate::GlobalNamespace::MultiplayerOtherPlayersScoreDiffTextManager {
 #[cfg(feature = "MultiplayerOtherPlayersScoreDiffTextManager")]
 impl crate::GlobalNamespace::MultiplayerOtherPlayersScoreDiffTextManager {
     pub const kUpdateInterval: f32 = 0.5f32;
-    #[cfg(feature = "MultiplayerOtherPlayersScoreDiffTextManager+__c")]
-    pub type __c = crate::GlobalNamespace::MultiplayerOtherPlayersScoreDiffTextManager___c;
     pub fn HandleStateChanged(
         &mut self,
         newState: crate::GlobalNamespace::MultiplayerController_State,

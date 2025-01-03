@@ -46,10 +46,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::PlatformLeaderboardViewContr
 #[cfg(feature = "PlatformLeaderboardViewController")]
 impl crate::GlobalNamespace::PlatformLeaderboardViewController {
     pub const kMaxLeaderboardResults: i32 = 10i32;
-    #[cfg(feature = "PlatformLeaderboardViewController+_RefreshDelayed_d__33")]
-    pub type _RefreshDelayed_d__33 = crate::GlobalNamespace::PlatformLeaderboardViewController__RefreshDelayed_d__33;
-    #[cfg(feature = "PlatformLeaderboardViewController+_Refresh_d__31")]
-    pub type _Refresh_d__31 = crate::GlobalNamespace::PlatformLeaderboardViewController__Refresh_d__31;
     pub fn ClearContent(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

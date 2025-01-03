@@ -32,8 +32,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::DefaultScenesTransitionsFrom
 }
 #[cfg(feature = "DefaultScenesTransitionsFromInit")]
 impl crate::GlobalNamespace::DefaultScenesTransitionsFromInit {
-    #[cfg(feature = "DefaultScenesTransitionsFromInit+__c__DisplayClass9_0")]
-    pub type __c__DisplayClass9_0 = crate::GlobalNamespace::DefaultScenesTransitionsFromInit___c__DisplayClass9_0;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

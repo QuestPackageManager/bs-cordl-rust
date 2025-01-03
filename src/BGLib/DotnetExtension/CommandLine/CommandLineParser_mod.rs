@@ -27,12 +27,6 @@ for crate::BGLib::DotnetExtension::CommandLine::CommandLineParser {
 #[cfg(feature = "BGLib+DotnetExtension+CommandLine+CommandLineParser")]
 impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParser {
     pub const kArgumentIdentifierPattern: &'static str = "^(?>\\w|-|_)+$";
-    #[cfg(feature = "BGLib+DotnetExtension+CommandLine+CommandLineParser+__c")]
-    pub type __c = crate::BGLib::DotnetExtension::CommandLine::CommandLineParser___c;
-    #[cfg(
-        feature = "BGLib+DotnetExtension+CommandLine+CommandLineParser+__c__DisplayClass7_0"
-    )]
-    pub type __c__DisplayClass7_0 = crate::BGLib::DotnetExtension::CommandLine::CommandLineParser___c__DisplayClass7_0;
     pub fn AddParsedOption(
         parsedOption: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::Dictionary_2<

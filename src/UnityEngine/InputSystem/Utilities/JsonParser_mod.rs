@@ -387,8 +387,6 @@ for crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser+JsonValue")]
 impl crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue {
-    #[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser+JsonValue+__c")]
-    pub type __c = crate::UnityEngine::InputSystem::Utilities::JsonValue_JsonParser___c;
     pub fn Equals_Il2CppObject2(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

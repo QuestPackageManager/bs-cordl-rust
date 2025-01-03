@@ -37,8 +37,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRRuntimeController {
 }
 #[cfg(feature = "OVRRuntimeController")]
 impl crate::GlobalNamespace::OVRRuntimeController {
-    #[cfg(feature = "OVRRuntimeController+_UpdateControllerModel_d__16")]
-    pub type _UpdateControllerModel_d__16 = crate::GlobalNamespace::OVRRuntimeController__UpdateControllerModel_d__16;
     pub fn InputFocusAquired(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

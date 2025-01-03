@@ -27,10 +27,6 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Linq::JArray {
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JArray")]
 impl crate::Newtonsoft::Json::Linq::JArray {
-    #[cfg(feature = "Newtonsoft+Json+Linq+JArray+_LoadAsync_d__2")]
-    pub type _LoadAsync_d__2 = crate::Newtonsoft::Json::Linq::JArray__LoadAsync_d__2;
-    #[cfg(feature = "Newtonsoft+Json+Linq+JArray+_WriteToAsync_d__0")]
-    pub type _WriteToAsync_d__0 = crate::Newtonsoft::Json::Linq::JArray__WriteToAsync_d__0;
     pub fn Add(
         &mut self,
         item: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,

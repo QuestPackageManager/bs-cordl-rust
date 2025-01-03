@@ -30,10 +30,6 @@ for crate::UnityEngine::InputSystem::Android::LowLevel::AndroidDeviceCapabilitie
 }
 #[cfg(feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidDeviceCapabilities")]
 impl crate::UnityEngine::InputSystem::Android::LowLevel::AndroidDeviceCapabilities {
-    #[cfg(
-        feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidDeviceCapabilities+__c"
-    )]
-    pub type __c = crate::UnityEngine::InputSystem::Android::LowLevel::AndroidDeviceCapabilities___c;
     pub fn FromJson(
         json: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<

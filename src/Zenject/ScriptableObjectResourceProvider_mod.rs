@@ -36,8 +36,6 @@ impl std::ops::DerefMut for crate::Zenject::ScriptableObjectResourceProvider {
 }
 #[cfg(feature = "Zenject+ScriptableObjectResourceProvider")]
 impl crate::Zenject::ScriptableObjectResourceProvider {
-    #[cfg(feature = "Zenject+ScriptableObjectResourceProvider+__c__DisplayClass13_0")]
-    pub type __c__DisplayClass13_0 = crate::Zenject::ScriptableObjectResourceProvider___c__DisplayClass13_0;
     pub fn GetAllInstancesWithInjectSplit(
         &mut self,
         context: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,

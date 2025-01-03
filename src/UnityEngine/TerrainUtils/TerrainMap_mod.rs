@@ -30,8 +30,6 @@ impl std::ops::DerefMut for crate::UnityEngine::TerrainUtils::TerrainMap {
 }
 #[cfg(feature = "UnityEngine+TerrainUtils+TerrainMap")]
 impl crate::UnityEngine::TerrainUtils::TerrainMap {
-    #[cfg(feature = "UnityEngine+TerrainUtils+TerrainMap+__c__DisplayClass3_0")]
-    pub type __c__DisplayClass3_0 = crate::UnityEngine::TerrainUtils::TerrainMap___c__DisplayClass3_0;
     pub fn AddTerrainInternal(
         &mut self,
         x: i32,

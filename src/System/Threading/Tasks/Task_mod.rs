@@ -60,8 +60,6 @@ impl crate::System::Threading::Tasks::Task {
     pub type WhenAllPromise_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::Task_WhenAllPromise_1<
         T,
     >;
-    #[cfg(feature = "System+Threading+Tasks+Task+__c")]
-    pub type __c = crate::System::Threading::Tasks::Task___c;
     pub fn AddCompletionAction_ITaskCompletionAction0(
         &mut self,
         action: quest_hook::libil2cpp::Gc<

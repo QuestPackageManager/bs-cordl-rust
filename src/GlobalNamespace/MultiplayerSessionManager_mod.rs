@@ -69,10 +69,6 @@ impl crate::GlobalNamespace::MultiplayerSessionManager {
     pub type MessageType = crate::GlobalNamespace::MultiplayerSessionManager_MessageType;
     #[cfg(feature = "MultiplayerSessionManager+SessionType")]
     pub type SessionType = crate::GlobalNamespace::MultiplayerSessionManager_SessionType;
-    #[cfg(feature = "MultiplayerSessionManager+__c")]
-    pub type __c = crate::GlobalNamespace::MultiplayerSessionManager___c;
-    #[cfg(feature = "MultiplayerSessionManager+__c__DisplayClass98_0")]
-    pub type __c__DisplayClass98_0 = crate::GlobalNamespace::MultiplayerSessionManager___c__DisplayClass98_0;
     pub fn Disconnect(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

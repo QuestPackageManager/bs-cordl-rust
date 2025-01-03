@@ -29,8 +29,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::CustomStyleResolvedE
 }
 #[cfg(feature = "UnityEngine+UIElements+CustomStyleResolvedEvent")]
 impl crate::UnityEngine::UIElements::CustomStyleResolvedEvent {
-    #[cfg(feature = "UnityEngine+UIElements+CustomStyleResolvedEvent+__c")]
-    pub type __c = crate::UnityEngine::UIElements::CustomStyleResolvedEvent___c;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

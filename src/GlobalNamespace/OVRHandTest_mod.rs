@@ -132,8 +132,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRHandTest {
 impl crate::GlobalNamespace::OVRHandTest {
     #[cfg(feature = "OVRHandTest+BoolMonitor")]
     pub type BoolMonitor = crate::GlobalNamespace::OVRHandTest_BoolMonitor;
-    #[cfg(feature = "OVRHandTest+__c")]
-    pub type __c = crate::GlobalNamespace::OVRHandTest___c;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

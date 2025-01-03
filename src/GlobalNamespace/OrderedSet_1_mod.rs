@@ -40,10 +40,6 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OrderedSet_1<T> {
     pub type Node = crate::GlobalNamespace::OrderedSet_1_Node<T>;
     #[cfg(feature = "OrderedSet_1+ProcessOrder")]
     pub type ProcessOrder = crate::GlobalNamespace::OrderedSet_1_ProcessOrder;
-    #[cfg(feature = "OrderedSet_1+_GetEnumerator_d__23")]
-    pub type _GetEnumerator_d__23 = crate::GlobalNamespace::OrderedSet_1__GetEnumerator_d__23<
-        T,
-    >;
     pub fn Add(
         &mut self,
         item: T,

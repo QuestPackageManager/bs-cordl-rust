@@ -121,8 +121,6 @@ impl crate::UnityEngine::UIElements::VisualElement {
     pub type VisualElementScheduledItem_1<ActionType: quest_hook::libil2cpp::Type> = crate::UnityEngine::UIElements::VisualElement_VisualElementScheduledItem_1<
         ActionType,
     >;
-    #[cfg(feature = "UnityEngine+UIElements+VisualElement+__c__DisplayClass492_0")]
-    pub type __c__DisplayClass492_0 = crate::UnityEngine::UIElements::VisualElement___c__DisplayClass492_0;
     pub fn Add(
         &mut self,
         child: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,

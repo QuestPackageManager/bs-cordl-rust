@@ -72,13 +72,6 @@ impl<
         TKey,
         TValue,
     >;
-    #[cfg(
-        feature = "System+Collections+Concurrent+ConcurrentDictionary_2+_GetEnumerator_d__35"
-    )]
-    pub type _GetEnumerator_d__35 = crate::System::Collections::Concurrent::ConcurrentDictionary_2__GetEnumerator_d__35<
-        TKey,
-        TValue,
-    >;
     pub fn AcquireAllLocks(
         &mut self,
         locksAcquired: quest_hook::libil2cpp::ByRefMut<i32>,

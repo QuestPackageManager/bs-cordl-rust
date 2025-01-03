@@ -54,16 +54,6 @@ impl crate::HMUI::ScrollView {
     pub type ScrollType = crate::HMUI::ScrollView_ScrollType;
     #[cfg(feature = "HMUI+ScrollView+ScrollViewDirection")]
     pub type ScrollViewDirection = crate::HMUI::ScrollView_ScrollViewDirection;
-    #[cfg(feature = "HMUI+ScrollView+__c")]
-    pub type __c = crate::HMUI::ScrollView___c;
-    #[cfg(feature = "HMUI+ScrollView+__c__DisplayClass55_0")]
-    pub type __c__DisplayClass55_0 = crate::HMUI::ScrollView___c__DisplayClass55_0;
-    #[cfg(feature = "HMUI+ScrollView+__c__DisplayClass56_0")]
-    pub type __c__DisplayClass56_0 = crate::HMUI::ScrollView___c__DisplayClass56_0;
-    #[cfg(feature = "HMUI+ScrollView+__c__DisplayClass61_0")]
-    pub type __c__DisplayClass61_0 = crate::HMUI::ScrollView___c__DisplayClass61_0;
-    #[cfg(feature = "HMUI+ScrollView+__c__DisplayClass61_1")]
-    pub type __c__DisplayClass61_1 = crate::HMUI::ScrollView___c__DisplayClass61_1;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

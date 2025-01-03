@@ -24,60 +24,6 @@ impl std::ops::DerefMut for crate::Zenject::FactoryFromBinder2Extensions {
 }
 #[cfg(feature = "Zenject+FactoryFromBinder2Extensions")]
 impl crate::Zenject::FactoryFromBinder2Extensions {
-    #[cfg(feature = "Zenject+FactoryFromBinder2Extensions+__c__1_3")]
-    pub type __c__1_3<
-        TParam1: quest_hook::libil2cpp::Type,
-        TParam2: quest_hook::libil2cpp::Type,
-        TContract: quest_hook::libil2cpp::Type,
-    > = crate::Zenject::FactoryFromBinder2Extensions___c__1_3<
-        TParam1,
-        TParam2,
-        TContract,
-    >;
-    #[cfg(feature = "Zenject+FactoryFromBinder2Extensions+__c__3_3")]
-    pub type __c__3_3<
-        TParam1: quest_hook::libil2cpp::Type,
-        TParam2: quest_hook::libil2cpp::Type,
-        TContract: quest_hook::libil2cpp::Type,
-    > = crate::Zenject::FactoryFromBinder2Extensions___c__3_3<
-        TParam1,
-        TParam2,
-        TContract,
-    >;
-    #[cfg(feature = "Zenject+FactoryFromBinder2Extensions+__c__5_4")]
-    pub type __c__5_4<
-        TParam1: quest_hook::libil2cpp::Type,
-        TParam2: quest_hook::libil2cpp::Type,
-        TContract: quest_hook::libil2cpp::Type,
-        TMemoryPool: quest_hook::libil2cpp::Type,
-    > = crate::Zenject::FactoryFromBinder2Extensions___c__5_4<
-        TParam1,
-        TParam2,
-        TContract,
-        TMemoryPool,
-    >;
-    #[cfg(feature = "Zenject+FactoryFromBinder2Extensions+__c__DisplayClass0_0_3")]
-    pub type __c__DisplayClass0_0_3<
-        TParam1: quest_hook::libil2cpp::Type,
-        TParam2: quest_hook::libil2cpp::Type,
-        TContract: quest_hook::libil2cpp::Type,
-    > = crate::Zenject::FactoryFromBinder2Extensions___c__DisplayClass0_0_3<
-        TParam1,
-        TParam2,
-        TContract,
-    >;
-    #[cfg(feature = "Zenject+FactoryFromBinder2Extensions+__c__DisplayClass6_0_4")]
-    pub type __c__DisplayClass6_0_4<
-        TParam1: quest_hook::libil2cpp::Type,
-        TParam2: quest_hook::libil2cpp::Type,
-        TContract: quest_hook::libil2cpp::Type,
-        TMemoryPool: quest_hook::libil2cpp::Type,
-    > = crate::Zenject::FactoryFromBinder2Extensions___c__DisplayClass6_0_4<
-        TParam1,
-        TParam2,
-        TContract,
-        TMemoryPool,
-    >;
     pub fn FromIFactory<TParam1, TParam2, TContract>(
         fromBinder: quest_hook::libil2cpp::Gc<
             crate::Zenject::FactoryFromBinder_3<TParam1, TParam2, TContract>,

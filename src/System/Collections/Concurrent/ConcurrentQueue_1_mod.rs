@@ -37,10 +37,6 @@ impl<
     pub type Segment = crate::System::Collections::Concurrent::ConcurrentQueue_1_Segment<
         T,
     >;
-    #[cfg(feature = "System+Collections+Concurrent+ConcurrentQueue_1+_Enumerate_d__28")]
-    pub type _Enumerate_d__28 = crate::System::Collections::Concurrent::ConcurrentQueue_1__Enumerate_d__28<
-        T,
-    >;
     pub fn CopyTo(
         &mut self,
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,

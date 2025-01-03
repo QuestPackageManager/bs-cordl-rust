@@ -48,10 +48,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::GameplayCoreSceneSetupData {
 }
 #[cfg(feature = "GameplayCoreSceneSetupData")]
 impl crate::GlobalNamespace::GameplayCoreSceneSetupData {
-    #[cfg(feature = "GameplayCoreSceneSetupData+_LoadBeatmapLevelData_d__39")]
-    pub type _LoadBeatmapLevelData_d__39 = crate::GlobalNamespace::GameplayCoreSceneSetupData__LoadBeatmapLevelData_d__39;
-    #[cfg(feature = "GameplayCoreSceneSetupData+_LoadTransformedBeatmapDataAsync_d__37")]
-    pub type _LoadTransformedBeatmapDataAsync_d__37 = crate::GlobalNamespace::GameplayCoreSceneSetupData__LoadTransformedBeatmapDataAsync_d__37;
     pub fn ApplyDisableUpdateAlwaysConfiguration(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

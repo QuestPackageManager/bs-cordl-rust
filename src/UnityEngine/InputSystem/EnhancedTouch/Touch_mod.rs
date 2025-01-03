@@ -33,8 +33,6 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Touch {
     pub type FingerAndTouchState = crate::UnityEngine::InputSystem::EnhancedTouch::Touch_FingerAndTouchState;
     #[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch+GlobalState")]
     pub type GlobalState = crate::UnityEngine::InputSystem::EnhancedTouch::Touch_GlobalState;
-    #[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch+__c")]
-    pub type __c = crate::UnityEngine::InputSystem::EnhancedTouch::Touch___c;
     pub fn AddTouchscreen(
         screen: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Touchscreen>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

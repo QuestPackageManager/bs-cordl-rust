@@ -76,10 +76,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::LobbyGameStateController {
 impl crate::GlobalNamespace::LobbyGameStateController {
     pub const kLongTimerMs: i64 = 60000i64;
     pub const kShortTimerMs: i64 = 5000i64;
-    #[cfg(feature = "LobbyGameStateController+__c")]
-    pub type __c = crate::GlobalNamespace::LobbyGameStateController___c;
-    #[cfg(feature = "LobbyGameStateController+__c__DisplayClass98_0")]
-    pub type __c__DisplayClass98_0 = crate::GlobalNamespace::LobbyGameStateController___c__DisplayClass98_0;
     pub fn Activate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

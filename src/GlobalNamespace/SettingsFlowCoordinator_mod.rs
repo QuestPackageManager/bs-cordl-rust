@@ -40,14 +40,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::SettingsFlowCoordinator {
 impl crate::GlobalNamespace::SettingsFlowCoordinator {
     #[cfg(feature = "SettingsFlowCoordinator+FinishAction")]
     pub type FinishAction = crate::GlobalNamespace::SettingsFlowCoordinator_FinishAction;
-    #[cfg(feature = "SettingsFlowCoordinator+_ApplySettingsAsync_d__22")]
-    pub type _ApplySettingsAsync_d__22 = crate::GlobalNamespace::SettingsFlowCoordinator__ApplySettingsAsync_d__22;
-    #[cfg(feature = "SettingsFlowCoordinator+_CancelSettingsAsync_d__23")]
-    pub type _CancelSettingsAsync_d__23 = crate::GlobalNamespace::SettingsFlowCoordinator__CancelSettingsAsync_d__23;
-    #[cfg(
-        feature = "SettingsFlowCoordinator+_HandleSettingsNavigationControllerDidFinishAsync_d__21"
-    )]
-    pub type _HandleSettingsNavigationControllerDidFinishAsync_d__21 = crate::GlobalNamespace::SettingsFlowCoordinator__HandleSettingsNavigationControllerDidFinishAsync_d__21;
     pub fn ApplySettingsAsync(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

@@ -44,10 +44,6 @@ impl crate::GlobalNamespace::OVRSceneLoader {
     pub const sceneLoadDataName: &'static str = "SceneLoadData.txt";
     #[cfg(feature = "OVRSceneLoader+SceneInfo")]
     pub type SceneInfo = crate::GlobalNamespace::OVRSceneLoader_SceneInfo;
-    #[cfg(feature = "OVRSceneLoader+_DelayCanvasPosUpdate_d__24")]
-    pub type _DelayCanvasPosUpdate_d__24 = crate::GlobalNamespace::OVRSceneLoader__DelayCanvasPosUpdate_d__24;
-    #[cfg(feature = "OVRSceneLoader+_onCheckSceneCoroutine_d__25")]
-    pub type _onCheckSceneCoroutine_d__25 = crate::GlobalNamespace::OVRSceneLoader__onCheckSceneCoroutine_d__25;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

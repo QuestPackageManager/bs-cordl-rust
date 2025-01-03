@@ -46,14 +46,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::LevelCollectionViewControlle
 }
 #[cfg(feature = "LevelCollectionViewController")]
 impl crate::GlobalNamespace::LevelCollectionViewController {
-    #[cfg(
-        feature = "LevelCollectionViewController+_SongPlayerCrossfadeToLevelAsync_d__26"
-    )]
-    pub type _SongPlayerCrossfadeToLevelAsync_d__26 = crate::GlobalNamespace::LevelCollectionViewController__SongPlayerCrossfadeToLevelAsync_d__26;
-    #[cfg(feature = "LevelCollectionViewController+_SongPlayerCrossfadeToLevel_d__25")]
-    pub type _SongPlayerCrossfadeToLevel_d__25 = crate::GlobalNamespace::LevelCollectionViewController__SongPlayerCrossfadeToLevel_d__25;
-    #[cfg(feature = "LevelCollectionViewController+__c__DisplayClass26_0")]
-    pub type __c__DisplayClass26_0 = crate::GlobalNamespace::LevelCollectionViewController___c__DisplayClass26_0;
     pub fn DidActivate(
         &mut self,
         firstActivation: bool,

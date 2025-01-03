@@ -36,54 +36,6 @@ impl crate::LiteNetLib::Utils::NetPacketProcessor {
     >;
     #[cfg(feature = "LiteNetLib+Utils+NetPacketProcessor+SubscribeDelegate")]
     pub type SubscribeDelegate = crate::LiteNetLib::Utils::NetPacketProcessor_SubscribeDelegate;
-    #[cfg(feature = "LiteNetLib+Utils+NetPacketProcessor+__c__DisplayClass25_0_1")]
-    pub type __c__DisplayClass25_0_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetPacketProcessor___c__DisplayClass25_0_1<
-        T,
-    >;
-    #[cfg(feature = "LiteNetLib+Utils+NetPacketProcessor+__c__DisplayClass26_0_2")]
-    pub type __c__DisplayClass26_0_2<
-        T: quest_hook::libil2cpp::Type,
-        TUserData: quest_hook::libil2cpp::Type,
-    > = crate::LiteNetLib::Utils::NetPacketProcessor___c__DisplayClass26_0_2<
-        T,
-        TUserData,
-    >;
-    #[cfg(feature = "LiteNetLib+Utils+NetPacketProcessor+__c__DisplayClass27_0_1")]
-    pub type __c__DisplayClass27_0_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetPacketProcessor___c__DisplayClass27_0_1<
-        T,
-    >;
-    #[cfg(feature = "LiteNetLib+Utils+NetPacketProcessor+__c__DisplayClass28_0_2")]
-    pub type __c__DisplayClass28_0_2<
-        T: quest_hook::libil2cpp::Type,
-        TUserData: quest_hook::libil2cpp::Type,
-    > = crate::LiteNetLib::Utils::NetPacketProcessor___c__DisplayClass28_0_2<
-        T,
-        TUserData,
-    >;
-    #[cfg(feature = "LiteNetLib+Utils+NetPacketProcessor+__c__DisplayClass29_0_2")]
-    pub type __c__DisplayClass29_0_2<
-        T: quest_hook::libil2cpp::Type,
-        TUserData: quest_hook::libil2cpp::Type,
-    > = crate::LiteNetLib::Utils::NetPacketProcessor___c__DisplayClass29_0_2<
-        T,
-        TUserData,
-    >;
-    #[cfg(feature = "LiteNetLib+Utils+NetPacketProcessor+__c__DisplayClass30_0_1")]
-    pub type __c__DisplayClass30_0_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetPacketProcessor___c__DisplayClass30_0_1<
-        T,
-    >;
-    #[cfg(feature = "LiteNetLib+Utils+NetPacketProcessor+__c__DisplayClass31_0_2")]
-    pub type __c__DisplayClass31_0_2<
-        T: quest_hook::libil2cpp::Type,
-        TUserData: quest_hook::libil2cpp::Type,
-    > = crate::LiteNetLib::Utils::NetPacketProcessor___c__DisplayClass31_0_2<
-        T,
-        TUserData,
-    >;
-    #[cfg(feature = "LiteNetLib+Utils+NetPacketProcessor+__c__DisplayClass32_0_1")]
-    pub type __c__DisplayClass32_0_1<T: quest_hook::libil2cpp::Type> = crate::LiteNetLib::Utils::NetPacketProcessor___c__DisplayClass32_0_1<
-        T,
-    >;
     pub fn GetCallbackFromData(
         &mut self,
         reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,

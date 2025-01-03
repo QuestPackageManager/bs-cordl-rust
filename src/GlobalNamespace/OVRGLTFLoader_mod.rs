@@ -53,8 +53,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRGLTFLoader {
 }
 #[cfg(feature = "OVRGLTFLoader")]
 impl crate::GlobalNamespace::OVRGLTFLoader {
-    #[cfg(feature = "OVRGLTFLoader+__c__DisplayClass30_0")]
-    pub type __c__DisplayClass30_0 = crate::GlobalNamespace::OVRGLTFLoader___c__DisplayClass30_0;
     pub fn ApplyTextureQuality(
         qualityLevel: crate::GlobalNamespace::OVRTextureQualityFiltering,
         destTexture: quest_hook::libil2cpp::ByRefMut<*mut crate::UnityEngine::Texture2D>,

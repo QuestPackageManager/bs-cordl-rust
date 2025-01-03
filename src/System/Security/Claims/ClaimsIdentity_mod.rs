@@ -43,8 +43,6 @@ impl std::ops::DerefMut for crate::System::Security::Claims::ClaimsIdentity {
 }
 #[cfg(feature = "System+Security+Claims+ClaimsIdentity")]
 impl crate::System::Security::Claims::ClaimsIdentity {
-    #[cfg(feature = "System+Security+Claims+ClaimsIdentity+_get_Claims_d__51")]
-    pub type _get_Claims_d__51 = crate::System::Security::Claims::ClaimsIdentity__get_Claims_d__51;
     pub fn AddClaim(
         &mut self,
         claim: quest_hook::libil2cpp::Gc<crate::System::Security::Claims::Claim>,

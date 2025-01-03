@@ -42,8 +42,6 @@ impl crate::UnityEngine::UIElements::EventDispatcher {
     pub type DispatchContext = crate::UnityEngine::UIElements::EventDispatcher_DispatchContext;
     #[cfg(feature = "UnityEngine+UIElements+EventDispatcher+EventRecord")]
     pub type EventRecord = crate::UnityEngine::UIElements::EventDispatcher_EventRecord;
-    #[cfg(feature = "UnityEngine+UIElements+EventDispatcher+__c")]
-    pub type __c = crate::UnityEngine::UIElements::EventDispatcher___c;
     pub fn ApplyDispatchingStrategies(
         &mut self,
         evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,

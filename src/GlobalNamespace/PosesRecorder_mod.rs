@@ -29,8 +29,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::PosesRecorder {
 }
 #[cfg(feature = "PosesRecorder")]
 impl crate::GlobalNamespace::PosesRecorder {
-    #[cfg(feature = "PosesRecorder+__c")]
-    pub type __c = crate::GlobalNamespace::PosesRecorder___c;
     pub fn Init(
         &mut self,
         poseObjects: quest_hook::libil2cpp::Gc<

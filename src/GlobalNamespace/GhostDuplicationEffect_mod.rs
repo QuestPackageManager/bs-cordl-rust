@@ -31,10 +31,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::GhostDuplicationEffect {
 impl crate::GlobalNamespace::GhostDuplicationEffect {
     #[cfg(feature = "GhostDuplicationEffect+GhostEffectParams")]
     pub type GhostEffectParams = crate::GlobalNamespace::GhostDuplicationEffect_GhostEffectParams;
-    #[cfg(feature = "GhostDuplicationEffect+_HideRedundantWithDelay_d__8")]
-    pub type _HideRedundantWithDelay_d__8 = crate::GlobalNamespace::GhostDuplicationEffect__HideRedundantWithDelay_d__8;
-    #[cfg(feature = "GhostDuplicationEffect+__c__DisplayClass7_0")]
-    pub type __c__DisplayClass7_0 = crate::GlobalNamespace::GhostDuplicationEffect___c__DisplayClass7_0;
     pub fn Animate(
         &mut self,
         ghostEffectParams: crate::GlobalNamespace::GhostDuplicationEffect_GhostEffectParams,

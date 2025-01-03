@@ -25,10 +25,6 @@ impl std::ops::DerefMut for crate::Zenject::ConventionAssemblySelectionBinder {
 }
 #[cfg(feature = "Zenject+ConventionAssemblySelectionBinder")]
 impl crate::Zenject::ConventionAssemblySelectionBinder {
-    #[cfg(feature = "Zenject+ConventionAssemblySelectionBinder+__c")]
-    pub type __c = crate::Zenject::ConventionAssemblySelectionBinder___c;
-    #[cfg(feature = "Zenject+ConventionAssemblySelectionBinder+__c__DisplayClass12_0")]
-    pub type __c__DisplayClass12_0 = crate::Zenject::ConventionAssemblySelectionBinder___c__DisplayClass12_0;
     pub fn FromAllAssemblies(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

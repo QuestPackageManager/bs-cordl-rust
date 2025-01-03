@@ -47,8 +47,6 @@ impl<
     TBase: quest_hook::libil2cpp::Type,
     TKey: quest_hook::libil2cpp::Type,
 > crate::Zenject::KeyedFactoryBase_2<TBase, TKey> {
-    #[cfg(feature = "Zenject+KeyedFactoryBase_2+__c")]
-    pub type __c = crate::Zenject::KeyedFactoryBase_2___c<TBase, TKey>;
     pub fn AddBindingInternal<TDerived>(
         container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         key: TKey,

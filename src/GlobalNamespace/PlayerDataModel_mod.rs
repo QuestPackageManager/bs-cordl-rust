@@ -27,8 +27,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::PlayerDataModel {
 #[cfg(feature = "PlayerDataModel")]
 impl crate::GlobalNamespace::PlayerDataModel {
     pub const kPlayerDataSaveInjectID: &'static str = "SavedPlayerData";
-    #[cfg(feature = "PlayerDataModel+_UndoUnsavedChangesAsync_d__11")]
-    pub type _UndoUnsavedChangesAsync_d__11 = crate::GlobalNamespace::PlayerDataModel__UndoUnsavedChangesAsync_d__11;
     pub fn Inject(
         &mut self,
         playerDataJsonString: quest_hook::libil2cpp::Gc<

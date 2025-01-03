@@ -61,10 +61,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerPlayersManager {
 }
 #[cfg(feature = "MultiplayerPlayersManager")]
 impl crate::GlobalNamespace::MultiplayerPlayersManager {
-    #[cfg(
-        feature = "MultiplayerPlayersManager+_SwitchLocalPlayerToInactiveCoroutine_d__51"
-    )]
-    pub type _SwitchLocalPlayerToInactiveCoroutine_d__51 = crate::GlobalNamespace::MultiplayerPlayersManager__SwitchLocalPlayerToInactiveCoroutine_d__51;
     pub fn BindPlayerFactories(
         &mut self,
         layout: crate::GlobalNamespace::MultiplayerPlayerLayout,

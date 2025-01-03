@@ -24,8 +24,6 @@ impl std::ops::DerefMut for crate::Mono::Http::NtlmClient {
 }
 #[cfg(feature = "Mono+Http+NtlmClient")]
 impl crate::Mono::Http::NtlmClient {
-    #[cfg(feature = "Mono+Http+NtlmClient+__c")]
-    pub type __c = crate::Mono::Http::NtlmClient___c;
     pub fn Authenticate(
         &mut self,
         challenge: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

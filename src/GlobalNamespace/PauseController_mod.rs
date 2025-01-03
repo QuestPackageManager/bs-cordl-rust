@@ -46,8 +46,6 @@ impl crate::GlobalNamespace::PauseController {
     pub type InitData = crate::GlobalNamespace::PauseController_InitData;
     #[cfg(feature = "PauseController+PauseState")]
     pub type PauseState = crate::GlobalNamespace::PauseController_PauseState;
-    #[cfg(feature = "PauseController+__c__DisplayClass29_0")]
-    pub type __c__DisplayClass29_0 = crate::GlobalNamespace::PauseController___c__DisplayClass29_0;
     pub fn GetDefaultPausedState(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

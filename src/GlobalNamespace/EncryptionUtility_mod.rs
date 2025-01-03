@@ -38,8 +38,6 @@ impl crate::GlobalNamespace::EncryptionUtility {
     pub type EncryptionState = crate::GlobalNamespace::EncryptionUtility_EncryptionState;
     #[cfg(feature = "EncryptionUtility+IEncryptionState")]
     type IEncryptionState = crate::GlobalNamespace::EncryptionUtility_IEncryptionState;
-    #[cfg(feature = "EncryptionUtility+__c__DisplayClass18_0")]
-    pub type __c__DisplayClass18_0 = crate::GlobalNamespace::EncryptionUtility___c__DisplayClass18_0;
     pub fn CreateEncryptionState(
         preMasterSecret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,

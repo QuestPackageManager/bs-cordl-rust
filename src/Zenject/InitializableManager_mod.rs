@@ -30,10 +30,6 @@ impl std::ops::DerefMut for crate::Zenject::InitializableManager {
 impl crate::Zenject::InitializableManager {
     #[cfg(feature = "Zenject+InitializableManager+InitializableInfo")]
     pub type InitializableInfo = crate::Zenject::InitializableManager_InitializableInfo;
-    #[cfg(feature = "Zenject+InitializableManager+__c")]
-    pub type __c = crate::Zenject::InitializableManager___c;
-    #[cfg(feature = "Zenject+InitializableManager+__c__DisplayClass2_0")]
-    pub type __c__DisplayClass2_0 = crate::Zenject::InitializableManager___c__DisplayClass2_0;
     pub fn Add_IInitializable0(
         &mut self,
         initializable: quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable>,

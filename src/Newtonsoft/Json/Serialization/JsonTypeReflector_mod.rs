@@ -33,12 +33,6 @@ impl crate::Newtonsoft::Json::Serialization::JsonTypeReflector {
     pub const SpecifiedPostfix: &'static str = "Specified";
     pub const TypePropertyName: &'static str = "$type";
     pub const ValuePropertyName: &'static str = "$value";
-    #[cfg(feature = "Newtonsoft+Json+Serialization+JsonTypeReflector+__c")]
-    pub type __c = crate::Newtonsoft::Json::Serialization::JsonTypeReflector___c;
-    #[cfg(
-        feature = "Newtonsoft+Json+Serialization+JsonTypeReflector+__c__DisplayClass22_0"
-    )]
-    pub type __c__DisplayClass22_0 = crate::Newtonsoft::Json::Serialization::JsonTypeReflector___c__DisplayClass22_0;
     pub fn CanTypeDescriptorConvertString(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         typeConverter: quest_hook::libil2cpp::ByRefMut<

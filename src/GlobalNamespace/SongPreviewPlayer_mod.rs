@@ -55,8 +55,6 @@ impl crate::GlobalNamespace::SongPreviewPlayer {
     pub type AudioSourceVolumeController = crate::GlobalNamespace::SongPreviewPlayer_AudioSourceVolumeController;
     #[cfg(feature = "SongPreviewPlayer+InitData")]
     pub type InitData = crate::GlobalNamespace::SongPreviewPlayer_InitData;
-    #[cfg(feature = "SongPreviewPlayer+_CrossFadeAfterDelayCoroutine_d__30")]
-    pub type _CrossFadeAfterDelayCoroutine_d__30 = crate::GlobalNamespace::SongPreviewPlayer__CrossFadeAfterDelayCoroutine_d__30;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

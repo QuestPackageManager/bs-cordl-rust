@@ -24,8 +24,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapLevelExtensions {
 }
 #[cfg(feature = "BeatmapLevelExtensions")]
 impl crate::GlobalNamespace::BeatmapLevelExtensions {
-    #[cfg(feature = "BeatmapLevelExtensions+__c")]
-    pub type __c = crate::GlobalNamespace::BeatmapLevelExtensions___c;
     pub fn CreateColorScheme(
         idx: i32,
         colorSchemes: quest_hook::libil2cpp::Gc<

@@ -28,8 +28,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::PointerEnterEvent {
 }
 #[cfg(feature = "UnityEngine+UIElements+PointerEnterEvent")]
 impl crate::UnityEngine::UIElements::PointerEnterEvent {
-    #[cfg(feature = "UnityEngine+UIElements+PointerEnterEvent+__c")]
-    pub type __c = crate::UnityEngine::UIElements::PointerEnterEvent___c;
     pub fn Init(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

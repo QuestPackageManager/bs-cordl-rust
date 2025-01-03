@@ -28,8 +28,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::MouseUpEvent {
 }
 #[cfg(feature = "UnityEngine+UIElements+MouseUpEvent")]
 impl crate::UnityEngine::UIElements::MouseUpEvent {
-    #[cfg(feature = "UnityEngine+UIElements+MouseUpEvent+__c")]
-    pub type __c = crate::UnityEngine::UIElements::MouseUpEvent___c;
     pub fn GetPooled_PointerCancelEvent2(
         pointerEvent: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::PointerCancelEvent,

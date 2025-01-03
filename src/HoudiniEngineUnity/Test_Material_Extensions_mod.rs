@@ -24,8 +24,6 @@ impl std::ops::DerefMut for crate::HoudiniEngineUnity::Test_Material_Extensions 
 }
 #[cfg(feature = "HoudiniEngineUnity+Test_Material_Extensions")]
 impl crate::HoudiniEngineUnity::Test_Material_Extensions {
-    #[cfg(feature = "HoudiniEngineUnity+Test_Material_Extensions+__c")]
-    pub type __c = crate::HoudiniEngineUnity::Test_Material_Extensions___c;
     pub fn ToTestObject_Il2CppArray1(
         _cordl_self: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Material>,

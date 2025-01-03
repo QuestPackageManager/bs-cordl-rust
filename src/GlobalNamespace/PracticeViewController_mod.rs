@@ -50,8 +50,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::PracticeViewController {
 impl crate::GlobalNamespace::PracticeViewController {
     pub const kMinValueChangeToInstantPlayPreview: f32 = 3f32;
     pub const kWaitBeforePlayPreviewAfterPreviewStartValueChanged: f32 = 1f32;
-    #[cfg(feature = "PracticeViewController+_LoadSong_d__33")]
-    pub type _LoadSong_d__33 = crate::GlobalNamespace::PracticeViewController__LoadSong_d__33;
     pub fn CancelSongLoading(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

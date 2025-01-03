@@ -32,8 +32,6 @@ impl std::ops::DerefMut for crate::BGLib::Polyglot::LocalizationModel {
 }
 #[cfg(feature = "BGLib+Polyglot+LocalizationModel")]
 impl crate::BGLib::Polyglot::LocalizationModel {
-    #[cfg(feature = "BGLib+Polyglot+LocalizationModel+__c__DisplayClass30_0")]
-    pub type __c__DisplayClass30_0 = crate::BGLib::Polyglot::LocalizationModel___c__DisplayClass30_0;
     pub fn AddOnLocalizeEvent(
         &mut self,
         localize: quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::ILocalize>,

@@ -25,8 +25,6 @@ impl std::ops::DerefMut for crate::Zenject::ConventionSelectTypesBinder {
 }
 #[cfg(feature = "Zenject+ConventionSelectTypesBinder")]
 impl crate::Zenject::ConventionSelectTypesBinder {
-    #[cfg(feature = "Zenject+ConventionSelectTypesBinder+__c")]
-    pub type __c = crate::Zenject::ConventionSelectTypesBinder___c;
     pub fn AllAbstractClasses(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

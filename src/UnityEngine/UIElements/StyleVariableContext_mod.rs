@@ -30,8 +30,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::StyleVariableContext
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleVariableContext")]
 impl crate::UnityEngine::UIElements::StyleVariableContext {
-    #[cfg(feature = "UnityEngine+UIElements+StyleVariableContext+__c__DisplayClass7_0")]
-    pub type __c__DisplayClass7_0 = crate::UnityEngine::UIElements::StyleVariableContext___c__DisplayClass7_0;
     pub fn Add(
         &mut self,
         sv: crate::UnityEngine::UIElements::StyleVariable,

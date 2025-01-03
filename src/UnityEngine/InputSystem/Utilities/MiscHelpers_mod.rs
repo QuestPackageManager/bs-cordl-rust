@@ -24,10 +24,6 @@ impl std::ops::DerefMut for crate::UnityEngine::InputSystem::Utilities::MiscHelp
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+MiscHelpers")]
 impl crate::UnityEngine::InputSystem::Utilities::MiscHelpers {
-    #[cfg(feature = "UnityEngine+InputSystem+Utilities+MiscHelpers+_EveryNth_d__1_1")]
-    pub type _EveryNth_d__1_1<TValue: quest_hook::libil2cpp::Type> = crate::UnityEngine::InputSystem::Utilities::MiscHelpers__EveryNth_d__1_1<
-        TValue,
-    >;
     pub fn EveryNth<TValue>(
         enumerable: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<TValue>,

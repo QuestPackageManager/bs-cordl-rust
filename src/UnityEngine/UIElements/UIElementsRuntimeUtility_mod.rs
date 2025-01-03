@@ -29,8 +29,6 @@ impl crate::UnityEngine::UIElements::UIElementsRuntimeUtility {
         feature = "UnityEngine+UIElements+UIElementsRuntimeUtility+CreateRuntimePanelDelegate"
     )]
     pub type CreateRuntimePanelDelegate = crate::UnityEngine::UIElements::UIElementsRuntimeUtility_CreateRuntimePanelDelegate;
-    #[cfg(feature = "UnityEngine+UIElements+UIElementsRuntimeUtility+__c")]
-    pub type __c = crate::UnityEngine::UIElements::UIElementsRuntimeUtility___c;
     pub fn BeginRenderOverlays(
         displayIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

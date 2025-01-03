@@ -25,8 +25,6 @@ for crate::UnityEngine::ProBuilder::Poly2Tri::FixedBitArray3 {
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+FixedBitArray3")]
 impl crate::UnityEngine::ProBuilder::Poly2Tri::FixedBitArray3 {
-    #[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+FixedBitArray3+_Enumerate_d__10")]
-    pub type _Enumerate_d__10 = crate::UnityEngine::ProBuilder::Poly2Tri::FixedBitArray3__Enumerate_d__10;
     pub fn Clear_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

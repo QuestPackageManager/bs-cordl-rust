@@ -35,8 +35,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRScreenFade {
 }
 #[cfg(feature = "OVRScreenFade")]
 impl crate::GlobalNamespace::OVRScreenFade {
-    #[cfg(feature = "OVRScreenFade+_Fade_d__25")]
-    pub type _Fade_d__25 = crate::GlobalNamespace::OVRScreenFade__Fade_d__25;
     pub fn Fade(
         &mut self,
         startAlpha: f32,

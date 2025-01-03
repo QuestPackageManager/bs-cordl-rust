@@ -37,8 +37,6 @@ impl crate::UnityEngine::InputSystem::Users::InputUser {
     pub type UserData = crate::UnityEngine::InputSystem::Users::InputUser_UserData;
     #[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+UserFlags")]
     pub type UserFlags = crate::UnityEngine::InputSystem::Users::InputUser_UserFlags;
-    #[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+__c")]
-    pub type __c = crate::UnityEngine::InputSystem::Users::InputUser___c;
     pub fn ActivateControlSchemeInternal(
         &mut self,
         userIndex: i32,

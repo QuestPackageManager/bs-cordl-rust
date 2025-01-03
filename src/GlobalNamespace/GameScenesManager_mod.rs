@@ -69,32 +69,6 @@ impl crate::GlobalNamespace::GameScenesManager {
     pub type SceneTransitionType = crate::GlobalNamespace::GameScenesManager_SceneTransitionType;
     #[cfg(feature = "GameScenesManager+ScenesStackData")]
     pub type ScenesStackData = crate::GlobalNamespace::GameScenesManager_ScenesStackData;
-    #[cfg(feature = "GameScenesManager+_LoadOneScene_d__50")]
-    pub type _LoadOneScene_d__50 = crate::GlobalNamespace::GameScenesManager__LoadOneScene_d__50;
-    #[cfg(feature = "GameScenesManager+_ScenesTransitionCoroutine_d__52")]
-    pub type _ScenesTransitionCoroutine_d__52 = crate::GlobalNamespace::GameScenesManager__ScenesTransitionCoroutine_d__52;
-    #[cfg(feature = "GameScenesManager+_UnloadOneScene_d__51")]
-    pub type _UnloadOneScene_d__51 = crate::GlobalNamespace::GameScenesManager__UnloadOneScene_d__51;
-    #[cfg(feature = "GameScenesManager+_WaitUntilTaskCompleted_d__55")]
-    pub type _WaitUntilTaskCompleted_d__55 = crate::GlobalNamespace::GameScenesManager__WaitUntilTaskCompleted_d__55;
-    #[cfg(feature = "GameScenesManager+__c__DisplayClass40_0")]
-    pub type __c__DisplayClass40_0 = crate::GlobalNamespace::GameScenesManager___c__DisplayClass40_0;
-    #[cfg(feature = "GameScenesManager+__c__DisplayClass41_0")]
-    pub type __c__DisplayClass41_0 = crate::GlobalNamespace::GameScenesManager___c__DisplayClass41_0;
-    #[cfg(feature = "GameScenesManager+__c__DisplayClass42_0")]
-    pub type __c__DisplayClass42_0 = crate::GlobalNamespace::GameScenesManager___c__DisplayClass42_0;
-    #[cfg(feature = "GameScenesManager+__c__DisplayClass43_0")]
-    pub type __c__DisplayClass43_0 = crate::GlobalNamespace::GameScenesManager___c__DisplayClass43_0;
-    #[cfg(feature = "GameScenesManager+__c__DisplayClass44_0")]
-    pub type __c__DisplayClass44_0 = crate::GlobalNamespace::GameScenesManager___c__DisplayClass44_0;
-    #[cfg(feature = "GameScenesManager+__c__DisplayClass45_0")]
-    pub type __c__DisplayClass45_0 = crate::GlobalNamespace::GameScenesManager___c__DisplayClass45_0;
-    #[cfg(feature = "GameScenesManager+__c__DisplayClass46_0")]
-    pub type __c__DisplayClass46_0 = crate::GlobalNamespace::GameScenesManager___c__DisplayClass46_0;
-    #[cfg(feature = "GameScenesManager+__c__DisplayClass47_0")]
-    pub type __c__DisplayClass47_0 = crate::GlobalNamespace::GameScenesManager___c__DisplayClass47_0;
-    #[cfg(feature = "GameScenesManager+__c__DisplayClass55_0")]
-    pub type __c__DisplayClass55_0 = crate::GlobalNamespace::GameScenesManager___c__DisplayClass55_0;
     pub fn ActivatePresentedSceneRootObjects(
         scenesToPresent: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<

@@ -111,12 +111,6 @@ impl crate::UnityEngine::ResourceManagement::ResourceManager {
     pub type DiagnosticEventType = crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventType;
     #[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+InstanceOperation")]
     pub type InstanceOperation = crate::UnityEngine::ResourceManagement::ResourceManager_InstanceOperation;
-    #[cfg(
-        feature = "UnityEngine+ResourceManagement+ResourceManager+__c__DisplayClass95_0_1"
-    )]
-    pub type __c__DisplayClass95_0_1<TObject: quest_hook::libil2cpp::Type> = crate::UnityEngine::ResourceManagement::ResourceManager___c__DisplayClass95_0_1<
-        TObject,
-    >;
     pub fn Acquire(
         &mut self,
         handle: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,

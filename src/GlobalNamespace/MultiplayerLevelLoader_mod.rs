@@ -43,8 +43,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerLevelLoader {
 impl crate::GlobalNamespace::MultiplayerLevelLoader {
     #[cfg(feature = "MultiplayerLevelLoader+MultiplayerBeatmapLoaderState")]
     pub type MultiplayerBeatmapLoaderState = crate::GlobalNamespace::MultiplayerLevelLoader_MultiplayerBeatmapLoaderState;
-    #[cfg(feature = "MultiplayerLevelLoader+_LoadBeatmapLevelDataAsync_d__21")]
-    pub type _LoadBeatmapLevelDataAsync_d__21 = crate::GlobalNamespace::MultiplayerLevelLoader__LoadBeatmapLevelDataAsync_d__21;
     pub fn ClearLoading(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

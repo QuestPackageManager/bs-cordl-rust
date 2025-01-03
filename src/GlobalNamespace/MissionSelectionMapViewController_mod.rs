@@ -37,12 +37,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::MissionSelectionMapViewContr
 }
 #[cfg(feature = "MissionSelectionMapViewController")]
 impl crate::GlobalNamespace::MissionSelectionMapViewController {
-    #[cfg(
-        feature = "MissionSelectionMapViewController+_SongPlayerCrossfadeToLevelAsync_d__16"
-    )]
-    pub type _SongPlayerCrossfadeToLevelAsync_d__16 = crate::GlobalNamespace::MissionSelectionMapViewController__SongPlayerCrossfadeToLevelAsync_d__16;
-    #[cfg(feature = "MissionSelectionMapViewController+__c__DisplayClass16_0")]
-    pub type __c__DisplayClass16_0 = crate::GlobalNamespace::MissionSelectionMapViewController___c__DisplayClass16_0;
     pub fn DeselectSelectedNode(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

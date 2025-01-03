@@ -24,10 +24,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BatchExtensions {
 }
 #[cfg(feature = "BatchExtensions")]
 impl crate::GlobalNamespace::BatchExtensions {
-    #[cfg(feature = "BatchExtensions+_Batch_d__0_1")]
-    pub type _Batch_d__0_1<T: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::BatchExtensions__Batch_d__0_1<
-        T,
-    >;
     pub fn Batch<T>(
         enumerable: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<T>,

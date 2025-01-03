@@ -28,8 +28,6 @@ impl crate::System::IO::TextReader {
     pub type NullTextReader = crate::GlobalNamespace::TextReader_NullTextReader;
     #[cfg(feature = "System+IO+TextReader+SyncTextReader")]
     pub type SyncTextReader = crate::GlobalNamespace::TextReader_SyncTextReader;
-    #[cfg(feature = "System+IO+TextReader+__c")]
-    pub type __c = crate::System::IO::TextReader___c;
     pub fn Close(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

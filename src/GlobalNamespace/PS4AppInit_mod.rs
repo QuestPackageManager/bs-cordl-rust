@@ -29,8 +29,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::PS4AppInit {
 }
 #[cfg(feature = "PS4AppInit")]
 impl crate::GlobalNamespace::PS4AppInit {
-    #[cfg(feature = "PS4AppInit+_PreloadAsync_d__7")]
-    pub type _PreloadAsync_d__7 = crate::GlobalNamespace::PS4AppInit__PreloadAsync_d__7;
     pub fn AppStartAndMultiSceneEditorSetup(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

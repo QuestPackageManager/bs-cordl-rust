@@ -43,12 +43,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::LevelPackDetailViewControlle
 impl crate::GlobalNamespace::LevelPackDetailViewController {
     #[cfg(feature = "LevelPackDetailViewController+ContentType")]
     pub type ContentType = crate::GlobalNamespace::LevelPackDetailViewController_ContentType;
-    #[cfg(
-        feature = "LevelPackDetailViewController+_OpenLevelPackProductStoreAsync_d__24"
-    )]
-    pub type _OpenLevelPackProductStoreAsync_d__24 = crate::GlobalNamespace::LevelPackDetailViewController__OpenLevelPackProductStoreAsync_d__24;
-    #[cfg(feature = "LevelPackDetailViewController+_RefreshAvailabilityAsync_d__22")]
-    pub type _RefreshAvailabilityAsync_d__22 = crate::GlobalNamespace::LevelPackDetailViewController__RefreshAvailabilityAsync_d__22;
     pub fn BuyPackButtonWasPressed(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

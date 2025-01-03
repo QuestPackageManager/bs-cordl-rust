@@ -36,8 +36,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::FireworksController {
 }
 #[cfg(feature = "FireworksController")]
 impl crate::GlobalNamespace::FireworksController {
-    #[cfg(feature = "FireworksController+_SpawningCoroutine_d__10")]
-    pub type _SpawningCoroutine_d__10 = crate::GlobalNamespace::FireworksController__SpawningCoroutine_d__10;
     pub fn ClearFireworkItemController(
         &mut self,
         fireworkItemController: quest_hook::libil2cpp::Gc<

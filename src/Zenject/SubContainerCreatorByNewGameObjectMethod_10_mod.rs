@@ -129,21 +129,6 @@ impl<
     TParam9,
     TParam10,
 > {
-    #[cfg(
-        feature = "Zenject+SubContainerCreatorByNewGameObjectMethod_10+__c__DisplayClass2_0"
-    )]
-    pub type __c__DisplayClass2_0 = crate::Zenject::SubContainerCreatorByNewGameObjectMethod_10___c__DisplayClass2_0<
-        TParam1,
-        TParam2,
-        TParam3,
-        TParam4,
-        TParam5,
-        TParam6,
-        TParam7,
-        TParam8,
-        TParam9,
-        TParam10,
-    >;
     pub fn AddInstallers(
         &mut self,
         args: quest_hook::libil2cpp::Gc<

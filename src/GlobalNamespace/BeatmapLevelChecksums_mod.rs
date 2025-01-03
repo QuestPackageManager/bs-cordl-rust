@@ -30,12 +30,6 @@ for crate::GlobalNamespace::BeatmapLevelChecksums {
 impl crate::GlobalNamespace::BeatmapLevelChecksums {
     #[cfg(feature = "BeatmapLevelChecksums+DifficultyBeatmapChecksums")]
     pub type DifficultyBeatmapChecksums = crate::GlobalNamespace::BeatmapLevelChecksums_DifficultyBeatmapChecksums;
-    #[cfg(feature = "BeatmapLevelChecksums+__c")]
-    pub type __c = crate::GlobalNamespace::BeatmapLevelChecksums___c;
-    #[cfg(feature = "BeatmapLevelChecksums+__c__DisplayClass7_0")]
-    pub type __c__DisplayClass7_0 = crate::GlobalNamespace::BeatmapLevelChecksums___c__DisplayClass7_0;
-    #[cfg(feature = "BeatmapLevelChecksums+__c__DisplayClass8_0")]
-    pub type __c__DisplayClass8_0 = crate::GlobalNamespace::BeatmapLevelChecksums___c__DisplayClass8_0;
     pub fn GetOrAddDifficultyBeatmapChecksums(
         &mut self,
         beatmapDifficulty: quest_hook::libil2cpp::Gc<

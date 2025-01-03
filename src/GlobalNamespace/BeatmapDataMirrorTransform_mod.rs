@@ -24,8 +24,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapDataMirrorTransform {
 }
 #[cfg(feature = "BeatmapDataMirrorTransform")]
 impl crate::GlobalNamespace::BeatmapDataMirrorTransform {
-    #[cfg(feature = "BeatmapDataMirrorTransform+__c__DisplayClass0_0")]
-    pub type __c__DisplayClass0_0 = crate::GlobalNamespace::BeatmapDataMirrorTransform___c__DisplayClass0_0;
     pub fn CreateTransformedData(
         beatmapData: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IReadonlyBeatmapData,

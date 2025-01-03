@@ -24,8 +24,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::DeactivateAfterFirstFrame {
 }
 #[cfg(feature = "DeactivateAfterFirstFrame")]
 impl crate::GlobalNamespace::DeactivateAfterFirstFrame {
-    #[cfg(feature = "DeactivateAfterFirstFrame+_Start_d__0")]
-    pub type _Start_d__0 = crate::GlobalNamespace::DeactivateAfterFirstFrame__Start_d__0;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

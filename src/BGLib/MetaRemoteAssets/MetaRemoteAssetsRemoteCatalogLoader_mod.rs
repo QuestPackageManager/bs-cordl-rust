@@ -27,12 +27,6 @@ for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsRemoteCatalogLoader {
 }
 #[cfg(feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsRemoteCatalogLoader")]
 impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsRemoteCatalogLoader {
-    #[cfg(
-        feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsRemoteCatalogLoader+_LoadRemoteCatalogAsync_d__0"
-    )]
-    pub type _LoadRemoteCatalogAsync_d__0 = crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsRemoteCatalogLoader__LoadRemoteCatalogAsync_d__0;
-    #[cfg(feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsRemoteCatalogLoader+__c")]
-    pub type __c = crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsRemoteCatalogLoader___c;
     pub fn LoadRemoteCatalogAsync(
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,

@@ -45,10 +45,6 @@ impl crate::GlobalNamespace::PacketEncryptionLayer {
     pub type EncryptionStatistics = crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics;
     #[cfg(feature = "PacketEncryptionLayer+PendingEncryptionStateList")]
     pub type PendingEncryptionStateList = crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList;
-    #[cfg(feature = "PacketEncryptionLayer+_AddEncryptedEndpointAsync_d__25")]
-    pub type _AddEncryptedEndpointAsync_d__25 = crate::GlobalNamespace::PacketEncryptionLayer__AddEncryptedEndpointAsync_d__25;
-    #[cfg(feature = "PacketEncryptionLayer+_AddPendingEncryptedEndpointAsync_d__27")]
-    pub type _AddPendingEncryptedEndpointAsync_d__27 = crate::GlobalNamespace::PacketEncryptionLayer__AddPendingEncryptedEndpointAsync_d__27;
     pub fn AddEncryptedEndpoint(
         &mut self,
         endPoint: quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
@@ -649,16 +645,6 @@ for crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList {
 }
 #[cfg(feature = "PacketEncryptionLayer+PendingEncryptionStateList")]
 impl crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList {
-    #[cfg(feature = "PacketEncryptionLayer+PendingEncryptionStateList+__c")]
-    pub type __c = crate::GlobalNamespace::PendingEncryptionStateList_PacketEncryptionLayer___c;
-    #[cfg(
-        feature = "PacketEncryptionLayer+PendingEncryptionStateList+__c__DisplayClass4_0"
-    )]
-    pub type __c__DisplayClass4_0 = crate::GlobalNamespace::PendingEncryptionStateList_PacketEncryptionLayer___c__DisplayClass4_0;
-    #[cfg(
-        feature = "PacketEncryptionLayer+PendingEncryptionStateList+__c__DisplayClass8_0"
-    )]
-    pub type __c__DisplayClass8_0 = crate::GlobalNamespace::PendingEncryptionStateList_PacketEncryptionLayer___c__DisplayClass8_0;
     pub fn Add(
         &mut self,
         port: i32,

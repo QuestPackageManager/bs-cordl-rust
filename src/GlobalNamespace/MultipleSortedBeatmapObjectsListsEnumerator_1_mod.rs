@@ -43,10 +43,6 @@ impl<
     pub type BeatmapObjectListNode = crate::GlobalNamespace::MultipleSortedBeatmapObjectsListsEnumerator_1_BeatmapObjectListNode<
         T,
     >;
-    #[cfg(feature = "MultipleSortedBeatmapObjectsListsEnumerator_1+_GetEnumerator_d__4")]
-    pub type _GetEnumerator_d__4 = crate::GlobalNamespace::MultipleSortedBeatmapObjectsListsEnumerator_1__GetEnumerator_d__4<
-        T,
-    >;
     pub fn GetEnumerator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

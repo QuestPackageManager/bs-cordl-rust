@@ -98,8 +98,6 @@ impl crate::Newtonsoft::Json::JsonSerializerSettings {
     pub const DefaultCheckAdditionalContent: bool = false;
     pub const DefaultDateFormatString: &'static str = "yyyy\\'-\\'MM\\'-\\'dd\\'T\\'HH\\':\\'mm\\':\\'ss.FFFFFFFK";
     pub const DefaultMaxDepth: i32 = 64i32;
-    #[cfg(feature = "Newtonsoft+Json+JsonSerializerSettings+__c__DisplayClass93_0")]
-    pub type __c__DisplayClass93_0 = crate::Newtonsoft::Json::JsonSerializerSettings___c__DisplayClass93_0;
     pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

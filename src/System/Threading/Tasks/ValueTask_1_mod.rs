@@ -323,10 +323,6 @@ for crate::System::Threading::Tasks::ValueTask_1_ValueTaskSourceAsTask<TResult> 
 impl<
     TResult: quest_hook::libil2cpp::Type,
 > crate::System::Threading::Tasks::ValueTask_1_ValueTaskSourceAsTask<TResult> {
-    #[cfg(feature = "System+Threading+Tasks+ValueTask_1+ValueTaskSourceAsTask+__c")]
-    pub type __c = crate::System::Threading::Tasks::ValueTaskSourceAsTask_ValueTask_1___c<
-        TResult,
-    >;
     pub fn New(
         source: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Sources::IValueTaskSource_1<TResult>,

@@ -28,8 +28,6 @@ impl crate::GlobalNamespace::OculusTestExperiment {
     pub const kIsInTest1Key: &'static str = "beatsaber_experiments:test_parameter";
     #[cfg(feature = "OculusTestExperiment+ExperimentData")]
     pub type ExperimentData = crate::GlobalNamespace::OculusTestExperiment_ExperimentData;
-    #[cfg(feature = "OculusTestExperiment+_Init_d__3")]
-    pub type _Init_d__3 = crate::GlobalNamespace::OculusTestExperiment__Init_d__3;
     pub fn Init(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -916,8 +916,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::VRControllersRecorder_State 
 }
 #[cfg(feature = "VRControllersRecorder+State")]
 impl crate::GlobalNamespace::VRControllersRecorder_State {
-    #[cfg(feature = "VRControllersRecorder+State+__c")]
-    pub type __c = crate::GlobalNamespace::State_VRControllersRecorder___c;
     pub fn AddKeyframe(
         &mut self,
         keyframe: quest_hook::libil2cpp::Gc<

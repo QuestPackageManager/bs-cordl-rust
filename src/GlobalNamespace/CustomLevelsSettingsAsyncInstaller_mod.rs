@@ -26,10 +26,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::CustomLevelsSettingsAsyncIns
 }
 #[cfg(feature = "CustomLevelsSettingsAsyncInstaller")]
 impl crate::GlobalNamespace::CustomLevelsSettingsAsyncInstaller {
-    #[cfg(
-        feature = "CustomLevelsSettingsAsyncInstaller+_LoadResourcesBeforeInstallAsync_d__2"
-    )]
-    pub type _LoadResourcesBeforeInstallAsync_d__2 = crate::GlobalNamespace::CustomLevelsSettingsAsyncInstaller__LoadResourcesBeforeInstallAsync_d__2;
     pub fn InstallBindings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

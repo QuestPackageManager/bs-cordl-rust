@@ -29,10 +29,6 @@ impl std::ops::DerefMut for crate::HMUI::HoverHintController {
 impl crate::HMUI::HoverHintController {
     pub const kHideHintDelay: f32 = 0.3f32;
     pub const kShowHintDelay: f32 = 0.6f32;
-    #[cfg(feature = "HMUI+HoverHintController+_HideHintAfterDelay_d__12")]
-    pub type _HideHintAfterDelay_d__12 = crate::HMUI::HoverHintController__HideHintAfterDelay_d__12;
-    #[cfg(feature = "HMUI+HoverHintController+_ShowHintAfterDelay_d__11")]
-    pub type _ShowHintAfterDelay_d__11 = crate::HMUI::HoverHintController__ShowHintAfterDelay_d__11;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

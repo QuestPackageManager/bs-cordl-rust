@@ -30,8 +30,6 @@ for crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel {
 }
 #[cfg(feature = "PlayersSpecificSettingsAtGameStartModel")]
 impl crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel {
-    #[cfg(feature = "PlayersSpecificSettingsAtGameStartModel+__c__DisplayClass13_0")]
-    pub type __c__DisplayClass13_0 = crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel___c__DisplayClass13_0;
     pub fn GetPlayerSpecificSettingsForUserId(
         &mut self,
         userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

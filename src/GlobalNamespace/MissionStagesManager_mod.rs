@@ -29,8 +29,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::MissionStagesManager {
 }
 #[cfg(feature = "MissionStagesManager")]
 impl crate::GlobalNamespace::MissionStagesManager {
-    #[cfg(feature = "MissionStagesManager+__c")]
-    pub type __c = crate::GlobalNamespace::MissionStagesManager___c;
     pub fn InitStages(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

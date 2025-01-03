@@ -24,8 +24,6 @@ impl std::ops::DerefMut for crate::UnityEngine::InputSystem::InputBindingComposi
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputBindingComposite")]
 impl crate::UnityEngine::InputSystem::InputBindingComposite {
-    #[cfg(feature = "UnityEngine+InputSystem+InputBindingComposite+_GetPartNames_d__12")]
-    pub type _GetPartNames_d__12 = crate::UnityEngine::InputSystem::InputBindingComposite__GetPartNames_d__12;
     pub fn CallFinishSetup(
         &mut self,
         context: quest_hook::libil2cpp::ByRefMut<

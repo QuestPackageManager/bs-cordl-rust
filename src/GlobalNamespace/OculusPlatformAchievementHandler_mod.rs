@@ -26,12 +26,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OculusPlatformAchievementHan
 }
 #[cfg(feature = "OculusPlatformAchievementHandler")]
 impl crate::GlobalNamespace::OculusPlatformAchievementHandler {
-    #[cfg(feature = "OculusPlatformAchievementHandler+__c__DisplayClass2_0")]
-    pub type __c__DisplayClass2_0 = crate::GlobalNamespace::OculusPlatformAchievementHandler___c__DisplayClass2_0;
-    #[cfg(feature = "OculusPlatformAchievementHandler+__c__DisplayClass3_0")]
-    pub type __c__DisplayClass3_0 = crate::GlobalNamespace::OculusPlatformAchievementHandler___c__DisplayClass3_0;
-    #[cfg(feature = "OculusPlatformAchievementHandler+__c__DisplayClass3_1")]
-    pub type __c__DisplayClass3_1 = crate::GlobalNamespace::OculusPlatformAchievementHandler___c__DisplayClass3_1;
     pub fn GetUnlockedAchievements(
         &mut self,
         completionHandler: quest_hook::libil2cpp::Gc<

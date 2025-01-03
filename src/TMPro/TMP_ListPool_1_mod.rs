@@ -27,8 +27,6 @@ for crate::TMPro::TMP_ListPool_1<T> {
 }
 #[cfg(feature = "TMPro+TMP_ListPool_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::TMPro::TMP_ListPool_1<T> {
-    #[cfg(feature = "TMPro+TMP_ListPool_1+__c")]
-    pub type __c = crate::TMPro::TMP_ListPool_1___c<T>;
     pub fn Get() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
     >

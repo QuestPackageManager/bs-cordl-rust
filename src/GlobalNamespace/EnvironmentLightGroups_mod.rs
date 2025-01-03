@@ -34,8 +34,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::EnvironmentLightGroups {
 }
 #[cfg(feature = "EnvironmentLightGroups")]
 impl crate::GlobalNamespace::EnvironmentLightGroups {
-    #[cfg(feature = "EnvironmentLightGroups+__c")]
-    pub type __c = crate::GlobalNamespace::EnvironmentLightGroups___c;
     pub fn GetDataForGroup(
         &mut self,
         groupId: i32,

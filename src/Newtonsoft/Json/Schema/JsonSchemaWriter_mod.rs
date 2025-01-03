@@ -26,8 +26,6 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Schema::JsonSchemaWriter {
 }
 #[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaWriter")]
 impl crate::Newtonsoft::Json::Schema::JsonSchemaWriter {
-    #[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaWriter+__c")]
-    pub type __c = crate::Newtonsoft::Json::Schema::JsonSchemaWriter___c;
     pub fn New(
         writer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
         resolver: quest_hook::libil2cpp::Gc<

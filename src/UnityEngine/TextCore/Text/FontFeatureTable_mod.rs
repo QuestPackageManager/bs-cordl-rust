@@ -57,8 +57,6 @@ impl std::ops::DerefMut for crate::UnityEngine::TextCore::Text::FontFeatureTable
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+FontFeatureTable")]
 impl crate::UnityEngine::TextCore::Text::FontFeatureTable {
-    #[cfg(feature = "UnityEngine+TextCore+Text+FontFeatureTable+__c")]
-    pub type __c = crate::UnityEngine::TextCore::Text::FontFeatureTable___c;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

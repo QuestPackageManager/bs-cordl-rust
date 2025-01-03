@@ -36,22 +36,6 @@ impl std::ops::DerefMut for crate::System::Net::WebRequestStream {
 }
 #[cfg(feature = "System+Net+WebRequestStream")]
 impl crate::System::Net::WebRequestStream {
-    #[cfg(feature = "System+Net+WebRequestStream+_FinishWriting_d__31")]
-    pub type _FinishWriting_d__31 = crate::System::Net::WebRequestStream__FinishWriting_d__31;
-    #[cfg(feature = "System+Net+WebRequestStream+_Initialize_d__36")]
-    pub type _Initialize_d__36 = crate::System::Net::WebRequestStream__Initialize_d__36;
-    #[cfg(feature = "System+Net+WebRequestStream+_ProcessWrite_d__34")]
-    pub type _ProcessWrite_d__34 = crate::System::Net::WebRequestStream__ProcessWrite_d__34;
-    #[cfg(feature = "System+Net+WebRequestStream+_SetHeadersAsync_d__37")]
-    pub type _SetHeadersAsync_d__37 = crate::System::Net::WebRequestStream__SetHeadersAsync_d__37;
-    #[cfg(feature = "System+Net+WebRequestStream+_WriteAsyncInner_d__33")]
-    pub type _WriteAsyncInner_d__33 = crate::System::Net::WebRequestStream__WriteAsyncInner_d__33;
-    #[cfg(feature = "System+Net+WebRequestStream+_WriteChunkTrailer_d__40")]
-    pub type _WriteChunkTrailer_d__40 = crate::System::Net::WebRequestStream__WriteChunkTrailer_d__40;
-    #[cfg(feature = "System+Net+WebRequestStream+_WriteChunkTrailer_inner_d__39")]
-    pub type _WriteChunkTrailer_inner_d__39 = crate::System::Net::WebRequestStream__WriteChunkTrailer_inner_d__39;
-    #[cfg(feature = "System+Net+WebRequestStream+_WriteRequestAsync_d__38")]
-    pub type _WriteRequestAsync_d__38 = crate::System::Net::WebRequestStream__WriteRequestAsync_d__38;
     pub fn CheckWriteOverflow(
         &mut self,
         contentLength: i64,

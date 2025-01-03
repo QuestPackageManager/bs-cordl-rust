@@ -31,8 +31,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::SoloFreePlayFlowCoordinator 
 }
 #[cfg(feature = "SoloFreePlayFlowCoordinator")]
 impl crate::GlobalNamespace::SoloFreePlayFlowCoordinator {
-    #[cfg(feature = "SoloFreePlayFlowCoordinator+__c__DisplayClass21_0")]
-    pub type __c__DisplayClass21_0 = crate::GlobalNamespace::SoloFreePlayFlowCoordinator___c__DisplayClass21_0;
     pub fn HandleResultsViewControllerContinueButtonPressed(
         &mut self,
         viewController: quest_hook::libil2cpp::Gc<

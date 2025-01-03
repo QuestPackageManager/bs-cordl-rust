@@ -252,8 +252,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::GridView_GridViewCellsEnumer
 }
 #[cfg(feature = "GridView+GridViewCellsEnumerator")]
 impl crate::GlobalNamespace::GridView_GridViewCellsEnumerator {
-    #[cfg(feature = "GridView+GridViewCellsEnumerator+_GetEnumerator_d__1")]
-    pub type _GetEnumerator_d__1 = crate::GlobalNamespace::GridViewCellsEnumerator_GridView__GetEnumerator_d__1;
     pub fn GetEnumerator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

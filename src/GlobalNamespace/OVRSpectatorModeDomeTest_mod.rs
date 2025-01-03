@@ -38,8 +38,6 @@ impl crate::GlobalNamespace::OVRSpectatorModeDomeTest {
     pub const distance_far: f32 = 1.2f32;
     pub const distance_near: f32 = 0.5f32;
     pub const elevationLimit: f32 = 30f32;
-    #[cfg(feature = "OVRSpectatorModeDomeTest+_TimerCoroutine_d__20")]
-    pub type _TimerCoroutine_d__20 = crate::GlobalNamespace::OVRSpectatorModeDomeTest__TimerCoroutine_d__20;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

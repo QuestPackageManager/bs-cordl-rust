@@ -25,8 +25,6 @@ impl std::ops::DerefMut for crate::Mono::Globalization::Unicode::MSCompatUnicode
 }
 #[cfg(feature = "Mono+Globalization+Unicode+MSCompatUnicodeTable")]
 impl crate::Mono::Globalization::Unicode::MSCompatUnicodeTable {
-    #[cfg(feature = "Mono+Globalization+Unicode+MSCompatUnicodeTable+__c")]
-    pub type __c = crate::Mono::Globalization::Unicode::MSCompatUnicodeTable___c;
     pub fn BuildTailoringTables(
         culture: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
         t: quest_hook::libil2cpp::Gc<crate::Mono::Globalization::Unicode::TailoringInfo>,

@@ -23,8 +23,6 @@ for crate::System::Runtime::CompilerServices::ValueTaskAwaiter {
 }
 #[cfg(feature = "System+Runtime+CompilerServices+ValueTaskAwaiter")]
 impl crate::System::Runtime::CompilerServices::ValueTaskAwaiter {
-    #[cfg(feature = "System+Runtime+CompilerServices+ValueTaskAwaiter+__c")]
-    pub type __c = crate::System::Runtime::CompilerServices::ValueTaskAwaiter___c;
     pub fn GetResult(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

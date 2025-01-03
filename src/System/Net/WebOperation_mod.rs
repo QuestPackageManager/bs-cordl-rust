@@ -49,10 +49,6 @@ impl std::ops::DerefMut for crate::System::Net::WebOperation {
 }
 #[cfg(feature = "System+Net+WebOperation")]
 impl crate::System::Net::WebOperation {
-    #[cfg(feature = "System+Net+WebOperation+_GetRequestStream_d__50")]
-    pub type _GetRequestStream_d__50 = crate::System::Net::WebOperation__GetRequestStream_d__50;
-    #[cfg(feature = "System+Net+WebOperation+_Run_d__58")]
-    pub type _Run_d__58 = crate::System::Net::WebOperation__Run_d__58;
     pub fn Abort(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

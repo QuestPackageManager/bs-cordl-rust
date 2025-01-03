@@ -45,8 +45,6 @@ impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > crate::IntervalTree::IntervalTreeNode_2<TKey, TValue> {
-    #[cfg(feature = "IntervalTree+IntervalTreeNode_2+__c")]
-    pub type __c = crate::IntervalTree::IntervalTreeNode_2___c<TKey, TValue>;
     pub fn GetClosestNodeTo(
         &mut self,
         key: TKey,

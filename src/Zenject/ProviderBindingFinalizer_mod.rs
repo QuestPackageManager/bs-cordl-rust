@@ -25,8 +25,6 @@ impl std::ops::DerefMut for crate::Zenject::ProviderBindingFinalizer {
 }
 #[cfg(feature = "Zenject+ProviderBindingFinalizer")]
 impl crate::Zenject::ProviderBindingFinalizer {
-    #[cfg(feature = "Zenject+ProviderBindingFinalizer+__c")]
-    pub type __c = crate::Zenject::ProviderBindingFinalizer___c;
     pub fn FinalizeBinding(
         &mut self,
         container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,

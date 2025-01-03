@@ -29,10 +29,6 @@ impl std::ops::DerefMut for crate::Zenject::GuiRenderableManager {
 impl crate::Zenject::GuiRenderableManager {
     #[cfg(feature = "Zenject+GuiRenderableManager+RenderableInfo")]
     pub type RenderableInfo = crate::Zenject::GuiRenderableManager_RenderableInfo;
-    #[cfg(feature = "Zenject+GuiRenderableManager+__c")]
-    pub type __c = crate::Zenject::GuiRenderableManager___c;
-    #[cfg(feature = "Zenject+GuiRenderableManager+__c__DisplayClass1_0")]
-    pub type __c__DisplayClass1_0 = crate::Zenject::GuiRenderableManager___c__DisplayClass1_0;
     pub fn New(
         renderables: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<

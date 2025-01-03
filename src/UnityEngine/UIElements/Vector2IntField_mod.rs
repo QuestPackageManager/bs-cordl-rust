@@ -36,8 +36,6 @@ impl crate::UnityEngine::UIElements::Vector2IntField {
     pub type UxmlFactory = crate::UnityEngine::UIElements::Vector2IntField_UxmlFactory;
     #[cfg(feature = "UnityEngine+UIElements+Vector2IntField+UxmlTraits")]
     pub type UxmlTraits = crate::UnityEngine::UIElements::Vector2IntField_UxmlTraits;
-    #[cfg(feature = "UnityEngine+UIElements+Vector2IntField+__c")]
-    pub type __c = crate::UnityEngine::UIElements::Vector2IntField___c;
     pub fn DescribeFields(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

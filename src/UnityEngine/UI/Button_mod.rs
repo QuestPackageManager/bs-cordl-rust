@@ -27,8 +27,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UI::Button {
 impl crate::UnityEngine::UI::Button {
     #[cfg(feature = "UnityEngine+UI+Button+ButtonClickedEvent")]
     pub type ButtonClickedEvent = crate::UnityEngine::UI::Button_ButtonClickedEvent;
-    #[cfg(feature = "UnityEngine+UI+Button+_OnFinishSubmit_d__9")]
-    pub type _OnFinishSubmit_d__9 = crate::UnityEngine::UI::Button__OnFinishSubmit_d__9;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

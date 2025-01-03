@@ -51,18 +51,6 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
     pub type SavedLeaderboardsData = crate::GlobalNamespace::LocalLeaderboardsModel_SavedLeaderboardsData;
     #[cfg(feature = "LocalLeaderboardsModel+ScoreData")]
     pub type ScoreData = crate::GlobalNamespace::LocalLeaderboardsModel_ScoreData;
-    #[cfg(feature = "LocalLeaderboardsModel+_ClearAllLeaderboardsAsync_d__38")]
-    pub type _ClearAllLeaderboardsAsync_d__38 = crate::GlobalNamespace::LocalLeaderboardsModel__ClearAllLeaderboardsAsync_d__38;
-    #[cfg(feature = "LocalLeaderboardsModel+_LoadAsync_d__39")]
-    pub type _LoadAsync_d__39 = crate::GlobalNamespace::LocalLeaderboardsModel__LoadAsync_d__39;
-    #[cfg(feature = "LocalLeaderboardsModel+_LoadLeaderboardsDataAsync_d__16")]
-    pub type _LoadLeaderboardsDataAsync_d__16 = crate::GlobalNamespace::LocalLeaderboardsModel__LoadLeaderboardsDataAsync_d__16;
-    #[cfg(feature = "LocalLeaderboardsModel+_SaveAsync_d__23")]
-    pub type _SaveAsync_d__23 = crate::GlobalNamespace::LocalLeaderboardsModel__SaveAsync_d__23;
-    #[cfg(feature = "LocalLeaderboardsModel+_SaveLeaderboardsData_d__19")]
-    pub type _SaveLeaderboardsData_d__19 = crate::GlobalNamespace::LocalLeaderboardsModel__SaveLeaderboardsData_d__19;
-    #[cfg(feature = "LocalLeaderboardsModel+__c")]
-    pub type __c = crate::GlobalNamespace::LocalLeaderboardsModel___c;
     pub fn AddScore_Il2CppString_i32__cordl_bool1(
         &mut self,
         leaderboardId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

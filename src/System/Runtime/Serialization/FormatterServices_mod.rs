@@ -25,10 +25,6 @@ impl std::ops::DerefMut for crate::System::Runtime::Serialization::FormatterServ
 }
 #[cfg(feature = "System+Runtime+Serialization+FormatterServices")]
 impl crate::System::Runtime::Serialization::FormatterServices {
-    #[cfg(
-        feature = "System+Runtime+Serialization+FormatterServices+__c__DisplayClass9_0"
-    )]
-    pub type __c__DisplayClass9_0 = crate::System::Runtime::Serialization::FormatterServices___c__DisplayClass9_0;
     pub fn CheckSerializable(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::RuntimeType>,
     ) -> quest_hook::libil2cpp::Result<bool> {

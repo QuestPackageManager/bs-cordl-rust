@@ -25,8 +25,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::UxmlIntAttributeDesc
 }
 #[cfg(feature = "UnityEngine+UIElements+UxmlIntAttributeDescription")]
 impl crate::UnityEngine::UIElements::UxmlIntAttributeDescription {
-    #[cfg(feature = "UnityEngine+UIElements+UxmlIntAttributeDescription+__c")]
-    pub type __c = crate::UnityEngine::UIElements::UxmlIntAttributeDescription___c;
     pub fn ConvertValueToInt(
         v: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         defaultValue: i32,

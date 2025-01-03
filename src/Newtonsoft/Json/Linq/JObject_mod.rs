@@ -29,16 +29,10 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Linq::JObject {
 impl crate::Newtonsoft::Json::Linq::JObject {
     #[cfg(feature = "Newtonsoft+Json+Linq+JObject+JObjectDynamicProxy")]
     pub type JObjectDynamicProxy = crate::Newtonsoft::Json::Linq::JObject_JObjectDynamicProxy;
-    #[cfg(feature = "Newtonsoft+Json+Linq+JObject+_GetEnumerator_d__64")]
-    pub type _GetEnumerator_d__64 = crate::Newtonsoft::Json::Linq::JObject__GetEnumerator_d__64;
-    #[cfg(feature = "Newtonsoft+Json+Linq+JObject+_LoadAsync_d__2")]
-    pub type _LoadAsync_d__2 = crate::Newtonsoft::Json::Linq::JObject__LoadAsync_d__2;
     #[cfg(
         feature = "Newtonsoft+Json+Linq+JObject+__WriteToAsync_g__AwaitProperties_0_0_d"
     )]
     pub type __WriteToAsync_g__AwaitProperties_0_0_d = crate::Newtonsoft::Json::Linq::JObject___WriteToAsync_g__AwaitProperties_0_0_d;
-    #[cfg(feature = "Newtonsoft+Json+Linq+JObject+__c")]
-    pub type __c = crate::Newtonsoft::Json::Linq::JObject___c;
     pub fn Add(
         &mut self,
         propertyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1338,8 +1332,6 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Linq::JObject_JObjectDynami
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JObject+JObjectDynamicProxy")]
 impl crate::Newtonsoft::Json::Linq::JObject_JObjectDynamicProxy {
-    #[cfg(feature = "Newtonsoft+Json+Linq+JObject+JObjectDynamicProxy+__c")]
-    pub type __c = crate::Newtonsoft::Json::Linq::JObjectDynamicProxy_JObject___c;
     pub fn GetDynamicMemberNames(
         &mut self,
         instance: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JObject>,

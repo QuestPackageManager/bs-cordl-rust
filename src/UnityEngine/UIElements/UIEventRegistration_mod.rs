@@ -24,8 +24,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIEventRegistration 
 }
 #[cfg(feature = "UnityEngine+UIElements+UIEventRegistration")]
 impl crate::UnityEngine::UIElements::UIEventRegistration {
-    #[cfg(feature = "UnityEngine+UIElements+UIEventRegistration+__c")]
-    pub type __c = crate::UnityEngine::UIElements::UIEventRegistration___c;
     pub fn CleanupRoots() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = <Self as quest_hook::libil2cpp::Type>::class()
             .invoke("CleanupRoots", ())?;

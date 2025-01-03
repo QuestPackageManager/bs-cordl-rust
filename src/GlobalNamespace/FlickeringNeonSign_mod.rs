@@ -43,8 +43,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::FlickeringNeonSign {
 }
 #[cfg(feature = "FlickeringNeonSign")]
 impl crate::GlobalNamespace::FlickeringNeonSign {
-    #[cfg(feature = "FlickeringNeonSign+_FlickeringCoroutine_d__16")]
-    pub type _FlickeringCoroutine_d__16 = crate::GlobalNamespace::FlickeringNeonSign__FlickeringCoroutine_d__16;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

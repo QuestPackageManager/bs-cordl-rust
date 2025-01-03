@@ -34,10 +34,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::PS5AdvancedHapticsPlayerCont
 }
 #[cfg(feature = "PS5AdvancedHapticsPlayerController")]
 impl crate::GlobalNamespace::PS5AdvancedHapticsPlayerController {
-    #[cfg(feature = "PS5AdvancedHapticsPlayerController+__c__DisplayClass6_0")]
-    pub type __c__DisplayClass6_0 = crate::GlobalNamespace::PS5AdvancedHapticsPlayerController___c__DisplayClass6_0;
-    #[cfg(feature = "PS5AdvancedHapticsPlayerController+__c__DisplayClass7_0")]
-    pub type __c__DisplayClass7_0 = crate::GlobalNamespace::PS5AdvancedHapticsPlayerController___c__DisplayClass7_0;
     pub fn CanPlayHapticPreset(
         &mut self,
         hapticPreset: quest_hook::libil2cpp::Gc<

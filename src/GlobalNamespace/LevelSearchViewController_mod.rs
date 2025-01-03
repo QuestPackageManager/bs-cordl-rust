@@ -55,8 +55,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::LevelSearchViewController {
 }
 #[cfg(feature = "LevelSearchViewController")]
 impl crate::GlobalNamespace::LevelSearchViewController {
-    #[cfg(feature = "LevelSearchViewController+_RefreshAsync_d__35")]
-    pub type _RefreshAsync_d__35 = crate::GlobalNamespace::LevelSearchViewController__RefreshAsync_d__35;
     pub fn DidActivate(
         &mut self,
         firstActivation: bool,

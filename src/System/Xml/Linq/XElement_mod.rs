@@ -26,8 +26,6 @@ impl std::ops::DerefMut for crate::System::Xml::Linq::XElement {
 }
 #[cfg(feature = "System+Xml+Linq+XElement")]
 impl crate::System::Xml::Linq::XElement {
-    #[cfg(feature = "System+Xml+Linq+XElement+_GetAttributes_d__116")]
-    pub type _GetAttributes_d__116 = crate::System::Xml::Linq::XElement__GetAttributes_d__116;
     pub fn AddAttribute(
         &mut self,
         a: quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XAttribute>,

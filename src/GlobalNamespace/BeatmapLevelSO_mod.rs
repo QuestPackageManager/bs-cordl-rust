@@ -904,8 +904,6 @@ for crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmapSet {
 }
 #[cfg(feature = "BeatmapLevelSO+PreviewDifficultyBeatmapSet")]
 impl crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmapSet {
-    #[cfg(feature = "BeatmapLevelSO+PreviewDifficultyBeatmapSet+__c")]
-    pub type __c = crate::GlobalNamespace::PreviewDifficultyBeatmapSet_BeatmapLevelSO___c;
     pub fn Add(
         &mut self,
         previewDifficultyBeatmap: quest_hook::libil2cpp::Gc<

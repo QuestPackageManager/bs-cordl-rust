@@ -23,8 +23,6 @@ for crate::UnityEngine::ProBuilder::EdgeLookup {
 }
 #[cfg(feature = "UnityEngine+ProBuilder+EdgeLookup")]
 impl crate::UnityEngine::ProBuilder::EdgeLookup {
-    #[cfg(feature = "UnityEngine+ProBuilder+EdgeLookup+__c__DisplayClass16_0")]
-    pub type __c__DisplayClass16_0 = crate::UnityEngine::ProBuilder::EdgeLookup___c__DisplayClass16_0;
     pub fn Equals_EdgeLookup0(
         &mut self,
         other: crate::UnityEngine::ProBuilder::EdgeLookup,

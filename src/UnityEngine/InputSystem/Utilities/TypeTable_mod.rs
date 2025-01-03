@@ -25,8 +25,6 @@ for crate::UnityEngine::InputSystem::Utilities::TypeTable {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+TypeTable")]
 impl crate::UnityEngine::InputSystem::Utilities::TypeTable {
-    #[cfg(feature = "UnityEngine+InputSystem+Utilities+TypeTable+__c")]
-    pub type __c = crate::UnityEngine::InputSystem::Utilities::TypeTable___c;
     pub fn AddTypeRegistration(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

@@ -34,8 +34,6 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::JsonValidatingReader {
 impl crate::Newtonsoft::Json::JsonValidatingReader {
     #[cfg(feature = "Newtonsoft+Json+JsonValidatingReader+SchemaScope")]
     pub type SchemaScope = crate::Newtonsoft::Json::JsonValidatingReader_SchemaScope;
-    #[cfg(feature = "Newtonsoft+Json+JsonValidatingReader+__c")]
-    pub type __c = crate::Newtonsoft::Json::JsonValidatingReader___c;
     pub fn Close(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -719,8 +717,6 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::JsonValidatingReader_Schema
 }
 #[cfg(feature = "Newtonsoft+Json+JsonValidatingReader+SchemaScope")]
 impl crate::Newtonsoft::Json::JsonValidatingReader_SchemaScope {
-    #[cfg(feature = "Newtonsoft+Json+JsonValidatingReader+SchemaScope+__c")]
-    pub type __c = crate::Newtonsoft::Json::SchemaScope_JsonValidatingReader___c;
     pub fn GetRequiredProperties(
         &mut self,
         schema: quest_hook::libil2cpp::Gc<

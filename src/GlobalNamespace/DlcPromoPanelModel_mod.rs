@@ -63,36 +63,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::DlcPromoPanelModel {
 impl crate::GlobalNamespace::DlcPromoPanelModel {
     #[cfg(feature = "DlcPromoPanelModel+PromoInfo")]
     pub type PromoInfo = crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo;
-    #[cfg(
-        feature = "DlcPromoPanelModel+_GetPackDataForMainMenuPromoBannerInternal_d__35"
-    )]
-    pub type _GetPackDataForMainMenuPromoBannerInternal_d__35 = crate::GlobalNamespace::DlcPromoPanelModel__GetPackDataForMainMenuPromoBannerInternal_d__35;
-    #[cfg(feature = "DlcPromoPanelModel+_GetPackDataForMainMenuPromoBanner_d__34")]
-    pub type _GetPackDataForMainMenuPromoBanner_d__34 = crate::GlobalNamespace::DlcPromoPanelModel__GetPackDataForMainMenuPromoBanner_d__34;
-    #[cfg(
-        feature = "DlcPromoPanelModel+_HandleAdditionalContentModelDidInvalidateData_d__44"
-    )]
-    pub type _HandleAdditionalContentModelDidInvalidateData_d__44 = crate::GlobalNamespace::DlcPromoPanelModel__HandleAdditionalContentModelDidInvalidateData_d__44;
-    #[cfg(feature = "DlcPromoPanelModel+_HandleDidCatalogLoadOrUpdate_d__30")]
-    pub type _HandleDidCatalogLoadOrUpdate_d__30 = crate::GlobalNamespace::DlcPromoPanelModel__HandleDidCatalogLoadOrUpdate_d__30;
-    #[cfg(feature = "DlcPromoPanelModel+_InitializeInternalAsync_d__28")]
-    pub type _InitializeInternalAsync_d__28 = crate::GlobalNamespace::DlcPromoPanelModel__InitializeInternalAsync_d__28;
-    #[cfg(feature = "DlcPromoPanelModel+_Initialize_d__26")]
-    pub type _Initialize_d__26 = crate::GlobalNamespace::DlcPromoPanelModel__Initialize_d__26;
-    #[cfg(feature = "DlcPromoPanelModel+_LoadPackPromoInfoAsync_d__33")]
-    pub type _LoadPackPromoInfoAsync_d__33 = crate::GlobalNamespace::DlcPromoPanelModel__LoadPackPromoInfoAsync_d__33;
-    #[cfg(feature = "DlcPromoPanelModel+_UpdateDlcPromoPanelDataAsync_d__31")]
-    pub type _UpdateDlcPromoPanelDataAsync_d__31 = crate::GlobalNamespace::DlcPromoPanelModel__UpdateDlcPromoPanelDataAsync_d__31;
-    #[cfg(feature = "DlcPromoPanelModel+_UpdateModelDataAsync_d__29")]
-    pub type _UpdateModelDataAsync_d__29 = crate::GlobalNamespace::DlcPromoPanelModel__UpdateModelDataAsync_d__29;
-    #[cfg(feature = "DlcPromoPanelModel+_UpdateOwnedPacksAsync_d__43")]
-    pub type _UpdateOwnedPacksAsync_d__43 = crate::GlobalNamespace::DlcPromoPanelModel__UpdateOwnedPacksAsync_d__43;
-    #[cfg(feature = "DlcPromoPanelModel+_UpdatePromoInfosAsync_d__32")]
-    pub type _UpdatePromoInfosAsync_d__32 = crate::GlobalNamespace::DlcPromoPanelModel__UpdatePromoInfosAsync_d__32;
-    #[cfg(feature = "DlcPromoPanelModel+__c")]
-    pub type __c = crate::GlobalNamespace::DlcPromoPanelModel___c;
-    #[cfg(feature = "DlcPromoPanelModel+__c__DisplayClass35_0")]
-    pub type __c__DisplayClass35_0 = crate::GlobalNamespace::DlcPromoPanelModel___c__DisplayClass35_0;
     pub fn BuyLevelButtonWasPressed(
         &mut self,
         level: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,

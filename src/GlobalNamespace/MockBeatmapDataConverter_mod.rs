@@ -24,8 +24,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::MockBeatmapDataConverter {
 }
 #[cfg(feature = "MockBeatmapDataConverter")]
 impl crate::GlobalNamespace::MockBeatmapDataConverter {
-    #[cfg(feature = "MockBeatmapDataConverter+__c")]
-    pub type __c = crate::GlobalNamespace::MockBeatmapDataConverter___c;
     pub fn ToMockBeatmapData(
         beatmapData: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IReadonlyBeatmapData,

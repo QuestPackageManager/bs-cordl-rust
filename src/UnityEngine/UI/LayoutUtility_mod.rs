@@ -24,8 +24,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UI::LayoutUtility {
 }
 #[cfg(feature = "UnityEngine+UI+LayoutUtility")]
 impl crate::UnityEngine::UI::LayoutUtility {
-    #[cfg(feature = "UnityEngine+UI+LayoutUtility+__c")]
-    pub type __c = crate::UnityEngine::UI::LayoutUtility___c;
     pub fn GetFlexibleHeight(
         rect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     ) -> quest_hook::libil2cpp::Result<f32> {

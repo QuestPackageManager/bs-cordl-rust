@@ -26,8 +26,6 @@ impl std::ops::DerefMut for crate::System::Net::Http::HttpClientHandler {
 }
 #[cfg(feature = "System+Net+Http+HttpClientHandler")]
 impl crate::System::Net::Http::HttpClientHandler {
-    #[cfg(feature = "System+Net+Http+HttpClientHandler+__c")]
-    pub type __c = crate::System::Net::Http::HttpClientHandler___c;
     pub fn CreateDefaultHandler() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Net::Http::IMonoHttpClientHandler>,
     > {

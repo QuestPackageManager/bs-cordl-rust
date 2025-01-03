@@ -34,12 +34,6 @@ impl std::ops::DerefMut for crate::Zenject::InjectContext {
 }
 #[cfg(feature = "Zenject+InjectContext")]
 impl crate::Zenject::InjectContext {
-    #[cfg(feature = "Zenject+InjectContext+_get_AllObjectTypes_d__56")]
-    pub type _get_AllObjectTypes_d__56 = crate::Zenject::InjectContext__get_AllObjectTypes_d__56;
-    #[cfg(feature = "Zenject+InjectContext+_get_ParentContextsAndSelf_d__54")]
-    pub type _get_ParentContextsAndSelf_d__54 = crate::Zenject::InjectContext__get_ParentContextsAndSelf_d__54;
-    #[cfg(feature = "Zenject+InjectContext+_get_ParentContexts_d__52")]
-    pub type _get_ParentContexts_d__52 = crate::Zenject::InjectContext__get_ParentContexts_d__52;
     pub fn Clone(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

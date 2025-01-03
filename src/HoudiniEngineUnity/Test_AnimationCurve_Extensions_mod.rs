@@ -25,8 +25,6 @@ impl std::ops::DerefMut for crate::HoudiniEngineUnity::Test_AnimationCurve_Exten
 }
 #[cfg(feature = "HoudiniEngineUnity+Test_AnimationCurve_Extensions")]
 impl crate::HoudiniEngineUnity::Test_AnimationCurve_Extensions {
-    #[cfg(feature = "HoudiniEngineUnity+Test_AnimationCurve_Extensions+__c")]
-    pub type __c = crate::HoudiniEngineUnity::Test_AnimationCurve_Extensions___c;
     pub fn ToTestObject_AnimationCurve0(
         _cordl_self: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
     ) -> quest_hook::libil2cpp::Result<

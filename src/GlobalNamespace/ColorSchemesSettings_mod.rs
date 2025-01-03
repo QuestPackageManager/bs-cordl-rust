@@ -37,8 +37,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::ColorSchemesSettings {
 impl crate::GlobalNamespace::ColorSchemesSettings {
     #[cfg(feature = "ColorSchemesSettings+ColorOverrideType")]
     pub type ColorOverrideType = crate::GlobalNamespace::ColorSchemesSettings_ColorOverrideType;
-    #[cfg(feature = "ColorSchemesSettings+__c")]
-    pub type __c = crate::GlobalNamespace::ColorSchemesSettings___c;
     pub fn GetColorSchemeForId(
         &mut self,
         id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

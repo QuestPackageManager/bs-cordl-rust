@@ -46,8 +46,6 @@ impl crate::UnityEngine::Timeline::AnimationTrack {
     pub const k_DefaultRecordableClipName: &'static str = "Recorded";
     #[cfg(feature = "UnityEngine+Timeline+AnimationTrack+AnimationTrackUpgrade")]
     pub type AnimationTrackUpgrade = crate::UnityEngine::Timeline::AnimationTrack_AnimationTrackUpgrade;
-    #[cfg(feature = "UnityEngine+Timeline+AnimationTrack+_get_outputs_d__49")]
-    pub type _get_outputs_d__49 = crate::UnityEngine::Timeline::AnimationTrack__get_outputs_d__49;
     pub fn AnimatesRootTransform(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

@@ -29,8 +29,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::PerceivedLoudnessSO {
 impl crate::GlobalNamespace::PerceivedLoudnessSO {
     #[cfg(feature = "PerceivedLoudnessSO+PerceivedLevelLoudnessPair")]
     pub type PerceivedLevelLoudnessPair = crate::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair;
-    #[cfg(feature = "PerceivedLoudnessSO+__c__DisplayClass6_0")]
-    pub type __c__DisplayClass6_0 = crate::GlobalNamespace::PerceivedLoudnessSO___c__DisplayClass6_0;
     pub fn GetLoudnessData(
         &mut self,
         levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

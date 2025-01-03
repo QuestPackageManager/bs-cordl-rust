@@ -34,8 +34,6 @@ impl std::ops::DerefMut for crate::Zenject::TransientProvider {
 }
 #[cfg(feature = "Zenject+TransientProvider")]
 impl crate::Zenject::TransientProvider {
-    #[cfg(feature = "Zenject+TransientProvider+__c__DisplayClass11_0")]
-    pub type __c__DisplayClass11_0 = crate::Zenject::TransientProvider___c__DisplayClass11_0;
     pub fn GetAllInstancesWithInjectSplit(
         &mut self,
         context: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,

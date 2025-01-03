@@ -75,20 +75,6 @@ for crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::BeatAvatarEditorViewContr
 impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::BeatAvatarEditorViewController {
     pub const kCreateApplyButtonLocalizationKey: &'static str = "BUTTON_CREATE_AVATAR";
     pub const kEditApplyButtonLocalizationKey: &'static str = "BUTTON_APPLY";
-    #[cfg(
-        feature = "BeatSaber+BeatAvatarAdapter+AvatarEditor+BeatAvatarEditorViewController+_HandleCancelButtonWasPressed_d__57"
-    )]
-    pub type _HandleCancelButtonWasPressed_d__57 = crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::BeatAvatarEditorViewController__HandleCancelButtonWasPressed_d__57;
-    #[cfg(
-        feature = "BeatSaber+BeatAvatarAdapter+AvatarEditor+BeatAvatarEditorViewController+__c__DisplayClass60_0"
-    )]
-    pub type __c__DisplayClass60_0 = crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::BeatAvatarEditorViewController___c__DisplayClass60_0;
-    #[cfg(
-        feature = "BeatSaber+BeatAvatarAdapter+AvatarEditor+BeatAvatarEditorViewController+__c__DisplayClass62_0_1"
-    )]
-    pub type __c__DisplayClass62_0_1<T: quest_hook::libil2cpp::Type> = crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::BeatAvatarEditorViewController___c__DisplayClass62_0_1<
-        T,
-    >;
     pub fn CreateColorValuePairsForAvatarPartCollection(
         &mut self,
         colors: quest_hook::libil2cpp::Gc<

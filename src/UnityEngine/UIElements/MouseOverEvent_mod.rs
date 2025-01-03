@@ -28,8 +28,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::MouseOverEvent {
 }
 #[cfg(feature = "UnityEngine+UIElements+MouseOverEvent")]
 impl crate::UnityEngine::UIElements::MouseOverEvent {
-    #[cfg(feature = "UnityEngine+UIElements+MouseOverEvent+__c")]
-    pub type __c = crate::UnityEngine::UIElements::MouseOverEvent___c;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

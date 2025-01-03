@@ -36,16 +36,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::PlatformAuthenticationTokenP
 #[cfg(feature = "PlatformAuthenticationTokenProvider")]
 impl crate::GlobalNamespace::PlatformAuthenticationTokenProvider {
     pub const kXPlatformTokenRetryDelayLengthSeconds: i32 = 30i32;
-    #[cfg(feature = "PlatformAuthenticationTokenProvider+_GetAuthenticationToken_d__16")]
-    pub type _GetAuthenticationToken_d__16 = crate::GlobalNamespace::PlatformAuthenticationTokenProvider__GetAuthenticationToken_d__16;
-    #[cfg(
-        feature = "PlatformAuthenticationTokenProvider+_GetXPlatformAccessToken_d__18"
-    )]
-    pub type _GetXPlatformAccessToken_d__18 = crate::GlobalNamespace::PlatformAuthenticationTokenProvider__GetXPlatformAccessToken_d__18;
-    #[cfg(
-        feature = "PlatformAuthenticationTokenProvider+_RequestXPlatformAccessToken_d__19"
-    )]
-    pub type _RequestXPlatformAccessToken_d__19 = crate::GlobalNamespace::PlatformAuthenticationTokenProvider__RequestXPlatformAccessToken_d__19;
     pub fn GetAuthenticationToken(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

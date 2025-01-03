@@ -29,8 +29,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::PointerMoveEvent {
 }
 #[cfg(feature = "UnityEngine+UIElements+PointerMoveEvent")]
 impl crate::UnityEngine::UIElements::PointerMoveEvent {
-    #[cfg(feature = "UnityEngine+UIElements+PointerMoveEvent+__c")]
-    pub type __c = crate::UnityEngine::UIElements::PointerMoveEvent___c;
     pub fn Init(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -265,8 +265,6 @@ impl crate::TMPro::TMP_Text {
     pub type TextInputSources = crate::TMPro::TMP_Text_TextInputSources;
     #[cfg(feature = "TMPro+TMP_Text+UnicodeChar")]
     pub type UnicodeChar = crate::TMPro::TMP_Text_UnicodeChar;
-    #[cfg(feature = "TMPro+TMP_Text+__c")]
-    pub type __c = crate::TMPro::TMP_Text___c;
     pub fn AddFloatToInternalTextBackingArray(
         &mut self,
         value: f32,

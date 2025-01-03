@@ -41,10 +41,6 @@ for crate::UnityEngine::UIElements::VerticalVirtualizationController_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::UnityEngine::UIElements::VerticalVirtualizationController_1<T> {
-    #[cfg(feature = "UnityEngine+UIElements+VerticalVirtualizationController_1+__c")]
-    pub type __c = crate::UnityEngine::UIElements::VerticalVirtualizationController_1___c<
-        T,
-    >;
     pub fn EndDrag(
         &mut self,
         dropIndex: i32,

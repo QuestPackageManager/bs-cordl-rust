@@ -30,18 +30,6 @@ for crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
 }
 #[cfg(feature = "UnityEngine+Networking+PlayerConnection+PlayerConnection")]
 impl crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
-    #[cfg(
-        feature = "UnityEngine+Networking+PlayerConnection+PlayerConnection+__c__DisplayClass12_0"
-    )]
-    pub type __c__DisplayClass12_0 = crate::UnityEngine::Networking::PlayerConnection::PlayerConnection___c__DisplayClass12_0;
-    #[cfg(
-        feature = "UnityEngine+Networking+PlayerConnection+PlayerConnection+__c__DisplayClass13_0"
-    )]
-    pub type __c__DisplayClass13_0 = crate::UnityEngine::Networking::PlayerConnection::PlayerConnection___c__DisplayClass13_0;
-    #[cfg(
-        feature = "UnityEngine+Networking+PlayerConnection+PlayerConnection+__c__DisplayClass20_0"
-    )]
-    pub type __c__DisplayClass20_0 = crate::UnityEngine::Networking::PlayerConnection::PlayerConnection___c__DisplayClass20_0;
     pub fn BlockUntilRecvMsg(
         &mut self,
         messageId: crate::System::Guid,

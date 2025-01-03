@@ -70,12 +70,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::LevelFilteringNavigationCont
 }
 #[cfg(feature = "LevelFilteringNavigationController")]
 impl crate::GlobalNamespace::LevelFilteringNavigationController {
-    #[cfg(feature = "LevelFilteringNavigationController+_UpdateCustomSongs_d__54")]
-    pub type _UpdateCustomSongs_d__54 = crate::GlobalNamespace::LevelFilteringNavigationController__UpdateCustomSongs_d__54;
-    #[cfg(feature = "LevelFilteringNavigationController+__c")]
-    pub type __c = crate::GlobalNamespace::LevelFilteringNavigationController___c;
-    #[cfg(feature = "LevelFilteringNavigationController+__c__DisplayClass53_0")]
-    pub type __c__DisplayClass53_0 = crate::GlobalNamespace::LevelFilteringNavigationController___c__DisplayClass53_0;
     pub fn DidActivate(
         &mut self,
         firstActivation: bool,

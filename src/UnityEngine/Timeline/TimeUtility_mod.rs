@@ -24,8 +24,6 @@ impl std::ops::DerefMut for crate::UnityEngine::Timeline::TimeUtility {
 }
 #[cfg(feature = "UnityEngine+Timeline+TimeUtility")]
 impl crate::UnityEngine::Timeline::TimeUtility {
-    #[cfg(feature = "UnityEngine+Timeline+TimeUtility+__c")]
-    pub type __c = crate::UnityEngine::Timeline::TimeUtility___c;
     pub fn FromFrames_f64_1(
         frames: f64,
         frameRate: f64,

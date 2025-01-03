@@ -49,8 +49,6 @@ impl std::ops::DerefMut for crate::UnityEngine::TextCore::Text::SpriteAsset {
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+SpriteAsset")]
 impl crate::UnityEngine::TextCore::Text::SpriteAsset {
-    #[cfg(feature = "UnityEngine+TextCore+Text+SpriteAsset+__c")]
-    pub type __c = crate::UnityEngine::TextCore::Text::SpriteAsset___c;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

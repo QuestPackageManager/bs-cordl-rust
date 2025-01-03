@@ -25,8 +25,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BloomFogParamsAnimator {
 }
 #[cfg(feature = "BloomFogParamsAnimator")]
 impl crate::GlobalNamespace::BloomFogParamsAnimator {
-    #[cfg(feature = "BloomFogParamsAnimator+_AnimationCoroutine_d__2")]
-    pub type _AnimationCoroutine_d__2 = crate::GlobalNamespace::BloomFogParamsAnimator__AnimationCoroutine_d__2;
     pub fn AnimateBloomFogParamsChange(
         &mut self,
         envFogParams: quest_hook::libil2cpp::Gc<

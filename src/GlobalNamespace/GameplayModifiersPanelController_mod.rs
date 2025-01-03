@@ -41,8 +41,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::GameplayModifiersPanelContro
 }
 #[cfg(feature = "GameplayModifiersPanelController")]
 impl crate::GlobalNamespace::GameplayModifiersPanelController {
-    #[cfg(feature = "GameplayModifiersPanelController+__c__DisplayClass16_0")]
-    pub type __c__DisplayClass16_0 = crate::GlobalNamespace::GameplayModifiersPanelController___c__DisplayClass16_0;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -32,10 +32,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::PartyFreePlayFlowCoordinator
 }
 #[cfg(feature = "PartyFreePlayFlowCoordinator")]
 impl crate::GlobalNamespace::PartyFreePlayFlowCoordinator {
-    #[cfg(feature = "PartyFreePlayFlowCoordinator+__c__DisplayClass18_0")]
-    pub type __c__DisplayClass18_0 = crate::GlobalNamespace::PartyFreePlayFlowCoordinator___c__DisplayClass18_0;
-    #[cfg(feature = "PartyFreePlayFlowCoordinator+__c__DisplayClass23_0")]
-    pub type __c__DisplayClass23_0 = crate::GlobalNamespace::PartyFreePlayFlowCoordinator___c__DisplayClass23_0;
     pub fn HandleResultsViewControllerContinueButtonPressed(
         &mut self,
         resultsViewController: quest_hook::libil2cpp::Gc<

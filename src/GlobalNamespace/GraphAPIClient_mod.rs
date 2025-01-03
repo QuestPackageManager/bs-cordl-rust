@@ -28,15 +28,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::GraphAPIClient {
 impl crate::GlobalNamespace::GraphAPIClient {
     #[cfg(feature = "GraphAPIClient+PostOptions")]
     pub type PostOptions = crate::GlobalNamespace::GraphAPIClient_PostOptions;
-    #[cfg(feature = "GraphAPIClient+_Post_d__4_2")]
-    pub type _Post_d__4_2<
-        TRequest: quest_hook::libil2cpp::Type,
-        TResponse: quest_hook::libil2cpp::Type,
-    > = crate::GlobalNamespace::GraphAPIClient__Post_d__4_2<TRequest, TResponse>;
-    #[cfg(feature = "GraphAPIClient+_Post_d__5_1")]
-    pub type _Post_d__5_1<TResponse: quest_hook::libil2cpp::Type> = crate::GlobalNamespace::GraphAPIClient__Post_d__5_1<
-        TResponse,
-    >;
     pub fn CalculateDelayMsBeforeRetry(
         numAttempts: i32,
         postOptions: crate::GlobalNamespace::GraphAPIClient_PostOptions,

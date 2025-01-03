@@ -37,8 +37,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::LocalLeaderboardViewControll
 }
 #[cfg(feature = "LocalLeaderboardViewController")]
 impl crate::GlobalNamespace::LocalLeaderboardViewController {
-    #[cfg(feature = "LocalLeaderboardViewController+_ClearLeaderboardsAsync_d__24")]
-    pub type _ClearLeaderboardsAsync_d__24 = crate::GlobalNamespace::LocalLeaderboardViewController__ClearLeaderboardsAsync_d__24;
     pub fn ClearLeaderboardsAsync(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

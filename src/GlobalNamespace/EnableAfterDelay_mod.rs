@@ -25,8 +25,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::EnableAfterDelay {
 }
 #[cfg(feature = "EnableAfterDelay")]
 impl crate::GlobalNamespace::EnableAfterDelay {
-    #[cfg(feature = "EnableAfterDelay+_Start_d__1")]
-    pub type _Start_d__1 = crate::GlobalNamespace::EnableAfterDelay__Start_d__1;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

@@ -24,8 +24,6 @@ impl std::ops::DerefMut for crate::HoudiniEngineUnity::Test_Collider_Extensions 
 }
 #[cfg(feature = "HoudiniEngineUnity+Test_Collider_Extensions")]
 impl crate::HoudiniEngineUnity::Test_Collider_Extensions {
-    #[cfg(feature = "HoudiniEngineUnity+Test_Collider_Extensions+__c")]
-    pub type __c = crate::HoudiniEngineUnity::Test_Collider_Extensions___c;
     pub fn ToTestObject_Collider0(
         _cordl_self: quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
     ) -> quest_hook::libil2cpp::Result<

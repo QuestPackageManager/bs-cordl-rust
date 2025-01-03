@@ -31,10 +31,6 @@ impl crate::GlobalNamespace::HapticsAudioClipPlayer {
     pub const kContinuousRumbleFadeDuration: f32 = 0.016666668f32;
     #[cfg(feature = "HapticsAudioClipPlayer+Pool")]
     pub type Pool = crate::GlobalNamespace::HapticsAudioClipPlayer_Pool;
-    #[cfg(feature = "HapticsAudioClipPlayer+_HandleContinuousAudioCoroutine_d__9")]
-    pub type _HandleContinuousAudioCoroutine_d__9 = crate::GlobalNamespace::HapticsAudioClipPlayer__HandleContinuousAudioCoroutine_d__9;
-    #[cfg(feature = "HapticsAudioClipPlayer+_HandleOneShotPlayEndCoroutine_d__11")]
-    pub type _HandleOneShotPlayEndCoroutine_d__11 = crate::GlobalNamespace::HapticsAudioClipPlayer__HandleOneShotPlayEndCoroutine_d__11;
     pub fn ForceStopPlaying(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

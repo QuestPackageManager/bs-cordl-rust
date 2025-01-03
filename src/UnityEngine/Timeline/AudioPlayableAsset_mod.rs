@@ -28,8 +28,6 @@ impl std::ops::DerefMut for crate::UnityEngine::Timeline::AudioPlayableAsset {
 }
 #[cfg(feature = "UnityEngine+Timeline+AudioPlayableAsset")]
 impl crate::UnityEngine::Timeline::AudioPlayableAsset {
-    #[cfg(feature = "UnityEngine+Timeline+AudioPlayableAsset+_get_outputs_d__16")]
-    pub type _get_outputs_d__16 = crate::UnityEngine::Timeline::AudioPlayableAsset__get_outputs_d__16;
     pub fn CreatePlayable(
         &mut self,
         graph: crate::UnityEngine::Playables::PlayableGraph,

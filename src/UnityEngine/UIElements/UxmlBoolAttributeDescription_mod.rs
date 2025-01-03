@@ -28,8 +28,6 @@ for crate::UnityEngine::UIElements::UxmlBoolAttributeDescription {
 }
 #[cfg(feature = "UnityEngine+UIElements+UxmlBoolAttributeDescription")]
 impl crate::UnityEngine::UIElements::UxmlBoolAttributeDescription {
-    #[cfg(feature = "UnityEngine+UIElements+UxmlBoolAttributeDescription+__c")]
-    pub type __c = crate::UnityEngine::UIElements::UxmlBoolAttributeDescription___c;
     pub fn ConvertValueToBool(
         v: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         defaultValue: bool,

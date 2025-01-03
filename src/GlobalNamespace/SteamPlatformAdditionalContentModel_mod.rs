@@ -33,28 +33,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::SteamPlatformAdditionalConte
 #[cfg(feature = "SteamPlatformAdditionalContentModel")]
 impl crate::GlobalNamespace::SteamPlatformAdditionalContentModel {
     pub const _steamAppID: u32 = 0u32;
-    #[cfg(
-        feature = "SteamPlatformAdditionalContentModel+_GetLevelDataVersionInternalAsync_d__10"
-    )]
-    pub type _GetLevelDataVersionInternalAsync_d__10 = crate::GlobalNamespace::SteamPlatformAdditionalContentModel__GetLevelDataVersionInternalAsync_d__10;
-    #[cfg(
-        feature = "SteamPlatformAdditionalContentModel+_GetLevelEntitlementStatusInternalAsync_d__8"
-    )]
-    pub type _GetLevelEntitlementStatusInternalAsync_d__8 = crate::GlobalNamespace::SteamPlatformAdditionalContentModel__GetLevelEntitlementStatusInternalAsync_d__8;
-    #[cfg(
-        feature = "SteamPlatformAdditionalContentModel+_GetPackEntitlementStatusInternalAsync_d__9"
-    )]
-    pub type _GetPackEntitlementStatusInternalAsync_d__9 = crate::GlobalNamespace::SteamPlatformAdditionalContentModel__GetPackEntitlementStatusInternalAsync_d__9;
-    #[cfg(
-        feature = "SteamPlatformAdditionalContentModel+_GetRedirectedLevelPackProductData_d__11"
-    )]
-    pub type _GetRedirectedLevelPackProductData_d__11 = crate::GlobalNamespace::SteamPlatformAdditionalContentModel__GetRedirectedLevelPackProductData_d__11;
-    #[cfg(feature = "SteamPlatformAdditionalContentModel+_IsDataValidAsync_d__12")]
-    pub type _IsDataValidAsync_d__12 = crate::GlobalNamespace::SteamPlatformAdditionalContentModel__IsDataValidAsync_d__12;
-    #[cfg(
-        feature = "SteamPlatformAdditionalContentModel+_OpenLevelPackProductStoreAsync_d__14"
-    )]
-    pub type _OpenLevelPackProductStoreAsync_d__14 = crate::GlobalNamespace::SteamPlatformAdditionalContentModel__OpenLevelPackProductStoreAsync_d__14;
     pub fn CheckForNewEntitlementsAsync(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

@@ -75,8 +75,6 @@ impl crate::UnityEngine::InputSystem::InputActionState {
     pub type TriggerState = crate::UnityEngine::InputSystem::InputActionState_TriggerState;
     #[cfg(feature = "UnityEngine+InputSystem+InputActionState+UnmanagedMemory")]
     pub type UnmanagedMemory = crate::UnityEngine::InputSystem::InputActionState_UnmanagedMemory;
-    #[cfg(feature = "UnityEngine+InputSystem+InputActionState+__c")]
-    pub type __c = crate::UnityEngine::InputSystem::InputActionState___c;
     pub fn AddToGlobalList(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

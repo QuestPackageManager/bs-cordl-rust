@@ -31,12 +31,6 @@ impl std::ops::DerefMut for crate::Mono::Net::Security::AsyncProtocolRequest {
 }
 #[cfg(feature = "Mono+Net+Security+AsyncProtocolRequest")]
 impl crate::Mono::Net::Security::AsyncProtocolRequest {
-    #[cfg(feature = "Mono+Net+Security+AsyncProtocolRequest+_InnerRead_d__25")]
-    pub type _InnerRead_d__25 = crate::Mono::Net::Security::AsyncProtocolRequest__InnerRead_d__25;
-    #[cfg(feature = "Mono+Net+Security+AsyncProtocolRequest+_ProcessOperation_d__24")]
-    pub type _ProcessOperation_d__24 = crate::Mono::Net::Security::AsyncProtocolRequest__ProcessOperation_d__24;
-    #[cfg(feature = "Mono+Net+Security+AsyncProtocolRequest+_StartOperation_d__23")]
-    pub type _StartOperation_d__23 = crate::Mono::Net::Security::AsyncProtocolRequest__StartOperation_d__23;
     pub fn InnerRead(
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,

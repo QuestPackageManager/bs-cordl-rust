@@ -28,10 +28,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapLevelDataLoader {
 }
 #[cfg(feature = "BeatmapLevelDataLoader")]
 impl crate::GlobalNamespace::BeatmapLevelDataLoader {
-    #[cfg(
-        feature = "BeatmapLevelDataLoader+_CheckBeatmapLevelDataFromAssetBundleExistsAsync_d__4"
-    )]
-    pub type _CheckBeatmapLevelDataFromAssetBundleExistsAsync_d__4 = crate::GlobalNamespace::BeatmapLevelDataLoader__CheckBeatmapLevelDataFromAssetBundleExistsAsync_d__4;
     pub fn CheckBeatmapLevelDataFromAssetBundleExistsAsync(
         &mut self,
         levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

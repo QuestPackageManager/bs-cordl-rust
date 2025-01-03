@@ -28,8 +28,6 @@ impl std::ops::DerefMut for crate::OVRSimpleJSON::JSONArray {
 }
 #[cfg(feature = "OVRSimpleJSON+JSONArray")]
 impl crate::OVRSimpleJSON::JSONArray {
-    #[cfg(feature = "OVRSimpleJSON+JSONArray+_get_Children_d__22")]
-    pub type _get_Children_d__22 = crate::OVRSimpleJSON::JSONArray__get_Children_d__22;
     pub fn Add(
         &mut self,
         aKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

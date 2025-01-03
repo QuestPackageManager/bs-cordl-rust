@@ -26,8 +26,6 @@ for crate::UnityEngine::UIElements::UxmlDoubleAttributeDescription {
 }
 #[cfg(feature = "UnityEngine+UIElements+UxmlDoubleAttributeDescription")]
 impl crate::UnityEngine::UIElements::UxmlDoubleAttributeDescription {
-    #[cfg(feature = "UnityEngine+UIElements+UxmlDoubleAttributeDescription+__c")]
-    pub type __c = crate::UnityEngine::UIElements::UxmlDoubleAttributeDescription___c;
     pub fn ConvertValueToDouble(
         v: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         defaultValue: f64,

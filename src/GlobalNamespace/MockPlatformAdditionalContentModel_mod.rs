@@ -35,26 +35,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::MockPlatformAdditionalConten
 }
 #[cfg(feature = "MockPlatformAdditionalContentModel")]
 impl crate::GlobalNamespace::MockPlatformAdditionalContentModel {
-    #[cfg(
-        feature = "MockPlatformAdditionalContentModel+_GetLevelEntitlementStatusInternalAsync_d__6"
-    )]
-    pub type _GetLevelEntitlementStatusInternalAsync_d__6 = crate::GlobalNamespace::MockPlatformAdditionalContentModel__GetLevelEntitlementStatusInternalAsync_d__6;
-    #[cfg(
-        feature = "MockPlatformAdditionalContentModel+_GetPackEntitlementStatusInternalAsync_d__7"
-    )]
-    pub type _GetPackEntitlementStatusInternalAsync_d__7 = crate::GlobalNamespace::MockPlatformAdditionalContentModel__GetPackEntitlementStatusInternalAsync_d__7;
-    #[cfg(
-        feature = "MockPlatformAdditionalContentModel+_IsPackBetterBuyThanLevelAsync_d__9"
-    )]
-    pub type _IsPackBetterBuyThanLevelAsync_d__9 = crate::GlobalNamespace::MockPlatformAdditionalContentModel__IsPackBetterBuyThanLevelAsync_d__9;
-    #[cfg(
-        feature = "MockPlatformAdditionalContentModel+_OpenLevelPackProductStoreAsync_d__13"
-    )]
-    pub type _OpenLevelPackProductStoreAsync_d__13 = crate::GlobalNamespace::MockPlatformAdditionalContentModel__OpenLevelPackProductStoreAsync_d__13;
-    #[cfg(
-        feature = "MockPlatformAdditionalContentModel+_OpenLevelProductStoreAsync_d__10"
-    )]
-    pub type _OpenLevelProductStoreAsync_d__10 = crate::GlobalNamespace::MockPlatformAdditionalContentModel__OpenLevelProductStoreAsync_d__10;
     pub fn BuyLevel(
         &mut self,
         levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

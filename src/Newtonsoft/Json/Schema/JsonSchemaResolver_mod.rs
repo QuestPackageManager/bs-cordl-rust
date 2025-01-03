@@ -27,8 +27,6 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Schema::JsonSchemaResolver 
 }
 #[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaResolver")]
 impl crate::Newtonsoft::Json::Schema::JsonSchemaResolver {
-    #[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaResolver+__c__DisplayClass5_0")]
-    pub type __c__DisplayClass5_0 = crate::Newtonsoft::Json::Schema::JsonSchemaResolver___c__DisplayClass5_0;
     pub fn GetSchema(
         &mut self,
         reference: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

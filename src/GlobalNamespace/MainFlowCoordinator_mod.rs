@@ -47,24 +47,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::MainFlowCoordinator {
 }
 #[cfg(feature = "MainFlowCoordinator")]
 impl crate::GlobalNamespace::MainFlowCoordinator {
-    #[cfg(
-        feature = "MainFlowCoordinator+_HandleEditAvatarFlowCoordinatorHelperDidFinish_d__35"
-    )]
-    pub type _HandleEditAvatarFlowCoordinatorHelperDidFinish_d__35 = crate::GlobalNamespace::MainFlowCoordinator__HandleEditAvatarFlowCoordinatorHelperDidFinish_d__35;
-    #[cfg(
-        feature = "MainFlowCoordinator+_HandleMultiplayerDisclaimerDidFinishAction_d__30"
-    )]
-    pub type _HandleMultiplayerDisclaimerDidFinishAction_d__30 = crate::GlobalNamespace::MainFlowCoordinator__HandleMultiplayerDisclaimerDidFinishAction_d__30;
-    #[cfg(
-        feature = "MainFlowCoordinator+_PresentMultiplayerModeSelectionFlowCoordinatorWithDisclaimerAndAvatarCreator_d__43"
-    )]
-    pub type _PresentMultiplayerModeSelectionFlowCoordinatorWithDisclaimerAndAvatarCreator_d__43 = crate::GlobalNamespace::MainFlowCoordinator__PresentMultiplayerModeSelectionFlowCoordinatorWithDisclaimerAndAvatarCreator_d__43;
-    #[cfg(
-        feature = "MainFlowCoordinator+_ProcessMenuDestinationRequestAfterFrameCoroutine_d__44"
-    )]
-    pub type _ProcessMenuDestinationRequestAfterFrameCoroutine_d__44 = crate::GlobalNamespace::MainFlowCoordinator__ProcessMenuDestinationRequestAfterFrameCoroutine_d__44;
-    #[cfg(feature = "MainFlowCoordinator+_ProcessMenuDestinationRequest_d__42")]
-    pub type _ProcessMenuDestinationRequest_d__42 = crate::GlobalNamespace::MainFlowCoordinator__ProcessMenuDestinationRequest_d__42;
     pub fn BackButtonWasPressed(
         &mut self,
         topViewController: quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,

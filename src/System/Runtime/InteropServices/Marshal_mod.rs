@@ -30,8 +30,6 @@ impl crate::System::Runtime::InteropServices::Marshal {
     pub type MarshalerInstanceKeyComparer = crate::System::Runtime::InteropServices::Marshal_MarshalerInstanceKeyComparer;
     #[cfg(feature = "System+Runtime+InteropServices+Marshal+SecureStringAllocator")]
     pub type SecureStringAllocator = crate::System::Runtime::InteropServices::Marshal_SecureStringAllocator;
-    #[cfg(feature = "System+Runtime+InteropServices+Marshal+__c")]
-    pub type __c = crate::System::Runtime::InteropServices::Marshal___c;
     pub fn AllocCoTaskMem(
         cb: i32,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {

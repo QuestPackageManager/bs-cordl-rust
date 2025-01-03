@@ -93,12 +93,6 @@ impl crate::BeatmapDataLoaderVersion3::BeatmapDataLoader {
     pub type SpecialEventsFilter = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_SpecialEventsFilter;
     #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+WaypointConverter")]
     pub type WaypointConverter = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader_WaypointConverter;
-    #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+__c")]
-    pub type __c = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader___c;
-    #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+__c__DisplayClass3_0")]
-    pub type __c__DisplayClass3_0 = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader___c__DisplayClass3_0;
-    #[cfg(feature = "BeatmapDataLoaderVersion3+BeatmapDataLoader+__c__DisplayClass4_0")]
-    pub type __c__DisplayClass4_0 = crate::BeatmapDataLoaderVersion3::BeatmapDataLoader___c__DisplayClass4_0;
     pub fn ConvertBasicEvents(
         beatmapData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapData>,
         beatmapSaveData: quest_hook::libil2cpp::Gc<

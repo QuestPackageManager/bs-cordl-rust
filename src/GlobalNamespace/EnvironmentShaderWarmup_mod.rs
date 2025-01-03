@@ -32,8 +32,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::EnvironmentShaderWarmup {
 impl crate::GlobalNamespace::EnvironmentShaderWarmup {
     pub const kNumberOfColumns: i32 = 4i32;
     pub const kNumberOfRows: i32 = 4i32;
-    #[cfg(feature = "EnvironmentShaderWarmup+_Start_d__6")]
-    pub type _Start_d__6 = crate::GlobalNamespace::EnvironmentShaderWarmup__Start_d__6;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

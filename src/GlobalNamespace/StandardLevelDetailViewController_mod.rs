@@ -74,10 +74,6 @@ impl crate::GlobalNamespace::StandardLevelDetailViewController {
     #[cfg(feature = "StandardLevelDetailViewController+ContentType")]
     pub type ContentType = crate::GlobalNamespace::StandardLevelDetailViewController_ContentType;
     #[cfg(
-        feature = "StandardLevelDetailViewController+_ShowLoadingAndDoSomething_d__61"
-    )]
-    pub type _ShowLoadingAndDoSomething_d__61 = crate::GlobalNamespace::StandardLevelDetailViewController__ShowLoadingAndDoSomething_d__61;
-    #[cfg(
         feature = "StandardLevelDetailViewController+__BuyPackButtonWasPressed_b__55_0_d"
     )]
     pub type __BuyPackButtonWasPressed_b__55_0_d = crate::GlobalNamespace::StandardLevelDetailViewController___BuyPackButtonWasPressed_b__55_0_d;

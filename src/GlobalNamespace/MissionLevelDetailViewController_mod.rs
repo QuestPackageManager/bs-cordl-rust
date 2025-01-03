@@ -35,8 +35,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::MissionLevelDetailViewContro
 }
 #[cfg(feature = "MissionLevelDetailViewController")]
 impl crate::GlobalNamespace::MissionLevelDetailViewController {
-    #[cfg(feature = "MissionLevelDetailViewController+__c__DisplayClass14_0")]
-    pub type __c__DisplayClass14_0 = crate::GlobalNamespace::MissionLevelDetailViewController___c__DisplayClass14_0;
     pub fn DidActivate(
         &mut self,
         firstActivation: bool,

@@ -48,24 +48,6 @@ impl crate::GlobalNamespace::OculusBeatmapDataAssetFileModel {
     pub const kMaxTimeoutBeforeFail: f32 = 15f32;
     #[cfg(feature = "OculusBeatmapDataAssetFileModel+AssetBundleDownloadingData")]
     pub type AssetBundleDownloadingData = crate::GlobalNamespace::OculusBeatmapDataAssetFileModel_AssetBundleDownloadingData;
-    #[cfg(
-        feature = "OculusBeatmapDataAssetFileModel+_GetAssetBundleFileForBeatmapLevelAsync_d__13"
-    )]
-    pub type _GetAssetBundleFileForBeatmapLevelAsync_d__13 = crate::GlobalNamespace::OculusBeatmapDataAssetFileModel__GetAssetBundleFileForBeatmapLevelAsync_d__13;
-    #[cfg(
-        feature = "OculusBeatmapDataAssetFileModel+_ReloadAssetDetailsForAllLevelsAsync_d__15"
-    )]
-    pub type _ReloadAssetDetailsForAllLevelsAsync_d__15 = crate::GlobalNamespace::OculusBeatmapDataAssetFileModel__ReloadAssetDetailsForAllLevelsAsync_d__15;
-    #[cfg(
-        feature = "OculusBeatmapDataAssetFileModel+_TryDeleteAssetBundleFileForBeatmapLevelAsync_d__14"
-    )]
-    pub type _TryDeleteAssetBundleFileForBeatmapLevelAsync_d__14 = crate::GlobalNamespace::OculusBeatmapDataAssetFileModel__TryDeleteAssetBundleFileForBeatmapLevelAsync_d__14;
-    #[cfg(feature = "OculusBeatmapDataAssetFileModel+__c__DisplayClass14_0")]
-    pub type __c__DisplayClass14_0 = crate::GlobalNamespace::OculusBeatmapDataAssetFileModel___c__DisplayClass14_0;
-    #[cfg(feature = "OculusBeatmapDataAssetFileModel+__c__DisplayClass15_0")]
-    pub type __c__DisplayClass15_0 = crate::GlobalNamespace::OculusBeatmapDataAssetFileModel___c__DisplayClass15_0;
-    #[cfg(feature = "OculusBeatmapDataAssetFileModel+__c__DisplayClass16_0")]
-    pub type __c__DisplayClass16_0 = crate::GlobalNamespace::OculusBeatmapDataAssetFileModel___c__DisplayClass16_0;
     pub fn CancelDownload(
         &mut self,
         assetId: u64,

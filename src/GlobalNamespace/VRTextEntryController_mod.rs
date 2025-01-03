@@ -35,8 +35,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::VRTextEntryController {
 }
 #[cfg(feature = "VRTextEntryController")]
 impl crate::GlobalNamespace::VRTextEntryController {
-    #[cfg(feature = "VRTextEntryController+_BlinkCursor_d__23")]
-    pub type _BlinkCursor_d__23 = crate::GlobalNamespace::VRTextEntryController__BlinkCursor_d__23;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

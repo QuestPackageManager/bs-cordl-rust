@@ -24,12 +24,6 @@ impl std::ops::DerefMut for crate::BeatmapDataLoaderVersion4::BeatmapDataLoader 
 }
 #[cfg(feature = "BeatmapDataLoaderVersion4+BeatmapDataLoader")]
 impl crate::BeatmapDataLoaderVersion4::BeatmapDataLoader {
-    #[cfg(feature = "BeatmapDataLoaderVersion4+BeatmapDataLoader+__c__DisplayClass0_0")]
-    pub type __c__DisplayClass0_0 = crate::BeatmapDataLoaderVersion4::BeatmapDataLoader___c__DisplayClass0_0;
-    #[cfg(feature = "BeatmapDataLoaderVersion4+BeatmapDataLoader+__c__DisplayClass1_0")]
-    pub type __c__DisplayClass1_0 = crate::BeatmapDataLoaderVersion4::BeatmapDataLoader___c__DisplayClass1_0;
-    #[cfg(feature = "BeatmapDataLoaderVersion4+BeatmapDataLoader+__c__DisplayClass4_0")]
-    pub type __c__DisplayClass4_0 = crate::BeatmapDataLoaderVersion4::BeatmapDataLoader___c__DisplayClass4_0;
     pub fn ConvertBasicEvents(
         beatmapData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapData>,
         lightshowSaveData: quest_hook::libil2cpp::Gc<

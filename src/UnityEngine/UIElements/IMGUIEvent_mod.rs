@@ -28,8 +28,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::IMGUIEvent {
 }
 #[cfg(feature = "UnityEngine+UIElements+IMGUIEvent")]
 impl crate::UnityEngine::UIElements::IMGUIEvent {
-    #[cfg(feature = "UnityEngine+UIElements+IMGUIEvent+__c")]
-    pub type __c = crate::UnityEngine::UIElements::IMGUIEvent___c;
     pub fn GetPooled(
         systemEvent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Event>,
     ) -> quest_hook::libil2cpp::Result<

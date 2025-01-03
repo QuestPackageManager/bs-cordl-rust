@@ -27,8 +27,6 @@ for crate::UnityEngine::UIElements::UxmlUnsignedIntAttributeDescription {
 }
 #[cfg(feature = "UnityEngine+UIElements+UxmlUnsignedIntAttributeDescription")]
 impl crate::UnityEngine::UIElements::UxmlUnsignedIntAttributeDescription {
-    #[cfg(feature = "UnityEngine+UIElements+UxmlUnsignedIntAttributeDescription+__c")]
-    pub type __c = crate::UnityEngine::UIElements::UxmlUnsignedIntAttributeDescription___c;
     pub fn ConvertValueToUInt(
         v: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         defaultValue: u32,

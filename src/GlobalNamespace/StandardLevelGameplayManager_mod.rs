@@ -44,8 +44,6 @@ impl crate::GlobalNamespace::StandardLevelGameplayManager {
     pub type GameState = crate::GlobalNamespace::StandardLevelGameplayManager_GameState;
     #[cfg(feature = "StandardLevelGameplayManager+InitData")]
     pub type InitData = crate::GlobalNamespace::StandardLevelGameplayManager_InitData;
-    #[cfg(feature = "StandardLevelGameplayManager+_Start_d__29")]
-    pub type _Start_d__29 = crate::GlobalNamespace::StandardLevelGameplayManager__Start_d__29;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -35,10 +35,6 @@ impl std::ops::DerefMut for crate::HMUI::ModalView {
 }
 #[cfg(feature = "HMUI+ModalView")]
 impl crate::HMUI::ModalView {
-    #[cfg(feature = "HMUI+ModalView+__c__DisplayClass19_0")]
-    pub type __c__DisplayClass19_0 = crate::HMUI::ModalView___c__DisplayClass19_0;
-    #[cfg(feature = "HMUI+ModalView+__c__DisplayClass23_0")]
-    pub type __c__DisplayClass23_0 = crate::HMUI::ModalView___c__DisplayClass23_0;
     pub fn CreateBlocker(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

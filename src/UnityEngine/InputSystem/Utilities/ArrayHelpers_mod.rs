@@ -25,24 +25,6 @@ impl std::ops::DerefMut for crate::UnityEngine::InputSystem::Utilities::ArrayHel
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+ArrayHelpers")]
 impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
-    #[cfg(
-        feature = "UnityEngine+InputSystem+Utilities+ArrayHelpers+__c__DisplayClass33_0_1"
-    )]
-    pub type __c__DisplayClass33_0_1<TValue: quest_hook::libil2cpp::Type> = crate::UnityEngine::InputSystem::Utilities::ArrayHelpers___c__DisplayClass33_0_1<
-        TValue,
-    >;
-    #[cfg(
-        feature = "UnityEngine+InputSystem+Utilities+ArrayHelpers+__c__DisplayClass34_0_1"
-    )]
-    pub type __c__DisplayClass34_0_1<TValue: quest_hook::libil2cpp::Type> = crate::UnityEngine::InputSystem::Utilities::ArrayHelpers___c__DisplayClass34_0_1<
-        TValue,
-    >;
-    #[cfg(
-        feature = "UnityEngine+InputSystem+Utilities+ArrayHelpers+__c__DisplayClass34_1_1"
-    )]
-    pub type __c__DisplayClass34_1_1<TValue: quest_hook::libil2cpp::Type> = crate::UnityEngine::InputSystem::Utilities::ArrayHelpers___c__DisplayClass34_1_1<
-        TValue,
-    >;
     pub fn AppendListWithCapacity<TValue, TValues>(
         array: quest_hook::libil2cpp::ByRefMut<
             *mut quest_hook::libil2cpp::Il2CppArray<TValue>,

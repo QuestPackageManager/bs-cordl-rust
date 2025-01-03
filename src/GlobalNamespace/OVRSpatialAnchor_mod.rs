@@ -54,8 +54,6 @@ impl crate::GlobalNamespace::OVRSpatialAnchor {
     pub type SaveOptions = crate::GlobalNamespace::OVRSpatialAnchor_SaveOptions;
     #[cfg(feature = "OVRSpatialAnchor+UnboundAnchor")]
     pub type UnboundAnchor = crate::GlobalNamespace::OVRSpatialAnchor_UnboundAnchor;
-    #[cfg(feature = "OVRSpatialAnchor+__c")]
-    pub type __c = crate::GlobalNamespace::OVRSpatialAnchor___c;
     pub fn AreSortedUserListsEqual(
         sortedList1: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IReadOnlyList_1<

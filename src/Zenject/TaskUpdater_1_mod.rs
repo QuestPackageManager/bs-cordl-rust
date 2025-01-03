@@ -35,12 +35,6 @@ for crate::Zenject::TaskUpdater_1<TTask> {
 impl<TTask: quest_hook::libil2cpp::Type> crate::Zenject::TaskUpdater_1<TTask> {
     #[cfg(feature = "Zenject+TaskUpdater_1+TaskInfo")]
     pub type TaskInfo = crate::Zenject::TaskUpdater_1_TaskInfo<TTask>;
-    #[cfg(feature = "Zenject+TaskUpdater_1+__c")]
-    pub type __c = crate::Zenject::TaskUpdater_1___c<TTask>;
-    #[cfg(feature = "Zenject+TaskUpdater_1+__c__DisplayClass8_0")]
-    pub type __c__DisplayClass8_0 = crate::Zenject::TaskUpdater_1___c__DisplayClass8_0<
-        TTask,
-    >;
     pub fn AddQueuedTasks(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>

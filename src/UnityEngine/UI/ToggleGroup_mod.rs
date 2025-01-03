@@ -28,8 +28,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UI::ToggleGroup {
 }
 #[cfg(feature = "UnityEngine+UI+ToggleGroup")]
 impl crate::UnityEngine::UI::ToggleGroup {
-    #[cfg(feature = "UnityEngine+UI+ToggleGroup+__c")]
-    pub type __c = crate::UnityEngine::UI::ToggleGroup___c;
     pub fn ActiveToggles(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

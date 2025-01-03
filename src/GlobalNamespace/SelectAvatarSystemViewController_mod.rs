@@ -47,10 +47,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::SelectAvatarSystemViewContro
 #[cfg(feature = "SelectAvatarSystemViewController")]
 impl crate::GlobalNamespace::SelectAvatarSystemViewController {
     pub const kCellIdentifier: &'static str = "cellPrefab";
-    #[cfg(
-        feature = "SelectAvatarSystemViewController+_ReloadContinueButtonInteractability_d__31"
-    )]
-    pub type _ReloadContinueButtonInteractability_d__31 = crate::GlobalNamespace::SelectAvatarSystemViewController__ReloadContinueButtonInteractability_d__31;
     pub fn CellForIdx(
         &mut self,
         tableView: quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,

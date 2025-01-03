@@ -132,8 +132,6 @@ impl crate::GlobalNamespace::OVRManager {
     pub type XRDevice = crate::GlobalNamespace::OVRManager_XRDevice;
     #[cfg(feature = "OVRManager+XrApi")]
     pub type XrApi = crate::GlobalNamespace::OVRManager_XrApi;
-    #[cfg(feature = "OVRManager+__c")]
-    pub type __c = crate::GlobalNamespace::OVRManager___c;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

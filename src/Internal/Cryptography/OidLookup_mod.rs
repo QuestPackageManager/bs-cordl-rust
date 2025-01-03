@@ -24,8 +24,6 @@ impl std::ops::DerefMut for crate::Internal::Cryptography::OidLookup {
 }
 #[cfg(feature = "Internal+Cryptography+OidLookup")]
 impl crate::Internal::Cryptography::OidLookup {
-    #[cfg(feature = "Internal+Cryptography+OidLookup+__c")]
-    pub type __c = crate::Internal::Cryptography::OidLookup___c;
     pub fn NativeFriendlyNameToOid(
         friendlyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         oidGroup: crate::System::Security::Cryptography::OidGroup,

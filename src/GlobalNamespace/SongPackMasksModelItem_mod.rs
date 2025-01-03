@@ -29,8 +29,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::SongPackMasksModelItem {
 }
 #[cfg(feature = "SongPackMasksModelItem")]
 impl crate::GlobalNamespace::SongPackMasksModelItem {
-    #[cfg(feature = "SongPackMasksModelItem+__c")]
-    pub type __c = crate::GlobalNamespace::SongPackMasksModelItem___c;
     pub fn GetSongPackMask(
         &mut self,
         beatmapLevelsModel: quest_hook::libil2cpp::Gc<

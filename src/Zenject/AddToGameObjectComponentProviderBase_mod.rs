@@ -34,10 +34,6 @@ impl std::ops::DerefMut for crate::Zenject::AddToGameObjectComponentProviderBase
 }
 #[cfg(feature = "Zenject+AddToGameObjectComponentProviderBase")]
 impl crate::Zenject::AddToGameObjectComponentProviderBase {
-    #[cfg(
-        feature = "Zenject+AddToGameObjectComponentProviderBase+__c__DisplayClass17_0"
-    )]
-    pub type __c__DisplayClass17_0 = crate::Zenject::AddToGameObjectComponentProviderBase___c__DisplayClass17_0;
     pub fn GetAllInstancesWithInjectSplit(
         &mut self,
         context: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,

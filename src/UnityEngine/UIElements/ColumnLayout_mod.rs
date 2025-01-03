@@ -63,10 +63,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::ColumnLayout {
 }
 #[cfg(feature = "UnityEngine+UIElements+ColumnLayout")]
 impl crate::UnityEngine::UIElements::ColumnLayout {
-    #[cfg(feature = "UnityEngine+UIElements+ColumnLayout+__c__DisplayClass53_0")]
-    pub type __c__DisplayClass53_0 = crate::UnityEngine::UIElements::ColumnLayout___c__DisplayClass53_0;
-    #[cfg(feature = "UnityEngine+UIElements+ColumnLayout+__c__DisplayClass54_0")]
-    pub type __c__DisplayClass54_0 = crate::UnityEngine::UIElements::ColumnLayout___c__DisplayClass54_0;
     pub fn BeginDragResize(
         &mut self,
         column: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,

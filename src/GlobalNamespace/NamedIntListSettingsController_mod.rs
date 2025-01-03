@@ -31,8 +31,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::NamedIntListSettingsControll
 impl crate::GlobalNamespace::NamedIntListSettingsController {
     #[cfg(feature = "NamedIntListSettingsController+TextValuePair")]
     pub type TextValuePair = crate::GlobalNamespace::NamedIntListSettingsController_TextValuePair;
-    #[cfg(feature = "NamedIntListSettingsController+__c__DisplayClass6_0")]
-    pub type __c__DisplayClass6_0 = crate::GlobalNamespace::NamedIntListSettingsController___c__DisplayClass6_0;
     pub fn ApplyValue(
         &mut self,
         idx: i32,

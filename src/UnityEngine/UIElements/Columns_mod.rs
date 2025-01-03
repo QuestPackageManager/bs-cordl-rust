@@ -71,8 +71,6 @@ impl crate::UnityEngine::UIElements::Columns {
     pub type UxmlObjectTraits_1<T: quest_hook::libil2cpp::Type> = crate::UnityEngine::UIElements::Columns_UxmlObjectTraits_1<
         T,
     >;
-    #[cfg(feature = "UnityEngine+UIElements+Columns+__c")]
-    pub type __c = crate::UnityEngine::UIElements::Columns___c;
     pub fn Add(
         &mut self,
         item: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
