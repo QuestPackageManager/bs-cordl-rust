@@ -86,7 +86,7 @@ impl crate::UnityEngine::EnumDataUtility {
     }
     pub fn _EnumNameFromEnumField_g__NicifyName_8_0(
         _cordl_fixed_empty_name_whitespace: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::EnumDataUtility___c__DisplayClass8_0,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

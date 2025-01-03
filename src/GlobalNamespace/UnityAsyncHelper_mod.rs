@@ -164,7 +164,7 @@ pub struct __c__DisplayClass5_0_UnityAsyncHelper___WaitUntilAsync_g__WaitUntilPr
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub __1__state: i32,
     pub __2__current: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub __4__this: *mut crate::GlobalNamespace::UnityAsyncHelper___c__DisplayClass5_0,
+    pub __4__this: *mut quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(
     feature = "UnityAsyncHelper+__c__DisplayClass5_0+__WaitUntilAsync_g__WaitUntilPredicateTrue_0_d"
@@ -367,7 +367,7 @@ pub struct __c__DisplayClass6_0_UnityAsyncHelper___WaitUntilAsync_g__WaitUntilPr
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub __1__state: i32,
     pub __2__current: *mut quest_hook::libil2cpp::Il2CppObject,
-    pub __4__this: *mut crate::GlobalNamespace::UnityAsyncHelper___c__DisplayClass6_0,
+    pub __4__this: *mut quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(
     feature = "UnityAsyncHelper+__c__DisplayClass6_0+__WaitUntilAsync_g__WaitUntilPredicateTrue_0_d"

@@ -330,7 +330,7 @@ impl crate::UnityEngine::UIElements::GenericDropdownMenu {
         &mut self,
         newIndex: i32,
         _cordl_fixed_empty_name_whitespace: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::UIElements::GenericDropdownMenu___c__DisplayClass39_0,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -347,7 +347,7 @@ impl crate::UnityEngine::UIElements::GenericDropdownMenu {
         &mut self,
         newIndex: i32,
         _cordl_fixed_empty_name_whitespace: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::UIElements::GenericDropdownMenu___c__DisplayClass39_0,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

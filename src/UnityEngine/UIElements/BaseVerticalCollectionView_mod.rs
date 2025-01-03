@@ -820,7 +820,7 @@ impl crate::UnityEngine::UIElements::BaseVerticalCollectionView {
         &mut self,
         index: i32,
         _cordl_fixed_empty_name_whitespace: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::UIElements::BaseVerticalCollectionView___c__DisplayClass181_0,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -836,7 +836,7 @@ impl crate::UnityEngine::UIElements::BaseVerticalCollectionView {
     pub fn _RefreshSelection_g__NotifyIfChanged_170_0(
         &mut self,
         _cordl_fixed_empty_name_whitespace: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::UIElements::BaseVerticalCollectionView___c__DisplayClass170_0,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

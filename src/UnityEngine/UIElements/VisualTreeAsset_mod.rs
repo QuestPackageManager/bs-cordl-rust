@@ -374,7 +374,7 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
     }
     pub fn _Create_g__CreateError_65_0(
         _cordl_fixed_empty_name_whitespace: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::UIElements::VisualTreeAsset___c__DisplayClass65_0,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,

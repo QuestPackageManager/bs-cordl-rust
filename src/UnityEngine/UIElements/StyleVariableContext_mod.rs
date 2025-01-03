@@ -103,7 +103,7 @@ impl crate::UnityEngine::UIElements::StyleVariableContext {
     pub fn _Add_g__ComputeOrderSensitiveHash_7_0(
         index: i32,
         _cordl_fixed_empty_name_whitespace: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::UIElements::StyleVariableContext___c__DisplayClass7_0,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = <Self as quest_hook::libil2cpp::Type>::class()

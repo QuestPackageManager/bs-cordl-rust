@@ -128,7 +128,7 @@ impl crate::UnityEngine::UIElements::KeyboardNavigationManipulator {
     }
     pub fn _OnKeyDown_g__GetOperation_4_0(
         _cordl_fixed_empty_name_whitespace: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::UIElements::KeyboardNavigationManipulator___c__DisplayClass4_0,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::UIElements::KeyboardNavigationOperation,

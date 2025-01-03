@@ -117,7 +117,7 @@ for crate::GlobalNamespace::DefaultScenesTransitionsFromInit {
 pub struct __c__DisplayClass9_0_DefaultScenesTransitionsFromInit___TransitionToNextScene_g__OnFinishCallback_0_d {
     pub __1__state: i32,
     pub __t__builder: crate::System::Runtime::CompilerServices::AsyncVoidMethodBuilder,
-    pub __4__this: *mut crate::GlobalNamespace::DefaultScenesTransitionsFromInit___c__DisplayClass9_0,
+    pub __4__this: *mut quest_hook::libil2cpp::Il2CppObject,
     pub __u__1: crate::System::Runtime::CompilerServices::TaskAwaiter,
 }
 #[cfg(
