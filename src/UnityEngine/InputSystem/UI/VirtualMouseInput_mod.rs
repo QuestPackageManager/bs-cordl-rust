@@ -454,8 +454,9 @@ for crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
 }
 #[cfg(feature = "UnityEngine+InputSystem+UI+VirtualMouseInput+CursorMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum VirtualMouseInput_CursorMode {
+    #[default]
     HardwareCursorIfAvailable = 1i32,
     SoftwareCursor = 0i32,
 }

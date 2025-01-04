@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+InspectorSort")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InspectorSort {
+    #[default]
     ByName = 0i32,
     ByValue = 1i32,
 }

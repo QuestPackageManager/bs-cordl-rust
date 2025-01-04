@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Xml+XPath+XPathNodeType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XPathNodeType {
+    #[default]
     All = 9i32,
     Attribute = 2i32,
     Comment = 8i32,

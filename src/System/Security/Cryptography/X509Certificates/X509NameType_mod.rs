@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Security+Cryptography+X509Certificates+X509NameType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum X509NameType {
+    #[default]
     DnsFromAlternativeName = 4i32,
     DnsName = 3i32,
     EmailName = 1i32,

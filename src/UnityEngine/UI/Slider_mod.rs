@@ -625,8 +625,9 @@ impl AsMut<crate::UnityEngine::UI::ICanvasElement> for crate::UnityEngine::UI::S
 }
 #[cfg(feature = "UnityEngine+UI+Slider+Axis")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Slider_Axis {
+    #[default]
     Horizontal = 0i32,
     Vertical = 1i32,
 }
@@ -637,8 +638,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+UI+Slider+Direction")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Slider_Direction {
+    #[default]
     BottomToTop = 2i32,
     LeftToRight = 0i32,
     RightToLeft = 1i32,

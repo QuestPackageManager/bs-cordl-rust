@@ -775,8 +775,9 @@ for crate::Mono::Net::Security::MobileAuthenticatedStream {
 }
 #[cfg(feature = "Mono+Net+Security+MobileAuthenticatedStream+Operation")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MobileAuthenticatedStream_Operation {
+    #[default]
     Authenticated = 2i32,
     Close = 6i32,
     Handshake = 1i32,
@@ -793,8 +794,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "Mono+Net+Security+MobileAuthenticatedStream+OperationType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MobileAuthenticatedStream_OperationType {
+    #[default]
     Read = 0i32,
     Renegotiate = 2i32,
     Shutdown = 3i32,

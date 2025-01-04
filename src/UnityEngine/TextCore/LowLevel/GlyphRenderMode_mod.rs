@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+TextCore+LowLevel+GlyphRenderMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GlyphRenderMode {
+    #[default]
     COLOR = 69652i32,
     COLOR_HINTED = 69656i32,
     RASTER = 4118i32,

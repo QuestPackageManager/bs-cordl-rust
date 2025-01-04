@@ -839,8 +839,9 @@ impl AsMut<crate::UnityEngine::UI::ILayoutElement> for crate::UnityEngine::UI::I
 }
 #[cfg(feature = "UnityEngine+UI+Image+FillMethod")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Image_FillMethod {
+    #[default]
     Horizontal = 0i32,
     Radial180 = 3i32,
     Radial360 = 4i32,
@@ -854,8 +855,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+UI+Image+Origin180")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Image_Origin180 {
+    #[default]
     Bottom = 0i32,
     Left = 1i32,
     Right = 3i32,
@@ -868,8 +870,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+UI+Image+Origin360")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Image_Origin360 {
+    #[default]
     Bottom = 0i32,
     Left = 3i32,
     Right = 1i32,
@@ -882,8 +885,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+UI+Image+Origin90")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Image_Origin90 {
+    #[default]
     BottomLeft = 0i32,
     BottomRight = 3i32,
     TopLeft = 1i32,
@@ -896,8 +900,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+UI+Image+OriginHorizontal")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Image_OriginHorizontal {
+    #[default]
     Left = 0i32,
     Right = 1i32,
 }
@@ -908,8 +913,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+UI+Image+OriginVertical")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Image_OriginVertical {
+    #[default]
     Bottom = 0i32,
     Top = 1i32,
 }
@@ -920,8 +926,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+UI+Image+Type")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Image_Type {
+    #[default]
     Filled = 3i32,
     Simple = 0i32,
     Sliced = 1i32,

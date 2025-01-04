@@ -1,7 +1,8 @@
 #[cfg(feature = "System+ConsoleModifiers")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ConsoleModifiers {
+    #[default]
     Alt = 1i32,
     Control = 4i32,
     Shift = 2i32,

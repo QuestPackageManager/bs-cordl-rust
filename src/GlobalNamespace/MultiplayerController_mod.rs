@@ -447,8 +447,9 @@ for crate::GlobalNamespace::MultiplayerController {
 }
 #[cfg(feature = "MultiplayerController+State")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MultiplayerController_State {
+    #[default]
     CheckingLobbyState = 0i32,
     Finished = 6i32,
     Gameplay = 4i32,

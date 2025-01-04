@@ -370,8 +370,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::CanvasScaler 
 }
 #[cfg(feature = "UnityEngine+UI+CanvasScaler+ScaleMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CanvasScaler_ScaleMode {
+    #[default]
     ConstantPhysicalSize = 2i32,
     ConstantPixelSize = 0i32,
     ScaleWithScreenSize = 1i32,
@@ -383,8 +384,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+UI+CanvasScaler+ScreenMatchMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CanvasScaler_ScreenMatchMode {
+    #[default]
     Expand = 1i32,
     MatchWidthOrHeight = 0i32,
     Shrink = 2i32,
@@ -396,8 +398,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+UI+CanvasScaler+Unit")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CanvasScaler_Unit {
+    #[default]
     Centimeters = 0i32,
     Inches = 2i32,
     Millimeters = 1i32,

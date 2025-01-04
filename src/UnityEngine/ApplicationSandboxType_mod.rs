@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+ApplicationSandboxType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ApplicationSandboxType {
+    #[default]
     NotSandboxed = 1i32,
     SandboxBroken = 3i32,
     Sandboxed = 2i32,

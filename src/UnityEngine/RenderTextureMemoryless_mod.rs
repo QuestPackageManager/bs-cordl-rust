@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+RenderTextureMemoryless")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RenderTextureMemoryless {
+    #[default]
     Color = 1i32,
     Depth = 2i32,
     MSAA = 4i32,

@@ -61,8 +61,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::RankModel {
 }
 #[cfg(feature = "RankModel+Rank")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RankModel_Rank {
+    #[default]
     A = 4i32,
     B = 3i32,
     C = 2i32,

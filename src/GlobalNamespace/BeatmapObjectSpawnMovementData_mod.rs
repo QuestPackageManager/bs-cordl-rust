@@ -237,8 +237,9 @@ for crate::GlobalNamespace::BeatmapObjectSpawnMovementData {
 }
 #[cfg(feature = "BeatmapObjectSpawnMovementData+NoteJumpValueType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BeatmapObjectSpawnMovementData_NoteJumpValueType {
+    #[default]
     BeatOffset = 1i32,
     JumpDuration = 2i32,
 }

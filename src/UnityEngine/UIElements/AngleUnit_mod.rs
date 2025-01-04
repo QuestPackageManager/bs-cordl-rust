@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+AngleUnit")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AngleUnit {
+    #[default]
     Degree = 0i32,
     Gradian = 1i32,
     Radian = 2i32,

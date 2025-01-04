@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Data+Nodes")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Nodes {
+    #[default]
     Binop = 3i32,
     BinopSpec = 4i32,
     Call = 6i32,

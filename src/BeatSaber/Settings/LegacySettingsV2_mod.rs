@@ -161,8 +161,9 @@ for crate::BeatSaber::Settings::LegacySettingsV2_AudioSettings {
 }
 #[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+BloomPrepassTextureEffectPreset")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LegacySettingsV2_BloomPrepassTextureEffectPreset {
+    #[default]
     HD = 0i32,
     HDWithoutToneMapping = 1i32,
 }
@@ -353,8 +354,9 @@ for crate::BeatSaber::Settings::LegacySettingsV2_DebugSettings {
 }
 #[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+FoveatedRenderingLevel")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LegacySettingsV2_FoveatedRenderingLevel {
+    #[default]
     High = 3i32,
     HighTop = 4i32,
     Low = 1i32,
@@ -433,8 +435,9 @@ for crate::BeatSaber::Settings::LegacySettingsV2_GraphicSettings {
 }
 #[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+MainEffectPreset")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LegacySettingsV2_MainEffectPreset {
+    #[default]
     Off = 0i32,
     Pyramid = 1i32,
     PyramidForBaking = 2i32,
@@ -523,8 +526,9 @@ for crate::BeatSaber::Settings::LegacySettingsV2_MainSettings {
 }
 #[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+MirrorQualityPreset")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LegacySettingsV2_MirrorQualityPreset {
+    #[default]
     Fake = 1i32,
     Off = 0i32,
     RenderedHQ = 3i32,
@@ -538,8 +542,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+ObstaclesQuality")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LegacySettingsV2_ObstaclesQuality {
+    #[default]
     DefaultObstacleQualityBaseOnDisplacement = 0i32,
     ObstacleHW = 3i32,
     ObstacleLW = 2i32,
@@ -629,8 +634,9 @@ for crate::BeatSaber::Settings::LegacySettingsV2_PerformancePreset {
 }
 #[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+ProcessorPerformanceLevel")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LegacySettingsV2_ProcessorPerformanceLevel {
+    #[default]
     Boost = 3i32,
     PowerSavings = 0i32,
     SustainedHigh = 2i32,
@@ -709,8 +715,9 @@ for crate::BeatSaber::Settings::LegacySettingsV2_SmoothCameraSettings {
 }
 #[cfg(feature = "BeatSaber+Settings+LegacySettingsV2+WindowMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LegacySettingsV2_WindowMode {
+    #[default]
     Fullscreen = 1i32,
     Windowed = 0i32,
 }

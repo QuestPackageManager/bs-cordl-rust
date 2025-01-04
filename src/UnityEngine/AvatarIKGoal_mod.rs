@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+AvatarIKGoal")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AvatarIKGoal {
+    #[default]
     LeftFoot = 0i32,
     LeftHand = 2i32,
     RightFoot = 1i32,

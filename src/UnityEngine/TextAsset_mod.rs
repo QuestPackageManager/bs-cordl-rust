@@ -223,8 +223,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::TextAsset {
 }
 #[cfg(feature = "UnityEngine+TextAsset+CreateOptions")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TextAsset_CreateOptions {
+    #[default]
     CreateNativeObject = 1i32,
     None = 0i32,
 }

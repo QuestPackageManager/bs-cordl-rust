@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+MeshColliderCookingOptions")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MeshColliderCookingOptions {
+    #[default]
     CookForFasterSimulation = 2i32,
     EnableMeshCleaning = 4i32,
     InflateConvexMesh = 1i32,

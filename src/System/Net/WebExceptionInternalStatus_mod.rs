@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Net+WebExceptionInternalStatus")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum WebExceptionInternalStatus {
+    #[default]
     Isolated = 3i32,
     Recoverable = 2i32,
     RequestFatal = 0i32,

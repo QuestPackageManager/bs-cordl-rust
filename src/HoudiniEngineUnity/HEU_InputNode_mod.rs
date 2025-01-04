@@ -850,8 +850,9 @@ impl AsMut<
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputNode+InputActions")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HEU_InputNode_InputActions {
+    #[default]
     ACTION = 0i32,
     DELETE = 1i32,
     INSERT = 2i32,
@@ -863,8 +864,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputNode+InputNodeType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HEU_InputNode_InputNodeType {
+    #[default]
     CONNECTION = 0i32,
     NODE = 1i32,
     PARAMETER = 2i32,
@@ -876,8 +878,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputNode+InputObjectType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HEU_InputNode_InputObjectType {
+    #[default]
     BOUNDING_BOX = 4i32,
     CURVE = 2i32,
     HDA = 0i32,
@@ -893,8 +896,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputNode+InternalObjectType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HEU_InputNode_InternalObjectType {
+    #[default]
     HDA = 1i32,
     UNITY_MESH = 2i32,
     UNKNOWN = 0i32,

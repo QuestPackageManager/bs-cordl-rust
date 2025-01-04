@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Globalization+FORMATFLAGS")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum FORMATFLAGS {
+    #[default]
     None = 0i32,
     UseDigitPrefixInTokens = 32i32,
     UseGenitiveMonth = 1i32,

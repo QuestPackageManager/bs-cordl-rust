@@ -1,7 +1,8 @@
 #[cfg(feature = "HoudiniEngineUnity+HAPI_PartType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HAPI_PartType {
+    #[default]
     HAPI_PARTTYPE_BOX = 4i32,
     HAPI_PARTTYPE_CURVE = 1i32,
     HAPI_PARTTYPE_INSTANCER = 3i32,

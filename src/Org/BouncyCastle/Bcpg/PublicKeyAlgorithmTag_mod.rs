@@ -1,7 +1,8 @@
 #[cfg(feature = "Org+BouncyCastle+Bcpg+PublicKeyAlgorithmTag")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PublicKeyAlgorithmTag {
+    #[default]
     DiffieHellman = 21i32,
     Dsa = 17i32,
     EC = 18i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Timeline+ClipCaps")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ClipCaps {
+    #[default]
     All = -1i32,
     AutoScale = 40i32,
     Blending = 16i32,

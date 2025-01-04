@@ -758,8 +758,9 @@ impl AsMut<crate::System::IDisposable> for crate::UnityEngine::InputSystem::Inpu
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputAction+ActionFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputAction_ActionFlags {
+    #[default]
     WantsInitialStateCheck = 1i32,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputAction+ActionFlags")]

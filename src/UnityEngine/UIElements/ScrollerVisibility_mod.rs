@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+ScrollerVisibility")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ScrollerVisibility {
+    #[default]
     AlwaysVisible = 1i32,
     Auto = 0i32,
     Hidden = 2i32,

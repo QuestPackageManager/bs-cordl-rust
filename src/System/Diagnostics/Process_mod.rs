@@ -678,8 +678,9 @@ for crate::System::Diagnostics::Process_ProcInfo {
 impl crate::System::Diagnostics::Process_ProcInfo {}
 #[cfg(feature = "System+Diagnostics+Process+State")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Process_State {
+    #[default]
     Associated = 32i32,
     Exited = 16i32,
     HaveId = 1i32,
@@ -696,8 +697,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "System+Diagnostics+Process+StreamReadMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Process_StreamReadMode {
+    #[default]
     asyncMode = 2i32,
     syncMode = 1i32,
     undefined = 0i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "HoudiniEngineUnity+HAPI_Permissions")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HAPI_Permissions {
+    #[default]
     HAPI_PERMISSIONS_MAX = 4i32,
     HAPI_PERMISSIONS_NON_APPLICABLE = 0i32,
     HAPI_PERMISSIONS_READ_ONLY = 2i32,

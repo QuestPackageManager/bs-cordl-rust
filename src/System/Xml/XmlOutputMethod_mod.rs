@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Xml+XmlOutputMethod")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XmlOutputMethod {
+    #[default]
     AutoDetect = 3i32,
     Html = 1i32,
     Text = 2i32,

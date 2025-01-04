@@ -1,7 +1,8 @@
 #[cfg(feature = "Oculus+Platform+LaunchResult")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LaunchResult {
+    #[default]
     FailedGameAlreadyStarted = 3i32,
     FailedOtherReason = 6i32,
     FailedRoomFull = 2i32,

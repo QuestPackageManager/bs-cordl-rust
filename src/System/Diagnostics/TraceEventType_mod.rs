@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Diagnostics+TraceEventType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TraceEventType {
+    #[default]
     Critical = 1i32,
     Error = 2i32,
     Information = 8i32,

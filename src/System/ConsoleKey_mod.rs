@@ -1,7 +1,8 @@
 #[cfg(feature = "System+ConsoleKey")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ConsoleKey {
+    #[default]
     A = 65i32,
     Add = 107i32,
     Applications = 93i32,

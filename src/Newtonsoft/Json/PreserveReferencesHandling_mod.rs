@@ -1,7 +1,8 @@
 #[cfg(feature = "Newtonsoft+Json+PreserveReferencesHandling")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PreserveReferencesHandling {
+    #[default]
     All = 3i32,
     Arrays = 2i32,
     None = 0i32,

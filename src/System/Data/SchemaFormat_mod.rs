@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Data+SchemaFormat")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SchemaFormat {
+    #[default]
     Public = 1i32,
     Remoting = 2i32,
     RemotingSkipSchema = 4i32,

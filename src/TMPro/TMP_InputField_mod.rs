@@ -2676,8 +2676,9 @@ impl AsMut<crate::UnityEngine::UI::ILayoutElement> for crate::TMPro::TMP_InputFi
 }
 #[cfg(feature = "TMPro+TMP_InputField+CharacterValidation")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TMP_InputField_CharacterValidation {
+    #[default]
     Alphanumeric = 4i32,
     CustomValidator = 8i32,
     Decimal = 3i32,
@@ -2695,8 +2696,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "TMPro+TMP_InputField+ContentType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TMP_InputField_ContentType {
+    #[default]
     Alphanumeric = 4i32,
     Autocorrected = 1i32,
     Custom = 9i32,
@@ -2715,8 +2717,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "TMPro+TMP_InputField+EditState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TMP_InputField_EditState {
+    #[default]
     Continue = 0i32,
     Finish = 1i32,
 }
@@ -2727,8 +2730,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "TMPro+TMP_InputField+InputType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TMP_InputField_InputType {
+    #[default]
     AutoCorrect = 1i32,
     Password = 2i32,
     Standard = 0i32,
@@ -2740,8 +2744,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "TMPro+TMP_InputField+LineType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TMP_InputField_LineType {
+    #[default]
     MultiLineNewline = 2i32,
     MultiLineSubmit = 1i32,
     SingleLine = 0i32,

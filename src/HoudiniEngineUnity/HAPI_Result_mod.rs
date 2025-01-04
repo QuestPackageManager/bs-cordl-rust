@@ -1,7 +1,8 @@
 #[cfg(feature = "HoudiniEngineUnity+HAPI_Result")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HAPI_Result {
+    #[default]
     HAPI_RESULT_ALREADY_INITIALIZED = 2i32,
     HAPI_RESULT_ASSET_DEF_ALREADY_LOADED = 10i32,
     HAPI_RESULT_ASSET_INVALID = 200i32,

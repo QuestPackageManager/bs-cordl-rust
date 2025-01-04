@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+EventCategoryFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EventCategoryFlags {
+    #[default]
     All = -1i32,
     None = 0i32,
     TargetOnly = 2768i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "IsPackBetterBuyThanLevelResult")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum IsPackBetterBuyThanLevelResult {
+    #[default]
     Failed = 2i32,
     LevelIsBetter = 1i32,
     PackIsBetter = 0i32,

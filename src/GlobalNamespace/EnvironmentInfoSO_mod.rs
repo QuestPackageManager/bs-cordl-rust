@@ -246,8 +246,9 @@ for crate::GlobalNamespace::EnvironmentInfoSO {
 }
 #[cfg(feature = "EnvironmentInfoSO+Tags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EnvironmentInfoSO_Tags {
+    #[default]
     Branded = 1i32,
     InDevelopment = 2i32,
 }

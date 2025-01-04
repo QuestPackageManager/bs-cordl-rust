@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+ListViewReorderMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ListViewReorderMode {
+    #[default]
     Animated = 1i32,
     Simple = 0i32,
 }

@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+InvokePolicy")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InvokePolicy {
+    #[default]
     Default = 0i32,
     IncludeDisabled = 1i32,
 }

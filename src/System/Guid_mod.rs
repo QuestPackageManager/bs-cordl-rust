@@ -521,8 +521,9 @@ impl AsMut<crate::System::ISpanFormattable> for crate::System::Guid {
 }
 #[cfg(feature = "System+Guid+GuidParseThrowStyle")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Guid_GuidParseThrowStyle {
+    #[default]
     All = 1i32,
     AllButOverflow = 2i32,
     None = 0i32,
@@ -656,8 +657,9 @@ impl crate::System::Guid_GuidResult {
 }
 #[cfg(feature = "System+Guid+GuidStyles")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Guid_GuidStyles {
+    #[default]
     AllowBraces = 2i32,
     AllowDashes = 4i32,
     AllowHexPrefix = 8i32,
@@ -679,8 +681,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "System+Guid+ParseFailureKind")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Guid_ParseFailureKind {
+    #[default]
     ArgumentNull = 1i32,
     Format = 2i32,
     FormatWithInnerException = 5i32,

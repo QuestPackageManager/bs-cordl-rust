@@ -199,8 +199,9 @@ for crate::UnityEngine::UI::Navigation {
 }
 #[cfg(feature = "UnityEngine+UI+Navigation+Mode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Navigation_Mode {
+    #[default]
     Automatic = 3i32,
     Explicit = 4i32,
     Horizontal = 1i32,

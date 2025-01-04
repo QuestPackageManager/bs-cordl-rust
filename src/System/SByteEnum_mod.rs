@@ -1,6 +1,6 @@
 #[cfg(feature = "System+SByteEnum")]
 #[repr(i8)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SByteEnum {}
 #[cfg(feature = "System+SByteEnum")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

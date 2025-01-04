@@ -1,7 +1,8 @@
 #[cfg(feature = "System+IO+FileOptions")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum FileOptions {
+    #[default]
     Asynchronous = 1073741824i32,
     DeleteOnClose = 67108864i32,
     Encrypted = 16384i32,

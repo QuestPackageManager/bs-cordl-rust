@@ -1,7 +1,8 @@
 #[cfg(feature = "BeatmapLevelDataVersion")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BeatmapLevelDataVersion {
+    #[default]
     NoEnvironmentKeywords = 1i32,
     Original = 0i32,
 }

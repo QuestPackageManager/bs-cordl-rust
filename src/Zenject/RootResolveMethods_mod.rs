@@ -1,7 +1,8 @@
 #[cfg(feature = "Zenject+RootResolveMethods")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RootResolveMethods {
+    #[default]
     All = 1i32,
     NonLazyOnly = 0i32,
 }

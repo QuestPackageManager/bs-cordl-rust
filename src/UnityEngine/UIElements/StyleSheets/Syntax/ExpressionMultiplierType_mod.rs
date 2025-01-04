@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+Syntax+ExpressionMultiplierType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ExpressionMultiplierType {
+    #[default]
     GroupAtLeastOne = 6i32,
     None = 0i32,
     OneOrMore = 2i32,

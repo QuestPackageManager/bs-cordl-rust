@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Globalization+MonthNameStyles")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MonthNameStyles {
+    #[default]
     Genitive = 1i32,
     LeapYear = 2i32,
     Regular = 0i32,

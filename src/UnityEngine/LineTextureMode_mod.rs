@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+LineTextureMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LineTextureMode {
+    #[default]
     DistributePerSegment = 2i32,
     RepeatPerSegment = 3i32,
     Static = 4i32,

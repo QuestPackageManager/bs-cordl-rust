@@ -123,8 +123,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MissionObject
 }
 #[cfg(feature = "MissionObjective+ReferenceValueComparisonType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MissionObjective_ReferenceValueComparisonType {
+    #[default]
     Equal = 1i32,
     Max = 2i32,
     Min = 3i32,

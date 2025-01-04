@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+ProBuilder+Shapes+StepGenerationType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum StepGenerationType {
+    #[default]
     Count = 1i32,
     Height = 0i32,
 }

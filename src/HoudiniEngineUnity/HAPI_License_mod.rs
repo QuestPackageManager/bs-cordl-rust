@@ -1,7 +1,8 @@
 #[cfg(feature = "HoudiniEngineUnity+HAPI_License")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HAPI_License {
+    #[default]
     HAPI_LICENSE_HOUDINI = 2i32,
     HAPI_LICENSE_HOUDINI_ENGINE = 1i32,
     HAPI_LICENSE_HOUDINI_ENGINE_INDIE = 4i32,

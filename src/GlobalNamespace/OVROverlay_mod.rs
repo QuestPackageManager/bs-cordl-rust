@@ -617,8 +617,9 @@ for crate::GlobalNamespace::OVROverlay_LayerTexture {
 impl crate::GlobalNamespace::OVROverlay_LayerTexture {}
 #[cfg(feature = "OVROverlay+OverlayShape")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVROverlay_OverlayShape {
+    #[default]
     Cubemap = 2i32,
     Cylinder = 1i32,
     Equirect = 5i32,
@@ -637,8 +638,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVROverlay+OverlayType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVROverlay_OverlayType {
+    #[default]
     None = 0i32,
     Overlay = 2i32,
     Underlay = 1i32,

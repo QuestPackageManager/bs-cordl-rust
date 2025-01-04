@@ -990,8 +990,9 @@ for crate::UnityEngine::Timeline::TimelineClip {
 }
 #[cfg(feature = "UnityEngine+Timeline+TimelineClip+BlendCurveMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TimelineClip_BlendCurveMode {
+    #[default]
     Auto = 0i32,
     Manual = 1i32,
 }
@@ -1003,8 +1004,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+Timeline+TimelineClip+ClipExtrapolation")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TimelineClip_ClipExtrapolation {
+    #[default]
     Continue = 4i32,
     Hold = 1i32,
     Loop = 2i32,
@@ -1065,8 +1067,9 @@ for crate::UnityEngine::Timeline::TimelineClip_TimelineClipUpgrade {
 }
 #[cfg(feature = "UnityEngine+Timeline+TimelineClip+Versions")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TimelineClip_Versions {
+    #[default]
     ClipInFromGlobalToLocal = 1i32,
     Initial = 0i32,
 }

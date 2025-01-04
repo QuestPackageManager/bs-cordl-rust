@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Net+Sockets+SocketAsyncOperation")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SocketAsyncOperation {
+    #[default]
     Accept = 1i32,
     Connect = 2i32,
     Disconnect = 3i32,

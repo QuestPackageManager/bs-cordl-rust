@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+BackgroundPositionKeyword")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BackgroundPositionKeyword {
+    #[default]
     Bottom = 2i32,
     Center = 0i32,
     Left = 3i32,

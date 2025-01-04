@@ -122,8 +122,9 @@ impl crate::GlobalNamespace::NoteCutInfo {
 }
 #[cfg(feature = "NoteCutInfo+FailReason")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NoteCutInfo_FailReason {
+    #[default]
     CutHarder = 3i32,
     None = 0i32,
     TooSoon = 1i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+InputSystem+Key")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Key {
+    #[default]
     A = 15i32,
     AltGr = 54i32,
     B = 16i32,

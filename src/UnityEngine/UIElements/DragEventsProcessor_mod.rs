@@ -285,8 +285,9 @@ for crate::UnityEngine::UIElements::DragEventsProcessor {
 }
 #[cfg(feature = "UnityEngine+UIElements+DragEventsProcessor+DragState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DragEventsProcessor_DragState {
+    #[default]
     CanStartDrag = 1i32,
     Dragging = 2i32,
     None = 0i32,

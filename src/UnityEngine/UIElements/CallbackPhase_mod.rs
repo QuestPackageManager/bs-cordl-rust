@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+CallbackPhase")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CallbackPhase {
+    #[default]
     TargetAndBubbleUp = 1i32,
     TrickleDownAndTarget = 2i32,
 }

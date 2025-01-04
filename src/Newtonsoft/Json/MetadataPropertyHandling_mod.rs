@@ -1,7 +1,8 @@
 #[cfg(feature = "Newtonsoft+Json+MetadataPropertyHandling")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MetadataPropertyHandling {
+    #[default]
     Default = 0i32,
     Ignore = 2i32,
     ReadAhead = 1i32,

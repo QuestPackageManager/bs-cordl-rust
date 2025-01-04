@@ -1,7 +1,8 @@
 #[cfg(feature = "Oculus+Platform+LivestreamingStartStatus")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LivestreamingStartStatus {
+    #[default]
     MissingParameters = -4i32,
     NoFbConnect = -2i32,
     NoPackageSet = -1i32,

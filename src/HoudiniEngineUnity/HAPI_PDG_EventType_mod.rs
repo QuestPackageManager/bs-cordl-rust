@@ -1,7 +1,8 @@
 #[cfg(feature = "HoudiniEngineUnity+HAPI_PDG_EventType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HAPI_PDG_EventType {
+    #[default]
     HAPI_PDG_CONTEXT_EVENTS = 41i32,
     HAPI_PDG_EVENT_ALL = 35i32,
     HAPI_PDG_EVENT_BATCH_ITEM_INITIALIZED = 34i32,

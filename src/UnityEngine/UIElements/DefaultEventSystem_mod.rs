@@ -1001,8 +1001,9 @@ for crate::UnityEngine::UIElements::DefaultEventSystem_NoInput {
 }
 #[cfg(feature = "UnityEngine+UIElements+DefaultEventSystem+UpdateMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DefaultEventSystem_UpdateMode {
+    #[default]
     Always = 0i32,
     IgnoreIfAppNotFocused = 1i32,
 }

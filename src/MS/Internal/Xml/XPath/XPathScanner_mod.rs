@@ -218,8 +218,9 @@ for crate::MS::Internal::Xml::XPath::XPathScanner {
 }
 #[cfg(feature = "MS+Internal+Xml+XPath+XPathScanner+LexKind")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XPathScanner_LexKind {
+    #[default]
     And = 65i32,
     Apos = 39i32,
     At = 64i32,

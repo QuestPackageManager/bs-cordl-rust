@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+CollisionFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CollisionFlags {
+    #[default]
     Above = 2i32,
     Below = 4i32,
     CollidedSides = 1i32,

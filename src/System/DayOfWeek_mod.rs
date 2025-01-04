@@ -1,7 +1,8 @@
 #[cfg(feature = "System+DayOfWeek")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DayOfWeek {
+    #[default]
     Friday = 5i32,
     Monday = 1i32,
     Saturday = 6i32,

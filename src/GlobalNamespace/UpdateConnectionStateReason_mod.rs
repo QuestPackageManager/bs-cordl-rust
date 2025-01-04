@@ -1,7 +1,8 @@
 #[cfg(feature = "UpdateConnectionStateReason")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum UpdateConnectionStateReason {
+    #[default]
     Connected = 2i32,
     ConnectionFailed = 8i32,
     Init = 0i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "IgnoranceCore+IgnoranceChannelTypes")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum IgnoranceChannelTypes {
+    #[default]
     Reliable = 1i32,
     ReliableUnsequenced = 3i32,
     Unreliable = 2i32,

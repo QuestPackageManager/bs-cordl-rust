@@ -1,7 +1,8 @@
 #[cfg(feature = "HoudiniEngineUnity+HAPI_StatusType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HAPI_StatusType {
+    #[default]
     HAPI_STATUS_CALL_RESULT = 0i32,
     HAPI_STATUS_COOK_RESULT = 1i32,
     HAPI_STATUS_COOK_STATE = 2i32,

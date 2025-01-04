@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Net+NetworkInformation+NetworkInterfaceType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NetworkInterfaceType {
+    #[default]
     AsymmetricDsl = 94i32,
     Atm = 37i32,
     BasicIsdn = 20i32,

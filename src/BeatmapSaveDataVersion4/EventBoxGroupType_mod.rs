@@ -1,7 +1,8 @@
 #[cfg(feature = "BeatmapSaveDataVersion4+EventBoxGroupType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EventBoxGroupType {
+    #[default]
     Color = 1i32,
     FloatFx = 4i32,
     None = 0i32,

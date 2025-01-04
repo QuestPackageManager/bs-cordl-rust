@@ -1,7 +1,8 @@
 #[cfg(feature = "OVRGLTFComponentType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRGLTFComponentType {
+    #[default]
     BYTE = 5120i32,
     FLOAT = 5126i32,
     SHORT = 5122i32,

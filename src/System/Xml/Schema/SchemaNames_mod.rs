@@ -301,8 +301,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::SchemaNam
 }
 #[cfg(feature = "System+Xml+Schema+SchemaNames+Token")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SchemaNames_Token {
+    #[default]
     Empty = 0i32,
     SchemaAbstract = 54i32,
     SchemaAttributeFormDefault = 70i32,

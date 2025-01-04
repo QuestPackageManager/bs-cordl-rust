@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Xml+Serialization+SerializationFormat")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SerializationFormat {
+    #[default]
     Encoded = 0i32,
     Literal = 1i32,
 }

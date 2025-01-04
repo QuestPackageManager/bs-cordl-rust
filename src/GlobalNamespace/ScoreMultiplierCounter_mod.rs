@@ -94,8 +94,9 @@ for crate::GlobalNamespace::ScoreMultiplierCounter {
 }
 #[cfg(feature = "ScoreMultiplierCounter+MultiplierEventType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ScoreMultiplierCounter_MultiplierEventType {
+    #[default]
     Negative = 2i32,
     Neutral = 1i32,
     Positive = 0i32,

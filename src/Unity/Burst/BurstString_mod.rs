@@ -664,8 +664,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::BurstString {
 }
 #[cfg(feature = "Unity+Burst+BurstString+CutoffMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BurstString_CutoffMode {
+    #[default]
     FractionLength = 2i32,
     TotalLength = 1i32,
     Unique = 0i32,
@@ -807,8 +808,9 @@ impl crate::Unity::Burst::BurstString_NumberBuffer {
 }
 #[cfg(feature = "Unity+Burst+BurstString+NumberBufferKind")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BurstString_NumberBufferKind {
+    #[default]
     Float = 1i32,
     Integer = 0i32,
 }
@@ -819,8 +821,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "Unity+Burst+BurstString+NumberFormatKind")]
 #[repr(u8)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BurstString_NumberFormatKind {
+    #[default]
     Decimal = 1u8,
     DecimalForceSigned = 2u8,
     General = 0u8,
@@ -887,8 +890,9 @@ for crate::Unity::Burst::BurstString_PreserveAttribute {
 }
 #[cfg(feature = "Unity+Burst+BurstString+PrintFloatFormat")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BurstString_PrintFloatFormat {
+    #[default]
     Positional = 0i32,
     Scientific = 1i32,
 }

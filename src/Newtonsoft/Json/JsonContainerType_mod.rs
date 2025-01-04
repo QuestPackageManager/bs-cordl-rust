@@ -1,7 +1,8 @@
 #[cfg(feature = "Newtonsoft+Json+JsonContainerType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum JsonContainerType {
+    #[default]
     Array = 2i32,
     Constructor = 3i32,
     None = 0i32,

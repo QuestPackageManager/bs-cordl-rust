@@ -1,7 +1,8 @@
 #[cfg(feature = "ENet+PeerState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PeerState {
+    #[default]
     AcknowledgingConnect = 2i32,
     AcknowledgingDisconnect = 8i32,
     Connected = 5i32,

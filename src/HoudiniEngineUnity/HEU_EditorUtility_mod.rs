@@ -527,8 +527,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::HEU_Editor
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_EditorUtility+HEU_ReplacePrefabOptions")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HEU_EditorUtility_HEU_ReplacePrefabOptions {
+    #[default]
     ConnectToPrefab = 1i32,
     Default = 0i32,
     ReplaceNameBased = 2i32,

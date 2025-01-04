@@ -1,7 +1,8 @@
 #[cfg(feature = "NetworkPlayersTableView+CellInfo+CellType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CellInfo_NetworkPlayersTableView_CellType {
+    #[default]
     Header = 0i32,
     Options = 2i32,
     Player = 1i32,

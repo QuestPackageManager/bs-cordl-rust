@@ -822,8 +822,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::TextSelectingUtil
 }
 #[cfg(feature = "UnityEngine+TextSelectingUtilities+CharacterType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TextSelectingUtilities_CharacterType {
+    #[default]
     LetterLike = 0i32,
     NewLine = 4i32,
     Symbol = 1i32,
@@ -838,8 +839,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+TextSelectingUtilities+Direction")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TextSelectingUtilities_Direction {
+    #[default]
     Backward = 1i32,
     Forward = 0i32,
 }

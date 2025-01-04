@@ -581,8 +581,9 @@ for crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData {
 }
 #[cfg(feature = "LocalLeaderboardsModel+LeaderboardType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LocalLeaderboardsModel_LeaderboardType {
+    #[default]
     AllTime = 0i32,
     Daily = 1i32,
 }

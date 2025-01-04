@@ -1,7 +1,8 @@
 #[cfg(feature = "HoudiniEngineUnity+HAPI_PDG_WorkitemState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HAPI_PDG_WorkitemState {
+    #[default]
     HAPI_PDG_WORKITEM_COOKED_CACHE = 6i32,
     HAPI_PDG_WORKITEM_COOKED_CANCEL = 8i32,
     HAPI_PDG_WORKITEM_COOKED_FAIL = 7i32,

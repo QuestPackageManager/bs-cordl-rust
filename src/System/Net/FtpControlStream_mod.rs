@@ -488,8 +488,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::FtpControlStream 
 }
 #[cfg(feature = "System+Net+FtpControlStream+GetPathOption")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum FtpControlStream_GetPathOption {
+    #[default]
     AssumeFilename = 1i32,
     AssumeNoFilename = 2i32,
     Normal = 0i32,

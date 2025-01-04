@@ -1,7 +1,8 @@
 #[cfg(feature = "System+UriComponents")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum UriComponents {
+    #[default]
     AbsoluteUri = 127i32,
     Fragment = 64i32,
     Host = 4i32,

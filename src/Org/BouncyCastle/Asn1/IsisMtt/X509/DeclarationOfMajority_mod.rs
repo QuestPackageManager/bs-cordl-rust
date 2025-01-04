@@ -215,8 +215,9 @@ for crate::Org::BouncyCastle::Asn1::IsisMtt::X509::DeclarationOfMajority {
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+X509+DeclarationOfMajority+Choice")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DeclarationOfMajority_Choice {
+    #[default]
     DateOfBirth = 2i32,
     FullAgeAtCountry = 1i32,
     NotYoungerThan = 0i32,

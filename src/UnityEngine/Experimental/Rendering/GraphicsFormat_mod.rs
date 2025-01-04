@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Experimental+Rendering+GraphicsFormat")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GraphicsFormat {
+    #[default]
     A10R10G10B10_XRSRGBPack32 = 85i32,
     A10R10G10B10_XRUNormPack32 = 86i32,
     A1R5G5B5_UNormPack16 = 72i32,

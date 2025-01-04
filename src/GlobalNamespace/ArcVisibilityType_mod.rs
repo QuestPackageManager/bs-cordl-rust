@@ -1,7 +1,8 @@
 #[cfg(feature = "ArcVisibilityType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ArcVisibilityType {
+    #[default]
     High = 3i32,
     Low = 1i32,
     None = 0i32,

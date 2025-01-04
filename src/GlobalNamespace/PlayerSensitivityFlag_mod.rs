@@ -1,7 +1,8 @@
 #[cfg(feature = "PlayerSensitivityFlag")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PlayerSensitivityFlag {
+    #[default]
     Explicit = 3i32,
     Safe = 1i32,
     Themes = 2i32,

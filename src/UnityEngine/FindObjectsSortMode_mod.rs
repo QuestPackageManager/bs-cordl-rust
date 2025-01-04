@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+FindObjectsSortMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum FindObjectsSortMode {
+    #[default]
     InstanceID = 1i32,
     None = 0i32,
 }

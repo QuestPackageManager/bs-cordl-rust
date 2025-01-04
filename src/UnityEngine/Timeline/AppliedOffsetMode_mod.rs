@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Timeline+AppliedOffsetMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AppliedOffsetMode {
+    #[default]
     NoRootTransform = 0i32,
     SceneOffset = 2i32,
     SceneOffsetEditor = 5i32,

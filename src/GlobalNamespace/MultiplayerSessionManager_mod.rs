@@ -966,8 +966,9 @@ for crate::GlobalNamespace::MultiplayerSessionManager {
 }
 #[cfg(feature = "MultiplayerSessionManager+ConnectionState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MultiplayerSessionManager_ConnectionState {
+    #[default]
     Connected = 2i32,
     Connecting = 1i32,
     Disconnected = 0i32,
@@ -981,8 +982,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "MultiplayerSessionManager+MessageType")]
 #[repr(u8)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MultiplayerSessionManager_MessageType {
+    #[default]
     GameplayRpc = 1u8,
     MenuRpc = 0u8,
     NodePoseSyncState = 2u8,
@@ -999,8 +1001,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "MultiplayerSessionManager+SessionType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MultiplayerSessionManager_SessionType {
+    #[default]
     DedicatedServer = 2i32,
     Player = 0i32,
     Spectator = 1i32,

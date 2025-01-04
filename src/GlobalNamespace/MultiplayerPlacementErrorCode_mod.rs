@@ -1,7 +1,8 @@
 #[cfg(feature = "MultiplayerPlacementErrorCode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MultiplayerPlacementErrorCode {
+    #[default]
     AuthenticationFailed = 5i32,
     ConnectionCanceled = 2i32,
     MatchmakingTimeout = 7i32,

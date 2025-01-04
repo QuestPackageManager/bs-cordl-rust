@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+UIR+VertexFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum VertexFlags {
+    #[default]
     IsDynamic = 3i32,
     IsGraphViewEdge = 10i32,
     IsSolid = 0i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Data+XmlReadMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XmlReadMode {
+    #[default]
     Auto = 0i32,
     DiffGram = 4i32,
     Fragment = 5i32,

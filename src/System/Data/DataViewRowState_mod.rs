@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Data+DataViewRowState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DataViewRowState {
+    #[default]
     Added = 4i32,
     CurrentRows = 22i32,
     Deleted = 8i32,

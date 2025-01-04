@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+DynamicAtlasFilters")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DynamicAtlasFilters {
+    #[default]
     ColorSpace = 8i32,
     FilterMode = 16i32,
     Format = 4i32,

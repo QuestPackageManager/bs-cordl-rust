@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Net+WebHeaderCollectionType")]
 #[repr(u16)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum WebHeaderCollectionType {
+    #[default]
     FileWebRequest = 9u16,
     FileWebResponse = 10u16,
     FtpWebRequest = 7u16,

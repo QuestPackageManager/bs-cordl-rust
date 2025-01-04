@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Security+Cryptography+OidGroup")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OidGroup {
+    #[default]
     All = 0i32,
     Attribute = 5i32,
     EncryptionAlgorithm = 2i32,

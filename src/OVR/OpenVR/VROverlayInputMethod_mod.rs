@@ -1,7 +1,8 @@
 #[cfg(feature = "OVR+OpenVR+VROverlayInputMethod")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum VROverlayInputMethod {
+    #[default]
     DualAnalog = 2i32,
     Mouse = 1i32,
     None = 0i32,

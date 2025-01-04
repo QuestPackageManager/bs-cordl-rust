@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+InputSystem+UI+UIPointerType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum UIPointerType {
+    #[default]
     MouseOrPen = 1i32,
     None = 0i32,
     Touch = 2i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+XR+InputFeatureType")]
 #[repr(u32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputFeatureType {
+    #[default]
     Axis1D = 100992003u32,
     Axis2D = 117835012u32,
     Axis3D = 134678021u32,

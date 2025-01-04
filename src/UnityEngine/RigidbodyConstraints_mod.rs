@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+RigidbodyConstraints")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RigidbodyConstraints {
+    #[default]
     FreezeAll = 126i32,
     FreezePosition = 14i32,
     FreezePositionX = 2i32,

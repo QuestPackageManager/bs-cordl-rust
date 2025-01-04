@@ -343,8 +343,9 @@ for crate::Org::BouncyCastle::Crypto::Modes::ChaCha20Poly1305 {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Modes+ChaCha20Poly1305+State")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ChaCha20Poly1305_State {
+    #[default]
     DecAad = 6i32,
     DecData = 7i32,
     DecFinal = 8i32,

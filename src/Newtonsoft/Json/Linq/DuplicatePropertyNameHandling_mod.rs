@@ -1,7 +1,8 @@
 #[cfg(feature = "Newtonsoft+Json+Linq+DuplicatePropertyNameHandling")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DuplicatePropertyNameHandling {
+    #[default]
     Error = 2i32,
     Ignore = 1i32,
     Replace = 0i32,

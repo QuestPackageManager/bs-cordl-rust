@@ -822,8 +822,9 @@ impl<
     feature = "UnityEngine+UIElements+DynamicHeightVirtualizationController_1+ScrollDirection"
 )]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DynamicHeightVirtualizationController_1_ScrollDirection {
+    #[default]
     Down = 2i32,
     Idle = 0i32,
     Up = 1i32,
@@ -840,8 +841,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
     feature = "UnityEngine+UIElements+DynamicHeightVirtualizationController_1+VirtualizationChange"
 )]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DynamicHeightVirtualizationController_1_VirtualizationChange {
+    #[default]
     ForcedScroll = 3i32,
     None = 0i32,
     Resize = 1i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "Oculus+Platform+KeyValuePairType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum KeyValuePairType {
+    #[default]
     Double = 2i32,
     Int = 1i32,
     String = 0i32,

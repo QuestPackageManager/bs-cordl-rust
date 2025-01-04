@@ -1,7 +1,8 @@
 #[cfg(feature = "System+ComponentModel+DesignerSerializationVisibility")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DesignerSerializationVisibility {
+    #[default]
     Content = 2i32,
     Hidden = 0i32,
     Visible = 1i32,

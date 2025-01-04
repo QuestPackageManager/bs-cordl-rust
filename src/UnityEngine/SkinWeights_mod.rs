@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+SkinWeights")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SkinWeights {
+    #[default]
     FourBones = 4i32,
     None = 0i32,
     OneBone = 1i32,

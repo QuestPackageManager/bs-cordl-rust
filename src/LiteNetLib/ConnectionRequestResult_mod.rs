@@ -1,7 +1,8 @@
 #[cfg(feature = "LiteNetLib+ConnectionRequestResult")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ConnectionRequestResult {
+    #[default]
     Accept = 1i32,
     None = 0i32,
     Reject = 2i32,

@@ -326,8 +326,9 @@ for crate::GlobalNamespace::OVROverlayMeshGenerator {
 }
 #[cfg(feature = "OVROverlayMeshGenerator+CubeFace")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVROverlayMeshGenerator_CubeFace {
+    #[default]
     Back = 5i32,
     Bottom = 3i32,
     COUNT = 6i32,

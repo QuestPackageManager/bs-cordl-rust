@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Net+Http+Headers+HttpHeaderKind")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HttpHeaderKind {
+    #[default]
     Content = 4i32,
     None = 0i32,
     Request = 1i32,

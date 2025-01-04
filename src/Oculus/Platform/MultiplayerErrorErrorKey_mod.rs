@@ -1,7 +1,8 @@
 #[cfg(feature = "Oculus+Platform+MultiplayerErrorErrorKey")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MultiplayerErrorErrorKey {
+    #[default]
     DestinationUnavailable = 1i32,
     DlcRequired = 2i32,
     General = 3i32,

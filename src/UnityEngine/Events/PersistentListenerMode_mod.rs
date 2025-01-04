@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Events+PersistentListenerMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PersistentListenerMode {
+    #[default]
     Bool = 6i32,
     EventDefined = 0i32,
     Float = 4i32,

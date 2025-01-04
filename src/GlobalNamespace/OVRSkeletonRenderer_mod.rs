@@ -434,8 +434,9 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_CapsuleVisualization {
 }
 #[cfg(feature = "OVRSkeletonRenderer+ConfidenceBehavior")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRSkeletonRenderer_ConfidenceBehavior {
+    #[default]
     None = 0i32,
     ToggleRenderer = 1i32,
 }
@@ -611,8 +612,9 @@ impl crate::GlobalNamespace::OVRSkeletonRenderer_SkeletonRendererData {
 }
 #[cfg(feature = "OVRSkeletonRenderer+SystemGestureBehavior")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRSkeletonRenderer_SystemGestureBehavior {
+    #[default]
     None = 0i32,
     SwapMaterial = 1i32,
 }

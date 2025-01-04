@@ -1,7 +1,8 @@
 #[cfg(feature = "SaberType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SaberType {
+    #[default]
     SaberA = 0i32,
     SaberB = 1i32,
 }

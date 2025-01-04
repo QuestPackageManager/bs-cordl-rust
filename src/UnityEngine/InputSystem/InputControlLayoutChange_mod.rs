@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+InputSystem+InputControlLayoutChange")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputControlLayoutChange {
+    #[default]
     Added = 0i32,
     Removed = 1i32,
     Replaced = 2i32,

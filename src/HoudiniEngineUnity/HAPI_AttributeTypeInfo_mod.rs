@@ -1,7 +1,8 @@
 #[cfg(feature = "HoudiniEngineUnity+HAPI_AttributeTypeInfo")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HAPI_AttributeTypeInfo {
+    #[default]
     HAPI_ATTRIBUTE_TYPE_BOX = 12i32,
     HAPI_ATTRIBUTE_TYPE_BOX2 = 11i32,
     HAPI_ATTRIBUTE_TYPE_COLOR = 5i32,

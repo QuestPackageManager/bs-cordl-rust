@@ -122,8 +122,9 @@ for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProv
     feature = "UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider+DependencyHashIndex"
 )]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ContentCatalogProvider_DependencyHashIndex {
+    #[default]
     Cache = 1i32,
     Count = 2i32,
     Remote = 0i32,

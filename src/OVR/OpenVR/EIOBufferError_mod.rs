@@ -1,7 +1,8 @@
 #[cfg(feature = "OVR+OpenVR+EIOBufferError")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EIOBufferError {
+    #[default]
     IOBuffer_InvalidArgument = 102i32,
     IOBuffer_InvalidHandle = 101i32,
     IOBuffer_OperationFailed = 100i32,

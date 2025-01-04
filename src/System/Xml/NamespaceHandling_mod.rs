@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Xml+NamespaceHandling")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NamespaceHandling {
+    #[default]
     Default = 0i32,
     OmitDuplicates = 1i32,
 }

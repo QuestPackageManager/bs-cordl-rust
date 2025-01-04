@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+TextCore+Text+TextProcessingElementType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TextProcessingElementType {
+    #[default]
     TextCharacterElement = 1i32,
     TextMarkupElement = 2i32,
     Undefined = 0i32,

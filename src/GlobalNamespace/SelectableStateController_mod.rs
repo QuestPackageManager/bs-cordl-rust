@@ -146,8 +146,9 @@ for crate::GlobalNamespace::SelectableStateController {
 }
 #[cfg(feature = "SelectableStateController+ViewState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SelectableStateController_ViewState {
+    #[default]
     Disabled = 3i32,
     Highlighted = 1i32,
     Normal = 0i32,

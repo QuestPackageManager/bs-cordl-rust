@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Security+Cryptography+X509Certificates+OpenFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OpenFlags {
+    #[default]
     IncludeArchived = 8i32,
     MaxAllowed = 2i32,
     OpenExistingOnly = 4i32,

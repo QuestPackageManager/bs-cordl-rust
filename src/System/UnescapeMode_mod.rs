@@ -1,7 +1,8 @@
 #[cfg(feature = "System+UnescapeMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum UnescapeMode {
+    #[default]
     CopyOnly = 0i32,
     Escape = 1i32,
     EscapeUnescape = 3i32,

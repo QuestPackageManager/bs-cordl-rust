@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+MotionVectorGenerationMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MotionVectorGenerationMode {
+    #[default]
     Camera = 0i32,
     ForceNoMotion = 2i32,
     Object = 1i32,

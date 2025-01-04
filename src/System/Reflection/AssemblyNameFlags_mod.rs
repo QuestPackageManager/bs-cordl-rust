@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Reflection+AssemblyNameFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AssemblyNameFlags {
+    #[default]
     EnableJITcompileOptimizer = 16384i32,
     EnableJITcompileTracking = 32768i32,
     None = 0i32,

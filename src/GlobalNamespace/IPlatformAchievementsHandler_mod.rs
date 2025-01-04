@@ -201,8 +201,9 @@ for crate::GlobalNamespace::IPlatformAchievementsHandler_GetUnlockedAchievements
 }
 #[cfg(feature = "IPlatformAchievementsHandler+GetUnlockedAchievementsResult")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum IPlatformAchievementsHandler_GetUnlockedAchievementsResult {
+    #[default]
     Failed = 1i32,
     OK = 0i32,
 }
@@ -313,8 +314,9 @@ for crate::GlobalNamespace::IPlatformAchievementsHandler_UnlockAchievementComple
 }
 #[cfg(feature = "IPlatformAchievementsHandler+UnlockAchievementResult")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum IPlatformAchievementsHandler_UnlockAchievementResult {
+    #[default]
     Failed = 1i32,
     OK = 0i32,
 }

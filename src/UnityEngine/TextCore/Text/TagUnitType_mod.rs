@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+TextCore+Text+TagUnitType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TagUnitType {
+    #[default]
     FontUnits = 1i32,
     Percentage = 2i32,
     Pixels = 0i32,

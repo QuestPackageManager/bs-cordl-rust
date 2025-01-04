@@ -1,7 +1,8 @@
 #[cfg(feature = "HoudiniEngineUnity+HAPI_PackedPrimInstancingMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HAPI_PackedPrimInstancingMode {
+    #[default]
     HAPI_PACKEDPRIM_INSTANCING_MODE_DISABLED = 0i32,
     HAPI_PACKEDPRIM_INSTANCING_MODE_FLAT = 2i32,
     HAPI_PACKEDPRIM_INSTANCING_MODE_HIERARCHY = 1i32,

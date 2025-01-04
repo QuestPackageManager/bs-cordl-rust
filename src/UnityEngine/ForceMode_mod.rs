@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+ForceMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ForceMode {
+    #[default]
     Acceleration = 5i32,
     Force = 0i32,
     Impulse = 1i32,

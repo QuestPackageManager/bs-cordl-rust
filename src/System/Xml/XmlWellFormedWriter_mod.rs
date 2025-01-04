@@ -138,8 +138,9 @@ for crate::System::Xml::AttributeValueCache_XmlWellFormedWriter_Item {
 }
 #[cfg(feature = "System+Xml+XmlWellFormedWriter+AttributeValueCache+ItemType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AttributeValueCache_XmlWellFormedWriter_ItemType {
+    #[default]
     CharEntity = 1i32,
     EntityRef = 0i32,
     Raw = 6i32,
@@ -1286,8 +1287,9 @@ impl crate::System::Xml::XmlWellFormedWriter_Namespace {
 }
 #[cfg(feature = "System+Xml+XmlWellFormedWriter+NamespaceKind")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XmlWellFormedWriter_NamespaceKind {
+    #[default]
     Implied = 2i32,
     NeedToWrite = 1i32,
     Special = 3i32,
@@ -1427,8 +1429,9 @@ for crate::System::Xml::XmlWellFormedWriter_NamespaceResolverProxy {
 }
 #[cfg(feature = "System+Xml+XmlWellFormedWriter+SpecialAttribute")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XmlWellFormedWriter_SpecialAttribute {
+    #[default]
     DefaultXmlns = 1i32,
     No = 0i32,
     PrefixedXmlns = 2i32,
@@ -1443,8 +1446,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "System+Xml+XmlWellFormedWriter+State")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XmlWellFormedWriter_State {
+    #[default]
     AfterRootEle = 7i32,
     AfterRootLevelAttr = 14i32,
     Attribute = 8i32,
@@ -1486,8 +1490,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "System+Xml+XmlWellFormedWriter+Token")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XmlWellFormedWriter_Token {
+    #[default]
     AtomicValue = 11i32,
     Base64 = 12i32,
     CData = 10i32,

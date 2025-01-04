@@ -1,7 +1,8 @@
 #[cfg(feature = "EaseType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EaseType {
+    #[default]
     BeatSaberInOutBack = 32i32,
     BeatSaberInOutBounce = 34i32,
     BeatSaberInOutElastic = 33i32,

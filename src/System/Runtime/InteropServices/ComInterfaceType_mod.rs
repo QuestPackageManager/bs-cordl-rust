@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Runtime+InteropServices+ComInterfaceType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ComInterfaceType {
+    #[default]
     InterfaceIsDual = 0i32,
     InterfaceIsIDispatch = 2i32,
     InterfaceIsIInspectable = 3i32,

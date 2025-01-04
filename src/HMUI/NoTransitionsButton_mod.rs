@@ -107,8 +107,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::NoTransitionsButton {
 }
 #[cfg(feature = "HMUI+NoTransitionsButton+SelectionState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NoTransitionsButton_SelectionState {
+    #[default]
     Disabled = 3i32,
     Highlighted = 1i32,
     Normal = 0i32,

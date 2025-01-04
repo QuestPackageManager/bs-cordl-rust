@@ -103,8 +103,9 @@ impl AsMut<
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_HandleParamBinding+HEU_HandleParamType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HEU_HandleParamBinding_HEU_HandleParamType {
+    #[default]
     ROTATE = 1i32,
     SCALE = 2i32,
     TRANSLATE = 0i32,

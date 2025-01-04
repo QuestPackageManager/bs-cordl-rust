@@ -963,8 +963,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::Tayx::Graphy::GraphyManager {
 }
 #[cfg(feature = "Tayx+Graphy+GraphyManager+LookForAudioListener")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GraphyManager_LookForAudioListener {
+    #[default]
     ALWAYS = 0i32,
     NEVER = 2i32,
     ON_SCENE_LOAD = 1i32,
@@ -976,8 +977,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "Tayx+Graphy+GraphyManager+Mode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GraphyManager_Mode {
+    #[default]
     FULL = 0i32,
     LIGHT = 1i32,
 }
@@ -988,8 +990,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "Tayx+Graphy+GraphyManager+ModulePosition")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GraphyManager_ModulePosition {
+    #[default]
     BOTTOM_LEFT = 3i32,
     BOTTOM_RIGHT = 2i32,
     FREE = 4i32,
@@ -1003,8 +1006,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "Tayx+Graphy+GraphyManager+ModulePreset")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GraphyManager_ModulePreset {
+    #[default]
     FPS_BASIC = 0i32,
     FPS_BASIC_ADVANCED_FULL = 11i32,
     FPS_FULL = 2i32,
@@ -1025,8 +1029,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "Tayx+Graphy+GraphyManager+ModuleState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GraphyManager_ModuleState {
+    #[default]
     BACKGROUND = 3i32,
     BASIC = 2i32,
     FULL = 0i32,
@@ -1040,8 +1045,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "Tayx+Graphy+GraphyManager+ModuleType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GraphyManager_ModuleType {
+    #[default]
     ADVANCED = 3i32,
     AUDIO = 2i32,
     FPS = 0i32,

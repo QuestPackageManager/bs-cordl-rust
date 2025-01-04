@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+UIR+OwnedState")]
 #[repr(u8)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OwnedState {
+    #[default]
     Inherited = 0u8,
     Owned = 1u8,
 }

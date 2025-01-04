@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Experimental+Rendering+TextureCreationFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TextureCreationFlags {
+    #[default]
     Crunch = 64i32,
     DontInitializePixels = 4i32,
     DontUploadUponCreate = 1024i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+InputSystem+InputInteractionContext+Flags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputInteractionContext_Flags {
+    #[default]
     TimerHasExpired = 2i32,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputInteractionContext+Flags")]

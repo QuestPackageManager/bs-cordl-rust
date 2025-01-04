@@ -1,7 +1,8 @@
 #[cfg(feature = "Unity+Burst+Intrinsics+X86+Avx+CMP")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Avx_X86_CMP {
+    #[default]
     EQ_OQ = 0i32,
     EQ_OS = 16i32,
     EQ_UQ = 8i32,
@@ -66,8 +67,9 @@ for crate::Unity::Burst::Intrinsics::Fma_X86_Union {
 impl crate::Unity::Burst::Intrinsics::Fma_X86_Union {}
 #[cfg(feature = "Unity+Burst+Intrinsics+X86+Sse4_2+SIDD")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Sse4_2_X86_SIDD {
+    #[default]
     BIT_MASK = 0i32,
     CMP_EQUAL_EACH = 8i32,
     CMP_EQUAL_ORDERED = 12i32,
@@ -4426,8 +4428,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::Intrinsics::X86_
 }
 #[cfg(feature = "Unity+Burst+Intrinsics+X86+MXCSRBits")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum X86_MXCSRBits {
+    #[default]
     DenormalFlag = 2i32,
     DenormalOperationMask = 256i32,
     DenormalsAreZeroes = 64i32,
@@ -4507,8 +4510,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::Burst::Intrinsics::X86_
 }
 #[cfg(feature = "Unity+Burst+Intrinsics+X86+RoundingMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum X86_RoundingMode {
+    #[default]
     FROUND_CEIL = 2i32,
     FROUND_CEIL_NOEXC = 10i32,
     FROUND_CUR_DIRECTION = 4i32,

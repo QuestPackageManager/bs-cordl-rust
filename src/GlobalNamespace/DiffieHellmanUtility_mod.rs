@@ -404,8 +404,9 @@ for crate::GlobalNamespace::DiffieHellmanUtility_ElipticalCurveKeyPair {
 }
 #[cfg(feature = "DiffieHellmanUtility+KeyType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DiffieHellmanUtility_KeyType {
+    #[default]
     DiffieHellman = 0i32,
     ElipticalCurve = 1i32,
 }

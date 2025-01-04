@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Rendering+RenderingThreadingMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RenderingThreadingMode {
+    #[default]
     Direct = 0i32,
     LegacyJobified = 3i32,
     MultiThreaded = 2i32,

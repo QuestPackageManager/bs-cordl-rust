@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Xml+NewLineHandling")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NewLineHandling {
+    #[default]
     Entitize = 1i32,
     None = 2i32,
     Replace = 0i32,

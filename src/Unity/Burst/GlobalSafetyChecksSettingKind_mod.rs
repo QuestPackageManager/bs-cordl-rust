@@ -1,7 +1,8 @@
 #[cfg(feature = "Unity+Burst+GlobalSafetyChecksSettingKind")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GlobalSafetyChecksSettingKind {
+    #[default]
     ForceOn = 2i32,
     Off = 0i32,
     On = 1i32,

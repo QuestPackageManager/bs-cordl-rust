@@ -1,7 +1,8 @@
 #[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+ObstacleType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ObstacleType {
+    #[default]
     Free = 2i32,
     FullHeight = 0i32,
     Top = 1i32,

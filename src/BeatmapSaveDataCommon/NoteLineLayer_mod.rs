@@ -1,7 +1,8 @@
 #[cfg(feature = "BeatmapSaveDataCommon+NoteLineLayer")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NoteLineLayer {
+    #[default]
     Base = 0i32,
     Top = 2i32,
     Upper = 1i32,

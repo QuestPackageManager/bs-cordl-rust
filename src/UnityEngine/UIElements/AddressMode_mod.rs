@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+AddressMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AddressMode {
+    #[default]
     Clamp = 1i32,
     Mirror = 2i32,
     Wrap = 0i32,

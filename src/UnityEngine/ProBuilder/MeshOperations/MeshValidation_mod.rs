@@ -282,8 +282,9 @@ for crate::UnityEngine::ProBuilder::MeshOperations::MeshValidation {
     feature = "UnityEngine+ProBuilder+MeshOperations+MeshValidation+AttributeValidationStrategy"
 )]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MeshValidation_AttributeValidationStrategy {
+    #[default]
     Nullify = 1i32,
     Resize = 0i32,
 }

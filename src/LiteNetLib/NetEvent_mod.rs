@@ -69,8 +69,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::LiteNetLib::NetEvent {
 }
 #[cfg(feature = "LiteNetLib+NetEvent+EType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NetEvent_EType {
+    #[default]
     Broadcast = 6i32,
     Connect = 0i32,
     ConnectionLatencyUpdated = 5i32,

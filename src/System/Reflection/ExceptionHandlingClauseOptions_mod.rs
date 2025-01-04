@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Reflection+ExceptionHandlingClauseOptions")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ExceptionHandlingClauseOptions {
+    #[default]
     Clause = 0i32,
     Fault = 4i32,
     Filter = 1i32,

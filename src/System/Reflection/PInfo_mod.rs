@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Reflection+PInfo")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PInfo {
+    #[default]
     Attributes = 1i32,
     DeclaringType = 16i32,
     GetMethod = 2i32,

@@ -148,8 +148,9 @@ for crate::UnityEngine::UIElements::Angle {
 }
 #[cfg(feature = "UnityEngine+UIElements+Angle+Unit")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Angle_Unit {
+    #[default]
     Degree = 0i32,
     Gradian = 1i32,
     None = 4i32,

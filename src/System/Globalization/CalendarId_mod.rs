@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Globalization+CalendarId")]
 #[repr(u16)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CalendarId {
+    #[default]
     CHINESELUNISOLAR = 15u16,
     GREGORIAN = 1u16,
     GREGORIAN_ARABIC = 10u16,

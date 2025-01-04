@@ -591,8 +591,9 @@ impl AsMut<
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser+JsonValueType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum JsonParser_JsonValueType {
+    #[default]
     Any = 7i32,
     Array = 5i32,
     Bool = 1i32,

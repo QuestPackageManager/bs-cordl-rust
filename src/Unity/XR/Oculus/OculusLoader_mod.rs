@@ -143,8 +143,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::XR::Oculus::OculusLoade
 }
 #[cfg(feature = "Unity+XR+Oculus+OculusLoader+DeviceSupportedResult")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OculusLoader_DeviceSupportedResult {
+    #[default]
     ExitApplication = 2i32,
     NotSupported = 1i32,
     Supported = 0i32,

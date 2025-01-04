@@ -1,7 +1,8 @@
 #[cfg(feature = "LIV+SDK+Unity+TEXTURE_COLOR_SPACE")]
 #[repr(u32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TEXTURE_COLOR_SPACE {
+    #[default]
     LINEAR = 16777729u32,
     SRGB = 33619970u32,
     UNDEFINED = 131328u32,

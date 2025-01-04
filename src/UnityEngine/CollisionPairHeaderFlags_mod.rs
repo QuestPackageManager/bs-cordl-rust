@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+CollisionPairHeaderFlags")]
 #[repr(u16)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CollisionPairHeaderFlags {
+    #[default]
     RemovedActor = 1u16,
     RemovedOtherActor = 2u16,
 }

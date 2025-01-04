@@ -34,8 +34,9 @@ impl crate::BeatSaber::Settings::QuestSettings {
 }
 #[cfg(feature = "BeatSaber+Settings+QuestSettings+FoveatedRenderingLevel")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum QuestSettings_FoveatedRenderingLevel {
+    #[default]
     High = 3i32,
     HighTop = 4i32,
     Low = 1i32,
@@ -50,8 +51,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "BeatSaber+Settings+QuestSettings+SuggestedPerformanceLevel")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum QuestSettings_SuggestedPerformanceLevel {
+    #[default]
     Boost = 4i32,
     Default = 0i32,
     PowerSavings = 1i32,

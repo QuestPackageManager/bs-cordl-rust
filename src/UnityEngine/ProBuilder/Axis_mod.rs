@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+ProBuilder+Axis")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Axis {
+    #[default]
     Backward = 5i32,
     Down = 3i32,
     Forward = 4i32,

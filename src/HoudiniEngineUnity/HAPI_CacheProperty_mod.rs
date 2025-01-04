@@ -1,7 +1,8 @@
 #[cfg(feature = "HoudiniEngineUnity+HAPI_CacheProperty")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HAPI_CacheProperty {
+    #[default]
     HAPI_CACHEPROP_CULL_LEVEL = 5i32,
     HAPI_CACHEPROP_CURRENT = 0i32,
     HAPI_CACHEPROP_HAS_MAX = 3i32,

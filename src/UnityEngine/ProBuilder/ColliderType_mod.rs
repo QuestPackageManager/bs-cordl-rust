@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+ProBuilder+ColliderType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ColliderType {
+    #[default]
     BoxCollider = 1i32,
     MeshCollider = 2i32,
     None = 0i32,

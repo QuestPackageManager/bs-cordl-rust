@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Security+Principal+WindowsAccountType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum WindowsAccountType {
+    #[default]
     Anonymous = 3i32,
     Guest = 1i32,
     Normal = 0i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Rendering+GraphicsDeviceType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GraphicsDeviceType {
+    #[default]
     Direct3D11 = 2i32,
     Direct3D12 = 18i32,
     Direct3D9 = 1i32,

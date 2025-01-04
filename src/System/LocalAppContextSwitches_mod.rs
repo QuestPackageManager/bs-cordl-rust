@@ -23,7 +23,13 @@ impl std::ops::DerefMut for crate::System::LocalAppContextSwitches {
     }
 }
 #[cfg(feature = "System+LocalAppContextSwitches")]
-impl crate::System::LocalAppContextSwitches {}
+impl crate::System::LocalAppContextSwitches {
+    pub fn get_AllowArbitraryTypeInstantiation() -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = <Self as quest_hook::libil2cpp::Type>::class()
+            .invoke("get_AllowArbitraryTypeInstantiation", ())?;
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+LocalAppContextSwitches")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::LocalAppContextSwitches {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

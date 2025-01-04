@@ -1,7 +1,8 @@
 #[cfg(feature = "BeatmapSaveDataCommon+EaseType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EaseType {
+    #[default]
     BeatSaberInOutBack = 100i32,
     BeatSaberInOutBounce = 102i32,
     BeatSaberInOutElastic = 101i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "OVR+OpenVR+EVRNotificationError")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EVRNotificationError {
+    #[default]
     InvalidNotificationId = 100i32,
     InvalidOverlayHandle = 102i32,
     NotificationQueueFull = 101i32,

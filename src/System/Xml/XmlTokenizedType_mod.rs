@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Xml+XmlTokenizedType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XmlTokenizedType {
+    #[default]
     CDATA = 0i32,
     ENTITIES = 5i32,
     ENTITY = 4i32,

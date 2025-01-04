@@ -1,7 +1,8 @@
 #[cfg(feature = "Unity+IO+LowLevel+Unsafe+FileState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum FileState {
+    #[default]
     Absent = 0i32,
     Exists = 1i32,
 }

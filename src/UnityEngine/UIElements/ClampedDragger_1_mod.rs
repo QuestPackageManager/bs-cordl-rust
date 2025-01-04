@@ -289,8 +289,9 @@ for crate::UnityEngine::UIElements::ClampedDragger_1<T> {
 }
 #[cfg(feature = "UnityEngine+UIElements+ClampedDragger_1+DragDirection")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ClampedDragger_1_DragDirection {
+    #[default]
     Free = 4i32,
     HighToLow = 2i32,
     LowToHigh = 1i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Audio+AudioMixerUpdateMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AudioMixerUpdateMode {
+    #[default]
     Normal = 0i32,
     UnscaledTime = 1i32,
 }

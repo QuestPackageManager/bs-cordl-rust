@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Data+DataRowAction")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DataRowAction {
+    #[default]
     Add = 16i32,
     Change = 2i32,
     ChangeCurrentAndOriginal = 64i32,

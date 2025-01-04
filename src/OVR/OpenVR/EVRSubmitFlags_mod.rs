@@ -1,7 +1,8 @@
 #[cfg(feature = "OVR+OpenVR+EVRSubmitFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EVRSubmitFlags {
+    #[default]
     Submit_Default = 0i32,
     Submit_GlRenderBuffer = 2i32,
     Submit_LensDistortionAlreadyApplied = 1i32,

@@ -97,8 +97,9 @@ for crate::UnityEngine::InputSystem::Controls::DiscreteButtonControl {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Controls+DiscreteButtonControl+WriteMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DiscreteButtonControl_WriteMode {
+    #[default]
     WriteDisabled = 0i32,
     WriteNullAndMaxValue = 1i32,
 }

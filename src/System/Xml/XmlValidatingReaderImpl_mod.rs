@@ -791,8 +791,9 @@ for crate::System::Xml::XmlValidatingReaderImpl {
 }
 #[cfg(feature = "System+Xml+XmlValidatingReaderImpl+ParsingFunction")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XmlValidatingReaderImpl_ParsingFunction {
+    #[default]
     Error = 6i32,
     InReadBinaryContent = 4i32,
     Init = 1i32,

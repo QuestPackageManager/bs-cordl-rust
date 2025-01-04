@@ -1,7 +1,8 @@
 #[cfg(feature = "HoudiniEngineUnity+HAPI_EnvIntType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HAPI_EnvIntType {
+    #[default]
     HAPI_ENVINT_INVALID = -1i32,
     HAPI_ENVINT_MAX = 221i32,
     HAPI_ENVINT_VERSION_HOUDINI_BUILD = 120i32,

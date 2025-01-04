@@ -1,7 +1,8 @@
 #[cfg(feature = "OVRSimpleJSON+JSONTextMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum JSONTextMode {
+    #[default]
     Compact = 0i32,
     Indent = 1i32,
 }

@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Rendering+ColorWriteMask")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ColorWriteMask {
+    #[default]
     All = 15i32,
     Alpha = 1i32,
     Blue = 2i32,

@@ -801,8 +801,9 @@ impl AsMut<crate::System::IDisposable> for crate::UnityEngine::UIElements::Event
 }
 #[cfg(feature = "UnityEngine+UIElements+EventBase+EventPropagation")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EventBase_EventPropagation {
+    #[default]
     Bubbles = 1i32,
     Cancellable = 4i32,
     IgnoreCompositeRoots = 16i32,
@@ -818,8 +819,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+EventBase+LifeCycleStatus")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EventBase_LifeCycleStatus {
+    #[default]
     DefaultPrevented = 4i32,
     Dispatched = 512i32,
     Dispatching = 8i32,

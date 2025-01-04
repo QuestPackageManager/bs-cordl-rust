@@ -1,7 +1,8 @@
 #[cfg(feature = "Unity+Collections+Allocator")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Allocator {
+    #[default]
     AudioKernel = 5i32,
     FirstUserIndex = 64i32,
     Invalid = 0i32,

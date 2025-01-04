@@ -1,7 +1,8 @@
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsAttributeTableParameter")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CmsAttributeTableParameter {
+    #[default]
     ContentType = 0i32,
     Digest = 1i32,
     DigestAlgorithmIdentifier = 3i32,

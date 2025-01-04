@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Linq+Expressions+ExpressionType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ExpressionType {
+    #[default]
     Add = 0i32,
     AddAssign = 63i32,
     AddAssignChecked = 74i32,

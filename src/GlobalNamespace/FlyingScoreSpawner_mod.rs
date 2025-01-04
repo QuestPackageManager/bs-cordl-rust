@@ -196,8 +196,9 @@ for crate::GlobalNamespace::FlyingScoreSpawner_InitData {
 }
 #[cfg(feature = "FlyingScoreSpawner+SpawnPosition")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum FlyingScoreSpawner_SpawnPosition {
+    #[default]
     AboveGround = 1i32,
     Underground = 0i32,
 }

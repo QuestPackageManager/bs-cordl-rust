@@ -1,7 +1,8 @@
 #[cfg(feature = "OVR+OpenVR+EVRScreenshotType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EVRScreenshotType {
+    #[default]
     Cubemap = 3i32,
     Mono = 1i32,
     MonoPanorama = 4i32,

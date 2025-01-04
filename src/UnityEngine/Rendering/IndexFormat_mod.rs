@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Rendering+IndexFormat")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum IndexFormat {
+    #[default]
     UInt16 = 0i32,
     UInt32 = 1i32,
 }

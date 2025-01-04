@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+DepthTextureMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DepthTextureMode {
+    #[default]
     Depth = 1i32,
     DepthNormals = 2i32,
     MotionVectors = 4i32,

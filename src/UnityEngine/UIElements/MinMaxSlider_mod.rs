@@ -469,8 +469,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::MinMa
 }
 #[cfg(feature = "UnityEngine+UIElements+MinMaxSlider+DragState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MinMaxSlider_DragState {
+    #[default]
     MaxThumb = 3i32,
     MiddleThumb = 2i32,
     MinThumb = 1i32,

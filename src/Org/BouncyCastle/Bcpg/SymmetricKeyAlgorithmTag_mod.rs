@@ -1,7 +1,8 @@
 #[cfg(feature = "Org+BouncyCastle+Bcpg+SymmetricKeyAlgorithmTag")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SymmetricKeyAlgorithmTag {
+    #[default]
     Aes128 = 7i32,
     Aes192 = 8i32,
     Aes256 = 9i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "HoudiniEngineUnity+HAPI_ChoiceListType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HAPI_ChoiceListType {
+    #[default]
     HAPI_CHOICELISTTYPE_MINI = 2i32,
     HAPI_CHOICELISTTYPE_NONE = 0i32,
     HAPI_CHOICELISTTYPE_NORMAL = 1i32,

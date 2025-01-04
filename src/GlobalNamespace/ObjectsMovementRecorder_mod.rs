@@ -125,8 +125,9 @@ for crate::GlobalNamespace::ObjectsMovementRecorder {
 }
 #[cfg(feature = "ObjectsMovementRecorder+CameraView")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ObjectsMovementRecorder_CameraView {
+    #[default]
     FirstPerson = 0i32,
     ThirdPerson = 1i32,
 }
@@ -280,8 +281,9 @@ for crate::GlobalNamespace::ObjectsMovementRecorder_InitData {
 }
 #[cfg(feature = "ObjectsMovementRecorder+Mode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ObjectsMovementRecorder_Mode {
+    #[default]
     Off = 2i32,
     Playback = 1i32,
     Record = 0i32,

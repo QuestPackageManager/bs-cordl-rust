@@ -1,7 +1,8 @@
 #[cfg(feature = "Unity+Collections+LeakCategory")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LeakCategory {
+    #[default]
     Invalid = 0i32,
     LightProbesQuery = 4i32,
     Malloc = 1i32,

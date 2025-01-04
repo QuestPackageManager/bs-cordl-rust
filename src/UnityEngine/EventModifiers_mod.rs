@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+EventModifiers")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EventModifiers {
+    #[default]
     Alt = 4i32,
     CapsLock = 32i32,
     Command = 8i32,

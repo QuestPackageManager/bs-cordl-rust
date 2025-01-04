@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Security+Cryptography+X509Certificates+X509RevocationFlag")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum X509RevocationFlag {
+    #[default]
     EndCertificateOnly = 0i32,
     EntireChain = 1i32,
     ExcludeRoot = 2i32,

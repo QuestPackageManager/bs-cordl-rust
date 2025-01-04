@@ -743,8 +743,9 @@ for crate::GlobalNamespace::UnityXRHelper {
 }
 #[cfg(feature = "UnityXRHelper+VRControllerManufacturerName")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum UnityXRHelper_VRControllerManufacturerName {
+    #[default]
     HTC = 1i32,
     Microsoft = 4i32,
     Oculus = 2i32,

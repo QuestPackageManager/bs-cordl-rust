@@ -444,8 +444,9 @@ for crate::UnityEngine::EventSystems::StandaloneInputModule {
 }
 #[cfg(feature = "UnityEngine+EventSystems+StandaloneInputModule+InputMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum StandaloneInputModule_InputMode {
+    #[default]
     Buttons = 1i32,
     Mouse = 0i32,
 }

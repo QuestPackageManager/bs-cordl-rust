@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+DeltaSpeed")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DeltaSpeed {
+    #[default]
     Fast = 0i32,
     Normal = 1i32,
     Slow = 2i32,

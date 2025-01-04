@@ -319,8 +319,9 @@ for crate::GlobalNamespace::MultiplayerLobbyConnectionController {
 }
 #[cfg(feature = "MultiplayerLobbyConnectionController+LobbyConnectionState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MultiplayerLobbyConnectionController_LobbyConnectionState {
+    #[default]
     Connected = 2i32,
     Connecting = 1i32,
     ConnectionFailed = 3i32,
@@ -334,8 +335,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "MultiplayerLobbyConnectionController+LobbyConnectionType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MultiplayerLobbyConnectionController_LobbyConnectionType {
+    #[default]
     None = 0i32,
     PartyClient = 2i32,
     PartyHost = 1i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "Oculus+Platform+NetSyncVoipStreamMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NetSyncVoipStreamMode {
+    #[default]
     Ambisonic = 1i32,
     Mono = 2i32,
     Unknown = 0i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "HoudiniEngineUnity+HAPI_PDG_State")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HAPI_PDG_State {
+    #[default]
     HAPI_PDG_STATE_COOKING = 1i32,
     HAPI_PDG_STATE_MAX = 2i32,
     HAPI_PDG_STATE_MAX_READY_STATE = 0i32,

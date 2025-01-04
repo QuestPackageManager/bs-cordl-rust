@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Security+AccessControl+AceQualifier")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AceQualifier {
+    #[default]
     AccessAllowed = 0i32,
     AccessDenied = 1i32,
     SystemAlarm = 3i32,

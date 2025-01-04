@@ -609,8 +609,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRTrackedKey
 }
 #[cfg(feature = "OVRTrackedKeyboard+KeyboardPresentation")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRTrackedKeyboard_KeyboardPresentation {
+    #[default]
     PreferKeyLabels = 1i32,
     PreferOpaque = 0i32,
 }
@@ -659,8 +660,9 @@ impl crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardSetActiveEvent {
 }
 #[cfg(feature = "OVRTrackedKeyboard+TrackedKeyboardState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRTrackedKeyboard_TrackedKeyboardState {
+    #[default]
     Error = 6i32,
     ErrorExtensionFailed = 7i32,
     NoTrackableKeyboard = 1i32,

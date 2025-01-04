@@ -1,7 +1,8 @@
 #[cfg(feature = "Zenject+ReflectionBakingCoverageModes")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ReflectionBakingCoverageModes {
+    #[default]
     FallbackToDirectReflection = 0i32,
     FallbackToDirectReflectionWithWarning = 2i32,
     NoCheckAssumeFullCoverage = 1i32,

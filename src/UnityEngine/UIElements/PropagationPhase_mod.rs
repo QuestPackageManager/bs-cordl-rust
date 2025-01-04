@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+PropagationPhase")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PropagationPhase {
+    #[default]
     AtTarget = 2i32,
     BubbleUp = 3i32,
     DefaultAction = 4i32,

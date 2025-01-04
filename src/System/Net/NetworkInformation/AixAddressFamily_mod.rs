@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Net+NetworkInformation+AixAddressFamily")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AixAddressFamily {
+    #[default]
     AF_INET = 2i32,
     AF_INET6 = 24i32,
     AF_LINK = 18i32,

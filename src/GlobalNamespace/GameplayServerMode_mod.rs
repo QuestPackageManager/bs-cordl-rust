@@ -1,7 +1,8 @@
 #[cfg(feature = "GameplayServerMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GameplayServerMode {
+    #[default]
     Countdown = 0i32,
     Managed = 1i32,
     QuickStartOneSong = 2i32,

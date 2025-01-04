@@ -1,7 +1,8 @@
 #[cfg(feature = "PlatformEnvironment")]
 #[repr(u8)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PlatformEnvironment {
+    #[default]
     Certification = 1u8,
     Development = 0u8,
     Production = 2u8,

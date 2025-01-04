@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+FocusType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum FocusType {
+    #[default]
     Keyboard = 1i32,
     Native = 0i32,
     Passive = 2i32,

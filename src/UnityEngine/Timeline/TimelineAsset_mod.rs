@@ -662,8 +662,9 @@ for crate::UnityEngine::Timeline::TimelineAsset {
 }
 #[cfg(feature = "UnityEngine+Timeline+TimelineAsset+DurationMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TimelineAsset_DurationMode {
+    #[default]
     BasedOnClips = 0i32,
     FixedLength = 1i32,
 }
@@ -797,8 +798,9 @@ for crate::UnityEngine::Timeline::TimelineAsset_EditorSettings {
 }
 #[cfg(feature = "UnityEngine+Timeline+TimelineAsset+MediaType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TimelineAsset_MediaType {
+    #[default]
     Animation = 0i32,
     Audio = 1i32,
     Group = 5i32,
@@ -852,8 +854,9 @@ for crate::UnityEngine::Timeline::TimelineAsset_TimelineAssetUpgrade {
 }
 #[cfg(feature = "UnityEngine+Timeline+TimelineAsset+Versions")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TimelineAsset_Versions {
+    #[default]
     Initial = 0i32,
 }
 #[cfg(feature = "UnityEngine+Timeline+TimelineAsset+Versions")]

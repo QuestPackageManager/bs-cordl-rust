@@ -185,8 +185,9 @@ for crate::GlobalNamespace::FormattedFloatListSettingsController {
 }
 #[cfg(feature = "FormattedFloatListSettingsController+ValueType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum FormattedFloatListSettingsController_ValueType {
+    #[default]
     InvertedNormalized = 2i32,
     Normal = 0i32,
     Normalized = 1i32,

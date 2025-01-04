@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Reflection+CallingConventions")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CallingConventions {
+    #[default]
     Any = 3i32,
     ExplicitThis = 64i32,
     HasThis = 32i32,

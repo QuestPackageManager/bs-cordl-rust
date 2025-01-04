@@ -185,8 +185,9 @@ for crate::GlobalNamespace::MultiplayerScoreDiffText {
 }
 #[cfg(feature = "MultiplayerScoreDiffText+HorizontalPosition")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MultiplayerScoreDiffText_HorizontalPosition {
+    #[default]
     Left = 0i32,
     Right = 1i32,
 }
@@ -198,8 +199,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "MultiplayerScoreDiffText+State")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MultiplayerScoreDiffText_State {
+    #[default]
     AnimatingDisplay = 2i32,
     AnimatingHide = 3i32,
     Displayed = 1i32,

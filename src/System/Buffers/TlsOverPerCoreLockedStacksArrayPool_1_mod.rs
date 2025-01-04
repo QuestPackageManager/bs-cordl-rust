@@ -328,8 +328,9 @@ for crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_LockedStack<T>
 }
 #[cfg(feature = "System+Buffers+TlsOverPerCoreLockedStacksArrayPool_1+MemoryPressure")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TlsOverPerCoreLockedStacksArrayPool_1_MemoryPressure {
+    #[default]
     High = 2i32,
     Low = 0i32,
     Medium = 1i32,

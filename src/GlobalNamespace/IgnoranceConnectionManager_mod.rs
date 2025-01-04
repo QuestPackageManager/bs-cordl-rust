@@ -872,8 +872,9 @@ for crate::GlobalNamespace::IgnoranceConnectionManager_ConnectToServerParams {
 }
 #[cfg(feature = "IgnoranceConnectionManager+ConnectionState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum IgnoranceConnectionManager_ConnectionState {
+    #[default]
     Connected = 1i32,
     Connecting = 0i32,
     Disconnected = 3i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+SpritePackingMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SpritePackingMode {
+    #[default]
     Rectangle = 1i32,
     Tight = 0i32,
 }

@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Security+Cryptography+X509Certificates+StoreLocation")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum StoreLocation {
+    #[default]
     CurrentUser = 1i32,
     LocalMachine = 2i32,
 }

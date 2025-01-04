@@ -1,7 +1,8 @@
 #[cfg(feature = "ENet+PacketFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PacketFlags {
+    #[default]
     Instant = 16i32,
     NoAllocate = 4i32,
     None = 0i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+ProBuilder+BezierTangentMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BezierTangentMode {
+    #[default]
     Aligned = 1i32,
     Free = 0i32,
     Mirrored = 2i32,

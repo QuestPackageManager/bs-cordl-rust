@@ -399,8 +399,9 @@ for crate::UnityEngine::InputSystem::OnScreen::OnScreenStick {
 }
 #[cfg(feature = "UnityEngine+InputSystem+OnScreen+OnScreenStick+Behaviour")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OnScreenStick_Behaviour {
+    #[default]
     ExactPositionWithDynamicOrigin = 2i32,
     ExactPositionWithStaticOrigin = 1i32,
     RelativePositionWithStaticOrigin = 0i32,

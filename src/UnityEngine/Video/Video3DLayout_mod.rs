@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Video+Video3DLayout")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Video3DLayout {
+    #[default]
     No3D = 0i32,
     OverUnder3D = 2i32,
     SideBySide3D = 1i32,

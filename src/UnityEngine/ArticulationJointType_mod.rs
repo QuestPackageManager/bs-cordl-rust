@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+ArticulationJointType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ArticulationJointType {
+    #[default]
     FixedJoint = 0i32,
     PrismaticJoint = 1i32,
     RevoluteJoint = 2i32,

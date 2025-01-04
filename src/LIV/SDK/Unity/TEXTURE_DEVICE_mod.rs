@@ -1,7 +1,8 @@
 #[cfg(feature = "LIV+SDK+Unity+TEXTURE_DEVICE")]
 #[repr(u32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TEXTURE_DEVICE {
+    #[default]
     DIRECTX = 84148994u32,
     METAL = 33619973u32,
     OPENGL = 328707u32,

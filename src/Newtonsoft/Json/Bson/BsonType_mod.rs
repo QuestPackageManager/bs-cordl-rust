@@ -1,7 +1,8 @@
 #[cfg(feature = "Newtonsoft+Json+Bson+BsonType")]
 #[repr(i8)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BsonType {
+    #[default]
     Array = 4i8,
     Binary = 5i8,
     Boolean = 8i8,

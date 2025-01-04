@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+ParticleSystemGradientMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ParticleSystemGradientMode {
+    #[default]
     Color = 0i32,
     Gradient = 1i32,
     RandomColor = 4i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Data+MappingType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MappingType {
+    #[default]
     Attribute = 2i32,
     Element = 1i32,
     Hidden = 4i32,

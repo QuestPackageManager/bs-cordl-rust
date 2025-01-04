@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Data+DataRowVersion")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DataRowVersion {
+    #[default]
     Current = 512i32,
     Default = 1536i32,
     Original = 256i32,

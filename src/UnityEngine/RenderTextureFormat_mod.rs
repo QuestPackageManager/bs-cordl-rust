@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+RenderTextureFormat")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RenderTextureFormat {
+    #[default]
     ARGB1555 = 6i32,
     ARGB2101010 = 8i32,
     ARGB32 = 0i32,

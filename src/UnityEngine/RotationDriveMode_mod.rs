@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+RotationDriveMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RotationDriveMode {
+    #[default]
     Slerp = 1i32,
     XYAndZ = 0i32,
 }

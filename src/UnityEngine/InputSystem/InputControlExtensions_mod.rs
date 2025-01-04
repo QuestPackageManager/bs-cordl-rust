@@ -1107,8 +1107,9 @@ impl crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions+Enumerate")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputControlExtensions_Enumerate {
+    #[default]
     IgnoreControlsInCurrentState = 2i32,
     IgnoreControlsInDefaultState = 1i32,
     IncludeNoisyControls = 8i32,

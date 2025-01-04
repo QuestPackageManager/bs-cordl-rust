@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+HumanBodyBones")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HumanBodyBones {
+    #[default]
     Chest = 8i32,
     Head = 10i32,
     Hips = 0i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "HoudiniEngineUnity+HEU_ThreadedTaskLoadGeo+HEU_LoadData+LoadStatus")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HEU_LoadData_HEU_ThreadedTaskLoadGeo_LoadStatus {
+    #[default]
     ERROR = 3i32,
     NONE = 0i32,
     STARTED = 1i32,
@@ -742,8 +743,9 @@ for crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo_HEU_LoadCallback {
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_ThreadedTaskLoadGeo+HEU_LoadCallbackType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HEU_ThreadedTaskLoadGeo_HEU_LoadCallbackType {
+    #[default]
     POSTCOOK = 1i32,
     PRECOOK = 0i32,
 }
@@ -905,8 +907,9 @@ for crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo_HEU_LoadObject {
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_ThreadedTaskLoadGeo+LoadType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HEU_ThreadedTaskLoadGeo_LoadType {
+    #[default]
     ASSET = 2i32,
     FILE = 0i32,
     NODE = 1i32,

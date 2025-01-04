@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+TextSelectOp")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TextSelectOp {
+    #[default]
     Copy = 18i32,
     ExpandSelectGraphicalLineEnd = 9i32,
     ExpandSelectGraphicalLineStart = 8i32,

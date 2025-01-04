@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Net+FtpStatusCode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum FtpStatusCode {
+    #[default]
     AccountNeeded = 532i32,
     ActionAbortedLocalProcessingError = 451i32,
     ActionAbortedUnknownPageType = 551i32,

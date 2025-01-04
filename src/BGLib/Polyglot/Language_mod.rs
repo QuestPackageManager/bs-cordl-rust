@@ -1,7 +1,8 @@
 #[cfg(feature = "BGLib+Polyglot+Language")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Language {
+    #[default]
     Arabic = 26i32,
     Bosnian = 27i32,
     Bulgarian = 24i32,

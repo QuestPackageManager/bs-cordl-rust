@@ -214,8 +214,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::KeyboardBinder {
 }
 #[cfg(feature = "HMUI+KeyboardBinder+KeyBindingType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum KeyboardBinder_KeyBindingType {
+    #[default]
     KeyDown = 0i32,
     KeyPress = 2i32,
     KeyUp = 1i32,

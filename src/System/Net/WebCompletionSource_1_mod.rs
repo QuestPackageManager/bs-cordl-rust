@@ -375,8 +375,9 @@ for crate::System::Net::WebCompletionSource_1_Result<T> {
 }
 #[cfg(feature = "System+Net+WebCompletionSource_1+Status")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum WebCompletionSource_1_Status {
+    #[default]
     Canceled = 2i32,
     Completed = 1i32,
     Faulted = 3i32,

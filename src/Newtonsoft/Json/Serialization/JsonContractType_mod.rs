@@ -1,7 +1,8 @@
 #[cfg(feature = "Newtonsoft+Json+Serialization+JsonContractType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum JsonContractType {
+    #[default]
     Array = 2i32,
     Dictionary = 5i32,
     Dynamic = 6i32,

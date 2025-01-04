@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Net+Sockets+SocketType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SocketType {
+    #[default]
     Dgram = 2i32,
     Raw = 3i32,
     Rdm = 4i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+TextAnchor")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TextAnchor {
+    #[default]
     LowerCenter = 7i32,
     LowerLeft = 6i32,
     LowerRight = 8i32,

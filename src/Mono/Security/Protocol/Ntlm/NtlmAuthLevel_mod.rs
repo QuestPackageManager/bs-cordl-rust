@@ -1,7 +1,8 @@
 #[cfg(feature = "Mono+Security+Protocol+Ntlm+NtlmAuthLevel")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NtlmAuthLevel {
+    #[default]
     LM_and_NTLM = 0i32,
     LM_and_NTLM_and_try_NTLMv2_Session = 1i32,
     NTLM_only = 2i32,

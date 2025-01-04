@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngineInternal+TypeInferenceRules")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TypeInferenceRules {
+    #[default]
     ArrayOfTypeReferencedByFirstArgument = 2i32,
     TypeOfFirstArgument = 3i32,
     TypeReferencedByFirstArgument = 0i32,

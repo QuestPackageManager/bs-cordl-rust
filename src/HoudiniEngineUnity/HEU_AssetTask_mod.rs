@@ -148,8 +148,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::HEU_AssetT
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_AssetTask+BuildType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HEU_AssetTask_BuildType {
+    #[default]
     COOK = 2i32,
     LOAD = 1i32,
     NONE = 0i32,

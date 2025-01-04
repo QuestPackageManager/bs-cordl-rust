@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+VisualElementFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum VisualElementFlags {
+    #[default]
     BoundingBoxDirty = 8i32,
     CompositeRoot = 128i32,
     DisableClipping = 1024i32,

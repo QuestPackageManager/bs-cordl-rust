@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Video+VideoAudioOutputMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum VideoAudioOutputMode {
+    #[default]
     APIOnly = 3i32,
     AudioSource = 1i32,
     Direct = 2i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "ConnectionFailedReason")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ConnectionFailedReason {
+    #[default]
     AuthenticationFailed = 10i32,
     CertificateValidationFailed = 12i32,
     ConnectionCanceled = 2i32,

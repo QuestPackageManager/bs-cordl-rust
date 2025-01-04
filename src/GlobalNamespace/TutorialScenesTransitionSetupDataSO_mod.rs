@@ -163,8 +163,9 @@ for crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO {
 }
 #[cfg(feature = "TutorialScenesTransitionSetupDataSO+TutorialEndStateType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TutorialScenesTransitionSetupDataSO_TutorialEndStateType {
+    #[default]
     Completed = 0i32,
     Restart = 2i32,
     ReturnToMenu = 1i32,

@@ -471,8 +471,9 @@ impl crate::GlobalNamespace::BeatmapLevelLoader_LevelDownloadingUpdate {
 }
 #[cfg(feature = "BeatmapLevelLoader+LevelDownloadingUpdate+DownloadingState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LevelDownloadingUpdate_BeatmapLevelLoader_DownloadingState {
+    #[default]
     Completed = 2i32,
     Downloading = 1i32,
     PreparingToDownload = 0i32,

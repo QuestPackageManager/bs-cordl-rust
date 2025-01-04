@@ -1,6 +1,6 @@
 #[cfg(feature = "System+Int32Enum")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Int32Enum {}
 #[cfg(feature = "System+Int32Enum")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

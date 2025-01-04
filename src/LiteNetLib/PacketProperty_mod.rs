@@ -1,7 +1,8 @@
 #[cfg(feature = "LiteNetLib+PacketProperty")]
 #[repr(u8)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PacketProperty {
+    #[default]
     Ack = 2u8,
     Broadcast = 11u8,
     Channeled = 1u8,

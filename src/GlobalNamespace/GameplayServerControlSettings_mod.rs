@@ -1,7 +1,8 @@
 #[cfg(feature = "GameplayServerControlSettings")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GameplayServerControlSettings {
+    #[default]
     All = 3i32,
     AllowModifierSelection = 1i32,
     AllowSpectate = 2i32,

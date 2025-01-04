@@ -1020,8 +1020,9 @@ for crate::GlobalNamespace::OVRPassthroughLayer_ColorLutHandler {
 }
 #[cfg(feature = "OVRPassthroughLayer+ColorMapEditorType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPassthroughLayer_ColorMapEditorType {
+    #[default]
     ColorAdjustment = 4i32,
     ColorLut = 5i32,
     Controls = 1i32,
@@ -1643,8 +1644,9 @@ for crate::GlobalNamespace::OVRPassthroughLayer_PassthroughMeshInstance {
 impl crate::GlobalNamespace::OVRPassthroughLayer_PassthroughMeshInstance {}
 #[cfg(feature = "OVRPassthroughLayer+ProjectionSurfaceType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPassthroughLayer_ProjectionSurfaceType {
+    #[default]
     Reconstructed = 0i32,
     UserDefined = 1i32,
 }

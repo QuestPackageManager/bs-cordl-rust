@@ -708,8 +708,9 @@ for crate::GlobalNamespace::LevelCollectionNavigationController {
 }
 #[cfg(feature = "LevelCollectionNavigationController+AlphaAnimationType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LevelCollectionNavigationController_AlphaAnimationType {
+    #[default]
     In = 0i32,
     Out = 1i32,
 }

@@ -1,7 +1,8 @@
 #[cfg(feature = "BeatSaber+Init+RuntimePlatformType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RuntimePlatformType {
+    #[default]
     PS4 = 0i32,
     PS5 = 1i32,
     Quest = 2i32,

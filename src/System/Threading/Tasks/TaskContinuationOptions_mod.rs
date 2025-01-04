@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Threading+Tasks+TaskContinuationOptions")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TaskContinuationOptions {
+    #[default]
     AttachedToParent = 4i32,
     DenyChildAttach = 8i32,
     ExecuteSynchronously = 524288i32,

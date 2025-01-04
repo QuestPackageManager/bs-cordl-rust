@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+ProBuilder+BezierTangentDirection")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BezierTangentDirection {
+    #[default]
     In = 0i32,
     Out = 1i32,
 }

@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Diagnostics+TraceOptions")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TraceOptions {
+    #[default]
     Callstack = 32i32,
     DateTime = 2i32,
     LogicalOperationStack = 1i32,

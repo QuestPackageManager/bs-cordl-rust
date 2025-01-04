@@ -793,8 +793,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ReflectionProbe {
 }
 #[cfg(feature = "UnityEngine+ReflectionProbe+ReflectionProbeEvent")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ReflectionProbe_ReflectionProbeEvent {
+    #[default]
     ReflectionProbeAdded = 0i32,
     ReflectionProbeRemoved = 1i32,
 }

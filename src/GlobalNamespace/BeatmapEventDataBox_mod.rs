@@ -236,8 +236,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatmapEventD
 }
 #[cfg(feature = "BeatmapEventDataBox+DistributionParamType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BeatmapEventDataBox_DistributionParamType {
+    #[default]
     Step = 2i32,
     Wave = 1i32,
 }

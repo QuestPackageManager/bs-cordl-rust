@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+SelectionType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SelectionType {
+    #[default]
     Multiple = 2i32,
     None = 0i32,
     Single = 1i32,

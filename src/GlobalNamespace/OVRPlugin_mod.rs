@@ -1,7 +1,8 @@
 #[cfg(feature = "OVRPlugin+Media+InputVideoBufferType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Media_OVRPlugin_InputVideoBufferType {
+    #[default]
     EnumSize = 2147483647i32,
     Memory = 0i32,
     TextureHandle = 1i32,
@@ -14,8 +15,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+Media+MrcActivationMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Media_OVRPlugin_MrcActivationMode {
+    #[default]
     Automatic = 0i32,
     Disabled = 1i32,
     EnumSize = 2147483647i32,
@@ -28,8 +30,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+Media+PlatformCameraMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Media_OVRPlugin_PlatformCameraMode {
+    #[default]
     Disabled = -1i32,
     EnumSize = 2147483647i32,
     Initialized = 0i32,
@@ -2978,8 +2981,9 @@ for crate::GlobalNamespace::OVRPlugin_AppPerfStats {
 impl crate::GlobalNamespace::OVRPlugin_AppPerfStats {}
 #[cfg(feature = "OVRPlugin+BatteryStatus")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_BatteryStatus {
+    #[default]
     Charging = 0i32,
     Discharging = 1i32,
     Full = 2i32,
@@ -2993,8 +2997,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+BlendFactor")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_BlendFactor {
+    #[default]
     DstAlpha = 4i32,
     One = 1i32,
     OneMinusDstAlpha = 5i32,
@@ -3248,8 +3253,9 @@ for crate::GlobalNamespace::OVRPlugin_BoneCapsule {
 impl crate::GlobalNamespace::OVRPlugin_BoneCapsule {}
 #[cfg(feature = "OVRPlugin+BoneId")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_BoneId {
+    #[default]
     Body_Chest = 5i32,
     Body_End = 70i32,
     Body_Head = 7i32,
@@ -3330,8 +3336,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+Bool")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_Bool {
+    #[default]
     False = 0i32,
     True = 1i32,
 }
@@ -3397,8 +3404,9 @@ for crate::GlobalNamespace::OVRPlugin_BoundaryTestResult {
 impl crate::GlobalNamespace::OVRPlugin_BoundaryTestResult {}
 #[cfg(feature = "OVRPlugin+BoundaryType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_BoundaryType {
+    #[default]
     OuterBoundary = 1i32,
     PlayArea = 256i32,
 }
@@ -3434,8 +3442,9 @@ for crate::GlobalNamespace::OVRPlugin_Boundsf {
 impl crate::GlobalNamespace::OVRPlugin_Boundsf {}
 #[cfg(feature = "OVRPlugin+CameraAnchorType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_CameraAnchorType {
+    #[default]
     CameraAnchorType_Count = 2i32,
     CameraAnchorType_Custom = 1i32,
     CameraAnchorType_EnumSize = 2147483647i32,
@@ -3448,8 +3457,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+CameraDevice")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_CameraDevice {
+    #[default]
     None = 0i32,
     WebCamera0 = 100i32,
     WebCamera1 = 101i32,
@@ -3462,8 +3472,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+CameraDeviceDepthQuality")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_CameraDeviceDepthQuality {
+    #[default]
     High = 2i32,
     Low = 0i32,
     Medium = 1i32,
@@ -3476,8 +3487,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+CameraDeviceDepthSensingMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_CameraDeviceDepthSensingMode {
+    #[default]
     Fill = 1i32,
     Standard = 0i32,
 }
@@ -3584,8 +3596,9 @@ for crate::GlobalNamespace::OVRPlugin_CameraIntrinsics {
 impl crate::GlobalNamespace::OVRPlugin_CameraIntrinsics {}
 #[cfg(feature = "OVRPlugin+CameraStatus")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_CameraStatus {
+    #[default]
     CameraStatus_Calibrated = 4i32,
     CameraStatus_Calibrating = 2i32,
     CameraStatus_CalibrationFailed = 3i32,
@@ -3601,8 +3614,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+ColorSpace")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_ColorSpace {
+    #[default]
     Adobe_RGB = 8i32,
     P3 = 7i32,
     Quest = 6i32,
@@ -3658,8 +3672,9 @@ impl crate::GlobalNamespace::OVRPlugin_Colorf {
 }
 #[cfg(feature = "OVRPlugin+Controller")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_Controller {
+    #[default]
     Active = -2147483648i32,
     All = -1i32,
     Gamepad = 16i32,
@@ -3983,8 +3998,9 @@ for crate::GlobalNamespace::OVRPlugin_EventDataBuffer {
 impl crate::GlobalNamespace::OVRPlugin_EventDataBuffer {}
 #[cfg(feature = "OVRPlugin+EventType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_EventType {
+    #[default]
     DisplayRefreshRateChanged = 1i32,
     SceneCaptureComplete = 100i32,
     SpaceEraseComplete = 54i32,
@@ -4009,8 +4025,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+Eye")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_Eye {
+    #[default]
     Count = 2i32,
     Left = 0i32,
     None = -1i32,
@@ -4113,8 +4130,9 @@ for crate::GlobalNamespace::OVRPlugin_EyeGazesStateInternal {
 impl crate::GlobalNamespace::OVRPlugin_EyeGazesStateInternal {}
 #[cfg(feature = "OVRPlugin+EyeTextureFormat")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_EyeTextureFormat {
+    #[default]
     B8G8R8A8 = 5i32,
     B8G8R8A8_sRGB = 4i32,
     Default = 0i32,
@@ -4131,8 +4149,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+FaceConstants")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_FaceConstants {
+    #[default]
     MaxFaceExpressions = 63i32,
     MaxFaceRegionConfidences = 2i32,
 }
@@ -4143,8 +4162,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+FaceExpression")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_FaceExpression {
+    #[default]
     Brow_Lowerer_L = 0i32,
     Brow_Lowerer_R = 1i32,
     Cheek_Puff_L = 2i32,
@@ -4282,8 +4302,9 @@ impl crate::GlobalNamespace::OVRPlugin_FaceExpressionStatusInternal {
 }
 #[cfg(feature = "OVRPlugin+FaceRegionConfidence")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_FaceRegionConfidence {
+    #[default]
     Lower = 0i32,
     Max = 2i32,
     Upper = 1i32,
@@ -4506,8 +4527,9 @@ for crate::GlobalNamespace::OVRPlugin_FaceStateInternal {
 impl crate::GlobalNamespace::OVRPlugin_FaceStateInternal {}
 #[cfg(feature = "OVRPlugin+FeatureType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_FeatureType {
+    #[default]
     BodyTracking = 4i32,
     Count = 7i32,
     EnumSize = 2147483647i32,
@@ -4525,8 +4547,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+FixedFoveatedRenderingLevel")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_FixedFoveatedRenderingLevel {
+    #[default]
     EnumSize = 2147483647i32,
     High = 3i32,
     HighTop = 4i32,
@@ -4542,8 +4565,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+FoveatedRenderingLevel")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_FoveatedRenderingLevel {
+    #[default]
     EnumSize = 2147483647i32,
     High = 3i32,
     HighTop = 4i32,
@@ -4703,8 +4727,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_GUI
 }
 #[cfg(feature = "OVRPlugin+Hand")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_Hand {
+    #[default]
     HandLeft = 0i32,
     HandRight = 1i32,
     None = -1i32,
@@ -4716,8 +4741,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+HandFinger")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_HandFinger {
+    #[default]
     Index = 1i32,
     Max = 5i32,
     Middle = 2i32,
@@ -4732,8 +4758,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+HandFingerPinch")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_HandFingerPinch {
+    #[default]
     Index = 2i32,
     Middle = 4i32,
     Pinky = 16i32,
@@ -4854,8 +4881,9 @@ for crate::GlobalNamespace::OVRPlugin_HandStateInternal {
 impl crate::GlobalNamespace::OVRPlugin_HandStateInternal {}
 #[cfg(feature = "OVRPlugin+HandStatus")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_HandStatus {
+    #[default]
     DominantHand = 128i32,
     HandTracked = 1i32,
     InputStateValid = 2i32,
@@ -4869,8 +4897,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+Handedness")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_Handedness {
+    #[default]
     LeftHanded = 1i32,
     RightHanded = 2i32,
     Unsupported = 0i32,
@@ -4934,8 +4963,9 @@ for crate::GlobalNamespace::OVRPlugin_HapticsBuffer {
 impl crate::GlobalNamespace::OVRPlugin_HapticsBuffer {}
 #[cfg(feature = "OVRPlugin+HapticsConstants")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_HapticsConstants {
+    #[default]
     MaxSamples = 4000i32,
 }
 #[cfg(feature = "OVRPlugin+HapticsConstants")]
@@ -4974,8 +5004,9 @@ for crate::GlobalNamespace::OVRPlugin_HapticsDesc {
 impl crate::GlobalNamespace::OVRPlugin_HapticsDesc {}
 #[cfg(feature = "OVRPlugin+HapticsLocation")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_HapticsLocation {
+    #[default]
     Hand = 1i32,
     Index = 4i32,
     None = 0i32,
@@ -5041,8 +5072,9 @@ for crate::GlobalNamespace::OVRPlugin_HapticsState {
 impl crate::GlobalNamespace::OVRPlugin_HapticsState {}
 #[cfg(feature = "OVRPlugin+InsightPassthroughColorMapType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_InsightPassthroughColorMapType {
+    #[default]
     BrightnessContrastSaturation = 4i32,
     ColorLut = 6i32,
     InterpolatedColorLut = 7i32,
@@ -5161,8 +5193,9 @@ impl crate::GlobalNamespace::OVRPlugin_InsightPassthroughStyle2 {
 }
 #[cfg(feature = "OVRPlugin+InsightPassthroughStyleFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_InsightPassthroughStyleFlags {
+    #[default]
     HasEdgeColor = 2i32,
     HasTextureColorMap = 4i32,
     HasTextureOpacityFactor = 1i32,
@@ -5175,8 +5208,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+InteractionProfile")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_InteractionProfile {
+    #[default]
     None = 0i32,
     Touch = 1i32,
     TouchPlus = 4i32,
@@ -5217,8 +5251,9 @@ for crate::GlobalNamespace::OVRPlugin_KeyboardDescription {
 impl crate::GlobalNamespace::OVRPlugin_KeyboardDescription {}
 #[cfg(feature = "OVRPlugin+KeyboardDescriptionConstants")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_KeyboardDescriptionConstants {
+    #[default]
     NameMaxLength = 128i32,
 }
 #[cfg(feature = "OVRPlugin+KeyboardDescriptionConstants")]
@@ -5478,8 +5513,9 @@ impl crate::GlobalNamespace::OVRPlugin_LayerDescInternal {
 }
 #[cfg(feature = "OVRPlugin+LayerFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_LayerFlags {
+    #[default]
     AndroidSurfaceSwapChain = 128i32,
     BicubicFiltering = 16384i32,
     ChromaticAberrationCorrection = 16i32,
@@ -5497,8 +5533,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+LayerLayout")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_LayerLayout {
+    #[default]
     Array = 3i32,
     DoubleWide = 2i32,
     EnumSize = 15i32,
@@ -5512,8 +5549,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+LayerSharpenType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_LayerSharpenType {
+    #[default]
     None = 0i32,
     Normal = 8192i32,
     Quality = 65536i32,
@@ -5555,8 +5593,9 @@ for crate::GlobalNamespace::OVRPlugin_LayerSubmit {
 impl crate::GlobalNamespace::OVRPlugin_LayerSubmit {}
 #[cfg(feature = "OVRPlugin+LayerSuperSamplingType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_LayerSuperSamplingType {
+    #[default]
     None = 0i32,
     Normal = 4096i32,
     Quality = 256i32,
@@ -5670,8 +5709,9 @@ for crate::GlobalNamespace::OVRPlugin_LogCallback2DelegateType {
 }
 #[cfg(feature = "OVRPlugin+LogLevel")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_LogLevel {
+    #[default]
     Debug = 0i32,
     Error = 2i32,
     Info = 1i32,
@@ -6015,8 +6055,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_Mes
 }
 #[cfg(feature = "OVRPlugin+MeshConstants")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_MeshConstants {
+    #[default]
     MaxIndices = 18000i32,
     MaxVertices = 3000i32,
 }
@@ -6027,8 +6068,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+MeshType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_MeshType {
+    #[default]
     HandLeft = 0i32,
     HandRight = 1i32,
     None = -1i32,
@@ -6040,8 +6082,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+Node")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_Node {
+    #[default]
     ControllerLeft = 12i32,
     ControllerRight = 13i32,
     Count = 14i32,
@@ -12258,8 +12301,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 }
 #[cfg(feature = "OVRPlugin+OverlayFlag")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_OverlayFlag {
+    #[default]
     AutoFiltering = 1024i32,
     BicubicFiltering = 64i32,
     EfficientSharpen = 32i32,
@@ -12281,8 +12325,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+OverlayShape")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_OverlayShape {
+    #[default]
     Cubemap = 2i32,
     Cylinder = 1i32,
     Equirect = 5i32,
@@ -12328,8 +12373,9 @@ for crate::GlobalNamespace::OVRPlugin_PassthroughCapabilities {
 impl crate::GlobalNamespace::OVRPlugin_PassthroughCapabilities {}
 #[cfg(feature = "OVRPlugin+PassthroughCapabilityFields")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_PassthroughCapabilityFields {
+    #[default]
     Flags = 1i32,
     MaxColorLutResolution = 2i32,
 }
@@ -12341,8 +12387,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+PassthroughCapabilityFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_PassthroughCapabilityFlags {
+    #[default]
     Color = 2i32,
     Depth = 4i32,
     Passthrough = 1i32,
@@ -12355,8 +12402,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+PassthroughColorLutChannels")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_PassthroughColorLutChannels {
+    #[default]
     Rgb = 1i32,
     Rgba = 2i32,
 }
@@ -12394,8 +12442,9 @@ for crate::GlobalNamespace::OVRPlugin_PassthroughColorLutData {
 impl crate::GlobalNamespace::OVRPlugin_PassthroughColorLutData {}
 #[cfg(feature = "OVRPlugin+PassthroughPreferenceFields")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_PassthroughPreferenceFields {
+    #[default]
     Flags = 1i32,
 }
 #[cfg(feature = "OVRPlugin+PassthroughPreferenceFields")]
@@ -12406,8 +12455,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+PassthroughPreferenceFlags")]
 #[repr(i64)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_PassthroughPreferenceFlags {
+    #[default]
     DefaultToActive = 1i64,
 }
 #[cfg(feature = "OVRPlugin+PassthroughPreferenceFlags")]
@@ -12444,8 +12494,9 @@ for crate::GlobalNamespace::OVRPlugin_PassthroughPreferences {
 impl crate::GlobalNamespace::OVRPlugin_PassthroughPreferences {}
 #[cfg(feature = "OVRPlugin+PerfMetrics")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_PerfMetrics {
+    #[default]
     App_CpuTime_Float = 0i32,
     App_GpuTime_Float = 1i32,
     Compositor_CpuTime_Float = 3i32,
@@ -12557,8 +12608,9 @@ for crate::GlobalNamespace::OVRPlugin_PinnedArray_1<T> {
 }
 #[cfg(feature = "OVRPlugin+PlatformUI")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_PlatformUI {
+    #[default]
     ConfirmQuit = 1i32,
     GlobalMenuTutorial = 2i32,
     None = -1i32,
@@ -12662,8 +12714,9 @@ impl crate::GlobalNamespace::OVRPlugin_Posef {
 }
 #[cfg(feature = "OVRPlugin+ProcessorPerformanceLevel")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_ProcessorPerformanceLevel {
+    #[default]
     Boost = 3i32,
     EnumSize = 2147483647i32,
     PowerSavings = 0i32,
@@ -12815,8 +12868,9 @@ impl crate::GlobalNamespace::OVRPlugin_Quatf {
 }
 #[cfg(feature = "OVRPlugin+RecenterFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_RecenterFlags {
+    #[default]
     Count = -2147483647i32,
     Default = 0i32,
     IgnoreAll = -2147483648i32,
@@ -12878,8 +12932,9 @@ for crate::GlobalNamespace::OVRPlugin_Recti {
 impl crate::GlobalNamespace::OVRPlugin_Recti {}
 #[cfg(feature = "OVRPlugin+RenderModelFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_RenderModelFlags {
+    #[default]
     SupportsGltf20Subset1 = 1i32,
     SupportsGltf20Subset2 = 2i32,
 }
@@ -12945,8 +13000,9 @@ for crate::GlobalNamespace::OVRPlugin_RenderModelPropertiesInternal {
 impl crate::GlobalNamespace::OVRPlugin_RenderModelPropertiesInternal {}
 #[cfg(feature = "OVRPlugin+Result")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_Result {
+    #[default]
     Failure = -1000i32,
     Failure_DataIsInvalid = -1008i32,
     Failure_DeprecatedOperation = -1009i32,
@@ -13361,8 +13417,9 @@ for crate::GlobalNamespace::OVRPlugin_Skeleton2Internal {
 impl crate::GlobalNamespace::OVRPlugin_Skeleton2Internal {}
 #[cfg(feature = "OVRPlugin+SkeletonConstants")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_SkeletonConstants {
+    #[default]
     MaxBodyBones = 70i32,
     MaxBoneCapsules = 19i32,
     MaxHandBones = 24i32,
@@ -13375,8 +13432,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+SkeletonType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_SkeletonType {
+    #[default]
     Body = 2i32,
     HandLeft = 0i32,
     HandRight = 1i32,
@@ -13389,8 +13447,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+SpaceComponentType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_SpaceComponentType {
+    #[default]
     Bounded2D = 3i32,
     Bounded3D = 4i32,
     Locatable = 0i32,
@@ -13492,8 +13551,9 @@ for crate::GlobalNamespace::OVRPlugin_SpaceFilterInfoIds {
 impl crate::GlobalNamespace::OVRPlugin_SpaceFilterInfoIds {}
 #[cfg(feature = "OVRPlugin+SpaceLocationFlags")]
 #[repr(u64)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_SpaceLocationFlags {
+    #[default]
     OrientationTracked = 4u64,
     OrientationValid = 1u64,
     PositionTracked = 8u64,
@@ -13531,8 +13591,9 @@ for crate::GlobalNamespace::OVRPlugin_SpaceLocationf {
 impl crate::GlobalNamespace::OVRPlugin_SpaceLocationf {}
 #[cfg(feature = "OVRPlugin+SpaceQueryActionType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_SpaceQueryActionType {
+    #[default]
     Load = 0i32,
 }
 #[cfg(feature = "OVRPlugin+SpaceQueryActionType")]
@@ -13542,8 +13603,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+SpaceQueryFilterType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_SpaceQueryFilterType {
+    #[default]
     Components = 2i32,
     Ids = 1i32,
     None = 0i32,
@@ -13611,8 +13673,9 @@ for crate::GlobalNamespace::OVRPlugin_SpaceQueryResult {
 impl crate::GlobalNamespace::OVRPlugin_SpaceQueryResult {}
 #[cfg(feature = "OVRPlugin+SpaceQueryType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_SpaceQueryType {
+    #[default]
     Action = 0i32,
 }
 #[cfg(feature = "OVRPlugin+SpaceQueryType")]
@@ -13649,8 +13712,9 @@ for crate::GlobalNamespace::OVRPlugin_SpaceSemanticLabelInternal {
 impl crate::GlobalNamespace::OVRPlugin_SpaceSemanticLabelInternal {}
 #[cfg(feature = "OVRPlugin+SpaceStorageLocation")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_SpaceStorageLocation {
+    #[default]
     Cloud = 2i32,
     Invalid = 0i32,
     Local = 1i32,
@@ -13662,8 +13726,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+SpaceStoragePersistenceMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_SpaceStoragePersistenceMode {
+    #[default]
     Indefinite = 1i32,
     Invalid = 0i32,
 }
@@ -13702,8 +13767,9 @@ for crate::GlobalNamespace::OVRPlugin_SpatialAnchorCreateInfo {
 impl crate::GlobalNamespace::OVRPlugin_SpatialAnchorCreateInfo {}
 #[cfg(feature = "OVRPlugin+Step")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_Step {
+    #[default]
     Physics = 0i32,
     Render = -1i32,
 }
@@ -13714,8 +13780,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+SystemHeadset")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_SystemHeadset {
+    #[default]
     Meta_Link_Quest_3 = 4104i32,
     Meta_Link_Quest_Pro = 4103i32,
     Meta_Quest_3 = 11i32,
@@ -13744,8 +13811,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+SystemRegion")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_SystemRegion {
+    #[default]
     China = 2i32,
     Japan = 1i32,
     Unspecified = 0i32,
@@ -13795,8 +13863,9 @@ impl crate::GlobalNamespace::OVRPlugin_TextureRectMatrixf {
 }
 #[cfg(feature = "OVRPlugin+TiledMultiResLevel")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_TiledMultiResLevel {
+    #[default]
     EnumSize = 2147483647i32,
     LMSHigh = 3i32,
     LMSHighTop = 4i32,
@@ -13811,8 +13880,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+TrackedKeyboardFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_TrackedKeyboardFlags {
+    #[default]
     Connected = 8i32,
     Exists = 1i32,
     Local = 2i32,
@@ -13825,8 +13895,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+TrackedKeyboardPresentationStyles")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_TrackedKeyboardPresentationStyles {
+    #[default]
     KeyLabel = 2i32,
     Opaque = 1i32,
     Unknown = 0i32,
@@ -13839,8 +13910,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+TrackedKeyboardQueryFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_TrackedKeyboardQueryFlags {
+    #[default]
     Local = 2i32,
     Remote = 4i32,
 }
@@ -13852,8 +13924,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+Tracker")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_Tracker {
+    #[default]
     Count = 4i32,
     None = -1i32,
     One = 1i32,
@@ -13868,8 +13941,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+TrackingConfidence")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_TrackingConfidence {
+    #[default]
     High = 1065353216i32,
     Low = 0i32,
 }
@@ -13880,8 +13954,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+TrackingOrigin")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_TrackingOrigin {
+    #[default]
     Count = 5i32,
     EyeLevel = 0i32,
     FloorLevel = 1i32,
@@ -14267,8 +14342,9 @@ for crate::GlobalNamespace::OVRPlugin_VirtualKeyboardInputInfo {
 impl crate::GlobalNamespace::OVRPlugin_VirtualKeyboardInputInfo {}
 #[cfg(feature = "OVRPlugin+VirtualKeyboardInputSource")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_VirtualKeyboardInputSource {
+    #[default]
     ControllerDirectLeft = 5i32,
     ControllerDirectRight = 6i32,
     ControllerRayLeft = 1i32,
@@ -14288,8 +14364,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+VirtualKeyboardInputStateFlags")]
 #[repr(u64)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_VirtualKeyboardInputStateFlags {
+    #[default]
     IsPressed = 1u64,
 }
 #[cfg(feature = "OVRPlugin+VirtualKeyboardInputStateFlags")]
@@ -14327,8 +14404,9 @@ for crate::GlobalNamespace::OVRPlugin_VirtualKeyboardLocationInfo {
 impl crate::GlobalNamespace::OVRPlugin_VirtualKeyboardLocationInfo {}
 #[cfg(feature = "OVRPlugin+VirtualKeyboardLocationType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_VirtualKeyboardLocationType {
+    #[default]
     Custom = 0i32,
     Direct = 2i32,
     Far = 1i32,
@@ -14575,8 +14653,9 @@ for crate::GlobalNamespace::OVRPlugin_VirtualKeyboardTextureIdsInternal {
 impl crate::GlobalNamespace::OVRPlugin_VirtualKeyboardTextureIdsInternal {}
 #[cfg(feature = "OVRPlugin+XrApi")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_XrApi {
+    #[default]
     CAPI = 1i32,
     EnumSize = 2147483647i32,
     OpenXR = 3i32,
@@ -14590,8 +14669,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlugin+Qpl+ResultType")]
 #[repr(i16)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Qpl_OVRPlugin_ResultType {
+    #[default]
     Cancel = 4i16,
     Fail = 3i16,
     Success = 2i16,

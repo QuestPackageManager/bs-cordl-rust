@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Reflection+CorElementType")]
 #[repr(u8)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CorElementType {
+    #[default]
     Array = 20u8,
     Boolean = 2u8,
     ByRef = 16u8,

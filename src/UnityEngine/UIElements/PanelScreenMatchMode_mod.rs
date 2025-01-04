@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+PanelScreenMatchMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PanelScreenMatchMode {
+    #[default]
     Expand = 2i32,
     MatchWidthOrHeight = 0i32,
     Shrink = 1i32,

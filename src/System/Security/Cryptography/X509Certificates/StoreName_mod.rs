@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Security+Cryptography+X509Certificates+StoreName")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum StoreName {
+    #[default]
     AddressBook = 1i32,
     AuthRoot = 2i32,
     CertificateAuthority = 3i32,

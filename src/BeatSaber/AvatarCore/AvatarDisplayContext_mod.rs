@@ -1,7 +1,8 @@
 #[cfg(feature = "BeatSaber+AvatarCore+AvatarDisplayContext")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AvatarDisplayContext {
+    #[default]
     MultiplayerBigAvatar = 5i32,
     MultiplayerGameplay = 3i32,
     MultiplayerLobby = 2i32,

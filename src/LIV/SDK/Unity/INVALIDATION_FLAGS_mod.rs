@@ -1,7 +1,8 @@
 #[cfg(feature = "LIV+SDK+Unity+INVALIDATION_FLAGS")]
 #[repr(u32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum INVALIDATION_FLAGS {
+    #[default]
     EXCLUDE_BEHAVIOURS = 1879048200u32,
     HMD_CAMERA = 134480385u32,
     MR_CAMERA_PREFAB = 2052u32,

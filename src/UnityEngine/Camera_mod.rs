@@ -2966,8 +2966,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Camera_CameraCall
 }
 #[cfg(feature = "UnityEngine+Camera+GateFitMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Camera_GateFitMode {
+    #[default]
     Fill = 3i32,
     Horizontal = 2i32,
     None = 0i32,
@@ -3025,8 +3026,9 @@ impl crate::UnityEngine::Camera_GateFitParameters {
 }
 #[cfg(feature = "UnityEngine+Camera+MonoOrStereoscopicEye")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Camera_MonoOrStereoscopicEye {
+    #[default]
     Left = 0i32,
     Mono = 2i32,
     Right = 1i32,
@@ -3038,8 +3040,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+Camera+ProjectionMatrixMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Camera_ProjectionMatrixMode {
+    #[default]
     Explicit = 0i32,
     Implicit = 1i32,
     PhysicalPropertiesBased = 2i32,
@@ -3077,8 +3080,9 @@ for crate::UnityEngine::Camera_RenderRequest {
 impl crate::UnityEngine::Camera_RenderRequest {}
 #[cfg(feature = "UnityEngine+Camera+RenderRequestMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Camera_RenderRequestMode {
+    #[default]
     BaseColor = 6i32,
     Depth = 2i32,
     DiffuseColor = 13i32,
@@ -3101,8 +3105,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+Camera+RenderRequestOutputSpace")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Camera_RenderRequestOutputSpace {
+    #[default]
     ScreenSpace = -1i32,
     UV0 = 0i32,
     UV1 = 1i32,
@@ -3121,8 +3126,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+Camera+SceneViewFilterMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Camera_SceneViewFilterMode {
+    #[default]
     Off = 0i32,
     ShowFiltered = 1i32,
 }
@@ -3133,8 +3139,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+Camera+StereoscopicEye")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Camera_StereoscopicEye {
+    #[default]
     Left = 0i32,
     Right = 1i32,
 }

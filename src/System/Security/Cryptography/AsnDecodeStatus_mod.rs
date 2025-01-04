@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Security+Cryptography+AsnDecodeStatus")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AsnDecodeStatus {
+    #[default]
     BadAsn = 1i32,
     BadLength = 3i32,
     BadTag = 2i32,

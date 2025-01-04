@@ -1015,8 +1015,9 @@ for crate::System::Data::RBTree_1_Node<K> {
 impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_Node<K> {}
 #[cfg(feature = "System+Data+RBTree_1+NodeColor")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RBTree_1_NodeColor {
+    #[default]
     black = 1i32,
     red = 0i32,
 }

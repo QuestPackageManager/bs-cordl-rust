@@ -135,8 +135,9 @@ for crate::UnityEngine::UIElements::BaseVisualTreeHierarchyTrackerUpdater {
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseVisualTreeHierarchyTrackerUpdater+State")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BaseVisualTreeHierarchyTrackerUpdater_State {
+    #[default]
     TrackingAddOrMove = 1i32,
     TrackingRemove = 2i32,
     Waiting = 0i32,

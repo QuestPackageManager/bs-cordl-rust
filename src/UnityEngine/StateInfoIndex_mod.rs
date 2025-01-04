@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+StateInfoIndex")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum StateInfoIndex {
+    #[default]
     CurrentState = 0i32,
     ExitState = 2i32,
     InterruptedState = 3i32,

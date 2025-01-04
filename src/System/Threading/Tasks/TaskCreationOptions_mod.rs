@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Threading+Tasks+TaskCreationOptions")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TaskCreationOptions {
+    #[default]
     AttachedToParent = 4i32,
     DenyChildAttach = 8i32,
     HideScheduler = 16i32,

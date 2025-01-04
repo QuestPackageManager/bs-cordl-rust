@@ -1,7 +1,8 @@
 #[cfg(feature = "JetBrains+Annotations+ImplicitUseKindFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ImplicitUseKindFlags {
+    #[default]
     Access = 1i32,
     Assign = 2i32,
     Default = 7i32,

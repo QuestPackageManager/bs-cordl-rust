@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+SceneManagement+LocalPhysicsMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LocalPhysicsMode {
+    #[default]
     None = 0i32,
     Physics2D = 1i32,
     Physics3D = 2i32,

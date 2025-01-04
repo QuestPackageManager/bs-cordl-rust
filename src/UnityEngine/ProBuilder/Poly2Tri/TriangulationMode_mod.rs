@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+TriangulationMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TriangulationMode {
+    #[default]
     Constrained = 1i32,
     Polygon = 2i32,
     Unconstrained = 0i32,

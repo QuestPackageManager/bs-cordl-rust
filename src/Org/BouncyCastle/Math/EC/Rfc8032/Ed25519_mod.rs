@@ -720,8 +720,9 @@ for crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519 {
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Rfc8032+Ed25519+Algorithm")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Ed25519_Algorithm {
+    #[default]
     Ed25519 = 0i32,
     Ed25519ctx = 1i32,
     Ed25519ph = 2i32,

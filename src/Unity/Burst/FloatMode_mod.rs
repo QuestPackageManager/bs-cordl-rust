@@ -1,7 +1,8 @@
 #[cfg(feature = "Unity+Burst+FloatMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum FloatMode {
+    #[default]
     Default = 0i32,
     Deterministic = 2i32,
     Fast = 3i32,

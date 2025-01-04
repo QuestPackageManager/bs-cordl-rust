@@ -1,7 +1,8 @@
 #[cfg(feature = "Oculus+Platform+NetSyncDisconnectReason")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NetSyncDisconnectReason {
+    #[default]
     Failed = 3i32,
     LocalTerminated = 1i32,
     Lost = 4i32,

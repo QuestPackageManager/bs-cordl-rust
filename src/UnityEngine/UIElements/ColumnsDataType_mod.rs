@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+ColumnsDataType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ColumnsDataType {
+    #[default]
     PrimaryColumn = 0i32,
     Reorderable = 2i32,
     Resizable = 3i32,

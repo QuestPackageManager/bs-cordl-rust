@@ -2259,8 +2259,9 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOpe
     feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+RebindingOperation+Flags"
 )]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RebindingOperation_InputActionRebindingExtensions_Flags {
+    #[default]
     AddNewBinding = 256i32,
     Canceled = 4i32,
     Completed = 2i32,

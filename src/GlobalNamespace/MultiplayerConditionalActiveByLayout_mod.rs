@@ -85,8 +85,9 @@ for crate::GlobalNamespace::MultiplayerConditionalActiveByLayout {
 }
 #[cfg(feature = "MultiplayerConditionalActiveByLayout+Condition")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MultiplayerConditionalActiveByLayout_Condition {
+    #[default]
     HideIf = 1i32,
     ShowIf = 0i32,
 }

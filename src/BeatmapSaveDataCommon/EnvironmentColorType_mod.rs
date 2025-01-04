@@ -1,7 +1,8 @@
 #[cfg(feature = "BeatmapSaveDataCommon+EnvironmentColorType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EnvironmentColorType {
+    #[default]
     Color0 = 0i32,
     Color1 = 1i32,
     ColorWhite = 2i32,

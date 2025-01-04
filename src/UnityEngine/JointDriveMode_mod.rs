@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+JointDriveMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum JointDriveMode {
+    #[default]
     None = 0i32,
     Position = 1i32,
     PositionAndVelocity = 3i32,

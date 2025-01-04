@@ -1,7 +1,8 @@
 #[cfg(feature = "BGLib+Polyglot+GoogleDriveDownloadFormat")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GoogleDriveDownloadFormat {
+    #[default]
     CSV = 0i32,
     TSV = 1i32,
 }

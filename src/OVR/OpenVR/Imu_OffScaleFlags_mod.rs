@@ -1,7 +1,8 @@
 #[cfg(feature = "OVR+OpenVR+Imu_OffScaleFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Imu_OffScaleFlags {
+    #[default]
     OffScale_AccelX = 1i32,
     OffScale_AccelY = 2i32,
     OffScale_AccelZ = 4i32,

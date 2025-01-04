@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Runtime+Remoting+Messaging+ArgInfoType")]
 #[repr(u8)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ArgInfoType {
+    #[default]
     In = 0u8,
     Out = 1u8,
 }

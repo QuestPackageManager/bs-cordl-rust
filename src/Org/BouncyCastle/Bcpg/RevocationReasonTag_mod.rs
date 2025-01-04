@@ -1,7 +1,8 @@
 #[cfg(feature = "Org+BouncyCastle+Bcpg+RevocationReasonTag")]
 #[repr(u8)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RevocationReasonTag {
+    #[default]
     KeyCompromised = 2u8,
     KeyRetired = 3u8,
     KeySuperseded = 1u8,

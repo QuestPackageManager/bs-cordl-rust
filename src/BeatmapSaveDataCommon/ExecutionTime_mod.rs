@@ -1,7 +1,8 @@
 #[cfg(feature = "BeatmapSaveDataCommon+ExecutionTime")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ExecutionTime {
+    #[default]
     Early = 0i32,
     Late = 1i32,
 }

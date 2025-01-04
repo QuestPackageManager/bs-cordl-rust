@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Xml+Schema+ValidatorState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ValidatorState {
+    #[default]
     Attribute = 5i32,
     Element = 4i32,
     EndElement = 9i32,

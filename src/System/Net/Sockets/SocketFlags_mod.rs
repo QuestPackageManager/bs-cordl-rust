@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Net+Sockets+SocketFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SocketFlags {
+    #[default]
     Broadcast = 1024i32,
     ControlDataTruncated = 512i32,
     DontRoute = 4i32,

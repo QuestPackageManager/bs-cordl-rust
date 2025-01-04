@@ -262,8 +262,9 @@ for crate::System::Net::HttpListenerRequestUriBuilder {
 }
 #[cfg(feature = "System+Net+HttpListenerRequestUriBuilder+EncodingType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HttpListenerRequestUriBuilder_EncodingType {
+    #[default]
     Primary = 0i32,
     Secondary = 1i32,
 }
@@ -275,8 +276,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "System+Net+HttpListenerRequestUriBuilder+ParsingResult")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HttpListenerRequestUriBuilder_ParsingResult {
+    #[default]
     EncodingError = 2i32,
     InvalidString = 1i32,
     Success = 0i32,

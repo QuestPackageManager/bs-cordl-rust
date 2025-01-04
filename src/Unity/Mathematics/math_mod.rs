@@ -14707,8 +14707,9 @@ for crate::Unity::Mathematics::math_LongDoubleUnion {
 impl crate::Unity::Mathematics::math_LongDoubleUnion {}
 #[cfg(feature = "Unity+Mathematics+math+RotationOrder")]
 #[repr(u8)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum math_RotationOrder {
+    #[default]
     Default = 4u8,
     XYZ = 0u8,
     XZY = 1u8,
@@ -14723,8 +14724,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "Unity+Mathematics+math+ShuffleComponent")]
 #[repr(u8)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum math_ShuffleComponent {
+    #[default]
     LeftW = 3u8,
     LeftX = 0u8,
     LeftY = 1u8,

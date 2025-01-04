@@ -1,7 +1,8 @@
 #[cfg(feature = "Newtonsoft+Json+Linq+JTokenType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum JTokenType {
+    #[default]
     Array = 2i32,
     Boolean = 9i32,
     Bytes = 14i32,

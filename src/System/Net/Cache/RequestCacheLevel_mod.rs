@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Net+Cache+RequestCacheLevel")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RequestCacheLevel {
+    #[default]
     BypassCache = 1i32,
     CacheIfAvailable = 3i32,
     CacheOnly = 2i32,

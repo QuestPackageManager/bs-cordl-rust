@@ -1,7 +1,8 @@
 #[cfg(feature = "Newtonsoft+Json+JsonToken")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum JsonToken {
+    #[default]
     Boolean = 10i32,
     Bytes = 17i32,
     Comment = 5i32,

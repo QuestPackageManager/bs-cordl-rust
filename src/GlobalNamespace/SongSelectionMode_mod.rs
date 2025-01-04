@@ -1,7 +1,8 @@
 #[cfg(feature = "SongSelectionMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SongSelectionMode {
+    #[default]
     OwnerPicks = 2i32,
     Random = 1i32,
     RandomPlayerPicks = 3i32,

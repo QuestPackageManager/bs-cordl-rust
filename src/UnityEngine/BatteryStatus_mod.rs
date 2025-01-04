@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+BatteryStatus")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BatteryStatus {
+    #[default]
     Charging = 1i32,
     Discharging = 2i32,
     Full = 4i32,

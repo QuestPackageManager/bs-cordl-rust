@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+EventSystems+EventTriggerType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EventTriggerType {
+    #[default]
     BeginDrag = 13i32,
     Cancel = 16i32,
     Deselect = 10i32,

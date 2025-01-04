@@ -1,7 +1,8 @@
 #[cfg(feature = "OVR+OpenVR+EVRApplicationTransitionState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EVRApplicationTransitionState {
+    #[default]
     VRApplicationTransition_NewAppLaunched = 20i32,
     VRApplicationTransition_None = 0i32,
     VRApplicationTransition_OldAppQuitSent = 10i32,

@@ -139,8 +139,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::XR::XRSettings {
 }
 #[cfg(feature = "UnityEngine+XR+XRSettings+StereoRenderingMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XRSettings_StereoRenderingMode {
+    #[default]
     MultiPass = 0i32,
     SinglePass = 1i32,
     SinglePassInstanced = 2i32,

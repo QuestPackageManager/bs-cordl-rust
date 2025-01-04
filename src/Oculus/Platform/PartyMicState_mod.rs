@@ -1,7 +1,8 @@
 #[cfg(feature = "Oculus+Platform+PartyMicState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PartyMicState {
+    #[default]
     App = 2i32,
     Inactive = 4i32,
     InputShared = 5i32,

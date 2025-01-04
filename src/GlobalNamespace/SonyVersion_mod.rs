@@ -152,8 +152,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SonyVersion {
 }
 #[cfg(feature = "SonyVersion+VersionFormat")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SonyVersion_VersionFormat {
+    #[default]
     FullLong = 0i32,
     FullShort = 2i32,
     Long = 1i32,

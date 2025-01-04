@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Security+AccessControl+ResourceType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ResourceType {
+    #[default]
     DSObject = 8i32,
     DSObjectAll = 9i32,
     FileObject = 1i32,

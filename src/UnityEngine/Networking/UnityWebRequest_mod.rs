@@ -795,8 +795,9 @@ for crate::UnityEngine::Networking::UnityWebRequest {
 }
 #[cfg(feature = "UnityEngine+Networking+UnityWebRequest+Result")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum UnityWebRequest_Result {
+    #[default]
     ConnectionError = 2i32,
     DataProcessingError = 4i32,
     InProgress = 0i32,
@@ -810,8 +811,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+Networking+UnityWebRequest+UnityWebRequestError")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum UnityWebRequest_UnityWebRequestError {
+    #[default]
     Aborted = 17i32,
     AccessDenied = 9i32,
     AlreadySent = 35i32,
@@ -862,8 +864,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+Networking+UnityWebRequest+UnityWebRequestMethod")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum UnityWebRequest_UnityWebRequestMethod {
+    #[default]
     Custom = 4i32,
     Get = 0i32,
     Head = 3i32,

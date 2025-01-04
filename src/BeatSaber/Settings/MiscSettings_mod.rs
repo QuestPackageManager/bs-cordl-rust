@@ -28,8 +28,9 @@ impl crate::BeatSaber::Settings::MiscSettings {
 }
 #[cfg(feature = "BeatSaber+Settings+MiscSettings+ResponseLevel")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MiscSettings_ResponseLevel {
+    #[default]
     Instant = 0i32,
     Long = 1i32,
 }

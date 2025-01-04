@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Security+AccessControl+AccessControlSections")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AccessControlSections {
+    #[default]
     Access = 2i32,
     All = 15i32,
     Audit = 1i32,

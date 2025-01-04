@@ -1,7 +1,8 @@
 #[cfg(feature = "HoudiniEngineUnity+HEU_PipelineType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HEU_PipelineType {
+    #[default]
     BiRP = 1i32,
     HDRP = 3i32,
     URP = 2i32,

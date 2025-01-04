@@ -1,7 +1,8 @@
 #[cfg(feature = "System+ExceptionResource")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ExceptionResource {
+    #[default]
     Arg_ArrayPlusOffTooSmall = 5i32,
     Arg_NonZeroLowerBound = 6i32,
     Arg_RankMultiDimNotSupported = 7i32,

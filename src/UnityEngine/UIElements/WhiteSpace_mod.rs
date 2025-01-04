@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+WhiteSpace")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum WhiteSpace {
+    #[default]
     NoWrap = 1i32,
     Normal = 0i32,
 }

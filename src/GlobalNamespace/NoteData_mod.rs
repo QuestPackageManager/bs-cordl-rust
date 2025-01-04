@@ -712,8 +712,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NoteData {
 }
 #[cfg(feature = "NoteData+GameplayType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NoteData_GameplayType {
+    #[default]
     Bomb = 1i32,
     BurstSliderElement = 3i32,
     BurstSliderHead = 2i32,
@@ -726,8 +727,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "NoteData+ScoringType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NoteData_ScoringType {
+    #[default]
     ArcHead = 2i32,
     ArcHeadArcTail = 6i32,
     ArcTail = 3i32,

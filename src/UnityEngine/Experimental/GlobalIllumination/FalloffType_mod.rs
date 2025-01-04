@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+FalloffType")]
 #[repr(u8)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum FalloffType {
+    #[default]
     InverseSquared = 0u8,
     InverseSquaredNoRangeAttenuation = 1u8,
     Legacy = 3u8,

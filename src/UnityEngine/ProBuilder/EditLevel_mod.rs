@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+ProBuilder+EditLevel")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EditLevel {
+    #[default]
     Geometry = 1i32,
     Plugin = 3i32,
     Texture = 2i32,

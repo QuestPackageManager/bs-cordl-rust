@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+ProBuilder+HandleOrientation")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HandleOrientation {
+    #[default]
     ActiveElement = 2i32,
     ActiveObject = 1i32,
     World = 0i32,

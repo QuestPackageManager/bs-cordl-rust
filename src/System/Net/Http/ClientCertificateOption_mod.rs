@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Net+Http+ClientCertificateOption")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ClientCertificateOption {
+    #[default]
     Automatic = 1i32,
     Manual = 0i32,
 }

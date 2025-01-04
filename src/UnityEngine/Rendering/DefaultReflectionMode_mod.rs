@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Rendering+DefaultReflectionMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DefaultReflectionMode {
+    #[default]
     Custom = 1i32,
     Skybox = 0i32,
 }

@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+RuntimePlatform")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RuntimePlatform {
+    #[default]
     Android = 11i32,
     BlackBerryPlayer = 22i32,
     CloudRendering = 35i32,

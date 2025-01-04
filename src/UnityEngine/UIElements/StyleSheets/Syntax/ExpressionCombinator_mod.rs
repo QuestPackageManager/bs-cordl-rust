@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+Syntax+ExpressionCombinator")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ExpressionCombinator {
+    #[default]
     AndAnd = 3i32,
     Group = 5i32,
     Juxtaposition = 4i32,

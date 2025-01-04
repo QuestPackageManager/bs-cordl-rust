@@ -1,7 +1,8 @@
 #[cfg(feature = "Zenject+SignalMissingHandlerResponses")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SignalMissingHandlerResponses {
+    #[default]
     Ignore = 0i32,
     Throw = 1i32,
     Warn = 2i32,

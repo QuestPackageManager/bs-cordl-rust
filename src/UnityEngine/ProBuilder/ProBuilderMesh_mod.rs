@@ -2119,8 +2119,9 @@ for crate::UnityEngine::ProBuilder::ProBuilderMesh {
 }
 #[cfg(feature = "UnityEngine+ProBuilder+ProBuilderMesh+CacheValidState")]
 #[repr(u8)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ProBuilderMesh_CacheValidState {
+    #[default]
     SharedTexture = 2u8,
     SharedVertex = 1u8,
 }

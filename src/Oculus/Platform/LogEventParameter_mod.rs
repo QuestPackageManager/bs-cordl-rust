@@ -1,7 +1,8 @@
 #[cfg(feature = "Oculus+Platform+LogEventParameter")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LogEventParameter {
+    #[default]
     AdType = 13i32,
     EventName = 15i32,
     ImplicitlyLogged = 17i32,

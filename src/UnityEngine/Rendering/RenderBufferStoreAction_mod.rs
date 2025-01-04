@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Rendering+RenderBufferStoreAction")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RenderBufferStoreAction {
+    #[default]
     DontCare = 3i32,
     Resolve = 1i32,
     Store = 0i32,

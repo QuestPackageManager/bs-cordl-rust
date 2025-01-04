@@ -622,8 +622,9 @@ impl AsMut<
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_Curve+CurveDrawCollision")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HEU_Curve_CurveDrawCollision {
+    #[default]
     COLLIDERS = 0i32,
     LAYERMASK = 1i32,
 }
@@ -634,8 +635,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_Curve+CurveEditState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HEU_Curve_CurveEditState {
+    #[default]
     EDITING = 2i32,
     GENERATED = 1i32,
     INVALID = 0i32,
@@ -648,8 +650,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_Curve+Interaction")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HEU_Curve_Interaction {
+    #[default]
     ADD = 1i32,
     EDIT = 2i32,
     VIEW = 0i32,

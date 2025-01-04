@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Security+AccessControl+AceType")]
 #[repr(u8)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AceType {
+    #[default]
     AccessAllowed = 0u8,
     AccessAllowedCallback = 9u8,
     AccessAllowedCallbackObject = 11u8,

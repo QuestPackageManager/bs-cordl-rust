@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Resources+ResourceTypeCode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ResourceTypeCode {
+    #[default]
     Boolean = 2i32,
     Byte = 4i32,
     ByteArray = 32i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+AudioSourceCurveType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AudioSourceCurveType {
+    #[default]
     CustomRolloff = 0i32,
     ReverbZoneMix = 2i32,
     SpatialBlend = 1i32,

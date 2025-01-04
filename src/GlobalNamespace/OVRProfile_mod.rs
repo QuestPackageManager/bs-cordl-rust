@@ -131,8 +131,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRProfile {
 }
 #[cfg(feature = "OVRProfile+State")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRProfile_State {
+    #[default]
     ERROR = 3i32,
     LOADING = 1i32,
     NOT_TRIGGERED = 0i32,

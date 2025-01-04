@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+AvatarTarget")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AvatarTarget {
+    #[default]
     Body = 1i32,
     LeftFoot = 2i32,
     LeftHand = 4i32,

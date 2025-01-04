@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+MeshTopology")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MeshTopology {
+    #[default]
     LineStrip = 4i32,
     Lines = 3i32,
     Points = 5i32,

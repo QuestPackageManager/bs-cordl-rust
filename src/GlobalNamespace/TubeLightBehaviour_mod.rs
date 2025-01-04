@@ -95,8 +95,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::TubeLightBeha
 }
 #[cfg(feature = "TubeLightBehaviour+ParameterType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TubeLightBehaviour_ParameterType {
+    #[default]
     References = 1i32,
     Values = 0i32,
 }

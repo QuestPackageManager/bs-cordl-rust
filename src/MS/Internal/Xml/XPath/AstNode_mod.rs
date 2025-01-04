@@ -77,8 +77,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::MS::Internal::Xml::XPath::AstN
 }
 #[cfg(feature = "MS+Internal+Xml+XPath+AstNode+AstType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AstNode_AstType {
+    #[default]
     Axis = 0i32,
     ConstantOperand = 3i32,
     Error = 8i32,

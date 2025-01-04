@@ -1,7 +1,8 @@
 #[cfg(feature = "System+ExceptionArgument")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ExceptionArgument {
+    #[default]
     action = 33i32,
     array = 3i32,
     arrayIndex = 17i32,

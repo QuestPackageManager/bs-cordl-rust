@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Runtime+InteropServices+UnmanagedType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum UnmanagedType {
+    #[default]
     AnsiBStr = 35i32,
     AsAny = 40i32,
     BStr = 19i32,

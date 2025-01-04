@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+ScaleMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ScaleMode {
+    #[default]
     ScaleAndCrop = 1i32,
     ScaleToFit = 2i32,
     StretchToFill = 0i32,

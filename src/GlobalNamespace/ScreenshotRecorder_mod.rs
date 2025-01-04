@@ -174,8 +174,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ScreenshotRec
 }
 #[cfg(feature = "ScreenshotRecorder+RecordingType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ScreenshotRecorder_RecordingType {
+    #[default]
     F10ForScreenshot = 3i32,
     Interval = 4i32,
     Mono360Sequence = 2i32,

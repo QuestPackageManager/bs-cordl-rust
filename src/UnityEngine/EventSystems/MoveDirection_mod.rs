@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+EventSystems+MoveDirection")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MoveDirection {
+    #[default]
     Down = 3i32,
     Left = 0i32,
     None = 4i32,

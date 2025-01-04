@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+OverflowClipBox")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OverflowClipBox {
+    #[default]
     ContentBox = 1i32,
     PaddingBox = 0i32,
 }

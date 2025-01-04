@@ -1218,8 +1218,9 @@ for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_Creator
     feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalReader+PropertyPresence"
 )]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum JsonSerializerInternalReader_PropertyPresence {
+    #[default]
     None = 0i32,
     Null = 1i32,
     Value = 2i32,

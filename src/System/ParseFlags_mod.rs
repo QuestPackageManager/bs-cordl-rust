@@ -1,7 +1,8 @@
 #[cfg(feature = "System+ParseFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ParseFlags {
+    #[default]
     CaptureOffset = 2048i32,
     HaveDate = 128i32,
     HaveDay = 4i32,

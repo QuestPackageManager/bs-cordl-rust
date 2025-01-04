@@ -1,7 +1,8 @@
 #[cfg(feature = "OVR+OpenVR+ETrackedControllerRole")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ETrackedControllerRole {
+    #[default]
     Invalid = 0i32,
     LeftHand = 1i32,
     Max = 4i32,

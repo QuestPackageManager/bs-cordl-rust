@@ -1,7 +1,8 @@
 #[cfg(feature = "Mono+Math+Prime+ConfidenceFactor")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ConfidenceFactor {
+    #[default]
     ExtraHigh = 4i32,
     ExtraLow = 0i32,
     High = 3i32,

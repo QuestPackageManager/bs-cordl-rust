@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Rendering+BatchCullingViewType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BatchCullingViewType {
+    #[default]
     Camera = 1i32,
     Light = 2i32,
     Picking = 3i32,

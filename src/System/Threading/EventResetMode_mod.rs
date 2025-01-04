@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Threading+EventResetMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EventResetMode {
+    #[default]
     AutoReset = 0i32,
     ManualReset = 1i32,
 }

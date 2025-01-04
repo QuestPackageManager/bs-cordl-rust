@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Data+TreeAccessMethod")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TreeAccessMethod {
+    #[default]
     INDEX_ONLY = 2i32,
     KEY_SEARCH_AND_INDEX = 1i32,
 }

@@ -456,8 +456,9 @@ for crate::UnityEngine::InputSystem::InputControlPath {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputControlPath+HumanReadableStringOptions")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputControlPath_HumanReadableStringOptions {
+    #[default]
     None = 0i32,
     OmitDevice = 2i32,
     UseShortNames = 4i32,
@@ -624,8 +625,9 @@ impl crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputControlPath+PathComponentType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputControlPath_PathComponentType {
+    #[default]
     DisplayName = 1i32,
     Layout = 3i32,
     Name = 0i32,

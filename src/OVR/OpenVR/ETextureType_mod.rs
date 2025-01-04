@@ -1,7 +1,8 @@
 #[cfg(feature = "OVR+OpenVR+ETextureType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ETextureType {
+    #[default]
     DXGISharedHandle = 5i32,
     DirectX = 0i32,
     DirectX12 = 4i32,

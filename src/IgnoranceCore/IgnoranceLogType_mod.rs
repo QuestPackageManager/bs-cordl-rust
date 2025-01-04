@@ -1,7 +1,8 @@
 #[cfg(feature = "IgnoranceCore+IgnoranceLogType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum IgnoranceLogType {
+    #[default]
     Quiet = 0i32,
     Standard = 1i32,
     Verbose = 2i32,

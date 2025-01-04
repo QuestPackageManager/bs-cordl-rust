@@ -272,8 +272,9 @@ for crate::Newtonsoft::Json::Utilities::StringUtils {
 }
 #[cfg(feature = "Newtonsoft+Json+Utilities+StringUtils+SeparatedCaseState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum StringUtils_SeparatedCaseState {
+    #[default]
     Lower = 1i32,
     NewWord = 3i32,
     Start = 0i32,

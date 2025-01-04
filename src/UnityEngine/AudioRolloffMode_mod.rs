@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+AudioRolloffMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AudioRolloffMode {
+    #[default]
     Custom = 2i32,
     Linear = 1i32,
     Logarithmic = 0i32,

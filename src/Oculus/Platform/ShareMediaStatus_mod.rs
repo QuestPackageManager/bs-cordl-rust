@@ -1,7 +1,8 @@
 #[cfg(feature = "Oculus+Platform+ShareMediaStatus")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ShareMediaStatus {
+    #[default]
     Canceled = 2i32,
     Shared = 1i32,
     Unknown = 0i32,

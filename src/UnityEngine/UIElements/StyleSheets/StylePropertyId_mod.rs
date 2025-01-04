@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+StylePropertyId")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum StylePropertyId {
+    #[default]
     AlignContent = 131072i32,
     AlignItems = 131073i32,
     AlignSelf = 131074i32,

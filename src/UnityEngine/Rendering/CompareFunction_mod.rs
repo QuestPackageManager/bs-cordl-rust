@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Rendering+CompareFunction")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CompareFunction {
+    #[default]
     Always = 8i32,
     Disabled = 0i32,
     Equal = 3i32,

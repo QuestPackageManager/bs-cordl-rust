@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+TransparencySortMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TransparencySortMode {
+    #[default]
     CustomAxis = 3i32,
     Default = 0i32,
     Orthographic = 2i32,

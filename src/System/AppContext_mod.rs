@@ -52,8 +52,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::AppContext {
 }
 #[cfg(feature = "System+AppContext+SwitchValueState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AppContext_SwitchValueState {
+    #[default]
     HasFalseValue = 1i32,
     HasLookedForOverride = 4i32,
     HasTrueValue = 2i32,

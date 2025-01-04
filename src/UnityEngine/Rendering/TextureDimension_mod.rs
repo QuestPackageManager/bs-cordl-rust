@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Rendering+TextureDimension")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TextureDimension {
+    #[default]
     Any = 1i32,
     Cube = 4i32,
     CubeArray = 6i32,

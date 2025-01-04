@@ -336,8 +336,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::UriParser {
 }
 #[cfg(feature = "System+UriParser+UriQuirksVersion")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum UriParser_UriQuirksVersion {
+    #[default]
     V2 = 2i32,
     V3 = 3i32,
 }

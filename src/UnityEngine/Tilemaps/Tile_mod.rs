@@ -204,8 +204,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Tilemaps::Tile {
 }
 #[cfg(feature = "UnityEngine+Tilemaps+Tile+ColliderType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Tile_ColliderType {
+    #[default]
     Grid = 2i32,
     None = 0i32,
     Sprite = 1i32,

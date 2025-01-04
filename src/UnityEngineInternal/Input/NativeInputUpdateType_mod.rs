@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngineInternal+Input+NativeInputUpdateType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NativeInputUpdateType {
+    #[default]
     BeforeRender = 4i32,
     Dynamic = 1i32,
     Editor = 8i32,

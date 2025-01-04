@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+Orientation")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Orientation {
+    #[default]
     CCW = 1i32,
     CW = 0i32,
     Collinear = 2i32,

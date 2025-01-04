@@ -388,8 +388,9 @@ for crate::UnityEngine::SpatialTracking::TrackedPoseDriver {
 }
 #[cfg(feature = "UnityEngine+SpatialTracking+TrackedPoseDriver+DeviceType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TrackedPoseDriver_DeviceType {
+    #[default]
     GenericXRController = 1i32,
     GenericXRDevice = 0i32,
     GenericXRRemote = 2i32,
@@ -402,8 +403,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+SpatialTracking+TrackedPoseDriver+TrackedPose")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TrackedPoseDriver_TrackedPose {
+    #[default]
     Center = 2i32,
     ColorCamera = 6i32,
     DepthCameraDeprecated = 7i32,
@@ -424,8 +426,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+SpatialTracking+TrackedPoseDriver+TrackingType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TrackedPoseDriver_TrackingType {
+    #[default]
     PositionOnly = 2i32,
     RotationAndPosition = 0i32,
     RotationOnly = 1i32,
@@ -438,8 +441,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+SpatialTracking+TrackedPoseDriver+UpdateType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TrackedPoseDriver_UpdateType {
+    #[default]
     BeforeRender = 2i32,
     Update = 1i32,
     UpdateAndBeforeRender = 0i32,

@@ -441,8 +441,9 @@ for crate::GlobalNamespace::AudioTimeSyncController_InitData {
 }
 #[cfg(feature = "AudioTimeSyncController+State")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AudioTimeSyncController_State {
+    #[default]
     Paused = 1i32,
     Playing = 0i32,
     Stopped = 2i32,

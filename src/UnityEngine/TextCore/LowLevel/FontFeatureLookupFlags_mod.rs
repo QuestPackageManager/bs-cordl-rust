@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+TextCore+LowLevel+FontFeatureLookupFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum FontFeatureLookupFlags {
+    #[default]
     IgnoreLigatures = 4i32,
     IgnoreSpacingAdjustments = 256i32,
     None = 0i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Net+HttpStatusCode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HttpStatusCode {
+    #[default]
     Accepted = 202i32,
     AlreadyReported = 208i32,
     Ambiguous = 300i32,

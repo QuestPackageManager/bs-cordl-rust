@@ -129,8 +129,9 @@ for crate::System::Xml::Schema::CompiledIdentityConstraint {
 }
 #[cfg(feature = "System+Xml+Schema+CompiledIdentityConstraint+ConstraintRole")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CompiledIdentityConstraint_ConstraintRole {
+    #[default]
     Key = 1i32,
     Keyref = 2i32,
     Unique = 0i32,

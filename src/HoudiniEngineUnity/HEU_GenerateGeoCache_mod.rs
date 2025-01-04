@@ -1,7 +1,8 @@
 #[cfg(feature = "HoudiniEngineUnity+HEU_GenerateGeoCache+HEU_ColliderInfo+ColliderType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HEU_ColliderInfo_HEU_GenerateGeoCache_ColliderType {
+    #[default]
     BOX = 1i32,
     MESH = 3i32,
     NONE = 0i32,

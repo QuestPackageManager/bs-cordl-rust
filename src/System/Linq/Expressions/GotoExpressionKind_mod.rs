@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Linq+Expressions+GotoExpressionKind")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GotoExpressionKind {
+    #[default]
     Break = 2i32,
     Continue = 3i32,
     Goto = 0i32,

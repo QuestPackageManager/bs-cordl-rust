@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Security+Cryptography+CspProviderFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CspProviderFlags {
+    #[default]
     CreateEphemeralKey = 128i32,
     NoFlags = 0i32,
     NoPrompt = 64i32,

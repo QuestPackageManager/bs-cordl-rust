@@ -287,8 +287,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ColorSchemesS
 }
 #[cfg(feature = "ColorSchemesSettings+ColorOverrideType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ColorSchemesSettings_ColorOverrideType {
+    #[default]
     All = 0i32,
     NotesOnly = 1i32,
 }

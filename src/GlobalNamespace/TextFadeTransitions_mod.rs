@@ -114,8 +114,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::TextFadeTrans
 }
 #[cfg(feature = "TextFadeTransitions+State")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TextFadeTransitions_State {
+    #[default]
     FadingIn = 2i32,
     FadingOut = 1i32,
     NotInTransition = 0i32,

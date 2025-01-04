@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+Justify")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Justify {
+    #[default]
     Center = 1i32,
     FlexEnd = 2i32,
     FlexStart = 0i32,

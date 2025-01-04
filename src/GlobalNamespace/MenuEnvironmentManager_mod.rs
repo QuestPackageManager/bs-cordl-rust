@@ -168,8 +168,9 @@ for crate::GlobalNamespace::MenuEnvironmentManager_MenuEnvironmentObjects {
 }
 #[cfg(feature = "MenuEnvironmentManager+MenuEnvironmentType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MenuEnvironmentManager_MenuEnvironmentType {
+    #[default]
     Default = 1i32,
     Lobby = 2i32,
     None = 0i32,

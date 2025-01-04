@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Net+AuthenticationSchemes")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AuthenticationSchemes {
+    #[default]
     Anonymous = 32768i32,
     Basic = 8i32,
     Digest = 1i32,

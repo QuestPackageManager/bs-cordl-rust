@@ -1,7 +1,8 @@
 #[cfg(feature = "Zenject+LoadSceneRelationship")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LoadSceneRelationship {
+    #[default]
     Child = 1i32,
     None = 0i32,
     Sibling = 2i32,

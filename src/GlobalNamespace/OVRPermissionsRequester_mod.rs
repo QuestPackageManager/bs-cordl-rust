@@ -124,8 +124,9 @@ for crate::GlobalNamespace::OVRPermissionsRequester {
 }
 #[cfg(feature = "OVRPermissionsRequester+Permission")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPermissionsRequester_Permission {
+    #[default]
     BodyTracking = 1i32,
     EyeTracking = 2i32,
     FaceTracking = 0i32,

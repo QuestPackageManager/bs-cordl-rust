@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+CameraClearFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CameraClearFlags {
+    #[default]
     Color = 2i32,
     Depth = 3i32,
     Nothing = 4i32,

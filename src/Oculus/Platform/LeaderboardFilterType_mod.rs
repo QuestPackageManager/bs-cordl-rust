@@ -1,7 +1,8 @@
 #[cfg(feature = "Oculus+Platform+LeaderboardFilterType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LeaderboardFilterType {
+    #[default]
     Friends = 1i32,
     None = 0i32,
     Unknown = 2i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+PanelScaleMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PanelScaleMode {
+    #[default]
     ConstantPhysicalSize = 1i32,
     ConstantPixelSize = 0i32,
     ScaleWithScreenSize = 2i32,

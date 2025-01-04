@@ -156,8 +156,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ProBuilder::Actio
 }
 #[cfg(feature = "UnityEngine+ProBuilder+ActionResult+Status")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ActionResult_Status {
+    #[default]
     Canceled = 2i32,
     Failure = 1i32,
     NoChange = 3i32,

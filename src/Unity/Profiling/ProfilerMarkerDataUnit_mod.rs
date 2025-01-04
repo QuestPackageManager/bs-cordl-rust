@@ -1,7 +1,8 @@
 #[cfg(feature = "Unity+Profiling+ProfilerMarkerDataUnit")]
 #[repr(u8)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ProfilerMarkerDataUnit {
+    #[default]
     Bytes = 2u8,
     Count = 3u8,
     FrequencyHz = 5u8,

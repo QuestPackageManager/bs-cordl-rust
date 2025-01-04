@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Net+Sockets+TransmitFileOptions")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TransmitFileOptions {
+    #[default]
     Disconnect = 1i32,
     ReuseSocket = 2i32,
     UseDefaultWorkerThread = 0i32,

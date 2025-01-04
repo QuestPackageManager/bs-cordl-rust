@@ -82,8 +82,9 @@ for crate::UnityEngine::InputSystem::Composites::Vector3Composite {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Composites+Vector3Composite+Mode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Vector3Composite_Mode {
+    #[default]
     Analog = 0i32,
     Digital = 2i32,
     DigitalNormalized = 1i32,

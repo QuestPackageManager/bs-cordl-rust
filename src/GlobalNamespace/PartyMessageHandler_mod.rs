@@ -399,8 +399,9 @@ for crate::GlobalNamespace::PartyMessageHandler_ConnectToMasterServerMessage {
 }
 #[cfg(feature = "PartyMessageHandler+MessageType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PartyMessageHandler_MessageType {
+    #[default]
     ConnectToMasterServer = 0i32,
 }
 #[cfg(feature = "PartyMessageHandler+MessageType")]

@@ -1,7 +1,8 @@
 #[cfg(feature = "TMPro+MarkupTag")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MarkupTag {
+    #[default]
     A = 65i32,
     ACTION = -1827519330i32,
     ALIGN = 75138797i32,

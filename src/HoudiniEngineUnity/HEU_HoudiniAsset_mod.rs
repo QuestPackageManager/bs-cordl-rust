@@ -2931,8 +2931,9 @@ impl AsMut<
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+AssetBuildAction")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HEU_HoudiniAsset_AssetBuildAction {
+    #[default]
     COOK = 2i32,
     DUPLICATE = 5i32,
     INVALID = 3i32,
@@ -2949,8 +2950,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+AssetCookResult")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HEU_HoudiniAsset_AssetCookResult {
+    #[default]
     ERRORED = 2i32,
     NONE = 0i32,
     SUCCESS = 1i32,
@@ -2963,8 +2965,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+AssetCookStatus")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HEU_HoudiniAsset_AssetCookStatus {
+    #[default]
     COOKING = 1i32,
     LOADING = 3i32,
     NONE = 0i32,
@@ -2981,8 +2984,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+AssetInstantiationMethod")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HEU_HoudiniAsset_AssetInstantiationMethod {
+    #[default]
     DEFAULT = 0i32,
     DUPLICATED = 1i32,
     UNDO = 2i32,
@@ -2995,8 +2999,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+HEU_AssetType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HEU_HoudiniAsset_HEU_AssetType {
+    #[default]
     TYPE_CURVE = 2i32,
     TYPE_HDA = 1i32,
     TYPE_INPUT = 3i32,

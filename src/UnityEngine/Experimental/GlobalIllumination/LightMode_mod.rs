@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+LightMode")]
 #[repr(u8)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LightMode {
+    #[default]
     Baked = 2u8,
     Mixed = 1u8,
     Realtime = 0u8,

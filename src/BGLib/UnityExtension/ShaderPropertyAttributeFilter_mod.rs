@@ -64,8 +64,9 @@ for crate::BGLib::UnityExtension::ShaderPropertyAttributeFilter {
 }
 #[cfg(feature = "BGLib+UnityExtension+ShaderPropertyAttributeFilter+PropType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ShaderPropertyAttributeFilter_PropType {
+    #[default]
     Any = 0i32,
     Color = 1i32,
     Float = 3i32,

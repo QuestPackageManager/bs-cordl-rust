@@ -1,7 +1,8 @@
 #[cfg(feature = "Unity+Burst+DiagnosticId")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DiagnosticId {
+    #[default]
     ERR_AccessingManagedArrayNotSupported = 1022i32,
     ERR_AccessingNestedManagedArrayNotSupported = 1380i32,
     ERR_AssertArgTypesDiffer = 1330i32,

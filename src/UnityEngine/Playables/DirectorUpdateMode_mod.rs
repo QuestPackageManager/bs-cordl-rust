@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Playables+DirectorUpdateMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DirectorUpdateMode {
+    #[default]
     DSPClock = 0i32,
     GameTime = 1i32,
     Manual = 3i32,

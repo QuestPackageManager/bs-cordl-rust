@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Net+Security+AuthenticationLevel")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AuthenticationLevel {
+    #[default]
     MutualAuthRequested = 1i32,
     MutualAuthRequired = 2i32,
     None = 0i32,

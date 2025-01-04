@@ -197,8 +197,9 @@ impl AsMut<crate::System::IDisposable> for crate::Unity::Profiling::ProfilerReco
 }
 #[cfg(feature = "Unity+Profiling+ProfilerRecorder+ControlOptions")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ProfilerRecorder_ControlOptions {
+    #[default]
     Release = 4i32,
     Reset = 2i32,
     SetFilterToCurrentThread = 5i32,

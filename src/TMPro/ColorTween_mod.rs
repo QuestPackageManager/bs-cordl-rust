@@ -246,8 +246,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::TMPro::ColorTween_ColorTweenCa
 }
 #[cfg(feature = "TMPro+ColorTween+ColorTweenMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ColorTween_ColorTweenMode {
+    #[default]
     All = 0i32,
     Alpha = 2i32,
     RGB = 1i32,

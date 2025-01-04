@@ -1,7 +1,8 @@
 #[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum JsonSchemaType {
+    #[default]
     Any = 127i32,
     Array = 32i32,
     Boolean = 8i32,

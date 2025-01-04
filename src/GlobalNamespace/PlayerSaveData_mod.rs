@@ -1,7 +1,8 @@
 #[cfg(feature = "PlayerSaveData+GameplayModifiers+EnabledObstacleType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GameplayModifiers_PlayerSaveData_EnabledObstacleType {
+    #[default]
     All = 0i32,
     FullHeightOnly = 1i32,
     None = 2i32,
@@ -14,8 +15,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "PlayerSaveData+GameplayModifiers+EnergyType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GameplayModifiers_PlayerSaveData_EnergyType {
+    #[default]
     Bar = 0i32,
     Battery = 1i32,
 }
@@ -27,8 +29,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "PlayerSaveData+GameplayModifiers+SongSpeed")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GameplayModifiers_PlayerSaveData_SongSpeed {
+    #[default]
     Faster = 1i32,
     Normal = 0i32,
     Slower = 2i32,
@@ -139,8 +142,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PlayerSaveDat
 }
 #[cfg(feature = "PlayerSaveData+ColorOverrideType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PlayerSaveData_ColorOverrideType {
+    #[default]
     All = 0i32,
     NotesOnly = 1i32,
 }
@@ -1186,8 +1190,9 @@ for crate::GlobalNamespace::PlayerSaveData_PlayerOverallStatsData {
 }
 #[cfg(feature = "PlayerSaveData+PlayerSensitivityFlagSaveData")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PlayerSaveData_PlayerSensitivityFlagSaveData {
+    #[default]
     Explicit = 3i32,
     Safe = 1i32,
     Themes = 2i32,
@@ -1344,8 +1349,9 @@ for crate::GlobalNamespace::PlayerSaveData_PracticeSettings {
 }
 #[cfg(feature = "PlayerSaveData+UserAgeCategorySaveData")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PlayerSaveData_UserAgeCategorySaveData {
+    #[default]
     Adult = 3i32,
     Child = 1i32,
     Teen = 2i32,
@@ -1359,8 +1365,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "PlayerSaveData+PlayerSpecificSettings+ArcVisibilityTypeSaveData")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PlayerSpecificSettings_PlayerSaveData_ArcVisibilityTypeSaveData {
+    #[default]
     High = 3i32,
     Low = 1i32,
     None = 0i32,
@@ -1376,8 +1383,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
     feature = "PlayerSaveData+PlayerSpecificSettings+EnvironmentEffectsFilterPresetSaveData"
 )]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PlayerSpecificSettings_PlayerSaveData_EnvironmentEffectsFilterPresetSaveData {
+    #[default]
     AllEffects = 0i32,
     NoEffects = 10i32,
     StrobeFilter = 1i32,
@@ -1394,8 +1402,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
     feature = "PlayerSaveData+PlayerSpecificSettings+NoteJumpDurationTypeSettingsSaveData"
 )]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PlayerSpecificSettings_PlayerSaveData_NoteJumpDurationTypeSettingsSaveData {
+    #[default]
     Dynamic = 0i32,
     Static = 1i32,
 }

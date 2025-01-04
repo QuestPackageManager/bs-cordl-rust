@@ -1,7 +1,8 @@
 #[cfg(feature = "System+DTSubStringType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DTSubStringType {
+    #[default]
     End = 3i32,
     Invalid = 1i32,
     Number = 2i32,

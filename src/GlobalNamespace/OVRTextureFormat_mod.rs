@@ -1,7 +1,8 @@
 #[cfg(feature = "OVRTextureFormat")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRTextureFormat {
+    #[default]
     JPEG = 3i32,
     KTX2 = 1i32,
     NONE = 0i32,

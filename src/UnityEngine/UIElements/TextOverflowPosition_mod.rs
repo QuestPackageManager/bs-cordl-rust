@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+TextOverflowPosition")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TextOverflowPosition {
+    #[default]
     End = 0i32,
     Middle = 2i32,
     Start = 1i32,

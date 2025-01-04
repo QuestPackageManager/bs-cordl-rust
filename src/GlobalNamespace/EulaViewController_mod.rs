@@ -207,8 +207,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::EulaViewContr
 }
 #[cfg(feature = "EulaViewController+ButtonType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EulaViewController_ButtonType {
+    #[default]
     Agree = 0i32,
     DoNotAgree = 1i32,
 }

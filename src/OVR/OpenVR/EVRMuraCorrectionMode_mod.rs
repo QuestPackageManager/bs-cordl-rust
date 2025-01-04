@@ -1,7 +1,8 @@
 #[cfg(feature = "OVR+OpenVR+EVRMuraCorrectionMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EVRMuraCorrectionMode {
+    #[default]
     Default = 0i32,
     NoCorrection = 1i32,
 }

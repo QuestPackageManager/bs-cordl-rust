@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Collections+Generic+InsertionBehavior")]
 #[repr(u8)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InsertionBehavior {
+    #[default]
     None = 0u8,
     OverwriteExisting = 1u8,
     ThrowOnExisting = 2u8,

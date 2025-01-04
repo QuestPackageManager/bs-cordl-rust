@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+TextOverflow")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TextOverflow {
+    #[default]
     Clip = 0i32,
     Ellipsis = 1i32,
 }

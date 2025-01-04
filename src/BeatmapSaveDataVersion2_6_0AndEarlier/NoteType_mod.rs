@@ -1,7 +1,8 @@
 #[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+NoteType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NoteType {
+    #[default]
     Bomb = 3i32,
     GhostNote = 2i32,
     None = -1i32,

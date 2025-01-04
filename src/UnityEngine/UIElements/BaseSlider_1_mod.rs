@@ -1093,8 +1093,9 @@ for crate::UnityEngine::UIElements::BaseSlider_1<TValueType> {
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseSlider_1+SliderKey")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BaseSlider_1_SliderKey {
+    #[default]
     Higher = 4i32,
     HigherPage = 5i32,
     Highest = 6i32,

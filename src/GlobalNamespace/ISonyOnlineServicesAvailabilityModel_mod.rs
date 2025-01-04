@@ -65,8 +65,9 @@ for crate::GlobalNamespace::ISonyOnlineServicesAvailabilityModel {
 }
 #[cfg(feature = "ISonyOnlineServicesAvailabilityModel+OnlineServicesAvailability")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ISonyOnlineServicesAvailabilityModel_OnlineServicesAvailability {
+    #[default]
     Available = 0i32,
     Unavailable = 1i32,
     UnknownError = 2i32,

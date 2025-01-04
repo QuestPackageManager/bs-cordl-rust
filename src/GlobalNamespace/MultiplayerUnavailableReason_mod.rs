@@ -1,7 +1,8 @@
 #[cfg(feature = "MultiplayerUnavailableReason")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MultiplayerUnavailableReason {
+    #[default]
     MaintenanceMode = 4i32,
     NetworkUnreachable = 1i32,
     ServerOffline = 3i32,

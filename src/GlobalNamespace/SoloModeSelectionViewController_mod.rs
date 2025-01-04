@@ -165,8 +165,9 @@ for crate::GlobalNamespace::SoloModeSelectionViewController {
 }
 #[cfg(feature = "SoloModeSelectionViewController+MenuType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SoloModeSelectionViewController_MenuType {
+    #[default]
     Back = 3i32,
     FreePlayMode = 0i32,
     NoArrowsMode = 1i32,

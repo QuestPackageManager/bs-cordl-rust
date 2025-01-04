@@ -1,7 +1,8 @@
 #[cfg(feature = "TMPro+TextContainerAnchors")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TextContainerAnchors {
+    #[default]
     Bottom = 7i32,
     BottomLeft = 6i32,
     BottomRight = 8i32,

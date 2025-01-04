@@ -60,8 +60,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UISystemProfilerA
 }
 #[cfg(feature = "UnityEngine+UISystemProfilerApi+SampleType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum UISystemProfilerApi_SampleType {
+    #[default]
     Layout = 0i32,
     Render = 1i32,
 }

@@ -556,8 +556,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::TerrainData {
 }
 #[cfg(feature = "UnityEngine+TerrainData+BoundaryValueType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TerrainData_BoundaryValueType {
+    #[default]
     MaxAlphamapRes = 6i32,
     MaxBaseMapRes = 8i32,
     MaxCoveragePerRes = 4i32,

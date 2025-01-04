@@ -1,7 +1,8 @@
 #[cfg(feature = "Oculus+Platform+SdkAccountType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SdkAccountType {
+    #[default]
     FacebookGameroom = 2i32,
     Oculus = 1i32,
     Unknown = 0i32,

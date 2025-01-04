@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Xml+XPath+XPathResultType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XPathResultType {
+    #[default]
     Any = 5i32,
     Boolean = 2i32,
     Error = 6i32,

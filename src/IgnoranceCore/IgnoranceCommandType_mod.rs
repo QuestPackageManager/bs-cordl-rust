@@ -1,7 +1,8 @@
 #[cfg(feature = "IgnoranceCore+IgnoranceCommandType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum IgnoranceCommandType {
+    #[default]
     ClientStatusRequest = 1i32,
     ClientWantsToStop = 0i32,
     ServerKickPeer = 2i32,

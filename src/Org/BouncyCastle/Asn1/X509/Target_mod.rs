@@ -157,8 +157,9 @@ for crate::Org::BouncyCastle::Asn1::X509::Target {
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+Target+Choice")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Target_Choice {
+    #[default]
     Group = 1i32,
     Name = 0i32,
 }

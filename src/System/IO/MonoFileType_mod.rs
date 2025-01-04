@@ -1,7 +1,8 @@
 #[cfg(feature = "System+IO+MonoFileType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MonoFileType {
+    #[default]
     Char = 2i32,
     Disk = 1i32,
     Pipe = 3i32,

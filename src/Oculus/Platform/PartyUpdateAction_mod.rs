@@ -1,7 +1,8 @@
 #[cfg(feature = "Oculus+Platform+PartyUpdateAction")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PartyUpdateAction {
+    #[default]
     Invite = 3i32,
     Join = 1i32,
     Leave = 2i32,

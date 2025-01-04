@@ -150,8 +150,9 @@ for crate::GlobalNamespace::SelectRegionViewController {
 }
 #[cfg(feature = "SelectRegionViewController+Region")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SelectRegionViewController_Region {
+    #[default]
     Europe = 2i32,
     Japan = 4i32,
     None = 0i32,

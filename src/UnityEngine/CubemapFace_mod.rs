@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+CubemapFace")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CubemapFace {
+    #[default]
     NegativeX = 1i32,
     NegativeY = 3i32,
     NegativeZ = 5i32,

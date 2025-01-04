@@ -248,8 +248,9 @@ for crate::Newtonsoft::Json::Utilities::ConvertUtils {
 }
 #[cfg(feature = "Newtonsoft+Json+Utilities+ConvertUtils+ConvertResult")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ConvertUtils_ConvertResult {
+    #[default]
     CannotConvertNull = 1i32,
     NoValidConversion = 3i32,
     NotInstantiableType = 2i32,

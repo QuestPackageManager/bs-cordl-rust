@@ -1,7 +1,8 @@
 #[cfg(feature = "HMUI+TableViewSelectionType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TableViewSelectionType {
+    #[default]
     DeselectableSingle = 3i32,
     Multiple = 2i32,
     None = 0i32,

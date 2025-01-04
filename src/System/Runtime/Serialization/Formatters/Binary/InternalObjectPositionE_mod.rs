@@ -2,8 +2,9 @@
     feature = "System+Runtime+Serialization+Formatters+Binary+InternalObjectPositionE"
 )]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InternalObjectPositionE {
+    #[default]
     Child = 2i32,
     Empty = 0i32,
     Headers = 3i32,

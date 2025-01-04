@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+TextCore+LowLevel+GlyphPackingMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GlyphPackingMode {
+    #[default]
     BestAreaFit = 2i32,
     BestLongSideFit = 1i32,
     BestShortSideFit = 0i32,

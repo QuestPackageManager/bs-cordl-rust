@@ -1,7 +1,8 @@
 #[cfg(feature = "OVR+OpenVR+EVRNotificationType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EVRNotificationType {
+    #[default]
     Persistent = 1i32,
     Transient = 0i32,
     Transient_SystemWithUserValue = 2i32,

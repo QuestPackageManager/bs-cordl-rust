@@ -1,7 +1,8 @@
 #[cfg(feature = "Newtonsoft+Json+Schema+UndefinedSchemaIdHandling")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum UndefinedSchemaIdHandling {
+    #[default]
     None = 0i32,
     UseAssemblyQualifiedName = 2i32,
     UseTypeName = 1i32,

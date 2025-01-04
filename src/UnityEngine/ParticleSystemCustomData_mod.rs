@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+ParticleSystemCustomData")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ParticleSystemCustomData {
+    #[default]
     Custom1 = 0i32,
     Custom2 = 1i32,
 }

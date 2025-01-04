@@ -163,8 +163,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SonyContentVe
 }
 #[cfg(feature = "SonyContentVersion+VersionFormat")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SonyContentVersion_VersionFormat {
+    #[default]
     Long = 0i32,
     Short = 1i32,
 }

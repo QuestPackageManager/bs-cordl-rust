@@ -96,8 +96,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ISonyPSPremiu
 }
 #[cfg(feature = "ISonyPSPremiumHelper+DisplayJoinPremiumDialogResult")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ISonyPSPremiumHelper_DisplayJoinPremiumDialogResult {
+    #[default]
     Failed = 1i32,
     OK = 0i32,
 }
@@ -109,8 +110,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "ISonyPSPremiumHelper+GetPremiumStatusResult")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ISonyPSPremiumHelper_GetPremiumStatusResult {
+    #[default]
     Authorized = 0i32,
     Failed = 2i32,
     Unauthorized = 1i32,

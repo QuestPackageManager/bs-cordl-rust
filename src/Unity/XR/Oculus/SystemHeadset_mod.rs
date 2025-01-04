@@ -1,7 +1,8 @@
 #[cfg(feature = "Unity+XR+Oculus+SystemHeadset")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SystemHeadset {
+    #[default]
     Meta_Link_Quest_Pro = 4103i32,
     Meta_Quest_Pro = 10i32,
     None = 0i32,

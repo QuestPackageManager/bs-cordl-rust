@@ -691,8 +691,9 @@ for crate::GlobalNamespace::OVRPassthroughColorLut {
 }
 #[cfg(feature = "OVRPassthroughColorLut+ColorChannels")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPassthroughColorLut_ColorChannels {
+    #[default]
     Rgb = 1i32,
     Rgba = 2i32,
 }

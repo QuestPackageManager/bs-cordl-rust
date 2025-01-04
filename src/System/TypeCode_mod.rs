@@ -1,7 +1,8 @@
 #[cfg(feature = "System+TypeCode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TypeCode {
+    #[default]
     Boolean = 3i32,
     Byte = 6i32,
     Char = 4i32,

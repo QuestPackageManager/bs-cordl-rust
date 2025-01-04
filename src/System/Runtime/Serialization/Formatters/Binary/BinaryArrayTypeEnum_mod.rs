@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+BinaryArrayTypeEnum")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BinaryArrayTypeEnum {
+    #[default]
     Jagged = 1i32,
     JaggedOffset = 4i32,
     Rectangular = 2i32,

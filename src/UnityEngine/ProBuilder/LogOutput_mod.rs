@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+ProBuilder+LogOutput")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LogOutput {
+    #[default]
     Console = 1i32,
     File = 2i32,
     None = 0i32,

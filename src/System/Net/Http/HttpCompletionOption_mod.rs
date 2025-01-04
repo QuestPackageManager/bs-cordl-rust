@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Net+Http+HttpCompletionOption")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HttpCompletionOption {
+    #[default]
     ResponseContentRead = 0i32,
     ResponseHeadersRead = 1i32,
 }

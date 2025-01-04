@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+PickingMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PickingMode {
+    #[default]
     Ignore = 1i32,
     Position = 0i32,
 }

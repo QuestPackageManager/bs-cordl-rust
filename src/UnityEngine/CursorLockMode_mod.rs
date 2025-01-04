@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+CursorLockMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CursorLockMode {
+    #[default]
     Confined = 2i32,
     Locked = 1i32,
     None = 0i32,

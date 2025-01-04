@@ -497,8 +497,9 @@ for crate::System::Xml::Schema::SchemaCollectionPreprocessor {
 }
 #[cfg(feature = "System+Xml+Schema+SchemaCollectionPreprocessor+Compositor")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SchemaCollectionPreprocessor_Compositor {
+    #[default]
     Import = 2i32,
     Include = 1i32,
     Root = 0i32,

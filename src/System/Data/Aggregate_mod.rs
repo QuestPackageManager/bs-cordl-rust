@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Data+Aggregate")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Aggregate {
+    #[default]
     Avg = 31i32,
     Count = 34i32,
     Max = 33i32,

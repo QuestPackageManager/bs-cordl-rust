@@ -93,8 +93,9 @@ for crate::UnityEngine::InputSystem::Composites::Vector2Composite {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Composites+Vector2Composite+Mode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Vector2Composite_Mode {
+    #[default]
     Analog = 2i32,
     Digital = 1i32,
     DigitalNormalized = 0i32,

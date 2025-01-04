@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Timeline+NotificationFlags")]
 #[repr(i16)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NotificationFlags {
+    #[default]
     Retroactive = 2i16,
     TriggerInEditMode = 1i16,
     TriggerOnce = 4i16,

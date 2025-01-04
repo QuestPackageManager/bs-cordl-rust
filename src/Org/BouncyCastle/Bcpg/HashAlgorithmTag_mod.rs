@@ -1,7 +1,8 @@
 #[cfg(feature = "Org+BouncyCastle+Bcpg+HashAlgorithmTag")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HashAlgorithmTag {
+    #[default]
     DoubleSha = 4i32,
     Haval5pass160 = 7i32,
     MD2 = 5i32,

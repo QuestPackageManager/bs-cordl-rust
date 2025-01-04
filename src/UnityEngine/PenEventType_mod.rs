@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+PenEventType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PenEventType {
+    #[default]
     NoContact = 0i32,
     PenDown = 1i32,
     PenUp = 2i32,

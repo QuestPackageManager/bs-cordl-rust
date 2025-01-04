@@ -87,8 +87,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::MS::Internal::Xml::XPath::Oper
 }
 #[cfg(feature = "MS+Internal+Xml+XPath+Operator+Op")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Operator_Op {
+    #[default]
     AND = 2i32,
     DIV = 12i32,
     EQ = 3i32,

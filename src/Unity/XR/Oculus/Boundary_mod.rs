@@ -63,8 +63,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::XR::Oculus::Boundary {
 }
 #[cfg(feature = "Unity+XR+Oculus+Boundary+BoundaryType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Boundary_BoundaryType {
+    #[default]
     OuterBoundary = 0i32,
     PlayArea = 1i32,
 }

@@ -211,8 +211,9 @@ for crate::UnityEngine::UIElements::Length {
 }
 #[cfg(feature = "UnityEngine+UIElements+Length+Unit")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Length_Unit {
+    #[default]
     Auto = 2i32,
     None = 3i32,
     Percent = 1i32,

@@ -59,8 +59,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::XR::Oculus::Development
 }
 #[cfg(feature = "Unity+XR+Oculus+Development+UserDeveloperModeSettingCache")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Development_UserDeveloperModeSettingCache {
+    #[default]
     NoUserSettingCached = 0i32,
     UserSettingFalse = 1i32,
     UserSettingTrue = 2i32,

@@ -442,8 +442,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::UIR::
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+Utility+GPUBufferType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Utility_GPUBufferType {
+    #[default]
     Index = 1i32,
     Vertex = 0i32,
 }

@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Reflection+MethodAttributes")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MethodAttributes {
+    #[default]
     Abstract = 1024i32,
     Assembly = 3i32,
     CheckAccessOnOverride = 512i32,

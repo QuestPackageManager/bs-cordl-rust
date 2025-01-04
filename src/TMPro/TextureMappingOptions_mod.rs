@@ -1,7 +1,8 @@
 #[cfg(feature = "TMPro+TextureMappingOptions")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TextureMappingOptions {
+    #[default]
     Character = 0i32,
     Line = 1i32,
     MatchAspect = 3i32,

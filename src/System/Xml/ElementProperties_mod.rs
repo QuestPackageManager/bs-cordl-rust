@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Xml+ElementProperties")]
 #[repr(u32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ElementProperties {
+    #[default]
     BLOCK_WS = 8421440u32,
     BOOL_PARENT = 268960770u32,
     DEFAULT = 67240192u32,

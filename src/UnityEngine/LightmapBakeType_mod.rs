@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+LightmapBakeType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LightmapBakeType {
+    #[default]
     Baked = 2i32,
     Mixed = 1i32,
     Realtime = 4i32,

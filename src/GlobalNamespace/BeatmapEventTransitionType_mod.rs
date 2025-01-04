@@ -1,7 +1,8 @@
 #[cfg(feature = "BeatmapEventTransitionType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BeatmapEventTransitionType {
+    #[default]
     Extend = 2i32,
     Instant = 0i32,
     Interpolate = 1i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Reflection+EventAttributes")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EventAttributes {
+    #[default]
     None = 0i32,
     RTSpecialName = 1024i32,
     SpecialName = 512i32,

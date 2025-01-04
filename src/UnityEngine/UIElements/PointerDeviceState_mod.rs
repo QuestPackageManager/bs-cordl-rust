@@ -150,8 +150,9 @@ for crate::UnityEngine::UIElements::PointerDeviceState {
 }
 #[cfg(feature = "UnityEngine+UIElements+PointerDeviceState+LocationFlag")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PointerDeviceState_LocationFlag {
+    #[default]
     None = 0i32,
     OutsidePanel = 1i32,
 }

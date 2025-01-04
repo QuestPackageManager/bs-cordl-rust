@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+ParticleSystemSimulationSpace")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ParticleSystemSimulationSpace {
+    #[default]
     Custom = 2i32,
     Local = 0i32,
     World = 1i32,

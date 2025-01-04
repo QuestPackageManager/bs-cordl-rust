@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Drawing+KnownColor")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum KnownColor {
+    #[default]
     ActiveBorder = 1i32,
     ActiveCaption = 2i32,
     ActiveCaptionText = 3i32,

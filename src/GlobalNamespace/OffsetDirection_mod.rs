@@ -1,7 +1,8 @@
 #[cfg(feature = "OffsetDirection")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OffsetDirection {
+    #[default]
     Down = 1i32,
     DownLeft = 6i32,
     DownRight = 7i32,

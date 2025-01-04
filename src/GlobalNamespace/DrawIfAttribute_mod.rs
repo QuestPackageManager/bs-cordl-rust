@@ -92,8 +92,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::DrawIfAttribu
 }
 #[cfg(feature = "DrawIfAttribute+DisablingType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DrawIfAttribute_DisablingType {
+    #[default]
     DontDraw = 1i32,
     ReadOnly = 0i32,
 }

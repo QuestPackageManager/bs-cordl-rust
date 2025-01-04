@@ -151,8 +151,9 @@ for crate::GlobalNamespace::SettingsNavigationController {
 }
 #[cfg(feature = "SettingsNavigationController+FinishAction")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SettingsNavigationController_FinishAction {
+    #[default]
     Apply = 2i32,
     Cancel = 1i32,
     _cordl_Ok = 0i32,

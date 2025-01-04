@@ -284,8 +284,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::MonoChunkParser_C
 }
 #[cfg(feature = "System+Net+MonoChunkParser+State")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MonoChunkParser_State {
+    #[default]
     Body = 2i32,
     BodyFinished = 3i32,
     None = 0i32,

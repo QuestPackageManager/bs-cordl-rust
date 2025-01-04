@@ -1,7 +1,8 @@
 #[cfg(feature = "OVR+OpenVR+EGamepadTextInputMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EGamepadTextInputMode {
+    #[default]
     k_EGamepadTextInputModeNormal = 0i32,
     k_EGamepadTextInputModePassword = 1i32,
     k_EGamepadTextInputModeSubmit = 2i32,

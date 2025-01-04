@@ -1,7 +1,8 @@
 #[cfg(feature = "System+IO+MonoIOError")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MonoIOError {
+    #[default]
     ERROR_ACCESS_DENIED = 5i32,
     ERROR_ALREADY_EXISTS = 183i32,
     ERROR_BROKEN_PIPE = 109i32,

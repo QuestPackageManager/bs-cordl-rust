@@ -1,7 +1,8 @@
 #[cfg(feature = "EntitlementsStatus")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EntitlementsStatus {
+    #[default]
     NotDownloaded = 2i32,
     NotOwned = 1i32,
     _cordl_Ok = 3i32,

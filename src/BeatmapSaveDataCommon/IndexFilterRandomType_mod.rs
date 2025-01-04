@@ -1,7 +1,8 @@
 #[cfg(feature = "BeatmapSaveDataCommon+IndexFilterRandomType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum IndexFilterRandomType {
+    #[default]
     KeepOrder = 1i32,
     NoRandom = 0i32,
     RandomElements = 2i32,

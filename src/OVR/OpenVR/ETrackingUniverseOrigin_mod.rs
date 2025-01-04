@@ -1,7 +1,8 @@
 #[cfg(feature = "OVR+OpenVR+ETrackingUniverseOrigin")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ETrackingUniverseOrigin {
+    #[default]
     TrackingUniverseRawAndUncalibrated = 2i32,
     TrackingUniverseSeated = 0i32,
     TrackingUniverseStanding = 1i32,

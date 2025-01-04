@@ -199,8 +199,9 @@ for crate::Org::BouncyCastle::Asn1::IsisMtt::Ocsp::RequestedCertificate {
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+Ocsp+RequestedCertificate+Choice")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RequestedCertificate_Choice {
+    #[default]
     AttributeCertificate = 1i32,
     Certificate = -1i32,
     PublicKeyCertificate = 0i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Threading+Tasks+InternalTaskOptions")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InternalTaskOptions {
+    #[default]
     ContinuationTask = 512i32,
     DoNotDispose = 16384i32,
     InternalOptionsMask = 65280i32,

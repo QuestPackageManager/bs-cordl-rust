@@ -444,8 +444,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::HEU_Plugin
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_PluginStorage+DataType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HEU_PluginStorage_DataType {
+    #[default]
     BOOL = 0i32,
     FLOAT = 3i32,
     INT = 1i32,

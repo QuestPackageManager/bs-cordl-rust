@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Configuration+Assemblies+AssemblyVersionCompatibility")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AssemblyVersionCompatibility {
+    #[default]
     SameDomain = 3i32,
     SameMachine = 1i32,
     SameProcess = 2i32,

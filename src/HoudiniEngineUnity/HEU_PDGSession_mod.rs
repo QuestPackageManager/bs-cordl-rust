@@ -447,8 +447,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::HEU_PDGSes
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_PDGSession+EventMessageColor")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HEU_PDGSession_EventMessageColor {
+    #[default]
     DEFAULT = 0i32,
     ERROR = 2i32,
     WARNING = 1i32,

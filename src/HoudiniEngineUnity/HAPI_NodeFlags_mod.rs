@@ -1,7 +1,8 @@
 #[cfg(feature = "HoudiniEngineUnity+HAPI_NodeFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HAPI_NodeFlags {
+    #[default]
     HAPI_NODEFLAGS_ANY = -1i32,
     HAPI_NODEFLAGS_BYPASS = 32i32,
     HAPI_NODEFLAGS_DISPLAY = 1i32,

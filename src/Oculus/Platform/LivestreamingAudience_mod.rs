@@ -1,7 +1,8 @@
 #[cfg(feature = "Oculus+Platform+LivestreamingAudience")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LivestreamingAudience {
+    #[default]
     Friends = 2i32,
     OnlyMe = 3i32,
     Public = 1i32,

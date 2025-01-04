@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Linq+Expressions+MemberBindingType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MemberBindingType {
+    #[default]
     Assignment = 0i32,
     ListBinding = 2i32,
     MemberBinding = 1i32,

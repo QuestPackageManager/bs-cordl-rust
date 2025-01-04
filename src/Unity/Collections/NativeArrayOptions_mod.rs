@@ -1,7 +1,8 @@
 #[cfg(feature = "Unity+Collections+NativeArrayOptions")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NativeArrayOptions {
+    #[default]
     ClearMemory = 1i32,
     UninitializedMemory = 0i32,
 }

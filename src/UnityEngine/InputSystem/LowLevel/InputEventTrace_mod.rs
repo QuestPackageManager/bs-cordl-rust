@@ -974,8 +974,9 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_Enumerator {
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+FileFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputEventTrace_FileFlags {
+    #[default]
     FixedUpdate = 1i32,
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+FileFlags")]

@@ -101,8 +101,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::HEU_TOPNod
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_TOPNodeData+PDGState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HEU_TOPNodeData_PDGState {
+    #[default]
     COOKING = 3i32,
     COOK_COMPLETE = 4i32,
     COOK_FAILED = 5i32,

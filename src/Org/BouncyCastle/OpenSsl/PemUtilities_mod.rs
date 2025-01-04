@@ -99,8 +99,9 @@ for crate::Org::BouncyCastle::OpenSsl::PemUtilities {
 }
 #[cfg(feature = "Org+BouncyCastle+OpenSsl+PemUtilities+PemBaseAlg")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PemUtilities_PemBaseAlg {
+    #[default]
     AES_128 = 0i32,
     AES_192 = 1i32,
     AES_256 = 2i32,
@@ -120,8 +121,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+OpenSsl+PemUtilities+PemMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PemUtilities_PemMode {
+    #[default]
     CBC = 0i32,
     CFB = 1i32,
     ECB = 2i32,

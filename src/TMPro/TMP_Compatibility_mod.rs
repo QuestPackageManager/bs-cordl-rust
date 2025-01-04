@@ -45,8 +45,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_Compatibility {
 }
 #[cfg(feature = "TMPro+TMP_Compatibility+AnchorPositions")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TMP_Compatibility_AnchorPositions {
+    #[default]
     BaseLine = 9i32,
     Bottom = 7i32,
     BottomLeft = 6i32,

@@ -1098,8 +1098,9 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ElementPropert
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+TransitionState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum StylePropertyAnimationSystem_TransitionState {
+    #[default]
     Canceled = 8i32,
     Ended = 4i32,
     None = 0i32,

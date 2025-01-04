@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+StyleSelectorRelationship")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum StyleSelectorRelationship {
+    #[default]
     Child = 1i32,
     Descendent = 2i32,
     None = 0i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Net+NetworkInformation+NetworkInterfaceComponent")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NetworkInterfaceComponent {
+    #[default]
     IPv4 = 0i32,
     IPv6 = 1i32,
 }

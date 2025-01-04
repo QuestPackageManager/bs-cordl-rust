@@ -272,8 +272,9 @@ impl crate::System::Xml::Schema::XsdDuration {
 }
 #[cfg(feature = "System+Xml+Schema+XsdDuration+DurationType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XsdDuration_DurationType {
+    #[default]
     DayTimeDuration = 2i32,
     Duration = 0i32,
     YearMonthDuration = 1i32,
@@ -285,8 +286,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "System+Xml+Schema+XsdDuration+Parts")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XsdDuration_Parts {
+    #[default]
     HasDays = 4i32,
     HasHours = 8i32,
     HasMinutes = 16i32,

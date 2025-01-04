@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+SpriteTileMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SpriteTileMode {
+    #[default]
     Adaptive = 1i32,
     Continuous = 0i32,
 }

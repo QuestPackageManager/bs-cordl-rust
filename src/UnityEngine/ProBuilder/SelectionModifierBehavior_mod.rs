@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+ProBuilder+SelectionModifierBehavior")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SelectionModifierBehavior {
+    #[default]
     Add = 0i32,
     Difference = 2i32,
     Subtract = 1i32,

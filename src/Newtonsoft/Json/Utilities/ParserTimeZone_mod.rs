@@ -1,7 +1,8 @@
 #[cfg(feature = "Newtonsoft+Json+Utilities+ParserTimeZone")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ParserTimeZone {
+    #[default]
     LocalEastOfUtc = 3i32,
     LocalWestOfUtc = 2i32,
     Unspecified = 0i32,

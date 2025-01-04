@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+ValueFixupEnum")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ValueFixupEnum {
+    #[default]
     Array = 1i32,
     Empty = 0i32,
     Header = 2i32,

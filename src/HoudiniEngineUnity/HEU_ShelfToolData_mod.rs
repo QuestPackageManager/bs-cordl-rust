@@ -65,8 +65,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::HEU_ShelfT
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_ShelfToolData+ToolType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HEU_ShelfToolData_ToolType {
+    #[default]
     BATCH = 3i32,
     GENERATOR = 0i32,
     OPERATOR_MULTI = 2i32,

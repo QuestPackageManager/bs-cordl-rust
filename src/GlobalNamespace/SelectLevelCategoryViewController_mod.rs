@@ -185,8 +185,9 @@ for crate::GlobalNamespace::SelectLevelCategoryViewController {
 }
 #[cfg(feature = "SelectLevelCategoryViewController+LevelCategory")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SelectLevelCategoryViewController_LevelCategory {
+    #[default]
     All = 4i32,
     CustomSongs = 2i32,
     Favorites = 3i32,

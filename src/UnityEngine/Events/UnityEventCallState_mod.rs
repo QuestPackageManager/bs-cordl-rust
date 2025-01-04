@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Events+UnityEventCallState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum UnityEventCallState {
+    #[default]
     EditorAndRuntime = 1i32,
     Off = 0i32,
     RuntimeOnly = 2i32,

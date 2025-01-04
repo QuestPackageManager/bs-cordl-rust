@@ -1,7 +1,8 @@
 #[cfg(feature = "System+TokenType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TokenType {
+    #[default]
     Am = 3i32,
     DateWordToken = 10i32,
     DayOfWeekToken = 7i32,

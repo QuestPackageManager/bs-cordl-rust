@@ -505,8 +505,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRSkeleton {
 }
 #[cfg(feature = "OVRSkeleton+BoneId")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRSkeleton_BoneId {
+    #[default]
     Body_Chest = 5i32,
     Body_End = 70i32,
     Body_Head = 7i32,
@@ -854,8 +855,9 @@ impl crate::GlobalNamespace::OVRSkeleton_SkeletonPoseData {
 }
 #[cfg(feature = "OVRSkeleton+SkeletonType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRSkeleton_SkeletonType {
+    #[default]
     Body = 2i32,
     HandLeft = 0i32,
     HandRight = 1i32,

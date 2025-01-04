@@ -725,8 +725,9 @@ for crate::GlobalNamespace::StandardLevelDetailViewController {
 }
 #[cfg(feature = "StandardLevelDetailViewController+ContentType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum StandardLevelDetailViewController_ContentType {
+    #[default]
     Buy = 4i32,
     BuyInfo = 5i32,
     Error = 6i32,

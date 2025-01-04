@@ -1,7 +1,8 @@
 #[cfg(feature = "Newtonsoft+Json+Utilities+PrimitiveTypeCode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PrimitiveTypeCode {
+    #[default]
     BigInteger = 36i32,
     BigIntegerNullable = 37i32,
     Boolean = 4i32,

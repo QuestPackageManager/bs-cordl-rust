@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+InputSystem+PlayerJoinBehavior")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PlayerJoinBehavior {
+    #[default]
     JoinPlayersManually = 2i32,
     JoinPlayersWhenButtonIsPressed = 0i32,
     JoinPlayersWhenJoinActionIsTriggered = 1i32,

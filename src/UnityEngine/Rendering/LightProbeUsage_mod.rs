@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Rendering+LightProbeUsage")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LightProbeUsage {
+    #[default]
     BlendProbes = 1i32,
     CustomProvided = 4i32,
     Off = 0i32,

@@ -199,8 +199,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRMeshRender
 }
 #[cfg(feature = "OVRMeshRenderer+ConfidenceBehavior")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRMeshRenderer_ConfidenceBehavior {
+    #[default]
     None = 0i32,
     ToggleRenderer = 1i32,
 }
@@ -356,8 +357,9 @@ impl crate::GlobalNamespace::OVRMeshRenderer_MeshRendererData {
 }
 #[cfg(feature = "OVRMeshRenderer+SystemGestureBehavior")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRMeshRenderer_SystemGestureBehavior {
+    #[default]
     None = 0i32,
     SwapMaterial = 1i32,
 }

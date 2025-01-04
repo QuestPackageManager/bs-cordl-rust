@@ -99,8 +99,9 @@ for crate::UnityEngine::UIElements::MouseCaptureDispatchingStrategy {
 }
 #[cfg(feature = "UnityEngine+UIElements+MouseCaptureDispatchingStrategy+EventBehavior")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MouseCaptureDispatchingStrategy_EventBehavior {
+    #[default]
     IsCapturable = 1i32,
     IsSentExclusivelyToCapturingElement = 2i32,
     None = 0i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "System+DateTimeKind")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DateTimeKind {
+    #[default]
     Local = 2i32,
     Unspecified = 0i32,
     Utc = 1i32,

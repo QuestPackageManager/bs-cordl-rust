@@ -290,8 +290,9 @@ impl crate::System::Xml::Schema::XsdDateTime {
 }
 #[cfg(feature = "System+Xml+Schema+XsdDateTime+DateTimeTypeCode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XsdDateTime_DateTimeTypeCode {
+    #[default]
     Date = 2i32,
     DateTime = 0i32,
     GDay = 6i32,
@@ -455,8 +456,9 @@ impl crate::System::Xml::Schema::XsdDateTime_Parser {
 }
 #[cfg(feature = "System+Xml+Schema+XsdDateTime+XsdDateTimeKind")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XsdDateTime_XsdDateTimeKind {
+    #[default]
     LocalEastOfZulu = 3i32,
     LocalWestOfZulu = 2i32,
     Unspecified = 0i32,

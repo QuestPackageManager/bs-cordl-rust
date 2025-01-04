@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+ParticleSystemVertexStream")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ParticleSystemVertexStream {
+    #[default]
     AgePercent = 21i32,
     AnimBlend = 8i32,
     AnimFrame = 9i32,

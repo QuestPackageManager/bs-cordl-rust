@@ -1,7 +1,8 @@
 #[cfg(feature = "TMPro+TextOverflowModes")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TextOverflowModes {
+    #[default]
     Ellipsis = 1i32,
     Linked = 6i32,
     Masking = 2i32,

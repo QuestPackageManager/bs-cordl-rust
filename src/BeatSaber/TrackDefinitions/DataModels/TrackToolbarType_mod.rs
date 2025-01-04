@@ -1,7 +1,8 @@
 #[cfg(feature = "BeatSaber+TrackDefinitions+DataModels+TrackToolbarType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TrackToolbarType {
+    #[default]
     BtsCharacterSelection = 5i32,
     CarSelection = 6i32,
     FloatValue = 3i32,

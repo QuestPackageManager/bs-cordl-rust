@@ -1,7 +1,8 @@
 #[cfg(feature = "Mono+Security+Interface+TlsProtocols")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TlsProtocols {
+    #[default]
     ClientMask = 2688i32,
     ServerMask = 1344i32,
     Tls10 = 192i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Security+Cryptography+X509Certificates+X509RevocationMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum X509RevocationMode {
+    #[default]
     NoCheck = 0i32,
     Offline = 2i32,
     Online = 1i32,

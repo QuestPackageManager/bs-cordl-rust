@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Rendering+CullingOptions")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CullingOptions {
+    #[default]
     DisablePerObjectCulling = 32i32,
     ForceEvenIfCameraIsNotActive = 1i32,
     NeedsLighting = 4i32,

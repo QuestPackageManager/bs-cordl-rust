@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+WrapMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum WrapMode {
+    #[default]
     Clamp = 1i32,
     ClampForever = 8i32,
     Default = 0i32,

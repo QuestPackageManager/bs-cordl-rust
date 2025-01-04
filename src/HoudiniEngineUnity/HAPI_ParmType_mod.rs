@@ -1,7 +1,8 @@
 #[cfg(feature = "HoudiniEngineUnity+HAPI_ParmType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HAPI_ParmType {
+    #[default]
     HAPI_PARMTYPE_BUTTON = 3i32,
     HAPI_PARMTYPE_COLOR = 5i32,
     HAPI_PARMTYPE_CONTAINER_END = 12i32,

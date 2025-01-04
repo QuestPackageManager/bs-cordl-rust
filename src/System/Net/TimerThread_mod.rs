@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Net+TimerThread+TimerNode+TimerState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TimerNode_TimerThread_TimerState {
+    #[default]
     Cancelled = 2i32,
     Fired = 1i32,
     Ready = 0i32,

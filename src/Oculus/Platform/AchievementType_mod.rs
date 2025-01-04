@@ -1,7 +1,8 @@
 #[cfg(feature = "Oculus+Platform+AchievementType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AchievementType {
+    #[default]
     Bitfield = 2i32,
     Count = 3i32,
     Simple = 1i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Linq+Expressions+AnalyzeTypeIsResult")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AnalyzeTypeIsResult {
+    #[default]
     KnownAssignable = 2i32,
     KnownFalse = 0i32,
     KnownTrue = 1i32,

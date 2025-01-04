@@ -1227,8 +1227,9 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectToServerParams {
 }
 #[cfg(feature = "LiteNetLibConnectionManager+ConnectionState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LiteNetLibConnectionManager_ConnectionState {
+    #[default]
     Connected = 2i32,
     Connecting = 1i32,
     Disconnecting = 3i32,
@@ -1661,8 +1662,9 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnectionRequest
 }
 #[cfg(feature = "LiteNetLibConnectionManager+NetworkMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LiteNetLibConnectionManager_NetworkMode {
+    #[default]
     Client = 1i32,
     None = 0i32,
     Server = 2i32,

@@ -542,8 +542,9 @@ for crate::UnityEngine::EventSystems::OVRInputModule {
 }
 #[cfg(feature = "UnityEngine+EventSystems+OVRInputModule+InputMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRInputModule_InputMode {
+    #[default]
     Buttons = 1i32,
     Mouse = 0i32,
 }

@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Threading+LockRecursionPolicy")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LockRecursionPolicy {
+    #[default]
     NoRecursion = 0i32,
     SupportsRecursion = 1i32,
 }

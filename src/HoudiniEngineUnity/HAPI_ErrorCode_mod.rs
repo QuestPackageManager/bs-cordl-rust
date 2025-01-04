@@ -1,7 +1,8 @@
 #[cfg(feature = "HoudiniEngineUnity+HAPI_ErrorCode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HAPI_ErrorCode {
+    #[default]
     HAPI_ERRORCODE_ASSET_DEF_NOT_FOUND = 1i32,
     HAPI_ERRORCODE_PYTHON_NODE_ERROR = 2i32,
 }

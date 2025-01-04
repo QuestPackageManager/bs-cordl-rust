@@ -298,8 +298,9 @@ for crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator {
 }
 #[cfg(feature = "AvatarSystemSelectionFlowCoordinator+FinishAction")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AvatarSystemSelectionFlowCoordinator_FinishAction {
+    #[default]
     Back = 1i32,
     Continue = 0i32,
 }

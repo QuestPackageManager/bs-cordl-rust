@@ -2598,8 +2598,9 @@ impl AsMut<crate::System::IDisposable> for crate::Newtonsoft::Json::JsonWriter {
 }
 #[cfg(feature = "Newtonsoft+Json+JsonWriter+State")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum JsonWriter_State {
+    #[default]
     Array = 5i32,
     ArrayStart = 4i32,
     Closed = 8i32,

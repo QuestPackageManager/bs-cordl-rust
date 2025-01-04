@@ -1,7 +1,8 @@
 #[cfg(feature = "OVR+OpenVR+EVRState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EVRState {
+    #[default]
     NotReady = 5i32,
     Off = 0i32,
     Ready = 3i32,

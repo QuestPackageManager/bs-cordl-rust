@@ -1,7 +1,8 @@
 #[cfg(feature = "BeatmapSaveDataVersion3+FxEventType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum FxEventType {
+    #[default]
     Bool = 2i32,
     Float = 1i32,
     Int = 0i32,

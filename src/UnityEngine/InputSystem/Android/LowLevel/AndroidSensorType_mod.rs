@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidSensorType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AndroidSensorType {
+    #[default]
     Accelerometer = 1i32,
     AccelerometerUncalibrated = 35i32,
     AmbientTemperature = 13i32,

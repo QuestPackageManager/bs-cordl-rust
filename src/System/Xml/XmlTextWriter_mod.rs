@@ -788,8 +788,9 @@ impl crate::System::Xml::XmlTextWriter_Namespace {
 }
 #[cfg(feature = "System+Xml+XmlTextWriter+NamespaceState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XmlTextWriter_NamespaceState {
+    #[default]
     DeclaredAndWrittenOut = 3i32,
     DeclaredButNotWrittenOut = 2i32,
     NotDeclaredButInScope = 1i32,
@@ -802,8 +803,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "System+Xml+XmlTextWriter+SpecialAttr")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XmlTextWriter_SpecialAttr {
+    #[default]
     None = 0i32,
     XmlLang = 2i32,
     XmlNs = 3i32,
@@ -816,8 +818,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "System+Xml+XmlTextWriter+State")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XmlTextWriter_State {
+    #[default]
     AttrOnly = 6i32,
     Attribute = 4i32,
     Closed = 9i32,
@@ -880,8 +883,9 @@ impl crate::System::Xml::XmlTextWriter_TagInfo {
 }
 #[cfg(feature = "System+Xml+XmlTextWriter+Token")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XmlTextWriter_Token {
+    #[default]
     Base64 = 10i32,
     CData = 3i32,
     Comment = 2i32,

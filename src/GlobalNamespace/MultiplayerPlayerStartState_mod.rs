@@ -1,7 +1,8 @@
 #[cfg(feature = "MultiplayerPlayerStartState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MultiplayerPlayerStartState {
+    #[default]
     InSync = 0i32,
     Late = 1i32,
 }

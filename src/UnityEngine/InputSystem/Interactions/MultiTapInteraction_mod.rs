@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+InputSystem+Interactions+MultiTapInteraction+TapPhase")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MultiTapInteraction_TapPhase {
+    #[default]
     None = 0i32,
     WaitingForNextPress = 2i32,
     WaitingForNextRelease = 1i32,

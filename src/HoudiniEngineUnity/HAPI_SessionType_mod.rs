@@ -1,7 +1,8 @@
 #[cfg(feature = "HoudiniEngineUnity+HAPI_SessionType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HAPI_SessionType {
+    #[default]
     HAPI_SESSION_CUSTOM1 = 2i32,
     HAPI_SESSION_CUSTOM2 = 3i32,
     HAPI_SESSION_CUSTOM3 = 4i32,

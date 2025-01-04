@@ -1,7 +1,8 @@
 #[cfg(feature = "EnvironmentEffectsFilterPreset")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EnvironmentEffectsFilterPreset {
+    #[default]
     AllEffects = 0i32,
     NoEffects = 10i32,
     StrobeFilter = 1i32,

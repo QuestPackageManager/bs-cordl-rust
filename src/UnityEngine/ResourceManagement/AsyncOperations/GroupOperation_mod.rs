@@ -321,8 +321,9 @@ for crate::UnityEngine::ResourceManagement::AsyncOperations::GroupOperation {
     feature = "UnityEngine+ResourceManagement+AsyncOperations+GroupOperation+GroupOperationSettings"
 )]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GroupOperation_GroupOperationSettings {
+    #[default]
     AllowFailedDependencies = 2i32,
     None = 0i32,
     ReleaseDependenciesOnFailure = 1i32,

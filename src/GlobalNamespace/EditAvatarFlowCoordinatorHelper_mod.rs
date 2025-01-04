@@ -213,8 +213,9 @@ for crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper {
 }
 #[cfg(feature = "EditAvatarFlowCoordinatorHelper+FinishAction")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EditAvatarFlowCoordinatorHelper_FinishAction {
+    #[default]
     Back = 1i32,
     Continue = 0i32,
 }

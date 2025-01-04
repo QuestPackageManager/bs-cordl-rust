@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+ContextType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ContextType {
+    #[default]
     Editor = 1i32,
     Player = 0i32,
 }

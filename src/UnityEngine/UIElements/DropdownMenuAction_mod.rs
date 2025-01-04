@@ -174,8 +174,9 @@ for crate::UnityEngine::UIElements::DropdownMenuAction {
 }
 #[cfg(feature = "UnityEngine+UIElements+DropdownMenuAction+Status")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DropdownMenuAction_Status {
+    #[default]
     Checked = 4i32,
     Disabled = 2i32,
     Hidden = 8i32,

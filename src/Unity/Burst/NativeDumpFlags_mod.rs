@@ -1,7 +1,8 @@
 #[cfg(feature = "Unity+Burst+NativeDumpFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NativeDumpFlags {
+    #[default]
     All = 1021i32,
     Analysis = 64i32,
     Asm = 16i32,

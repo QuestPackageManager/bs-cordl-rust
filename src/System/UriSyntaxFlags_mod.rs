@@ -1,7 +1,8 @@
 #[cfg(feature = "System+UriSyntaxFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum UriSyntaxFlags {
+    #[default]
     AllowAnInternetHost = 3584i32,
     AllowAnyOtherHost = 4096i32,
     AllowDOSPath = 1048576i32,

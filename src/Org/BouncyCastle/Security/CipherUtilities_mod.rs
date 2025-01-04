@@ -133,8 +133,9 @@ for crate::Org::BouncyCastle::Security::CipherUtilities {
 }
 #[cfg(feature = "Org+BouncyCastle+Security+CipherUtilities+CipherAlgorithm")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CipherUtilities_CipherAlgorithm {
+    #[default]
     AES = 0i32,
     ARC4 = 1i32,
     BLOWFISH = 2i32,
@@ -183,8 +184,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Security+CipherUtilities+CipherMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CipherUtilities_CipherMode {
+    #[default]
     CBC = 2i32,
     CCM = 3i32,
     CFB = 4i32,
@@ -208,8 +210,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Security+CipherUtilities+CipherPadding")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CipherUtilities_CipherPadding {
+    #[default]
     ISO10126D2PADDING = 3i32,
     ISO10126PADDING = 2i32,
     ISO10126_2PADDING = 4i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "Oculus+Platform+AbuseReportVideoMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AbuseReportVideoMode {
+    #[default]
     Collect = 1i32,
     Optional = 2i32,
     Skip = 3i32,

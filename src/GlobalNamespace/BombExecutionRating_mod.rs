@@ -73,8 +73,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BombExecution
 }
 #[cfg(feature = "BombExecutionRating+Rating")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BombExecutionRating_Rating {
+    #[default]
     NotGood = 1i32,
     OK = 0i32,
 }

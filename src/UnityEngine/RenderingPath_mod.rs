@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+RenderingPath")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RenderingPath {
+    #[default]
     DeferredLighting = 2i32,
     DeferredShading = 3i32,
     Forward = 1i32,

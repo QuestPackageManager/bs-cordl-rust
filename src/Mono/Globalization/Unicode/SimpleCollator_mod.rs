@@ -915,8 +915,9 @@ for crate::Mono::Globalization::Unicode::SimpleCollator_Escape {
 impl crate::Mono::Globalization::Unicode::SimpleCollator_Escape {}
 #[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator+ExtenderType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SimpleCollator_ExtenderType {
+    #[default]
     Buggy = 4i32,
     Conditional = 3i32,
     None = 0i32,

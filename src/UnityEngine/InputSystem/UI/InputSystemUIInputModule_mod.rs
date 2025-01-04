@@ -1375,8 +1375,9 @@ for crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule {
     feature = "UnityEngine+InputSystem+UI+InputSystemUIInputModule+CursorLockBehavior"
 )]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputSystemUIInputModule_CursorLockBehavior {
+    #[default]
     OutsideScreen = 0i32,
     ScreenCenter = 1i32,
 }

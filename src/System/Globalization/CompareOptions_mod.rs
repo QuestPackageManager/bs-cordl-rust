@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Globalization+CompareOptions")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CompareOptions {
+    #[default]
     IgnoreCase = 1i32,
     IgnoreKanaType = 8i32,
     IgnoreNonSpace = 2i32,

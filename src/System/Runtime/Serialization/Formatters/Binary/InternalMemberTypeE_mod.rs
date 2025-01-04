@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+InternalMemberTypeE")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InternalMemberTypeE {
+    #[default]
     Empty = 0i32,
     Field = 2i32,
     Header = 1i32,

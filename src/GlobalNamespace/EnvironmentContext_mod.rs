@@ -1,7 +1,8 @@
 #[cfg(feature = "EnvironmentContext")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EnvironmentContext {
+    #[default]
     BeatmapEditor = 1i32,
     Gameplay = 0i32,
 }

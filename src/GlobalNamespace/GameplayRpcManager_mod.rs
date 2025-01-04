@@ -1661,8 +1661,9 @@ for crate::GlobalNamespace::GameplayRpcManager_ReturnToMenuRpc {
 }
 #[cfg(feature = "GameplayRpcManager+RpcType")]
 #[repr(u8)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GameplayRpcManager_RpcType {
+    #[default]
     GetGameplaySceneReady = 2u8,
     GetGameplaySongReady = 5u8,
     LevelFinished = 9u8,

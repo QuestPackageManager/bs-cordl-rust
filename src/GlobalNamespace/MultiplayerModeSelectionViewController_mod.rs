@@ -189,8 +189,9 @@ for crate::GlobalNamespace::MultiplayerModeSelectionViewController {
 }
 #[cfg(feature = "MultiplayerModeSelectionViewController+MenuButton")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MultiplayerModeSelectionViewController_MenuButton {
+    #[default]
     CreateServer = 1i32,
     GameBrowser = 3i32,
     JoinWithCode = 2i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Data+AggregateType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AggregateType {
+    #[default]
     Count = 9i32,
     First = 8i32,
     Max = 7i32,

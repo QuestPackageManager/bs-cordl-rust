@@ -1524,8 +1524,9 @@ impl AsMut<crate::System::Runtime::Serialization::ISerializable> for crate::Syst
 }
 #[cfg(feature = "System+Uri+Check")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Uri_Check {
+    #[default]
     BackslashInPath = 16i32,
     DisplayCanonical = 2i32,
     DotSlashAttn = 4i32,
@@ -1542,8 +1543,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "System+Uri+Flags")]
 #[repr(u64)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Uri_Flags {
+    #[default]
     AllUriInfoSet = 2147483648u64,
     AuthorityFound = 1048576u64,
     BackslashInPath = 32768u64,

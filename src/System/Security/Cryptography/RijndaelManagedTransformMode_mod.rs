@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Security+Cryptography+RijndaelManagedTransformMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RijndaelManagedTransformMode {
+    #[default]
     Decrypt = 1i32,
     Encrypt = 0i32,
 }

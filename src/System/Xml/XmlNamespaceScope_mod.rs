@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Xml+XmlNamespaceScope")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XmlNamespaceScope {
+    #[default]
     All = 0i32,
     ExcludeXml = 1i32,
     Local = 2i32,

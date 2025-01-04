@@ -1,7 +1,8 @@
 #[cfg(feature = "Zenject+BindingInheritanceMethods")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BindingInheritanceMethods {
+    #[default]
     CopyDirectOnly = 2i32,
     CopyIntoAll = 1i32,
     MoveDirectOnly = 4i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Net+Sockets+AddressFamily")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AddressFamily {
+    #[default]
     AppleTalk = 16i32,
     Atm = 22i32,
     Banyan = 21i32,

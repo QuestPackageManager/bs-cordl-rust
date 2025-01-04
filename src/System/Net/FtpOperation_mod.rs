@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Net+FtpOperation")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum FtpOperation {
+    #[default]
     AppendFile = 5i32,
     DeleteFile = 6i32,
     DownloadFile = 0i32,

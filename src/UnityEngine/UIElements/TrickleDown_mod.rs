@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+TrickleDown")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TrickleDown {
+    #[default]
     NoTrickleDown = 0i32,
     TrickleDown = 1i32,
 }

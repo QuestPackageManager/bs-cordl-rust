@@ -127,8 +127,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CubemapCaptur
 }
 #[cfg(feature = "CubemapCapture+ImageType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CubemapCapture_ImageType {
+    #[default]
     EXR = 3i32,
     JPEG = 1i32,
     PNG = 0i32,

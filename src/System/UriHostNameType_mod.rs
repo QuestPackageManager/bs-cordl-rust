@@ -1,7 +1,8 @@
 #[cfg(feature = "System+UriHostNameType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum UriHostNameType {
+    #[default]
     Basic = 1i32,
     Dns = 2i32,
     IPv4 = 3i32,

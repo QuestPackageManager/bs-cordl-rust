@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+TerrainUtils+TerrainMapStatusCode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TerrainMapStatusCode {
+    #[default]
     EdgeAlignmentMismatch = 8i32,
     OK = 0i32,
     Overlapping = 1i32,

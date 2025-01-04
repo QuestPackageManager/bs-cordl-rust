@@ -193,8 +193,9 @@ for crate::GlobalNamespace::MultiplayerStatusData {
 }
 #[cfg(feature = "MultiplayerStatusData+AvailabilityStatus")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MultiplayerStatusData_AvailabilityStatus {
+    #[default]
     MaintenanceUpcoming = 1i32,
     Offline = 2i32,
     Online = 0i32,

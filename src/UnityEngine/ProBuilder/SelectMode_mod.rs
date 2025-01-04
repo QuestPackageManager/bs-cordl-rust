@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+ProBuilder+SelectMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SelectMode {
+    #[default]
     Any = 65535i32,
     Edge = 4i32,
     Face = 8i32,

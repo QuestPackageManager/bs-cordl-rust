@@ -324,8 +324,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::WebConnectionTunn
 }
 #[cfg(feature = "System+Net+WebConnectionTunnel+NtlmAuthState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum WebConnectionTunnel_NtlmAuthState {
+    #[default]
     Challenge = 1i32,
     None = 0i32,
     Response = 2i32,

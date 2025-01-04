@@ -184,8 +184,9 @@ for crate::System::Xml::Schema::XmlSchemaParticle {
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaParticle+Occurs")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XmlSchemaParticle_Occurs {
+    #[default]
     Max = 2i32,
     Min = 1i32,
     None = 0i32,

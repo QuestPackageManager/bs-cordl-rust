@@ -216,8 +216,9 @@ for crate::UnityEngine::UI::ContentSizeFitter {
 }
 #[cfg(feature = "UnityEngine+UI+ContentSizeFitter+FitMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ContentSizeFitter_FitMode {
+    #[default]
     MinSize = 1i32,
     PreferredSize = 2i32,
     Unconstrained = 0i32,

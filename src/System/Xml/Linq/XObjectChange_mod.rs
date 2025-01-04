@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Xml+Linq+XObjectChange")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XObjectChange {
+    #[default]
     Add = 0i32,
     Name = 2i32,
     Remove = 1i32,

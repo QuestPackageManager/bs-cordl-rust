@@ -1,7 +1,8 @@
 #[cfg(feature = "Newtonsoft+Json+ReadType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ReadType {
+    #[default]
     Read = 0i32,
     ReadAsBoolean = 9i32,
     ReadAsBytes = 3i32,

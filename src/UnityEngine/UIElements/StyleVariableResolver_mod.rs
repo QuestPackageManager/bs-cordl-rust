@@ -325,8 +325,9 @@ for crate::UnityEngine::UIElements::StyleVariableResolver_ResolveContext {
 impl crate::UnityEngine::UIElements::StyleVariableResolver_ResolveContext {}
 #[cfg(feature = "UnityEngine+UIElements+StyleVariableResolver+Result")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum StyleVariableResolver_Result {
+    #[default]
     Invalid = 1i32,
     NotFound = 2i32,
     Valid = 0i32,

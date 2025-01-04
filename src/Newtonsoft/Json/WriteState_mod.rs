@@ -1,7 +1,8 @@
 #[cfg(feature = "Newtonsoft+Json+WriteState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum WriteState {
+    #[default]
     Array = 3i32,
     Closed = 1i32,
     Constructor = 4i32,

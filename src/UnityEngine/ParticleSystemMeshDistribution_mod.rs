@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+ParticleSystemMeshDistribution")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ParticleSystemMeshDistribution {
+    #[default]
     NonUniformRandom = 1i32,
     UniformRandom = 0i32,
 }

@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+TextGenerationError")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TextGenerationError {
+    #[default]
     CustomSizeOnNonDynamicFont = 1i32,
     CustomStyleOnNonDynamicFont = 2i32,
     NoFont = 4i32,

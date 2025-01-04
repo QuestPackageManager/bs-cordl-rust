@@ -127,8 +127,9 @@ for crate::GlobalNamespace::OculusXPlatformAccessTokenRequestOperation {
     feature = "OculusXPlatformAccessTokenRequestOperation+OculusTokenRequestOperationState"
 )]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OculusXPlatformAccessTokenRequestOperation_OculusTokenRequestOperationState {
+    #[default]
     Failed = 3i32,
     NotStarted = 0i32,
     Requesting = 1i32,

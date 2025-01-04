@@ -445,8 +445,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Environment {
 }
 #[cfg(feature = "System+Environment+SpecialFolder")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Environment_SpecialFolder {
+    #[default]
     AdminTools = 48i32,
     ApplicationData = 26i32,
     CDBurning = 59i32,
@@ -501,8 +502,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "System+Environment+SpecialFolderOption")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Environment_SpecialFolderOption {
+    #[default]
     Create = 32768i32,
     DoNotVerify = 16384i32,
     None = 0i32,

@@ -4727,8 +4727,9 @@ impl crate::UnityEngine::UIElements::VisualElement_Hierarchy {
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualElement+MeasureMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum VisualElement_MeasureMode {
+    #[default]
     AtMost = 2i32,
     Exactly = 1i32,
     Undefined = 0i32,
@@ -4741,8 +4742,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+VisualElement+RenderTargetMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum VisualElement_RenderTargetMode {
+    #[default]
     GammaToLinear = 3i32,
     LinearToGamma = 2i32,
     NoColorConversion = 1i32,

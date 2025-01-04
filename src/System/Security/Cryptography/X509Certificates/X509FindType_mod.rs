@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Security+Cryptography+X509Certificates+X509FindType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum X509FindType {
+    #[default]
     FindByApplicationPolicy = 10i32,
     FindByCertificatePolicy = 11i32,
     FindByExtension = 12i32,

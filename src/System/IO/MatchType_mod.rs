@@ -1,7 +1,8 @@
 #[cfg(feature = "System+IO+MatchType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MatchType {
+    #[default]
     Simple = 0i32,
     Win32 = 1i32,
 }

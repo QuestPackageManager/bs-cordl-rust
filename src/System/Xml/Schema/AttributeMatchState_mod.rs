@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Xml+Schema+AttributeMatchState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AttributeMatchState {
+    #[default]
     AnyAttributeLax = 4i32,
     AnyAttributeSkip = 5i32,
     AnyIdAttributeFound = 1i32,

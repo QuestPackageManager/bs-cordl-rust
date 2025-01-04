@@ -263,8 +263,9 @@ for crate::GlobalNamespace::ListLogger_LogMessage {
 }
 #[cfg(feature = "ListLogger+LogType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ListLogger_LogType {
+    #[default]
     Error = 2i32,
     Exception = 3i32,
     Info = 0i32,

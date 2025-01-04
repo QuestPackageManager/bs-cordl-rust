@@ -3817,8 +3817,9 @@ impl crate::TMPro::TMP_Text_TextBackingContainer {
 }
 #[cfg(feature = "TMPro+TMP_Text+TextInputSources")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TMP_Text_TextInputSources {
+    #[default]
     SetText = 1i32,
     SetTextArray = 2i32,
     TextInputBox = 0i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "BeatmapSaveDataCommon+NoteColorType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NoteColorType {
+    #[default]
     ColorA = 0i32,
     ColorB = 1i32,
 }

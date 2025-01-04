@@ -60,8 +60,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ProBuilder::Clipp
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Clipping+OutCode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Clipping_OutCode {
+    #[default]
     Bottom = 4i32,
     Inside = 0i32,
     Left = 1i32,

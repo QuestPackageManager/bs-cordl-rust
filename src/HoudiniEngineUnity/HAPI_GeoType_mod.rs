@@ -1,7 +1,8 @@
 #[cfg(feature = "HoudiniEngineUnity+HAPI_GeoType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HAPI_GeoType {
+    #[default]
     HAPI_GEOTYPE_CURVE = 3i32,
     HAPI_GEOTYPE_DEFAULT = 0i32,
     HAPI_GEOTYPE_INPUT = 2i32,

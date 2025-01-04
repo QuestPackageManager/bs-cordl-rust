@@ -158,8 +158,9 @@ for crate::UnityEngine::InputSystem::Controls::AxisControl {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Controls+AxisControl+Clamp")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AxisControl_Clamp {
+    #[default]
     AfterNormalize = 2i32,
     BeforeNormalize = 1i32,
     None = 0i32,

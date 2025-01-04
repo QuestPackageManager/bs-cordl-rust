@@ -1,7 +1,8 @@
 #[cfg(feature = "System+ParseFailureKind")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ParseFailureKind {
+    #[default]
     ArgumentNull = 1i32,
     Format = 2i32,
     FormatBadDateTimeCalendar = 7i32,

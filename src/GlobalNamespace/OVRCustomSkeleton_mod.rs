@@ -149,8 +149,9 @@ for crate::GlobalNamespace::OVRCustomSkeleton {
 }
 #[cfg(feature = "OVRCustomSkeleton+RetargetingType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRCustomSkeleton_RetargetingType {
+    #[default]
     OculusSkeleton = 0i32,
 }
 #[cfg(feature = "OVRCustomSkeleton+RetargetingType")]

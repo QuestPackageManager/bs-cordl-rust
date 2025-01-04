@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+DrivenTransformProperties")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DrivenTransformProperties {
+    #[default]
     All = -1i32,
     AnchorMax = 3072i32,
     AnchorMaxX = 1024i32,

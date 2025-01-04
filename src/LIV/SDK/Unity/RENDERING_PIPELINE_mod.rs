@@ -1,7 +1,8 @@
 #[cfg(feature = "LIV+SDK+Unity+RENDERING_PIPELINE")]
 #[repr(u32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RENDERING_PIPELINE {
+    #[default]
     DEFERRED = 84148994u32,
     FORWARD = 67305985u32,
     HIGH_DEFINITION = 5u32,

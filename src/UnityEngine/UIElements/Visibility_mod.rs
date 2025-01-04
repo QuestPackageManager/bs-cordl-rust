@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+Visibility")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Visibility {
+    #[default]
     Hidden = 1i32,
     Visible = 0i32,
 }

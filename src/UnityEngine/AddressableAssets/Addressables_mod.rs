@@ -1749,8 +1749,9 @@ for crate::UnityEngine::AddressableAssets::Addressables {
 }
 #[cfg(feature = "UnityEngine+AddressableAssets+Addressables+MergeMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Addressables_MergeMode {
+    #[default]
     Intersection = 2i32,
     None = 0i32,
     Union = 1i32,

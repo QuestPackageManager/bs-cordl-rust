@@ -222,8 +222,9 @@ for crate::GlobalNamespace::LevelPackDetailViewController {
 }
 #[cfg(feature = "LevelPackDetailViewController+ContentType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LevelPackDetailViewController_ContentType {
+    #[default]
     Buyable = 2i32,
     Error = 3i32,
     Loading = 0i32,

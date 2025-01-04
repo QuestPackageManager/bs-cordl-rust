@@ -1,7 +1,8 @@
 #[cfg(feature = "Mono+Security+Protocol+Ntlm+NtlmFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NtlmFlags {
+    #[default]
     Negotiate128 = 536870912i32,
     Negotiate56 = -2147483648i32,
     NegotiateAlwaysSign = 32768i32,

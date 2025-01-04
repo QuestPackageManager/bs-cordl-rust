@@ -567,8 +567,9 @@ for crate::UnityEngine::InputSystem::InputBinding {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputBinding+DisplayStringOptions")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputBinding_DisplayStringOptions {
+    #[default]
     DontIncludeInteractions = 4i32,
     DontOmitDevice = 2i32,
     DontUseShortDisplayNames = 1i32,
@@ -582,8 +583,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+InputBinding+Flags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputBinding_Flags {
+    #[default]
     Composite = 4i32,
     None = 0i32,
     PartOfComposite = 8i32,
@@ -595,8 +597,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+InputBinding+MatchOptions")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputBinding_MatchOptions {
+    #[default]
     EmptyGroupMatchesAny = 1i32,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputBinding+MatchOptions")]

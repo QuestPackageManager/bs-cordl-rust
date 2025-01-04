@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+StyleSelectorType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum StyleSelectorType {
+    #[default]
     Class = 3i32,
     _cordl_ID = 6i32,
     Predicate = 7i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+TextCore+Text+TextWrappingMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TextWrappingMode {
+    #[default]
     NoWrap = 0i32,
     Normal = 1i32,
     PreserveWhitespace = 2i32,

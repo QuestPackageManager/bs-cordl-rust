@@ -1,7 +1,8 @@
 #[cfg(feature = "OVR+OpenVR+ETrackedDeviceProperty")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ETrackedDeviceProperty {
+    #[default]
     Prop_AllWirelessDongleDescriptions_String = 1008i32,
     Prop_AttachedDeviceId_String = 3000i32,
     Prop_AudioBridgeFirmwareVersion_Uint64 = 2061i32,

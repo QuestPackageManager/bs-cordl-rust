@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Experimental+Rendering+FormatUsage")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum FormatUsage {
+    #[default]
     Blend = 5i32,
     GetPixels = 6i32,
     Linear = 1i32,

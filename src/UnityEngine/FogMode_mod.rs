@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+FogMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum FogMode {
+    #[default]
     Exponential = 2i32,
     ExponentialSquared = 3i32,
     Linear = 1i32,

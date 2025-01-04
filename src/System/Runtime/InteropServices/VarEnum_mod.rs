@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Runtime+InteropServices+VarEnum")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum VarEnum {
+    #[default]
     VT_ARRAY = 8192i32,
     VT_BLOB = 65i32,
     VT_BLOB_OBJECT = 70i32,

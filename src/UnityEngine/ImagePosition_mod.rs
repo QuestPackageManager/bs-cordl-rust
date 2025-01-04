@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+ImagePosition")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ImagePosition {
+    #[default]
     ImageAbove = 1i32,
     ImageLeft = 0i32,
     ImageOnly = 2i32,

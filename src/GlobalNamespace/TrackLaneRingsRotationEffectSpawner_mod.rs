@@ -106,8 +106,9 @@ for crate::GlobalNamespace::TrackLaneRingsRotationEffectSpawner {
 }
 #[cfg(feature = "TrackLaneRingsRotationEffectSpawner+RotationStepType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TrackLaneRingsRotationEffectSpawner_RotationStepType {
+    #[default]
     MaxOr0 = 2i32,
     Range = 1i32,
     Range0ToMax = 0i32,

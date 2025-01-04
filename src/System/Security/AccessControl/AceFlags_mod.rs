@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Security+AccessControl+AceFlags")]
 #[repr(u8)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AceFlags {
+    #[default]
     AuditFlags = 192u8,
     ContainerInherit = 2u8,
     FailedAccess = 128u8,

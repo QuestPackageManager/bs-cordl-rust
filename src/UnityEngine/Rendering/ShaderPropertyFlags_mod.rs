@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Rendering+ShaderPropertyFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ShaderPropertyFlags {
+    #[default]
     Gamma = 32i32,
     HDR = 16i32,
     HideInInspector = 1i32,

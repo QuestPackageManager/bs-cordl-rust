@@ -1,7 +1,8 @@
 #[cfg(feature = "HardwareCategory")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HardwareCategory {
+    #[default]
     PlayStation4 = 5i32,
     PlayStation4Pro = 6i32,
     PlayStation5 = 7i32,

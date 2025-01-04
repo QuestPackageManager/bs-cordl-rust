@@ -124,8 +124,9 @@ impl AsMut<
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_AttributeData+AttributeState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HEU_AttributeData_AttributeState {
+    #[default]
     INVALID = 0i32,
     LOCAL_DIRTY = 2i32,
     SYNCED = 1i32,
@@ -138,8 +139,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_AttributeData+AttributeType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HEU_AttributeData_AttributeType {
+    #[default]
     BOOL = 0i32,
     FLOAT = 2i32,
     INT = 1i32,

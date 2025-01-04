@@ -1,7 +1,8 @@
 #[cfg(feature = "BasicBeatmapEventType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BasicBeatmapEventType {
+    #[default]
     BpmChange = 100i32,
     Event0 = 0i32,
     Event1 = 1i32,

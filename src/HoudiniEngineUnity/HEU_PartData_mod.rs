@@ -1253,8 +1253,9 @@ impl AsMut<
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_PartData+PartOutputType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HEU_PartData_PartOutputType {
+    #[default]
     CURVE = 3i32,
     INSTANCER = 4i32,
     MESH = 1i32,

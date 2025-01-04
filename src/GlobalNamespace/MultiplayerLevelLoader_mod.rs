@@ -224,8 +224,9 @@ for crate::GlobalNamespace::MultiplayerLevelLoader {
 }
 #[cfg(feature = "MultiplayerLevelLoader+MultiplayerBeatmapLoaderState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MultiplayerLevelLoader_MultiplayerBeatmapLoaderState {
+    #[default]
     LoadingBeatmap = 1i32,
     NotLoading = 0i32,
     WaitingForCountdown = 2i32,

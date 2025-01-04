@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Yoga+YogaFlexDirection")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum YogaFlexDirection {
+    #[default]
     Column = 0i32,
     ColumnReverse = 1i32,
     Row = 2i32,

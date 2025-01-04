@@ -747,8 +747,9 @@ for crate::GlobalNamespace::PackDefinitionSO_LevelProductPacks {
 }
 #[cfg(feature = "PackDefinitionSO+Tags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PackDefinitionSO_Tags {
+    #[default]
     BuiltIn = 1i32,
     DLC = 2i32,
     Hidden = 0i32,

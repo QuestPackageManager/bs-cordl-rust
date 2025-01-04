@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Diagnostics+Tracing+EventKeywords")]
 #[repr(i64)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EventKeywords {
+    #[default]
     All = -1i64,
     AuditFailure = 4503599627370496i64,
     AuditSuccess = 9007199254740992i64,

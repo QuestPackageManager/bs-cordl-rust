@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+InputSystem+PlayerNotifications")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PlayerNotifications {
+    #[default]
     BroadcastMessages = 1i32,
     InvokeCSharpEvents = 3i32,
     InvokeUnityEvents = 2i32,

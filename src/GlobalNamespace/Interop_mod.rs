@@ -117,8 +117,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::Interop {
 }
 #[cfg(feature = "Interop+Error")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Interop_Error {
+    #[default]
     _cordl_E2BIG = 65537i32,
     _cordl_EACCES = 65538i32,
     _cordl_EADDRINUSE = 65539i32,
@@ -658,8 +659,9 @@ for crate::GlobalNamespace::Sys_Interop_FileStatus {
 impl crate::GlobalNamespace::Sys_Interop_FileStatus {}
 #[cfg(feature = "Interop+Sys+FileStatusFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Sys_Interop_FileStatusFlags {
+    #[default]
     HasBirthTime = 1i32,
     None = 0i32,
 }
@@ -670,8 +672,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "Interop+Sys+NodeType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Sys_Interop_NodeType {
+    #[default]
     DT_BLK = 6i32,
     DT_CHR = 2i32,
     DT_DIR = 4i32,
@@ -689,8 +692,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "Interop+Sys+Permissions")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Sys_Interop_Permissions {
+    #[default]
     Mask = 511i32,
     S_IRGRP = 32i32,
     S_IROTH = 4i32,

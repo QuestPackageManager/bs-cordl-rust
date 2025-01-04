@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+UIR+RenderDataFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RenderDataFlags {
+    #[default]
     IsIgnoringDynamicColorHint = 1i32,
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+RenderDataFlags")]

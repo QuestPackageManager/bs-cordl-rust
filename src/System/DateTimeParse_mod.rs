@@ -877,8 +877,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::DateTimeParse {
 }
 #[cfg(feature = "System+DateTimeParse+DS")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DateTimeParse_DS {
+    #[default]
     BEGIN = 0i32,
     DX_DS = 26i32,
     DX_DSN = 27i32,
@@ -926,8 +927,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "System+DateTimeParse+DTT")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DateTimeParse_DTT {
+    #[default]
     DayOfWeek = 11i32,
     End = 0i32,
     Era = 16i32,
@@ -1029,8 +1031,9 @@ for crate::System::DateTimeParse_MatchNumberDelegate {
 }
 #[cfg(feature = "System+DateTimeParse+TM")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DateTimeParse_TM {
+    #[default]
     AM = 0i32,
     NotSet = -1i32,
     PM = 1i32,

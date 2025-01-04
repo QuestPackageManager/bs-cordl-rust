@@ -296,8 +296,9 @@ for crate::UnityEngine::Rendering::SupportedRenderingFeatures {
     feature = "UnityEngine+Rendering+SupportedRenderingFeatures+LightmapMixedBakeModes"
 )]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SupportedRenderingFeatures_LightmapMixedBakeModes {
+    #[default]
     IndirectOnly = 1i32,
     None = 0i32,
     Shadowmask = 4i32,
@@ -313,8 +314,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+Rendering+SupportedRenderingFeatures+ReflectionProbeModes")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SupportedRenderingFeatures_ReflectionProbeModes {
+    #[default]
     None = 0i32,
     Rotation = 1i32,
 }

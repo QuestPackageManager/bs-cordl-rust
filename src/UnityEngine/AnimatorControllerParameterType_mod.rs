@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+AnimatorControllerParameterType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AnimatorControllerParameterType {
+    #[default]
     Bool = 4i32,
     Float = 1i32,
     Int = 3i32,

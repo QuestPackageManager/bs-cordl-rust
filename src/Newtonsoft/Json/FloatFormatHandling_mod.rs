@@ -1,7 +1,8 @@
 #[cfg(feature = "Newtonsoft+Json+FloatFormatHandling")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum FloatFormatHandling {
+    #[default]
     DefaultValue = 2i32,
     String = 0i32,
     Symbol = 1i32,

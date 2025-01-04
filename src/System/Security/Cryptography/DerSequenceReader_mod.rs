@@ -442,8 +442,9 @@ for crate::System::Security::Cryptography::DerSequenceReader {
 }
 #[cfg(feature = "System+Security+Cryptography+DerSequenceReader+DerTag")]
 #[repr(u8)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DerSequenceReader_DerTag {
+    #[default]
     BMPString = 30u8,
     BitString = 3u8,
     Boolean = 1u8,

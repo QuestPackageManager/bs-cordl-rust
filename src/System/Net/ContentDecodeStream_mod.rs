@@ -125,8 +125,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::ContentDecodeStre
 }
 #[cfg(feature = "System+Net+ContentDecodeStream+Mode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ContentDecodeStream_Mode {
+    #[default]
     Deflate = 1i32,
     GZip = 0i32,
 }

@@ -129,8 +129,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BloomPrePass 
 }
 #[cfg(feature = "BloomPrePass+Mode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BloomPrePass_Mode {
+    #[default]
     RenderAndSetData = 0i32,
     SetDataOnly = 1i32,
 }

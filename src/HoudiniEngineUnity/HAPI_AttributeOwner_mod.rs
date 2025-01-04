@@ -1,7 +1,8 @@
 #[cfg(feature = "HoudiniEngineUnity+HAPI_AttributeOwner")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HAPI_AttributeOwner {
+    #[default]
     HAPI_ATTROWNER_DETAIL = 3i32,
     HAPI_ATTROWNER_INVALID = -1i32,
     HAPI_ATTROWNER_MAX = 4i32,

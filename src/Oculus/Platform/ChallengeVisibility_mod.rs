@@ -1,7 +1,8 @@
 #[cfg(feature = "Oculus+Platform+ChallengeVisibility")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ChallengeVisibility {
+    #[default]
     InviteOnly = 1i32,
     Private = 3i32,
     Public = 2i32,

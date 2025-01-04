@@ -1,7 +1,8 @@
 #[cfg(feature = "System+IO+SearchTarget")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SearchTarget {
+    #[default]
     Both = 3i32,
     Directories = 2i32,
     Files = 1i32,

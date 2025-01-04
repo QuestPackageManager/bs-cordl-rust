@@ -93,8 +93,9 @@ for crate::UnityEngine::InputSystem::Composites::AxisComposite {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Composites+AxisComposite+WhichSideWins")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AxisComposite_WhichSideWins {
+    #[default]
     Negative = 2i32,
     Neither = 0i32,
     Positive = 1i32,

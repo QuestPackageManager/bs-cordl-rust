@@ -977,8 +977,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Scrol
 }
 #[cfg(feature = "UnityEngine+UIElements+ScrollView+NestedInteractionKind")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ScrollView_NestedInteractionKind {
+    #[default]
     Default = 0i32,
     ForwardScrolling = 2i32,
     StopScrolling = 1i32,
@@ -991,8 +992,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+ScrollView+TouchScrollBehavior")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ScrollView_TouchScrollBehavior {
+    #[default]
     Clamped = 2i32,
     Elastic = 1i32,
     Unrestricted = 0i32,
@@ -1005,8 +1007,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+ScrollView+TouchScrollingResult")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ScrollView_TouchScrollingResult {
+    #[default]
     Apply = 0i32,
     Block = 2i32,
     Forward = 1i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Data+SqlTypes+EComparison")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EComparison {
+    #[default]
     EQ = 2i32,
     GE = 3i32,
     GT = 4i32,

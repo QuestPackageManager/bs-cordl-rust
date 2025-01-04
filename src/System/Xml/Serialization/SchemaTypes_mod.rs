@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Xml+Serialization+SchemaTypes")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SchemaTypes {
+    #[default]
     Array = 3i32,
     Class = 4i32,
     Enum = 2i32,

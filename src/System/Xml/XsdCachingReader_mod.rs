@@ -650,8 +650,9 @@ impl AsMut<crate::System::Xml::IXmlLineInfo> for crate::System::Xml::XsdCachingR
 }
 #[cfg(feature = "System+Xml+XsdCachingReader+CachingReaderState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XsdCachingReader_CachingReaderState {
+    #[default]
     Error = 5i32,
     Init = 1i32,
     None = 0i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "OVR+OpenVR+ECollisionBoundsStyle")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ECollisionBoundsStyle {
+    #[default]
     COLLISION_BOUNDS_STYLE_ADVANCED = 3i32,
     COLLISION_BOUNDS_STYLE_BEGINNER = 0i32,
     COLLISION_BOUNDS_STYLE_COUNT = 5i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "LightRotationDirection")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LightRotationDirection {
+    #[default]
     Automatic = 0i32,
     Clockwise = 1i32,
     Counterclockwise = 2i32,

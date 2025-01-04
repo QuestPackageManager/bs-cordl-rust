@@ -1,7 +1,8 @@
 #[cfg(feature = "OVR+OpenVR+EVRComponentProperty")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EVRComponentProperty {
+    #[default]
     IsPressed = 8i32,
     IsScrolled = 16i32,
     IsStatic = 1i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "System+IO+Compression+CompressionLevel")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CompressionLevel {
+    #[default]
     Fastest = 1i32,
     NoCompression = 2i32,
     Optimal = 0i32,

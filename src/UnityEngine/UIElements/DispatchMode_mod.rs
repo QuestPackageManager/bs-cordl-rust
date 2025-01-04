@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+DispatchMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DispatchMode {
+    #[default]
     Default = 1i32,
     Immediate = 2i32,
 }

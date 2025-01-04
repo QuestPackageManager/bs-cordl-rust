@@ -1,7 +1,8 @@
 #[cfg(feature = "TMPro+TextElementType")]
 #[repr(u8)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TextElementType {
+    #[default]
     Character = 1u8,
     Sprite = 2u8,
 }

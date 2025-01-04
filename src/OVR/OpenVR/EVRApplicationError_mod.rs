@@ -1,7 +1,8 @@
 #[cfg(feature = "OVR+OpenVR+EVRApplicationError")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EVRApplicationError {
+    #[default]
     AppKeyAlreadyExists = 100i32,
     ApplicationAlreadyRunning = 106i32,
     ApplicationAlreadyStarting = 110i32,

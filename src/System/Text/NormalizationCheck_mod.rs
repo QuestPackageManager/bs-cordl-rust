@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Text+NormalizationCheck")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NormalizationCheck {
+    #[default]
     Maybe = 2i32,
     No = 1i32,
     Yes = 0i32,

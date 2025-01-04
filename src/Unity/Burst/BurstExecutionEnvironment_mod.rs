@@ -1,7 +1,8 @@
 #[cfg(feature = "Unity+Burst+BurstExecutionEnvironment")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BurstExecutionEnvironment {
+    #[default]
     Default = 0i32,
     Deterministic = 1i32,
 }

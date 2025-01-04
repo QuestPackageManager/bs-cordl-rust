@@ -1,7 +1,8 @@
 #[cfg(feature = "Oculus+Platform+VoipMuteState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum VoipMuteState {
+    #[default]
     Muted = 1i32,
     Unknown = 0i32,
     Unmuted = 2i32,

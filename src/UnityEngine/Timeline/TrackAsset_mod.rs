@@ -1403,8 +1403,9 @@ impl crate::UnityEngine::Timeline::TrackAsset_TransientBuildData {
 }
 #[cfg(feature = "UnityEngine+Timeline+TrackAsset+Versions")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TrackAsset_Versions {
+    #[default]
     AnimatedTrackProperties = 3i32,
     Initial = 0i32,
     RootMotionUpgrade = 2i32,

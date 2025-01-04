@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+UIR+CommandType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CommandType {
+    #[default]
     BlitToPreviousRT = 9i32,
     Draw = 0i32,
     Immediate = 2i32,

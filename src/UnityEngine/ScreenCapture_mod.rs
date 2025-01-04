@@ -54,8 +54,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ScreenCapture {
 }
 #[cfg(feature = "UnityEngine+ScreenCapture+StereoScreenCaptureMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ScreenCapture_StereoScreenCaptureMode {
+    #[default]
     BothEyes = 3i32,
     LeftEye = 1i32,
     RightEye = 2i32,

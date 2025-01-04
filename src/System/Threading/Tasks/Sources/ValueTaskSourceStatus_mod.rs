@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Threading+Tasks+Sources+ValueTaskSourceStatus")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ValueTaskSourceStatus {
+    #[default]
     Canceled = 3i32,
     Faulted = 2i32,
     Pending = 0i32,

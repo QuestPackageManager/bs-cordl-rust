@@ -1,7 +1,8 @@
 #[cfg(feature = "ENet+EventType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EventType {
+    #[default]
     Connect = 1i32,
     Disconnect = 2i32,
     None = 0i32,

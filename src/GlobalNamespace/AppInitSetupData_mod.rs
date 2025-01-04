@@ -56,8 +56,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::AppInitSetupD
 }
 #[cfg(feature = "AppInitSetupData+RunMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AppInitSetupData_RunMode {
+    #[default]
     Game = 0i32,
     PlayTest = 1i32,
 }

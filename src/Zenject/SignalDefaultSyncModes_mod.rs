@@ -1,7 +1,8 @@
 #[cfg(feature = "Zenject+SignalDefaultSyncModes")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SignalDefaultSyncModes {
+    #[default]
     Asynchronous = 1i32,
     Synchronous = 0i32,
 }

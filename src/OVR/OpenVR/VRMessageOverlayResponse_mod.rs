@@ -1,7 +1,8 @@
 #[cfg(feature = "OVR+OpenVR+VRMessageOverlayResponse")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum VRMessageOverlayResponse {
+    #[default]
     ApplicationQuit = 6i32,
     ButtonPress_0 = 0i32,
     ButtonPress_1 = 1i32,

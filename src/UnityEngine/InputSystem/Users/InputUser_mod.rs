@@ -1027,8 +1027,9 @@ for crate::UnityEngine::InputSystem::Users::InputUser_UserData {
 impl crate::UnityEngine::InputSystem::Users::InputUser_UserData {}
 #[cfg(feature = "UnityEngine+InputSystem+Users+InputUser+UserFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputUser_UserFlags {
+    #[default]
     BindToAllDevices = 1i32,
     UserAccountSelectionInProgress = 2i32,
 }

@@ -231,8 +231,9 @@ for crate::GlobalNamespace::MissionObjectiveChecker {
 }
 #[cfg(feature = "MissionObjectiveChecker+Status")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MissionObjectiveChecker_Status {
+    #[default]
     Cleared = 3i32,
     Failed = 4i32,
     None = 0i32,

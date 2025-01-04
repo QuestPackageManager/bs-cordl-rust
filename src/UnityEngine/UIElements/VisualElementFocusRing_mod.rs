@@ -264,8 +264,9 @@ for crate::UnityEngine::UIElements::VisualElementFocusRing {
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualElementFocusRing+DefaultFocusOrder")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum VisualElementFocusRing_DefaultFocusOrder {
+    #[default]
     ChildOrder = 0i32,
     PositionXY = 1i32,
     PositionYX = 2i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "OVR+OpenVR+EVRScreenshotPropertyFilenames")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EVRScreenshotPropertyFilenames {
+    #[default]
     Preview = 0i32,
     VR = 1i32,
 }

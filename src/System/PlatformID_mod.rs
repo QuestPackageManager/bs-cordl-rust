@@ -1,7 +1,8 @@
 #[cfg(feature = "System+PlatformID")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PlatformID {
+    #[default]
     MacOSX = 6i32,
     Unix = 4i32,
     Win32NT = 2i32,

@@ -41,8 +41,9 @@ for crate::GlobalNamespace::OVRManager_OVRTelemetryConstants_AnnotationTypes {
 }
 #[cfg(feature = "OVRTelemetryConstants+OVRManager+ConsentOrigins")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRManager_OVRTelemetryConstants_ConsentOrigins {
+    #[default]
     Legacy = 2i32,
     Popup = 0i32,
     Settings = 1i32,

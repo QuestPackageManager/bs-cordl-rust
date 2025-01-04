@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+ParticleSystemBakeMeshOptions")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ParticleSystemBakeMeshOptions {
+    #[default]
     BakePosition = 2i32,
     BakeRotationAndScale = 1i32,
     Default = 0i32,

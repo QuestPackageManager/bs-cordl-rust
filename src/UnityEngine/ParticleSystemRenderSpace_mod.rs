@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+ParticleSystemRenderSpace")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ParticleSystemRenderSpace {
+    #[default]
     Facing = 3i32,
     Local = 2i32,
     Velocity = 4i32,

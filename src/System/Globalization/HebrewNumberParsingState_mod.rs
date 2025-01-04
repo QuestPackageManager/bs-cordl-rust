@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Globalization+HebrewNumberParsingState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HebrewNumberParsingState {
+    #[default]
     ContinueParsing = 3i32,
     FoundEndOfHebrewNumber = 2i32,
     InvalidHebrewNumber = 0i32,

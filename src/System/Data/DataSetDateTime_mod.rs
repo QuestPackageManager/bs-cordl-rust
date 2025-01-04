@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Data+DataSetDateTime")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DataSetDateTime {
+    #[default]
     Local = 1i32,
     Unspecified = 2i32,
     UnspecifiedLocal = 3i32,

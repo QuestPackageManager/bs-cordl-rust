@@ -2,8 +2,9 @@
     feature = "System+Security+Cryptography+X509Certificates+X500DistinguishedNameFlags"
 )]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum X500DistinguishedNameFlags {
+    #[default]
     DoNotUsePlusSign = 32i32,
     DoNotUseQuotes = 64i32,
     ForceUTF8Encoding = 16384i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "Oculus+Platform+PermissionGrantStatus")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PermissionGrantStatus {
+    #[default]
     Blocked = 3i32,
     Denied = 2i32,
     Granted = 1i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Bindings+StaticAccessorType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum StaticAccessorType {
+    #[default]
     Arrow = 1i32,
     ArrowWithDefaultReturnIfNull = 3i32,
     Dot = 0i32,

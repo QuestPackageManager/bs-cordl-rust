@@ -1,7 +1,8 @@
 #[cfg(feature = "OVR+OpenVR+EVRInitError")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EVRInitError {
+    #[default]
     Compositor_D3D11HardwareRequired = 401i32,
     Compositor_Failed = 400i32,
     Compositor_FirmwareRequiresUpdate = 402i32,

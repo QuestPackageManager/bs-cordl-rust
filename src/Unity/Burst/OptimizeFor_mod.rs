@@ -1,7 +1,8 @@
 #[cfg(feature = "Unity+Burst+OptimizeFor")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OptimizeFor {
+    #[default]
     Balanced = 4i32,
     Default = 0i32,
     FastCompilation = 3i32,

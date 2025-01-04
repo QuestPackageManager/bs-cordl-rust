@@ -129,8 +129,9 @@ for crate::GlobalNamespace::HowToPlayViewController {
 }
 #[cfg(feature = "HowToPlayViewController+HowToPlayOptions")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HowToPlayViewController_HowToPlayOptions {
+    #[default]
     Credits = 1i32,
     HowToPlay = 0i32,
 }

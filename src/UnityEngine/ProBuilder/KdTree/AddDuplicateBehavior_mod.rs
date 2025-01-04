@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+ProBuilder+KdTree+AddDuplicateBehavior")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AddDuplicateBehavior {
+    #[default]
     Collect = 3i32,
     Error = 1i32,
     Skip = 0i32,

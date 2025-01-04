@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+LightType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LightType {
+    #[default]
     Area = 3i32,
     Directional = 1i32,
     Disc = 4i32,

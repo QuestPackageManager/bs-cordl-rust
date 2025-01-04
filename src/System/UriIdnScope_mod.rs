@@ -1,7 +1,8 @@
 #[cfg(feature = "System+UriIdnScope")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum UriIdnScope {
+    #[default]
     All = 2i32,
     AllExceptIntranet = 1i32,
     None = 0i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "Unity+Burst+CompilationPriority")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CompilationPriority {
+    #[default]
     Asynchronous = 1i32,
     EagerCompilationAsynchronous = 3i32,
     EagerCompilationSynchronous = 0i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "BeatmapSaveDataCommon+IndexFilterLimitAlsoAffectsType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum IndexFilterLimitAlsoAffectsType {
+    #[default]
     Distribution = 2i32,
     Duration = 1i32,
     None = 0i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Runtime+Serialization+Formatters+FormatterTypeStyle")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum FormatterTypeStyle {
+    #[default]
     TypesAlways = 1i32,
     TypesWhenNeeded = 0i32,
     XsdString = 2i32,

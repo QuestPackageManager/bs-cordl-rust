@@ -1,7 +1,8 @@
 #[cfg(feature = "Oculus+Platform+ChallengeViewerFilter")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ChallengeViewerFilter {
+    #[default]
     AllVisible = 1i32,
     Invited = 3i32,
     Participating = 2i32,

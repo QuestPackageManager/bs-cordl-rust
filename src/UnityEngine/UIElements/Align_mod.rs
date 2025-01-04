@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+Align")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Align {
+    #[default]
     Auto = 0i32,
     Center = 2i32,
     FlexEnd = 3i32,

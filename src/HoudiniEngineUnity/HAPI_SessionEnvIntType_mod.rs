@@ -1,7 +1,8 @@
 #[cfg(feature = "HoudiniEngineUnity+HAPI_SessionEnvIntType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HAPI_SessionEnvIntType {
+    #[default]
     HAPI_SESSIONENVINT_INVALID = -1i32,
     HAPI_SESSIONENVINT_LICENSE = 100i32,
     HAPI_SESSIONENVINT_MAX = 101i32,

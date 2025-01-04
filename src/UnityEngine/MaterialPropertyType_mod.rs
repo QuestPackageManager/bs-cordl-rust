@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+MaterialPropertyType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MaterialPropertyType {
+    #[default]
     ComputeBuffer = 6i32,
     ConstantBuffer = 5i32,
     Float = 0i32,

@@ -85,8 +85,9 @@ for crate::UnityEngine::AddressableAssets::Utility::SerializationUtilities {
     feature = "UnityEngine+AddressableAssets+Utility+SerializationUtilities+ObjectType"
 )]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SerializationUtilities_ObjectType {
+    #[default]
     AsciiString = 0i32,
     Hash128 = 5i32,
     Int32 = 4i32,

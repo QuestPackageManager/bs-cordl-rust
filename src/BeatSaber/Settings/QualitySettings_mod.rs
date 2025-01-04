@@ -49,8 +49,9 @@ impl crate::BeatSaber::Settings::QualitySettings {
 }
 #[cfg(feature = "BeatSaber+Settings+QualitySettings+BloomQuality")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum QualitySettings_BloomQuality {
+    #[default]
     Game = 0i32,
     LightBaking = 1i32,
 }
@@ -62,8 +63,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "BeatSaber+Settings+QualitySettings+MainEffectOption")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum QualitySettings_MainEffectOption {
+    #[default]
     Game = 1i32,
     LightBaking = 2i32,
     Off = 0i32,
@@ -76,8 +78,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "BeatSaber+Settings+QualitySettings+MirrorQuality")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum QualitySettings_MirrorQuality {
+    #[default]
     High = 3i32,
     Low = 1i32,
     Medium = 2i32,
@@ -91,8 +94,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "BeatSaber+Settings+QualitySettings+ObstacleQuality")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum QualitySettings_ObstacleQuality {
+    #[default]
     High = 2i32,
     Low = 0i32,
     Medium = 1i32,

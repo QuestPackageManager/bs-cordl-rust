@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+RotationOrder")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RotationOrder {
+    #[default]
     OrderXYZ = 0i32,
     OrderXZY = 1i32,
     OrderYXZ = 3i32,

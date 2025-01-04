@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Net+ReadState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ReadState {
+    #[default]
     Aborted = 4i32,
     Content = 3i32,
     Headers = 2i32,

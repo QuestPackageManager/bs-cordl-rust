@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+SpriteDrawMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SpriteDrawMode {
+    #[default]
     Simple = 0i32,
     Sliced = 1i32,
     Tiled = 2i32,

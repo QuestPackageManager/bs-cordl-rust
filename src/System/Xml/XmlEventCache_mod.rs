@@ -675,8 +675,9 @@ impl crate::System::Xml::XmlEventCache_XmlEvent {
 }
 #[cfg(feature = "System+Xml+XmlEventCache+XmlEventType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XmlEventCache_XmlEventType {
+    #[default]
     Base64 = 14i32,
     BinHex = 15i32,
     CData = 5i32,

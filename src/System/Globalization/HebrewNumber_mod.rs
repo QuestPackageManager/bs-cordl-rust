@@ -69,8 +69,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Globalization::HebrewN
 }
 #[cfg(feature = "System+Globalization+HebrewNumber+HS")]
 #[repr(i8)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HebrewNumber_HS {
+    #[default]
     END = 100i8,
     S400 = 1i8,
     S400_400 = 2i8,
@@ -98,8 +99,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "System+Globalization+HebrewNumber+HebrewToken")]
 #[repr(i16)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HebrewNumber_HebrewToken {
+    #[default]
     Digit1 = 4i16,
     Digit10 = 3i16,
     Digit100 = 2i16,

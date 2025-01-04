@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+CameraType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CameraType {
+    #[default]
     Game = 1i32,
     Preview = 4i32,
     Reflection = 16i32,

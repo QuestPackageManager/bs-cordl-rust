@@ -1,7 +1,8 @@
 #[cfg(feature = "Unity+Profiling+LowLevel+MarkerFlags")]
 #[repr(u16)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MarkerFlags {
+    #[default]
     AvailabilityEditor = 4u16,
     AvailabilityNonDevelopment = 8u16,
     Counter = 128u16,

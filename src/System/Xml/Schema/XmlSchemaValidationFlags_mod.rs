@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Xml+Schema+XmlSchemaValidationFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XmlSchemaValidationFlags {
+    #[default]
     AllowXmlAttributes = 16i32,
     None = 0i32,
     ProcessIdentityConstraints = 8i32,

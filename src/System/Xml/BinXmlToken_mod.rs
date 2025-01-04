@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Xml+BinXmlToken")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BinXmlToken {
+    #[default]
     Attr = 246i32,
     CData = 242i32,
     Comment = 243i32,

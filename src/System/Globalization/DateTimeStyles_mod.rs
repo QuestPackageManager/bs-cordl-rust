@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Globalization+DateTimeStyles")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DateTimeStyles {
+    #[default]
     AdjustToUniversal = 16i32,
     AllowInnerWhite = 4i32,
     AllowLeadingWhite = 1i32,

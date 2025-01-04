@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+AvatarIKHint")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AvatarIKHint {
+    #[default]
     LeftElbow = 2i32,
     LeftKnee = 0i32,
     RightElbow = 3i32,

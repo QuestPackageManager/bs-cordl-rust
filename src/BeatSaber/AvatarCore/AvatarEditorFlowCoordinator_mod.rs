@@ -219,8 +219,9 @@ for crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator {
 }
 #[cfg(feature = "BeatSaber+AvatarCore+AvatarEditorFlowCoordinator+EditMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AvatarEditorFlowCoordinator_EditMode {
+    #[default]
     Create = 0i32,
     Edit = 1i32,
 }
@@ -232,8 +233,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "BeatSaber+AvatarCore+AvatarEditorFlowCoordinator+FinishAction")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AvatarEditorFlowCoordinator_FinishAction {
+    #[default]
     Apply = 1i32,
     Cancel = 0i32,
 }

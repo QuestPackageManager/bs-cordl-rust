@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+SimulationMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SimulationMode {
+    #[default]
     FixedUpdate = 0i32,
     Script = 2i32,
     Update = 1i32,

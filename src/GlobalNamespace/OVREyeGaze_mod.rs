@@ -193,8 +193,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVREyeGaze {
 }
 #[cfg(feature = "OVREyeGaze+EyeId")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVREyeGaze_EyeId {
+    #[default]
     Left = 0i32,
     Right = 1i32,
 }
@@ -205,8 +206,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVREyeGaze+EyeTrackingMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVREyeGaze_EyeTrackingMode {
+    #[default]
     HeadSpace = 0i32,
     TrackingSpace = 2i32,
     WorldSpace = 1i32,

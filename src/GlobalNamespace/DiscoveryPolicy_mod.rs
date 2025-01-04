@@ -1,7 +1,8 @@
 #[cfg(feature = "DiscoveryPolicy")]
 #[repr(u8)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DiscoveryPolicy {
+    #[default]
     Hidden = 0u8,
     Public = 2u8,
     WithCode = 1u8,

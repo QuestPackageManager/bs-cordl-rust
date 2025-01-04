@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+DeviceRequirement+Flags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DeviceRequirement_InputControlScheme_Flags {
+    #[default]
     None = 0i32,
     Optional = 1i32,
     Or = 2i32,
@@ -1032,8 +1033,9 @@ impl crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Match {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputControlScheme+MatchResult+Result")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MatchResult_InputControlScheme_Result {
+    #[default]
     AllSatisfied = 0i32,
     MissingOptional = 2i32,
     MissingRequired = 1i32,

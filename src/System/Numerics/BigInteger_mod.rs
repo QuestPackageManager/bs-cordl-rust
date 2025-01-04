@@ -729,8 +729,9 @@ impl AsMut<crate::System::IFormattable> for crate::System::Numerics::BigInteger 
 }
 #[cfg(feature = "System+Numerics+BigInteger+GetBytesMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BigInteger_GetBytesMode {
+    #[default]
     AllocateArray = 0i32,
     Count = 1i32,
     Span = 2i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+AnimationPlayMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AnimationPlayMode {
+    #[default]
     Mix = 2i32,
     Queue = 1i32,
     Stop = 0i32,

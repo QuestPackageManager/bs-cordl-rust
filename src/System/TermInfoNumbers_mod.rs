@@ -1,7 +1,8 @@
 #[cfg(feature = "System+TermInfoNumbers")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TermInfoNumbers {
+    #[default]
     BitImageEntwining = 31i32,
     BitImageType = 32i32,
     BufferCapacity = 16i32,

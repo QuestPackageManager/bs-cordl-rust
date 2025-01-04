@@ -146,8 +146,9 @@ for crate::GlobalNamespace::AbTestExperimentDefinitionSO {
 }
 #[cfg(feature = "AbTestExperimentDefinitionSO+Group")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AbTestExperimentDefinitionSO_Group {
+    #[default]
     Control = 0i32,
     Test1 = 1i32,
     Test2 = 2i32,

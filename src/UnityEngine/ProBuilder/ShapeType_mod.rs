@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+ProBuilder+ShapeType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ShapeType {
+    #[default]
     Arch = 10i32,
     Cone = 8i32,
     Cube = 0i32,

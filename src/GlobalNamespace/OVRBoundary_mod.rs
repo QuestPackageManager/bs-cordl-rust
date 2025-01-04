@@ -168,8 +168,9 @@ for crate::GlobalNamespace::OVRBoundary_BoundaryTestResult {
 impl crate::GlobalNamespace::OVRBoundary_BoundaryTestResult {}
 #[cfg(feature = "OVRBoundary+BoundaryType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRBoundary_BoundaryType {
+    #[default]
     OuterBoundary = 1i32,
     PlayArea = 256i32,
 }
@@ -180,8 +181,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRBoundary+Node")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRBoundary_Node {
+    #[default]
     HandLeft = 3i32,
     HandRight = 4i32,
     Head = 9i32,

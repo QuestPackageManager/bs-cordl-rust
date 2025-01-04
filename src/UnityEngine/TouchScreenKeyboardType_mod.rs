@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+TouchScreenKeyboardType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TouchScreenKeyboardType {
+    #[default]
     ASCIICapable = 1i32,
     DecimalPad = 11i32,
     Default = 0i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "Unity+IO+LowLevel+Unsafe+ProcessingState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ProcessingState {
+    #[default]
     Canceled = 5i32,
     Completed = 3i32,
     Failed = 4i32,

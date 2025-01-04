@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Rendering+ReflectionProbeMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ReflectionProbeMode {
+    #[default]
     Baked = 0i32,
     Custom = 2i32,
     Realtime = 1i32,

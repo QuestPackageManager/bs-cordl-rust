@@ -1,7 +1,8 @@
 #[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+ColorType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ColorType {
+    #[default]
     ColorA = 0i32,
     ColorB = 1i32,
     None = -1i32,

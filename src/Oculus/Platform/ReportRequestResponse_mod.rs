@@ -1,7 +1,8 @@
 #[cfg(feature = "Oculus+Platform+ReportRequestResponse")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ReportRequestResponse {
+    #[default]
     Handled = 1i32,
     Unavailable = 3i32,
     Unhandled = 2i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Net+WebExceptionStatus")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum WebExceptionStatus {
+    #[default]
     CacheEntryNotFound = 18i32,
     ConnectFailure = 2i32,
     ConnectionClosed = 8i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+LightShadows")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LightShadows {
+    #[default]
     Hard = 1i32,
     None = 0i32,
     Soft = 2i32,

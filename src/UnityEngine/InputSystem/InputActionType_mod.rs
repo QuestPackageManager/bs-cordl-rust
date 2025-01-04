@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+InputSystem+InputActionType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputActionType {
+    #[default]
     Button = 1i32,
     PassThrough = 2i32,
     Value = 0i32,

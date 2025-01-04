@@ -1,7 +1,8 @@
 #[cfg(feature = "Tweening+FrameParity")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum FrameParity {
+    #[default]
     AllFrames = 0i32,
     EvenFrames = 2i32,
     OddFrames = 1i32,

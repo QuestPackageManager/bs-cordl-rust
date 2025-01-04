@@ -632,8 +632,9 @@ for crate::UnityEngine::InputSystem::InputRemoting_DisconnectMsg {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+Flags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputRemoting_Flags {
+    #[default]
     Sending = 1i32,
     StartSendingOnConnect = 2i32,
 }
@@ -670,8 +671,9 @@ for crate::UnityEngine::InputSystem::InputRemoting_Message {
 impl crate::UnityEngine::InputSystem::InputRemoting_Message {}
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting+MessageType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputRemoting_MessageType {
+    #[default]
     ChangeUsages = 7i32,
     Connect = 0i32,
     Disconnect = 1i32,

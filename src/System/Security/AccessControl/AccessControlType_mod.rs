@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Security+AccessControl+AccessControlType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AccessControlType {
+    #[default]
     Allow = 0i32,
     Deny = 1i32,
 }

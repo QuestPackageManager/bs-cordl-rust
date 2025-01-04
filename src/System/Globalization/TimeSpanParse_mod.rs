@@ -257,8 +257,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Globalization::TimeSpa
 }
 #[cfg(feature = "System+Globalization+TimeSpanParse+ParseFailureKind")]
 #[repr(u8)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TimeSpanParse_ParseFailureKind {
+    #[default]
     ArgumentNull = 1u8,
     Format = 2u8,
     FormatWithParameter = 3u8,
@@ -373,8 +374,9 @@ impl crate::System::Globalization::TimeSpanParse_StringParser {
 }
 #[cfg(feature = "System+Globalization+TimeSpanParse+TTT")]
 #[repr(u8)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TimeSpanParse_TTT {
+    #[default]
     End = 1u8,
     None = 0u8,
     Num = 2u8,
@@ -688,8 +690,9 @@ impl crate::System::Globalization::TimeSpanParse_TimeSpanResult {
 }
 #[cfg(feature = "System+Globalization+TimeSpanParse+TimeSpanStandardStyles")]
 #[repr(u8)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TimeSpanParse_TimeSpanStandardStyles {
+    #[default]
     Any = 3u8,
     Invariant = 1u8,
     Localized = 2u8,

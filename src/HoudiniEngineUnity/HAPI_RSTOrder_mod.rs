@@ -1,7 +1,8 @@
 #[cfg(feature = "HoudiniEngineUnity+HAPI_RSTOrder")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HAPI_RSTOrder {
+    #[default]
     HAPI_RST = 3i32,
     HAPI_RSTORDER_DEFAULT = 5i32,
     HAPI_RTS = 2i32,

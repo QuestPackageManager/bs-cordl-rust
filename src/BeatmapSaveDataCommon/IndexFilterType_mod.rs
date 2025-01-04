@@ -1,7 +1,8 @@
 #[cfg(feature = "BeatmapSaveDataCommon+IndexFilterType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum IndexFilterType {
+    #[default]
     Division = 1i32,
     StepAndOffset = 2i32,
 }

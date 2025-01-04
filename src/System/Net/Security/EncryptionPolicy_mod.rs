@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Net+Security+EncryptionPolicy")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EncryptionPolicy {
+    #[default]
     AllowNoEncryption = 1i32,
     NoEncryption = 2i32,
     RequireEncryption = 0i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "Oculus+Platform+LivestreamingMicrophoneStatus")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LivestreamingMicrophoneStatus {
+    #[default]
     MicrophoneOff = 2i32,
     MicrophoneOn = 1i32,
     Unknown = 0i32,

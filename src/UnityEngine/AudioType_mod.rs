@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+AudioType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AudioType {
+    #[default]
     ACC = 1i32,
     AIFF = 2i32,
     AUDIOQUEUE = 24i32,

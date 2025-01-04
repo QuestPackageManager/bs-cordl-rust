@@ -796,8 +796,9 @@ impl crate::UnityEngine::InputSystem::InputDevice_ControlBitRangeNode {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputDevice+DeviceFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputDevice_DeviceFlags {
+    #[default]
     CanRunInBackground = 2048i32,
     CanRunInBackgroundHasBeenQueried = 4096i32,
     DisabledInFrontend = 32i32,

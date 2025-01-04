@@ -627,8 +627,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::FtpWebRequest {
 }
 #[cfg(feature = "System+Net+FtpWebRequest+RequestStage")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum FtpWebRequest_RequestStage {
+    #[default]
     CheckForError = 0i32,
     ReadReady = 3i32,
     ReleaseConnection = 4i32,

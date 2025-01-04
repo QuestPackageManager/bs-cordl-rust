@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+InternalParseTypeE")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InternalParseTypeE {
+    #[default]
     Body = 11i32,
     BodyEnd = 12i32,
     Empty = 0i32,

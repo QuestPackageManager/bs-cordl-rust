@@ -163,8 +163,9 @@ for crate::GlobalNamespace::BloomPrePassNonLightPass {
 }
 #[cfg(feature = "BloomPrePassNonLightPass+ExecutionTimeType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BloomPrePassNonLightPass_ExecutionTimeType {
+    #[default]
     AfterBlur = 2i32,
     BeforeBlur = 1i32,
     None = 0i32,

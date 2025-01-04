@@ -388,8 +388,9 @@ for crate::HMUI::InputFieldView_InputFieldChanged {
 }
 #[cfg(feature = "HMUI+InputFieldView+SelectionState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputFieldView_SelectionState {
+    #[default]
     Disabled = 3i32,
     Highlighted = 1i32,
     Normal = 0i32,

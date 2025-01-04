@@ -1,7 +1,8 @@
 #[cfg(feature = "OVR+OpenVR+EVRApplicationProperty")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EVRApplicationProperty {
+    #[default]
     ActionManifestURL_String = 54i32,
     Arguments_String = 14i32,
     BinaryPath_String = 13i32,

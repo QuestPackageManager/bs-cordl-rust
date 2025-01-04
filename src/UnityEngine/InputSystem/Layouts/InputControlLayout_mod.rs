@@ -366,8 +366,9 @@ for crate::UnityEngine::InputSystem::Layouts::Collection_InputControlLayout_Prec
 impl crate::UnityEngine::InputSystem::Layouts::Collection_InputControlLayout_PrecompiledLayout {}
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+ControlItem+Flags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ControlItem_InputControlLayout_Flags {
+    #[default]
     DontReset = 16i32,
     IsFirstDefinedInThisLayout = 8i32,
     IsNoisy = 2i32,
@@ -2587,8 +2588,9 @@ for crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItemJson
 }
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayout+Flags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputControlLayout_Flags {
+    #[default]
     CanRunInBackground = 8i32,
     CanRunInBackgroundIsSet = 16i32,
     HideInUI = 2i32,

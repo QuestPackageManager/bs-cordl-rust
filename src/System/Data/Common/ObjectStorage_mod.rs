@@ -328,8 +328,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Data::Common::ObjectSt
 }
 #[cfg(feature = "System+Data+Common+ObjectStorage+Families")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ObjectStorage_Families {
+    #[default]
     ARRAY = 4i32,
     BOOLEAN = 3i32,
     DATETIME = 0i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Security+AccessControl+FileSystemRights")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum FileSystemRights {
+    #[default]
     AppendData = 4i32,
     ChangePermissions = 262144i32,
     CreateFiles = 2i32,

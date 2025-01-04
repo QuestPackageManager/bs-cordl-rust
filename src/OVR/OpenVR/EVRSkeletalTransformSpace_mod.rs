@@ -1,7 +1,8 @@
 #[cfg(feature = "OVR+OpenVR+EVRSkeletalTransformSpace")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EVRSkeletalTransformSpace {
+    #[default]
     Additive = 2i32,
     Model = 0i32,
     Parent = 1i32,

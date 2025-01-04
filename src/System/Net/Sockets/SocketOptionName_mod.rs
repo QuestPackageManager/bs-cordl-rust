@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Net+Sockets+SocketOptionName")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SocketOptionName {
+    #[default]
     AcceptConnection = 2i32,
     AddMembership = 12i32,
     AddSourceMembership = 15i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "System+ConsoleSpecialKey")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ConsoleSpecialKey {
+    #[default]
     ControlBreak = 1i32,
     ControlC = 0i32,
 }

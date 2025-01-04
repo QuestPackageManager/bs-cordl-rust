@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Data+SqlTypes+SqlCompareOptions")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SqlCompareOptions {
+    #[default]
     BinarySort = 32768i32,
     BinarySort2 = 16384i32,
     IgnoreCase = 1i32,

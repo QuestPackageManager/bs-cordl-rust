@@ -1,7 +1,8 @@
 #[cfg(feature = "PlayerSaveDataV1_0_1+GameplayModifiers+EnabledObstacleType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GameplayModifiers_PlayerSaveDataV1_0_1_EnabledObstacleType {
+    #[default]
     All = 0i32,
     FullHeightOnly = 1i32,
     None = 2i32,
@@ -14,8 +15,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "PlayerSaveDataV1_0_1+GameplayModifiers+EnergyType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GameplayModifiers_PlayerSaveDataV1_0_1_EnergyType {
+    #[default]
     Bar = 0i32,
     Battery = 1i32,
 }
@@ -27,8 +29,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "PlayerSaveDataV1_0_1+GameplayModifiers+SongSpeed")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GameplayModifiers_PlayerSaveDataV1_0_1_SongSpeed {
+    #[default]
     Faster = 1i32,
     Normal = 0i32,
     Slower = 2i32,

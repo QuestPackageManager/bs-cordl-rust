@@ -1,7 +1,8 @@
 #[cfg(feature = "LiteNetLib+Utils+NtpMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NtpMode {
+    #[default]
     Client = 3i32,
     Server = 4i32,
 }

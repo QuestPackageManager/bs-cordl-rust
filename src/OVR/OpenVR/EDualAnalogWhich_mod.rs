@@ -1,7 +1,8 @@
 #[cfg(feature = "OVR+OpenVR+EDualAnalogWhich")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EDualAnalogWhich {
+    #[default]
     k_EDualAnalog_Left = 0i32,
     k_EDualAnalog_Right = 1i32,
 }

@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Reflection+PInvokeAttributes")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PInvokeAttributes {
+    #[default]
     BestFitDisabled = 32i32,
     BestFitEnabled = 16i32,
     BestFitMask = 48i32,

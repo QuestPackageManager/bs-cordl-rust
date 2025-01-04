@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Runtime+CompilerServices+CompilationRelaxations")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CompilationRelaxations {
+    #[default]
     NoStringInterning = 8i32,
 }
 #[cfg(feature = "System+Runtime+CompilerServices+CompilationRelaxations")]

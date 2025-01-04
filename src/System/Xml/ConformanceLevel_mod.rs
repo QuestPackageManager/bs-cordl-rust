@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Xml+ConformanceLevel")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ConformanceLevel {
+    #[default]
     Auto = 0i32,
     Document = 2i32,
     Fragment = 1i32,

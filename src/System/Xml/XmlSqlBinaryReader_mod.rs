@@ -1870,8 +1870,9 @@ impl crate::System::Xml::XmlSqlBinaryReader_QName {
 }
 #[cfg(feature = "System+Xml+XmlSqlBinaryReader+ScanState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XmlSqlBinaryReader_ScanState {
+    #[default]
     Attr = 2i32,
     AttrVal = 3i32,
     AttrValPseudoValue = 4i32,

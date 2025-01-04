@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+ProBuilder+MeshArrays")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MeshArrays {
+    #[default]
     All = 255i32,
     Color = 32i32,
     Lightmap = 4i32,

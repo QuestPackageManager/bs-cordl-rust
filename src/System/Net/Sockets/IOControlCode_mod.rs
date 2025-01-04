@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Net+Sockets+IOControlCode")]
 #[repr(i64)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum IOControlCode {
+    #[default]
     AbsorbRouterAlert = 2550136837i64,
     AddMulticastGroupOnInterface = 2550136842i64,
     AddressListChange = 671088663i64,

@@ -141,8 +141,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::Zenject::ZenAutoInjecter {
 }
 #[cfg(feature = "Zenject+ZenAutoInjecter+ContainerSources")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ZenAutoInjecter_ContainerSources {
+    #[default]
     ProjectContext = 1i32,
     SceneContext = 0i32,
     SearchHierarchy = 2i32,

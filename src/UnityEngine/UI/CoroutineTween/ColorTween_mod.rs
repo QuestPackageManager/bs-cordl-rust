@@ -258,8 +258,9 @@ for crate::UnityEngine::UI::CoroutineTween::ColorTween_ColorTweenCallback {
 }
 #[cfg(feature = "UnityEngine+UI+CoroutineTween+ColorTween+ColorTweenMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ColorTween_ColorTweenMode {
+    #[default]
     All = 0i32,
     Alpha = 2i32,
     RGB = 1i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+Salt")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Salt {
+    #[default]
     ClassSalt = 19i32,
     IdSalt = 17i32,
     TagNameSalt = 13i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Rendering+MeshUpdateFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MeshUpdateFlags {
+    #[default]
     Default = 0i32,
     DontNotifyMeshUsers = 4i32,
     DontRecalculateBounds = 8i32,

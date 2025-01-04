@@ -1,7 +1,8 @@
 #[cfg(feature = "HoudiniEngineUnity+JSONNode+Enumerator+Type")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Enumerator_JSONNode_Type {
+    #[default]
     Array = 1i32,
     None = 0i32,
     Object = 2i32,

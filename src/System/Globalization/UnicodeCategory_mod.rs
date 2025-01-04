@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Globalization+UnicodeCategory")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum UnicodeCategory {
+    #[default]
     ClosePunctuation = 21i32,
     ConnectorPunctuation = 18i32,
     Control = 14i32,

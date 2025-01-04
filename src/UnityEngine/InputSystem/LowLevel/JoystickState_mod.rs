@@ -64,8 +64,9 @@ for crate::UnityEngine::InputSystem::LowLevel::JoystickState {
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+JoystickState+Button")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum JoystickState_Button {
+    #[default]
     HatSwitchDown = 1i32,
     HatSwitchLeft = 2i32,
     HatSwitchRight = 3i32,

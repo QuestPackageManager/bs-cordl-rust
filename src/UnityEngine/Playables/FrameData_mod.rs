@@ -120,8 +120,9 @@ impl crate::UnityEngine::Playables::FrameData {
 }
 #[cfg(feature = "UnityEngine+Playables+FrameData+EvaluationType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum FrameData_EvaluationType {
+    #[default]
     Evaluate = 0i32,
     Playback = 1i32,
 }
@@ -132,8 +133,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+Playables+FrameData+Flags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum FrameData_Flags {
+    #[default]
     EffectivePlayStateDelayed = 16i32,
     EffectivePlayStatePlaying = 32i32,
     Evaluate = 1i32,

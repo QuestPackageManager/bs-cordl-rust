@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+RenderHints")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RenderHints {
+    #[default]
     BoneTransform = 2i32,
     ClipWithScissors = 4i32,
     DirtyAll = 992i32,

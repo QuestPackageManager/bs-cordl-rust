@@ -1,7 +1,8 @@
 #[cfg(feature = "HoudiniEngineUnity+HAPI_CurveType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HAPI_CurveType {
+    #[default]
     HAPI_CURVETYPE_BEZIER = 2i32,
     HAPI_CURVETYPE_INVALID = -1i32,
     HAPI_CURVETYPE_LINEAR = 0i32,

@@ -86,8 +86,9 @@ for crate::GlobalNamespace::EnvironmentIntensityReductionOptions {
 }
 #[cfg(feature = "EnvironmentIntensityReductionOptions+CompressExpandReductionType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EnvironmentIntensityReductionOptions_CompressExpandReductionType {
+    #[default]
     Keep = 0i32,
     RemoveWithStrobeFilter = 1i32,
 }
@@ -99,8 +100,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "EnvironmentIntensityReductionOptions+RotateRingsReductionType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EnvironmentIntensityReductionOptions_RotateRingsReductionType {
+    #[default]
     Keep = 0i32,
     RemoveWithStrobeFilter = 1i32,
 }

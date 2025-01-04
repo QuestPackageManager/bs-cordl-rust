@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Net+Configuration+UnicodeDecodingConformance")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum UnicodeDecodingConformance {
+    #[default]
     Auto = 0i32,
     Compat = 2i32,
     Loose = 3i32,

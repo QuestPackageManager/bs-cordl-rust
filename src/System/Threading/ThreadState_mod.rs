@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Threading+ThreadState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ThreadState {
+    #[default]
     AbortRequested = 128i32,
     Aborted = 256i32,
     Background = 4i32,

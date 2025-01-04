@@ -1,7 +1,8 @@
 #[cfg(feature = "Oculus+Platform+SystemVoipStatus")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SystemVoipStatus {
+    #[default]
     Active = 3i32,
     Suppressed = 2i32,
     Unavailable = 1i32,

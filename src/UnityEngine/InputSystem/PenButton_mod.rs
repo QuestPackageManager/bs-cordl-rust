@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+InputSystem+PenButton")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PenButton {
+    #[default]
     Barrel1 = 2i32,
     Barrel2 = 3i32,
     Barrel3 = 5i32,

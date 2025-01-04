@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Runtime+InteropServices+DllImportSearchPath")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DllImportSearchPath {
+    #[default]
     ApplicationDirectory = 512i32,
     AssemblyDirectory = 2i32,
     LegacyBehavior = 0i32,

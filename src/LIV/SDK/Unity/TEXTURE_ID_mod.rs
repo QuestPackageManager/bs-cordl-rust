@@ -1,7 +1,8 @@
 #[cfg(feature = "LIV+SDK+Unity+TEXTURE_ID")]
 #[repr(u32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TEXTURE_ID {
+    #[default]
     BACKGROUND_COLOR_BUFFER_ID = 1971210u32,
     FOREGROUND_COLOR_BUFFER_ID = 16784916u32,
     OPTIMIZED_COLOR_BUFFER_ID = 65566u32,

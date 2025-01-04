@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Rendering+ReflectionProbeTimeSlicingMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ReflectionProbeTimeSlicingMode {
+    #[default]
     AllFacesAtOnce = 0i32,
     IndividualFaces = 1i32,
     NoTimeSlicing = 2i32,

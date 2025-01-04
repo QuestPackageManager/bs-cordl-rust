@@ -1,7 +1,8 @@
 #[cfg(feature = "CannotStartGameReason")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CannotStartGameReason {
+    #[default]
     AllPlayersNotInLobby = 4i32,
     AllPlayersSpectating = 2i32,
     DoNotOwnSong = 5i32,

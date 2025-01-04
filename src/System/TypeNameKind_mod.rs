@@ -1,7 +1,8 @@
 #[cfg(feature = "System+TypeNameKind")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TypeNameKind {
+    #[default]
     FullName = 3i32,
     Name = 0i32,
     SerializationName = 2i32,

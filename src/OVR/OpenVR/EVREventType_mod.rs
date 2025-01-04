@@ -1,7 +1,8 @@
 #[cfg(feature = "OVR+OpenVR+EVREventType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EVREventType {
+    #[default]
     VREvent_ActionBindingReloaded = 409i32,
     VREvent_ApplicationListUpdated = 1303i32,
     VREvent_ApplicationMimeTypeLoad = 1304i32,

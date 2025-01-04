@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+MatchResultErrorCode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MatchResultErrorCode {
+    #[default]
     EmptyValue = 2i32,
     ExpectedEndOfValue = 3i32,
     None = 0i32,

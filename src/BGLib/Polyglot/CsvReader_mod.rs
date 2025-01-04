@@ -75,8 +75,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::BGLib::Polyglot::CsvReader {
 }
 #[cfg(feature = "BGLib+Polyglot+CsvReader+ParsingMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CsvReader_ParsingMode {
+    #[default]
     InQuote = 2i32,
     None = 0i32,
     OutQuote = 1i32,

@@ -62,8 +62,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::GUILayoutOption {
 }
 #[cfg(feature = "UnityEngine+GUILayoutOption+Type")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GUILayoutOption_Type {
+    #[default]
     alignEnd = 10i32,
     alignJustify = 11i32,
     alignMiddle = 9i32,

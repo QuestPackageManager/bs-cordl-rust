@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Yoga+YogaUnit")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum YogaUnit {
+    #[default]
     Auto = 3i32,
     Percent = 2i32,
     Point = 1i32,

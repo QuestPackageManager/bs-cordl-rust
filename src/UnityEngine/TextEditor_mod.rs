@@ -73,8 +73,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::TextEditor {
 }
 #[cfg(feature = "UnityEngine+TextEditor+DblClickSnapping")]
 #[repr(u8)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TextEditor_DblClickSnapping {
+    #[default]
     PARAGRAPHS = 1u8,
     WORDS = 0u8,
 }

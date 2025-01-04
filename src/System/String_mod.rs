@@ -2847,8 +2847,9 @@ for crate::System::String_ProbabilisticMap {
 impl crate::System::String_ProbabilisticMap {}
 #[cfg(feature = "System+String+TrimType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum String_TrimType {
+    #[default]
     Both = 2i32,
     Head = 0i32,
     Tail = 1i32,

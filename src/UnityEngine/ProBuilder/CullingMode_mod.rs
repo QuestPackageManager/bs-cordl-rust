@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+ProBuilder+CullingMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CullingMode {
+    #[default]
     Back = 1i32,
     Front = 2i32,
     FrontBack = 3i32,

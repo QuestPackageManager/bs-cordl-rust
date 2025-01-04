@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+KeyboardNavigationOperation")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum KeyboardNavigationOperation {
+    #[default]
     Begin = 10i32,
     Cancel = 2i32,
     End = 11i32,

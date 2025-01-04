@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+AlternatingRowBackground")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AlternatingRowBackground {
+    #[default]
     All = 2i32,
     ContentOnly = 1i32,
     None = 0i32,

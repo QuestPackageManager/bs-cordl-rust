@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+UIR+Implementation+ClipMethod")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ClipMethod {
+    #[default]
     NotClipped = 1i32,
     Scissor = 2i32,
     ShaderDiscard = 3i32,

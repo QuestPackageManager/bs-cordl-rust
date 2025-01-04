@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+InputSystem+UI+UIPointerBehavior")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum UIPointerBehavior {
+    #[default]
     AllPointersAsIs = 2i32,
     SingleMouseOrPenButMultiTouchAndTrack = 0i32,
     SingleUnifiedPointer = 1i32,

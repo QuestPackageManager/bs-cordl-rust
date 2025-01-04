@@ -1,7 +1,8 @@
 #[cfg(feature = "Org+BouncyCastle+Bcpg+RevocationKeyTag")]
 #[repr(u8)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RevocationKeyTag {
+    #[default]
     ClassDefault = 128u8,
     ClassSensitive = 64u8,
 }

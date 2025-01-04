@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+AnimatorUpdateMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AnimatorUpdateMode {
+    #[default]
     AnimatePhysics = 1i32,
     Normal = 0i32,
     UnscaledTime = 2i32,

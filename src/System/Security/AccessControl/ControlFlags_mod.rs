@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Security+AccessControl+ControlFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ControlFlags {
+    #[default]
     DiscretionaryAclAutoInheritRequired = 256i32,
     DiscretionaryAclAutoInherited = 1024i32,
     DiscretionaryAclDefaulted = 8i32,

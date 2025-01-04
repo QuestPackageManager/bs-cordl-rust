@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+InputSystem+TouchPhase")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TouchPhase {
+    #[default]
     Began = 1i32,
     Canceled = 4i32,
     Ended = 3i32,

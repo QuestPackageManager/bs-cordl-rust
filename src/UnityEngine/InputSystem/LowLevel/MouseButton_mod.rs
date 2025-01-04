@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+MouseButton")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MouseButton {
+    #[default]
     Back = 4i32,
     Forward = 3i32,
     Left = 0i32,

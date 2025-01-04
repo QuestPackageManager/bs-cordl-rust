@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+NetworkReachability")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NetworkReachability {
+    #[default]
     NotReachable = 0i32,
     ReachableViaCarrierDataNetwork = 1i32,
     ReachableViaLocalAreaNetwork = 2i32,

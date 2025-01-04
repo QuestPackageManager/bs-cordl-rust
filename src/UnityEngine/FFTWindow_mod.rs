@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+FFTWindow")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum FFTWindow {
+    #[default]
     Blackman = 4i32,
     BlackmanHarris = 5i32,
     Hamming = 2i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Video+VideoTimeReference")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum VideoTimeReference {
+    #[default]
     ExternalTime = 2i32,
     Freerun = 0i32,
     InternalTime = 1i32,

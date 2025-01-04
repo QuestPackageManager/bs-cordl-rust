@@ -1,7 +1,8 @@
 #[cfg(feature = "OVR+OpenVR+VROverlayTransformType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum VROverlayTransformType {
+    #[default]
     VROverlayTransform_Absolute = 0i32,
     VROverlayTransform_SystemOverlay = 2i32,
     VROverlayTransform_TrackedComponent = 3i32,

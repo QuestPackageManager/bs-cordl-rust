@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeUpdatePhase")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum VisualTreeUpdatePhase {
+    #[default]
     Animation = 2i32,
     Bindings = 1i32,
     Count = 7i32,

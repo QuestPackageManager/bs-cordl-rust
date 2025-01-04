@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+StereoTargetEyeMask")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum StereoTargetEyeMask {
+    #[default]
     Both = 3i32,
     Left = 1i32,
     None = 0i32,

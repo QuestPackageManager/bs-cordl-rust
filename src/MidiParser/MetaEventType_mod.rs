@@ -1,7 +1,8 @@
 #[cfg(feature = "MidiParser+MetaEventType")]
 #[repr(u8)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MetaEventType {
+    #[default]
     Tempo = 81u8,
 }
 #[cfg(feature = "MidiParser+MetaEventType")]

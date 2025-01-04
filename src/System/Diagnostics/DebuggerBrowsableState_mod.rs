@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Diagnostics+DebuggerBrowsableState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DebuggerBrowsableState {
+    #[default]
     Collapsed = 2i32,
     Never = 0i32,
     RootHidden = 3i32,

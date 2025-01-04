@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Tilemaps+TileFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TileFlags {
+    #[default]
     InstantiateGameObjectRuntimeOnly = 4i32,
     KeepGameObjectRuntimeOnly = 8i32,
     LockAll = 3i32,

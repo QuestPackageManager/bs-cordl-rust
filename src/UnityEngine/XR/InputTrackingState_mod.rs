@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+XR+InputTrackingState")]
 #[repr(u32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputTrackingState {
+    #[default]
     Acceleration = 4136976u32,
     All = 2147483711u32,
     AngularAcceleration = 16160u32,

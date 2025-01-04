@@ -1,7 +1,8 @@
 #[cfg(feature = "OVR+OpenVR+EVRRenderModelError")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EVRRenderModelError {
+    #[default]
     BufferTooSmall = 306i32,
     InvalidArg = 300i32,
     InvalidModel = 301i32,

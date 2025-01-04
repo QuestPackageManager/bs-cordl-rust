@@ -1,7 +1,8 @@
 #[cfg(feature = "HoudiniEngineUnity+HAPI_VolumeVisualType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HAPI_VolumeVisualType {
+    #[default]
     HAPI_VOLUMEVISTYPE_HEIGHTFIELD = 4i32,
     HAPI_VOLUMEVISTYPE_INVALID = -1i32,
     HAPI_VOLUMEVISTYPE_INVISIBLE = 3i32,

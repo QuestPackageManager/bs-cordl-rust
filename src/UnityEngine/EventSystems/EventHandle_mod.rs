@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+EventSystems+EventHandle")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EventHandle {
+    #[default]
     Unused = 0i32,
     Used = 1i32,
 }

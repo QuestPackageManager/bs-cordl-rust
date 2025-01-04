@@ -44,8 +44,9 @@ impl crate::GlobalNamespace::LevelDataAssetDownloadUpdate {
 }
 #[cfg(feature = "LevelDataAssetDownloadUpdate+AssetDownloadingState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LevelDataAssetDownloadUpdate_AssetDownloadingState {
+    #[default]
     Completed = 2i32,
     Downloading = 1i32,
     PreparingToDownload = 0i32,

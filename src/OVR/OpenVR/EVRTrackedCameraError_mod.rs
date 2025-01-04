@@ -1,7 +1,8 @@
 #[cfg(feature = "OVR+OpenVR+EVRTrackedCameraError")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EVRTrackedCameraError {
+    #[default]
     FailedToGetGLTextureId = 111i32,
     FrameBufferingFailure = 107i32,
     IPCFailure = 104i32,

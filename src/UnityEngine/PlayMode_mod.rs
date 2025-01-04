@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+PlayMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PlayMode {
+    #[default]
     StopAll = 4i32,
     StopSameLayer = 0i32,
 }

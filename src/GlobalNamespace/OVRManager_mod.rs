@@ -2328,8 +2328,9 @@ for crate::GlobalNamespace::OVRManager {
 }
 #[cfg(feature = "OVRManager+CameraDevice")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRManager_CameraDevice {
+    #[default]
     WebCamera0 = 0i32,
     WebCamera1 = 1i32,
     ZEDCamera = 2i32,
@@ -2341,8 +2342,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRManager+ColorSpace")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRManager_ColorSpace {
+    #[default]
     Adobe_RGB = 8i32,
     P3 = 7i32,
     Quest = 6i32,
@@ -2360,8 +2362,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRManager+CompositionMethod")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRManager_CompositionMethod {
+    #[default]
     Direct = 1i32,
     External = 0i32,
 }
@@ -2372,8 +2375,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRManager+ControllerDrivenHandPosesType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRManager_ControllerDrivenHandPosesType {
+    #[default]
     ConformingToController = 1i32,
     Natural = 2i32,
     None = 0i32,
@@ -2386,8 +2390,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRManager+DepthQuality")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRManager_DepthQuality {
+    #[default]
     High = 2i32,
     Low = 0i32,
     Medium = 1i32,
@@ -2452,8 +2457,9 @@ for crate::GlobalNamespace::OVRManager_EventListener {
 }
 #[cfg(feature = "OVRManager+EyeTextureFormat")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRManager_EyeTextureFormat {
+    #[default]
     Default = 0i32,
     R11G11B10_FP = 3i32,
     R16G16B16A16_FP = 2i32,
@@ -2465,8 +2471,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRManager+FixedFoveatedRenderingLevel")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRManager_FixedFoveatedRenderingLevel {
+    #[default]
     High = 3i32,
     HighTop = 4i32,
     Low = 1i32,
@@ -2481,8 +2488,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRManager+FoveatedRenderingLevel")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRManager_FoveatedRenderingLevel {
+    #[default]
     High = 3i32,
     HighTop = 4i32,
     Low = 1i32,
@@ -2605,8 +2613,9 @@ for crate::GlobalNamespace::OVRManager_InstantiateMrcCameraDelegate {
 }
 #[cfg(feature = "OVRManager+MrcActivationMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRManager_MrcActivationMode {
+    #[default]
     Automatic = 0i32,
     Disabled = 1i32,
 }
@@ -2617,8 +2626,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRManager+MrcCameraType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRManager_MrcCameraType {
+    #[default]
     Background = 2i32,
     Foreground = 1i32,
     Normal = 0i32,
@@ -2725,8 +2735,9 @@ for crate::GlobalNamespace::OVRManager_PassthroughCapabilities {
 }
 #[cfg(feature = "OVRManager+PassthroughInitializationState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRManager_PassthroughInitializationState {
+    #[default]
     Failed = 3i32,
     Initialized = 2i32,
     Pending = 1i32,
@@ -2740,8 +2751,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRManager+ProcessorPerformanceLevel")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRManager_ProcessorPerformanceLevel {
+    #[default]
     Boost = 3i32,
     PowerSavings = 0i32,
     SustainedHigh = 2i32,
@@ -2755,8 +2767,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRManager+SystemHeadsetType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRManager_SystemHeadsetType {
+    #[default]
     Meta_Link_Quest_3 = 4104i32,
     Meta_Link_Quest_Pro = 4103i32,
     Meta_Quest_3 = 11i32,
@@ -2785,8 +2798,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRManager+TiledMultiResLevel")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRManager_TiledMultiResLevel {
+    #[default]
     LMSHigh = 3i32,
     LMSHighTop = 4i32,
     LMSLow = 1i32,
@@ -2800,8 +2814,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRManager+TrackingOrigin")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRManager_TrackingOrigin {
+    #[default]
     EyeLevel = 0i32,
     FloorLevel = 1i32,
     Stage = 2i32,
@@ -2813,8 +2828,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRManager+VirtualGreenScreenType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRManager_VirtualGreenScreenType {
+    #[default]
     Off = 0i32,
     OuterBoundary = 1i32,
     PlayArea = 2i32,
@@ -2827,8 +2843,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRManager+XRDevice")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRManager_XRDevice {
+    #[default]
     Oculus = 1i32,
     OpenVR = 2i32,
     Unknown = 0i32,
@@ -2840,8 +2857,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRManager+XrApi")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRManager_XrApi {
+    #[default]
     CAPI = 1i32,
     OpenXR = 3i32,
     Unknown = 0i32,

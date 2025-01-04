@@ -1,7 +1,8 @@
 #[cfg(feature = "Oculus+Platform+LeaderboardStartAt")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LeaderboardStartAt {
+    #[default]
     CenteredOnViewer = 1i32,
     CenteredOnViewerOrTop = 2i32,
     Top = 0i32,

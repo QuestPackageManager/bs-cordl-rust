@@ -1,7 +1,8 @@
 #[cfg(feature = "System+IOOperation")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum IOOperation {
+    #[default]
     Read = 1i32,
     Write = 2i32,
 }

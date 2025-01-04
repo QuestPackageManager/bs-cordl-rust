@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+TextCore+GlyphClassDefinitionType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GlyphClassDefinitionType {
+    #[default]
     Base = 1i32,
     Component = 4i32,
     Ligature = 2i32,

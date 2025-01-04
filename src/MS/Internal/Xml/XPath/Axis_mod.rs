@@ -218,8 +218,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::MS::Internal::Xml::XPath::Axis
 }
 #[cfg(feature = "MS+Internal+Xml+XPath+Axis+AxisType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Axis_AxisType {
+    #[default]
     Ancestor = 0i32,
     AncestorOrSelf = 1i32,
     Attribute = 2i32,

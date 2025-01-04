@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+ColumnDataType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ColumnDataType {
+    #[default]
     CellTemplate = 12i32,
     HeaderTemplate = 11i32,
     Icon = 2i32,

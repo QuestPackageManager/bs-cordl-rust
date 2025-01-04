@@ -205,8 +205,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::AnimatedSwitchView {
 }
 #[cfg(feature = "HMUI+AnimatedSwitchView+AnimationState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AnimatedSwitchView_AnimationState {
+    #[default]
     DisablingOff = 32i32,
     DisablingOn = 16i32,
     HighlightingOff = 8i32,

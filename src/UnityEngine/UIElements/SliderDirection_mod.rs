@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+SliderDirection")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SliderDirection {
+    #[default]
     Horizontal = 0i32,
     Vertical = 1i32,
 }

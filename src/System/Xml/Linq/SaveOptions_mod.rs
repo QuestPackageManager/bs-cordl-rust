@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Xml+Linq+SaveOptions")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SaveOptions {
+    #[default]
     DisableFormatting = 1i32,
     None = 0i32,
     OmitDuplicateNamespaces = 2i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "HoudiniEngineUnity+HAPI_PresetType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HAPI_PresetType {
+    #[default]
     HAPI_PRESETTYPE_BINARY = 0i32,
     HAPI_PRESETTYPE_IDX = 1i32,
     HAPI_PRESETTYPE_INVALID = -1i32,

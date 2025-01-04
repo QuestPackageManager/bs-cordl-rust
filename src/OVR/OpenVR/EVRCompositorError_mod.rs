@@ -1,7 +1,8 @@
 #[cfg(feature = "OVR+OpenVR+EVRCompositorError")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EVRCompositorError {
+    #[default]
     AlreadySubmitted = 108i32,
     DoNotHaveFocus = 101i32,
     IncompatibleVersion = 100i32,

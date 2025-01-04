@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Enum+ParseFailureKind")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Enum_ParseFailureKind {
+    #[default]
     Argument = 1i32,
     ArgumentNull = 2i32,
     ArgumentWithParameter = 3i32,

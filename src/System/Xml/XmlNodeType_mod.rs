@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Xml+XmlNodeType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XmlNodeType {
+    #[default]
     Attribute = 2i32,
     CDATA = 4i32,
     Comment = 8i32,

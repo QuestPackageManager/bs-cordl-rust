@@ -1,7 +1,8 @@
 #[cfg(feature = "System+IO+FileMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum FileMode {
+    #[default]
     Append = 6i32,
     Create = 2i32,
     CreateNew = 1i32,

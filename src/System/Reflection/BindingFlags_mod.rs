@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Reflection+BindingFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BindingFlags {
+    #[default]
     CreateInstance = 512i32,
     DeclaredOnly = 2i32,
     Default = 0i32,

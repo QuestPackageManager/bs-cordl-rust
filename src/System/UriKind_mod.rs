@@ -1,7 +1,8 @@
 #[cfg(feature = "System+UriKind")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum UriKind {
+    #[default]
     Absolute = 1i32,
     Relative = 2i32,
     RelativeOrAbsolute = 0i32,

@@ -1892,8 +1892,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Texture2D {
 }
 #[cfg(feature = "UnityEngine+Texture2D+EXRFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Texture2D_EXRFlags {
+    #[default]
     CompressPIZ = 8i32,
     CompressRLE = 4i32,
     CompressZIP = 2i32,

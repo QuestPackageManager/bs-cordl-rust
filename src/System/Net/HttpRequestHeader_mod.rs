@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Net+HttpRequestHeader")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HttpRequestHeader {
+    #[default]
     Accept = 20i32,
     AcceptCharset = 21i32,
     AcceptEncoding = 22i32,

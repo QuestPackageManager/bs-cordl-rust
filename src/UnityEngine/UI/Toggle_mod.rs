@@ -388,8 +388,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::Toggle_Toggle
 }
 #[cfg(feature = "UnityEngine+UI+Toggle+ToggleTransition")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Toggle_ToggleTransition {
+    #[default]
     Fade = 1i32,
     None = 0i32,
 }

@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+MouseButton")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MouseButton {
+    #[default]
     LeftMouse = 0i32,
     MiddleMouse = 2i32,
     RightMouse = 1i32,

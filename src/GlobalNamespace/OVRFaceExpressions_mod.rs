@@ -375,8 +375,9 @@ for crate::GlobalNamespace::OVRFaceExpressions {
 }
 #[cfg(feature = "OVRFaceExpressions+FaceExpression")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRFaceExpressions_FaceExpression {
+    #[default]
     BrowLowererL = 0i32,
     BrowLowererR = 1i32,
     CheekPuffL = 2i32,
@@ -586,8 +587,9 @@ for crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator {
 }
 #[cfg(feature = "OVRFaceExpressions+FaceRegionConfidence")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRFaceExpressions_FaceRegionConfidence {
+    #[default]
     Lower = 0i32,
     Max = 2i32,
     Upper = 1i32,

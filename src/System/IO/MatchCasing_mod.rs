@@ -1,7 +1,8 @@
 #[cfg(feature = "System+IO+MatchCasing")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MatchCasing {
+    #[default]
     CaseInsensitive = 2i32,
     CaseSensitive = 1i32,
     PlatformDefault = 0i32,

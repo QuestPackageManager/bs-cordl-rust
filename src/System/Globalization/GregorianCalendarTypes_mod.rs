@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Globalization+GregorianCalendarTypes")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GregorianCalendarTypes {
+    #[default]
     Arabic = 10i32,
     Localized = 1i32,
     MiddleEastFrench = 9i32,

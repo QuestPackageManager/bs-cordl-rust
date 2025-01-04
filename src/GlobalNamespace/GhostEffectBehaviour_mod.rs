@@ -116,8 +116,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GhostEffectBe
 }
 #[cfg(feature = "GhostEffectBehaviour+EndBehavior")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GhostEffectBehaviour_EndBehavior {
+    #[default]
     DisableAll = 0i32,
     DisableCopies = 1i32,
     Nothing = 2i32,
@@ -130,8 +131,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "GhostEffectBehaviour+GhostEffectType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GhostEffectBehaviour_GhostEffectType {
+    #[default]
     Canvas = 1i32,
     TextMeshPro = 0i32,
 }

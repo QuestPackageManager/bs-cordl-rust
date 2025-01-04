@@ -85,8 +85,9 @@ for crate::UnityEngine::UIElements::MeshGenerationContext {
 }
 #[cfg(feature = "UnityEngine+UIElements+MeshGenerationContext+MeshFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MeshGenerationContext_MeshFlags {
+    #[default]
     None = 0i32,
     SkipDynamicAtlas = 2i32,
     UVisDisplacement = 1i32,

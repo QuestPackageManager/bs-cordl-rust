@@ -1,7 +1,8 @@
 #[cfg(feature = "OVR+OpenVR+EVRTrackedCameraFrameType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EVRTrackedCameraFrameType {
+    #[default]
     Distorted = 0i32,
     MAX_CAMERA_FRAME_TYPES = 3i32,
     MaximumUndistorted = 2i32,

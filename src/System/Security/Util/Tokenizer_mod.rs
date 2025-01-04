@@ -387,8 +387,9 @@ for crate::System::Security::Util::Tokenizer_StringMaker {
 }
 #[cfg(feature = "System+Security+Util+Tokenizer+TokenSource")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Tokenizer_TokenSource {
+    #[default]
     ASCIIByteArray = 2i32,
     CharArray = 3i32,
     NestedStrings = 5i32,

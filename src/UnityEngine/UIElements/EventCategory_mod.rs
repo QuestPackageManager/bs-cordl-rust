@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+EventCategory")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EventCategory {
+    #[default]
     Bind = 9i32,
     ChangePanel = 11i32,
     ChangeValue = 8i32,

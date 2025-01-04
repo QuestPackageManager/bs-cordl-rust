@@ -1,7 +1,8 @@
 #[cfg(feature = "Unity+Properties+InstantiationKind")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InstantiationKind {
+    #[default]
     Activator = 0i32,
     NotInstantiatable = 2i32,
     PropertyBagOverride = 1i32,

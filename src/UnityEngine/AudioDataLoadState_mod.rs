@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+AudioDataLoadState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AudioDataLoadState {
+    #[default]
     Failed = 3i32,
     Loaded = 2i32,
     Loading = 1i32,

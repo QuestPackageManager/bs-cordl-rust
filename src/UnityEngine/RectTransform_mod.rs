@@ -508,8 +508,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::RectTransform {
 }
 #[cfg(feature = "UnityEngine+RectTransform+Axis")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RectTransform_Axis {
+    #[default]
     Horizontal = 0i32,
     Vertical = 1i32,
 }
@@ -520,8 +521,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+RectTransform+Edge")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RectTransform_Edge {
+    #[default]
     Bottom = 3i32,
     Left = 0i32,
     Right = 1i32,

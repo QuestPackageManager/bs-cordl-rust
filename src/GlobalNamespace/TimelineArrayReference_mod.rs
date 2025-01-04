@@ -74,8 +74,9 @@ for crate::GlobalNamespace::TimelineArrayReference {
 }
 #[cfg(feature = "TimelineArrayReference+ArrayTypes")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TimelineArrayReference_ArrayTypes {
+    #[default]
     Canvas = 2i32,
     DirectionalLight = 4i32,
     TextMeshPro = 3i32,

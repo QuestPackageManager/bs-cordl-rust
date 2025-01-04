@@ -1,7 +1,8 @@
 #[cfg(feature = "Mono+Security+Interface+CipherSuiteCode")]
 #[repr(u16)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CipherSuiteCode {
+    #[default]
     TLS_DHE_DSS_EXPORT_WITH_DES40_CBC_SHA = 17u16,
     TLS_DHE_DSS_WITH_3DES_EDE_CBC_SHA = 19u16,
     TLS_DHE_DSS_WITH_AES_128_CBC_SHA = 50u16,

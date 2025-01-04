@@ -1,7 +1,8 @@
 #[cfg(feature = "DisconnectedReason")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DisconnectedReason {
+    #[default]
     ClientConnectionClosed = 8i32,
     Kicked = 4i32,
     MasterServerUnreachable = 7i32,

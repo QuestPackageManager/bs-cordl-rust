@@ -1,7 +1,8 @@
 #[cfg(feature = "LIV+SDK+Unity+TEXTURE_TYPE")]
 #[repr(u32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TEXTURE_TYPE {
+    #[default]
     COLOR_BUFFER = 655361u32,
     UNDEFINED = 167772416u32,
 }

@@ -126,8 +126,9 @@ impl AsMut<
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_ToolsInfo+PaintMergeMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HEU_ToolsInfo_PaintMergeMode {
+    #[default]
     ADD = 1i32,
     MULTIPLY = 3i32,
     REPLACE = 0i32,
@@ -140,8 +141,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_ToolsInfo+PaintMeshVisibility")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HEU_ToolsInfo_PaintMeshVisibility {
+    #[default]
     AUTO = 0i32,
     HIDE = 2i32,
     SHOW = 1i32,

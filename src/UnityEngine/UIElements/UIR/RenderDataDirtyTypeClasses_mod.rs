@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+UIR+RenderDataDirtyTypeClasses")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RenderDataDirtyTypeClasses {
+    #[default]
     Clipping = 0i32,
     Color = 2i32,
     Count = 5i32,

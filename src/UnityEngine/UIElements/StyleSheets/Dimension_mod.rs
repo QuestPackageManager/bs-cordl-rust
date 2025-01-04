@@ -142,8 +142,9 @@ impl AsMut<
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+Dimension+Unit")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Dimension_Unit {
+    #[default]
     Degree = 5i32,
     Gradian = 6i32,
     Millisecond = 4i32,

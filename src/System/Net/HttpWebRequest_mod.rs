@@ -1434,8 +1434,9 @@ impl crate::System::Net::HttpWebRequest_AuthorizationState {
 }
 #[cfg(feature = "System+Net+HttpWebRequest+NtlmAuthState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HttpWebRequest_NtlmAuthState {
+    #[default]
     Challenge = 1i32,
     None = 0i32,
     Response = 2i32,

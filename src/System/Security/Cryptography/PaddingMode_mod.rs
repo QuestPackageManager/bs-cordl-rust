@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Security+Cryptography+PaddingMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PaddingMode {
+    #[default]
     ANSIX923 = 4i32,
     ISO10126 = 5i32,
     None = 1i32,

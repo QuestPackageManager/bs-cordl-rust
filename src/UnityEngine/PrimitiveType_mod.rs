@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+PrimitiveType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PrimitiveType {
+    #[default]
     Capsule = 1i32,
     Cube = 3i32,
     Cylinder = 2i32,

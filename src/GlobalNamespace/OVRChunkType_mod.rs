@@ -1,7 +1,8 @@
 #[cfg(feature = "OVRChunkType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRChunkType {
+    #[default]
     BIN = 5130562i32,
     JSON = 1313821514i32,
 }

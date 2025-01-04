@@ -1,7 +1,8 @@
 #[cfg(feature = "Unity+Burst+FloatPrecision")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum FloatPrecision {
+    #[default]
     High = 1i32,
     Low = 3i32,
     Medium = 2i32,

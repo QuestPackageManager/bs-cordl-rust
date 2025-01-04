@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+ArticulationDriveType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ArticulationDriveType {
+    #[default]
     Acceleration = 1i32,
     Force = 0i32,
     Target = 2i32,

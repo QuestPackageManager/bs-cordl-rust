@@ -1,7 +1,8 @@
 #[cfg(feature = "OVR+OpenVR+EVRButtonId")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EVRButtonId {
+    #[default]
     k_EButton_A = 7i32,
     k_EButton_ApplicationMenu = 1i32,
     k_EButton_Axis0 = 32i32,

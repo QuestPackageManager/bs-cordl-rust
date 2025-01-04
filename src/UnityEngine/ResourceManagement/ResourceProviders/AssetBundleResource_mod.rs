@@ -431,8 +431,9 @@ impl AsMut<
     feature = "UnityEngine+ResourceManagement+ResourceProviders+AssetBundleResource+LoadType"
 )]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AssetBundleResource_LoadType {
+    #[default]
     Local = 1i32,
     None = 0i32,
     Web = 2i32,

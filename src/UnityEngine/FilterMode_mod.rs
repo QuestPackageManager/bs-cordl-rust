@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+FilterMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum FilterMode {
+    #[default]
     Bilinear = 1i32,
     Point = 0i32,
     Trilinear = 2i32,

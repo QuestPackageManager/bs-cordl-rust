@@ -57,8 +57,9 @@ for crate::GlobalNamespace::OVRSceneObjectTransformType {
 }
 #[cfg(feature = "OVRSceneObjectTransformType+Transformation")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRSceneObjectTransformType_Transformation {
+    #[default]
     None = 2i32,
     Plane = 1i32,
     Volume = 0i32,

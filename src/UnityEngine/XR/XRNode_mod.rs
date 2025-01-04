@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+XR+XRNode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XRNode {
+    #[default]
     CenterEye = 2i32,
     GameController = 6i32,
     HardwareTracker = 8i32,

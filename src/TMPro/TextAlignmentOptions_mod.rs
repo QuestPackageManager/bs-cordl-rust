@@ -1,7 +1,8 @@
 #[cfg(feature = "TMPro+TextAlignmentOptions")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TextAlignmentOptions {
+    #[default]
     Baseline = 2050i32,
     BaselineFlush = 2064i32,
     BaselineGeoAligned = 2080i32,

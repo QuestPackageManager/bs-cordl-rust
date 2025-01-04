@@ -1,7 +1,8 @@
 #[cfg(feature = "HoudiniEngineUnity+HAPI_VolumeType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HAPI_VolumeType {
+    #[default]
     HAPI_VOLUMETYPE_HOUDINI = 0i32,
     HAPI_VOLUMETYPE_INVALID = -1i32,
     HAPI_VOLUMETYPE_MAX = 2i32,

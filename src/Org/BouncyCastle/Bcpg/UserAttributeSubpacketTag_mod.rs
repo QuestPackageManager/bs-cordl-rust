@@ -1,7 +1,8 @@
 #[cfg(feature = "Org+BouncyCastle+Bcpg+UserAttributeSubpacketTag")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum UserAttributeSubpacketTag {
+    #[default]
     ImageAttribute = 1i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+UserAttributeSubpacketTag")]

@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+InputSystem+InputActionPhase")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputActionPhase {
+    #[default]
     Canceled = 4i32,
     Disabled = 0i32,
     Performed = 3i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "OVR+OpenVR+EVRSpatialAnchorError")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EVRSpatialAnchorError {
+    #[default]
     ArrayTooSmall = 3i32,
     DescriptorTooLong = 9i32,
     Internal = 1i32,

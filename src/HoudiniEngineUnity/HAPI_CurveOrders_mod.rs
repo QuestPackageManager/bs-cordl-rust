@@ -1,7 +1,8 @@
 #[cfg(feature = "HoudiniEngineUnity+HAPI_CurveOrders")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HAPI_CurveOrders {
+    #[default]
     HAPI_CURVE_ORDER_CUBIC = 4i32,
     HAPI_CURVE_ORDER_INVALID = 1i32,
     HAPI_CURVE_ORDER_LINEAR = 2i32,

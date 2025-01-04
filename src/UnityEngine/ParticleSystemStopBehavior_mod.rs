@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+ParticleSystemStopBehavior")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ParticleSystemStopBehavior {
+    #[default]
     StopEmitting = 1i32,
     StopEmittingAndClear = 0i32,
 }

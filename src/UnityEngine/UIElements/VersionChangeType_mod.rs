@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+VersionChangeType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum VersionChangeType {
+    #[default]
     Bindings = 1i32,
     BorderRadius = 128i32,
     BorderWidth = 256i32,

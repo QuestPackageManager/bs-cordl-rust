@@ -1,7 +1,8 @@
 #[cfg(feature = "OVR+OpenVR+EVSync")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EVSync {
+    #[default]
     NoWaitRender = 2i32,
     None = 0i32,
     WaitRender = 1i32,

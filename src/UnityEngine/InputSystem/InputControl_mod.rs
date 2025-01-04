@@ -865,8 +865,9 @@ for crate::UnityEngine::InputSystem::InputControl {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputControl+ControlFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputControl_ControlFlags {
+    #[default]
     ConfigUpToDate = 1i32,
     DontReset = 16i32,
     IsButton = 8i32,

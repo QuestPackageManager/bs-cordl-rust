@@ -1,7 +1,8 @@
 #[cfg(feature = "Newtonsoft+Json+TypeNameAssemblyFormatHandling")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TypeNameAssemblyFormatHandling {
+    #[default]
     Full = 1i32,
     Simple = 0i32,
 }

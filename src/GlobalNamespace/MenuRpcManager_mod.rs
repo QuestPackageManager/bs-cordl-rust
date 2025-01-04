@@ -3962,8 +3962,9 @@ for crate::GlobalNamespace::MenuRpcManager_RequestKickPlayerRpc {
 }
 #[cfg(feature = "MenuRpcManager+RpcType")]
 #[repr(u8)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MenuRpcManager_RpcType {
+    #[default]
     CancelCountdown = 30u8,
     CancelLevelStart = 19u8,
     CancelStartGameTime = 25u8,

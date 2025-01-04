@@ -1,7 +1,8 @@
 #[cfg(feature = "Mono+Security+Interface+MonoSslPolicyErrors")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MonoSslPolicyErrors {
+    #[default]
     None = 0i32,
     RemoteCertificateChainErrors = 4i32,
     RemoteCertificateNameMismatch = 2i32,

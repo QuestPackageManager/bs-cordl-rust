@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Diagnostics+Tracing+EventLevel")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EventLevel {
+    #[default]
     Critical = 1i32,
     Error = 2i32,
     Informational = 4i32,

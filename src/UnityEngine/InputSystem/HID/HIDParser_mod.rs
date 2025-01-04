@@ -210,8 +210,9 @@ impl crate::UnityEngine::InputSystem::HID::HIDParser_HIDItemStateLocal {
 }
 #[cfg(feature = "UnityEngine+InputSystem+HID+HIDParser+HIDItemTypeAndTag")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HIDParser_HIDItemTypeAndTag {
+    #[default]
     Collection = 160i32,
     Delimiter = 168i32,
     DesignatorIndex = 56i32,

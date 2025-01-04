@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+ParticleSystemCurveMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ParticleSystemCurveMode {
+    #[default]
     Constant = 0i32,
     Curve = 1i32,
     TwoConstants = 3i32,

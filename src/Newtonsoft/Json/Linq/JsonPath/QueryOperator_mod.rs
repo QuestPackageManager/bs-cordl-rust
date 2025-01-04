@@ -1,7 +1,8 @@
 #[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+QueryOperator")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum QueryOperator {
+    #[default]
     And = 8i32,
     Equals = 1i32,
     Exists = 3i32,

@@ -236,8 +236,9 @@ impl crate::System::Globalization::TimeSpanFormat_FormatLiterals {
 }
 #[cfg(feature = "System+Globalization+TimeSpanFormat+Pattern")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TimeSpanFormat_Pattern {
+    #[default]
     Full = 2i32,
     Minimum = 1i32,
     None = 0i32,

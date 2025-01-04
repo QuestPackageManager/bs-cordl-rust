@@ -1,7 +1,8 @@
 #[cfg(feature = "System+IO+Compression+CompressionMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CompressionMode {
+    #[default]
     Compress = 1i32,
     Decompress = 0i32,
 }

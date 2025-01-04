@@ -1,7 +1,8 @@
 #[cfg(feature = "BeatmapSaveDataCommon+Axis")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Axis {
+    #[default]
     X = 0i32,
     Y = 1i32,
     Z = 2i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Runtime+Remoting+WellKnownObjectMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum WellKnownObjectMode {
+    #[default]
     SingleCall = 2i32,
     Singleton = 1i32,
 }

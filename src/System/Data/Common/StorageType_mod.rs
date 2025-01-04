@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Data+Common+StorageType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum StorageType {
+    #[default]
     BigInteger = 24i32,
     Boolean = 3i32,
     Byte = 6i32,

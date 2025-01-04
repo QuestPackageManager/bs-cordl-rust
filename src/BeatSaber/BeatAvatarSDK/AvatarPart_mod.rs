@@ -1,7 +1,8 @@
 #[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarPart")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AvatarPart {
+    #[default]
     All = 1i32,
     ClothesModel = 10i32,
     ClothesModelDetailColor = 13i32,

@@ -305,8 +305,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CreditsData_T
 }
 #[cfg(feature = "CreditsData+TextStyle")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CreditsData_TextStyle {
+    #[default]
     Header = 2i32,
     Normal = 0i32,
     Title = 1i32,

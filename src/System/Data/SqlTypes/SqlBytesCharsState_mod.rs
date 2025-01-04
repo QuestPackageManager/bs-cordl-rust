@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Data+SqlTypes+SqlBytesCharsState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SqlBytesCharsState {
+    #[default]
     Buffer = 1i32,
     Null = 0i32,
     Stream = 3i32,

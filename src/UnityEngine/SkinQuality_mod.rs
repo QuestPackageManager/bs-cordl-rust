@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+SkinQuality")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SkinQuality {
+    #[default]
     Auto = 0i32,
     Bone1 = 1i32,
     Bone2 = 2i32,

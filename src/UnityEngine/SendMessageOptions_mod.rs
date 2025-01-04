@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+SendMessageOptions")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SendMessageOptions {
+    #[default]
     DontRequireReceiver = 1i32,
     RequireReceiver = 0i32,
 }

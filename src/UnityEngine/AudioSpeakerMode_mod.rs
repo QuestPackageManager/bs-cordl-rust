@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+AudioSpeakerMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AudioSpeakerMode {
+    #[default]
     Mode5point1 = 5i32,
     Mode7point1 = 6i32,
     Mono = 1i32,

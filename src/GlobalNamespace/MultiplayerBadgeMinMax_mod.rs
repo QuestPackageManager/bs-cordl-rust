@@ -1,7 +1,8 @@
 #[cfg(feature = "MultiplayerBadgeMinMax")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MultiplayerBadgeMinMax {
+    #[default]
     Max = 1i32,
     Min = 0i32,
 }

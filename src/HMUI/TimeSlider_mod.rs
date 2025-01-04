@@ -96,8 +96,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::TimeSlider {
 }
 #[cfg(feature = "HMUI+TimeSlider+TimeType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TimeSlider_TimeType {
+    #[default]
     Default = 0i32,
     Milliseconds = 1i32,
     Normalized = 2i32,

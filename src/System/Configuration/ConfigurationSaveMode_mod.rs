@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Configuration+ConfigurationSaveMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ConfigurationSaveMode {
+    #[default]
     Full = 2i32,
     Minimal = 1i32,
     Modified = 0i32,

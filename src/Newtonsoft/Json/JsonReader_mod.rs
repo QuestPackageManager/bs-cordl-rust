@@ -1064,8 +1064,9 @@ impl AsMut<crate::System::IDisposable> for crate::Newtonsoft::Json::JsonReader {
 }
 #[cfg(feature = "Newtonsoft+Json+JsonReader+State")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum JsonReader_State {
+    #[default]
     Array = 6i32,
     ArrayStart = 5i32,
     Closed = 7i32,

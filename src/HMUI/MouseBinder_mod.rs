@@ -201,8 +201,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::MouseBinder {
 }
 #[cfg(feature = "HMUI+MouseBinder+ButtonType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MouseBinder_ButtonType {
+    #[default]
     Middle = 2i32,
     Primary = 0i32,
     Secondary = 1i32,
@@ -214,8 +215,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "HMUI+MouseBinder+MouseEventType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MouseBinder_MouseEventType {
+    #[default]
     ButtonDown = 0i32,
     ButtonPress = 2i32,
     ButtonUp = 1i32,

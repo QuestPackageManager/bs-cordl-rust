@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+LightmapsMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LightmapsMode {
+    #[default]
     CombinedDirectional = 1i32,
     NonDirectional = 0i32,
 }

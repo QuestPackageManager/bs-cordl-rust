@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+MaterialGlobalIlluminationFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MaterialGlobalIlluminationFlags {
+    #[default]
     AnyEmissive = 3i32,
     BakedEmissive = 2i32,
     EmissiveIsBlack = 4i32,

@@ -353,8 +353,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::Tayx::Graphy::GraphyDebugger {
 }
 #[cfg(feature = "Tayx+Graphy+GraphyDebugger+ConditionEvaluation")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GraphyDebugger_ConditionEvaluation {
+    #[default]
     All_conditions_must_be_met = 0i32,
     Only_one_condition_has_to_be_met = 1i32,
 }
@@ -365,8 +366,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "Tayx+Graphy+GraphyDebugger+DebugComparer")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GraphyDebugger_DebugComparer {
+    #[default]
     Equals = 2i32,
     Equals_or_greater_than = 3i32,
     Equals_or_less_than = 1i32,
@@ -512,8 +514,9 @@ for crate::Tayx::Graphy::GraphyDebugger_DebugPacket {
 }
 #[cfg(feature = "Tayx+Graphy+GraphyDebugger+DebugVariable")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GraphyDebugger_DebugVariable {
+    #[default]
     Audio_DB = 7i32,
     Fps = 0i32,
     Fps_Avg = 3i32,
@@ -530,8 +533,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "Tayx+Graphy+GraphyDebugger+MessageType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GraphyDebugger_MessageType {
+    #[default]
     Error = 2i32,
     Log = 0i32,
     Warning = 1i32,

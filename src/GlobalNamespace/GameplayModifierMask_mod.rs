@@ -1,7 +1,8 @@
 #[cfg(feature = "GameplayModifierMask")]
 #[repr(u16)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GameplayModifierMask {
+    #[default]
     All = 65535u16,
     BatteryEnergy = 1u16,
     DisappearingArrows = 128u16,

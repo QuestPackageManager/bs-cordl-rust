@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Net+CookieToken")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CookieToken {
+    #[default]
     Attribute = 2i32,
     Comment = 7i32,
     CommentUrl = 8i32,

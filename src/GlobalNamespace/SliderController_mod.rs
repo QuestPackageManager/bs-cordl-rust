@@ -763,8 +763,9 @@ for crate::GlobalNamespace::SliderController {
 }
 #[cfg(feature = "SliderController+LengthType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SliderController_LengthType {
+    #[default]
     Long = 2i32,
     Medium = 1i32,
     Short = 0i32,

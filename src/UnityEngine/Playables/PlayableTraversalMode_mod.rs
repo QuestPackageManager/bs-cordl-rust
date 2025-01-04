@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Playables+PlayableTraversalMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PlayableTraversalMode {
+    #[default]
     Mix = 0i32,
     Passthrough = 1i32,
 }

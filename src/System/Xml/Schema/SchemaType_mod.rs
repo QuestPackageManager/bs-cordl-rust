@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Xml+Schema+SchemaType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SchemaType {
+    #[default]
     DTD = 1i32,
     None = 0i32,
     XDR = 2i32,

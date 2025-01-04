@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Globalization+NumberStyles")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NumberStyles {
+    #[default]
     AllowCurrencySymbol = 256i32,
     AllowDecimalPoint = 32i32,
     AllowExponent = 128i32,

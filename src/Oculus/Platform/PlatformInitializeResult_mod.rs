@@ -1,7 +1,8 @@
 #[cfg(feature = "Oculus+Platform+PlatformInitializeResult")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PlatformInitializeResult {
+    #[default]
     FileInvalid = -3i32,
     InvalidCredentials = -8i32,
     NotEntitled = -9i32,

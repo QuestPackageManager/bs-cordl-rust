@@ -1,7 +1,8 @@
 #[cfg(feature = "OVR+OpenVR+EGamepadTextInputLineMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EGamepadTextInputLineMode {
+    #[default]
     k_EGamepadTextInputLineModeMultipleLines = 1i32,
     k_EGamepadTextInputLineModeSingleLine = 0i32,
 }

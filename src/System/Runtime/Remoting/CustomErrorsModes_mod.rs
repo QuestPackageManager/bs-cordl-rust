@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Runtime+Remoting+CustomErrorsModes")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CustomErrorsModes {
+    #[default]
     Off = 1i32,
     On = 0i32,
     RemoteOnly = 2i32,

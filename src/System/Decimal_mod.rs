@@ -231,8 +231,9 @@ impl crate::System::DecCalc_Decimal_PowerOvfl {
 }
 #[cfg(feature = "System+Decimal+DecCalc+RoundingMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DecCalc_Decimal_RoundingMode {
+    #[default]
     AwayFromZero = 1i32,
     Ceiling = 4i32,
     Floor = 3i32,

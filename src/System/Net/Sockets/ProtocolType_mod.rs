@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Net+Sockets+ProtocolType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ProtocolType {
+    #[default]
     Ggp = 3i32,
     IP = 0i32,
     IPSecAuthenticationHeader = 51i32,

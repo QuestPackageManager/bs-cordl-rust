@@ -475,8 +475,9 @@ for crate::GlobalNamespace::OVRHand {
 }
 #[cfg(feature = "OVRHand+Hand")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRHand_Hand {
+    #[default]
     HandLeft = 0i32,
     HandRight = 1i32,
     None = -1i32,
@@ -488,8 +489,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRHand+HandFinger")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRHand_HandFinger {
+    #[default]
     Index = 1i32,
     Max = 5i32,
     Middle = 2i32,
@@ -504,8 +506,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRHand+TrackingConfidence")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRHand_TrackingConfidence {
+    #[default]
     High = 1065353216i32,
     Low = 0i32,
 }

@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Android+AndroidAssetPackStatus")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AndroidAssetPackStatus {
+    #[default]
     Canceled = 6i32,
     Completed = 4i32,
     Downloading = 2i32,

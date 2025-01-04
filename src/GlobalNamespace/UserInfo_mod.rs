@@ -64,8 +64,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::UserInfo {
 }
 #[cfg(feature = "UserInfo+Platform")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum UserInfo_Platform {
+    #[default]
     Oculus = 2i32,
     PS4 = 3i32,
     PS5 = 4i32,

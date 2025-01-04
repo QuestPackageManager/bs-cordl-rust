@@ -1,7 +1,8 @@
 #[cfg(feature = "Newtonsoft+Json+ReferenceLoopHandling")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ReferenceLoopHandling {
+    #[default]
     Error = 0i32,
     Ignore = 1i32,
     Serialize = 2i32,

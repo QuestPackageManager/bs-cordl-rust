@@ -1,7 +1,8 @@
 #[cfg(feature = "ComparisonOperation")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ComparisonOperation {
+    #[default]
     Equal = 0i32,
     NotEqual = 1i32,
 }

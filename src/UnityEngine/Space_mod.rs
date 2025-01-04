@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Space")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Space {
+    #[default]
     _cordl_Self = 1i32,
     World = 0i32,
 }

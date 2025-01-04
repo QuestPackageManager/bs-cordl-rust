@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Video+VideoRenderMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum VideoRenderMode {
+    #[default]
     APIOnly = 4i32,
     CameraFarPlane = 0i32,
     CameraNearPlane = 1i32,

@@ -1990,8 +1990,9 @@ for crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
 }
 #[cfg(feature = "ConnectedPlayerManager+InternalMessageType")]
 #[repr(u8)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ConnectedPlayerManager_InternalMessageType {
+    #[default]
     KickPlayer = 8u8,
     MultiplayerSession = 7u8,
     Party = 6u8,
@@ -2162,8 +2163,9 @@ for crate::GlobalNamespace::ConnectedPlayerManager_KickPlayerPacket {
 }
 #[cfg(feature = "ConnectedPlayerManager+MessageType")]
 #[repr(u8)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ConnectedPlayerManager_MessageType {
+    #[default]
     MultiplayerSession = 7u8,
     Party = 6u8,
 }

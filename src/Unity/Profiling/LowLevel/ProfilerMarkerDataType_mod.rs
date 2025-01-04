@@ -1,7 +1,8 @@
 #[cfg(feature = "Unity+Profiling+LowLevel+ProfilerMarkerDataType")]
 #[repr(u8)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ProfilerMarkerDataType {
+    #[default]
     Blob8 = 11u8,
     Double = 7u8,
     Float = 6u8,

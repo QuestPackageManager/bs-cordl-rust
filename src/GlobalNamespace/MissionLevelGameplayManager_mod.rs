@@ -315,8 +315,9 @@ for crate::GlobalNamespace::MissionLevelGameplayManager {
 }
 #[cfg(feature = "MissionLevelGameplayManager+GameState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MissionLevelGameplayManager_GameState {
+    #[default]
     Failed = 5i32,
     Finished = 4i32,
     Intro = 0i32,

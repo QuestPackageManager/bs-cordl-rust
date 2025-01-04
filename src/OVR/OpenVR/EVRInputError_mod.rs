@@ -1,7 +1,8 @@
 #[cfg(feature = "OVR+OpenVR+EVRInputError")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EVRInputError {
+    #[default]
     BufferTooSmall = 14i32,
     IPCError = 7i32,
     InvalidBoneCount = 11i32,

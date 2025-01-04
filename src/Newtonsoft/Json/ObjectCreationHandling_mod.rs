@@ -1,7 +1,8 @@
 #[cfg(feature = "Newtonsoft+Json+ObjectCreationHandling")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ObjectCreationHandling {
+    #[default]
     Auto = 0i32,
     Replace = 2i32,
     Reuse = 1i32,

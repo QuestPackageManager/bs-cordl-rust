@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Rendering+RenderTextureSubElement")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RenderTextureSubElement {
+    #[default]
     Color = 0i32,
     Default = 3i32,
     Depth = 1i32,

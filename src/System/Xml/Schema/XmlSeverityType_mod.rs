@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Xml+Schema+XmlSeverityType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XmlSeverityType {
+    #[default]
     Error = 0i32,
     Warning = 1i32,
 }

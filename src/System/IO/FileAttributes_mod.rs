@@ -1,7 +1,8 @@
 #[cfg(feature = "System+IO+FileAttributes")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum FileAttributes {
+    #[default]
     Archive = 32i32,
     Compressed = 2048i32,
     Device = 64i32,

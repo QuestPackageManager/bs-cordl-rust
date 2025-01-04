@@ -1,7 +1,8 @@
 #[cfg(feature = "HoudiniEngineUnity+HAPI_ImagePacking")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HAPI_ImagePacking {
+    #[default]
     HAPI_IMAGE_PACKING_ABGR = 5i32,
     HAPI_IMAGE_PACKING_BGR = 3i32,
     HAPI_IMAGE_PACKING_DEFAULT3 = 2i32,

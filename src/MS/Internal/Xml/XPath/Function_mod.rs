@@ -152,8 +152,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::MS::Internal::Xml::XPath::Func
 }
 #[cfg(feature = "MS+Internal+Xml+XPath+Function+FunctionType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Function_FunctionType {
+    #[default]
     FuncBoolean = 8i32,
     FuncCeiling = 25i32,
     FuncConcat = 13i32,

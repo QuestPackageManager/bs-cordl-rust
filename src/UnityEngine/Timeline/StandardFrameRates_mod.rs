@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Timeline+StandardFrameRates")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum StandardFrameRates {
+    #[default]
     Fps23_97 = 1i32,
     Fps24 = 0i32,
     Fps25 = 2i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Text+NormalizationForm")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NormalizationForm {
+    #[default]
     FormC = 1i32,
     FormD = 2i32,
     FormKC = 5i32,

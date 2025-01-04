@@ -1,7 +1,8 @@
 #[cfg(feature = "BeatmapDifficultyMask")]
 #[repr(u8)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BeatmapDifficultyMask {
+    #[default]
     All = 31u8,
     Easy = 1u8,
     Expert = 8u8,

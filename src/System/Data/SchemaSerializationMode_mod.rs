@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Data+SchemaSerializationMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SchemaSerializationMode {
+    #[default]
     ExcludeSchema = 2i32,
     IncludeSchema = 1i32,
 }

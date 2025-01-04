@@ -1,7 +1,8 @@
 #[cfg(feature = "Oculus+Platform+AbuseReportType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AbuseReportType {
+    #[default]
     Object = 1i32,
     Unknown = 0i32,
     User = 2i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+AnimatorCullingMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AnimatorCullingMode {
+    #[default]
     AlwaysAnimate = 0i32,
     CullCompletely = 2i32,
     CullUpdateTransforms = 1i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+LogType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LogType {
+    #[default]
     _cordl_Assert = 1i32,
     Error = 0i32,
     Exception = 4i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+XR+ConnectionChangeType")]
 #[repr(u32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ConnectionChangeType {
+    #[default]
     ConfigChange = 33619970u32,
     Connected = 131328u32,
     Disconnected = 16777729u32,

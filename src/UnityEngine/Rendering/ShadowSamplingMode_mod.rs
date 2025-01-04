@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Rendering+ShadowSamplingMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ShadowSamplingMode {
+    #[default]
     CompareDepths = 0i32,
     None = 2i32,
     RawDepth = 1i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Security+Cryptography+CryptoStreamMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CryptoStreamMode {
+    #[default]
     Read = 0i32,
     Write = 1i32,
 }

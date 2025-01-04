@@ -275,8 +275,9 @@ for crate::GlobalNamespace::MainMenuViewController {
 }
 #[cfg(feature = "MainMenuViewController+MenuButton")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MainMenuViewController_MenuButton {
+    #[default]
     BeatmapEditor = 2i32,
     FloorAdjust = 4i32,
     HowToPlay = 8i32,

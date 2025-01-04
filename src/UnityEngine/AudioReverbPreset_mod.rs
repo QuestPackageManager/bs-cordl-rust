@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+AudioReverbPreset")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AudioReverbPreset {
+    #[default]
     Alley = 15i32,
     Arena = 10i32,
     Auditorium = 7i32,

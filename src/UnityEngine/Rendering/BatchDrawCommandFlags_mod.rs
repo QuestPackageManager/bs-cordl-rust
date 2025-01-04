@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Rendering+BatchDrawCommandFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BatchDrawCommandFlags {
+    #[default]
     FlipWinding = 1i32,
     HasMotion = 2i32,
     HasSortingPosition = 8i32,

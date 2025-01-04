@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Yoga+YogaAlign")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum YogaAlign {
+    #[default]
     Auto = 0i32,
     Baseline = 5i32,
     Center = 2i32,

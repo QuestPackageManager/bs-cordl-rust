@@ -1,7 +1,8 @@
 #[cfg(feature = "TMPro+Compute_DistanceTransform_EventTypes")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Compute_DistanceTransform_EventTypes {
+    #[default]
     Completed = 1i32,
     Processing = 0i32,
 }

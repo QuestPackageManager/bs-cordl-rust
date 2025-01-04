@@ -260,8 +260,9 @@ for crate::System::Globalization::DateTimeFormatInfoScanner {
 }
 #[cfg(feature = "System+Globalization+DateTimeFormatInfoScanner+FoundDatePattern")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DateTimeFormatInfoScanner_FoundDatePattern {
+    #[default]
     FoundDayPatternFlag = 4i32,
     FoundMonthPatternFlag = 2i32,
     FoundYMDPatternFlag = 7i32,

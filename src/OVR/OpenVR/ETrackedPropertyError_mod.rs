@@ -1,7 +1,8 @@
 #[cfg(feature = "OVR+OpenVR+ETrackedPropertyError")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ETrackedPropertyError {
+    #[default]
     TrackedProp_BufferTooSmall = 3i32,
     TrackedProp_CannotWriteToWildcards = 12i32,
     TrackedProp_CouldNotContactServer = 6i32,

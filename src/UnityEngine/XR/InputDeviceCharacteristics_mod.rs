@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+XR+InputDeviceCharacteristics")]
 #[repr(u32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputDeviceCharacteristics {
+    #[default]
     Camera = 268960770u32,
     Controller = 2172682304u32,
     EyeTracking = 2151686160u32,

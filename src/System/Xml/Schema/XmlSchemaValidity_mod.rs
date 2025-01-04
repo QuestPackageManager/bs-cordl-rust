@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Xml+Schema+XmlSchemaValidity")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XmlSchemaValidity {
+    #[default]
     Invalid = 2i32,
     NotKnown = 0i32,
     Valid = 1i32,

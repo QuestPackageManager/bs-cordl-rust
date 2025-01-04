@@ -338,8 +338,9 @@ for crate::System::Net::CookieCollection_CookieCollectionEnumerator {
 }
 #[cfg(feature = "System+Net+CookieCollection+Stamp")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CookieCollection_Stamp {
+    #[default]
     Check = 0i32,
     Set = 1i32,
     SetToMaxUsed = 3i32,

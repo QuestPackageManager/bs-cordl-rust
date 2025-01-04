@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+AvatarMaskBodyPart")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AvatarMaskBodyPart {
+    #[default]
     Body = 1i32,
     Head = 2i32,
     LastBodyPart = 13i32,

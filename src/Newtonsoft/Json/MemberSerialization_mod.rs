@@ -1,7 +1,8 @@
 #[cfg(feature = "Newtonsoft+Json+MemberSerialization")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MemberSerialization {
+    #[default]
     Fields = 2i32,
     OptIn = 1i32,
     OptOut = 0i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "HoudiniEngineUnity+HAPI_ImageDataFormat")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HAPI_ImageDataFormat {
+    #[default]
     HAPI_IMAGE_DATA_DEFAULT = 0i32,
     HAPI_IMAGE_DATA_FLOAT16 = 3i32,
     HAPI_IMAGE_DATA_FLOAT32 = 4i32,

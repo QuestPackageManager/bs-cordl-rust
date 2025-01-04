@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Xml+Schema+RestrictionFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RestrictionFlags {
+    #[default]
     Enumeration = 16i32,
     FractionDigits = 2048i32,
     Length = 1i32,

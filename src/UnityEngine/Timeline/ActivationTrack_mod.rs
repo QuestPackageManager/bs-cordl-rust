@@ -140,8 +140,9 @@ for crate::UnityEngine::Timeline::ActivationTrack {
 }
 #[cfg(feature = "UnityEngine+Timeline+ActivationTrack+PostPlaybackState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ActivationTrack_PostPlaybackState {
+    #[default]
     Active = 0i32,
     Inactive = 1i32,
     LeaveAsIs = 3i32,

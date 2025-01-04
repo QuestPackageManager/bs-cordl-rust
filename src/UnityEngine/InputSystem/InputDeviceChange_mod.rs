@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+InputSystem+InputDeviceChange")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputDeviceChange {
+    #[default]
     Added = 0i32,
     ConfigurationChanged = 7i32,
     Destroyed = 10i32,

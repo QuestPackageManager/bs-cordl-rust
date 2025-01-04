@@ -164,8 +164,9 @@ for crate::GlobalNamespace::MirrorRendererGraphicsSettingsPresets_Preset {
 }
 #[cfg(feature = "MirrorRendererGraphicsSettingsPresets+Preset+MirrorType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Preset_MirrorRendererGraphicsSettingsPresets_MirrorType {
+    #[default]
     FakeMirror = 1i32,
     None = 0i32,
     RenderedMirror = 2i32,

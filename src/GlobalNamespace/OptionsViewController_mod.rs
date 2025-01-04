@@ -140,8 +140,9 @@ for crate::GlobalNamespace::OptionsViewController {
 }
 #[cfg(feature = "OptionsViewController+OptionsButton")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OptionsViewController_OptionsButton {
+    #[default]
     EditAvatar = 0i32,
     PlayerOptions = 1i32,
     Settings = 2i32,

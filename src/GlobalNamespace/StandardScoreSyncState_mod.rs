@@ -240,8 +240,9 @@ for crate::GlobalNamespace::StandardScoreSyncState {
 }
 #[cfg(feature = "StandardScoreSyncState+Score")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum StandardScoreSyncState_Score {
+    #[default]
     Combo = 3i32,
     Count = 5i32,
     ImmediateMaxPossibleMultipliedScore = 2i32,

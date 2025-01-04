@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Reflection+GenericParameterAttributes")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GenericParameterAttributes {
+    #[default]
     Contravariant = 2i32,
     Covariant = 1i32,
     DefaultConstructorConstraint = 16i32,

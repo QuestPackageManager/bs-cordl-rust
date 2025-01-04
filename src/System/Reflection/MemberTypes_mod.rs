@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Reflection+MemberTypes")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MemberTypes {
+    #[default]
     All = 191i32,
     Constructor = 1i32,
     Custom = 64i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Rendering+ReflectionProbeType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ReflectionProbeType {
+    #[default]
     Card = 1i32,
     Cube = 0i32,
 }

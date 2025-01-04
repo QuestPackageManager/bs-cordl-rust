@@ -1,7 +1,8 @@
 #[cfg(feature = "OVR+OpenVR+EVROverlayError")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EVROverlayError {
+    #[default]
     ArrayTooSmall = 22i32,
     BadMaskPrimitive = 30i32,
     InvalidHandle = 11i32,

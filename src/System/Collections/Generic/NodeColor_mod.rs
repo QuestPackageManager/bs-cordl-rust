@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Collections+Generic+NodeColor")]
 #[repr(u8)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NodeColor {
+    #[default]
     Black = 0u8,
     Red = 1u8,
 }

@@ -167,8 +167,9 @@ for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientFromColorSchemeC
     feature = "BloomPrePassBackgroundColorsGradientFromColorSchemeColors+EnvironmentColor"
 )]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BloomPrePassBackgroundColorsGradientFromColorSchemeColors_EnvironmentColor {
+    #[default]
     Color0 = 0i32,
     Color0Boost = 2i32,
     Color1 = 1i32,

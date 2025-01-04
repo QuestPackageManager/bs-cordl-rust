@@ -1,7 +1,8 @@
 #[cfg(feature = "OVR+OpenVR+EVRInputFilterCancelType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EVRInputFilterCancelType {
+    #[default]
     VRInputFilterCancel_Momentum = 1i32,
     VRInputFilterCancel_Timers = 0i32,
 }

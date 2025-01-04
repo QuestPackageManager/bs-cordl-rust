@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Xml+Schema+FacetType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum FacetType {
+    #[default]
     Enumeration = 6i32,
     FractionDigits = 12i32,
     Length = 1i32,

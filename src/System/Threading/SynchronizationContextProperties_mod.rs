@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Threading+SynchronizationContextProperties")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SynchronizationContextProperties {
+    #[default]
     None = 0i32,
     RequireWaitNotification = 1i32,
 }

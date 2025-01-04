@@ -98,8 +98,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::EnvironmentSi
 }
 #[cfg(feature = "EnvironmentSizeData+CeilingType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EnvironmentSizeData_CeilingType {
+    #[default]
     LowCeiling = 1i32,
     NoCeiling = 0i32,
 }
@@ -110,8 +111,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "EnvironmentSizeData+FloorType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EnvironmentSizeData_FloorType {
+    #[default]
     CloseTo0 = 1i32,
     NoFloor = 0i32,
 }
@@ -122,8 +124,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "EnvironmentSizeData+TrackLaneType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EnvironmentSizeData_TrackLaneType {
+    #[default]
     None = 0i32,
     Normal = 1i32,
 }

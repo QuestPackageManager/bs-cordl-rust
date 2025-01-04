@@ -1,7 +1,8 @@
 #[cfg(feature = "System+AttributeTargets")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AttributeTargets {
+    #[default]
     All = 32767i32,
     Assembly = 1i32,
     Class = 4i32,

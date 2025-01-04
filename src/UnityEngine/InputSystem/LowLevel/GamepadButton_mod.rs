@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+GamepadButton")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GamepadButton {
+    #[default]
     A = 6i32,
     B = 5i32,
     DpadDown = 1i32,

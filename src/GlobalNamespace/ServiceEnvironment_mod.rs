@@ -1,7 +1,8 @@
 #[cfg(feature = "ServiceEnvironment")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ServiceEnvironment {
+    #[default]
     Development = 4i32,
     DevelopmentA = 7i32,
     DevelopmentB = 8i32,

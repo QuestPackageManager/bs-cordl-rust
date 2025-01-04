@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+PseudoStates")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PseudoStates {
+    #[default]
     Active = 1i32,
     Checked = 8i32,
     Disabled = 32i32,

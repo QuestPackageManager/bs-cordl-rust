@@ -1,7 +1,8 @@
 #[cfg(feature = "BGNet+Core+DeliveryMethod")]
 #[repr(u8)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DeliveryMethod {
+    #[default]
     ReliableOrdered = 1u8,
     Unreliable = 0u8,
 }

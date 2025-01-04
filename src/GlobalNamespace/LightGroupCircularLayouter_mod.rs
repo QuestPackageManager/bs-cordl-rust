@@ -62,8 +62,9 @@ for crate::GlobalNamespace::LightGroupCircularLayouter {
 }
 #[cfg(feature = "LightGroupCircularLayouter+RotationDirection")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LightGroupCircularLayouter_RotationDirection {
+    #[default]
     Clockwise = 0i32,
     Counterclockwise = 1i32,
 }

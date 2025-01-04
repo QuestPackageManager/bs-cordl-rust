@@ -1,7 +1,8 @@
 #[cfg(feature = "OVR+OpenVR+EVROverlayIntersectionMaskPrimitiveType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EVROverlayIntersectionMaskPrimitiveType {
+    #[default]
     OverlayIntersectionPrimitiveType_Circle = 1i32,
     OverlayIntersectionPrimitiveType_Rectangle = 0i32,
 }

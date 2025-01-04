@@ -94,8 +94,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NoteCutHaptic
 }
 #[cfg(feature = "NoteCutHapticEffect+Type")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NoteCutHapticEffect_Type {
+    #[default]
     ArcHead = 5i32,
     ArcHeadAndTail = 7i32,
     ArcTail = 6i32,

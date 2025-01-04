@@ -1,7 +1,8 @@
 #[cfg(feature = "Zenject+ToChoices")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ToChoices {
+    #[default]
     Concrete = 1i32,
     _cordl_Self = 0i32,
 }

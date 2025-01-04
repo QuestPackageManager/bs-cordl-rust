@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+LightmapsModeLegacy")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LightmapsModeLegacy {
+    #[default]
     Directional = 2i32,
     Dual = 1i32,
     Single = 0i32,

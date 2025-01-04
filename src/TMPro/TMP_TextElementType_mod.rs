@@ -1,7 +1,8 @@
 #[cfg(feature = "TMPro+TMP_TextElementType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TMP_TextElementType {
+    #[default]
     Character = 0i32,
     Sprite = 1i32,
 }

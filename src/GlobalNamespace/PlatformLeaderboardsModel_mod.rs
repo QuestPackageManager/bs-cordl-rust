@@ -440,8 +440,9 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresCompletionHandler
 }
 #[cfg(feature = "PlatformLeaderboardsModel+GetScoresResult")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PlatformLeaderboardsModel_GetScoresResult {
+    #[default]
     Failed = 1i32,
     FailedTooManyRequests = 2i32,
     _cordl_Ok = 0i32,
@@ -564,8 +565,9 @@ impl AsMut<
 }
 #[cfg(feature = "PlatformLeaderboardsModel+ScoresScope")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PlatformLeaderboardsModel_ScoresScope {
+    #[default]
     AroundPlayer = 1i32,
     Friends = 2i32,
     Global = 0i32,
@@ -578,8 +580,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "PlatformLeaderboardsModel+State")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PlatformLeaderboardsModel_State {
+    #[default]
     Initialized = 2i32,
     Initializing = 1i32,
     NotInitialized = 0i32,
@@ -690,8 +693,9 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_UploadScoreCompletionHandl
 }
 #[cfg(feature = "PlatformLeaderboardsModel+UploadScoreResult")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PlatformLeaderboardsModel_UploadScoreResult {
+    #[default]
     Failed = 1i32,
     FailedTooManyRequests = 2i32,
     _cordl_Ok = 0i32,

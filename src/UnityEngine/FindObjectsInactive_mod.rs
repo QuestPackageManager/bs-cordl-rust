@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+FindObjectsInactive")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum FindObjectsInactive {
+    #[default]
     Exclude = 0i32,
     Include = 1i32,
 }

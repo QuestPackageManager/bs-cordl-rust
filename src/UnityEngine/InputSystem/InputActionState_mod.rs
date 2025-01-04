@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+InputSystem+InputActionState+BindingState+Flags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BindingState_InputActionState_Flags {
+    #[default]
     ChainsWithNext = 1i32,
     Composite = 4i32,
     EndOfChain = 2i32,
@@ -2871,8 +2872,9 @@ for crate::UnityEngine::InputSystem::InputActionState_UnmanagedMemory {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionState+InteractionState+Flags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InteractionState_InputActionState_Flags {
+    #[default]
     TimerRunning = 1i32,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionState+InteractionState+Flags")]
@@ -2883,8 +2885,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+InputActionState+TriggerState+Flags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TriggerState_InputActionState_Flags {
+    #[default]
     Button = 32i32,
     HasMultipleConcurrentActuations = 8i32,
     HaveMagnitude = 1i32,

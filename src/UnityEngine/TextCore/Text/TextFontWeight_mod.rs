@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+TextCore+Text+TextFontWeight")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TextFontWeight {
+    #[default]
     Black = 900i32,
     Bold = 700i32,
     ExtraLight = 200i32,

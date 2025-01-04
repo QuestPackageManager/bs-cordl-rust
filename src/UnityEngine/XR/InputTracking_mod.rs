@@ -113,8 +113,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::XR::InputTracking
 }
 #[cfg(feature = "UnityEngine+XR+InputTracking+TrackingStateEventType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputTracking_TrackingStateEventType {
+    #[default]
     NodeAdded = 0i32,
     NodeRemoved = 1i32,
     TrackingAcquired = 2i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "System+ParsingError")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ParsingError {
+    #[default]
     BadAuthority = 3i32,
     BadAuthorityTerminator = 11i32,
     BadFormat = 1i32,

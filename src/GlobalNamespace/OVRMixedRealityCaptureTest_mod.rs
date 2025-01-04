@@ -100,8 +100,9 @@ for crate::GlobalNamespace::OVRMixedRealityCaptureTest {
 }
 #[cfg(feature = "OVRMixedRealityCaptureTest+CameraMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRMixedRealityCaptureTest_CameraMode {
+    #[default]
     Normal = 0i32,
     OverrideFov = 1i32,
     ThirdPerson = 2i32,

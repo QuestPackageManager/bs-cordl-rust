@@ -2,8 +2,9 @@
     feature = "System+Runtime+Serialization+Formatters+Binary+InternalSerializerTypeE"
 )]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InternalSerializerTypeE {
+    #[default]
     Binary = 2i32,
     Soap = 1i32,
 }

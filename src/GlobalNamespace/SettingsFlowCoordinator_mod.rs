@@ -250,8 +250,9 @@ for crate::GlobalNamespace::SettingsFlowCoordinator {
 }
 #[cfg(feature = "SettingsFlowCoordinator+FinishAction")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SettingsFlowCoordinator_FinishAction {
+    #[default]
     Apply = 2i32,
     Cancel = 0i32,
     _cordl_Ok = 1i32,

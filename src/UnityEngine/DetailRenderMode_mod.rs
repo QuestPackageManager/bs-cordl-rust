@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+DetailRenderMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DetailRenderMode {
+    #[default]
     Grass = 2i32,
     GrassBillboard = 0i32,
     VertexLit = 1i32,

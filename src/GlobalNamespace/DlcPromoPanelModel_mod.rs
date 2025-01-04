@@ -613,8 +613,9 @@ for crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo {
 }
 #[cfg(feature = "DlcPromoPanelModel+PromoInfo+PromoType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PromoInfo_DlcPromoPanelModel_PromoType {
+    #[default]
     Level = 1i32,
     Pack = 0i32,
     Store = 2i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Net+Sockets+SelectMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SelectMode {
+    #[default]
     SelectError = 2i32,
     SelectRead = 0i32,
     SelectWrite = 1i32,

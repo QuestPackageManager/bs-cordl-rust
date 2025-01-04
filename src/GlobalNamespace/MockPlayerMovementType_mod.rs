@@ -1,7 +1,8 @@
 #[cfg(feature = "MockPlayerMovementType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MockPlayerMovementType {
+    #[default]
     AI = 0i32,
     MirrorPlayer = 1i32,
     Recording = 2i32,

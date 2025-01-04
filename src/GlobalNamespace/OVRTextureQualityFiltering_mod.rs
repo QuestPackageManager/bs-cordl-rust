@@ -1,7 +1,8 @@
 #[cfg(feature = "OVRTextureQualityFiltering")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRTextureQualityFiltering {
+    #[default]
     Aniso16x = 5i32,
     Aniso2x = 2i32,
     Aniso4x = 3i32,

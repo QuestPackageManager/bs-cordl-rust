@@ -1,7 +1,8 @@
 #[cfg(feature = "Oculus+Platform+RichPresenceExtraContext")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RichPresenceExtraContext {
+    #[default]
     CurrentCapacity = 2i32,
     EndingIn = 4i32,
     LookingForAMatch = 5i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Net+NetworkInformation+OperationalStatus")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OperationalStatus {
+    #[default]
     Dormant = 5i32,
     Down = 2i32,
     LowerLayerDown = 7i32,

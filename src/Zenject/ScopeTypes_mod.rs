@@ -1,7 +1,8 @@
 #[cfg(feature = "Zenject+ScopeTypes")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ScopeTypes {
+    #[default]
     Singleton = 2i32,
     Transient = 1i32,
     Unset = 0i32,

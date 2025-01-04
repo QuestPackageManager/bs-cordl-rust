@@ -1,7 +1,8 @@
 #[cfg(feature = "HoudiniEngineUnity+HAPI_HeightFieldSampling")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HAPI_HeightFieldSampling {
+    #[default]
     HAPI_HEIGHTFIELD_SAMPLING_CENTER = 0i32,
     HAPI_HEIGHTFIELD_SAMPLING_CORNER = 1i32,
 }

@@ -236,8 +236,9 @@ for crate::UnityEngine::InputSystem::Controls::DpadControl {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Controls+DpadControl+ButtonBits")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DpadControl_ButtonBits {
+    #[default]
     Down = 1i32,
     Left = 2i32,
     Right = 3i32,

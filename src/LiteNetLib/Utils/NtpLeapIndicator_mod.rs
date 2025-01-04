@@ -1,7 +1,8 @@
 #[cfg(feature = "LiteNetLib+Utils+NtpLeapIndicator")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NtpLeapIndicator {
+    #[default]
     AlarmCondition = 3i32,
     LastMinuteHas59Seconds = 2i32,
     LastMinuteHas61Seconds = 1i32,

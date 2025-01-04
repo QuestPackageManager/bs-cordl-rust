@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Rendering+VertexAttribute")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum VertexAttribute {
+    #[default]
     BlendIndices = 13i32,
     BlendWeight = 12i32,
     Color = 3i32,

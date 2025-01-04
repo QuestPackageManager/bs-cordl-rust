@@ -70,8 +70,9 @@ for crate::GlobalNamespace::HEU_ScriptMeshInputUVLayoutExample {
 }
 #[cfg(feature = "HEU_ScriptMeshInputUVLayoutExample+OutputMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HEU_ScriptMeshInputUVLayoutExample_OutputMode {
+    #[default]
     COPY = 0i32,
     REPLACE = 1i32,
 }

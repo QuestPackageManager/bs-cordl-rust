@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Rendering+ReflectionProbeSortingCriteria")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ReflectionProbeSortingCriteria {
+    #[default]
     Importance = 1i32,
     ImportanceThenSize = 3i32,
     None = 0i32,

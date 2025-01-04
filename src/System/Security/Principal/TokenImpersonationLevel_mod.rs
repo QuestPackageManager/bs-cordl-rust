@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Security+Principal+TokenImpersonationLevel")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TokenImpersonationLevel {
+    #[default]
     Anonymous = 1i32,
     Delegation = 4i32,
     Identification = 2i32,

@@ -324,8 +324,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::TouchScreenKeyboa
 }
 #[cfg(feature = "UnityEngine+TouchScreenKeyboard+Status")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TouchScreenKeyboard_Status {
+    #[default]
     Canceled = 2i32,
     Done = 1i32,
     LostFocus = 3i32,

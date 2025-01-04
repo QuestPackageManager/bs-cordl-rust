@@ -174,8 +174,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::InputSystem::HID:
 }
 #[cfg(feature = "UnityEngine+InputSystem+HID+HID+Button")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HID_Button {
+    #[default]
     Primary = 1i32,
     Secondary = 2i32,
     Tertiary = 3i32,
@@ -188,8 +189,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+HID+HID+GenericDesktop")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HID_GenericDesktop {
+    #[default]
     ApplicationBreak = 165i32,
     ApplicationDebuggerBreak = 166i32,
     AssistiveControl = 10i32,
@@ -300,8 +302,9 @@ for crate::UnityEngine::InputSystem::HID::HID_HIDCollectionDescriptor {
 impl crate::UnityEngine::InputSystem::HID::HID_HIDCollectionDescriptor {}
 #[cfg(feature = "UnityEngine+InputSystem+HID+HID+HIDCollectionType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HID_HIDCollectionType {
+    #[default]
     Application = 1i32,
     Logical = 2i32,
     NamedArray = 4i32,
@@ -802,8 +805,9 @@ impl crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor {
 }
 #[cfg(feature = "UnityEngine+InputSystem+HID+HID+HIDElementFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HID_HIDElementFlags {
+    #[default]
     BufferedBytes = 256i32,
     Constant = 1i32,
     NoPreferred = 32i32,
@@ -896,8 +900,9 @@ for crate::UnityEngine::InputSystem::HID::HID_HIDLayoutBuilder {
 }
 #[cfg(feature = "UnityEngine+InputSystem+HID+HID+HIDReportType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HID_HIDReportType {
+    #[default]
     Feature = 3i32,
     Input = 1i32,
     Output = 2i32,
@@ -910,8 +915,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+HID+HID+Simulation")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HID_Simulation {
+    #[default]
     Accelerator = 196i32,
     Aileron = 176i32,
     AileronTrim = 177i32,
@@ -972,8 +978,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+HID+HID+UsagePage")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HID_UsagePage {
+    #[default]
     AlphanumericDisplay = 20i32,
     Arcade = 145i32,
     BarCodeScanner = 140i32,

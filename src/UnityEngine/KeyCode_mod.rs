@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+KeyCode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum KeyCode {
+    #[default]
     A = 97i32,
     Alpha0 = 48i32,
     Alpha1 = 49i32,

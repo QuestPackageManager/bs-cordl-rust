@@ -641,8 +641,9 @@ for crate::HoudiniEngineUnity::HEU_PDGAssetLink {
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_PDGAssetLink+LinkState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HEU_PDGAssetLink_LinkState {
+    #[default]
     ERROR_NOT_LINKED = 3i32,
     INACTIVE = 0i32,
     LINKED = 2i32,

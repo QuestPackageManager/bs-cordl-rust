@@ -107,8 +107,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlatformMe
 }
 #[cfg(feature = "OVRPlatformMenu+eBackButtonAction")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlatformMenu_eBackButtonAction {
+    #[default]
     NONE = 0i32,
     SHORT_PRESS = 1i32,
 }
@@ -120,8 +121,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRPlatformMenu+eHandler")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlatformMenu_eHandler {
+    #[default]
     RetreatOneLevel = 1i32,
     ShowConfirmQuit = 0i32,
 }

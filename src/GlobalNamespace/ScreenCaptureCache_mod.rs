@@ -86,8 +86,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ScreenCapture
 }
 #[cfg(feature = "ScreenCaptureCache+ScreenshotType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ScreenCaptureCache_ScreenshotType {
+    #[default]
     Game = 0i32,
     Menu = 1i32,
     Other = 2i32,

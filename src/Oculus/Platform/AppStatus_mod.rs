@@ -1,7 +1,8 @@
 #[cfg(feature = "Oculus+Platform+AppStatus")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AppStatus {
+    #[default]
     DownloadQueued = 2i32,
     Downloading = 3i32,
     Entitled = 1i32,

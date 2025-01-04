@@ -1,7 +1,8 @@
 #[cfg(feature = "OVR+OpenVR+ETrackedDeviceClass")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ETrackedDeviceClass {
+    #[default]
     Controller = 2i32,
     DisplayRedirect = 5i32,
     GenericTracker = 3i32,

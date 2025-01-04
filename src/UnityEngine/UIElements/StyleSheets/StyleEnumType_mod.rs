@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleEnumType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum StyleEnumType {
+    #[default]
     Align = 0i32,
     BackgroundPositionKeyword = 1i32,
     BackgroundSizeType = 2i32,

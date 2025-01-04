@@ -1971,8 +1971,9 @@ for crate::UnityEngine::UI::InputField {
 }
 #[cfg(feature = "UnityEngine+UI+InputField+CharacterValidation")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputField_CharacterValidation {
+    #[default]
     Alphanumeric = 3i32,
     Decimal = 2i32,
     EmailAddress = 5i32,
@@ -1987,8 +1988,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+UI+InputField+ContentType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputField_ContentType {
+    #[default]
     Alphanumeric = 4i32,
     Autocorrected = 1i32,
     Custom = 9i32,
@@ -2007,8 +2009,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+UI+InputField+EditState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputField_EditState {
+    #[default]
     Continue = 0i32,
     Finish = 1i32,
 }
@@ -2077,8 +2080,9 @@ for crate::UnityEngine::UI::InputField_EndEditEvent {
 }
 #[cfg(feature = "UnityEngine+UI+InputField+InputType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputField_InputType {
+    #[default]
     AutoCorrect = 1i32,
     Password = 2i32,
     Standard = 0i32,
@@ -2090,8 +2094,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+UI+InputField+LineType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputField_LineType {
+    #[default]
     MultiLineNewline = 2i32,
     MultiLineSubmit = 1i32,
     SingleLine = 0i32,

@@ -142,8 +142,9 @@ for crate::GlobalNamespace::ISonyCommerceHelper_AdditionalContentEntitlementsAsy
 impl crate::GlobalNamespace::ISonyCommerceHelper_AdditionalContentEntitlementsAsyncResult {}
 #[cfg(feature = "ISonyCommerceHelper+DisplayCategoryBrowseDialogResult")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ISonyCommerceHelper_DisplayCategoryBrowseDialogResult {
+    #[default]
     Failed = 1i32,
     OK = 0i32,
 }
@@ -155,8 +156,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "ISonyCommerceHelper+DisplayProductBrowseDialogResult")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ISonyCommerceHelper_DisplayProductBrowseDialogResult {
+    #[default]
     Failed = 1i32,
     OK = 0i32,
 }
@@ -168,8 +170,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "ISonyCommerceHelper+GetAdditionalContentEntitlementsResult")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ISonyCommerceHelper_GetAdditionalContentEntitlementsResult {
+    #[default]
     Failed = 1i32,
     OK = 0i32,
 }

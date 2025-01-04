@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Threading+Tasks+TaskStatus")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TaskStatus {
+    #[default]
     Canceled = 6i32,
     Created = 0i32,
     Faulted = 7i32,

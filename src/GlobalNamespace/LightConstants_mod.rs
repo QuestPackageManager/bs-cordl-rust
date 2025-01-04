@@ -62,8 +62,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LightConstant
 }
 #[cfg(feature = "LightConstants+BakeId")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LightConstants_BakeId {
+    #[default]
     A = 1i32,
     B = 2i32,
     C = 3i32,

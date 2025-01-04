@@ -179,8 +179,9 @@ for crate::GlobalNamespace::GameServerLobbyFlowCoordinatorBase {
 }
 #[cfg(feature = "GameServerLobbyFlowCoordinatorBase+LobbyType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GameServerLobbyFlowCoordinatorBase_LobbyType {
+    #[default]
     ClientSetup = 1i32,
     HostSetup = 0i32,
     Party = 3i32,

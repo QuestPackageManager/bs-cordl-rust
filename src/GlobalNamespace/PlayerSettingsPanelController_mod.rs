@@ -562,8 +562,9 @@ for crate::GlobalNamespace::PlayerSettingsPanelController {
 }
 #[cfg(feature = "PlayerSettingsPanelController+PlayerSettingsPanelLayout")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PlayerSettingsPanelController_PlayerSettingsPanelLayout {
+    #[default]
     All = 0i32,
     Multiplayer = 2i32,
     Singleplayer = 1i32,

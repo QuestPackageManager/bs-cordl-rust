@@ -98,8 +98,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::Mono::Unity::UnityTls {
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_ciphersuite")]
 #[repr(u32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum UnityTls_unitytls_ciphersuite {
+    #[default]
     UNITYTLS_CIPHERSUITE_INVALID = 4294967232u32,
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_ciphersuite")]
@@ -109,8 +110,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_error_code")]
 #[repr(u32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum UnityTls_unitytls_error_code {
+    #[default]
     UNITYTLS_BUFFER_OVERFLOW = 134678021u32,
     UNITYTLS_ENTROPY_SOURCE_FAILED = 281020937u32,
     UNITYTLS_INTERNAL_ERROR = 168364039u32,
@@ -475,8 +477,9 @@ for crate::Mono::Unity::UnityTls_unitytls_key_ref {
 impl crate::Mono::Unity::UnityTls_unitytls_key_ref {}
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_protocol")]
 #[repr(u32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum UnityTls_unitytls_protocol {
+    #[default]
     UNITYTLS_PROTOCOL_INVALID = 20483u32,
     UNITYTLS_PROTOCOL_TLS_1_0 = 50462976u32,
     UNITYTLS_PROTOCOL_TLS_1_1 = 1342374401u32,
@@ -1118,8 +1121,9 @@ for crate::Mono::Unity::UnityTls_unitytls_x509verify_callback {
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509verify_result")]
 #[repr(u32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum UnityTls_unitytls_x509verify_result {
+    #[default]
     UNITYTLS_X509VERIFY_FATAL_ERROR = 67240447u32,
     UNITYTLS_X509VERIFY_FLAG_CN_MISMATCH = 29362180u32,
     UNITYTLS_X509VERIFY_FLAG_EXPIRED = 134480385u32,

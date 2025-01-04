@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidAxis")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AndroidAxis {
+    #[default]
     Brake = 23i32,
     Distance = 24i32,
     Gas = 22i32,

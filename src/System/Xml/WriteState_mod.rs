@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Xml+WriteState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum WriteState {
+    #[default]
     Attribute = 3i32,
     Closed = 5i32,
     Content = 4i32,

@@ -1250,8 +1250,9 @@ for crate::UnityEngine::UIElements::PanelEventHandler_PointerEvent {
 }
 #[cfg(feature = "UnityEngine+UIElements+PanelEventHandler+PointerEventType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PanelEventHandler_PointerEventType {
+    #[default]
     Default = 0i32,
     Down = 1i32,
     Up = 2i32,

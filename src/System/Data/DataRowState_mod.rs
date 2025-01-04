@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Data+DataRowState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DataRowState {
+    #[default]
     Added = 4i32,
     Deleted = 8i32,
     Detached = 1i32,

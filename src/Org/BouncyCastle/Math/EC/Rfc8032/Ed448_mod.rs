@@ -648,8 +648,9 @@ for crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448 {
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Rfc8032+Ed448+Algorithm")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Ed448_Algorithm {
+    #[default]
     Ed448 = 0i32,
     Ed448ph = 1i32,
 }

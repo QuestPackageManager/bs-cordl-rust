@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Rendering+BuiltinRenderTextureType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BuiltinRenderTextureType {
+    #[default]
     BindableTexture = -1i32,
     BufferPtr = -3i32,
     CameraTarget = 2i32,

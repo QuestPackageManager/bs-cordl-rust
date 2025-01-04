@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Rendering+PassType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PassType {
+    #[default]
     Deferred = 10i32,
     ForwardAdd = 5i32,
     ForwardBase = 4i32,

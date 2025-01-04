@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Rendering+GraphicsTier")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GraphicsTier {
+    #[default]
     Tier1 = 0i32,
     Tier2 = 1i32,
     Tier3 = 2i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+CollisionDetectionMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CollisionDetectionMode {
+    #[default]
     Continuous = 1i32,
     ContinuousDynamic = 2i32,
     ContinuousSpeculative = 3i32,

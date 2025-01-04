@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+ProBuilder+ExtrudeMethod")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ExtrudeMethod {
+    #[default]
     FaceNormal = 2i32,
     IndividualFaces = 0i32,
     VertexNormal = 1i32,

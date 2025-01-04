@@ -1258,8 +1258,9 @@ impl AsMut<crate::System::Xml::IDtdParser> for crate::System::Xml::DtdParser {
 }
 #[cfg(feature = "System+Xml+DtdParser+LiteralType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DtdParser_LiteralType {
+    #[default]
     AttributeValue = 0i32,
     EntityReplText = 1i32,
     SystemOrPublicID = 2i32,
@@ -1333,8 +1334,9 @@ for crate::System::Xml::DtdParser_ParseElementOnlyContent_LocalFrame {
 }
 #[cfg(feature = "System+Xml+DtdParser+ScanningFunction")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DtdParser_ScanningFunction {
+    #[default]
     Attlist1 = 13i32,
     Attlist2 = 14i32,
     Attlist3 = 15i32,
@@ -1377,8 +1379,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "System+Xml+DtdParser+Token")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DtdParser_Token {
+    #[default]
     ANY = 44i32,
     AttlistDecl = 11i32,
     CDATA = 0i32,

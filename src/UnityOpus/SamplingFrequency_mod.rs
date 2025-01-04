@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityOpus+SamplingFrequency")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SamplingFrequency {
+    #[default]
     Frequency_12000 = 12000i32,
     Frequency_16000 = 16000i32,
     Frequency_24000 = 24000i32,

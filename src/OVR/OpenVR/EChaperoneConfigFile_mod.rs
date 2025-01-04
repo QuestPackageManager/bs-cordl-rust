@@ -1,7 +1,8 @@
 #[cfg(feature = "OVR+OpenVR+EChaperoneConfigFile")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EChaperoneConfigFile {
+    #[default]
     Live = 1i32,
     Temp = 2i32,
 }

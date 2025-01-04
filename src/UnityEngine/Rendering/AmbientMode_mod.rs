@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Rendering+AmbientMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AmbientMode {
+    #[default]
     Custom = 4i32,
     Flat = 3i32,
     Skybox = 0i32,

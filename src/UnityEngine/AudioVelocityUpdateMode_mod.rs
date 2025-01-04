@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+AudioVelocityUpdateMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AudioVelocityUpdateMode {
+    #[default]
     Auto = 0i32,
     Dynamic = 2i32,
     Fixed = 1i32,

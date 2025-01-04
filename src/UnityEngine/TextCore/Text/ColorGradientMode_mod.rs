@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+TextCore+Text+ColorGradientMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ColorGradientMode {
+    #[default]
     FourCornersGradient = 3i32,
     HorizontalGradient = 1i32,
     Single = 0i32,

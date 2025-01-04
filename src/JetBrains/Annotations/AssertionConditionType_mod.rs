@@ -1,7 +1,8 @@
 #[cfg(feature = "JetBrains+Annotations+AssertionConditionType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AssertionConditionType {
+    #[default]
     IS_FALSE = 1i32,
     IS_NOT_NULL = 3i32,
     IS_NULL = 2i32,

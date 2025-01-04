@@ -248,8 +248,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::ContextAwareResul
 }
 #[cfg(feature = "System+Net+ContextAwareResult+StateFlags")]
 #[repr(u8)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ContextAwareResult_StateFlags {
+    #[default]
     CaptureContext = 2u8,
     CaptureIdentity = 1u8,
     None = 0u8,

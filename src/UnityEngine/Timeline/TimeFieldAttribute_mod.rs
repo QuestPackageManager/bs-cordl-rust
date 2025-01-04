@@ -72,8 +72,9 @@ for crate::UnityEngine::Timeline::TimeFieldAttribute {
 }
 #[cfg(feature = "UnityEngine+Timeline+TimeFieldAttribute+UseEditMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TimeFieldAttribute_UseEditMode {
+    #[default]
     ApplyEditMode = 1i32,
     None = 0i32,
 }

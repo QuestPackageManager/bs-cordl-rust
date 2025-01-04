@@ -1,7 +1,8 @@
 #[cfg(feature = "Unity+Profiling+ProfilerCategoryColor")]
 #[repr(u16)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ProfilerCategoryColor {
+    #[default]
     Animation = 5u16,
     Audio = 6u16,
     AudioJob = 7u16,

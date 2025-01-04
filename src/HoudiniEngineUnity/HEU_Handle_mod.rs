@@ -356,8 +356,9 @@ impl AsMut<
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_Handle+HEU_HandleType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HEU_Handle_HEU_HandleType {
+    #[default]
     UNSUPPORTED = 1i32,
     XFORM = 0i32,
 }

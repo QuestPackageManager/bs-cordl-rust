@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+StyleValueKeyword")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum StyleValueKeyword {
+    #[default]
     Auto = 2i32,
     False = 5i32,
     Inherit = 0i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "HoudiniEngineUnity+HFLayerType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HFLayerType {
+    #[default]
     DEFAULT = 0i32,
     DETAIL = 3i32,
     HEIGHT = 1i32,

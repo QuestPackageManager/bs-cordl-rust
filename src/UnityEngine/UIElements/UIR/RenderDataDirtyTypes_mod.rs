@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+UIR+RenderDataDirtyTypes")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RenderDataDirtyTypes {
+    #[default]
     AllVisuals = 112i32,
     ClipRectSize = 2i32,
     Clipping = 4i32,

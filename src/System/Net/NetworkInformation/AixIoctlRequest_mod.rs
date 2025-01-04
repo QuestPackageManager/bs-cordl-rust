@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Net+NetworkInformation+AixIoctlRequest")]
 #[repr(u32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AixIoctlRequest {
+    #[default]
     SIOCGIFCONF = 275334640u32,
     SIOCGIFFLAGS = 677974512u32,
     SIOCGIFMTU = 677992176u32,

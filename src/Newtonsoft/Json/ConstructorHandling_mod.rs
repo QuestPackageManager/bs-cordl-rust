@@ -1,7 +1,8 @@
 #[cfg(feature = "Newtonsoft+Json+ConstructorHandling")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ConstructorHandling {
+    #[default]
     AllowNonPublicDefaultConstructor = 1i32,
     Default = 0i32,
 }

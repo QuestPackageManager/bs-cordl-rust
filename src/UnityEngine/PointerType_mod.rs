@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+PointerType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PointerType {
+    #[default]
     Mouse = 0i32,
     Pen = 2i32,
     Touch = 1i32,

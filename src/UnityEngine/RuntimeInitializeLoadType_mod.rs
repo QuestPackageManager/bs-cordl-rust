@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+RuntimeInitializeLoadType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RuntimeInitializeLoadType {
+    #[default]
     AfterAssembliesLoaded = 2i32,
     AfterSceneLoad = 0i32,
     BeforeSceneLoad = 1i32,

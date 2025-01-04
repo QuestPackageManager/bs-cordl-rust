@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+UsageHints")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum UsageHints {
+    #[default]
     DynamicColor = 8i32,
     DynamicTransform = 1i32,
     GroupTransform = 2i32,

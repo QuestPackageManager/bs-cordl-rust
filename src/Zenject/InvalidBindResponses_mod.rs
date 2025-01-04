@@ -1,7 +1,8 @@
 #[cfg(feature = "Zenject+InvalidBindResponses")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InvalidBindResponses {
+    #[default]
     _cordl_Assert = 0i32,
     Skip = 1i32,
 }

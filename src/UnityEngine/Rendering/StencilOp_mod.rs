@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Rendering+StencilOp")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum StencilOp {
+    #[default]
     DecrementSaturate = 4i32,
     DecrementWrap = 7i32,
     IncrementSaturate = 3i32,

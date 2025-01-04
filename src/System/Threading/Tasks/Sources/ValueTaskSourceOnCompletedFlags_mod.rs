@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Threading+Tasks+Sources+ValueTaskSourceOnCompletedFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ValueTaskSourceOnCompletedFlags {
+    #[default]
     FlowExecutionContext = 2i32,
     None = 0i32,
     UseSchedulingContext = 1i32,

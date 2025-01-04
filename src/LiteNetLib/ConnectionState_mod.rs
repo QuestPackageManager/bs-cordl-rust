@@ -1,7 +1,8 @@
 #[cfg(feature = "LiteNetLib+ConnectionState")]
 #[repr(u8)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ConnectionState {
+    #[default]
     Any = 14u8,
     Connected = 4u8,
     Disconnected = 16u8,

@@ -1,7 +1,8 @@
 #[cfg(feature = "HoudiniEngineUnity+HAPI_StorageType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HAPI_StorageType {
+    #[default]
     HAPI_STORAGETYPE_FLOAT = 2i32,
     HAPI_STORAGETYPE_FLOAT64 = 3i32,
     HAPI_STORAGETYPE_INT = 0i32,

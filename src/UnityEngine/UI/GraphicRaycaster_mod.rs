@@ -203,8 +203,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::GraphicRaycas
 }
 #[cfg(feature = "UnityEngine+UI+GraphicRaycaster+BlockingObjects")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GraphicRaycaster_BlockingObjects {
+    #[default]
     All = 3i32,
     None = 0i32,
     ThreeD = 2i32,

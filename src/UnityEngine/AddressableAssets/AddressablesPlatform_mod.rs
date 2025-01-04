@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+AddressableAssets+AddressablesPlatform")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AddressablesPlatform {
+    #[default]
     Android = 9i32,
     Linux = 3i32,
     OSX = 2i32,

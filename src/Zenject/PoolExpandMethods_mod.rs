@@ -1,7 +1,8 @@
 #[cfg(feature = "Zenject+PoolExpandMethods")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PoolExpandMethods {
+    #[default]
     Disabled = 2i32,
     Double = 1i32,
     OneAtATime = 0i32,

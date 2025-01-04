@@ -1,7 +1,8 @@
 #[cfg(feature = "System+ComponentModel+ListChangedType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ListChangedType {
+    #[default]
     ItemAdded = 1i32,
     ItemChanged = 4i32,
     ItemDeleted = 2i32,

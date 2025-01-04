@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Collections+Specialized+NotifyCollectionChangedAction")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NotifyCollectionChangedAction {
+    #[default]
     Add = 0i32,
     Move = 3i32,
     Remove = 1i32,

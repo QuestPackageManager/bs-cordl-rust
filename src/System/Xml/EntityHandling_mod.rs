@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Xml+EntityHandling")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EntityHandling {
+    #[default]
     ExpandCharEntities = 2i32,
     ExpandEntities = 1i32,
 }

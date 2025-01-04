@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Xml+Schema+XmlTypeCode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XmlTypeCode {
+    #[default]
     AnyAtomicType = 10i32,
     AnyUri = 28i32,
     Attribute = 5i32,

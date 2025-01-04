@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Data+Rule")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Rule {
+    #[default]
     Cascade = 1i32,
     None = 0i32,
     SetDefault = 3i32,

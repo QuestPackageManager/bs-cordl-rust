@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Android+AndroidAssetPackError")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AndroidAssetPackError {
+    #[default]
     AccessDenied = -7i32,
     ApiNotAvailable = -5i32,
     AppNotOwned = -13i32,

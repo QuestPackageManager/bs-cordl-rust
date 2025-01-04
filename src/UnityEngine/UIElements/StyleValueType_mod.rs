@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+StyleValueType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum StyleValueType {
+    #[default]
     AssetReference = 6i32,
     Color = 4i32,
     CommaSeparator = 11i32,

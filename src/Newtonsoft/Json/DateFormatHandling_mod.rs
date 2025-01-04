@@ -1,7 +1,8 @@
 #[cfg(feature = "Newtonsoft+Json+DateFormatHandling")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DateFormatHandling {
+    #[default]
     IsoDateFormat = 0i32,
     MicrosoftDateFormat = 1i32,
 }

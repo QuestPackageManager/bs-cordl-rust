@@ -943,8 +943,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::TableView_IDataSource {
 }
 #[cfg(feature = "HMUI+TableView+ScrollPositionType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TableView_ScrollPositionType {
+    #[default]
     Beginning = 0i32,
     Center = 1i32,
     End = 2i32,
@@ -956,8 +957,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "HMUI+TableView+TableType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TableView_TableType {
+    #[default]
     Horizontal = 1i32,
     Vertical = 0i32,
 }

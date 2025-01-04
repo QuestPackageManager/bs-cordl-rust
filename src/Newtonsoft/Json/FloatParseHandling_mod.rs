@@ -1,7 +1,8 @@
 #[cfg(feature = "Newtonsoft+Json+FloatParseHandling")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum FloatParseHandling {
+    #[default]
     Decimal = 1i32,
     Double = 0i32,
 }

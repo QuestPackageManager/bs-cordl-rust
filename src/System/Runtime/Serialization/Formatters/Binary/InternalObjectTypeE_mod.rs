@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+InternalObjectTypeE")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InternalObjectTypeE {
+    #[default]
     Array = 2i32,
     Empty = 0i32,
     Object = 1i32,

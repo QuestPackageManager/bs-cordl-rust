@@ -1,7 +1,8 @@
 #[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+ScheduleMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ScheduleMode {
+    #[default]
     Batched = 1i32,
     Run = 0i32,
     Single = 2i32,

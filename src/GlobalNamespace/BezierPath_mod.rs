@@ -322,8 +322,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BezierPath {
 }
 #[cfg(feature = "BezierPath+ControlMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BezierPath_ControlMode {
+    #[default]
     Aligned = 0i32,
     Automatic = 3i32,
     Free = 2i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Security+Cryptography+X509Certificates+X509KeyStorageFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum X509KeyStorageFlags {
+    #[default]
     DefaultKeySet = 0i32,
     EphemeralKeySet = 32i32,
     Exportable = 4i32,

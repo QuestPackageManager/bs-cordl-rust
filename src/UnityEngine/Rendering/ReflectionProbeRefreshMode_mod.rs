@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Rendering+ReflectionProbeRefreshMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ReflectionProbeRefreshMode {
+    #[default]
     EveryFrame = 1i32,
     OnAwake = 0i32,
     ViaScripting = 2i32,

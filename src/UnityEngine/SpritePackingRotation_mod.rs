@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+SpritePackingRotation")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SpritePackingRotation {
+    #[default]
     Any = 15i32,
     FlipHorizontal = 1i32,
     FlipVertical = 2i32,

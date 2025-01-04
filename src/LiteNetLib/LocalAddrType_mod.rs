@@ -1,7 +1,8 @@
 #[cfg(feature = "LiteNetLib+LocalAddrType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LocalAddrType {
+    #[default]
     All = 3i32,
     IPv4 = 1i32,
     IPv6 = 2i32,

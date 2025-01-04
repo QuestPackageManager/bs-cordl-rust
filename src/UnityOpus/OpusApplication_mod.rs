@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityOpus+OpusApplication")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OpusApplication {
+    #[default]
     Audio = 2049i32,
     RestrictedLowDelay = 2051i32,
     VoIP = 2048i32,

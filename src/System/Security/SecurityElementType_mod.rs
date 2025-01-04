@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Security+SecurityElementType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SecurityElementType {
+    #[default]
     Comment = 2i32,
     Format = 1i32,
     Regular = 0i32,

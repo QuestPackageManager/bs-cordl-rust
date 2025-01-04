@@ -1,7 +1,8 @@
 #[cfg(feature = "Unity+Burst+BurstTargetCpu")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BurstTargetCpu {
+    #[default]
     ARMV7A_NEON32 = 8i32,
     ARMV8A_AARCH64 = 9i32,
     ARMV8A_AARCH64_HALFFP = 11i32,

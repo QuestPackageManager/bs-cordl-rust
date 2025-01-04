@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Xml+DtdProcessing")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DtdProcessing {
+    #[default]
     Ignore = 1i32,
     Parse = 2i32,
     Prohibit = 0i32,

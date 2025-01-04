@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Xml+Schema+Compositor")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Compositor {
+    #[default]
     Import = 2i32,
     Include = 1i32,
     Redefine = 3i32,

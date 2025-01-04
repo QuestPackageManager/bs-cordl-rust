@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+DeviceType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DeviceType {
+    #[default]
     Console = 2i32,
     Desktop = 3i32,
     Handheld = 1i32,

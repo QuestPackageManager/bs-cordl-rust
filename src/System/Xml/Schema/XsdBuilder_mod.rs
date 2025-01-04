@@ -1477,8 +1477,9 @@ for crate::System::Xml::Schema::XsdBuilder_BuilderNamespaceManager {
 }
 #[cfg(feature = "System+Xml+Schema+XsdBuilder+State")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XsdBuilder_State {
+    #[default]
     All = 12i32,
     Annotation = 2i32,
     Any = 15i32,

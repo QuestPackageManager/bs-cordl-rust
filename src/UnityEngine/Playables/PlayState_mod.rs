@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Playables+PlayState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PlayState {
+    #[default]
     Delayed = 2i32,
     Paused = 0i32,
     Playing = 1i32,

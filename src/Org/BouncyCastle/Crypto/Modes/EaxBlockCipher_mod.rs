@@ -311,8 +311,9 @@ for crate::Org::BouncyCastle::Crypto::Modes::EaxBlockCipher {
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Modes+EaxBlockCipher+Tag")]
 #[repr(u8)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EaxBlockCipher_Tag {
+    #[default]
     C = 2u8,
     H = 1u8,
     N = 0u8,

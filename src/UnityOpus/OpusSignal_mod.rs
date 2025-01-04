@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityOpus+OpusSignal")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OpusSignal {
+    #[default]
     Auto = -1000i32,
     Music = 3002i32,
     Voice = 3001i32,

@@ -464,8 +464,9 @@ for crate::GlobalNamespace::PauseController_InitData {
 }
 #[cfg(feature = "PauseController+PauseState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PauseController_PauseState {
+    #[default]
     Paused = 0i32,
     Playing = 2i32,
     Resuming = 1i32,

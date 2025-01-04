@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+ProBuilder+PivotPoint")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PivotPoint {
+    #[default]
     ActiveElement = 2i32,
     Center = 0i32,
     IndividualOrigins = 1i32,

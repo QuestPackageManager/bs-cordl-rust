@@ -1831,8 +1831,9 @@ for crate::UnityEngine::InputSystem::InputManager_AvailableDevice {
 impl crate::UnityEngine::InputSystem::InputManager_AvailableDevice {}
 #[cfg(feature = "UnityEngine+InputSystem+InputManager+DeviceDisableScope")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputManager_DeviceDisableScope {
+    #[default]
     Everywhere = 0i32,
     InFrontendOnly = 1i32,
     TemporaryWhilePlayerIsInBackground = 2i32,

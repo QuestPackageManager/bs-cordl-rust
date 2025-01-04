@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+AdditionalCanvasShaderChannels")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AdditionalCanvasShaderChannels {
+    #[default]
     None = 0i32,
     Normal = 8i32,
     Tangent = 16i32,

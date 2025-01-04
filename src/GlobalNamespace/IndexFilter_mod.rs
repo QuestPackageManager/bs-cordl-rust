@@ -325,8 +325,9 @@ for crate::GlobalNamespace::IndexFilter {
 }
 #[cfg(feature = "IndexFilter+IndexFilterLimitAlsoAffectType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum IndexFilter_IndexFilterLimitAlsoAffectType {
+    #[default]
     Distribution = 2i32,
     Duration = 1i32,
     None = 0i32,
@@ -339,8 +340,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "IndexFilter+IndexFilterRandomType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum IndexFilter_IndexFilterRandomType {
+    #[default]
     KeepOrder = 1i32,
     NoRandom = 0i32,
     RandomElements = 2i32,

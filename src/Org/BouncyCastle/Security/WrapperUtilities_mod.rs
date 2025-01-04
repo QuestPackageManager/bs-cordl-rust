@@ -235,8 +235,9 @@ for crate::Org::BouncyCastle::Security::WrapperUtilities_BufferedCipherWrapper {
 }
 #[cfg(feature = "Org+BouncyCastle+Security+WrapperUtilities+WrapAlgorithm")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum WrapperUtilities_WrapAlgorithm {
+    #[default]
     AESRFC3211WRAP = 6i32,
     AESWRAP = 0i32,
     CAMELLIARFC3211WRAP = 7i32,

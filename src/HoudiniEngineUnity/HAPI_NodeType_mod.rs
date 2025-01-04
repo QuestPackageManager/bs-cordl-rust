@@ -1,7 +1,8 @@
 #[cfg(feature = "HoudiniEngineUnity+HAPI_NodeType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HAPI_NodeType {
+    #[default]
     HAPI_NODETYPE_ANY = -1i32,
     HAPI_NODETYPE_CHOP = 4i32,
     HAPI_NODETYPE_COP = 32i32,

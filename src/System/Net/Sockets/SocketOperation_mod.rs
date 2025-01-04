@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Net+Sockets+SocketOperation")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SocketOperation {
+    #[default]
     Accept = 0i32,
     AcceptReceive = 9i32,
     Connect = 1i32,

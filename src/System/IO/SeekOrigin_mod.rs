@@ -1,7 +1,8 @@
 #[cfg(feature = "System+IO+SeekOrigin")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SeekOrigin {
+    #[default]
     Begin = 0i32,
     Current = 1i32,
     End = 2i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "Newtonsoft+Json+DefaultValueHandling")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DefaultValueHandling {
+    #[default]
     Ignore = 1i32,
     IgnoreAndPopulate = 3i32,
     Include = 0i32,

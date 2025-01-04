@@ -1905,8 +1905,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::TimeZoneInfo_CachedDat
 }
 #[cfg(feature = "System+TimeZoneInfo+TZVersion")]
 #[repr(u8)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TimeZoneInfo_TZVersion {
+    #[default]
     V1 = 0u8,
     V2 = 1u8,
     V3 = 2u8,

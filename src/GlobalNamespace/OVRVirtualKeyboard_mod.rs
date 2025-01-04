@@ -1061,8 +1061,9 @@ for crate::GlobalNamespace::OVRVirtualKeyboard_IInputSource {
 }
 #[cfg(feature = "OVRVirtualKeyboard+InputSource")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRVirtualKeyboard_InputSource {
+    #[default]
     ControllerLeft = 0i32,
     ControllerRight = 1i32,
     HandLeft = 2i32,
@@ -1201,8 +1202,9 @@ for crate::GlobalNamespace::OVRVirtualKeyboard_InteractorRootTransformOverride {
 }
 #[cfg(feature = "OVRVirtualKeyboard+KeyboardPosition")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRVirtualKeyboard_KeyboardPosition {
+    #[default]
     Custom = 2i32,
     Direct = 1i32,
     Far = 0i32,

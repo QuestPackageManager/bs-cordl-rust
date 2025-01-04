@@ -73,8 +73,9 @@ for crate::GlobalNamespace::ReflectionProbeBakingOverride {
 }
 #[cfg(feature = "ReflectionProbeBakingOverride+ActiveStateHandling")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ReflectionProbeBakingOverride_ActiveStateHandling {
+    #[default]
     Disable = 2i32,
     Enable = 1i32,
     LeaveAsIs = 0i32,

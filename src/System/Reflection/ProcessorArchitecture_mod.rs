@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Reflection+ProcessorArchitecture")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ProcessorArchitecture {
+    #[default]
     Amd64 = 4i32,
     Arm = 5i32,
     IA64 = 3i32,

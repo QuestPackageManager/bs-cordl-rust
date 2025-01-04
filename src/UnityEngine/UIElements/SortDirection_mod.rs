@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+SortDirection")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SortDirection {
+    #[default]
     Ascending = 0i32,
     Descending = 1i32,
 }

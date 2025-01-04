@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Data+ValueType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ValueType {
+    #[default]
     Bool = 1i32,
     Date = 7i32,
     Decimal = 5i32,

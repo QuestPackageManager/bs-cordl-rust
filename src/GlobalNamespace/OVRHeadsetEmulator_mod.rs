@@ -110,8 +110,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRHeadsetEmu
 }
 #[cfg(feature = "OVRHeadsetEmulator+OpMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRHeadsetEmulator_OpMode {
+    #[default]
     AlwaysOn = 2i32,
     EditorOnly = 1i32,
     Off = 0i32,

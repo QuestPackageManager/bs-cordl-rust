@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+ParticleSystemVertexStreams")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ParticleSystemVertexStreams {
+    #[default]
     All = 2147483647i32,
     CenterAndVertexID = 64i32,
     Color = 8i32,

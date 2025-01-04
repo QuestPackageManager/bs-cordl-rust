@@ -1,7 +1,8 @@
 #[cfg(feature = "BeatmapSaveDataVersion3+SliderType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SliderType {
+    #[default]
     Burst = 1i32,
     Normal = 0i32,
 }

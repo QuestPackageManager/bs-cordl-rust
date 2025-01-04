@@ -511,8 +511,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::DefaultBinder_BinderSt
 }
 #[cfg(feature = "System+DefaultBinder+Primitives")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DefaultBinder_Primitives {
+    #[default]
     Boolean = 8i32,
     Byte = 64i32,
     Char = 16i32,

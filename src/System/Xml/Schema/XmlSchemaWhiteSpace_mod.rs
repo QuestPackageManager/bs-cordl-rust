@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Xml+Schema+XmlSchemaWhiteSpace")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XmlSchemaWhiteSpace {
+    #[default]
     Collapse = 2i32,
     Preserve = 0i32,
     Replace = 1i32,

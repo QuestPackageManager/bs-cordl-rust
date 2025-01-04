@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+SceneManagement+LoadSceneMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LoadSceneMode {
+    #[default]
     Additive = 1i32,
     Single = 0i32,
 }

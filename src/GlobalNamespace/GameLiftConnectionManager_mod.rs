@@ -824,8 +824,9 @@ for crate::GlobalNamespace::GameLiftConnectionManager_ConnectToServerParams {
 }
 #[cfg(feature = "GameLiftConnectionManager+ConnectionState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GameLiftConnectionManager_ConnectionState {
+    #[default]
     Connected = 2i32,
     Connecting = 1i32,
     Disconnecting = 3i32,

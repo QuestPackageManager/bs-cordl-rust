@@ -1,7 +1,8 @@
 #[cfg(feature = "BeatmapSaveDataCommon+NoteCutDirection")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NoteCutDirection {
+    #[default]
     Any = 8i32,
     Down = 1i32,
     DownLeft = 6i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Security+Permissions+SecurityAction")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SecurityAction {
+    #[default]
     _cordl_Assert = 3i32,
     Demand = 2i32,
     Deny = 4i32,

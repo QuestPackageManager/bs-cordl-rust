@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+ProBuilder+ProjectionAxis")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ProjectionAxis {
+    #[default]
     X = 0i32,
     XNegative = 3i32,
     Y = 1i32,

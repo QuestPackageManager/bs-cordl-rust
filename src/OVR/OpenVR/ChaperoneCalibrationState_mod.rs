@@ -1,7 +1,8 @@
 #[cfg(feature = "OVR+OpenVR+ChaperoneCalibrationState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ChaperoneCalibrationState {
+    #[default]
     Error = 200i32,
     Error_BaseStationConflict = 202i32,
     Error_BaseStationUninitialized = 201i32,

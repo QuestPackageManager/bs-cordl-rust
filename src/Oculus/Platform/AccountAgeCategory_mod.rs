@@ -1,7 +1,8 @@
 #[cfg(feature = "Oculus+Platform+AccountAgeCategory")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AccountAgeCategory {
+    #[default]
     Ad = 3i32,
     Ch = 1i32,
     Tn = 2i32,

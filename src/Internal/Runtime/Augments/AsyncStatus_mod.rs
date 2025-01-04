@@ -1,7 +1,8 @@
 #[cfg(feature = "Internal+Runtime+Augments+AsyncStatus")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AsyncStatus {
+    #[default]
     Canceled = 2i32,
     Completed = 1i32,
     Error = 3i32,

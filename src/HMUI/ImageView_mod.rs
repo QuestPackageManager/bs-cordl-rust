@@ -470,8 +470,9 @@ impl AsMut<crate::GlobalNamespace::IComponentRefresher> for crate::HMUI::ImageVi
 }
 #[cfg(feature = "HMUI+ImageView+GradientDirection")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ImageView_GradientDirection {
+    #[default]
     Horizontal = 0i32,
     Vertical = 1i32,
 }

@@ -314,8 +314,9 @@ for crate::GlobalNamespace::LevelCompletionResults {
 }
 #[cfg(feature = "LevelCompletionResults+LevelEndAction")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LevelCompletionResults_LevelEndAction {
+    #[default]
     None = 0i32,
     Quit = 1i32,
     Restart = 2i32,
@@ -328,8 +329,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "LevelCompletionResults+LevelEndStateType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LevelCompletionResults_LevelEndStateType {
+    #[default]
     Cleared = 1i32,
     Failed = 2i32,
     Incomplete = 0i32,

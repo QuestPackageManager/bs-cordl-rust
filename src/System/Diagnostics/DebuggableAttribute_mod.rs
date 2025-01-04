@@ -60,8 +60,9 @@ for crate::System::Diagnostics::DebuggableAttribute {
 }
 #[cfg(feature = "System+Diagnostics+DebuggableAttribute+DebuggingModes")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DebuggableAttribute_DebuggingModes {
+    #[default]
     Default = 1i32,
     DisableOptimizations = 256i32,
     EnableEditAndContinue = 4i32,

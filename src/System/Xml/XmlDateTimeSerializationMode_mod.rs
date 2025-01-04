@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Xml+XmlDateTimeSerializationMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XmlDateTimeSerializationMode {
+    #[default]
     Local = 0i32,
     RoundtripKind = 3i32,
     Unspecified = 2i32,

@@ -158,8 +158,9 @@ for crate::GlobalNamespace::PS5SharedPackageSKUsSO {
 }
 #[cfg(feature = "PS5SharedPackageSKUsSO+BuildType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PS5SharedPackageSKUsSO_BuildType {
+    #[default]
     Application = 0i32,
     RemasterPatch = 1i32,
 }

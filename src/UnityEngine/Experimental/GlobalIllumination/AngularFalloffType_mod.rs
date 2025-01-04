@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+AngularFalloffType")]
 #[repr(u8)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AngularFalloffType {
+    #[default]
     AnalyticAndInnerAngle = 1u8,
     LUT = 0u8,
 }

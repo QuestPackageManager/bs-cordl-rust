@@ -1,7 +1,8 @@
 #[cfg(feature = "System+ComponentModel+EditorBrowsableState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EditorBrowsableState {
+    #[default]
     Advanced = 2i32,
     Always = 0i32,
     Never = 1i32,

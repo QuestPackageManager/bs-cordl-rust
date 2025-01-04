@@ -159,8 +159,9 @@ for crate::Org::BouncyCastle::Security::DigestUtilities {
 }
 #[cfg(feature = "Org+BouncyCastle+Security+DigestUtilities+DigestAlgorithm")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DigestUtilities_DigestAlgorithm {
+    #[default]
     BLAKE2B_160 = 0i32,
     BLAKE2B_256 = 1i32,
     BLAKE2B_384 = 2i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+LightType")]
 #[repr(u8)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LightType {
+    #[default]
     Directional = 0u8,
     Disc = 4u8,
     Point = 1u8,

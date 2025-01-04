@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Security+Authentication+ExtendedProtection+PolicyEnforcement")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PolicyEnforcement {
+    #[default]
     Always = 2i32,
     Never = 0i32,
     WhenSupported = 1i32,

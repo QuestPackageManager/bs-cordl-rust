@@ -1,7 +1,8 @@
 #[cfg(feature = "TMPro+HorizontalAlignmentOptions")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HorizontalAlignmentOptions {
+    #[default]
     Center = 2i32,
     Flush = 16i32,
     Geometry = 32i32,

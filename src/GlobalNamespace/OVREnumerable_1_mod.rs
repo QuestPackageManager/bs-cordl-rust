@@ -1,7 +1,8 @@
 #[cfg(feature = "OVREnumerable_1+Enumerator+CollectionType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Enumerator_OVREnumerable_1_CollectionType {
+    #[default]
     Enumerable = 4i32,
     List = 1i32,
     None = 0i32,

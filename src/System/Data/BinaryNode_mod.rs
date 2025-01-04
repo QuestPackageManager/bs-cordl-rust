@@ -334,8 +334,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Data::BinaryNode {
 }
 #[cfg(feature = "System+Data+BinaryNode+DataTypePrecedence")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BinaryNode_DataTypePrecedence {
+    #[default]
     Boolean = -2i32,
     Byte = 3i32,
     Char = -8i32,

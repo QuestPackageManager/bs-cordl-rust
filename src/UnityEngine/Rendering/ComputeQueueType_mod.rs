@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Rendering+ComputeQueueType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ComputeQueueType {
+    #[default]
     Background = 1i32,
     Default = 0i32,
     Urgent = 2i32,

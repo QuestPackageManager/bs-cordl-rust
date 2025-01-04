@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Threading+Tasks+CausalitySynchronousWork")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CausalitySynchronousWork {
+    #[default]
     CompletionNotification = 0i32,
     Execution = 2i32,
     ProgressNotification = 1i32,

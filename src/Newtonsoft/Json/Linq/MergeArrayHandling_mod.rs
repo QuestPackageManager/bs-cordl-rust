@@ -1,7 +1,8 @@
 #[cfg(feature = "Newtonsoft+Json+Linq+MergeArrayHandling")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MergeArrayHandling {
+    #[default]
     Concat = 0i32,
     Merge = 3i32,
     Replace = 2i32,

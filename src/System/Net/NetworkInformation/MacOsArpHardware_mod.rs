@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Net+NetworkInformation+MacOsArpHardware")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MacOsArpHardware {
+    #[default]
     ATM = 37i32,
     ETHER = 6i32,
     FDDI = 15i32,

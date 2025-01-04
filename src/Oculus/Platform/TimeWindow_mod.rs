@@ -1,7 +1,8 @@
 #[cfg(feature = "Oculus+Platform+TimeWindow")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TimeWindow {
+    #[default]
     NinetyDays = 5i32,
     OneDay = 2i32,
     OneHour = 1i32,

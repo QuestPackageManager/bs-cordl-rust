@@ -1,7 +1,8 @@
 #[cfg(feature = "Newtonsoft+Json+Required")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Required {
+    #[default]
     AllowNull = 1i32,
     Always = 2i32,
     Default = 0i32,

@@ -1121,8 +1121,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRInput {
 }
 #[cfg(feature = "OVRInput+Axis1D")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRInput_Axis1D {
+    #[default]
     Any = -1i32,
     None = 0i32,
     PrimaryHandTrigger = 4i32,
@@ -1147,8 +1148,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRInput+Axis2D")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRInput_Axis2D {
+    #[default]
     Any = -1i32,
     None = 0i32,
     PrimaryThumbstick = 1i32,
@@ -1163,8 +1165,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRInput+Button")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRInput_Button {
+    #[default]
     Any = -1i32,
     Back = 512i32,
     Down = 536870912i32,
@@ -1207,8 +1210,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRInput+Controller")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRInput_Controller {
+    #[default]
     Active = -2147483648i32,
     All = -1i32,
     Gamepad = 16i32,
@@ -1228,8 +1232,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRInput+ControllerInHandState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRInput_ControllerInHandState {
+    #[default]
     ControllerInHand = 1i32,
     ControllerNotInHand = 2i32,
     NoHand = 0i32,
@@ -1241,8 +1246,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRInput+Hand")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRInput_Hand {
+    #[default]
     HandLeft = 0i32,
     HandRight = 1i32,
     None = -1i32,
@@ -1254,8 +1260,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRInput+Handedness")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRInput_Handedness {
+    #[default]
     LeftHanded = 1i32,
     RightHanded = 2i32,
     Unsupported = 0i32,
@@ -1352,8 +1359,9 @@ for crate::GlobalNamespace::OVRInput_HapticsAmplitudeEnvelopeVibration {
 impl crate::GlobalNamespace::OVRInput_HapticsAmplitudeEnvelopeVibration {}
 #[cfg(feature = "OVRInput+HapticsLocation")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRInput_HapticsLocation {
+    #[default]
     Hand = 1i32,
     Index = 4i32,
     None = 0i32,
@@ -1393,8 +1401,9 @@ for crate::GlobalNamespace::OVRInput_HapticsPcmVibration {
 impl crate::GlobalNamespace::OVRInput_HapticsPcmVibration {}
 #[cfg(feature = "OVRInput+InputDeviceShowState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRInput_InputDeviceShowState {
+    #[default]
     Always = 0i32,
     ControllerInHand = 2i32,
     ControllerInHandOrNoHand = 1i32,
@@ -1408,8 +1417,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRInput+InteractionProfile")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRInput_InteractionProfile {
+    #[default]
     None = 0i32,
     Touch = 1i32,
     TouchPlus = 4i32,
@@ -1422,8 +1432,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRInput+NearTouch")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRInput_NearTouch {
+    #[default]
     Any = -1i32,
     None = 0i32,
     PrimaryIndexTrigger = 1i32,
@@ -2696,8 +2707,9 @@ for crate::GlobalNamespace::OVRInput_OVRControllerTouch {
 }
 #[cfg(feature = "OVRInput+OpenVRButton")]
 #[repr(u64)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRInput_OpenVRButton {
+    #[default]
     Grip = 4u64,
     None = 0u64,
     Thumbstick = 4294967296u64,
@@ -2710,8 +2722,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRInput+OpenVRController")]
 #[repr(u64)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRInput_OpenVRController {
+    #[default]
     OculusTouch = 1u64,
     Unknown = 0u64,
     ViveController = 2u64,
@@ -2753,8 +2766,9 @@ for crate::GlobalNamespace::OVRInput_OpenVRControllerDetails {
 impl crate::GlobalNamespace::OVRInput_OpenVRControllerDetails {}
 #[cfg(feature = "OVRInput+RawAxis1D")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRInput_RawAxis1D {
+    #[default]
     Any = -1i32,
     LHandTrigger = 4i32,
     LIndexTrigger = 1i32,
@@ -2779,8 +2793,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRInput+RawAxis2D")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRInput_RawAxis2D {
+    #[default]
     Any = -1i32,
     LThumbstick = 1i32,
     LTouchpad = 4i32,
@@ -2795,8 +2810,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRInput+RawButton")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRInput_RawButton {
+    #[default]
     A = 1i32,
     Any = -1i32,
     B = 2i32,
@@ -2835,8 +2851,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRInput+RawNearTouch")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRInput_RawNearTouch {
+    #[default]
     Any = -1i32,
     LIndexTrigger = 1i32,
     LThumbButtons = 2i32,
@@ -2851,8 +2868,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRInput+RawTouch")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRInput_RawTouch {
+    #[default]
     A = 1i32,
     Any = -1i32,
     B = 2i32,
@@ -2875,8 +2893,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRInput+Touch")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRInput_Touch {
+    #[default]
     Any = -1i32,
     Four = 8i32,
     None = 0i32,

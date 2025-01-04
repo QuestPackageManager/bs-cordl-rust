@@ -100,8 +100,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::Tweening::IntTween {
 }
 #[cfg(feature = "Tweening+IntTween+RoundingType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum IntTween_RoundingType {
+    #[default]
     Ceil = 2i32,
     Floor = 0i32,
     Round = 1i32,

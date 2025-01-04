@@ -4039,8 +4039,9 @@ for crate::System::Xml::XmlTextReaderImpl_DtdParserProxy {
 }
 #[cfg(feature = "System+Xml+XmlTextReaderImpl+EntityExpandType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XmlTextReaderImpl_EntityExpandType {
+    #[default]
     All = 0i32,
     OnlyCharacter = 2i32,
     OnlyGeneral = 1i32,
@@ -4052,8 +4053,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "System+Xml+XmlTextReaderImpl+EntityType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XmlTextReaderImpl_EntityType {
+    #[default]
     CharacterDec = 0i32,
     CharacterHex = 1i32,
     CharacterNamed = 2i32,
@@ -4070,8 +4072,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "System+Xml+XmlTextReaderImpl+IncrementalReadState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XmlTextReaderImpl_IncrementalReadState {
+    #[default]
     AttributeValue = 6i32,
     Attributes = 5i32,
     CDATA = 3i32,
@@ -4096,8 +4099,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "System+Xml+XmlTextReaderImpl+InitInputType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XmlTextReaderImpl_InitInputType {
+    #[default]
     Invalid = 3i32,
     Stream = 1i32,
     TextReader = 2i32,
@@ -4795,8 +4799,9 @@ for crate::System::Xml::XmlTextReaderImpl_OnDefaultAttributeUseDelegate {
 }
 #[cfg(feature = "System+Xml+XmlTextReaderImpl+ParsingFunction")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XmlTextReaderImpl_ParsingFunction {
+    #[default]
     AfterResolveEmptyEntityInContent = 18i32,
     AfterResolveEntityInContent = 17i32,
     DocumentContent = 5i32,
@@ -4831,8 +4836,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "System+Xml+XmlTextReaderImpl+ParsingMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XmlTextReaderImpl_ParsingMode {
+    #[default]
     Full = 0i32,
     SkipContent = 2i32,
     SkipNode = 1i32,

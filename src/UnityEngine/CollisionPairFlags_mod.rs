@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+CollisionPairFlags")]
 #[repr(u16)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CollisionPairFlags {
+    #[default]
     ActorPairHasFirstTouch = 4u16,
     ActorPairLostTouch = 8u16,
     InternalContactsAreFlipped = 32u16,

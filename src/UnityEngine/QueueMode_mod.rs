@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+QueueMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum QueueMode {
+    #[default]
     CompleteOthers = 0i32,
     PlayNow = 2i32,
 }

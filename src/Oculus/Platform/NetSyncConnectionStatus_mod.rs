@@ -1,7 +1,8 @@
 #[cfg(feature = "Oculus+Platform+NetSyncConnectionStatus")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NetSyncConnectionStatus {
+    #[default]
     Connected = 3i32,
     Connecting = 1i32,
     Disconnected = 2i32,

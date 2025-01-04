@@ -1,7 +1,8 @@
 #[cfg(feature = "Oculus+Platform+NetSyncVoipMicSource")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NetSyncVoipMicSource {
+    #[default]
     Internal = 2i32,
     None = 1i32,
     Unknown = 0i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+SystemLanguage")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SystemLanguage {
+    #[default]
     Afrikaans = 0i32,
     Arabic = 1i32,
     Basque = 2i32,

@@ -39,8 +39,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::GraphicsBuffer {
 }
 #[cfg(feature = "UnityEngine+GraphicsBuffer+Target")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GraphicsBuffer_Target {
+    #[default]
     Append = 64i32,
     Constant = 512i32,
     CopyDestination = 8i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+TouchType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TouchType {
+    #[default]
     Direct = 0i32,
     Indirect = 1i32,
     Stylus = 2i32,

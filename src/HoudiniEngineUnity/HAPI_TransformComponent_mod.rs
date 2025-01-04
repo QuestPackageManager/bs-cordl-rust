@@ -1,7 +1,8 @@
 #[cfg(feature = "HoudiniEngineUnity+HAPI_TransformComponent")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HAPI_TransformComponent {
+    #[default]
     HAPI_TRANSFORM_QW = 9i32,
     HAPI_TRANSFORM_QX = 6i32,
     HAPI_TRANSFORM_QY = 7i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Reflection+TypeAttributes")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TypeAttributes {
+    #[default]
     Abstract = 128i32,
     AnsiClass = 0i32,
     AutoClass = 131072i32,

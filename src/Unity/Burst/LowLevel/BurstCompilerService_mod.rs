@@ -126,8 +126,9 @@ for crate::Unity::Burst::LowLevel::BurstCompilerService {
 }
 #[cfg(feature = "Unity+Burst+LowLevel+BurstCompilerService+BurstLogType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BurstCompilerService_BurstLogType {
+    #[default]
     Error = 2i32,
     Info = 0i32,
     Warning = 1i32,

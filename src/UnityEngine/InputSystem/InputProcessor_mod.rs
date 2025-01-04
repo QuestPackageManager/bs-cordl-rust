@@ -103,8 +103,9 @@ for crate::UnityEngine::InputSystem::InputProcessor {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputProcessor+CachingPolicy")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputProcessor_CachingPolicy {
+    #[default]
     CacheResult = 0i32,
     EvaluateOnEveryRead = 1i32,
 }

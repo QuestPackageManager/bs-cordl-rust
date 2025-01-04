@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+RenderMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RenderMode {
+    #[default]
     ScreenSpaceCamera = 1i32,
     ScreenSpaceOverlay = 0i32,
     WorldSpace = 2i32,

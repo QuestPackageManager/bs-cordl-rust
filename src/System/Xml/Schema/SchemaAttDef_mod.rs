@@ -456,8 +456,9 @@ for crate::System::Xml::Schema::SchemaAttDef {
 }
 #[cfg(feature = "System+Xml+Schema+SchemaAttDef+Reserve")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SchemaAttDef_Reserve {
+    #[default]
     None = 0i32,
     XmlLang = 2i32,
     XmlSpace = 1i32,

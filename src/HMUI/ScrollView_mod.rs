@@ -434,8 +434,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::ScrollView {
 }
 #[cfg(feature = "HMUI+ScrollView+ScrollDirection")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ScrollView_ScrollDirection {
+    #[default]
     Down = 2i32,
     Left = 3i32,
     None = 0i32,
@@ -449,8 +450,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "HMUI+ScrollView+ScrollType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ScrollView_ScrollType {
+    #[default]
     FixedCellSize = 1i32,
     FocusItems = 2i32,
     PageSize = 0i32,
@@ -462,8 +464,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "HMUI+ScrollView+ScrollViewDirection")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ScrollView_ScrollViewDirection {
+    #[default]
     Horizontal = 1i32,
     Vertical = 0i32,
 }

@@ -1,7 +1,8 @@
 #[cfg(feature = "LIV+SDK+Unity+FEATURES")]
 #[repr(u64)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum FEATURES {
+    #[default]
     BACKGROUND_DEPTH_RENDER = 8u64,
     BACKGROUND_RENDER = 1u64,
     COMPLEX_CLIP_PLANE = 4u64,

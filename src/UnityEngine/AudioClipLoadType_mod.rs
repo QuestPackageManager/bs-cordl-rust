@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+AudioClipLoadType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AudioClipLoadType {
+    #[default]
     CompressedInMemory = 1i32,
     DecompressOnLoad = 0i32,
     Streaming = 2i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Xml+Schema+XmlSchemaDerivationMethod")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XmlSchemaDerivationMethod {
+    #[default]
     All = 255i32,
     Empty = 0i32,
     Extension = 2i32,

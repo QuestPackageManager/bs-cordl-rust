@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+TextureWrapMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TextureWrapMode {
+    #[default]
     Clamp = 1i32,
     Mirror = 2i32,
     MirrorOnce = 3i32,

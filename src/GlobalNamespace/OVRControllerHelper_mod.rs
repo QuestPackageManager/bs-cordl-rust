@@ -147,8 +147,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRController
 }
 #[cfg(feature = "OVRControllerHelper+ControllerType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRControllerHelper_ControllerType {
+    #[default]
     Quest2 = 3i32,
     QuestAndRiftS = 1i32,
     Rift = 2i32,

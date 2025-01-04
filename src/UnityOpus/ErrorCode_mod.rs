@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityOpus+ErrorCode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ErrorCode {
+    #[default]
     AllocFail = -7i32,
     BadArg = -1i32,
     BufferTooSmall = -2i32,

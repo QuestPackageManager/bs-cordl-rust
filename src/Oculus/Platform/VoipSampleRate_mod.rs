@@ -1,7 +1,8 @@
 #[cfg(feature = "Oculus+Platform+VoipSampleRate")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum VoipSampleRate {
+    #[default]
     HZ24000 = 1i32,
     HZ44100 = 2i32,
     HZ48000 = 3i32,

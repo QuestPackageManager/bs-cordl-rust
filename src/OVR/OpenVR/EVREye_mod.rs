@@ -1,7 +1,8 @@
 #[cfg(feature = "OVR+OpenVR+EVREye")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EVREye {
+    #[default]
     Eye_Left = 0i32,
     Eye_Right = 1i32,
 }

@@ -1,7 +1,8 @@
 #[cfg(feature = "VRPlatformSDK")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum VRPlatformSDK {
+    #[default]
     Oculus = 1i32,
     OpenXR = 0i32,
     Unknown = 2i32,

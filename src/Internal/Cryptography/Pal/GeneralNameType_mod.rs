@@ -1,7 +1,8 @@
 #[cfg(feature = "Internal+Cryptography+Pal+GeneralNameType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GeneralNameType {
+    #[default]
     DirectoryName = 4i32,
     DnsName = 2i32,
     EdiPartyName = 5i32,

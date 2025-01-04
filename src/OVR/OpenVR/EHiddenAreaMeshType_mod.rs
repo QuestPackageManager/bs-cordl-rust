@@ -1,7 +1,8 @@
 #[cfg(feature = "OVR+OpenVR+EHiddenAreaMeshType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EHiddenAreaMeshType {
+    #[default]
     k_eHiddenAreaMesh_Inverse = 1i32,
     k_eHiddenAreaMesh_LineLoop = 2i32,
     k_eHiddenAreaMesh_Max = 3i32,

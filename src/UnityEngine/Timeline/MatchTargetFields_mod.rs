@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Timeline+MatchTargetFields")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MatchTargetFields {
+    #[default]
     PositionX = 1i32,
     PositionY = 2i32,
     PositionZ = 4i32,

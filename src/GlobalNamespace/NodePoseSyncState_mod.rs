@@ -230,8 +230,9 @@ for crate::GlobalNamespace::NodePoseSyncState {
 }
 #[cfg(feature = "NodePoseSyncState+NodePose")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NodePoseSyncState_NodePose {
+    #[default]
     Count = 3i32,
     Head = 0i32,
     LeftController = 1i32,

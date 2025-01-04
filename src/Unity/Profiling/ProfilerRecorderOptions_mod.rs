@@ -1,7 +1,8 @@
 #[cfg(feature = "Unity+Profiling+ProfilerRecorderOptions")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ProfilerRecorderOptions {
+    #[default]
     CollectOnlyOnCurrentThread = 4i32,
     Default = 24i32,
     GpuRecorder = 64i32,

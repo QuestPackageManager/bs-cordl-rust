@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+ScreenOrientation")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ScreenOrientation {
+    #[default]
     AutoRotation = 5i32,
     Landscape = 3i32,
     LandscapeRight = 4i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "Oculus+Haptics+Controller")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Controller {
+    #[default]
     Both = 2i32,
     Left = 0i32,
     Right = 1i32,

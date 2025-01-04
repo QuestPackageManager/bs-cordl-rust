@@ -1,7 +1,8 @@
 #[cfg(feature = "System+UriFormat")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum UriFormat {
+    #[default]
     SafeUnescaped = 3i32,
     Unescaped = 2i32,
     UriEscaped = 1i32,

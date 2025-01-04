@@ -98,8 +98,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NoteExecution
 }
 #[cfg(feature = "NoteExecutionRating+Rating")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NoteExecutionRating_Rating {
+    #[default]
     BadCut = 2i32,
     GoodCut = 0i32,
     Miss = 1i32,

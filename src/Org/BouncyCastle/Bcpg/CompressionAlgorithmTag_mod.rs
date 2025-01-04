@@ -1,7 +1,8 @@
 #[cfg(feature = "Org+BouncyCastle+Bcpg+CompressionAlgorithmTag")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CompressionAlgorithmTag {
+    #[default]
     BZip2 = 3i32,
     Uncompressed = 0i32,
     ZLib = 2i32,

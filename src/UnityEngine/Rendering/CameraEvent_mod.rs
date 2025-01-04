@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Rendering+CameraEvent")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CameraEvent {
+    #[default]
     AfterDepthNormalsTexture = 3i32,
     AfterDepthTexture = 1i32,
     AfterEverything = 20i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+PhysicMaterialCombine")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PhysicMaterialCombine {
+    #[default]
     Average = 0i32,
     Maximum = 3i32,
     Minimum = 2i32,

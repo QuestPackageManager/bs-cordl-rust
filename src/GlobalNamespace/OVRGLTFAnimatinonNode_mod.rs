@@ -299,8 +299,9 @@ for crate::GlobalNamespace::OVRGLTFAnimatinonNode_InputNodeState {
 impl crate::GlobalNamespace::OVRGLTFAnimatinonNode_InputNodeState {}
 #[cfg(feature = "OVRGLTFAnimatinonNode+OVRGLTFTransformType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRGLTFAnimatinonNode_OVRGLTFTransformType {
+    #[default]
     None = 0i32,
     Rotation = 2i32,
     Scale = 3i32,
@@ -315,8 +316,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRGLTFAnimatinonNode+OVRInterpolationType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRGLTFAnimatinonNode_OVRInterpolationType {
+    #[default]
     CUBICSPLINE = 3i32,
     LINEAR = 1i32,
     None = 0i32,
@@ -330,8 +332,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRGLTFAnimatinonNode+ThumbstickDirection")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRGLTFAnimatinonNode_ThumbstickDirection {
+    #[default]
     East = 3i32,
     None = 0i32,
     North = 1i32,

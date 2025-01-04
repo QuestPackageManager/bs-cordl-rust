@@ -105,8 +105,9 @@ for crate::BeatSaber::TrackDefinitions::EventTrackDefinitionSO {
     feature = "BeatSaber+TrackDefinitions+EventTrackDefinitionSO+DataTransformationType"
 )]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EventTrackDefinitionSO_DataTransformationType {
+    #[default]
     DeltaRotation = 2i32,
     Light = 1i32,
     NoTransformation = 0i32,
@@ -124,8 +125,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "BeatSaber+TrackDefinitions+EventTrackDefinitionSO+MarkerType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EventTrackDefinitionSO_MarkerType {
+    #[default]
     BasicMarker = 0i32,
     DurationMarker = 1i32,
     LightMarker = 2i32,

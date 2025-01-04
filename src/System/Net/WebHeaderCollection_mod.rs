@@ -460,8 +460,9 @@ for crate::System::Net::WebHeaderCollection {
 }
 #[cfg(feature = "System+Net+WebHeaderCollection+RfcChar")]
 #[repr(u8)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum WebHeaderCollection_RfcChar {
+    #[default]
     CR = 3u8,
     Colon = 6u8,
     Ctl = 2u8,

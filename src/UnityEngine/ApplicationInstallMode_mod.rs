@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+ApplicationInstallMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ApplicationInstallMode {
+    #[default]
     Adhoc = 3i32,
     DeveloperBuild = 2i32,
     Editor = 5i32,

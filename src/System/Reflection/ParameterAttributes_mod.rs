@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Reflection+ParameterAttributes")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ParameterAttributes {
+    #[default]
     HasDefault = 4096i32,
     HasFieldMarshal = 8192i32,
     In = 1i32,

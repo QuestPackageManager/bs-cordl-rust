@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+XR+AvailableTrackingData")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AvailableTrackingData {
+    #[default]
     AccelerationAvailable = 16i32,
     AngularAccelerationAvailable = 32i32,
     AngularVelocityAvailable = 8i32,

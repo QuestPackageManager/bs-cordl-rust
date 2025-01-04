@@ -125,8 +125,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Buffers::ArrayPoolEven
 }
 #[cfg(feature = "System+Buffers+ArrayPoolEventSource+BufferAllocatedReason")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ArrayPoolEventSource_BufferAllocatedReason {
+    #[default]
     OverMaximumSize = 1i32,
     PoolExhausted = 2i32,
     Pooled = 0i32,

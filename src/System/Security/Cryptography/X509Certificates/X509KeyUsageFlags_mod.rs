@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Security+Cryptography+X509Certificates+X509KeyUsageFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum X509KeyUsageFlags {
+    #[default]
     CrlSign = 2i32,
     DataEncipherment = 16i32,
     DecipherOnly = 32768i32,

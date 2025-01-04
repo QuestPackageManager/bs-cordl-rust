@@ -1,7 +1,8 @@
 #[cfg(feature = "Oculus+Platform+LaunchType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LaunchType {
+    #[default]
     Coordinated = 3i32,
     Deeplink = 4i32,
     Invite = 2i32,

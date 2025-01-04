@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Rendering+VertexAttributeFormat")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum VertexAttributeFormat {
+    #[default]
     Float16 = 1i32,
     Float32 = 0i32,
     SInt16 = 9i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Net+Sockets+SocketError")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SocketError {
+    #[default]
     AccessDenied = 10013i32,
     AddressAlreadyInUse = 10048i32,
     AddressFamilyNotSupported = 10047i32,

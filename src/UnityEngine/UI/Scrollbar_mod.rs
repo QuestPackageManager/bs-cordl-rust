@@ -625,8 +625,9 @@ for crate::UnityEngine::UI::Scrollbar {
 }
 #[cfg(feature = "UnityEngine+UI+Scrollbar+Axis")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Scrollbar_Axis {
+    #[default]
     Horizontal = 0i32,
     Vertical = 1i32,
 }
@@ -637,8 +638,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+UI+Scrollbar+Direction")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Scrollbar_Direction {
+    #[default]
     BottomToTop = 2i32,
     LeftToRight = 0i32,
     RightToLeft = 1i32,

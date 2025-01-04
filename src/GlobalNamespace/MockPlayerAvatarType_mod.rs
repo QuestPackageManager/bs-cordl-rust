@@ -1,7 +1,8 @@
 #[cfg(feature = "MockPlayerAvatarType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MockPlayerAvatarType {
+    #[default]
     Beat = 0i32,
     Meta = 1i32,
 }

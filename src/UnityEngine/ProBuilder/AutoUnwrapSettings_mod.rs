@@ -279,8 +279,9 @@ impl crate::UnityEngine::ProBuilder::AutoUnwrapSettings {
 }
 #[cfg(feature = "UnityEngine+ProBuilder+AutoUnwrapSettings+Anchor")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AutoUnwrapSettings_Anchor {
+    #[default]
     LowerCenter = 7i32,
     LowerLeft = 6i32,
     LowerRight = 8i32,
@@ -300,8 +301,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+ProBuilder+AutoUnwrapSettings+Fill")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AutoUnwrapSettings_Fill {
+    #[default]
     Fit = 0i32,
     Stretch = 2i32,
     Tile = 1i32,

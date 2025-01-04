@@ -127,8 +127,9 @@ for crate::UnityEngine::InputSystem::LowLevel::QueryPairedUserAccountCommand {
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+QueryPairedUserAccountCommand+Result")]
 #[repr(i64)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum QueryPairedUserAccountCommand_Result {
+    #[default]
     DevicePairedToUserAccount = 2i64,
     UserAccountSelectionCanceled = 16i64,
     UserAccountSelectionComplete = 8i64,

@@ -235,8 +235,9 @@ for crate::GlobalNamespace::MultiplayerLevelCompletionResults {
 }
 #[cfg(feature = "MultiplayerLevelCompletionResults+MultiplayerPlayerLevelEndReason")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndReason {
+    #[default]
     Cleared = 0i32,
     ConnectedAfterLevelEnded = 7i32,
     Failed = 1i32,
@@ -254,8 +255,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "MultiplayerLevelCompletionResults+MultiplayerPlayerLevelEndState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MultiplayerLevelCompletionResults_MultiplayerPlayerLevelEndState {
+    #[default]
     NotFinished = 1i32,
     NotStarted = 2i32,
     SongFinished = 0i32,

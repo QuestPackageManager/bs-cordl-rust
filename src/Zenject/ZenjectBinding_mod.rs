@@ -155,8 +155,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::Zenject::ZenjectBinding {
 }
 #[cfg(feature = "Zenject+ZenjectBinding+BindTypes")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ZenjectBinding_BindTypes {
+    #[default]
     AllInterfaces = 1i32,
     AllInterfacesAndSelf = 2i32,
     BaseType = 3i32,

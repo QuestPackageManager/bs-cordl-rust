@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Rendering+RenderBufferLoadAction")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RenderBufferLoadAction {
+    #[default]
     Clear = 1i32,
     DontCare = 2i32,
     Load = 0i32,

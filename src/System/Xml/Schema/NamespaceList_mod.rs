@@ -225,8 +225,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::Namespace
 }
 #[cfg(feature = "System+Xml+Schema+NamespaceList+ListType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NamespaceList_ListType {
+    #[default]
     Any = 0i32,
     Other = 1i32,
     Set = 2i32,

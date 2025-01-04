@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+DisableBatchingType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DisableBatchingType {
+    #[default]
     False = 0i32,
     True = 1i32,
     WhenLODFading = 2i32,

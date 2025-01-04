@@ -193,8 +193,9 @@ impl AsMut<
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_MaterialData+Source")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HEU_MaterialData_Source {
+    #[default]
     DEFAULT = 0i32,
     HOUDINI = 1i32,
     SUBSTANCE = 3i32,

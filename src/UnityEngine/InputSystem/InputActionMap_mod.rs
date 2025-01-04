@@ -1184,8 +1184,9 @@ impl crate::UnityEngine::InputSystem::InputActionMap_DeviceArray {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionMap+Flags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputActionMap_Flags {
+    #[default]
     BindingResolutionNeedsFullReResolve = 2i32,
     BindingsForEachActionInitialized = 8i32,
     ControlsForEachActionInitialized = 4i32,

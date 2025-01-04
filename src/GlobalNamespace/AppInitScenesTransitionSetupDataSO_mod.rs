@@ -90,8 +90,9 @@ for crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO {
 }
 #[cfg(feature = "AppInitScenesTransitionSetupDataSO+AppInitOverrideStartType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AppInitScenesTransitionSetupDataSO_AppInitOverrideStartType {
+    #[default]
     AppRestart = 2i32,
     AppStart = 1i32,
     DoNotOverride = 0i32,

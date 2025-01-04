@@ -321,8 +321,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Haptics::Ffi {
 }
 #[cfg(feature = "Oculus+Haptics+Ffi+Controller")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Ffi_Controller {
+    #[default]
     Both = 2i32,
     Left = 0i32,
     Right = 1i32,
@@ -431,8 +432,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Haptics::Ffi_LogCallba
 }
 #[cfg(feature = "Oculus+Haptics+Ffi+LogLevel")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Ffi_LogLevel {
+    #[default]
     Debug = 1i32,
     Error = 4i32,
     Info = 2i32,
@@ -472,8 +474,9 @@ for crate::Oculus::Haptics::Ffi_NullBackendStatistics {
 impl crate::Oculus::Haptics::Ffi_NullBackendStatistics {}
 #[cfg(feature = "Oculus+Haptics+Ffi+Result")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Ffi_Result {
+    #[default]
     ClipIdInvalid = -9i32,
     CreatePlayerFailed = -8i32,
     Error = -1i32,

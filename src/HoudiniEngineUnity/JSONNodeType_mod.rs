@@ -1,7 +1,8 @@
 #[cfg(feature = "HoudiniEngineUnity+JSONNodeType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum JSONNodeType {
+    #[default]
     Array = 1i32,
     Boolean = 6i32,
     Custom = 255i32,

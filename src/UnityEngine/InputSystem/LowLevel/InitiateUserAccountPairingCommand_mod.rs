@@ -77,8 +77,9 @@ for crate::UnityEngine::InputSystem::LowLevel::InitiateUserAccountPairingCommand
     feature = "UnityEngine+InputSystem+LowLevel+InitiateUserAccountPairingCommand+Result"
 )]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InitiateUserAccountPairingCommand_Result {
+    #[default]
     ErrorAlreadyInProgress = -2i32,
     ErrorNotSupported = -1i32,
     SuccessfullyInitiated = 1i32,

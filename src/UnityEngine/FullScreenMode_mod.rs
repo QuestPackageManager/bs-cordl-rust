@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+FullScreenMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum FullScreenMode {
+    #[default]
     ExclusiveFullScreen = 0i32,
     FullScreenWindow = 1i32,
     MaximizedWindow = 2i32,

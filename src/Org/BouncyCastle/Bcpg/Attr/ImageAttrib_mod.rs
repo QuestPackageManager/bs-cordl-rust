@@ -146,8 +146,9 @@ for crate::Org::BouncyCastle::Bcpg::Attr::ImageAttrib {
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+Attr+ImageAttrib+Format")]
 #[repr(u8)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ImageAttrib_Format {
+    #[default]
     Jpeg = 1u8,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+Attr+ImageAttrib+Format")]

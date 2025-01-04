@@ -1,7 +1,8 @@
 #[cfg(feature = "HoudiniEngineUnity+HEU_AssetEventType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HEU_AssetEventType {
+    #[default]
     BAKE_NEW = 3i32,
     BAKE_UPDATE = 4i32,
     COOK = 2i32,

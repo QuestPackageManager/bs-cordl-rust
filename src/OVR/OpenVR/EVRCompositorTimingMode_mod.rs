@@ -1,7 +1,8 @@
 #[cfg(feature = "OVR+OpenVR+EVRCompositorTimingMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EVRCompositorTimingMode {
+    #[default]
     Explicit_ApplicationPerformsPostPresentHandoff = 2i32,
     Explicit_RuntimePerformsPostPresentHandoff = 1i32,
     Implicit = 0i32,

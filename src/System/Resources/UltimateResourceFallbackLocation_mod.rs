@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Resources+UltimateResourceFallbackLocation")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum UltimateResourceFallbackLocation {
+    #[default]
     MainAssembly = 0i32,
     Satellite = 1i32,
 }

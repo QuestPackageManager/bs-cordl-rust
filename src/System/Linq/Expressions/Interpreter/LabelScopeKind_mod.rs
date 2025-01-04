@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Linq+Expressions+Interpreter+LabelScopeKind")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LabelScopeKind {
+    #[default]
     Block = 1i32,
     Catch = 5i32,
     Expression = 8i32,

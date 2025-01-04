@@ -177,8 +177,9 @@ for crate::UnityEngine::UIElements::NavigationMoveEvent {
 }
 #[cfg(feature = "UnityEngine+UIElements+NavigationMoveEvent+Direction")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NavigationMoveEvent_Direction {
+    #[default]
     Down = 4i32,
     Left = 1i32,
     Next = 5i32,

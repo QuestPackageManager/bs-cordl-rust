@@ -1,7 +1,8 @@
 #[cfg(feature = "HoudiniEngineUnity+HAPI_PrmScriptType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HAPI_PrmScriptType {
+    #[default]
     HAPI_PRM_SCRIPT_TYPE_ANGLE = 2i32,
     HAPI_PRM_SCRIPT_TYPE_BUTTON = 9i32,
     HAPI_PRM_SCRIPT_TYPE_BUTTONSTRIP = 40i32,

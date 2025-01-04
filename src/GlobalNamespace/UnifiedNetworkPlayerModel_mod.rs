@@ -748,8 +748,9 @@ for crate::GlobalNamespace::UnifiedNetworkPlayerModel {
 }
 #[cfg(feature = "UnifiedNetworkPlayerModel+ActiveNetworkPlayerModelType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum UnifiedNetworkPlayerModel_ActiveNetworkPlayerModelType {
+    #[default]
     GameLift = 0i32,
     Platform = 1i32,
 }

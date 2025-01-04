@@ -1,7 +1,8 @@
 #[cfg(feature = "NodeStatePropertyType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NodeStatePropertyType {
+    #[default]
     Acceleration = 0i32,
     AngularAcceleration = 1i32,
     AngularVelocity = 3i32,

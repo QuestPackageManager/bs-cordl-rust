@@ -1,7 +1,8 @@
 #[cfg(feature = "Unity+IO+LowLevel+Unsafe+Priority")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Priority {
+    #[default]
     PriorityHigh = 1i32,
     PriorityLow = 0i32,
 }

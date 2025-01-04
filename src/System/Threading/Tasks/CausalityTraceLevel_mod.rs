@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Threading+Tasks+CausalityTraceLevel")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CausalityTraceLevel {
+    #[default]
     Important = 1i32,
     Required = 0i32,
     Verbose = 2i32,

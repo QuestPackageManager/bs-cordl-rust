@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+AnimationEventSource")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AnimationEventSource {
+    #[default]
     Animator = 2i32,
     Legacy = 1i32,
     NoSource = 0i32,

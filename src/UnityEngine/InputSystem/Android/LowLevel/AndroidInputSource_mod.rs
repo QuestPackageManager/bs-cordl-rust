@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidInputSource")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AndroidInputSource {
+    #[default]
     Dpad = 513i32,
     Gamepad = 1025i32,
     Joystick = 16777232i32,

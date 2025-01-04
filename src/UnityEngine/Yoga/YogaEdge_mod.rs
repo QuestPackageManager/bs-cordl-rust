@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Yoga+YogaEdge")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum YogaEdge {
+    #[default]
     All = 8i32,
     Bottom = 3i32,
     End = 5i32,

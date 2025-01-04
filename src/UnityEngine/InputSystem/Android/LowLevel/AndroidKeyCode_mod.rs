@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+InputSystem+Android+LowLevel+AndroidKeyCode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AndroidKeyCode {
+    #[default]
     A = 29i32,
     Alpha0 = 7i32,
     Alpha1 = 8i32,

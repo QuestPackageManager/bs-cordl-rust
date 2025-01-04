@@ -1,7 +1,8 @@
 #[cfg(feature = "EnvironmentType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EnvironmentType {
+    #[default]
     Circle = 1i32,
     Multiplayer = 2i32,
     Normal = 0i32,

@@ -827,8 +827,9 @@ for crate::UnityEngine::EventSystems::PointerEventData {
 }
 #[cfg(feature = "UnityEngine+EventSystems+PointerEventData+FramePressState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PointerEventData_FramePressState {
+    #[default]
     NotChanged = 3i32,
     Pressed = 0i32,
     PressedAndReleased = 2i32,
@@ -842,8 +843,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+EventSystems+PointerEventData+InputButton")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PointerEventData_InputButton {
+    #[default]
     Left = 0i32,
     Middle = 2i32,
     Right = 1i32,

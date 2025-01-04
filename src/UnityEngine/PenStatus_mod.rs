@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+PenStatus")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PenStatus {
+    #[default]
     Barrel = 2i32,
     Contact = 1i32,
     Eraser = 8i32,

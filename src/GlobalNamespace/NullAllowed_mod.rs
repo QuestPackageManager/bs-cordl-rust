@@ -68,8 +68,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NullAllowed {
 }
 #[cfg(feature = "NullAllowed+Context")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NullAllowed_Context {
+    #[default]
     Everywhere = 0i32,
     Prefab = 1i32,
 }

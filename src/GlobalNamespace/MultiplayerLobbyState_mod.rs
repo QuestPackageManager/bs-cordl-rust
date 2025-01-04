@@ -1,7 +1,8 @@
 #[cfg(feature = "MultiplayerLobbyState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MultiplayerLobbyState {
+    #[default]
     Error = 5i32,
     GameRunning = 4i32,
     GameStarting = 3i32,

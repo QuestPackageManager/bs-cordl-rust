@@ -1,7 +1,8 @@
 #[cfg(feature = "TMPro+TextRenderFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TextRenderFlags {
+    #[default]
     DontRender = 0i32,
     Render = 255i32,
 }

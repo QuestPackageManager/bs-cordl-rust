@@ -1,7 +1,8 @@
 #[cfg(feature = "Mono+Security+Interface+AlertDescription")]
 #[repr(u8)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AlertDescription {
+    #[default]
     AccessDenied = 49u8,
     BadCertificate = 42u8,
     BadRecordMAC = 20u8,

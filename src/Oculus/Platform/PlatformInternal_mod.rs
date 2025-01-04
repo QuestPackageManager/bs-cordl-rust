@@ -125,8 +125,9 @@ for crate::Oculus::Platform::PlatformInternal_HTTP {
 }
 #[cfg(feature = "Oculus+Platform+PlatformInternal+MessageTypeInternal")]
 #[repr(u32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PlatformInternal_MessageTypeInternal {
+    #[default]
     AbuseReport_LaunchAdvancedReportFlow = 2973396720u32,
     Application_ExecuteCoordinatedLaunch = 2109011184u32,
     Application_GetInstalledApplications = 259280112u32,

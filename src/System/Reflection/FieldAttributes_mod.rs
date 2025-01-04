@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Reflection+FieldAttributes")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum FieldAttributes {
+    #[default]
     Assembly = 3i32,
     FamANDAssem = 2i32,
     FamORAssem = 5i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "HoudiniEngineUnity+HAPI_XYZOrder")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HAPI_XYZOrder {
+    #[default]
     HAPI_XYZ = 0i32,
     HAPI_XZY = 1i32,
     HAPI_YXZ = 2i32,

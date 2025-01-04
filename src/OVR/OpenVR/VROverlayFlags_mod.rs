@@ -1,7 +1,8 @@
 #[cfg(feature = "OVR+OpenVR+VROverlayFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum VROverlayFlags {
+    #[default]
     AcceptsGamepadEvents = 4i32,
     Curved = 1i32,
     NoDashboardTab = 3i32,

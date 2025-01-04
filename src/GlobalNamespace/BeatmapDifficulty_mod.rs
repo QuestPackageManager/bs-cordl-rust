@@ -1,7 +1,8 @@
 #[cfg(feature = "BeatmapDifficulty")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BeatmapDifficulty {
+    #[default]
     Easy = 0i32,
     Expert = 3i32,
     ExpertPlus = 4i32,

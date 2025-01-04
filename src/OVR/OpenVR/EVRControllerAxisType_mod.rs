@@ -1,7 +1,8 @@
 #[cfg(feature = "OVR+OpenVR+EVRControllerAxisType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EVRControllerAxisType {
+    #[default]
     k_eControllerAxis_Joystick = 2i32,
     k_eControllerAxis_None = 0i32,
     k_eControllerAxis_TrackPad = 1i32,

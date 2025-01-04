@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Xml+XmlNodeChangedAction")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XmlNodeChangedAction {
+    #[default]
     Change = 2i32,
     Insert = 0i32,
     Remove = 1i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+InternalArrayTypeE")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InternalArrayTypeE {
+    #[default]
     Base64 = 4i32,
     Empty = 0i32,
     Jagged = 2i32,

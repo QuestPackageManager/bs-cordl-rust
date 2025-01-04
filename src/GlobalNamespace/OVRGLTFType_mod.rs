@@ -1,7 +1,8 @@
 #[cfg(feature = "OVRGLTFType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRGLTFType {
+    #[default]
     MAT4 = 5i32,
     NONE = 0i32,
     SCALAR = 1i32,

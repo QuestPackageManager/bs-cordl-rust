@@ -1,7 +1,8 @@
 #[cfg(feature = "TMPro+VerticalAlignmentOptions")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum VerticalAlignmentOptions {
+    #[default]
     Baseline = 2048i32,
     Bottom = 1024i32,
     Capline = 8192i32,

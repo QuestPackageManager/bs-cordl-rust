@@ -112,8 +112,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::EnumDataUtility {
 }
 #[cfg(feature = "UnityEngine+EnumDataUtility+CachedType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EnumDataUtility_CachedType {
+    #[default]
     ExcludeObsolete = 0i32,
     IncludeAllObsolete = 2i32,
     IncludeObsoleteExceptErrors = 1i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "ColorMixAndWeightingApproach")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ColorMixAndWeightingApproach {
+    #[default]
     FractionAndSum = 1i32,
     Maximum = 0i32,
 }

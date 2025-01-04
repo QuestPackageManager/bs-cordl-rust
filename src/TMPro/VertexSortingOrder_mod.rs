@@ -1,7 +1,8 @@
 #[cfg(feature = "TMPro+VertexSortingOrder")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum VertexSortingOrder {
+    #[default]
     Normal = 0i32,
     Reverse = 1i32,
 }

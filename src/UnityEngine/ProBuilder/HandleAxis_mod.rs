@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+ProBuilder+HandleAxis")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HandleAxis {
+    #[default]
     Free = 8i32,
     X = 1i32,
     Y = 2i32,

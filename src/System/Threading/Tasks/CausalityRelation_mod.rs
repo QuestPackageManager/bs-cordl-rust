@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Threading+Tasks+CausalityRelation")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CausalityRelation {
+    #[default]
     AssignDelegate = 0i32,
     Cancel = 3i32,
     Choice = 2i32,

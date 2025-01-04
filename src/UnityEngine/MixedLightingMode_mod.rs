@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+MixedLightingMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MixedLightingMode {
+    #[default]
     IndirectOnly = 0i32,
     Shadowmask = 2i32,
     Subtractive = 1i32,

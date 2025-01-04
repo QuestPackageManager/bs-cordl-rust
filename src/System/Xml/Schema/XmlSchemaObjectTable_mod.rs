@@ -199,8 +199,9 @@ for crate::System::Xml::Schema::XmlSchemaObjectTable {
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+EnumeratorType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XmlSchemaObjectTable_EnumeratorType {
+    #[default]
     DictionaryEntry = 2i32,
     Keys = 0i32,
     Values = 1i32,

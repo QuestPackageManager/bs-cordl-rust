@@ -1,7 +1,8 @@
 #[cfg(feature = "LiteNetLib+DisconnectReason")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DisconnectReason {
+    #[default]
     ConnectionFailed = 0i32,
     ConnectionRejected = 6i32,
     DisconnectPeerCalled = 5i32,

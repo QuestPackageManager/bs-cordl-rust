@@ -135,8 +135,9 @@ for crate::UnityEngine::Timeline::ActivationControlPlayable {
 }
 #[cfg(feature = "UnityEngine+Timeline+ActivationControlPlayable+InitialState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ActivationControlPlayable_InitialState {
+    #[default]
     Active = 1i32,
     Inactive = 2i32,
     Unset = 0i32,
@@ -149,8 +150,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+Timeline+ActivationControlPlayable+PostPlaybackState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ActivationControlPlayable_PostPlaybackState {
+    #[default]
     Active = 0i32,
     Inactive = 1i32,
     Revert = 2i32,

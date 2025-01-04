@@ -1265,8 +1265,9 @@ for crate::Oculus::Platform::Message_ExtraMessageTypesHandler {
 }
 #[cfg(feature = "Oculus+Platform+Message+MessageType")]
 #[repr(u32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Message_MessageType {
+    #[default]
     AbuseReport_ReportRequestHandled = 2398914288u32,
     Achievements_AddCount = 828565443u32,
     Achievements_AddFields = 690072276u32,

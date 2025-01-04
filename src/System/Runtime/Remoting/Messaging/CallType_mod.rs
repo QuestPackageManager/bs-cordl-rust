@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Runtime+Remoting+Messaging+CallType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CallType {
+    #[default]
     BeginInvoke = 1i32,
     EndInvoke = 2i32,
     OneWay = 3i32,

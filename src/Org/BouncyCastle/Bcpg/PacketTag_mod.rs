@@ -1,7 +1,8 @@
 #[cfg(feature = "Org+BouncyCastle+Bcpg+PacketTag")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PacketTag {
+    #[default]
     CompressedData = 8i32,
     Experimental1 = 60i32,
     Experimental2 = 61i32,

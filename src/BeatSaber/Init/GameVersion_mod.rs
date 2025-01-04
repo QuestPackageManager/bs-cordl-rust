@@ -774,8 +774,9 @@ impl AsMut<
 }
 #[cfg(feature = "BeatSaber+Init+GameVersion+PreReleasePrefix")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GameVersion_PreReleasePrefix {
+    #[default]
     Alpha = 0i32,
     Beta = 10i32,
     Nightly = 20i32,

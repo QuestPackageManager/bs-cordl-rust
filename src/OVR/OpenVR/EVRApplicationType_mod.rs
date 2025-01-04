@@ -1,7 +1,8 @@
 #[cfg(feature = "OVR+OpenVR+EVRApplicationType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EVRApplicationType {
+    #[default]
     VRApplication_Background = 3i32,
     VRApplication_Bootstrapper = 7i32,
     VRApplication_Max = 8i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "LiteNetLib+NatAddressType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NatAddressType {
+    #[default]
     External = 1i32,
     Internal = 0i32,
 }

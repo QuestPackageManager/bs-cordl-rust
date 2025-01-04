@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+EasingMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EasingMode {
+    #[default]
     Ease = 0i32,
     EaseIn = 1i32,
     EaseInBack = 17i32,

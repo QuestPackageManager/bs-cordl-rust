@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Security+Cryptography+X509Certificates+X509ChainStatusFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum X509ChainStatusFlags {
+    #[default]
     CtlNotSignatureValid = 262144i32,
     CtlNotTimeValid = 131072i32,
     CtlNotValidForUsage = 524288i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+ProBuilder+IndexFormat")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum IndexFormat {
+    #[default]
     Both = 2i32,
     Common = 1i32,
     Local = 0i32,

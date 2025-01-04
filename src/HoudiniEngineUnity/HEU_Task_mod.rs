@@ -212,8 +212,9 @@ for crate::HoudiniEngineUnity::HEU_Task_TaskCallback {
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_Task+TaskResult")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HEU_Task_TaskResult {
+    #[default]
     FAILED = 2i32,
     KILLED = 3i32,
     NONE = 0i32,
@@ -226,8 +227,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_Task+TaskStatus")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HEU_Task_TaskStatus {
+    #[default]
     COMPLETED = 5i32,
     NONE = 0i32,
     PENDING_COMPLETE = 4i32,

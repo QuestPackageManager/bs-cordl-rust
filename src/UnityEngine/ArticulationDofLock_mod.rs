@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+ArticulationDofLock")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ArticulationDofLock {
+    #[default]
     FreeMotion = 2i32,
     LimitedMotion = 1i32,
     LockedMotion = 0i32,

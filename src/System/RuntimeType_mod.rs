@@ -2206,8 +2206,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::RuntimeType_ListBuilder_1<T>
 }
 #[cfg(feature = "System+RuntimeType+MemberListType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RuntimeType_MemberListType {
+    #[default]
     All = 0i32,
     CaseInsensitive = 2i32,
     CaseSensitive = 1i32,

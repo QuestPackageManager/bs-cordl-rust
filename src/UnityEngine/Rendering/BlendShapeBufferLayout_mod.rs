@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Rendering+BlendShapeBufferLayout")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BlendShapeBufferLayout {
+    #[default]
     PerShape = 0i32,
     PerVertex = 1i32,
 }

@@ -285,8 +285,9 @@ for crate::UnityEngine::UI::AspectRatioFitter {
 }
 #[cfg(feature = "UnityEngine+UI+AspectRatioFitter+AspectMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AspectRatioFitter_AspectMode {
+    #[default]
     EnvelopeParent = 4i32,
     FitInParent = 3i32,
     HeightControlsWidth = 2i32,

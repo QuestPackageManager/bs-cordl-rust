@@ -82,8 +82,9 @@ for crate::GlobalNamespace::GraphicSettingsConditionalActivator {
 }
 #[cfg(feature = "GraphicSettingsConditionalActivator+ActivatorType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GraphicSettingsConditionalActivator_ActivatorType {
+    #[default]
     burnmarkTrails = 2i32,
     depthTexture = 1i32,
     screenDisplacement = 3i32,

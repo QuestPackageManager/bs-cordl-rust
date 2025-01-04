@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Video+VideoSource")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum VideoSource {
+    #[default]
     Url = 1i32,
     VideoClip = 0i32,
 }

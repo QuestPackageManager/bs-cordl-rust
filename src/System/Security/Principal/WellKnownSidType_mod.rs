@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Security+Principal+WellKnownSidType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum WellKnownSidType {
+    #[default]
     AccountAdministratorSid = 38i32,
     AccountCertAdminsSid = 46i32,
     AccountComputersSid = 44i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+XR+MeshGenerationStatus")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MeshGenerationStatus {
+    #[default]
     Canceled = 3i32,
     GenerationAlreadyInProgress = 2i32,
     InvalidMeshId = 1i32,

@@ -380,8 +380,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Schema::SchemaDec
 }
 #[cfg(feature = "System+Xml+Schema+SchemaDeclBase+Use")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SchemaDeclBase_Use {
+    #[default]
     Default = 0i32,
     Fixed = 3i32,
     Implied = 2i32,

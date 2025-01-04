@@ -1001,8 +1001,9 @@ for crate::System::Xml::XsdValidatingReader {
 }
 #[cfg(feature = "System+Xml+XsdValidatingReader+ValidatingReaderState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XsdValidatingReader_ValidatingReaderState {
+    #[default]
     ClearAttributes = 4i32,
     _cordl_EOF = 9i32,
     Error = 10i32,

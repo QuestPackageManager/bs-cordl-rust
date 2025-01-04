@@ -1,7 +1,8 @@
 #[cfg(feature = "Unity+Profiling+ProfilerCounterOptions")]
 #[repr(u16)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ProfilerCounterOptions {
+    #[default]
     FlushOnEndOfFrame = 2u16,
     None = 0u16,
     ResetToZeroOnFlush = 4u16,

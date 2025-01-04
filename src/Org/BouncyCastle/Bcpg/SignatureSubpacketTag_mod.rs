@@ -1,7 +1,8 @@
 #[cfg(feature = "Org+BouncyCastle+Bcpg+SignatureSubpacketTag")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SignatureSubpacketTag {
+    #[default]
     CreationTime = 2i32,
     EmbeddedSignature = 32i32,
     ExpireTime = 3i32,

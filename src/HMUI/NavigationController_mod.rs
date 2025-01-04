@@ -167,8 +167,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::NavigationController {
 }
 #[cfg(feature = "HMUI+NavigationController+Alignment")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NavigationController_Alignment {
+    #[default]
     Beginning = 0i32,
     End = 2i32,
     Middle = 1i32,
@@ -180,8 +181,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "HMUI+NavigationController+Orientation")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NavigationController_Orientation {
+    #[default]
     Horizontal = 0i32,
     Vertical = 1i32,
 }

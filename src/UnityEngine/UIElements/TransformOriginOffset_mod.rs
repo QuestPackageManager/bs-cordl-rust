@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+TransformOriginOffset")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TransformOriginOffset {
+    #[default]
     Bottom = 4i32,
     Center = 5i32,
     Left = 1i32,

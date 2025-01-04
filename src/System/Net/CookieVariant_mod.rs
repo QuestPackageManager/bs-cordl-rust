@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Net+CookieVariant")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CookieVariant {
+    #[default]
     Default = 2i32,
     Plain = 1i32,
     Rfc2965 = 3i32,

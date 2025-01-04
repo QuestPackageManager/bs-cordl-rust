@@ -119,8 +119,9 @@ impl AsMut<
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_ParameterModifier+ModifierAction")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HEU_ParameterModifier_ModifierAction {
+    #[default]
     MULTIPARM_CLEAR = 2i32,
     MULTIPARM_INSERT = 0i32,
     MULTIPARM_REMOVE = 1i32,

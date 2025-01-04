@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Globalization+CultureTypes")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CultureTypes {
+    #[default]
     AllCultures = 7i32,
     FrameworkCultures = 64i32,
     InstalledWin32Cultures = 4i32,

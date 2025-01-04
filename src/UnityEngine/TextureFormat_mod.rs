@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+TextureFormat")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TextureFormat {
+    #[default]
     ARGB32 = 5i32,
     ARGB4444 = 2i32,
     ASTC_10x10 = 52i32,

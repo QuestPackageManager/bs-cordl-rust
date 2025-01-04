@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Xml+Schema+XmlSchemaContentProcessing")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XmlSchemaContentProcessing {
+    #[default]
     Lax = 2i32,
     None = 0i32,
     Skip = 1i32,

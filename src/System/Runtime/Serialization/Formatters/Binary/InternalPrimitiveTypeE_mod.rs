@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+InternalPrimitiveTypeE")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InternalPrimitiveTypeE {
+    #[default]
     Boolean = 1i32,
     Byte = 2i32,
     Char = 3i32,

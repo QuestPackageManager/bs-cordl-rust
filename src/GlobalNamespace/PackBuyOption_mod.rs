@@ -1,7 +1,8 @@
 #[cfg(feature = "PackBuyOption")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PackBuyOption {
+    #[default]
     Default = 0i32,
     DisableBuyOption = 1i32,
 }

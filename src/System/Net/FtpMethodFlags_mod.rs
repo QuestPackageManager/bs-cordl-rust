@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Net+FtpMethodFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum FtpMethodFlags {
+    #[default]
     DoesNotTakeParameter = 16i32,
     HasHttpCommand = 128i32,
     IsDownload = 1i32,

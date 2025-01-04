@@ -157,8 +157,9 @@ for crate::BGLib::AppFlow::Initialization::AsyncSceneContext {
 }
 #[cfg(feature = "BGLib+AppFlow+Initialization+AsyncSceneContext+State")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AsyncSceneContext_State {
+    #[default]
     Initialized = 2i32,
     Initializing = 1i32,
     NotInitialized = 0i32,

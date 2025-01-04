@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Video+VideoTimeSource")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum VideoTimeSource {
+    #[default]
     AudioDSPTimeSource = 0i32,
     GameTimeSource = 1i32,
 }

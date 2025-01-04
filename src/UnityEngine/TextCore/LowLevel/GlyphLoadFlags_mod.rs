@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+TextCore+LowLevel+GlyphLoadFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GlyphLoadFlags {
+    #[default]
     LOAD_BITMAP_METRICS_ONLY = 4194304i32,
     LOAD_COLOR = 1048576i32,
     LOAD_COMPUTE_METRICS = 2097152i32,

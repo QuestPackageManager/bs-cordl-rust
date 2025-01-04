@@ -1,7 +1,8 @@
 #[cfg(feature = "Oculus+Platform+ChallengeCreationType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ChallengeCreationType {
+    #[default]
     DeveloperCreated = 2i32,
     Unknown = 0i32,
     UserCreated = 1i32,

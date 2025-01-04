@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+TimeUnit")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TimeUnit {
+    #[default]
     Millisecond = 1i32,
     Second = 0i32,
 }

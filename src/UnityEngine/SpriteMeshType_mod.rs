@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+SpriteMeshType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SpriteMeshType {
+    #[default]
     FullRect = 0i32,
     Tight = 1i32,
 }

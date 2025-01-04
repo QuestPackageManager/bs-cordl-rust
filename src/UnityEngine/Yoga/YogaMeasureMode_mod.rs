@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Yoga+YogaMeasureMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum YogaMeasureMode {
+    #[default]
     AtMost = 2i32,
     Exactly = 1i32,
     Undefined = 0i32,

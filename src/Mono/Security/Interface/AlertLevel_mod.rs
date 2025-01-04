@@ -1,7 +1,8 @@
 #[cfg(feature = "Mono+Security+Interface+AlertLevel")]
 #[repr(u8)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AlertLevel {
+    #[default]
     Fatal = 2u8,
     Warning = 1u8,
 }

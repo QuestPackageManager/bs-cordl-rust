@@ -1,7 +1,8 @@
 #[cfg(feature = "OVR+OpenVR+EIOBufferMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EIOBufferMode {
+    #[default]
     Create = 512i32,
     Read = 1i32,
     Write = 2i32,

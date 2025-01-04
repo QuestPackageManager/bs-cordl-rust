@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+FontStyle")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum FontStyle {
+    #[default]
     Bold = 1i32,
     BoldAndItalic = 3i32,
     Italic = 2i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Net+Sockets+SocketOptionLevel")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SocketOptionLevel {
+    #[default]
     IP = 0i32,
     IPv6 = 41i32,
     Socket = 65535i32,

@@ -503,8 +503,9 @@ for crate::System::Threading::ExecutionContext {
 }
 #[cfg(feature = "System+Threading+ExecutionContext+CaptureOptions")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ExecutionContext_CaptureOptions {
+    #[default]
     IgnoreSyncCtx = 1i32,
     None = 0i32,
     OptimizeDefaultCase = 2i32,
@@ -517,8 +518,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "System+Threading+ExecutionContext+Flags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ExecutionContext_Flags {
+    #[default]
     IsFlowSuppressed = 2i32,
     IsNewCapture = 1i32,
     IsPreAllocatedDefault = 4i32,

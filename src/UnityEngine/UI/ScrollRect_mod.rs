@@ -1179,8 +1179,9 @@ impl AsMut<crate::UnityEngine::UI::ILayoutGroup> for crate::UnityEngine::UI::Scr
 }
 #[cfg(feature = "UnityEngine+UI+ScrollRect+MovementType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ScrollRect_MovementType {
+    #[default]
     Clamped = 2i32,
     Elastic = 1i32,
     Unrestricted = 0i32,
@@ -1248,8 +1249,9 @@ for crate::UnityEngine::UI::ScrollRect_ScrollRectEvent {
 }
 #[cfg(feature = "UnityEngine+UI+ScrollRect+ScrollbarVisibility")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ScrollRect_ScrollbarVisibility {
+    #[default]
     AutoHide = 1i32,
     AutoHideAndExpandViewport = 2i32,
     Permanent = 0i32,

@@ -149,8 +149,9 @@ for crate::GlobalNamespace::OVRSpace {
 }
 #[cfg(feature = "OVRSpace+StorageLocation")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRSpace_StorageLocation {
+    #[default]
     Cloud = 1i32,
     Local = 0i32,
 }

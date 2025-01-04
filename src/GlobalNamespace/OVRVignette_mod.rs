@@ -260,8 +260,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRVignette {
 }
 #[cfg(feature = "OVRVignette+FalloffType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRVignette_FalloffType {
+    #[default]
     Linear = 0i32,
     Quadratic = 1i32,
 }
@@ -272,8 +273,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "OVRVignette+MeshComplexityLevel")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRVignette_MeshComplexityLevel {
+    #[default]
     Detailed = 3i32,
     Normal = 2i32,
     Simple = 1i32,

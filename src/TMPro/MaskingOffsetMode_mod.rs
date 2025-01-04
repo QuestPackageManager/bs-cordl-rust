@@ -1,7 +1,8 @@
 #[cfg(feature = "TMPro+MaskingOffsetMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MaskingOffsetMode {
+    #[default]
     Percentage = 0i32,
     Pixel = 1i32,
 }

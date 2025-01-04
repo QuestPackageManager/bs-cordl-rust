@@ -725,8 +725,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::HEU_AssetD
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_AssetDatabase+HEU_ImportAssetOptions")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HEU_AssetDatabase_HEU_ImportAssetOptions {
+    #[default]
     Default = 0i32,
     DontDownloadFromCacheServer = 8192i32,
     ForceSynchronousImport = 8i32,

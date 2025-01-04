@@ -1,7 +1,8 @@
 #[cfg(feature = "System+ComponentModel+CollectionChangeAction")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CollectionChangeAction {
+    #[default]
     Add = 1i32,
     Refresh = 3i32,
     Remove = 2i32,

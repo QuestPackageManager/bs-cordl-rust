@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Yoga+YogaWrap")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum YogaWrap {
+    #[default]
     NoWrap = 0i32,
     Wrap = 1i32,
     WrapReverse = 2i32,

@@ -146,8 +146,9 @@ impl AsMut<
 }
 #[cfg(feature = "AuthenticationToken+Platform")]
 #[repr(u8)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AuthenticationToken_Platform {
+    #[default]
     Oculus = 2u8,
     OculusRift = 1u8,
     PS4 = 4u8,

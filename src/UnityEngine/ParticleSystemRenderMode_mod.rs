@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+ParticleSystemRenderMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ParticleSystemRenderMode {
+    #[default]
     Billboard = 0i32,
     HorizontalBillboard = 2i32,
     Mesh = 4i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+MessageEnum")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MessageEnum {
+    #[default]
     ArgsInArray = 8i32,
     ArgsInline = 2i32,
     ArgsIsArray = 4i32,

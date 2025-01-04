@@ -1,7 +1,8 @@
 #[cfg(feature = "BGLib+DotnetExtension+CommandLine+ArgumentType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ArgumentType {
+    #[default]
     Boolean = 0i32,
     Integer = 3i32,
     IntegerOptional = 4i32,

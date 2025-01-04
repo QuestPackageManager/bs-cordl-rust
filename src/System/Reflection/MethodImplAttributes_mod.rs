@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Reflection+MethodImplAttributes")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MethodImplAttributes {
+    #[default]
     AggressiveInlining = 256i32,
     CodeTypeMask = 3i32,
     ForwardRef = 16i32,

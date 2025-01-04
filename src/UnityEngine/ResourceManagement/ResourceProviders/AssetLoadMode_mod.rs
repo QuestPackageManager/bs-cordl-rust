@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+AssetLoadMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AssetLoadMode {
+    #[default]
     AllPackedAssetsAndDependencies = 1i32,
     RequestedAssetAndDependencies = 0i32,
 }

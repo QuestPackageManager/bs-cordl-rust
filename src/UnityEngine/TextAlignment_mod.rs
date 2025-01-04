@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+TextAlignment")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TextAlignment {
+    #[default]
     Center = 1i32,
     Left = 0i32,
     Right = 2i32,

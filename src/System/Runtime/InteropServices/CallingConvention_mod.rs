@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Runtime+InteropServices+CallingConvention")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CallingConvention {
+    #[default]
     Cdecl = 2i32,
     FastCall = 5i32,
     StdCall = 3i32,

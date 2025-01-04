@@ -1,7 +1,8 @@
 #[cfg(feature = "Newtonsoft+Json+MissingMemberHandling")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum MissingMemberHandling {
+    #[default]
     Error = 1i32,
     Ignore = 0i32,
 }

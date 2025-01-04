@@ -1,7 +1,8 @@
 #[cfg(feature = "OVR+OpenVR+EOverlayDirection")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EOverlayDirection {
+    #[default]
     Count = 4i32,
     Down = 1i32,
     Left = 2i32,

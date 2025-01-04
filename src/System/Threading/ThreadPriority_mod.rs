@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Threading+ThreadPriority")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ThreadPriority {
+    #[default]
     AboveNormal = 3i32,
     BelowNormal = 1i32,
     Highest = 4i32,

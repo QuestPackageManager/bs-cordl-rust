@@ -453,8 +453,9 @@ for crate::System::Net::CommandStream_PipelineEntry {
 }
 #[cfg(feature = "System+Net+CommandStream+PipelineEntryFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CommandStream_PipelineEntryFlags {
+    #[default]
     CreateDataConnection = 4i32,
     DontLogParameter = 8i32,
     GiveDataStream = 2i32,
@@ -467,8 +468,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "System+Net+CommandStream+PipelineInstruction")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CommandStream_PipelineInstruction {
+    #[default]
     Abort = 0i32,
     Advance = 1i32,
     GiveStream = 4i32,

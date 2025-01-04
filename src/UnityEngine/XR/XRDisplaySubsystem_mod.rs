@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+XR+XRDisplaySubsystem+LateLatchNode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XRDisplaySubsystem_LateLatchNode {
+    #[default]
     Head = 0i32,
     LeftHand = 1i32,
     RightHand = 2i32,

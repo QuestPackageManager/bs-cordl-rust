@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Video+VideoAspectRatio")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum VideoAspectRatio {
+    #[default]
     FitHorizontally = 2i32,
     FitInside = 3i32,
     FitOutside = 4i32,

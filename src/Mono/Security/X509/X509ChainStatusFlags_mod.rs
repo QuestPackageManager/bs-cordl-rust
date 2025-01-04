@@ -1,7 +1,8 @@
 #[cfg(feature = "Mono+Security+X509+X509ChainStatusFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum X509ChainStatusFlags {
+    #[default]
     InvalidBasicConstraints = 1024i32,
     NoError = 0i32,
     NotSignatureValid = 8i32,

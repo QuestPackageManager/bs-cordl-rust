@@ -1,7 +1,8 @@
 #[cfg(feature = "OVR+OpenVR+EVRNotificationStyle")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EVRNotificationStyle {
+    #[default]
     Application = 100i32,
     Contact_Active = 202i32,
     Contact_Disabled = 200i32,

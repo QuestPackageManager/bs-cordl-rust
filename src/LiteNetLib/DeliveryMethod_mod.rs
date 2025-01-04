@@ -1,7 +1,8 @@
 #[cfg(feature = "LiteNetLib+DeliveryMethod")]
 #[repr(u8)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DeliveryMethod {
+    #[default]
     ReliableOrdered = 2u8,
     ReliableSequenced = 3u8,
     ReliableUnordered = 0u8,

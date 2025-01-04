@@ -1,7 +1,8 @@
 #[cfg(feature = "UserAgeCategory")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum UserAgeCategory {
+    #[default]
     Adult = 3i32,
     Child = 1i32,
     Teen = 2i32,

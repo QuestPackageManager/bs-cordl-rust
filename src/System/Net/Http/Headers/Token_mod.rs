@@ -107,8 +107,9 @@ impl crate::System::Net::Http::Headers::Token {
 }
 #[cfg(feature = "System+Net+Http+Headers+Token+Type")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Token_Type {
+    #[default]
     End = 1i32,
     Error = 0i32,
     OpenParens = 9i32,

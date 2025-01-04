@@ -86,8 +86,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SpriteLightWi
 }
 #[cfg(feature = "SpriteLightWithId+MultiplyColorByAlphaType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SpriteLightWithId_MultiplyColorByAlphaType {
+    #[default]
     AfterApplyingMinAlpha = 2i32,
     BeforeApplyingMinAlpha = 1i32,
     None = 0i32,

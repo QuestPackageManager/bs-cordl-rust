@@ -195,8 +195,9 @@ for crate::GlobalNamespace::OVRMesh_IOVRMeshDataProvider {
 }
 #[cfg(feature = "OVRMesh+MeshType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRMesh_MeshType {
+    #[default]
     HandLeft = 0i32,
     HandRight = 1i32,
     None = -1i32,

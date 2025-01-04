@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+ProBuilder+EntityType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EntityType {
+    #[default]
     Collider = 3i32,
     Detail = 0i32,
     Mover = 4i32,

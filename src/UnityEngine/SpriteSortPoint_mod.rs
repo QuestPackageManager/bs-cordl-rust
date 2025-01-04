@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+SpriteSortPoint")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SpriteSortPoint {
+    #[default]
     Center = 0i32,
     Pivot = 1i32,
 }

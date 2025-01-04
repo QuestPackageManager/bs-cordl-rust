@@ -1,7 +1,8 @@
 #[cfg(feature = "Newtonsoft+Json+StringEscapeHandling")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum StringEscapeHandling {
+    #[default]
     Default = 0i32,
     EscapeHtml = 2i32,
     EscapeNonAscii = 1i32,

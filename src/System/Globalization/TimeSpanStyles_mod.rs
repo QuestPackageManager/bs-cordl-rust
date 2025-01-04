@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Globalization+TimeSpanStyles")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TimeSpanStyles {
+    #[default]
     AssumeNegative = 1i32,
     None = 0i32,
 }

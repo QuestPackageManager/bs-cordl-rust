@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Diagnostics+ProcessWindowStyle")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ProcessWindowStyle {
+    #[default]
     Hidden = 1i32,
     Maximized = 3i32,
     Minimized = 2i32,

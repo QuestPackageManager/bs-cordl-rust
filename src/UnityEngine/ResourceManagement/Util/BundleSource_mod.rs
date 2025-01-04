@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+BundleSource")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BundleSource {
+    #[default]
     Cache = 2i32,
     Download = 4i32,
     Local = 1i32,

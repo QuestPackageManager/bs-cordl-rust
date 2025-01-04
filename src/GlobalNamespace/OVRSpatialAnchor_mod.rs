@@ -1169,8 +1169,9 @@ impl crate::GlobalNamespace::OVRSpatialAnchor_LoadOptions {
 }
 #[cfg(feature = "OVRSpatialAnchor+MultiAnchorActionType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRSpatialAnchor_MultiAnchorActionType {
+    #[default]
     Save = 0i32,
     Share = 1i32,
 }
@@ -1219,8 +1220,9 @@ for crate::GlobalNamespace::OVRSpatialAnchor_MultiAnchorDelegatePair {
 impl crate::GlobalNamespace::OVRSpatialAnchor_MultiAnchorDelegatePair {}
 #[cfg(feature = "OVRSpatialAnchor+OperationResult")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRSpatialAnchor_OperationResult {
+    #[default]
     Failure = -1000i32,
     Failure_SpaceCloudStorageDisabled = -2000i32,
     Failure_SpaceLocalizationFailed = -2002i32,

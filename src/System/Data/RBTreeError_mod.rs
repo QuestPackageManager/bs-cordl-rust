@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Data+RBTreeError")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RBTreeError {
+    #[default]
     AttachedNodeWithZerorbTreeNodeId = 18i32,
     CannotRotateInvalidsuccessorNodeinDelete = 11i32,
     CompareNodeInDataRowTree = 19i32,

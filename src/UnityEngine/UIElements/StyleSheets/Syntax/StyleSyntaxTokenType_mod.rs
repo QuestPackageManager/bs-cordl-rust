@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+Syntax+StyleSyntaxTokenType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum StyleSyntaxTokenType {
+    #[default]
     Asterisk = 9i32,
     CloseBrace = 17i32,
     CloseBracket = 15i32,

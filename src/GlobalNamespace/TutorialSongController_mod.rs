@@ -1,7 +1,8 @@
 #[cfg(feature = "TutorialSongController+SequenceCutInfo+NoteType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SequenceCutInfo_TutorialSongController_NoteType {
+    #[default]
     Arc = 2i32,
     Chain = 1i32,
     Normal = 0i32,

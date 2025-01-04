@@ -436,8 +436,9 @@ for crate::GlobalNamespace::OrderedSet_1_Node<T> {
 }
 #[cfg(feature = "OrderedSet_1+ProcessOrder")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OrderedSet_1_ProcessOrder {
+    #[default]
     DontCare = 2i32,
     Fifo = 1i32,
     Lifo = 0i32,

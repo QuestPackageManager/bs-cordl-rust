@@ -339,8 +339,9 @@ for crate::GlobalNamespace::KawaseBlurRendererSO_BloomKernel {
 }
 #[cfg(feature = "KawaseBlurRendererSO+KernelSize")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum KawaseBlurRendererSO_KernelSize {
+    #[default]
     Kernel127 = 5i32,
     Kernel135 = 6i32,
     Kernel143 = 7i32,
@@ -357,8 +358,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "KawaseBlurRendererSO+Pass")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum KawaseBlurRendererSO_Pass {
+    #[default]
     AlphaAndDepthWeights = 4i32,
     AlphaWeights = 0i32,
     Blur = 1i32,
@@ -374,8 +376,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "KawaseBlurRendererSO+WeightsType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum KawaseBlurRendererSO_WeightsType {
+    #[default]
     AlphaAndDepthWeights = 2i32,
     AlphaWeights = 1i32,
     None = 0i32,

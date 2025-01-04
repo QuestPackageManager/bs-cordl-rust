@@ -414,8 +414,9 @@ for crate::System::Exception {
 }
 #[cfg(feature = "System+Exception+ExceptionMessageKind")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Exception_ExceptionMessageKind {
+    #[default]
     OutOfMemory = 3i32,
     ThreadAbort = 1i32,
     ThreadInterrupted = 2i32,

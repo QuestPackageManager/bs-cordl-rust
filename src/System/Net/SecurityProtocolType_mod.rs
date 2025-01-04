@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Net+SecurityProtocolType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SecurityProtocolType {
+    #[default]
     Ssl3 = 48i32,
     SystemDefault = 0i32,
     Tls = 192i32,

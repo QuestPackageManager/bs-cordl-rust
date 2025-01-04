@@ -1,7 +1,8 @@
 #[cfg(feature = "TMPro+TMP_VertexDataUpdateFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TMP_VertexDataUpdateFlags {
+    #[default]
     All = 255i32,
     Colors32 = 16i32,
     None = 0i32,

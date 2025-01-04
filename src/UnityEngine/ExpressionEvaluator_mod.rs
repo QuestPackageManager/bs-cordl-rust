@@ -219,8 +219,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ExpressionEvaluat
 }
 #[cfg(feature = "UnityEngine+ExpressionEvaluator+Associativity")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ExpressionEvaluator_Associativity {
+    #[default]
     Left = 0i32,
     Right = 1i32,
 }
@@ -309,8 +310,9 @@ for crate::UnityEngine::ExpressionEvaluator_Expression {
 }
 #[cfg(feature = "UnityEngine+ExpressionEvaluator+Op")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ExpressionEvaluator_Op {
+    #[default]
     Add = 0i32,
     Ceil = 12i32,
     Cos = 9i32,

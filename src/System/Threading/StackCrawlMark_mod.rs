@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Threading+StackCrawlMark")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum StackCrawlMark {
+    #[default]
     LookForMe = 0i32,
     LookForMyCaller = 1i32,
     LookForMyCallersCaller = 2i32,

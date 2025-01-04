@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Rendering+ShaderPropertyType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ShaderPropertyType {
+    #[default]
     Color = 0i32,
     Float = 2i32,
     Int = 5i32,

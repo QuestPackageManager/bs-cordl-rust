@@ -1,7 +1,8 @@
 #[cfg(feature = "BGLib+Polyglot+LanguageDirection")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LanguageDirection {
+    #[default]
     LeftToRight = 0i32,
     RightToLeft = 1i32,
 }

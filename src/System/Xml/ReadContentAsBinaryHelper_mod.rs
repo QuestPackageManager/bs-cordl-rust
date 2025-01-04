@@ -74,8 +74,9 @@ for crate::System::Xml::ReadContentAsBinaryHelper {
 }
 #[cfg(feature = "System+Xml+ReadContentAsBinaryHelper+State")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ReadContentAsBinaryHelper_State {
+    #[default]
     InReadContent = 1i32,
     InReadElementContent = 2i32,
     None = 0i32,

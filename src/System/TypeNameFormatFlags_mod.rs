@@ -1,7 +1,8 @@
 #[cfg(feature = "System+TypeNameFormatFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TypeNameFormatFlags {
+    #[default]
     FormatAngleBrackets = 64i32,
     FormatAssembly = 4i32,
     FormatBasic = 0i32,

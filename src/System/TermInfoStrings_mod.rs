@@ -1,7 +1,8 @@
 #[cfg(feature = "System+TermInfoStrings")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TermInfoStrings {
+    #[default]
     AcsChars = 146i32,
     AltScancodeEsc = 385i32,
     BackTab = 0i32,

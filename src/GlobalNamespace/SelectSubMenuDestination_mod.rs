@@ -60,8 +60,9 @@ for crate::GlobalNamespace::SelectSubMenuDestination {
 }
 #[cfg(feature = "SelectSubMenuDestination+Destination")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SelectSubMenuDestination_Destination {
+    #[default]
     Campaign = 1i32,
     MainMenu = 0i32,
     Multiplayer = 6i32,

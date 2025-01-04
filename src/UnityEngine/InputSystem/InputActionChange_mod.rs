@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+InputSystem+InputActionChange")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputActionChange {
+    #[default]
     ActionCanceled = 6i32,
     ActionDisabled = 1i32,
     ActionEnabled = 0i32,

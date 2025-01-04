@@ -89,8 +89,9 @@ for crate::HoudiniEngineUnity::HEU_SessionSyncData {
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_SessionSyncData+Status")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HEU_SessionSyncData_Status {
+    #[default]
     Connected = 4i32,
     Connecting = 2i32,
     Initializing = 3i32,

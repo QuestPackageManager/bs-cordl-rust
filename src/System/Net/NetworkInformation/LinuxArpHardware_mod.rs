@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Net+NetworkInformation+LinuxArpHardware")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum LinuxArpHardware {
+    #[default]
     ATM = 19i32,
     CSLIP = 257i32,
     CSLIP6 = 259i32,

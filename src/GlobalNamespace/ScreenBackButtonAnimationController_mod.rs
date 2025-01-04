@@ -85,8 +85,9 @@ for crate::GlobalNamespace::ScreenBackButtonAnimationController {
 }
 #[cfg(feature = "ScreenBackButtonAnimationController+AnimationType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ScreenBackButtonAnimationController_AnimationType {
+    #[default]
     FadeIn = 0i32,
     FadeOut = 1i32,
     MoveIn = 2i32,

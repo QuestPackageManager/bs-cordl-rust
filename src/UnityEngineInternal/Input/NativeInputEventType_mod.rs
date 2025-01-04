@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngineInternal+Input+NativeInputEventType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NativeInputEventType {
+    #[default]
     Delta = 1145852993i32,
     DeviceConfigChanged = 1145259591i32,
     DeviceRemoved = 1146242381i32,

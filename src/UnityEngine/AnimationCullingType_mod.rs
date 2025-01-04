@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+AnimationCullingType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AnimationCullingType {
+    #[default]
     AlwaysAnimate = 0i32,
     BasedOnClipBounds = 2i32,
     BasedOnRenderers = 1i32,

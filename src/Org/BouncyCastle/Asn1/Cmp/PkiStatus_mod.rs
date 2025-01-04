@@ -1,7 +1,8 @@
 #[cfg(feature = "Org+BouncyCastle+Asn1+Cmp+PkiStatus")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PkiStatus {
+    #[default]
     Granted = 0i32,
     GrantedWithMods = 1i32,
     KeyUpdateWarning = 6i32,

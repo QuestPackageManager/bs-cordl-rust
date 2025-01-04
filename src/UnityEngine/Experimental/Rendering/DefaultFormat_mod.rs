@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Experimental+Rendering+DefaultFormat")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum DefaultFormat {
+    #[default]
     DepthStencil = 2i32,
     HDR = 1i32,
     LDR = 0i32,

@@ -185,8 +185,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRCustomFace
 }
 #[cfg(feature = "OVRCustomFace+RetargetingType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRCustomFace_RetargetingType {
+    #[default]
     Custom = 1i32,
     OculusFace = 0i32,
 }

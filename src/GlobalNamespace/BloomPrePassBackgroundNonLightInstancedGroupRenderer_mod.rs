@@ -191,8 +191,9 @@ for crate::GlobalNamespace::BloomPrePassBackgroundNonLightInstancedGroupRenderer
 }
 #[cfg(feature = "BloomPrePassBackgroundNonLightInstancedGroupRenderer+PropertyType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BloomPrePassBackgroundNonLightInstancedGroupRenderer_PropertyType {
+    #[default]
     Color = 2i32,
     Float = 0i32,
     Matrix4x4 = 3i32,

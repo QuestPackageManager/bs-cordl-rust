@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+BinaryTypeEnum")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BinaryTypeEnum {
+    #[default]
     Object = 2i32,
     ObjectArray = 5i32,
     ObjectUrt = 3i32,

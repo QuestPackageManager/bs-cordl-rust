@@ -397,8 +397,9 @@ for crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot {
 }
 #[cfg(feature = "PlaybackRenderer+PlaybackScreenshot+Type")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PlaybackScreenshot_PlaybackRenderer_Type {
+    #[default]
     Background = 2i32,
     Foreground = 1i32,
 }

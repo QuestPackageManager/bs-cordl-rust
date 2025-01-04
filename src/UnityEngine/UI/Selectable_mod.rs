@@ -839,8 +839,9 @@ for crate::UnityEngine::UI::Selectable {
 }
 #[cfg(feature = "UnityEngine+UI+Selectable+SelectionState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Selectable_SelectionState {
+    #[default]
     Disabled = 4i32,
     Highlighted = 1i32,
     Normal = 0i32,
@@ -854,8 +855,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+UI+Selectable+Transition")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Selectable_Transition {
+    #[default]
     Animation = 3i32,
     ColorTint = 1i32,
     None = 0i32,

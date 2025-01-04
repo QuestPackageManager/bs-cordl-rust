@@ -544,8 +544,9 @@ for crate::UnityEngine::Timeline::AnimationPlayableAsset_AnimationPlayableAssetU
 }
 #[cfg(feature = "UnityEngine+Timeline+AnimationPlayableAsset+LoopMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AnimationPlayableAsset_LoopMode {
+    #[default]
     Off = 2i32,
     On = 1i32,
     UseSourceAsset = 0i32,
@@ -558,8 +559,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+Timeline+AnimationPlayableAsset+Versions")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AnimationPlayableAsset_Versions {
+    #[default]
     Initial = 0i32,
     RotationAsEuler = 1i32,
 }

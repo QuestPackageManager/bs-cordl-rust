@@ -1,7 +1,8 @@
 #[cfg(feature = "OVR+OpenVR+EVRSettingsError")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EVRSettingsError {
+    #[default]
     IPCFailed = 1i32,
     JsonParseFailed = 4i32,
     None = 0i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "Mono+Net+Security+AsyncOperationStatus")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AsyncOperationStatus {
+    #[default]
     Complete = 3i32,
     Continue = 1i32,
     Initialize = 0i32,

@@ -864,8 +864,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GameScenesMan
 }
 #[cfg(feature = "GameScenesManager+SceneDismissType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GameScenesManager_SceneDismissType {
+    #[default]
     Deactivate = 2i32,
     DoNotUnload = 0i32,
     Unload = 1i32,
@@ -878,8 +879,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "GameScenesManager+ScenePresentType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GameScenesManager_ScenePresentType {
+    #[default]
     Activate = 3i32,
     DoNotLoad = 0i32,
     Load = 1i32,
@@ -893,8 +895,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "GameScenesManager+SceneTransitionType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GameScenesManager_SceneTransitionType {
+    #[default]
     Activate = 6i32,
     Append = 5i32,
     ClearAndOpen = 4i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UIElements+Repeat")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Repeat {
+    #[default]
     NoRepeat = 0i32,
     Repeat = 3i32,
     Round = 2i32,

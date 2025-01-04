@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+UI+CanvasUpdate")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CanvasUpdate {
+    #[default]
     LatePreRender = 4i32,
     Layout = 1i32,
     MaxUpdateValue = 5i32,

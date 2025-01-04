@@ -1,7 +1,8 @@
 #[cfg(feature = "BeatSaber+TrackDefinitions+DataModels+EventBoxGroupType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum EventBoxGroupType {
+    #[default]
     Color = 0i32,
     FloatFx = 11i32,
     Rotation = 1i32,

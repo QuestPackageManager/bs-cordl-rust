@@ -1,7 +1,8 @@
 #[cfg(feature = "NoteJumpDurationTypeSettings")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NoteJumpDurationTypeSettings {
+    #[default]
     Dynamic = 0i32,
     Static = 1i32,
 }

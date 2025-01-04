@@ -196,8 +196,9 @@ for crate::GlobalNamespace::PyramidBloomRendererSO_Level {
 impl crate::GlobalNamespace::PyramidBloomRendererSO_Level {}
 #[cfg(feature = "PyramidBloomRendererSO+Pass")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum PyramidBloomRendererSO_Pass {
+    #[default]
     Bilinear = 9i32,
     BilinearGamma = 10i32,
     Downsample13 = 2i32,

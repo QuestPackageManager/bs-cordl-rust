@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+JointProjectionMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum JointProjectionMode {
+    #[default]
     None = 0i32,
     PositionAndRotation = 1i32,
     PositionOnly = 2i32,

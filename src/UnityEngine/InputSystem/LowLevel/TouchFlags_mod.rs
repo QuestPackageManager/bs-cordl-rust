@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+TouchFlags")]
 #[repr(u8)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TouchFlags {
+    #[default]
     BeganInSameFrame = 128u8,
     IndirectTouch = 1u8,
     OrphanedPrimaryTouch = 64u8,

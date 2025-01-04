@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+RenderTextureCreationFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RenderTextureCreationFlags {
+    #[default]
     AllowVerticalFlip = 128i32,
     AutoGenerateMips = 2i32,
     BindMS = 2048i32,

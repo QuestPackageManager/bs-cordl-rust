@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+VerticalWrapMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum VerticalWrapMode {
+    #[default]
     Overflow = 1i32,
     Truncate = 0i32,
 }

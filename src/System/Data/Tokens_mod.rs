@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Data+Tokens")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Tokens {
+    #[default]
     BinaryConst = 5i32,
     BinaryOp = 13i32,
     Child = 14i32,

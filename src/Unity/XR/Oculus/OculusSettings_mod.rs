@@ -95,8 +95,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::Unity::XR::Oculus::OculusSetti
 }
 #[cfg(feature = "Unity+XR+Oculus+OculusSettings+FoveationMethod")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OculusSettings_FoveationMethod {
+    #[default]
     EyeTrackedFoveatedRendering = 1i32,
     FixedFoveatedRendering = 0i32,
 }
@@ -108,8 +109,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "Unity+XR+Oculus+OculusSettings+StereoRenderingModeAndroid")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OculusSettings_StereoRenderingModeAndroid {
+    #[default]
     MultiPass = 0i32,
     Multiview = 2i32,
 }
@@ -121,8 +123,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "Unity+XR+Oculus+OculusSettings+StereoRenderingModeDesktop")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OculusSettings_StereoRenderingModeDesktop {
+    #[default]
     MultiPass = 0i32,
     SinglePassInstanced = 1i32,
 }

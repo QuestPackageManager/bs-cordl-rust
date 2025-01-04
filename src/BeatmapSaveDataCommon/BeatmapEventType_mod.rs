@@ -1,7 +1,8 @@
 #[cfg(feature = "BeatmapSaveDataCommon+BeatmapEventType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BeatmapEventType {
+    #[default]
     BpmChange = 100i32,
     ColorBoostEventType = 5i32,
     EarlyRotationEventType = 14i32,

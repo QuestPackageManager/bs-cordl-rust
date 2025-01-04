@@ -451,8 +451,9 @@ impl AsMut<
 }
 #[cfg(feature = "GameplayModifiers+EnabledObstacleType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GameplayModifiers_EnabledObstacleType {
+    #[default]
     All = 0i32,
     FullHeightOnly = 1i32,
     NoObstacles = 2i32,
@@ -465,8 +466,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "GameplayModifiers+EnergyType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GameplayModifiers_EnergyType {
+    #[default]
     Bar = 0i32,
     Battery = 1i32,
 }
@@ -477,8 +479,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "GameplayModifiers+SongSpeed")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GameplayModifiers_SongSpeed {
+    #[default]
     Faster = 1i32,
     Normal = 0i32,
     Slower = 2i32,

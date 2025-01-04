@@ -199,8 +199,9 @@ for crate::UnityEngine::InputSystem::XInput::XInputController_Capabilities {
 impl crate::UnityEngine::InputSystem::XInput::XInputController_Capabilities {}
 #[cfg(feature = "UnityEngine+InputSystem+XInput+XInputController+DeviceFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XInputController_DeviceFlags {
+    #[default]
     ForceFeedbackSupported = 1i32,
     NoNavigation = 16i32,
     PluginModulesSupported = 8i32,
@@ -215,8 +216,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+XInput+XInputController+DeviceSubType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XInputController_DeviceSubType {
+    #[default]
     ArcadePad = 19i32,
     ArcadeStick = 3i32,
     DancePad = 5i32,
@@ -237,8 +239,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+XInput+XInputController+DeviceType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XInputController_DeviceType {
+    #[default]
     Gamepad = 0i32,
 }
 #[cfg(feature = "UnityEngine+InputSystem+XInput+XInputController+DeviceType")]

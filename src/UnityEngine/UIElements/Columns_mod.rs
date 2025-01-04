@@ -735,8 +735,9 @@ for crate::UnityEngine::UIElements::Columns {
 }
 #[cfg(feature = "UnityEngine+UIElements+Columns+StretchMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Columns_StretchMode {
+    #[default]
     Grow = 0i32,
     GrowAndFill = 1i32,
 }

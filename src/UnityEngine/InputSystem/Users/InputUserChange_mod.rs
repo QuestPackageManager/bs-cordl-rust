@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+InputSystem+Users+InputUserChange")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InputUserChange {
+    #[default]
     AccountChanged = 6i32,
     AccountNameChanged = 7i32,
     AccountSelectionCanceled = 9i32,

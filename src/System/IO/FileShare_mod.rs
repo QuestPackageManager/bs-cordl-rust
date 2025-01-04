@@ -1,7 +1,8 @@
 #[cfg(feature = "System+IO+FileShare")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum FileShare {
+    #[default]
     Delete = 4i32,
     Inheritable = 16i32,
     None = 0i32,

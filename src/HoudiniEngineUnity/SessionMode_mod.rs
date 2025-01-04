@@ -1,7 +1,8 @@
 #[cfg(feature = "HoudiniEngineUnity+SessionMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SessionMode {
+    #[default]
     Pipe = 1i32,
     Socket = 0i32,
 }

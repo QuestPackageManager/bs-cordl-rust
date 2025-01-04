@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Security+AccessControl+InheritanceFlags")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum InheritanceFlags {
+    #[default]
     ContainerInherit = 1i32,
     None = 0i32,
     ObjectInherit = 2i32,

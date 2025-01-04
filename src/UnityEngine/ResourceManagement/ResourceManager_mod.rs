@@ -1731,8 +1731,9 @@ impl crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventCont
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+DiagnosticEventType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ResourceManager_DiagnosticEventType {
+    #[default]
     AsyncOperationComplete = 3i32,
     AsyncOperationCreate = 1i32,
     AsyncOperationDestroy = 5i32,

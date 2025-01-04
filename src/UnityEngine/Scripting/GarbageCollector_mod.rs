@@ -60,8 +60,9 @@ for crate::UnityEngine::Scripting::GarbageCollector {
 }
 #[cfg(feature = "UnityEngine+Scripting+GarbageCollector+Mode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum GarbageCollector_Mode {
+    #[default]
     Disabled = 0i32,
     Enabled = 1i32,
     Manual = 2i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Text+RegularExpressions+RegexOptions")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RegexOptions {
+    #[default]
     Compiled = 8i32,
     CultureInvariant = 512i32,
     ECMAScript = 256i32,

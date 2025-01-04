@@ -1,7 +1,8 @@
 #[cfg(feature = "SongPackDataType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SongPackDataType {
+    #[default]
     All = 2i32,
     MultipleBeatmapLevelsPack = 1i32,
     SingleBeatmapLevelPack = 0i32,

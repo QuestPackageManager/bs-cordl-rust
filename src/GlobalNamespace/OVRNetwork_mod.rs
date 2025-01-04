@@ -61,8 +61,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRNetwork {
 }
 #[cfg(feature = "OVRNetwork+OVRNetworkTcpClient+ConnectionState")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRNetworkTcpClient_OVRNetwork_ConnectionState {
+    #[default]
     Connected = 1i32,
     Connecting = 2i32,
     Disconnected = 0i32,

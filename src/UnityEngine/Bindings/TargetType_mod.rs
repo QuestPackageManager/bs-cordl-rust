@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Bindings+TargetType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum TargetType {
+    #[default]
     Field = 1i32,
     Function = 0i32,
 }

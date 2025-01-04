@@ -473,8 +473,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::ViewController {
 }
 #[cfg(feature = "HMUI+ViewController+AnimationDirection")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ViewController_AnimationDirection {
+    #[default]
     Horizontal = 0i32,
     Vertical = 1i32,
 }
@@ -485,8 +486,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 );
 #[cfg(feature = "HMUI+ViewController+AnimationType")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ViewController_AnimationType {
+    #[default]
     In = 1i32,
     None = 0i32,
     Out = 2i32,

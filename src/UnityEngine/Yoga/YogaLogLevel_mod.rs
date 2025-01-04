@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+Yoga+YogaLogLevel")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum YogaLogLevel {
+    #[default]
     Debug = 3i32,
     Error = 0i32,
     Fatal = 5i32,

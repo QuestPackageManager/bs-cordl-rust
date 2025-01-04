@@ -1,7 +1,8 @@
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+BinaryHeaderEnum")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BinaryHeaderEnum {
+    #[default]
     Array = 7i32,
     ArraySingleObject = 16i32,
     ArraySinglePrimitive = 15i32,

@@ -74,8 +74,9 @@ for crate::GlobalNamespace::ObstacleExecutionRating {
 }
 #[cfg(feature = "ObstacleExecutionRating+Rating")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum ObstacleExecutionRating_Rating {
+    #[default]
     NotGood = 1i32,
     OK = 0i32,
 }

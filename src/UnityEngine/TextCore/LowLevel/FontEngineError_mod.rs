@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+TextCore+LowLevel+FontEngineError")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum FontEngineError {
+    #[default]
     Atlas_Generation_Cancelled = 100i32,
     Invalid_Character_Code = 17i32,
     Invalid_Face = 35i32,

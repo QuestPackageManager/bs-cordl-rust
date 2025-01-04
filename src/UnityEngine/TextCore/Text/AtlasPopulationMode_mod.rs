@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+TextCore+Text+AtlasPopulationMode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AtlasPopulationMode {
+    #[default]
     Dynamic = 1i32,
     DynamicOS = 2i32,
     Static = 0i32,

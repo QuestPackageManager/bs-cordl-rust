@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+QueryTriggerInteraction")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum QueryTriggerInteraction {
+    #[default]
     Collide = 2i32,
     Ignore = 1i32,
     UseGlobal = 0i32,

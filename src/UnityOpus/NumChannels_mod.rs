@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityOpus+NumChannels")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum NumChannels {
+    #[default]
     Mono = 1i32,
     Stereo = 2i32,
 }

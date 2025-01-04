@@ -1,7 +1,8 @@
 #[cfg(feature = "UnityEngine+ProBuilder+RefreshMask")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RefreshMask {
+    #[default]
     All = 31i32,
     Bounds = 22i32,
     Collisions = 16i32,

@@ -1,7 +1,8 @@
 #[cfg(feature = "OVRGLTFInputNode")]
 #[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRGLTFInputNode {
+    #[default]
     Button_A_X = 1i32,
     Button_B_Y = 2i32,
     Button_Oculus_Menu = 3i32,
